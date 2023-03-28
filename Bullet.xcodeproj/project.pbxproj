@@ -268,7 +268,6 @@
 		C237E27626397D65005DB2D1 /* Loading-GIF-Light.gif in Resources */ = {isa = PBXBuildFile; fileRef = C237E27526397D65005DB2D1 /* Loading-GIF-Light.gif */; };
 		C23988AA24DEAC8100C3807B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23988A924DEAC8100C3807B /* NotificationCenter.framework */; };
 		C23988B024DEAC8100C3807B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23988AE24DEAC8100C3807B /* MainInterface.storyboard */; };
-		C23988B424DEAC8100C3807B /* BULLET.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C23988A824DEAC8100C3807B /* BULLET.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C23988BA24DEAD1800C3807B /* BulletWidgetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23988B924DEAD1800C3807B /* BulletWidgetsVC.swift */; };
 		C23988BF24DEAF2000C3807B /* newsCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23988BD24DEAF2000C3807B /* newsCC.swift */; };
 		C23988C824DEB02900C3807B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C256AB43245DA4E800706445 /* Constant.swift */; };
@@ -964,13 +963,6 @@
 			remoteGlobalIDString = 64D2CC392442FC5100EC39EC;
 			remoteInfo = Bullet;
 		};
-		C23988B224DEAC8100C3807B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64D2CC322442FC5100EC39EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C23988A724DEAC8100C3807B;
-			remoteInfo = BULLET;
-		};
 		C2B879CF259B0968001477F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64D2CC322442FC5100EC39EC /* Project object */;
@@ -988,7 +980,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				C2B879D1259B0968001477F1 /* Bullet_WidgetExtension.appex in Embed App Extensions */,
-				C23988B424DEAC8100C3807B /* BULLET.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5108,7 +5099,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C23988B324DEAC8100C3807B /* PBXTargetDependency */,
 				C2B879D0259B0968001477F1 /* PBXTargetDependency */,
 			);
 			name = Bullet;
@@ -6620,11 +6610,6 @@
 			isa = PBXTargetDependency;
 			target = 64D2CC392442FC5100EC39EC /* Bullet */;
 			targetProxy = 64D2CC5C2442FC5300EC39EC /* PBXContainerItemProxy */;
-		};
-		C23988B324DEAC8100C3807B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C23988A724DEAC8100C3807B /* BULLET */;
-			targetProxy = C23988B224DEAC8100C3807B /* PBXContainerItemProxy */;
 		};
 		C2B879D0259B0968001477F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
