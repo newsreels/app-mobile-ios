@@ -27,7 +27,8 @@ Package.resolved
 *.ipa
 *.dSYM.zip
 *.dSYM## Mac stuff.DS_Store
-.o
-.d
-.dia
-.swiftdeps
+*.o
+*.d
+*.dia
+*.swiftdeps
+*.swiftdeps~
