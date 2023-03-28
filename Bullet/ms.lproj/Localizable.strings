@@ -1,0 +1,1007 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "titik-senarai";
+"BULLETS" = "TITIK SENARAI";
+"Headlines is not available." = "Tiada tajuk sedemikian";
+"Check your internet Connection and try again." = "Periksa Sambungan internet anda dan cuba lagi.";
+"Choose Image" = "Pilih Gambar";
+"Headline" = "Tajuk Utama";
+"Bullet 1" = "Senarai 1";
+"Bullet 2" = "Senarai 2";
+"Bullet 3 (Optional)" = "Senarai 3 (Tidak Wajib)";
+"Bullet 4 (Optional)" = "Senarai 4 (Tidak Wajib) ";
+"Bullet 5 (Optional)" = "Senarai 5 (Tidak Wajib)";
+"Bullet 6 (Optional)" = "Senarai 6 (Tidak Wajib)";
+"Enter Aticle Headline" = "Masukkan Tajuk";
+"Enter source name" = "Masukkan Sumber";
+"Enter reference link" = "Masukkan Rujukan";
+"Enter published date" = "Masukkan Tarikh Penerbitan";
+"Enter Bullet 1" = "Masukkan Titik Senarai Pertama";
+"Enter Bullet 2" = "Masukkan Titik Senarai Kedua";
+"Post article successfully" = "Artikel berjaya disiarkan";
+"Follow" = "Ikut";
+"Unfollow" = "Berhenti ikutan";
+"Block articles from" = "SEKAT semua artikel dari";
+"Unblock articles from" = "Buka sekatan semua artikel dari";
+"Remove article" = "Buang artikel";
+"Save article" = "Simpan artikel ini";
+"Terms & Conditions" = "Terma & Syarat";
+"Privacy Policy" = "Notis Perlindungan Data Peribadi";
+"TERMS AND CONDITIONS" = "TERMA & SYARAT";
+"PRIVACY POLICY" = "NOTIS PERLINDUNGAN DATA PERIBADI";
+"Fuel your curiosity" = "Baca lebih banyak berita mengenai dunia";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Baca berita padat dan tepat mengenai topik kegemaran anda daripada sumber yang dipercayai seluruh dunia.";
+"Save time" = "Jimat masa anda";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Baca berita dalam bentuk senarai";
+"Hands-free reading" = "Bacaan bebas tangan";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Tiada masa untuk membaca? Gunakan fungsi pertuturan.";
+"Write your message..." = "Tulis mesej anda ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Hubungi kami sekiranya anda memerlukan bantuan, kami sedia mendengarnya!";
+"Drop us a message" = "Hubungi Kami";
+"Enter Name." = "Masukkan Nama.";
+"Enter Email." = "Masukkan E-Mel";
+"Write your message." = "Tulis mesej anda.";
+"Topic unblock successfully" = "Anda telah Nyahsekat topik ini";
+"Source unblock successfully" = "Anda telah Nyahsekat sumber ini";
+"Unblock Source" = "Nyahsekat Sumber";
+"Cancel" = "Batal";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Hantar maklum balas anda, kami sedia mendengar. Ada soalan atau prihatin akan undang-undang? Lungsuri halaman bantuan atau Hubungi Kami.";
+"Enter your suggestion." = "Masukkan cadangan anda";
+"feedback sent." = "cadangan anda berjaya dihantar";
+"30m" = "30 minit";
+"1h" = "1 jam";
+"3h" = "3 jam";
+"6h" = "6 jam";
+"12h" = "12 jam";
+"24h" = "24 jam";
+"Language updated successfully." = "Bahasa berjaya dikemaskini";
+"CONTINUE" = "SAMBUNG";
+"FOLLOW 3 TO CONTINUE" = "IKUTI 3 UNTUK SAMBUNG";
+"Unfollow Location" = "Berhenti mengikut Lokasi";
+"Saved Articles" = "Artikel Simpanan";
+"Block" = "SEKAT";
+"Are you sure you want block" = "Adakah anda pasti mahu menyekat ini";
+"Once blocked, you wont be able to see any Articles related to this" = "Anda tidak akan melihat artikel dari saluran ini jika anda menyekatnya.";
+"Block Topic" = "Sekat Topik ini";
+"Suggested" = "Cadangan";
+"Related Sources not available" = "Sumber Berkaitan tiada.";
+"Block Source" = "Sekat Topik ini";
+"News in Bullets App version" = "Versi aplikasi Berita dalam Senarai";
+"Next" = "Seterusnya";
+"Login" = "Log Masuk";
+"Terms" = "Terma";
+"By clicking Continue, you agree with our Terms." = "Pilih Sambung untuk terima Terma";
+"in our Privacy Policy." = "dalam Notis Perlindungan Data Peribadi kami.";
+"Access token missing." = "Token akses tiada.";
+"NEXT" = "SETERUSNYA";
+"By checking this box, you agree to our " = "Ketik kotak untuk menerima Terma. Data anda diproses mengikut Notis Perlindungan Data Peribadi kami.";
+"Terms of Service" = "Terma Perkhidmatan";
+". We’ll handle your data according to our " = "Kami akan mengendali data anda mengikut ";
+"Password must be at least 8 characters." = "Kata laluan mestilah sekurang-kurangnya 8 aksara.";
+"Strong" = "Kuat";
+"Medium" = "Serdahana";
+"Weak" = "Lemah";
+"CREATE A NEW ACCOUNT" = "BUAT AKAUN BARU";
+"SIGN IN WITH EXISTING ACCOUNT" = "MASUK DENGAN AKAUN YANG SEDIA ADA";
+"You must agree to the Terms of Services to continue" = "Anda mesti bersetuju dengan Terma Perkhidmatan untuk meneruskan";
+"SIGN IN" = "Log Masuk";
+"What's your password?" = "Apakah kata laluan anda?";
+"SIGN UP" = "Daftar";
+"Choose your password?" = "Pilih kata laluan";
+"Something went wrong" = "Ada yang tidak kena";
+"we will send email to" = "kami akan hantarkan e-mel kepada";
+"with a link to reset your password." = "dengan pautan untuk menukar kata laluan anda.";
+"A reset password link has been sent to" = "Pautan untuk menukar kata laluan telah dihantar ke";
+"Enter new email." = "Masukkan e-mel baru";
+"Enter password." = "Masukkan kata laluan";
+"New Password " = "Kata Laluan Baru";
+" (8 characters min)" = "(8 aksara min)";
+"Enter current password." = "Masukkan kata laluan sedia ada.";
+"Enter new password." = "Masukkan kata laluan baru.";
+"Enter confirm password." = "Sahkan kata laluan.";
+"password do not matched!" = "Kata laluan tidak sama!";
+"GET STARTED" = "MULAKAN";
+"SKIP" = "SELANJUTNYA";
+"From where you would like to pick photo?" = "Dari mana anda mahu memilih foto?";
+"Camera" = "Kamera";
+"Photo Library" = "Perpustakaan Gambar";
+"Kindly open settings and enable access" = "Buka tetapan dan aktifkan akses";
+"Open Settings" = "Buka Tetapan";
+"Access needed for your camera" = "Akses diperlukan untuk kamera anda";
+"Access needed for your photo library" = "Akses diperlukan untuk Perpustakaan Gambar anda";
+"Done" = "Selesai";
+"Pull to refresh" = "Fungsi pertuturan tiada untuk artikel ini";
+"Loading" = "Memuatkan";
+"MANAGE LOCATION" = "URUS LOKASI";
+"OK" = "okey";
+"Choose your News in Bullets Edition based on locale" = "Pilih Berita anda dalam Edisi Peluru berdasarkan bahasa";
+"Edition" = "Edisi";
+"EDITION / REGION" = "EDISI / WILAYAH";
+"Your Topics" = "Topik Anda";
+"Your Channels" = "Saluran Anda";
+"Your Places" = "Tempat Anda";
+"Enter email." = "Masukkan email.";
+"Please enter a password." = "Sila masukkan kata laluan.";
+"Search articles" = "Cari artikel";
+"No results" = "Tiada keputusan";
+"Edition / Region" = "Edisi / Wilayah";
+
+
+
+
+"0JC-Sb-Ouu.text" = "MOD PAPARAN";
+
+
+"Search" = "Cari";
+
+
+"Select" = "Pilih (";
+
+
+"6H8-dI-k9P.text" = "Urus Lokasi";
+
+
+"6KH-YP-5Lt.text" = "PEMBACA";
+
+
+" ) icon on the article" = " ) dalam artikel";
+
+
+"BLOCK" = "HALANG";
+
+
+"you want to read later then" = "yang anda mahu baca di lain masa, kemudian";
+
+
+"7oo-cf-l7Y.text" = "Kelajuan Bacaan";
+
+
+"88L-ip-pZw.text" = "Kelajuan Bacaan";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Tiada apa-apa di sini.Nampaknya tiada apa-apa selain kucing. Kembali ke halaman utama?\n Mahukah anda pulang ke halaman utama?";
+
+
+"BpH-F1-i0z.normalTitle" = "Tempatan";
+
+
+" ) to save article." = ") untuk simpan artikel.";
+
+
+"FB0-YN-HZg.text" = "untuk sambung, pilih 3";
+
+
+"H5Z-xJ-dWD.text" = "Tajuk utama dan\nTitik senarai";
+
+
+"Search" = "Cari";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "PAPARAN LEBAR";
+
+
+"Jpx-nY-Is1.normalTitle" = "Saluran";
+
+
+"JqN-io-P1u.normalTitle" = "+ Tambahkan ke Lokasi";
+
+
+"What's your email?" = "Apakah alamat emel anda?";
+
+
+"Lw1-Md-nse.text" = "PAPARAN SENARAI";
+
+
+"LyT-pT-g53.text" = "ANTARABANGSA";
+
+
+"N6C-6i-Z2s.text" = "ANTARABANGSA";
+
+
+"Nru-uU-CsC.text" = "Cadangan";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Topik";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Ubah Suai";
+
+
+"Topics" = "Topik";
+
+
+"WXY-po-W1B.text" = "Tajuk utama dan\nTITIK SENARAI";
+
+
+"ans-Zy-T2Y.placeholder" = "Cari Lokasi ";
+
+
+"bgE-Jc-u8H.text" = "Ubah Suai";
+
+
+
+
+
+"Tap the ( " = "Ketikkan ikon ( ";
+
+
+"Places" = "Lokasi";
+
+
+"d1l-HK-OrG.text" = "MOD PAPARAN";
+
+
+
+
+
+"Language" = "Bahasa";
+
+
+"e9g-Wr-suO.text" = "TAJUK UTAMA SAHAJA";
+
+
+"GO HOME" = "kembali ke halaman utama";
+
+
+"eh1-Oo-lEn.text" = "PAPARAN LEBAR";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "PAPARAN SENARAI";
+
+
+"j2i-MT-VkA.text" = "Cuba kata kunci lain";
+
+
+"Top News" = "Berita Utama";
+
+
+"jmO-aF-nJ9.text" = "Tajuk Utama Sahaja";
+
+
+"There is nothing in here" = "Tiada apa-apa di sini.";
+
+
+"ma1-9p-bSa.text" = "Tiada keputusan dijumpai ";
+
+
+"mce-jc-cKH.text" = "PEMBACA";
+
+
+"Channels" = "Saluran";
+
+
+"Discover" = "Teroka";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "BATALKAN";
+
+
+"Discover" = "Teroka";
+
+
+"No saved stories yet" = "Tiada apa-apa di sini.";
+
+
+"wDG-kF-Hl8.text" = "Baca berita berdasarkan lokasi";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALISASI";
+
+
+"xfF-RB-mWL.text" = "LOKALISASI";
+
+
+"Search" = "Cari";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Dapatkan berita yang paling relevan ke wilayah yang anda pilih. Baca kisah berita yang disusun untuk memastikan anda sentiasa mengemas kini berita terkini dari mana sahaja di dunia.";
+
+
+"Search articles" = "Cari artikel";
+
+
+"6H8-dI-k9P.text" = "Urus Tempat";
+
+
+
+
+
+"Profile" = "Profil";
+
+
+"Editions" = "Edisi";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Tempat";
+
+
+
+
+
+"Search" = "Cari";
+
+
+
+
+
+
+
+
+"Search" = "Cari";
+
+
+"LANGUAGE" = "BAHASA";
+
+
+"Search" = "Cari";
+
+
+"No results" = "Tiada keputusan dijumpai";
+
+
+"Channels" = "Saluran";
+
+
+"Places" = "Tempat";
+
+
+"Places" = "Tempat";
+
+
+"e9F-hd-Ifm.text" = "EDISI / WILAYAH";
+
+
+
+
+
+
+
+
+"PLACES" = "TEMPAT";
+
+
+"SAVED ARTICLES" = "ARTIKEL JIMAT";
+
+
+"Articles" = "Artikel";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "TERUSKAN";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDISI / WILAYAH";
+
+
+"Try a different keyword" = "Cuba kata kunci lain";
+
+
+"For You" = "Untuk Anda";
+
+
+"Results" = "Keputusan";
+
+
+
+"About" = "Tentang Kami";
+
+
+"Share" = "Kongsi";
+
+
+"ACCOUNT" = "Akaun";
+
+
+"Your Email" = "Emel anda";
+
+
+"1sT-J6-qI0.text" = "ARTIKEL YANG DISIMPAN";
+
+
+"2XX-rr-GLC.text" = "Pilih saluran daripada ribuan sumber";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Baca berita terkini dan hal ehwal semasa dunia";
+
+
+"Set an interval in which you want to receive your news notifications." = "Tetapkan jarak masa untuk notifikasi";
+
+
+"Off" = "Padam";
+
+
+
+
+
+"Bullet 2" = "Senarai 2";
+
+
+"What's your email?" = "Apakah e-mel anda?";
+
+
+"New Password (8 Characters Min)" = "Kata laluan baharu (Sekurangnya 8 Huruf)";
+
+
+"Forgot Password?" = "Lupa Kata Laluan?";
+
+
+"Account Settings" = "Tetapan Akaun";
+
+
+"Learn how we process your data" = "Maklumat mengenai pemprosesan data anda";
+
+
+"3h" = "3 jam";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Sekat artikels dari";
+
+
+"On" = "Hidupkan";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Pusat Bantuan";
+
+
+"Search" = "Cari Saluran";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Pilih fail daripada galeri";
+
+
+
+
+"Save article" = "Simpan artikel";
+
+
+"ABOUT" = "TENTANG";
+
+
+"Dark" = "Gelap";
+
+
+"Legal" = "Penyataan";
+
+
+"Go to The Guardian" = "Pergi ke ---";
+
+
+"Send reset link" = "Hantar pautan";
+
+
+
+
+
+"My Account" = "Akaun Saya";
+
+
+"FEEDBACK" = "MAKLUM BALAS";
+
+
+"Message" = "Mesej";
+
+
+"Confirm New Password" = "Sahkan kata laluan baru";
+
+
+"for ___" = "untuk";
+
+
+"Search" = "Cari Topik";
+
+
+"LANGUAGE" = "BAHASA";
+
+
+"Light" = "Terang";
+
+
+"FOLLOW 3 TO CONTINUE" = "untuk sambung, pilih 3";
+
+
+
+
+"Off" = "Padam";
+
+
+"Language" = "Pilih";
+
+
+"LOG OUT" = "LOG KELUAR";
+
+
+"Report content" = "Laporkan kandungan";
+
+
+"What's your email?" = "Apakah e-mel anda?";
+
+
+"On" = "Hidupkan";
+
+
+"More like this" = "Lebih banyak berita seperti ini";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 jam";
+
+
+"Enter Email Address" = "Masukkan alamat e-mel";
+
+
+"News in Bullets" = "Baca lebih banyak dalam masa yang lebih sedikit.";
+
+
+"6h" = "6 Jam";
+
+
+"Choose your password" = "Pilih kata laluan";
+
+
+"Cancel" = "Batal";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Baca berita dengan pantas dengan aplikasi ini. Pilih topik dan sumber anda. Kemudian baca berita anda dengan senarai ringkas.";
+
+
+"Push Notification" = "Notifikasi";
+
+
+"12h" = "12 Jam";
+
+
+"24h" = "24 Jam";
+
+
+"E-mail" = "Emel";
+
+
+"How can we help you?" = "Boleh kami bantu?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "TUKAR KATA LALUAN";
+
+
+"Change Email" = "TUKAR ALAMAT E-MEL";
+
+
+"Medium" = "Sederhana";
+
+
+"SAVE CHANGES" = "SIMPAN PERUBAHAN";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Hubungi kami jika anda perlukan bantuan, kami sedia membantu!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "Batal";
+
+
+"Bullet 1" = "Senarai 2";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"POST ARTICLE" = "Hantar artikel";
+
+
+"CONTACT US" = "Hubung kami";
+
+
+"EDITION / REGION" = "Edisi";
+
+
+"Search" = "Cari";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Hantar maklum balas anda, kami sedia mendengar. Ada soalan atau prihatin akan undang-undang? Lungsuri halaman bantuan atau Hubungi Kami.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Hubungi kami jika anda perlukan bantuan, kami sedia membantu!";
+
+
+"30m" = "30 Minit";
+
+
+"CONTINUE" = "SAMBUNG";
+
+
+"Time To Update!" = "Kemas kini aplikasi";
+
+
+"NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"Search" = "Cari";
+
+
+"By clicking Continue, you agree with our Terms." = "Pilih Sambung untuk terima syarat-syarat.";
+
+
+"HELP / CONTACT US" = "BANTUAN / HUBUNGI";
+
+
+"Reset Password" = "Tukar Kata Laluan";
+
+
+"SEND MESSAGE" = "HANTAR MESEJ";
+
+
+"Save article" = "Simpan artikel";
+
+
+"Bullet 6 (Optional)" = "Senarai 6 (Tidak Wajib)";
+
+
+"HAPTICS" = "HAPTIK";
+
+
+"Your message has \vbeen sent." = "Mesej anda sudah dihantar.";
+
+
+"LEGAL" = "PENYATAAN";
+
+
+"Block List" = "Senarai Sekatan";
+
+
+"PERSONALIZATION" = "Pemperibadian";
+
+
+"in our Privacy Policy." = "dalam Notis Perlindungan Data Peribadi kami.";
+
+
+"CONTINUE" = "SAMBUNG";
+
+
+"Enter Name" = "Masukkan Nama";
+
+
+"What's your email?" = "Apakah e-mel anda?";
+
+
+"Hello there!" = "Hello!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"Bullet 3 (Optional)" = "Senarai 3 (Tidak Wajib)";
+
+
+"Source name" = "Namakan Sumber";
+
+
+"Current Password" = "Kata Laluan Sekarang";
+
+
+"COLOR THEME" = "Tema Warna";
+
+
+"eTp-X1-g34.text" = "Atau melalui";
+
+
+"CANCEL" = "BATAL";
+
+
+"Bullet 4 (Optional)" = "Senarai 4 (Tidak Wajib)";
+
+
+"Date published" = "Tarikh penerbitan";
+
+
+"Send Password Reset Link" = "Hantar pautan untuk tukar kata laluan";
+
+
+"CONTINUE WITH APPLE" = "Daftar melalui Apple ID";
+
+
+"Off" = "Padam";
+
+
+"BLOCK LIST" = "Senarai Sekatan";
+
+
+"HELP" = "BANTU";
+
+
+"Reference link" = "Pautan rujukan";
+
+
+"Your Password" = "Kata Laluan Anda";
+
+
+"SUBMIT" = "Hantar";
+
+
+"HELP" = "BANTU";
+
+
+"MY ACCOUNT" = "AKAUN SAYA";
+
+
+"hbD-HP-tZd.normalTitle" = "Buka sekatan";
+
+
+"OTHERS" = "Yang lain";
+
+
+"BREAKING NEWS" = "BERITA TERKINI";
+
+
+"Topics" = "Topik Tersekat";
+
+
+"Message us," = "Hubungi kami,";
+
+
+"Pick topics to start reading
+and saving articles" = "bahasa untuk aplikasi";
+
+
+"Forgot Password?" = "Lupa Kata Laluan?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ciri baru ditambah. Beberapa masalah sudah diperbaiki.";
+
+
+"Success!" = "Berjaya!!";
+
+
+"Current Password" = "Kata Laluan Sekarang";
+
+
+"CONTENT" = "KANDUNGAN";
+
+
+"Headline" = "Tajuk Utama";
+
+
+"neg-UC-UpK.text" = "Pilih topik untuk mula membaca dan menyimpan artikel";
+
+
+"CONTINUE WITH EMAIL ID" = "Teruskan Dengan ID E-mel anda";
+
+
+"SAVE CHANGES" = "SIMPAN PERUBAHAN";
+
+
+"Post an Article" = "Hantar artikel";
+
+
+"Contact Us" = "Hubungi Kami";
+
+
+"On" = "Hidupkan";
+
+
+"New Email Address" = "Alamat E-mel Baru";
+
+
+"Bullet 5 (Optional)" = "Senarai 5 (Tidak Wajib)";
+
+
+"Suggest an improvement" = "Cadangkan peningkatan";
+
+
+"Channels" = "Sumber Tersekat";
+
+
+"From:" = "Dari:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "CADANGAN PERIBADI";
+
+
+"I don't like this" = "Saya tidak suka ini";
+
+
+"CONTINUE" = "SAMBUNG";
+
+
+"Name" = "Nama";
+
+
+"Enter email" = "Masukkan E-Mel";
+
+
+"HELP" = "BANTU";
+
+
+"FOLLOW 3 TO CONTINUE" = "Ikut 3 untuk Sambung";
+
+
+"UPDATE APP" = "Kemas kini aplikasi";
+
+
+"Forgot Password?" = "Lupa Kata Laluan?";
+
+
+"Change Password" = "Tukar Kata Laluan";
+
+
+"Reset Password" = "Tukar kata laluan";
+
+
+
+
+
+
+
+
+"Report content" = "Laporkan masalah anda";
+
+
+"CHANGE EMAIL ADDRESS" = "TUKAR ALAMAT E-MEL";
+
+
+"Follow The Guardian" = "Ikut ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Kami menambah banyak ciri baru dan memperbaiki beberapa bug untuk menjadikan pengalaman anda sehalus mungkin.";
+
+
+"Edition / Region" = "Edisi / Wilayah";
+
+
+"OK" = "okey";
+
+
+"NARRATOR" = "PENULIS";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Mendapatkan maklumat terkini mengenai berita yang anda sukai tidak boleh meluangkan banyak masa anda. Berita di Bullets membaca 5 minit secara berkala dan menyingkatnya menjadi peluru yang mudah dicerna. Sekarang, anda boleh mengambil berita yang sama hanya dalam masa yang singkat - sehingga anda dapat membaca lebih banyak dalam masa yang lebih sedikit.";
+
+
+"READING SPEED" = "MEMBACA SPEED";
+
+
+
+
+
+"You haven't blocked anything yet" = "Anda belum menyekat apa-apa";
+
+
+"EDITION / REGION" = "EDISI / WILAYAH";
+
+
+
+
+
+"HEADLINES ONLY" = "KEPALA SAHAJA";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Tetapan Audio";
+
+
+"AUDIO SETTINGS" = "PENGATURAN AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES DAN BULET";
+
+
+"CONTINUE AS GUEST" = "SKIP & MASUK SEBAGAI PELANCONG";
+
+
+"Topics" = "Topik";
+
+
+"Pick topics to start reading and saving articles" = "Pilih topik untuk mula membaca dan menyimpan artikel";
+
+
+"Channels" = "Saluran";
+
+
+"Choose from hundreds \nof news publications" = "Pilih daripada beratus-ratus penerbitan berita";
+
+
+"Pick topics to start reading\nand saving articles" = "Pilih topik untuk mula membaca dan menyimpan artikel";
+
+"Pick editions to start reading\nand saving articles" = "Pilih edisi untuk mula membaca dan menyimpan artikel";
+
+"Or with" = "Atau dengan";
+
+"CONTINUE AS GUEST" = "BERSAMBUNG SEBAGAI TETAMU";
+
+"Terms of Service" = "Syarat Perkhidmatan";
+
+"Choose from hundreds \nof news publications" = "Pilih daripada beratus-ratus penerbitan berita";
+
+"Select your preferred language\nfor News in Bullets." = "Pilih bahasa pilihan anda untuk News in Bullets.";
+
+"Choose a style" = "Pilih gaya";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop atau halus. Siang atau malam. Sesuaikan antara muka anda.";
+
+"MINS AGO" = "beberapa minit yang lalu";
+
+"AN HOUR AGO" = "satu jam yang lalu";
+
+"HOURS AGO" = "beberapa jam yang lalu";
+
+"1 WEEK AGO" = "1 minggu yang lalu";
+
+"YESTERDAY" = "Semalam";
+
+"DAYS AGO" = "hari yang lalu";
+
+"Go to" = "Pergi ke";
+
+"You have reached the start." = "Anda telah mencapai permulaan";
+
+"Source unblocked successfully" = "Sumber berjaya disekat";
+
+"Invalid email format"  = "Format e-mel tidak sah";
+
+"Wrong email or password" = "E-mel atau kata laluan yang salah";
+
+

@@ -1,0 +1,1002 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bullet-lið";
+"BULLETS" = "Helstu atriði";
+"Headlines is not available." = "Fyrirsagnir eru ekki í boði.";
+"Check your internet Connection and try again." = "Athugaðu nettenginguna og reyndu aftur.";
+"Choose Image" = "Veldu mynd";
+"Headline" = "Fyrirsögn";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (Valfrjálst)";
+"Bullet 4 (Optional)" = "Bullet 4 (Valfrjálst)";
+"Bullet 5 (Optional)" = "Bullet 5 (Valfrjálst)";
+"Bullet 6 (Optional)" = "Bullet 6 (Valfrjálst)";
+"Enter Aticle Headline" = "Sláið inn fyrirsögn";
+"Enter source name" = "Sláðu inn Source";
+"Enter reference link" = "Sláðu inn Tilvísun";
+"Enter published date" = "Sláið inn birtingardagsetningin";
+"Enter Bullet 1" = "Sláðu inn fyrstu Bullet";
+"Enter Bullet 2" = "Sláðu inn næstu Bullet";
+"Post article successfully" = "Greinin er verið lagðar";
+"Follow" = "Fylgja";
+"Unfollow" = "Hætta að fylgjast með";
+"Block articles from" = "Loka á greinar frá";
+"Unblock articles from" = "OPNA greinar frá";
+"Remove article" = "Taktu grein";
+"Save article" = "Vista þessa grein";
+"Terms & Conditions" = "Skilmálar";
+"Privacy Policy" = "Friðhelgisstefna";
+"TERMS AND CONDITIONS" = "SKILMÁLAR OG SKILYRÐI";
+"PRIVACY POLICY" = "FRIÐHELGISSTEFNA";
+"Fuel your curiosity" = "Lesa meira fréttir um allan heim";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Lesa stutta og nákvæmar fréttir um áhugamál þín frá traustum aðilum um allan heim.";
+"Save time" = "Spara tíma";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Lesa fréttir í bullet-stig";
+"Hands-free reading" = "Handfrjáls lestur";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Enginn tími til að lesa? Notaðu tals.";
+"Write your message..." = "Skrifaðu skilaboðin ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "sendu okkur skilaboð ef þú þarft hjálp við eitthvað, væri gaman að heyra frá þér!";
+"Drop us a message" = "sendu okkur skilaboð";
+"Enter Name." = "Sláðu inn nafn.";
+"Enter Email." = "Sláðu inn netfangið.";
+"Write your message." = "Skrifaðu skilaboðin.";
+"Topic unblock successfully" = "Þú Opnað þetta efni";
+"Source unblock successfully" = "Þú Opnað þetta uppspretta";
+"Unblock Source" = "Opna Source";
+"Cancel" = "Hætta við";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Sendu okkur endurgjöf, væri gaman að heyra frá þér! Ert þú hefur einhverjar spurningar eða lagaleg áhyggjur? Prófaðu hjálparsíðu okkar eða hafðu samband.";
+"Enter your suggestion." = "Sláið inn tillögu þína.";
+"feedback sent." = "endurgjöf er send";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6H";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Tungumálið er uppfært.";
+"CONTINUE" = "ÁFRAM";
+"FOLLOW 3 TO CONTINUE" = "Fylgja 3 TIL AÐ HALDA ÁFRAM";
+"Unfollow Location" = "Hætta að fylgjast með Location";
+"Saved Articles" = "vistuð Greinar";
+"Block" = "BLOCK";
+"Are you sure you want block" = "Ertu viss um að þú viljir loka þessum";
+"Once blocked, you wont be able to see any Articles related to this" = "Þú munt ekki sjá greinar úr þessari rás, ef þú blokkar það.";
+"Block Topic" = "Útiloka this Topic";
+"Suggested" = "leiðbeinandi";
+"Related Sources not available" = "Tengdrar Heimildir eru ekki í boði";
+"Block Source" = "Loka á þennan Source";
+"News in Bullets App version" = "Fréttir í Bullets App útgáfa";
+"Next" = "næsta";
+"Login" = "Skrá inn";
+"Terms" = "Skilmálar";
+"By clicking Continue, you agree with our Terms." = "Veldu Halda áfram til að samþykkja skilmálana.";
+"in our Privacy Policy." = "í persónuverndarstefnu okkar.";
+"Access token missing." = "Aðgangsauðkenni vantar.";
+"NEXT" = "NEXT";
+"By checking this box, you agree to our " = "Smelltu á reitinn til að samþykkja skilmálana. Gögnin þín eru unnin í samræmi við persónuverndarstefnu okkar.";
+"Terms of Service" = "Skilmálar þjónustu";
+". We’ll handle your data according to our " = ". Við munum annast gögn samkvæmt okkar";
+"Password must be at least 8 characters." = "Lykilorð verður að vera minnst 8 stafir.";
+"Strong" = "Strong";
+"Medium" = "Medium";
+"Weak" = "Veik";
+"CREATE A NEW ACCOUNT" = "Búa til nýjan reikning";
+"SIGN IN WITH EXISTING ACCOUNT" = "Skráðu þig inn með núverandi reikning";
+"You must agree to the Terms of Services to continue" = "Þú verður að samþykkja skilmálana Services til að halda áfram";
+"SIGN IN" = "Skráðu þig inn";
+"What's your password?" = "Hvað er lykilorðið þitt?";
+"SIGN UP" = "Skráðu þig";
+"Choose your password?" = "Veldu lykilorð";
+"Something went wrong" = "Eitthvað fór úrskeiðis";
+"we will send email to" = "Við munum senda tölvupóst til";
+"with a link to reset your password." = "með tengil til að endurstilla lykilorðið þitt.";
+"A reset password link has been sent to" = "Tengill til að endurstilla lykilorðið hefur verið sendur til";
+"Enter new email." = "Sláið inn nýjan tölvupóst.";
+"Enter password." = "Sláðu inn lykilorð.";
+"New Password " = "nýtt lykilorð";
+" (8 characters min)" = "(8 stafir mín)";
+"Enter current password." = "Sláðu inn núverandi lykilorð.";
+"Enter new password." = "Sláðu inn nýtt lykilorð.";
+"Enter confirm password." = "Staðfesta lykilorð.";
+"password do not matched!" = "Lykilorðin stemma ekki!";
+"GET STARTED" = "BYRJA";
+"SKIP" = "SKIP";
+"From where you would like to pick photo?" = "Þar sem þú vildi eins og til að taka mynd?";
+"Camera" = "myndavél";
+"Photo Library" = "Photo Library";
+"Kindly open settings and enable access" = "Vinsamlegast opna stillingar og virkja aðgang";
+"Open Settings" = "Opna stillingar";
+"Access needed for your camera" = "Aðgangur þörf fyrir myndavélina þína";
+"Access needed for your photo library" = "Aðgangur þörf fyrir myndasafninu þínuy";
+"Done" = "lokið";
+"Pull to refresh" = "Dragðu til að endurnýja";
+"Loading" = "hleðsla";
+"OK" = "Allt í lagi";
+"Choose your News in Bullets Edition based on locale" = "Veldu fréttir þínar í byssukúlum út frá svæðinu";
+"Edition" = "Útgáfa";
+"EDITION / REGION" = "Útgáfa / SVÆÐI";
+"Your Topics" = "Málefni þín";
+"Your Channels" = "Rásir þínar";
+"Your Places" = "Staðir þínir";
+"Enter email." = "Sláðu inn netfang.";
+"Please enter a password." = "Vinsamlegast sláðu inn lykilorð.";
+"Search articles" = "Leitaðu að greinum";
+"No results" = "Engar niðurstöður";
+"Edition / Region" = "Útgáfa / Svæði";
+
+
+
+
+"0JC-Sb-Ouu.text" = "Display Mode";
+
+
+"Select" = "Veldu (";
+
+
+"6H8-dI-k9P.text" = "Stjórnaðu staðsetningar";
+
+
+"6KH-YP-5Lt.text" = "SÖGUMAÐUR";
+
+
+" ) icon on the article" = ") Táknið á grein";
+
+
+"BLOCK" = "BLOCK";
+
+
+"you want to read later then" = "þú vilt lesa seinna þá";
+
+
+"7oo-cf-l7Y.text" = "Hraða lestur";
+
+
+"88L-ip-pZw.text" = "Hraða lestur";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Það er ekkert hér\nViltu fara aftur til heimasíðu?";
+
+
+"BpH-F1-i0z.normalTitle" = "Local";
+
+
+" ) to save article." = ") Til að vista greinina.";
+
+
+"FB0-YN-HZg.text" = "til að halda áfram, velja 3";
+
+
+"H5Z-xJ-dWD.text" = "fyrirsagnir og\nbullet punkta";
+
+
+"Search" = "leita";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "EXTENDED VIEW";
+
+
+"Jpx-nY-Is1.normalTitle" = "rásir";
+
+
+"JqN-io-P1u.normalTitle" = "+ Bæta í Staðsetningar";
+
+
+"What's your email?" = "Hvað er netfangið þitt?";
+
+
+"Lw1-Md-nse.text" = "Listayfirlit";
+
+
+"Nru-uU-CsC.text" = "tillögur";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "efni";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Aðlaga";
+
+
+"Topics" = "efni";
+
+
+"WXY-po-W1B.text" = "fyrirsagnir ogD\nHelstu atriði";
+
+
+"ans-Zy-T2Y.placeholder" = "Leita að stöðum";
+
+
+"bgE-Jc-u8H.text" = "Aðlaga";
+
+
+
+
+
+"Tap the ( " = "Tap er (";
+
+
+"Places" = "Staðsetning";
+
+
+"d1l-HK-OrG.text" = "sýna stillingu";
+
+
+"Language" = "Tungumál";
+
+
+"e9g-Wr-suO.text" = "fyrirsagnir Aðeins";
+
+
+"GO HOME" = "fara aftur á aðalsíðu";
+
+
+"eh1-Oo-lEn.text" = "EXTENDED VIEW";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "Listayfirlit";
+
+
+"j2i-MT-VkA.text" = "Prófaðu mismunandi leitarorð";
+
+
+"Top News" = "Top News";
+
+
+"jmO-aF-nJ9.text" = "fyrirsagnir Aðeins";
+
+
+"There is nothing in here" = "Það er ekkert hér";
+
+
+"ma1-9p-bSa.text" = "Engar niðurstöður fundust";
+
+
+"mce-jc-cKH.text" = "SÖGUMAÐUR";
+
+
+"Channels" = "rásir";
+
+
+"Discover" = "Discover";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "HÆTTA";
+
+
+"Discover" = "Discover";
+
+
+"No saved stories yet" = "Það er ekkert hér";
+
+
+"wDG-kF-Hl8.text" = "Lestu fréttirnar miðað stað";
+
+
+"Search" = "leita";
+
+
+"LyT-pT-g53.text" = "INTERNATIONAL";
+
+
+"N6C-6i-Z2s.text" = "INTERNATIONAL";
+
+
+
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOCALIZATION";
+
+
+"xfF-RB-mWL.text" = "LOCALIZATION";
+
+
+"Search" = "Leitaðu";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Fáðu fréttirnar sem mestu máli skipta fyrir svæðið sem þú velur. Lestu fréttir sem eru sýndar til að halda þér uppfærðar á nýjustu fréttum hvar sem er í heiminum.";
+
+
+"Search articles" = "Leitaðu að greinum";
+
+
+"6H8-dI-k9P.text" = "Stjórna stöðum";
+
+
+
+
+
+"Profile" = "Prófíll";
+
+
+"Editions" = "Útgáfur";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Staðir";
+
+
+
+
+
+"Search" = "Leitaðu";
+
+
+
+
+
+
+
+
+"Search" = "Leitaðu";
+
+
+"LANGUAGE" = "TUNGUMÁL";
+
+
+"Search" = "Leitaðu";
+
+
+"No results" = "Engar niðurstöður fundust";
+
+
+"Channels" = "Rásir";
+
+
+"Places" = "Staðir";
+
+
+"Places" = "Staðir";
+
+
+"e9F-hd-Ifm.text" = "Útgáfa / SVÆÐI";
+
+
+
+
+
+
+
+
+"PLACES" = "STAÐIR";
+
+
+"SAVED ARTICLES" = "VISTAR GREINAR";
+
+
+"Articles" = "Greinar";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ÁFRAM";
+
+
+
+
+
+"w8f-2R-NgT.text" = "Útgáfa / SVÆÐI";
+
+
+"Try a different keyword" = "Prófaðu annað leitarorð";
+
+
+"For You" = "Fyrir þig";
+
+
+"Results" = "Úrslit";
+
+
+
+"About" = "Um okkur";
+
+
+"Share" = "Share";
+
+
+"ACCOUNT" = "REIKNINGUR";
+
+
+"Your Email" = "Netfangið þitt";
+
+
+"1sT-J6-qI0.text" = "vistuð GREINAR";
+
+
+"2XX-rr-GLC.text" = "Velja mismunandi rásir úr hundruðum heimildum";
+
+
+"Set an interval in which you want to receive your news notifications." = "Setja tíma bilið að fá tilkynningar.";
+
+
+"Off" = "Af";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "hvað er netfangið þitt?";
+
+
+"New Password (8 Characters Min)" = "Nýtt lykilorð (8 stafir að lágmarki)";
+
+
+"Forgot Password?" = "Gleymt lykilorð?";
+
+
+"Account Settings" = "Póststillingar";
+
+
+"Learn how we process your data" = "Upplýsingar um vinnslu á gögnunum";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "Kveikja á";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Hjálparmiðstöð";
+
+
+"Search" = "leit Rásir";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Veldu skrá úr myndasafni";
+
+
+"Save article" = "Vista grein";
+
+
+"ABOUT" = "UM";
+
+
+"Dark" = "Myrkur";
+
+
+"Legal" = "Legal";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "Senda tengil til að endurstilla";
+
+
+
+
+
+"My Account" = "Minn reikningur";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Message";
+
+
+"Confirm New Password" = "Staðfestu nýtt lykilorð";
+
+
+"for ___" = "fyrir ___";
+
+
+"Search" = "Leita að umfjöllunarefni";
+
+
+"LANGUAGE" = "LANGUAGE";
+
+
+"Light" = "ljós";
+
+
+"FOLLOW 3 TO CONTINUE" = "til að halda áfram, velja 3";
+
+
+
+
+"Off" = "Slökkva á";
+
+
+"LOG OUT" = "AÐ SKRÁ ÞIG ÚT";
+
+
+"Report content" = "Skýrslan efni";
+
+
+"What's your email?" = "hvað er netfangið þitt?";
+
+
+"On" = "OKveikja á";
+
+
+"More like this" = "Fleiri fréttir svona";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Sláðu inn netfangið";
+
+
+"News in Bullets" = "Lesa meira í minni tíma.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Veldu lykilorð";
+
+
+"Cancel" = "Hætta við";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Lesa fréttir fljótt með þessu forriti. Velja efni þitt og heimildir. Þá lesa fréttir með stuttum stig bullet.";
+
+
+"Push Notification" = "Push tilkynning";
+
+
+"12h" = "12h";
+
+
+"24h" = "24 klst";
+
+
+"E-mail" = "Tölvupóstur";
+
+
+"How can we help you?" = "Hvernig getum við aðstoðað?";
+
+
+"CHANGE PASSWORD" = "BREYTA LYKILORÐI";
+
+
+"Change Email" = "Breyttu tölvupósti";
+
+
+"Medium" = "Miðlungs";
+
+
+"SAVE CHANGES" = "VISTA BREYTINGAR";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Það lítur út fyrir að þú sért í vandræðum með forritið okkar. Við erum hér til að hjálpa svo vinsamlegast hafðu samband við okkur";
+
+
+"Cancel" = "Hætta við";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "Tímasettar tilkynningar";
+
+
+"POST ARTICLE" = "Póstgrein";
+
+
+"CONTACT US" = "HAFÐU SAMBAND VIÐ OKKUR";
+
+
+"EDITION / REGION" = "Útgáfa";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Hafa viðbrögð? Við viljum gjarnan heyra það en vinsamlegast ekki deila viðkvæmum upplýsingum. Ertu með spurningar eða lagalegar áhyggjur? Prófaðu hjálp eða stuðning.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Sendu okkur skilaboð ef þú þarft hjálp við eitthvað, væri gaman að heyra frá þér!";
+
+
+"30m" = "30m";
+
+
+"Time To Update!" = "Uppfærðu forritið!";
+
+
+"NOTIFICATIONS" = "TILKYNNINGAR";
+
+
+"By clicking Continue, you agree with our Terms." = "Veldu Halda áfram til að samþykkja skilmálana.";
+
+
+"HELP / CONTACT US" = "HJÁLP / CONTACT";
+
+
+"Reset Password" = "Endur stilla lykilorð";
+
+
+"SEND MESSAGE" = "SENDA SKILABOÐ";
+
+
+"Save article" = "Vista grein";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (Optional)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Skilaboðin þín hafa verið send.";
+
+
+"LEGAL" = "LÖG";
+
+
+"Block List" = "Block List";
+
+
+"PERSONALIZATION" = "Sérsnið";
+
+
+"in our Privacy Policy." = "í persónuverndarstefnu okkar.";
+
+
+"CONTINUE" = "Halda áfram";
+
+
+"Enter Name" = "sláðu inn nafn";
+
+
+"What's your email?" = "hvað er netfangið þitt?";
+
+
+"Hello there!" = "Halló!";
+
+
+"PUSH NOTIFICATIONS" = "TILKYNNINGAR";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (Optional)";
+
+
+"Source name" = "Heiti Source";
+
+
+"Current Password" = "Núverandi lykilorð";
+
+
+"COLOR THEME" = "Color Þema";
+
+
+"eTp-X1-g34.text" = "eða í gegnum";
+
+
+"CANCEL" = "HÆTTA";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (Optional)";
+
+
+"Date published" = "Dagsetning birt";
+
+
+"Send Password Reset Link" = "Senda tengil til að endurstilla lykilorðið";
+
+
+"CONTINUE WITH APPLE" = "Skráðu þig í gegnum Apple ID";
+
+
+"Off" = "Af";
+
+
+"BLOCK LIST" = "BLOCK LIST";
+
+
+"HELP" = "HJÁLP";
+
+
+"Reference link" = "Tilvísun tengilinn";
+
+
+"Your Password" = "Lykilorð þitt";
+
+
+"SUBMIT" = "SUBMIT";
+
+
+"HELP" = "HJÁLP";
+
+
+"MY ACCOUNT" = "MINN REIKNINGUR";
+
+
+"hbD-HP-tZd.normalTitle" = "Opna";
+
+
+"OTHERS" = "aðrir";
+
+
+"BREAKING NEWS" = "STÓRFRÉTTIR";
+
+
+"Topics" = "Lokaður umræðuefni";
+
+
+"Message us," = "Message okkur,";
+
+
+"Forgot Password?" = "Gleymt lykilorð?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nýir eiginleikar eru bætt. Sum atriði eru fastir.";
+
+
+"Success!" = "Árangur!";
+
+
+"Current Password" = "Núverandi lykilorð";
+
+
+"CONTENT" = "EFNI";
+
+
+"Headline" = "Fyrirsögn";
+
+
+"neg-UC-UpK.text" = "Pick efni til að byrja að lesa og vista greinar";
+
+
+"CONTINUE WITH EMAIL ID" = "Halda áfram með Email kenni";
+
+
+"SAVE CHANGES" = "VISTA BREYTINGAR";
+
+
+"Post an Article" = "Post grein";
+
+
+"Contact Us" = "Hafðu samband við okkur";
+
+
+"On" = "Kveikja á";
+
+
+"New Email Address" = "Nýtt Email Address";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Optional)";
+
+
+"Suggest an improvement" = "Benda til bata";
+
+
+"Channels" = "Lokaður Heimildir";
+
+
+"From:" = "frá:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "persónulegar ráðleggingar";
+
+
+"I don't like this" = "Mér líkar ekki þetta";
+
+
+"Name" = "heiti";
+
+
+"Enter email" = "Skráðu netfangið";
+
+
+"HELP" = "HJÁLP";
+
+
+"FOLLOW 3 TO CONTINUE" = "Fylgdu 3 til að halda áfram";
+
+
+"UPDATE APP" = "Uppfæra App";
+
+
+"Forgot Password?" = "Gleymt lykilorð?";
+
+
+"Change Password" = "Breyta lykilorði";
+
+
+"Reset Password" = "Endur stilla lykilorð";
+
+
+
+
+
+"Report content" = "Tilkynna áhyggjum þínum";
+
+
+"CHANGE EMAIL ADDRESS" = "Að breyta netfanginu";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Lestu nýjustu fréttir atburði og aðgerðir alls staðar að úr heiminum.";
+
+
+
+
+"Language" = "Veldu";
+
+
+"Pakistan" = "Pakistan";
+
+
+"Label" = "Label";
+
+
+"Search" = "leita";
+
+
+"CONTINUE" = "Halda áfram";
+
+
+"Search" = "leita";
+
+
+"Pick topics to start reading
+and saving articles" = "app tungumál";
+
+
+"CONTINUE" = "Halda áfram";
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Við bættum við fullt af nýjum eiginleikum og lagfærum nokkrar villur til að gera upplifun þína eins slétta og mögulegt er.";
+
+
+"Edition / Region" = "Útgáfa / Svæði";
+
+
+"OK" = "Allt í lagi";
+
+
+"NARRATOR" = "SÖGUMAÐUR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Að fylgjast með fréttum sem þú elskar ætti ekki að taka of mikinn tíma. Fréttir í byssukúlum taka reglulega 5 mínútna lestur og þétta þær í auðmeltanlegar byssukúlur. Nú geturðu tekið inn sömu fréttir á aðeins broti af tímanum - svo þú getir lesið meira á skemmri tíma.";
+
+
+"READING SPEED" = "LESHRAÐUR";
+
+
+
+
+
+"You haven't blocked anything yet" = "Þú hefur ekki lokað á neitt ennþá";
+
+
+"EDITION / REGION" = "Útgáfa / SVÆÐI";
+
+
+
+
+
+"HEADLINES ONLY" = "AÐEINS fyrirsagnir";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Hljóðstillingar";
+
+
+"AUDIO SETTINGS" = "HLJÓÐSTILLINGAR";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "FORSKRIFTIR OG BULLETTIR";
+
+
+"CONTINUE AS GUEST" = "SLEGJA & SKRÁÐ Í GEST";
+
+
+"Topics" = "Umræðuefni";
+
+
+"Pick topics to start reading and saving articles" = "Veldu efni til að byrja að lesa og vista greinar";
+
+
+"Channels" = "Rásir";
+
+
+"Choose from hundreds \nof news publications" = "Veldu úr hundruðum fréttaútgáfa";
+
+
+"Pick topics to start reading\nand saving articles" = "Veldu efni til að byrja að lesa og vista greinar";
+
+"Pick editions to start reading\nand saving articles" = "Veldu útgáfur til að byrja að lesa og vista greinar";
+
+"Or with" = "Eða með";
+
+"CONTINUE AS GUEST" = "ÁFRAM SEM GESTUR";
+
+"Terms of Service" = "Skilmálar þjónustu";
+
+"Choose from hundreds \nof news publications" = "Veldu úr hundruðum fréttaútgáfa";
+
+"Select your preferred language\nfor News in Bullets." = "Veldu valið tungumál fyrir fréttir í byssukúlum.";
+
+"Choose a style" = "Veldu stíl";
+
+"Pop or subtle. Day or night. Customize your interface." = "Popp eða lúmskt. Dagur eða nótt. Sérsniðið viðmótið þitt.";
+
+"MINS AGO" = "mínútum síðan";
+
+"AN HOUR AGO" = "Fyrir klukkutíma síðan";
+
+"HOURS AGO" = "klukkustundum síðan";
+
+"1 WEEK AGO" = "Fyrir 1 viku";
+
+"YESTERDAY" = "Í gær";
+
+"DAYS AGO" = "fyrir dögum";
+
+"Go to" = "Fara til";
+
+"You have reached the start." = "Þú ert kominn í byrjun";
+
+"Source unblocked successfully" = "Heimildirnar voru opnaðar með góðum árangri";
+
+"Invalid email format"  = "Ógilt snið tölvupósts";
+
+"Wrong email or password" = "Rangt netfang eða lykilorð";
+
+

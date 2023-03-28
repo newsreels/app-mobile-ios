@@ -1,0 +1,770 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Odrážka";
+"BULLETS" = "ODRÁŽKY";
+"Headlines is not available." = "Nadpisy nejsou k dispozici.";
+"Check your internet Connection and try again." = "Zkontrolujte připojení k internetu a zkuste to znovu.";
+"Choose Image" = "Vyberte obrázek";
+"Headline" = "Nadpis";
+"Bullet 1" = "Odrážka 1";
+"Bullet 2" = "Odrážka 2";
+"Bullet 3 (Optional)" = "Odrážka 3 (volitelné)";
+"Bullet 4 (Optional)" = "Odrážka 4 (volitelné)";
+"Bullet 5 (Optional)" = "Odrážka 5 (volitelné)";
+"Bullet 6 (Optional)" = "Odrážka 6 (volitelné)";
+"Enter Aticle Headline" = "Zadejte nadpis";
+"Enter source name" = "Zadejte zdroj";
+"Enter reference link" = "Zadejte referenci";
+"Enter published date" = "Zadejte datum publikování";
+"Enter Bullet 1" = "Zadejte první odrážku";
+"Enter Bullet 2" = "Zadejte druhou odrážku";
+"Post article successfully" = "Článek byl úspěšně odeslán";
+"Follow" = "Sledovat";
+"Unfollow" = "Zrušit sledování";
+"Block articles from" = "BLOKOVAT články z";
+"Unblock articles from" = "ODBLOKOVAT články z";
+"Remove article" = "Odstranit článek";
+"Save article" = "Uložit tento článek";
+"Terms & Conditions" = "Všeobecné obchodní podmínky";
+"Privacy Policy" = "Zásady ochrany osobních údajů";
+"TERMS AND CONDITIONS" = "VŠEOBECNÉ OBCHODNÍ PODMÍNKY";
+"PRIVACY POLICY" = "ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ";
+"Fuel your curiosity" = "Přečtěte si více zpráv o světě";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Přečtěte si krátké a přesné zprávy o svých oblíbených tématech z důvěryhodných zdrojů z celého světa.";
+"Save time" = "Ušetřete čas";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Přečtěte si zprávy v odrážkách";
+"Hands-free reading" = "Hands-free čtení";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nemáte čas na čtení? Použijte funkci řeči.";
+"Write your message..." = "Napište zprávu...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "pošlete nám zprávu, pokud potřebujete s něčím pomoci. Uvítáme všechny dotazy!";
+"Drop us a message" = "pošlete nám zprávu";
+"Enter Name." = "Zadejte jméno.";
+"Enter Email." = "Zadejte e-mail.";
+"Write your message." = "Napište svoji zprávu.";
+"Topic unblock successfully" = "Odblokovali jste toto téma";
+"Source unblock successfully" = "Odblokovali jste tento zdroj";
+"Unblock Source" = "Odblokovat zdroj";
+"Cancel" = "Zrušit";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Zašlete nám zpětnou vazbu, rádi uslyšíme váš názor! Máte dotazy nebo právní obavy? Zkuste naši stránku nápovědy nebo nás kontaktujte.";
+"Enter your suggestion." = "Zadejte svůj návrh.";
+"feedback sent." = "zpětná vazba byla úspěšně odeslána";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "jazyk byl úspěšně aktualizován.";
+"CONTINUE" = "POKRAČOVAT";
+"FOLLOW 3 TO CONTINUE" = "POSTUPUJTE PODLE 3 A POKRAČUJTE";
+"Unfollow Location" = "Zrušit sledování lokace";
+"Saved Articles" = "Uložené články";
+"Block" = "BLOKOVAT";
+"Are you sure you want block" = "Opravdu to chcete zablokovat";
+"Once blocked, you wont be able to see any Articles related to this" = "Pokud tento kanál zablokujete, neuvidíte jej.";
+"Block Topic" = "Blokovat toto téma";
+"Suggested" = "Doporučeno";
+"Related Sources not available" = "Související zdroje nejsou k dispozici";
+"Block Source" = "Blokovat tento zdroj";
+"News in Bullets App version" = "Zprávy ve verzi aplikace Bleskové zprávy";
+"Next" = "Další";
+"Login" = "Přihlásit se";
+"Terms" = "Podmínky";
+"By clicking Continue, you agree with our Terms." = "Vyberte Pokračovat a přijměte Podmínky.";
+"in our Privacy Policy." = "v našich Zásadách ochrany osobních údajů.";
+"Access token missing." = "Chybí přístupový token.";
+"NEXT" = "DALŠÍ";
+"By checking this box, you agree to our " = "Kliknutím na políčko přijmete Podmínky. Vaše údaje jsou zpracovávány v souladu s našimi Zásadami ochrany osobních údajů.";
+"Terms of Service" = "Podmínky služby";
+". We’ll handle your data according to our " = ". S vašimi údaji budeme nakládat podle našich";
+"Password must be at least 8 characters." = "Heslo musí mít nejméně 8 znaků.";
+"Strong" = "Silné";
+"Medium" = "Střední";
+"Weak" = "Slabé";
+"CREATE A NEW ACCOUNT" = "VYTVOŘIT NOVÝ ÚČET";
+"SIGN IN WITH EXISTING ACCOUNT" = "PŘIHLÁSIT SE S EXISTUJÍCÍM ÚČETEM";
+"You must agree to the Terms of Services to continue" = "Chcete-li pokračovat, musíte souhlasit s Podmínkami Služeb";
+"SIGN IN" = "Přihlásit se";
+"What's your password?" = "Jaké je vaše heslo?";
+"SIGN UP" = "Přihlásit se";
+"Choose your password?" = "Zvolte si své heslo";
+"Something went wrong" = "Něco se pokazilo";
+"we will send email to" = "pošleme e-mail na";
+"with a link to reset your password." = "s odkazem na resetování hesla.";
+"A reset password link has been sent to" = "Byl odeslán odkaz na resetování hesla";
+"Enter new email." = "Zadejte nový e-mail.";
+"Enter password." = "Zadejte heslo.";
+"New Password " = "Nové heslo";
+" (8 characters min)" = "(min. 8 znaků)";
+"Enter current password." = "Zadejte aktuální heslo.";
+"Enter new password." = "Zadejte nové heslo.";
+"Enter confirm password." = "Potvrďte heslo.";
+"password do not matched!" = "hesla se neshodují!";
+"GET STARTED" = "ZAČÍT";
+"SKIP" = "PŘESKOČIT";
+"From where you would like to pick photo?" = "Odkud chcete vybrat fotografii?";
+"Camera" = "Fotoaparát";
+"Photo Library" = "Knihovna fotografií";
+"Kindly open settings and enable access" = "Prosím otevřete nastavení a povolte přístup";
+"Open Settings" = "Otevřete Nastavení";
+"Access needed for your camera" = "Je nutný přístup k vašemu fotoaparátu";
+"Access needed for your photo library" = "Je nutný přístup k vaší knihovně fotografií";
+"Done" = "Hotovo";
+"Pull to refresh" = "Potažením obnovíte";
+"Loading" = "Načítání";
+"Speech not available for this article" = "Pro tento článek není řeč k dispozici";
+"MANAGE LOCATION" = "SPRAVOVAT LOKALITU";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Vyberte si své novinky v edici Bullets podle národního prostředí";
+"Edition" = "Edice";
+"EDITION / REGION" = "EDICE / REGION";
+"Your Topics" = "Vaše témata";
+"Your Channels" = "Vaše kanály";
+"Your Places" = "Vaše místa";
+"Enter email." = "Zadejte email.";
+"Please enter a password." = "Prosím, vložte heslo.";
+"Search articles" = "Hledat články";
+"No results" = "Žádné výsledky";
+"Edition / Region" = "Vydání / oblast";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOKOVAT";
+"CANCEL" = "ZRUŠIT";
+"PLACES" = "MÍSTA";
+"LANGUAGE" = "JAZYK";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "ULOŽENÉ VÝROBKY";
+"Topics" = "Témata";
+"Channels" = "Kanály";
+"Editions" = "Edice";
+"No saved stories yet" = "Tady nic není";
+"Tap the" = "Klepněte na";
+"icon on the article" = "ikonu na článku";
+"you want to read later then" = "který si chcete přečíst později";
+"Select" = "Vyberte";
+"to save article." = "pro uložení článku..";
+"There is nothing in here" = "Tady nic není";
+"Looks like there is nothing here but a cat." = "Vypadá to, že tu není nic jiného než kočka.";
+"Would you like to go back to home?" = "Chcete se vrátit na hlavní stránku?";
+"GO HOME" = "JDI DOMŮ";
+"Search" = "Vyhledávání";
+"Discover" = "Objevit";
+"Articles" = "Články";
+"Try a different keyword" = "Zkuste jiné klíčové slovo";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Získejte nejrelevantnější zprávy pro region, který si vyberete. Přečtěte si novinové články sestavené tak, abyste byli informováni o nejnovějších zprávách z celého světa.";
+"Language" = "Jazyk";
+"Results" = "Výsledek";
+"For You" = "Pro tebe";
+"Top News" = "Horní Zprávy";
+"Choose a style" = "Vyberte si styl";
+"Pop or subtle. Day or night. Customize your interface." = "Pop nebo subtilní. Den nebo noc. Přizpůsobte si rozhraní.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "O nás";
+
+
+"Share" = "Sdílet";
+
+
+"ACCOUNT" = "ÚČET";
+
+
+"Your Email" = "Váš e-mail";
+
+
+"1sT-J6-qI0.text" = "ULOŽENÉ ČLÁNKY ";
+
+
+"2XX-rr-GLC.text" = "Vyberte si různé kanály ze stovek zdrojů ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Přečtěte si nejnovější zprávy o událostech z celého světa. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Nastavte časový odstup pro příjem oznámení. ";
+
+
+"Off" = "Vypnuto";
+
+
+
+
+
+"Bullet 2" = " Odrážka 2";
+
+
+"What's your email?" = "Jaký je váš e-mail? ";
+
+
+"New Password (8 Characters Min)" = "Nové heslo (minimálně 8 znaků) ";
+
+
+"Forgot Password?" = "Zapomenuté heslo? ";
+
+
+"Account Settings" = "Nastavení účtu ";
+
+
+"Learn how we process your data" = "Informace o zpracování vašich údajů ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blokovat články z ---";
+
+
+"On" = "Zapnout";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Centrum nápovědy ";
+
+
+"Search" = "Hledat kanály ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Vyberte soubor z galerie ";
+
+
+
+
+"Save article" = "Uložit článek ";
+
+
+"ABOUT" = "O";
+
+
+"Dark" = "Temný";
+
+
+"Legal" = "Právní";
+
+
+"Go to The Guardian" = "Jít na --- ";
+
+
+"Send reset link" = "Odeslat resetovací odkaz ";
+
+
+
+
+
+"My Account" = "Můj účet ";
+
+
+"FEEDBACK" = "ZPĚTNÁ VAZBA";
+
+
+"Message" = "Zpráva";
+
+
+"Confirm New Password" = "Potvrďte nové heslo";
+
+
+"for ___" = "pro";
+
+
+"Search" = "Hledat témata";
+
+
+"LANGUAGE" = "JAZYK";
+
+
+"Light" = "Světlý";
+
+
+"FOLLOW 3 TO CONTINUE" = "pro pokračování zvolte 3";
+
+
+
+
+"Off" = "Vypnout";
+
+
+"Language" = "Vybrat";
+
+
+"LOG OUT" = "ODHLÁSIT SE";
+
+
+"Report content" = "Nahlásit obsah";
+
+
+"What's your email?" = "Jaký je váš e-mail?";
+
+
+"On" = "Zapnout";
+
+
+"More like this" = "Další zprávy, jako je tato";
+
+
+"Bullet App v1.1.0" = "Bleskové zprávy v1.1.0 (přeskočit)";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Zadejte e-mailovou adresu";
+
+
+"News in Bullets" = "Přečtěte si více za kratší dobu.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Zvolte si své heslo";
+
+
+"Cancel" = "Zrušit";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Přečtěte si zprávy rychle s touto aplikací. Vyberte si témata a zdroje. Pak si přečtěte zprávy v krátkých odrážkách.";
+
+
+"Push Notification" = "Oznámení";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Jak vám můžeme pomoci?";
+
+
+"OJP-Wd-0d3.text" = "Pákistán";
+
+
+"CHANGE PASSWORD" = "ZMĚNIT HESLO";
+
+
+"Change Email" = "ZMĚNIT E-MAILOVOU ADRESU";
+
+
+"Medium" = "Střední";
+
+
+"SAVE CHANGES" = "ULOŽIT ZMĚNY";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Pošlete nám zprávu, pokud potřebujete s něčím pomoci. Uvítáme všechny dotazy!";
+
+
+"P5u-N3-Tw4.text" = "Označení";
+
+
+"Cancel" = "Zrušit";
+
+
+"Bullet 1" = "Odrážka 1";
+
+
+"TIMED NOTIFICATIONS" = "OZNÁMENÍ";
+
+
+"POST ARTICLE" = "ZVEŘEJNIT ČLÁNEK";
+
+
+"CONTACT US" = "Kontaktujte nás";
+
+
+"EDITION / REGION" = "Edice";
+
+
+"Search" = "Vyhledávání";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Zašlete nám zpětnou vazbu, rádi uslyšíme váš názor! Máte dotazy nebo právní obavy? Zkuste naši stránku nápovědy nebo nás kontaktujte.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Pošlete nám zprávu, pokud potřebujete s něčím pomoci. Uvítáme všechny dotazy!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "POKRAČOVAT";
+
+
+"Time To Update!" = "Aktualizujte aplikaci!";
+
+
+"NOTIFICATIONS" = "OZNÁMENÍ";
+
+
+"Search" = "Vyhledávání";
+
+
+"By clicking Continue, you agree with our Terms." = "Vyberte Pokračovat a přijměte Podmínky.";
+
+
+"HELP / CONTACT US" = "POMOC / KONTAKT";
+
+
+"Reset Password" = "Obnovit heslo";
+
+
+"SEND MESSAGE" = "POSLAT ZPRÁVU";
+
+
+"Save article" = "Uložit článek";
+
+
+"Bullet 6 (Optional)" = "Odrážka 6 (volitelné)";
+
+
+"HAPTICS" = "HAPTIKA";
+
+
+"Your message has \vbeen sent." = "Vaše zpráva byla odeslána.";
+
+
+"LEGAL" = "PRÁVNÍ";
+
+
+"Block List" = "Seznam blokovaných";
+
+
+"PERSONALIZATION" = "PERSONALIZACE";
+
+
+"in our Privacy Policy." = "v našich Zásadách ochrany osobních údajů.";
+
+
+"CONTINUE" = "POKRAČOVAT";
+
+
+"Enter Name" = "Zadejte jméno";
+
+
+"What's your email?" = "Jaký je váš e-mail?";
+
+
+"Hello there!" = "Dobrý den!";
+
+
+"PUSH NOTIFICATIONS" = "OZNÁMENÍ";
+
+
+"Bullet 3 (Optional)" = "Odrážka 3 (volitelné)";
+
+
+"Source name" = "Název zdroje";
+
+
+"Current Password" = "Aktuální heslo";
+
+
+"COLOR THEME" = "Barevné téma";
+
+
+"eTp-X1-g34.text" = "Nebo skrz";
+
+
+"CANCEL" = "ZRUŠIT";
+
+
+"Bullet 4 (Optional)" = "Odrážka 4 (volitelné)";
+
+
+"Date published" = "Datum zveřejnění";
+
+
+"Send Password Reset Link" = "Odeslat odkaz na resetování hesla";
+
+
+"CONTINUE WITH APPLE" = "Zaregistrujte se přes Apple ID";
+
+
+"Off" = "Vypnout";
+
+
+"BLOCK LIST" = "SEZNAM BLOKOVANÝCH";
+
+
+"HELP" = "POMOC";
+
+
+"Reference link" = "Odkaz na referenci";
+
+
+"Your Password" = "Vaše heslo";
+
+
+"SUBMIT" = "ODESLAT";
+
+
+"HELP" = "POMOC";
+
+
+"MY ACCOUNT" = "MŮJ ÚČET";
+
+
+"hbD-HP-tZd.normalTitle" = "Odblokovat";
+
+
+"OTHERS" = "Ostatní";
+
+
+"BREAKING NEWS" = "NEJNOVĚJŠÍ ZPRÁVY";
+
+
+"Topics" = "Blokovaná témata";
+
+
+"Message us," = "Pošlete nám zprávu,";
+
+
+"Pick topics to start reading
+and saving articles" = "jazyk aplikace";
+
+
+"Forgot Password?" = "Zapomenuté heslo?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Byly přidány nové funkce. Některé problémy jsou opraveny.";
+
+
+"Success!" = "Úspěch!!";
+
+
+"Current Password" = "Aktuální heslo";
+
+
+"CONTENT" = "OBSAH";
+
+
+"Headline" = "Nadpis";
+
+
+"neg-UC-UpK.text" = "Vyberte témata a začněte číst a ukládat články";
+
+
+"CONTINUE WITH EMAIL ID" = "Pokračujte svým e-mailovým ID";
+
+
+"SAVE CHANGES" = "ULOŽIT ZMĚNY";
+
+
+"Post an Article" = "Zveřejnit článek";
+
+
+"Contact Us" = "Kontaktujte nás";
+
+
+"On" = "Zapnout";
+
+
+"New Email Address" = "Nová e-mailová adresa";
+
+
+"Bullet 5 (Optional)" = "Odrážka 5 (volitelné)";
+
+
+"Suggest an improvement" = "Navrhněte zlepšení";
+
+
+"Channels" = "Blokované zdroje";
+
+
+"From:" = "Z:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONALIZOVANÉ DOPORUČENÍ";
+
+
+"I don't like this" = "Nelíbí se mi to";
+
+
+"CONTINUE" = "POKRAČOVAT";
+
+
+"Name" = "Jméno";
+
+
+"Enter email" = "Zadejte e-mail";
+
+
+"HELP" = "POMOC";
+
+
+"FOLLOW 3 TO CONTINUE" = "Postupujte podle 3 a pokračujte";
+
+
+"UPDATE APP" = "Aktualizovat aplikaci";
+
+
+"Forgot Password?" = "Zapomenuté heslo?";
+
+
+"Change Password" = "Změnit heslo";
+
+
+"Reset Password" = "Obnovit heslo";
+
+
+
+
+
+
+
+
+"Report content" = "Nahlaste své obavy";
+
+
+"CHANGE EMAIL ADDRESS" = "ZMĚNIT E-MAILOVOU ADRESU";
+
+
+"Follow The Guardian" = "Sledovat ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Přidali jsme spoustu nových funkcí a opravili některé chyby, aby byl váš zážitek co nejplynulejší.";
+
+
+"Edition / Region" = "Vydání / oblast";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "ROZPRAVĚČ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Neustálé informování o novinkách, které máte rádi, by vám nemělo zabrat příliš mnoho času. News in Bullets trvá pravidelné 5minutové čtení a kondenzuje je na snadno stravitelné kulky. Nyní můžete přijímat stejné zprávy jen za zlomek času - takže si můžete přečíst více za kratší dobu.";
+
+
+"READING SPEED" = "RYCHLOST ČTENÍ";
+
+
+
+
+
+"You haven't blocked anything yet" = "Zatím jste nic nezablokovali";
+
+
+"EDITION / REGION" = "EDICE / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "POUZE TITULKY";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Nastavení zvuku";
+
+
+"AUDIO SETTINGS" = "NASTAVENÍ ZVUKU";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TITULKY A BULLETY";
+
+
+"CONTINUE AS GUEST" = "PŘESKOČTE A PŘIHLASTE SE JAKO HOST";
+
+
+"Topics" = "Témata";
+
+
+"Pick topics to start reading and saving articles" = "Vyberte témata a začněte číst a ukládat články";
+
+
+"Channels" = "Kanály";
+
+
+"Choose from hundreds \nof news publications" = "Vyberte si ze stovek zpravodajských publikací";
+
+
+"Pick topics to start reading\nand saving articles" = "Výběr témat pro zahájení čtení a ukládání článků";
+
+"Pick editions to start reading\nand saving articles" = "Výběr edicí pro zahájení čtení a ukládání článků";
+
+"Or with" = "Nebo s";
+
+"CONTINUE AS GUEST" = "POKRAČOVAT JAKO HOST";
+
+"Terms of Service" = "Podmínky služby";
+
+"Choose from hundreds \nof news publications" = "Vyberte si ze stovek zpravodajských publikací";
+
+"Select your preferred language\nfor News in Bullets." = "Vyberte preferovaný jazyk pro Zprávy v odrážkách.";
+
+"Choose a style" = "Vyberte si styl";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop nebo jemné. Den nebo noc. Přizpůsobte si rozhraní.";
+
+"MINS AGO" = "minutu před";
+
+"AN HOUR AGO" = "před hodinou";
+
+"HOURS AGO" = "před hodinami";
+
+"1 WEEK AGO" = "před 1 týdnem";
+
+"YESTERDAY" = "Včera";
+
+"DAYS AGO" = "před pár dny";
+
+"Go to" = "Jít do";
+
+"You have reached the start." = "Jste na začátku";
+
+"Source unblocked successfully" = "Zdroj byl úspěšně odblokován.";
+
+"Invalid email format"  = "Neplatný formát e-mailu";
+
+"Wrong email or password" = "Nesprávný e-mail nebo heslo";
+
+

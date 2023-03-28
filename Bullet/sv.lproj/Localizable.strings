@@ -1,0 +1,774 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "listpunkt";
+"BULLETS" = "LISTPUNKTER";
+"Headlines is not available." = "Rubrikerna är inte tillgängliga";
+"Check your internet Connection and try again." = "Testa din internetanslutning och testa igen.";
+"Choose Image" = "Välj bild";
+"Headline" = "Rubrik ";
+"Bullet 1" = "Punkt 1";
+"Bullet 2" = "Punkt 2";
+"Bullet 3 (Optional)" = "Punkt 3 (Frivillig)";
+"Bullet 4 (Optional)" = "Punkt 4 (Frivillig)";
+"Bullet 5 (Optional)" = "Punkt 5 (Frivillig)";
+"Bullet 6 (Optional)" = "Punkt 6 (Frivillig)";
+"Enter Aticle Headline" = "Ange rubriken";
+"Enter source name" = "Ange källan";
+"Enter reference link" = "Ange referensen";
+"Enter published date" = "Ange referensen";
+"Enter Bullet 1" = "Ange den första punkten";
+"Enter Bullet 2" = "Ange den andra punkten";
+"Post article successfully" = "Artikeln är framgångsrikt postad";
+"Follow" = "Följ";
+"Unfollow" = "Avfölj";
+"Block articles from" = "BLOCKERA artiklarna från";
+"Unblock articles from" = "AVBLOCKERA artiklarna från";
+"Remove article" = "Ta bort artikeln";
+"Save article" = "Spara denna artikel";
+"Terms & Conditions" = "Villkor";
+"Privacy Policy" = "Integritetspolicy";
+"TERMS AND CONDITIONS" = "VILLKOR";
+"PRIVACY POLICY" = "INTEGRITETSPOLICY";
+"Fuel your curiosity" = "Läs mer nyheter om världen";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Läs korta och korrekta nyheter om dina favoritämnen från trovärdiga källor från hela världen";
+"Save time" = "Spara din tid";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Läs nyheterna i listpunkter";
+"Hands-free reading" = "Handsfree läsning";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Ingen tid för att läsa? Använd talfunktionen.";
+"Write your message..." = "Skriv ditt meddelande…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Skicka oss ett meddelande om du behöver hjälp med något, vi skulle gärna höra från dig!";
+"Drop us a message" = "skicka oss ett meddelande  ";
+"Enter Name." = "Ange namn";
+"Enter Email." = "Ange e-postadress.   ";
+"Write your message." = "Skriv ditt meddelande.   ";
+"Topic unblock successfully" = "Du har avblockerat detta ämne";
+"Source unblock successfully" = "Du har avblockerat denna källa";
+"Unblock Source" = "Avblockera källa";
+"Cancel" = "Avbryt";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Skicka oss feedback, vi skulle gärna höra från dig! Har du frågor eller rättsliga orosmoment? Testa vår hjälpsida eller kontakta oss.";
+"Enter your suggestion." = "Ange ditt förslag.";
+"feedback sent." = "feedbacken vart skickad ";
+"30m" = "30m";
+"1h" = "1t";
+"3h" = "3t";
+"6h" = "6t";
+"12h" = "12t";
+"24h" = "24t";
+"Language updated successfully." = "språket har uppdaterats.";
+"CONTINUE" = "FORTSÄTT";
+"FOLLOW 3 TO CONTINUE" = "FÖLJ 3 FÖR ATT FORTSÄTTA";
+"Unfollow Location" = "Avfölj plats";
+"Saved Articles" = "Sparade artiklar";
+"Block" = "BLOCKERA  ";
+"Are you sure you want block" = "Är du säker att du vill blockera detta?";
+"Once blocked, you wont be able to see any Articles related to this" = "Du kommer inte se artiklar från denna kanal om du blockerar den.";
+"Block Topic" = "Blockera detta ämne.";
+"Suggested" = "Föreslagen";
+"Related Sources not available" = "De relaterade källorna är inte tillgängliga";
+"Block Source" = "Blockera denna källa";
+"News in Bullets App version" = "Nyheter i punkter Appversion";
+"Next" = "Nästa";
+"Login" = "Logga in";
+"Terms" = "Villkor";
+"By clicking Continue, you agree with our Terms." = "Välj fortsätt för att acceptera villkoren.";
+"in our Privacy Policy." = "i vår integritetspolicy.";
+"Access token missing." = "Åtkomsttoken saknas.";
+"NEXT" = "NÄSTA";
+"By checking this box, you agree to our " = "Klicka i boxen för att acceptera villkoren. Din data är procceserad enligt vår integritetspolicy.";
+"Terms of Service" = "Servicevillkor";
+". We’ll handle your data according to our " = "Vi kommer hantera din data enligt";
+"Password must be at least 8 characters." = "Lösenordet måste vara minst 8 tecken.";
+"Strong" = "Starkt";
+"Medium" = "Medium";
+"Weak" = "Svagt";
+"CREATE A NEW ACCOUNT" = "SKAPA ETT NYTT KONTO";
+"SIGN IN WITH EXISTING ACCOUNT" = "LOGGA IN MED EXISTERANDE KONTO";
+"You must agree to the Terms of Services to continue" = "Du måste acceptera servicevillkoren för att fortsätta";
+"SIGN IN" = "Logga in";
+"What's your password?" = "Vad är ditt lösenord?";
+"SIGN UP" = "Gå med";
+"Choose your password?" = "Välj ditt lösenord";
+"Something went wrong" = "Något gick fel";
+"we will send email to" = "vi kommer skicka epost till";
+"with a link to reset your password." = "med en länk för att återställa ditt lösenord.";
+"A reset password link has been sent to" = "En länk för att återställa ditt lösenord har skickats till";
+"Enter new email." = "Ange ny e-postadress";
+"Enter password." = "Ange lösenord";
+"New Password " = "Nytt lösenord";
+" (8 characters min)" = "(minst 8 karaktärer)";
+"Enter current password." = "Ange ditt nuvarande lösenord.";
+"Enter new password." = "Ange nytt lösenord.";
+"Enter confirm password." = "Bekräfta lösenord.";
+"password do not matched!" = "lösenordet matchar inte!";
+"GET STARTED" = "KOMMA IGÅNG";
+"SKIP" = "HOPPA ÖVER";
+"From where you would like to pick photo?" = "Från vart vill du välja foto?";
+"Camera" = "Kamera";
+"Photo Library" = "Fotoalbum";
+"Kindly open settings and enable access" = "Var vänlig och öppna inställningar för att aktivera åtkomst";
+"Open Settings" = "Öppna inställningar";
+"Access needed for your camera" = "Åtkomst behövs för din kamera";
+"Access needed for your photo library" = "Åtkomst behövs för ditt fotoalbum";
+"Done" = "Klar";
+"Pull to refresh" = "Dra för att uppdatera";
+"Loading" = "Laddar";
+"Speech not available for this article" = "Tal är inte tillgängligt för denna artikel";
+"MANAGE LOCATION" = "Hantera plats";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Välj dina nyheter i Bullets Edition baserat på språk";
+"Edition" = "Utgåva";
+"EDITION / REGION" = "UTGAVA / REGION";
+"Your Topics" = "Dina ämnen";
+"Your Channels" = "Dina kanaler";
+"Your Places" = "Dina platser";
+"Enter email." = "Skriv in e-mail.";
+"Please enter a password." = "Ange ett lösenord.";
+"Search articles" = "Sök artiklar";
+"No results" = "Inga resultat";
+"Edition / Region" = "Upplaga / Region";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOCKERA";
+"CANCEL" = "AVBRYT";
+"PLACES" = "PLATSER";
+"LANGUAGE" = "SPRÅK";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "SPARADE ARTIKLAR";
+"Topics" = "Ämnen";
+"Channels" = "Kanaler";
+"Editions" = "Utgåvor";
+"No saved stories yet" = "Inga sparade berättelser ännu";
+"Tap the" = "Tryck på";
+"icon on the article" = "ikon på artikeln";
+"you want to read later then" = "du vill läsa senare";
+"Select" = "Välj";
+"to save article." = "för att spara artikeln.";
+"There is nothing in here" = "Det finns inget här inne";
+"Looks like there is nothing here but a cat." = "Det verkar som om det inte finns något annat än en katt.";
+"Would you like to go back to home?" = "Vill du åka hem?";
+"GO HOME" = "GÅ HEM";
+"Search" = "Sök";
+"Discover" = "Upptäck";
+"Articles" = "Artiklar";
+"Try a different keyword" = "Prova ett annat nyckelord";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Få de mest relevanta nyheterna till den region du väljer. Läs nyheter som samlats för att hålla dig uppdaterad om de senaste nyheterna var som helst i världen.";
+"Language" = "Språk";
+"Results" = "Resultat";
+"For You" = "Till dig";
+"Top News" = "Topp Nyheter";
+"Choose a style" = "Välj en stil";
+"Pop or subtle. Day or night. Customize your interface." = "Pop eller subtil. Dag eller natt. Anpassa ditt gränssnitt.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "Om oss";
+
+
+"Share" = "Dela";
+
+
+"ACCOUNT" = "KONTO";
+
+
+"Your Email" = "Din email";
+
+
+"1sT-J6-qI0.text" = "Sparade artiklar ";
+
+
+"2XX-rr-GLC.text" = "Välj olika kanaler från hundratals källor ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Läs de senaste nyhetshändelserna från hela världen ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Ställa in ett tidsgap för att ta emot notiser. ";
+
+
+"Off" = "Av";
+
+
+
+
+
+"Bullet 2" = " Punkt 2";
+
+
+"What's your email?" = "Vad är din email-adress? ";
+
+
+"New Password (8 Characters Min)" = "Nytt lösenord (minst 8 karaktärer) ";
+
+
+"Forgot Password?" = "Glömt ditt lösenord? ";
+
+
+"Account Settings" = "Kontoinställningar ";
+
+
+"Learn how we process your data" = "Information om behandling av dina uppgifter ";
+
+
+"3h" = "3t";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blockera artiklar från -- ";
+
+
+"On" = "Sätta på";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Hjälpcenter ";
+
+
+"Search" = "Söka kanaler ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Välj fil från galleriet ";
+
+
+
+
+"Save article" = "Spara artikel ";
+
+
+"ABOUT" = "OM  ";
+
+
+"Dark" = "Mörk";
+
+
+"Legal" = "Rättsligt";
+
+
+"Go to The Guardian" = "Gå till -- ";
+
+
+"Send reset link" = "Skicka återställningslänk ";
+
+
+
+
+
+"My Account" = "Mitt konto ";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Meddelande";
+
+
+"Confirm New Password" = "Bekräfta nytt lösenord ";
+
+
+"for ___" = "för";
+
+
+"Search" = "Sök efter ämnen ";
+
+
+"LANGUAGE" = "SPRÅK";
+
+
+"Light" = "Ljus";
+
+
+"FOLLOW 3 TO CONTINUE" = "för att fortsätta, välj 3 ";
+
+
+
+
+"Off" = "Stäng av";
+
+
+"Language" = "Välj";
+
+
+"LOG OUT" = "LOGGA UT";
+
+
+"Report content" = "Rapportera Innehåll ";
+
+
+"What's your email?" = "Vad är din email-adress?";
+
+
+"On" = "Sätt på";
+
+
+"More like this" = "Fler nyheter som denna";
+
+
+"Bullet App v1.1.0" = "Punkt app v1.1.0 (skip)";
+
+
+"1h" = "1t";
+
+
+"Enter Email Address" = "Skriv in e-postadress ";
+
+
+"News in Bullets" = "Läs mer under mindre tid";
+
+
+"6h" = "6t";
+
+
+"Choose your password" = "Välj ditt lösenord ";
+
+
+"Cancel" = "Avbryt";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Läs nyheterna snabbt med denna app. Välj dina ämnen och källor. Läs sen dina nyheter genom en kort punktlista.";
+
+
+"Push Notification" = "Notis";
+
+
+"12h" = "12t";
+
+
+"24h" = "24t";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Hur kan vi hjälpa? ";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "BYT LÖSENORD ";
+
+
+"Change Email" = "BYT EMAIL-ADRESS";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "SPARA ÄNDRINGAR";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Skicka oss ett meddelande om du behöver hjälp med någonting, vi skulle gärna höra från dig";
+
+
+"P5u-N3-Tw4.text" = "Märke";
+
+
+"Cancel" = "Avbryt";
+
+
+"Bullet 1" = "Punkt 1 ";
+
+
+"TIMED NOTIFICATIONS" = "NOTISER";
+
+
+"POST ARTICLE" = "LÄGG UPP EN ARTIKEL ";
+
+
+"CONTACT US" = "Kontakta oss";
+
+
+"EDITION / REGION" = "Utgåva";
+
+
+"Search" = "Sök";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Skicka oss feedback, vi skulle gärna höra ifrån dig! Har du frågor eller rättsliga frågor? Testa vår hjälpsida eller kontakta oss. ";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Skicka oss ett meddelande om du behöver hjälp med någonting, vi skulle gärna höra från dig !";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "FORTSÄTT";
+
+
+"Time To Update!" = "Uppdatera appen ";
+
+
+"NOTIFICATIONS" = "NOTISER";
+
+
+"Search" = "Sök";
+
+
+"By clicking Continue, you agree with our Terms." = "Välj fortsätt för att acceptera villkoren. ";
+
+
+"HELP / CONTACT US" = "HJÄLP/KONTAKT";
+
+
+"Reset Password" = "Återställ lösenord";
+
+
+"SEND MESSAGE" = "SKICKA MEDDELANDE ";
+
+
+"Save article" = "Spara artikel";
+
+
+"Bullet 6 (Optional)" = "Punkt 6 (frivillig) ";
+
+
+"HAPTICS" = "HAPTIK";
+
+
+"Your message has \vbeen sent." = " Ditt meddelande har skickats.";
+
+
+"LEGAL" = "RÄTTSLIGT";
+
+
+"Block List" = "Blockeringslista ";
+
+
+"PERSONALIZATION" = "PERSONALISERING";
+
+
+"in our Privacy Policy." = "i vår integritetspolicy";
+
+
+"CONTINUE" = "FORTSÄTT";
+
+
+"Enter Name" = " Skriv namn";
+
+
+"What's your email?" = " Vad är din email-adress?";
+
+
+"Hello there!" = "Hej! ";
+
+
+"PUSH NOTIFICATIONS" = "NOTISER";
+
+
+"Bullet 3 (Optional)" = "Punkt 3 (frivillig)";
+
+
+"Source name" = "Namn på källan";
+
+
+"Current Password" = "Nuvarande lösenord";
+
+
+"COLOR THEME" = "Färgtema ";
+
+
+"eTp-X1-g34.text" = "Eller genom";
+
+
+"CANCEL" = "AVBRYT";
+
+
+"Bullet 4 (Optional)" = "Punkt 4 (frivillig) ";
+
+
+"Date published" = "Publicerat datum ";
+
+
+"Send Password Reset Link" = "Skicka länk för att återställa lösenord";
+
+
+"CONTINUE WITH APPLE" = "Registrera dig genom Apple ID ";
+
+
+"Off" = "Stäng av";
+
+
+"BLOCK LIST" = "BLOCKERINGSLISTA ";
+
+
+"HELP" = "HJÄLP";
+
+
+"Reference link" = "Referenslänk ";
+
+
+"Your Password" = "Ditt lösenord ";
+
+
+"SUBMIT" = "SKICKA IN";
+
+
+"HELP" = "HJÄLP";
+
+
+"MY ACCOUNT" = "MITT KONTO";
+
+
+"hbD-HP-tZd.normalTitle" = "Avblockera";
+
+
+"OTHERS" = "Andra";
+
+
+"BREAKING NEWS" = " SENASTE NYHETERNA";
+
+
+"Topics" = "Blockerade ämnen";
+
+
+"Message us," = "Meddela oss";
+
+
+"Pick topics to start reading
+and saving articles" = "app språk";
+
+
+"Forgot Password?" = " Glömt ditt lösenord??";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nya funktioner har lagts till. Vissa problem är fixade. ";
+
+
+"Success!" = "Succe!";
+
+
+"Current Password" = "Nuvarande lösenord";
+
+
+"CONTENT" = "INNEHÅLL";
+
+
+"Headline" = "Rubrik";
+
+
+"neg-UC-UpK.text" = "Välj ämnen för att börja läsa och spara artiklar ";
+
+
+"CONTINUE WITH EMAIL ID" = "Fortsätt med ditt Email ID ";
+
+
+"SAVE CHANGES" = "SPARA ÄNDRINGAR";
+
+
+"Post an Article" = "Publicera en artikel";
+
+
+"Contact Us" = "Kontakta oss";
+
+
+"On" = "Sätt på";
+
+
+"New Email Address" = "NNy e-postadressew ";
+
+
+"Bullet 5 (Optional)" = "Punkt 5 (frivillig) ";
+
+
+"Suggest an improvement" = "Föreslå en förbättring";
+
+
+"Channels" = "Blockerade källor ";
+
+
+"From:" = "Från:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONLIGA REKOMMENDATIONER";
+
+
+"I don't like this" = "Jag gillar inte det här";
+
+
+"CONTINUE" = "FORTSÄTT";
+
+
+"Name" = "Namn ";
+
+
+"Enter email" = " Skriv in e-postadress";
+
+
+"HELP" = "HJÄLP";
+
+
+"FOLLOW 3 TO CONTINUE" = " Följ 3 till fortsätt";
+
+
+"UPDATE APP" = "Uppdatera appen";
+
+
+"Forgot Password?" = " Glömt ditt lösenord??";
+
+
+"Change Password" = "Ändra lösenord";
+
+
+"Reset Password" = "Återställ lösenord";
+
+
+
+
+
+
+
+
+"Report content" = "Rapportera din oro";
+
+
+"CHANGE EMAIL ADDRESS" = "ÄNDRA E-POSTADRESS";
+
+
+"Follow The Guardian" = "Följ ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Vi har lagt till massor av nya funktioner och fixat några buggar för att göra din upplevelse så smidig som möjligt.";
+
+
+"Edition / Region" = "Upplaga / Region";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "BERÄTTARE";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Att hålla dig uppdaterad om de nyheter du älskar borde inte ta för mycket av din tid. News in Bullets tar regelbunden 5-minuters läsning och kondenserar den till lätt smältbara kulor. Nu kan du ta in samma nyheter på bara en bråkdel av tiden - så att du kan läsa mer på kortare tid.";
+
+
+"READING SPEED" = "LÄSHASTIGHET";
+
+
+
+
+
+"You haven't blocked anything yet" = "Du har inte blockerat någonting än";
+
+
+"EDITION / REGION" = "UTGAVA / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "ENDAST HEADLINER";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Ljudinställningar";
+
+
+"AUDIO SETTINGS" = "LJUDINSTÄLLNINGAR";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINER OCH BULLETTER";
+
+
+"CONTINUE AS GUEST" = "HOPPA OCH LOGGA IN SOM GÄST";
+
+
+"Topics" = "Ämnen";
+
+
+"Pick topics to start reading and saving articles" = "Välj ämnen för att börja läsa och spara artiklar";
+
+
+"Channels" = "Kanaler";
+
+
+"Choose from hundreds \nof news publications" = "Välj bland hundratals nyhetspublikationer";
+
+
+"Pick topics to start reading\nand saving articles" = "Välj ämnen för att börja läsa och spara artiklar";
+
+"Pick editions to start reading\nand saving articles" = "Välj utgåvor för att börja läsa och spara artiklar";
+
+"Or with" = "Eller med";
+
+"CONTINUE AS GUEST" = "FORTSÄTT SOM GÄST";
+
+"Terms of Service" = "Användarvillkor";
+
+"Choose from hundreds \nof news publications" = "Välj bland hundratals nyhetspublikationer";
+
+"Select your preferred language\nfor News in Bullets." = "Välj ditt språk för News in Bullets.";
+
+"Choose a style" = "Välj en stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop eller subtil. Dag eller natt. Anpassa ditt gränssnitt.";
+
+"MINS AGO" = "minuter sedan";
+
+"AN HOUR AGO" = "en timme sedan";
+
+"HOURS AGO" = "timmar sedan";
+
+"1 WEEK AGO" = "1 vecka sedan";
+
+"YESTERDAY" = "I går";
+
+"DAYS AGO" = "dagar sedan";
+
+"Go to" = "Gå till";
+
+"You have reached the start." = "Du har nått början";
+
+"Source unblocked successfully" = "Källan avblockerades";
+
+"Invalid email format"  = "Ogiltigt e-postformat";
+
+"Wrong email or password" = "fel email eller lösenord";
+
+
+"Following" = "Följande";
+"First Name" = "Förnamn";
+"Last Name" = "Efternamn";

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>844271567754-99n40j0ibc3ot230a7sanaui0jecpvh6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.844271567754-99n40j0ibc3ot230a7sanaui0jecpvh6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAUak4hj_kHt0TLh1D62fzwvQ8pk5ItR_U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>844271567754</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.newsinbullets</string>
+	<key>PROJECT_ID</key>
+	<string>nib-app-prod</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nib-app-prod.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:844271567754:ios:71f037579a6d9747f9fe73</string>
+	<key>DATABASE_URL</key>
+	<string>https://nib-app-prod.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-2352871460867862~1571973523</string>
+</dict>
+</plist>

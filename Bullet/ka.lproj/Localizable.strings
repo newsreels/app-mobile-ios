@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ბულეტი";
+"BULLETS" = "ბულეტები";
+"Headlines is not available." = "სათაურები არ არის ხელმისაწვდომი";
+"Check your internet Connection and try again." = "გადაამოწმეთ კავშირი ინტერნეტთან და სცადეთ ახლიდან";
+"Choose Image" = "აირჩიეთ სურათი";
+"Headline" = "სათაური";
+"Bullet 1" = "ბულეტი 1";
+"Bullet 2" = "ბულეტი 2";
+"Bullet 3 (Optional)" = "ბულეტი 3 (არასავალდებულო)";
+"Bullet 4 (Optional)" = "ბულეტი 4 (არასავალდებულო)";
+"Bullet 5 (Optional)" = "ბულეტი 5 (არასავალდებულო)";
+"Bullet 6 (Optional)" = "ბულეტი 6 (არასავალდებულო)";
+"Enter Aticle Headline" = "შეიყვანეთ სათაური";
+"Enter source name" = "შეიყვანეთ წყარო";
+"Enter reference link" = "შეიყვანეთ დამოწმება";
+"Enter published date" = "შეიყვანეთ გამოქვეყნების თარიღი";
+"Enter Bullet 1" = "შეიყვანეთ პირველი ბულეტი";
+"Enter Bullet 2" = "შეიყვანეთ მეორე ბულეტი";
+"Post article successfully" = "სტატია წარმატებით გამოქვეყნდა";
+"Follow" = "მიჰყევით";
+"Unfollow" = "გააუქმეთ გამოწერა";
+"Block articles from" = "დაბლოკეთ სტატიები -სგან";
+"Unblock articles from" = "მოხსენით ბლოკი სტატიებს -სგან";
+"Remove article" = "სტატიის წაშლა";
+"Save article" = "შეინახე ეს სტატია";
+"Terms & Conditions" = "დადგენილებები და პირობები";
+"Privacy Policy" = "კონფიდენციალურობის პოლიტიკა";
+"TERMS AND CONDITIONS" = "დადგენილებები და პირობები";
+"PRIVACY POLICY" = "კონფიდენციალურობის პოლიტიკა";
+"Fuel your curiosity" = "იკითხეთ მეტი ახალი აბავი მსოფლიოს შესახებ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "იკითხეთ მოკლე და ზუსტი ახალი ამბები თქვენი საყვარელი თემების შესახებ მსოფლიო მასშტაბით სანდო წყაროებიდან ";
+"Save time" = "დაზოგეთ დრო";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "წაიკითხეთ ახალი ამბები ბულეტებად-თეზისებად";
+"Hands-free reading" = "ხელის გარეშე კითხვა";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "არ გაქვთ კითხვის დრო? გამოიყენეთ მოლაპარაკე ფუნქცია";
+"Write your message..." = "დაწერეთ თქვენი მესიჯი...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "თუ რამეში დახმარება გჭირდებათ, მოგვწერეთ, სიხარულით მოგისმენთ!";
+"Drop us a message" = "მოგვწერეთ";
+"Enter Name." = "შეიყვანეთ სახელი.";
+"Enter Email." = "შეიყვანეთ ელფოსტა.";
+"Write your message." = "დაწერეთ თქვენი მესიჯი...";
+"Topic unblock successfully" = "თქვენ ბლოკი მოხსენით ამ თემას";
+"Source unblock successfully" = "თქვენ ბლოკი მოხსენით ამ წყაროს";
+"Unblock Source" = "წყაროს განბლოკვა";
+"Cancel" = "გაუქმება";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "დაგვიბრუნეთ უკუკავშირი, ჩვენ სიამოვნებით მოგისმენთ! გაქვთ რაიმე კითხვა ან სამართლებრივი ინტერესი? მიმართეთ ჩვენს დახმარების გვერდს ან დაგვიკავშირდით.";
+"Enter your suggestion." = "შეიყვანეთ თქვენი რჩევა.";
+"feedback sent." = "უკუკავშირი წარმატებით გაიგზავნა";
+"30m" = "30 წთ";
+"1h" = "1 სთ";
+"3h" = "3 სთ";
+"6h" = "6 სთ";
+"12h" = "12 სთ";
+"24h" = "24 სთ";
+"Language updated successfully." = "ენა წარმატებით განახლდა.";
+"CONTINUE" = "გაგრძელება";
+"FOLLOW 3 TO CONTINUE" = "მიჰყევით 3-ს გასაგრძელებლად";
+"Unfollow Location" = "ლოკაციის გამოწერის გაუქმება";
+"Saved Articles" = "შენახული სტატიები";
+"Block" = "ბლოკი";
+"Are you sure you want block" = "დარწმუნებული ხართ რომ გსურთ ამის დაბლოკვა?";
+"Once blocked, you wont be able to see any Articles related to this" = "თუ ამ არხს დაბლოკავთ, თქვენ ვერ იხილავთ მის სტატიებს.";
+"Block Topic" = "დაბლოკე ეს თემა";
+"Suggested" = "შემოთავაზებული";
+"Related Sources not available" = "მსგავსი წყაროები არაა ხელმისაწვდომი";
+"Block Source" = "დაბლოკე ეს წყარო";
+"News in Bullets App version" = "ახალი ამბების მოკლე მიმოხილვა აპლიკაციის ვერსიაში";
+"Next" = "შემდეგი";
+"Login" = "შესვლა";
+"Terms" = "პირობები";
+"By clicking Continue, you agree with our Terms." = "მონიშნეთ გაგრძელება პირობების დასათანხმებლად";
+"in our Privacy Policy." = "ჩვენს უსაფრთხოების პოლიტიკაში.";
+"Access token missing." = "წვდომის ტოკენი ვერ მოიძებნა.";
+"NEXT" = "შემდეგი";
+"By checking this box, you agree to our " = "დააკლიკეთ უჯრაზე რათა დაეთანხმოთ პირობებს. თქვენი მონაცემები დამუშავდება ჩვენი უსაფრთხოების პოლიტიკის მიხედვით.";
+"Terms of Service" = "მომსახურების პირობები";
+". We’ll handle your data according to our " = "ჩვენ თქვენს მონაცემებს ჩვენს ---თან თანხმობაში დავამუშავებთ";
+"Password must be at least 8 characters." = "პასვორდი უნდა იყოს სულ მცირე 8 სიმბოლოს შემცველი.";
+"Strong" = "ძლიერი";
+"Medium" = "საშუალო";
+"Weak" = "სუსტი";
+"CREATE A NEW ACCOUNT" = "შექმენი ახალი ანგარიში";
+"SIGN IN WITH EXISTING ACCOUNT" = "შედი არსებული ანგარიშით";
+"You must agree to the Terms of Services to continue" = "გასაგრძელებლად თქვენ უნდა დაეთანხმოთ მომსახურების პირობებს";
+"SIGN IN" = "შესვლა";
+"What's your password?" = "რა არის თქვენი პასვორდი?";
+"SIGN UP" = "რეგისტრაცია";
+"Choose your password?" = "აირჩიეთ თქვენი პასვორდი";
+"Something went wrong" = "ხარვეზია";
+"we will send email to" = "ჩვენ გავაგზავნით ელფოსტას -თან";
+"with a link to reset your password." = "ლინკით, რაც მოგცემთ პასვორდის შეცვლის საშუალებას";
+"A reset password link has been sent to" = "პასვორდის შეცვლის ბმული გაიგზავნა -თან";
+"Enter new email." = "შეიყვანეთ ახალი ელფოსტა.";
+"Enter password." = "შეიყვანეთ პასვორდი.";
+"New Password " = "ახალი პასვორდი.";
+" (8 characters min)" = "(მინიმუმ 8 სიმბოლო)";
+"Enter current password." = "შეიყვანეთ მიმდინარე პასვორდი";
+"Enter new password." = "შეიყვანეთ ახალი პასვორდი.";
+"Enter confirm password." = "დაადასტურეთ პასვორდი.";
+"password do not matched!" = "პასვორდები არ ემთხვევა!";
+"GET STARTED" = "დავიწყოთ";
+"SKIP" = "გამოტოვე";
+"From where you would like to pick photo?" = "საიდან ავირჩიოთ ფოტო?";
+"Camera" = "კამერა";
+"Photo Library" = "ფოტოგალერეა";
+"Kindly open settings and enable access" = "გთხოვთ გადადით პარამეტრებში და ჩართეთ წვდომა";
+"Open Settings" = "პარამეტრების გახსნა";
+"Access needed for your camera" = "საჭიროა წვდომა თქვენს კამერაზე";
+"Access needed for your photo library" = "საჭიროა წვდომა თქვენს ფოტოგალერეაზე";
+"Done" = "მზადაა";
+"Pull to refresh" = "ჩამოქაჩეთ გასანახლებლად";
+"Loading" = "იტვირთება";
+"Speech not available for this article" = "წამკითხველი არ არის ხელმისაწვდომი ამ სტატიისათვის";
+"MANAGE LOCATION" = "ლოკაციის მართვა";
+"OK" = "კარგი";
+"Choose your News in Bullets Edition based on locale" = "აირჩიეთ თქვენი სიახლეები ტყვიის გამოცემაში, ლოკალის მიხედვით";
+"Edition" = "გამოცემა";
+"EDITION / REGION" = "გამოცემა / რეგიონი";
+"Your Topics" = "თქვენი თემები";
+"Your Channels" = "თქვენი არხები";
+"Your Places" = "თქვენი ადგილები";
+"Enter email." = "შეიყვანეთ ელ.წერილი.";
+"Please enter a password." = "გთხოვთ, შეიყვანოთ პაროლი.";
+"Search articles" = "სტატიების ძებნა";
+"No results" = "შედეგი არ არის";
+"Edition / Region" = "გამოცემა / რეგიონი";
+
+
+
+
+"0JC-Sb-Ouu.text" = "ჩვენების რეჟიმი";
+
+
+"Search" = "ძებნა";
+
+
+"Select" = "შეარჩიეთ ( ";
+
+
+"6H8-dI-k9P.text" = "ლოკაციების მართვა";
+
+
+"6KH-YP-5Lt.text" = "მთხრობელი";
+
+
+" ) icon on the article" = " ) პიქტოგრამას სტატიაზე";
+
+
+"BLOCK" = "ბლოკი";
+
+
+"you want to read later then" = "რომლის წაკითხვაც მოგვიანებით გსურთ";
+
+
+"7oo-cf-l7Y.text" = "კითხვის სიჩქარე";
+
+
+"88L-ip-pZw.text" = "კითხვის სიჩქარე";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "აქ არაფერია. როგორც ჩანს, აქ, კატის გარდა არაფერია. გსურთ მთავარ გვერდზე დაბრუნება? \nგსურთ მთავარ გვერდზე დაბრუნება?";
+
+
+"BpH-F1-i0z.normalTitle" = "ლოკალური";
+
+
+" ) to save article." = " ) სტატიის შენახვისათვის";
+
+
+"FB0-YN-HZg.text" = "აირჩიეთ 3 გაგრძელებისთვის";
+
+
+"H5Z-xJ-dWD.text" = "სათაურები და\nბულეტები";
+
+
+"Search" = "ძებნა";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ფართო ხედი";
+
+
+"Jpx-nY-Is1.normalTitle" = "არხები";
+
+
+"JqN-io-P1u.normalTitle" = "+ დაუმატე ლოკაციებს";
+
+
+"What's your email?" = "რა არის თქვენი ელფოსტის მისამართი?";
+
+
+"Lw1-Md-nse.text" = "ჩამონათვალის ხედი";
+
+
+"LyT-pT-g53.text" = "საერთაშორისო";
+
+
+"N6C-6i-Z2s.text" = "საერთაშორისო";
+
+
+"Nru-uU-CsC.text" = "რჩევები";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "თემები";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "მორგება";
+
+
+"Topics" = "თემები";
+
+
+"WXY-po-W1B.text" = "სათაურები და\nბულეტები";
+
+
+"ans-Zy-T2Y.placeholder" = "ლოკაციების ძებნა";
+
+
+"bgE-Jc-u8H.text" = "მორგება";
+
+
+
+
+
+"Tap the ( " = "დააჭირეთ ( ";
+
+
+"Places" = "ლოკაცია";
+
+
+"d1l-HK-OrG.text" = "ჩვენების რეჟიმი";
+
+
+
+
+
+"Language" = "ენა";
+
+
+"e9g-Wr-suO.text" = "მხოლოდ სათაურები";
+
+
+"GO HOME" = "დაბრუნდით მთავარ გვერდზე";
+
+
+"eh1-Oo-lEn.text" = "ფართო ხედი";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ჩამონათვალის ხედი";
+
+
+"j2i-MT-VkA.text" = "სცადეთ სხვა საძიებო სიტყვა";
+
+
+"Top News" = "ტოპ ახალი ამბები";
+
+
+"jmO-aF-nJ9.text" = "მხოლოდ სათაურები";
+
+
+"There is nothing in here" = "აქ არაფერია. როგორც ჩანს, აქ, კატის გარდა არაფერია. გსურთ მთავარ გვერდზე დაბრუნება?";
+
+
+"ma1-9p-bSa.text" = "შედეგი ვერ მოიძებნა";
+
+
+"mce-jc-cKH.text" = "მთხრობელი";
+
+
+"Channels" = "არხები";
+
+
+"Discover" = "აღმოჩენა";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "გაუქმება";
+
+
+"Discover" = "აღმოჩენა";
+
+
+"No saved stories yet" = "აქ არაფერია";
+
+
+"wDG-kF-Hl8.text" = "იკითხეთ ახალი ამბები ლოკაციის მიხედვით";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ლოკალიზაცია";
+
+
+"xfF-RB-mWL.text" = "ლოკალიზაცია";
+
+
+"Search" = "ძებნა";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "მიიღეთ ყველაზე შესაბამისი სიახლეები თქვენს მიერ არჩეულ რეგიონში. წაიკითხეთ ახალი ამბების კურსები, რათა განახლდეთ უახლესი ამბები მსოფლიოს ნებისმიერი წერტილიდან.";
+
+
+"Search articles" = "სტატიების ძებნა";
+
+
+"6H8-dI-k9P.text" = "ადგილების მართვა";
+
+
+
+
+
+"Profile" = "პროფილი";
+
+
+"Editions" = "გამოცემები";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Ადგილები";
+
+
+
+
+
+"Search" = "ძებნა";
+
+
+
+
+
+
+
+
+"Search" = "ძებნა";
+
+
+"LANGUAGE" = "ᲔᲜᲐ";
+
+
+"Search" = "ძებნა";
+
+
+"No results" = "შედეგები არ მოიძებნა";
+
+
+"Channels" = "არხები";
+
+
+"Places" = "Ადგილები";
+
+
+"Places" = "Ადგილები";
+
+
+"e9F-hd-Ifm.text" = "გამოცემა / რეგიონი";
+
+
+
+
+
+
+
+
+"PLACES" = "ᲐᲓᲒᲘᲚᲔᲑᲘ";
+
+
+"SAVED ARTICLES" = "შენახული სტატიები";
+
+
+"Articles" = "სტატიები";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "გააგრძელე";
+
+
+
+
+
+"w8f-2R-NgT.text" = "გამოცემა / რეგიონი";
+
+
+"Try a different keyword" = "სცადეთ სხვა საკვანძო სიტყვა";
+
+
+"For You" = "Შენთვის";
+
+
+"Results" = "შედეგები";
+
+
+
+"About" = "ჩვენს შესახებ";
+
+
+"Share" = "გაზიარება";
+
+
+"ACCOUNT" = "ანგარიში";
+
+
+"Your Email" = "თქვენი ელფოსტა";
+
+
+"1sT-J6-qI0.text" = "შენახული სტატიები ";
+
+
+"2XX-rr-GLC.text" = "აირჩიეთ სხვადასხვა არხი ასობით წყაროდან ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "იკითხეთ უახლესი ამბების, ღონისძიებების შესახებ სტატიები მთელი მსოფლიოდან ";
+
+
+"Set an interval in which you want to receive your news notifications." = "დააყენეთ დროის შუალედი შეტყობინებების მისაღებად ";
+
+
+"Off" = "გამორთვა";
+
+
+
+
+
+"Bullet 2" = " ბულეტი 2";
+
+
+"What's your email?" = "რა არის თქვენი ელფოსტა? ";
+
+
+"New Password (8 Characters Min)" = "ახალი პასვორდი (მინიმუმ 8 სიმბოლო) ";
+
+
+"Forgot Password?" = "დაგავიწყდათ პასვორდი? ";
+
+
+"Account Settings" = "ანგარიშის პარამეტრები ";
+
+
+"Learn how we process your data" = "ინფორმაცია თქვენი მონაცემების დამუშავების შესახებ ";
+
+
+"3h" = "3 სთ";
+
+
+"Ok" = "კარგი";
+
+
+"Block articles from The Guardian" = "დაბლოკეთ სტატიები -დან";
+
+
+"On" = "ჩართვა";
+
+
+"Auto" = "ავტო";
+
+
+"Help Center" = "დახმარების ცენტრი ";
+
+
+"Search" = "მოძებნეთ არხები ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "აირჩიეთ ფაილი გალერიიდან ";
+
+
+
+
+"Save article" = "სტატიის შენახვა ";
+
+
+"ABOUT" = "შესახებ";
+
+
+"Dark" = "Dark";
+
+
+"Legal" = "სამართლებრივი";
+
+
+"Go to The Guardian" = "გადადი ---ზე ";
+
+
+"Send reset link" = "გააგზავნე განულების ლინკი ";
+
+
+
+
+
+"My Account" = "ჩემი ანგარიში ";
+
+
+"FEEDBACK" = "უკუკავშირი";
+
+
+"Message" = "შეტყობინება";
+
+
+"Confirm New Password" = "დაადასტურეთ ახალი პასვორდი";
+
+
+"for ___" = "-თვის";
+
+
+"Search" = "მოძებნეთ თემები";
+
+
+"LANGUAGE" = "ენა";
+
+
+"Light" = "ნათელი";
+
+
+"FOLLOW 3 TO CONTINUE" = "გასაგრძელებლად აირჩიეთ 3";
+
+
+
+
+"Off" = "გამორთვა";
+
+
+"Language" = "აირჩიეთ";
+
+
+"LOG OUT" = "გამოსვლა";
+
+
+"Report content" = "კონტენტის დარეპორტება";
+
+
+"What's your email?" = "რა არის თქვენი ელფოსტა?";
+
+
+"On" = "ჩართვა";
+
+
+"More like this" = "მეტი მსგავსი სიახლე";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 სთ";
+
+
+"Enter Email Address" = "შეიყვანეთ ელფოსტის მისამართი";
+
+
+"News in Bullets" = "იკითხეთ მეტი, ნაკლებ დროში";
+
+
+"6h" = "6 სთ";
+
+
+"Choose your password" = "აირჩიეთ პასვორდი";
+
+
+"Cancel" = "გაუქმება";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "იკითხეთ სიახლეები სწრაფად ამ აპლიკაციით. აირჩიეთ თქვენი თემები და წყაროები. შემდეგ იკითხეთ თქვენი ახალი ამბები მოკლე თეზისებად.";
+
+
+"Push Notification" = "შეტყობინება";
+
+
+"12h" = "12 სთ";
+
+
+"24h" = "24 სთ";
+
+
+"E-mail" = "ელფოსტა";
+
+
+"How can we help you?" = "რით შეგვიძლია დაგეხმაროთ?";
+
+
+"OJP-Wd-0d3.text" = "პაკისტანი";
+
+
+"CHANGE PASSWORD" = "პასვორდის ცვლილება";
+
+
+"Change Email" = "ელფოსტის მისამართის ცვლილება";
+
+
+"Medium" = "საშუალო";
+
+
+"SAVE CHANGES" = "შეინახე ცვლილებები";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "თუ რამეში დახმარება გჭირდებათ, მოგვწერეთ, სიხარულით მოგისმენთ!";
+
+
+"P5u-N3-Tw4.text" = "იარლიყი";
+
+
+"Cancel" = "გაუქმება";
+
+
+"Bullet 1" = "ბულეტი 1";
+
+
+"TIMED NOTIFICATIONS" = "შეტყობინებები";
+
+
+"POST ARTICLE" = "გამოაქვეყნე სტატია";
+
+
+"CONTACT US" = "დაგვიკავშირდით";
+
+
+"EDITION / REGION" = "ვერსია";
+
+
+"Search" = "ძებნა";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "დაგვიბრუნეთ უკუკავშირი, ჩვენ სიამოვნებით მოგისმენთ! გაქვთ რაიმე კითხვა ან სამართლებრივი ინტერესი? მიმართეთ ჩვენს დახმარების გვერდს ან დაგვიკავშირდით.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "თუ რამეში დახმარება გჭირდებათ, მოგვწერეთ, სიხარულით მოგისმენთ!";
+
+
+"30m" = "30 წთ";
+
+
+"CONTINUE" = "გაგრძელება";
+
+
+"Time To Update!" = "განაახლე აპლიკაცია!";
+
+
+"NOTIFICATIONS" = "შეტყობინებები";
+
+
+"Search" = "ძებნა";
+
+
+"By clicking Continue, you agree with our Terms." = "მონიშნეთ გაგრძელება პირობების დასათანხმებლად.";
+
+
+"HELP / CONTACT US" = "დახმარება / კონტაქტი";
+
+
+"Reset Password" = "განაახლე პასვორდი";
+
+
+"SEND MESSAGE" = "სტატიის შენახვა";
+
+
+"Save article" = "სტატიის შენახვა";
+
+
+"Bullet 6 (Optional)" = "ბულეტი 6 (არასავალდებულო)";
+
+
+"HAPTICS" = "ტაქტილური";
+
+
+"Your message has \vbeen sent." = "თქვენი შეტყობინება გაიგზავნა";
+
+
+"LEGAL" = "სამართლებრივი";
+
+
+"Block List" = "ბლოკირებულთა სია";
+
+
+"PERSONALIZATION" = "პერსონალიზაცია";
+
+
+"in our Privacy Policy." = "ჩვენს უსაფრთხოების პოლიტიკაში.";
+
+
+"CONTINUE" = "გაგრძელება";
+
+
+"Enter Name" = "შეიყვანეთ სახელი";
+
+
+"What's your email?" = "რა არის თქვენი ელფოსტა?";
+
+
+"Hello there!" = "გამარჯობა!";
+
+
+"PUSH NOTIFICATIONS" = "შეტყობინებები";
+
+
+"Bullet 3 (Optional)" = "ბულეტი 3 (არასავალდებულო)";
+
+
+"Source name" = "წყაროს დასახელება";
+
+
+"Current Password" = "მიმდინარე პასვორდი";
+
+
+"COLOR THEME" = "ფერადი თემა";
+
+
+"eTp-X1-g34.text" = "ან - გავლით";
+
+
+"CANCEL" = "გაუქმება";
+
+
+"Bullet 4 (Optional)" = "ბულეტი 4 (არასავალდებულო)";
+
+
+"Date published" = "გამოქვეყნების თარიღი";
+
+
+"Send Password Reset Link" = "გააგზავნე ბმული პასვორდის გასანახლებლად";
+
+
+"CONTINUE WITH APPLE" = "დარეგისტრირდი Apple ID-ით";
+
+
+"Off" = "გამორთვა";
+
+
+"BLOCK LIST" = "ბლოკირებულთა სია";
+
+
+"HELP" = "დახმარება";
+
+
+"Reference link" = "საცნობარო ბმული";
+
+
+"Your Password" = "თქვენი პასვორდი";
+
+
+"SUBMIT" = "წარდგენა";
+
+
+"HELP" = "დახმარება";
+
+
+"MY ACCOUNT" = "ჩემი ანგარიში";
+
+
+"hbD-HP-tZd.normalTitle" = "ბლოკის მოხსნა";
+
+
+"OTHERS" = "სხვები";
+
+
+"BREAKING NEWS" = "უახლესი ამბები";
+
+
+"Topics" = "ბლოკირებული თემები";
+
+
+"Message us," = "მოგვწერეთ";
+
+
+"Pick topics to start reading
+and saving articles" = "აპლიკაციის ენა";
+
+
+"Forgot Password?" = "დაგავიწყდათ პასვორდი?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ახალი მახასიათებლები დამატებულია. ზოგი პრობლემა აღმოფხვრილია.";
+
+
+"Success!" = "წარმატება!!";
+
+
+"Current Password" = "მიმდინარე პასვორდი";
+
+
+"CONTENT" = "კონტენტი";
+
+
+"Headline" = "სათაური";
+
+
+"neg-UC-UpK.text" = "აირჩიეთ თემა კითხვის დასაწყებად და სტატიების შესანახად";
+
+
+"CONTINUE WITH EMAIL ID" = "განაგრძეთ თქვენი ელფოსტის ID-ით";
+
+
+"SAVE CHANGES" = "ცვლილებების შენახვა";
+
+
+"Post an Article" = "სტატიის გამოქვეყნება";
+
+
+"Contact Us" = "დაგვიკავშირდით";
+
+
+"On" = "ჩართვა";
+
+
+"New Email Address" = "ახალი ელფოსტის მისამართი";
+
+
+"Bullet 5 (Optional)" = "ბულეტი 5 (არასავალდებულო)";
+
+
+"Suggest an improvement" = "გაუმჯობესების შეთავაზება";
+
+
+"Channels" = "დაბლოკილი წყაროები";
+
+
+"From:" = "-გან";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "პერსონალიზებული რეკომენდაციები";
+
+
+"I don't like this" = "მე ეს არ მომწონს";
+
+
+"CONTINUE" = "გაგრძელება";
+
+
+"Name" = "სახელი";
+
+
+"Enter email" = "შეიყვანეთ ელფოსტა";
+
+
+"HELP" = "დახმარება";
+
+
+"FOLLOW 3 TO CONTINUE" = "მიჰყევით 3-ს გასაგრძელებლად";
+
+
+"UPDATE APP" = "აპლიკაციის განახლება";
+
+
+"Forgot Password?" = "დაგავიწყდათ პასვორდი?";
+
+
+"Change Password" = "პასვორდის ცვლილება";
+
+
+"Reset Password" = "პასვორდის განულება";
+
+
+
+
+
+
+
+
+"Report content" = "განგვიცხადეთ თქვენი უკმაყოფილების შესახებ";
+
+
+"CHANGE EMAIL ADDRESS" = "შეცვალე ელფოსტის მისამართი";
+
+
+"Follow The Guardian" = "მიჰყევით ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ჩვენ დავამატეთ უამრავი ახალი ფუნქცია და გამოვასწორეთ ზოგიერთი შეცდომა, რომ თქვენი გამოცდილება მაქსიმალურად იყოს გამარტივებული.";
+
+
+"Edition / Region" = "გამოცემა / რეგიონი";
+
+
+"OK" = "კარგი";
+
+
+"NARRATOR" = "ᲛᲗᲮᲠᲝᲑᲔᲚᲘ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "თქვენთვის სიახლეების სიახლეების განახლებას ძალიან ბევრი დრო არ უნდა დაუთმოთ. ტყვიებში სიახლეები რეგულარულად 5 წუთიან კითხვას და კონდენსირებას ახდენს ადვილად ასათვისებელ ტყვიებად. ახლა, შეგიძლიათ მიიღოთ იგივე სიახლეები დროის მხოლოდ მცირე ნაწილში - ასე რომ, უფრო ნაკლებ დროში შეგიძლიათ წაიკითხოთ მეტი.";
+
+
+"READING SPEED" = "კითხვის სიჩქარე";
+
+
+
+
+
+"You haven't blocked anything yet" = "ჯერ არაფერი დაბლოკილხართ";
+
+
+"EDITION / REGION" = "გამოცემა / რეგიონი";
+
+
+
+
+
+"HEADLINES ONLY" = "მხოლოდ HEADLINES";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "აუდიო პარამეტრები";
+
+
+"AUDIO SETTINGS" = "აუდიო პარამეტრები";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES და BULLETS";
+
+
+"CONTINUE AS GUEST" = "გამოტოვება და შესვლა, როგორც სტუმარი";
+
+
+"Topics" = "თემები";
+
+
+"Pick topics to start reading and saving articles" = "აირჩიეთ თემები, რომ დაიწყოთ სტატიების კითხვა და შენახვა";
+
+
+"Channels" = "არხები";
+
+
+"Choose from hundreds \nof news publications" = "აირჩიეთ ასობით ახალი ამბების პუბლიკაციები";
+
+
+"Pick topics to start reading\nand saving articles" = "აირჩიეთ თემები, რომ დაიწყოთ სტატიების კითხვა და შენახვა";
+
+"Pick editions to start reading\nand saving articles" = "აირჩიეთ გამოცემები, რომ დაიწყოთ სტატიების კითხვა და შენახვა";
+
+"Or with" = "ან თან";
+
+"CONTINUE AS GUEST" = "გაგრძელება, როგორც სტუმარი";
+
+"Terms of Service" = "Მომსახურების პირობები";
+
+"Choose from hundreds \nof news publications" = "აირჩიეთ ასობით ახალი ამბების პუბლიკაციები";
+
+"Select your preferred language\nfor News in Bullets." = "აირჩიეთ სასურველი ენა ახალი ამბების ტყვიებში.";
+
+"Choose a style" = "აირჩიეთ სტილი";
+
+"Pop or subtle. Day or night. Customize your interface." = "პოპი ან დახვეწილი. დღე ან ღამე. მოირგეთ თქვენი ინტერფეისი.";
+
+"MINS AGO" = "წუთის წინ";
+
+"AN HOUR AGO" = "ერთი საათის წინ";
+
+"HOURS AGO" = "საათის წინ";
+
+"1 WEEK AGO" = "1 კვირის წინ";
+
+"YESTERDAY" = "Გუშინ";
+
+"DAYS AGO" = "რამოდენიმე დღის წინ";
+
+"Go to" = "Წადი";
+
+"You have reached the start." = "თქვენ დასაწყისს მიაღწიეთ";
+
+"Source unblocked successfully" = "წყარო წარმატებით განბლოკა";
+
+"Invalid email format"  = "ელ.ფოსტის ფორმატი არასწორია";
+
+"Wrong email or password" = "არასწორი ელ.ფოსტა ან პაროლი";
+
+

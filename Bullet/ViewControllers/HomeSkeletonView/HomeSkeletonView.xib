@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSkeletonView" customModule="Bullet" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="2Wb-Qs-edV" id="UCc-fG-K2x"/>
+                <outlet property="tableView" destination="V6C-q0-kmG" id="V5k-kK-NbA"/>
+                <outlet property="viewTopBar" destination="Fbo-aG-MOV" id="dNb-4U-APu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="641"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po9-LH-gYJ">
+                    <rect key="frame" x="0.0" y="0.0" width="397" height="641"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6C-q0-kmG">
+                            <rect key="frame" x="0.0" y="60" width="397" height="581"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbo-aG-MOV">
+                            <rect key="frame" x="0.0" y="0.0" width="397" height="60"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-Qs-edV">
+                                    <rect key="frame" x="0.0" y="10" width="397" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NzY-kJ-Jbm">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2Wb-Qs-edV" secondAttribute="trailing" id="FHk-tM-mTb"/>
+                                <constraint firstAttribute="bottom" secondItem="2Wb-Qs-edV" secondAttribute="bottom" id="MAj-9Q-8aq"/>
+                                <constraint firstAttribute="height" constant="60" id="ffd-6w-kQk"/>
+                                <constraint firstItem="2Wb-Qs-edV" firstAttribute="top" secondItem="Fbo-aG-MOV" secondAttribute="top" constant="10" id="jjX-sq-63z"/>
+                                <constraint firstItem="2Wb-Qs-edV" firstAttribute="leading" secondItem="Fbo-aG-MOV" secondAttribute="leading" id="nFL-Q0-DBL" customClass="PercentLayoutConstraint" customModule="Bullet" customModuleProvider="target">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="marginPercent">
+                                            <real key="value" value="0.050000000000000003"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="V6C-q0-kmG" secondAttribute="trailing" id="MIX-gK-f5U"/>
+                        <constraint firstAttribute="bottom" secondItem="V6C-q0-kmG" secondAttribute="bottom" id="PdA-CT-RmA"/>
+                        <constraint firstAttribute="trailing" secondItem="Fbo-aG-MOV" secondAttribute="trailing" id="YD1-tA-dcw"/>
+                        <constraint firstItem="Fbo-aG-MOV" firstAttribute="leading" secondItem="Po9-LH-gYJ" secondAttribute="leading" id="fSw-H5-ScG"/>
+                        <constraint firstItem="Fbo-aG-MOV" firstAttribute="top" secondItem="Po9-LH-gYJ" secondAttribute="top" id="lml-Zi-DdQ"/>
+                        <constraint firstItem="V6C-q0-kmG" firstAttribute="leading" secondItem="Po9-LH-gYJ" secondAttribute="leading" id="mDT-Tf-eDo"/>
+                        <constraint firstItem="V6C-q0-kmG" firstAttribute="top" secondItem="Fbo-aG-MOV" secondAttribute="bottom" id="wBR-vc-cIF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Po9-LH-gYJ" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Avi-ZY-daO"/>
+                <constraint firstAttribute="trailing" secondItem="Po9-LH-gYJ" secondAttribute="trailing" id="Ymp-J0-eFI"/>
+                <constraint firstItem="Po9-LH-gYJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s9f-9e-ccW"/>
+                <constraint firstItem="Po9-LH-gYJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vHp-CH-u2f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="71.739130434782609" y="80.022321428571431"/>
+        </view>
+    </objects>
+</document>

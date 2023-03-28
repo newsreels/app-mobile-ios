@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "nøkkelpunkt";
+"BULLETS" = "NØKKELPUNKTER";
+"Headlines is not available." = "Overskriftene er ikke tilgjengelige.";
+"Check your internet Connection and try again." = "Sjekk internettilkoblingen din og forsøk igjen";
+"Choose Image" = "Velg Bilde";
+"Headline" = "Overskrift";
+"Bullet 1" = "Punkt 1";
+"Bullet 2" = "Punkt 2";
+"Bullet 3 (Optional)" = "Punkt 3 (Valgfritt)";
+"Bullet 4 (Optional)" = "Punkt 4 (Valgfritt)";
+"Bullet 5 (Optional)" = "Punkt 5 (Valgfritt)";
+"Bullet 6 (Optional)" = "Punkt 6 (Valgfritt)";
+"Enter Aticle Headline" = "Oppgi Overskrift";
+"Enter source name" = "Oppgi Kilde";
+"Enter reference link" = "Oppgi Referanse";
+"Enter published date" = "Oppgi Publiseringsdato";
+"Enter Bullet 1" = "Oppgi Første Punkt";
+"Enter Bullet 2" = "Oppgi Andre Punkt";
+"Post article successfully" = "Artikkelen er postet";
+"Follow" = "Følg";
+"Unfollow" = "Avfølg";
+"Block articles from" = "BLOKKER artiklene fra";
+"Unblock articles from" = "AVBLOKKER artiklene fra";
+"Remove article" = "Fjern artikkelen";
+"Save article" = "Lagre denne artikkelen";
+"Terms & Conditions" = "Vilkår";
+"Privacy Policy" = "Personvernsvilkår   ";
+"TERMS AND CONDITIONS" = "VILKÅR";
+"PRIVACY POLICY" = "PERSONVERNSVILKÅR";
+"Fuel your curiosity" = "Les flere nyheter om verden";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Les korte og oppdaterte nyheter om dine favorittemaer fra pålitelige kilder verden rundt.";
+"Save time" = "Spar tiden din";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Les nyhetene kort oppsummert";
+"Hands-free reading" = "Hands-free lesing";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Har du ikke tid til å lese? Benytt høytlesningsfunksjonen.";
+"Write your message..." = "Skriv din melding…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "send oss en melding om du trenger hjelp til noe, vi vil gjerne høre fra deg!";
+"Drop us a message" = "send oss en melding";
+"Enter Name." = "Oppgi Navn.";
+"Enter Email." = "Oppgi E-post.";
+"Write your message." = "Skriv din melding.";
+"Topic unblock successfully" = "Du avblokkerte denne kategorien";
+"Source unblock successfully" = "Du avblokkerte denne kilden";
+"Unblock Source" = "Avblokker Kilde";
+"Cancel" = "Avbryt";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Send oss en tilbakemelding, vi vil gjerne høre fra deg! Har du generelle eller juridiske spørsmål? Prøv Hjelpesiden eller Kontakt Oss.";
+"Enter your suggestion." = "Oppgi ditt forslag.";
+"feedback sent." = "tilbakemeldingen ble sendt";
+"30m" = "30m";
+"1h" = "1t";
+"3h" = "3t";
+"6h" = "6t";
+"12h" = "12t";
+"24h" = "24t";
+"Language updated successfully." = "Språket er oppdatert.";
+"CONTINUE" = "FORTSETT";
+"FOLLOW 3 TO CONTINUE" = "FØLG 3 FOR Å FORTSETTE";
+"Unfollow Location" = "Avfølg Plassering";
+"Saved Articles" = "Lagrede Artikler";
+"Block" = "BLOKKER";
+"Are you sure you want block" = "Er du sikker på at du ønsker å blokkere dette";
+"Once blocked, you wont be able to see any Articles related to this" = "Du vil ikke se artikler fra denne kanalen dersom du blokkerer den.";
+"Block Topic" = "Blokker denne Kategorien";
+"Suggested" = "Foreslått";
+"Related Sources not available" = "De Relaterte Kildene er ikke tilgjengelig";
+"Block Source" = "Blokker denne Kilden";
+"News in Bullets App version" = "Nyhetene Kort Oppsummert App-versjon";
+"Next" = "Neste";
+"Login" = "Logg inn";
+"Terms" = "Vilkår";
+"By clicking Continue, you agree with our Terms." = "Velg Fortsett for å akseptere Vilkårene";
+"in our Privacy Policy." = "i våre Personvernsvilkår";
+"Access token missing." = "Autoriseringskode mangler.";
+"NEXT" = "NESTE";
+"By checking this box, you agree to our " = "Huk av i boksen for å akseptere Vilkårene. Din informasjon blir behandlet i samsvar med våre Personvernsregler";
+"Terms of Service" = "Brukervilkår";
+". We’ll handle your data according to our " = ". Vi vil behandle din informasjon i samsvar med våre";
+"Password must be at least 8 characters." = "Passordet må inneholde minst 8 tegn.";
+"Strong" = "Sterkt";
+"Medium" = "Middels";
+"Weak" = "Svakt";
+"CREATE A NEW ACCOUNT" = "OPPRETT EN NY KONTO";
+"SIGN IN WITH EXISTING ACCOUNT" = "LOGG INN MED EN EKSISTERENDE KONTO";
+"You must agree to the Terms of Services to continue" = "Du må akseptere Brukervilkårene for å fortsette";
+"SIGN IN" = "Logg inn";
+"What's your password?" = "Hva er passordet ditt?";
+"SIGN UP" = "Meld deg inn";
+"Choose your password?" = "Velg ditt passord";
+"Something went wrong" = "Noe gikk galt";
+"we will send email to" = "vi sender en e-post til";
+"with a link to reset your password." = "med en lenke for å tilbakestille ditt passord.";
+"A reset password link has been sent to" = "En lenke for å tilbakestille passordet har blitt sendt til";
+"Enter new email." = "Oppgi ny e-post.";
+"Enter password." = "Oppgi passord.";
+"New Password " = "Nytt Passord.";
+" (8 characters min)" = "(Minimum 8 tegn)";
+"Enter current password." = "Oppgi nåværende passord";
+"Enter new password." = "Oppgi nytt passord.";
+"Enter confirm password." = "Bekreft passord.";
+"password do not matched!" = "passordene er ikke like!";
+"GET STARTED" = "KOM I GANG";
+"SKIP" = "HOPP OVER";
+"From where you would like to pick photo?" = "Hvor ønsker du å velge bilde fra??";
+"Camera" = "Kamera";
+"Photo Library" = "Galleri";
+"Kindly open settings and enable access" = "Vennligst åpne innstillinger og gi tilgang";
+"Open Settings" = "Åpne Innstillinger";
+"Access needed for your camera" = "Tilgang kreves for ditt kamera";
+"Access needed for your photo library" = "Tilgang kreves for ditt galleri";
+"Done" = "Ferdig";
+"Pull to refresh" = "Dra ned for å oppdatere";
+"Loading" = "Laster";
+"Speech not available for this article" = "Høytlesning er ikke tilgjengelig for denne artikkelen";
+"MANAGE LOCATION" = "ADMINISTRER PLASSERING";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Velg News in Bullets Edition basert på lokalitet";
+"Edition" = "Utgave";
+"EDITION / REGION" = "UTGAVE / REGION";
+"Your Topics" = "Dine emner";
+"Your Channels" = "Kanalene dine";
+"Your Places" = "Dine steder";
+"Enter email." = "Skriv inn e-post.";
+"Please enter a password." = "Vennligst skriv inn passord.";
+"Search articles" = "Søk i artikler";
+"No results" = "Ingen resultater";
+"Edition / Region" = "Utgave / Region";
+
+
+
+
+"0JC-Sb-Ouu.text" = "VISNINGSMODUS";
+
+
+"Search" = "Søk";
+
+
+"Select" = "Velg ";
+
+
+"6H8-dI-k9P.text" = "Behandle Plasseringer";
+
+
+"6KH-YP-5Lt.text" = "FORTELLER";
+
+
+" ) icon on the article" = " ) symbolet i artikkelen";
+
+
+"BLOCK" = "BLOKKER";
+
+
+"you want to read later then" = "ønsker du å lese senere";
+
+
+"7oo-cf-l7Y.text" = "Lesehastighet";
+
+
+"88L-ip-pZw.text" = "Lesehastighet";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Det er ikke noe her. Ser ut til at det bare er en katt her. Gå tilbake til hovedsiden? \nØnsker du å gå tilbake til hjemsiden?";
+
+
+"BpH-F1-i0z.normalTitle" = "Lokalt";
+
+
+" ) to save article." = " ) for å lagre artikkelen.";
+
+
+"FB0-YN-HZg.text" = "for å fortsette, velg 3";
+
+
+"H5Z-xJ-dWD.text" = "Overskrifter og\nNøkkelpunkter";
+
+
+"Search" = "Søk";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "UTVIDED VISNING";
+
+
+"Jpx-nY-Is1.normalTitle" = "Kanaler";
+
+
+"JqN-io-P1u.normalTitle" = "+ Legg til i Plasseringer";
+
+
+"What's your email?" = "Hva er din E-postadresse?";
+
+
+"Lw1-Md-nse.text" = "LISTEVISNING";
+
+
+"LyT-pT-g53.text" = "INTERNASJONALT";
+
+
+"N6C-6i-Z2s.text" = "INTERNASJONALT";
+
+
+"Nru-uU-CsC.text" = "Forslag";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Kategorier";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Tilpass";
+
+
+"Topics" = "Kategorier";
+
+
+"WXY-po-W1B.text" = "OVERSKRIFTER OG\nNØKKELPUNKTER";
+
+
+"ans-Zy-T2Y.placeholder" = "Søk etter Plasseringer";
+
+
+"bgE-Jc-u8H.text" = "Tilpass";
+
+
+
+
+
+"Tap the ( " = "Trykk på ( ";
+
+
+"Places" = "Plassering";
+
+
+"d1l-HK-OrG.text" = "VISNINGSMODUS";
+
+
+
+
+
+"Language" = "Språk";
+
+
+"e9g-Wr-suO.text" = "KUN OVERSKRIFTER";
+
+
+"GO HOME" = "gå tilbake til hovedsiden";
+
+
+"eh1-Oo-lEn.text" = "UTVIDED VISNING";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "LISTEVISNING";
+
+
+"j2i-MT-VkA.text" = "Prøv et annet søkeord";
+
+
+"Top News" = "Viktige Nyheter";
+
+
+"jmO-aF-nJ9.text" = "Kun Overskrifter";
+
+
+"There is nothing in here" = "Det er ikke noe her. Ser ut til at det bare er en katt her. Gå tilbake til hovedsiden?";
+
+
+"ma1-9p-bSa.text" = "Ingen resultater funnet";
+
+
+"mce-jc-cKH.text" = "FORTELLER";
+
+
+"Channels" = "Kanaler";
+
+
+"Discover" = "Oppdag";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "AVBRYT";
+
+
+"Discover" = "Oppdag";
+
+
+"No saved stories yet" = "Det er ikke noe her";
+
+
+"wDG-kF-Hl8.text" = "Les nyheter basert på din plassering";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALISERING";
+
+
+"xfF-RB-mWL.text" = "LOKALISERING";
+
+
+"Search" = "Søk";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Få de mest relevante nyhetene til regionen du velger. Les nyheter som er kuratert for å holde deg oppdatert på de siste nyhetene fra hvor som helst i verden.";
+
+
+"Search articles" = "Søk i artikler";
+
+
+"6H8-dI-k9P.text" = "Administrer steder";
+
+
+
+
+
+"Profile" = "Profil";
+
+
+"Editions" = "Utgaver";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Steder";
+
+
+
+
+
+"Search" = "Søk";
+
+
+
+
+
+
+
+
+"Search" = "Søk";
+
+
+"LANGUAGE" = "SPRÅK";
+
+
+"Search" = "Søk";
+
+
+"No results" = "Ingen resultater";
+
+
+"Channels" = "Kanaler";
+
+
+"Places" = "Steder";
+
+
+"Places" = "Steder";
+
+
+"e9F-hd-Ifm.text" = "UTGAVE / REGION";
+
+
+
+
+
+
+
+
+"PLACES" = "STEDER";
+
+
+"SAVED ARTICLES" = "GJENTTE ARTIKLER";
+
+
+"Articles" = "Artikler";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "FORTSETTE";
+
+
+
+
+
+"w8f-2R-NgT.text" = "UTGAVE / REGION";
+
+
+"Try a different keyword" = "Prøv et annet nøkkelord";
+
+
+"For You" = "For deg";
+
+
+"Results" = "Resultater";
+
+
+
+"About" = "Om oss";
+
+
+"Share" = "Del";
+
+
+"ACCOUNT" = "KONTO";
+
+
+"Your Email" = "Din E-post";
+
+
+"1sT-J6-qI0.text" = "LAGREDE ARTIKLER";
+
+
+"2XX-rr-GLC.text" = "Velg ulike kanaler fra hundrevis av kilder";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Les de siste nyhetene og hendelsene fra hele verden.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Sett et tidsrom for å motta varsler";
+
+
+"Off" = "Av";
+
+
+
+
+
+"Bullet 2" = " Punkt 2";
+
+
+"What's your email?" = "Hva er din e-post?";
+
+
+"New Password (8 Characters Min)" = "Nytt Passord (Minimum 8 tegn)";
+
+
+"Forgot Password?" = "Glemt Passord?";
+
+
+"Account Settings" = "Kontoinnstillinger";
+
+
+"Learn how we process your data" = "Informasjon om behandling av dine data";
+
+
+"3h" = "3t";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blokker artikler fra";
+
+
+"On" = "Skru På";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Hjelpesenter";
+
+
+"Search" = "Søk i Kanaler";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Velg fil fra galleri";
+
+
+
+
+"Save article" = "Lagre artikkel";
+
+
+"ABOUT" = "OM";
+
+
+"Dark" = "Mørk";
+
+
+"Legal" = "Juridisk";
+
+
+"Go to The Guardian" = "Gå til ---";
+
+
+"Send reset link" = "Send tilbakestillingslenke";
+
+
+
+
+
+"My Account" = "Min Konto";
+
+
+"FEEDBACK" = "TILBAKEMELDINGER";
+
+
+"Message" = "Melding";
+
+
+"Confirm New Password" = "Bekreft Nytt Passord";
+
+
+"for ___" = "for";
+
+
+"Search" = "Søk etter Kategorier";
+
+
+"LANGUAGE" = "SPRÅK";
+
+
+"Light" = "Lys";
+
+
+"FOLLOW 3 TO CONTINUE" = "for å fortsette, velg 3";
+
+
+
+
+"Off" = "Skru Av";
+
+
+"Language" = "Velg";
+
+
+"LOG OUT" = "LOGG UT";
+
+
+"Report content" = "Rapporter innhold";
+
+
+"What's your email?" = "Hva er din e-post?";
+
+
+"On" = "Skru På";
+
+
+"More like this" = "Flere nyheter som dette";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1t";
+
+
+"Enter Email Address" = "Skriv inn E-postadresse";
+
+
+"News in Bullets" = "Les mer på kortere tid.";
+
+
+"6h" = "6t";
+
+
+"Choose your password" = "Velg ditt passord";
+
+
+"Cancel" = "Kanseller";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Les nyheter raskt med denne appen. Velg dine kategorier og kilder. Les nyheter kort oppsummert.";
+
+
+"Push Notification" = "Varsel";
+
+
+"12h" = "12t";
+
+
+"24h" = "24t";
+
+
+"E-mail" = "E-post";
+
+
+"How can we help you?" = "Hvordan kan vi hjelpe?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "ENDRE PASSORD";
+
+
+"Change Email" = "ENDRE E-POSTADRESSE";
+
+
+"Medium" = "Middels";
+
+
+"SAVE CHANGES" = "LAGRE ENDRINGER";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Send oss en melding om du trenger hjelp med noe, vi vil gjerne høre fra deg!";
+
+
+"P5u-N3-Tw4.text" = "Etikett";
+
+
+"Cancel" = "Avbryt";
+
+
+"Bullet 1" = "Punkt 1";
+
+
+"TIMED NOTIFICATIONS" = "VARSLER";
+
+
+"POST ARTICLE" = "POST EN ARTIKKEL";
+
+
+"CONTACT US" = "Kontakt Oss";
+
+
+"EDITION / REGION" = "Utgave";
+
+
+"Search" = "Søk";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Send oss en tilbakemelding, vi vil gjerne høre fra deg! Har du generelle eller juridiske spørsmål? Prøv vår Hjelpeside eller Kontakt Oss";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Send oss en melding om du trenger hjelp med noe, vi vil gjerne høre fra deg!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "FORTSETT";
+
+
+"Time To Update!" = "Oppdater appen!";
+
+
+"NOTIFICATIONS" = "VARSLER";
+
+
+"Search" = "Søk";
+
+
+"By clicking Continue, you agree with our Terms." = "Velg Fortsett for å akseptere Vilkårene";
+
+
+"HELP / CONTACT US" = "HJELP / KONTAKT";
+
+
+"Reset Password" = "Tilbakestill Passord";
+
+
+"SEND MESSAGE" = "SEND MELDING";
+
+
+"Save article" = "Lagre artikkel";
+
+
+"Bullet 6 (Optional)" = "Punkt 6 (valgfritt)";
+
+
+"HAPTICS" = "HAPTIKK ";
+
+
+"Your message has \vbeen sent." = "Din melding har blitt sendt..";
+
+
+"LEGAL" = "JURIDISK";
+
+
+"Block List" = "Blokkeringsliste";
+
+
+"PERSONALIZATION" = "TILPASNING";
+
+
+"in our Privacy Policy." = "i våre Personvernsvilkår";
+
+
+"CONTINUE" = "FORTSETT";
+
+
+"Enter Name" = "Skriv inn Navn";
+
+
+"What's your email?" = "Hva er din e-post?";
+
+
+"Hello there!" = "Hei!";
+
+
+"PUSH NOTIFICATIONS" = "VARSLER";
+
+
+"Bullet 3 (Optional)" = "Punkt 3 (Valgfritt)";
+
+
+"Source name" = "Kildenavn";
+
+
+"Current Password" = "Nåværende Passord";
+
+
+"COLOR THEME" = "Fargetema";
+
+
+"eTp-X1-g34.text" = "Eller gjennom";
+
+
+"CANCEL" = "AVBRYT";
+
+
+"Bullet 4 (Optional)" = "Punkt 4 (Valgfritt)";
+
+
+"Date published" = "Publiseringsdato";
+
+
+"Send Password Reset Link" = "Send lenke for å tilbakestille passord";
+
+
+"CONTINUE WITH APPLE" = "Registrer deg med Apple ID";
+
+
+"Off" = "Slå av";
+
+
+"BLOCK LIST" = "BLOKKERINGSLISTE";
+
+
+"HELP" = "HJELP";
+
+
+"Reference link" = "Referanselenke";
+
+
+"Your Password" = "Ditt Passord";
+
+
+"SUBMIT" = "SEND INN";
+
+
+"HELP" = "HJELP";
+
+
+"MY ACCOUNT" = "MIN KONTO";
+
+
+"hbD-HP-tZd.normalTitle" = "Avblokker";
+
+
+"OTHERS" = "Andre";
+
+
+"BREAKING NEWS" = "SISTE NYTT";
+
+
+"Topics" = "Blokkerte Kategorier";
+
+
+"Message us," = "Send oss en melding,";
+
+
+"Pick topics to start reading
+and saving articles" = "appspråk";
+
+
+"Forgot Password?" = "Glemt Passord?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nye funksjoner er lagt til. Noen problemer er rettet.";
+
+
+"Success!" = "Suksess!";
+
+
+"Current Password" = "Nåværende Passord";
+
+
+"CONTENT" = "INNHOLD";
+
+
+"Headline" = "Overskrift";
+
+
+"neg-UC-UpK.text" = "Velg kategorier for å begynne å lese og lagre artikler";
+
+
+"CONTINUE WITH EMAIL ID" = "Fortsett med din E-post ID";
+
+
+"SAVE CHANGES" = "LAGRE ENDRINGER";
+
+
+"Post an Article" = "Post en Artikkel";
+
+
+"Contact Us" = "Kontakt Oss";
+
+
+"On" = "Skru På";
+
+
+"New Email Address" = "Ny E-postadresse";
+
+
+"Bullet 5 (Optional)" = "Punkt 5 (Valgfritt)";
+
+
+"Suggest an improvement" = "Foreslå en forbedring";
+
+
+"Channels" = "Blokkerte Kilder";
+
+
+"From:" = "Fra:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "TILPASSEDE FORSLAG";
+
+
+"I don't like this" = "Jeg liker ikke dette";
+
+
+"CONTINUE" = "FORTSETT";
+
+
+"Name" = "Navn";
+
+
+"Enter email" = "Oppgi e-post";
+
+
+"HELP" = "HJELP";
+
+
+"FOLLOW 3 TO CONTINUE" = "Følg 3 for å Fortsette";
+
+
+"UPDATE APP" = "Oppdater App";
+
+
+"Forgot Password?" = "Glemt Passord?";
+
+
+"Change Password" = "Endre Passord";
+
+
+"Reset Password" = "Tilbakestill Passord";
+
+
+
+
+
+
+
+
+"Report content" = "Rapporter din bekymring";
+
+
+"CHANGE EMAIL ADDRESS" = "ENDRE E-POSTADRESSE";
+
+
+"Follow The Guardian" = "Følg ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Vi har lagt til mange nye funksjoner og fikser noen feil for å gjøre opplevelsen din så jevn som mulig.";
+
+
+"Edition / Region" = "Utgave / Region";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "FORTELLER";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Å holde deg oppdatert om nyhetshistoriene du elsker, bør ikke ta for mye av tiden din. News in Bullets tar den vanlige 5-minutters lesingen og kondenserer den til lettfordøyelige kuler. Nå kan du ta inn de samme nyhetene på bare en brøkdel av tiden - slik at du kan lese mer på kortere tid.";
+
+
+"READING SPEED" = "LESEHASTIGHET";
+
+
+
+
+
+"You haven't blocked anything yet" = "Du har ikke blokkert noe ennå";
+
+
+"EDITION / REGION" = "UTGAVE / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "KUN HEADLINES";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Lydinnstillinger";
+
+
+"AUDIO SETTINGS" = "LYDINNSTILLINGER";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES OG PULLER";
+
+
+"CONTINUE AS GUEST" = "HOPP OG INNLOGGING SOM GJEST";
+
+
+"Topics" = "Temaer";
+
+
+"Pick topics to start reading and saving articles" = "Velg emner for å begynne å lese og lagre artikler";
+
+
+"Channels" = "Kanaler";
+
+
+"Choose from hundreds \nof news publications" = "Velg mellom hundrevis av nyhetspublikasjoner";
+
+
+"Pick topics to start reading\nand saving articles" = "Velg emner for å begynne å lese og lagre artikler";
+
+"Pick editions to start reading\nand saving articles" = "Velg utgaver for å begynne å lese og lagre artikler";
+
+"Or with" = "Eller med";
+
+"CONTINUE AS GUEST" = "FORTSETT SOM GJEST";
+
+"Terms of Service" = "Vilkår for bruk";
+
+"Choose from hundreds \nof news publications" = "Velg mellom hundrevis av nyhetspublikasjoner";
+
+"Select your preferred language\nfor News in Bullets." = "Velg ønsket språk for News in Bullets.";
+
+"Choose a style" = "Velg en stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop eller subtil. Dag eller natt. Tilpass grensesnittet.";
+
+"MINS AGO" = "minutter siden";
+
+"AN HOUR AGO" = "en time siden";
+
+"HOURS AGO" = "timer siden";
+
+"1 WEEK AGO" = "1 uke siden";
+
+"YESTERDAY" = "I går";
+
+"DAYS AGO" = "dager siden";
+
+"Go to" = "Gå til";
+
+"You have reached the start." = "Du har nådd starten";
+
+"Source unblocked successfully" = "Kilde opphevet blokkeringen";
+
+"Invalid email format"  = "Ugyldig e-postformat";
+
+"Wrong email or password" = "Feil e-post eller passord";
+
+

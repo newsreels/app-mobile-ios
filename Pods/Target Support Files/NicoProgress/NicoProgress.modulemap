@@ -1,0 +1,6 @@
+framework module NicoProgress {
+  umbrella header "NicoProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "täpploend";
+"BULLETS" = "TÄPPLOENDID";
+"Headlines is not available." = "Pealkirjad puuduvad";
+"Check your internet Connection and try again." = "Kontrolli oma internetiühendust ja proovi uuesti.";
+"Choose Image" = "Vali pilt";
+"Headline" = "Pealkiri";
+"Bullet 1" = "1 Täpploend";
+"Bullet 2" = "2 Täpploend";
+"Bullet 3 (Optional)" = "3 Täpploend (Valikuline)";
+"Bullet 4 (Optional)" = "4 Täpploend (Valikuline)";
+"Bullet 5 (Optional)" = "5 Täpploend (Valikuline)";
+"Bullet 6 (Optional)" = "6 Täpploend (Valikuline)";
+"Enter Aticle Headline" = "Sisesta Pealkiri";
+"Enter source name" = "Sisesta Allikas";
+"Enter reference link" = "Sisesta Viide";
+"Enter published date" = "Sisesta Avaldamise kuupäev";
+"Enter Bullet 1" = "Sisesta Esimene Täpploend";
+"Enter Bullet 2" = "Sisesta Teine Täpploend";
+"Post article successfully" = "Artikkel on edukalt postitatud";
+"Follow" = "Järgi";
+"Unfollow" = "Lõpeta Järgimine";
+"Block articles from" = "BLOKEERI artiklid";
+"Unblock articles from" = "DEBLOKEERI artiklid";
+"Remove article" = "Eemalda artikkel";
+"Save article" = "Salvesta see artikkel";
+"Terms & Conditions" = "Üldtingimused";
+"Privacy Policy" = "Privaatsuspoliitika";
+"TERMS AND CONDITIONS" = "ÜLDTINGIMUSED";
+"PRIVACY POLICY" = "PRIVAATSUSPOLIITIKA";
+"Fuel your curiosity" = "Loe veel uudiseid maailma kohta";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Loe lühikesi ja täpsed uudised sinu lemmikteemadel usaldatud allikatelt üle maailma.";
+"Save time" = "Salvesta oma aeg";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Loe uudiseid täpploenditena";
+"Hands-free reading" = "Käevaba lugemine";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Pole aega lugemiseks? Kasuta meie ette lugemise funktsiooni.";
+"Write your message..." = "Kirjuta oma sõnum...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "saada meile sõnum kui sul on millegagi abi vaja, me tahame sinult kuulda!";
+"Drop us a message" = "saada meile sõnum";
+"Enter Name." = "Sisesta Nimi";
+"Enter Email." = "Sisesta E-post";
+"Write your message." = "Kirjuta oma sõnum.";
+"Topic unblock successfully" = "Sa deblokeerisid selle teema";
+"Source unblock successfully" = "Sa deblokeerisid selle allika";
+"Unblock Source" = "Deblokeeri Allikas";
+"Cancel" = "Tühista";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Saada meile tagasiside, me tahaksime sinult kuulda! Kas sul on küsimusi või seaduslik mure? Proovi meie Aita lehekülge või Võta meiega Ühendust.";
+"Enter your suggestion." = "Sisesta oma soovitus.";
+"feedback sent." = "tagasiside on edukalt saadetud";
+"30m" = "30m";
+"1h" = "1t";
+"3h" = "3t";
+"6h" = "6t";
+"12h" = "12t";
+"24h" = "24t";
+"Language updated successfully." = "Keel on edukalt uuendatud.";
+"CONTINUE" = "JÄTKA";
+"FOLLOW 3 TO CONTINUE" = "JÄRGI 3 ET JÄTKATA";
+"Unfollow Location" = "Peata Asukoha Järgimine";
+"Saved Articles" = "Salvestatud Artiklid";
+"Block" = "BLOKEERI";
+"Are you sure you want block" = "Kas oled kindel, et tahad seda blokeerida";
+"Once blocked, you wont be able to see any Articles related to this" = "Sa ei näe selle kanali artikleid, kui sa selle blokeerid.";
+"Block Topic" = "Blokeeri see Teema";
+"Suggested" = "Soovitatud";
+"Related Sources not available" = "Seotud Allikad pole saadaval";
+"Block Source" = "Blokeeri see Allikas";
+"News in Bullets App version" = "Lühiuudiste Rakenduse versioon";
+"Next" = "Järgmine";
+"Login" = "Login";
+"Terms" = "Tingimused";
+"By clicking Continue, you agree with our Terms." = "Vali Jätka, et nõustuda Tingimustega";
+"in our Privacy Policy." = "meie Privaatsuspoliitikas.";
+"Access token missing." = "Ligipääsu luba puudub.";
+"NEXT" = "JÄRGMINE";
+"By checking this box, you agree to our " = "Klõpsa kastikesel, et nõustuda Tingimustega. Sinu andmeid töödeldakse vastavalt meie Privaatsuspoliitikale.";
+"Terms of Service" = "Kasutustingimused";
+". We’ll handle your data according to our " = ". Me käsitleme sinu andmeid vastavalt meie";
+"Password must be at least 8 characters." = "Salasõna peab sisaldama vähemalt 8 kirjamärki.";
+"Strong" = "Tugev";
+"Medium" = "Keskmine";
+"Weak" = "Nõrk";
+"CREATE A NEW ACCOUNT" = "LOO UUS KONTO";
+"SIGN IN WITH EXISTING ACCOUNT" = "SISENE EKSISTEERIVA KONTOGA";
+"You must agree to the Terms of Services to continue" = "Jätkamiseks pead nõustuma meie Kasutustingimustega";
+"SIGN IN" = "Logi sisse";
+"What's your password?" = "Mis on sinu salasõna?";
+"SIGN UP" = "Ühine";
+"Choose your password?" = "Vali oma salasõna";
+"Something went wrong" = "Midagi läks valesti";
+"we will send email to" = "me saadame e-maili";
+"with a link to reset your password." = "lingiga, et lähtestada oma salasõna.";
+"A reset password link has been sent to" = "Link salasõna lähtestamiseks saadeti";
+"Enter new email." = "Sisesta uus e-post";
+"Enter password." = "Sisesta salasõna.";
+"New Password " = "Uus Salasõna";
+" (8 characters min)" = "(minimaalselt 8 tähemärki)";
+"Enter current password." = "Sisesta praegune salasõna.";
+"Enter new password." = "Sisesta praegune salasõna.";
+"Enter confirm password." = "Kinnita salasõna.";
+"password do not matched!" = "salasõnad ei ühildu!";
+"GET STARTED" = "ALUSTA";
+"SKIP" = "JÄTA VAHELE";
+"From where you would like to pick photo?" = "Kust sa sooviksid pildi valida?";
+"Camera" = "Kaamera";
+"Photo Library" = "Fotokogu";
+"Kindly open settings and enable access" = "Ava seaded ja võimalda ligipääs";
+"Open Settings" = "Ava Seaded";
+"Access needed for your camera" = "Vajalik ligipääs sinu kaamerale";
+"Access needed for your photo library" = "Vajalik ligipääs sinu fotokogule";
+"Done" = "Tehtud";
+"Pull to refresh" = "Tõmba, et värskendada";
+"Loading" = "Laadimine";
+"Speech not available for this article" = "Kõne pole selle artikli jaoks saadaval";
+"MANAGE LOCATION" = "HALDA ASUKOHTA";
+"OK" = "Okei";
+"Choose your News in Bullets Edition based on locale" = "Valige oma uudised Bullets Editionis lokaadi põhjal";
+"Edition" = "Väljaanne";
+"EDITION / REGION" = "TOIMETUS / PIIRKOND";
+"Your Topics" = "Teie teemad";
+"Your Channels" = "Teie kanalid";
+"Your Places" = "Teie kohad";
+"Enter email." = "Sisestage e-posti aadress.";
+"Please enter a password." = "Sisestage parool.";
+"Search articles" = "Otsige artikleid";
+"No results" = "Tulemused puuduvad";
+"Edition / Region" = "Väljaanne / piirkond";
+
+
+
+
+
+"0JC-Sb-Ouu.text" = "KUVAREŽIIM";
+
+
+"Search" = "Otsi";
+
+
+"Select" = "Vali ( ";
+
+
+"6H8-dI-k9P.text" = "Halda Asukohti";
+
+
+"6KH-YP-5Lt.text" = "JUTUSTAJA";
+
+
+" ) icon on the article" = " ) ikoon artiklil";
+
+
+"BLOCK" = "BLOKEERI";
+
+
+"you want to read later then" = "kui tahad hiljem lugeda siis";
+
+
+"7oo-cf-l7Y.text" = "Lugemise kiirus";
+
+
+"88L-ip-pZw.text" = "Lugemise kiirus";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Siin pole midagi.Tundub, et siin pole midagi peale kassi. Kas lähed tagasi kodulehele?\nKas soovid minna tagasi kodulehele?";
+
+
+"BpH-F1-i0z.normalTitle" = "Kohalik";
+
+
+" ) to save article." = " ) et salvestada artikkel";
+
+
+"FB0-YN-HZg.text" = "vali 3, et jätkata";
+
+
+"H5Z-xJ-dWD.text" = "Pealkirjad ja\nTäpploendid";
+
+
+"Search" = "Otsi";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "LAIENDATUD VAADE";
+
+
+"Jpx-nY-Is1.normalTitle" = "Kanalid";
+
+
+"JqN-io-P1u.normalTitle" = "+ Lisage asukohad";
+
+
+"What's your email?" = "Mis on su e-posti aadress?";
+
+
+"Lw1-Md-nse.text" = "LOENDIVAADE";
+
+
+"LyT-pT-g53.text" = "RAHVUSVAHELINE";
+
+
+"N6C-6i-Z2s.text" = "RAHVUSVAHELINE";
+
+
+"Nru-uU-CsC.text" = "Soovitused";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Teemad";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Kohanda";
+
+
+"Topics" = "Teemad";
+
+
+"WXY-po-W1B.text" = "PEALKIRJAD JA\nTÄPPLOENDID";
+
+
+"ans-Zy-T2Y.placeholder" = "Otsi Asukohti";
+
+
+"bgE-Jc-u8H.text" = "Kohanda";
+
+
+
+
+
+"Tap the ( " = "Vajuta ( ";
+
+
+"Places" = "Asukoht";
+
+
+"d1l-HK-OrG.text" = "KUVAREŽIIM";
+
+
+
+
+
+"Language" = "Keel";
+
+
+"e9g-Wr-suO.text" = "AINULT PEALKIRJAD";
+
+
+"GO HOME" = "tagasi kodulehele";
+
+
+"eh1-Oo-lEn.text" = "LAIENDATUD VAADE";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "LOENDIVAADE";
+
+
+"j2i-MT-VkA.text" = "Proovi teist märksõna";
+
+
+"Top News" = "Tippuudised";
+
+
+"jmO-aF-nJ9.text" = "Ainult pealkirjad";
+
+
+"There is nothing in here" = "Siin pole midagi.";
+
+
+"ma1-9p-bSa.text" = "Ühtegi tulemust ei leitud";
+
+
+"mce-jc-cKH.text" = "JUTUSTAJA";
+
+
+"Channels" = "Kanalid";
+
+
+"Discover" = "Avasta";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "TÜHISTA";
+
+
+"Discover" = "Avasta";
+
+
+"No saved stories yet" = "Siin pole midagi";
+
+
+"wDG-kF-Hl8.text" = "Loe uudiseid vastavalt asukohale";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALISEERIMINE";
+
+
+"xfF-RB-mWL.text" = "LOKALISEERIMINE";
+
+
+"Search" = "Otsing";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Hankige oma valitud piirkonna jaoks kõige asjakohasemad uudised. Lugege kureeritud uudislugusid, et oleksite kursis viimaste uudistega kõikjal maailmas.";
+
+
+"Search articles" = "Otsige artikleid";
+
+
+"6H8-dI-k9P.text" = "Halda kohti";
+
+
+
+
+
+"Profile" = "Profiil";
+
+
+"Editions" = "Väljaanded";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Kohad";
+
+
+
+
+
+"Search" = "Otsing";
+
+
+
+
+
+
+
+
+"Search" = "Otsing";
+
+
+"LANGUAGE" = "KEEL";
+
+
+"Search" = "Otsing";
+
+
+"No results" = "Tulemusi ei leitud";
+
+
+"Channels" = "Kanalid";
+
+
+"Places" = "Kohad";
+
+
+"Places" = "Kohad";
+
+
+"e9F-hd-Ifm.text" = "TOIMETUS / PIIRKOND";
+
+
+
+
+
+
+
+
+"PLACES" = "KOHAD";
+
+
+"SAVED ARTICLES" = "SÄILITATUD ARTIKLID";
+
+
+"Articles" = "Artiklid";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "JÄTKAKE";
+
+
+
+
+
+"w8f-2R-NgT.text" = "TOIMETUS / PIIRKOND";
+
+
+"Try a different keyword" = "Proovige mõnda muud märksõna";
+
+
+"For You" = "Sinu jaoks";
+
+
+"Results" = "Tulemused";
+
+
+"About" = "Meist";
+
+
+"Share" = "Jaga";
+
+
+"ACCOUNT" = "KONTO";
+
+
+"Your Email" = "Sinu E-post";
+
+
+"1sT-J6-qI0.text" = "SALVESTATUD ARTIKLID";
+
+
+"2XX-rr-GLC.text" = "Vali erinevaid kanaleid sadade allikate vahelt";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Loe kõige uuemaid uudiseid, üritusi ja rubriike üle maailma.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Sätest ajavahemik märguannete saamiseks.";
+
+
+"Off" = "Välja";
+
+
+
+
+
+"Bullet 2" = "Täpploend 2";
+
+
+"What's your email?" = "Mis on su e-posti aadress?";
+
+
+"New Password (8 Characters Min)" = "Uus salasõna (vähemalt 8 kirjamärki)";
+
+
+"Forgot Password?" = "Unustasid salasõna?";
+
+
+"Account Settings" = "Konto sätted";
+
+
+"Learn how we process your data" = "Informatsoon sinu andmete töötlemise kohta";
+
+
+"3h" = "3t";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blokeeri artiklid ---";
+
+
+"On" = "Lülita Sisse";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Tugikeskus";
+
+
+"Search" = "Otsi Kanaleid";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Vali fail galeriist";
+
+
+
+
+"Save article" = "Salvesta artikkel";
+
+
+"ABOUT" = "TEAVE";
+
+
+"Dark" = "Tume";
+
+
+"Legal" = "Õiguslik info";
+
+
+"Go to The Guardian" = "Mine ---";
+
+
+"Send reset link" = "Saada lähtestamise link";
+
+
+
+
+
+"My Account" = "Minu Konto";
+
+
+"FEEDBACK" = "TAGASISIDE";
+
+
+"Message" = "Sõnum";
+
+
+"Confirm New Password" = "Kinnita Uus Salasõna";
+
+
+"for ___" = "jaoks ___";
+
+
+"Search" = "Otsi Teemasi";
+
+
+"LANGUAGE" = "KEEL";
+
+
+"Light" = "Hele";
+
+
+"FOLLOW 3 TO CONTINUE" = "jätkamiseks vali 3";
+
+
+
+
+"Off" = "Lülita Välja";
+
+
+"Language" = "Vali";
+
+
+"LOG OUT" = "LOGI VÄLJA";
+
+
+"Report content" = "Raporteeri sisu";
+
+
+"What's your email?" = "Mis on su e-posti aadress?";
+
+
+"On" = "Lülita Sisse";
+
+
+"More like this" = "Rohkem uudiseid nagu see ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1t";
+
+
+"Enter Email Address" = "Sisesta oma e-posti aadress";
+
+
+"News in Bullets" = "Loe uudiseid kiiremini.";
+
+
+"6h" = "6t";
+
+
+"Choose your password" = "Vali oma salasõna";
+
+
+"Cancel" = "Tühista";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Loe uudiseid selle rakenduse abil kiiremini. Vali oma teemad ja allikad. Seejärel loe uudiseid lühipunktidena.";
+
+
+"Push Notification" = "Märguanne";
+
+
+"12h" = "12t";
+
+
+"24h" = "24t";
+
+
+"E-mail" = "E-post";
+
+
+"How can we help you?" = "Kuidas me saame aidata?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "MUUDA SALASÕNA";
+
+
+"Change Email" = "MUUDA E-POSTI AADRESS";
+
+
+"Medium" = "Keskmine";
+
+
+"SAVE CHANGES" = "SALVESTA MUUDATUSED";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Saada meile sõnum kui sul on vaja millegagi abi, me tahame sinult kuulda!";
+
+
+"P5u-N3-Tw4.text" = "Silt";
+
+
+"Cancel" = "Tühista";
+
+
+"Bullet 1" = "1 Täpploend";
+
+
+"TIMED NOTIFICATIONS" = "MÄRGUANDED";
+
+
+"POST ARTICLE" = "POSTITA ARTIKKEL";
+
+
+"CONTACT US" = "Võta meiega ühendust";
+
+
+"EDITION / REGION" = "Väljaanne";
+
+
+"Search" = "Otsi";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Saada meile tagasiside, me tahaksime sinult kuulda! Kas sul on küsimusi või juriidiline mure? Proovi meie Abi lehekülge või võta meiega ühendust.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Saada meile sõnum kui sul on vaja millegagi abi, me tahame sinult kuulda!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "JÄTKA";
+
+
+"Time To Update!" = "Värskenda rakendust!";
+
+
+"NOTIFICATIONS" = "MÄRGUANDED";
+
+
+"Search" = "Otsi";
+
+
+"By clicking Continue, you agree with our Terms." = "Vali Jätka, et nõustuda Tingimustega.";
+
+
+"HELP / CONTACT US" = "ABI / KONTAKT";
+
+
+"Reset Password" = "Lähtesta Salasõna";
+
+
+"SEND MESSAGE" = "SAADA SÕNUM";
+
+
+"Save article" = "Salvesta artikkel";
+
+
+"Bullet 6 (Optional)" = "6 täpploend (Valikuline)";
+
+
+"HAPTICS" = "HAPTILINE";
+
+
+"Your message has \vbeen sent." = "Su sõnum on saadetud.";
+
+
+"LEGAL" = "SEADUSLIK";
+
+
+"Block List" = "Blokeeritud Nimekiri";
+
+
+"PERSONALIZATION" = "ISIKUSTAMINE";
+
+
+"in our Privacy Policy." = "meie Privaatsuspoliitikas.";
+
+
+"CONTINUE" = "JÄTKA";
+
+
+"Enter Name" = "Sisesta nimi";
+
+
+"What's your email?" = "Mis on su e-posti aadress?";
+
+
+"Hello there!" = "Tere!";
+
+
+"PUSH NOTIFICATIONS" = "MÄRGUANDED";
+
+
+"Bullet 3 (Optional)" = "3 täpploend (Valikuline)";
+
+
+"Source name" = "Allika Nimi";
+
+
+"Current Password" = "Praegune Salasõna";
+
+
+"COLOR THEME" = "Värviteema";
+
+
+"eTp-X1-g34.text" = "Või läbi";
+
+
+"CANCEL" = "TÜHISTA";
+
+
+"Bullet 4 (Optional)" = "4 Täpploend (Valikuline)";
+
+
+"Date published" = "Avaldamise kuupäev";
+
+
+"Send Password Reset Link" = "Saada link, et lähtestada salasõna";
+
+
+"CONTINUE WITH APPLE" = "Registreeru Apple ID'ga";
+
+
+"Off" = "Lülita Välja";
+
+
+"BLOCK LIST" = "BLOKEERITUD NIMEKIRI";
+
+
+"HELP" = "ABI";
+
+
+"Reference link" = "Viite link";
+
+
+"Your Password" = "Sinu Salasõna";
+
+
+"SUBMIT" = "KINNITA";
+
+
+"HELP" = "ABI";
+
+
+"MY ACCOUNT" = "MINU KONTO";
+
+
+"hbD-HP-tZd.normalTitle" = "Deblokeeri";
+
+
+"OTHERS" = "Muud";
+
+
+"BREAKING NEWS" = "ERAKORRALISED UUDISED";
+
+
+"Topics" = "Blokeeritud Teemad";
+
+
+"Message us," = "Kirjuta meile,";
+
+
+"Pick topics to start reading
+and saving articles" = "rakenduse keel";
+
+
+"Forgot Password?" = "Unustasid salasõna?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Mõned funktsioonid on lisatud. Mõned probleemid on lahendatud.";
+
+
+"Success!" = "Edukas!";
+
+
+"Current Password" = "Praegune Salasõna";
+
+
+"CONTENT" = "SISU";
+
+
+"Headline" = "Pealkiri";
+
+
+"neg-UC-UpK.text" = "Vali teemad, et alustada lugemist ja artiklite salvestamist";
+
+
+"CONTINUE WITH EMAIL ID" = "Jätka oma E-maili ID'ga";
+
+
+"SAVE CHANGES" = "SALVESTA MUUDATUSED";
+
+
+"Post an Article" = "Postita Artikkel";
+
+
+"Contact Us" = "Võta meiega ühendust";
+
+
+"On" = "Lülita Sisse";
+
+
+"New Email Address" = "Uus E-posti Aadress";
+
+
+"Bullet 5 (Optional)" = "5 Täpploend (Valikuline)";
+
+
+"Suggest an improvement" = "Soovita täiustust";
+
+
+"Channels" = "Blokeeritud Allikad";
+
+
+"From:" = "Pärit:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ISIKUSTATUD SOOVITUSED";
+
+
+"I don't like this" = "See ei meeldi mulle";
+
+
+"CONTINUE" = "JÄTKA";
+
+
+"Name" = "Nimi";
+
+
+"Enter email" = "Sisesta e-post";
+
+
+"HELP" = "ABI";
+
+
+"FOLLOW 3 TO CONTINUE" = "Järgi 3, et jätkata";
+
+
+"UPDATE APP" = "Värskenda rakendust";
+
+
+"Forgot Password?" = "Unustasid salasõna?";
+
+
+"Change Password" = "Muuda Salasõna";
+
+
+"Reset Password" = "Lähtesta Salasõna";
+
+
+
+
+
+
+
+
+"Report content" = "Raporteeri oma mure";
+
+
+"CHANGE EMAIL ADDRESS" = "MUUDA E-POSTI AADRESS";
+
+
+"Follow The Guardian" = "Järgi ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Lisasime palju uusi funktsioone ja parandasime mõned vead, et teie kasutuskogemus oleks võimalikult sujuv.";
+
+
+"Edition / Region" = "Väljaanne / piirkond";
+
+
+"OK" = "Okei";
+
+
+"NARRATOR" = "Jutustaja";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Armastatud uudislugude kursis hoidmine ei tohiks võtta liiga palju aega. News in Bullets võtab tavalise 5-minutilise lugemise kokku ja koondab need kergesti seeditavateks täppideks. Nüüd saate samu uudiseid vastu võtta vaid murdosa ajaga - nii saate lühema aja jooksul rohkem lugeda.";
+
+
+"READING SPEED" = "LUGEMISKIIRUS";
+
+
+
+
+
+"You haven't blocked anything yet" = "Te pole veel midagi blokeerinud";
+
+
+"EDITION / REGION" = "TOIMETUS / PIIRKOND";
+
+
+
+
+
+"HEADLINES ONLY" = "AINULT Pealkirjad";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Heliseaded";
+
+
+"AUDIO SETTINGS" = "AUDIO SEADED";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "Pealkirjad ja infolehed";
+
+
+"CONTINUE AS GUEST" = "JÄTKAKE JA SISSELOGIMINE KÜLALISTena";
+
+
+"Topics" = "Teemad";
+
+
+"Pick topics to start reading and saving articles" = "Artiklite lugemise ja salvestamise alustamiseks valige teemad";
+
+
+"Channels" = "Kanalid";
+
+
+"Choose from hundreds \nof news publications" = "Valige sadade uudisväljaannete hulgast";
+
+
+"Pick topics to start reading\nand saving articles" = "Artiklite lugemise ja salvestamise alustamiseks valige teemad";
+
+"Pick editions to start reading\nand saving articles" = "Artiklite lugemise ja salvestamise alustamiseks valige väljaanded";
+
+"Or with" = "Või koos";
+
+"CONTINUE AS GUEST" = "JÄTKA KÜLALISENA";
+
+"Terms of Service" = "Teenusetingimused";
+
+"Choose from hundreds \nof news publications" = "Valige sadade uudisväljaannete hulgast";
+
+"Select your preferred language\nfor News in Bullets." = "Valige Bulletsis uudiste jaoks eelistatud keel.";
+
+"Choose a style" = "Valige stiil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop või peen. Päeval või öösel. Kohandage oma liidest.";
+
+"MINS AGO" = "minutit tagasi";
+
+"AN HOUR AGO" = "tund tagasi";
+
+"HOURS AGO" = "tundi tagasi";
+
+"1 WEEK AGO" = "1 nädal tagasi";
+
+"YESTERDAY" = "Eile";
+
+"DAYS AGO" = "päeva tagasi";
+
+"Go to" = "Minema";
+
+"You have reached the start." = "Olete jõudnud stardini";
+
+"Source unblocked successfully" = "Allika deblokeerimine õnnestus";
+
+"Invalid email format"  = "Vale e-posti vorming";
+
+"Wrong email or password" = "Vale e-posti aadress või parool";
+
+

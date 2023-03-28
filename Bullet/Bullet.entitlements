@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>webcredentials:www.newsinbullets.app</string>
+		<string>applinks:m.bullets.app</string>
+		<string>applinks:newsin.bullets.app</string>
+		<string>applinks:view.newsreels.app</string>
+		<string>applinks:read.newsreels.app</string>
+		<string>applinks:watch.newsreels.app</string>
+	</array>
+	<key>com.apple.developer.authentication-services.autofill-credential-provider</key>
+	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.app.newreels</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array/>
+</dict>
+</plist>

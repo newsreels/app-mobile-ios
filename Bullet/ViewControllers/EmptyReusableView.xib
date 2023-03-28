@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmptyReusableView" id="U6b-Vx-4bR" customClass="EmptyReusableView" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJ1-Wo-dW3">
+                    <rect key="frame" x="0.0" y="0.0" width="346" height="209"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="hJ1-Wo-dW3" secondAttribute="bottom" id="1Yo-0Q-95N"/>
+                <constraint firstItem="hJ1-Wo-dW3" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="AZU-8A-e9W"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="hJ1-Wo-dW3" secondAttribute="trailing" id="NAI-nj-5fv"/>
+                <constraint firstItem="hJ1-Wo-dW3" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="v1C-RT-Fnd"/>
+            </constraints>
+            <point key="canvasLocation" x="156.52173913043478" y="173.10267857142856"/>
+        </collectionReusableView>
+    </objects>
+</document>

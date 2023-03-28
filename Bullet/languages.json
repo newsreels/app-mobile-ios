@@ -1,0 +1,500 @@
+{
+    "languages": [
+        {
+            "id": "ee4add73-b717-4e32-bffb-fecbf82ee6d9",
+            "name": "English",
+            "sample": "Hi!",
+            "image": "https://cdn.newsinbullets.app/flags/us.png",
+            "code": "en",
+            "selected": false
+        },
+        {
+            "id": "c3a79fb4-f166-4207-b2dd-e5ea2837b732",
+            "name": "French",
+            "sample": "salut!",
+            "image": "https://cdn.newsinbullets.app/flags/fr.png",
+            "code": "fr",
+            "selected": false
+        },
+        {
+            "id": "25e43b1c-8bf1-4ee4-8f91-6c0caaca9d1a",
+            "name": "Dutch",
+            "sample": "Hallo!",
+            "image": "https://cdn.newsinbullets.app/flags/nl.png",
+            "code": "nl",
+            "selected": false
+        },
+        {
+            "id": "a635d498-d2c7-48e4-a8e5-2566c5cf4e2e",
+            "name": "Hindi",
+            "sample": "नमस्कार!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "hi",
+            "selected": false
+        },
+        {
+            "id": "074a4b62-0cf9-47ef-94ac-1c4ef1d139ea",
+            "name": "Arabic",
+            "sample": "مرحبا!",
+            "image": "https://cdn.newsinbullets.app/flags/ae.png",
+            "code": "ar",
+            "selected": false
+        },
+        {
+            "id": "1acfb586-7247-46f7-baf6-aa35c43d7e07",
+            "name": "Spanish",
+            "sample": "¡Hola!",
+            "image": "https://cdn.newsinbullets.app/flags/es.png",
+            "code": "es",
+            "selected": false
+        },
+        {
+            "id": "2cff8771-d272-4921-9031-b85634c1f056",
+            "name": "Korean",
+            "sample": "여보세요!",
+            "image": "https://cdn.newsinbullets.app/flags/kr.png",
+            "code": "ko",
+            "selected": false
+        },
+        {
+            "id": "7f6ad43d-41c6-491b-800a-bd3d3fc1893d",
+            "name": "Japanese",
+            "sample": "こんにちは！",
+            "image": "https://cdn.newsinbullets.app/flags/jp.png",
+            "code": "ja",
+            "selected": false
+        },
+        {
+            "id": "0ed65154-3585-44ea-b641-467fc1611bae",
+            "name": "Italian",
+            "sample": "Ciao!",
+            "image": "https://cdn.newsinbullets.app/flags/it.png",
+            "code": "it",
+            "selected": false
+        },
+        {
+            "id": "ec1c9944-59d7-4a5a-bc7d-7174d554e1d5",
+            "name": "German",
+            "sample": "Hallo!",
+            "image": "https://cdn.newsinbullets.app/flags/de.png",
+            "code": "de",
+            "selected": false
+        },
+        {
+            "id": "fea17e92-7558-44fd-9b36-9ce4ad755efe",
+            "name": "Afrikaans",
+            "sample": "Hello!",
+            "image": "https://cdn.newsinbullets.app/flags/za.png",
+            "code": "af",
+            "selected": false
+        },
+        {
+            "id": "2f63f97e-350b-402c-8c4b-12b1cca6bef9",
+            "name": "Amharic",
+            "sample": "ሀሎ!",
+            "image": "https://cdn.newsinbullets.app/flags/et.png",
+            "code": "am",
+            "selected": false
+        },
+        {
+            "id": "afaeffc7-fdf4-4004-b654-d817b5f30921",
+            "name": "Azerbaijani",
+            "sample": "Salam!",
+            "image": "https://cdn.newsinbullets.app/flags/az.png",
+            "code": "az",
+            "selected": false
+        },
+        {
+            "id": "ea065369-340c-4483-8206-90f6817c81a5",
+            "name": "Basque",
+            "sample": "Добры дзень!",
+            "image": "https://cdn.newsinbullets.app/flags/by.png",
+            "code": "be",
+            "selected": false
+        },
+        {
+            "id": "1df3e847-b8c4-4cf4-b43b-f5386736801b",
+            "name": "Bengali",
+            "sample": "হ্যালো!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "bn",
+            "selected": false
+        },
+        {
+            "id": "c16fc8a1-eded-4a38-bdae-8ca4081ce387",
+            "name": "Bulgarian",
+            "sample": "Здравейте!",
+            "image": "https://cdn.newsinbullets.app/flags/bg.png",
+            "code": "bg",
+            "selected": false
+        },
+        {
+            "id": "9197dd71-5d65-4a7b-ab97-7f55824fdbfc",
+            "name": "Burmese",
+            "sample": "ဟယ်လို!",
+            "image": "https://cdn.newsinbullets.app/flags/mm.png",
+            "code": "my",
+            "selected": false
+        },
+        {
+            "id": "76d49bce-dc8f-4451-a23e-0e8cbfc98bb0",
+            "name": "Catalan",
+            "sample": "Hola!",
+            "image": "https://cdn.newsinbullets.app/flags/es.png",
+            "code": "ca",
+            "selected": false
+        },
+        {
+            "id": "53ec5226-bcef-4e63-b2de-0b492f45c4db",
+            "name": "Chinese",
+            "sample": "你好!",
+            "image": "https://cdn.newsinbullets.app/flags/cn.png",
+            "code": "zh-Hans",
+            "selected": false
+        },
+        {
+            "id": "59bc49ec-6132-4835-a419-544d58373287",
+            "name": "Croatian",
+            "sample": "Zdravo!",
+            "image": "https://cdn.newsinbullets.app/flags/hr.png",
+            "code": "hr",
+            "selected": false
+        },
+        {
+            "id": "f9756e14-a074-4e2c-a535-eaf7960eb0b0",
+            "name": "Czech",
+            "sample": "Ahoj!",
+            "image": "https://cdn.newsinbullets.app/flags/cz.png",
+            "code": "cs",
+            "selected": false
+        },
+        {
+            "id": "645dc6c1-95d6-478a-8ef1-2ab6fd7acbf1",
+            "name": "Danish",
+            "sample": "Hej!",
+            "image": "https://cdn.newsinbullets.app/flags/se.png",
+            "code": "da",
+            "selected": false
+        },
+        {
+            "id": "57452997-898c-4edb-afef-afd1241f07a1",
+            "name": "Estonian",
+            "sample": "Tere!",
+            "image": "https://cdn.newsinbullets.app/flags/ee.png",
+            "code": "et",
+            "selected": false
+        },
+        {
+            "id": "db1286dc-98b9-48ec-89aa-a2f988a56889",
+            "name": "Filipino",
+            "sample": "Kamusta!",
+            "image": "https://cdn.newsinbullets.app/flags/ph.png",
+            "code": "fil",
+            "selected": false
+        },
+        {
+            "id": "fe345e23-8c52-4617-ac06-6042fc327ef1",
+            "name": "Galician",
+            "sample": "Ola!",
+            "image": "https://cdn.newsinbullets.app/flags/es.png",
+            "code": "gl",
+            "selected": false
+        },
+        {
+            "id": "2bf4b358-e52b-45c3-890b-96cb303b061f",
+            "name": "Georgian",
+            "sample": "გამარჯობა",
+            "image": "https://cdn.newsinbullets.app/flags/ge.png",
+            "code": "ka",
+            "selected": false
+        },
+        {
+            "id": "1ee5b329-25e4-47d5-b3b0-c6051db59e1f",
+            "name": "Greek",
+            "sample": "Γειά σου!",
+            "image": "https://cdn.newsinbullets.app/flags/gr.png",
+            "code": "el",
+            "selected": false
+        },
+        {
+            "id": "904c7814-2923-4487-b4d3-74d5e756c5f8",
+            "name": "Hungarian",
+            "sample": "Helló!",
+            "image": "https://cdn.newsinbullets.app/flags/hu.png",
+            "code": "hu",
+            "selected": false
+        },
+        {
+            "id": "3b0ddfa9-5c10-488a-be4b-d2c9057ac87e",
+            "name": "Icelandic",
+            "sample": "Halló!",
+            "image": "https://cdn.newsinbullets.app/flags/is.png",
+            "code": "is",
+            "selected": false
+        },
+        {
+            "id": "885fa99c-dd94-432c-909f-3f757d67cb31",
+            "name": "Indonesian",
+            "sample": "Halo!",
+            "image": "https://cdn.newsinbullets.app/flags/id.png",
+            "code": "id",
+            "selected": false
+        },
+        {
+            "id": "88fb926c-b258-41bf-899b-fb70a188e8b1",
+            "name": "Kannada",
+            "sample": "ಹಲೋ!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "kn",
+            "selected": false
+        },
+        {
+            "id": "6e9726e2-c69e-4b5c-ab21-b40e6866ce48",
+            "name": "Khmer",
+            "sample": "ជំរាបសួរ!",
+            "image": "https://cdn.newsinbullets.app/flags/kh.png",
+            "code": "km",
+            "selected": false
+        },
+        {
+            "id": "badf5fb2-adf8-4a33-bd18-fb7ef45bc330",
+            "name": "Kyrgyz",
+            "sample": "Салам!",
+            "image": "https://cdn.newsinbullets.app/flags/kg.png",
+            "code": "ky",
+            "selected": false
+        },
+        {
+            "id": "d12269d2-7a30-46fc-ae87-7cb36a69ca13",
+            "name": "Lao",
+            "sample": "ສະບາຍດີ!",
+            "image": "https://cdn.newsinbullets.app/flags/la.png",
+            "code": "lo",
+            "selected": false
+        },
+        {
+            "id": "85c555fb-446f-43e7-8fb3-ca37856eec95",
+            "name": "Latvian",
+            "sample": "Sveiki!",
+            "image": "https://cdn.newsinbullets.app/flags/lv.png",
+            "code": "lv",
+            "selected": false
+        },
+        {
+            "id": "fa1c3c03-eea6-416f-b2b9-d286be4b9be7",
+            "name": "Lithuanian",
+            "sample": "Sveiki!",
+            "image": "https://cdn.newsinbullets.app/flags/lt.png",
+            "code": "lt",
+            "selected": false
+        },
+        {
+            "id": "43fb8514-2c3a-4152-a694-5d66423e017a",
+            "name": "Macedonian",
+            "sample": "Здраво!",
+            "image": "https://cdn.newsinbullets.app/flags/mk.png",
+            "code": "mk",
+            "selected": false
+        },
+        {
+            "id": "50b8d25a-73ba-499b-b689-439c28fbe6d9",
+            "name": "Malay",
+            "sample": "Hello!",
+            "image": "https://cdn.newsinbullets.app/flags/my.png",
+            "code": "ms",
+            "selected": false
+        },
+        {
+            "id": "4125f7d3-7c8b-4f74-b6ca-c8a5a5cf41b2",
+            "name": "Malayalam",
+            "sample": "ഹലോ!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "ml",
+            "selected": false
+        },
+        {
+            "id": "3b10b5e7-5542-4afd-ab84-f1200343e4c5",
+            "name": "Marathi",
+            "sample": "नमस्कार!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "mr",
+            "selected": false
+        },
+        {
+            "id": "6017ab34-52fd-46ec-adbe-5e7f6b18665b",
+            "name": "Mongolian",
+            "sample": "Сайн уу?",
+            "image": "https://cdn.newsinbullets.app/flags/mn.png",
+            "code": "mn",
+            "selected": false
+        },
+        {
+            "id": "d2a4594d-9d2a-49a5-945a-8ac31223aabd",
+            "name": "Nepali",
+            "sample": "नमस्कार!",
+            "image": "https://cdn.newsinbullets.app/flags/np.png",
+            "code": "ne",
+            "selected": false
+        },
+        {
+            "id": "361a2c14-64d5-49da-9c64-df9028f99d25",
+            "name": "Norwegian",
+            "sample": "Hallo!",
+            "image": "https://cdn.newsinbullets.app/flags/no.png",
+            "code": "no",
+            "selected": false
+        },
+        {
+            "id": "884e51d6-e464-4c4f-b7ce-8d9892a86897",
+            "name": "Persian",
+            "sample": "سلام!",
+            "image": "https://cdn.newsinbullets.app/flags/ir.png",
+            "code": "fa",
+            "selected": false
+        },
+        {
+            "id": "2fc8dcc5-84e9-471a-9fb8-27a119dc89ed",
+            "name": "Polish",
+            "sample": "Witaj!",
+            "image": "https://cdn.newsinbullets.app/flags/pl.png",
+            "code": "pl",
+            "selected": false
+        },
+        {
+            "id": "a4f6d706-21e1-4aaa-ab01-d95a4b15ebab",
+            "name": "Portuguese",
+            "sample": "Olá!",
+            "image": "https://cdn.newsinbullets.app/flags/pt.png",
+            "code": "pt",
+            "selected": false
+        },
+        {
+            "id": "0e1a1d4b-3dfa-418c-afa1-57f915de60d4",
+            "name": "Romanian",
+            "sample": "Salut!",
+            "image": "https://cdn.newsinbullets.app/flags/ro.png",
+            "code": "rom",
+            "selected": false
+        },
+        {
+            "id": "5053cc64-1278-430e-9118-e16999122f83",
+            "name": "Russian",
+            "sample": "Здравствуйте!",
+            "image": "https://cdn.newsinbullets.app/flags/ru.png",
+            "code": "ru",
+            "selected": false
+        },
+        {
+            "id": "6e5d167d-6aba-4db3-86dc-68e1bc26b8bf",
+            "name": "Serbian",
+            "sample": "Здраво!",
+            "image": "https://cdn.newsinbullets.app/flags/rs.png",
+            "code": "sr",
+            "selected": false
+        },
+        {
+            "id": "b8e024e2-23a9-436e-868e-793177e4f672",
+            "name": "Sinhala",
+            "sample": "හෙලෝ!",
+            "image": "https://cdn.newsinbullets.app/flags/lk.png",
+            "code": "si",
+            "selected": false
+        },
+        {
+            "id": "3cf68fc7-02d6-4b8e-8cb9-ff72b0a98a00",
+            "name": "Slovak",
+            "sample": "Ahoj!",
+            "image": "https://cdn.newsinbullets.app/flags/sk.png",
+            "code": "sk",
+            "selected": false
+        },
+        {
+            "id": "24905fcc-efe2-4f01-89d5-26c68fffe770",
+            "name": "Slovenian",
+            "sample": "Zdravo!",
+            "image": "https://cdn.newsinbullets.app/flags/si.png",
+            "code": "sl",
+            "selected": false
+        },
+        {
+            "id": "3e7e2a15-c0be-43a2-9474-ec9b19fa0991",
+            "name": "Swahili",
+            "sample": "Zdravo!",
+            "image": "https://cdn.newsinbullets.app/flags/ke.png",
+            "code": "sw",
+            "selected": false
+        },
+        {
+            "id": "5c4f25ca-bb15-4be5-bb75-1db820de6a3d",
+            "name": "Swedish",
+            "sample": "Hallå!",
+            "image": "https://cdn.newsinbullets.app/flags/se.png",
+            "code": "sv",
+            "selected": false
+        },
+        {
+            "id": "bc7dd6de-ccb7-4595-9c8b-2d28239b0234",
+            "name": "Tamil",
+            "sample": "வணக்கம்!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "ta",
+            "selected": false
+        },
+        {
+            "id": "b91e135e-ee0c-44cc-b6cd-e8355716a580",
+            "name": "Telugu",
+            "sample": "హలో!",
+            "image": "https://cdn.newsinbullets.app/flags/in.png",
+            "code": "te",
+            "selected": false
+        },
+        {
+            "id": "73eea192-ba8a-4df7-b0c4-a12ad5beae89",
+            "name": "Thai",
+            "sample": "สวัสดี!",
+            "image": "https://cdn.newsinbullets.app/flags/th.png",
+            "code": "th",
+            "selected": false
+        },
+        {
+            "id": "e5532b4d-9032-4669-8dba-71835399ec74",
+            "name": "Turkish",
+            "sample": "Merhaba!",
+            "image": "https://cdn.newsinbullets.app/flags/tr.png",
+            "code": "tr",
+            "selected": false
+        },
+        {
+            "id": "4205e479-811c-4ae4-b63b-30f60054c29e",
+            "name": "Ukranian",
+            "sample": "Привіт!",
+            "image": "https://cdn.newsinbullets.app/flags/ua.png",
+            "code": "uk",
+            "selected": false
+        },
+        {
+            "id": "395e99ae-8925-4858-a6ba-4737aca09249",
+            "name": "Vietnamese",
+            "sample": "Xin chào!",
+            "image": "https://cdn.newsinbullets.app/flags/vn.png",
+            "code": "vi",
+            "selected": false
+        },
+        {
+            "id": "8e676845-f062-4fcd-8172-28a6c2d7e15b",
+            "name": "Zulu",
+            "sample": "Sawubona!",
+            "image": "https://cdn.newsinbullets.app/flags/za.png",
+            "code": "zu",
+            "selected": false
+        },
+        {
+            "id": "b3aa37ed-013d-4726-8a41-8014633cb10f",
+            "name": "Kazakh",
+            "sample": "Сәлем!",
+            "image": "https://cdn.newsinbullets.app/flags/kz.png",
+            "code": "kk",
+            "selected": false
+        }
+    ]
+}

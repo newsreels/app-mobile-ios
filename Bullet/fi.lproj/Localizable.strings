@@ -1,0 +1,831 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Lyhyt lauseet";
+"BULLETS" = "Lyhyt lauseet";
+"Headlines is not available." = "Otsikoita ei ole saatavilla";
+"Check your internet Connection and try again." = "Tarkista internetyhteytesi ja yritä uudelleen";
+"Choose Image" = "Valitse kuva";
+"Headline" = "Otsikko";
+"Bullet 1" = "Lyhyt lauseet 1 ";
+"Bullet 2" = "Lyhyt lauseet 2";
+"Bullet 3 (Optional)" = "Lyhyt lauseet 3 (vaihtoehtoinen)";
+"Bullet 4 (Optional)" = "Lyhyt lauseet 4 (vaihtoehtoinen)";
+"Bullet 5 (Optional)" = "Lyhyt lause 5 (vaihtoehtoinen)";
+"Bullet 6 (Optional)" = "Lyhyt lause 6 (vaihtoehtoinen)";
+"Enter Aticle Headline" = "Syötä otsikko";
+"Enter source name" = "Syötä lähde";
+"Enter reference link" = "Syötä linkki";
+"Enter published date" = "Syötä julkaisupäivä";
+"Enter Bullet 1" = "Syötä ensimmäinen lyhyt lause";
+"Enter Bullet 2" = "Syötä toinen lyhyt lause";
+"Post article successfully" = "Artikkelin julkaiseminen onnistui";
+"Follow" = "Seuraa";
+"Unfollow" = "Poista seuraus";
+"Block articles from" = "ESTÄ artikkelit";
+"Unblock articles from" = "POISTA artikkelien ESTO";
+"Remove article" = "Poista artikkeli";
+"Save article" = "Tallenna tämä artikkeli";
+"Terms & Conditions" = "Käyttöehdot & -Säännöt";
+"Privacy Policy" = "Yksityisyydensuojakäytäntö";
+"TERMS AND CONDITIONS" = "Käyttöehdot & -Säännöt";
+"PRIVACY POLICY" = "YKSITYISYYDENSUOJAKÄYTÄNTÖ";
+"Fuel your curiosity" = "Lue lisää maailmanuutisia";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Lue lyhyitä ja tarkkoja uutisia suoskkiaiheistasi luotettavista lähteistä ympäri maailman";
+"Save time" = "Säästä aikaasi";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Lue uutisia lyhyinä lauseina";
+"Hands-free reading" = "Hands-free lukeminen";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Ei aikaa lukea? Käytä puhetoimintoa.";
+"Write your message..." = "Kirjoita viestisi…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Kirjoita meillle viesti, jos tarvitset apua jossakin, meistä olisi ihana keskustella kanssasi";
+"Drop us a message" = "Lähetä meille viesti";
+"Enter Name." = "Syötä nimi";
+"Enter Email." = "Syötä sähköpostiosoite";
+"Write your message." = "Kirjoita viestisi.";
+"Topic unblock successfully" = "Poistit tämän aiheen eston";
+"Source unblock successfully" = "Poistit eston tästä lähteestä";
+"Unblock Source" = "Poista esto lähteestä";
+"Cancel" = "Peruuta";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Lähetä meille palautetta, olisi ihanaa kuulla sitä sinulta! Onko sinulla kysymyksiä tai huolia lakiasioista? Kokeile tukisivuamme tai Ota Meihin Yhteyttä. ";
+"Enter your suggestion." = "Syötä ehdotuksesi";
+"feedback sent." = "Palautteen lähettäminen onnistui";
+"30m" = "30min";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Kielen päivittäminen onnistui";
+"CONTINUE" = "JATKA";
+"FOLLOW 3 TO CONTINUE" = "SEURAA 3:TA JATKAAKSESI";
+"Unfollow Location" = "Älä seuraakaan Sijaintia";
+"Saved Articles" = "Tallennetut artikkelit";
+"Block" = "ESTÄ artikkelit";
+"Are you sure you want block" = "Oletko varma, että haluat estää tämän";
+"Once blocked, you wont be able to see any Articles related to this" = "Et näe enää artikkeleja tältä kanavalta, jos estät sen";
+"Block Topic" = "Estä tämä aihe";
+"Suggested" = "Ehdotetut";
+"Related Sources not available" = "Aiheeseen liittyvät lähteet eivät ole saatavilla";
+"Block Source" = "Estä tämä lähde";
+"News in Bullets App version" = "Uutiset pikauutisten sovellusversiossa";
+"Next" = "Seuraava";
+"Login" = "Kirjaudu sisään";
+"Terms" = "Käyttöehdot & -Säännöt";
+"By clicking Continue, you agree with our Terms." = "Valitse jatka hyväksyäksesi ehdot";
+"in our Privacy Policy." = "yksityisensuojakäytännössämme";
+"Access token missing." = "Käyttöoikeustunnus puuttuu";
+"NEXT" = "Seuraava";
+"By checking this box, you agree to our " = "Klikkaa laatikkoa hyväksyäksesi ehdot. Tietosi käydään yksityisyydensuojakäytäntömme mukaisesti läpi";
+"Terms of Service" = "Palvelun säännöt";
+". We’ll handle your data according to our " = "Käsittelemme tietojasi ";
+"Password must be at least 8 characters." = "Salasanan tulee olla väh 8 merkkiä";
+"Strong" = "Vahva";
+"Medium" = "Keskivahva";
+"Weak" = "Heikko";
+"CREATE A NEW ACCOUNT" = "LUO UUSI TILI";
+"SIGN IN WITH EXISTING ACCOUNT" = "KIRJAUDU SISÄÄN OLEMASSAOLEVAAN TILIIN";
+"You must agree to the Terms of Services to continue" = "Sinun on hyväksyttävä käyttöehdot jatkaaksesi";
+"SIGN IN" = "Kirjaudu sisään";
+"What's your password?" = "Mikä on salasanasi?";
+"SIGN UP" = "Rekisteröidy";
+"Choose your password?" = "Valitse salasanasi";
+"Something went wrong" = "Jokin meni pieleen";
+"we will send email to" = "Lähetämme sähköpostin ";
+"with a link to reset your password." = "jossa on linkki salasanasi nollaamiseen";
+"A reset password link has been sent to" = "Linkki salasanan nollaamisen on lähetetty";
+"Enter new email." = "Syötä uusi sähköposti";
+"Enter password." = "Syötä salasana";
+"New Password " = "Uusi salasana";
+" (8 characters min)" = "(väh 8 merkkiä)";
+"Enter current password." = "Syötä nykyinen salasana";
+"Enter new password." = "Syötä uusi salasana";
+"Enter confirm password." = "Vahvista salasana";
+"password do not matched!" = "Salasanat eivät täsmää!";
+"GET STARTED" = "ALOITETAAN";
+"SKIP" = "OHITA";
+"From where you would like to pick photo?" = "Mistä haluaisit valita kuvan?";
+"Camera" = "Kamera";
+"Photo Library" = "Kuvakirjasto";
+"Kindly open settings and enable access" = "Ole hyvä ja avaa asetukset ja salli käyttäminen";
+"Open Settings" = "Avaa asetukset";
+"Access needed for your camera" = "Tarvitaan lupa käyttää kameraasi";
+"Access needed for your photo library" = "Lupa tarvitaan kuvakirjastosi käyttämiseen";
+"Done" = "Valmis";
+"Pull to refresh" = "Vedä päivittääksesi sivun";
+"Loading" = "Ladataan";
+"Speech not available for this article" = "Puhe ei ole saatavilla tässä artikkelissa";
+"MANAGE LOCATION" = "HALLITSE SIJAINTIA";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Valitse uutiset Bullets Editionissa kielen perusteella";
+"Edition" = "Painos";
+"EDITION / REGION" = "PAINOS / ALUE";
+"Your Topics" = "Omat aiheet";
+"Your Channels" = "Kanavat";
+"Your Places" = "Omat paikat";
+"Enter email." = "Syötä sähköposti.";
+"Please enter a password." = "Ole hyvä ja anna salasana.";
+"Search articles" = "Hae artikkeleita";
+"No results" = "Ei tuloksia";
+"Edition / Region" = "Painos / alue";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "ESTÄ";
+"CANCEL" = "PERUUTA";
+"PLACES" = "PAIKAT";
+"LANGUAGE" = "KIELI";
+"Profile" = "Profiili";
+"SAVED ARTICLES" = "TALLENNETUT TAVARAT";
+"Topics" = "Aiheet";
+"Channels" = "Kanavat";
+"Editions" = "Painokset";
+"No saved stories yet" = "Ei tallennettuja tarinoita vielä";
+"Tap the" = "Klikkaa";
+"icon on the article" = "artikkelin symbolia";
+"you want to read later then" = "Haluatko sitten lukea myöhemmin";
+"Select" = "Valitse";
+"to save article." = "tallentaaksesi artikkelin.";
+"There is nothing in here" = "Täällä ei ole mitään";
+"Looks like there is nothing here but a cat." = "Näyttää, että täällä ei ole muutakuin kissa.";
+"Would you like to go back to home?" = "Palaa pääsivulle?";
+"GO HOME" = "MENE KOTIIN";
+"Search" = "Hae";
+"Discover" = "Löydä";
+"Articles" = "Artikkelit";
+"Try a different keyword" = "Kokeile toista avainsanaa";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Hanki tärkeimmät uutiset valitsemallesi alueelle. Lue kuratoituja uutisia, jotta pysyt ajan tasalla uusimmista uutisista kaikkialta maailmasta.";
+"Language" = "Kieli";
+"Results" = "Tulokset";
+"For You" = "Sinulle";
+"Top News" = "Ylin Uutiset";
+"Choose a style" = "Valitse tyyli";
+"Pop or subtle. Day or night. Customize your interface." = "Poppi tai hienovarainen. Päivä tai yö. Muokkaa käyttöliittymääsi.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Tietoa meistä";
+
+
+"Share" = "Jaa";
+
+
+"ACCOUNT" = "TILI";
+
+
+"Your Email" = "Sähköpostiosoitteesi";
+
+
+"1sT-J6-qI0.text" = "TALLENNETUT ARTIKKELIT";
+
+
+"2XX-rr-GLC.text" = "Valitse satojen eri kanavien väliltä";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Lue viimeisimmät uutiset tapahtumista ja ajankohtaisista asioista ympäri maailman. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Valitse aikaväli ilmoitusten välillä";
+
+
+"Off" = "pois päältä";
+
+
+
+
+
+"Bullet 2" = "Lyhyt lause 2";
+
+
+"What's your email?" = "Mikä on sähköpostiosoitteesi?";
+
+
+"New Password (8 Characters Min)" = "Uusi salasana (väh 8 merkkiä)";
+
+
+"Forgot Password?" = "Unohditko salasanasi?";
+
+
+"Account Settings" = "Tilin asetukset";
+
+
+"Learn how we process your data" = "Tiedot datasi prosessoinnin suhteen";
+
+
+"3h" = "3 tuntia";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Estä artikkelit ";
+
+
+"On" = "Päälle";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Tukikeskus";
+
+
+"Search" = "Hakukanavat";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Valitse tiedosto galleriasta";
+
+
+
+
+"Save article" = "Tallenna artikkeli";
+
+
+"ABOUT" = "Tietoa meistä";
+
+
+"Dark" = "Tumma";
+
+
+"Legal" = "LAKIASIAT";
+
+
+"Go to The Guardian" = "Mene -";
+
+
+"Send reset link" = "Lähetä palautuslinkki";
+
+
+
+
+
+"My Account" = "Tilini";
+
+
+"FEEDBACK" = "PALAUTE";
+
+
+"Message" = "Viesti";
+
+
+"Confirm New Password" = "Vahvista uusi salana";
+
+
+"for ___" = "jollekin ___";
+
+
+"Search" = "Hae aiheita";
+
+
+"LANGUAGE" = "KIELI";
+
+
+"Light" = "Valo";
+
+
+"FOLLOW 3 TO CONTINUE" = "jatkaaksesi, valitse 3";
+
+
+
+
+"Off" = "Pois päältä";
+
+
+"Language" = "Valitse";
+
+
+"LOG OUT" = "KIRJAUDU ULOS";
+
+
+"Report content" = "Raportoi sisällöstä";
+
+
+"What's your email?" = "Mikä on sähköpostiosoitteesi?";
+
+
+"On" = "Päälle";
+
+
+"More like this" = "Lisää tämänkaltaisia uutisia";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Syötä sähköpostiosoite";
+
+
+"News in Bullets" = "Lue lisää lyhyemmässä ajassa";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Valitse salasanasi";
+
+
+"Cancel" = "Peruuta";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Lue uutiset nopeasti tällä sovelluksella. Valitse aiheet ja lähteet. Sen jälkeen lue uutiset lyhyinä lauseina.";
+
+
+"Push Notification" = "Ilmoitus";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Sähköpostiosoitteesi";
+
+
+"How can we help you?" = "Miten voimme auttaa?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "VAIHDA SALASANA";
+
+
+"Change Email" = "VAIHDA SÄHKÖPOSTIOSOITE";
+
+
+"Medium" = "Keskivahva";
+
+
+"SAVE CHANGES" = "TALLENNA MUUTOKSET";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Lähetä meille viesti, jos tarvitset apua jossakin, meistä olisi ihana kuulla sinusta!";
+
+
+"P5u-N3-Tw4.text" = "Merkki";
+
+
+"Cancel" = "Peruuta";
+
+
+"Bullet 1" = "Lyhyt lause 1";
+
+
+"TIMED NOTIFICATIONS" = "ILMOITUKSET";
+
+
+"POST ARTICLE" = "JULKAISE ARTIKKELI";
+
+
+"CONTACT US" = "Ota meihin yhteyttä";
+
+
+"EDITION / REGION" = "Editio";
+
+
+"Search" = "Hae";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Lähetä meille palautetta, meistä olisi ihana kuulla sinusta! Onko sinulla kysymyksiä tai lakihuolia? Käy tukikeskuksessamme tai Ota meihin yhteyttä.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Lähetä meille viesti, jos tarvitset apua jossakin, meistä olisi ihana kuulla sinusta!";
+
+
+"30m" = "30min";
+
+
+"CONTINUE" = "JATKA";
+
+
+"Time To Update!" = "Päivitä sovellus!";
+
+
+"NOTIFICATIONS" = "ILMOITUKSET";
+
+
+"Search" = "Hae";
+
+
+"By clicking Continue, you agree with our Terms." = "Valitse jatka hyväksyäksesi ehdot";
+
+
+"HELP / CONTACT US" = "TUKI / OTA YHTEYTTÄ";
+
+
+"Reset Password" = "Nollaa salasana";
+
+
+"SEND MESSAGE" = "LÄHETÄ VIESTI";
+
+
+"Save article" = "Tallenna artikkeli";
+
+
+"Bullet 6 (Optional)" = "Lyhyt lauseet (vaihtoehtoinen)";
+
+
+"HAPTICS" = "HAPTIIKKA";
+
+
+"Your message has \vbeen sent." = "Viestisi on lähetetty";
+
+
+"LEGAL" = "LAKIASIAT";
+
+
+"Block List" = "Estolista";
+
+
+"PERSONALIZATION" = "MUKAUTETUT ";
+
+
+"in our Privacy Policy." = "Yksityisyydensuojakäytänössämme";
+
+
+"CONTINUE" = "CONTINUE";
+
+
+"Enter Name" = "Syötä nimi";
+
+
+"What's your email?" = "Mikä on sähköpostiosoitteesi?";
+
+
+"Hello there!" = "Hei!";
+
+
+"PUSH NOTIFICATIONS" = "ILMOITUKSET";
+
+
+"Bullet 3 (Optional)" = "Lyhyt lauseet 3 (vaihtoehtoinen)";
+
+
+"Source name" = "Lähteen nimi";
+
+
+"Current Password" = "Nykyinen salasana";
+
+
+"COLOR THEME" = "Väriteema";
+
+
+"eTp-X1-g34.text" = "Tai läpi";
+
+
+"CANCEL" = "PERUUTA";
+
+
+"Bullet 4 (Optional)" = "Lyhyt lause 4 (vaihtoehtoinen)";
+
+
+"Date published" = "Julkaisupäivämäärä";
+
+
+"Send Password Reset Link" = "Lähetä salasanan nollauslinkki";
+
+
+"CONTINUE WITH APPLE" = "Rekisteröidy Apple ID:n kautta";
+
+
+"Off" = "Kytke pois päältä";
+
+
+"BLOCK LIST" = "ESTOLISTA";
+
+
+"HELP" = "APUA";
+
+
+"Reference link" = "Url-linkki";
+
+
+"Your Password" = "Salasanasi";
+
+
+"SUBMIT" = "Lähetä";
+
+
+"HELP" = "TUKI";
+
+
+"MY ACCOUNT" = "Tilini";
+
+
+"hbD-HP-tZd.normalTitle" = "Poista seuraus";
+
+
+"OTHERS" = "Muut";
+
+
+"BREAKING NEWS" = "KUUMIMMAT UUTISET";
+
+
+"Topics" = "Estetyt aiheet";
+
+
+"Message us," = "Ota meihin yhteyttä";
+
+
+"Pick topics to start reading
+and saving articles" = "Sovelluskieli";
+
+
+"Forgot Password?" = "Unohditko salasanasi?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Uusia ominaisuuksia on lisätty. Joitakin ongelmia on korjattu.";
+
+
+"Success!" = "Onnistui!";
+
+
+"Current Password" = "Nykyinen salasana";
+
+
+"CONTENT" = "Sisältö";
+
+
+"Headline" = "Otsikko";
+
+
+"neg-UC-UpK.text" = "Valitse aiheita aloittaaksesi lukemisen ja artikkelien tallentamisen";
+
+
+"CONTINUE WITH EMAIL ID" = "Jatka sähköpostitunnuksella";
+
+
+"SAVE CHANGES" = "Tallenna muutokset";
+
+
+"Post an Article" = "Julkaise artikkeli";
+
+
+"Contact Us" = "Ota meihin yhteyttä";
+
+
+"On" = "Laita päälle";
+
+
+"New Email Address" = "Uusi sähköpostiosoite";
+
+
+"Bullet 5 (Optional)" = "Lyhyt lause 5 (vapaaehtoinen)";
+
+
+"Suggest an improvement" = "Ehdota parannusta";
+
+
+"Channels" = "Estetyt lähteet";
+
+
+"From:" = "Keneltä:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "MUKAUTETUT SUOSITUKSET";
+
+
+"I don't like this" = "En pidä tästä";
+
+
+"CONTINUE" = "JATKA";
+
+
+"Name" = "Nimi";
+
+
+"Enter email" = "Syötä sähköpostiosoite";
+
+
+"HELP" = "TUKI";
+
+
+"FOLLOW 3 TO CONTINUE" = "Seuraa 3:sta jatkaaksesi";
+
+
+"UPDATE APP" = "Päivitä sovellus";
+
+
+"Forgot Password?" = "Unohditko salasanasi?";
+
+
+"Change Password" = "Vaihda salasana ";
+
+
+"Reset Password" = "Nollaa salasana";
+
+
+
+
+
+
+
+
+"Report content" = "Ilmoita huolenaiheesi";
+
+
+"CHANGE EMAIL ADDRESS" = "VAIHDA SÄHKÖPOSTIOSOITTEESI";
+
+
+"Follow The Guardian" = "Seuraa ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Lisäsimme paljon uusia ominaisuuksia ja korjasimme joitain virheitä, jotta kokemuksesi olisi mahdollisimman sujuva.";
+
+
+"Edition / Region" = "Painos / alue";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "KERTOJA";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Pidä ajan tasalla rakastamistasi uutisista ei saa viedä liikaa aikaa. Bullets-uutiset vievät säännöllisen 5 minuutin lukemisen ja tiivistävät sen helposti sulaviksi luoteiksi. Nyt voit vastaanottaa samoja uutisia vain murto-osassa aikaa - joten voit lukea enemmän lyhyessä ajassa.";
+
+"READING SPEED" = "LUKEMISNOPEUS";
+
+
+
+
+
+"You haven't blocked anything yet" = "Et ole vielä estänyt mitään";
+
+
+"EDITION / REGION" = "PAINOS / ALUE";
+
+
+
+
+
+"HEADLINES ONLY" = "VAIN PÄÄNIMET";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Ääni-asetukset";
+
+
+"AUDIO SETTINGS" = "AUDIOASETUKSET";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "PÄÄNIMET JA TIEDOT";
+
+
+"CONTINUE AS GUEST" = "Ohita ja kirjaudu sisään vieraana";
+
+
+"Topics" = "Aiheet";
+
+
+"Pick topics to start reading and saving articles" = "Valitse aiheet aloittaaksesi artikkeleiden lukemisen ja tallentamisen";
+
+
+"Channels" = "Kanavat";
+
+
+"Choose from hundreds \nof news publications" = "Valitse sadoista uutisjulkaisuista";
+
+"Pick topics to start reading\nand saving articles" = "Aiheiden valitseminen artikkelien lukemisen ja tallentamisen aloittamiseksi";
+
+"Pick editions to start reading\nand saving articles" = "Valitse versioita artikkelien lukemisen ja tallentamisen aloittamiseksi";
+
+"Or with" = "Tai kanssa";
+
+"CONTINUE AS GUEST" = "JATKA VIERAANA";
+
+"Terms of Service" = "Käyttöehdot";
+
+"Choose from hundreds \nof news publications" = "Valitse sadoista uutisjulkaisuista";
+
+"Select your preferred language\nfor News in Bullets." = "Valitse haluamasi kieli luettelomerkkien uutisille.";
+
+"Choose a style" = "Valitse tyyli";
+
+"Pop or subtle. Day or night. Customize your interface." = "Poppi tai hienovarainen. Päivä tai yö. Muokkaa käyttöliittymääsi.";
+
+"MINS AGO" = "minuuttia sitten";
+
+"AN HOUR AGO" = "tunti sitten";
+
+"HOURS AGO" = "tunteja sitten";
+
+"1 WEEK AGO" = "1 viikko sitten";
+
+"YESTERDAY" = "Eilen";
+
+"DAYS AGO" = "päiviä sitten";
+
+"Go to" = "Mennä";
+
+"You have reached the start." = "Olet päässyt alkuun";
+
+"Source unblocked successfully" = "Lähteen esto purettiin onnistuneesti";
+
+"Invalid email format"  = "Virheellinen sähköpostimuoto";
+
+"Wrong email or password" = "Väärä sähköpostiosoite tai salasana";
+
+
+"Personalize your reading experience" = "Lukukokemuksen mukauttaminen";
+
+"Start following the news topics and channels you want to read." = "Aloita luettavien uutisaiheiden ja kanavien seuraaminen.";
+
+"LET'S GO" = "Mennään";
+
+"We’ll handle your data according to our\n" = "Käsittelemme tietojasi";
+
+"By clicking Continue, you agree with our " = "Klikkaamalla Jatka, hyväksyt meidän";
+
+"Learn how we process your data in our"  = "Opi kuinka käsittelemme tietojasi";
+
+"JUST NOW" = "JUURI NYT";
+
+"Menu" = "Valikko";
+"Article Text Size" = "Artikkelin tekstin koko";
+"Change the font size shown on the articles" = "Muuta artikkeleissa näkyvää fonttikokoa";
+"Small" = "Pieni";
+"Default" = "Oletusarvo";
+"Medium" = "Keskikokoinen";
+"Large" = "Suuri";
+
+"Related Articles" = "Aiheeseen liittyvät artikkelit";
+"View Full Article" = "Näytä koko artikkeli";
+
+"Create your profile" = "Luo profiilisi";
+"Set your profile" = "Profiilin määrittäminen";
+"View your profile" = "Tarkastele profiiliasi";
+"ARTICLE TEXT SIZE" = "ARTIKKELIN TEKSTIN KOKO";
+"DATA SAVER" = "TIETOJEN SÄÄSTÄJÄ";
+"Edit Profile" = "Muokkaa profiilia";
+"Profile Settings" = "Profiilin asetukset";
+"Edit what viewers see in your profile." = "Muokkaa mitä katsojat näkevät profiilissasi.";
+"COVER PHOTO" = "KANSIKUVA";
+"Profile Name" = "Profiili nimi";
+"Help and Feedback" = "Ohje ja palaute";
+"HELP AND FEEDBACK" = "OHJE JA PALAUTE";
+"Others" = "Muut";
+"Feedback & Suggestions" = "Palaute ja ehdotukset";
+"Help / Contact Us" = "Ohje / Ota yhteyttä";
+"Terms and Conditions" = "Käyttöehdot";
+"Notification" = "Ilmoitukset";
+"Push Notifications" = "Push-ilmoitukset";
+"Breaking News" = "Viimeisimmät Uutiset";
+"Personalized Recommendations" = "Henkilökohtaiset Suositukset";
+"Timed Notifications" = "Ajastetut Ilmoitukset";
+"Account" = "Tili";
+"E-mail Address" = "Sähköpostiosoite";
+"Reels" = "Reellejä";
+
+"Comments" = "Kommentit";
+"Write a reply..." = "Kirjoita vastaus...";
+"Reply" = "Vastaa";
+"Replies" = "Vastaukset";
+"View" = "näkymien määrä";
+"more reply" = "lisää vastausta";
+"more replies" = "lisää vastauksia";
+"Home" = "Koti";
+"Newsreels" = "Uutisreellejä";
+
+
+
+

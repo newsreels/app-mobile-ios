@@ -1,0 +1,185 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bullets";
+"BULLETS" = "BULLETS";
+"Headlines is not available." = "Headlines is not available.";
+"Check your internet Connection and try again." = "Check your internet Connection and try again.";
+"Choose Image" = "Choose Image";
+"Headline" = "Headline";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (Optional)";
+"Bullet 4 (Optional)" = "Bullet 4 (Optional)";
+"Bullet 5 (Optional)" = "Bullet 5 (Optional)";
+"Bullet 6 (Optional)" = "Bullet 6 (Optional)";
+"Enter Aticle Headline" = "Enter Aticle Headline";
+"Enter source name" = "Enter source name";
+"Enter reference link" = "Enter reference link";
+"Enter published date" = "Enter published date";
+"Enter Bullet 1" = "Enter Bullet 1";
+"Enter Bullet 2" = "Enter Bullet 2";
+"Posted article successfully" = "Posted article successfully";
+"Follow" = "Follow";
+"Unfollow" = "Unfollow";
+"Block articles from" = "Block articles from";
+"Unblock articles from" = "Unblock articles from";
+"Remove article" = "Remove article";
+"Save article" = "Save article";
+"Terms & Conditions" = "Terms & Conditions";
+"Privacy Policy" = "Privacy Policy";
+"TERMS AND CONDITIONS" = "TERMS AND CONDITIONS";
+"PRIVACY POLICY" = "PRIVACY POLICY";
+"Fuel your curiosity" = "Fuel your curiosity";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Get clutter-free news about your\nfavorite topics from trusted sources\naround the world.";
+"Save time" = "Save time";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds.";
+"Hands-free reading" = "Hands-free reading";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "No time to read? Use our intuitive\ntext-to-speech feature.";
+"Write your message..." = "Write your message...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Drop us a message if you need help with something, we'd love to hear from you!";
+"Drop us a message" = "Drop us a message";
+"Enter Name." = "Enter Name.";
+"Enter Email." = "Enter Email.";
+"Write your message." = "Write your message.";
+"Topic unblocked successfully" = "Topic unblocked successfully";
+"Source unblocked successfully" = "Source unblocked successfully";
+"Unblock Source" = "Unblock Source";
+"Cancel" = "Cancel";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support.";
+"Enter your suggestion." = "Enter your suggestion.";
+"feedback sent." = "feedback sent.";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Language updated successfully.";
+"CONTINUE" = "CONTINUE";
+"FOLLOW 3 TO CONTINUE" = "FOLLOW 3 TO CONTINUE";
+"Unfollow Location" = "Unfollow Location";
+"Saved Articles" = "Saved Articles";
+"Block" = "Block";
+"Are you sure you want block" = "Are you sure you want block";
+"Once blocked, you wont be able to see any Articles related to this" = "Once blocked, you wont be able to see any Articles related to this";
+"Block Topic" = "Block Topic";
+"Suggested" = "Suggested";
+"Related Sources not available" = "Related Sources not available";
+"Block Source" = "Block Source";
+"News in Bullets App version" = "News in Bullets App version";
+"Next" = "Next";
+"Login" = "Login";
+"Terms" = "Terms";
+"By clicking Continue, you agree with our Terms." = "By clicking Continue, you agree with our Terms.";
+"in our Privacy Policy." = "in our Privacy Policy.";
+"Access token missing." = "Access token missing.";
+"NEXT" = "NEXT";
+"By checking this box, you agree to our " = "By checking this box, you agree to our ";
+"Terms of Service" = "Terms of Service";
+". We’ll handle your data according to our " = ". We’ll handle your data according to our ";
+"Password must be at least 8 characters." = "Password must be at least 8 characters.";
+"Strong" = "Strong";
+"Medium" = "Medium";
+"Weak" = "Weak";
+"CREATE A NEW ACCOUNT" = "CREATE A NEW ACCOUNT";
+"SIGN IN WITH EXISTING ACCOUNT" = "SIGN IN WITH EXISTING ACCOUNT";
+"You must agree to the Terms of Services to continue" = "You must agree to the Terms of Services to continue";
+"SIGN IN" = "SIGN IN";
+"What's your password?" = "What's your password?";
+"SIGN UP" = "SIGN UP";
+"Choose your password?" = "Choose your password?";
+"Something went wrong" = "Something went wrong";
+"we will send email to" = "we will send email to";
+"with a link to reset your password." = "with a link to reset your password.";
+"A reset password link has been sent to" = "A reset password link has been sent to";
+"Enter new email." = "Enter new email.";
+"Enter password." = "Enter password.";
+"New Password " = "New Password ";
+" (8 characters min)" = " (8 characters min)";
+"Enter current password." = "Enter current password.";
+"Enter new password." = "Enter new password.";
+"Enter confirm password." = "Enter confirm password.";
+"password do not matched!" = "password do not matched!";
+"GET STARTED" = "GET STARTED";
+"SKIP" = "SKIP";
+
+"From where you would like to pick photo?" = "From where you would like to pick photo?";
+"Camera" = "Camera";
+"Photo Library" = "Photo Library";
+"Kindly open settings and enable access" = "Kindly open settings and enable access";
+"Open Settings" = "Open Settings";
+"Access needed for your camera" = "Access needed for your camera";
+"Access needed for your photo library" = "Access needed for your photo library";
+"Done" = "Done";
+"Pull to refresh" = "Pull to refresh";
+"Loading" = "Loading";
+"Speech not available for this article" = "Speech not available for this article";
+"MANAGE PLACE" = "MANAGE PLACES";
+
+"View and Edit Your Profile" = "View and Edit Your Profile";
+"Select Your Region" = "Select Your Region";
+   
+"Changing Language Description" = "By changing the region, language list changes accordingly";
+"Content Settings" = "Content Settings";
+"Primary Language" = "Primary Language";
+"Secondary Language" = "Secondary Language";
+"Notification Settings" = "Notification Settings";
+"Font Size" = "Font Size";
+"Region" = "Region";
+"Guest User" = "Guest User";
+"Auto Play Video And Reels" = "Auto Play Video And Reels";
+"Reader Mode" =   "Reader Mode";
+"Account Settings" = "Account Settings";
+"Terms Policy" = "Terms Policy";
+"App Version" = "App Version";
+"Crypto Prices" = "Crypto Prices";
+"Todays Sports Schedule" = "Today's Sports Schedule";
+"Trending Topics" = "Trending Topics";
+"Trending Reels" = "Trending Reels";
+"Trending Channels" = "Trending Channels";
+"Logout" = "Logout";
+"The world at your" = "The world\nat your\nfingerprint\nanytime,\nanywhere";
+"Register or Log in" = "Register or Log in";
+"Continue as a Guest" = "Continue as a Guest";
+"Categories" = "Categories";
+"For You" = "For You";
+"Hello" = "Hello";
+"Good morning" = "Good morning";
+"Good afternoon" = "Good afternoon";
+"Good evening" = "Good evening";
+"Pick 3 topics and start following reels and articles" = "Pick 3 topics and start following reels and articles";
+"Discover curated content from you fav places" = "Discover curated content from you fav places";
+"Close" = "Close";
+"Save" = "Save";
+"Cricket" = "Cricket";
+"Basketball" = "Basketball";
+
+"Let’s start with your email" = "Let’s start with your email";
+"Welcome to Newsreels" = "Welcome to Newsreels";
+"Email" = "Email";
+"Continue" = "Continue";
+"or" = "or";
+
+"You have completed the registration!" = "You have completed the registration!";
+"A cofirmation email has been sent to you." = "A cofirmation email has been sent to you.";
+
+"Create new account" = "Create new account";
+"Username" = "Username";
+
+"Add a password" = "Add a password";
+"Password" = "Password";
+"Save password" = "Save password";
+"At least 8 characters" = "At least 8 characters";
+"Include a number" = "Include a number";
+"Uppercase letter" = "Uppercase letter";
+
+"Welcome back 👋" = "Welcome back 👋";
+
+"Forgot Password" = "Forgot Password";

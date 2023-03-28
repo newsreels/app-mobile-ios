@@ -1,0 +1,183 @@
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "1Il-IA-tdz"; */
+"1Il-IA-tdz.placeholder" = "Search";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "20N-ji-mfF"; */
+"20N-ji-mfF.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "2eq-Pj-4L4"; */
+"2eq-Pj-4L4.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "Topics"; ObjectID = "3ba-0H-NO5"; */
+"3ba-0H-NO5.normalTitle" = "Topics";
+
+/* Class = "UILabel"; text = "Select ( "; ObjectID = "4NZ-Mf-99I"; */
+"4NZ-Mf-99I.text" = "Select ( ";
+
+/* Class = "UILabel"; text = "Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world."; ObjectID = "59f-gb-cEt"; */
+"59f-gb-cEt.text" = "Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world.";
+
+/* Class = "UILabel"; text = "Search articles"; ObjectID = "5AE-PH-BUQ"; */
+"5AE-PH-BUQ.text" = "Search articles";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "5rU-g6-EyX"; */
+"5rU-g6-EyX.text" = "---";
+
+/* Class = "UILabel"; text = " ) icon on the article"; ObjectID = "6RX-Dl-81X"; */
+"6RX-Dl-81X.text" = " ) icon on the article";
+
+/* Class = "UIButton"; normalTitle = "BLOCK"; ObjectID = "6Zm-b9-jJc"; */
+"6Zm-b9-jJc.normalTitle" = "BLOCK";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "6fo-Lj-nib"; */
+"6fo-Lj-nib.text" = "--";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "6w9-en-cDA"; */
+"6w9-en-cDA.text" = "---";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "76R-5U-EeP"; */
+"76R-5U-EeP.text" = "Profile";
+
+/* Class = "UILabel"; text = "you want to read later then"; ObjectID = "7f9-uA-O5S"; */
+"7f9-uA-O5S.text" = "you want to read later then";
+
+/* Class = "UIButton"; normalTitle = "Editions"; ObjectID = "8QJ-px-yZJ"; */
+"8QJ-px-yZJ.normalTitle" = "Editions";
+
+/* Class = "UILabel"; text = "Looks like there is nothing here but a cat. \nWould you like to go back to home?"; ObjectID = "9hT-gC-mbD"; */
+"9hT-gC-mbD.text" = "Looks like there is nothing here but a cat. \nWould you like to go back to home?";
+
+/* Class = "UILabel"; text = " ) to save article."; ObjectID = "Er5-tl-CUi"; */
+"Er5-tl-CUi.text" = " ) to save article.";
+
+/* Class = "UILabel"; text = "No results"; ObjectID = "GR7-Qb-I2V"; */
+"GR7-Qb-I2V.text" = "No results";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "H8B-eZ-0iv"; */
+"H8B-eZ-0iv.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "IFn-jW-UAj"; */
+"IFn-jW-UAj.text" = "---";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "Jog-qS-2Qg"; */
+"Jog-qS-2Qg.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "What's your email?"; ObjectID = "KRg-gX-n95"; */
+"KRg-gX-n95.text" = "What's your email?";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Ly7-PZ-ODp"; */
+"Ly7-PZ-ODp.text" = "---";
+
+/* Class = "UILabel"; text = "Try a different keyword"; ObjectID = "Mtx-s7-R0x"; */
+"Mtx-s7-R0x.text" = "Try a different keyword";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "Orp-NF-xNr"; */
+"Orp-NF-xNr.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Results"; ObjectID = "QNB-Qj-S5Q"; */
+"QNB-Qj-S5Q.text" = "Results";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "T1T-xm-Izu"; */
+"T1T-xm-Izu.text" = "--";
+
+/* Class = "UILabel"; text = "LANGUAGE"; ObjectID = "T72-cy-AKm"; */
+"T72-cy-AKm.text" = "LANGUAGE";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "VrT-Ar-NpV"; */
+"VrT-Ar-NpV.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "No results"; ObjectID = "VxU-Zs-PRV"; */
+"VxU-Zs-PRV.text" = "No results";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "WGT-PN-PbB"; */
+"WGT-PN-PbB.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "Topics"; ObjectID = "WWp-4s-Slp"; */
+"WWp-4s-Slp.normalTitle" = "Topics";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "XSz-Dg-10z"; */
+"XSz-Dg-10z.text" = "---";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Y3u-ah-Cp2"; */
+"Y3u-ah-Cp2.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "Channels"; ObjectID = "ZYz-Qa-krI"; */
+"ZYz-Qa-krI.normalTitle" = "Channels";
+
+/* Class = "UIButton"; normalTitle = "Places"; ObjectID = "ale-Hg-SIm"; */
+"ale-Hg-SIm.normalTitle" = "Places";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "asp-EX-vUP"; */
+"asp-EX-vUP.text" = "---";
+
+/* Class = "UILabel"; text = "Tap the ( "; ObjectID = "cpi-Hb-KoJ"; */
+"cpi-Hb-KoJ.text" = "Tap the ( ";
+
+/* Class = "UIButton"; normalTitle = "Places"; ObjectID = "cq8-hj-lC2"; */
+"cq8-hj-lC2.normalTitle" = "Places";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "dla-WK-M1k"; */
+"dla-WK-M1k.text" = "Language";
+
+/* Class = "UILabel"; text = "GO HOME"; ObjectID = "eda-67-Bla"; */
+"eda-67-Bla.text" = "GO HOME";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "fph-fD-98c"; */
+"fph-fD-98c.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "For You"; ObjectID = "gC1-Rn-rxc"; */
+"gC1-Rn-rxc.normalTitle" = "For You";
+
+/* Class = "UIButton"; normalTitle = "Top News"; ObjectID = "jXc-9T-OTo"; */
+"jXc-9T-OTo.normalTitle" = "Top News";
+
+/* Class = "UILabel"; text = "PLACES"; ObjectID = "jnE-dn-Csn"; */
+"jnE-dn-Csn.text" = "PLACES";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "kVe-Oo-mWU"; */
+"kVe-Oo-mWU.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "lLH-b8-ipU"; */
+"lLH-b8-ipU.text" = "--";
+
+/* Class = "UILabel"; text = "SAVED ARTICLES"; ObjectID = "lgf-sw-BAB"; */
+"lgf-sw-BAB.text" = "SAVED ARTICLES";
+
+/* Class = "UILabel"; text = "There is nothing in here"; ObjectID = "lma-kt-gRc"; */
+"lma-kt-gRc.text" = "There is nothing in here";
+
+/* Class = "UILabel"; text = "No results"; ObjectID = "mLX-Xo-TXi"; */
+"mLX-Xo-TXi.text" = "No results";
+
+/* Class = "UIButton"; normalTitle = "Articles"; ObjectID = "mNv-qa-UR8"; */
+"mNv-qa-UR8.normalTitle" = "Articles";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "oHF-Al-gSn"; */
+"oHF-Al-gSn.text" = "---";
+
+/* Class = "UIButton"; normalTitle = "Channels"; ObjectID = "oRN-NI-Tju"; */
+"oRN-NI-Tju.normalTitle" = "Channels";
+
+/* Class = "UIButton"; normalTitle = "Discover"; ObjectID = "oo5-HJ-AD7"; */
+"oo5-HJ-AD7.normalTitle" = "Discover";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "sde-Ys-R29"; */
+"sde-Ys-R29.normalTitle" = "CANCEL";
+
+/* Class = "UILabel"; text = "No results found"; ObjectID = "siu-fo-Xve"; */
+"siu-fo-Xve.text" = "No results found";
+
+/* Class = "UILabel"; text = "Discover"; ObjectID = "tJY-Mp-WXA"; */
+"tJY-Mp-WXA.text" = "Discover";
+
+/* Class = "UILabel"; text = "No saved stories yet"; ObjectID = "vnX-zd-Bgt"; */
+"vnX-zd-Bgt.text" = "No saved stories yet";
+
+/* Class = "UILabel"; text = "Try a different keyword"; ObjectID = "wAD-W9-YIY"; */
+"wAD-W9-YIY.text" = "Try a different keyword";
+
+/* Class = "UILabel"; text = "Try a different keyword"; ObjectID = "zGA-kk-mc1"; */
+"zGA-kk-mc1.text" = "Try a different keyword";
+
+/* Class = "UILabel"; text = "Try a different keyword"; ObjectID = "zqu-3X-1bi"; */
+"zqu-3X-1bi.text" = "Try a different keyword";

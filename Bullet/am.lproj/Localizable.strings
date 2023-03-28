@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ዋና ነጥብ";
+"BULLETS" = "ዋና ዋና ነጥቦች";
+"Headlines is not available." = "የ አርዕስተ አይገኙም.";
+"Check your internet Connection and try again." = "የኢንተርኔት ኮኔክሽኖን ያረጋግጡ እና በኋላ እንደገና ይሞክሩ።";
+"Choose Image" = "ምስል ይምረጡ";
+"Headline" = "ዋና ርዕስ";
+"Bullet 1" = "ዋና ጉዳይ 1";
+"Bullet 2" = "ዋና ጉዳይ 2";
+"Bullet 3 (Optional)" = "ዋና ጉዳይ 3 (በምርጫ)";
+"Bullet 4 (Optional)" = "ዋና ጉዳይ 4 (በምርጫ)";
+"Bullet 5 (Optional)" = "ዋና ጉዳይ 5 (በምርጫ)";
+"Bullet 6 (Optional)" = "ዋና ጉዳይ 6 (በምርጫ)";
+"Enter Aticle Headline" = "ዋናውን ርዕስ ያስገቡ";
+"Enter source name" = "ምንጩን ያስገቡ";
+"Enter reference link" = "ማጣቀሻውን ያስገቡ";
+"Enter published date" = "የታተመበትን ቀን ያስገቡ";
+"Enter Bullet 1" = "የመጀመሪያውን ዋና ጉዳይ ያስገቡ";
+"Enter Bullet 2" = "ሁለተኛ ዋና ጉዳይ ያስገቡ";
+"Post article successfully" = "ጽሑፉ በተሳካ ሁኔታ ተለጠፏል";
+"Follow" = "ተከተል";
+"Unfollow" = "አይከተል";
+"Block articles from" = "እነዚህን ፆሁፎች አግድ ከ";
+"Unblock articles from" = "እነዚህን ፆሁፎች እገዳ ይነሳላቸው ከ";
+"Remove article" = "ይህን ጽሑፍ አስወግድ";
+"Save article" = "ይህንን ጽሑፍ መዝግበ አስቀምጥ";
+"Terms & Conditions" = "አተገባበሩና ​​መመሪያው";
+"Privacy Policy" = "ፕራይቬሲ/ግላዊነት ፖሊሲ";
+"TERMS AND CONDITIONS" = "አተገባበሩና ​​መመሪያው";
+"PRIVACY POLICY" = "ፕራይቬሲ/ግላዊነት ፖሊሲ";
+"Fuel your curiosity" = "ስለ ዓለም ተጨማሪ ዜናዎችን ያንብቡ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "በዓለም ዙሪያ ካሉ የታመኑ ምንጮች ስለ የእርስዎ ተወዳጅ ርዕሶች አጭር እና ትክክለኛ ዜናዎችን ያንብቡ።";
+"Save time" = "ጊዜዎን ይቆጥቡ";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "የዜናውን ዋና ዋና ነጥቦች ያንብቡ";
+"Hands-free reading" = "ከእጅ ነፃ ንባብ";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "ለማንበብ ጊዜ የለውም? የንግግር ተግባሩን ይጠቀሙ";
+"Write your message..." = "መልእክትዎን ይፃፉ";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "በማንኛውም ነገር ላይ እገዛ ከፈለጉ መልእክት ይላኩልን ፣ ከእርስዎ መስማት እንወዳለን!";
+"Drop us a message" = "መልእክት ላኩልን";
+"Enter Name." = "ስም ያስገቡ";
+"Enter Email." = "ኢሜል ያስገቡ";
+"Write your message." = "መልእክትዎን ይፃፉ";
+"Topic unblock successfully" = "ለዚህ ርዕስ እገዳን አንስተዋል";
+"Source unblock successfully" = "ለዚህ ምንጭ እገዳን አንስተዋል";
+"Unblock Source" = "ከዚህ ምንጭ እገዳን አንሳ";
+"Cancel" = "ሰርዝ";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." ="አስተያየት ይላኩልን ፣ ከእርስዎ መስማት እንወዳለን! ጥያቄዎች ወይም አሳሳቢ የሕግ ጉዳዮች አሉዎት? የእኛን የእገዛ ገጽ ይሞክሩ ወይም እኛን ያነጋግሩን።";
+"Enter your suggestion." = "አስተያየትዎን ያስገቡ";
+"feedback sent." = "አስታየቶ በስከትማ ሁኔታ ተልኳል";
+"30m" = "30ደቂቃ";
+"1h" = "1ሰዓት";
+"3h" = "3ሰዓታት";
+"6h" = "6ሰዓታት";
+"12h" = "12ሰዓታት";
+"24h" = "24ሰዓታት";
+"Language updated successfully." = "ቋንቋው በተሳካ ሁኔታ ተዘምኗል";
+"CONTINUE" = "ይቀጥሉ";
+"FOLLOW 3 TO CONTINUE" = "ለመቀጠል 3 ን ይከተሉ";
+"Unfollow Location" = "አካባቢን አትከተል";
+"Saved Articles" = "የተመዘገቡ ፅሁፎች";
+"Block" = "አግድ";
+"Are you sure you want block" = "እርግጠኛ ነዎት ይህንን ማገድ ይፈልጋሉ?";
+"Once blocked, you wont be able to see any Articles related to this" = "እርስዎ የሚያግዱት ከሆነ ከዚህ ቻናል የሚመጡ ፅሁፎችን አያዩሙ።";
+"Block Topic" = "ይህንን ርዕስ አግድ";
+"Suggested" = "ተጠቁሟል";
+"Related Sources not available" = "ተዛማጅ ምንጮች የሉም";
+"Block Source" = "ይህንን ምንጭ አግድ";
+"News in Bullets App version" = "ዜና በአጭሩ መትግበሪያ ስሪት";
+"Next" = "ቀጥሎ";
+"Login" = "ይገቡ";
+"Terms" = "ውሎች";
+"By clicking Continue, you agree with our Terms." = "ውሎችን ለመቀበል ቀጥል የሚለውን ይምረጡ።";
+"in our Privacy Policy." = "በእኛ የግላዊነት/ፕራይቬሲ ፖሊሲ ውስጥ";
+"Access token missing." = "የፍቃድ ምልክቱ ጠፍቷል";
+"NEXT" = "ቀጥሎ";
+"By checking this box, you agree to our " = "ውሎቹን ለመቀበል ሳጥኑ ላይ ይጫኑ። የእርስዎ መረጃ በእኛ የግላዊነት/ፕራይቬሲ ፖሊሲ መሠረት ነው የሚሰራው። ";
+"Terms of Service" = "የአገልግሎት ውል";
+". We’ll handle your data according to our " = " እኛ እንደ እኛ መረጃዎን እንይዛለን";
+"Password must be at least 8 characters." = "የይለፍ ቃል ቢያንስ 8 ካራክተሮች መሆን አለበት።";
+"Strong" = "ጠንካራ";
+"Medium" = "መካከለኛ";
+"Weak" = "ደካማ";
+"CREATE A NEW ACCOUNT" = "አዲስ መለያ /አካወንት ይፍጠሩ";
+"SIGN IN WITH EXISTING ACCOUNT" = "በነባር መወደ አካውንቶ ይግቡለያ/አካወንት ይገቡ";
+"You must agree to the Terms of Services to continue" = "ወደ አካውንቶ ይግቡ";
+"SIGN IN" = "ወደ አካውንቶ ይግቡ";
+"What's your password?" = "የእርስዎ የይለፍ ቃል ምንድነው?";
+"SIGN UP" = "ይመዝገቡ";
+"Choose your password?" = "የይለፍ ቃልዎን ይምረጡ";
+"Something went wrong" = "የሆነ ችግር ተከስቷል";
+"we will send email to" = "አዲስ ኢሜል እንልካለን";
+"with a link to reset your password." = "የይለፍ ቃልዎን ዳግም ለማስጀመር በአገናኝ ሊንክ";
+"A reset password link has been sent to" = "የይለፍ ቃልን ዳግም ለማስጀመር አገናኝ ሊንክ ተልኳል";
+"Enter new email." = "አዲስ ኢሜይል ያስገቡ";
+"Enter password." = "የየይለፍ ቃል ያስገቡ";
+"New Password " = "አዲስ የይለፍ ቃል";
+" (8 characters min)" = "(የሚፈቀደው ዝቅተኛ ካራክተር 8 ነው)";
+"Enter current password." = "የአሁኑን የይለፍ ቃል ያስገቡ";
+"Enter new password." = "አዲስ የይለፍ ቃል ያስገቡ.";
+"Enter confirm password." = "የይለፍ ቃል ያረጋግጡ";
+"password do not matched!" = "የይለፍ ቃል አይዛመድም";
+"GET STARTED" = "ጀምር";
+"SKIP" = "ዝለል";
+"From where you would like to pick photo?" = "ፎቶን ከየት መምርጥ ይፈልጋሉ?";
+"Camera" = "ካሜራ";
+"Photo Library" = "የፎቶ ላይብረሪ";
+"Kindly open settings and enable access" = "እባኮ ማቀናበርያ ይክፈቱና ፍቃድ ይስጡ";
+"Open Settings" = "ማቀናበርያ ይክፈቱ";
+"Access needed for your camera" = "ለእርስዎ ካሜራ ፍቃድ አስፈላጊ ነው";
+"Access needed for your photo library" = "ለእርስዎ ላይብረሪ ፍቃድ አስፈላጊ ነው";
+"Done" = "ተከናውኗል";
+"Pull to refresh" = "ለማደስ ይጎትቱ";
+"Loading" = "በመጫን ላይ";
+"Speech not available for this article" = "ለዚህ ጽሁፍ ንግግር የለም";
+"MANAGE LOCATION" = "አካባቢዎን ያስተዳድሩ";
+"OK" = "እሺ";
+"Choose your News in Bullets Edition based on locale" = "በአከባቢው መሠረት የእርስዎን ዜና በጥይት እትም ይምረጡ";
+"Edition" = "እትም";
+"EDITION / REGION" = "እትም / ክልል";
+"Your Topics" = "የእርስዎ ርዕሶች";
+"Your Channels" = "የእርስዎ ሰርጦች";
+"Your Places" = "የእርስዎ ቦታዎች";
+"Enter email." = "ኢሜል ያስገቡ።";
+"Please enter a password." = "እባክዎ የይለፍ ቃል ያስገቡ";
+"Search articles" = "መጣጥፎችን ፈልግ";
+"No results" = "ውጤቶች የሉም";
+"Edition / Region" = "እትም / ክልል";
+
+
+
+
+"0JC-Sb-Ouu.text" = "የማሳያ ሞድ";
+
+
+"Search" = "ፈልግ /ፈለጊ";
+
+
+"Select" = "ምረጥ (";
+
+
+"6H8-dI-k9P.text" = "አካባቢዎን ያስተዳድሩ";
+
+
+"6KH-YP-5Lt.text" = "ተራኪ";
+
+
+" ) icon on the article" = " ) በአንቀጹ ላይ ምልክት";
+
+
+"BLOCK" = "መገደብ";
+
+
+"you want to read later then" = "ይህንን በኋላ ላይ ለማንበብ ይፈልጋሉ?";
+
+
+"7oo-cf-l7Y.text" = "የ ማንበብ ፍጥነት";
+
+
+"88L-ip-pZw.text" = "የ ማንበብ ፍጥነት";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "እዚህ ድመት በስተቀር ምንም ነገር ያለ አይመስልም ፡፡ ወደ ዋናው ገጽ ይመለሱ?";
+
+
+"BpH-F1-i0z.normalTitle" = "አካባቢያዊ";
+
+
+" ) to save article." = ") ጽሑፍን ለመመዝገብ";
+
+
+"FB0-YN-HZg.text" = "ለመቀጠል 3 ን ይምረጡ";
+
+
+"H5Z-xJ-dWD.text" = "አርዕስተ ዜናዎች አና\nዋና ዋና ነጥቦች";
+
+
+"Search" = "ፈልግ /ፈለጊ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "የተራዘመ እይታ";
+
+
+"Jpx-nY-Is1.normalTitle" = "ቻናሎች";
+
+
+"JqN-io-P1u.normalTitle" = "+ ወደ ቦታ ጨምር";
+
+
+"What's your email?" = "የእርስዎ ኢሜይል አድራሻ ምንድነው?";
+
+
+"Lw1-Md-nse.text" = "የዝርዝር እይታ";
+
+
+"LyT-pT-g53.text" = "አለማቀፋዊ";
+
+
+"N6C-6i-Z2s.text" = "አለማቀፋዊ";
+
+
+"Nru-uU-CsC.text" = "አስታየቶች";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "ርዕሶች";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "ለግል ፍላጎት ያሻሽሉ";
+
+
+"Topics" = "ርዕሶች";
+
+
+"WXY-po-W1B.text" = "አርዕስተ ዜናዎች አና\nዋና ዋና ነጥቦች";
+
+
+"ans-Zy-T2Y.placeholder" = "አካባቢዎችን ይፈልጉ";
+
+
+"bgE-Jc-u8H.text" = "ለግል ፍላጎት ያሻሽሉ";
+
+
+
+
+
+"Tap the ( " = "ይጫኑ ( ";
+
+
+"Places" = "አካባቢ";
+
+
+"d1l-HK-OrG.text" = "ማሳያ ሞድ";
+
+
+
+
+
+"Language" = "ቋንቋ";
+
+
+"e9g-Wr-suO.text" = "አርዕስተ ዜናዎች ብቻ";
+
+
+"GO HOME" = "ወደ ዋና ገጽ ይመለሱ";
+
+
+"eh1-Oo-lEn.text" = "የተራዘመ እይታ";
+
+
+"hOf-26-eCm.text" = "አንድ ጊዜ(1x)";
+
+
+"il3-4J-X1V.text" = "ዝርዝር እይታ";
+
+
+"j2i-MT-VkA.text" = "የተለየ ቁልፍ ቃል ይሞክሩ";
+
+
+"Top News" = "ዋና ዜናዎች";
+
+
+"jmO-aF-nJ9.text" = "አርዕስተ ዜናዎች ብቻ";
+
+
+"There is nothing in here" = "እዚህ ውስጥ ምንም ነገር የለም ፡፡";
+
+
+"ma1-9p-bSa.text" = "እዚህ ውስጥ ምንም ነገር የለም ፡፡";
+
+
+"mce-jc-cKH.text" = "ተራኪ";
+
+
+"Channels" = "ቻናሎች";
+
+
+"Discover" = "ያግኙ";
+
+
+"pCy-AN-hsO.text" = "አንድ ጊዜ(1x)";
+
+
+"CANCEL" = "ሰርዝ";
+
+
+"Discover" = "ያግኙ";
+
+
+"No saved stories yet" = "እዚህ ምንም የለም";
+
+
+"wDG-kF-Hl8.text" = "በአካባቢዎ ላይ የተመሠረተ ዜና ያንብቡ";
+
+
+
+
+
+"wKj-3i-n0R.text" = "አካባቢያዊነት";
+
+
+"xfF-RB-mWL.text" = "አካባቢያዊነት";
+
+
+"Search" = "ፈልግ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ለመረጡት ክልል በጣም ጠቃሚ ዜናዎችን ያግኙ ፡፡ በየትኛውም የዓለም ክፍል በሚገኙ የቅርብ ጊዜ ዜናዎች ወቅታዊ መረጃዎችን ለእርስዎ ወቅታዊ መረጃ እንዲያገኙ ለማድረግ የተመረጡ የዜና ታሪኮችን ያንብቡ ፡፡";
+
+
+"Search articles" = "መጣጥፎችን ፈልግ";
+
+
+"6H8-dI-k9P.text" = "ቦታዎችን ያቀናብሩ";
+
+
+
+
+
+"Profile" = "መገለጫ";
+
+
+"Editions" = "እትሞች";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "ቦታዎች";
+
+
+
+
+
+"Search" = "ፈልግ";
+
+
+
+
+
+
+
+
+"Search" = "ፈልግ";
+
+
+"LANGUAGE" = "ቋንቋ";
+
+
+"Search" = "ፈልግ";
+
+
+"No results" = "ምንም ውጤቶች አልተገኙም";
+
+
+"Channels" = "ሰርጦች";
+
+
+"Places" = "ቦታዎች";
+
+
+"Places" = "ቦታዎች";
+
+
+"e9F-hd-Ifm.text" = "እትም / ክልል";
+
+
+
+
+
+
+
+
+"PLACES" = "ቦታዎች";
+
+
+"SAVED ARTICLES" = "የተቀመጡ ጽሑፎች";
+
+
+"Articles" = "መጣጥፎች";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ይቀጥሉ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "እትም / ክልል";
+
+
+"Try a different keyword" = "የተለየ ቁልፍ ቃል ይሞክሩ";
+
+
+"For You" = "ለእርስዎ";
+
+
+"Results" = "ውጤቶች";
+
+
+
+"About" = "ስለ እኛ";
+
+
+"Share" = "ያሳውቁ";
+
+
+"ACCOUNT" = "መለያ/አካዎንት";
+
+
+"Your Email" = "የእርስዎ ኢሜል";
+
+
+"1sT-J6-qI0.text" = "የትመዘገቡ ፅሁፎች";
+
+
+"2XX-rr-GLC.text" = "ከመቶ ምንጮች የተለያዩ ቻናሎችን ይምረጡ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ከመላው ዓለም የሚመጡ የቅርብ ጊዜ ዜና ክስተቶችን እና የተለየ ርዕሶችን ያንብቡ።";
+
+
+"Set an interval in which you want to receive your news notifications." = "ማሳዎቂያዎችን ለመቀበል የጊዜ ክፍተትን ያዘጋጁ";
+
+
+"Off" = "ጠፍቷል";
+
+
+
+
+
+"Bullet 2" = "ዋና ጉዳይ 2";
+
+
+"What's your email?" = "የእርስዎ ኢሜል ምንድነው?";
+
+
+"New Password (8 Characters Min)" = "አዲስ የይለፍ ቃል (8 ካራክተሮች አነስተኛ)";
+
+
+"Forgot Password?" = "የይለፍ ቃልዎን ረስተዋል?";
+
+
+"Account Settings" = "መለያ/አካዉንት ማደራጃ";
+
+
+"Learn how we process your data" = "መረጃዎን ለማስኬድ የሚረዳ መረጃ";
+
+
+"3h" = "3ሰዓታት";
+
+
+"Ok" = "እሺ";
+
+
+"Block articles from The Guardian" = "ፅሁፎቹን ከዚህ ይገደቡ";
+
+
+"On" = "ማበራት";
+
+
+"Auto" = "አውቶ";
+
+
+"Help Center" = "የእርዳታ ማዕከል";
+
+
+"Search" = "የፈለጋ ቻናሎች";
+
+
+"Facebook" = "ፌስቡክ";
+
+
+"Select file from gallery" = "ከጋለሪ ፋይል ይምረጡ";
+
+
+
+
+"Save article" = "ጽሑፍን መዝግብ";
+
+
+"ABOUT" = "ስለ";
+
+
+"Dark" = "ጨለማ";
+
+
+"Legal" = "ሕጋዊ";
+
+
+"Go to The Guardian" = "ወደ";
+
+
+"Send reset link" = "ዳግም አስጀምር አገናኝ ሊንክ ላክ";
+
+
+
+
+
+"My Account" = "የእኔ አካዉንት";
+
+
+"FEEDBACK" = "አስተያየት";
+
+
+"Message" = "መልእክት";
+
+
+"Confirm New Password" = "አዲሱን የይለፍ ቃል አረጋግጥ";
+
+
+"for ___" = "ለ ___";
+
+
+"Search" = "ርዕሶችን ፈልግ";
+
+
+"LANGUAGE" = "ቋንቋ";
+
+
+"Light" = "ብርሃን";
+
+
+"FOLLOW 3 TO CONTINUE" = "ለመቀጠል 3 ን ይምረጡ";
+
+
+
+
+"Off" = "ኣጥፋ";
+
+
+"Language" = "ይምረጡ";
+
+
+"LOG OUT" = "ውጣ";
+
+
+"Report content" = "ይዘቱን ያመልከቱ";
+
+
+"What's your email?" = "የእርስዎ ኢሜል ምንድነው?";
+
+
+"On" = "ማበራት";
+
+
+"More like this" = "እንደዚህ ያሉ ተጨማሪ ዜናዎች";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1ሰዓታት";
+
+
+"Enter Email Address" = "የኢሜል አድራሻ ያስገቡ";
+
+
+"News in Bullets" = "በትንሽ ጊዜ ውስጥ የበለጠ ያንብቡ";
+
+
+"6h" = "6ሰዓታት";
+
+
+"Choose your password" = "የይለፍ ቃልዎን ይምረጡ";
+
+
+"Cancel" = "ሰርዝ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ዜናውን በዚህ መተግበሪያ በፍጥነት ያንብቡ። ርዕሶችዎን እና ምንጮችዎን ይምረጡ ፡፡ ከዚያ የዜናዎን ዋና ዋና ነጥቦችን ያንብቡ።";
+
+
+"Push Notification" = "ማሳወቂያ";
+
+
+"12h" = "12ሰዓታት";
+
+
+"24h" = "24ሰዓታት";
+
+
+"E-mail" = "ኢሜል";
+
+
+"How can we help you?" = "እንዴት መርዳት እንችላለን?";
+
+
+"OJP-Wd-0d3.text" = "ፓኪስታን";
+
+
+"CHANGE PASSWORD" = "የይለፍ ቃል ይቀይሩ";
+
+
+"Change Email" = "የኢሜል አድራሻዎትን ይቀይሩ";
+
+
+"Medium" = "መካከለኛ";
+
+
+"SAVE CHANGES" = "ለውጦችን መዝግበ አስቀምጥ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "በማንኛውም ነገር ላይ እገዛ ከፈለጉ መልእክት ይላኩልን ፣ ከእርስዎ መስማት እንወዳለን!";
+
+
+"P5u-N3-Tw4.text" = "መለያ";
+
+
+"Cancel" = "ሰርዝ";
+
+
+"Bullet 1" = "ዋና ጉድይ";
+
+
+"TIMED NOTIFICATIONS" = "ማሳወቂያዎች";
+
+
+"POST ARTICLE" = "ጽሑፍ ይለጥፉ";
+
+
+"CONTACT US" = "ከእኛ ጋር ይገናኙ";
+
+
+"EDITION / REGION" = "ኤዲሽን/እትም";
+
+
+"Search" = "ፈለግ /ፈልጊ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "አስተያየት ይላኩልን ፣ ከእርስዎ መስማት እንወዳለን! ጥያቄዎች ወይም አሳሳቢ የሕግ ጉዳዮች አሉዎት? የእኛን የእገዛ ገጽ ይሞክሩ ወይም እኛን ያነጋግሩን።";
+
+
+"Google" = "ጉግል";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "በማንኛውም ነገር ላይ እገዛ ከፈለጉ መልእክት ይላኩልን ፣ ከእርስዎ መስማት እንወዳለን!";
+
+
+"30m" = "30ደቂቃ";
+
+
+"CONTINUE" = "ይቀጥሉ";
+
+
+"Time To Update!" = "መተግበሪያውን ያዘምኑ!";
+
+
+"NOTIFICATIONS" = "ማሳወቂያዎች";
+
+
+"Search" = "ፈልግ/ፈልጊ";
+
+
+"By clicking Continue, you agree with our Terms." = "ዎሉን ለመቀበል ይቀጥሉ የሚለውን ይምረጡ";
+
+
+"HELP / CONTACT US" = "እርዳት/ መገናኛ";
+
+
+"Reset Password" = "የይለፍ ቃል ዳግም አስተካክል";
+
+
+"SEND MESSAGE" = "መልዕክት ላክ";
+
+
+"Save article" = "ጽሑፍን መዝግብ";
+
+
+"Bullet 6 (Optional)" = "ዋና ጉድይ 6 (በምርጫ)";
+
+
+"HAPTICS" = "ሃፕቲክስ";
+
+
+"Your message has \vbeen sent." = "መልክቶ ተልኳል";
+
+
+"LEGAL" = "ሕጋዊ";
+
+
+"Block List" = "የታገጅ ዝርዝር";
+
+
+"PERSONALIZATION" = "ግላዊነት ማላበስ";
+
+
+"in our Privacy Policy." = "በእኛ ፕራይቬሲ/የግላዊነት ፖሊሲ ውስጥ";
+
+
+"CONTINUE" = "ይቀጥሉ";
+
+
+"Enter Name" = "ስም ያስገቡ";
+
+
+"What's your email?" = "የእርስዎ ኢሜል ምንድነው?";
+
+
+"Hello there!" = "ሰላም!";
+
+
+"PUSH NOTIFICATIONS" = "ማሳወቂያዎች";
+
+
+"Bullet 3 (Optional)" = "ዋና ጉዳይ 3 (በምርጫ)";
+
+
+"Source name" = "የመረጃው ስም";
+
+
+"Current Password" = "የአሁኑ የይለፍ ቃል";
+
+
+"COLOR THEME" = "የቀለም ገጽታ";
+
+
+"eTp-X1-g34.text" = "ወይም በዚህ በኩል";
+
+
+"CANCEL" = "ሰርዝ";
+
+
+"Bullet 4 (Optional)" = "ዋና ጉዳይ 4 (በምርጫ)";
+
+
+"Date published" = "የታተመበት ቀን";
+
+
+"Send Password Reset Link" = "የይለፍ ቃል ዳግም ለማስጀመር አገናኝ ሊንክ ይላኩ";
+
+
+"CONTINUE WITH APPLE" = "በአፕል መታወቂያ በኩል ይግቡ";
+
+
+"Off" = "ኣጥፋ";
+
+
+"BLOCK LIST" = "የታገጅ ዝርዝር";
+
+
+"HELP" = "እርዳታ";
+
+
+"Reference link" = "የማጣቀሻ አገናኝ";
+
+
+"Your Password" = "የይለፍ ቃልዎን";
+
+
+"SUBMIT" = "አስረክብ";
+
+
+"HELP" = "እርዳታ";
+
+
+"MY ACCOUNT" = "የእኔ አካውንት";
+
+
+"hbD-HP-tZd.normalTitle" = "እገዳን አንሳ";
+
+
+"OTHERS" = "ሌሎች";
+
+
+"BREAKING NEWS" = "ሰበር ዜና";
+
+
+"Topics" = "የታገዱ ርዕሶች";
+
+
+"Message us," = "መልእክት ይላኩልን";
+
+
+"Pick topics to start reading
+and saving articles" = "የመተግበሪያ ቋንቋ";
+
+
+"Forgot Password?" = "የይለፍ ቃልዎን ረስተዋል?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "አዳዲስ ባህሪዎች ታክለዋል። አንዳንድ ችግሮች ተስተካክለዋል።";
+
+
+"Success!" = "ስኬት!";
+
+
+"Current Password" = "የአሁኑ የይለፍ ቃል";
+
+
+"CONTENT" = "ይዘት";
+
+
+"Headline" = "ርዕስ";
+
+
+"neg-UC-UpK.text" = "ንባቦችን ለመጀመር እና ጽሑፎችን መዝግቦ ለማስቀመጥ ርዕሶችን ይምረጡ";
+
+
+"CONTINUE WITH EMAIL ID" = "በኢሜል መታወቂያዎ ይቀጥሉ";
+
+
+"SAVE CHANGES" = "ለውጦችን መዝግበ አስቀምጥ";
+
+
+"Post an Article" = "ጽሑፍ ይለጥፉ";
+
+
+"Contact Us" = "ከእኛ ጋር ይገናኙ";
+
+
+"On" = "ማብራት";
+
+
+"New Email Address" = "አዲስ የኢሜል አድራሻ";
+
+
+"Bullet 5 (Optional)" = "ዋና ጉዳይ 5 (በምርጫ)";
+
+
+"Suggest an improvement" = "ማሻሻያ ይጠቁሙ";
+
+
+"Channels" = "የታገዱ ምንጮች";
+
+
+"From:" = "ከ፦";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ግላዊ ጥቆማ";
+
+
+"I don't like this" = "ይህን አልፈልግም";
+
+
+"CONTINUE" = "ይቀጥሉ";
+
+
+"Name" = "ስም";
+
+
+"Enter email" = "ኢሜል ያስገቡ";
+
+
+"HELP" = "እርዳታ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ለመቀጠል 3 ን ይከተሉ";
+
+
+"UPDATE APP" = "መተግበሪያውን ያዘምኑ";
+
+
+"Forgot Password?" = "የይለፍ ቃልዎን ረስተዋል?";
+
+
+"Change Password" = "የይለፍ ቃል ይቀይሩ";
+
+
+"Reset Password" = "የይለፍ ቃል ዳግም አስተካክል";
+
+
+
+
+
+
+
+
+"Report content" = "ያሳሰቡትን ሪፖርት ያድርጉ";
+
+
+"CHANGE EMAIL ADDRESS" = "የኢሜል አድራሻ ለውጥ";
+
+
+"Follow The Guardian" = "ይከተሉ";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ተሞክሮዎን በተቻለ መጠን ለስላሳ ለማድረግ ብዙ አዲስ ባህሪያትን አክለናል እና የተወሰኑ ሳንካዎችን አስተካክለናል ፡፡";
+
+
+"Edition / Region" = "እትም / ክልል";
+
+
+"OK" = "እሺ";
+
+
+"NARRATOR" = "ነጋሪ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ስለሚወዷቸው የዜና ዘገባዎች ወቅታዊ ማድረጉን ብዙ ጊዜዎን ሊወስድ አይገባም። በጥይት ውስጥ ያሉ ዜናዎች መደበኛውን የ 5 ደቂቃ ንባብ ወስደው በቀላሉ ሊፈጩ በሚችሉ ጥይቶች ውስጥ ይጨምራሉ ፡፡ አሁን በተመሳሳይ ዜና ውስጥ በተወሰነ ጊዜ ውስጥ መውሰድ ይችላሉ - ስለዚህ በትንሽ ጊዜ ውስጥ የበለጠ ማንበብ ይችላሉ።";
+
+
+"READING SPEED" = "የንባብ ፍጥነት";
+
+
+
+
+
+"You haven't blocked anything yet" = "እስካሁን ምንም አላገዱም";
+
+
+"EDITION / REGION" = "እትም / ክልል";
+
+
+
+
+
+"HEADLINES ONLY" = "ርዕሶች ብቻ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "የኦዲዮ ቅንብሮች";
+
+
+"AUDIO SETTINGS" = "የኦዲዮ ቅንጅቶች";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ራስ እና ጉልበቶች";
+
+
+"CONTINUE AS GUEST" = "እንደ እንግዳ አድርገው ይዝለሉ እና ይግቡ";
+
+
+"Topics" = "ርዕሶች";
+
+
+"Pick topics to start reading and saving articles" = "ጽሑፎችን ለማንበብ እና ለማስቀመጥ ለመጀመር ርዕሶችን ይምረጡ";
+
+
+"Channels" = "ሰርጦች";
+
+
+"Choose from hundreds \nof news publications" = "በመቶዎች ከሚቆጠሩ የዜና ጽሑፎች ውስጥ ይምረጡ";
+
+
+"Pick topics to start reading\nand saving articles" = "ጽሑፎችን ለማንበብ እና ለማስቀመጥ ለመጀመር ርዕሶችን ይምረጡ";
+
+"Pick editions to start reading\nand saving articles" = "ጽሑፎችን ለማንበብ እና ለማስቀመጥ ለመጀመር እትሞችን ይምረጡ";
+
+"Or with" = "ወይም በ";
+
+"CONTINUE AS GUEST" = "እንደ እንግዳ ይቀጥሉ";
+
+"Terms of Service" = "የአገልግሎት ውሎች";
+
+"Choose from hundreds \nof news publications" = "በመቶዎች ከሚቆጠሩ የዜና ጽሑፎች ውስጥ ይምረጡ";
+
+"Select your preferred language\nfor News in Bullets." = "በጥይት ውስጥ ለዜና የመረጡትን ቋንቋ ይምረጡ።";
+
+"Choose a style" = "ዘይቤን ይምረጡ";
+
+"Pop or subtle. Day or night. Customize your interface." = "ብቅ ወይም ረቂቅ ፡፡ ቀን ወይም ማታ ፡፡ በይነገጽዎን ያብጁ።";
+
+"MINS AGO" = "ከደቂቃዎች በፊት";
+
+"AN HOUR AGO" = "ከአንድ ሰዓት በፊት";
+
+"HOURS AGO" = "ከሰዓታት በፊት";
+
+"1 WEEK AGO" = "1 ሳምንት በፊት";
+
+"YESTERDAY" = "ትላንት";
+
+"DAYS AGO" = "ከቀናት በፊት";
+
+"Go to" = "ሂድ ወደ";
+
+"You have reached the start." = "ጅምር ላይ ደርሰዋል";
+
+"Source unblocked successfully" = "ክፍት ምንጭ በተሳካ ሁኔታ";
+
+"Invalid email format"  = "ልክ ያልሆነ የኢሜል ቅርጸት";
+
+"Wrong email or password" = "የተሳሳተ ኢሜይል ወይም የይለፍ ቃል";
+
+

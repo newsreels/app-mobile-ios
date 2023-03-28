@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "செய்திச் சுருக்கம்";
+"BULLETS" = "செய்திச் சுருக்கம்";
+"Headlines is not available." = "தலைப்புச் செய்திகள் தற்போது இல்லை";
+"Check your internet Connection and try again." = "உங்களது இன்டர்நெட் இணைப்பைச் சோதித்து மீண்டும் முயற்சிக்கவும்";
+"Choose Image" = "படத்தைத் தேர்வு செய்யவும்";
+"Headline" = "தலைப்புச் செய்திகள்";
+"Bullet 1" = "செய்திச் சுருக்கம் 1";
+"Bullet 2" = "செய்திச் சுருக்கம் 2";
+"Bullet 3 (Optional)" = "செய்திச் சுருக்கம் 3 (விரும்பினால்)";
+"Bullet 4 (Optional)" = "செய்திச் சுருக்கம் 4 (விரும்பினால்)";
+"Bullet 5 (Optional)" = "செய்திச் சுருக்கம் 5 (விரும்பினால்)";
+"Bullet 6 (Optional)" = "செய்திச் சுருக்கம் 6 (விரும்பினால்)";
+"Enter Aticle Headline" = "தலைப்புச் செய்தியை உள்ளிடவும்";
+"Enter source name" = "ஆதாரத்தை உள்ளிடவும்";
+"Enter reference link" = "குறிப்புரையை உள்ளிடவும்";
+"Enter published date" = "வெளியிட்ட தேதி";
+"Enter Bullet 1" = "முதல் சுருக்கத்தை உள்ளிடவும்";
+"Enter Bullet 2" = "இரண்டாவது சுருக்கத்தை உள்ளிடவும்";
+"Post article successfully" = "கட்டுரை வெற்றிகரமாக இடுகையிடப்பட்டது";
+"Follow" = "பின்தொடர்";
+"Unfollow" = "தொடர வேண்டாம்";
+"Block articles from" = "இருந்து கட்டுரைகளைத் தடை செய்க";
+"Unblock articles from" = "இருந்து கட்டுரைகளைத் தடை நீக்குக";
+"Remove article" = "கட்டுரையை நீக்கவும்";
+"Save article" = "கட்டுரையைச் சேமிக்கவும்";
+"Terms & Conditions" = "விதிமுறைகள் & நிபந்தனைகள்";
+"Privacy Policy" = "தனியுரிமைக் கொள்கை";
+"TERMS AND CONDITIONS" = "விதிமுறைகள் & நிபந்தனைகள்";
+"PRIVACY POLICY" = "தனியுரிமைக் கொள்கை";
+"Fuel your curiosity" = "மேலும் உலகச் செய்திகளைப் படிக்க";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "உலகம் முழுவதிலிருந்து சேகரிக்கப்பட்ட ஆதாரபூர்வமான மற்றும் நம்பகமான சுருக்கமான செய்திகளை நீங்கள் விரும்பும் தலைப்புகள் சார்ந்து படியுங்கள்.";
+"Save time" = "நேரத்தைச் சேமியுங்கள்";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "செய்திச் சுருக்கத்தில் செய்திகளைப் படிக்கவும்";
+"Hands-free reading" = "எளிதான ஹாண்ட்ஸ் ஃப்ரீ ரீடிங்";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "படிக்க நேரம் இல்லையா? ஒலிமுறைச் செயல்பாட்டை உபயோகியுங்கள்";
+"Write your message..." = "உங்களது செய்தியை எழுதவும்";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ஏதேனும் உதவி தேவையெனில் எங்களுக்குச செய்தி அனுப்பவும். உங்களுக்கு உதவுவதை எதிர்நோக்குகிறோம்.";
+"Drop us a message" = "எங்களுக்குச் செய்தி அனுப்பவும்";
+"Enter Name." = "பெயரை உள்ளிடுக";
+"Enter Email." = "மின்னஞ்சலை உள்ளிடுக";
+"Write your message." = "உங்களது செய்தியை எழுதவும்";
+"Topic unblock successfully" = "இந்தத் தலைப்பைத் தடை நீக்கியுள்ளீர்கள்";
+"Source unblock successfully" = "இந்த ஆதாரத்தைத் தடை நீக்கியுள்ளீர்கள்";
+"Unblock Source" = "ஆதாரத்தின் தடையை நீக்கவும்";
+"Cancel" = "ரத்து செய்யவும்";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "உங்கள் கருத்தை அனுப்பவும். உங்களிடமிருந்து அதை பெற நாங்கள் ஆவலாக இருக்கிறோம். உங்களுக்கு வேறு ஏதாவது கேள்விகள் அல்லது சட்டரீதியான சந்தேகங்கள் உள்ளனவா? எங்களது உதவி பக்கத்தையோ அல்லது எங்களையோ தொடர்பு கொள்ளவும்";
+"Enter your suggestion." = "உங்களது ஆலோசனையை பதிவு செய்யவும்";
+"feedback sent." = "கருத்துக்கள் வெற்றிகரமாக அனுப்பப்பட்டுவிட்டன";
+"30m" = "30 நிமி";
+"1h" = "1 h";
+"3h" = "3 மணி";
+"6h" = "6 மணி";
+"12h" = "12 h";
+"24h" = "24 மணி";
+"Language updated successfully." = "மொழி புதுப்பிக்கப்பட்டது";
+"CONTINUE" = "தொடரவும்";
+"FOLLOW 3 TO CONTINUE" = "தொடர, 3 ஐ பின்தொடரவும்";
+"Unfollow Location" = "இருப்பிடத்தை தொடர்வதை நிறுத்துக";
+"Saved Articles" = "சேமிக்கப்பட்ட கட்டுரைகள்";
+"Block" = "தடை செய்க";
+"Are you sure you want block" = "நிச்சயமாக இதைத் தடை செய்ய விரும்புகிறீர்களா?";
+"Once blocked, you wont be able to see any Articles related to this" = "இதைத் தடை செய்தால் இந்த சேனலில் இருந்து எந்தக் கட்டுரையையும் நீங்கள் பார்க்க இயலாது";
+"Block Topic" = "இந்த தலைப்பைத் தடை செய்யவும்";
+"Suggested" = "பரிந்துரைக்கப்பட்டது";
+"Related Sources not available" = "தொடர்புடைய ஆதாரங்கள் இல்லை";
+"Block Source" = "ஆதாரத்தைச் தடை செய்யவும்";
+"News in Bullets App version" = "செய்திச் சுருக்கம் - ஆப் வெர்ஷன்";
+"Next" = "அடுத்தது";
+"Login" = "உள்நுழைவு";
+"Terms" = "விதிமுறைகள்";
+"By clicking Continue, you agree with our Terms." = "நிபந்தனைகளை ஏற்க தொடரவும் என்பதைத் தேர்வு செய்யவும்";
+"in our Privacy Policy." = "எங்களது தனியுரிமைக் கொள்கையில் உள்ளது";
+"Access token missing." = "அணுகல் டோக்கன் காணப்படவில்லை";
+"NEXT" = "அடுத்தது";
+"By checking this box, you agree to our " = "விதிமுறைகளை ஏற்க பெட்டியை கிளிக் செய்யவும். உங்கள் தரவு எங்களது தனியுரிமைக் கொள்கைபடி செயலாக்கப்படும்.";
+"Terms of Service" = "சேவை நிபந்தனைகள்";
+". We’ll handle your data according to our " = "உங்கள் தரவு எங்கள் தனியுரிமைக் கொள்கைப்படி கையாளப்படும்";
+"Password must be at least 8 characters." = "பாஸ்வேர்ட் 8 எழுத்துக்கள் கொண்டே இருக்கவேண்டும்";
+"Strong" = "சிறந்தது";
+"Medium" = "சுமார்";
+"Weak" = "பலவீனமானது";
+"CREATE A NEW ACCOUNT" = "புதிய கணக்கைத் துவக்கவும்";
+"SIGN IN WITH EXISTING ACCOUNT" = "உள்நுழைய தற்போதுள்ள கணக்கை உபயோகப்படுத்தவும்";
+"You must agree to the Terms of Services to continue" = "தொடர்வதற்கு சேவை நிபந்தனைகளுக்கு நீங்கள் சம்மதம் தெரிவிக்க வேண்டும்";
+"SIGN IN" = "உள்நுழைவு";
+"What's your password?" = "உங்கள் பாஸ்வேர்ட் என்ன?";
+"SIGN UP" = "பதிவு செய்க";
+"Choose your password?" = "உங்கள் பாஸ்வேர்டைத் தேர்வு செய்யவும்";
+"Something went wrong" = "ஏதோ தவறு நேர்ந்து உள்ளது";
+"we will send email to" = "இங்கு மின்னஞ்சல் அனுப்புவோம்";
+"with a link to reset your password." = "பாஸ்வேர்டை ரிசெட் செய்யும் இணைப்புடன்";
+"A reset password link has been sent to" = "பாஸ்வேர்டை ரிசெட் செய்ய இணைப்பு அனுப்பப்பட்டது";
+"Enter new email." = "உங்கள் புதிய மின்னஞ்சலை உள்ளிடவும்";
+"Enter password." = "பாஸ்வேர்ட் உள்ளிடவும்";
+"New Password " = "புதிய பாஸ்வேர்ட்";
+" (8 characters min)" = "(குறைந்தது 8 எழுத்துக்கள்)";
+"Enter current password." = "தற்போதைய பாஸ்வேர்டை உள்ளிடவும்";
+"Enter new password." = "புதிய பாஸ்வேர்ட்டை உள்ளிடவும்";
+"Enter confirm password." = "பாஸ்வேர்டை உறுதி செய்யவும்";
+"password do not matched!" = "பாஸ்வேர்ட் பொருந்தவில்லை";
+"GET STARTED" = "ஆரம்பிக்க தயாராகவும்";
+"SKIP" = "தவிர்க்கவும்";
+"From where you would like to pick photo?" = "போட்டோவை எங்கிருந்து தேர்வு செய்ய விரும்புகிறீர்கள்?";
+"Camera" = "காமிரா";
+"Photo Library" = "போட்டோ லைப்ரரி";
+"Kindly open settings and enable access" = "அமைப்புகளைத் திறந்து அனுமதி வழங்கவும்";
+"Open Settings" = "அமைப்புகளைத் திறக்கவும்";
+"Access needed for your camera" = "காமெராவை அணுக அனுமதி தேவை";
+"Access needed for your photo library" = "போட்டோ லைப்ரரியை அணுக அனுமதி தேவை";
+"Done" = "முடிந்தது";
+"Pull to refresh" = "ரெஃப்ரெஷ் செய்ய இழுக்கவும்";
+"Loading" = "ஏற்றுகிறது";
+"Speech not available for this article" = "இந்த கட்டுரைக்கு ஒலி முறை வசதி இல்லை";
+"MANAGE LOCATION" = "இருப்பிடத்தை நிர்வகி";
+"OK" = "சரி";
+"Choose your News in Bullets Edition based on locale" = "இருப்பிடத்தின் அடிப்படையில் உங்கள் செய்திகளை புல்லட் பதிப்பில் தேர்வு செய்யவும்";
+"Edition" = "பதிப்பு";
+"EDITION / REGION" = "பதிப்பு / பகுதி";
+"Your Topics" = "உங்கள் தலைப்புகள்";
+"Your Channels" = "உங்கள் சேனல்கள்";
+"Your Places" = "உங்கள் இடங்கள்";
+"Enter email." = "மின்னஞ்சலை உள்ளிடவும்.";
+"Please enter a password." = "கடவுச்சொல்லை உள்ளிடவும்.";
+"Search articles" = "கட்டுரைகளைத் தேடுங்கள்";
+"No results" = "முடிவுகள் இல்லை";
+"Edition / Region" = "பதிப்பு / பிராந்தியம்";
+
+
+
+
+"0JC-Sb-Ouu.text" = "காட்சி முறை";
+
+
+"Search" = "தேடுக";
+
+
+"Select" = "கட்டுரையில்( ";
+
+
+"6H8-dI-k9P.text" = "இருப்பிடத்தை நிர்வகி";
+
+
+"6KH-YP-5Lt.text" = "வர்ணனையாளர்";
+
+
+" ) icon on the article" = ") உள்ள சின்னத்தைத் தேர்வு செய்க";
+
+
+"BLOCK" = "முடக்கு";
+
+
+"you want to read later then" = "பின்னர் படிக்க விரும்பினால்";
+
+
+"7oo-cf-l7Y.text" = "படிக்கும் வேகம்";
+
+
+"88L-ip-pZw.text" = "படிக்கும் வேகம்";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "இங்கு எதுவும் காணப்படவில்லை.\nமீண்டும் முதல் பக்கத்திற்குச் செல்ல வேண்டுமா?";
+
+
+"BpH-F1-i0z.normalTitle" = "உள்ளூர் செய்திகள்";
+
+
+" ) to save article." = " )கட்டுரையைச் சேமிக்க";
+
+
+"FB0-YN-HZg.text" = "தொடர, 3-ஐ தேர்வு செய்க";
+
+
+"H5Z-xJ-dWD.text" = "தலைப்புச் செய்திகள் மற்றும்\nசெய்திச் சுருக்கம்";
+
+
+"Search" = "தேடல்";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "விரிவான பார்வை";
+
+
+"Jpx-nY-Is1.normalTitle" = "சேனல்கள்";
+
+
+"JqN-io-P1u.normalTitle" = "+ இடங்களில் சேர்";
+
+
+"What's your email?" = "உங்கள் மின்னஞ்சல் முகவரி?";
+
+
+"Lw1-Md-nse.text" = "பட்டியல் காட்சி";
+
+
+"LyT-pT-g53.text" = "சர்வதேச செய்திகள்";
+
+
+"N6C-6i-Z2s.text" = "சர்வதேச செய்திகள்";
+
+
+"Nru-uU-CsC.text" = "பரிந்துரைகள்";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "தலைப்புகள்";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "தனிப்பயனாக்குக";
+
+
+"Topics" = "தலைப்புகள்";
+
+
+"WXY-po-W1B.text" = "தலைப்புச் செய்திகள் மற்றும்\nசெய்திச் சுருக்கம்";
+
+
+"ans-Zy-T2Y.placeholder" = "இடங்களைத் தேடுக";
+
+
+"bgE-Jc-u8H.text" = "தனிப்பயனாக்குக";
+
+
+
+
+
+"Tap the ( " = "டேப் செய்க ( ";
+
+
+"Places" = "இடம்";
+
+
+"d1l-HK-OrG.text" = "காட்சி முறை";
+
+
+
+
+
+"Language" = "மொழி";
+
+
+"e9g-Wr-suO.text" = "தலைப்புச் செய்திகள் மட்டும்";
+
+
+"GO HOME" = "முதல் பக்கத்திற்குத் திரும்பச் செல்";
+
+
+"eh1-Oo-lEn.text" = "விரிவான பார்வை";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "பட்டியல் காட்சி";
+
+
+"j2i-MT-VkA.text" = "வேறு முக்கியச் சொல்லை உபயோகி";
+
+
+"Top News" = "முக்கியச் செய்திகள்";
+
+
+"jmO-aF-nJ9.text" = "தலைப்புச் செய்திகள் மட்டும்";
+
+
+"There is nothing in here" = "இங்கு எதுவும் காணப்படவில்லை.";
+
+
+"ma1-9p-bSa.text" = "முடிவுகள் ஏதும் அறியப்படவில்லை";
+
+
+"mce-jc-cKH.text" = "வர்ணனையாளர்";
+
+
+"Channels" = "சேனல்கள்";
+
+
+"Discover" = "கண்டறி";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ரத்து செய்";
+
+
+"Discover" = "கண்டறி";
+
+
+"No saved stories yet" = "இங்கே ஏதும் இல்லை";
+
+
+"wDG-kF-Hl8.text" = "இருப்பிடம் சார்ந்த செய்திகளைப் படிக்க";
+
+
+
+
+
+"wKj-3i-n0R.text" = "இடம் சார்ந்த தனிப்பயனாக்கம்";
+
+
+"xfF-RB-mWL.text" = "இடம் சார்ந்த தனிப்பயனாக்கம்";
+
+
+"Search" = "தேடல்";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "நீங்கள் தேர்வு செய்யும் பிராந்தியத்திற்கு மிகவும் பொருத்தமான செய்திகளைப் பெறுங்கள். உலகில் எங்கிருந்தும் சமீபத்திய செய்திகளைப் புதுப்பிக்கும்படி செய்திகளைப் படிக்கவும்.";
+
+
+"Search articles" = "கட்டுரைகளைத் தேடுங்கள்";
+
+
+"6H8-dI-k9P.text" = "இடங்களை நிர்வகிக்கவும்";
+
+
+
+
+
+"Profile" = "சுயவிவரம்";
+
+
+"Editions" = "பதிப்புகள்";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "இடங்கள்";
+
+
+
+
+
+"Search" = "தேடல்";
+
+
+
+
+
+
+
+
+"Search" = "தேடல்";
+
+
+"LANGUAGE" = "மொழி";
+
+
+"Search" = "தேடல்";
+
+
+"No results" = "முடிவுகள் எதுவும் இல்லை";
+
+
+"Channels" = "சேனல்கள்";
+
+
+"Places" = "இடங்கள்";
+
+
+"Places" = "இடங்கள்";
+
+
+"e9F-hd-Ifm.text" = "பதிப்பு / பகுதி";
+
+
+
+
+
+
+
+
+"PLACES" = "இடங்கள்";
+
+
+"SAVED ARTICLES" = "சேமிக்கப்பட்ட கட்டுரைகள்";
+
+
+"Articles" = "கட்டுரைகள்";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "தொடருங்கள்";
+
+
+
+
+
+"w8f-2R-NgT.text" = "பதிப்பு / பகுதி";
+
+
+"Try a different keyword" = "வேறு முக்கிய சொல்லை முயற்சிக்கவும்";
+
+
+"For You" = "உனக்காக";
+
+
+"Results" = "முடிவுகள்";
+
+
+
+"About" = "எங்களைப் பற்றி";
+
+
+"Share" = "பகிரவும்";
+
+
+"ACCOUNT" = "கணக்கு";
+
+
+"Your Email" = "உங்கள் மின்னஞ்சல்";
+
+
+"1sT-J6-qI0.text" = "சேகரிக்கப்பட்ட கட்டுரைகள்";
+
+
+"2XX-rr-GLC.text" = "நூற்றுக்கணக்கான மூலங்களில் இருந்து வெவ்வேறு சேனல்களைத் தேர்வு செய்யவும்";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "உலகம் முழுவதிலுமிருந்து நடப்புச் செய்திகள், நிகழ்ச்சிகள் மற்றும் அம்சங்களை உடனே படிக்கவும்";
+
+
+"Set an interval in which you want to receive your news notifications." = "அறிவிப்புகளைப் பெறுவதற்கான கால அவகாசத்தைக் குறிக்கவும்";
+
+
+"Off" = "ஆஃப்";
+
+
+
+
+
+"Bullet 2" = "சுருக்கம் 2";
+
+
+"What's your email?" = "உங்களது மின்னஞ்சல் முகவரி?";
+
+
+"New Password (8 Characters Min)" = "புதிய பாஸ்வோர்ட் (குறைந்தபட்சம் 8 எழுத்துக்கள்)";
+
+
+"Forgot Password?" = "பாஸ்வோர்டை மறந்துவிட்டீர்களா?";
+
+
+"Account Settings" = "கணக்கு அமைப்புகள்";
+
+
+"Learn how we process your data" = "உங்கள் தரவைப் பகுப்பது குறித்த தகவல்";
+
+
+"3h" = "3 மணி";
+
+
+"Ok" = "சரி";
+
+
+"Block articles from The Guardian" = "இருந்து கட்டுரைகளைத் தடை செய்யவும்";
+
+
+"On" = "ஆன்  செய்க";
+
+
+"Auto" = "ஆட்டோ";
+
+
+"Help Center" = "உதவி மையம்";
+
+
+"Search" = "சேனல்களைத் தேடுக";
+
+
+"Facebook" = "ஃபேஸ்புக்";
+
+
+"Select file from gallery" = "கேலரியில் இருந்து கோப்பைத் தேர்ந்தெடுக்கவும்";
+
+
+
+
+"Save article" = "கட்டுரையைச் சேமிக்கவும்";
+
+
+"ABOUT" = "மேலும் தெரிந்துகொள்ள";
+
+
+"Dark" = "டார்க்";
+
+
+"Legal" = "சட்டரீதியானவை";
+
+
+"Go to The Guardian" = "செல்லவும்";
+
+
+"Send reset link" = "ரீசெட் இணைப்பை அனுப்பவும்";
+
+
+
+
+
+"My Account" = "எனது கணக்கு";
+
+
+"FEEDBACK" = "பின்னூட்டம்";
+
+
+"Message" = "செய்தி";
+
+
+"Confirm New Password" = "புதிய பாஸ்வோர்டை உறுதிப்படுத்தவும்";
+
+
+"for ___" = "அதற்கு ___";
+
+
+"Search" = "தலைப்புகளைத் தேட";
+
+
+"LANGUAGE" = "மொழி";
+
+
+"Light" = "லைட்";
+
+
+"FOLLOW 3 TO CONTINUE" = "தொடர, 3-ஐ தேர்வு செய்யவும்";
+
+
+
+
+"Off" = "ஆஃப் செய்க";
+
+
+"Language" = "தேர்வு செய்யவும்";
+
+
+"LOG OUT" = "வெளியேறு";
+
+
+"Report content" = "உள்ளடக்கம் குறித்து புகார் செய்க";
+
+
+"What's your email?" = "உங்கள் மின்னஞ்சல் முகவரி?";
+
+
+"On" = "ஆன் செய்";
+
+
+"More like this" = "இது போன்ற பிற செய்திகள்";
+
+
+"Bullet App v1.1.0" = "புல்லட் செயலி v1.1.0";
+
+
+"1h" = "1 மணி";
+
+
+"Enter Email Address" = "மின்னஞ்சலை உள்ளிடுக";
+
+
+"News in Bullets" = "குறைந்த நேரத்தில் அதிகம் படியுங்கள்";
+
+
+"6h" = "6 மணி";
+
+
+"Choose your password" = "உங்கள் பாஸ்வேர்டைத் தேர்வு செய்யவும்";
+
+
+"Cancel" = "ரத்து செய்யவும்";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "இந்தச் செயலி மூலம் செய்திகளை விரைவாகப் படியுங்கள். உங்களுக்கு வேண்டிய கட்டுரைகளை விரும்பிய இடங்களில் இருந்து தேர்வு செய்யுங்கள. விரும்பும் செய்திகளை சுருக்கமான முக்கியப் புள்ளிகளாக பின்னர் படியுங்கள்.";
+
+
+"Push Notification" = "அறிவிப்புகள்";
+
+
+"12h" = "12 மணி";
+
+
+"24h" = "24 மணி";
+
+
+"E-mail" = "மின்னஞ்சல்";
+
+
+"How can we help you?" = "நாங்கள் எவ்வாறு உதவ இயலும்?";
+
+
+"OJP-Wd-0d3.text" = "பாகிஸ்தான்";
+
+
+"CHANGE PASSWORD" = "பாஸ்வேர்டை மாற்ற";
+
+
+"Change Email" = "மின்னஞ்சலை மாற்ற";
+
+
+"Medium" = "ஊடகம்";
+
+
+"SAVE CHANGES" = "மாற்றத்தைச் சேமி";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "ஏதேனும் உதவி தேவையெனில் எங்களுக்குச செய்தி அனுப்பவும். உங்களுக்கு உதவுவதை எதிர்நோக்குகிறோம்.     ஏதேனும் உதவி தேவையெனில் எங்களுக்குச செய்தி அனுப்பவும். உங்களுக்கு உதவுவதை எதிர்நோக்குகிறோம்.";
+
+
+"P5u-N3-Tw4.text" = "லேபிள்";
+
+
+"Cancel" = "ரத்து செய்";
+
+
+"Bullet 1" = "சுருக்கம் 1";
+
+
+"TIMED NOTIFICATIONS" = "அறிவிப்புகள்";
+
+
+"POST ARTICLE" = "கட்டுரை ஒன்றை இடுகையிடுக";
+
+
+"CONTACT US" = "எங்களைத் தொடர்புகொள்ள";
+
+
+"EDITION / REGION" = "பதிப்பு";
+
+
+"Search" = "தேடுக";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "உங்கள் கருத்தை அறிய விரும்புகிறோம். உங்களுக்கு ஏதேனும் கேள்விகள் அல்லது சட்ட ரீதியான சந்தேகங்கள் இருந்தால் எங்களது உதவி மையத்தை அணுகவும் அல்லது எங்களைத் தொடர்பு கொள்ளவும்.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ஏதேனும் உதவி தேவையெனில் எங்களுக்குச செய்தி அனுப்பவும். உங்களுக்கு உதவுவதை எதிர்நோக்குகிறோம்.";
+
+
+"30m" = "30 நிமி";
+
+
+"CONTINUE" = "தொடரவும்";
+
+
+"Time To Update!" = "செயலியைப் புதுப்பியுங்கள்!";
+
+
+"NOTIFICATIONS" = "அறிவிப்புகள்";
+
+
+"Search" = "தேடல்";
+
+
+"By clicking Continue, you agree with our Terms." = "விதிமுறைகளை ஏற்றுக்கொள்ள, 'தொடரவும் என்பதைத் தேர்வு செய்யவும்";
+
+
+"HELP / CONTACT US" = "உதவி/ தொடர்பு";
+
+
+"Reset Password" = "பாஸ்வேர்டை மீட்டமை";
+
+
+"SEND MESSAGE" = "செய்தி அனுப்புக";
+
+
+"Save article" = "கட்டுரையைச் சேமி";
+
+
+"Bullet 6 (Optional)" = "சுருக்கம்  6 (விரும்பினால்)";
+
+
+"HAPTICS" = "தொடு உணர்ச்சி/ஹாப்டிக்ஸ்";
+
+
+"Your message has \vbeen sent." = "உங்களது செய்தி அனுப்பப்பட்டு விட்டது";
+
+
+"LEGAL" = "சட்டரீதியானவை";
+
+
+"Block List" = "தடை செய்யப்பட்டவற்றின் பட்டியல்";
+
+
+"PERSONALIZATION" = "தனித்தன்மையாக்கப்பட்டவை";
+
+
+"in our Privacy Policy." = "எங்களது பிரைவசி கொள்கையில் உள்ளவை";
+
+
+"CONTINUE" = "தொடரவும்";
+
+
+"Enter Name" = "பெயரை உள்ளிடுக";
+
+
+"What's your email?" = "உங்களது மின்னஞ்சல் முகவரி?";
+
+
+"Hello there!" = "வணக்கம்!";
+
+
+"PUSH NOTIFICATIONS" = "அறிவிப்புகள்";
+
+
+"Bullet 3 (Optional)" = " சுருக்கம்  3 (நீங்கள் விரும்பினால்)";
+
+
+"Source name" = "ஆதாரம்";
+
+
+"Current Password" = "தற்போதுள்ள பாஸ்வேர்ட்";
+
+
+"COLOR THEME" = "வண்ண அமைப்பு";
+
+
+"eTp-X1-g34.text" = "அல்லது நேரடியாக";
+
+
+"CANCEL" = "ரத்து செய்யவும்";
+
+
+"Bullet 4 (Optional)" = " சுருக்கம்  4 (நீங்கள் விரும்பினால்)";
+
+
+"Date published" = "பிரசுரிக்கப்பட்ட தேதி";
+
+
+"Send Password Reset Link" = "பாஸ்வேர்டை ரீசெட் செய்யும் இணைப்பை அனுப்பவும்";
+
+
+"CONTINUE WITH APPLE" = "Apple ID மூலம் பதிவு செய்யவும்";
+
+
+"Off" = "ஆஃப் செய்";
+
+
+"BLOCK LIST" = "தடை செய்யப்பட்டவற்றின் பட்டியல்";
+
+
+"HELP" = "உதவி";
+
+
+"Reference link" = "குறிப்புகளின் இணைப்பு";
+
+
+"Your Password" = "உங்கள் பாஸ்வேர்ட்";
+
+
+"SUBMIT" = "சமர்ப்பி";
+
+
+"HELP" = "உதவி";
+
+
+"MY ACCOUNT" = "எனது கணக்கு";
+
+
+"hbD-HP-tZd.normalTitle" = "தடை நீக்கு";
+
+
+"OTHERS" = "மற்றவை";
+
+
+"BREAKING NEWS" = "அதிரடி செய்தி";
+
+
+"Topics" = "தடை செய்யப்பட்ட தலைப்புகள்";
+
+
+"Message us," = "எங்களுக்கு செய்தி அனுப்பவும்";
+
+
+"Pick topics to start reading
+and saving articles" = "செயலியின் மொழி";
+
+
+"Forgot Password?" = "பாஸ்வேர்டை மறந்துவிட்டீர்களா?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "புதிய அம்சங்கள் சேர்க்கப்பட்டுள்ளன. சில சிக்கல்கள் சரி செய்யப்பட்டுள்ளன";
+
+
+"Success!" = "வெற்றி!";
+
+
+"Current Password" = "தற்போதைய பாஸ்வேர்ட்";
+
+
+"CONTENT" = "உள்ளடக்கம்";
+
+
+"Headline" = "தலைப்புச் செய்திகள்";
+
+
+"neg-UC-UpK.text" = "கட்டுரைகளைப் படிக்கவும் சேமிக்கவும் தலைப்புகளைத் தேர்வு செய்க.";
+
+
+"CONTINUE WITH EMAIL ID" = "உங்கள் மின்னஞ்சல் ஐடி மூலம் தொடரவும்";
+
+
+"SAVE CHANGES" = "மாற்றியவற்றை சேமிக்கவும்";
+
+
+"Post an Article" = "கட்டுரையைப் பதிவிடவும்";
+
+
+"Contact Us" = "எங்களைத் தொடர்பு கொள்ளவும்";
+
+
+"On" = "ஆன் செய்";
+
+
+"New Email Address" = "புதிய மின்னஞ்சல் முகவரி";
+
+
+"Bullet 5 (Optional)" = "சுருக்கம்  5 (விரும்பினால்)";
+
+
+"Suggest an improvement" = "மேம்பாடுகளைப் பரிந்துரைக்கவும்";
+
+
+"Channels" = "தடை செய்யப்பட்ட ஆதாரங்கள்";
+
+
+"From:" = "இருந்து";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "தனிப்பட்ட பரிந்துரைகள்";
+
+
+"I don't like this" = "இவை எனக்குப் பிடிக்கவில்லை";
+
+
+"CONTINUE" = "தொடரவும்";
+
+
+"Name" = "பெயர்";
+
+
+"Enter email" = "மின்னஞ்சலை உள்ளிடுக";
+
+
+"HELP" = "உதவி";
+
+
+"FOLLOW 3 TO CONTINUE" = "தொடர, 3 ஐ பின்தொடரவும்";
+
+
+"UPDATE APP" = "செயலியைப் புதுப்பி";
+
+
+"Forgot Password?" = "பாஸ்வேர்ட் மறந்துவிட்டதா?";
+
+
+"Change Password" = "பாஸ்வேர்டை மாற்று";
+
+
+"Reset Password" = "பாஸ்வேர்ட் ரீசெட் செய்";
+
+
+
+
+
+
+
+
+"Report content" = "உங்கள் கவலையைத் தெரிவுக்கவும்";
+
+
+"CHANGE EMAIL ADDRESS" = "மின்னஞ்சல் முகவரியை மாற்று";
+
+
+"Follow The Guardian" = "பின் தொடரவும்";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "நாங்கள் நிறைய புதிய அம்சங்களைச் சேர்த்துள்ளோம், மேலும் உங்கள் அனுபவத்தை முடிந்தவரை மென்மையாக்க சில பிழைகளை சரிசெய்கிறோம்.";
+
+
+"Edition / Region" = "பதிப்பு / பிராந்தியம்";
+
+
+"OK" = "சரி";
+
+
+"NARRATOR" = "நாரதர்";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "நீங்கள் விரும்பும் செய்திகளைப் பற்றி தொடர்ந்து புதுப்பித்துக்கொள்வது உங்கள் நேரத்தை அதிகம் எடுத்துக் கொள்ளக்கூடாது. தோட்டாக்களில் உள்ள செய்திகள் வழக்கமான 5 நிமிட வாசிப்பை எடுத்து எளிதாக ஜீரணிக்கக்கூடிய தோட்டாக்களாக மாற்றுகின்றன. இப்போது, ​​நீங்கள் ஒரே செய்தியை நேரத்தின் ஒரு பகுதியிலேயே எடுத்துக் கொள்ளலாம் - எனவே நீங்கள் குறைந்த நேரத்தில் அதிகம் படிக்கலாம்.";
+
+
+"READING SPEED" = "வேகத்தை வாசித்தல்";
+
+
+
+
+
+"You haven't blocked anything yet" = "நீங்கள் இதுவரை எதையும் தடுக்கவில்லை";
+
+
+"EDITION / REGION" = "பதிப்பு / பகுதி";
+
+
+
+
+
+"HEADLINES ONLY" = "ஹெட்லைன்ஸ் மட்டுமே";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "ஆடியோ அமைப்புகள்";
+
+
+"AUDIO SETTINGS" = "ஆடியோ அமைப்புகள்";
+
+
+
+
+
+
+
+
+"1x" = "1 எக்ஸ்";
+
+
+"HEADLINES AND\nBULLETS" = "ஹெட்லைன்ஸ் மற்றும் புல்லட்டுகள்";
+
+
+"CONTINUE AS GUEST" = "விருந்தினராக ஸ்கிப் & லாக்-இன்";
+
+
+"Topics" = "தலைப்புகள்";
+
+
+"Pick topics to start reading and saving articles" = "கட்டுரைகளைப் படிக்கவும் சேமிக்கவும் தொடங்க தலைப்புகளைத் தேர்ந்தெடுக்கவும்";
+
+
+"Channels" = "சேனல்கள்";
+
+
+"Choose from hundreds \nof news publications" = "நூற்றுக்கணக்கான செய்தி வெளியீடுகளிலிருந்து தேர்வு செய்யவும்";
+
+
+"Pick topics to start reading\nand saving articles" = "கட்டுரைகளைப் படிக்கவும் சேமிக்கவும் தொடங்க தலைப்புகளைத் தேர்ந்தெடுக்கவும்";
+
+"Pick editions to start reading\nand saving articles" = "கட்டுரைகளைப் படிக்கவும் சேமிக்கவும் தொடங்க பதிப்புகளைத் தேர்ந்தெடுக்கவும்";
+
+"Or with" = "அல்லது உடன்";
+
+"CONTINUE AS GUEST" = "விருந்தினராக தொடரவும்";
+
+"Terms of Service" = "சேவை விதிமுறைகள்";
+
+"Choose from hundreds \nof news publications" = "நூற்றுக்கணக்கான செய்தி வெளியீடுகளிலிருந்து தேர்வு செய்யவும்";
+
+"Select your preferred language\nfor News in Bullets." = "புல்லட் செய்திகளில் உங்கள் விருப்பமான மொழியைத் தேர்ந்தெடுக்கவும்.";
+
+"Choose a style" = "ஒரு பாணியைத் தேர்வுசெய்க";
+
+"Pop or subtle. Day or night. Customize your interface." = "பாப் அல்லது நுட்பமான. பகல் அல்லது இரவு. உங்கள் இடைமுகத்தைத் தனிப்பயனாக்கவும்.";
+
+"MINS AGO" = "நிமிடங்கள் முன்பு";
+
+"AN HOUR AGO" = "ஒரு மணி நேரம் முன்பு";
+
+"HOURS AGO" = "மணி நேரம் முன்பு";
+
+"1 WEEK AGO" = "1 வாரம் முன்பு";
+
+"YESTERDAY" = "நேற்று";
+
+"DAYS AGO" = "நாட்கள் முன்பு";
+
+"Go to" = "க்குச் செல்லுங்கள்";
+
+"You have reached the start." = "நீங்கள் தொடக்கத்தை அடைந்துவிட்டீர்கள்";
+
+"Source unblocked successfully" = "ஆதாரம் தடைசெய்யப்பட்டது";
+
+"Invalid email format"  = "தவறான மின்னஞ்சல் வடிவம்";
+
+"Wrong email or password" = "தவறான மின்னஞ்சல் அல்லது கடவுச்சொல்";
+
+

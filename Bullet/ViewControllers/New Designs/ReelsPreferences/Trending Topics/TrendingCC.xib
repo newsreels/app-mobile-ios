@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrendingCC" rowHeight="352" id="KGk-i7-Jjw" customClass="TrendingCC" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyV-Eh-hZ6">
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="352"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Topics of the week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-WE-RYJ">
+                                <rect key="frame" x="20" y="39" width="380" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kMa-1i-IMe">
+                                <rect key="frame" x="0.0" y="80.5" width="498" height="271.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Oy7-ZE-B78">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMH-Pr-5bR">
+                                <rect key="frame" x="408" y="26.5" width="90" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="4ZI-s0-igv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="20" maxY="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="See all">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.20392156859999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSeeAllTopics:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vsz-CH-DWu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kMH-Pr-5bR" secondAttribute="trailing" id="7Nv-Bs-vfY"/>
+                            <constraint firstAttribute="trailing" secondItem="kMa-1i-IMe" secondAttribute="trailing" id="7co-3A-W82"/>
+                            <constraint firstItem="kMa-1i-IMe" firstAttribute="top" secondItem="zHQ-WE-RYJ" secondAttribute="bottom" constant="20" id="8Wh-VQ-dYy"/>
+                            <constraint firstItem="zHQ-WE-RYJ" firstAttribute="top" secondItem="iyV-Eh-hZ6" secondAttribute="top" constant="39" id="FW4-Ic-JEJ"/>
+                            <constraint firstItem="kMa-1i-IMe" firstAttribute="leading" secondItem="iyV-Eh-hZ6" secondAttribute="leading" id="QRn-Yp-lvn"/>
+                            <constraint firstItem="zHQ-WE-RYJ" firstAttribute="leading" secondItem="iyV-Eh-hZ6" secondAttribute="leading" constant="20" id="fu9-XO-Lnu"/>
+                            <constraint firstItem="kMH-Pr-5bR" firstAttribute="centerY" secondItem="zHQ-WE-RYJ" secondAttribute="centerY" id="jEi-Cm-3Xd"/>
+                            <constraint firstItem="kMH-Pr-5bR" firstAttribute="leading" secondItem="zHQ-WE-RYJ" secondAttribute="trailing" constant="8" id="ohR-Fa-J9n"/>
+                            <constraint firstAttribute="bottom" secondItem="kMa-1i-IMe" secondAttribute="bottom" id="yAZ-9V-BXD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iyV-Eh-hZ6" secondAttribute="bottom" id="1Hu-pH-9LO"/>
+                    <constraint firstItem="iyV-Eh-hZ6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="58Y-v3-UUx"/>
+                    <constraint firstItem="iyV-Eh-hZ6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8eo-V3-x2a"/>
+                    <constraint firstAttribute="trailing" secondItem="iyV-Eh-hZ6" secondAttribute="trailing" id="yPV-0G-ixP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnSeeall" destination="kMH-Pr-5bR" id="ygJ-Zv-xcQ"/>
+                <outlet property="collectionView" destination="kMa-1i-IMe" id="ayC-ZT-mw0"/>
+                <outlet property="titleLabel" destination="zHQ-WE-RYJ" id="dVb-fl-0Uz"/>
+                <outlet property="titleTopConstraint" destination="FW4-Ic-JEJ" id="5J6-ON-2Er"/>
+            </connections>
+            <point key="canvasLocation" x="269.56521739130437" y="227.67857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "icn_upload_big_arrow_light.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

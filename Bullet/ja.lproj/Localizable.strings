@@ -1,0 +1,1105 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "箇条書き";
+"BULLETS" = "箇条書き";
+"Headlines is not available." = "見出しは利用できません。";
+"Check your internet Connection and try again." = "インターネット接続を確認して、再試行してください。";
+"Choose Image" = "画像を選択する";
+"Headline" = "見出し";
+"Bullet 1" = "箇条書き1";
+"Bullet 2" = "箇条書き２";
+"Bullet 3 (Optional)" = "箇条書き3（オプション）";
+"Bullet 4 (Optional)" = "箇条書き４（オプション）";
+"Bullet 5 (Optional)" = "箇条書き５（オプション）";
+"Bullet 6 (Optional)" = "箇条書き6（オプション）";
+"Enter Aticle Headline" = "見出しを入力してください";
+"Enter source name" = "ソースを入力してください";
+"Enter reference link" = "参照を入力してください";
+"Enter published date" = "公開日を入力してください";
+"Enter Bullet 1" = "最初の箇条書きを入力してください";
+"Enter Bullet 2" = "2番目の箇条書きを入力してください";
+"Post article successfully" = "記事は正常に投稿されました";
+"Follow" = "フォローする";
+"Unfollow" = "フォロー解除";
+"Block articles from" = "…から記事をブロックする";
+"Unblock articles from" = "…から記事のブロックを解除する";
+"Remove article" = "記事を削除する";
+"Save article" = "記事を保存する";
+"Terms & Conditions" = "規約・条件";
+"Privacy Policy" = "個人情報保護方針";
+"TERMS AND CONDITIONS" = "規約・条件";
+"PRIVACY POLICY" = "規約・条件";
+"Fuel your curiosity" = "世界についてもっとニュースを読む";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "世界中の信頼できる情報源から、お気に入りのトピックに関する短く正確なニュースを読んでください。";
+"Save time" = "時間を節約する";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "箇条書きでニュースを読む";
+"Hands-free reading" = "ハンズフリー読書";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "読む時間がありませんか？ 音声機能を使用してください。";
+"Write your message..." = "メッセージを書いてください";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "何かで助けが必要な場合は私たちにメッセージを送ってください。ご連絡をお待ちしております。";
+"Drop us a message" = "メッセージを送ってください";
+"Enter Name." = "名前を入力してください。";
+"Enter Email." = "メールアドレスを入力してください。";
+"Write your message." = "メッセージを書いてください";
+"Topic unblock successfully" = "このトピックのブロックを解除しました";
+"Source unblock successfully" = "このソースのブロックを解除しました";
+"Unblock Source" = "ソースのブロックを解除する";
+"Cancel" = "キャンセル";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "私たちにフィードバックを送ってください、ご連絡をお待ちしております！質問や法的な懸念がありますか？ ヘルプページを試すか、お問い合わせください。";
+"Enter your suggestion." = "ご提案を入力してください。";
+"feedback sent." = "フィードバックは正常に送信されました。";
+"30m" = "30分間";
+"1h" = "1時間";
+"3h" = "３時間";
+"6h" = "６時間";
+"12h" = "１２時間";
+"24h" = "２４時間";
+"Language updated successfully." = "言語が正常に更新されました。";
+"CONTINUE" = "続き";
+"FOLLOW 3 TO CONTINUE" = "3に従って続行します";
+"Unfollow Location" = "ロケーションのフォローを解除";
+"Saved Articles" = "保存された記事";
+"Block" = "ブロック";
+"Are you sure you want block" = "これをブロックしてもよろしいですか?";
+"Once blocked, you wont be able to see any Articles related to this" = "ブロックすると、このチャンネルの記事は表示されません。";
+"Block Topic" = "このトピックをブロックする";
+"Suggested" = "お勧め";
+"Related Sources not available" = "関連ソースは利用できません";
+"Block Source" = "このソースをブロックする";
+"News in Bullets App version" = "Bullets Appのニュース";
+"Next" = "次";
+"Login" = "ログインする";
+"Terms" = "規約";
+"By clicking Continue, you agree with our Terms." = "[続行]を選択して、規約に同意します。";
+"in our Privacy Policy." = "当社のプライバシーポリシーで。";
+"Access token missing." = "アクセストークンがありません。";
+"NEXT" = "次";
+"By checking this box, you agree to our " = "ボックスをクリックして、利用規約に同意します。 お客様のデータは、当社のプライバシーポリシーに従って処理されます。";
+"Terms of Service" = "利用規約";
+". We’ll handle your data according to our " = "お客様のデータは私たちの．．．に従って扱います";
+"Password must be at least 8 characters." = "パスワードは8文字以上でなければなりません。";
+"Strong" = "強い";
+"Medium" = "中";
+"Weak" = "弱い";
+"CREATE A NEW ACCOUNT" = "弱い弱い";
+"SIGN IN WITH EXISTING ACCOUNT" = "既存のアカウントでサインインする";
+"You must agree to the Terms of Services to continue" = "続行するには、利用規約に同意する必要があります";
+"SIGN IN" = "サインイン";
+"What's your password?" = "パスワードは何ですか？";
+"SIGN UP" = "サインアップ";
+"Choose your password?" = "パスワードを選んでください";
+"Something went wrong" = "何かがうまくいかなかった";
+"we will send email to" = "…にメールを送信します。";
+"with a link to reset your password." = "パスワードをリセットするためのリンクがあります";
+"A reset password link has been sent to" = "パスワードをリセットするためのリンクが…に送信されました";
+"Enter new email." = "新しいメールアドレスを入力してください。";
+"Enter password." = "パスワードを入力してください。";
+"New Password " = "新しいパスワード";
+" (8 characters min)" = "（8文字以上）";
+"Enter current password." = "現在のパスワードを入力してください";
+"Enter new password." = "新しいパスワードを入力してください";
+"Enter confirm password." = "パスワードを認証してください";
+"password do not matched!" = "パスワードが一致していません！";
+"GET STARTED" = "始めましょう";
+"SKIP" = "スキップ";
+"From where you would like to pick photo?" = "どこから写真を選びたいですか？";
+"Camera" = "カメラ";
+"Photo Library" = "フォトライブラリ";
+"Kindly open settings and enable access" = "設定を開いてアクセスを有効にしてください";
+"Open Settings" = "設定を開く";
+"Access needed for your camera" = "カメラにアクセスする必要があります。";
+"Access needed for your photo library" = "フォトライブラリにアクセスする必要があります";
+"Done" = "完了";
+"Pull to refresh" = "アプリを更新するために引っ張ってください。";
+"Loading" = "読み込み中";
+"Speech not available for this article" = "この記事ではスピーチは利用できません";
+"MANAGE LOCATION" = "ロケーションを管理する";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "ロケールに基づいてBulletsEditionでニュースを選択します";
+"Edition" = "版";
+"EDITION / REGION" = "エディション/リージョン";
+"Your Topics" = "あなたのトピック";
+"Your Channels" = "あなたのチャンネル";
+"Your Places" = "あなたの場所";
+"Enter email." = "メールアドレスを入力して。";
+"Please enter a password." = "パスワードを入力してください。";
+"Search articles" = "記事を検索";
+"No results" = "結果がありません";
+"Edition / Region" = "エディション/リージョン";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "ブロック";
+"CANCEL" = "キャンセル";
+"PLACES" = "場所";
+"LANGUAGE" = "言語";
+"Profile" = "プロフィール";
+"SAVED ARTICLES" = "保存された記事";
+"Topics" = "トピック";
+"Channels" = "チャネル";
+"Editions" = "エディション";
+"No saved stories yet" = "ここには何もありません";
+"Tap the" = "タップする";
+"icon on the article" = "記事のアイコン";
+"you want to read later then" = "後で読みたい記事";
+"Select" = "選択する";
+"to save article." = "記事を保存する.";
+"There is nothing in here" = "ここには何もありません";
+"Looks like there is nothing here but a cat." = "ここには猫しかいないようです。";
+"Would you like to go back to home?" = "家に帰りませんか？";
+"GO HOME" = "見出しのみ";
+"Search" = "探す";
+"Discover" = "発見する";
+"Articles" = "記事";
+"Try a different keyword" = "別のキーワードを試してください";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "選択した地域に最も関連性の高いニュースを入手してください。厳選されたニュース記事を読んで、世界中のどこからでも最新ニュースを入手できます。";
+"Language" = "言語";
+"Results" = "結果";
+"For You" = "あなたのために";
+"Top News" = "トップニュース";
+"Choose a style" = "スタイルを選ぶ";
+"Pop or subtle. Day or night. Customize your interface." = "ポップまたは微妙。 昼か夜か。 インターフェイスをカスタマイズします。";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "私たちについて";
+
+
+"Share" = "シェア";
+
+
+"ACCOUNT" = "アカウント";
+
+
+"Your Email" = "Eメール";
+
+
+"1sT-J6-qI0.text" = "保存された記事";
+
+
+"2XX-rr-GLC.text" = "何百ものソースからさまざまなチャネルを選択しましょう。";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "世界中からの最新のニュース・イベントを読んでください。";
+
+
+"Set an interval in which you want to receive your news notifications." = "通知を受信するためのタイムギャップを設定します。";
+
+
+"Off" = "オフ";
+
+
+
+
+
+"Bullet 2" = "箇条書き2";
+
+
+"What's your email?" = "メールアドレスは何ですか？";
+
+
+"New Password (8 Characters Min)" = "新しいパスワード（最小8文字）";
+
+
+"Forgot Password?" = "パスワードをお忘れですか？";
+
+
+"Account Settings" = "アカウント設定";
+
+
+"Learn how we process your data" = "データの処理に関する情報";
+
+
+"3h" = "３時間";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "…から記事をブロックする";
+
+
+"On" = "オン";
+
+
+"Auto" = "オート";
+
+
+"Help Center" = "ヘルプセンター";
+
+
+"Search" = "チャネルを検索する";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "ギャラリーからファイルを選択する";
+
+
+
+
+"Save article" = "記事を保存する";
+
+
+"ABOUT" = "私たちについて";
+
+
+"Dark" = "ダーク";
+
+
+"Legal" = "法的";
+
+
+"Go to The Guardian" = "…に行きます";
+
+
+"Send reset link" = "リセットリンクを送信する";
+
+
+
+
+
+"My Account" = "マイアカウント";
+
+
+"FEEDBACK" = "フィードバック";
+
+
+"Message" = "フィードバック";
+
+
+"Confirm New Password" = "新しいパスワードを確認する";
+
+
+"for ___" = "にとって ___";
+
+
+"Search" = "トピックを検索する";
+
+
+"LANGUAGE" = "言語";
+
+
+"Light" = "ライト";
+
+
+"FOLLOW 3 TO CONTINUE" = "続行するには、3を選択してください";
+
+
+
+
+"Off" = "オフ";
+
+
+"Language" = "選択する";
+
+
+"LOG OUT" = "ログアウト";
+
+
+"Report content" = "レポートの内容";
+
+
+"What's your email?" = "メールアドレスは何ですか？";
+
+
+"On" = "オン";
+
+
+"More like this" = "このようなより多くのニュース。";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0（スキップ）";
+
+
+"1h" = "1時間";
+
+
+"Enter Email Address" = "メールアドレスを入力してください";
+
+
+"News in Bullets" = "より短い時間でもっと読む。";
+
+
+"6h" = "６時間";
+
+
+"Choose your password" = "パスワードを選んでください";
+
+
+"Cancel" = "キャンセル";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "このアプリでニュースをすばやく読むことができます。 トピックとソースを選択してください。 次に、短い箇条書きでニュースを読みましょう。";
+
+
+"Push Notification" = "通知";
+
+
+"12h" = "１２時間";
+
+
+"24h" = "２４時間";
+
+
+"E-mail" = "Eメール";
+
+
+"How can we help you?" = "どのように我々は助けることができます？";
+
+
+"OJP-Wd-0d3.text" = "パキスタン";
+
+
+"CHANGE PASSWORD" = "パスワードを変更する";
+
+
+"Change Email" = "メールアドレスを変更する";
+
+
+"Medium" = "ミディアム";
+
+
+"SAVE CHANGES" = "変更内容を保存する";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "何かで助けが必要な場合は私たちにメッセージを送ってください。ご連絡をお待ちしております。";
+
+
+"P5u-N3-Tw4.text" = "ラベル";
+
+
+"Cancel" = "キャンセル";
+
+
+"Bullet 1" = "箇条書き1";
+
+
+"TIMED NOTIFICATIONS" = "通知";
+
+
+"POST ARTICLE" = "記事を投稿する";
+
+
+"CONTACT US" = "お問い合わせください";
+
+
+"EDITION / REGION" = "エディション";
+
+
+"Search" = "探索";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "私たちにフィードバックを送ってください、ご連絡をお待ちしております！質問や法的な懸念がありますか？ ヘルプページを試すか、お問い合わせください。";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "何かで助けが必要な場合は私たちにメッセージを送ってください。ご連絡をお待ちしております。";
+
+
+"30m" = "３０分間";
+
+
+"CONTINUE" = "続き　";
+
+
+"Time To Update!" = "アプリを更新してください！";
+
+
+"NOTIFICATIONS" = "通知";
+
+
+"Search" = "探索";
+
+
+"By clicking Continue, you agree with our Terms." = "[続行]を選択して、規約に同意します。";
+
+
+"HELP / CONTACT US" = "ヘルプ/お問い合わせ";
+
+
+"Reset Password" = "パスワードを再設定する";
+
+
+"SEND MESSAGE" = "メッセージを送る";
+
+
+"Save article" = "記事を保存する";
+
+
+"Bullet 6 (Optional)" = "箇条書き6（オプション）";
+
+
+"HAPTICS" = "触覚";
+
+
+"Your message has \vbeen sent." = "メッセージが送信されました。";
+
+
+"LEGAL" = "法的";
+
+
+"Block List" = "ブロックリスト";
+
+
+"PERSONALIZATION" = "パーソナライゼーション";
+
+
+"in our Privacy Policy." = "プライバシーポリシーで。";
+
+
+"CONTINUE" = "続き　";
+
+
+"Enter Name" = "名前を入力する";
+
+
+"What's your email?" = "メールアドレスは何ですか？";
+
+
+"Hello there!" = "こんにちは！";
+
+
+"PUSH NOTIFICATIONS" = "通知";
+
+
+"Bullet 3 (Optional)" = "箇条書き3（オプション）";
+
+
+"Source name" = "ソースの名前";
+
+
+"Current Password" = "現在のパスワード";
+
+
+"COLOR THEME" = "カラーテーマ";
+
+
+"eTp-X1-g34.text" = "通して";
+
+
+"CANCEL" = "キャンセル";
+
+
+"Bullet 4 (Optional)" = "箇条書き４（オプション）";
+
+
+"Date published" = "公開日";
+
+
+"Send Password Reset Link" = "パスワードをリセットするためのリンクを送信する";
+
+
+"CONTINUE WITH APPLE" = "AppleIDでサインアップ";
+
+
+"Off" = "オフ";
+
+
+"BLOCK LIST" = "ブロックリスト";
+
+
+"HELP" = "ヘルプ";
+
+
+"Reference link" = "参照リンク";
+
+
+"Your Password" = "パスワード";
+
+
+"SUBMIT" = "参加する";
+
+
+"HELP" = "ヘルプ";
+
+
+"MY ACCOUNT" = "マイアカウント";
+
+
+"hbD-HP-tZd.normalTitle" = "ブロックを解除する";
+
+
+"OTHERS" = "その他";
+
+
+"BREAKING NEWS" = "最後のニュース";
+
+
+"Topics" = "ブロックされたトピック";
+
+
+"Message us," = "連絡してください";
+
+
+"Pick topics to start reading
+and saving articles" = "アプリの言語";
+
+
+"Forgot Password?" = "パスワードをお忘れですか？";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "新機能が追加されました。 いくつかの問題が修正されました。";
+
+
+"Success!" = "成功!";
+
+
+"Current Password" = "現在のパスワード";
+
+
+"CONTENT" = "内容";
+
+
+"Headline" = "見出し";
+
+
+"neg-UC-UpK.text" = "トピックを選択して記事を読み、保存し始めます";
+
+
+"CONTINUE WITH EMAIL ID" = "メールIDで続行";
+
+
+"SAVE CHANGES" = "変更内容を保存する";
+
+
+"Post an Article" = "記事を投稿する";
+
+
+"Contact Us" = "お問い合わせください";
+
+
+"On" = "オン";
+
+
+"New Email Address" = "新しいメールアドレス";
+
+
+"Bullet 5 (Optional)" = "箇条書き5（オプション）";
+
+
+"Suggest an improvement" = "改善を提案する";
+
+
+"Channels" = "ブロックされたソース";
+
+
+"From:" = "…から";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "パーソナライズされた推奨事項";
+
+
+"I don't like this" = "私はこれが好きではありません";
+
+
+"CONTINUE" = "続き　";
+
+
+"Name" = "名前";
+
+
+"Enter email" = "メールアドレスを入力する";
+
+
+"HELP" = "ヘルプ";
+
+
+"FOLLOW 3 TO CONTINUE" = "3に従って続行します";
+
+
+"UPDATE APP" = "アプリを更新する";
+
+
+"Forgot Password?" = "パスワードをお忘れですか？";
+
+
+"Change Password" = "パスワードを変更する";
+
+
+"Reset Password" = "パスワードを再設定する";
+
+
+
+
+
+
+
+
+"Report content" = "レポートの内容";
+
+
+"CHANGE EMAIL ADDRESS" = "メールアドレスを変更する";
+
+
+"Follow The Guardian" = "フォロー";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "多くの新機能を追加し、いくつかのバグを修正して、エクスペリエンスを可能な限りスムーズにしました。";
+
+
+"Edition / Region" = "エディション/リージョン";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "ナレーター";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "あなたが愛するニュース記事について最新の状態に保つことはあなたの時間の多くをとるべきではありません。 News in Bulletsは、定期的に5分間読んで、簡単に消化できる箇条書きにまとめます。今では、ほんのわずかな時間で同じニュースを受け取ることができるので、より短い時間でより多くを読むことができます。";
+
+
+"READING SPEED" = "速読";
+
+
+
+
+
+"You haven't blocked anything yet" = "まだ何もブロックしていません";
+
+
+"EDITION / REGION" = "エディション/リージョン";
+
+
+
+
+
+"HEADLINES ONLY" = "見出しのみ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "オーディオ設定";
+
+
+"AUDIO SETTINGS" = "オーディオ設定";
+
+
+
+
+
+
+
+
+"1x" = "1倍";
+
+
+"HEADLINES AND\nBULLETS" = "見出しと箇条書き";
+
+
+"CONTINUE AS GUEST" = "スキップしてゲストとしてログイン";
+
+
+"Topics" = "トピック";
+
+
+"Pick topics to start reading and saving articles" = "トピックを選択して記事を読み、保存し始めます";
+
+
+"Channels" = "チャンネル";
+
+"Choose from hundreds \nof news publications" = "수백 개의 뉴스 간행물 중에서 선택";
+
+"Pick topics to start reading\nand saving articles" = "아티클 읽기 및 저장을 시작하는 항목을 선택합니다.";
+
+"Pick editions to start reading\nand saving articles" = "기사를 읽고 저장하기 시작하는 에디션을 선택합니다.";
+
+"Or with" = "또는";
+
+"CONTINUE AS GUEST" = "게스트로 계속";
+
+"Terms of Service" = "서비스 약관";
+
+"Choose from hundreds \nof news publications" = "수백 개의 뉴스 간행물 중에서 선택";
+
+"Select your preferred language\nfor News in Bullets." = "글 머리 기호 뉴스에서 선호하는 언어를 선택하십시오.";
+
+"Choose a style" = "스타일 선택";
+
+"Pop or subtle. Day or night. Customize your interface." = "팝 또는 미묘. 낮이든 밤이든. 인터페이스를 사용자 정의하십시오.";
+
+"MINS AGO" = "몇분 전에";
+
+"AN HOUR AGO" = "한 시간 전";
+
+"HOURS AGO" = "몇 시간 전";
+
+"1 WEEK AGO" = "1주일 전";
+
+"YESTERDAY" = "어제";
+
+"DAYS AGO" = "며칠 전에";
+
+"Go to" = "로 가다";
+
+"You have reached the start." = "시작에 도달했습니다.";
+
+"Source unblocked successfully" = "소스가 성공적으로 차단 해제됨";
+
+"Invalid email format"  = "잘못된 이메일 형식";
+
+"Wrong email or password" = "잘못된 이메일 또는 비밀번호";
+
+
+"Personalize your reading experience" = "あなたの読書体験をパーソナライズする";
+
+"Start following the news topics and channels you want to read." = "読みたいニューストピックやチャンネルのフォローを開始します。";
+
+"LET'S GO" = "行きましょう";
+
+"We’ll handle your data according to our\n" = "私たちはあなたのデータを私たちに従って処理します";
+
+"By clicking Continue, you agree with our " = "[続行]をクリックすると、同意したことになります";
+
+"Learn how we process your data in our"  = "弊社でお客様のデータを処理する方法をご覧ください";
+
+"JUST NOW" = "ちょうど今";
+
+"Menu" = "メニュー";
+"Article Text Size" = "アーティクルのテキストサイズ";
+"Change the font size shown on the articles" = "記事に表示されるフォント サイズを変更する";
+"Small" = "小さい";
+"Default" = "デフォルト";
+"Medium" = "中程度";
+"Large" = "大きい";
+
+"Related Articles" = "関連記事";
+"View Full Article" = "記事全体を表示";
+
+"Create your profile" = "プロフィールを作成する";
+"Set your profile" = "プロフィールを設定する";
+"View your profile" = "プロフィールを表示する";
+"ARTICLE TEXT SIZE" = "記事のテキストサイズ";
+"DATA SAVER" = "データセーバー";
+"Edit Profile" = "プロファイルの編集";
+"Profile Settings" = "プロファイル設定";
+"Edit what viewers see in your profile." = "プロフィールに表示される内容を編集します。";
+"COVER PHOTO" = "カバー写真";
+"Profile Name" = "プロファイル名";
+"Help and Feedback" = "ヘルプとフィードバック";
+"HELP AND FEEDBACK" = "ヘルプとフィードバック";
+"Others" = "その他";
+"Feedback & Suggestions" = "フィードバックと提案";
+"Help / Contact Us" = "ヘルプ/お問い合わせ";
+"Terms and Conditions" = "規約と条件";
+"Notification" = "通知";
+"Push Notifications" = "プッシュ通知";
+"Breaking News" = "ニュース速報";
+"Personalized Recommendations" = "パーソナライズされた推奨事項";
+"Timed Notifications" = "時限通知";
+"Account" = "アカウント";
+"E-mail Address" = "電子メールアドレス";
+"Reels" = "リール";
+
+"Comments" = "コメント";
+"Write a reply..." = "返事を書く...";
+"Reply" = "応答";
+"Replies" = "返信";
+"View" = "ビュー";
+"more reply" = "もっと返信";
+"more replies" = "より多くの返信";
+"Home" = "ホーム";
+"Newsreels" = "ニュース映画";
+
+
+"Following" = "下記";
+"First Name" = "ファーストネーム";
+"Last Name" = "苗字";
+
+"This feature requires photo access" = "この機能には写真へのアクセスが必要です";
+"in phone settings, tap News in Bullets and turn on Photos" = "携帯電話の設定で、[News in Bullets] をタップし、[写真]をオンにします。";
+"Not Now" = "今ではありません";
+"Open Settings" = "設定を開く";
+"No photos on this device" = "このデバイスには写真がありません";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "写真へのアクセス設定を変更する場合は、電話の設定に移動し、[News in Bullets]をタップして、[写真]をオンにします。";
+"Video duration" = "ビデオの長さ";
+"Video too short" = "ビデオが短すぎる";
+"Video too long" = "ビデオが長すぎます";
+"Done" = "完了";
+"Save" = "セーブ";
+"Processing.." = "処理..";
+"Trim" = "トリム";
+"Cover" = "カバー";
+"Albums" = "アルバム";
+"Gallery" = "ギャラリー";
+"Photos" = "写真";
+"Videos" = "ビデオ";
+"Next" = "次";
+"Crop" = "クロップ画像";
+
+
+"Locations" = "ロケーション";
+"Authors" = "著者";
+"Invalid Video" = "無効なビデオ";
+"Invalid Youtube link" = "無効なユーチューブ リンク";
+"Article published successfully" = "記事が正常に公開されました";
+"Article removed successfully" = "記事が正常に削除されました";
+"Edit Article" = "記事を編集する";
+"Delete Article" = "記事を削除する";
+"Before you can comment, you need to update your profile" = "投稿する前に、プロフィールを更新する必要があります。";
+"Update profile" = "プロファイルを更新する";
+"Views" = "ビュー";
+
+"Edit Newsreels" = "ニュース映画を編集する";
+"Post article" = "記事を投稿する";
+"SAVE" = "セーブ";
+"Caption" = "キャプション";
+"Create a Caption" = "キャプションを作成する";
+
+"Create a headline" = "見出しを作成する";
+"Add Source Link (Optional)" = "ソースリンクの追加（オプション）";
+"Enter a Caption" = "キャプションを入力";
+"Enter article headline" = "記事の見出しを入力";
+
+"Add Bullet 1" = "箇条書き 1 を追加する";
+"Add Bullet 2" = "箇条書き 2 を追加する";
+"Add Bullet 3 (Optional)" = "箇条書き 3 を追加する（オプション）";
+"Add Bullet 4 (Optional)" = "箇条書き 4 を追加する（オプション）";
+"Add Bullet 5 (Optional)" = "箇条書き 5 を追加する（オプション）";
+
+"Add Bullet" = "箇条書きを追加";
+
+"Uploading video..." = "ビデオをアップロード...";
+"Bullet" = "弾丸";
+
+
+"Oops! Something went wrong. Please try again." = "おっと！何かがうまくいかなかった。もう一度やり直してください。";
+
+"Upload media" = "メディアのアップロード";
+"Upload Newsreels" = "ニュースリールをアップロードする";
+"Upload YouTube link" = "アップロードユーチューブリンク";
+"Before you post," = "投稿する前に、";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "読者と作家のグローバルコミュニティに参加していることを覚えておいてください。あらゆる形態の誤った情報や虐待からすべての人を守るために、私たちの";
+"Community Guidelines." = "コミュニティガイドライン.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "[続行]をタップすると、ガイドラインを守ることに同意したことになります。";
+"Community Guidelines" = "コミュニティガイドライン。";
+
+"Upload bullet image (optional)" = "弾丸画像アップロード（オプション）";
+"Delete" = "削除";
+"Replace" = "取り替える";
+"Delete Bullet" = "箇条書きを削除";
+
+"Add Tag" = "タグの追加";
+"Get discovered locally" = "ローカルに認識されるようになる";
+"Add a location to your channel and get discovered by users near you." = "チャンネルに場所を追加して、近くのユーザーに見つけてもらいましょう。";
+"Max 5" = "最大5";
+"RECOMMENDED" = "お勧め";
+"comma, separated, tags" = "カンマ、区切り、タグ";
+
+"YouTube Article" = "ユーチューブの記事";
+"Paste a YouTube link to upload a video from YouTube." = "ユーチューブ リンクを貼り付けてユーチューブ からビデオをアップロードします。";
+"Paste a YouTube link to take import" = "インポートするユーチューブリンクを貼り付けます";
+"IMPORT" = "輸入";
+
+"Enter Youtube link" = "ユーチューブリンクを入力";
+"Preview" = "プレビュー";
+"POST" = "投稿";
+"Post to My Profile" = "マイプロフィールに投稿";
+
+"RESULT" = "結果";
+"followers" = "フォロワー";
+"Followers" = "フォロワー";
+"Posts" = "投稿";
+"Profile updated successfully" = "プロファイルが正常に更新されました";
+"Tags" = "タグ";
+"No Posts Yet" = "まだ投稿がありません";
+
+
+"Add" = "足す";
+"Select Ratio" = "比率を選択";
+"Add topics tags" = "トピックのタグを追加";
+"Be discovered by people following the topics you are posting about." = "あなたが投稿しているトピックをフォローしている人々に発見されます。";
+"Reels edited successfully." = "リールは正常に編集されました。";
+"Article edited successfully." = "記事は正常に編集されました。";
+"Reels uploaded successfully." = "リールが正常にアップロードされました。";
+"Enter verification code" = "確認コードの入力";
+"RESEND" = "再送";
+"Processing..." =  "処理...";
+"Scheduled on:" = "スケジュール設定済み。";
+"Enter profile name" = "プロファイル名を入力";
+"Ok, last thing is your channel image" = "さて、最後のことはあなたのチャンネル画像です";
+"Upload" = "アップロード";
+"Before you can post article, you need to update your profile" = "投稿する前に、プロフィールを更新する必要があります。";
+"UPDATE" = "更新";
+"Scale" = "スケール";
+"Saved Article" = "保存された記事";
+"Removed Article" = "削除された記事";
+"Ok, last thing is your profile image" = "わかりました、最後のことはあなたのプロフィールイメージです";
+"Relevant" = "関連性のある";
+
+"See More" = "もっと見る";
+"Less" = "より少なく見る";
+"Autoplay" = "自動再生";
+"Reader Mode" = "リーダーモード";
+"Data Saver" = "データセーバー";
+"Please enter a valid OTP." = "有効な OTP を入力してください。";
+"Enter a first name" = "ファーストネーム";
+"Enter a last name" = "苗字";
+
+
+
+"Password updated successfully" = "パスワードが正常に更新されました";
+"Replying to" = "に返信する";
+"Unblock Topic" = "トピックのブロックを解除";
+"Please add your reel caption" = "リールのキャプションを追加してください";
+"Please add bullet" = "箇条書きを追加してください";
+"Please add your article headline" = "記事の見出しを追加してください";
+"Please add bullet 1" = "お願いします 箇条書き 1 を追加する";
+"Please add bullet 2" = "お願いします 箇条書き 2 を追加する";
+
+"Please enter a valid channel name" = "有効なチャンネル名を入力してください";
+"Let people know what" = "人々に何を知らせましょう";
+"your channel is about" = "あなたのチャンネルは約です";
+"Start by creating your" = "を作成することから始めます";
+"channel name" = "チャネル名";
+"Describe your channel" = "あなたのチャンネルを説明してください";
+"No pressure, you can change this later." = "圧力なし、後でこれを変更することができます。";
+"Channel created successfully" = "チャネルが正常に作成されました";
+"Please enter your channel description" = "チャンネルの説明を入力してください";
+"Channel name already in use" = "すでに使用されているチャンネル名";
+"Post to" = "に投稿";
+
+"Available" = "利用可能";
+"Already in use" = "は既に使用されています";
+"SCHEDULE POST" = "投稿をスケジュールする";
+"DRAFTS" = "ドラフト";
+"View channel" = "チャンネルを見る";
+"Create a channel" = "チャネルを作成する";
+"Ok, last thing is" = "さて、最後の事は";
+"your channel image" = "チャンネル画像";
+"looks amazing!" = "すごいですね！";
+"CREATE CHANNEL" = "チャネルを作成する";
+"Scheduled Posts" = "投稿をスケジュールする";
+
+"You don't have any drafts yet." = "ドラフトはまだありません。";
+"Schedule" = "スケジュール";
+"There aren't any scheduled posts yet." = "予定されている投稿はまだありません。";
+"Schedule a Post" = "投稿をスケジュールする";
+"Mod Tools" = "modツール";
+"Unfollow Channel" = "チャンネルのフォローを解除";
+"Follow Channel" = "チャンネルをフォロー";
+
+"Release to refresh" = "更新するリリース";
+"Loading..." =  "積載...";
+"Schedule Post" = "投稿をスケジュールする";
+"Moderator Tools" = "モデレーターツール";
+"General" = "一般";
+"Scheduled Posts" = "予定されている投稿";
+"Settings" = "設定";
+"channel and cover photo" = "チャンネルとカバー写真";
+"Description" = "説明";
+"Will be posted in" = "に掲載されます のうちに";
+"Will be posted on" = "に掲載されます";
+"Will be posted now" = "今すぐ転記されます";
+"Select Date" = "日付の選択";
+"Select Time" = "時間の選択";
+"Please select date" = "日付を選択してください";
+"Please select time" = "時間を選択してください";
+"Continue with Apple" = "アップル とともを続ける";
+"Continue with Google" = "グーグル で続行";
+"Continue with Facebook" = "フェイスブックで続行";
+"Continue with email" = "電子メールに進みます";
+"Login or create an account" = "ログインまたはアカウントを作成";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "ログインするか、アカウントを作成して、お気に入りのトピックすべての記事を読んだり、共有したり、コメントしたりできます。";
+"your profile image" = "プロフィール画像";
+"Invalid OTP code" = "無効な OTP コード";
+
+"View your profile" = "プロフィールを表示する";
+"NEWS DESK" = "ニュースデスク";
+"YOUR CHANNELS" = "あなたのチャンネル";
+"GENERAL" = "一般";
+"WALLET" = "財布";
+"POSTS" = "投稿";
+"PERSONALIZATIONS" = "パーソナライゼーション";
+"NETWORK" = "ネットワーク";
+"Need more channels?" = "より多くのチャネルが必要ですか？";
+"VIEW ALL & MANAGE" = "すべて表示＆管理";
+
+"Community Feed" = "コミュニティフィード";
+"Create your post" = "投稿を作成する";
+"Media" = "メディア";
+"Youtube" = "ユーチューブ";
+"You're all caught up" = "あなたはすべて追いついた";
+"You've seen all new posts" = "あなたはすべての新しい投稿を見てきました";
+"Go to top" = "一番上に行って";
+"Suggested Reels" = "推奨されたリール";
+"Suggested Authors" = "おすすめ作家";
+
+
+"Share to" = "共有する";
+"Report" = "報告";
+"Unsave Video" = "ビデオの保存を解除";
+"Save Video" = "ビデオを保存";
+"Aspect Ratio" = "アスペクト比";
+"Rotate" = "回転する";
+"Flip Vertical" = "垂直に反転";
+"Flip Horizontal" = "水平方向に反転";
+
+
+"Community" = "コミュニティ";
+"APP LANGUAGE" = "アプリの言語";
+"You don't have any followers yet" = "あなたはまだフォロワーを持っていません";
+
+
+"View Original Article" = "元の記事を見る";
+"Places" = "場所";
+"Languages" = "言語";
+"New Posts" = "新しい投稿";
+"No posts yet" = "まだ投稿はありません";
+"All Followers" = "すべてのフォロワー";
+"Add Place" = "場所を追加";
+"Add places tags" = "場所タグを追加する";
+"Be discovered by people following the places you are posting about." = "あなたが投稿している場所をフォローしている人々によって発見されます。";
+
+
+"START FOLLOWING" = "フォローを開始する";
+"You are not following anything yet" = "あなたはまだ何もフォローしていません。";
+
+"Notifications" = "通知";
+"General" = "一般";
+"News" = "ニュース";
+"VIEW MORE" = "もっと見る";
+"BULLETS AUTO PLAY" = "弾丸の自動再生";
+"VIDEOS AUTO PLAY" = "ビデオの自動再生";
+"REELS AUTO PLAY" = "リールの自動再生";
+"READER THEME" = "読者テーマ";
+"News Content Language" = "ニュースコンテンツ言語";
+"FAVORITES" = "お気に入り";
+"Region/Places" = "地域/場所";
+"Select Regions/Places" = "地域/場所を選択";
+"Follow at least 3 topics" = "少なくとも3つのトピックをフォローする";
+"Please Follow at least 3 topics" = "お願いします 少なくとも3つのトピックに従ってください";
+"Explore Newsreels" = "ニュースリールを探索する";
+"Related Reels" = "関連リール";
+"Explore Your Feed" = "あなたのニュースフィードを探検してください";
+"Sources" = "出所";
+"Articles, topics, channels, authors" = "記事、トピック、チャネル、著者";
+"View/Manage" = "見晴らし/管理する";
+"Add to Favorites" = "お気に入りに追加";
+"Remove from Favorites" = "お気に入りから削除";
+

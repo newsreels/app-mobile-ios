@@ -1,0 +1,960 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ключовий момент";
+"BULLETS" = "КЛЮЧОВІ МОМЕНТИ";
+"Headlines is not available." = "Заголовки не знайдено.";
+"Check your internet Connection and try again." = "Перевірте Підключення до інтернету та повторіть спробу.";
+"Choose Image" = "Виберіть Зображення";
+"Headline" = "Заголовок";
+"Bullet 1" = "Момент 1";
+"Bullet 2" = "Момент 2";
+"Bullet 3 (Optional)" = "Момент 3 (Необов'язково)";
+"Bullet 4 (Optional)" = "Момент 4 (Необов'язково)";
+"Bullet 5 (Optional)" = "Момент 5 (Необов'язково)";
+"Bullet 6 (Optional)" = "Момент 6 (Необов'язково)";
+"Enter Aticle Headline" = "Введіть Заголовок";
+"Enter source name" = "Додайте Джерело";
+"Enter reference link" = "Додайте Посилання";
+"Enter published date" = "Введіть дату Публікації";
+"Enter Bullet 1" = "Введіть Перший Момент";
+"Enter Bullet 2" = "Введіть Другий Момент";
+"Post article successfully" = "Стаття успішно опублікована";
+"Follow" = "Підписатися";
+"Unfollow" = "Скасувати підписку";
+"Block articles from" = "ЗАБЛОКУВАТИ статті від";
+"Unblock articles from" = "РОЗБЛОКУВАТИ статті від";
+"Remove article" = "Видалити статтю";
+"Save article" = "Зберегти цю статтю";
+"Terms & Conditions" = "Правила та Умови";
+"Privacy Policy" = "Політика конфіденційності";
+"TERMS AND CONDITIONS" = "ПРАВИЛА ТА УМОВИ";
+"PRIVACY POLICY" = "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ";
+"Fuel your curiosity" = "Читайте більше новин про світ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Читайте короткі та точні новини про ваші улюблені теми з надійних джерел по всьому світу.";
+"Save time" = "Економте свій час";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Читайте ключові моменти новин";
+"Hands-free reading" = "Читання без рук";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Немає часу для читання? Використовуй функцію промови.";
+"Write your message..." = "Написати повідомлення...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "відправити нам повідомлення, якщо Вам потрібна будь-яка допомога, ми будемо раді Вашому зверненню!";
+"Drop us a message" = "відправити нам повідомлення";
+"Enter Name." = "Введіть Ім'я.";
+"Enter Email." = "Введіть Електронну пошту.";
+"Write your message." = "Введіть Електронну пошту.";
+"Topic unblock successfully" = "Написати повідомлення";
+"Source unblock successfully" = "Ви розблокували цю тему";
+"Unblock Source" = "Розблокували Джерело";
+"Cancel" = "Скасувати";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Скасувати";
+"Enter your suggestion." = "Надішліть нам відгук, ми будемо раді Вашому зверненню! У вас є запитання чи юридичні проблеми? Спробуйте нашу сторінку Довідки або Зв’яжіться з нами.";
+"feedback sent." = "цей відгук успішно надіслано";
+"30m" = "30 хв";
+"1h" = "1 год";
+"3h" = "3 год";
+"6h" = "6 год";
+"12h" = "12 год";
+"24h" = "24 год";
+"Language updated successfully." = "Мова успішно змінена";
+"CONTINUE" = "ПРОДОВЖИТИ";
+"FOLLOW 3 TO CONTINUE" = "СЛІДУВАТИ 3, ЩОБ ПРОДОВЖИТИ";
+"Unfollow Location" = "Скасувати підписку Локації";
+"Saved Articles" = "Збереженні Статті";
+"Block" = "Збереженні Статті";
+"Are you sure you want block" = "Ви впевнені, що хочете заблокувати це";
+"Once blocked, you wont be able to see any Articles related to this" = "Ви не побачите статті від цього каналу, якщо Ви заблокуєте його.";
+"Block Topic" = "Заблокувати цю Тему";
+"Suggested" = "Запропоноване";
+"Related Sources not available" = "Пов'язані Джерела не знайдено";
+"Block Source" = "Заблокувати це Джерело";
+"News in Bullets App version" = "Версія додатку Ключові моменти Новин";
+"Next" = "Далі";
+"Login" = "Вхід";
+"Terms" = "Правила";
+"By clicking Continue, you agree with our Terms." = "Виберіть Продовжити щоб прийняти Правила";
+"in our Privacy Policy." = "у нашій Політиці Конфіденційності.";
+"Access token missing." = "Токен доступу відсутній.";
+"NEXT" = "ДАЛІ";
+"By checking this box, you agree to our " = "Натисніть поле, щоб прийняти Правила. Ваші дані обробляються відповідно до нашої Політики конфіденційності.";
+"Terms of Service" = "Умови надання послуг";
+". We’ll handle your data according to our " = ". Ми обробимо ваші дані відповідно до наших";
+"Password must be at least 8 characters." = "Пароль має складатися мінімум з 8 символів.";
+"Strong" = "Сильний";
+"Medium" = "Середній";
+"Weak" = "Слабкий";
+"CREATE A NEW ACCOUNT" = "СТВОРИТИ НОВИЙ АККАУНТ";
+"SIGN IN WITH EXISTING ACCOUNT" = "ВХІД З ІСНУЮЧИМ АККАУНТОМ";
+"You must agree to the Terms of Services to continue" = "Для продовження необхідно прийняти Умови надання послуг";
+"SIGN IN" = "Вхід";
+"What's your password?" = "Ваш пароль?";
+"SIGN UP" = "Зареєструватися";
+"Choose your password?" = "Введіть свій пароль";
+"Something went wrong" = "Щось пішло не так";
+"we will send email to" = "ми відправимо електронного листа до";
+"with a link to reset your password." = "з ссилкою для сбросу пароля";
+"A reset password link has been sent to" = "Ссилку для сбросу пароля було відправлено на ";
+"Enter new email." = "Введіть нову електронну пошту.";
+"Enter password." = "Введіть пароль.";
+"New Password " = "Новий Пароль";
+" (8 characters min)" = "(8 символів мін.)";
+"Enter current password." = "Введіть поточний пароль.";
+"Enter new password." = "Введіть новий пароль.";
+"Enter confirm password." = "Пітвердити пароль.";
+"password do not matched!" = "паролі не співпадають!";
+"GET STARTED" = "ПОЧАТИ";
+"SKIP" = "ПРОПУСТИТИ";
+"From where you would like to pick photo?" = "Звідки Ви хочете вибрати фото?";
+"Camera" = "Камера";
+"Photo Library" = "Фото галерея";
+"Kindly open settings and enable access" = "Будь ласка, відкрийте налаштування та ввімкніть доступ";
+"Open Settings" = "Відкрити Налаштування";
+"Access needed for your camera" = "Потрібен доступ до Вашої камери";
+"Access needed for your photo library" = "Потрібен доступ до Вашої фото галереї";
+"Done" = "Готово";
+"Pull to refresh" = "Потягніть, щоб оновити";
+"Loading" = "Загрузка";
+"Speech not available for this article" = "Диктування недоступне для цієї статті";
+"MANAGE LOCATION" = "КЕРУВАТИ ЛОКАЦІЯМИ";
+"OK" = "в порядку";
+"Choose your News in Bullets Edition based on locale" = "Вибирайте свої новини в редакції Bullets, виходячи з мови";
+"Edition" = "Видання";
+"EDITION / REGION" = "ВИДАННЯ / РЕГІОН";
+"Your Topics" = "Ваші теми";
+"Your Channels" = "Ваші канали";
+"Your Places" = "Ваші місця";
+"Enter email." = "Введіть електронну адресу.";
+"Please enter a password." = "Введіть пароль.";
+"Search articles" = "Шукати статті";
+"No results" = "Немає результатів";
+"Edition / Region" = "Видання / Регіон";
+
+
+
+
+"Search" = "Пошук";
+"icon on the article" = " значок на статті";
+"BLOCK" = "ЗАБЛОКУВАТИ";
+"you want to read later then" = "яку Ви хочете прочитати пізніше, потім ";
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Тут нічого немає.Здається тут нічого немає окрім кота. Повернутися на головну сторінку? \nХочеш повернутися на домашню сторінку??";
+
+"to save article." = "для збереження статті.";
+
+
+
+"Search" = "Пошук";
+
+
+"What's your email?" = "Твоя електронна пошта?";
+
+
+"Lw1-Md-nse.text" = "СПИСОК";
+
+
+"LyT-pT-g53.text" = "МІЖНАРОДНИЙ";
+
+
+"N6C-6i-Z2s.text" = "МІЖНАРОДНИЙ";
+
+
+"Nru-uU-CsC.text" = "Пропозиції";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Теми";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Налаштувати";
+
+
+"Topics" = "Теми";
+
+
+"WXY-po-W1B.text" = "ЗАГОЛОВКИ ТА\nКЛЮЧОВІ МОМЕНТИ";
+
+
+"ans-Zy-T2Y.placeholder" = "Пошук Локацій";
+
+
+"bgE-Jc-u8H.text" = "Налаштувати";
+
+
+
+
+
+"Tap the ( " = "Натисніть (";
+
+
+"Places" = "Локація";
+
+
+"d1l-HK-OrG.text" = "РЕЖИМ ПЕРЕГЛЯДУ";
+
+
+
+
+
+"Language" = "Мова";
+
+
+"e9g-Wr-suO.text" = "ТІЛЬКИ ЗАГОЛОВКИ";
+
+
+"GO HOME" = "повернутися назад на головну сторінку";
+
+
+"eh1-Oo-lEn.text" = "РОЗШИРЕНИЙ ПЕРЕГЛЯД";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "СПИСОК";
+
+
+"j2i-MT-VkA.text" = "Спробуйте інше ключове слово";
+
+
+"Top News" = "Головні Новини";
+
+
+"jmO-aF-nJ9.text" = "Тільки заголовки";
+
+
+"There is nothing in here" = "Тут нічого немає.";
+
+
+"ma1-9p-bSa.text" = "Не знайдено результатів";
+
+
+"mce-jc-cKH.text" = "ДОПОВІДАЧ";
+
+
+"Channels" = "Канали";
+
+
+"Discover" = "Відкрий для себе";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "СКАСУВАТИ";
+
+
+"Discover" = "Відкрий для себе";
+
+
+"No saved stories yet" = "Тут нічого немає";
+
+
+"wDG-kF-Hl8.text" = "Читати новини на основі місцезнаходження";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ЛОКАЛІЗАЦІЯ";
+
+
+"xfF-RB-mWL.text" = "ЛОКАЛІЗАЦІЯ";
+
+
+"Search" = "Пошук";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Отримуйте найрелевантніші новини у вибраному регіоні. Читайте новини, куратори, щоб ви в курсі останніх новин з будь-якої точки світу.";
+
+
+"Search articles" = "Шукати статті";
+
+
+"6H8-dI-k9P.text" = "Керування місцями";
+
+
+
+
+
+"Profile" = "Профіль";
+
+
+"Editions" = "Видання";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Місця";
+
+
+
+
+
+"Search" = "Пошук";
+
+
+
+
+
+
+
+
+"Search" = "Пошук";
+
+
+"LANGUAGE" = "МОВУ";
+
+
+"Search" = "Пошук";
+
+
+"No results" = "Нічого не знайдено";
+
+
+"Channels" = "Канали";
+
+
+"Places" = "Місця";
+
+
+"Places" = "Місця";
+
+
+"e9F-hd-Ifm.text" = "ВИДАННЯ / РЕГІОН";
+
+
+
+
+
+
+
+
+"PLACES" = "МІСЦЯ";
+
+
+"SAVED ARTICLES" = "ЗБЕРЕЖЕНІ СТАТТІ";
+
+
+"Articles" = "Статті";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ПРОДОВЖИТИ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ВИДАННЯ / РЕГІОН";
+
+
+"Try a different keyword" = "Спробуйте інше ключове слово";
+
+
+"For You" = "Для Вас";
+
+
+"Results" = "Результати";
+
+
+"About" = "Про нас";
+
+
+"Share" = "Поділитися";
+
+
+"ACCOUNT" = "АККАУНТ";
+
+
+"Your Email" = "Ваш Email";
+
+
+"1sT-J6-qI0.text" = "Збережені статті ";
+
+
+"2XX-rr-GLC.text" = "Вибирайте різні канали з сотень джерел ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Читайте останні новостні події та статті з усього світу. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Встановіть інтервал часу для отримання сповіщень. ";
+
+
+"Off" = "ВИКЛ";
+
+
+
+
+
+"Bullet 2" = " Момент 2";
+
+
+"What's your email?" = "Ваша електронна пошта? ";
+
+
+"New Password (8 Characters Min)" = "Новий пароль (мінімум 8 символів) ";
+
+
+"Forgot Password?" = "Забули Пароль? ";
+
+
+"Account Settings" = "Налаштування аккаунта ";
+
+
+"Learn how we process your data" = "Інформація про обробку ваших даних ";
+
+
+"3h" = "3год";
+
+
+"Ok" = "Ок";
+
+
+"Block articles from The Guardian" = "Заблокувати статті від ---";
+
+
+"On" = "Вкл";
+
+
+"Auto" = "Авто";
+
+
+"Help Center" = "Центр Підтримки ";
+
+
+"Search" = "Пошук Каналів ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Обрати файл з галереї ";
+
+
+
+
+"Save article" = "Збережені статті ";
+
+
+"ABOUT" = "Докладніше";
+
+
+"Dark" = "Темний";
+
+
+"Legal" = "Юридичні Положення";
+
+
+"Go to The Guardian" = "Перейти до --- ";
+
+
+"Send reset link" = "Відправити ссилку для сбросу ";
+
+
+
+
+
+"My Account" = "Мій Аккаунт  ";
+
+
+"FEEDBACK" = "Відгук";
+
+
+"Message" = "Повідомлення";
+
+
+"Confirm New Password" = "Підтвердити Новий Пароль";
+
+
+"for ___" = "для";
+
+
+"Search" = "Пошук Тем";
+
+
+"LANGUAGE" = "Мова";
+
+
+"Light" = "Світлий";
+
+
+"FOLLOW 3 TO CONTINUE" = "для продовження оберіть 3";
+
+
+
+
+"Off" = "Викл";
+
+
+"Language" = "Вибрати";
+
+
+"LOG OUT" = "Вийти з аккаунту";
+
+
+"Report content" = "Повідомити про контент";
+
+
+"What's your email?" = "Ваша електронна пошта?";
+
+
+"On" = "ВКЛ";
+
+
+"More like this" = "Більше схожих новин ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 год";
+
+
+"Enter Email Address" = "Введіть Електронну Пошту";
+
+
+"News in Bullets" = "Читайте більше за менший час.";
+
+
+"6h" = "6 год";
+
+
+"Choose your password" = "Введіть свій пароль";
+
+
+"Cancel" = "Скасувати";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Читайте новини швидше за допомошою цього додатка. Оберіть свої теми та джерела. Потім читайте свої новини коротко у вигляді ключових моментів.";
+
+
+"Push Notification" = "СПОВІЩЕННЯ";
+
+
+"12h" = "12 год";
+
+
+"24h" = "24 год";
+
+
+"E-mail" = "Електронна пошта";
+
+
+"How can we help you?" = "Чим ми можемо допомогти?";
+
+
+"OJP-Wd-0d3.text" = "Пакістан";
+
+
+"CHANGE PASSWORD" = "Змінити пароль";
+
+
+"Change Email" = "ЗМІНИТИ ЕЛЕКТРОННУ ПОШТУ";
+
+
+"Medium" = "Середній";
+
+
+"SAVE CHANGES" = "ЗБЕРЕГТИ ЗМІНИ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Відправити нам повідомлення, якщо Вам потрібна будь-яка допомога, ми будемо раді Вашому зверненню!";
+
+
+"P5u-N3-Tw4.text" = "Ярлик";
+
+
+"Cancel" = "Скасувати";
+
+
+"Bullet 1" = "Момент 1";
+
+
+"TIMED NOTIFICATIONS" = "СПОВІЩЕННЯ";
+
+
+"POST ARTICLE" = "ОПУБЛІКУВАТИ СТАТТЮ";
+
+
+"CONTACT US" = "Зв'язатися з нами";
+
+
+"EDITION / REGION" = "Видання";
+
+
+"Search" = "Пошук";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Надішліть нам відгук, ми будемо раді Вашому зверненню! У вас є запитання чи юридичні проблеми? Спробуйте нашу сторінку Довідки або Зв’яжіться з нами.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Відправити нам повідомлення, якщо Вам потрібна будь-яка допомога, ми будемо раді Вашому зверненню!";
+
+
+"30m" = "30 хв";
+
+
+"CONTINUE" = "ПРОДОВЖИТИ";
+
+
+"Time To Update!" = "Оновіть додаток!";
+
+
+"NOTIFICATIONS" = "СПОВІЩЕННЯ";
+
+
+"Search" = "Пошук";
+
+
+"By clicking Continue, you agree with our Terms." = "Виберіть Продовжити щоб прийняти Правила";
+
+
+"HELP / CONTACT US" = "Допомога / Зв'язатися";
+
+
+"Reset Password" = "Відновлення паролю";
+
+
+"SEND MESSAGE" = "ВІДПРАВИТИ ПОВІДОМЛЕННЯ";
+
+
+"Save article" = "Зберегти статтю";
+
+
+"Bullet 6 (Optional)" = "Момент 6 (Необов’язково)";
+
+
+"HAPTICS" = "ДОТИК";
+
+
+"Your message has \vbeen sent." = "Ваше повідомлення було відправлено.";
+
+
+"LEGAL" = "ЮРИДИЧНІ ПОЛОЖЕННЯ";
+
+
+"Block List" = "Список Забокованого";
+
+
+"PERSONALIZATION" = "ПЕРСОНАЛІЗАЦІЯ";
+
+
+"in our Privacy Policy." = "у нашій Політиці Конфіденційності.";
+
+
+"CONTINUE" = "ПРОДОВЖИТИ";
+
+
+"Enter Name" = "Введіть Ім'я";
+
+
+"What's your email?" = "Ваша електронна пошта?";
+
+
+"Hello there!" = "Привіт!";
+
+
+"PUSH NOTIFICATIONS" = "СПОВІЩЕННЯ";
+
+
+"Bullet 3 (Optional)" = "Момент 3 (Необов’язково)";
+
+
+"Source name" = "Назва джерела";
+
+
+"Current Password" = "Поточний Пароль";
+
+
+"COLOR THEME" = "Колір Теми";
+
+
+"eTp-X1-g34.text" = "Або через";
+
+
+"CANCEL" = "СКАСУВАТИ";
+
+
+"Bullet 4 (Optional)" = "Момент 4 (Необов'язково)";
+
+
+"Date published" = "Дата публікації";
+
+
+"Send Password Reset Link" = "Відправити ссилку для сбросу пароля";
+
+
+"CONTINUE WITH APPLE" = "Реєстрація з Apple ID";
+
+
+"Off" = "Викл";
+
+
+"BLOCK LIST" = "СПИСОК ЗАБЛОКОВАНОГО";
+
+
+"HELP" = "ДОПОМОГА";
+
+
+"Reference link" = "Посилання";
+
+
+"Your Password" = "Ваш пароль";
+
+
+"SUBMIT" = "ПІДТВЕРДИТИ";
+
+
+"HELP" = "ДОПОМОГА";
+
+
+"MY ACCOUNT" = "Мій Аккаунт";
+
+
+"hbD-HP-tZd.normalTitle" = "Розблокувати";
+
+
+"OTHERS" = "Інше";
+
+
+"BREAKING NEWS" = "СЕНСАЦІЇ";
+
+
+"Topics" = "Заблоковані Теми";
+
+
+"Message us," = "Напишіть Нам,";
+
+
+"Pick topics to start reading
+and saving articles" = "мова додатка";
+
+
+"Forgot Password?" = "Забули Пароль?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Додано нові функції. Виправлено деякі проблеми.";
+
+
+"Success!" = "Успішно!!";
+
+
+"Current Password" = "Поточний Пароль";
+
+
+"CONTENT" = "ЗМІСТ";
+
+
+"Headline" = "Заголовок";
+
+
+"neg-UC-UpK.text" = "Виберіть теми, щоб почати читати та зберігати статті";
+
+
+"CONTINUE WITH EMAIL ID" = "Продовжити з Вашою електронною поштою";
+
+
+"SAVE CHANGES" = "ЗБЕРЕГТИ ЗМІНИ";
+
+
+"Post an Article" = "Опублікувати статтю";
+
+
+"Contact Us" = "Зв'язатися з нами";
+
+
+"On" = "Вкл";
+
+
+"New Email Address" = "Нова електронна пошта";
+
+
+"Bullet 5 (Optional)" = "Момент 5 (Необов'язково)";
+
+
+"Suggest an improvement" = "Запропонувати вдосконалення";
+
+
+"Channels" = "Заблоковані Джерела";
+
+
+"From:" = "Від:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ПЕРСОНАЛЬНІ РЕКОМЕНДАЦІЇ";
+
+
+"I don't like this" = "Мені це не подобається";
+
+
+"CONTINUE" = "ПРОДОВЖИТИ";
+
+
+"Name" = "Ім'я";
+
+
+"Enter email" = "Введіть електронну пошту";
+
+
+"HELP" = "ДОПОМОГА";
+
+
+"FOLLOW 3 TO CONTINUE" = "Слідуйте 3, щоб продовжити";
+
+
+"UPDATE APP" = "Оновіть Додаток!";
+
+
+"Forgot Password?" = "Забули Пароль?";
+
+
+"Change Password" = "Змінити Пароль";
+
+
+"Reset Password" = "Відновлення паролю";
+
+
+
+
+
+
+
+
+"Report content" = "Відправити звіт про порушення";
+
+
+"CHANGE EMAIL ADDRESS" = "ЗМІНИТИ ЕЛЕКТРОННУ ПОШТУ";
+
+
+"Follow The Guardian" = "Слідуйте ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ми додали багато нових функцій та виправили деякі помилки, щоб зробити ваш досвід максимально плавним.";
+
+
+"Edition / Region" = "Видання / Регіон";
+
+
+"OK" = "в порядку";
+
+
+"NARRATOR" = "РОЗПОВІДНИК";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Постійне оновлення про улюблені новини не повинно займати занадто багато часу. News in Bullets приймає регулярне 5-хвилинне читання та конденсує його в легкозасвоювані кулі. Тепер ви можете брати ті самі новини лише за частку часу - так ви зможете читати більше за менший час.";
+
+
+"READING SPEED" = "ШВИДКІСТЬ ЧИТАННЯ";
+
+
+
+
+
+"You haven't blocked anything yet" = "Ви ще нічого не заблокували";
+
+
+"EDITION / REGION" = "ВИДАННЯ / РЕГІОН";
+
+
+
+
+
+"HEADLINES ONLY" = "ТІЛЬКИ ЗАГОЛОВКИ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Налаштування звуку";
+
+
+"AUDIO SETTINGS" = "НАЛАШТУВАННЯ АУДІО";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ЗАГОЛОВКИ І КУЛИ";
+
+
+"CONTINUE AS GUEST" = "ПРОПУСКАТИ І ВХОДИТИ ЯК ГОСТЬ";
+
+
+"Topics" = "Теми";
+
+
+"Pick topics to start reading and saving articles" = "Виберіть теми, щоб почати читати та зберігати статті";
+
+
+"Channels" = "Канали";
+
+
+"Choose from hundreds \nof news publications" = "Вибирайте серед сотень публікацій новин";
+
+
+"Pick topics to start reading\nand saving articles" = "Виберіть теми, щоб почати читати та зберігати статті";
+
+"Pick editions to start reading\nand saving articles" = "Виберіть видання, щоб почати читати та зберігати статті";
+
+"Or with" = "Або з";
+
+"CONTINUE AS GUEST" = "ПРОДОВЖИТИ ЯК ГОСТЬ";
+
+"Terms of Service" = "Умови обслуговування";
+
+"Choose from hundreds \nof news publications" = "Вибирайте серед сотень публікацій новин";
+
+"Select your preferred language\nfor News in Bullets." = "Виберіть потрібну мову для новин у маркерах.";
+
+"Choose a style" = "Виберіть стиль";
+
+"Pop or subtle. Day or night. Customize your interface." = "Поп або тонкий. Вдень чи вночі. Налаштуйте свій інтерфейс.";
+
+"MINS AGO" = "хвилин тому";
+
+"AN HOUR AGO" = "годину назад";
+
+"HOURS AGO" = "годин тому";
+
+"1 WEEK AGO" = "1 тиждень тому";
+
+"YESTERDAY" = "Вчора";
+
+"DAYS AGO" = "днів тому";
+
+"Go to" = "Йти до";
+
+"You have reached the start." = "Ви досягли старту";
+
+"Source unblocked successfully" = "Джерело успішно розблоковано";
+
+"Invalid email format"  = "Неприпустимий формат електронної пошти";
+
+"Wrong email or password" = "Неправильна електронна пошта або пароль";
+
+

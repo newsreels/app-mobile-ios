@@ -1,0 +1,6 @@
+framework module Pods_Bullet_BulletUITests {
+  umbrella header "Pods-Bullet-BulletUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

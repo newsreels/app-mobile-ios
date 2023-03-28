@@ -1,0 +1,829 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "बुलेट बिंदू";
+"BULLETS" = "ठळक मुद्दे";
+"Headlines is not available." = "ठळक बातम्या उपलब्ध नाहीत.";
+"Check your internet Connection and try again." = "आपले इंटरनेट कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.";
+"Choose Image" = "प्रतिमा निवडा";
+"Headline" = "मुख्य";
+"Bullet 1" = "बुलेट 1";
+"Bullet 2" = "बुलेट 2";
+"Bullet 3 (Optional)" = "बुलेट 3 (पर्यायी)";
+"Bullet 4 (Optional)" = "बुलेट 4 (पर्यायी)";
+"Bullet 5 (Optional)" = "बुलेट 5 (पर्यायी)";
+"Bullet 6 (Optional)" = "बुलेट 6 (पर्यायी)";
+"Enter Aticle Headline" = "मुख्य प्रविष्ट करा";
+"Enter source name" = "स्रोत प्रविष्ट करा";
+"Enter reference link" = "संदर्भ प्रविष्ट करा";
+"Enter published date" = "तारीख प्रकाशित प्रविष्ट करा";
+"Enter Bullet 1" = "प्रथम बुलेट प्रविष्ट करा";
+"Enter Bullet 2" = "दुसरी बुलेट प्रविष्ट करा";
+"Posted article successfully" = "लेख यशस्वीरित्या पोस्ट आहे";
+"Follow" = "अनुसरण करा";
+"Unfollow" = "अनुसरण रद्द करा";
+"Block articles from" = "लेख अवरोधित करा";
+"Unblock articles from" = "लेख अनब्लॉक";
+"Remove article" = "लेख काढा";
+"Save article" = "हा लेख जतन करा";
+"Terms & Conditions" = "अटी व शर्ती";
+"Privacy Policy" = "गोपनीयता धोरण";
+"TERMS AND CONDITIONS" = "नियम आणि अटी";
+"PRIVACY POLICY" = "गोपनीयता धोरण";
+"Fuel your curiosity" = "जग अधिक बातम्या वाचा";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "आपल्या आवडत्या विषयांवर लहान आणि अचूक बातम्या वाचा जगभरातील विश्वसनीय स्रोत पासून.";
+"Save time" = "आपला वेळ जतन करा";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "बुलेट-गुण बातम्या वाचा";
+"Hands-free reading" = "हँड्स-फ्री वाचन";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "वाचन नाही वेळ? भाषण कार्य वापरा.";
+"Write your message..." = "आपला संदेश लिहा ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "आपण काहीतरी मदत हवी असेल तर आम्हाला एक संदेश पाठवा, आम्ही ते जरूर आवडेल!";
+"Drop us a message" = "आम्हाला एक संदेश पाठवा";
+"Enter Name." = "नाव प्रविष्ट करा.";
+"Enter Email." = "ईमेल प्रविष्ट करा.";
+"Write your message." = "आपला संदेश लिहा.";
+"Topic unblocked successfully" = "आपण अनावरोधित या विषयावर";
+"Source unblocked successfully" = "आपण अनावरोधित या स्रोत";
+"Unblock Source" = "अनावरोधित करा स्रोत";
+"Cancel" = "रद्द करा";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "फीडबॅक पाठवा, आम्ही ते जरूर आवडेल! आपल्याला प्रश्न किंवा कायदेशीर चिंता आहे का? आमच्या मदत पृष्ठास किंवा आमच्याशी संपर्क साधा प्रयत्न करा.";
+"Enter your suggestion." = "आपल्या सूचना प्रविष्ट करा.";
+"feedback sent." = "अभिप्राय यशस्वीरित्या पाठविला आहे";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "भाषा यशस्वीरित्या सुधारित केले आहे.";
+"CONTINUE" = "सुरू";
+"FOLLOW 3 TO CONTINUE" = "अनुसरण सुरु ठेवण्यासाठी 3";
+"Unfollow Location" = "अनुसरण करणे बंद करा स्थान";
+"Saved Articles" = "जतन केलेले लेख";
+"Block" = "ब्लॉक";
+"Are you sure you want block" = "आपली खात्री आहे की आपण या अवरोधित करू इच्छिता";
+"Once blocked, you wont be able to see any Articles related to this" = "आपण अवरोधित तर आपण या चॅनेलवरून लेख पाहू शकणार नाही.";
+"Block Topic" = "या विषयावर अवरोधित करा";
+"Suggested" = "सूचित";
+"Related Sources not available" = "संबंधित सूत्रांनी दिलेल्या माहितीनुसार, उपलब्ध नाहीत";
+"Block Source" = "या स्रोत ब्लॉक";
+"News in Bullets App version" = "बुलेट अनुप्रयोग आवृत्ती बातम्या";
+"Next" = "पुढे";
+"Login" = "लॉग-इन";
+"Terms" = "अटी";
+"By clicking Continue, you agree with our Terms." = "अटी स्वीकारण्याची सुरू ठेवा निवडा.";
+"in our Privacy Policy." = "आमचे गोपनीयता धोरण आहे.";
+"Access token missing." = "प्रवेश टोकन गहाळ आहे.";
+"NEXT" = "पुढे";
+"By checking this box, you agree to our " = "अटी स्वीकारण्याची बॉक्स क्लिक करा. आपला डेटा आमचे गोपनीयता धोरण त्यानुसार प्रक्रिया आहे.";
+"Terms of Service" = "सेवा अटी";
+". We’ll handle your data according to our " = ". आम्ही त्यानुसार आपला डेटा हाताळू आमच्या";
+"Password must be at least 8 characters." = "पासवर्ड कमीत कमी 8 वर्ण असणे आवश्यक आहे.";
+"Strong" = "मजबूत";
+"Medium" = "मध्यम";
+"Weak" = "कमकुवत";
+"CREATE A NEW ACCOUNT" = "तयार नवीन खाते";
+"SIGN IN WITH EXISTING ACCOUNT" = "साइन इन करा विद्यमान खाते";
+"You must agree to the Terms of Services to continue" = "सुरू ठेवण्यासाठी आपण सेवा अटी मान्य करणे आवश्यक";
+"SIGN IN" = "साइन इन करा";
+"What's your password?" = "आपला संकेतशब्द काय आहे?";
+"SIGN UP" = "साइन अप करा";
+"Choose your password?" = "आपला संकेतशब्द निवडा";
+"Something went wrong" = "काहीतरी चूक झाली";
+"we will send email to" = "आम्ही ईमेल पाठवू";
+"with a link to reset your password." = "एक दुवा आपला संकेतशब्द रीसेट करण्यासाठी.";
+"A reset password link has been sent to" = "पासवर्ड रीसेट करा करण्यासाठी एक दुवा पाठविण्यात आले आहे";
+"Enter new email." = "नवीन ई-मेल प्रविष्ट करा.";
+"Enter password." = "पासवर्ड टाका.";
+"New Password " = "नवीन संकेतशब्द";
+" (8 characters min)" = "(8 वर्ण मिनिट)";
+"Enter current password." = "वर्तमान संकेतशब्द प्रविष्ट करा.";
+"Enter new password." = "नवीन पासवर्ड टाका.";
+"Enter confirm password." = "पासवर्डची पुष्टी करा.";
+"password do not matched!" = "पासवर्ड जुळत नाही!";
+"GET STARTED" = "सुरु करूया";
+"SKIP" = "टाळा";
+"From where you would like to pick photo?" = "जेथे तुम्ही फोटो निवडा आवडेल?";
+"Camera" = "कॅमेरा";
+"Photo Library" = "फोटो लायब्ररी";
+"Kindly open settings and enable access" = "कृपया उघडा सेटिंग्ज आणि सक्षम प्रवेश";
+"Open Settings" = "सेटिंग्ज उघडा";
+"Access needed for your camera" = "प्रवेश आपला कॅमेरा आवश्यक";
+"Access needed for your photo library" = "आपल्या फोटो लायब्ररीमध्ये प्रवेश आवश्यक";
+"Done" = "पूर्ण झाले";
+"Pull to refresh" = "रीफ्रेश करण्यासाठी खेचा";
+"Speech not available for this article" = "भाषण हा लेख उपलब्ध नाही";
+"MANAGE PLACES" = "स्थान व्यवस्थापित करा";
+
+
+"Choose your News in Bullets Edition based on locale" = "Choose your News in Bullets Edition based on locale";
+"Edition" = "Edition";
+"EDITION / REGION" = "EDITION / REGION";
+
+
+
+
+
+"0JC-Sb-Ouu.text" = "प्रदर्शन मोड";
+
+
+"Search" = "शोधा";
+
+
+"Select" = "निवडा (";
+
+
+"6H8-dI-k9P.text" = "स्थान व्यवस्थापित करा";
+
+
+"6KH-YP-5Lt.text" = "निवेदक";
+
+
+" ) icon on the article" = ") लेख चिन्ह";
+
+
+"BLOCK" = "ब्लॉक";
+
+
+"you want to read later then" = "आपण नंतर नंतर वाचू इच्छित";
+
+
+"7oo-cf-l7Y.text" = "वाचन गती";
+
+
+"88L-ip-pZw.text" = "वाचन गती";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "येथे काहीही आहे\nआपण मुख्य पृष्ठ परत जायचे आहे का?";
+
+
+"BpH-F1-i0z.normalTitle" = "स्थानिक";
+
+
+" ) to save article." = ") लेख जतन करण्यासाठी.";
+
+
+"FB0-YN-HZg.text" = "सुरू ठेवण्यासाठी, निवडा 3";
+
+
+"H5Z-xJ-dWD.text" = "ठळक बातम्या\nठळक मुद्देS";
+
+
+"Search" = "शोधा";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "विस्तारित पहा";
+
+
+"Jpx-nY-Is1.normalTitle" = "चॅनेल";
+
+
+"JqN-io-P1u.normalTitle" = "+ स्थाने जोडा";
+
+
+"What's your email?" = "आपला ईमेल पत्ता काय आहे?";
+
+
+"Lw1-Md-nse.text" = "सूची दृश्य";
+
+
+"LyT-pT-g53.text" = "आंतरराष्ट्रीय";
+
+
+"N6C-6i-Z2s.text" = "आंतरराष्ट्रीय";
+
+
+"Nru-uU-CsC.text" = "सूचना";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "विषय";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "सानुकूलित";
+
+
+"Topics" = "विषय";
+
+
+"WXY-po-W1B.text" = "ठळक बातम्या\nठळक मुद्दे";
+
+
+"ans-Zy-T2Y.placeholder" = "स्थाने शोधा";
+
+
+"bgE-Jc-u8H.text" = "सानुकूलित";
+
+
+
+
+
+"Tap the ( " = "टॅप करा (";
+
+
+"Places" = "स्थान";
+
+
+"d1l-HK-OrG.text" = "प्रदर्शन मोड";
+
+
+
+
+
+"Language" = "इंग्रजी";
+
+
+"e9g-Wr-suO.text" = "ठळक बातम्या फक्त";
+
+
+"GO HOME" = "मुख्य पृष्ठावर जा";
+
+
+"eh1-Oo-lEn.text" = "विस्तारित पहा";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "सूची दृश्य";
+
+
+"j2i-MT-VkA.text" = "भिन्न कीवर्ड वापरून पहा";
+
+
+"Top News" = "शीर्ष बातम्या";
+
+
+"jmO-aF-nJ9.text" = "केवळ मथळे";
+
+
+"There is nothing in here" = "येथे काहीही आहे";
+
+
+"ma1-9p-bSa.text" = "कोणतेही परिणाम आढळले नाहीत";
+
+
+"mce-jc-cKH.text" = "निवेदक";
+
+
+"Channels" = "चॅनेल";
+
+
+"Discover" = "शोधा";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "रद्द करा";
+
+
+"Discover" = "शोधा";
+
+
+"No saved stories yet" = "येथे काहीही आहे";
+
+
+"wDG-kF-Hl8.text" = "स्थान आधारित वाचा बातम्या";
+
+
+
+
+
+"wKj-3i-n0R.text" = "स्थानिकीकरण";
+
+
+"xfF-RB-mWL.text" = "स्थानिकीकरण";
+
+
+"About" = "आमच्या विषयी";
+
+
+"Share" = "सामायिक करा";
+
+
+"ACCOUNT" = "खाते";
+
+
+"Your Email" = "आपला ई - मेल";
+
+
+"1sT-J6-qI0.text" = "जतन लेख";
+
+
+"2XX-rr-GLC.text" = "स्रोत शेकडो वेगळे चॅनेल निवडा";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "जगातील सर्व ताज्या बातम्या कार्यक्रम आणि वैशिष्ट्ये वाचा.";
+
+
+"Set an interval in which you want to receive your news notifications." = "सूचना प्राप्त करण्यासाठी एक वेळ अंतर सेट करा.";
+
+
+"Off" = "बंद";
+
+
+
+
+
+"Bullet 2" = "बुलेट 2";
+
+
+"What's your email?" = "तुझा ईमेल काय आहे?";
+
+
+"New Password (8 Characters Min)" = "नवीन पासवर्ड (किमान 8 वर्ण)";
+
+
+"Forgot Password?" = "पासवर्ड विसरला?";
+
+
+"Account Settings" = "खाते सेटिंग्ज";
+
+
+"Learn how we process your data" = "आपला डेटा प्रक्रिया माहिती";
+
+
+"3h" = "3h";
+
+
+"Ok" = "ठीक आहे";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "चालू करणे";
+
+
+"Auto" = "ऑटो";
+
+
+"Help Center" = "मदत केंद्र";
+
+
+"Search" = "शोध चॅनेल";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "गॅलरीत फाइल निवडा";
+
+
+
+
+"Save article" = "लेख जतन करा";
+
+
+"ABOUT" = "विषयी";
+
+
+"Dark" = "गडद";
+
+
+"Legal" = "कायदेशीर";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "रीसेट लिंक पाठवा";
+
+
+
+
+
+"My Account" = "माझे खाते";
+
+
+"FEEDBACK" = "प्रतिक्रिया";
+
+
+"Message" = "संदेश";
+
+
+"Confirm New Password" = "नवीन परवलीच्या शब्दाची खात्री करा";
+
+
+"for ___" = "च्या साठी ___";
+
+
+"Search" = "विषय शोधा";
+
+
+"LANGUAGE" = "इंग्रजी";
+
+
+"Light" = "प्रकाश";
+
+
+"FOLLOW 3 TO CONTINUE" = "सुरू ठेवण्यासाठी, निवडा 3";
+
+
+
+
+"Off" = "बंद कर";
+
+
+"Language" = "इंग्रजी";
+
+
+"LOG OUT" = "बाहेर पडणे";
+
+
+"Report content" = "सामग्री नोंदवा";
+
+
+"What's your email?" = "तुझा ईमेल काय आहे?";
+
+
+"On" = "चालू करणे";
+
+
+"More like this" = "या अधिक बातम्या";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "ईमेल पत्ता प्रविष्ट करा";
+
+
+"News in Bullets" = "कमी वेळेत अधिक वाचा.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "आपला संकेतशब्द निवडा";
+
+
+"Cancel" = "रद्द करा";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "हा अनुप्रयोग त्वरीत बातम्या वाचा. आपल्या विषय आणि स्त्रोत निवडा. मग लहान बुलेट पॉइण्ट्स आपल्या बातम्या वाचा.";
+
+
+"Push Notification" = "सूचना";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "ईमेल";
+
+
+"How can we help you?" = "आपण कशा प्रकारे मदत करू शकतो?";
+
+
+"OJP-Wd-0d3.text" = "पाकिस्तान";
+
+
+"CHANGE PASSWORD" = "संकेतशब्द बदला";
+
+
+"Change Email" = "बदला EMAIL ADDRESS";
+
+
+"Medium" = "मध्यम";
+
+
+"SAVE CHANGES" = "Sबदल जतन करा";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "आपण काहीतरी मदत हवी असेल तर आम्हाला एक संदेश पाठवा, आम्ही ते जरूर आवडेल!";
+
+
+"P5u-N3-Tw4.text" = "लेबल";
+
+
+"Cancel" = "रद्द करा";
+
+
+"Bullet 1" = "बुलेट 1";
+
+
+"TIMED NOTIFICATIONS" = "अधिसूचना";
+
+
+"POST ARTICLE" = "पोस्ट लेख";
+
+
+"CONTACT US" = "आमच्याशी संपर्क साधा";
+
+
+"EDITION / REGION" = "संस्करण";
+
+
+"Search" = "शोधा";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "फीडबॅक पाठवा, आम्ही ते जरूर आवडेल! आपल्याला प्रश्न किंवा कायदेशीर चिंता आहे का? आमच्या मदत पृष्ठास किंवा आमच्याशी संपर्क साधा प्रयत्न करा.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "आपण काहीतरी मदत हवी असेल तर आम्हाला एक संदेश पाठवा, आम्ही ते जरूर आवडेल!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "सुरू";
+
+
+"Time To Update!" = "अनुप्रयोग अद्यतनित करा!";
+
+
+"NOTIFICATIONS" = "अधिसूचना";
+
+
+"Search" = "शोधा";
+
+
+"By clicking Continue, you agree with our Terms." = "अटी स्वीकारण्याची सुरू ठेवा निवडा.";
+
+
+"HELP / CONTACT US" = "मदत / संपर्क";
+
+
+"Reset Password" = "पासवर्ड रीसेट करा";
+
+
+"SEND MESSAGE" = "संदेश पाठवा";
+
+
+"Save article" = "लेख जतन करा";
+
+
+"Bullet 6 (Optional)" = "बुलेट 6 (पर्यायी)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "आपला संदेश पाठवला गेला आहे.";
+
+
+"LEGAL" = "कायदेशीर";
+
+
+"Block List" = "यादी ब्लॉक";
+
+
+"PERSONALIZATION" = "वैयक्तिकरण";
+
+
+"in our Privacy Policy." = "आमचे गोपनीयता धोरण आहे.";
+
+
+"CONTINUE" = "सुरू";
+
+
+"Enter Name" = "नाव प्रविष्ट करा";
+
+
+"What's your email?" = "तुझा ईमेल काय आहे?";
+
+
+"Hello there!" = "नमस्कार!";
+
+
+"PUSH NOTIFICATIONS" = "अधिसूचना";
+
+
+"Bullet 3 (Optional)" = "बुलेट 3 (पर्यायी)";
+
+
+"Source name" = "स्रोत नाव";
+
+
+"Current Password" = "सध्याचा गुप्त शब्द";
+
+
+"COLOR THEME" = "रंग थीम";
+
+
+"eTp-X1-g34.text" = "किंवा माध्यमातून";
+
+
+"CANCEL" = "रद्द करा";
+
+
+"Bullet 4 (Optional)" = "बुलेट 4 (पर्यायी)";
+
+
+"Date published" = "प्रकाशन तारीख";
+
+
+"Send Password Reset Link" = "पासवर्ड रीसेट पाठवा दुवा";
+
+
+"CONTINUE WITH APPLE" = "ऍपल आयडी माध्यमातून साइन अप करा";
+
+
+"Off" = "बंद कर";
+
+
+"BLOCK LIST" = "ब्लॉक यादी";
+
+
+"HELP" = "मदत";
+
+
+"Reference link" = "संदर्भ दुवा";
+
+
+"Your Password" = "आपला संकेतशब्द";
+
+
+"SUBMIT" = "प्रस्तुत करणे";
+
+
+"HELP" = "मदत";
+
+
+"MY ACCOUNT" = "माझे खाते";
+
+
+"hbD-HP-tZd.normalTitle" = "अनावरोधित करा";
+
+
+"OTHERS" = "इतर";
+
+
+"BREAKING NEWS" = "ठळक बातम्या";
+
+
+"Topics" = "अवरोधित विषय";
+
+
+"Message us," = "संदेश आम्हाला";
+
+
+"Pick topics to start reading
+and saving articles" = "अनुप्रयोग भाषा";
+
+
+"Forgot Password?" = "पासवर्ड विसरला?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "नवीन वैशिष्ट्ये जोडली आहेत. काही समस्या निश्चित.";
+
+
+"Success!" = "यशस्वी!";
+
+
+"Current Password" = "सध्याचा गुप्त शब्द";
+
+
+"CONTENT" = "सामग्री";
+
+
+"Headline" = "मुख्य";
+
+
+"neg-UC-UpK.text" = "लेख वाचून आणि जतन करणे प्रारंभ करण्यासाठी विषय निवडा";
+
+
+"CONTINUE WITH EMAIL ID" = "आपला ईमेल आयडी सह सुरू ठेवा";
+
+
+"SAVE CHANGES" = "बदल जतन करा";
+
+
+"Post an Article" = "एक लेख पोस्ट करा";
+
+
+"Contact Us" = "आमच्याशी संपर्क साधा";
+
+
+"On" = "चालू करणे";
+
+
+"New Email Address" = "नवीन ईमेल पत्ता";
+
+
+"Bullet 5 (Optional)" = "बुलेट 5 (पर्यायी)";
+
+
+"Suggest an improvement" = "सुधारणा सुचवा";
+
+
+"Channels" = "अवरोधित सूत्रांनी दिलेल्या माहितीनुसार,";
+
+
+"From:" = "पासून:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "वैयक्तिकृत शिफारसी";
+
+
+"I don't like this" = "मला हे आवडले नाही";
+
+
+"CONTINUE" = "सुरू";
+
+
+"Name" = "नाव";
+
+
+"Enter email" = "ईमेल प्रविष्ट करा";
+
+
+"HELP" = "मदत";
+
+
+"FOLLOW 3 TO CONTINUE" = "अनुसरण करा 3 सुरू ठेवा";
+
+
+"UPDATE APP" = "अनुप्रयोग अद्यतनित करा";
+
+
+"Forgot Password?" = "पासवर्ड विसरला?";
+
+
+"Change Password" = "पासवर्ड बदला";
+
+
+"Reset Password" = "पासवर्ड रीसेट करा";
+
+
+
+
+
+
+
+
+"Report content" = "आपले विचार नोंदविण्यासाठी";
+
+
+"CHANGE EMAIL ADDRESS" = "बदला EMAIL ADDRESS";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"Pick topics to start reading\nand saving articles" = "लेख वाचणे आणि जतन करणे प्रारंभ करण्यासाठी विषय निवडा";
+
+"Pick editions to start reading\nand saving articles" = "लेख वाचणे आणि जतन करणे प्रारंभ करण्यासाठी आवृत्ती निवडा";
+
+"Or with" = "किंवा सह";
+
+"CONTINUE AS GUEST" = "पाहुणे म्हणून चालू ठेवा";
+
+"Terms of Service" = "सेवेच्या अटी";
+
+"Choose from hundreds \nof news publications" = "शेकडो वृत्त प्रकाशनांमधून निवडा";
+
+"Select your preferred language\nfor News in Bullets." = "बुलेट्स मधील बातम्यांसाठी आपली पसंतीची भाषा निवडा.";
+
+"Choose a style" = "एक शैली निवडा";
+
+"Pop or subtle. Day or night. Customize your interface." = "पॉप किंवा सूक्ष्म दिवस किंवा रात्र. आपला इंटरफेस सानुकूलित करा.";
+
+"MINS AGO" = "मिनिटांपूर्वी";
+
+"AN HOUR AGO" = "तासभरा पूर्वी";
+
+"HOURS AGO" = "तासांपूर्वी";
+
+"1 WEEK AGO" = "1 आठवड्या आधी";
+
+"YESTERDAY" = "काल";
+
+"DAYS AGO" = "दिवसांपूर्वी";
+
+"Go to" = "जा";
+
+"You have reached the start." = "आपण प्रारंभ गाठला आहे";
+
+"Source unblocked successfully" = "स्त्रोत यशस्वीरित्या अवरोधित केला";
+
+"Invalid email format"  = "अवैध ईमेल स्वरूप";
+
+"Wrong email or password" = "चुकीचा ईमेल किंवा गुप्तशब्द";
+
+

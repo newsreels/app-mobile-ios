@@ -1,0 +1,1098 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "نقاط مهمة";
+"BULLETS" = "نقاط مهمة";
+"Headlines is not available." = "العناوين الرئيسية غير متوفرة.";
+"Check your internet Connection and try again." = "تحقق من اتصالك بالإنترنت وحاول مرة أخرى.";
+"Choose Image" = "اختر صورة";
+"Headline" = "العنوان";
+"Bullet 1" = "الرمز النقطي 1";
+"Bullet 2" = "الرمز النقطي 2";
+"Bullet 3 (Optional)" = "الرمز النقطي 3 (اختياري)";
+"Bullet 4 (Optional)" = "الرمز النقطي 4 (اختياري)";
+"Bullet 5 (Optional)" = "الرمز النقطي 5 (اختياري)";
+"Bullet 6 (Optional)" = "الرمز النقطي 6 (اختياري)";
+"Enter Aticle Headline" = "أدخل العنوان";
+"Enter source name" = "أدخل المصدر";
+"Enter reference link" = "أدخل المرجع";
+"Enter published date" = "أدخل تاريخ النشر";
+"Enter Bullet 1" = "أدخل الرمز النقطي الأول";
+"Enter Bullet 2" = "أدخل الرمز النقطي الثاني";
+"Post article successfully" = "تم نشر المقال بنجاح";
+"Follow" = "إتبع";
+"Unfollow" = "الغاء المتابعة";
+"Block articles from" = "احظر المقالات من";
+"Unblock articles from" = "ازالة الحظر عن المقالات من";
+"Remove article" = "إزالة المقال";
+"Save article" = "احفظ هذا المقال";
+"Terms & Conditions" = "البنود و الظروف";
+"Privacy Policy" = "سياسة الخصوصية";
+"TERMS AND CONDITIONS" = "الأحكام والشروط";
+"PRIVACY POLICY" = "سياسة الخصوصية";
+"Fuel your curiosity" = "اقرأ المزيد من الأخبار حول العالم";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "اقرأ أخبارًا قصيرة ودقيقة حول موضوعاتك المفضلة من مصادر موثوقة حول العالم.";
+"Save time" = "وفر وقتك";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "اقرأ الأخبار بالنقاط  ";
+"Hands-free reading" = "القراءة بدون استخدام اليدين";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "لا وقت للقراءة؟ استخدم وظيفة الكلام.";
+"Write your message..." = "اكتب رسالتك...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "أرسل لنا رسالة إذا كنت بحاجة إلى مساعدة في شيء ما ، يسعدنا أن نسمع منك!";
+"Drop us a message" = "أرسل لنا رسالة";
+"Enter Name." = "أدخل الاسم.";
+"Enter Email." = "أدخل البريد الإلكتروني.";
+"Write your message." = "اكتب رسالتك.";
+"Topic unblock successfully" = "قمت بإلغاء حظر هذا الموضوع";
+"Source unblock successfully" = "قمت بإلغاء حظر هذا المصدر";
+"Unblock Source" = "ازالة حظر المصدر";
+"Cancel" = "إلغاء";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "أرسل إلينا تعليقات ، يسعدنا أن نسمع منك! هل لديك أسئلة أو مخاوف قانونية؟ جرب صفحة المساعدة الخاصة بنا أو اتصل بنا.";
+"Enter your suggestion." = "أدخل اقتراحك.";
+"feedback sent." = "تم إرسال الملاحظات بنجاح";
+"30m" = "30 دقيقة";
+"1h" = " 1 ساعة";
+"3h" = "3 ساعات";
+"6h" = "6 ساعات";
+"12h" = "12 ساعات";
+"24h" = "24 ساعة";
+"Language updated successfully." = "تم تحديث اللغة بنجاح.";
+"CONTINUE" = "استمر";
+"FOLLOW 3 TO CONTINUE" = "اتبع 3 للمتابعة";
+"Unfollow Location" = "إلغاء متابعة الموقع";
+"Saved Articles" = "المقالات المحفوظة";
+"Block" = "منع";
+"Are you sure you want block" = "هل أنت متأكد أنك تريد منع هذا";
+"Once blocked, you wont be able to see any Articles related to this" = "لن ترى مقالات من هذه القناة إذا قمت بحظرها.";
+"Block Topic" = "حظر هذا الموضوع";
+"Suggested" = "اقترح";
+"Related Sources not available" = "المصادر ذات الصلة غير متوفرة";
+"Block Source" = "منع هذا المصدر";
+"News in Bullets App version" = "الأخبار في إصدار تطبيق الرمز النقطي";
+"Next" = "التالى";
+"Login" = "تسجيل الدخول";
+"Terms" = "شروط";
+"By clicking Continue, you agree with our Terms." = "حدد متابعة لقبول الشروط.";
+"in our Privacy Policy." = "في سياسة الخصوصية الخاصة بنا.";
+"Access token missing." = "رمز الوصول مفقود.";
+"NEXT" = "التالى";
+"By checking this box, you agree to our " = "انقر فوق المربع لقبول الشروط. تتم معالجة بياناتك وفقًا لسياسة الخصوصية الخاصة بنا.";
+"Terms of Service" = "شروط الخدمة";
+". We’ll handle your data according to our " = "يجب أن تكون كلمة المرور 8 أحرف على الأقل.";
+"Password must be at least 8 characters." = "قوي";
+"Strong" = "قوي";
+"Medium" = "متوسط";
+"Weak" = "ضعيف";
+"CREATE A NEW ACCOUNT" = "انشاء حساب جديد";
+"SIGN IN WITH EXISTING ACCOUNT" = "تسجيل الدخول باستخدام حساب موجود";
+"You must agree to the Terms of Services to continue" = "يجب أن توافق على شروط الخدمات للمتابعة";
+"SIGN IN" = "تسجيل الدخول";
+"What's your password?" = "ما هي كلمة السر الخاصة بك؟";
+"SIGN UP" = "تسجيل";
+"Choose your password?" = "أختر كلمة مرورك";
+"Something went wrong" = "هناك خطأ ما";
+"we will send email to" = "سنرسل بريدًا إلكترونيًا إلى";
+"with a link to reset your password." = "مع الرابط لإعادة تعيين كلمة المرور الخاصة بك.";
+"A reset password link has been sent to" = "تم إرسال رابط لإعادة تعيين كلمة المرور إلى";
+"Enter new email." = "أدخل البريد الإلكتروني الجديد.";
+"Enter password." = "أدخل كلمة المرور.";
+"New Password " = "كلمة مرور جديدة";
+" (8 characters min)" = "(8 أحرف على الأقل)";
+"Enter current password." = "إدخل كلمة السر الحالية.";
+"Enter new password." = "أدخل كلمة مرور جديدة.  ";
+"Enter confirm password." = "تأكيد كلمة المرور.";
+"password do not matched!" = "كلمة المرور غير مطابقة!";
+"GET STARTED" = "البدء";
+"SKIP" = "تخطى";
+"From where you would like to pick photo?" = "من أين تريد أن تختار الصورة؟";
+"Camera" = "الة تصوير";
+"Photo Library" = "مكتبة الصور";
+"Kindly open settings and enable access" = "يرجى فتح الإعدادات وتمكين الوصول";
+"Open Settings" = "أفتح الإعدادات";
+"Access needed for your camera" = "الوصول مطلوب للكاميرا الخاصة بك";
+"Access needed for your photo library" = "الوصول مطلوب لمكتبة الصور الخاصة بك";
+"Done" = "منجز";
+"Pull to refresh" = "سحب لتحديث";
+"Loading" = "جار التحميل";
+"Speech not available for this article" = "الكلام غير متوفر لهذه المقالة";
+"MANAGE LOCATION" = "إدارة الموقع";
+"OK" = "موافق";
+"Choose your News in Bullets Edition based on locale" = "اختر الأخبار الخاصة بك في إصدار التعداد النقطي بناءً على اللغة";
+"Edition" = "الإصدار";
+"EDITION / REGION" = "الطبعة / المنطقة";
+"Your Topics" = "مواضيعك";
+"Your Channels" = "قنواتك";
+"Your Places" = "أماكنك";
+"Enter email." = "أدخل البريد الإلكتروني.";
+"Please enter a password." = "الرجاء إدخال كلمة المرور.";
+"Search articles" = "مقالات البحث";
+"No results" = "لا نتائج";
+"Edition / Region" = "الطبعة / المنطقة";
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "حظر";
+"CANCEL" = "إلغاء";
+"PLACES" = "أماكن";
+"LANGUAGE" = "لغة";
+"Profile" = "حساب تعريفي";
+"SAVED ARTICLES" = "المقالات المحفوظة";
+"Topics" = "المواضيع";
+"Channels" = "القنوات";
+"Editions" = "طبعات";
+"No saved stories yet" = "لا يوجد شيء هنا";
+"Tap the" = "اضغط على";
+"icon on the article" = "رمز على المقالة";
+"you want to read later then" = "تريد أن تقرأ هذا في وقت لاحق بعد ذلك";
+"Select" = "يختار";
+"to save article." = "لحفظ المقال.";
+"There is nothing in here" = "لا يوجد شيء هنا.";
+"Looks like there is nothing here but a cat." = "يبدو أنه لا يوجد شيء هنا سوى قطة.";
+"Would you like to go back to home?" = "هل تود العودة الى المنزل؟";
+"GO HOME" = "اذهب للمنزل";
+"Search" = "بحث";
+"Discover" = "اكتشف";
+"Articles" = "مقالات";
+"Try a different keyword" = "جرب كلمة رئيسية مختلفة";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "احصل على الأخبار الأكثر صلة بالمنطقة التي تختارها. قراءة القصص الإخبارية المنسقة لإطلاعك على آخر الأخبار من أي مكان في العالم.";
+"Language" = "لغة";
+"Results" = "نتائج";
+"For You" = "لك";
+"Top News" = "الاخبار المهمه";
+"Choose a style" = "اختر نمطًا";
+"Pop or subtle. Day or night. Customize your interface." = "انبثاق أو رقيق. ليلاً أو نهارًا. خصص واجهتك.";
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+"About" = "معلومات عنا";
+
+
+"Share" = "شارك";
+
+
+"ACCOUNT" = "الحساب";
+
+
+"Your Email" = "بريدك الالكتروني";
+
+
+"1sT-J6-qI0.text" = "المقالات المحفوظة";
+
+
+"2XX-rr-GLC.text" = "اختر قنوات مختلفة من مئات المصادر";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "اقرأ أحدث الأخبار والميزات من جميع أنحاء العالم.";
+
+
+"Set an interval in which you want to receive your news notifications." = "حدد فجوة زمنية لتلقي الإخطارات.";
+
+
+"Off" = "إيقاف";
+
+
+
+
+
+"Bullet 2" = "الرمز النقطي 2";
+
+
+"What's your email?" = "ما هو بريدك الإلكتروني؟";
+
+
+"New Password (8 Characters Min)" = "كلمة مرور جديدة (8 أحرف على الأقل)";
+
+
+"Forgot Password?" = "هل نسيت كلمة المرور؟";
+
+
+"Account Settings" = "إعدادت الحساب";
+
+
+"Learn how we process your data" = "معلومات عن معالجة البيانات الخاصة بك";
+
+
+"3h" = "3 ساعات";
+
+
+"Ok" = "حسنا";
+
+
+"Block articles from The Guardian" = "حظر المقالات من ---";
+
+
+"On" = "تشغيل";
+
+
+"Auto" = "تلقائي";
+
+
+"Help Center" = "مركز المساعدة";
+
+
+"Search" = "قنوات البحث";
+
+
+"Facebook" = "الفيسبوك";
+
+
+"Select file from gallery" = "حدد ملفًا من المعرض";
+
+
+
+
+"Save article" = "احفظ المقال";
+
+
+"ABOUT" = "حول";
+
+
+"Dark" = "داكن";
+
+
+"Legal" = "قانوني";
+
+
+"Go to The Guardian" = "اذهب إلى ---";
+
+
+"Send reset link" = "أرسل رابط إعادة التعيين";
+
+
+
+
+
+"My Account" = "حسابي";
+
+
+"FEEDBACK" = "ردود الفعل";
+
+
+"Message" = "رسالة";
+
+
+"Confirm New Password" = "تأكيد كلمة المرور الجديدة";
+
+
+"for ___" = "ل ";
+
+
+"Search" = "بحث عن مواضيع";
+
+
+"LANGUAGE" = "لغة";
+
+
+"Light" = "ضوء";
+
+
+"FOLLOW 3 TO CONTINUE" = "للمتابعة ، اختر 3";
+
+
+
+
+"Off" = "اغلاق";
+
+
+"Language" = "أختر";
+
+
+"LOG OUT" = "تسجيل خروج";
+
+
+"Report content" = "محتوى التقرير";
+
+
+"What's your email?" = "ما هو بريدك الإلكتروني؟";
+
+
+"On" = "تشغيل";
+
+
+"More like this" = "المزيد من الأخبار مثل هذا";
+
+
+"Bullet App v1.1.0" = "تطبيق Bullet v1.1.0 (تخطي)";
+
+
+"1h" = " ساعة";
+
+
+"Enter Email Address" = "أدخل عنوان البريد الالكتروني";
+
+
+"News in Bullets" = "اقرأ المزيد في وقت أقل.";
+
+
+"6h" = "6 ساعات";
+
+
+"Choose your password" = "أختر كلمة مرورك";
+
+
+"Cancel" = "إلغاء";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "اقرأ الأخبار بسرعة مع هذا التطبيق. اختر موضوعاتك ومصادرك. ثم اقرأ أخبارك بنقاط قصيرة.";
+
+
+"Push Notification" = "تنبيه ";
+
+
+"12h" = "12 ساعة";
+
+
+"24h" = "24 ساعة";
+
+
+"E-mail" = "البريد الإلكتروني";
+
+
+"How can we help you?" = "كيف يمكن أن نساعد؟";
+
+
+"OJP-Wd-0d3.text" = "باكستان";
+
+
+"CHANGE PASSWORD" = "غير كلمة السر";
+
+
+"Change Email" = "تغيير البريد الالكتروني";
+
+
+"Medium" = "متوسط";
+
+
+"SAVE CHANGES" = "حفظ التغييرات";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "أرسل لنا رسالة إذا كنت بحاجة إلى مساعدة في شيء ما ، يسعدنا أن نسمع منك!";
+
+
+"P5u-N3-Tw4.text" = "ملصق";
+
+
+"Cancel" = "إلغاء";
+
+
+"Bullet 1" = "الرمز النقطي 1";
+
+
+"TIMED NOTIFICATIONS" = "إشعارات";
+
+
+"POST ARTICLE" = "انشر مقالاً";
+
+
+"CONTACT US" = "اتصل بنا";
+
+
+"EDITION / REGION" = "الإصدار";
+
+
+"Search" = "بحث";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "أرسل إلينا تعليقات ، يسعدنا أن نسمع منك! هل لديك أسئلة أو مخاوف قانونية؟ جرب صفحة المساعدة الخاصة بنا أو اتصل بنا.";
+
+
+"Google" = "جوجل";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "أرسل لنا رسالة إذا كنت بحاجة إلى مساعدة في شيء ما ، يسعدنا أن نسمع منك!";
+
+
+"30m" = "30 دقيقة";
+
+
+"CONTINUE" = "استمر";
+
+
+"Time To Update!" = "حدث التطبيق!";
+
+
+"NOTIFICATIONS" = "إشعارات";
+
+
+"Search" = "بحث";
+
+
+"By clicking Continue, you agree with our Terms." = "حدد متابعة لقبول الشروط.";
+
+
+"HELP / CONTACT US" = "مساعدة / اتصال";
+
+
+"Reset Password" = "إعادة تعيين كلمة المرور";
+
+
+"SEND MESSAGE" = "أرسل رسالة";
+
+
+"Save article" = "احفظ المقال";
+
+
+"Bullet 6 (Optional)" = "الرمز النقطي 6 (اختياري)";
+
+
+"HAPTICS" = "السعادة";
+
+
+"Your message has \vbeen sent." = "تم ارسال رسالتك.";
+
+
+"LEGAL" = "قانوني";
+
+
+"Block List" = "قائمة الحظر";
+
+
+"PERSONALIZATION" = "إضفاء الطابع الشخصي";
+
+
+"in our Privacy Policy." = "في سياسة الخصوصية الخاصة بنا.";
+
+
+"CONTINUE" = "استمر";
+
+
+"Enter Name" = "أدخل الاسم";
+
+
+"What's your email?" = "ما هو بريدك الإلكتروني؟";
+
+
+"Hello there!" = "مرحبا!";
+
+
+"PUSH NOTIFICATIONS" = "إشعارات";
+
+
+"Bullet 3 (Optional)" = "الرمز النقطي 3 (اختياري)";
+
+
+"Source name" = "اسم المصدر";
+
+
+"Current Password" = "كلمة المرور الحالي";
+
+
+"COLOR THEME" = "مظهر اللون";
+
+
+"eTp-X1-g34.text" = "أو من خلال";
+
+
+"CANCEL" = "إلغاء";
+
+
+"Bullet 4 (Optional)" = "الرمز النقطي 4 (اختياري)";
+
+
+"Date published" = "تاريخ نشر";
+
+
+"Send Password Reset Link" = "أرسل رابطًا لإعادة تعيين كلمة المرور";
+
+
+"CONTINUE WITH APPLE" = "قم بالتسجيل من خلال معرف Apple";
+
+
+"Off" = "اطفئه";
+
+
+"BLOCK LIST" = "قائمة الحظر";
+
+
+"HELP" = "مساعدة";
+
+
+"Reference link" = "ارتباط مرجعي";
+
+
+"Your Password" = "كلمة السر خاصتك";
+
+
+"SUBMIT" = "إرسال";
+
+
+"HELP" = "مساعدة";
+
+
+"MY ACCOUNT" = "حسابي";
+
+
+"hbD-HP-tZd.normalTitle" = "رفع الحظر";
+
+
+"OTHERS" = "الآخرين";
+
+
+"BREAKING NEWS" = "أخبار عاجلة";
+
+
+"Topics" = "المواضيع المحظورة";
+
+
+"Message us," = "راسلنا";
+
+
+"Pick topics to start reading
+and saving articles" = "لغة التطبيق";
+
+
+"Forgot Password?" = "هل نسيت كلمة المرور؟";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "تمت إضافة ميزات جديدة. تم إصلاح بعض المشكلات.";
+
+
+"Success!" = "نجاح!!";
+
+
+"Current Password" = "كلمة المرور الحالي";
+
+
+"CONTENT" = "المحتوى";
+
+
+"Headline" = "العنوان";
+
+
+"neg-UC-UpK.text" = "اختر الموضوعات لبدء قراءة المقالات وحفظها";
+
+
+"CONTINUE WITH EMAIL ID" = "تواصل مع معرف البريد الإلكتروني الخاص بك";
+
+
+"SAVE CHANGES" = "حفظ التغييرات";
+
+
+"Post an Article" = "انشر مقالاً";
+
+
+"Contact Us" = "اتصل بنا";
+
+
+"On" = "تشغيل";
+
+
+"New Email Address" = "عنوان البريد الإلكتروني الجديد";
+
+
+"Bullet 5 (Optional)" = "الرمز النقطي 5 (اختياري)";
+
+
+"Suggest an improvement" = "اقترح تحسين";
+
+
+"Channels" = "المصادر المحظورة";
+
+
+"From:" = "من عند::";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "توصيات مخصصة";
+
+
+"I don't like this" = "لا احب هذا";
+
+
+"CONTINUE" = "استمر";
+
+
+"Name" = "اسم";
+
+
+"Enter email" = "أدخل البريد الإلكتروني";
+
+
+"HELP" = "مساعدة";
+
+
+"FOLLOW 3 TO CONTINUE" = "اتبع 3 للمتابعة";
+
+
+"UPDATE APP" = "تحديث التطبيق";
+
+
+"Forgot Password?" = "هل نسيت كلمة المرور؟";
+
+
+"Change Password" = "غير كلمة السر";
+
+
+"Reset Password" = "إعادة تعيين كلمة المرور";
+
+
+
+
+
+
+
+
+"Report content" = "أبلغ عن ما يقلقك";
+
+
+"CHANGE EMAIL ADDRESS" = "تغيير البريد الالكتروني";
+
+
+"Follow The Guardian" = "متابعة ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "أضفنا الكثير من الميزات الجديدة وأصلحنا بعض الأخطاء لجعل تجربتك سلسة قدر الإمكان.";
+
+
+"Edition / Region" = "الطبعة / المنطقة";
+
+
+"OK" = "موافق";
+
+
+"NARRATOR" = "راوي";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "يجب ألا يستغرق تحديث الأخبار التي تحبها كثيرًا من وقتك. تأخذ News in Bullets القراءة العادية التي تبلغ مدتها 5 دقائق وتكثفها في رموز نقطية سهلة الهضم. الآن ، يمكنك تلقي نفس الأخبار في جزء بسيط من الوقت - حتى تتمكن من قراءة المزيد في وقت أقل.";
+
+
+"READING SPEED" = "سرعة القراءة";
+
+
+
+
+
+"You haven't blocked anything yet" = "لم تقم بحظر أي شيء حتى الآن";
+
+
+"EDITION / REGION" = "الطبعة / المنطقة";
+
+
+
+
+
+"HEADLINES ONLY" = "العناوين فقط";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "إعدادات الصوت";
+
+
+"AUDIO SETTINGS" = "إعدادات الصوت";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "العناوين الرئيسية والرموز التوضيحية";
+
+
+"CONTINUE AS GUEST" = "تخطي وتسجيل الدخول بصفتك ضيفًا";
+
+
+"Topics" = "المواضيع";
+
+
+"Pick topics to start reading and saving articles" = "اختر الموضوعات لبدء قراءة المقالات وحفظها";
+
+
+"Channels" = "القنوات";
+
+
+"Choose from hundreds \nof news publications" = "اختر من بين مئات المنشورات الإخبارية";
+
+"Pick topics to start reading\nand saving articles" = "اختر الموضوعات لبدء قراءة المقالات وحفظها";
+
+"Pick editions to start reading\nand saving articles" = "اختر الإصدارات لبدء قراءة المقالات وحفظها";
+
+"Or with" = "أو مع";
+
+"CONTINUE AS GUEST" = "استمر كضيف";
+
+"Terms of Service" = "شروط الخدمة";
+
+"Choose from hundreds \nof news publications" = "اختر من بين مئات المنشورات الإخبارية";
+
+"Select your preferred language\nfor News in Bullets." = "حدد لغتك المفضلة للأخبار بالنقاط.";
+
+"Choose a style" = "اختر النمط";
+
+"Pop or subtle. Day or night. Customize your interface." = "موسيقى البوب ​​أو خفية. ليل ام نهار. تخصيص واجهتك.";
+
+"MINS AGO" = "قبل دقائق";
+
+"AN HOUR AGO" = "منذ ساعة";
+
+"HOURS AGO" = "منذ ساعات";
+
+"1 WEEK AGO" = "1 قبل أسبوع";
+
+"YESTERDAY" = "في الامس";
+
+"DAYS AGO" = "قبل أيام";
+
+"Go to" = "اذهب إلى";
+
+"You have reached the start." = "لقد وصلت إلى البداية.";
+
+"Source unblocked successfully" = "تم إلغاء حظر المصدر بنجاح";
+
+"Invalid email format"  = "تنسيق بريد إلكتروني غير صالح";
+
+"Wrong email or password" = "بريد إلكتروني أو كلمة مرور خاطئة";
+
+
+"Personalize your reading experience" = "إضفاء الطابع الشخصي على تجربة القراءة الخاصة بك";
+
+"Start following the news topics and channels you want to read." = "ابدأ في متابعة مواضيع الأخبار والقنوات التي تريد قراءتها.";
+
+"LET'S GO" = "لنذهب";
+
+"We’ll handle your data according to our\n" = "سوف نتعامل مع بياناتك وفقًا لـ";
+
+"By clicking Continue, you agree with our " = "بالنقر فوق متابعة ، فإنك توافق على";
+
+"Learn how we process your data in our"  = "تعرف على كيفية معالجتنا لبياناتك في";
+
+"JUST NOW" = "الآن فقط";
+
+"Menu" = "زر القائمة";
+"Article Text Size" = "حجم نص المقالة";
+"Change the font size shown on the articles" = "تغيير حجم الخط المعروض في المقالات";
+"Small" = "صغير";
+"Default" = "تخلف بالدفع";
+"Medium" = "شىء متوسط";
+"Large" = "كبير";
+
+"Related Articles" = "مقالات ذات صلة";
+"View Full Article" = "عرض المادة الكاملة";
+
+"Create your profile" = "إنشاء ملف التعريف الخاص بك";
+"Set your profile" = "قم بتعيين ملف التعريف الخاص بك";
+"View your profile" = "عرض ملف التعريف الخاص بك";
+"ARTICLE TEXT SIZE" = "حجم نص المقالة";
+"DATA SAVER" = "التوقف البيانات";
+"Edit Profile" = "تحرير ملف التعريف";
+"Profile Settings" = "إعدادات الملف الشخصي";
+"Edit what viewers see in your profile." = "تعديل ما يشاهده المشاهدون في ملفك الشخصي.";
+"COVER PHOTO" = "صورة الغلاف";
+"Profile Name" = "اسم الملف الشخصي";
+"Help and Feedback" = "مساعدة وردود الفعل";
+"HELP AND FEEDBACK" = "مساعدة وردود الفعل";
+"Others" = "الاخرين";
+"Feedback & Suggestions" = "ردود الفعل والاقتراحات";
+"Help / Contact Us" = "مساعدة / اتصل بنا";
+"Terms and Conditions" = "الشروط والأحكام";
+"Notification" = "اخطار";
+"Push Notifications" = "دفع الإخطارات";
+"Breaking News" = "أخبار عاجلة";
+"Personalized Recommendations" = "توصيات مخصصة";
+"Timed Notifications" = "إخطارات توقيت";
+"Account" = "حساب";
+"E-mail Address" = "عنوان البريد الإلكتروني";
+"Reels" = "بكرات الأخبار";
+
+"Comments" = "تعليقات";
+"Write a reply..." = "اكتب رد ...";
+"Reply" = "رد";
+"Replies" = "الردود";
+"View" = "طرق عرض";
+"more reply" = "المزيد من الرد";
+"more replies" = "المزيد من الردود";
+"Home" = "المنزل";
+"Newsreels" = "بكرات الأخبار";
+
+"Following" = "التالية";
+"First Name" = "الاسم الأول";
+"Last Name" = "الكنية";
+
+"This feature requires photo access" = "تتطلب هذه الميزة الوصول إلى الصور";
+"in phone settings, tap News in Bullets and turn on Photos" = "في إعدادات الهاتف، انقر فوق الأخبار في الرموز النقطية ثم قم بتشغيل الصور";
+"Not Now" = "ليس الان";
+"Open Settings" = "أفتح الإعدادات";
+"No photos on this device" = "لا توجد صور على هذا الجهاز";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "إذا كنت ترغب في تغيير إعدادات الوصول إلى الصور، انتقل إلى إعدادات الهاتف، وانقر فوق الأخبار في التعداد النقطي ثم قم بتشغيل الصور";
+"Video duration" = "مدة الفيديو";
+"Video too short" = "الفيديو قصير جدًا";
+"Video too long" = "الفيديو طويل جدًا";
+"Done" = "فعله";
+"Save" = "حفظ";
+"Processing.." = "معالجة..";
+"Trim" = "تقليم الفيديو";
+"Cover" = "غطاء، يغطي";
+"Albums" = "ألبومات";
+"Gallery" = "صالة عرض";
+"Photos" = "صور";
+"Videos" = "أشرطة فيديو";
+"Next" = "التالى";
+"Crop" = "صور المحاصيل";
+
+
+"Locations" = "المواقع";
+"Authors" = "المؤلفون";
+"Invalid Video" = "فيديو غير صالح";
+"Invalid Youtube link" = "رابط يوتيوب غير صالح";
+"Article published successfully" = "تم نشر المقال بنجاح";
+"Article removed successfully" = "تمت إزالة المقال بنجاح";
+"Edit Article" = "تحرير المقال";
+"Delete Article" = "حذف المادة";
+"Before you can comment, you need to update your profile" = "قبل أن تتمكن من النشر ، تحتاج إلى تحديث ملف التعريف الخاص بك.";
+"Update profile" = "تحديث ملف التعريف";
+"Views" = "طرق عرض";
+
+"Edit Newsreels" = "تحرير بكرات الأخبار";
+"Post article" = "انشر مقالاً";
+"SAVE" = "حفظ";
+"Caption" = "التسميه التوضيحيه";
+"Create a Caption" = "إنشاء تسمية توضيحية";
+
+"Create a headline" = "إنشاء عنوان رئيسي";
+"Add Source Link (Optional)" = "إضافة ارتباط مصدر (اختياري)";
+"Enter a Caption" = "أدخل التسمية التوضيحية";
+"Enter article headline" = "أدخل عنوان المقالة";
+
+"Add Bullet 1" = "إضافة الرمز النقطي 1";
+"Add Bullet 2" = "إضافة الرمز النقطي 2";
+"Add Bullet 3 (Optional)" = "إضافة الرمز النقطي 3 (اختياري)";
+"Add Bullet 4 (Optional)" = "إضافة الرمز النقطي 4 (اختياري)";
+"Add Bullet 5 (Optional)" = "إضافة الرمز النقطي 5 (اختياري)";
+
+"Add Bullet" = "إضافة رمز نقطي";
+
+"Uploading video..." = "رفع فيديو...";
+"Bullet" = "رصاصة";
+
+
+"Oops! Something went wrong. Please try again." = "حدث خطأ ما. الرجاء المحاولة مرة أخرى.";
+
+"Upload media" = "رفعوسائل الإعلام رفع";
+"Upload Newsreels" = "رفع بكرات الأخبار";
+"Upload YouTube link" = "رفع رابط يوتيوب";
+"Before you post," = "قبل النشر ،";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "يرجى تذكر أنك تنضم إلى مجتمع عالمي من القراء والكتاب. من أجل حماية الجميع من أي شكل من أشكال التضليل وسوء المعاملة، يرجى مراجعة";
+"Community Guidelines." = "المبادئ التوجيهية للمجتمع";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "من خلال النقر على متابعة ، فأنت توافق على التمسك بالمبادئ التوجيهية.";
+"Community Guidelines" = "[المبادئ التوجيهية للمجتمع].";
+
+"Upload bullet image (optional)" = "تحميل صورة الرمز النقطي (اختياري)";
+"Delete" = "حذف";
+"Replace" = "استبدل";
+"Delete Bullet" = "حذف الرمز النقطي";
+
+"Add Tag" = "إضافة علامة";
+"Get discovered locally" = "الحصول على اكتشاف محليا";
+"Add a location to your channel and get discovered by users near you." = "اسمح للمستخدمين القريبين باكتشافك عن طريق إضافة موقع إلى قناتك.";
+"Max 5" = "ماكس 5";
+"RECOMMENDED" = "موصى به";
+"comma, separated, tags" = "فاصلة، مفصولة، علامات أو علامات";
+
+"YouTube Article" = "مقال يوتيوب";
+"Paste a YouTube link to upload a video from YouTube." = "لصق رابط تيوب لتحميل مقطع فيديو من تيوب.";
+"Paste a YouTube link to take import" = "لصق رابط يوتيوب للاستيراد";
+"IMPORT" = "استورد";
+
+"Enter Youtube link" = "أدخل رابط يوتيوب";
+"Preview" = "معاينه";
+"POST" = "انشر";
+"Post to My Profile" = "نشر إلى ملفي الشخصي";
+
+"RESULT" = "نتائج";
+"followers" = "متابعون";
+"Followers" = "متابعون";
+"Posts" = "المشاركات";
+"Profile updated successfully" = "تم تحديث الملف الشخصي بنجاح";
+"Tags" = "العلامات";
+"No Posts Yet" = "لا المشاركات بعد";
+
+
+"Add" = "يضيف";
+"Select Ratio" = "حدد النسبة";
+"Add topics tags" = "أضف علامات المواضيع";
+"Be discovered by people following the topics you are posting about." = "اكتشف من قبل الأشخاص الذين يتابعون الموضوعات التي تنشر عنها.";
+"Reels edited successfully." = "تم تصحيح بكرات بنجاح.";
+"Article edited successfully." = "تم تحرير المقال بنجاح.";
+"Reels uploaded successfully." = "تم تحميل البكرات بنجاح.";
+"Enter verification code" = "أدخل رمز التحقق";
+"RESEND" = "إعادة إرسال";
+"Processing..." =  "معالجة...";
+"Scheduled on:" = "جدولة على:";
+"Enter profile name" = "أدخل اسم ملف التعريف";
+"Ok, last thing is your channel image" = "حسنًا ، آخر شيء هو صورة قناتك";
+"Upload" = "رفع";
+"Before you can post article, you need to update your profile" = "قبل أن تتمكن من النشر ، تحتاج إلى تحديث ملف التعريف الخاص بك.";
+"UPDATE" = "تحديث";
+"Scale" = "مقياس";
+"Saved Article" = "المادة المحفوظة";
+"Removed Article" = "المادة المحذوفة";
+"Ok, last thing is your profile image" = "حسنًا ، آخر شيء هو صورة ملفك الشخصي";
+"Relevant" = "ذو صلة";
+
+"See More" = "شاهد المزيد";
+"Less" = "انظر أقل";
+"Autoplay" = "التشغيل التلقائي";
+"Reader Mode" = "وضع القارئ";
+"Data Saver" = "التوقف البيانات";
+"Please enter a valid OTP." = "الرجاء إدخال OTP صالح.";
+"Enter a first name" = "الاسم الأول";
+"Enter a last name" = "اسم العائلة";
+
+"Password updated successfully" = "كلمة المرور التي تم تحديثها بنجاح";
+"Replying to" = "الرد على";
+"Unblock Topic" = "إلغاء حظر الموضوع";
+"Please add your reel caption" = "الرجاء إضافة تسمية توضيحية للبكرة";
+"Please add bullet" = "الرجاء إضافة الرمز النقطي";
+"Please add your article headline" = "الرجاء إضافة عنوان مقالك";
+"Please add bullet 1" = "الرجاء إضافة الرمز النقطي 1";
+"Please add bullet 2" = "الرجاء إضافة الرمز النقطي 2";
+
+
+"Please enter a valid channel name" = "الرجاء إدخال اسم قناة صالح";
+"Let people know what" = "دع الناس يعرفون ماذا";
+"your channel is about" = "ما قناةتك حول";
+"Start by creating your" = "يمكنك البدء عن طريق إنشاء ا";
+"channel name" = "اسم القناة";
+"Describe your channel" = "صِف قناتك";
+"No pressure, you can change this later." = "لا ضغط، يمكنك تغيير هذا في وقت لاحق.";
+"Channel created successfully" = "تم إنشاء القناة بنجاح";
+"Please enter your channel description" = "الرجاء إدخال وصف قناتك";
+"Channel name already in use" = "اسم القناة قيد الاستخدام بالفعل";
+"Post to" = "النشر إلى";
+
+"Available" = "متاح";
+"Already in use" = "قيد الاستخدام بالفعل";
+"SCHEDULE POST" = "جدولة النشر";
+"DRAFTS" = "المسودات";
+"View channel" = "عرض القناة";
+"Create a channel" = "قم بإنشاء قناة";
+"Ok, last thing is" = "حسنًا ، آخر شيء هو";
+"your channel image" = "صورة قناتك";
+"looks amazing!" = "انها تبدو مذهلة!";
+"CREATE CHANNEL" = "إنشاء قناة";
+"Scheduled Posts" = "المشاركات المجدولة";
+
+
+
+"You don't have any drafts yet." = "ليس لديك أي مسودات حتى الآن.";
+"Schedule" = "الجدول";
+"There aren't any scheduled posts yet." = "ا توجد أي مشاركات مجدولة حتى الآن.";
+"Schedule a Post" = "جدولة منشور";
+"Mod Tools" = "أدوات وزارة الدفاع";
+"Unfollow Channel" = "إلغاء متابعة القناة";
+"Follow Channel" = "اتبع القناة";
+
+"Release to refresh" = "الافراج وتحديث";
+"Loading..." =  "جار التحميل...";
+"Schedule Post" = "جدولة النشر";
+"Moderator Tools" = "أدوات المشرف";
+"General" = "جنرال ل";
+"Scheduled Posts" = "المشاركات المجدولة";
+"Settings" = "إعدادات";
+"channel and cover photo" = "القناة وصورة الغلاف";
+"Description" = "وصف";
+"Will be posted in" = "سيتم نشرها في";
+"Will be posted on" = "سيتم نشرها على";
+"Will be posted now" = "سيتم نشرها الآن";
+"Select Date" = "حدد تاريخ";
+"Select Time" = "اختر وقتا";
+"Please select date" = "الرجاء تحديد التاريخ";
+"Please select time" = "الرجاء تحديد الوقت";
+"Continue with Apple" = "الاستمرار مع أبل";
+"Continue with Google" = "استمر مع جوجل";
+"Continue with Facebook" = "استمر مع الفيسبوك";
+"Continue with email" = "استمرمع عنوان بريدك الإلكتروني";
+"Login or create an account" = "تسجيل الدخول أو إنشاء حساب";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "تسجيل الدخول أو إنشاء حساب لقراءة ومشاركة والتعليق على القصص من جميع المواضيع المفضلة لديك.";
+"your profile image" = "صورة ملفك الشخصي";
+"Invalid OTP code" = "رمز OTP غير صحيح";
+
+"View your profile" = "عرض ملف التعريف الخاص بك";
+"NEWS DESK" = "مكتب الاخبار";
+"YOUR CHANNELS" = "قنواتك";
+"GENERAL" = "جنرال ل";
+"WALLET" = "محفظة";
+"POSTS" = "المشاركات";
+"PERSONALIZATIONS" = "التخصيصات";
+"NETWORK" = "شبكة";
+"Need more channels?" = "هل تحتاج إلى المزيد من القنوات؟";
+"VIEW ALL & MANAGE" = "عرض الكل وإدارة";
+
+"Community Feed" = "تغذية المجتمع للأخبار";
+"Create your post" = "إنشاء مشاركتك";
+"Media" = "رجال الإعلام";
+"Youtube" = "يوتيوب";
+"You're all caught up" = "أنت جميعا قد انتهيت";
+"You've seen all new posts" = "لقد رأيت كل الوظائف الجديدة";
+"Go to top" = "اذهب إلى الأعلى";
+"Suggested Reels" = "واقترح بكرات";
+"Suggested Authors" = "المؤلفون المقترحون";
+
+
+"Share to" = "شارك إلى";
+"Report" = "أبلغ عن";
+"Unsave Video" = "إلغاء حفظ الفيديو";
+"Save Video" = "حفظ الفيديو";
+"Aspect Ratio" = "نسبة العرض إلى الارتفاع";
+"Rotate" = "استدارة";
+"Flip Vertical" = "الوجه عموديا";
+"Flip Horizontal" = "الوجه أفقيا";
+
+
+"Community" = "مجتمع";
+"APP LANGUAGE" = "لغة التطبيق";
+"You don't have any followers yet" = "ليس لديك أي متابعين حتى الآن";
+
+
+"View Original Article" = "عرض المقالة الأصلية";
+"Places" = "أماكن";
+"Languages" = "اللغات";
+"New Posts" = "مشاركات جديدة";
+"No posts yet" = "لا توجد مشاركات بعد";
+"All Followers" = "كل المتابعين";
+"Add Place" = "إضافة مكان";
+"Add places tags" = "إضافة موقع العلامات";
+"Be discovered by people following the places you are posting about." = "أن يكتشفه الأشخاص الذين يتابعون الأماكن التي تنشر عنها.";
+
+"START FOLLOWING" = "ابدأ المتابعة";
+"You are not following anything yet" = "أنت لا تتابع أي شيء حتى الآن.";
+"Notifications" = "اخطار";
+"General" = "جنرال ل";
+"News" = "أخبار";
+"VIEW MORE" = "عرض المزيد";
+"BULLETS AUTO PLAY" = "الرصاص التلقائي اللعب";
+"VIDEOS AUTO PLAY" = "أشرطة الفيديو السيارات اللعب";
+"REELS AUTO PLAY" = "بكرات اللعب التلقائي";
+"READER THEME" = "موضوع القارئ";
+"News Content Language" = "لغة محتوى الأخبار";
+"FAVORITES" = "المفضلة";
+"Region/Places" = "المناطق / الأماكن";
+"Select Regions/Places" = "حدد المناطق / الأماكن";
+"Follow at least 3 topics" = "اتبع ما لا يقل عن 3 مواضيع";
+"Please Follow at least 3 topics" = "يرجى متابعة 3 مواضيع على الأقل";
+"Explore Newsreels" = "استكشف بكرات الأخبار";
+"Related Reels" = "بكرات ذات صلة";
+"Explore Your Feed" = "استكشف خلاصتك";
+"Sources" = "المصادر";
+"Articles, topics, channels, authors" = "المقالات والموضوعات والقنوات والمؤلفين";
+"View/Manage" = "عرض / إدارة";
+"Add to Favorites" = "اضافة الى المفضلة";
+"Remove from Favorites" = "إزالة من المفضلة";
+

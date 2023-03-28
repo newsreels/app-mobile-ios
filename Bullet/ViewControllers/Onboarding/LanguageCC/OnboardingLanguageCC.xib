@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli Regular.otf">
+            <string>Muli-Regular</string>
+        </array>
+        <array key="MuliBold.otf">
+            <string>Muli-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="OnboardingLanguageCC" reuseIdentifier="OnboardingLanguageCC" id="gTV-IL-0wX" customClass="OnboardingLanguageCC" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="179" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="179" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-wY-beq">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lp9-IW-MTv">
+                                <rect key="frame" x="16" y="9" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="leJ-RV-XwL"/>
+                                    <constraint firstAttribute="width" secondItem="lp9-IW-MTv" secondAttribute="height" multiplier="1:1" id="pcJ-o1-Af9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENGLISH (US)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OY-u9-ORq">
+                                <rect key="frame" x="60" y="10.5" width="87" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tte-AS-zkT">
+                                <rect key="frame" x="60" y="30" width="12.5" height="13"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="10"/>
+                                <color key="textColor" red="0.51764705879999995" green="0.51372549020000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-wp-h7K">
+                                <rect key="frame" x="131" y="30.5" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="4Zv-Rs-KJW"/>
+                                    <constraint firstAttribute="width" secondItem="YEs-wp-h7K" secondAttribute="height" multiplier="1:1" id="n0g-8a-ngr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YEs-wp-h7K" secondAttribute="trailing" constant="20" id="4hy-0X-0sb"/>
+                            <constraint firstItem="tte-AS-zkT" firstAttribute="top" secondItem="9OY-u9-ORq" secondAttribute="bottom" constant="4" id="6IY-Kb-XOX"/>
+                            <constraint firstItem="lp9-IW-MTv" firstAttribute="leading" secondItem="vgQ-wY-beq" secondAttribute="leading" constant="16" id="8nX-6R-MAY"/>
+                            <constraint firstItem="YEs-wp-h7K" firstAttribute="centerY" secondItem="tte-AS-zkT" secondAttribute="centerY" id="N1O-8U-x4J"/>
+                            <constraint firstAttribute="trailing" secondItem="9OY-u9-ORq" secondAttribute="trailing" constant="16" id="UOa-9L-cNa"/>
+                            <constraint firstItem="9OY-u9-ORq" firstAttribute="leading" secondItem="lp9-IW-MTv" secondAttribute="trailing" constant="8" id="Vha-LH-tky"/>
+                            <constraint firstItem="9OY-u9-ORq" firstAttribute="centerY" secondItem="vgQ-wY-beq" secondAttribute="centerY" constant="-8.75" id="Y4b-Wf-nHy"/>
+                            <constraint firstItem="tte-AS-zkT" firstAttribute="leading" secondItem="lp9-IW-MTv" secondAttribute="trailing" constant="8" symbolic="YES" id="oy7-kJ-oGe"/>
+                            <constraint firstItem="lp9-IW-MTv" firstAttribute="centerY" secondItem="vgQ-wY-beq" secondAttribute="centerY" id="zqV-cO-IPI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="vgQ-wY-beq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JEG-mJ-tz8"/>
+                <constraint firstItem="vgQ-wY-beq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NgR-yk-FZZ"/>
+                <constraint firstAttribute="trailing" secondItem="vgQ-wY-beq" secondAttribute="trailing" constant="16" id="VhZ-qp-YcV"/>
+                <constraint firstAttribute="bottom" secondItem="vgQ-wY-beq" secondAttribute="bottom" constant="12" id="f4l-SV-Qij"/>
+            </constraints>
+            <size key="customSize" width="173" height="56"/>
+            <connections>
+                <outlet property="imgFav" destination="YEs-wp-h7K" id="zqd-sY-nqE"/>
+                <outlet property="imgFlag" destination="lp9-IW-MTv" id="fpP-pu-VAV"/>
+                <outlet property="lblLanguage" destination="9OY-u9-ORq" id="NnS-J3-0p2"/>
+                <outlet property="lblLanguageTrans" destination="tte-AS-zkT" id="4wt-ye-IRF"/>
+                <outlet property="viewBG" destination="vgQ-wY-beq" id="tZD-8o-6NV"/>
+            </connections>
+            <point key="canvasLocation" x="121.0144927536232" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" width="30.676000595092773" height="30.676000595092773"/>
+    </resources>
+</document>

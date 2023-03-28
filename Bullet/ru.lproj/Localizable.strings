@@ -1,0 +1,1102 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "пункт списка";
+"BULLETS" = "ОТВЕРСТИЯ ОТ ПУЛЬ";
+"Headlines is not available." = "Заголовки не доступны.";
+"Check your internet Connection and try again." = "Проверьте подключение к Интернету и повторите попытку.";
+"Choose Image" = "Выберите изображение";
+"Headline" = "Заголовок";
+"Bullet 1" = "Пуля 1";
+"Bullet 2" = "Пуля 2";
+"Bullet 3 (Optional)" = "Пули 3 (Необязательно)";
+"Bullet 4 (Optional)" = "Пули 4 (Необязательно)";
+"Bullet 5 (Optional)" = "Пули 5 (Необязательно)";
+"Bullet 6 (Optional)" = "Пули 6 (Необязательно)";
+"Enter Aticle Headline" = "Введите заголовок";
+"Enter source name" = "Введите источник";
+"Enter reference link" = "Введите ссылку на ссылку";
+"Enter published date" = "Введите дату публикации";
+"Enter Bullet 1" = "Введите первую пулю";
+"Enter Bullet 2" = "Введите вторую пулю";
+"Posted article successfully" = "Статья выполнена успешно";
+"Follow" = "следить";
+"Unfollow" = "Отписаться";
+"Block articles from" = "Заблокировать статьи из";
+"Unblock articles from" = "РАЗБЛОК статьи из";
+"Remove article" = "Удалить статью";
+"Save article" = "Сохранить эту статью";
+"Terms & Conditions" = "Правила и условия";
+"Privacy Policy" = "политика конфиденциальности";
+"TERMS AND CONDITIONS" = "УСЛОВИЯ И ПОЛОЖЕНИЯ";
+"PRIVACY POLICY" = "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ";
+"Fuel your curiosity" = "Другие новости о мире";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Читайте короткие и точные новости о ваших любимых тем из надежных источников по всему миру.";
+"Save time" = "Экономьте свое время";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Читайте новости в пулевых точках";
+"Hands-free reading" = "Громкая чтение";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Нет времени для чтения? Используйте функцию речи.";
+"Write your message..." = "Написать сообщение ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "отправить нам сообщение, если вам нужна помощь с чем-то, мы хотели бы услышать от вас!";
+"Drop us a message" = "отправить нам сообщение";
+"Enter Name." = "Введите имя.";
+"Enter Email." = "Введите адрес электронной почты.";
+"Write your message." = "Напишите ваше сообщение.";
+"Topic unblocked successfully" = "Вы разблокирована эта тема";
+"Source unblocked successfully" = "Вы разблокирован этот источник";
+"Unblock Source" = "Разблокировать Источник";
+"Cancel" = "отменить";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Отправьте нам обратную связь, мы хотели бы услышать от вас! У вас есть вопросы или юридические проблемы? Попробуйте нашу страницу помощи или свяжитесь с нами.";
+"Enter your suggestion." = "Введите свое предложение.";
+"feedback sent." = "обратная связь успешно отправлено";
+"30m" = "30м";
+"1h" = "1ч";
+"3h" = "3ч";
+"6h" = "6ч";
+"12h" = "12ч";
+"24h" = "24ч";
+"Language updated successfully." = "Языковой успешно обновлен.";
+"CONTINUE" = "ПРОДОЛЖИТЬ";
+"FOLLOW 3 TO CONTINUE" = "ПОСЛЕДУЮЩИЕ 3 ПРОДОЛЖИТЬ";
+"Unfollow Location" = "Отписаться Расположение";
+"Saved Articles" = "Сохраненные статьи";
+"Block" = "Блокировать";
+"Are you sure you want block" = "Вы уверены, что хотите заблокировать этот";
+"Once blocked, you wont be able to see any Articles related to this" = "Вы не увидите статьи из этого канала, если блокировать его.";
+"Block Topic" = "Блок эту тему";
+"Suggested" = "предложенный";
+"Related Sources not available" = "Связанные источники не доступны";
+"Block Source" = "Блок этот источник";
+"News in Bullets App version" = "Новости в Пули App версии";
+"Next" = "следующий";
+"Login" = "Авторизоваться";
+"Terms" = "сроки";
+"By clicking Continue, you agree with our Terms." = "Выберите Продолжить, чтобы принять Условия.";
+"in our Privacy Policy." = "в нашей политике конфиденциальности.";
+"Access token missing." = "маркер доступа отсутствует.";
+"NEXT" = "СЛЕДУЮЩИЙ";
+"By checking this box, you agree to our " = "Установите флажок, чтобы принять условия. Ваши данные обрабатываются в соответствии с нашей политикой конфиденциальности.";
+"Terms of Service" = "условия обслуживания";
+". We’ll handle your data according to our " = ", Мы будем обрабатывать ваши данные в соответствии с нашими";
+"Password must be at least 8 characters." = "Пароль должен быть не менее 8 символов.";
+"Strong" = "сильный";
+"Medium" = "Средняя";
+"Weak" = "слабый";
+"CREATE A NEW ACCOUNT" = "СОЗДАТЬ НОВЫЙ АККАУНТ";
+"SIGN IN WITH EXISTING ACCOUNT" = "ВОЙТИ С СУЩЕСТВУЮЩИХ СЧЕТ";
+"You must agree to the Terms of Services to continue" = "Вы должны согласиться с Условиями предоставления услуг для продолжения";
+"SIGN IN" = "Войти в систему";
+"What's your password?" = "Что ваш пароль?";
+"SIGN UP" = "Подписаться";
+"Choose your password?" = "выберите пароль";
+"Something went wrong" = "Что-то пошло не так";
+"we will send email to" = "мы вышлем по электронной почте";
+"with a link to reset your password." = "с ссылкой для восстановления пароля.";
+"A reset password link has been sent to" = "Ссылка для сброса пароля была отправлена";
+"Enter new email." = "Введите новый адрес электронной почты.";
+"Enter password." = "Введите пароль.";
+"New Password " = "Новый пароль";
+" (8 characters min)" = "(8 символов мин)";
+"Enter current password." = "Введите текущий пароль.";
+"Enter new password." = "Введите новый пароль.";
+"Enter confirm password." = "Подтвердите Пароль.";
+"password do not matched!" = "Пароли не соответствуют!";
+"GET STARTED" = "НАЧАТЬ";
+"SKIP" = "ПРОПУСКАТЬ";
+"From where you would like to pick photo?" = "От того, где вы хотели бы, чтобы забрать фотографию?";
+"Camera" = "камера";
+"Photo Library" = "Фото библиотека";
+"Kindly open settings and enable access" = "Незлые открыть настройки и включить доступ";
+"Open Settings" = "Открыть настройки";
+"Access needed for your camera" = "Доступ необходим для вашей камеры";
+"Access needed for your photo library" = "необходим доступ к библиотеке фотографий";
+"Done" = "Готово";
+"Pull to refresh" = "Потяните, чтобы обновить";
+"Loading" = "загрузка";
+"Speech not available for this article" = "Речь не для этой статьи";
+"MANAGE LOCATION" = "УПРАВЛЕНИЕ РАСПОЛОЖЕНИЕМ";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Выберите новости в Bullets Edition в зависимости от региона";
+"Edition" = "Издание";
+"EDITION / REGION" = "ИЗДАНИЕ / РЕГИОН";
+"Your Topics" = "Ваши темы";
+"Your Channels" = "Ваши каналы";
+"Your Places" = "Ваши места";
+"Enter email." = "Введите адрес электронной почты.";
+"Please enter a password." = "Пожалуйста, введите пароль.";
+"Search articles" = "Искать статьи";
+"No results" = "Нет результатов";
+"Edition / Region" = "Издание / регион";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "БЛОКИРОВАТЬ";
+"CANCEL" = "ОТМЕНИТЬ";
+"PLACES" = "МЕСТА";
+"LANGUAGE" = "ЯЗЫК";
+"Profile" = "Профиль";
+"SAVED ARTICLES" = "СОХРАНЕННЫЕ СТАТЬИ";
+"Topics" = "темы";
+"Channels" = "каналы";
+"Editions" = "Редакции";
+"No saved stories yet" = "Сохраненных историй пока нет";
+"Tap the" = "Нажмите";
+"icon on the article" = "Значок на статью";
+"you want to read later then" = "тогда ты хочешь прочитать позже";
+"Select" = "Выбрать";
+"to save article." = "Чтобы сохранить статью.";
+"There is nothing in here" = "Здесь ничего нет";
+"Looks like there is nothing here but a cat." = "Похоже, здесь нет ничего, кроме кошки.";
+"Would you like to go back to home?" = "Хочешь вернуться домой?";
+"GO HOME" = "ИДТИ ДОМОЙ";
+"Search" = "Поиск";
+"Discover" = "Обнаружить";
+"Articles" = "Статьи";
+"Try a different keyword" = "Попробуйте другое ключевое слово";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Получайте самые актуальные новости для выбранного вами региона. Читайте подборки новостей, чтобы быть в курсе последних новостей из любой точки мира.";
+"Language" = "язык";
+"Results" = "Полученные результаты";
+"For You" = "За Ты";
+"Top News" = "Главные новости";
+"Choose a style" = "Выбери стиль";
+"Pop or subtle. Day or night. Customize your interface." = "Поп или тонкий. День или ночь. Настройте свой интерфейс.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "О нас";
+
+
+"Share" = "Поделиться";
+
+
+"ACCOUNT" = "СЧЕТ";
+
+
+"Your Email" = "Ваш адрес электронной почты";
+
+
+"1sT-J6-qI0.text" = "Saved СТАТЬИ";
+
+
+"2XX-rr-GLC.text" = "Выбор различных каналов из сотен источников";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Читайте последние новости события и особенности со всего мира.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Установите временной интервал для получения уведомлений.";
+
+
+"Off" = "от";
+
+
+
+
+
+"Bullet 2" = "Пуля 2";
+
+
+"What's your email?" = "Какой у тебя адрес электронной почты?";
+
+
+"New Password (8 Characters Min)" = "Новый пароль (не менее 8 символов)";
+
+
+"Forgot Password?" = "Забыли пароль?";
+
+
+"Account Settings" = "Настройки учетной записи";
+
+
+"Learn how we process your data" = "Информация по обработке данных";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Хорошо";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "Включить";
+
+
+"Auto" = "Авто";
+
+
+"Help Center" = "Центр помощи";
+
+
+"Search" = "Поиск каналов";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Выберите файл из галереи";
+
+
+
+
+"Save article" = "Сохранить статью";
+
+
+"ABOUT" = "ОКОЛО";
+
+
+"Dark" = "Тьма";
+
+
+"Legal" = "легальный";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "Отправить ссылку сброса";
+
+
+
+
+
+"My Account" = "Мой счет";
+
+
+"FEEDBACK" = "ОБРАТНАЯ СВЯЗЬ";
+
+
+"Message" = "Сообщение";
+
+
+"Confirm New Password" = "Подтвердите новый пароль";
+
+
+"for ___" = "за ___";
+
+
+"Search" = "Поиск Темы";
+
+
+"LANGUAGE" = "ЯЗЫК";
+
+
+"Light" = "Свет";
+
+
+"FOLLOW 3 TO CONTINUE" = "чтобы продолжить, выберите 3";
+
+
+
+
+"Off" = "Выключи";
+
+
+"Language" = "выберите";
+
+
+"LOG OUT" = "ВЫЙТИ";
+
+
+"Report content" = "содержание Отчет";
+
+
+"What's your email?" = "Какой у тебя адрес электронной почты?";
+
+
+"On" = "Включить";
+
+
+"More like this" = "Другие новости, как это";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1ч";
+
+
+"Enter Email Address" = "Введите адрес электронной почты";
+
+
+"News in Bullets" = "Читайте больше за меньшее время.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "выберите пароль";
+
+
+"Cancel" = "отменить";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Читайте новости быстро с этим приложением. Выберите темы и источники. Тогда читать новости с короткой пулей точками.";
+
+
+"Push Notification" = "уведомление";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Эл. адрес";
+
+
+"How can we help you?" = "Как мы можем помочь?";
+
+
+"OJP-Wd-0d3.text" = "Пакистан";
+
+
+"CHANGE PASSWORD" = "ИЗМЕНИ ПАРОЛЬ";
+
+
+"Change Email" = "ИЗМЕНИТЬ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ";
+
+
+"Medium" = "Средняя";
+
+
+"SAVE CHANGES" = "СОХРАНИТЬ ИЗМЕНЕНИЯ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Отправьте нам сообщение, если вам нужна помощь с чем-то, мы хотели бы услышать от вас!";
+
+
+"P5u-N3-Tw4.text" = "метка";
+
+
+"Cancel" = "отменить";
+
+
+"Bullet 1" = "Пуля 1";
+
+
+"TIMED NOTIFICATIONS" = "УВЕДОМЛЕНИЯ";
+
+
+"POST ARTICLE" = "Опубликуем статью";
+
+
+"CONTACT US" = "Связаться с нами";
+
+
+"EDITION / REGION" = "Издание";
+
+
+"Search" = "Поиск";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Отправьте нам обратную связь, мы хотели бы услышать от вас! У вас есть вопросы или юридические проблемы? Попробуйте нашу страницу помощи или свяжитесь с нами.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Отправьте нам сообщение, если вам нужна помощь с чем-то, мы хотели бы услышать от вас!";
+
+
+"30m" = "30м";
+
+
+"CONTINUE" = "ПРОДОЛЖИТЬ";
+
+
+"Time To Update!" = "Обновите приложение!";
+
+
+"NOTIFICATIONS" = "УВЕДОМЛЕНИЯ";
+
+
+"Search" = "Поиск";
+
+
+"By clicking Continue, you agree with our Terms." = "Выберите Продолжить, чтобы принять Условия.";
+
+
+"HELP / CONTACT US" = "Помощь / Контакты";
+
+
+"Reset Password" = "Сброс пароля";
+
+
+"SEND MESSAGE" = "ОТПРАВИТЬ СООБЩЕНИЕ";
+
+
+"Save article" = "Сохранить статью";
+
+
+"Bullet 6 (Optional)" = "Пули 6 (Необязательно)";
+
+
+"HAPTICS" = "учение о тактильной чувствительности";
+
+
+"Your message has \vbeen sent." = "Ваше сообщение было отправлено.";
+
+
+"LEGAL" = "ПРАВОВАЯ";
+
+"Block List" = "Блок-лист";
+
+"BLOCK LIST" = "Блок-лист";
+
+"PERSONALIZATION" = "ПЕРСОНАЛИЗАЦИЯ";
+
+
+"in our Privacy Policy." = "в нашей политике конфиденциальности.";
+
+
+"CONTINUE" = "ПРОДОЛЖИТЬ";
+
+
+"Enter Name" = "Введите имя";
+
+
+"What's your email?" = "Какой у тебя адрес электронной почты?";
+
+
+"Hello there!" = "Здравствуйте!";
+
+
+"PUSH NOTIFICATIONS" = "УВЕДОМЛЕНИЯ";
+
+
+"Bullet 3 (Optional)" = "Пули 3 (Необязательно)";
+
+
+"Source name" = "Название источника";
+
+
+"Current Password" = "текущий пароль";
+
+
+"COLOR THEME" = "Цветовая тема";
+
+
+"eTp-X1-g34.text" = "Или через";
+
+
+"CANCEL" = "ОТМЕНИТЬ";
+
+
+"Bullet 4 (Optional)" = "Пули 4 (Необязательно)";
+
+
+"Date published" = "Дата опубликования";
+
+
+"Send Password Reset Link" = "Отправить ссылку на изменение пароля";
+
+
+"CONTINUE WITH APPLE" = "Зарегистрироваться через идентификатор Apple";
+
+
+"Off" = "Выключи";
+
+
+"HELP" = "ПОМОГИТЕ";
+
+
+"Reference link" = "ссылка ссылка";
+
+
+"Your Password" = "Твой пароль";
+
+
+"SUBMIT" = "РАЗМЕСТИТЬ";
+
+
+"HELP" = "ПОМОГИТЕ";
+
+
+"MY ACCOUNT" = "МОЙ СЧЕТ";
+
+
+"hbD-HP-tZd.normalTitle" = "Разблокировать";
+
+
+"OTHERS" = "другие";
+
+
+"BREAKING NEWS" = "ПОСЛЕДНИЕ НОВОСТИ";
+
+
+"Topics" = "Заблокированные темы";
+
+
+"Message us," = "Сообщение нам,";
+
+
+"Pick topics to start reading
+and saving articles" = "приложение язык";
+
+
+"Forgot Password?" = "Забыли пароль?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Новые функции будут добавлены. Некоторые проблемы устранены.";
+
+
+"Success!" = "Успех!";
+
+
+"Current Password" = "текущий пароль";
+
+
+"CONTENT" = "СОДЕРЖАНИЕ";
+
+
+"Headline" = "Заголовок";
+
+
+"neg-UC-UpK.text" = "Выберите темы, чтобы начать чтение и сохранение статьи";
+
+
+"CONTINUE WITH EMAIL ID" = "Продолжить с вашей электронной почтой ID";
+
+
+"SAVE CHANGES" = "СОХРАНИТЬ ИЗМЕНЕНИЯ";
+
+
+"Post an Article" = "Опубликовать статью";
+
+
+"Contact Us" = "Связаться с нами";
+
+
+"On" = "Включить";
+
+
+"New Email Address" = "Новый E-mail адрес";
+
+
+"Bullet 5 (Optional)" = "Пули 5 (Необязательно)";
+
+
+"Suggest an improvement" = "Предложить улучшениеt";
+
+
+"Channels" = "Заблокированные Источники";
+
+
+"From:" = "Из:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "Персональные рекомендации";
+
+
+"I don't like this" = "Мне не нравится это";
+
+
+"CONTINUE" = "ПРОДОЛЖИТЬ";
+
+
+"Name" = "имя";
+
+
+"Enter email" = "Введите адрес электронной почты";
+
+
+"HELP" = "ПОМОГИТЕ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Выполните 3, чтобы продолжить";
+
+
+"UPDATE APP" = "Обновление приложения";
+
+
+"Forgot Password?" = "Забыли пароль?";
+
+
+"Change Password" = "Измени пароль";
+
+
+"Reset Password" = "Сброс пароля";
+
+
+
+
+
+
+
+
+"Report content" = "Сообщить Ваше беспокойство";
+
+
+"CHANGE EMAIL ADDRESS" = "ИЗМЕНИТЬ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ";
+
+
+"Follow The Guardian" = "Следуйте за Хранителем";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Мы добавили много новых функций и исправили некоторые ошибки, чтобы сделать вашу работу максимально удобной.";
+
+
+"Edition / Region" = "Издание / регион";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "РАССКАЗЧИК";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Обновление любимых новостей не должно занимать у вас слишком много времени. News in Bullets берет обычное 5-минутное чтение и превращает его в легко усваиваемые пули. Теперь вы можете получать одни и те же новости за очень короткое время - так что вы можете читать больше за меньшее время.";
+
+
+"READING SPEED" = "СКОРОСТЬ ЧТЕНИЯ";
+
+
+
+
+
+"You haven't blocked anything yet" = "Вы еще ничего не заблокировали";
+
+
+"EDITION / REGION" = "ИЗДАНИЕ / РЕГИОН";
+
+
+
+
+
+"HEADLINES ONLY" = "ТОЛЬКО ЗАГОЛОВКИ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Настройки звука";
+
+
+"AUDIO SETTINGS" = "НАСТРОЙКИ ЗВУКА";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ЗАГОЛОВКИ И БЮЛЛЕТЕНИ";
+
+
+"CONTINUE AS GUEST" = "ПРОПУСТИТЬ и ВОЙТИ КАК ГОСТЕВОЙ";
+
+
+"Topics" = "Темы";
+
+
+"Pick topics to start reading and saving articles" = "Выберите темы, чтобы начать читать и сохранять статьи";
+
+
+"Channels" = "каналы";
+
+
+"Choose from hundreds \nof news publications" = "Выбирайте из сотен \ новостных публикаций";
+
+"Pick topics to start reading\nand saving articles" = "Выберите темы, чтобы начать читать и экономить статьи";
+
+"Pick editions to start reading\nand saving articles" = "Выберите издания, чтобы начать читать и экономить статьи";
+
+"Or with" = "Или с";
+
+"CONTINUE AS GUEST" = "ПРОДОЛЖИТЬ В КАЧЕСТВЕ ГОСТЯ";
+
+"Terms of Service" = "Условия службы";
+
+"Choose from hundreds \nof news publications" = "Выбирайте из сотен новостных публикаций";
+
+"Select your preferred language\nfor News in Bullets." = "Выберите предпочитаемый язык для новостей в маркерах.";
+
+"Choose a style" = "Выбери стиль";
+
+"Pop or subtle. Day or night. Customize your interface." = "Поп или тонкий. День или ночь. Настройте свой интерфейс.";
+
+"MINS AGO" = "МИНУТ НАЗАД";
+
+"AN HOUR AGO" = "ЧАС НАЗАД";
+
+"HOURS AGO" = "часов назад";
+
+"1 WEEK AGO" = "1 НЕДЕЛЮ НАЗАД";
+
+"YESTERDAY" = "Вчерашний день";
+
+"DAYS AGO" = "ДНЕЙ НАЗАД";
+
+"Go to" = "Идти к";
+
+"You have reached the start." = "Вы достигли начала.";
+
+"Source unblocked successfully" = "Источник успешно разблокирован";
+
+"Invalid email format"  = "Неверный формат электронной почты";
+
+"Wrong email or password" = "Неверный адрес электронной почты или пароль";
+
+
+"Personalize your reading experience" = "Персонализируйте свой опыт чтения";
+
+"Start following the news topics and channels you want to read." = "Начните следить за темами новостей и каналами, которые вы хотите прочитать.";
+
+"LET'S GO" = "Поехали";
+
+"We’ll handle your data according to our\n" = "Мы будем обрабатывать ваши данные в соответствии с нашими";
+
+"By clicking Continue, you agree with our " = "Нажимая Продолжить, вы соглашаетесь с нашими";
+
+"Learn how we process your data in our"  = "Узнайте, как мы обрабатываем ваши данные в нашем";
+
+"JUST NOW" = "ПРЯМО СЕЙЧАС";
+
+"Menu" = "Меню";
+"Article Text Size" = "Размер текста статьи";
+"Change the font size shown on the articles" = "Изменение размера шрифта, показанного на статьях";
+"Small" = "Небольшой";
+"Default" = "По умолчанию";
+"Medium" = "Середина";
+"Large" = "Большой";
+
+"Related Articles" = "Статьи по Теме";
+"View Full Article" = "Просмотреть всю статью";
+
+"Create your profile" = "Создайте свой профиль";
+"Set your profile" = "Установите свой профиль";
+"View your profile" = "Посмотреть свой профиль";
+"ARTICLE TEXT SIZE" = "РАЗМЕР ТЕКСТА СТАТЬИ";
+"DATA SAVER" = "ДАННЫЕ SAVER";
+"Edit Profile" = "Редактировать профиль";
+"Profile Settings" = "Настройки профиля";
+"Edit what viewers see in your profile." = "Отредактируйте то, что зрители видят в вашем профиле.";
+"COVER PHOTO" = "ФОТО НА ОБЛОЖКЕ";
+"Profile Name" = "Имя профиля";
+"Help and Feedback" = "Помощь и обратная связь";
+"HELP AND FEEDBACK" = "ПОМОЩЬ И ОБРАТНАЯ СВЯЗЬ";
+"Others" = "Другие";
+"Feedback & Suggestions" = "Обратная связь и предложения";
+"Help / Contact Us" = "Помощь / Свяжитесь с нами";
+"Terms and Conditions" = "Условия и условия";
+"Notification" = "Уведомление";
+"Push Notifications" = "Push Уведомления";
+"Breaking News" = "Важные новости";
+"Personalized Recommendations" = "Персонализированные рекомендации";
+"Timed Notifications" = "Уведомления по времени";
+"Account" = "учетная запись";
+"E-mail Address" = "Адрес электронной почты";
+"Reels" = "Новостиreels";
+
+"Comments" = "Комментарии";
+"Write a reply..." = "Напишите ответ...";
+"Reply" = "Отвечать";
+"Replies" = "Ответы";
+"View" = "Взгляды";
+"more reply" = "больше ответа";
+"more replies" = "больше ответов";
+"Home" = "Домашняя страница";
+"Newsreels" = "Кинохроника";
+
+"Following" = "Следующий";
+"First Name" = "Имя";
+"Last Name" = "Фамилия";
+
+"This feature requires photo access" = "Эта функция требует доступа к фотографии";
+"in phone settings, tap News in Bullets and turn on Photos" = "в настройках телефона, нажмите Новости в пулях и включите фотографии";
+"Not Now" = "Не сейчас";
+"Open Settings" = "Открытые настройки";
+"No photos on this device" = "Нет фотографий на этом устройстве";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "если вы хотите изменить настройки доступа к фотографии, перейдите на настройки телефона, нажмите Новости в пулях и включите фотографии";
+"Video duration" = "Продолжительность видео";
+"Video too short" = "Видео слишком короткое";
+"Video too long" = "Видео слишком долго";
+"Done" = "Это сделано";
+"Save" = "Сохранить";
+"Processing.." = "переработка..";
+"Trim" = "Обрезать видео";
+"Cover" = "обложка";
+"Albums" = "Альбомы";
+"Gallery" = "Галерея";
+"Photos" = "Фотографии";
+"Videos" = "Видео";
+"Next" = "Вверх по следующему";
+"Crop" = "Обрезать изображение";
+
+
+"Locations" = "Локации";
+"Authors" = "Авторы";
+"Invalid Video" = "Недействительное видео";
+"Invalid Youtube link" = "Неверная ссылка на Youtube";
+"Article published successfully" = "Статья опубликована успешно";
+"Article removed successfully" = "Статья удалена успешно";
+"Edit Article" = "Редактировать статью";
+"Delete Article" = "Удалить статью";
+"Before you can comment, you need to update your profile" = "Прежде чем вы сможете опубликовать, вам нужно обновить свой профиль.";
+"Update profile" = "Обновить профиль";
+"Views" = "Взгляды";
+
+"Edit Newsreels" = "Редактировать кадры кинохроники";
+"Post article" = "Опубликовать статью";
+"SAVE" = "Сохранить";
+"Caption" = "заголовок";
+"Create a Caption" = "Создать заголовок";
+
+"Create a headline" = "Создать новости заголовок";
+"Add Source Link (Optional)" = "Добавить ссылку на источник (необязательно)";
+"Enter a Caption" = "Введите заголовок";
+"Enter article headline" = "Введите заголовок статьи";
+
+"Add Bullet 1" = "Добавить пулю 1";
+"Add Bullet 2" = "Добавить пулю 2";
+"Add Bullet 3 (Optional)" = "Добавить пулю 3 (необязательно)";
+"Add Bullet 4 (Optional)" = "Добавить пулю 4 (необязательно)";
+"Add Bullet 5 (Optional)" = "Добавить пулю 5 (необязательно)";
+
+"Add Bullet" = "Добавить пулю";
+
+"Uploading video..." = "Загрузка видео...";
+"Bullet" = "Пуля";
+
+
+"Oops! Something went wrong. Please try again." = "Ой! Что-то пошло не так. Пожалуйста, попробуйте еще раз.";
+
+"Upload media" = "Загрузить медиа";
+"Upload Newsreels" = "Загрузить кадры кинохрони";
+"Upload YouTube link" = "Загрузить ссылку на YouTube";
+"Before you post," = "Перед тем, как опубликовать,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Пожалуйста, помните, что вы присоединяется к глобальному сообществу читателей и писателей. Для того, чтобы защитить всех от любых форм дезинформации и злоупотреблений, пожалуйста, просмотрите наши";
+"Community Guidelines." = "Руководящие принципы сообщества.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "Нажав Продолжить, вы соглашаетесь соблюдать руководящие принципы.";
+"Community Guidelines" = "Руководящие принципы сообщества";
+
+"Upload bullet image (optional)" = "Загрузить изображение пули (необязательно)";
+"Delete" = "Удалить";
+"Replace" = "Заменять";
+"Delete Bullet" = "Удалить пулю";
+
+"Add Tag" = "Добавить тег";
+"Get discovered locally" = "Получить обнаружили локально";
+"Add a location to your channel and get discovered by users near you." = "Добавьте местоположение в свой канал и получите обнаружены пользователями рядом с вами.";
+"Max 5" = "Макс 5";
+"RECOMMENDED" = "рекомендованный";
+"comma, separated, tags" = "запятая, отделенная, теги";
+
+"YouTube Article" = "Статья на YouTube";
+"Paste a YouTube link to upload a video from YouTube." = "Вставьте ссылку YouTube, чтобы загрузить видео с YouTube.";
+"Paste a YouTube link to take import" = "Вставьте ссылку YouTube, чтобы импортировать";
+"IMPORT" = "Импортировать";
+
+"Enter Youtube link" = "Введите ссылку на YouTube";
+"Preview" = "Предварительный просмотр";
+"POST" = "Чтобы опубликовать";
+"Post to My Profile" = "Опубликовать в моем профиле";
+
+"RESULT" = "Полученные результаты";
+"followers" = "Последователей";
+"Followers" = "Последователей";
+"Posts" = "Опубликовать";
+"Profile updated successfully" = "Профиль успешно обновлен";
+"Tags" = "Теги";
+"No Posts Yet" = "Публикаций пока нет";
+
+"Add" = "Добавлять";
+"Select Ratio" = "Выберите соотношение";
+"Add topics tags" = "Добавить теги тем";
+"Be discovered by people following the topics you are posting about." = "Будьте обнаружены людьми, следующими за темами, о которых вы публикуете.";
+"Reels edited successfully." = "Кинохроника отредактированы успешно.";
+"Article edited successfully." = "Статья отредактирована успешно.";
+"Reels uploaded successfully." = "Кинохроника загружены успешно.";
+"Enter verification code" = "Введите код проверки";
+"RESEND" = "повторно отправьте";
+"Processing..." =  "переработка..";
+"Scheduled on:" = "Запланировано на:";
+"Enter profile name" = "Введите имя профиля";
+"Ok, last thing is your channel image" = "Хорошо, последнее - изображение вашего канала";
+"Upload" = "Загружать";
+"Before you can post article, you need to update your profile" = "Прежде чем вы сможете опубликовать, вам нужно обновить свой профиль.";
+"UPDATE" = "Обновлять";
+"Scale" = "Шкала";
+"Saved Article" = "Сохраненная статья";
+"Removed Article" = "Удаленная статья";
+"Ok, last thing is your profile image" = "Хорошо, последнее, что ваше изображение профиля";
+"Relevant" = "уместный";
+
+"See More" = "увидеть больше";
+"Less" = "увидеть меньше";
+"Autoplay" = "Автовоспроизведение";
+"Reader Mode" = "Режим чтения";
+"Data Saver" = "ДАННЫЕ SAVER";
+"Please enter a valid OTP." = "Пожалуйста, введите действующий OTP.";
+"Enter a first name" = "Имя";
+"Enter a last name" = "Фамилия";
+
+
+"Password updated successfully" = "Пароль успешно обновляется";
+"Replying to" = "Отвечая на";
+"Unblock Topic" = "Разблокировать тему";
+"Please add your reel caption" = "Пожалуйста, добавьте заголовок вашей Кинохроника ";
+"Please add bullet" = "Пожалуйста, добавьте пулю";
+"Please add your article headline" = "Пожалуйста, добавьте заголовок статьи";
+"Please add bullet 1" = "Пожалуйста, добавьте пулю 1";
+"Please add bullet 2" = "Пожалуйста, добавьте пулю 2";
+
+"Please enter a valid channel name" = "Пожалуйста, введите действительное название канала";
+"Let people know what" = "Пусть люди знают, что";
+"your channel is about" = "ваш канал о";
+"Start by creating your" = "Начните с создания своего";
+"channel name" = "Название канала";
+"Describe your channel" = "Опишите свой канал";
+"No pressure, you can change this later." = "Никакого давления, вы можете изменить это позже.";
+"Channel created successfully" = "Канал создан успешно";
+"Please enter your channel description" = "Пожалуйста, введите описание вашего канала";
+"Channel name already in use" = "Название канала уже используется";
+"Post to" = "Опубликовать в";
+
+"Available" = "доступен";
+"Already in use" = "Уже используется";
+"SCHEDULE POST" = "Расписание пост";
+"DRAFTS" = "Черновики";
+"View channel" = "Посмотреть канал";
+"Create a channel" = "Создать канал";
+"Ok, last thing is" = "Ладно, последнее, что есть";
+"your channel image" = "изображение вашего канала";
+"looks amazing!" = "выглядит потрясающе!";
+"CREATE CHANNEL" = "Создать канал";
+"Scheduled Posts" = "Расписание пост";
+
+"You don't have any drafts yet." = "У вас еще нет черновиков.";
+"Schedule" = "Расписание";
+"There aren't any scheduled posts yet." = "Есть не какие-либо запланированные сообщения еще.";
+"Schedule a Post" = "Расписание пост";
+"Mod Tools" = "Инструменты мода";
+"Unfollow Channel" = "Отписаться от канала";
+"Follow Channel" = "Следите за каналом";
+
+"Release to refresh" = "Отпустите, чтобы обновить";
+"Loading..." =  "Загружается ...";
+"Schedule Post" = "Расписание пост";
+"Moderator Tools" = "Инструменты модератора";
+"General" = "Общий";
+"Scheduled Posts" = "Запланированны пост";
+"Settings" = "Настройки";
+"channel and cover photo" = "канал и фото на обложке";
+"Description" = "Описание";
+"Will be posted in" = "Будет размещен в";
+"Will be posted on" = "Будет размещен на";
+"Will be posted now" = "Будет размещено сейчас";
+"Select Date" = "Выберите дату";
+"Select Time" = "Выберите время";
+"Please select date" = "Пожалуйста, выберите дату";
+"Please select time" = "Пожалуйста, выберите время";
+"Continue with Apple" = "Продолжить с Apple";
+"Continue with Google" = "Продолжить с Google";
+"Continue with Facebook" = "Продолжить с Facebook";
+"Continue with email" = "Продолжить по электронной почте";
+"Login or create an account" = "Войдите или создайте учетную запись";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "Войдите или создайте учетную запись, чтобы читать, делиться и комментировать истории из всех ваших любимых тем.";
+"your profile image" = "изображение вашего профиля";
+"Invalid OTP code" = "Недействительный OTP-код";
+
+"View your profile" = "Посмотреть свой профиль";
+"NEWS DESK" = "Новости письменный стол";
+"YOUR CHANNELS" = "Ваши каналы";
+"GENERAL" = "Общий";
+"WALLET" = "Кошелек";
+"POSTS" = "Опубликовать";
+"PERSONALIZATIONS" = "Персонализации";
+"NETWORK" = "Сеть";
+"Need more channels?" = "Нужно больше каналов?";
+"VIEW ALL & MANAGE" = "Просмотреть все и управлять";
+
+"Community Feed" = "Лента сообщества";
+"Create your post" = "Создайте свой пост";
+"Media" = "медиа";
+"Youtube" = "YouTube";
+"You're all caught up" = "Вы сделали и поймали все это";
+"You've seen all new posts" = "Вы видели все новые сообщения";
+"Go to top" = "Идти на вершину";
+"Suggested Reels" = "Рекомендуемые кинохроники";
+"Suggested Authors" = "Предлагаемые авторы";
+
+
+"Share to" = "Поделиться с";
+"Report" = "Отчет";
+"Unsave Video" = "Несохраненное видео";
+"Save Video" = "Сохранить видео";
+"Aspect Ratio" = "Соотношение сторон";
+"Rotate" = "Вращать";
+"Flip Vertical" = "Отразить по вертикали";
+"Flip Horizontal" = "​​Отразить по горизонтали";
+
+
+"Community" = "Сообщество";
+"APP LANGUAGE" = "ЯЗЫК ПРИЛОЖЕНИЯ";
+"You don't have any followers yet" = "У вас пока нет подписчиков";
+
+
+"View Original Article" = "Посмотреть оригинальную статью";
+"Places" = "Места";
+"Languages" = "​​Языки";
+"New Posts" = "Новые посты";
+"No posts yet" = "Публикаций пока нет";
+"All Followers" = "Все подписчики";
+"Add Place" = "Добавить место";
+"Add places tags" = "Добавить теги мест";
+"Be discovered by people following the places you are posting about." = "Быть обнаруженным людьми, которые подписаны на места, о которых вы пишете.";
+
+
+
+"START FOLLOWING" = "Начните следить";
+"You are not following anything yet" = "Вы еще ни за чем не следите.";
+
+
+"Notifications" = "Уведомление";
+"General" = "Общий";
+"News" = "Новости";
+"VIEW MORE" = "Посмотреть больше";
+"BULLETS AUTO PLAY" = "Автоматическое воспроизведение пуль";
+"VIDEOS AUTO PLAY" = "Автоматическое воспроизведение видео";
+"REELS AUTO PLAY" = "Автоматическое воспроизведение Кинохроника";
+"READER THEME" = "ЧИТАТЕЛЬНАЯ ТЕМА";
+"News Content Language" = "Язык новостного контента";
+"FAVORITES" = "Избранное";
+"Region/Places" = "Регионы / места";
+"Select Regions/Places" = "Выберите регионы/места";
+"Follow at least 3 topics" = "Следите как минимум за 3 темами";
+"Please Follow at least 3 topics" = "Пожалуйста, следите как минимум на 3 темы";
+"Explore Newsreels" = "Исследуйте Кинохроника";
+"Related Reels" = "Связанные Кинохроника";
+"Explore Your Feed" = "Изучите свою ленту";
+"Sources" = "Источников";
+"Articles, topics, channels, authors" = "Статьи, темы, каналы, авторы";
+"View/Manage" = "Просмотр/Управлять";
+"Add to Favorites" = "Добавить в избранное";
+"Remove from Favorites" = "Удалить из Избранного";
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuliBold.otf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeHeaderCC" rowHeight="50" id="KGk-i7-Jjw" customClass="HomeHeaderCC" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8v-SL-97N">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qvf-JA-Ye7">
+                                <rect key="frame" x="20" y="5" width="138.5" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADLINES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-XP-LQI">
+                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The latest news on Oct 25" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGv-ms-fTZ">
+                                        <rect key="frame" x="0.0" y="40" width="138.5" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" red="0.51764705882352935" green="0.51372549019607838" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nig-PQ-1eB"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="nlu-U4-kjV">
+                                <rect key="frame" x="313" y="29" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nlu-U4-kjV" secondAttribute="height" multiplier="1:1" id="1OA-jd-ljw"/>
+                                    <constraint firstAttribute="height" constant="15" id="Mci-Ta-T8F"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR5-vs-GHp">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="15"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nlu-U4-kjV" firstAttribute="centerY" secondItem="y0r-XP-LQI" secondAttribute="centerY" id="3R2-c6-hLn"/>
+                            <constraint firstAttribute="trailing" secondItem="nlu-U4-kjV" secondAttribute="trailing" constant="10" id="DcV-bj-TCk"/>
+                            <constraint firstAttribute="trailing" secondItem="zR5-vs-GHp" secondAttribute="trailing" id="OIx-KP-iY4"/>
+                            <constraint firstItem="nlu-U4-kjV" firstAttribute="leading" secondItem="qvf-JA-Ye7" secondAttribute="trailing" constant="8" symbolic="YES" id="WqP-nZ-Mit"/>
+                            <constraint firstItem="qvf-JA-Ye7" firstAttribute="top" secondItem="F8v-SL-97N" secondAttribute="top" constant="5" id="YZM-9y-2G6"/>
+                            <constraint firstAttribute="bottom" secondItem="zR5-vs-GHp" secondAttribute="bottom" id="ctx-Pa-yTD"/>
+                            <constraint firstItem="qvf-JA-Ye7" firstAttribute="leading" secondItem="F8v-SL-97N" secondAttribute="leading" constant="20" id="lqB-6K-gXI"/>
+                            <constraint firstItem="zR5-vs-GHp" firstAttribute="top" secondItem="F8v-SL-97N" secondAttribute="top" id="mCE-A2-qc3"/>
+                            <constraint firstItem="zR5-vs-GHp" firstAttribute="leading" secondItem="F8v-SL-97N" secondAttribute="leading" id="orl-Ys-Ms2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nlu-U4-kjV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="F8v-SL-97N" secondAttribute="bottom" id="6dC-TN-4ry"/>
+                    <constraint firstItem="F8v-SL-97N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8ZY-UJ-Xad"/>
+                    <constraint firstAttribute="trailing" secondItem="F8v-SL-97N" secondAttribute="trailing" id="MFc-1n-8qx"/>
+                    <constraint firstItem="F8v-SL-97N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SSh-Pg-v9c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backgrView" destination="F8v-SL-97N" id="1Zq-yH-rtb"/>
+                <outlet property="btnReadMore" destination="zR5-vs-GHp" id="fnW-0H-sju"/>
+                <outlet property="imgArrow" destination="nlu-U4-kjV" id="OXA-zK-IGU"/>
+                <outlet property="lblSubheader" destination="vGv-ms-fTZ" id="aWC-rO-svz"/>
+                <outlet property="lblTitle" destination="y0r-XP-LQI" id="GmU-tR-bDK"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="92.075892857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right-arrow" width="23.625" height="41.243000030517578"/>
+    </resources>
+</document>

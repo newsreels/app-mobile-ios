@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "bullet-point";
+"BULLETS" = "MGA BULLET POINT";
+"Headlines is not available." = "Hindi available ang iyong hinahanap";
+"Check your internet Connection and try again." = "Suriin ang iyong koneksyon at subukang muli";
+"Choose Image" = "Pumili ng Imahe";
+"Headline" = "Ulo ng Balita";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (Opsyonal)";
+"Bullet 4 (Optional)" = "Bullet 4 (Opsyonal)";
+"Bullet 5 (Optional)" = "Bullet 5 (Opsyonal)";
+"Bullet 6 (Optional)" = "Bullet 6 (Opsyonal)";
+"Enter Aticle Headline" = "Ilagay ang Ulo ng Balita";
+"Enter source name" = "Ilagay ang Source";
+"Enter reference link" = "Ilagay ang Sanggunian";
+"Enter published date" = "Ilagay ang Petsa ng Pagkakalathala";
+"Enter Bullet 1" = "Ilagay ang Unang Bulet";
+"Enter Bullet 2" = "Ilagay ang Ikalawang Bullet";
+"Post article successfully" = "Ang artikulo ay matagumpay na nai-post";
+"Follow" = "I-follow";
+"Unfollow" = "I-unfollow";
+"Block articles from" = "I-BLOCK ang mga artikulong mula ";
+"Unblock articles from" = "I-UNBLOCK ang mga artikulo mula";
+"Remove article" = "Alisin ang artikulo";
+"Save article" = "I-save ang artikulong ito";
+"Terms & Conditions" = "Mga Tuntunin at Kundisyon";
+"Privacy Policy" = "Patakaran sa Pagkapribado";
+"TERMS AND CONDITIONS" = "MGA TUNTUNIN AT KUNDISYON";
+"PRIVACY POLICY" = "Patakaran sa Pagkapribado";
+"Fuel your curiosity" = "Magbasa pa ng ibang balita tungkol sa mundo";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Magbasa ng maiksi at tumpak na mga balita tungkol sa iyong paboritong paksa mula sa mga pinagkakatiwalaang sources.";
+"Save time" = "Huwag aksayahin ang oras";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Basahin ang mga balita sa bullet points";
+"Hands-free reading" = "Hands-free na pagbabasa";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Walang oras magbasa? Gamitin ang speech function.";
+"Write your message..." = "Isulat ang iyong mensahe…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "padalhan kami ng mensahe kung kailangan mo ng tulong, masaya kaming makarinig mula sa iyo!";
+"Drop us a message" = "padalhan kami ng mensahe";
+"Enter Name." = "Ilagay ang Pangalan.";
+"Enter Email." = "Ilagay ang Email.";
+"Write your message." = "Isulat ang iyong mensahe.";
+"Topic unblock successfully" = "Ini-unblock mo ang paksang ito";
+"Source unblock successfully" = "Ini-unblock mo ang source na ito";
+"Unblock Source" = "I-unblock ang Source";
+"Cancel" = "Kanselahin";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Padalhan kami ng feedback, masaya kaming makarinig mula sa iyo! Mayroon ka bang mga katanungan? Subukang Humingi ng Tulong o Makipag-ugnayan sa Amin.";
+"Enter your suggestion." = "Ilagay ang iyong suhestyon";
+"feedback sent." = "ang feedback ay matagumpay na naipadala";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "ang lengguwahe ay matagumpay na na-update";
+"CONTINUE" = "MAGPATULOY";
+"FOLLOW 3 TO CONTINUE" = "MAG-FOLLOW NG 3 PARA MAGPATULOY";
+"Unfollow Location" = "I-unfollow ang lokasyon";
+"Saved Articles" = "Mga Nai-save na Artikulo";
+"Block" = "I-BLOCK";
+"Are you sure you want block" = "Sigurado ka bang gusto mong i-block ito";
+"Once blocked, you wont be able to see any Articles related to this" = "Hindi ka na makakakita ng mga artikulo mula sa channel na ito pagkatapos mo itong i-block.";
+"Block Topic" = "I-block ang Topic na ito";
+"Suggested" = "Iminungkahi";
+"Related Sources not available" = "Hindi available ang Related Sources";
+"Block Source" = "I-block ang Source na ito";
+"News in Bullets App version" = "News in Bullets app version";
+"Next" = "Susunod";
+"Login" = "Mag-Log in";
+"Terms" = "Mga Tuntunin";
+"By clicking Continue, you agree with our Terms." = "Piliing Magpatuloy upang tanggapin ang mga Tuntunin";
+"in our Privacy Policy." = "sa aming Patakaran sa Pagkapribado.";
+"Access token missing." = "Nawawala ang access token.";
+"NEXT" = "SUSUNOD";
+"By checking this box, you agree to our " = "I-click ang kahapon upang tanggapin ang mga tuntunin. Ang iyong impormasyon ay pinoproseso batay sa aming Patakaran sa Pagkapribado.";
+"Terms of Service" = "Mga Tuntunin ng Serbisyo";
+". We’ll handle your data according to our " = ". Hahawakan namin ang iyong data batay sa aming";
+"Password must be at least 8 characters." = "Ang password ay dapat 8 characters minimum.";
+"Strong" = "Matibay";
+"Medium" = "Katamtaman";
+"Weak" = "Mahina";
+"CREATE A NEW ACCOUNT" = "GUMAWA NG PANIBAGONG ACCOUNT";
+"SIGN IN WITH EXISTING ACCOUNT" = "MAG-SIGN IN GAMIT ANG ACCOUNT";
+"You must agree to the Terms of Services to continue" = "Sumang-ayon sa Mga Tuntunin ng Serbisyo upang magpatuloy";
+"SIGN IN" = "Mag-Sign In";
+"What's your password?" = "Ano ang iyong password?";
+"SIGN UP" = "Mag-Sign Up";
+"Choose your password?" = "Pumili ng password";
+"Something went wrong" = "Nagkaroon ng problema";
+"we will send email to" = "magpapadala kami ng email sa";
+"with a link to reset your password." = "na may link para ma-reset mo ang iyong password";
+"A reset password link has been sent to" = "Ang link para sa pag-reset ng password ay ipinadala sa";
+"Enter new email." = "Ilagay ang bagong email.";
+"Enter password." = "Ilagay ang password.";
+"New Password " = "Bagong Password";
+" (8 characters min)" = "(8 characters min)";
+"Enter current password." = "Ilagay ang kasalukuyang password.";
+"Enter new password." = "Ilagay ang bagong password";
+"Enter confirm password." = "Kumpirmahin ang password.";
+"password do not matched!" = "hindi pareho ang mga password!";
+"GET STARTED" = "MAGSIMULA";
+"SKIP" = "LAKTAWAN";
+"From where you would like to pick photo?" = "Saan mo nais pumili ng imahe?";
+"Camera" = "Kamera";
+"Photo Library" = "Photo Library";
+"Kindly open settings and enable access" = "Buksan ang settings at ibigay ang access";
+"Open Settings" = "Buksan ang Settings";
+"Access needed for your camera" = "Kailangan ng access sa iyong camera";
+"Access needed for your photo library" = "Kailangan ng access sa iyong photo library";
+"Done" = "Tapos na";
+"Pull to refresh" = "Hilain para i-refresh";
+"Loading" = "Naglo-load";
+"Speech not available for this article" = "Hindi available ang speech sa artikulong ito";
+"MANAGE LOCATION" = "KONTROLIN ANG MGA LOKASYON";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Piliin ang iyong News sa Bullets Edition batay sa lokal";
+"Edition" = "Edisyon";
+"EDITION / REGION" = "EDISYON / REHIYON";
+"Your Topics" = "Ang iyong Mga Paksa";
+"Your Channels" = "Ang iyong Mga Channel";
+"Your Places" = "Ang iyong Mga Lugar";
+"Enter email." = "Ipasok ang email.";
+"Please enter a password." = "Mangyaring maglagay ng isang password.";
+"Search articles" = "Maghanap ng mga artikulo";
+"No results" = "Walang resulta";
+"Edition / Region" = "Edisyon / Rehiyon";
+
+
+
+
+"0JC-Sb-Ouu.text" = "DISPLAY MODE";
+
+
+"Search" = "Maghanap";
+
+
+"Select" = "Piliin ang ( ";
+
+
+"6H8-dI-k9P.text" = "Kontrolin ang mga lokasyon";
+
+
+"6KH-YP-5Lt.text" = "Tagapagsalaysay";
+
+
+" ) icon on the article" = " icon sa artikulo";
+
+
+"BLOCK" = "I-BLOCK";
+
+
+"you want to read later then" = "na gusto mong basahin mamaya";
+
+
+"7oo-cf-l7Y.text" = "Bilis ng pagbabasa";
+
+
+"88L-ip-pZw.text" = "Bilis ng pagbabasa";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Mukhang walang naririto kundi isang pusa. Bumalik sa main page? \nGusto mo bang bumalik sa home page?";
+
+
+"BpH-F1-i0z.normalTitle" = "Lokal";
+
+
+" ) to save article." = " ) para i-save ang artikulo.";
+
+
+"FB0-YN-HZg.text" = "para magpatuloy, pumili ng 3";
+
+
+"H5Z-xJ-dWD.text" = "Mga ulo ng balita at\nMga bullet point";
+
+
+"Search" = "Maghanap";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "PINALAWAK NA PAGTINGIN";
+
+
+"Jpx-nY-Is1.normalTitle" = "Mga Channel";
+
+
+"JqN-io-P1u.normalTitle" = " + I-dagdag sa mga Lokasyon";
+
+
+"What's your email?" = "Ano ang iyong Email address?";
+
+
+"Lw1-Md-nse.text" = "PAGTINGIN SA LISTAHAN";
+
+
+"LyT-pT-g53.text" = "INTERNASYONAL";
+
+
+"N6C-6i-Z2s.text" = "INTERNASYONAL";
+
+
+"Nru-uU-CsC.text" = "Mga Suhestiyon";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Mga Paksa";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Kustomahin";
+
+
+"Topics" = "Mga Paksa";
+
+
+"WXY-po-W1B.text" = "MGA ULO NG BALITA AT\nMGA BULLET POINT";
+
+
+"ans-Zy-T2Y.placeholder" = "Maghanap ng mga Lokasyon";
+
+
+"bgE-Jc-u8H.text" = "Kustomahin";
+
+
+
+
+
+"Tap the ( " = "I-tap ang ( ";
+
+
+"Places" = "Lokasyon";
+
+
+"d1l-HK-OrG.text" = "DISPLAY MODE";
+
+
+
+
+
+"Language" = "Lengguwahe";
+
+
+"e9g-Wr-suO.text" = "MGA ULO NG MGA BALITA LAMANG";
+
+
+"GO HOME" = "bumalik sa main page";
+
+
+"eh1-Oo-lEn.text" = "PINALAWAK NA PAGTINGIN";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "PAGTINGIN SA LISTAHAN";
+
+
+"j2i-MT-VkA.text" = "Subukan ang ibang salita";
+
+
+"Top News" = "Mga Nangungunang Balita";
+
+
+"jmO-aF-nJ9.text" = "Mga Ulo ng mga Balita Lamang";
+
+
+"There is nothing in here" = "Walang naririto. Mukhang walang naririto kundi isang pusa. Bumalik sa main page?";
+
+
+"ma1-9p-bSa.text" = "Walang nakuhang resulta";
+
+
+"mce-jc-cKH.text" = "TAGAPAGSALAYSAY";
+
+
+"Channels" = "Mga Channel";
+
+
+"Discover" = "Tuklasin";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "KANSELAHIN";
+
+
+"Discover" = "Tuklasin";
+
+
+"No saved stories yet" = "Walang naririto";
+
+
+"wDG-kF-Hl8.text" = "Magbasa ng mga balita batay sa lokasyon";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALISASYON";
+
+
+"xfF-RB-mWL.text" = "LOKALISASYON";
+
+
+"Search" = "Maghanap";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Kunin ang pinaka-kaugnay na balita sa rehiyon na iyong pinili. Basahin ang mga kwentong balita na na-curate upang mapanatili kang updated sa pinakabagong balita mula sa kahit saan sa mundo.";
+
+
+"Search articles" = "Maghanap ng mga artikulo";
+
+
+"6H8-dI-k9P.text" = "Pamahalaan ang Mga Lugar";
+
+
+
+
+
+"Profile" = "Profile";
+
+
+"Editions" = "Mga Edisyon";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Mga lugar";
+
+
+
+
+
+"Search" = "Maghanap";
+
+
+
+
+
+
+
+
+"Search" = "Maghanap";
+
+
+"LANGUAGE" = "WIKA";
+
+
+"Search" = "Maghanap";
+
+
+"No results" = "Walang nahanap na resulta";
+
+
+"Channels" = "Mga Channel";
+
+
+"Places" = "Mga lugar";
+
+
+"Places" = "Mga lugar";
+
+
+"e9F-hd-Ifm.text" = "EDISYON / REHIYON";
+
+
+
+
+
+
+
+
+"PLACES" = "LUGAR";
+
+
+"SAVED ARTICLES" = "Nai-save na Artikulo";
+
+
+"Articles" = "Mga Artikulo";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "MAGPATULOY";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDISYON / REHIYON";
+
+
+"Try a different keyword" = "Sumubok ng ibang keyword";
+
+
+"For You" = "Para sa'yo";
+
+
+"Results" = "Mga Resulta";
+
+
+
+"About" = "Tungkol sa Amin";
+
+
+"Share" = "Ibahagi";
+
+
+"ACCOUNT" = "ACCOUNT";
+
+
+"Your Email" = "Iyong Email";
+
+
+"1sT-J6-qI0.text" = "MGA NAI-SAVE NA ARTIKULO ";
+
+
+"2XX-rr-GLC.text" = "Pumili ng iba't-ibang channels mula sa daan-daang sources ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Basahin ang mga pinakabago at tampok na balita sa buong mundo ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Magtakda ng oras sa para sa mga notipikasyon ";
+
+
+"Off" = "Off";
+
+
+
+
+
+"Bullet 2" = " Bullet 2";
+
+
+"What's your email?" = "Ano ang iyong email?";
+
+
+"New Password (8 Characters Min)" = "Bagong Password (8 Characters Minimum) ";
+
+
+"Forgot Password?" = "Nakalimutan ang Password? ";
+
+
+"Account Settings" = "Settings ng Account ";
+
+
+"Learn how we process your data" = "Impormasyon sa pagpoproseso ng iyong data ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "I-block ang mga artikulo mula sa ";
+
+
+"On" = "I-on";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Humingi ng Tulong ";
+
+
+"Search" = "Maghanap ng mga Channel ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Pumili ng file sa gallery ";
+
+
+
+
+"Save article" = "I-save ang artikulo ";
+
+
+"ABOUT" = "TUNGKOL";
+
+
+"Dark" = "Dark";
+
+
+"Legal" = "Legal";
+
+
+"Go to The Guardian" = "Pumunta sa ";
+
+
+"Send reset link" = "Ipadala ang reset link ";
+
+
+
+
+
+"My Account" = "Aking Account ";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Mensahe";
+
+
+"Confirm New Password" = "Kumpirmahin ang Bagong Password";
+
+
+"for ___" = "para sa";
+
+
+"Search" = "Maghanap ng mga Paksa";
+
+
+"LANGUAGE" = "LENGGUWAHE";
+
+
+"Light" = "Light";
+
+
+"FOLLOW 3 TO CONTINUE" = "para magpatuloy, pumili ng 3";
+
+
+
+
+"Off" = "I-off";
+
+
+"Language" = "Pumili";
+
+
+"LOG OUT" = "MAG-LOG OUT";
+
+
+"Report content" = "Mag-report ng nilalaman";
+
+
+"What's your email?" = "Ano ang iyong email?";
+
+
+"On" = "I-on";
+
+
+"More like this" = "Iba pang balita tulad nito";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Ilagay ang Email";
+
+
+"News in Bullets" = "Magbasa ng marami sa maiksing panahon";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Pumili ng Password";
+
+
+"Cancel" = "Kanselahin";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Magbasa ng mabilisan gamit ang app na ito. Pumili ng gusto mong paksa at basahin ang mga balitang naka-bullet point. ";
+
+
+"Push Notification" = "Notipikasyon";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Ano ang maitutulong namin sa iyo?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "MAGPALIT NG PASSWORD";
+
+
+"Change Email" = "MAGPALIT NG EMAIL";
+
+
+"Medium" = "Katamtaman";
+
+
+"SAVE CHANGES" = "I-SAVE ANG PAGBABAGO";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Magpadala ng mensahe kung kailangan mo ng tulong. Masaya kaming makarinig mula sa iyo!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "Kanselahin";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "MGA NOTIPIKASYON";
+
+
+"POST ARTICLE" = "MAG-POST NG ARTIKULO";
+
+
+"CONTACT US" = "Makipag-ugnayan sa Amin";
+
+
+"EDITION / REGION" = "Edisyon";
+
+
+"Search" = "Maghanap";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Padalhan kami ng feedback, masaya kaming makarinig mula sa iyo! Mayroon ka bang mga katanungan? Subukang Humingi ng Tulong o Makipag-ugnayan sa Amin.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Padalhan kami ng mensahe kung kailangan mo ng tulong, masaya kaming makarinig mula sa iyo!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "MAGPATULOY";
+
+
+"Time To Update!" = "I-update ang app!";
+
+
+"NOTIFICATIONS" = "MGA NOTIPIKASYON";
+
+
+"Search" = "Maghanap";
+
+
+"By clicking Continue, you agree with our Terms." = "Piliing Magpatuloy upang tanggapin ang mga Tuntunin";
+
+
+"HELP / CONTACT US" = "TULONG / UGNAYAN";
+
+
+"Reset Password" = "I-reset ang Password";
+
+
+"SEND MESSAGE" = "MAGPADALA NG MENSAHE";
+
+
+"Save article" = "I-save ang artikulo";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (Opsyonal)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Naipadala na ang iyong mensahe";
+
+
+"LEGAL" = "LEGAL";
+
+
+"Block List" = "Mga Na-block";
+
+
+"PERSONALIZATION" = "PERSONALISASYON";
+
+
+"in our Privacy Policy." = "sa aming Patakaran sa Pagkapribado.";
+
+
+"CONTINUE" = "MAGPATULOY";
+
+
+"Enter Name" = "Ilagay ang Pangalan";
+
+
+"What's your email?" = "Ano ang iyong email?";
+
+
+"Hello there!" = "Magandang Araw!";
+
+
+"PUSH NOTIFICATIONS" = "MGA NOTIPIKASYON";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (Opsyonal)";
+
+
+"Source name" = "Pangalan ng Pinagmulan";
+
+
+"Current Password" = "Kasalukuyang Password";
+
+
+"COLOR THEME" = "Tema ng Kulay";
+
+
+"eTp-X1-g34.text" = "O sa pamamagitan ng";
+
+
+"CANCEL" = "KANSELAHIN";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (Opsyonal)";
+
+
+"Date published" = "Petsa ng Pagkakalathala";
+
+
+"Send Password Reset Link" = "Ipadala ang reset link";
+
+
+"CONTINUE WITH APPLE" = "Mag-sign up gamit ang Apple ID";
+
+
+"Off" = "I-off";
+
+
+"BLOCK LIST" = "MGA NA-BLOCK";
+
+
+"HELP" = "TULONG";
+
+
+"Reference link" = "Link ng Sanggunian";
+
+
+"Your Password" = "Iyong Password";
+
+
+"SUBMIT" = "ISUMITE";
+
+
+"HELP" = "TULONG";
+
+
+"MY ACCOUNT" = "AKING ACCOUNT";
+
+
+"hbD-HP-tZd.normalTitle" = "I-unblock";
+
+
+"OTHERS" = "Iba Pa";
+
+
+"BREAKING NEWS" = "MGA NAGBABAGANG BALITA";
+
+
+"Topics" = "Mga Paksang Na-block";
+
+
+"Message us," = "MPadalhan kami ng mensahe,";
+
+
+"Pick topics to start reading
+and saving articles" = "lengguwahe ng app";
+
+
+"Forgot Password?" = "Nakalimutan ang Password?";
+
+/* Class = "UILabel"; text = "May mga bagong tampok na naidagdag. Naayos na ang ilang mga isyu."; ObjectID = "m7D-Yg-BzG"; */
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "We added lots of new features and fix some bugs to make your experience as smooth as possible.";
+
+
+"Success!" = "Tagumpay!!";
+
+
+"Current Password" = "Kasalukuyang Password";
+
+
+"CONTENT" = "NILALAMAN";
+
+
+"Headline" = "Ulo ng Balita";
+
+
+"neg-UC-UpK.text" = "Pumili ng mga paksa at magsimulang magbasa at mag-save ng artikulo";
+
+
+"CONTINUE WITH EMAIL ID" = "Magpatuloy gamit ang Email ID";
+
+
+"SAVE CHANGES" = "I-SAVE ANG PAGBABAGO";
+
+
+"Post an Article" = "Mag-post ng Artikulo";
+
+
+"Contact Us" = "Makipag-ugnayan sa Amin";
+
+
+"On" = "I-on";
+
+
+"New Email Address" = "Bagong Email";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Opsyonal)";
+
+
+"Suggest an improvement" = "Magmungkahi ng Pagpapabuti";
+
+
+"Channels" = "Mga Na-block na Source";
+
+
+"From:" = "Mula:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONAL NA REKOMENDASYON";
+
+
+"I don't like this" = "Hindi ko ito gusto";
+
+
+"CONTINUE" = "MAGPATULOY";
+
+
+"Name" = "Pangalan";
+
+
+"Enter email" = "Ilagay ang email";
+
+
+"HELP" = "TULONG";
+
+
+"FOLLOW 3 TO CONTINUE" = "Sundan ang 3 para magpatuloy";
+
+
+"UPDATE APP" = "I-update ang App";
+
+
+"Forgot Password?" = "Nakalimutan ang Password?";
+
+
+"Change Password" = "Palitan ang Password";
+
+
+"Reset Password" = "I-reset ang Password";
+
+
+
+
+
+
+
+
+"Report content" = "I-report ang iyong problema";
+
+
+"CHANGE EMAIL ADDRESS" = "PALITAN ANG EMAIL";
+
+
+"Follow The Guardian" = "I-follow";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nagdagdag kami ng maraming mga bagong tampok at inayos ang ilang mga bug upang gawing maayos ang iyong karanasan hangga't maaari.";
+
+
+"Edition / Region" = "Edisyon / Rehiyon";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ang pagpapanatiling updated tungkol sa mga balita na gusto mo ay hindi dapat magtagal ng labis sa iyong oras. Ang balita sa Bullets ay tumatagal ng regular na 5 minutong basahin. Ngayon, maaari kang kumuha ng parehong balita sa kaunting bahagi lamang ng oras - upang mabasa mo ito sa maikling panahon. ";
+
+
+"READING SPEED" = "BILIS NG PAGBASA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Wala ka pang na-block";
+
+
+"EDITION / REGION" = "EDISYON / REHIYON";
+
+
+
+
+
+"HEADLINES ONLY" = "HEADLINES LANG";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Mga setting ng audio";
+
+
+"AUDIO SETTINGS" = "MGA SETTING NG AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES AT BULLETS";
+
+
+"CONTINUE AS GUEST" = "LAKTAWAN AT MAGLOG-IN BILANG GUEST";
+
+
+"Topics" = "Mga Paksa";
+
+
+"Pick topics to start reading and saving articles" = "Pumili ng mga paksa at magsimulang magbasa at mag-save ng artikulo ";
+
+
+"Channels" = "Mga Channel";
+
+
+"Choose from hundreds \nof news publications" = "Pumili mula sa daan-daang mga publication ng balita";
+
+
+"Pick topics to start reading\nand saving articles" = "Pumili ng mga paksa para simulan ang pagbabasa at pag-save ng mga artikulo";
+
+"Pick editions to start reading\nand saving articles" = "Pumili ng mga edisyon para simulan ang pagbabasa at pag-save ng mga artikulo";
+
+"Or with" = "O kasama";
+
+"CONTINUE AS GUEST" = "MAGPATULOY BILANG PANAUHIN";
+
+"Terms of Service" = "Mga Tuntunin ng Serbisyo";
+
+"Choose from hundreds \nof news publications" = "Pumili mula sa daan-daang mga publication ng balita";
+
+"Select your preferred language\nfor News in Bullets." = "Pumili ng iyong gustong wika para sa News in Bullets.";
+
+"Choose a style" = "Pumili ng istilo";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop o banayad. Araw o gabi. I-customize ang iyong interface.";
+
+"MINS AGO" = "minuto na ang nakakalipas";
+
+"AN HOUR AGO" = "isang oras ang nakaraan";
+
+"HOURS AGO" = "oras na ang nakakalipas";
+
+"1 WEEK AGO" = "1 linggo na ang nakakalipas";
+
+"YESTERDAY" = "Kahapon";
+
+"DAYS AGO" = "mga araw na nakalipas";
+
+"Go to" = "Pumunta sa";
+
+"You have reached the start." = "Narating mo na ang simula";
+
+"Source unblocked successfully" = "Matagumpay na na-unblock ang pinagmulan";
+
+"Invalid email format"  = "Di-maaari ang format ng email";
+
+"Wrong email or password" = "Maling email o password";
+
+

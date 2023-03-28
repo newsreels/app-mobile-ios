@@ -1,0 +1,774 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bullet point";
+"BULLETS" = "BULLET POINT";
+"Headlines is not available." = "Overskrifterne er ikke tilgængelige";
+"Check your internet Connection and try again." = "Tjek din internetforbindelse, og prøv igen.";
+"Choose Image" = "Vælg billede";
+"Headline" = "Overskrift";
+"Bullet 1" = "Punkt 1";
+"Bullet 2" = "Punkt 2";
+"Bullet 3 (Optional)" = "Punkt 3 (valgfrit)";
+"Bullet 4 (Optional)" = "Punkt 4 (valgfrit)";
+"Bullet 5 (Optional)" = "Punkt 5 (valgfrit)";
+"Bullet 6 (Optional)" = "Punkt 6 (valgfrit)";
+"Enter Aticle Headline" = "Indtast overskriften";
+"Enter source name" = "Indtast kilden";
+"Enter reference link" = "Indtast referencen";
+"Enter published date" = "Indtast offentliggjort datoen";
+"Enter Bullet 1" = "Indtast det første punkt";
+"Enter Bullet 2" = "Indtast den anden punkt";
+"Post article successfully" = "Artiklen blev sendt succesfuldt";
+"Follow" = "Følg";
+"Unfollow" = "Unfollow";
+"Block articles from" = "BLOKER artiklen fra";
+"Unblock articles from" = "UNBLOCK artiklen fra";
+"Remove article" = "Fjen artiklen";
+"Save article" = "Gem artiklen";
+"Terms & Conditions" = "Vilkår og Betingelser";
+"Privacy Policy" = "Fortrolighedspolitik";
+"TERMS AND CONDITIONS" = "VILKÅR OG BETINGELSER";
+"PRIVACY POLICY" = "FORTROLIGHEDSPOLITIK";
+"Fuel your curiosity" = "Læs flere nyheder om verdenen";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Læs korte og nøjagtige nyheder om dine yndlingsemner fra pålidelige kilder rundt om i verden.";
+"Save time" = "Spar din tid";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Læs nyheder i punkter";
+"Hands-free reading" = "Håndfri læsning";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Ingen tid til læsning? Brug talefunktionen.";
+"Write your message..." = "Skriv din besked…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Send os en besked hvis du har brig for hjælp med noget, vi vil gerne høre fra dig!";
+"Drop us a message" = "Send os en besked";
+"Enter Name." = "Indtast navn";
+"Enter Email." = "Indtast E-mail";
+"Write your message." = "Skriv din besked…";
+"Topic unblock successfully" = "Du unblocked denne emne";
+"Source unblock successfully" = "Du unblocked denne kilde";
+"Unblock Source" = "Unblock kilde";
+"Cancel" = "Afbryd";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Send os feedback, vi vil gerne høre fra dig! Har du nogle spørgsmål eller juridske problemer? Prøv vores Hjælp side eller Kontakt os";
+"Enter your suggestion." = "Indtast dit forslag";
+"feedback sent." = "feedbacken er sendt";
+"30m" = "30minutter";
+"1h" = "1time";
+"3h" = "3timer";
+"6h" = "6timer";
+"12h" = "12timer";
+"24h" = "24timer";
+"Language updated successfully." = "Sproget er succesfuldt opdateret";
+"CONTINUE" = "FORSÆT";
+"FOLLOW 3 TO CONTINUE" = "FØLG 3 TIL AT FORSÆTTE";
+"Unfollow Location" = "Unfollow lokation";
+"Saved Articles" = "Gemte artikler";
+"Block" = "BLOKER";
+"Are you sure you want block" = "Er du sikker på du vil blokere dette";
+"Once blocked, you wont be able to see any Articles related to this" = "Du vil ikke kunne se artikler fra denne kanal hvis du bloker det.";
+"Block Topic" = "Bloker dette emne";
+"Suggested" = "Forslået";
+"Related Sources not available" = "De relaterede kilder er ikke tilgængelige";
+"Block Source" = "Bloker kilden";
+"News in Bullets App version" = "Nyheder i Få Ord App version";
+"Next" = "Næste";
+"Login" = "Login";
+"Terms" = "Betingelser";
+"By clicking Continue, you agree with our Terms." = "Vælg Fortsæt for at acceptere Vilkårene.";
+"in our Privacy Policy." = "i vores fortrolighedspolitik.";
+"Access token missing." = "Adgangstoken mangler.";
+"NEXT" = "NÆSTE";
+"By checking this box, you agree to our " = "Klik på feltet for at acceptere vilkårene. Dine data behandles i henhold til vores fortrolighedspolitik.";
+"Terms of Service" = "Servicevilkår    Servicevilkår";
+". We’ll handle your data according to our " = "Vi VIL håndterer dine data i henhold til vores";
+"Password must be at least 8 characters." = "Adgangskoden skal indeholde mindst 8 tegn.";
+"Strong" = "Stærk";
+"Medium" = "Mellem";
+"Weak" = "Svag";
+"CREATE A NEW ACCOUNT" = "OPRET EN NY KONTO";
+"SIGN IN WITH EXISTING ACCOUNT" = "Log ind med en eksisterende konto";
+"You must agree to the Terms of Services to continue" = "Du skal acceptere servicevilkårene for at fortsætte";
+"SIGN IN" = "Log ind";
+"What's your password?" = "Hvad er dit adgangskode?";
+"SIGN UP" = "Tilmeld";
+"Choose your password?" = "Vælg dit adgangskode";
+"Something went wrong" = "Noget gik galt";
+"we will send email to" = "Vi sender en E-mail til";
+"with a link to reset your password." = "Med et link til at nulstille din adgangskode";
+"A reset password link has been sent to" = "Et link til at nulstille adgangskode er blevet sendt til";
+"Enter new email." = "Indtast E-mail";
+"Enter password." = "Instast adgangskode";
+"New Password " = "Ny Adgangskode";
+" (8 characters min)" = "(mindt 8 tegn)";
+"Enter current password." = "Indtast nuværende adgangskode";
+"Enter new password." = "Instast ny adgangskode";
+"Enter confirm password." = "Bekræft adgangskode";
+"password do not matched!" = "Adgangskode matcher ikke!";
+"GET STARTED" = "KOM I GANG";
+"SKIP" = "SPRING OVER";
+"From where you would like to pick photo?" = "Hvorfra vil du vælge et foto?";
+"Camera" = "Kamera";
+"Photo Library" = "Fotobibliotek";
+"Kindly open settings and enable access" = "Åbn venligst indstillinger og aktiver adgang";
+"Open Settings" = "Åben indstillinger";
+"Access needed for your camera" = "Adgang er nødvendig til dit kamera";
+"Access needed for your photo library" = "Adgang er nødvendig til dit fotobiblotek";
+"Done" = "Færdig";
+"Pull to refresh" = "Træk for at opdatere";
+"Loading" = "Indlæser";
+"Speech not available for this article" = "Tale utilgængelig for denne artikel";
+"MANAGE LOCATION" = "ADMINISTRER PLACERING";
+"OK" = "Okay";
+"Choose your News in Bullets Edition based on locale" = "Vælg dine nyheder i Bullets Edition baseret på lokalitet";
+"Edition" = "Udgave";
+"EDITION / REGION" = "UDGAVE / REGION";
+"Your Topics" = "Dine emner";
+"Your Channels" = "Dine kanaler";
+"Your Places" = "Dine steder";
+"Enter email." = "Indtast e-mail.";
+"Please enter a password." = "Indtast en adgangskode.";
+"Search articles" = "Søg i artikler";
+"No results" = "Ingen resultater";
+"Edition / Region" = "Udgave / Region";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOKER";
+"CANCEL" = "AFBRYD";
+"PLACES" = "STEDER";
+"LANGUAGE" = "SPROG";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "GEMMEDE ARTIKLER";
+"Topics" = "Emner";
+"Channels" = "Kanaler";
+"Editions" = "Udgaver";
+"No saved stories yet" = "Ingen gemte historier endnu";
+"Tap the" = "Tryk på";
+"icon on the article" = "Ikon på artiklen";
+"you want to read later then" = "Du vil læse senere så";
+"Select" = "Vælg";
+"to save article." = "Til at gemme artiklen.";
+"There is nothing in here" = "Intet herinde";
+"Looks like there is nothing here but a cat." = "Det ser ud til, at der kun er en kat her.";
+"Would you like to go back to home?" = "Gå tilbage til hovedsiden?";
+"GO HOME" = "GÅ HJEM";
+"Search" = "Søg";
+"Discover" = "Opdag";
+"Articles" = "Artikler";
+"Try a different keyword" = "Prøv et andet nøgleord";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Få de mest relevante nyheder til den region, du vælger. Læs kuraterede nyhedshistorier for at holde dig opdateret om de seneste nyheder fra hvor som helst i verden.";
+"Language" = "Sprog";
+"Results" = "Resultater";
+"For You" = "For Du";
+"Top News" = "Top Nyheder";
+"Choose a style" = "Vælg en stil";
+"Pop or subtle. Day or night. Customize your interface." = "Pop eller subtil. Dag eller nat. Tilpas din grænseflade.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "Om os";
+
+
+"Share" = "Del";
+
+
+"ACCOUNT" = "Konto";
+
+
+"Your Email" = "Din E-mail";
+
+
+"1sT-J6-qI0.text" = "Gemte Artikler";
+
+
+"2XX-rr-GLC.text" = "Vælg flere kanaler fra hundredevis af kilder";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Læs de seneste nyheds hændelser og indslag fra hele verden";
+
+
+"Set an interval in which you want to receive your news notifications." = "Indstil et tidsrum til at modtage notifikationer";
+
+
+"Off" = "Slukket";
+
+
+
+
+
+"Bullet 2" = "Punkt 2";
+
+
+"What's your email?" = "Hvad er din E-mail";
+
+
+"New Password (8 Characters Min)" = "Ny adgangskode (minimum 8 tegn)";
+
+
+"Forgot Password?" = "Glemt Adgangskode?";
+
+
+"Account Settings" = "Konto Indstillinger";
+
+
+"Learn how we process your data" = "Information om behandling af dine data";
+
+
+"3h" = "3timer";
+
+
+"Ok" = "ok";
+
+
+"Block articles from The Guardian" = "Bloker artikler fra ---";
+
+
+"On" = "Tænd";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Hjælpecenter";
+
+
+"Search" = "Søg Kanaler";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Vælg fil fra galleri";
+
+
+
+
+"Save article" = "Gem artikel";
+
+
+"ABOUT" = "Om";
+
+
+"Dark" = "Mørkt";
+
+
+"Legal" = "Gyldig";
+
+
+"Go to The Guardian" = "Gå til ---";
+
+
+"Send reset link" = "Send nulstillings link";
+
+
+
+
+
+"My Account" = "Min konto";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Besked";
+
+
+"Confirm New Password" = "Bekræft Ny Adgangskode";
+
+
+"for ___" = "Til ___";
+
+
+"Search" = "Søg Emner";
+
+
+"LANGUAGE" = "Sprog";
+
+
+"Light" = "Lyst";
+
+
+"FOLLOW 3 TO CONTINUE" = "For at forsætte vælg 3";
+
+
+
+
+"Off" = "Sluk";
+
+
+"Language" = "Vælg";
+
+
+"LOG OUT" = "Log ud";
+
+
+"Report content" = "Rapporter indhold";
+
+
+"What's your email?" = "Hvad er din E-mail";
+
+
+"On" = "Sluk";
+
+
+"More like this" = "Flere nyheder som dette";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1time";
+
+
+"Enter Email Address" = "Indtast E-mail adresse";
+
+
+"News in Bullets" = "Læs mere i mindre tid";
+
+
+"6h" = "6timer";
+
+
+"Choose your password" = "Vælg din adgangskode";
+
+
+"Cancel" = "Afbryd";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Læs nyhederne hurtigt med denne app. Vælg dine emner og kilder. Læs derefter dine nyheder med korte punkter.";
+
+
+"Push Notification" = "Notifikation";
+
+
+"12h" = "12timer";
+
+
+"24h" = "24timer";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Hvordan kan vi hjælpe?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "Skift adgangskode";
+
+
+"Change Email" = "Skift E-mail Adresse";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "GEM ÆNDRINGER";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Send os en besked hvis du har brig for hjælp med noget, vi vil gerne høre fra dig!";
+
+
+"P5u-N3-Tw4.text" = "Etiket";
+
+
+"Cancel" = "Afbryd";
+
+
+"Bullet 1" = "Punkt 1";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFIKATION";
+
+
+"POST ARTICLE" = "Indsend en artikel";
+
+
+"CONTACT US" = "Kontakt os";
+
+
+"EDITION / REGION" = "Udgave";
+
+
+"Search" = "Søg";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Send os feedback, vi vil gerne høre fra dig! Har du nogle spørgsmål eller juridske problemer? Prøv vores Hjælp side eller Kontakt os";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Send os en besked hvis du har brig for hjælp med noget, vi vil gerne høre fra dig!";
+
+
+"30m" = "30minutter";
+
+
+"CONTINUE" = "FORSÆT";
+
+
+"Time To Update!" = "Opdater Appen!";
+
+
+"NOTIFICATIONS" = "NOTIFIKATION";
+
+
+"Search" = "Søg";
+
+
+"By clicking Continue, you agree with our Terms." = "Vælg Forsæt til at acceptere betingelser";
+
+
+"HELP / CONTACT US" = "HJÆLP / KONTAKT";
+
+
+"Reset Password" = "Nulstil Adgangskode";
+
+
+"SEND MESSAGE" = "SEND BESKED";
+
+
+"Save article" = "Gem artikel";
+
+
+"Bullet 6 (Optional)" = "punkt 6";
+
+
+"HAPTICS" = "Berøringssans";
+
+
+"Your message has \vbeen sent." = "Din besked er sendt afsted";
+
+
+"LEGAL" = "GYLDIG";
+
+
+"Block List" = "Blokeringsliste";
+
+
+"PERSONALIZATION" = "TILPASNING";
+
+
+"in our Privacy Policy." = "I vores fortrolighedspolitik.";
+
+
+"CONTINUE" = "FORSÆT";
+
+
+"Enter Name" = "Indtast Navn";
+
+
+"What's your email?" = "Hvad er din E-mail?";
+
+
+"Hello there!" = "Hej!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFIKATIONER";
+
+
+"Bullet 3 (Optional)" = "Punkt 3 (valgfrit)";
+
+
+"Source name" = "Kildenavn";
+
+
+"Current Password" = "Nuværende Adgangskode";
+
+
+"COLOR THEME" = "Farve tema";
+
+
+"eTp-X1-g34.text" = "Eller med";
+
+
+"CANCEL" = "AFBRYD";
+
+
+"Bullet 4 (Optional)" = "Punkt 4 (valgfrit)";
+
+
+"Date published" = "Offentliggjort dato";
+
+
+"Send Password Reset Link" = "Send link til nulstilling af adgangskode";
+
+
+"CONTINUE WITH APPLE" = "Log ind via Apple ID";
+
+
+"Off" = "Sluk";
+
+
+"BLOCK LIST" = "BLOKERINGSLISTE";
+
+
+"HELP" = "HJÆLP";
+
+
+"Reference link" = "Reference link";
+
+
+"Your Password" = "Din Adgangskode";
+
+
+"SUBMIT" = "INDSEND";
+
+
+"HELP" = "HJÆLP";
+
+
+"MY ACCOUNT" = "MIN KONTO";
+
+
+"hbD-HP-tZd.normalTitle" = "Unblock";
+
+
+"OTHERS" = "Andre";
+
+
+"BREAKING NEWS" = "BREAKING NEWS";
+
+
+"Topics" = "Blokeret emner";
+
+
+"Message us," = "Send os en besked";
+
+
+"Pick topics to start reading
+and saving articles" = "App Sprog";
+
+
+"Forgot Password?" = "Glemt Adgangskode?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nye funktioner er tilføjet. Nogle problemer er løst.";
+
+
+"Success!" = "Succes!";
+
+
+"Current Password" = "Nuværende Adgangskode";
+
+
+"CONTENT" = "INDHOLD";
+
+
+"Headline" = "Overskrift";
+
+
+"neg-UC-UpK.text" = "Vælg emner for at begynde at læse og gemme artikler";
+
+
+"CONTINUE WITH EMAIL ID" = "Forsæt med din E-mail ID";
+
+
+"SAVE CHANGES" = "GEM ÆNDRINGER";
+
+
+"Post an Article" = "Indsend en artikel";
+
+
+"Contact Us" = "Kontakt os";
+
+
+"On" = "Sluk";
+
+
+"New Email Address" = "Ny E-mail Adresse";
+
+
+"Bullet 5 (Optional)" = "Punkt 5 (valgfrit)";
+
+
+"Suggest an improvement" = "Foreslå forbedring";
+
+
+"Channels" = "Blokerede kilder";
+
+
+"From:" = "Fra:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONLIGE ANBEFALINGER";
+
+
+"I don't like this" = "Jeg kan ikke lide dette";
+
+
+"CONTINUE" = "FORSÆT";
+
+
+"Name" = "Navn";
+
+
+"Enter email" = "Indtast E-mail";
+
+
+"HELP" = "HJÆLP";
+
+
+"FOLLOW 3 TO CONTINUE" = "Følg 3 til at foresætte";
+
+
+"UPDATE APP" = "Opdater Appen!";
+
+
+"Forgot Password?" = "Glemt Adgangskode?";
+
+
+"Change Password" = "Ændre Adgangskode";
+
+
+"Reset Password" = "Nulstil Adgangskode";
+
+
+
+
+
+
+
+
+"Report content" = "Rapporter din bekymring";
+
+
+"CHANGE EMAIL ADDRESS" = "ÆNDRE E-MAIL ADRESSE";
+
+
+"Follow The Guardian" = "Følge efter ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Vi tilføjede masser af nye funktioner og retter nogle fejl for at gøre din oplevelse så jævn som muligt.";
+
+
+"Edition / Region" = "Udgave / Region";
+
+
+"OK" = "Okay";
+
+
+"NARRATOR" = "FORTELLER";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "At holde sig opdateret om de nyheder, du elsker, bør ikke tage for meget af din tid. Nyheder i kugler tager den regelmæssige 5-minutters læsning og kondenserer den til letfordøjelige kugler. Nu kan du tage de samme nyheder på bare en brøkdel af tiden - så du kan læse mere på kortere tid.";
+
+
+"READING SPEED" = "LÆSESHASTIGHED";
+
+
+
+
+
+"You haven't blocked anything yet" = "Du har ikke blokeret noget endnu";
+
+
+"EDITION / REGION" = "UDGAVE / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "KUN HEADLINES";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Lydindstillinger";
+
+
+"AUDIO SETTINGS" = "LYDINDSTILLINGER";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES OG PULLER";
+
+
+"CONTINUE AS GUEST" = "Spring over og log ind som gæst";
+
+
+"Topics" = "Emner";
+
+
+"Pick topics to start reading and saving articles" = "Vælg emner for at begynde at læse og gemme artikler";
+
+
+"Channels" = "Kanaler";
+
+
+"Choose from hundreds \nof news publications" = "Vælg mellem hundredvis af nyhedspublikationer";
+
+
+"Pick topics to start reading\nand saving articles" = "Vælg emner for at begynde at læse og gemme artikler";
+
+"Pick editions to start reading\nand saving articles" = "Vælg udgaver for at begynde at læse og gemme artikler";
+
+"Or with" = "Eller med";
+
+"CONTINUE AS GUEST" = "FORTSÆT SOM GÆST";
+
+"Terms of Service" = "Servicevilkår";
+
+"Choose from hundreds \nof news publications" = "Vælg mellem hundredvis af nyhedspublikationer";
+
+"Select your preferred language\nfor News in Bullets." = "Vælg dit foretrukne sprog til Nyheder i kugler.";
+
+"Choose a style" = "Vælg en stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop eller subtil. Dag eller nat. Tilpas din grænseflade.";
+
+"MINS AGO" = "minutter siden";
+
+"AN HOUR AGO" = "en time siden";
+
+"HOURS AGO" = "timer siden";
+
+"1 WEEK AGO" = "1 uge siden";
+
+"YESTERDAY" = "I går";
+
+"DAYS AGO" = "dage siden";
+
+"Go to" = "Gå til";
+
+"You have reached the start." = "Du er nået til starten";
+
+"Source unblocked successfully" = "Kilden er ikke blokeret";
+
+"Invalid email format"  = "Ugyldigt e-mail-format";
+
+"Wrong email or password" = "Forkert e-mail eller adgangskode";
+
+
+"Following" = "Følge";
+"First Name" = "Fornavn";
+"Last Name" = "Efternavn";

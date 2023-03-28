@@ -1,0 +1,770 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "idee principală";
+"BULLETS" = "IDEI PRINCIPALE";
+"Headlines is not available." = "Titlurile nu sunt disponibile.";
+"Check your internet Connection and try again." = "Te rugăm să verifici conexiunea la internet și să încerci din nou.    Te rugăm să verifici conexiunea la internet și să încerci din nou.";
+"Choose Image" = "Alege imagine";
+"Headline" = "Titlu";
+"Bullet 1" = "Punctul 1";
+"Bullet 2" = "Punctul 2";
+"Bullet 3 (Optional)" = "Punctul 3 (opțional)";
+"Bullet 4 (Optional)" = "Punctul 4 (opțional)";
+"Bullet 5 (Optional)" = "Punctul 5 (opțional)";
+"Bullet 6 (Optional)" = "Punctul 6 (opțional)";
+"Enter Aticle Headline" = "Introduce titlul";
+"Enter source name" = "Introduce sursa";
+"Enter reference link" = "Introduce numărul de referință";
+"Enter published date" = "Introduce data publicării";
+"Enter Bullet 1" = "Introduce primul punct";
+"Enter Bullet 2" = "Introduce al doilea punct";
+"Post article successfully" = "Articolul a fost postat cu succes";
+"Follow" = "Urmărește";
+"Unfollow" = "Nu mai urmări";
+"Block articles from" = "BLOCHEAZĂ articolele de la";
+"Unblock articles from" = "DEBLOCHEAZĂ articolele de la    DEBLOCHEAZĂ articolele de la";
+"Remove article" = "Elimină articolul";
+"Save article" = "Salvează articolul";
+"Terms & Conditions" = "Termenii si Condițiile";
+"Privacy Policy" = "Politica de Confidențialitate";
+"TERMS AND CONDITIONS" = "TERMENII ȘI CONDIȚIILE";
+"PRIVACY POLICY" = "POLITICA DE CONFIDENȚIALITATE";
+"Fuel your curiosity" = "Citește mai multe știri globale";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Citește pe scurt știri din toate categoriile tale preferate și de la surse globale de încredere.";
+"Save time" = "Economisește timp";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Citește știrile pe scurt, la liniuță";
+"Hands-free reading" = "Ascultă știrile zilei";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nu ai timp să citești evenimentele zilei? Folosește funcționalitatea audio.";
+"Write your message..." = "Scrie un mesaj...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "trimite-ne un mesaj dacă te putem ajuta cu ceva. Îți stăm la dispoziție!";
+"Drop us a message" = "trimite-ne un mesaj";
+"Enter Name." = "Introduce numele.";
+"Enter Email." = "Introduce adresa de email.";
+"Write your message." = "Scrie un mesaj.";
+"Topic unblock successfully" = "Deblocarea subiectului cu succes";
+"Source unblock successfully" = "Această sursă a fost deblocată";
+"Unblock Source" = "Deblochează sursa";
+"Cancel" = "Anulează";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Abia așteptăm să îți aflăm opinia! Ai întrebări sau procupări? Accesează pagina noastră de ajutor sau contactează-ne direct.";
+"Enter your suggestion." = "Introduce o sugestie.";
+"feedback sent." = "opinia ta a fost trimisă cu succes";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Limba a fost actualizată cu succes.";
+"CONTINUE" = "CONTINUĂ";
+"FOLLOW 3 TO CONTINUE" = "URMĂREȘTE 3 SUBIECTE PENTRU A CONTINUA";
+"Unfollow Location" = "Nu mai urmări locația";
+"Saved Articles" = "Articole salvate";
+"Block" = "BLOCHEAZĂ";
+"Are you sure you want block" = "Ești sigur/ă că vrei să îl/o blochezi?";
+"Once blocked, you wont be able to see any Articles related to this" = "Nu vei mai vedea articolele de pe acest canal dacă îl blochezi.";
+"Block Topic" = "Blochează acest subiect";
+"Suggested" = "Recomandat";
+"Related Sources not available" = "Aceste surse nu sunt disponibile";
+"Block Source" = "Blochează această sursă";
+"News in Bullets App version" = "Versiunea aplicației Știri pe Scurt";
+"Next" = "Următorul";
+"Login" = "Autentificare";
+"Terms" = "Termeni";
+"By clicking Continue, you agree with our Terms." = "Selectează „Continuă” pentru a accepta Termenii.";
+"in our Privacy Policy." = "în cadrul Politicii de Confidențialitate";
+"Access token missing." = "Token-ul de acces lipsește.";
+"NEXT" = "URMĂTORUL";
+"By checking this box, you agree to our " = "Bifează căsuța pentru a accepta Termenii. Informațiile tale vor fi procesate în conformitate cu Politica de Confidențialitate.";
+"Terms of Service" = "Termenii de utilizare";
+". We’ll handle your data according to our " = "Vom gestiona informațiile în conformitate cu";
+"Password must be at least 8 characters." = "Parola trebuie să conțină cel puțin 8 caractere.";
+"Strong" = "Puternică";
+"Medium" = "Medie";
+"Weak" = "Slabă";
+"CREATE A NEW ACCOUNT" = "CREEAZĂ UN CONT NOU";
+"SIGN IN WITH EXISTING ACCOUNT" = "AUTENTIFICARE PRINTR-UN CONT DEJA EXISTENT";
+"You must agree to the Terms of Services to continue" = "Este nevoie să fii de acord cu Termenii de utilizare pentru a continua";
+"SIGN IN" = "Autentificare";
+"What's your password?" = "Care este parola ta?";
+"SIGN UP" = "Înregistrare";
+"Choose your password?" = "Alege o parolă";
+"Something went wrong" = "Ceva nu a funcționat corect";
+"we will send email to" = "vom trimite un email către";
+"with a link to reset your password." = "cu link-ul de resetare al parolei";
+"A reset password link has been sent to" = "Un link de resetare al parolei a fost trimis către";
+"Enter new email." = "Introduce o adresă de email nouă";
+"Enter password." = "Introduce parola";
+"New Password " = "Parolă nouă";
+" (8 characters min)" = "(minimum 8 caractere)";
+"Enter current password." = "Introduce parola curentă";
+"Enter new password." = "Introduce noua parolă";
+"Enter confirm password." = "Confirmă parola";
+"password do not matched!" = "parolele nu se potrivesc!";
+"GET STARTED" = "ÎNCEPE ACUM";
+"SKIP" = "OMITE";
+"From where you would like to pick photo?" = "De unde dorești să îți alegi fotografia?";
+"Camera" = "Cameră";
+"Photo Library" = "Galerie foto";
+"Kindly open settings and enable access" = "Te rugăm să mergi la setări și să permiți accesul";
+"Open Settings" = "Mergi la setări";
+"Access needed for your camera" = "Este nevoie să permiți accesul la camera foto";
+"Access needed for your photo library" = "Este nevoie să permiți accesul la galeria foto";
+"Done" = "Realizat";
+"Pull to refresh" = "Glisează în jos pentru reîmprospătare";
+"Loading" = "Se încarcă";
+"Speech not available for this article" = "Acest articol nu are funcționalitate audio";
+"MANAGE LOCATION" = "GESTIONEAZĂ LOCAȚII";
+"OK" = "O.K";
+"Choose your News in Bullets Edition based on locale" = "Alegeți Știrile dvs. în ediția Bullets în funcție de localizare";
+"Edition" = "Ediție";
+"EDITION / REGION" = "EDIȚIE / REGIUNE";
+"Your Topics" = "Subiectele tale";
+"Your Channels" = "Canalele tale";
+"Your Places" = "Locurile tale";
+"Enter email." = "Introduceți adresa de email.";
+"Please enter a password." = "Vă rugăm să introduceți o parolă.";
+"Search articles" = "Căutați articole";
+"No results" = "Fara rezultate";
+"Edition / Region" = "Ediție / Regiune";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOCHEAZĂ";
+"CANCEL" = "ANULEAZĂ";
+"PLACES" = "LOCURI";
+"LANGUAGE" = "LIMBA";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "ARTICOLE SALVATE";
+"Topics" = "Subiecte";
+"Channels" = "Canale";
+"Editions" = "Ediții";
+"No saved stories yet" = "Nu există încă povești salvate";
+"Tap the" = "Apasă pe";
+"icon on the article" = "pictograma din articolul";
+"you want to read later then" = "pe care vrei să îl citești mai târziu, apoi";
+"Select" = "Selectează";
+"to save article." = "pentru a salva articolul.";
+"There is nothing in here" = "Nu este nimic de afișat pe această pagină.";
+"Looks like there is nothing here but a cat." = "Se pare că singurul lucru disponibil pe această pagină este o pisică.";
+"Would you like to go back to home?" = "Vrei să mergi înapoi la pagina principală?";
+"GO HOME" = "DU-TE ACASĂ";
+"Search" = "Căutare";
+"Discover" = "Descoperă";
+"Articles" = "Articole";
+"Try a different keyword" = "Încercați un alt cuvânt cheie";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Obțineți cele mai relevante știri pentru regiunea pe care o alegeți. Citiți știri organizate pentru a vă ține la curent cu cele mai recente știri de oriunde din lume.";
+"Language" = "Limbă";
+"Results" = "Rezultate";
+"For You" = "Pentru Tu";
+"Top News" = "Știri de top";
+"Choose a style" = "Alegeți un stil";
+"Pop or subtle. Day or night. Customize your interface." = "Pop sau subtil. Zi sau noapte. Personalizați-vă interfața.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Despre noi";
+
+
+"Share" = "Distribuie";
+
+
+"ACCOUNT" = "CONT";
+
+
+"Your Email" = "Adresa de email";
+
+
+"1sT-J6-qI0.text" = "ARTICOLE SALVATE";
+
+
+"2XX-rr-GLC.text" = "Alege un canal din sutele de surse disponibile";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Pune-te la curent cu evenimente globale de ultimă oră.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Alege intervalul de timp preferat pentru notificări.";
+
+
+"Off" = "Off";
+
+
+
+
+
+"Bullet 2" = "Punctul 2";
+
+
+"What's your email?" = "Care este adresa ta de email?";
+
+
+"New Password (8 Characters Min)" = "Parolă nouă (minimum 8 caractere)";
+
+
+"Forgot Password?" = "Ai uitat parola?";
+
+
+"Account Settings" = "Setări de cont";
+
+
+"Learn how we process your data" = "Informații legate de procesarea datelor";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blochează articolele de la ---";
+
+
+"On" = "Pornește";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Centrul de ajutor";
+
+
+"Search" = "Căutare canale";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Selectează un fișier din galerie";
+
+
+
+
+"Save article" = "Salvează articolul";
+
+
+"ABOUT" = "DESPRE";
+
+
+"Dark" = "Întunecat";
+
+
+"Legal" = "Legal";
+
+
+"Go to The Guardian" = "Mergi la ---";
+
+
+"Send reset link" = "Trimite link-ul de resetare";
+
+
+
+
+
+"My Account" = "Contul meu";
+
+
+"FEEDBACK" = "SUGESTII";
+
+
+"Message" = "Mesaj";
+
+
+"Confirm New Password" = "Confirmă noua parolă";
+
+
+"for ___" = "pentru ___";
+
+
+"Search" = "Caută subiecte";
+
+
+"LANGUAGE" = "LIMBĂ";
+
+
+"Light" = "Luminos";
+
+
+"FOLLOW 3 TO CONTINUE" = "pentru a continua, alege 3";
+
+
+
+
+"Off" = "Oprește";
+
+
+"Language" = "Alege";
+
+
+"LOG OUT" = "DECONECTARE";
+
+
+"Report content" = "Reclamă conținutul";
+
+
+"What's your email?" = "Care este adresa ta de email?";
+
+
+"On" = "Pornește";
+
+
+"More like this" = "Mai multe știri similare";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Introduce adresa de email";
+
+
+"News in Bullets" = "Mai multe știri într-un timp mai scurt.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Alege o parolă";
+
+
+"Cancel" = "Anulează";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Folosește această aplicație pentru a citi rapid știrile zilei. Alege-ți sursa și subiectele care te interesează și citește evenimentele de ultimă oră pe scurt, la liniuță.";
+
+
+"Push Notification" = "Notificări";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Cum te putem ajuta?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "SCHIMBARE PAROLĂ";
+
+
+"Change Email" = "SCHIMBARE ADRESĂ DE EMAIL";
+
+
+"Medium" = "Mediu";
+
+
+"SAVE CHANGES" = "SALVEAZĂ MODIFICĂRILE";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Dacă ai nevoie de ajutor, ne poți trimite un mesaj rapid. Îți stăm la dispoziție!";
+
+
+"P5u-N3-Tw4.text" = "Etichetă";
+
+
+"Cancel" = "Anulează";
+
+
+"Bullet 1" = "Punctul 1";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFICĂRI";
+
+
+"POST ARTICLE" = "POSTEAZĂ UN ARTICOL";
+
+
+"CONTACT US" = "Contactează-ne";
+
+
+"EDITION / REGION" = "Ediție";
+
+
+"Search" = "Căutare";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Abia așteptăm să îți aflăm opinia! Ai întrebări sau procupări? Accesează pagina noastră de ajutor sau contactează-ne direct.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Dacă ai nevoie de ajutor, ne poți trimite un mesaj rapid. Îți stăm la dispoziție! ";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "CONTINUARE";
+
+
+"Time To Update!" = "Actualizează aplicația!";
+
+
+"NOTIFICATIONS" = "NOTIFICĂRI";
+
+
+"Search" = "Căutare";
+
+
+"By clicking Continue, you agree with our Terms." = "Apasă pe butonul „Continuă” pentru a accepta Termenii.";
+
+
+"HELP / CONTACT US" = "AJUTOR / CONTACT";
+
+
+"Reset Password" = "Resetează parola";
+
+
+"SEND MESSAGE" = "TRIMITE MESAJ";
+
+
+"Save article" = "Salvează articolul";
+
+
+"Bullet 6 (Optional)" = "Punctul 6 (opțional)";
+
+
+"HAPTICS" = "TACTIL";
+
+
+"Your message has \vbeen sent." = "Mesajul a fost trimis.";
+
+
+"LEGAL" = "LEGAL";
+
+
+"Block List" = "Lista de conturi blocate";
+
+
+"PERSONALIZATION" = "PERSONALIZARE";
+
+
+"in our Privacy Policy." = "în cadrul Politicii de Confidențialitate.";
+
+
+"CONTINUE" = "CONTINUARE";
+
+
+"Enter Name" = "Introduce numele";
+
+
+"What's your email?" = "Care este adresa ta de email?";
+
+
+"Hello there!" = "Salut!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFICĂRI";
+
+
+"Bullet 3 (Optional)" = "Punctul 3 (oțional)";
+
+
+"Source name" = "Numele sursei";
+
+
+"Current Password" = "Parola curentă";
+
+
+"COLOR THEME" = "Schema de culori";
+
+
+"eTp-X1-g34.text" = "sau prin";
+
+
+"CANCEL" = "ANULEAZĂ";
+
+
+"Bullet 4 (Optional)" = "Punctul 4 (opțional)";
+
+
+"Date published" = "Data publicării";
+
+
+"Send Password Reset Link" = "Trimite link-ul de resetare al parolei";
+
+
+"CONTINUE WITH APPLE" = "Înregistrare prin Apple ID";
+
+
+"Off" = "Oprește";
+
+
+"BLOCK LIST" = "LISTA DE CONTURI BLOCATE";
+
+
+"HELP" = "AJUTOR";
+
+
+"Reference link" = "Link de referință";
+
+
+"Your Password" = "Parola ta";
+
+
+"SUBMIT" = "TRIMITE";
+
+
+"HELP" = "AJUTOR";
+
+
+"MY ACCOUNT" = "CONTUL MEU";
+
+
+"hbD-HP-tZd.normalTitle" = "Deblochează";
+
+
+"OTHERS" = "Altele";
+
+
+"BREAKING NEWS" = "ȘTIRI DE ULTIMĂ ORĂ";
+
+
+"Topics" = "Subiecte blocate";
+
+
+"Message us," = "Trimite-ne un mesaj,";
+
+
+"Pick topics to start reading
+and saving articles" = "limba aplicației";
+
+
+"Forgot Password?" = "Ai uitat parola?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Am adăugat noi funcționalități și am rezolvat anumite probleme pe care le-ați întâmpinat.";
+
+
+"Success!" = "Ai reușit!";
+
+
+"Current Password" = "Parola curentă";
+
+
+"CONTENT" = "CONȚINUT";
+
+
+"Headline" = "Titlu";
+
+
+"neg-UC-UpK.text" = "Alege subiectele preferate și salvează articolele care te interesează";
+
+
+"CONTINUE WITH EMAIL ID" = "Continuă cu adresa ta de email";
+
+
+"SAVE CHANGES" = "SALVEAZĂ MODIFICĂRILE";
+
+
+"Post an Article" = "Postează un articol";
+
+
+"Contact Us" = "Contactează-ne";
+
+
+"On" = "Pornește";
+
+
+"New Email Address" = "Adresa de email nouă";
+
+
+"Bullet 5 (Optional)" = "Punctul 5 (opțional)";
+
+
+"Suggest an improvement" = "Sugerează o îmbunătățire";
+
+
+"Channels" = "Surse blocate";
+
+
+"From:" = "De la:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "RECOMANDĂRI PERSONALIZATE";
+
+
+"I don't like this" = "Nu îmi place";
+
+
+"CONTINUE" = "CONTINUARE";
+
+
+"Name" = "Nume";
+
+
+"Enter email" = "Introduce adresa de email";
+
+
+"HELP" = "AJUTOR";
+
+
+"FOLLOW 3 TO CONTINUE" = "Urmărește 3 pentru a merge mai departe";
+
+
+"UPDATE APP" = "Actualizează aplicația";
+
+
+"Forgot Password?" = "Ai uitat parola?";
+
+
+"Change Password" = "Schimbare parolă";
+
+
+"Reset Password" = "Resetează parola";
+
+
+
+
+
+
+
+
+"Report content" = "Fă o reclamație";
+
+
+"CHANGE EMAIL ADDRESS" = "SCHIMBĂ ADRESA DE EMAIL";
+
+
+"Follow The Guardian" = "Urmărește ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Am adăugat o mulțime de funcții noi și am remediat câteva erori pentru a vă face experiența cât mai ușoară posibil.";
+
+
+"Edition / Region" = "Ediție / Regiune";
+
+
+"OK" = "O.K";
+
+
+"NARRATOR" = "NARATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ținerea la curent cu știrile pe care le iubești nu ar trebui să îți ia prea mult timp. News in Bullets ia citirea obișnuită de 5 minute și o condensează în gloanțe ușor digerabile. Acum, puteți primi aceleași știri în doar o fracțiune din timp - astfel încât să puteți citi mai multe în mai puțin timp.";
+
+
+"READING SPEED" = "VITEZA DE CITIRE";
+
+
+
+
+
+"You haven't blocked anything yet" = "Nu ați blocat încă nimic";
+
+
+"EDITION / REGION" = "EDIȚIE / REGIUNE";
+
+
+
+
+
+"HEADLINES ONLY" = "NUMAI TITLURI";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Setari audio";
+
+
+"AUDIO SETTINGS" = "SETARI AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TITLURI ȘI BULLE";
+
+
+"CONTINUE AS GUEST" = "SKIP & LOG-IN CA OASPET";
+
+
+"Topics" = "Subiecte";
+
+
+"Pick topics to start reading and saving articles" = "Alegeți subiecte pentru a începe să citiți și să salvați articole";
+
+
+"Channels" = "Canale";
+
+
+"Choose from hundreds \nof news publications" = "Alegeți dintre sute de publicații de știri";
+
+
+"Pick topics to start reading\nand saving articles" = "Alegeți subiecte pentru a începe să citiți și să salvați articole";
+
+"Pick editions to start reading\nand saving articles" = "Alegeți edițiile pentru a începe să citiți și să salvați articole";
+
+"Or with" = "Sau cu";
+
+"CONTINUE AS GUEST" = "CONTINUAȚI CA OASPET";
+
+"Terms of Service" = "Termenii serviciului";
+
+"Choose from hundreds \nof news publications" = "Alegeți dintre sute de publicații de știri";
+
+"Select your preferred language\nfor News in Bullets." = "Selectați limba preferată pentru Știri în Bullets.";
+
+"Choose a style" = "Alegeți un stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop sau subtil. Zi sau noapte. Personalizați-vă interfața.";
+
+"MINS AGO" = "acum câteva minute";
+
+"AN HOUR AGO" = "acum o oră";
+
+"HOURS AGO" = "ore în urmă";
+
+"1 WEEK AGO" = "1 săptămână în urmă";
+
+"YESTERDAY" = "Ieri";
+
+"DAYS AGO" = "zile în urmă";
+
+"Go to" = "Mergi la";
+
+"You have reached the start." = "Ai ajuns la început";
+
+"Source unblocked successfully" = "Sursă deblocată cu succes";
+
+"Invalid email format"  = "format de email invalid";
+
+"Wrong email or password" = "e-mail sau parolă greșită";
+
+

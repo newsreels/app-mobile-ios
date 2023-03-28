@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "bullet ຈຸດ";
+"BULLETS" = "ແຕ້ມຈາກ BULLET";
+"Headlines is not available." = "ພາດຫົວຂ່າວຍັງບໍ່ທັນມີ.";
+"Check your internet Connection and try again." = "ກວດສອບການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງທ່ານແລະພະຍາຍາມອີກເທື່ອຫນຶ່ງ.";
+"Choose Image" = "ເລືອກຮູບພາບ";
+"Headline" = "ຫົວຂໍ້ຂ່າວ";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "2 Bullet";
+"Bullet 3 (Optional)" = "Bullet 3 (ຖ້າຕ້ອງການ)";
+"Bullet 4 (Optional)" = "Bullet 4 (ຖ້າຕ້ອງການ)";
+"Bullet 5 (Optional)" = "Bullet 5 (ຖ້າຕ້ອງການ)";
+"Bullet 6 (Optional)" = "Bullet 6 (ຖ້າຕ້ອງການ)";
+"Enter Aticle Headline" = "ກະລຸນາໃສ່ຫົວຂໍ້ຂ່າວ";
+"Enter source name" = "ກະລຸນາໃສ່ທີ່ມາ";
+"Enter reference link" = "ກະລຸນາໃສ່ເອກະສານທີ່";
+"Enter published date" = "ກະລຸນາໃສ່ວັນທີເຜີຍແຜ່";
+"Enter Bullet 1" = "ກະລຸນາໃສ່ Bullet ທໍາອິດ";
+"Enter Bullet 2" = "ກະລຸນາໃສ່ Bullet ສອງ";
+"Post article successfully" = "ບົດຄວາມໄດ້ຖືກຈັດພີມມາສົບຜົນສໍາເລັດ";
+"Follow" = "ປະຕິບັດຕາມ";
+"Unfollow" = "ບໍ່ຕິດ";
+"Block articles from" = "BLOCK ບົດຄວາມຈາກ";
+"Unblock articles from" = "ຍົກເລີກການບລັອກບົດຄວາມຈາກ";
+"Remove article" = "ເອົາບົດຄວາມ";
+"Save article" = "ບັນທຶກບົດຄວາມນີ້    ບັນທຶກບົດຄວາມນີ້";
+"Terms & Conditions" = "ຂໍ້ກໍານົດແລະເງື່ອນໄຂ";
+"Privacy Policy" = "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ";
+"TERMS AND CONDITIONS" = "ຂໍ້ກໍານົດແລະເງື່ອນໄຂ";
+"PRIVACY POLICY" = "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ";
+"Fuel your curiosity" = "ອ່ານຂ່າວເພີ່ມເຕີມກ່ຽວກັບໂລກ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "ອ່ານຂ່າວສັ້ນແລະຖືກຕ້ອງກ່ຽວກັບປະເດັນທີ່ທ່ານຊື່ນຊອບຈາກແຫຼ່ງຂໍ້ມູນທີ່ເຊື່ອຖືໄດ້ໃນທົ່ວໂລກໄດ້.";
+"Save time" = "ບັນທຶກທີ່ໃຊ້ເວລາຂອງທ່ານ";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "ອ່ານຂ່າວໃນລູກປືນ, ຈຸດ";
+"Hands-free reading" = "ອ່ານແຮນຟຣີ";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "ທີ່ໃຊ້ເວລາສໍາລັບການອ່ານ? ໃຊ້ການທໍາງານຂອງປາກເວົ້າ, ຂີດ.";
+"Write your message..." = "ຂຽນຂໍ້ຄວາມຂອງທ່ານ ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ສົ່ງໃຫ້ພວກເຮົາຂໍ້ຄວາມຖ້າຫາກວ່າທ່ານຕ້ອງການການຊ່ວຍເຫຼືອທີ່ມີບາງສິ່ງບາງຢ່າງ, ພວກເຮົາຈະຮັກທີ່ຈະໄດ້ຍິນຈາກທ່ານ!";
+"Drop us a message" = "ສົ່ງໃຫ້ພວກເຮົາຂໍ້ຄວາມ";
+"Enter Name." = "ກະລຸນາໃສ່ຊື່ຂອງທ່ານ.";
+"Enter Email." = "ກະລຸນາໃສ່ອີເມວ.";
+"Write your message." = "ຂຽນຂໍ້ຄວາມຂອງທ່ານ.";
+"Topic unblock successfully" = "ທ່ານຍົກເລີກການບລັອກຫົວຂໍ້ນີ້";
+"Source unblock successfully" = "ທ່ານຍົກເລີກການບລັອກແຫຼ່ງດັ່ງກ່າວນີ້";
+"Unblock Source" = "Unblock Source";
+"Cancel" = "ຍົກເລີກການ";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ສົ່ງໃຫ້ພວກເຮົາຄໍາຄຶດຄໍາເຫັນ, ພວກເຮົາຈະຮັກທີ່ຈະໄດ້ຍິນຈາກທ່ານ! ທ່ານມີຄໍາຖາມຫລືຂໍ້ສົງໄສກົດຫມາຍ? ພະຍາຍາມຫນ້າຄວາມຊ່ອຍເຫຼືອຫຼືຕິດຕໍ່ພວກເຮົາ.";
+"Enter your suggestion." = "ກະລຸນາໃສ່ຄໍາແນະນໍາຂອງທ່ານ.";
+"feedback sent." = "ຕໍານິຕິຊົມໄດ້ຖືກສົ່ງໄປຢ່າງສໍາເລັດຜົນ";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "ຕະຫຼອດ 24 ຊ";
+"Language updated successfully." = "ພາສາແມ່ນອັບເດດຮຽບຮ້ອຍ.";
+"CONTINUE" = "ສືບຕໍ່";
+"FOLLOW 3 TO CONTINUE" = "ປະຕິບັດຕາມ 3 TO ສືບຕໍ່";
+"Unfollow Location" = "ບໍ່ມີສະຖານທີ່";
+"Saved Articles" = "ບົດຄວາມທີ່ບັນທຶກໄວ້";
+"Block" = "BLOCK";
+"Are you sure you want block" = "ທ່ານແນ່ໃຈວ່າທ່ານຕ້ອງການທີ່ຈະປິດກັ້ນນີ້";
+"Once blocked, you wont be able to see any Articles related to this" = "ທ່ານຈະບໍ່ເຫັນບົດຄວາມຈາກຊ່ອງນີ້ຖ້າຫາກວ່າທ່ານຕັນມັນ.";
+"Block Topic" = "ຕັນຫົວຂໍ້ນີ້";
+"Suggested" = "ແນະນໍາ";
+"Related Sources not available" = "ແຫລ່ງທີ່ກ່ຽວຂ້ອງຍັງບໍ່ທັນມີ";
+"Block Source" = "ຕັນມານີ້";
+"News in Bullets App version" = "ຂ່າວໃນຂ່າວສະບັບພາສາ App";
+"Next" = "ຖັດໄປ";
+"Login" = "ເຂົ້າ​ສູ່​ລະ​ບົບ";
+"Terms" = "ເງື່ອນໄຂ";
+"By clicking Continue, you agree with our Terms." = "ລະບົບ Select ສືບຕໍ່ຍອມຮັບຂໍ້ກໍານົດ.";
+"in our Privacy Policy." = "ໃນນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງພວກເຮົາ.";
+"Access token missing." = "token ການເຂົ້າເຖິງຖືກຫາຍສາບສູນ.";
+"NEXT" = "ຕໍ່ໄປ";
+"By checking this box, you agree to our " = "ກົດຫມາຍໃສ່ໃນປ່ອງທີ່ຈະຍອມຮັບຂໍ້ກໍານົດ. ຂໍ້ມູນຂອງທ່ານແມ່ນການປຸງແຕ່ງຕາມນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງພວກເຮົາ.";
+"Terms of Service" = "ເງື່ອນໄຂການໃຫ້ບໍລິການ";
+". We’ll handle your data according to our " = ". ພວກເຮົາຈະຈັດການຂໍ້ມູນຂອງທ່ານອີງຕາມການຂອງພວກເຮົາ";
+"Password must be at least 8 characters." = "ລະຫັດຜ່ານຕ້ອງມີຢ່າງນ້ອຍ 8 ຕົວອັກສອນ.";
+"Strong" = "ທີ່ເຂັ້ມແຂງ";
+"Medium" = "ຂະຫນາດກາງ";
+"Weak" = "ອ່ອນແອ";
+"CREATE A NEW ACCOUNT" = "ສ້າງບັນຊີໃຫມ່";
+"SIGN IN WITH EXISTING ACCOUNT" = "ເຂົ້າສູ່ລະບົບ EXISTING ACCOUNT";
+"You must agree to the Terms of Services to continue" = "ທ່ານຕ້ອງຍອມຮັບເງື່ອນໄຂການໃຫ້ບໍລິການທີ່ຈະສືບຕໍ່";
+"SIGN IN" = "ເຂົ້າ​ສູ່​ລະ​ບົບ";
+"What's your password?" = "ສິ່ງທີ່ເປັນລະຫັດຜ່ານຂອງທ່ານ?";
+"SIGN UP" = "ລົງ​ທະ​ບຽນ";
+"Choose your password?" = "ເລືອກລະຫັດຜ່ານຂອງທ່ານ";
+"Something went wrong" = "ບາງສິ່ງບາງຢ່າງເອງເຮັດຜິດພາດ";
+"we will send email to" = "ພວກເຮົາຈະສົ່ງອີເມລ໌ທີ່ຈະ";
+"with a link to reset your password." = "ມີການເຊື່ອມຕໍ່ປ່ຽນລະຫັດຜ່ານຂອງທ່ານ.";
+"A reset password link has been sent to" = "A ການເຊື່ອມຕໍ່ກັບລະຫັດຜ່ານຕັ້ງໄດ້ຖືກສົ່ງໄປຫາ";
+"Enter new email." = "ກະລຸນາໃສ່ອີເມວໃຫມ່.";
+"Enter password." = "ກະລຸນາໃສ່ລະຫັດຜ່ານ.";
+"New Password " = "ລະຫັດຜ່ານໃຫມ່";
+" (8 characters min)" = "(8 ຕົວອັກສອນນາທີ)";
+"Enter current password." = "ກະລຸນາໃສ່ລະຫັດຜ່ານໃນປະຈຸບັນ.";
+"Enter new password." = "ກະລຸນາໃສ່ລະຫັດລັບໃຫມ່.";
+"Enter confirm password." = "ຢືນ​ຢັນ​ລະ​ຫັດ.";
+"password do not matched!" = "ລະຫັດຜ່ານບໍ່ກົງກັນ!";
+"GET STARTED" = "ເລີ່ມ​ຕົ້ນ";
+"SKIP" = "ຂ້າມ";
+"From where you would like to pick photo?" = "ຈາກບ່ອນທີ່ທ່ານຈະຕ້ອງການທີ່ຈະເລືອກເອົາຮູບພາບ?";
+"Camera" = "ກ້ອງ​ຖ່າຍ​ຮູບ";
+"Photo Library" = "ຫໍສະຫມຸດຮູບພາບ";
+"Kindly open settings and enable access" = "ການຕັ້ງຄ່າເປີດຄວາມເມດຕາແລະໃຫ້ສາມາດເຂົ້າເຖິງ";
+"Open Settings" = "ການຕັ້ງຄ່າເປີດ";
+"Access needed for your camera" = "ເຂົ້າຈໍາເປັນສໍາລັບກ້ອງຖ່າຍຮູບຂອງທ່ານ";
+"Access needed for your photo library" = "ເຂົ້າຈໍາເປັນສໍາລັບຫໍສະຫມຸດຮູບພາບຂອງທ່ານ";
+"Done" = "ເຮັດ";
+"Pull to refresh" = "ດຶງກັບໂຫຼດຫນ້າຈໍຄືນ";
+"Loading" = "ກໍາລັງໂຫລດ";
+"Speech not available for this article" = "Speech ບໍ່ສາມາດໃຊ້ສໍາລັບບົດຄວາມນີ້";
+"MANAGE LOCATION" = "ຈັດການທີ່ຢູ່";
+"OK" = "ຕົກ​ລົງ";
+"Choose your News in Bullets Edition based on locale" = "ເລືອກຂ່າວຂອງທ່ານໃນ Bullets Edition ໂດຍອີງໃສ່ທ້ອງຖິ່ນ";
+"Edition" = "ສະບັບ";
+"EDITION / REGION" = "EDITION / REGION";
+"Your Topics" = "ຫົວຂໍ້ຂອງທ່ານ";
+"Your Channels" = "ຊ່ອງທາງຂອງທ່ານ";
+"Your Places" = "ສະຖານທີ່ຂອງທ່ານ";
+"Enter email." = "ໃສ່ອີເມວ.";
+"Please enter a password." = "ກະລຸນາໃສ່ລະຫັດຜ່ານ.";
+"Search articles" = "ຄົ້ນຫາບົດຄວາມ";
+"No results" = "ບໍ່ມີຜົນໄດ້ຮັບ";
+"Edition / Region" = "ສະບັບ / ພາກພື້ນ";
+
+
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "0JC-Sb-Ouu"; */
+"0JC-Sb-Ouu.text" = "ຮູບແບບການສະແດງ";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"Select" = "ເລືອກ ( ";
+
+
+"6H8-dI-k9P.text" = "ການຄຸ້ມຄອງສະຖານທີ່";
+
+
+"6KH-YP-5Lt.text" = "ຄໍາບັນຍາຍ";
+
+
+" ) icon on the article" = " ) ຮູບສັນຍາລັກກ່ຽວກັບບົດຄວາມ";
+
+
+"BLOCK" = "ທ່ອນໄມ້";
+
+
+"you want to read later then" = "ທ່ານຕ້ອງການທີ່ຈະອ່ານໃນພາຍຫລັງແລ້ວ";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "7oo-cf-l7Y"; */
+"7oo-cf-l7Y.text" = "ຄວາມໄວຂອງການອ່ານ";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "88L-ip-pZw"; */
+"88L-ip-pZw.text" = "ຄວາມໄວຂອງການອ່ານ";
+
+/* Class = "UILabel"; text = "There is nothing in here \nDo you want to go back to home page?"; ObjectID = "9hT-gC-mbD"; */
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "ມີບໍ່ມີຫຍັງຢູ່ໃນທີ່ນີ້ \nທ່ານຕ້ອງການທີ່ຈະກັບຄືນໄປບ່ອນໄປຫນ້າທໍາອິດ?";
+
+
+"BpH-F1-i0z.normalTitle" = "ທ້ອງຖິ່ນ";
+
+
+" ) to save article." = " ) ເພື່ອຊ່ວຍປະຢັດບົດ.";
+
+/* Class = "UILabel"; text = "to continue, choose 3"; ObjectID = "FB0-YN-HZg"; */
+"FB0-YN-HZg.text" = "ທີ່ຈະສືບຕໍ່, ເລືອກເອົາ 3";
+
+/* Class = "UILabel"; text = "Headlines and\nBullet points"; ObjectID = "H5Z-xJ-dWD"; */
+"H5Z-xJ-dWD.text" = "ຫົວຂໍ້ຂ່າວແລະ\nຈຸດປືນ";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ເບິ່ງແບບພິເສດ";
+
+
+"Jpx-nY-Is1.normalTitle" = "ຊ່ອງທາງຕ່າງໆ";
+
+
+"JqN-io-P1u.normalTitle" = "+ Add to ຖານ";
+
+/* Class = "UILabel"; text = "What is your Email address?"; ObjectID = "KRg-gX-n95"; */
+"What's your email?" = "ແມ່ນຫຍັງທີ່ຢູ່ອີເມວຂອງທ່ານ?";
+
+
+"Lw1-Md-nse.text" = "ບັນຊີລາຍຊື່ VIEW";
+
+
+"LyT-pT-g53.text" = "ສາກົນ";
+
+
+"N6C-6i-Z2s.text" = "ສາກົນ";
+
+/* Class = "UILabel"; text = "Suggestions"; ObjectID = "Nru-uU-CsC"; */
+"Nru-uU-CsC.text" = "ຄໍາແນະນໍາ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "ຫົວຂໍ້";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "ປັບແຕ່ງ";
+
+
+"Topics" = "ຫົວຂໍ້";
+
+/* Class = "UILabel"; text = "HEADLINES AND\nBULLET POINTS"; ObjectID = "WXY-po-W1B"; */
+"WXY-po-W1B.text" = "ຫົວຂໍ້ຂ່າວແລະ\nຈຸດປືນ";
+
+
+"ans-Zy-T2Y.placeholder" = "ຄົ້ນຫາສໍາລັບສະຖານທີ່";
+
+
+"bgE-Jc-u8H.text" = "ປັບແຕ່ງ";
+
+
+
+
+
+"Tap the ( " = "ແຕະ ( ";
+
+
+"Places" = "ສະຖານທີ່";
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "d1l-HK-OrG"; */
+"d1l-HK-OrG.text" = "ຮູບແບບການສະແດງຜົນ";
+
+
+
+
+
+"Language" = "ພາສາ";
+
+
+"e9g-Wr-suO.text" = "ມ້ຽນ _";
+
+
+"GO HOME" = "ກັບຄືນໄປບ່ອນໄປຫນ້າຫລັກ";
+
+
+"eh1-Oo-lEn.text" = "ເບິ່ງແບບພິເສດ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ບັນຊີລາຍຊື່ VIEW";
+
+
+"j2i-MT-VkA.text" = "ພະຍາຍາມຄໍາທີ່ແຕກຕ່າງກັນ";
+
+
+"Top News" = "ຂ່າວ Top";
+
+
+"jmO-aF-nJ9.text" = "ຫົວຂໍ້ຂ່າວມີພຽງແຕ່";
+
+
+"There is nothing in here" = "ມີບໍ່ມີຫຍັງຢູ່ໃນທີ່ນີ້";
+
+
+"ma1-9p-bSa.text" = "ບໍ່ພົບຜົນ";
+
+
+"mce-jc-cKH.text" = "ຄໍາບັນຍາຍ";
+
+
+"Channels" = "ຊ່ອງທາງຕ່າງໆ";
+
+
+"Discover" = "ຄົ້ນພົບ";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ຍົກເລີກ";
+
+
+"Discover" = "ຄົ້ນພົບ";
+
+
+"No saved stories yet" = "ມີບໍ່ມີຫຍັງຢູ່ໃນທີ່ນີ້";
+
+
+"wDG-kF-Hl8.text" = "ຂ່າວອ່ານໂດຍອີງໃສ່ສະຖານທີ່";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ສະຖານທີ່";
+
+
+"xfF-RB-mWL.text" = "ສະຖານທີ່";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ເອົາຂ່າວທີ່ກ່ຽວຂ້ອງທີ່ສຸດໄປສູ່ຂົງເຂດທີ່ທ່ານເລືອກ. ອ່ານເລື່ອງຂ່າວທີ່ເກັບຮັກສາໄວ້ເພື່ອໃຫ້ທ່ານໄດ້ຮັບຂ່າວສານລ້າສຸດຈາກທຸກບ່ອນໃນໂລກ.";
+
+
+"Search articles" = "ຄົ້ນຫາບົດຄວາມ";
+
+
+"6H8-dI-k9P.text" = "ຈັດການສະຖານທີ່";
+
+
+
+
+
+"Profile" = "ຂໍ້ມູນ";
+
+
+"Editions" = "ສະບັບ";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "ສະຖານທີ່";
+
+
+
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+
+
+
+
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"LANGUAGE" = "ພາສາ";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"No results" = "ບໍ່ພົບຜົນໄດ້ຮັບ";
+
+
+"Channels" = "ຊ່ອງທາງຕ່າງໆ";
+
+
+"Places" = "ສະຖານທີ່";
+
+
+"Places" = "ສະຖານທີ່";
+
+
+"e9F-hd-Ifm.text" = "EDITION / REGION";
+
+
+
+
+
+
+
+
+"PLACES" = "PLACES";
+
+
+"SAVED ARTICLES" = "ມາດຕາປະຫຍັດ";
+
+
+"Articles" = "ບົດຂຽນ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ສືບຕໍ່";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDITION / REGION";
+
+
+"Try a different keyword" = "ລອງໃຊ້ ຄຳ ຄົ້ນອື່ນ";
+
+
+"For You" = "ສຳ ລັບທ່ານ";
+
+
+"Results" = "ຜົນໄດ້ຮັບ";
+
+
+
+"About" = "ກ່ຽວ​ກັບ​ພວກ​ເຮົາ";
+
+
+"Share" = "ແບ່ງປັນ";
+
+
+"ACCOUNT" = "ບັນຊີ";
+
+
+"Your Email" = "Email ຂອງທ່ານ";
+
+
+"1sT-J6-qI0.text" = "ບົດຄວາມທີ່ບັນທຶກໄວ້";
+
+
+"2XX-rr-GLC.text" = "ເລືອກຊ່ອງທີ່ແຕກຕ່າງກັນຈາກຫຼາຍຮ້ອຍຄົນຂອງແຫຼ່ງຂໍ້ມູນ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ອ່ານກິດຈະກໍາຂ່າວຫຼ້າສຸດແລະຄຸນນະສົມບັດຈາກທັງຫມົດໃນທົ່ວໂລກ.";
+
+
+"Set an interval in which you want to receive your news notifications." = "ກໍານົດເປັນຊ່ອງຫວ່າງທີ່ໃຊ້ເວລາທີ່ຈະໄດ້ຮັບການແຈ້ງເຕືອນ.";
+
+
+"Off" = "ປິດ";
+
+
+
+
+
+"Bullet 2" = "2 Bullet";
+
+
+"What's your email?" = "ຈະເປັນແນວໃດແມ່ນອີເມວຂອງທ່ານ?";
+
+
+"New Password (8 Characters Min)" = "ລະຫັດຜ່ານໃຫມ່ (8 ຕົວອັກສອນຕ່ໍາສຸດ)";
+
+
+"Forgot Password?" = "ລືມລະຫັດຜ່ານ?";
+
+
+"Account Settings" = "ຕັ້ງ​ຄ່າ​ບັນ​ຊີ";
+
+
+"Learn how we process your data" = "ຂໍ້ມູນກ່ຽວກັບການປະມວນຜົນຂໍ້ມູນຂອງທ່ານ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "ຕົກ​ລົງ";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "ເປີດ";
+
+
+"Auto" = "ອັດຕະໂນມັດ";
+
+
+"Help Center" = "ສູນຊ່ວຍເຫຼືອ";
+
+
+"Search" = "ຊ່ອງຄົ້ນຫາ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "ເລືອກໄຟລ໌ຈາກຄັງ";
+
+
+
+
+"Save article" = "ບັນທຶກບົດຄວາມ";
+
+
+"ABOUT" = "ກ່ຽວກັບ";
+
+
+"Dark" = "ຊ້ໍາ";
+
+
+"Legal" = "ກົດຫມາຍ";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "ສົ່ງການເຊື່ອມຕໍ່ປັບ";
+
+
+
+
+
+"My Account" = "ບັນ​ຊີ​ຂອງ​ຂ້ອຍ";
+
+
+"FEEDBACK" = "ການຕອບຮັບ";
+
+
+"Message" = "ຂໍ້ຄວາມ";
+
+
+"Confirm New Password" = "ຢືນ​ຢັນ​ລະ​ຫັດ​ຜ່ານ​ໃຫມ່";
+
+
+"for ___" = "ສໍາລັບ ___";
+
+
+"Search" = "ຄົ້ນຫາສໍາລັບຫົວຂໍ້";
+
+
+"LANGUAGE" = "ພາສາ";
+
+
+"Light" = "ແສງສະຫວ່າງ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ທີ່ຈະສືບຕໍ່, ເລືອກເອົາ 3";
+
+
+
+
+"Off" = "ປິດ";
+
+
+"Language" = "ເລືອກ";
+
+
+"LOG OUT" = "ອອກ​ຈາກ​ລະ​ບົບ";
+
+
+"Report content" = "ເນື້ອໃນບົດລາຍງານ";
+
+
+"What's your email?" = "ຈະເປັນແນວໃດແມ່ນອີເມວຂອງທ່ານ?";
+
+
+"On" = "ເປີດ";
+
+
+"More like this" = "ຂ່າວສົນໃຈຫລາຍກວ່ານີ້";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "ກະລຸນາໃສ່ທີ່ຢູ່ອີເມວ";
+
+
+"News in Bullets" = "ອ່ານເພີ່ມເຕີມໃນເວລາສອງຫນ້ອຍ.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "ເລືອກລະຫັດຜ່ານຂອງທ່ານ";
+
+
+"Cancel" = "ຍົກເລີກການ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ອ່ານຂ່າວຢ່າງວ່ອງໄວກັບ app ນີ້. ເລືອກຫົວຂໍ້ແລະແຫຼ່ງຂໍ້ມູນຂອງທ່ານ. ຫຼັງຈາກນັ້ນໄດ້ອ່ານຂ່າວຂອງທ່ານມີຈຸດປືນສັ້ນ.";
+
+
+"Push Notification" = "Pແຈ້ງ";
+
+
+"12h" = "12h";
+
+
+"24h" = "ຕະຫຼອດ 24 ຊ";
+
+
+"E-mail" = "ອີເມລ";
+
+
+"How can we help you?" = "ແນວໃດທີ່ພວກເຮົາສາມາດຊ່ວຍເຫຼືອ?";
+
+
+"OJP-Wd-0d3.text" = "ປາກິສຖານ";
+
+
+"CHANGE PASSWORD" = "ປ່ຽນ​ລະ​ຫັດ​ຜ່ານ";
+
+
+"Change Email" = "ປ່ຽນຢູ່ອີເມລ";
+
+
+"Medium" = "ຂະຫນາດກາງ";
+
+
+"SAVE CHANGES" = "ບັນ​ທຶກ​ການ​ປ່ຽນ​ແປງ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "ສົ່ງໃຫ້ພວກເຮົາຂໍ້ຄວາມຖ້າຫາກວ່າທ່ານຕ້ອງການການຊ່ວຍເຫຼືອທີ່ມີບາງສິ່ງບາງຢ່າງ, ພວກເຮົາຈະຮັກທີ່ຈະໄດ້ຍິນຈາກທ່ານ!";
+
+
+"P5u-N3-Tw4.text" = "ປ້າຍກໍາກັບ";
+
+
+"Cancel" = "ຍົກເລີກການ";
+
+
+"Bullet 1" = "ຂ່າວ 1";
+
+
+"TIMED NOTIFICATIONS" = "ແຈ້ງການ";
+
+
+"POST ARTICLE" = "ມາດຕາ POST ມາດຕາ";
+
+
+"CONTACT US" = "ຕິດ​ຕໍ່​ພວກ​ເຮົາ";
+
+
+"EDITION / REGION" = "ສະບັບ";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ສົ່ງໃຫ້ພວກເຮົາຄໍາຄຶດຄໍາເຫັນ, ພວກເຮົາຈະຮັກທີ່ຈະໄດ້ຍິນຈາກທ່ານ! ທ່ານມີຄໍາຖາມຫລືຂໍ້ສົງໄສກົດຫມາຍ? ພະຍາຍາມຫນ້າຄວາມຊ່ອຍເຫຼືອຫຼືຕິດຕໍ່ພວກເຮົາ.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ສົ່ງໃຫ້ພວກເຮົາຂໍ້ຄວາມຖ້າຫາກວ່າທ່ານຕ້ອງການການຊ່ວຍເຫຼືອທີ່ມີບາງສິ່ງບາງຢ່າງ, ພວກເຮົາຈະຮັກທີ່ຈະໄດ້ຍິນຈາກທ່ານ!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "ສືບຕໍ່";
+
+
+"Time To Update!" = "ອັບເດດແອັບຯ!";
+
+
+"NOTIFICATIONS" = "ແຈ້ງການ";
+
+
+"Search" = "ຄົ້ນຫາ";
+
+
+"By clicking Continue, you agree with our Terms." = "ລະບົບ Select ສືບຕໍ່ຍອມຮັບຂໍ້ກໍານົດ.";
+
+
+"HELP / CONTACT US" = "ການຄວາມຊ່ວຍເຫລືອ / ຕິດຕໍ່";
+
+
+"Reset Password" = "ຕັ້ງລະຫັດຜ່ານ";
+
+
+"SEND MESSAGE" = "ສົ່ງ​ຂໍ້​ຄວາມ";
+
+
+"Save article" = "ບັນທຶກບົດຄວາມ";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (ຖ້າຕ້ອງການ)";
+
+
+"HAPTICS" = "ຄໍາເຫັນ haptic";
+
+
+"Your message has \vbeen sent." = "ຂໍ້ຄວາມຂອງທ່ານໄດ້ຖືກສົ່ງໄປແລ້ວ.";
+
+
+"LEGAL" = "ທາງດ້ານກົດຫມາຍ";
+
+
+"Block List" = "ສະໄຫມ";
+
+
+"PERSONALIZATION" = "ສ່ວນບຸກຄົນ";
+
+
+"in our Privacy Policy." = "ໃນນະໂຍບາຍຄວາມເປັນສ່ວນຕົວຂອງພວກເຮົາ.";
+
+
+"CONTINUE" = "ສືບຕໍ່";
+
+
+"Enter Name" = "ກະລຸນາໃສ່ຊື່ຂອງທ່ານ";
+
+
+"What's your email?" = "ຈະເປັນແນວໃດແມ່ນອີເມວຂອງທ່ານ?";
+
+
+"Hello there!" = "ສະບາຍດີ!";
+
+
+"PUSH NOTIFICATIONS" = "ແຈ້ງການ";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (ຖ້າຕ້ອງການ)";
+
+
+"Source name" = "ຊື່ຂອງແຫລ່ງ";
+
+
+"Current Password" = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ";
+
+
+"COLOR THEME" = "Theme ສີ";
+
+
+"eTp-X1-g34.text" = "ຫຼືໂດຍຜ່ານການ";
+
+
+"CANCEL" = "ຍົກເລີກ";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (ຖ້າຕ້ອງການ)";
+
+
+"Date published" = "ວັນທີ່ເຜີຍແພ່";
+
+
+"Send Password Reset Link" = "ສົ່ງການເຊື່ອມຕໍ່ກັບປ່ຽນລະຫັດຜ່ານ";
+
+
+"CONTINUE WITH APPLE" = "ລົງທະບຽນຜ່ານ Apple ID";
+
+
+"Off" = "ປິດ";
+
+
+"BLOCK LIST" = "BLOCK ຍະການທັງຫມົດ";
+
+
+"HELP" = "ການຄວາມຊ່ວຍເຫລືອ";
+
+
+"Reference link" = "ການເຊື່ອມຕໍ່ເອກະສານ";
+
+
+"Your Password" = "ລະຫັດຜ່ານຂອງທ່ານ";
+
+
+"SUBMIT" = "ສົ່ງ";
+
+
+"HELP" = "ການຄວາມຊ່ວຍເຫລືອ";
+
+
+"MY ACCOUNT" = "ບັນ​ຊີ​ຂອງ​ຂ້ອຍ";
+
+
+"hbD-HP-tZd.normalTitle" = "";
+
+
+"OTHERS" = "ຄົນອື່ນ";
+
+
+"BREAKING NEWS" = "ຂ່າວ​ດ່ວນ";
+
+
+"Topics" = "ຫົວຂໍ້ທີ່ຖືກບລັອກ";
+
+
+"Message us," = "Message ພວກເຮົາ,";
+
+
+"Pick topics to start reading
+and saving articles" = "ພາສາ app";
+
+
+"Forgot Password?" = "ລືມລະຫັດຜ່ານ?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ຄຸນນະສົມບັດໃຫມ່ມີການເພີ່ມ. ບັນຫາບາງຢ່າງມີການສ້ອມແຊມ.";
+
+
+"Success!" = "ຄວາມ​ສໍາ​ເລັດ!";
+
+
+"Current Password" = "ລະ​ຫັດ​ປັດ​ຈຸ​ບັນ";
+
+
+"CONTENT" = "ເນື້ອໃນ";
+
+
+"Headline" = "ຫົວຂໍ້ຂ່າວ";
+
+
+"neg-UC-UpK.text" = "ເອົາຫົວຂໍ້ທີ່ຈະເລີ່ມຕົ້ນການອ່ານແລະບັນທຶກບົດຄວາມ";
+
+
+"CONTINUE WITH EMAIL ID" = "ສືບຕໍ່ການມີລະຫັດອີເມວຂອງທ່ານ";
+
+
+"SAVE CHANGES" = "ບັນ​ທຶກ​ການ​ປ່ຽນ​ແປງ";
+
+
+"Post an Article" = "ຕອບບົດຄວາມເປັນ";
+
+
+"Contact Us" = "ຕິດ​ຕໍ່​ພວກ​ເຮົາ";
+
+
+"On" = "ເປີດ";
+
+
+"New Email Address" = "ທີ່ຢູ່ອີເມວໃຫມ່";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (ຖ້າຕ້ອງການ)";
+
+
+"Suggest an improvement" = "ຄໍາແນະນໍາການປັບປຸງ";
+
+
+"Channels" = "ແຫລ່ງທີ່ມາສະກັດ";
+
+
+"From:" = "From:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ຂໍ້ສະເຫນີແນະສ່ວນບຸກຄົນ";
+
+
+"I don't like this" = "ຂ້າພະເຈົ້າບໍ່ຕ້ອງການນີ້";
+
+
+"CONTINUE" = "ສືບຕໍ່";
+
+
+"Name" = "ຊື່";
+
+
+"Enter email" = "ກະລຸນາໃສ່ອີເມວ";
+
+
+"HELP" = "ການຄວາມຊ່ວຍເຫລືອ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ປະຕິບັດຕາມ 3 ຈະສືບຕໍ່ການ";
+
+
+"UPDATE APP" = "Update App";
+
+
+"Forgot Password?" = "ລືມລະຫັດຜ່ານ?";
+
+
+"Change Password" = "ປ່ຽນ​ລະ​ຫັດ​ຜ່ານ";
+
+
+"Reset Password" = "ຕັ້ງລະຫັດຜ່ານ";
+
+
+
+
+
+
+
+
+"Report content" = "ລາຍງານຄວາມກັງວົນຂອງທ່ານ";
+
+
+"CHANGE EMAIL ADDRESS" = "ປ່ຽນຢູ່ອີເມລ";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ພວກເຮົາໄດ້ເພີ່ມຄຸນສົມບັດ ໃໝ່ ຫຼາຍຢ່າງແລະແກ້ໄຂບາງຂໍ້ບົກພ່ອງເພື່ອເຮັດໃຫ້ປະສົບການຂອງທ່ານລຽບງ່າຍເທົ່າທີ່ຈະເປັນໄປໄດ້.";
+
+
+"Edition / Region" = "ສະບັບ / ພາກພື້ນ";
+
+
+"OK" = "ຕົກ​ລົງ";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ການປັບປຸງກ່ຽວກັບເລື່ອງຂ່າວທີ່ທ່ານຮັກບໍ່ຄວນໃຊ້ເວລາຂອງທ່ານຫຼາຍເກີນໄປ. ຂ່າວໃນ Bullets ໃຊ້ເວລາອ່ານປະມານ 5 ນາທີປົກກະຕິແລະປ້ອນເຂົ້າໄປໃນລູກປືນທີ່ຍ່ອຍໄດ້ງ່າຍ. ຕອນນີ້, ທ່ານສາມາດເອົາຂ່າວສານດຽວກັນໃນເວລາສ່ວນ ໜ້ອຍ - ເພື່ອວ່າທ່ານຈະສາມາດອ່ານໄດ້ໃນເວລາ ໜ້ອຍ.";
+
+
+"READING SPEED" = "ອ່ານຢ່າງໄວວາ";
+
+
+
+
+
+"You haven't blocked anything yet" = "ທ່ານຍັງບໍ່ໄດ້ສະກັດກັ້ນຫຍັງເທື່ອ";
+
+
+"EDITION / REGION" = "EDITION / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "ພຽງແຕ່ HEADLINES ເທົ່ານັ້ນ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "ການຕັ້ງຄ່າສຽງ";
+
+
+"AUDIO SETTINGS" = "ການຕັ້ງສະຖານທີ່";
+
+
+
+
+
+
+
+
+"1x" = "1 ເທົ່າ";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES ແລະ BULLETS";
+
+
+"CONTINUE AS GUEST" = "ຂ້າມແລະເຂົ້າສູ່ລະບົບໃນຖານະບຸກຄົນທົ່ວໄປ";
+
+
+"Topics" = "ຫົວຂໍ້";
+
+
+"Pick topics to start reading and saving articles" = "ເລືອກຫົວຂໍ້ຕ່າງໆເພື່ອເລີ່ມຕົ້ນການອ່ານແລະບັນທຶກບົດຄວາມ";
+
+
+"Channels" = "ຊ່ອງທາງຕ່າງໆ";
+
+
+"Choose from hundreds \nof news publications" = "ເລືອກຈາກສື່ສິ່ງພິມຫລາຍຮ້ອຍແຫ່ງ";
+
+
+"Pick topics to start reading\nand saving articles" = "ເລືອກຫົວຂໍ້ເພື່ອເລີ່ມຕົ້ນການອ່ານແລະເກັບຮັກສາບົດຄວາມ";
+
+"Pick editions to start reading\nand saving articles" = "ເລືອກເອົາສະບັບຕ່າງໆເພື່ອເລີ່ມຕົ້ນການອ່ານແລະເກັບຮັກສາບົດຄວາມ";
+
+"Or with" = "ຫລືກັບ";
+
+"CONTINUE AS GUEST" = "ສືບຕໍ່ເປັນແຂກ";
+
+"Terms of Service" = "ເງື່ອນໄຂການບໍລິການ";
+
+"Choose from hundreds \nof news publications" = "ເລືອກຈາກສື່ສິ່ງພິມຫລາຍຮ້ອຍແຫ່ງ";
+
+"Select your preferred language\nfor News in Bullets." = "ເລືອກພາສາທີ່ທ່ານຕ້ອງການ ສຳ ລັບຂ່າວໃນຂ່າວ.";
+
+"Choose a style" = "ເລືອກແບບ";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop ຫຼື subtle. ກາງເວັນຫລືກາງຄືນ. ປັບແຕ່ງການໂຕ້ຕອບຂອງທ່ານ.";
+
+"MINS AGO" = "ນາທີຜ່ານມາ";
+
+"AN HOUR AGO" = "ຊົ່ວໂມງກ່ອນຫນ້ານີ້";
+
+"HOURS AGO" = "ຊົ່ວໂມງຜ່ານມາ";
+
+"1 WEEK AGO" = "1 ອາທິດກ່ອນຫນ້ານີ້";
+
+"YESTERDAY" = "ວານ ນີ້";
+
+"DAYS AGO" = "ມື້ກ່ອນ";
+
+"Go to" = "ໄປທີ່";
+
+"You have reached the start." = "ທ່ານໄດ້ເຖິງຈຸດເລີ່ມຕົ້ນແລ້ວ";
+
+"Source unblocked successfully" = "ປິດການໃຊ້ງານຢ່າງ ສຳ ເລັດຜົນ";
+
+"Invalid email format"  = "ຮູບແບບອີເມວທີ່ບໍ່ຖືກຕ້ອງ";
+
+"Wrong email or password" = "ອີເມວຫຼືລະຫັດຜ່ານຜິດ";
+
+

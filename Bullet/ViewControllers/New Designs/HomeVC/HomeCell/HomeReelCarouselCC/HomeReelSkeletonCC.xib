@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" selectionStyle="blue" indentationWidth="10" reuseIdentifier="HomeReelSkeletonCC" id="gTV-IL-0wX" customClass="HomeReelSkeletonCC" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="452"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gTV-IL-0wX" id="nC1-7e-0B9">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="452"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-2N-J9y">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="452"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending reels" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4T-Nm-FbI">
+                                <rect key="frame" x="20" y="20" width="142.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-IF-JTF">
+                                <rect key="frame" x="50" y="61" width="210" height="381"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5F-fu-46o">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="381"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playButton" translatesAutoresizingMaskIntoConstraints="NO" id="dck-QA-6Vb">
+                                        <rect key="frame" x="75" y="160.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Kd2-gW-qR3"/>
+                                            <constraint firstAttribute="width" secondItem="dck-QA-6Vb" secondAttribute="height" multiplier="1:1" id="sVT-42-PB6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenWhenSkeletonIsActive" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dck-QA-6Vb" firstAttribute="centerY" secondItem="RDB-IF-JTF" secondAttribute="centerY" id="6cd-ED-7bd"/>
+                                    <constraint firstItem="o5F-fu-46o" firstAttribute="leading" secondItem="RDB-IF-JTF" secondAttribute="leading" id="9bi-Ct-7KC"/>
+                                    <constraint firstAttribute="trailing" secondItem="o5F-fu-46o" secondAttribute="trailing" id="A5G-KB-hQC"/>
+                                    <constraint firstItem="o5F-fu-46o" firstAttribute="top" secondItem="RDB-IF-JTF" secondAttribute="top" id="S1N-HN-HIT"/>
+                                    <constraint firstItem="dck-QA-6Vb" firstAttribute="width" secondItem="dck-QA-6Vb" secondAttribute="height" multiplier="1:1" id="gvX-Vw-Sw2"/>
+                                    <constraint firstItem="dck-QA-6Vb" firstAttribute="width" secondItem="dck-QA-6Vb" secondAttribute="height" multiplier="1:1" id="liA-xk-kX0"/>
+                                    <constraint firstAttribute="bottom" secondItem="o5F-fu-46o" secondAttribute="bottom" id="tRx-Us-nmj"/>
+                                    <constraint firstItem="dck-QA-6Vb" firstAttribute="centerX" secondItem="RDB-IF-JTF" secondAttribute="centerX" id="zHp-Gj-U1m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E4T-Nm-FbI" firstAttribute="leading" secondItem="ULZ-2N-J9y" secondAttribute="leading" constant="20" id="2wo-hY-5SG"/>
+                            <constraint firstAttribute="trailing" secondItem="RDB-IF-JTF" secondAttribute="trailing" constant="50" id="PTv-13-jqX"/>
+                            <constraint firstAttribute="bottom" secondItem="RDB-IF-JTF" secondAttribute="bottom" constant="10" id="SoL-Hg-0Tf"/>
+                            <constraint firstItem="RDB-IF-JTF" firstAttribute="leading" secondItem="ULZ-2N-J9y" secondAttribute="leading" constant="50" id="h17-9g-F85"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E4T-Nm-FbI" secondAttribute="trailing" constant="20" id="i9l-Jy-cOj"/>
+                            <constraint firstItem="E4T-Nm-FbI" firstAttribute="top" secondItem="ULZ-2N-J9y" secondAttribute="top" constant="20" id="jFV-nF-28B"/>
+                            <constraint firstItem="RDB-IF-JTF" firstAttribute="top" secondItem="E4T-Nm-FbI" secondAttribute="bottom" constant="15" id="xff-S1-Zdu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ULZ-2N-J9y" firstAttribute="leading" secondItem="nC1-7e-0B9" secondAttribute="leading" id="ihv-eT-ngm"/>
+                    <constraint firstAttribute="trailing" secondItem="ULZ-2N-J9y" secondAttribute="trailing" id="jJY-lt-O5I"/>
+                    <constraint firstItem="ULZ-2N-J9y" firstAttribute="top" secondItem="nC1-7e-0B9" secondAttribute="top" id="khA-xb-1CF"/>
+                    <constraint firstAttribute="bottom" secondItem="ULZ-2N-J9y" secondAttribute="bottom" id="oII-xJ-e41"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="lblTitle" destination="E4T-Nm-FbI" id="iGP-If-bKm"/>
+                <outlet property="viewReel" destination="RDB-IF-JTF" id="fCg-cI-ecV"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="249.10714285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="playButton" width="201.38499450683594" height="201.38499450683594"/>
+    </resources>
+</document>

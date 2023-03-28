@@ -1,0 +1,1098 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bulletpoint";
+"BULLETS" = "BULLETPOINTS";
+"Headlines is not available." = "De koppen zijn niet beschikbaar.";
+"Check your internet Connection and try again." = "Controleer uw internetverbinding en probeer het opnieuw.";
+"Choose Image" = "Kies Foto";
+"Headline" = "Kop";
+"Bullet 1" = "Bulletpoint 1";
+"Bullet 2" = "Bulletpoint 2";
+"Bullet 3 (Optional)" = "Bulletpoint 3 (Optioneel)";
+"Bullet 4 (Optional)" = "Bulletpoint 4 (Optioneel)";
+"Bullet 5 (Optional)" = "Bulletpoint 5 (Optioneel)";
+"Bullet 6 (Optional)" = "Bulletpoint 6 (Optioneel)";
+"Enter Aticle Headline" = "VoeG de Kop toe";
+"Enter source name" = "Voeg de Bron toe";
+"Enter reference link" = "Voeg de Referentie toe";
+"Enter published date" = "Voeg de Publicatiedatum toe";
+"Enter Bullet 1" = "Voeg het Eerste Bulletpoint toe";
+"Enter Bullet 2" = "Voeg het Tweede Bulletpoint toe";
+"Post article successfully" = "Het artikel is succesvol geplaatst";
+"Follow" = "Volg";
+"Unfollow" = "Ontvoig";
+"Block articles from" = "BLOKKEER de artikelen van";
+"Unblock articles from" = "DEBLOKKEER de artikelen van";
+"Remove article" = "Verwijder het artikel";
+"Save article" = "Bewaar dit artikel";
+"Terms & Conditions" = "Voorwaarden & Condities";
+"Privacy Policy" = "PrivacyBeleid";
+"TERMS AND CONDITIONS" = "VOORWAARDEN EN CONDITIES";
+"PRIVACY POLICY" = "PRIVACYBELEID";
+"Fuel your curiosity" = "Lees meer nieuws over de wereld";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Lees kort en nauwkeurig nieuws over uw favoriete onderwerpen van betrouwbare bronnen over de hele wereld.";
+"Save time" = "Bespaar uw tijd";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Lees het nieuws in bulletpoints";
+"Hands-free reading" = "Handsfree lezen";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Geen tijd om te lezen? Gebruik de spraakfunctie.";
+"Write your message..." = "Schrijf uw bericht…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "stuur ons een berichtje als je ergens hulp bij nodig hebt, we horen graag van je!";
+"Drop us a message" = "stuur ons een bericht";
+"Enter Name." = "Voer Naam in.";
+"Enter Email." = "Voer E-Mailadres in.";
+"Write your message." = "Schrijf uw bericht.";
+"Topic unblock successfully" = "U heeft dit onderwerp Gedeblokkeerd";
+"Source unblock successfully" = "U heeft deze bron Gedeblokkeerd";
+"Unblock Source" = "Deblokkeer Bron";
+"Cancel" = "Annuleer";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Stuur ons een feedback, we horen graag van u! Heeft u vragen of juridische zorgen? Probeer onze Help-pagina of neem contact met ons op.";
+"Enter your suggestion." = "Voer uw suggestie in.";
+"feedback sent." = "De feedback is succesvol verzonden";
+"30m" = "30m";
+"1h" = "1u";
+"3h" = "3u";
+"6h" = "6u";
+"12h" = "12u";
+"24h" = "24u";
+"Language updated successfully." = "De taal is succesful geüpdatet";
+"CONTINUE" = "VERDER";
+"FOLLOW 3 TO CONTINUE" = "VOLG 3 OM VERDER TE GAAN";
+"Unfollow Location" = "Ontvolg Locatie";
+"Saved Articles" = "Opgeslagen Artikels";
+"Block" = "BLOKKEER";
+"Are you sure you want block" = "Weet u zeker dat u dit wilt blokkeren";
+"Once blocked, you wont be able to see any Articles related to this" = "U zal geen artikelen van dit kanaal zien als u het blokkeert.";
+"Block Topic" = "Blokkeer dit Onderwerp";
+"Suggested" = "Gesuggereerd";
+"Related Sources not available" = "De Gerelateerde Bronnen zijn niet beschikbaar";
+"Block Source" = "Blokkeer deze Bron";
+"News in Bullets App version" = "Nieuws in kenmerken App versie";
+"Next" = "Volgende";
+"Login" = "Login";
+"Terms" = "Voorwaarden";
+"By clicking Continue, you agree with our Terms." = "Selecteer Verder om de Voorwaarden te accepteren.";
+"in our Privacy Policy." = "In ons Privacybeleid";
+"Access token missing." = "Toegangstoken ontbreekt";
+"NEXT" = "VOLGENDE";
+"By checking this box, you agree to our " = "Klik op het vak om de voorwaarden te accepteren. Uw gegevens worden verwerkt in overeenstemming met ons Privacybeleid.";
+"Terms of Service" = "Servicevoorwaarden";
+". We’ll handle your data according to our " = "wij behandelen uw gegevens volgens";
+"Password must be at least 8 characters." = "Wachtwoord moet minstens 8 karakters lang zijn. ";
+"Strong" = "Sterk";
+"Medium" = "Medium";
+"Weak" = "Zwak";
+"CREATE A NEW ACCOUNT" = "CREËER EEN NIEUW ACCOUNT";
+"SIGN IN WITH EXISTING ACCOUNT" = "MELD U AAN MET EEN BESTAAND ACCOUNT";
+"You must agree to the Terms of Services to continue" = "U moet akkoord gaan met de Servicevoorwaarden om door te gaan";
+"SIGN IN" = "Meld Aan";
+"What's your password?" = "Wat is uw wachtwoord?";
+"SIGN UP" = "Schrijf In";
+"Choose your password?" = "Kies uw wachtwoord";
+"Something went wrong" = "Er is iets fout gegaan";
+"we will send email to" = "we zullen een e-mail sturen naar";
+"with a link to reset your password." = "met een link om uw wachtwoord opnieuw in te stellen.";
+"A reset password link has been sent to" = "Een link om het wachtwoord te resetten is verzonden naar";
+"Enter new email." = "Voer een nieuw e-mailadres in.";
+"Enter password." = "Voer wachtwoord in";
+"New Password " = "Nieuw Wachtwoord";
+" (8 characters min)" = "(min 8 karakters)";
+"Enter current password." = "Voer huidig wachtwoord in.";
+"Enter new password." = "Voer nieuw wachtwoord in.";
+"Enter confirm password." = "Bevestig wachtwoord.";
+"password do not matched!" = "wachtwoorden komen niet overeen!";
+"GET STARTED" = "BEGIN";
+"SKIP" = "OVERSPRINGEN";
+"From where you would like to pick photo?" = "van waar wilt u een foto kiezen?";
+"Camera" = "Camera";
+"Photo Library" = "Fotobibliotheek";
+"Kindly open settings and enable access" = "open de instellingen en schakel de toegang in";
+"Open Settings" = "Open Instellingen";
+"Access needed for your camera" = "Toegang nodig voor uw camera";
+"Access needed for your photo library" = "Toegang nodig voor uw fotobibliotheek";
+"Done" = "Klaar";
+"Pull to refresh" = "Trek om te vernieuwen";
+"Loading" = "Laden";
+"Speech not available for this article" = "Spraak niet beschikbaar voor dit artikel";
+"MANAGE LOCATION" = "LOCATIE BEHEREN";
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Kies uw News in Bullets Edition op basis van de landinstelling";
+"Edition" = "Editie";
+"EDITION / REGION" = "EDITIE / REGIO";
+"Your Topics" = "Uw onderwerpen";
+"Your Channels" = "Uw kanalen";
+"Your Places" = "Jouw plaatsen";
+"Enter email." = "Voer email in.";
+"Please enter a password." = "Voer een wachtwoord in alstublieft.";
+"Search articles" = "Zoek artikelen";
+"No results" = "Geen resultaten";
+"Edition / Region" = "Editie / Regio";
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOKKEER";
+"CANCEL" = "ANNULEER";
+"PLACES" = "PLAATSEN";
+"LANGUAGE" = "TAAL";
+"Profile" = "Profiel";
+"SAVED ARTICLES" = "OPGESLAGEN ARTIKELEN";
+"Topics" = "Onderwerpen";
+"Channels" = "Kanalen";
+"Editions" = "Edities";
+"No saved stories yet" = "Er is hier niets te vinden";
+"Tap the" = "Druk op";
+"icon on the article" = "icoon op het artikel";
+"you want to read later then" = "u wil later lezen dan";
+"Select" = "Selecteer";
+"to save article." = "om het artikel op te slaan.";
+"There is nothing in here" = "Er zit hier niets in";
+"Looks like there is nothing here but a cat." = "Het lijkt erop dat er hier niets anders is dan een kat.";
+"Would you like to go back to home?" = "Terug naar de hoofdpagina?";
+"GO HOME" = "GA NAAR HUIS";
+"Search" = "Zoeken";
+"Discover" = "Ontdek";
+"Articles" = "Lidwoord";
+"Try a different keyword" = "Probeer een ander zoekwoord";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Ontvang het meest relevante nieuws voor de regio die u kiest. Lees nieuwsverhalen die zijn samengesteld om u op de hoogte te houden van het laatste nieuws, waar ook ter wereld.";
+"Language" = "Taal";
+"Results" = "Resultaten";
+"For You" = "Voor Jou";
+"Top News" = "Top Nieuws";
+"Choose a style" = "Kies een stijl";
+"Pop or subtle. Day or night. Customize your interface." = "Pop of subtiel. Dag of nacht. Pas uw interface aan.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "Over Ons";
+
+
+"Share" = "Deel";
+
+
+"ACCOUNT" = "ACCOUNT";
+
+
+"Your Email" = "Uw Emailadres";
+
+
+"1sT-J6-qI0.text" = "OPGESLAGEN ARTIKELS";
+
+
+"2XX-rr-GLC.text" = "Kies verschillende kanalen uit honderden bronnen";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Lees de recentste artikels en nieuws van over de hele wereld.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Stel een tijdsverschil in om meldingen te ontvangen.";
+
+
+"Off" = "Uit";
+
+
+
+
+
+"Bullet 2" = "Bulletpoint 2";
+
+
+"What's your email?" = "Wat is uw E-mailadres?";
+
+
+"New Password (8 Characters Min)" = "Nieuw Wachtwoord (Minimum 8 Karakters)";
+
+
+"Forgot Password?" = "Wachtwoord Vergeten?";
+
+
+"Account Settings" = "Account Instellingen";
+
+
+"Learn how we process your data" = "Informatie over het verwerken van uw data";
+
+
+"3h" = "3u";
+
+
+"Ok" = "OK";
+
+
+"Block articles from The Guardian" = "Blokkeer artikelen van ---";
+
+
+"On" = "Zet Aan";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Helpcentrum";
+
+
+"Search" = "Zoek Kanalen";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Selecteer bestand uit bibliotheek";
+
+
+
+
+"Save article" = "Artikel opslaan";
+
+
+"ABOUT" = "OVER";
+
+
+"Dark" = "Donker";
+
+
+"Legal" = "Legaal";
+
+
+"Go to The Guardian" = "Ga naar ---";
+
+
+"Send reset link" = "Stuur reset link";
+
+
+
+
+
+"My Account" = "Mijn Account";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Bericht";
+
+
+"Confirm New Password" = "Bevestig Nieuw Wachtwoord";
+
+
+"for ___" = "voor ___";
+
+
+"Search" = "Zoek naar Onderwerpen";
+
+
+"LANGUAGE" = "TAAL";
+
+
+"Light" = "Licht";
+
+
+"FOLLOW 3 TO CONTINUE" = "om verder te gaan, kies 3";
+
+
+
+
+"Off" = "Zet Uit";
+
+
+"Language" = "TAAL";
+
+
+"LOG OUT" = "LOG UIT";
+
+
+"Report content" = "Rapporteer inhoud";
+
+
+"What's your email?" = "Wat is uw E-mailadres?";
+
+
+"On" = "Zet Aan";
+
+
+"More like this" = "Meer nieuws zoals dit";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1u";
+
+
+"Enter Email Address" = "Voeg E-mailadres Toe";
+
+
+"News in Bullets" = "Lees meer in minder tijd.";
+
+
+"6h" = "6u";
+
+
+"Choose your password" = "Kies uw wachtwoord";
+
+
+"Cancel" = "Annuleer";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Lees snel het nieuws met deze app. Kies uw onderwerpen en bronnen. Lees vervolgens uw nieuws met korte opsommingen.";
+
+
+"Push Notification" = "Melding";
+
+
+"12h" = "12u";
+
+
+"24h" = "24u";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Hoe kunnen wij u helpen?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "WACHTWOORD WIJZIGEN";
+
+
+"Change Email" = "E-MAILADRES WIJZIGEN";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "WIJZIGINGEN OPSLAAN";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Stuur ons een berichtje als je ergens hulp bij nodig hebt, we horen graag van je!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "Annuleer";
+
+
+"Bullet 1" = "Bulletpoint 1";
+
+
+"TIMED NOTIFICATIONS" = "MELDINGEN";
+
+
+"POST ARTICLE" = "PLAATS EEN ARTIKEL";
+
+
+"CONTACT US" = "Contacteer Ons";
+
+
+"EDITION / REGION" = "Editie";
+
+
+"Search" = "Zoek";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Stuur ons een feedback, we horen graag van je! Heeft u vragen of juridische zorgen? Probeer onze Help-pagina of neem contact met ons op.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Stuur ons een berichtje als je ergens hulp bij nodig hebt, we horen graag van je!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "VERDER";
+
+
+"Time To Update!" = "Update de app!";
+
+
+"NOTIFICATIONS" = "MELDINGEN";
+
+
+"Search" = "Zoek";
+
+
+"By clicking Continue, you agree with our Terms." = "Selecteer Verder om de voorwaarden te accepteren";
+
+
+"HELP / CONTACT US" = "HULP / CONTACT";
+
+
+"Reset Password" = "Reset Wachtwoord";
+
+
+"SEND MESSAGE" = "STUUR BERICHT";
+
+
+"Save article" = "Artikel opslaan";
+
+
+"Bullet 6 (Optional)" = "Bulletpoint 6 (Optioneel)";
+
+
+"HAPTICS" = "HAPTIEK";
+
+
+"Your message has \vbeen sent." = "Uw bericht is verstuurd.";
+
+
+"LEGAL" = "LEGAAL";
+
+
+"Block List" = "Blokkeerlijst";
+
+
+"PERSONALIZATION" = "PERSONALISATIE";
+
+
+"in our Privacy Policy." = "in ons Privacybeleid";
+
+
+"CONTINUE" = "VERDER";
+
+
+"Enter Name" = "Voeg Naam toe";
+
+
+"What's your email?" = "Wat is uw E-mailadres?";
+
+
+"Hello there!" = "Hallo!";
+
+
+"PUSH NOTIFICATIONS" = "MELDINGEN";
+
+
+"Bullet 3 (Optional)" = "Bulletpoint 3 (Optioneel)";
+
+
+"Source name" = "Naam van de Bron";
+
+
+"Current Password" = "Huidig Wachtwoord";
+
+
+"COLOR THEME" = "Kleurenschema";
+
+
+"eTp-X1-g34.text" = "Of door";
+
+
+"CANCEL" = "ANNULEER";
+
+
+"Bullet 4 (Optional)" = "Bulletpoint 4 (Optioneel)";
+
+
+"Date published" = "Datum gepubliceerd";
+
+
+"Send Password Reset Link" = "Stuur een link om het wachtwoord opnieuw in te stellen";
+
+
+"CONTINUE WITH APPLE" = "Meld je aan via Apple ID";
+
+
+"Off" = "Zet Uit";
+
+
+"BLOCK LIST" = "BLOKKEERLIJST";
+
+
+"HELP" = "HELPEN";
+
+
+"Reference link" = "Referentielink";
+
+
+"Your Password" = "Uw Wachtwoord";
+
+
+"SUBMIT" = "DIEN IN";
+
+
+"HELP" = "HELPEN";
+
+
+"MY ACCOUNT" = "MIJN ACCOUNT";
+
+
+"hbD-HP-tZd.normalTitle" = "Deblokkeer";
+
+
+"OTHERS" = "Andere";
+
+
+"BREAKING NEWS" = "BELANGRIJK NIEUWS";
+
+
+"Message us," = "Stuur ons een bericht,";
+
+
+"Pick topics to start reading
+and saving articles" = "taal app";
+
+
+"Forgot Password?" = "Wachtwoord Vergeten?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nieuwe features zijn toegevoegd. Sommige problemen zijn opgelost.";
+
+
+"Success!" = "Succes!";
+
+
+"Current Password" = "Huidig Wachtwoord";
+
+
+"CONTENT" = "INHOUD";
+
+
+"Headline" = "Kop";
+
+
+"neg-UC-UpK.text" = "Kies onderwerpen om artikelen te lezen en op te slaan";
+
+
+"CONTINUE WITH EMAIL ID" = "Ga Verder Met uw E-mail ID";
+
+
+"SAVE CHANGES" = "SLA WIJZIGINGEN OP";
+
+
+"Post an Article" = "Plaats een Artikel";
+
+
+"Contact Us" = "Contacteer Ons";
+
+
+"On" = "Zet Aan";
+
+
+"New Email Address" = "Nieuw E-mailadres";
+
+/* Class = "UITextView"; text = "Bullet 5 (optioneel)"; ObjectID = "rSp-c5-Czn"; */
+"Bullet 5 (Optional)" = "Bulletpoint 5 (Optioneel)";
+
+
+"Suggest an improvement" = "Suggereer een verbetering";
+
+
+"Channels" = "Geblokeerde Bronnen";
+
+
+"From:" = "Van:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "GEPERSONALISEERDE AANBEVELINGEN";
+
+
+"I don't like this" = "Ik vind dit niet leuk";
+
+
+"CONTINUE" = "VERDER";
+
+
+"Name" = "Naam";
+
+
+"Enter email" = "Voer E-mailadres In";
+
+
+"HELP" = "HELPEN";
+
+
+"FOLLOW 3 TO CONTINUE" = "Volg 3 om Verder te Gaan";
+
+
+"UPDATE APP" = "Update de App";
+
+
+"Forgot Password?" = "Wachtwoord Vergeten?";
+
+
+"Change Password" = "Wijzig Wachtwoord";
+
+
+"Reset Password" = "Reset Wachtwoord";
+
+
+
+
+
+
+
+
+"Report content" = "Meld uw bezorgdheid";
+
+
+"CHANGE EMAIL ADDRESS" = "WIJZIG E-MAILADRES";
+
+
+"Follow The Guardian" = "Volg ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "We hebben veel nieuwe functies toegevoegd en enkele bugs verholpen om uw ervaring zo soepel mogelijk te laten verlopen.";
+
+
+"Edition / Region" = "Editie / regio";
+
+
+"OK" = "OK";
+
+
+"NARRATOR" = "VERTELLER";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Op de hoogte blijven van de nieuwsverhalen waar u van houdt, zou niet te veel van uw tijd moeten kosten. News in Bullets leest de normale 5 minuten en condenseert het in gemakkelijk verteerbare bullets. Nu kunt u hetzelfde nieuws in slechts een fractie van de tijd opnemen, zodat u meer kunt lezen in minder tijd.";
+
+
+"READING SPEED" = "LEESNELHEID";
+
+
+
+
+
+"You haven't blocked anything yet" = "Je hebt nog niets geblokkeerd";
+
+
+"EDITION / REGION" = "EDITIE / REGIO";
+
+
+
+
+
+"HEADLINES ONLY" = "ALLEEN HEADLINES";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Geluidsinstellingen";
+
+
+"AUDIO SETTINGS" = "GELUIDSINSTELLINGEN";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES EN KOGELS";
+
+
+"CONTINUE AS GUEST" = "OVERSLAAN en LOG IN ALS GAST";
+
+
+"Pick topics to start reading and saving articles" = "Kies onderwerpen om artikelen te lezen en op te slaan";
+
+
+"Channels" = "Kanalen";
+
+
+"Choose from hundreds \nof news publications" = "Kies uit honderden \ nieuwspublicaties";
+
+"Pick topics to start reading\nand saving articles" = "Kies onderwerpen om artikelen te lezen en op te slaan";
+
+"Pick editions to start reading\nand saving articles" = "Kies edities om artikelen te lezen en op te slaan";
+
+"Or with" = "Of met";
+
+"CONTINUE AS GUEST" = "GA DOOR ALS GAST";
+
+"Terms of Service" = "Servicevoorwaarden";
+
+"Choose from hundreds \nof news publications" = "Kies uit honderden nieuwspublicaties";
+
+"Select your preferred language\nfor News in Bullets." = "Selecteer uw voorkeurstaal voor News in Bullets.";
+
+"Choose a style" = "Kies een stijl";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop of subtiel. Dag of nacht. Pas uw interface aan.";
+
+"MINS AGO" = "MINS GELEDEN";
+
+"AN HOUR AGO" = "EEN UUR GELEDEN";
+
+"HOURS AGO" = "UREN GELEDEN";
+
+"1 WEEK AGO" = "1 WEEK GELEDEN";
+
+"YESTERDAY" = "GISTEREN";
+
+"DAYS AGO" = "DAGEN GELEDEN";
+
+"Go to" = "Ga naar";
+
+"You have reached the start." = "Je hebt de start bereikt.";
+
+"Source unblocked successfully" = "Bron succesvol gedeblokkeerd";
+
+"Invalid email format"  = "ongeldige email formaat";
+
+"Wrong email or password" = "verkeerde email of wachtwoord";
+
+
+
+"Personalize your reading experience" = "Personaliseer uw leeservaring";
+
+"Start following the news topics and channels you want to read." = "Begin met het volgen van de nieuwsonderwerpen en kanalen die u wilt lezen.";
+
+"LET'S GO" = "Laten we gaan";
+
+"We’ll handle your data according to our\n" = "We behandelen uw gegevens volgens onze";
+
+"By clicking Continue, you agree with our " = "Door op Doorgaan te klikken, gaat u akkoord met onze";
+
+"Learn how we process your data in our"  = "Ontdek hoe wij uw gegevens verwerken in onze";
+
+"JUST NOW" = "NET NU";
+
+"Menu" = "Menu";
+"Article Text Size" = "Artikeltekstgrootte";
+"Change the font size shown on the articles" = "Wijzig de lettergrootte die op de artikelen wordt weergegeven";
+"Small" = "Klein";
+"Default" = "In gebreke blijven";
+"Medium" = "Medium";
+"Large" = "Groot";
+
+"Related Articles" = "Gerelateerde artikelen";
+"View Full Article" = "Bekijk het volledige artikel";
+
+"Create your profile" = "Maak je profiel aan";
+"Set your profile" = "Stel je profiel in";
+"View your profile" = "Bekijk je profiel";
+"ARTICLE TEXT SIZE" = "ARTIKEL TEKSTGROOTTE";
+"DATA SAVER" = "GEGEVENSBESPARING";
+"Edit Profile" = "Bewerk profiel";
+"Profile Settings" = "Profielinstellingen";
+"Edit what viewers see in your profile." = "Bewerk wat kijkers in uw profiel zien.";
+"COVER PHOTO" = "OMSLAGFOTO";
+"Profile Name" = "Profielnaam";
+"Help and Feedback" = "Hulp en feedback";
+"HELP AND FEEDBACK" = "HULP EN FEEDBACK";
+"Others" = "Anderen";
+"Feedback & Suggestions" = "Feedback en suggesties";
+"Help / Contact Us" = "Help / Neem contact met ons op";
+"Terms and Conditions" = "Algemene voorwaarden";
+"Notification" = "Kennisgeving";
+"Push Notifications" = "Push notificatie";
+"Breaking News" = "Belangrijk nieuws";
+"Personalized Recommendations" = "Gepersonaliseerde aanbevelingen";
+"Timed Notifications" = "Getimede meldingen";
+"Account" = "Account";
+"E-mail Address" = "E-mailadres";
+"Reels" = "Haspels";
+
+"Comments" = "Opmerkingen";
+"Write a reply..." = "Schrijf een reactie...";
+"Reply" = "Antwoord";
+"Replies" = "Antwoorden";
+"View" = "Keer bekeken";
+"more reply" = "meer antwoord";
+"more replies" = "meer antwoorden";
+"Home" = "Startpagina";
+"Newsreels" = "Nieuws haspels";
+
+"Following" = "volgend";
+"First Name" = "Voornaam";
+"Last Name" = "Achternaam";
+
+"This feature requires photo access" = "Voor deze functie is toegang tot foto's vereist";
+"in phone settings, tap News in Bullets and turn on Photos" = "Tik in de telefooninstellingen op Nieuws in Opsommingstekens en schakel Foto's in";
+"Not Now" = "Niet nu";
+"Open Settings" = "Open instellingen";
+"No photos on this device" = "Geen foto's op dit apparaat";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "als je de instellingen voor fototoegang wilt wijzigen, ga je naar de telefooninstellingen, tik je op Nieuws in Opsommingstekens en schakel je Foto's in";
+"Video duration" = "Videoduur";
+"Video too short" = "Video te kort";
+"Video too long" = "Video te lang";
+"Done" = "Gedaan";
+"Save" = "Sparen";
+"Processing.." = "Verwerking..";
+"Trim" = "Bijknippen";
+"Cover" = "Bedekken";
+"Albums" = "Albums";
+"Gallery" = "Galerij";
+"Photos" = "Fotos";
+"Videos" = "Videos";
+"Next" = "Volgend";
+"Crop" = "Afbeelding bijsnijden";
+
+
+"Locations" = "Locaties";
+"Authors" = "Auteurs";
+"Invalid Video" = "Ongeldige video";
+"Invalid Youtube link" = "Ongeldige YouTube-link";
+"Article published successfully" = "Artikel succesvol gepubliceerd";
+"Article removed successfully" = "Artikel succesvol verwijderd";
+"Edit Article" = "Artikel bewerken";
+"Delete Article" = "Artikel verwijderen";
+"Before you can comment, you need to update your profile" = "Voordat u kunt posten, moet u uw profiel bijwerken.";
+"Update profile" = "Profiel bijwerken";
+"Views" = "Keer bekeken";
+
+"Edit Newsreels" = "Bewerk Nieuws Reels";
+"Post article" = "Artikel plaatsen";
+"SAVE" = "Sparen";
+"Caption" = "Onderschrift";
+"Create a Caption" = "Een bijschrift maken";
+
+"Create a headline" = "Maak een nieuwskop";
+"Add Source Link (Optional)" = "Bronlink toevoegen (optioneel)";
+"Enter a Caption" = "Voer een onderschrift in";
+"Enter article headline" = "Voer de kop van het artikel in";
+
+"Add Bullet 1" = "Opsommingsteken 1 toevoegen";
+"Add Bullet 2" = "Opsommingsteken 2 toevoegen";
+"Add Bullet 3 (Optional)" = "Opsommingsteken 3 toevoegen (optioneel)";
+"Add Bullet 4 (Optional)" = "Opsommingsteken 4 toevoegen (optioneel)";
+"Add Bullet 5 (Optional)" = "Opsommingsteken 5 toevoegen (optioneel)";
+
+"Add Bullet" = "Opsommingsteken toevoegen";
+
+"Uploading video..." = "Video uploaden...";
+"Bullet" = "Opsommingsteken";
+
+
+"Oops! Something went wrong. Please try again." = "Oeps! Er is iets fout gegaan. Probeer het opnieuw.";
+
+"Upload media" = "Media uploaden";
+"Upload Newsreels" = "Nieuws Reels uploaden";
+"Upload YouTube link" = "YouTube-link uploaden";
+"Before you post," = "Voordat u post,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Houd er rekening mee dat u zich aansluit bij een wereldwijde gemeenschap van lezers en schrijvers. Om iedereen te beschermen tegen elke vorm van verkeerde informatie en misbruik, dient u onze";
+"Community Guidelines." = "Communautaire richtsnoeren.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "Door op Doorgaan te tikken, gaat u akkoord met het naleven van de richtlijnen.";
+"Community Guidelines" = "Communautaire richtsnoeren";
+
+"Upload bullet image (optional)" = "Afbeelding van opsommingstekens uploaden (optioneel)";
+"Delete" = "Verwijderen";
+"Replace" = "Vervangen";
+"Delete Bullet" = "Opsommingsteken verwijderen";
+
+"Add Tag" = "Tag toevoegen";
+"Get discovered locally" = "Laat je lokaal ontdekken";
+"Add a location to your channel and get discovered by users near you." = "Voeg een locatie toe aan je kanaal en word ontdekt door gebruikers bij jou in de buurt.";
+"Max 5" = "Maximaal 5";
+"RECOMMENDED" = "Aanbevolen";
+"comma, separated, tags" = "komma, gescheiden, tags";
+
+"YouTube Article" = "YouTube-artikel";
+"Paste a YouTube link to upload a video from YouTube." = "Plak een YouTube-link om een video van YouTube te uploaden.";
+"Paste a YouTube link to take import" = "Een YouTube-link plakken om te importeren";
+"IMPORT" = "Importeren";
+
+"Enter Youtube link" = "Voer de YouTube-link in";
+"Preview" = "Voorvertoning";
+"POST" = "Post";
+"Post to My Profile" = "Post naar mijn profiel";
+
+"RESULT" = "Resultaten";
+"followers" = "volgers";
+"Followers" = "Volgers";
+"Posts" = "Post";
+"Profile updated successfully" = "Profiel succesvol bijgewerkt";
+"Tags" = "Tags";
+"No Posts Yet" = "Nog geen postes";
+
+
+"Add" = "Toevoegen";
+"Select Ratio" = "Selecteer Verhouding";
+"Add topics tags" = "Onderwerptags toevoegen";
+"Be discovered by people following the topics you are posting about." = "Word ontdekt door mensen die de onderwerpen volgen waarover u post.";
+"Reels edited successfully." = "Nieuwshaspels succesvol bewerkt";
+"Article edited successfully." = "Artikel met succes bewerkt.";
+"Reels uploaded successfully." = "Nieuwshaspels succesvol geüpload";
+"Enter verification code" = "Voer verificatiecode in";
+"RESEND" = "OPNIEUW VERZENDEN";
+"Processing..." =  "Verwerking...";
+"Scheduled on:" = "Gepland op:";
+"Enter profile name" = "Profielnaam invoeren";
+"Ok, last thing is your channel image" = "Oké, het laatste is je kanaalafbeelding";
+"Upload" = "Uploaden";
+"Before you can post article, you need to update your profile" = "Voordat u kunt posten, moet u uw profiel bijwerken.";
+"UPDATE" = "Bijwerken";
+"Scale" = "Schaal";
+"Saved Article" = "Opgeslagen artikel";
+"Removed Article" = "Artikel verwijderd";
+"Ok, last thing is your profile image" = "Oké, het laatste is je profielafbeelding";
+"Relevant" = "Relevante";
+
+"See More" = "bekijk meer";
+"Less" = "minder zien";
+"Autoplay" = "Automatisch afspelen";
+"Reader Mode" = "Lezermodus";
+"Data Saver" = "GEGEVENSBESPARING";
+"Please enter a valid OTP." = "Voer een geldige OTP in.";
+"Enter a first name" = "Voornaam";
+"Enter a last name" = "Achternaam";
+
+
+"Password updated successfully" = "Wachtwoord succesvol bijgewerkt";
+"Replying to" = "Reageren op";
+"Unblock Topic" = "Deblokkeren Onderwerp";
+"Please add your reel caption" = "Alsjeblieft Voeg uw haspel-bijschrift toe";
+"Please add bullet" = "Alsjeblieft Voeg een kogel toe";
+"Please add your article headline" = "Alsjeblieft Voeg de kop van uw artikel toe";
+"Please add bullet 1" = "Alsjeblieft Opsommingsteken 1 toevoegen";
+"Please add bullet 2" = "Alsjeblieft Opsommingsteken 2 toevoegen";
+
+"Please enter a valid channel name" = "Voer een geldige kanaalnaam in";
+"Let people know what" = "Laat mensen weten wat";
+"your channel is about" = "je kanaal gaat over";
+"Start by creating your" = "Begin met het maken van uw";
+"channel name" = "Kanaalnaam";
+"Describe your channel" = "Beschrijf je kanaal";
+"No pressure, you can change this later." = "Geen druk, je kunt dit later wijzigen.";
+"Channel created successfully" = "Kanaal succesvol aangemaakt";
+"Please enter your channel description" = "Voer je kanaalbeschrijving in";
+"Channel name already in use" = "Kanaalnaam al in gebruik";
+"Post to" = "Posten op";
+
+"Available" = "Beschikbaar";
+"Already in use" = "Al in gebruik";
+"SCHEDULE POST" = "Schema posten";
+"DRAFTS" = "Schets";
+"View channel" = "Bekijk kanaal";
+"Create a channel" = "Een kanaal maken";
+"Ok, last thing is" = "Oké, laatste ding is";
+"your channel image" = "je kanaalafbeelding";
+"looks amazing!" = "ziet er geweldig uit!";
+"CREATE CHANNEL" = "Kanaal maken";
+"Scheduled Posts" = "Een bericht plannen";
+
+"You don't have any drafts yet." = "Je hebt nog geen concepten.";
+"Schedule" = "Planning";
+"There aren't any scheduled posts yet." = "Er zijn nog geen geplande berichten.";
+"Schedule a Post" = "Een bericht plannen";
+"Mod Tools" = "Mod-tools";
+"Unfollow Channel" = "Kanaal niet meer volgen";
+"Follow Channel" = "Volg kanaal";
+
+"Release to refresh" = "Laat los om te verversen";
+"Loading..." =  "Bezig met laden...";
+"Schedule Post" = "Schema posten";
+"Moderator Tools" = "Moderatorgereedschap";
+"General" = "Algemeen";
+"Scheduled Posts" = "Geplande berichten";
+"Settings" = "Instellingen";
+"channel and cover photo" = "kanaal en omslagfoto";
+"Description" = "Omschrijving";
+"Will be posted in" = "Wordt geplaatst in";
+"Will be posted on" = "Wordt geplaatst op";
+"Will be posted now" = "Wordt geplaatst nu";
+"Select Date" = "Selecteer een datum";
+"Select Time" = "Selecteer tijd";
+"Please select date" = "Alstublieft selecteer datum";
+"Please select time" = "Alstublieft selecteer tijd";
+"Continue with Apple" = "Ga verder met Apple";
+"Continue with Google" = "Ga verder met Google";
+"Continue with Facebook" = "Ga verder met Facebook";
+"Continue with email" = "Ga verder met e-mail";
+"Login or create an account" = "Login of creëer een account";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "Log in of maak een account aan om verhalen over al je favoriete onderwerpen te lezen, delen en erop te reageren.";
+"your profile image" = "je profielafbeelding";
+"Invalid OTP code" = "Ongeldige OTP-code";
+
+"View your profile" = "Bekijk je profiel";
+"NEWS DESK" = "Nieuwsbalie";
+"YOUR CHANNELS" = "Uw kanalen";
+"GENERAL" = "Algemeen";
+"WALLET" = "Portemonnee";
+"POSTS" = "Post";
+"PERSONALIZATIONS" = "Personalisaties";
+"NETWORK" = "Netwerk";
+"Need more channels?" = "Meer zenders nodig?";
+"VIEW ALL & MANAGE" = "Alles bekijken & beheren";
+
+"Community Feed" = "Gemeenschap feed";
+"Create your post" = "Maak je bericht";
+"Media" = "Media";
+"Youtube" = "YouTube";
+"You're all caught up" = "Jullie zijn allemaal ingehaald.";
+"You've seen all new posts" = "Je hebt alle nieuwe berichten gezien";
+"Go to top" = "Ga terug naar boven";
+"Suggested Reels" = "Voorgestelde Reels";
+"Suggested Authors" = "Voorgestelde Auteurs";
+
+
+"Share to" = "Delen naar";
+"Report" = "Rapport";
+"Unsave Video" = "Opslaan van video ongedaan maken";
+"Save Video" = "Video opslaan";
+"Aspect Ratio" = "Beeldverhouding";
+"Rotate" = "Draaien";
+"Flip Vertical" = "Verticaal spiegelen";
+"Flip Horizontal" = "Horizontaal spiegelen";
+
+
+"Community" = "Gemeenschap";
+"APP LANGUAGE" = "APP TAAL";
+"You don't have any followers yet" = "Je hebt nog geen volgers";
+
+
+"View Original Article" = "Bekijk origineel artikel";
+"Places" = "Plaatsen";
+"Languages" = "Talen";
+"New Posts" = "Nieuwe Post";
+"No posts yet" = "Nog geen post";
+"All Followers" = "Alle volgers";
+"Add Place" = "Voeg een plaats toe";
+"Add places tags" = "Plaatstags toevoegen";
+"Be discovered by people following the places you are posting about." = "Word ontdekt door mensen die de plaatsen volgen waarover u berichten plaatst.";
+
+
+"START FOLLOWING" = "Begin dit te volgen";
+"You are not following anything yet" = "Je volgt nog niets.";
+
+"Notifications" = "Kennisgeving";
+"General" = "Algemeen";
+"News" = "Nieuws";
+"VIEW MORE" = "Bekijk Meer";
+"BULLETS AUTO PLAY" = "Kogels automatisch afspelen";
+"VIDEOS AUTO PLAY" = "Video's automatisch afspelen";
+"REELS AUTO PLAY" = "Rollen automatisch afspelen";
+"READER THEME" = "Lezer Thema";
+"News Content Language" = "Nieuws Inhoud Taal";
+"FAVORITES" = "Favorieten";
+"Region/Places" = "Regio's / Plaatsen";
+"Select Regions/Places" = "Selecteer Regio's / Plaatsen";
+"Follow at least 3 topics" = "Volg minimaal 3 onderwerpen";
+"Please Follow at least 3 topics" = "Alsjeblieft volg ten minste 3 onderwerpen";
+"Explore Newsreels" = "Bioscoopjournaals verkennen";
+"Related Reels" = "Gerelateerde reels";
+"Explore Your Feed" = "Verken uw feed";
+"Sources" = "Bronnen";
+"Articles, topics, channels, authors" = "Artikelen, onderwerpen, kanalen, auteurs";
+"View/Manage" = "Bekijk/Beheer";
+"Add to Favorites" = "Toevoegen aan favorieten";
+"Remove from Favorites" = "Verwijder van favorieten";

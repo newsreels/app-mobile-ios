@@ -1,0 +1,1092 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "bullet-point";
+"BULLETS" = "POIN-POIN PENTING";
+"Headlines is not available." = "Berita Utama tidak tersedia.";
+"Check your internet Connection and try again." = "Periksa koneksi internet anda dan coba lagi.";
+"Choose Image" = "Pilih Gambar";
+"Headline" = "Berita Utama";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (Opsional)";
+"Bullet 4 (Optional)" = "Bullet 4 (Opsional)";
+"Bullet 5 (Optional)" = "Bullet 5 (Opsional)";
+"Bullet 6 (Optional)" = "Bullet 6 (Opsional)";
+"Enter Aticle Headline" = "Masukkan Judul Berita Utama";
+"Enter source name" = "Masukkan Sumber";
+"Enter reference link" = "Masukkan Referensi";
+"Enter published date" = "Masukkan Tanggal Terbit";
+"Enter Bullet 1" = "Masukkan Bullet Pertama";
+"Enter Bullet 2" = "Masukkan Bullet Kedua";
+"Post article successfully" = "Artikel telah berhasil dipasang";
+"Follow" = "Ikuti";
+"Unfollow" = "Batal Ikuti";
+"Block articles from" = "BLOKIR artikel dari";
+"Unblock articles from" = "BATAL BLOKIR artikel dari";
+"Remove article" = "Hapus artikel";
+"Save article" = "Simpan artikel ini";
+"Terms & Conditions" = "Syarat dan Ketentuan";
+"Privacy Policy" = "Kebijakan Privasi";
+"TERMS AND CONDITIONS" = "SYARAT DAN KETENTUAN";
+"PRIVACY POLICY" = "KEBIJAKAN PRIVASI";
+"Fuel your curiosity" = "Baca lebih banyak berita tentang dunia";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Baca berita secara singkat dan akurat tentang topik favorit anda dari sumber terpercaya dari seluruh dunia.";
+"Save time" = "Hemat waktu anda";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Baca berita dalam bullet-points";
+"Hands-free reading" = "Membaca Hand-free";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Tidak punya waktu untuk membaca? Gunakan fitur bacakan";
+"Write your message..." = "Tulis pesan anda…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "kirim kami pesan jika anda membutuhkan bantuan dengan sesuatu, kami sangat senang mendengarkan pesan anda!";
+"Drop us a message" = "kirim kami pesan";
+"Enter Name." = "Masukkan nama.";
+"Enter Email." = "Masukkan email.";
+"Write your message." = "Tulis pesan anda.";
+"Topic unblock successfully" = "Anda telah batal blokir topik ini";
+"Source unblock successfully" = "Anda telah batal blokir sumber ini";
+"Unblock Source" = "Batal Blokir Sumber";
+"Cancel" = "Batal";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bagikan saran anda, kami sangat senang mendengar saran dari anda! Apakah anda memiliki pertanyaan atau kekhawatiran terhadap hukum? Kunjungi halaman Bantuan kami atau Hubungi Kami.";
+"Enter your suggestion." = "Masukkan saran.";
+"feedback sent." = "saran telah sukses terkirim";
+"30m" = "30m";
+"1h" = "1j";
+"3h" = "3j";
+"6h" = "6j";
+"12h" = "12j";
+"24h" = "24j";
+"Language updated successfully." = "Bahasa telah sukses diperbaharui";
+"CONTINUE" = "LANJUTKAN";
+"FOLLOW 3 TO CONTINUE" = "IKUTI 3 UNTUK MELANJUTKAN";
+"Unfollow Location" = "Batal Ikuti Lokasi";
+"Saved Articles" = "Artikel Tersimpan";
+"Block" = "BLOKIR";
+"Are you sure you want block" = "Apa anda takin ingin memblokir ini";
+"Once blocked, you wont be able to see any Articles related to this" = "Anda tidak akan melihat artikel dari saluran ini jika anda memblokirnya.";
+"Block Topic" = "Blokir Topik ini";
+"Suggested" = "Disarankan";
+"Related Sources not available" = "Sumber Terkait tidak tersedia";
+"Block Source" = "Blokir Sumber ini";
+"News in Bullets App version" = "Berita dalam versi Applikasi Bullet";
+"Next" = "Berikutnya";
+"Login" = "Masuk";
+"Terms" = "Syarat";
+"By clicking Continue, you agree with our Terms." = "Pilih Lanjutkan untuk menerima Syarat.";
+"in our Privacy Policy." = "dalam Kebijakan Privasi kami.";
+"Access token missing." = "Token akses tidak ditemukan.";
+"NEXT" = "BERIKUTNYA";
+"By checking this box, you agree to our " = "Klik pada kotak untuk menyetujui Syarat. Data anda akan di proses berdasarkan Kebijakan Privasi kami.";
+"Terms of Service" = "Syarat dan Ketentuan";
+". We’ll handle your data according to our " = ". Kami akan menangani data anda berdasarkan";
+"Password must be at least 8 characters." = "Kata sandi harus setidaknya 8 karakter.";
+"Strong" = "Kuat";
+"Medium" = "Sedang";
+"Weak" = "Lemah";
+"CREATE A NEW ACCOUNT" = "BUAT AKUN BARU";
+"SIGN IN WITH EXISTING ACCOUNT" = "MASUK DENGAN AKUN YANG SUDAH ADA";
+"You must agree to the Terms of Services to continue" = "Anda harus menyetujui Persyaratan Layanan untuk melanjutkan";
+"SIGN IN" = "Masuk";
+"What's your password?" = "Apa kata sandi anda?";
+"SIGN UP" = "Daftar";
+"Choose your password?" = "Pilih kata sandi anda";
+"Something went wrong" = "Sesuatu sedang tidak benar";
+"we will send email to" = "kita akan mengirim email ke";
+"with a link to reset your password." = "dengan tautan untuk mengatur ulang kata sandi anda.";
+"A reset password link has been sent to" = "Sebuah tautan untuk menyetel ulang kata sandi telah dikirimkan ke";
+"Enter new email." = "Masukkan alamat email baru.";
+"Enter password." = "Masukkan kata sandi.";
+"New Password " = "Kata Sandi Baru";
+" (8 characters min)" = "(minimal 8 karakter)";
+"Enter current password." = "Masukkan kata sandi saat ini.";
+"Enter new password." = "Masukkan kata sandi baru.";
+"Enter confirm password." = "Konfirmasi kata sandi.";
+"password do not matched!" = "Kata sandi tidak cocok!";
+"GET STARTED" = "MEMULAI";
+"SKIP" = "LEWATI";
+"From where you would like to pick photo?" = "Dari mana anda ingin memilih foto?";
+"Camera" = "Kamera";
+"Photo Library" = "Perpustakaan Foto";
+"Kindly open settings and enable access" = "Mohon buka pengaturan dan aktifkan akses";
+"Open Settings" = "Buka Pengaturan";
+"Access needed for your camera" = "Akses dibutuhkan untuk kamera anda";
+"Access needed for your photo library" = "Akses dibutuhkan untuk perpustakaan foto anda";
+"Done" = "Selesai";
+"Pull to refresh" = "Usap untuk menyegarkan";
+"Loading" = "Memuat";
+"Speech not available for this article" = "Fitur Bacakan tidak tersedia untuk artikel ini";
+"MANAGE LOCATION" = "KELOLA LOKASI";
+"OK" = "baik";
+"Choose your News in Bullets Edition based on locale" = "Pilih Berita Anda dalam Edisi Bullets berdasarkan lokal";
+"Edition" = "Edisi";
+"EDITION / REGION" = "EDISI / WILAYAH";
+"Your Topics" = "Topik Anda";
+"Your Channels" = "Saluran Anda";
+"Your Places" = "Tempat Anda";
+"Enter email." = "Masukan email.";
+"Please enter a password." = "Silakan masukkan kata sandi.";
+"Search articles" = "Cari Artikel";
+"No results" = "Tidak ada hasil";
+"Edition / Region" = "Edisi / Wilayah";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOK";
+"CANCEL" = "BATAL";
+"PLACES" = "TEMPAT";
+"LANGUAGE" = "BAHASA";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "ARTIKEL YANG DISIMPAN";
+"Topics" = "Topik";
+"Channels" = "Saluran";
+"Editions" = "Edisi";
+"No saved stories yet" = "Belum ada cerita yang disimpan";
+"Tap the" = "Tekan";
+"icon on the article" = "ikon pada artikel";
+"you want to read later then" = "Anda ingin membacanya nanti";
+"Select" = "Pilih";
+"to save article." = "untuk menyimpan artikel.";
+"There is nothing in here" = "Tidak ada apa disini";
+"Looks like there is nothing here but a cat." = "Sepertinya tidak ada apa disini selain kucing.";
+"Would you like to go back to home?" = "Kembali ke halaman utama?";
+"GO HOME" = "PERGI RUMAH";
+"Search" = "Cari";
+"Discover" = "Temukan";
+"Articles" = "Artikel";
+"Try a different keyword" = "Coba kata kunci lain";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Dapatkan berita paling relevan di wilayah yang Anda pilih. Baca artikel berita yang dikurasi agar Anda selalu mendapatkan berita terbaru dari mana saja di dunia.";
+"Language" = "Bahasa";
+"Results" = "Hasil";
+"For You" = "Untukmu";
+"Top News" = "Berita Puncak";
+"Choose a style" = "Pilih gaya";
+"Pop or subtle. Day or night. Customize your interface." = "Pop atau halus. Siang atau malam. Sesuaikan antarmuka Anda.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Tentang Kami";
+
+
+"Share" = "Bagikan";
+
+
+"ACCOUNT" = "AKUN";
+
+
+"Your Email" = "Email anda";
+
+
+"1sT-J6-qI0.text" = "ARTIKEL YANG TERSIMPAN";
+
+
+"2XX-rr-GLC.text" = "Pilih saluran yang berbeda dari ratusan sumber";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Baca berita kejadian terkini dan kilasan dari seluruh dunia";
+
+
+"Set an interval in which you want to receive your news notifications." = "Tentukan jarak waktu untuk menerima notifikasi";
+
+
+"Off" = "Mati";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "Apa alamat email anda?";
+
+
+"New Password (8 Characters Min)" = "Kata Sandi Baru (Minimal 8 Karakter)";
+
+
+"Forgot Password?" = "Lupa Kata Sandi";
+
+
+"Account Settings" = "Pengaturan Akun";
+
+
+"Learn how we process your data" = "Informasi dalam memproses data anda";
+
+
+"3h" = "3j";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Blokir artikel dari ---";
+
+
+"On" = "Nyalakan";
+
+
+"Auto" = "Otomatis";
+
+
+"Help Center" = "Pusat Bantuan";
+
+
+"Search" = "Cari Saluran";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Pilih file dari galeri";
+
+
+
+
+"Save article" = "Simpan artikel";
+
+
+"ABOUT" = "TENTANG";
+
+
+"Dark" = "Gelap";
+
+
+"Legal" = "Hukum";
+
+
+"Go to The Guardian" = "Pergi ke ---";
+
+
+"Send reset link" = "Kirim tautan setel ulang";
+
+
+
+
+
+"My Account" = "Akun Saya";
+
+
+"FEEDBACK" = "UMPAN BALIK";
+
+
+"Message" = "Pesan";
+
+
+"Confirm New Password" = "Konfirmasi Kata Sandi Baru";
+
+
+"for ___" = "untuk ___";
+
+
+"Search" = "Cari Topik";
+
+
+"LANGUAGE" = "BAHASA";
+
+
+"Light" = "Terang";
+
+
+"FOLLOW 3 TO CONTINUE" = "untuk melanjutkan, pilih 3";
+
+
+
+
+"Off" = "Matikan";
+
+
+"Language" = "Pilih";
+
+
+"LOG OUT" = "KELUAR";
+
+
+"Report content" = "Laporkan konten";
+
+
+"What's your email?" = "Apa alamat email anda?";
+
+
+"On" = "Nyalakan";
+
+
+"More like this" = "Lebih banyak berita serupa";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1j";
+
+
+"Enter Email Address" = "Masukan Alamat Email";
+
+
+"News in Bullets" = "Baca lebih banyak dengan singkat";
+
+
+"6h" = "6j";
+
+
+"Choose your password" = "Tentukan kata sandi anda";
+
+
+"Cancel" = "Batal";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Baca berita secara cepat dengan aplikasi ini. Tentukan topik sumber anda. Lalu baca pesan anda dengan poin-poin penting yang singkat";
+
+
+"Push Notification" = "Notifikasi";
+
+
+"12h" = "12j";
+
+
+"24h" = "24j";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Apa yang bisa kami bantu?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "GANTI KATA SANDI";
+
+
+"Change Email" = "Change Email";
+
+
+"Medium" = "Sedang";
+
+
+"SAVE CHANGES" = "SIMPAN PERUBAHAN";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Kirim kami pesan jika anda membutuhkan bantuan atas sesuatu, kami sangat senang mendengar pesan dari anda!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "Batal";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"POST ARTICLE" = "POST SEBUAH ARTIKEL";
+
+
+"CONTACT US" = "Hubungi Kami";
+
+
+"EDITION / REGION" = "Edisi";
+
+
+"Search" = "Cari";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bagikan saran anda, kami sangat senang mendengar saran dari anda! Apakah anda memiliki pertanyaan atau kekhawatiran terhadap hukum? Kunjungi halaman Bantuan kami atau Hubungi Kami.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Kirim kami pesan jika anda membutuhkan bantuan atas sesuatu, kami sangat senang mendengar pesan dari anda!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "LANJUTKAN";
+
+
+"Time To Update!" = "Perbaharui aplikasi!";
+
+
+"NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"Search" = "Cari";
+
+
+"By clicking Continue, you agree with our Terms." = "Pilih Lanjutkan untuk menerima Persyaratan";
+
+
+"HELP / CONTACT US" = "BANTUAN / KONTAK";
+
+
+"Reset Password" = "Atur Ulang Kata Sandi";
+
+
+"SEND MESSAGE" = "MENGIRIM PESAN";
+
+
+"Save article" = "Simpan artikel";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (Opsional)";
+
+
+"HAPTICS" = "HAPTIC";
+
+
+"Your message has \vbeen sent." = "Pesan anda telah terkirim.";
+
+
+"LEGAL" = "HUKUM";
+
+
+"Block List" = "Daftar Blokir";
+
+
+"PERSONALIZATION" = "PERSONALISASI";
+
+
+"in our Privacy Policy." = "pada Kebijakan Privasi kami.";
+
+
+"CONTINUE" = "LANJUTKAN";
+
+
+"Enter Name" = "Masukkan Nama";
+
+
+"What's your email?" = "Apa alamat email anda?";
+
+
+"Hello there!" = "Halo!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFIKASI";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (Opsional)";
+
+
+"Source name" = "Nama Sumber";
+
+
+"Current Password" = "Kata Sandi Saat Ini";
+
+
+"COLOR THEME" = "Warna Tema";
+
+
+"eTp-X1-g34.text" = "Atau lewati";
+
+
+"CANCEL" = "BATAL";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (Opsional)";
+
+
+"Date published" = "Tanggal terbit";
+
+
+"Send Password Reset Link" = "Kirim tautan untuk menyetel ulang kata sandi";
+
+
+"CONTINUE WITH APPLE" = "Daftar melalui Apple ID";
+
+
+"Off" = "Matikan";
+
+
+"BLOCK LIST" = "DAFTAR BLOKIR";
+
+
+"HELP" = "BANTUAN";
+
+
+"Reference link" = "Tautan/link refrensi";
+
+
+"Your Password" = "Kata Sandi Anda";
+
+
+"SUBMIT" = "KIRIM";
+
+
+"HELP" = "BANTUAN";
+
+
+"MY ACCOUNT" = "AKUN SAYA";
+
+
+"hbD-HP-tZd.normalTitle" = "BATAL BLOKIR";
+
+
+"OTHERS" = "Lainnya";
+
+
+"BREAKING NEWS" = "berita terkini";
+
+
+"Message us," = "Kirim kami pesan,";
+
+
+"Pick topics to start reading
+and saving articles" = "bahasa aplikasi";
+
+
+"Forgot Password?" = "Lupa Kata Sandi?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Fitur terbaru telah ditambahkan. Beberapa masalah telah diperbaiki.";
+
+
+"Success!" = "Berhasil!";
+
+
+"Current Password" = "Kata Sandi Saat Ini";
+
+
+"CONTENT" = "KONTEN";
+
+
+"Headline" = "Berita Utama";
+
+
+"neg-UC-UpK.text" = "Pilih topik untuk memulai membaca dan simpan artikel";
+
+
+"CONTINUE WITH EMAIL ID" = "Lanjutkan dengan alamat ID email anda";
+
+
+"SAVE CHANGES" = "SIMPAN PERUBAHAN";
+
+
+"Post an Article" = "Pasang Artikel";
+
+
+"Contact Us" = "Hubungi Kami";
+
+
+"On" = "Nyalakan";
+
+
+"New Email Address" = "Alamat Email Baru";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Opsional)";
+
+
+"Suggest an improvement" = "Beri saran untuk perkembangan";
+
+
+"From:" = "Dari:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "REKOMENDASI YANG TERPERSONALISASI";
+
+
+"I don't like this" = "Saya tidak suka ini";
+
+
+"CONTINUE" = "LANJUTKAN";
+
+
+"Name" = "Nama";
+
+
+"Enter email" = "Masukkan email";
+
+
+"HELP" = "BANTUAN";
+
+
+"FOLLOW 3 TO CONTINUE" = "Ikuti 3 untuk Melanjutkan";
+
+
+"UPDATE APP" = "Perbaharui Aplikasi";
+
+
+"Forgot Password?" = "Lupa Kata Sandi?";
+
+
+"Change Password" = "Ubah Kata Sandi";
+
+
+"Reset Password" = "Setel Ulang Kata Sandi";
+
+
+
+
+
+
+
+
+"Report content" = "Laporkan kekhawatiran anda";
+
+
+"CHANGE EMAIL ADDRESS" = "GANTI ALAMAT EMAIL";
+
+
+"Follow The Guardian" = "Ikuti ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Kami menambahkan banyak fitur baru dan memperbaiki beberapa bug untuk membuat pengalaman Anda semulus mungkin.";
+
+
+"Edition / Region" = "Edisi / Wilayah";
+
+
+"OK" = "baik";
+
+
+"NARRATOR" = "NARATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Terus memperbarui berita yang Anda sukai seharusnya tidak menyita banyak waktu Anda. News in Bullets membutuhkan waktu 5 menit untuk membaca dan memadatkannya menjadi peluru yang mudah dicerna. Sekarang, Anda dapat menerima berita yang sama hanya dalam waktu singkat - sehingga Anda dapat membaca lebih banyak dalam waktu yang lebih singkat.";
+
+
+"READING SPEED" = "KECEPATAN MEMBACA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Anda belum memblokir apa pun";
+
+
+"EDITION / REGION" = "EDISI / WILAYAH";
+
+
+
+
+
+"HEADLINES ONLY" = "HANYA HEADLINE";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Pengaturan Audio";
+
+
+"AUDIO SETTINGS" = "SETELAN AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "KEPALA DAN PELURU";
+
+
+"CONTINUE AS GUEST" = "SKIP dan LOG-IN SEBAGAI TAMU";
+
+
+"Pick topics to start reading and saving articles" = "Pilih topik untuk mulai membaca dan menyimpan artikel";
+
+
+"Choose from hundreds \nof news publications" = "Pilih dari ratusan \ publikasi berita";
+
+"Pick topics to start reading\nand saving articles" = "Pilih topik untuk mulai membaca dan menyimpan artikel";
+
+"Pick editions to start reading\nand saving articles" = "Pilih edisi untuk mulai membaca dan menyimpan artikel";
+
+"Or with" = "Atau dengan";
+
+"CONTINUE AS GUEST" = "LANJUTKAN SEBAGAI TAMU";
+
+"Terms of Service" = "Persyaratan Layanan";
+
+"Choose from hundreds \nof news publications" = "Pilih dari ratusan publikasi berita";
+
+"Select your preferred language\nfor News in Bullets." = "Pilih bahasa pilihan Anda untuk News in Bullets.";
+
+"Choose a style" = "Pilih gaya";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop atau halus. Siang atau malam. Sesuaikan antarmuka Anda.";
+
+"MINS AGO" = "MENIT LALU";
+
+"AN HOUR AGO" = "SATU JAM YANG LALU";
+
+"HOURS AGO" = "JAM YANG LALU";
+
+"1 WEEK AGO" = "1 MINGGU YANG LALU";
+
+"YESTERDAY" = "KEMARIN";
+
+"DAYS AGO" = "HARI YANG LALU";
+
+"Go to" = "Pergi ke";
+
+"You have reached the start." = "Anda telah mencapai awal.";
+
+"Source unblocked successfully" = "Sumber berhasil dibebaskan";
+
+"Invalid email format"  = "Format email tidak valid";
+
+"Wrong email or password" = "Email atau password salah";
+
+
+"Personalize your reading experience" = "Personalisasikan pengalaman membaca Anda";
+
+"Start following the news topics and channels you want to read." = "Mulailah mengikuti topik berita dan saluran yang ingin Anda baca.";
+
+"LET'S GO" = "Ayo pergi";
+
+"We’ll handle your data according to our\n" = "Kami akan menangani data Anda sesuai dengan";
+
+"By clicking Continue, you agree with our " = "Dengan mengklik Lanjutkan, Anda setuju dengan";
+
+"Learn how we process your data in our"  = "Pelajari cara kami memproses data Anda di";
+
+"JUST NOW" = "BARUSAN";
+
+"Menu" = "Menu";
+"Article Text Size" = "Ukuran Teks Artikel";
+"Change the font size shown on the articles" = "Ubah ukuran font yang ditampilkan di artikel";
+"Small" = "Kecil";
+"Default" = "Default";
+"Medium" = "Medium";
+"Large" = "Besar";
+
+"Related Articles" = "Artikel Terkait";
+"View Full Article" = "Lihat Artikel Lengkap";
+
+"Create your profile" = "Buat profil mu";
+"Set your profile" = "Setel profil Anda";
+"View your profile" = "Lihat profil Anda";
+"ARTICLE TEXT SIZE" = "UKURAN TEKS ARTIKEL";
+"DATA SAVER" = "PENGHEMAT DATA";
+"Edit Profile" = "Sunting profil";
+"Profile Settings" = "Pengaturan Profil";
+"Edit what viewers see in your profile." = "Edit apa yang dilihat pemirsa di profil Anda.";
+"COVER PHOTO" = "FOTO SAMPUL";
+"Profile Name" = "Nama profil";
+"Help and Feedback" = "Bantuan dan Umpan Balik";
+"HELP AND FEEDBACK" = "BANTUAN DAN UMPAN BALIK";
+"Others" = "Lainnya";
+"Feedback & Suggestions" = "Umpan Balik dan Saran";
+"Help / Contact Us" = "Bantuan / Hubungi Kami";
+"Terms and Conditions" = "Syarat dan ketentuan";
+"Notification" = "Pemberitahuan";
+"Push Notifications" = "Pemberitahuan Push";
+"Breaking News" = "Berita";
+"Personalized Recommendations" = "Rekomendasi yang Dipersonalisasi";
+"Timed Notifications" = "Pemberitahuan Jangka Waktu";
+"Account" = "Akun";
+"E-mail Address" = "Alamat email";
+"Reels" = "Berita reels";
+
+"Comments" = "Komentar";
+"Write a reply..." = "Tulis balasan...";
+"Reply" = "Balasan";
+"Replies" = "Balasan";
+"View" = "Tampilan";
+"more reply" = "lebih banyak balasan";
+"more replies" = "lebih banyak balasan";
+"Home" = "Halaman muka";
+"Newsreels" = "Berita reels";
+
+"Following" = "Berikut";
+"First Name" = "Nama Depan";
+"Last Name" = "Nama Belakang";
+
+"This feature requires photo access" = "Fitur ini membutuhkan akses foto";
+"in phone settings, tap News in Bullets and turn on Photos" = "di pengaturan telepon, ketuk News in Bullets dan aktifkan Foto";
+"Not Now" = "Tidak sekarang";
+"Open Settings" = "Buka Pengaturan";
+"No photos on this device" = "Tidak ada foto di perangkat ini";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "jika Anda ingin mengubah pengaturan akses foto, buka pengaturan telepon, ketuk News in Bullets dan aktifkan Foto";
+"Video duration" = "Durasi video";
+"Video too short" = "Video terlalu pendek";
+"Video too long" = "Video terlalu panjang";
+"Done" = "Selesai";
+"Save" = "Menyimpan";
+"Processing.." = "Pengolahan..";
+"Trim" = "Memangkas";
+"Cover" = "Menutupi";
+"Albums" = "Album";
+"Gallery" = "Galeri";
+"Photos" = "Foto";
+"Videos" = "Video";
+"Next" = "Nerikutnya";
+"Crop" = "Pangkas gambar";
+
+
+
+"Locations" = "Lokasi";
+"Authors" = "Penulis";
+"Invalid Video" = "Video Tak-Sahih";
+"Invalid Youtube link" = "Tautan Youtube tidak valid";
+"Article published successfully" = "Artikel berhasil diterbitkan";
+"Article removed successfully" = "Artikel berhasil dihapus";
+"Edit Article" = "Mengedit artikel";
+"Delete Article" = "Hapus artikel";
+"Before you can comment, you need to update your profile" = "Sebelum Anda dapat memposting, Anda perlu memperbarui profil Anda.";
+"Update profile" = "Memperbaharui profil";
+"Views" = "Tampilan";
+
+"Edit Newsreels" = "Mengedit Berita Reels";
+"Post article" = "Posting artikel";
+"SAVE" = "Menyimpan";
+"Caption" = "Judul";
+"Create a Caption" = "Buat judul";
+
+"Create a headline" = "Buat tajuk utama";
+"Add Source Link (Optional)" = "Tambahkan Tautan Sumber (Opsional)";
+"Enter a Caption" = "Masukkan Judul";
+"Enter article headline" = "Masukkan judul artikel";
+
+"Add Bullet 1" = "Tambahkan Peluru 1";
+"Add Bullet 2" = "Tambahkan Peluru 2";
+"Add Bullet 3 (Optional)" = "Tambahkan Peluru 3 (Opsional)";
+"Add Bullet 4 (Optional)" = "Tambahkan Peluru 4 (Opsional)";
+"Add Bullet 5 (Optional)" = "Tambahkan Peluru 5 (Opsional)";
+
+"Add Bullet" = "Tambahkan Peluru";
+
+"Uploading video..." = "Mengunggah video...";
+"Bullet" = "Peluru";
+
+
+"Oops! Something went wrong. Please try again." = "Ups! Ada yang tidak beres. Silakan coba lagi.";
+
+"Upload media" = "Unggah Media";
+"Upload Newsreels" = "Unggah Berita reels";
+"Upload YouTube link" = "Unggah tautan YouTube";
+"Before you post," = "Sebelum Anda memposting,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Harap diingat bahwa Anda bergabung dengan komunitas pembaca dan penulis global. Untuk melindungi semua orang dari segala bentuk informasi yang salah dan penyalahgunaan, harap tinjau kami";
+"Community Guidelines." = "Pedoman Komunitas.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "Dengan mengetuk Lanjutkan, Anda setuju untuk menjunjung pedoman.";
+"Community Guidelines" = "Pedoman Komunitas";
+
+"Upload bullet image (optional)" = "Unggah gambar peluru (Opsional)";
+"Delete" = "Hapus";
+"Replace" = "Menggantikan";
+"Delete Bullet" = "Hapus Peluru";
+
+"Add Tag" = "Tambah Tag";
+"Get discovered locally" = "Untuk dikenali secara lokal";
+"Add a location to your channel and get discovered by users near you." = "Tambahkan lokasi ke saluran Anda dan buatlah ditemukan oleh pengguna di dekat Anda.";
+"Max 5" = "Maks 5";
+"RECOMMENDED" = "Direkomendasikan";
+"comma, separated, tags" = "koma, dipisahkan, tag";
+
+"YouTube Article" = "Artikel YouTube";
+"Paste a YouTube link to upload a video from YouTube." = "Tempel tautan YouTube untuk mengupload video dari YouTube.";
+"Paste a YouTube link to take import" = "Menempelkan tautan YouTube untuk melakukan impor";
+"IMPORT" = "Mengimpor";
+
+"Enter Youtube link" = "Masukkan tautan Youtube";
+"Preview" = "Pratinjau";
+"POST" = "Pos";
+"Post to My Profile" = "Posting ke Profil Saya";
+
+"RESULT" = "Hasil";
+"followers" = "pengikut";
+"Followers" = "Pengikut";
+"Posts" = "Posting";
+"Profile updated successfully" = "Profil berhasil diperbarui";
+"Tags" = "Tag";
+"No Posts Yet" = "Belum ada postingan";
+
+
+"Add" = "Menambahkan";
+"Select Ratio" = "Pilih Rasio";
+"Add topics tags" = "Tambahkan tag topik";
+"Be discovered by people following the topics you are posting about." = "Ditemukan oleh orang-orang yang mengikuti topik yang Anda posting.";
+"Reels edited successfully." = "Berita reels berhasil diedit.";
+"Article edited successfully." = "Artikel berhasil diedit.";
+"Reels uploaded successfully." = "Berita reels berhasil diunggah.";
+"Enter verification code" = "Masukkan kode verifikasi";
+"RESEND" = "PENGIRIMAN ULANG";
+"Processing..." =  "Pengolahan...";
+"Scheduled on:" = "Dijadwalkan pada:";
+"Enter profile name" = "Masukkan nama profil";
+"Ok, last thing is your channel image" = "Oke, hal terakhir adalah gambar saluran Anda";
+"Upload" = "Unggah";
+"Before you can post article, you need to update your profile" = "Sebelum Anda dapat memposting, Anda perlu memperbarui profil Anda.";
+"UPDATE" = "Memperbarui";
+"Scale" = "Skala";
+"Saved Article" = "Artikel Tersimpan";
+"Removed Article" = "Artikel yang Dihapus";
+"Ok, last thing is your profile image" = "Ok, hal terakhir adalah gambar profil Anda";
+"Relevant" = "Relevan";
+
+"See More" = "lihat lebih banyak";
+"Less" = "lihat lebih sedikit";
+"Autoplay" = "Putar otomatis";
+"Reader Mode" = "Mode Pembaca";
+"Data Saver" = "PENGHEMAT DATA";
+"Please enter a valid OTP." = "Harap masukkan OTP yang valid.";
+"Enter a first name" = "Nama Depan";
+"Enter a last name" = "Nama Belakang";
+
+
+"Password updated successfully" = "Kata sandi berhasil diperbarui";
+"Replying to" = "Membalas";
+"Unblock Topic" = "Buka Blokir Topik";
+"Please add your reel caption" = "Silakan tambahkan deskripsi reels Anda";
+"Please add bullet" = "Tolong tambahkan peluru";
+"Please add your article headline" = "Silakan tambahkan judul artikel Anda";
+"Please add bullet 1" = "Silakan tambahkan titik peluru 1";
+"Please add bullet 2" = "Silakan tambahkan titik peluru 2";
+"Please enter a valid channel name" = "Harap masukkan nama saluran yang valid";
+"Let people know what" = "Beri tahu orang-orang apa";
+"your channel is about" = "saluran Anda adalah tentang";
+"Start by creating your" = "Mulailah dengan membuat";
+"channel name" = "Nama Saluran";
+"Describe your channel" = "Jelaskan saluran Anda";
+"No pressure, you can change this later." = "Tidak ada tekanan, Anda dapat mengubah ini nanti.";
+"Channel created successfully" = "Saluran berhasil dibuat";
+"Please enter your channel description" = "Silakan masukkan deskripsi saluran Anda";
+"Channel name already in use" = "Nama saluran sudah digunakan";
+"Post to" = "Posting ke";
+
+"Available" = "Tersedia";
+"Already in use" = "Sudah digunakan";
+"SCHEDULE POST" = "Jadwalkan Posting";
+"DRAFTS" = "Draf";
+"View channel" = "Lihat saluran";
+"Create a channel" = "Buat saluran";
+"Ok, last thing is" = "Oke, hal terakhir adalah";
+"your channel image" = "gambar saluran Anda";
+"looks amazing!" = "terlihat luar biasa!";
+"CREATE CHANNEL" = "Buat saluran";
+"Scheduled Posts" = "Jadwalkan Postingan";
+
+"You don't have any drafts yet." = "Anda belum memiliki draf.";
+"Schedule" = "Susunan acara";
+"There aren't any scheduled posts yet." = "Belum ada postingan terjadwal.";
+"Schedule a Post" = "Jadwalkan Postingan";
+"Mod Tools" = "Alat Mod";
+"Unfollow Channel" = "Berhenti Ikuti Saluran";
+"Follow Channel" = "Ikuti Saluran";
+
+"Release to refresh" = "Lepaskan untuk menyegarkan kembali";
+"Loading..." =  "Pemuatan...";
+"Schedule Post" = "Jadwalkan Posting";
+"Moderator Tools" = "Alat Moderator";
+"General" = "Umum";
+"Scheduled Posts" = "Postingan Terjadwal";
+"Settings" = "Pengaturan";
+"channel and cover photo" = "saluran dan foto sampul";
+"Description" = "Deskripsi";
+"Will be posted in" = "Akan diposting dalam";
+"Will be posted on" = "Akan diposting di";
+"Will be posted now" = "Akan diposting sekarang";
+"Select Date" = "Pilih Tanggal";
+"Select Time" = "Pilih Waktu";
+"Please select date" = "Silakan pilih tanggal";
+"Please select time" = "Silakan pilih waktu";
+"Continue with Apple" = "Lanjutkan dengan Apple";
+"Continue with Google" = "Lanjutkan dengan Google";
+"Continue with Facebook" = "Lanjutkan dengan Facebook";
+"Continue with email" = "Lanjutkan dengan email";
+"Login or create an account" = "Masuk atau buat akun";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "Login atau buat akun untuk membaca, berbagi, dan mengomentari cerita dari semua topik favorit Anda.";
+"your profile image" = "gambar profil Anda";
+"Invalid OTP code" = "Kode OTP tidak valid";
+
+"View your profile" = "Lihat profil Anda";
+"NEWS DESK" = "Meja Berita";
+"YOUR CHANNELS" = "Saluran Anda";
+"GENERAL" = "Umum";
+"WALLET" = "Dompet";
+"POSTS" = "Posting";
+"PERSONALIZATIONS" = "Personalisasi";
+"NETWORK" = "Jaringan";
+"Need more channels?" = "Butuh lebih banyak saluran?";
+"VIEW ALL & MANAGE" = "Lihat semua & kelola";
+
+"Community Feed" = "Umpan Komunitas";
+"Create your post" = "Membuat postingan Anda";
+"Media" = "Media";
+"Youtube" = "YouTube";
+"You're all caught up" = "Semua dilakukan dengan segalanya";
+"You've seen all new posts" = "Anda telah melihat semua postingan baru";
+"Go to top" = "Pergi ke atas";
+"Suggested Reels" = "Reels yang Disarankan";
+"Suggested Authors" = "Penulis yang Disarankan";
+
+
+"Share to" = "Bagikan ke";
+"Report" = "Laporan";
+"Unsave Video" = "Hapus dari video yang disimpan";
+"Save Video" = "Simpan Video";
+"Aspect Ratio" = "Rasio Aspek";
+"Rotate" = "Memutar";
+"Flip Vertical" = "Balik Vertikal";
+"Flip Horizontal" = "Balik Horisontal";
+
+
+"Community" = "Masyarakat";
+"APP LANGUAGE" = "BAHASA APLIKASI";
+"You don't have any followers yet" = "Anda belum memiliki pengikut";
+
+
+"View Original Article" = "Lihat Artikel Asli";
+"Places" = "Tempat";
+"Languages" = "Bahasa";
+"New Posts" = "Posting Baru";
+"No posts yet" = "Belum ada postingan";
+"All Followers" = "Semua Pengikut";
+"Add Place" = "Tambahkan Tempat";
+"Add places tags" = "Tambahkan Tag Tempat";
+"Be discovered by people following the places you are posting about." = "Ditemukan oleh orang-orang yang mengikuti tempat-tempat yang Anda posting.";
+
+
+"START FOLLOWING" = "Mulai mengikuti";
+"You are not following anything yet" = "Anda belum mengikuti apa pun.";
+
+"Notifications" = "Pemberitahuan";
+"General" = "Umum";
+"News" = "Berita";
+"VIEW MORE" = "Lihat Selengkapnya";
+"BULLETS AUTO PLAY" = "Putar otomatis peluru";
+"VIDEOS AUTO PLAY" = "Putar otomatis video";
+"REELS AUTO PLAY" = "Reels bermain otomatis ";
+"READER THEME" = "TEMA PEMBACA";
+"News Content Language" = "Bahasa Konten Berita";
+"FAVORITES" = "Favorit";
+"Region/Places" = "Wilayah / Tempat";
+"Select Regions/Places" = "Pilih Wilayah/Tempat";
+"Follow at least 3 topics" = "Ikuti setidaknya 3 topik";
+"Please Follow at least 3 topics" = "Silakan Ikuti setidaknya 3 topik";
+"Explore Newsreels" = "Jelajahi beritareels";
+"Related Reels" = "Reels Terkait";
+"Explore Your Feed" = "Jelajahi umpan Anda";
+"Sources" = "Sumber";
+"Articles, topics, channels, authors" = "Artikel, topik, saluran, penulis";
+"View/Manage" = "Lihat/Kelola";
+
+
+

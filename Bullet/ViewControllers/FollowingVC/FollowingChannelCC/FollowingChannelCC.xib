@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MuliSemiBold.otf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FollowingChannelCC" id="gTV-IL-0wX" customClass="FollowingChannelCC" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYa-MQ-L64">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="132"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5B-Vt-nME">
+                                <rect key="frame" x="9" y="8" width="72" height="72"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dls-5Q-mIC">
+                                <rect key="frame" x="9" y="8" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dls-5Q-mIC" secondAttribute="height" multiplier="1:1" id="8wz-LA-3IT"/>
+                                    <constraint firstAttribute="width" constant="72" id="PRS-j7-aIH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gulf News " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT2-yF-vND">
+                                <rect key="frame" x="6" y="95" width="78" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="Nr3-Q6-SmZ">
+                                <rect key="frame" x="57" y="61" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="Bc3-xB-jGf"/>
+                                    <constraint firstAttribute="width" secondItem="Nr3-Q6-SmZ" secondAttribute="height" multiplier="1:1" id="k02-p3-bPD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-mL-VUy">
+                                <rect key="frame" x="50" y="54" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="O06-WZ-IHQ"/>
+                                    <constraint firstAttribute="width" constant="36" id="f9N-s7-y9H"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nr3-Q6-SmZ" firstAttribute="leading" secondItem="Dls-5Q-mIC" secondAttribute="trailing" constant="-24" id="52l-zZ-Ncw"/>
+                            <constraint firstItem="OzU-mL-VUy" firstAttribute="centerX" secondItem="Nr3-Q6-SmZ" secondAttribute="centerX" id="5GO-5g-AN2"/>
+                            <constraint firstAttribute="trailing" secondItem="iT2-yF-vND" secondAttribute="trailing" constant="6" id="6Wj-78-glL"/>
+                            <constraint firstItem="OzU-mL-VUy" firstAttribute="centerY" secondItem="Nr3-Q6-SmZ" secondAttribute="centerY" id="83n-Bg-8O4"/>
+                            <constraint firstItem="Dls-5Q-mIC" firstAttribute="centerX" secondItem="XYa-MQ-L64" secondAttribute="centerX" id="8DX-CO-daq"/>
+                            <constraint firstItem="K5B-Vt-nME" firstAttribute="width" secondItem="Dls-5Q-mIC" secondAttribute="width" multiplier="3.33333" constant="-168" id="LJ9-2r-TSL"/>
+                            <constraint firstItem="K5B-Vt-nME" firstAttribute="height" secondItem="Dls-5Q-mIC" secondAttribute="height" multiplier="1.77778" constant="-56" id="a4e-HI-fCv"/>
+                            <constraint firstItem="Dls-5Q-mIC" firstAttribute="top" secondItem="XYa-MQ-L64" secondAttribute="top" constant="8" id="eyg-ZW-31y"/>
+                            <constraint firstItem="Nr3-Q6-SmZ" firstAttribute="top" secondItem="Dls-5Q-mIC" secondAttribute="bottom" constant="-19" id="gsE-X7-bkn"/>
+                            <constraint firstItem="iT2-yF-vND" firstAttribute="leading" secondItem="XYa-MQ-L64" secondAttribute="leading" constant="6" id="idb-9N-7cU"/>
+                            <constraint firstItem="K5B-Vt-nME" firstAttribute="centerX" secondItem="XYa-MQ-L64" secondAttribute="centerX" id="n8c-wO-daR"/>
+                            <constraint firstItem="iT2-yF-vND" firstAttribute="top" secondItem="Dls-5Q-mIC" secondAttribute="bottom" constant="15" id="tRR-4w-HH2"/>
+                            <constraint firstItem="K5B-Vt-nME" firstAttribute="top" secondItem="XYa-MQ-L64" secondAttribute="top" constant="8" id="zG0-bN-kZK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XYa-MQ-L64" secondAttribute="bottom" id="37a-Ht-d8u"/>
+                <constraint firstItem="XYa-MQ-L64" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3Jl-oL-a2R"/>
+                <constraint firstAttribute="trailing" secondItem="XYa-MQ-L64" secondAttribute="trailing" id="bHT-gL-t2m"/>
+                <constraint firstItem="XYa-MQ-L64" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gZL-jl-GaY"/>
+            </constraints>
+            <size key="customSize" width="175" height="139"/>
+            <connections>
+                <outlet property="btnFav" destination="OzU-mL-VUy" id="yFn-4r-Juz"/>
+                <outlet property="imgChannel" destination="Dls-5Q-mIC" id="riv-YJ-haI"/>
+                <outlet property="imgFav" destination="Nr3-Q6-SmZ" id="UQG-sb-4Vw"/>
+                <outlet property="lblChannelName" destination="iT2-yF-vND" id="d3v-q8-TOG"/>
+                <outlet property="viewBG" destination="K5B-Vt-nME" id="Yh3-Ll-vdC"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="119.86607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favFollowing" width="44.5" height="47"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

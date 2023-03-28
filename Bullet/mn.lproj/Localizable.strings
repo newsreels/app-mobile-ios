@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "сум";
+"BULLETS" = "БУЛЛЕТ ХҮЧ";
+"Headlines is not available." = "Гарчиг байхгүй байна.";
+"Check your internet Connection and try again." = "Интернет холболтоо шалгаад дахин оролдоно уу.";
+"Choose Image" = "Зураг сонгоно уу";
+"Headline" = "Гарчиг";
+"Bullet 1" = "Сум 1";
+"Bullet 2" = "Сум 2";
+"Bullet 3 (Optional)" = "Сум 3 (Заавал биш)";
+"Bullet 4 (Optional)" = "Сум 4 (Заавал биш)";
+"Bullet 5 (Optional)" = "Сум 5 (Заавал биш)";
+"Bullet 6 (Optional)" = "Сум 6 (Заавал биш)";
+"Enter Aticle Headline" = "Гарчиг оруулах";
+"Enter source name" = "Эх сурвалжаа оруулна уу";
+"Enter reference link" = "Лавлагаа оруулна уу";
+"Enter published date" = "Нийтлэх огноог оруулна уу";
+"Enter Bullet 1" = "Эхний сумыг оруулна уу";
+"Enter Bullet 2" = "Хоёр дахь сумыг оруулна уу";
+"Post article successfully" = "Нийтлэлийг амжилттай байрлуулсан байна";
+"Follow" = "Дагаж мөрдөөрэй";
+"Unfollow" = "Зогсоох";
+"Block articles from" = "Нийтлэлүүдийг BLOCK";
+"Unblock articles from" = "НҮБ-ын нийтлэл";
+"Remove article" = "Нийтлэлийг хас";
+"Save article" = "Энэ нийтлэлийг хадгал";
+"Terms & Conditions" = "Нөхцөл байдал ба нөхцөл байдал";
+"Privacy Policy" = "Нууцлалын бодлого";
+"TERMS AND CONDITIONS" = "ҮЙЛДВЭРЛЭЛ, БҮРТГЭЛ";
+"PRIVACY POLICY" = "ХӨДӨЛМӨРИЙН БОЛОМЖТОЙ";
+"Fuel your curiosity" = "Дэлхийн талаар илүү их мэдээ уншаарай";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Дэлхийн хамгийн найдвартай эх сурвалжаас дуртай сэдвүүдийнхээ талаар богино, үнэн зөв мэдээллийг уншаарай.";
+"Save time" = "Цаг заваа хэмнээрэй";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Энэ мэдээг сумны цэг дээр уншаарай";
+"Hands-free reading" = "Гаргүй унших";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Унших цаг алга? Ярианы функцийг ашиглана уу.";
+"Write your message..." = "Зурвасаа бичнэ үү...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "танд ямар нэгэн тусламж хэрэгтэй бол биднээс мессеж илгээх болно!";
+"Drop us a message" = "бидэнд мессеж илгээх";
+"Enter Name." = "Нэр оруулна уу.";
+"Enter Email." = "Имэйлийг оруулна уу.";
+"Write your message." = "Зурвасаа бичнэ үү.";
+"Topic unblock successfully" = "Та энэ сэдвийг хаасан";
+"Source unblock successfully" = "Та энэ эх сурвалжийг хаасан байна";
+"Unblock Source" = "Блоклох эх сурвалж";
+"Cancel" = "Цуцлах";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Бидэнд санал хүсэлтээ илгээгээрэй, бид танаас хариу сонсохыг хүсч байна! Танд асуулт эсвэл хууль эрх зүйн асуудал байна уу?? Тусламжийн хуудас эсвэл бидэнтэй холбоо бариарай.";
+"Enter your suggestion." = "Саналаа оруулна уу.";
+"feedback sent." = "санал хүсэлтийг амжилттай илгээдэг";
+"30m" = "30м";
+"1h" = "1 цаг";
+"3h" = "3 цаг";
+"6h" = "6 цаг";
+"12h" = "12 цаг";
+"24h" = "24 цаг";
+"Language updated successfully." = "хэл амжилттай шинэчлэгдсэн.";
+"CONTINUE" = "ХОЛБОО";
+"FOLLOW 3 TO CONTINUE" = "БОЛОМЖ 3 ТОН УЛСЫН ҮНЭГҮЙ";
+"Unfollow Location" = "Нүүлгэн шилжүүлэх";
+"Saved Articles" = "Хадгалагдсан нийтлэл";
+"Block" = "БЛОК";
+"Are you sure you want block" = "Та үүнийг хаахыг хүсч байгаадаа итгэлтэй байна уу?";
+"Once blocked, you wont be able to see any Articles related to this" = "Хэрэв та үүнийг хаасан бол энэ сувгаас нийтлэл харахгүй.";
+"Block Topic" = "Энэ сэдвийг хаах";
+"Suggested" = "Санал болгосон";
+"Related Sources not available" = "Холбоотой эх сурвалж байхгүй байна";
+"Block Source" = "Энэ эх сурвалжийг хаах";
+"News in Bullets App version" = "Bullets App хувилбар дахь мэдээ";
+"Next" = "Дараачийн";
+"Login" = "Логин";
+"Terms" = "Нэр томъёо";
+"By clicking Continue, you agree with our Terms." = "Нэр томъёог үргэлжлүүлэн хүлээж ав.";
+"in our Privacy Policy." = "манай Нууцлалын бодлогод.";
+"Access token missing." = "Хандалтын тэмдэг байхгүй байна.";
+"NEXT" = "ДАРААГИЙН";
+"By checking this box, you agree to our " = "Нэр томъёог хүлээн авахын тулд хайрцгийг дарна уу. Таны мэдээллийг манай Нууцлалын бодлогын дагуу боловсруулдаг.";
+"Terms of Service" = "Үйлчилгээний нөхцөл";
+". We’ll handle your data according to our " = "бид таны мэдээллийг хадгалах болно";
+"Password must be at least 8 characters." = "нууц үг дор хаяж 8 байх ёстой";
+"Strong" = "Хүчтэй";
+"Medium" = "Дунд";
+"Weak" = "Сул";
+"CREATE A NEW ACCOUNT" = "ХӨДӨЛМӨРИЙН ШИЛДЭГ ҮЙЛ АЖИЛЛАГАА";
+"SIGN IN WITH EXISTING ACCOUNT" = "ХЭРЭГЛЭГЧ ХЭРЭГЖҮҮЛЭХ ҮНЭГҮЙ";
+"You must agree to the Terms of Services to continue" = "Үйлчилгээний нөхцлийг үргэлжлүүлэхийг зөвшөөрөх ёстой";
+"SIGN IN" = "Дохио оруулах";
+"What's your password?" = "Таны нууц үг юу вэ?";
+"SIGN UP" = "Гарын үсэг зурах";
+"Choose your password?" = "Нууц үгээ сонгоно уу";
+"Something went wrong" = "Ямар нэг зүйл буруу болсон";
+"we will send email to" = "бид имэйл илгээх болно";
+"with a link to reset your password." = "нууц үгээ дахин тохируулах линкээр.";
+"A reset password link has been sent to" = "Нууц үгийг дахин тохируулах линк илгээсэн байна";
+"Enter new email." = "Шинэ имэйл оруулна уу.";
+"Enter password." = "Нууц үгийг оруулна уу.";
+"New Password " = "Шинэ нууц үг";
+" (8 characters min)" = "(8 тэмдэгт мин)";
+"Enter current password." = "Одоогийн нууц үгийг оруулна уу.";
+"Enter new password." = "Шинэ нууц үг оруулна уу.";
+"Enter confirm password." = "Нууц үгийг баталгаажуулна уу.";
+"password do not matched!" = "нууц үг таарахгүй байна!";
+"GET STARTED" = "ГЕТ БҮЛЭГ";
+"SKIP" = "АЛГАСАХ";
+"From where you would like to pick photo?" = "Та зураг авах хүсэлтэй газраасаа?";
+"Camera" = "Камер";
+"Photo Library" = "Зургийн номын сан";
+"Kindly open settings and enable access" = "Зохих тохиргоог нээлттэй болгож, хандалтыг идэвхжүүлнэ үү";
+"Open Settings" = "Нээлттэй суурин";
+"Access needed for your camera" = "Камердаа нэвтрэх шаардлагатай байна";
+"Access needed for your photo library" = "Таны зургийн санд хандах шаардлагатай";
+"Done" = "Дууссан";
+"Pull to refresh" = "Сэргээхийн тулд татна уу";
+"Loading" = "Ачаалах";
+"Speech not available for this article" = "Энэ нийтлэлд яриа байхгүй байна";
+"MANAGE LOCATION" = "БАЙРШИЛЫН ТОХИРГОО";
+"OK" = "БОЛЖ БАЙНА УУ";
+"Choose your News in Bullets Edition based on locale" = "Bullets Edition дэх News-ийг локал дээр үндэслэн сонгоно уу";
+"Edition" = "Хэвлэл";
+"EDITION / REGION" = "ХЭВЛЭЛ / БҮС";
+"Your Topics" = "Таны сэдэв";
+"Your Channels" = "Таны сувгууд";
+"Your Places" = "Таны газрууд";
+"Enter email." = "Имэйл оруулна уу.";
+"Please enter a password." = "Нууц үгээ оруулна уу.";
+"Search articles" = "Нийтлэл хайх";
+"No results" = "Үр дүнгүй";
+"Edition / Region" = "Хэвлэл / Бүс";
+
+
+
+
+"0JC-Sb-Ouu.text" = "ЗӨВЛӨГӨӨ";
+
+
+"Search" = "Хайлт хийх";
+
+
+"Select" = "Сонгоно уу (";
+
+
+"6H8-dI-k9P.text" = "Удирдлагын байршил";
+
+
+"6KH-YP-5Lt.text" = "ӨГҮҮЛЭГЧ";
+
+
+" ) icon on the article" = ") нийтлэл дээрх дүрс";
+
+
+"BLOCK" = "БЛОК";
+
+
+"you want to read later then" = "дараа нь уншихыг хүсдэг";
+
+
+"7oo-cf-l7Y.text" = "Унших хурд";
+
+
+"88L-ip-pZw.text" = "Унших хурд";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Муурнаас өөр юу ч байхгүй бололтой.\nҮндсэн хуудас руу буцна уу?";
+
+
+"BpH-F1-i0z.normalTitle" = "Орон нутгийн";
+
+
+" ) to save article." = " ) нийтлэлийг хадгалах.";
+
+
+"FB0-YN-HZg.text" = "үргэлжлүүлэх, 3-ыг сонгох";
+
+
+"H5Z-xJ-dWD.text" = "Гарчиг ба\nСум оноо";
+
+
+"Search" = "Хайлт хийх";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ХАРИУЦЛАГА";
+
+
+"Jpx-nY-Is1.normalTitle" = "Сувгууд";
+
+
+"JqN-io-P1u.normalTitle" = "+ Гараз нэмэх";
+
+
+"What's your email?" = "Таны имэйл хаяг юу вэ?";
+
+
+"Lw1-Md-nse.text" = "ХАЙРТАЙ";
+
+
+"LyT-pT-g53.text" = "ДОТООД";
+
+
+"N6C-6i-Z2s.text" = "ДОТООД";
+
+
+"Nru-uU-CsC.text" = "Санал";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Сэдвүүд";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Захиалгат";
+
+
+"Topics" = "Сэдвүүд";
+
+
+"WXY-po-W1B.text" = "ЭРҮҮЛ МЭНДИЙН БОЛОМЖТОЙ\nБУЛЛЕТ ХҮЧ";
+
+
+"ans-Zy-T2Y.placeholder" = "Байршил хайх";
+
+
+"bgE-Jc-u8H.text" = "Захиалгат";
+
+
+
+
+
+"Tap the ( " = "Tap ( ";
+
+
+"Places" = "Байршил";
+
+
+"d1l-HK-OrG.text" = "ЗӨВЛӨГӨӨ";
+
+
+
+
+
+"Language" = "Хэл";
+
+
+"e9g-Wr-suO.text" = "ЭРҮҮЛ МЭНДИЙН ЗӨВЛӨХ";
+
+
+"GO HOME" = "үндсэн хуудас руу буцах";
+
+
+"eh1-Oo-lEn.text" = "ХАРИУЦЛАГА";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ХАЙРТАЙ";
+
+
+"j2i-MT-VkA.text" = "Өөр түлхүүр үгийг туршиж үзээрэй";
+
+
+"Top News" = "Шилдэг мэдээ";
+
+
+"jmO-aF-nJ9.text" = "Зөвхөн гарчиг";
+
+
+"There is nothing in here" = "Энд юу ч байхгүй.";
+
+
+"ma1-9p-bSa.text" = "Үр дүн олдсонгүй";
+
+
+"mce-jc-cKH.text" = "ӨГҮҮЛЭГЧ";
+
+
+"Channels" = "Сувгууд";
+
+
+"Discover" = "Нээлт";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "CANCEL";
+
+
+"Discover" = "Нээлт";
+
+
+"No saved stories yet" = "Энд юу ч байхгүй";
+
+
+"wDG-kF-Hl8.text" = "Байршил дээр үндэслэн мэдээ уншина уу";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ШАЛГАЛТ";
+
+
+"xfF-RB-mWL.text" = "ШАЛГАЛТ";
+
+
+"Search" = "Хайх";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Сонгосон бүс нутагтаа хамгийн их хамааралтай мэдээг аваарай. Дэлхийн өнцөг булан бүрээс хамгийн сүүлийн үеийн мэдээг цаг тухайд нь авч байхын тулд боловсруулсан мэдээний түүхийг уншаарай.";
+
+
+"Search articles" = "Нийтлэл хайх";
+
+
+"6H8-dI-k9P.text" = "Газар удирдах";
+
+
+
+
+
+"Profile" = "Профайл";
+
+
+"Editions" = "Хэвлэл";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Газрууд";
+
+
+
+
+
+"Search" = "Хайх";
+
+
+
+
+
+
+
+
+"Search" = "Хайх";
+
+
+"LANGUAGE" = "ХЭЛ";
+
+
+"Search" = "Хайх";
+
+
+"No results" = "Үр дүн олдсонгүй";
+
+
+"Channels" = "Сувгууд";
+
+
+"Places" = "Газрууд";
+
+
+"Places" = "Газрууд";
+
+
+"e9F-hd-Ifm.text" = "ХЭВЛЭЛ / БҮС";
+
+
+
+
+
+
+
+
+"PLACES" = "ГАЗРУУД";
+
+
+"SAVED ARTICLES" = "Хадгалсан нийтлэл";
+
+
+"Articles" = "Нийтлэл";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "Үргэлжлүүлэх";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ХЭВЛЭЛ / БҮС";
+
+
+"Try a different keyword" = "Өөр түлхүүр үг оролдож үзээрэй";
+
+
+"For You" = "Таны төлөө";
+
+
+"Results" = "Үр дүн";
+
+
+
+"About" = "Бидний тухай";
+
+
+"Share" = "Хуваалцах";
+
+
+"ACCOUNT" = "БҮРТГЭЛ";
+
+
+"Your Email" = "Таны имэйл";
+
+
+"1sT-J6-qI0.text" = "АРТИКЛИЙН ДАВ";
+
+
+"2XX-rr-GLC.text" = "Олон зуун эх сурвалжаас өөр суваг сонгоно уу";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Дэлхийн өнцөг булан бүрээс ирсэн хамгийн сүүлийн үеийн мэдээ, үйл явдлуудыг уншаарай.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Мэдэгдэл хүлээн авахын тулд цаг хугацааны зөрүүг тогтооно уу.";
+
+
+"Off" = "Унтарсан байна";
+
+
+
+
+
+"Bullet 2" = "Сум 2";
+
+
+"What's your email?" = "Таны имэйл юу вэ?";
+
+
+"New Password (8 Characters Min)" = "Шинэ нууц үг (8 тэмдэгт хамгийн бага)";
+
+
+"Forgot Password?" = "нууц үг-ийг мартсан?";
+
+
+"Account Settings" = "Дансны төлбөр";
+
+
+"Learn how we process your data" = "Мэдээллийг боловсруулах тухай мэдээлэл";
+
+
+"3h" = " 3 цаг";
+
+
+"Ok" = "Болж байна уу";
+
+
+"Block articles from The Guardian" = "Нийтлэлүүдийн блок";
+
+
+"On" = "Эргүүл";
+
+
+"Auto" = "Авто";
+
+
+"Help Center" = "Тус төв";
+
+
+"Search" = "Суваг хайх";
+
+
+"Facebook" = "Фэйсбүүк";
+
+
+"Select file from gallery" = "Галерейгаас файлыг сонгоно уу";
+
+
+
+
+"Save article" = "Нийтлэл хадгалах";
+
+
+"ABOUT" = "ТУХАЙ";
+
+
+"Dark" = "Харанхуй";
+
+
+"Legal" = "Хууль эрх зүй";
+
+
+"Go to The Guardian" = "явах---";
+
+
+"Send reset link" = "Дахин тохируулах холбоосыг илгээнэ үү";
+
+
+
+
+
+"My Account" = "Миний данс";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Мессеж";
+
+
+"Confirm New Password" = "Шинэ нууц үгийг баталгаажуулна уу";
+
+
+"for ___" = "төлөө ___";
+
+
+"Search" = "Сэдвийг хайх";
+
+
+"LANGUAGE" = "ХЭЛ";
+
+
+"Light" = "Гэрэл";
+
+
+"FOLLOW 3 TO CONTINUE" = "үргэлжлүүлэх, 3-ыг сонгох";
+
+
+
+
+"Off" = "Унтраа";
+
+
+"Language" = "Сонгоно уу";
+
+
+"LOG OUT" = "ГАРАХ";
+
+
+"Report content" = "Агуулгын талаар мэдээлэх";
+
+
+"What's your email?" = "Таны имэйл юу вэ?";
+
+
+"On" = "Эргүүл";
+
+
+"More like this" = "Үүнтэй адил олон мэдээ";
+
+
+"Bullet App v1.1.0" = "Сум Апп v1.1.0";
+
+
+"1h" = "1 цаг";
+
+
+"Enter Email Address" = "Шуудангийн хаягийг оруулна уу";
+
+
+"News in Bullets" = "Илүү бага хугацаанд уншаарай.";
+
+
+"6h" = "6 цаг";
+
+
+"Choose your password" = "Нууц үгээ сонгоно уу";
+
+
+"Cancel" = "Цуцлах";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Энэ програмын тусламжтайгаар мэдээг хурдан уншаарай. Сэдэв, эх сурвалжаа сонгоно уу. Дараа нь богино сумны цэгүүдээр мэдээгээ уншаарай.";
+
+
+"Push Notification" = "Мэдэгдэл";
+
+
+"12h" = "12 цаг";
+
+
+"24h" = "24 цаг";
+
+
+"E-mail" = "И-мэйл";
+
+
+"How can we help you?" = "Бид яаж туслах вэ?";
+
+
+"OJP-Wd-0d3.text" = "Пакистан";
+
+
+"CHANGE PASSWORD" = "ЧАНГИЙН ХУРАЛДАА";
+
+
+"Change Email" = "АЖИЛЛАГАА МЭДЭЭЛЭЛ";
+
+
+"Medium" = "Дунд";
+
+
+"SAVE CHANGES" = "ХЯНАЛТ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Хэрэв танд ямар нэгэн тусламж хэрэгтэй бол биднээс мессеж илгээнэ үү!";
+
+
+"P5u-N3-Tw4.text" = "Шошго";
+
+
+"Cancel" = "Цуцлах";
+
+
+"Bullet 1" = "Сум 1";
+
+
+"TIMED NOTIFICATIONS" = "НЭГДСЭН";
+
+
+"POST ARTICLE" = "ТОНОГ ТӨХӨӨРӨМЖИЙН ӨРӨӨДӨР";
+
+
+"CONTACT US" = "Бидэнтэй холбоо бариарай";
+
+
+"EDITION / REGION" = "Хэвлэл";
+
+
+"Search" = "Хайлт хийх";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Бидэнд санал хүсэлтээ илгээгээрэй, бид танаас хариу сонсохыг хүсч байна! Танд асуулт эсвэл хууль эрх зүйн асуудал байна уу?? Тусламжийн хуудас эсвэл бидэнтэй холбоо бариарай.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Хэрэв танд ямар нэгэн тусламж хэрэгтэй бол биднээс мессеж илгээнэ үү!";
+
+
+"30m" = "30м";
+
+
+"CONTINUE" = "ХОЛБОО";
+
+
+"Time To Update!" = "Апп-г шинэчлээрэй!";
+
+
+"NOTIFICATIONS" = "НЭГДСЭН";
+
+
+"Search" = "Хайлт хийх";
+
+
+"By clicking Continue, you agree with our Terms." = "Нэр томъёог үргэлжлүүлэн хүлээж ав.";
+
+
+"HELP / CONTACT US" = "HELP / CONTACT";
+
+
+"Reset Password" = "Дахин нэвтрэх үг";
+
+
+"SEND MESSAGE" = "SEND MESSAGE";
+
+
+"Save article" = "Нийтлэл хадгалах";
+
+
+"Bullet 6 (Optional)" = "Сум 6 (Заавал биш)";
+
+
+"HAPTICS" = "ХАПТИК";
+
+
+"Your message has \vbeen sent." = "Таны мессеж илгээгдсэн байна.";
+
+
+"LEGAL" = "Хууль эрх зүй";
+
+
+"Block List" = "Блок жагсаалт";
+
+
+"PERSONALIZATION" = "ХӨДӨЛМӨР";
+
+
+"in our Privacy Policy." = "манай Нууцлалын бодлогод.";
+
+
+"CONTINUE" = "ХОЛБОО";
+
+
+"Enter Name" = "Нэр оруулна уу";
+
+
+"What's your email?" = "Таны имэйл юу вэ?";
+
+
+"Hello there!" = "Сайн уу!";
+
+
+"PUSH NOTIFICATIONS" = "НЭГДСЭН";
+
+
+"Bullet 3 (Optional)" = "Сум 3 (Заавал биш)";
+
+
+"Source name" = "Эх сурвалжийн нэр";
+
+
+"Current Password" = "Одоогийн нууц үг";
+
+
+"COLOR THEME" = "Өнгөний сэдэв";
+
+
+"eTp-X1-g34.text" = "Эсвэл дамжуулж болно";
+
+
+"CANCEL" = "CANCEL";
+
+
+"Bullet 4 (Optional)" = "Сум 4 (Заавал биш)";
+
+
+"Date published" = "Нийтлэгдсэн огноо";
+
+
+"Send Password Reset Link" = "Нууц үгийг дахин тохируулах холбоосыг илгээнэ үү";
+
+
+"CONTINUE WITH APPLE" = "Apple-ийн үнэмлэхээр бүртгүүлэх";
+
+
+"Off" = "Унтраа";
+
+
+"BLOCK LIST" = "BLOCK LIST";
+
+
+"HELP" = "HELP";
+
+
+"Reference link" = "Лавлах холбоос";
+
+
+"Your Password" = "Таны нууц үг";
+
+
+"SUBMIT" = "БАТЛАХ";
+
+
+"HELP" = "ТУСЛАМЖ";
+
+
+"MY ACCOUNT" = "МИНЙИ БҮРТГЭЛ";
+
+
+"hbD-HP-tZd.normalTitle" = "Блоклох";
+
+
+"OTHERS" = "Бусад";
+
+
+"BREAKING NEWS" = "ШИНЭ МЭДЭЭ";
+
+
+"Topics" = "Хязгаарлагдмал сэдэв";
+
+
+"Message us," = "Бидэнд мессеж,";
+
+
+"Pick topics to start reading
+and saving articles" = "апп хэл";
+
+
+"Forgot Password?" = "нууц үг-ийг мартсан?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Шинэ функцууд нэмэгдсэн. Зарим асуудал шийдэгддэг.";
+
+
+"Success!" = "Амжилт!";
+
+
+"Current Password" = "Одоогийн нууц үг";
+
+
+"CONTENT" = "ХОЛБОО";
+
+
+"Headline" = "Гарчиг";
+
+
+"neg-UC-UpK.text" = "Уншиж эхлэх, нийтлэл хадгалах сэдвүүдийг сонго";
+
+
+"CONTINUE WITH EMAIL ID" = "Шуудангийн үнэмлэхээ үргэлжлүүлээрэй";
+
+
+"SAVE CHANGES" = "ХЯНАЛТ";
+
+
+"Post an Article" = "Нийтлэл оруулах";
+
+
+"Contact Us" = "Бидэнтэй холбоо бариарай";
+
+
+"On" = "Эргүүл";
+
+
+"New Email Address" = "Шинэ шуудангийн хаяг";
+
+
+"Bullet 5 (Optional)" = "Сум 5 (Заавал биш)";
+
+
+"Suggest an improvement" = "Сайжруулахыг санал болго";
+
+
+"Channels" = "Хязгаарлагдмал эх сурвалж";
+
+
+"From:" = "Эхлэл:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ХЭРЭГЛЭГЧДЭГТЭЙ";
+
+
+"I don't like this" = "Надад энэ таалагдахгүй байна";
+
+
+"CONTINUE" = "ХОЛБОО";
+
+
+"Name" = "Нэр";
+
+
+"Enter email" = "Имэйлийг оруулна уу";
+
+
+"HELP" = "ТУСЛАМЖ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Үргэлжлүүлэхийн тулд 3-ыг дагана уу";
+
+
+"UPDATE APP" = "Шинэчлэлт App";
+
+
+"Forgot Password?" = "нууц үг-ийг мартсан?";
+
+
+"Change Password" = "Нууц үгийг өөрчлөх";
+
+
+"Reset Password" = "Дахин нэвтрэх үг";
+
+
+
+
+
+
+
+
+"Report content" = "Санаа зовнилоо мэдээлнэ үү";
+
+
+"CHANGE EMAIL ADDRESS" = "АЖИЛЛАГАА МЭДЭЭЛЭЛ";
+
+
+"Follow The Guardian" = "Дагах --";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Бид таны туршлагыг аль болох жигд болгохын тулд олон шинэ функцуудыг нэмж, зарим алдааг засав.";
+
+
+"Edition / Region" = "Хэвлэл / Бүс";
+
+
+"OK" = "БОЛЖ БАЙНА УУ";
+
+
+"NARRATOR" = "ХӨГЖҮҮЛЭГЧ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Өөрийн дуртай мэдээний түүхийг байнга шинэчлэх нь таны цаг завыг хэт ихээр авахгүй байх ёстой. Bullets дахь мэдээ нь тогтмол 5 минутын уншиж, амархан шингэдэг сум болгон нягтруулдаг. Одоо та ижил мэдээг цаг хугацааны багахан хувийг авах боломжтой бөгөөд ингэснээр та богино хугацаанд илүү ихийг унших боломжтой болно.";
+
+
+"READING SPEED" = "УНШИХ ХУРД";
+
+
+
+
+
+"You haven't blocked anything yet" = "Та хараахан юу ч хааж амжаагүй байна";
+
+
+"EDITION / REGION" = "ХЭВЛЭЛ / БҮС";
+
+
+
+
+
+"HEADLINES ONLY" = "ЗӨВХӨН ТОЛГОЙ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Аудио тохиргоо";
+
+
+"AUDIO SETTINGS" = "Аудио тохиргоо";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ТЭМДЭГЛЭЛ, СУРГАЛТ";
+
+
+"CONTINUE AS GUEST" = "ЗОЧИН БОЛОХООР АЛХАЖ, НЭВТРЭХ";
+
+
+"Topics" = "Сэдвүүд";
+
+
+"Pick topics to start reading and saving articles" = "Нийтлэл уншиж, хадгалж эхлэхийн тулд сэдвүүдийг сонго";
+
+
+"Channels" = "Сувгууд";
+
+
+"Choose from hundreds \nof news publications" = "Олон зуун мэдээллийн нийтлэлээс сонголтоо хийгээрэй";
+
+
+"Pick topics to start reading\nand saving articles" = "Нийтлэл уншиж, хадгалж эхлэхийн тулд сэдвүүдийг сонго";
+
+"Pick editions to start reading\nand saving articles" = "Нийтлэл уншиж, хадгалж эхлэхийн тулд хэвлэлийг сонгоно уу";
+
+"Or with" = "Эсвэл хамт";
+
+"CONTINUE AS GUEST" = "ЗОЧИН БОЛЖ ҮРГЭЛЖЛҮҮЛЭХ";
+
+"Terms of Service" = "Үйлчилгээний нөхцөл";
+
+"Choose from hundreds \nof news publications" = "Олон зуун мэдээллийн нийтлэлээс сонголтоо хийгээрэй";
+
+"Select your preferred language\nfor News in Bullets." = "Bullets in News-т дуртай хэлээ сонгоно уу.";
+
+"Choose a style" = "Загвараа сонгоорой";
+
+"Pop or subtle. Day or night. Customize your interface." = "Поп эсвэл нарийн. Өдөр эсвэл шөнө. Өөрийн интерфэйсийг өөрчил.";
+
+"MINS AGO" = "минутын өмнө";
+
+"AN HOUR AGO" = "нэг цагийн өмнө";
+
+"HOURS AGO" = "цагийн өмнө";
+
+"1 WEEK AGO" = "1 долоо хоногийн өмнө";
+
+"YESTERDAY" = "Өчигдөр";
+
+"DAYS AGO" = "өдрийн өмнө";
+
+"Go to" = "Руу явах";
+
+"You have reached the start." = "Та гараанд гарлаа";
+
+"Source unblocked successfully" = "Эх сурвалжийг амжилттай блоклов";
+
+"Invalid email format"  = "Буруу имэйлийн формат";
+
+"Wrong email or password" = "И-мэйл эсвэл нууц үг буруу байна";
+
+

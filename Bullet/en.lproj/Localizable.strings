@@ -1,0 +1,1005 @@
+/* 
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bullets";
+"BULLETS" = "BULLETS";
+"Headlines is not available." = "Headlines is not available.";
+"Check your internet Connection and try again." = "Check your internet Connection and try again.";
+"Choose Image" = "Choose Image";
+"Headline" = "Headline";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (Optional)";
+"Bullet 4 (Optional)" = "Bullet 4 (Optional)";
+"Bullet 5 (Optional)" = "Bullet 5 (Optional)";
+"Bullet 6 (Optional)" = "Bullet 6 (Optional)";
+"Enter Aticle Headline" = "Enter Aticle Headline";
+"Enter source name" = "Enter source name";
+"Enter reference link" = "Enter reference link";
+"Enter published date" = "Enter published date";
+"Enter Bullet 1" = "Enter Bullet 1";
+"Enter Bullet 2" = "Enter Bullet 2";
+"Posted article successfully" = "Posted article successfully";
+"Follow" = "Follow";
+"Unfollow" = "Unfollow";
+"Block articles from" = "Block articles from";
+"Unblock articles from" = "Unblock articles from";
+"Remove article" = "Remove article";
+"Save article" = "Save article";
+"Terms & Conditions" = "Terms & Conditions";
+"Privacy Policy" = "Privacy Policy";
+"TERMS AND CONDITIONS" = "TERMS AND CONDITIONS";
+"PRIVACY POLICY" = "PRIVACY POLICY";
+"Fuel your curiosity" = "Fuel your curiosity";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Get clutter-free news about your\nfavorite topics from trusted sources\naround the world.";
+"Save time" = "Save time";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds.";
+"Hands-free reading" = "Hands-free reading";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "No time to read? Use our intuitive\ntext-to-speech feature.";
+"Write your message..." = "Write your message...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Drop us a message if you need help with something, we'd love to hear from you!";
+"Drop us a message" = "Drop us a message";
+"Enter Name." = "Enter Name.";
+"Enter Email." = "Enter Email.";
+"Write your message." = "Write your message.";
+"Topic unblocked successfully" = "Topic unblocked successfully";
+"Unblock Source" = "Unblock Source";
+"Cancel" = "Cancel";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support.";
+"Enter your suggestion." = "Enter your suggestion.";
+"feedback sent." = "feedback sent.";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Language updated successfully.";
+"CONTINUE" = "CONTINUE";
+"FOLLOW 3 TO CONTINUE" = "FOLLOW 3 TO CONTINUE";
+"Unfollow Location" = "Unfollow Location";
+"Saved Articles" = "Saved Articles";
+"Block" = "Block";
+"Are you sure you want block" = "Are you sure you want block";
+"Once blocked, you wont be able to see any Articles related to this" = "Once blocked, you wont be able to see any Articles related to this";
+"Block Topic" = "Block Topic";
+"Suggested" = "Suggested";
+"Related Sources not available" = "Related Sources not available";
+"Block Source" = "Block Source";
+"News in Bullets App version" = "News in Bullets App version";
+"Next" = "Next";
+"Login" = "Login";
+"Terms" = "Terms";
+"By clicking Continue, you agree with our Terms." = "By clicking Continue, you agree with our Terms.";
+"in our Privacy Policy." = "in our Privacy Policy.";
+"Access token missing." = "Access token missing.";
+"NEXT" = "NEXT";
+"By checking this box, you agree to our " = "By checking this box, you agree to our ";
+"Terms of Service" = "Terms of Service";
+". We’ll handle your data according to our " = ". We’ll handle your data according to our ";
+"Password must be at least 8 characters." = "Password must be at least 8 characters.";
+"Strong" = "Strong";
+"Medium" = "Medium";
+"Weak" = "Weak";
+"CREATE A NEW ACCOUNT" = "CREATE A NEW ACCOUNT";
+"SIGN IN WITH EXISTING ACCOUNT" = "SIGN IN WITH EXISTING ACCOUNT";
+"You must agree to the Terms of Services to continue" = "You must agree to the Terms of Services to continue";
+"SIGN IN" = "SIGN IN";
+"What's your password?" = "What's your password?";
+"SIGN UP" = "SIGN UP";
+"Choose your password?" = "Choose your password?";
+"Something went wrong" = "Something went wrong";
+"we will send email to" = "we will send email to";
+"with a link to reset your password." = "with a link to reset your password.";
+"A reset password link has been sent to" = "A reset password link has been sent to";
+"Enter new email." = "Enter new email.";
+"Enter password." = "Enter password.";
+"New Password " = "New Password ";
+" (8 characters min)" = " (8 characters min)";
+"Enter current password." = "Enter current password.";
+"Enter new password." = "Enter new password.";
+"Enter confirm password." = "Enter confirm password.";
+"password do not matched!" = "password do not matched!";
+"GET STARTED" = "GET STARTED";
+"SKIP" = "SKIP";
+"From where you would like to pick photo?" = "From where you would like to pick photo?";
+"Camera" = "Camera";
+"Photo Library" = "Photo Library";
+"Kindly open settings and enable access" = "Kindly open settings and enable access";
+"Open Settings" = "Open Settings";
+"Access needed for your camera" = "Access needed for your camera";
+"Access needed for your photo library" = "Access needed for your photo library";
+"Done" = "Done";
+"Pull to refresh" = "Pull to refresh";
+"Loading" = "Loading";
+"Speech not available for this article" = "Speech not available for this article";
+"MANAGE PLACE" = "MANAGE PLACES";
+
+"OK" = "OK";
+"Choose your News in Bullets Edition based on locale" = "Choose your News in Bullets Edition based on locale";
+"Edition" = "Edition";
+"EDITION / REGION" = "EDITION / REGION";
+"Your Topics" = "Your Topics";
+"Your Channels" = "Your Channels";
+"Your Places" = "Your Places";
+"Enter email." = "Enter email.";
+"Please enter a password." = "Please enter a password.";
+"Search articles" = "Search articles";
+"No results" = "No results";
+"Edition / Region" = "Edition / Region";
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOCK";
+"CANCEL" = "CANCEL";
+"PLACES" = "PLACES";
+"LANGUAGE" = "LANGUAGE";
+"Profile" = "Profile";
+"SAVED ARTICLES" = "SAVED ARTICLES";
+"Topics" = "Topics";
+"Channels" = "Channels";
+"Editions" = "Editions";
+"No saved stories yet" = "No saved stories yet";
+"Tap the" = "Tap the";
+"icon on the article" = "icon on the article";
+"you want to read later then" = "you want to read later then";
+"Select" = "Select";
+"to save article." = "to save article.";
+"There is nothing in here" = "There is nothing in here";
+"Looks like there is nothing here but a cat." = "Looks like there is nothing here but a cat.";
+"Would you like to go back to home?" = "Would you like to go back to home?";
+"GO HOME" = "GO HOME";
+"Search" = "Search";
+"Discover" = "Discover";
+"Articles" = "Articles";
+"Try a different keyword" = "Try a different keyword";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world.";
+"Language" = "Language";
+"Results" = "Results";
+"For You" = "For You";
+"Top News" = "Top News";
+"Choose a style" = "Choose a style";
+"Pop or subtle. Day or night. Customize your interface." = "Pop or subtle. Day or night. Customize your interface.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "About";
+
+
+"Share" = "Share";
+
+
+"ACCOUNT" = "ACCOUNT";
+
+
+"Your Email" = "Your Email";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Set an interval in which you want to receive your news notifications.";
+
+
+"Off" = "Off";
+
+
+"Pick topics to start reading and saving articles" = "Pick topics to start reading and saving articles";
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "What's your email?";
+
+
+"New Password (8 Characters Min)" = "New Password (8 Characters Min)";
+
+
+
+
+"Forgot Password?" = "Forgot Password?";
+
+
+"No results" = "No results";
+
+
+"Account Settings" = "Account Settings";
+
+
+"Learn how we process your data" = "Learn how we process your data";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "On";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Help Center";
+
+
+"Search" = "Search";
+
+
+"Facebook" = "Facebook";
+"Select file from gallery" = "Select file from gallery";
+"Save article" = "Save article";
+"ABOUT" = "ABOUT";
+"Dark" = "Dark";
+"Legal" = "Legal";
+"Send reset link" = "Send reset link";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "We added lots of new features and fix some bugs to make your experience as smooth as possible.";
+
+
+"Edition / Region" = "Edition / Region";
+"My Account" = "My Account";
+"OK" = "OK";
+"FEEDBACK" = "FEEDBACK";
+"Message" = "Message";
+"Confirm New Password" = "Confirm New Password";
+
+
+"for ___" = "for ___";
+
+
+"Search" = "Search";
+"LANGUAGE" = "LANGUAGE";
+"Light" = "Light";
+
+
+"Off" = "Off";
+
+"Language" = "Language";
+
+
+"Topics" = "Topics";
+
+
+"CONTINUE AS GUEST" = "CONTINUE AS GUEST";
+
+
+"LOG OUT" = "LOG OUT";
+"Logout" = "Logout";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Report content" = "Report content";
+
+
+"What's your email?" = "What's your email?";
+
+
+"On" = "On";
+
+
+"Channels" = "Channels";
+
+
+"More like this" = "More like this";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Enter Email Address";
+
+
+"News in Bullets" = "News in Bullets";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Choose your password";
+
+
+"Cancel" = "Cancel";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time.";
+
+
+"Push Notification" = "Push Notification";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "How can we help you?";
+
+
+"CHANGE PASSWORD" = "CHANGE PASSWORD";
+
+
+"READING SPEED" = "READING SPEED";
+
+
+"Change Email" = "Change Email";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "SAVE CHANGES";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "It looks like you are experiencing problems with our app. We are here to help so please get in touch with us";
+
+
+"You haven't blocked anything yet" = "You haven't blocked anything yet";
+
+
+"Cancel" = "Cancel";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "TIMED NOTIFICATIONS";
+
+
+"POST ARTICLE" = "POST ARTICLE";
+
+
+"CONTACT US" = "CONTACT US";
+
+
+"EDITION / REGION" = "EDITION / REGION";
+
+
+"Search" = "Search";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support.";
+
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Drop us a message if you need help with something, we'd love to hear from you!";
+
+
+"HEADLINES ONLY" = "HEADLINES ONLY";
+"Time To Update!" = "Time To Update!";
+"NOTIFICATIONS" = "NOTIFICATIONS";
+"Search" = "Search";
+"By clicking Continue, you agree with our Terms." = "By clicking Continue, you agree with our Terms.";
+
+
+"HELP / CONTACT US" = "HELP / CONTACT US";
+"Reset Password" = "Reset Password";
+"SEND MESSAGE" = "SEND MESSAGE";
+"Save article" = "Save article";
+"Bullet 6 (Optional)" = "Bullet 6 (Optional)";
+" 1.0" = " 1.0";
+"Try a different keyword" = "Try a different keyword";
+"HAPTICS" = "HAPTICS";
+"Your message has \vbeen sent." = "Your message has \vbeen sent.";
+"LEGAL" = "LEGAL";
+"Block List" = "Block List";
+
+
+"Choose from hundreds \nof news publications" = "Choose from hundreds \nof news publications";
+"PERSONALIZATION" = "PERSONALIZATION";
+"Enter Name" = "Enter Name";
+"What's your email?" = "What's your email?";
+"Hello there!" = "Hello there!";
+"Audio Settings" = "Audio Settings";
+"PUSH NOTIFICATIONS" = "PUSH NOTIFICATIONS";
+"Bullet 3 (Optional)" = "Bullet 3 (Optional)";
+"Source name" = "Source name";
+"Current Password" = "Current Password";
+"COLOR THEME" = "COLOR THEME";
+"CANCEL" = "CANCEL";
+"Bullet 4 (Optional)" = "Bullet 4 (Optional)";
+"Date published" = "Date published";
+"Send Password Reset Link" = "Send Password Reset Link";
+"CONTINUE WITH APPLE" = "CONTINUE WITH APPLE";
+"Off" = "Off";
+"BLOCK LIST" = "BLOCK LIST";
+"HELP" = "HELP";
+"Reference link" = "Reference link";
+"Your Password" = "Your Password";
+"SUBMIT" = "SUBMIT";
+"HELP" = "HELP";
+"MY ACCOUNT" = "MY ACCOUNT";
+"OTHERS" = "OTHERS";
+
+
+
+"BREAKING NEWS" = "BREAKING NEWS";
+"Topics" = "Topics";
+
+
+
+"Message us," = "Message us,";
+
+"Pick topics to start reading
+and saving articles" = "Pick topics to start reading
+and saving articles";
+
+
+"Forgot Password?" = "Forgot Password?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "We added lots of new features and fix some bugs to make your experience as smooth as possible.";
+
+
+"Success!" = "Success!";
+
+
+"Current Password" = "Current Password";
+
+
+"CONTENT" = "CONTENT";
+
+
+"Headline" = "Headline";
+
+
+"CONTINUE WITH EMAIL ID" = "CONTINUE WITH EMAIL";
+
+
+
+"SAVE CHANGES" = "SAVE CHANGES";
+
+
+"Post an Article" = "Post an Article";
+
+
+"Contact Us" = "Contact Us";
+
+
+"On" = "On";
+
+
+"New Email Address" = "New Email Address";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Optional)";
+
+
+"Suggest an improvement" = "Suggest an improvement";
+
+
+"Channels" = "Channels";
+
+
+"From:" = "From:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONALIZED RECOMMENDATIONS";
+
+
+"I don't like this" = "I don't like this";
+
+
+"Name" = "Name";
+"AUDIO SETTINGS" = "AUDIO SETTINGS";
+"Enter email" = "Enter email";
+
+
+"HELP" = "HELP";
+"UPDATE APP" = "UPDATE APP";
+"Forgot Password?" = "Forgot Password?";
+"Change Password" = "Change Password";
+
+
+"Reset Password" = "Reset Password";
+
+
+
+"1x" = "1x";
+"Report content" = "Report content";
+"CHANGE EMAIL ADDRESS" = "CHANGE EMAIL ADDRESS";
+
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES AND\nBULLETS";
+
+
+"Edition" = "Edition";
+
+
+
+
+// Translation needed
+// Missing items and new items will be here
+
+"Pick topics to start reading\nand saving articles" = "Pick topics to start reading\nand saving articles";
+
+"Pick editions to start reading\nand saving articles" = "Pick editions to start reading\nand saving articles";
+
+"Or with" = "Or with";
+
+"CONTINUE AS GUEST" = "CONTINUE AS GUEST";
+
+"Terms of Service" = "Terms of Service";
+
+"Choose from hundreds \nof news publications" = "Choose from hundreds \nof news publications";
+
+"Select your preferred language\nfor News in Bullets." = "Select your preferred language\nfor News in Bullets.";
+
+"Choose a style" = "Choose a style";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop or subtle. Day or night. Customize your interface.";
+
+"MINS AGO" = "MINS AGO";
+
+"AN HOUR AGO" = "AN HOUR AGO";
+
+"HOURS AGO" = "HOURS AGO";
+
+"1 WEEK AGO" = "1 WEEK AGO";
+
+"YESTERDAY" = "YESTERDAY";
+
+"DAYS AGO" = "DAYS AGO";
+
+"Go to" = "Go to";
+
+"You have reached the start." = "You have reached the start.";
+
+"Source unblocked successfully" = "Source unblocked successfully";
+
+"Invalid email format"  = "Invalid email format";
+
+"Wrong email or password" = "Wrong email or password";
+
+
+//NEW STRING - 31/03/21
+"Personalize your reading experience" = "Personalize your reading experience";
+"Start following the news topics and channels you want to read." = "Start following the news topics and channels you want to read.";
+"LET'S GO" = "LET'S GO";
+"We’ll handle your data according to our\n" = "We’ll handle your data according to our\n";
+"By clicking Continue, you agree with our " = "By clicking Continue, you agree with our";
+"Learn how we process your data in our"  = "Learn how we process your data in our";
+"JUST NOW" = "JUST NOW";
+
+// 24/04/2021
+"Menu" = "Menu";
+"Article Text Size" = "Article Text Size";
+"Change the font size shown on the articles" = "Change the font size shown on the articles";
+"Small" = "Small";
+"Default" = "Default";
+"Medium" = "Medium";
+"Large" = "Large";
+
+"Related Articles" = "Related Articles";
+"View Full Article" = "View Full Article";
+
+"Create your profile" = "Create your profile";
+"Set your profile" = "Set your profile";
+"View your profile" = "View your profile";
+"ARTICLE TEXT SIZE" = "ARTICLE TEXT SIZE";
+"DATA SAVER" = "DATA SAVER";
+"Edit Profile" = "Edit Profile";
+"Profile Settings" = "Profile Settings";
+"Edit what viewers see in your profile." = "Edit what viewers see in your profile.";
+"COVER PHOTO" = "COVER PHOTO";
+"Profile Name" = "Profile Name";
+"Help and Feedback" = "Help and Feedback";
+"HELP AND FEEDBACK" = "HELP AND FEEDBACK";
+"Others" = "Others";
+"Feedback & Suggestions" = "Feedback & Suggestions";
+"Help / Contact Us" = "Help / Contact Us";
+"Terms and Conditions" = "Terms and Conditions";
+"Notification" = "Notification";
+"Push Notifications" = "Push Notifications";
+"Breaking News" = "Breaking News";
+"Personalized Recommendations" = "Personalized Recommendations";
+"Timed Notifications" = "Timed Notifications";
+"Account" = "Account";
+"E-mail Address" = "E-mail Address";
+"Reels" = "Reels";
+
+"Comments" = "Comments";
+"Write a reply..." = "Write a reply...";
+"Reply" = "Reply";
+"Replies" = "Replies";
+"View" = "View";
+"more reply" = "more reply";
+"more replies" = "more replies";
+"Home" = "Home";
+"Newsreels" = "Newsreels";
+
+// 16/05/2021
+"Following" = "Following";
+"First Name" = "First Name";
+"Last Name" = "Last Name";
+
+"This feature requires photo access" = "This feature requires photo access";
+"in phone settings, tap News in Bullets and turn on Photos" = "in phone settings, tap News in Bullets and turn on Photos";
+"Not Now" = "Not Now";
+"Open Settings" = "Open Settings";
+"No photos on this device" = "No photos on this device";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos";
+"Video duration" = "Video duration";
+"Video too short" = "Video too short";
+"Video too long" = "Video too long";
+"Done" = "Done";
+"Save" = "Save";
+"Processing.." = "Processing..";
+"Trim" = "Trim";
+"Cover" = "Cover";
+"Albums" = "Albums";
+"Gallery" = "Gallery";
+"Photos" = "Photos";
+"Videos" = "Videos";
+"Next" = "Next";
+"Crop" = "Crop";
+
+
+//25 may 2021
+"Locations" = "Locations";
+"Authors" = "Authors";
+"Invalid Video" = "Invalid Video";
+"Invalid Youtube link" = "Invalid Youtube link";
+"Article published successfully" = "Article published successfully";
+"Article removed successfully" = "Article removed successfully";
+"Edit Article" = "Edit Article";
+"Delete Article" = "Delete Article";
+"Before you can comment, you need to update your profile" = "Before you can comment, you need to update your profile";
+"Update profile" = "Update profile";
+"Views" = "Views";
+
+"Edit Newsreels" = "Edit Newsreels";
+"Post article" = "Post article";
+"SAVE" = "SAVE";
+"Caption" = "Caption";
+"Create a Caption" = "Create a Caption";
+
+"Create a headline" = "Create a headline";
+"Add Source Link (Optional)" = "Add Source Link (Optional)";
+"Enter a Caption" = "Enter a Caption";
+"Enter article headline" = "Enter article headline";
+
+"Add Bullet 1" = "Add Bullet 1";
+"Add Bullet 2" = "Add Bullet 2";
+"Add Bullet 3 (Optional)" = "Add Bullet 3 (Optional)";
+"Add Bullet 4 (Optional)" = "Add Bullet 4 (Optional)";
+"Add Bullet 5 (Optional)" = "Add Bullet 5 (Optional)";
+
+"Add Bullet" = "Add Bullet";
+
+"Uploading video..." = "Uploading video...";
+"Bullet" = "Bullet";
+
+
+"Oops! Something went wrong. Please try again." = "Oops! Something went wrong. Please try again.";
+
+"Upload media" = "Upload media";
+"Upload Newsreels" = "Upload Newsreels";
+"Upload YouTube link" = "Upload YouTube link";
+"Before you post," = "Before you post,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our ";
+"Community Guidelines." = "Community Guidelines.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "By tapping Continue, you are agreeing to uphold the guidelines.";
+"Community Guidelines" = "Community Guidelines";
+
+"Upload bullet image (optional)" = "Upload bullet image (optional)";
+"Delete" = "Delete";
+"Replace" = "Replace";
+"Delete Bullet" = "Delete Bullet";
+
+"Add Tag" = "Add Tag";
+"Max 5" = "Max 5";
+"RECOMMENDED" = "RECOMMENDED";
+"comma, separated, tags" = "comma, separated, tags";
+
+"YouTube Article" = "YouTube Article";
+"Paste a YouTube link to upload a video from YouTube." = "Paste a YouTube link to upload a video from YouTube.";
+"Paste a YouTube link to take import" = "Paste a YouTube link to take import";
+"IMPORT" = "IMPORT";
+
+"Enter Youtube link" = "Enter Youtube link";
+"Preview" = "Preview";
+"POST" = "POST";
+"Post to My Profile" = "Post to My Profile";
+
+"RESULT" = "RESULT";
+"followers" = "followers";
+"Followers" = "Followers";
+"Posts" = "Posts";
+"Profile updated successfully" = "Profile updated successfully";
+"Tags" = "Tags";
+"No Posts Yet" = "No Posts Yet";
+
+// 9 Jun
+"Add" = "Add";
+"Select Ratio" = "Select Ratio";
+"Add topics tags" = "Add topics tags";
+"Be discovered by people following the topics you are posting about." = "Be discovered by people following the topics you are posting about.";
+"Reels edited successfully." = "Reels edited successfully.";
+"Article edited successfully." = "Article edited successfully.";
+"Reels uploaded successfully." = "Reels uploaded successfully.";
+"Enter verification code" = "Enter verification code";
+"RESEND" = "RESEND";
+"Processing..." =  "Processing...";
+"Scheduled on:" = "Scheduled on:";
+"Enter profile name" = "Enter profile name";
+"Ok, last thing is your channel image" = "Ok, last thing is your channel image";
+"Upload" = "Upload";
+"Before you can post article, you need to update your profile" = "Before you can post article, you need to update your profile";
+"UPDATE" = "UPDATE";
+"Scale" = "Scale";
+"Saved Article" = "Saved Article";
+"Removed Article" = "Removed Article";
+"Ok, last thing is your profile image" = "Ok, last thing is your profile image";
+"Relevant" = "Relevant";
+
+// 10 Jun
+"See More" = "See more";
+"Less" = "Less";
+"Autoplay" = "Autoplay";
+"Reader Mode" = "Reader Mode";
+"Please enter a valid OTP." = "Please enter a valid OTP.";
+"Enter a first name" = "Enter a first name";
+"Enter a last name" = "Enter a last name";
+
+
+// 13 Jun
+"Password updated successfully" = "Password updated successfully";
+"Replying to" = "Replying to";
+"Unblock Topic" = "Unblock Topic";
+"Please add your reel caption" = "Please add your reel caption";
+"Please add bullet" = "Please add bullet";
+"Please add your article headline" = "Please add your article headline";
+"Please add bullet 1" = "Please add bullet 1";
+"Please add bullet 2" = "Please add bullet 2";
+
+
+
+
+// 17 Jun
+"Please enter a valid channel name" = "Please enter a valid channel name";
+"Let people know what" = "Let people know what";
+"your channel is about" = "your channel is about";
+"Start by creating your" = "Start by creating your";
+"channel name" = "channel name";
+"Describe your channel" = "Describe your channel";
+"No pressure, you can change this later." = "No pressure, you can change this later.";
+"Channel created succesfully" = "Channel created succesfully";
+"Please enter your channel description" = "Please enter your channel description";
+"Channel name already in use" = "Channel name already in use";
+"Post to" = "Post to";
+
+
+// 27 Jun
+"Available" = "Available";
+"Already in use" = "Already in use";
+"SCHEDULE POST" = "SCHEDULE POST";
+"DRAFTS" = "DRAFTS";
+"View channel" = "View channel";
+"Create a channel" = "Create a channel";
+"Ok, last thing is" = "Ok, last thing is";
+"your channel image" = "your channel image";
+"looks amazing!" = "looks amazing!";
+"CREATE CHANNEL" = "CREATE CHANNEL";
+"Scheduled Posts" = "Scheduled Posts";
+
+
+
+
+//30 June
+"You don't have any drafts yet." = "You don't have any drafts yet.";
+"Schedule" = "Schedule";
+"There aren't any scheduled posts yet." = "There aren't any scheduled posts yet.";
+"SCHEDULE A POST" = "SCHEDULE A POST";
+"Mod Tools" = "Mod Tools";
+"Unfollow Channel" = "Unfollow Channel";
+"Follow Channel" = "Follow Channel";
+
+"Release to refresh" = "Release to refresh";
+"Loading..." =  "Loading...";
+"Schedule Post" = "Schedule Post";
+"Moderator Tools" = "Moderator Tools";
+"GENERAL" = "GENERAL";
+"SCHEDULED POST" = "SCHEDULED POST";
+"Settings" = "Settings";
+"channel and cover photo" = "channel and cover photo";
+"Description" = "Description";
+"Will be posted in" = "Will be posted in";
+"Will be posted now" = "Will be posted now";
+"Select Date" = "Select Date";
+"Select Time" = "Select Time";
+"Please select date" = "Please select date";
+"Please select time" = "Please select time";
+"Continue with Apple" = "Continue with Apple";
+"Continue with Google" = "Continue with Google";
+"Continue with Facebook" = "Continue with Facebook";
+"Continue with email" = "Continue with email";
+"Login or create an account" = "Login or create an account";
+"Login or create an account to read, share &, and comment on stories from all your favorite topics." = "Login or create an account to read, share &, and comment on stories from all your favorite topics.";
+"your profile image" = "your profile image";
+"Invalid OTP code" = "Invalid OTP code";
+
+// 14 July
+"View your profile" = "View your profile";
+"NEWS DESK" = "NEWS DESK";
+"YOUR CHANNELS" = "YOUR CHANNELS";
+"WALLET" = "WALLET";
+"POSTS" = "POSTS";
+"PERSONALIZATIONS" = "PERSONALIZATIONS";
+"NETWORK" = "NETWORK";
+"Need more channels?" = "Need more channels?";
+"VIEW ALL & MANAGE" = "VIEW ALL & MANAGE";
+
+"Community Feed" = "Community Feed";
+"Create your post" = "Create your post";
+"Media" = "Media";
+"Youtube" = "Youtube";
+"You're all caught up" = "You're all caught up";
+"You've seen all new posts" = "You've seen all new posts";
+"Go to top" = "Go to top";
+"Suggested Reels" = "Suggested Reels";
+"Suggested Authors" = "Suggested Authors";
+
+
+// 14 Aug
+"Share to" = "Share to";
+"Report" = "Report";
+"Unsave Video" = "Unsave Video";
+"Save Video" = "Save Video";
+"Aspect Ratio" = "Aspect Ratio";
+"Rotate" = "Rotate";
+"Flip Vertical" = "Flip Vertical";
+"Flip Horizontal" = "Flip Horizontal";
+
+"Community" = "Community";
+"APP LANGUAGE" = "APP LANGUAGE";
+"You don't have any followers yet" = "You don't have any followers yet";
+
+
+"View Original Article" = "View Original Article";
+"Places" = "Places";
+"Languages" = "Languages";
+"New Posts" = "New Posts";
+"No posts yet" = "No posts yet";
+"All Followers" = "All Followers";
+"Add Place" = "Add Place";
+"Add places tags" = "Add places tags";
+"Be discovered by people following the places you are posting about." = "Be discovered by people following the places you are posting about.";
+
+
+// 16 Aug
+"START FOLLOWING" = "START FOLLOWING";
+"You are not following anything yet" = "You are not following anything yet";
+
+
+// 9 Sep
+"Notifications" = "Notifications";
+"General" = "General";
+"News" = "News";
+"VIEW MORE" = "VIEW MORE";
+"BULLETS AUTO PLAY" = "BULLETS AUTO PLAY";
+"VIDEOS AUTO PLAY" = "VIDEOS AUTO PLAY";
+"REELS AUTO PLAY" = "REELS AUTO PLAY";
+"READER THEME" = "READER THEME";
+"News Content Language" = "News Content Language";
+"FAVORITES" = "FAVORITES";
+"Region/Places" = "Region/Places";
+"Select Regions/Places" = "Select Regions/Places";
+"Follow at least 3 topics" = "Follow at least 3 topics";
+"Please Follow at least 3 topics" = "Please Follow at least 3 topics";
+"Explore Newsreels" = "Explore Newsreels";
+"Related Reels" = "Related Reels";
+"Explore Your Feed" = "Explore Your Feed";
+"Sources" = "Sources";
+"Articles, topics, channels, authors" = "Articles, topics, channels, authors";
+"View/Manage" = "View/Manage";
+"Add to Favorites" = "Add to Favorites";
+"Remove from Favorites" = "Remove from Favorites";
+
+"Save" = "Save";
+"Remove from Saved" = "Remove from Saved";
+
+// Latest
+"Suggestions" = "Suggestions";
+"No Newsreels yet" = "No Newsreels yet";
+
+"No Related Articles Yet" = "No Related Articles Yet";
+
+
+
+"View Source Video" = "View Source Video";
+
+"Region" = "Region";
+"View and Edit Your Profile" = "View and Edit Your Profile";
+"Select Your Region" = "Select Your Region";
+"Changing Language Description" = "By changing the region, language list changes accordingly";
+"Content Settings" = "Content Settings";
+"Primary Language" = "Primary Language";
+"Secondary Language" = "Secondary Language";
+"Notification Settings" =  "Notification Settings";
+"Font Size" =    "Font Size";
+
+"Guest User" = "Guest User";
+"Auto Play Video And Reels" = "Auto Play Video And Reels";
+"Reader Mode" =   "Reader Mode";
+"Account Settings" = "Account Settings";
+"Terms Policy" = "Terms Policy";
+"App Version" = "App Version";
+"Crypto Prices" = "Crypto Prices";
+"Todays Sports Schedule" = "Today's Sports Schedule";
+"Trending Topics" = "Trending Topics";
+"Trending Reels" = "Trending Reels";
+"Trending Channels" = "Trending Channels";
+"The world at your" = "The world\nat your\nfingerprint\nanytime,\nanywhere";
+"Register or Log in" = "Register or Log in";
+"Continue as a Guest" = "Continue as a Guest";
+"Categories" = "Categories";
+"For You" = "For You";
+"Hello" = "Hello";
+"Good morning" = "Good morning";
+"Good afternoon" = "Good afternoon";
+"Good evening" = "Good evening";
+"Pick 3 topics and start following reels and articles" = "Pick 3 topics and start following reels and articles";
+"Discover curated content from you fav places" = "Discover curated content from you fav places";
+"Close" = "Close";
+"Save" = "Save";
+"Cricket" = "Cricket";
+"Basketball" = "Basketball";
+
+"Let’s start with your email" = "Let’s start with your email";
+"Welcome to Newsreels" = "Welcome to Newsreels";
+"Email" = "Email";
+"Continue" = "Continue";
+"or" = "or";
+
+"You have completed the registration!" = "You have completed the registration!";
+"A cofirmation email has been sent to you." = "A cofirmation email has been sent to you.";
+
+"Create new account" = "Create new account";
+"Username" = "Username";
+
+"Add a password" = "Add a password";
+"Password" = "Password";
+"Save password" = "Save password";
+
+"At least 8 characters" = "At least 8 characters";
+"Include a number" = "Include a number";
+"Uppercase letter" = "Uppercase letter";
+
+"Welcome back 👋" = "Welcome back 👋";
+"Forgot Password" = "Forgot Password";
