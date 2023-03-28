@@ -1,0 +1,23 @@
+name: iOS Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+#     - name: Install dependencies
+#       run: |
+#         gem install cocoapods
+#         pod install
+
+    - name: Build
+      run: |
+        xcodebuild -workspace MyProject.xcworkspace -scheme MyScheme -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' build
