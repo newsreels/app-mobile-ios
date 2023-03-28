@@ -1,0 +1,416 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - Alamofire (5.6.4)
+  - AlignedCollectionViewFlowLayout (1.1.2)
+  - AppAuth (1.6.0):
+    - AppAuth/Core (= 1.6.0)
+    - AppAuth/ExternalUserAgent (= 1.6.0)
+  - AppAuth/Core (1.6.0)
+  - AppAuth/ExternalUserAgent (1.6.0):
+    - AppAuth/Core
+  - AppsFlyerFramework (6.10.0):
+    - AppsFlyerFramework/Main (= 6.10.0)
+  - AppsFlyerFramework/Main (6.10.0)
+  - DataCache (1.6.0)
+  - FBAudienceNetwork (6.12.0)
+  - FBSDKCoreKit (11.0.1):
+    - FBSDKCoreKit/Core (= 11.0.1)
+  - FBSDKCoreKit/Core (11.0.1):
+    - FBSDKCoreKit_Basics (~> 11.0.1)
+  - FBSDKCoreKit_Basics (11.0.1):
+    - FBSDKCoreKit_Basics/Basics (= 11.0.1)
+  - FBSDKCoreKit_Basics/Basics (11.0.1)
+  - FBSDKLoginKit (11.0.1):
+    - FBSDKLoginKit/Login (= 11.0.1)
+  - FBSDKLoginKit/Login (11.0.1):
+    - FBSDKCoreKit (~> 11.0.1)
+    - FBSDKCoreKit_Basics (~> 11.0.1)
+  - FBSDKShareKit (11.0.1):
+    - FBSDKShareKit/Share (= 11.0.1)
+  - FBSDKShareKit/Share (11.0.1):
+    - FBSDKCoreKit (~> 11.0.1)
+    - FBSDKCoreKit_Basics (~> 11.0.1)
+  - Firebase/Core (7.7.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 7.7.0)
+  - Firebase/CoreOnly (7.7.0):
+    - FirebaseCore (= 7.7.0)
+  - Firebase/Crashlytics (7.7.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 7.7.0)
+  - Firebase/DynamicLinks (7.7.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 7.7.0)
+  - Firebase/Messaging (7.7.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 7.7.0)
+  - Firebase/Performance (7.7.0):
+    - Firebase/CoreOnly
+    - FirebasePerformance (~> 7.7.0)
+  - FirebaseABTesting (7.11.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseAnalytics (7.7.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - FirebaseCore (7.7.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.9.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30907.0)
+  - FirebaseCrashlytics (7.7.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleDataTransport (~> 8.0)
+    - nanopb (~> 2.30907.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseDynamicLinks (7.7.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseMessaging (7.7.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstanceID (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Reachability (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebasePerformance (7.7.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - FirebaseRemoteConfig (~> 7.0)
+    - GoogleDataTransport (~> 8.2)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/ISASwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - Protobuf (~> 3.12)
+  - FirebaseRemoteConfig (7.11.0):
+    - FirebaseABTesting (~> 7.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+  - FlexiblePageControl (1.0.8)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - Google-Mobile-Ads-SDK (7.68.0):
+    - GoogleAppMeasurement (~> 7.0)
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (7.7.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - GoogleDataTransport (8.3.1):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30907.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUserMessagingPlatform (1.4.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/ISASwizzler (7.11.0)
+  - GoogleUtilities/Logger (7.11.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.0)"
+  - GoogleUtilities/Reachability (7.11.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.0):
+    - GoogleUtilities/Logger
+  - GSPlayer (0.2.26)
+  - GTMAppAuth (1.3.1):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
+  - Heimdallr (3.6.1):
+    - Heimdallr/Core (= 3.6.1)
+  - Heimdallr/Core (3.6.1):
+    - Result (~> 3.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/SDWebImage (1.9.2):
+    - ImageSlideshow/Core
+    - SDWebImage (>= 3.7)
+  - IQKeyboardManagerSwift (6.5.11)
+  - LoadingShimmer (1.0.3)
+  - MediaWatermark (0.4.0)
+  - Mute (0.6.1)
+  - nanopb (2.30907.0):
+    - nanopb/decode (= 2.30907.0)
+    - nanopb/encode (= 2.30907.0)
+  - nanopb/decode (2.30907.0)
+  - nanopb/encode (2.30907.0)
+  - NicoProgress (0.4.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - OneSignalXCFramework (3.12.3):
+    - OneSignalXCFramework/OneSignalCore (= 3.12.3)
+    - OneSignalXCFramework/OneSignalExtension (= 3.12.3)
+    - OneSignalXCFramework/OneSignalOutcomes (= 3.12.3)
+  - OneSignalXCFramework/OneSignalCore (3.12.3)
+  - OneSignalXCFramework/OneSignalExtension (3.12.3):
+    - OneSignalXCFramework/OneSignalCore
+    - OneSignalXCFramework/OneSignalOutcomes
+  - OneSignalXCFramework/OneSignalOutcomes (3.12.3):
+    - OneSignalXCFramework/OneSignalCore
+  - OTPFieldView (1.0.1)
+  - PageControls (1.0.1):
+    - PageControls/FilledPageControl (= 1.0.1)
+    - PageControls/PillPageControl (= 1.0.1)
+    - PageControls/ScrollingPageControl (= 1.0.1)
+    - PageControls/SnakePageControl (= 1.0.1)
+  - PageControls/FilledPageControl (1.0.1)
+  - PageControls/PillPageControl (1.0.1)
+  - PageControls/ScrollingPageControl (1.0.1)
+  - PageControls/SnakePageControl (1.0.1)
+  - PanModal (1.2.7)
+  - PlayerKit (2.0.0)
+  - PromisesObjC (1.2.12)
+  - Protobuf (3.22.0)
+  - PryntTrimmerView (4.0.2)
+  - QCropper (0.1.7)
+  - ReachabilitySwift (5.0.0)
+  - Result (3.2.4)
+  - SDWebImage (5.15.4):
+    - SDWebImage/Core (= 5.15.4)
+  - SDWebImage/Core (5.15.4)
+  - SideMenu (6.5.0)
+  - Skeleton (0.4.0)
+  - SteviaLayout (5.1.2)
+  - SwiftAutoLayout (1.0.1)
+  - SwiftRater (2.1.0)
+  - SwiftTheme (0.6.4)
+  - SwiftyGif (5.4.4)
+  - SwiftyOnboard (1.3.8)
+  - SwiftySound (1.2.0)
+  - TagListView (1.4.1)
+  - Toast-Swift (5.0.1)
+  - UIImageViewAlignedSwift (0.8.2)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Alamofire (~> 5.2)
+  - AlignedCollectionViewFlowLayout
+  - AppsFlyerFramework
+  - DataCache
+  - FBAudienceNetwork
+  - FBSDKCoreKit (~> 11.0.1)
+  - FBSDKLoginKit (~> 11.0.1)
+  - FBSDKShareKit (~> 11.0.1)
+  - Firebase/Core (~> 7.7.0)
+  - Firebase/Crashlytics
+  - Firebase/DynamicLinks
+  - Firebase/Messaging
+  - Firebase/Performance
+  - FlexiblePageControl
+  - GCDWebServer (~> 3.5)
+  - Google-Mobile-Ads-SDK (~> 7.68.0)
+  - GoogleSignIn (~> 5.0.2)
+  - GSPlayer
+  - Heimdallr
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/SDWebImage
+  - IQKeyboardManagerSwift
+  - LoadingShimmer
+  - MediaWatermark
+  - Mute
+  - NicoProgress
+  - NVActivityIndicatorView
+  - OneSignalXCFramework (< 4.0, >= 3.0.0)
+  - OTPFieldView
+  - PageControls
+  - PanModal
+  - PlayerKit
+  - PryntTrimmerView
+  - QCropper
+  - ReachabilitySwift
+  - SDWebImage (~> 5.0)
+  - SideMenu
+  - Skeleton
+  - SteviaLayout
+  - SwiftAutoLayout
+  - SwiftRater
+  - SwiftTheme
+  - SwiftyGif
+  - SwiftyOnboard
+  - SwiftySound
+  - TagListView (~> 1.0)
+  - Toast-Swift
+  - UIImageViewAlignedSwift
+
+SPEC REPOS:
+  trunk:
+    - ActiveLabel
+    - Alamofire
+    - AlignedCollectionViewFlowLayout
+    - AppAuth
+    - AppsFlyerFramework
+    - DataCache
+    - FBAudienceNetwork
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseDynamicLinks
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebasePerformance
+    - FirebaseRemoteConfig
+    - FlexiblePageControl
+    - GCDWebServer
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - GSPlayer
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - Heimdallr
+    - ImageSlideshow
+    - IQKeyboardManagerSwift
+    - LoadingShimmer
+    - MediaWatermark
+    - Mute
+    - nanopb
+    - NicoProgress
+    - NVActivityIndicatorView
+    - OneSignalXCFramework
+    - OTPFieldView
+    - PageControls
+    - PanModal
+    - PlayerKit
+    - PromisesObjC
+    - Protobuf
+    - PryntTrimmerView
+    - QCropper
+    - ReachabilitySwift
+    - Result
+    - SDWebImage
+    - SideMenu
+    - Skeleton
+    - SteviaLayout
+    - SwiftAutoLayout
+    - SwiftRater
+    - SwiftTheme
+    - SwiftyGif
+    - SwiftyOnboard
+    - SwiftySound
+    - TagListView
+    - Toast-Swift
+    - UIImageViewAlignedSwift
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AlignedCollectionViewFlowLayout: ee2ef451e741ec08f8e0967d828001e2f051c20a
+  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
+  AppsFlyerFramework: dc8599db42e1669388287d47a1f0e6b8aa35639e
+  DataCache: 5f24b356848a37469dbebec89c28ca88b4ef9294
+  FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
+  FBSDKCoreKit: 38c9e29a3f1436362acacff6486d3a28628c288f
+  FBSDKCoreKit_Basics: 06780a4a12e16596bde8406add02c6aa1bf38616
+  FBSDKLoginKit: 8243e04c590c38b85c69fcf09d1234514d2475c3
+  FBSDKShareKit: e55ddcd33d5169597ae86866faffae0acae971c1
+  Firebase: cd2ab85eec8170dc260186159f21072ecb679ad5
+  FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
+  FirebaseAnalytics: f3f8f75de34fe04141a69bb1c4bd7e24a80178e1
+  FirebaseCore: ac35d680a0bf32319a59966a1478e0741536b97b
+  FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
+  FirebaseCrashlytics: 47af228115805e190b566db12c028263531b8ce0
+  FirebaseDynamicLinks: 3ddc15a6f7e1813710d265acc662e5dfe034ac36
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
+  FirebaseInstanceID: ad5135045a498d7775903efd39762d2cdfa1be27
+  FirebaseMessaging: ce33c2537fdda1d1a4bc82b2245e3c3bf9107684
+  FirebasePerformance: 793dde6a0eafddfebde18af277f29c044e6b0023
+  FirebaseRemoteConfig: 0ea30de5fb0231df8c1bdcdf3b6c23bdc5066131
+  FlexiblePageControl: 07f7765054f16b3f0bc3f14dfd95ab5f45817ea4
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  Google-Mobile-Ads-SDK: 29bbdb182d69ff606cc0301da1590b40be8d2205
+  GoogleAppMeasurement: 0c3b134b2c0a90c4c24833873894bfe0e42a0384
+  GoogleDataTransport: 8b0e733ea77c9218778e5a9e34ba9508b8328939
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
+  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
+  GSPlayer: 1ee7c282d6e6125ca9c0c684d91b8a31512ccfe6
+  GTMAppAuth: 0ff230db599948a9ad7470ca667337803b3fc4dd
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  Heimdallr: d2a8b1dc3ecc7ad249c9ffd20c990e2248fcd599
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  LoadingShimmer: dd681218498ec9648f572b845a7299b9c62e8e30
+  MediaWatermark: d67db91deaaa9403220899adfb59c80221a02a7d
+  Mute: 20135a96076f140cc82bfc8b810e2d6150d8ec7e
+  nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  NicoProgress: 8e26d401623a1ba9456748b04b30183d5e212d25
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  OneSignalXCFramework: 75844c29607ca95e6176f6f21257b4382c7fdbfb
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  PageControls: fc2436c93e79419521a6de5d46d84722593e2949
+  PanModal: 3e16ead1a907fb06f4df3f13492fd00149fa4974
+  PlayerKit: cacafe8ef15294e2280d002a5c71faf07947a1a9
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Protobuf: 5e6cbc143d02fe08585d86b0098f8b755d2caaab
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  QCropper: aef6bad1e683e62b501fb8258359ccd10c68b4f2
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SDWebImage: 1c39de67663e5eebb2f41324d5d580eeea12dd4c
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  Skeleton: ef0f1d1b62250ee93e3a805efd268e5fd2979b32
+  SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  SwiftAutoLayout: efd1cbde878a3029a69af71a665f4d62aeba5ae3
+  SwiftRater: 23f3c60a468daf3cad69447b67e42d6f5261331f
+  SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+  SwiftyOnboard: de60e90c2af23dd61b01ec0c6a8d0be3370f857b
+  SwiftySound: 9eb28bb14edb601b40027e44319e0ef8383f88bf
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  UIImageViewAlignedSwift: 12b0b06da988015e6d5dec09ee29d5ae1a244848
+
+PODFILE CHECKSUM: 77a5501bb206e6d27855a8aa09c91c2592c966fc
+
+COCOAPODS: 1.12.0
