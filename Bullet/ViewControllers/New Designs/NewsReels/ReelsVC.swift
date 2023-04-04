@@ -141,6 +141,8 @@ class ReelsVC: UIViewController {
     var isPullToRefresh = false
     var reachability: Reachability?
     var isNoInternet = false
+    var scrollTimer: Timer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -289,7 +291,7 @@ class ReelsVC: UIViewController {
             }
         }
         
-        self.collectionView.decelerationRate = .fast
+        collectionView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.002)
         
         SharedManager.shared.isReelsLoadedFirstTime = true
         
@@ -1970,18 +1972,17 @@ extension ReelsVC {
         
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        //        self.view.isUserInteractionEnabled = false
-        //        DispatchQueue.main.asyncAfter(deadline: .now() + 0.125) {
-        //            self.view.isUserInteractionEnabled = true
-        //        }
-        if !decelerate {
-//            setRefresh(scrollView: scrollView, manual: false)
-//            check()
+    func scrollViewDidEndDragging(_: UIScrollView, willDecelerate _: Bool) {
+        // Invalidate any existing timer
+        scrollTimer?.invalidate()
+        // Disable scrolling until the timer fires
+        self.view.isUserInteractionEnabled = false
+        // Start a new timer with a delay of 0.5 second
+        scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.35, repeats: false) { [weak self] _ in
+            // The timer has fired, do something here (e.g. enable scrolling)
+            self?.view.isUserInteractionEnabled = true
         }
-        
     }
-    
     
     func setRefresh(scrollView: UIScrollView, manual: Bool) {
         
