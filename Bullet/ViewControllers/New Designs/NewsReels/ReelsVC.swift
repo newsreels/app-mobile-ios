@@ -1447,6 +1447,9 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
         if let cell = cell as? ReelsCC {
+            if indexPath.item == 0 {
+                cell.play()
+            }
             if SharedManager.shared.isAudioEnableReels == false {
                 cell.player.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
