@@ -1,5 +1,5 @@
 //
-//  ReelsVC+SetupViews.swift
+//  ReelsVC+UI.swift
 //  Bullet
 //
 //  Created by Osman Ahmed on 05/04/2023.
