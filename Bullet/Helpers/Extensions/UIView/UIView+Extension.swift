@@ -509,3 +509,16 @@ extension Bundle {
         fatalError("Could not load view with type " + String(describing: type))
     }
 }
+
+
+extension UIView {
+    func gradient(colors: [CGColor]) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.transform = CATransform3DMakeRotation(270 / 180 * CGFloat.pi, 0, 0, 1) // New line
+        gradientLayer.frame = bounds
+        gradientLayer.colors = colors
+        gradientLayer.opacity = 1.0
+        gradientLayer.name = "gradient"
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
+}

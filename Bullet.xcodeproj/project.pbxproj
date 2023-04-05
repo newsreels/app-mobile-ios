@@ -33,6 +33,16 @@
 		07F2FFEE28460893007C810D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2FFEC28460893007C810D /* WeatherTableViewCell.swift */; };
 		07F2FFEF28460893007C810D /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F2FFED28460893007C810D /* WeatherTableViewCell.xib */; };
 		164DA407564049BCD4E629F2 /* Pods_Bullet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288853FC72C3AA69C1C4B4D1 /* Pods_Bullet.framework */; };
+		2D4CA94A29DD543E004ACDED /* ReelsVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */; };
+		2D4CA94C29DD544A004ACDED /* ReelsVC+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94B29DD544A004ACDED /* ReelsVC+UI.swift */; };
+		2D4CA94E29DD5453004ACDED /* ReelsVC+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */; };
+		2D4CA95029DD545D004ACDED /* ReelsVC+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */; };
+		2D4CA95329DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */; };
+		2D4CA95529DD7973004ACDED /* NSNotification+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */; };
+		2D4CA95829DD7F1B004ACDED /* CustomImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95729DD7F1B004ACDED /* CustomImageView+Extension.swift */; };
+		2D4CA95C29DD7FC8004ACDED /* ReelsCC+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */; };
+		2D4CA96029DD7FE9004ACDED /* ReelsCC+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */; };
+		2D4CA96229DD80E4004ACDED /* Reels+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */; };
 		2D8FC478B0505CCC0E48236D /* Pods_BulletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */; };
 		3D000200269D8A880093D88B /* FeedFooterCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0001FE269D8A880093D88B /* FeedFooterCC.swift */; };
 		3D000201269D8A880093D88B /* FeedFooterCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0001FF269D8A880093D88B /* FeedFooterCC.xib */; };
@@ -1029,6 +1039,16 @@
 		1DCBCEA2AE42FAA32AD6F253 /* Pods-BulletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulletTests.release.xcconfig"; path = "Target Support Files/Pods-BulletTests/Pods-BulletTests.release.xcconfig"; sourceTree = "<group>"; };
 		263F1A3CCA181B541619D7DA /* Pods-Bullet-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bullet-Service.debug.xcconfig"; path = "Target Support Files/Pods-Bullet-Service/Pods-Bullet-Service.debug.xcconfig"; sourceTree = "<group>"; };
 		288853FC72C3AA69C1C4B4D1 /* Pods_Bullet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bullet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Delegate.swift"; sourceTree = "<group>"; };
+		2D4CA94B29DD544A004ACDED /* ReelsVC+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+UI.swift"; sourceTree = "<group>"; };
+		2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Networking.swift"; sourceTree = "<group>"; };
+		2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Managment.swift"; sourceTree = "<group>"; };
+		2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+ReelsCCDelegate.swift"; sourceTree = "<group>"; };
+		2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extenions.swift"; sourceTree = "<group>"; };
+		2D4CA95729DD7F1B004ACDED /* CustomImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomImageView+Extension.swift"; sourceTree = "<group>"; };
+		2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsCC+Delegates.swift"; sourceTree = "<group>"; };
+		2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsCC+UI.swift"; sourceTree = "<group>"; };
+		2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reels+Managment.swift"; sourceTree = "<group>"; };
 		3D0001FE269D8A880093D88B /* FeedFooterCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFooterCC.swift; sourceTree = "<group>"; };
 		3D0001FF269D8A880093D88B /* FeedFooterCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedFooterCC.xib; sourceTree = "<group>"; };
 		3D0805D526CD190E00D3ADCA /* HomeHeroCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeroCC.xib; sourceTree = "<group>"; };
@@ -2182,6 +2202,40 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2D4CA94729DD5109004ACDED /* ReelsVC */ = {
+			isa = PBXGroup;
+			children = (
+				2D4CA94829DD5151004ACDED /* ReelsCC */,
+				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
+				2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */,
+				2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */,
+				2D4CA94B29DD544A004ACDED /* ReelsVC+UI.swift */,
+				2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */,
+				2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */,
+			);
+			path = ReelsVC;
+			sourceTree = "<group>";
+		};
+		2D4CA94829DD5151004ACDED /* ReelsCC */ = {
+			isa = PBXGroup;
+			children = (
+				DE6277AD2611E4A300AFF196 /* ReelsCC.swift */,
+				2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */,
+				2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */,
+				2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */,
+				DE6277AE2611E4A300AFF196 /* ReelsCC.xib */,
+			);
+			path = ReelsCC;
+			sourceTree = "<group>";
+		};
+		2D4CA95629DD7EF4004ACDED /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2D4CA95729DD7F1B004ACDED /* CustomImageView+Extension.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		3D00011B269D78550093D88B /* FooterView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2838,6 +2892,7 @@
 				64D2CCCC24430E1300EC39EC /* Constants */,
 				64D2CC8E2443063E00EC39EC /* Helpers */,
 				64918CF124CFEAE000297401 /* WS */,
+				2D4CA95629DD7EF4004ACDED /* CustomViews */,
 				64D2CC6D2442FEB400EC39EC /* ViewControllers */,
 				641A884B24516DA600EB32C6 /* Resources */,
 				DE73ABC0284E07A60068BDF5 /* Swift-UI */,
@@ -4030,12 +4085,10 @@
 		DE62778C2611E2B100AFF196 /* NewsReels */ = {
 			isa = PBXGroup;
 			children = (
+				2D4CA94729DD5109004ACDED /* ReelsVC */,
 				DEE2DD4F26E3499200EBE798 /* ReelsFullScreenVC.swift */,
 				3D90BF2226C145330089562F /* ViewMoreReelsVC */,
-				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
-				DE6277AD2611E4A300AFF196 /* ReelsCC.swift */,
 				C2B9E791270340E1006774C3 /* ReelsSubtitle+Extension.swift */,
-				DE6277AE2611E4A300AFF196 /* ReelsCC.xib */,
 				DE6277B82611F40600AFF196 /* ReelsModel.swift */,
 				DE68566A26139BD50027401E /* GradientView.swift */,
 				DEB3E417268B472600A8FEEB /* ReelsPhotoAdCC.swift */,
@@ -4924,6 +4977,7 @@
 				DED01B022651025C00616C2F /* CGFloat+Extensions.swift */,
 				DED01B032651025C00616C2F /* UICollectionView+Extensions.swift */,
 				DED01B042651025C00616C2F /* IndexSet+Extensions.swift */,
+				2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -5086,6 +5140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64D2CC642442FC5300EC39EC /* Build configuration list for PBXNativeTarget "Bullet" */;
 			buildPhases = (
+				2D4CA95129DD5587004ACDED /* ShellScript */,
 				41DEF18B0DD9A3C08E950043 /* [CP] Check Pods Manifest.lock */,
 				64D2CC362442FC5100EC39EC /* Sources */,
 				64D2CC372442FC5100EC39EC /* Frameworks */,
@@ -5755,6 +5810,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2D4CA95129DD5587004ACDED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "file=\"unused.rb\"\nif [ -f \"$file\" ]\nthen\necho \"$file found.\"\nruby unused.rb xcode\nelse\necho \"unused.rb doesn't exist\"\nfi\n";
+		};
 		41DEF18B0DD9A3C08E950043 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5983,6 +6055,7 @@
 				64061634259B1EC300F4049C /* TabCollectionCell.swift in Sources */,
 				C24ACC89256BD10D00E4AEC1 /* HomeCardAdsCC.swift in Sources */,
 				6462B55E2479245F00C236F2 /* HomeVC.swift in Sources */,
+				2D4CA95029DD545D004ACDED /* ReelsVC+Managment.swift in Sources */,
 				DE1395EA2625994B00E0FEF0 /* CommentsDC.swift in Sources */,
 				DED01B4E2651025D00616C2F /* UIBarButtonItem+Extensions.swift in Sources */,
 				DE7BB86C28538428002F1F48 /* APIServiceError.swift in Sources */,
@@ -6024,6 +6097,7 @@
 				C2638A0926D389F7000297A1 /* extensions.swift in Sources */,
 				DE994DA428E18E3F00D1DEDF /* NotFollowingAnythingTableViewCell.swift in Sources */,
 				07F2FFEE28460893007C810D /* WeatherTableViewCell.swift in Sources */,
+				2D4CA96029DD7FE9004ACDED /* ReelsCC+UI.swift in Sources */,
 				DE7BB87128538441002F1F48 /* ServiceProtocol.swift in Sources */,
 				64AE971525C6851200D1C967 /* PanGesture.swift in Sources */,
 				DED01B302651025D00616C2F /* YPMenuItem.swift in Sources */,
@@ -6072,6 +6146,7 @@
 				DE08A5D627C62B4A009C6F34 /* UserFollowCC.swift in Sources */,
 				DE92C8592897D0430073BD37 /* ReelsView.swift in Sources */,
 				3D51B55026789E9B0069E39E /* ScheduleDatePopupVC.swift in Sources */,
+				2D4CA95529DD7973004ACDED /* NSNotification+Extenions.swift in Sources */,
 				DED01B562651025D00616C2F /* AVCaptureSession+Extensions.swift in Sources */,
 				3D4C4F62267B8D1C00C20765 /* AddChannelCC.swift in Sources */,
 				C23F985B25A5B110003C26D7 /* ProfileVC.swift in Sources */,
@@ -6089,6 +6164,7 @@
 				6417CE642582027B005F24DA /* TabbarVC.swift in Sources */,
 				DE4FD7EC27BCEA48003DBE88 /* ReelsDetailsVC.swift in Sources */,
 				DE88BAA5261342E5004D11C8 /* ReadMoreTextView.swift in Sources */,
+				2D4CA94E29DD5453004ACDED /* ReelsVC+Networking.swift in Sources */,
 				C2C2A2F4269ADC4E003BCBE3 /* FollowingTopicCC.swift in Sources */,
 				C26388BF26D387A3000297A1 /* OnboardingLanguageCC.swift in Sources */,
 				C2DFA0DE26AE959300AD842C /* NotificationsListVC.swift in Sources */,
@@ -6120,6 +6196,7 @@
 				DEA3253D27C4BDD900039BAE /* AddLocationCC.swift in Sources */,
 				DED01B612651069A00616C2F /* VideoCropperViewController.swift in Sources */,
 				DED01B502651025D00616C2F /* NSFileManager+Extensions.swift in Sources */,
+				2D4CA94C29DD544A004ACDED /* ReelsVC+UI.swift in Sources */,
 				DED01B2D2651025D00616C2F /* YPAlbumVC.swift in Sources */,
 				64C2B1A024A38814009FB3BA /* userTopicCC.swift in Sources */,
 				C202A63B24826B5E00B7CEF4 /* ForgotPasswordVC.swift in Sources */,
@@ -6133,6 +6210,7 @@
 				DE12F9AB27FC86EF00FBB402 /* CategoryCC.swift in Sources */,
 				DE7BB8C5285388F5002F1F48 /* Binding+onChangeExtension.swift in Sources */,
 				DE7F421926E10B9700042A48 /* HeadlinesDiscoverCC.swift in Sources */,
+				2D4CA95329DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift in Sources */,
 				C23D6AC7258A36D2000F7E0F /* OnboardVC.swift in Sources */,
 				DE6C245D286B547B0053C713 /* BaseNavigationController.swift in Sources */,
 				644AD8CB2567C9A90064142C /* AppDelegate.swift in Sources */,
@@ -6322,6 +6400,7 @@
 				DE39D56E261C72FA00C05D4A /* CommentsVC.swift in Sources */,
 				DE7BB88828538479002F1F48 /* NetworkOperationQueue.swift in Sources */,
 				C25E66482574E3EB00C3C96E /* SettingsNewVC.swift in Sources */,
+				2D4CA94A29DD543E004ACDED /* ReelsVC+Delegate.swift in Sources */,
 				DE96B222289FC73A0097CEEC /* URLSwift+Extensions.swift in Sources */,
 				DED01B132651025D00616C2F /* YPPickerVC.swift in Sources */,
 				DEE8729927EDAD0400441858 /* LayoutInfo.swift in Sources */,
@@ -6380,6 +6459,7 @@
 				C2C7B9EA258632BC00ED3569 /* EditionVC.swift in Sources */,
 				DE9B03BD26821FBE00EB0042 /* HomeSkeltonCardCell.swift in Sources */,
 				DED01B0A2651025D00616C2F /* YPVideoView.swift in Sources */,
+				2D4CA95829DD7F1B004ACDED /* CustomImageView+Extension.swift in Sources */,
 				3D789314268657390097EBED /* UIScrollView+Additional.swift in Sources */,
 				DE7F421E26E10B9700042A48 /* SingleArticleCC.swift in Sources */,
 				DE1FC83D2765DE5B008C1096 /* HomeViewModel.swift in Sources */,
@@ -6396,8 +6476,10 @@
 				3D8F7F3C268CA1B30087D874 /* ESPullToRefresh.swift in Sources */,
 				DED2967328601BCF00BB7E6A /* Utilities.swift in Sources */,
 				DE92C8932897F1FA0073BD37 /* CryptoViewModel.swift in Sources */,
+				2D4CA96229DD80E4004ACDED /* Reels+Managment.swift in Sources */,
 				C2C26A3524B32E9C00228A8D /* DefaultPageControl.swift in Sources */,
 				DEA1159F26B56F27008EC267 /* CustomCropperViewController.swift in Sources */,
+				2D4CA95C29DD7FC8004ACDED /* ReelsCC+Delegates.swift in Sources */,
 				DE4BEA0526BF04810055A265 /* ReelsSlidingVC.swift in Sources */,
 				DE92C84C2897CFF70073BD37 /* CricketCard.swift in Sources */,
 				DED01B522651025D00616C2F /* AVFoundation+Extensions.swift in Sources */,
