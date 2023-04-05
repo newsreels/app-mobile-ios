@@ -33,6 +33,10 @@
 		07F2FFEE28460893007C810D /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2FFEC28460893007C810D /* WeatherTableViewCell.swift */; };
 		07F2FFEF28460893007C810D /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F2FFED28460893007C810D /* WeatherTableViewCell.xib */; };
 		164DA407564049BCD4E629F2 /* Pods_Bullet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288853FC72C3AA69C1C4B4D1 /* Pods_Bullet.framework */; };
+		2D4CA94A29DD543E004ACDED /* ReelsVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */; };
+		2D4CA94C29DD544A004ACDED /* ReelsVC+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */; };
+		2D4CA94E29DD5453004ACDED /* ReelsVC+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */; };
+		2D4CA95029DD545D004ACDED /* ReelsVC+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */; };
 		2D8FC478B0505CCC0E48236D /* Pods_BulletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */; };
 		3D000200269D8A880093D88B /* FeedFooterCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0001FE269D8A880093D88B /* FeedFooterCC.swift */; };
 		3D000201269D8A880093D88B /* FeedFooterCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0001FF269D8A880093D88B /* FeedFooterCC.xib */; };
@@ -1029,6 +1033,10 @@
 		1DCBCEA2AE42FAA32AD6F253 /* Pods-BulletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BulletTests.release.xcconfig"; path = "Target Support Files/Pods-BulletTests/Pods-BulletTests.release.xcconfig"; sourceTree = "<group>"; };
 		263F1A3CCA181B541619D7DA /* Pods-Bullet-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bullet-Service.debug.xcconfig"; path = "Target Support Files/Pods-Bullet-Service/Pods-Bullet-Service.debug.xcconfig"; sourceTree = "<group>"; };
 		288853FC72C3AA69C1C4B4D1 /* Pods_Bullet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bullet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Delegate.swift"; sourceTree = "<group>"; };
+		2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+SetupViews.swift"; sourceTree = "<group>"; };
+		2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Networking.swift"; sourceTree = "<group>"; };
+		2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Managment.swift"; sourceTree = "<group>"; };
 		3D0001FE269D8A880093D88B /* FeedFooterCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFooterCC.swift; sourceTree = "<group>"; };
 		3D0001FF269D8A880093D88B /* FeedFooterCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedFooterCC.xib; sourceTree = "<group>"; };
 		3D0805D526CD190E00D3ADCA /* HomeHeroCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeroCC.xib; sourceTree = "<group>"; };
@@ -2187,6 +2195,10 @@
 			children = (
 				2D4CA94829DD5151004ACDED /* ReelsCC */,
 				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
+				2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */,
+				2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */,
+				2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */,
+				2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */,
 			);
 			path = ReelsVC;
 			sourceTree = "<group>";
@@ -5999,6 +6011,7 @@
 				64061634259B1EC300F4049C /* TabCollectionCell.swift in Sources */,
 				C24ACC89256BD10D00E4AEC1 /* HomeCardAdsCC.swift in Sources */,
 				6462B55E2479245F00C236F2 /* HomeVC.swift in Sources */,
+				2D4CA95029DD545D004ACDED /* ReelsVC+Managment.swift in Sources */,
 				DE1395EA2625994B00E0FEF0 /* CommentsDC.swift in Sources */,
 				DED01B4E2651025D00616C2F /* UIBarButtonItem+Extensions.swift in Sources */,
 				DE7BB86C28538428002F1F48 /* APIServiceError.swift in Sources */,
@@ -6105,6 +6118,7 @@
 				6417CE642582027B005F24DA /* TabbarVC.swift in Sources */,
 				DE4FD7EC27BCEA48003DBE88 /* ReelsDetailsVC.swift in Sources */,
 				DE88BAA5261342E5004D11C8 /* ReadMoreTextView.swift in Sources */,
+				2D4CA94E29DD5453004ACDED /* ReelsVC+Networking.swift in Sources */,
 				C2C2A2F4269ADC4E003BCBE3 /* FollowingTopicCC.swift in Sources */,
 				C26388BF26D387A3000297A1 /* OnboardingLanguageCC.swift in Sources */,
 				C2DFA0DE26AE959300AD842C /* NotificationsListVC.swift in Sources */,
@@ -6136,6 +6150,7 @@
 				DEA3253D27C4BDD900039BAE /* AddLocationCC.swift in Sources */,
 				DED01B612651069A00616C2F /* VideoCropperViewController.swift in Sources */,
 				DED01B502651025D00616C2F /* NSFileManager+Extensions.swift in Sources */,
+				2D4CA94C29DD544A004ACDED /* ReelsVC+SetupViews.swift in Sources */,
 				DED01B2D2651025D00616C2F /* YPAlbumVC.swift in Sources */,
 				64C2B1A024A38814009FB3BA /* userTopicCC.swift in Sources */,
 				C202A63B24826B5E00B7CEF4 /* ForgotPasswordVC.swift in Sources */,
@@ -6338,6 +6353,7 @@
 				DE39D56E261C72FA00C05D4A /* CommentsVC.swift in Sources */,
 				DE7BB88828538479002F1F48 /* NetworkOperationQueue.swift in Sources */,
 				C25E66482574E3EB00C3C96E /* SettingsNewVC.swift in Sources */,
+				2D4CA94A29DD543E004ACDED /* ReelsVC+Delegate.swift in Sources */,
 				DE96B222289FC73A0097CEEC /* URLSwift+Extensions.swift in Sources */,
 				DED01B132651025D00616C2F /* YPPickerVC.swift in Sources */,
 				DEE8729927EDAD0400441858 /* LayoutInfo.swift in Sources */,

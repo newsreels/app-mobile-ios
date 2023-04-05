@@ -301,48 +301,6 @@ class ReelsVC: UIViewController {
         performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.curReelsCategoryId)
     }
 
-    private func getReelsCategories() {
-        // This should be done in a View Model manner, but this will be refactored later on.
-        // Quick fix only
-        let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
-        WebService.URLResponse("news/home?type=reels", method: .get, parameters: nil, headers: token, withSuccess: { response in
-
-            do {
-                let FULLResponse = try
-                    JSONDecoder().decode(subCategoriesDC.self, from: response)
-
-                if let homeData = FULLResponse.data {
-                    // write Cache Codable types object
-                    do {
-                        try DataCache.instance.write(codable: homeData, forKey: Constant.CACHE_HOME_TOPICS)
-                    } catch {
-                        print("Write error \(error.localizedDescription)")
-                    }
-
-                    SharedManager.shared.reelsCategories = homeData
-
-                    if SharedManager.shared.curReelsCategoryId == "" {
-                        SharedManager.shared.curReelsCategoryId = SharedManager.shared.reelsCategories.first?.id ?? ""
-                    }
-                }
-            } catch let jsonerror {
-                SharedManager.shared.logAPIError(url: "news/home?type=reels", error: jsonerror.localizedDescription, code: "")
-            }
-
-        }) { _ in
-
-            print("Faeild to get reels categories")
-        }
-    }
-
-    func openReelsTutorial() {
-        DispatchQueue.main.async {
-            let vc = TutorialVC.instantiate(fromAppStoryboard: .Reels)
-            vc.delegate = self
-            self.isViewControllerVisible = false
-            self.present(vc, animated: true, completion: nil)
-        }
-    }
 
     func setupForCallMethod() {
         NotificationCenter.default.addObserver(self, selector: #selector(playerInterruption), name: AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
