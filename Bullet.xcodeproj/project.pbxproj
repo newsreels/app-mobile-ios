@@ -2182,6 +2182,24 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		2D4CA94729DD5109004ACDED /* ReelsVC */ = {
+			isa = PBXGroup;
+			children = (
+				2D4CA94829DD5151004ACDED /* ReelsCC */,
+				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
+			);
+			path = ReelsVC;
+			sourceTree = "<group>";
+		};
+		2D4CA94829DD5151004ACDED /* ReelsCC */ = {
+			isa = PBXGroup;
+			children = (
+				DE6277AD2611E4A300AFF196 /* ReelsCC.swift */,
+				DE6277AE2611E4A300AFF196 /* ReelsCC.xib */,
+			);
+			path = ReelsCC;
+			sourceTree = "<group>";
+		};
 		3D00011B269D78550093D88B /* FooterView */ = {
 			isa = PBXGroup;
 			children = (
@@ -4030,12 +4048,10 @@
 		DE62778C2611E2B100AFF196 /* NewsReels */ = {
 			isa = PBXGroup;
 			children = (
+				2D4CA94729DD5109004ACDED /* ReelsVC */,
 				DEE2DD4F26E3499200EBE798 /* ReelsFullScreenVC.swift */,
 				3D90BF2226C145330089562F /* ViewMoreReelsVC */,
-				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
-				DE6277AD2611E4A300AFF196 /* ReelsCC.swift */,
 				C2B9E791270340E1006774C3 /* ReelsSubtitle+Extension.swift */,
-				DE6277AE2611E4A300AFF196 /* ReelsCC.xib */,
 				DE6277B82611F40600AFF196 /* ReelsModel.swift */,
 				DE68566A26139BD50027401E /* GradientView.swift */,
 				DEB3E417268B472600A8FEEB /* ReelsPhotoAdCC.swift */,
