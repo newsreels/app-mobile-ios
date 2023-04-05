@@ -6921,7 +6921,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6944,7 +6944,7 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.20;
+				MARKETING_VERSION = 2.0.21;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
 				PRODUCT_NAME = Newsreels;
@@ -6967,7 +6967,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -6990,7 +6990,7 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.20;
+				MARKETING_VERSION = 2.0.21;
 				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
