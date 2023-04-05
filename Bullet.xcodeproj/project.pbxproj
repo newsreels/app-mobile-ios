@@ -37,6 +37,8 @@
 		2D4CA94C29DD544A004ACDED /* ReelsVC+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */; };
 		2D4CA94E29DD5453004ACDED /* ReelsVC+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */; };
 		2D4CA95029DD545D004ACDED /* ReelsVC+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */; };
+		2D4CA95329DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */; };
+		2D4CA95529DD7973004ACDED /* NSNotification+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */; };
 		2D8FC478B0505CCC0E48236D /* Pods_BulletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */; };
 		3D000200269D8A880093D88B /* FeedFooterCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0001FE269D8A880093D88B /* FeedFooterCC.swift */; };
 		3D000201269D8A880093D88B /* FeedFooterCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0001FF269D8A880093D88B /* FeedFooterCC.xib */; };
@@ -1037,6 +1039,8 @@
 		2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+SetupViews.swift"; sourceTree = "<group>"; };
 		2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Networking.swift"; sourceTree = "<group>"; };
 		2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+Managment.swift"; sourceTree = "<group>"; };
+		2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsVC+ReelsCCDelegate.swift"; sourceTree = "<group>"; };
+		2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extenions.swift"; sourceTree = "<group>"; };
 		3D0001FE269D8A880093D88B /* FeedFooterCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFooterCC.swift; sourceTree = "<group>"; };
 		3D0001FF269D8A880093D88B /* FeedFooterCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedFooterCC.xib; sourceTree = "<group>"; };
 		3D0805D526CD190E00D3ADCA /* HomeHeroCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeroCC.xib; sourceTree = "<group>"; };
@@ -2196,6 +2200,7 @@
 				2D4CA94829DD5151004ACDED /* ReelsCC */,
 				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
 				2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */,
+				2D4CA95229DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift */,
 				2D4CA94B29DD544A004ACDED /* ReelsVC+SetupViews.swift */,
 				2D4CA94D29DD5453004ACDED /* ReelsVC+Networking.swift */,
 				2D4CA94F29DD545D004ACDED /* ReelsVC+Managment.swift */,
@@ -4952,6 +4957,7 @@
 				DED01B022651025C00616C2F /* CGFloat+Extensions.swift */,
 				DED01B032651025C00616C2F /* UICollectionView+Extensions.swift */,
 				DED01B042651025C00616C2F /* IndexSet+Extensions.swift */,
+				2D4CA95429DD7973004ACDED /* NSNotification+Extenions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -6119,6 +6125,7 @@
 				DE08A5D627C62B4A009C6F34 /* UserFollowCC.swift in Sources */,
 				DE92C8592897D0430073BD37 /* ReelsView.swift in Sources */,
 				3D51B55026789E9B0069E39E /* ScheduleDatePopupVC.swift in Sources */,
+				2D4CA95529DD7973004ACDED /* NSNotification+Extenions.swift in Sources */,
 				DED01B562651025D00616C2F /* AVCaptureSession+Extensions.swift in Sources */,
 				3D4C4F62267B8D1C00C20765 /* AddChannelCC.swift in Sources */,
 				C23F985B25A5B110003C26D7 /* ProfileVC.swift in Sources */,
@@ -6182,6 +6189,7 @@
 				DE12F9AB27FC86EF00FBB402 /* CategoryCC.swift in Sources */,
 				DE7BB8C5285388F5002F1F48 /* Binding+onChangeExtension.swift in Sources */,
 				DE7F421926E10B9700042A48 /* HeadlinesDiscoverCC.swift in Sources */,
+				2D4CA95329DD780E004ACDED /* ReelsVC+ReelsCCDelegate.swift in Sources */,
 				C23D6AC7258A36D2000F7E0F /* OnboardVC.swift in Sources */,
 				DE6C245D286B547B0053C713 /* BaseNavigationController.swift in Sources */,
 				644AD8CB2567C9A90064142C /* AppDelegate.swift in Sources */,
