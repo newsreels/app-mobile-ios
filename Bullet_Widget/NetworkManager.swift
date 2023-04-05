@@ -17,7 +17,7 @@ typealias HTTPfailure = (_ errorString: String) -> ()
 
 class NetworkManager {
     
-    static let apiVersion = "v5"
+    static let apiVersion = "v6"
     
     // MARK: - API Calling Methods
     class func URLResponse(_ url:String, method: HTTPMethod ,parameters: [String: Any]?, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {

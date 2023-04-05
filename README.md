@@ -13,3 +13,12 @@ they shouldn't be in the project directory itself, and they probably generated d
 it's safe to remove them. in order to do that you can run the following command on terminal:
 
 rm *.o; rm *.d; rm *.dia; rm *.swiftdeps~; rm *.swiftdeps
+
+- if you facing error such as "Command SwiftCompile failed with nonzero exit code" to the following steps:
+1- make sure you signned in for all targets, including the extensions.
+2- make sure you using diffrent bundle id for each target.
+3- run on actual device.
+4- downgrade XCode to 14.2 or lower.
+5- make sure you using the same pods I uploaded without making "pod install" or any modification.
+
+if non of these work try to reinstall XCode (14.2 or lower).
