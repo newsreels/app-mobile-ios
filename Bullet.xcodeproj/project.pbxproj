@@ -5114,6 +5114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64D2CC642442FC5300EC39EC /* Build configuration list for PBXNativeTarget "Bullet" */;
 			buildPhases = (
+				2D4CA95129DD5587004ACDED /* ShellScript */,
 				41DEF18B0DD9A3C08E950043 /* [CP] Check Pods Manifest.lock */,
 				64D2CC362442FC5100EC39EC /* Sources */,
 				64D2CC372442FC5100EC39EC /* Frameworks */,
@@ -5782,6 +5783,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2D4CA95129DD5587004ACDED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "file=\"unused.rb\"\nif [ -f \"$file\" ]\nthen\necho \"$file found.\"\nruby unused.rb xcode\nelse\necho \"unused.rb doesn't exist\"\nfi\n";
 		};
 		41DEF18B0DD9A3C08E950043 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

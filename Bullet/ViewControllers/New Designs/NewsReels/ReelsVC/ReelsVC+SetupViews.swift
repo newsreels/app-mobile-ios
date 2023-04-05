@@ -9,12 +9,5 @@
 import UIKit
 
 extension ReelsVC {
-    func openReelsTutorial() {
-          DispatchQueue.main.async {
-              let vc = TutorialVC.instantiate(fromAppStoryboard: .Reels)
-              vc.delegate = self
-              self.isViewControllerVisible = false
-              self.present(vc, animated: true, completion: nil)
-          }
-      }
+
 }

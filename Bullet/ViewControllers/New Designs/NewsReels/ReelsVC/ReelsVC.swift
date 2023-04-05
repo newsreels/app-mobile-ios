@@ -89,8 +89,6 @@ class ReelsVC: UIViewController {
     var isArchived = false
 
     var DocController = UIDocumentInteractionController()
-    private let instagramURL = URL(string: "instagram://app")
-    private let storiesURL = URL(string: "instagram-stories://share")
 
     var currentCategory = 0
     public var minimumVelocityToHide: CGFloat = 1500
@@ -105,7 +103,7 @@ class ReelsVC: UIViewController {
     var isOpenFromTags = false
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
-    var isFollowingVCOpened = false
+    
 
     var isOpenfromNotificationList = false
 
@@ -1141,7 +1139,7 @@ extension ReelsVC: AlertViewNewDelegate {
 
 extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-        let navVC = (navigationController?.navigationController as? AppNavigationController)
+        
         if showSkeletonLoader {
             collectionView.isScrollEnabled = false
             return 1
@@ -1429,7 +1427,7 @@ extension ReelsVC {
     }
 
     func pauseCellVideo(indexPath: IndexPath?) {
-        print("video paused index before", indexPath?.item)
+        
         if let indexPath = indexPath, let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
             print("video paused index after", indexPath.item)
 
@@ -1497,7 +1495,7 @@ extension ReelsVC {
     }
 
     func checkPreload() {
-        guard let lastRow = collectionView.indexPathsForVisibleItems.last else { return }
+        
 
         let urls = reelsArray.filter { $0.media != nil && !($0.media?.isEmpty ?? true) }
             .suffix(2)
@@ -1626,24 +1624,13 @@ extension ReelsVC {
                 return
             }
             if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC {
-                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.player.totalDuration.formatToMilliSeconds() ?? "")
+                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.player.totalDuration.formatToMilliSeconds() )
             }
 
             pauseCellVideo(indexPath: prevsIndex)
         }
     }
-
-    func getCurrentVisibleTopCell() -> IndexPath {
-        var visibleIndexPath = IndexPath(item: 0, section: 0)
-        for cell in collectionView.visibleCells {
-            let cellRect = cell.contentView.convert(cell.contentView.bounds, to: UIScreen.main.coordinateSpace)
-            if cellRect.origin.x == 0, cellRect.origin.y == 0, let indexPath = collectionView.indexPath(for: cell) {
-                print("cell is visible", indexPath)
-                visibleIndexPath = indexPath
-            }
-        }
-        return visibleIndexPath
-    }
+ 
 }
 
 // MARK: - API
@@ -1932,9 +1919,9 @@ extension ReelsVC {
                         }
 
                     } else {
-                        let newindex = self.reelsArray.count
+                        
                         var newIndexArray = [IndexPath]()
-                        reelsData.map { reel in
+                        reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {
                                 self.reelsArray.append(reel)
                             }
@@ -1973,7 +1960,7 @@ extension ReelsVC {
                         }
 
                         print("Reels array count = \(self.reelsArray.count)")
-                        self.reelsArray.map { value in
+                        self.reelsArray.forEach { value in
                             print("VALUEEEE REELS = \(value)")
                         }
                     }
@@ -2137,7 +2124,7 @@ extension ReelsVC: ReelsCCDelegate {
     func didTapOpenCaptionType(cell: ReelsCC, action: String) {
         let actionArr = action.components(separatedBy: "/")
         if actionArr.count == 2 {
-            let aName = actionArr.first ?? ""
+            
             let aId = actionArr.last ?? ""
 
             if action.contains("topic") {
@@ -2334,7 +2321,7 @@ extension ReelsVC: ReelsCCDelegate {
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds() ?? "")
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
 
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
@@ -2683,230 +2670,7 @@ extension ReelsVC: CommentsVCDelegate {
         }
     }
 
-    func saveVideoAndShare(shareTitle _: String) {
-        if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-            viewIndicator.isHidden = false
-            indicator.isHidden = false
-            indicator.startAnimating()
-            SharedManager.shared.isReelsVideo = true
-            mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { status in
-
-                self.stopIndicatorLoading()
-                if status {
-                } else {}
-            }
-        }
-    }
-
-    func openCustomShareSheet(shareTitle: String, articleArchived: Bool) {
-        DispatchQueue.main.async {
-            let vc = CustomShareVC.instantiate(fromAppStoryboard: .Reels)
-            vc.modalPresentationStyle = .overFullScreen
-
-            vc.shareText = shareTitle
-            vc.articleArchived = articleArchived
-
-            vc.dismissShareSheet = { [weak self] resume in
-                self?.isShareSheetPresenting = false
-                if resume {
-                    if SharedManager.shared.reelsAutoPlay {
-                        self?.playCurrentCellVideo()
-                    }
-                }
-            }
-            vc.didTapFlag = { [weak self] in
-
-                self?.playCurrentCellVideo()
-                self?.openReportNews()
-            }
-
-            vc.didTapNotInterested = { [weak self] in
-
-                if SharedManager.shared.reelsAutoPlay {
-                    self?.playCurrentCellVideo()
-                }
-                guard let self = self else { return }
-
-                let reel = self.reelsArray[self.currentlyPlayingIndexPath.item]
-                self.performWSuggestLess(reel.id ?? "")
-            }
-            vc.didTapAddToFavoriteVideo = { [weak self] in
-
-                if SharedManager.shared.reelsAutoPlay {
-                    self?.playCurrentCellVideo()
-                }
-
-                guard let self = self else { return }
-
-                // Save article
-                let reel = self.reelsArray[self.currentlyPlayingIndexPath.item]
-                self.performArticleArchive(reel.id ?? "", isArchived: !articleArchived)
-            }
-            vc.didTapSaveToDeviceVideo = { [weak self] in
-
-                if SharedManager.shared.reelsAutoPlay {
-                    self?.playCurrentCellVideo()
-                }
-
-                guard let self = self else { return }
-
-                if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-                    self.viewIndicator.isHidden = false
-                    self.indicator.isHidden = false
-                    self.indicator.startAnimating()
-
-                    SharedManager.shared.isReelsVideo = true
-                    self.mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { _ in
-
-                        self.stopIndicatorLoading()
-                    }
-                } else {
-                    SharedManager.shared.showAlertLoader(message: "You can't download this video")
-                }
-            }
-
-            vc.openFacebookForVideo = { [weak self] in
-
-                if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-                    self?.viewIndicator.isHidden = false
-                    self?.indicator.isHidden = false
-                    self?.indicator.startAnimating()
-
-                    SharedManager.shared.isReelsVideo = true
-
-                    self?.mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { status in
-
-                        if status {
-                            guard let schemaUrl = URL(string: "fb://") else {
-                                self?.stopIndicatorLoading()
-                                return // be safe
-                            }
-                            DispatchQueue.main.async {
-                                if UIApplication.shared.canOpenURL(schemaUrl) {
-                                    let content = ShareVideoContent()
-                                    self?.createAssetURL(url: SharedManager.shared.videoUrlTesting!) { url in
-                                        let video = ShareVideo()
-                                        video.videoURL = URL(string: url)
-                                        content.video = video
-
-                                        let shareDialog = ShareDialog()
-                                        shareDialog.shareContent = content
-                                        shareDialog.mode = .native
-                                        shareDialog.delegate = self
-                                        shareDialog.show()
-                                    }
-                                    self?.stopIndicatorLoading()
-                                } else {
-                                    self?.stopIndicatorLoading()
-                                    print("app not installed")
-                                }
-                            }
-                        } else {
-                            self?.stopIndicatorLoading()
-                        }
-                    }
-                }
-            }
-
-            vc.didTapSendVideoOnWhatsapp = { [weak self] _, _, _ in
-
-                if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-                    self?.viewIndicator.isHidden = false
-                    self?.indicator.isHidden = false
-                    self?.indicator.startAnimating()
-                    SharedManager.shared.isReelsVideo = true
-                    self?.mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { status in
-
-                        if status {
-                            let urlWhats = "whatsapp://app"
-                            if let urlString = urlWhats.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
-                                self?.stopIndicatorLoading()
-                                DispatchQueue.main.async {
-                                    if let whatsappURL = URL(string: urlString) {
-                                        if UIApplication.shared.canOpenURL(whatsappURL) {
-                                            self?.DocController = UIDocumentInteractionController(url: SharedManager.shared.videoUrlTesting!)
-                                            self?.DocController.uti = "net.whatsapp.movie"
-                                            self?.DocController.delegate = self
-                                            self?.DocController.presentOpenInMenu(from: CGRect.zero, in: (self?.view)!, animated: true)
-
-                                        } else {
-                                            self?.stopIndicatorLoading()
-                                        }
-                                    }
-                                }
-                            }
-                        } else {
-                            self?.stopIndicatorLoading()
-                        }
-                    }
-                }
-            }
-
-            vc.didTapShareInInstaStories = { [weak self] in
-
-                if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-                    self?.viewIndicator.isHidden = false
-                    self?.indicator.isHidden = false
-                    self?.indicator.startAnimating()
-                    SharedManager.shared.isReelsVideo = true
-                    self?.mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { status in
-
-                        if status {
-                            guard let instagramUrl = URL(string: "instagram-stories://share") else {
-                                return
-                            }
-                            DispatchQueue.main.async {
-                                var videoData: Data?
-                                do {
-                                    videoData = try Data(contentsOf: SharedManager.shared.videoUrlTesting!)
-                                } catch {
-                                    print(error)
-                                }
-
-                                if UIApplication.shared.canOpenURL(instagramUrl) {
-                                    let pasterboardItems = [["com.instagram.sharedSticker.backgroundVideo": videoData as Any]]
-                                    UIPasteboard.general.setItems(pasterboardItems)
-                                    UIApplication.shared.open(instagramUrl)
-                                } else {}
-                            }
-                            self?.stopIndicatorLoading()
-                        } else {
-                            self?.stopIndicatorLoading()
-                        }
-                    }
-                }
-            }
-
-            vc.didTapShareOnInstaFeeds = { [weak self] in
-
-                if !(SharedManager.shared.instaMediaUrl.isEmpty) || SharedManager.shared.instaMediaUrl != "" {
-                    self?.viewIndicator.isHidden = false
-                    self?.indicator.isHidden = false
-                    self?.indicator.startAnimating()
-                    SharedManager.shared.isReelsVideo = true
-
-                    self?.mediaWatermark.downloadVideo(video: SharedManager.shared.instaMediaUrl, saveToLibrary: true) { status in
-
-                        if status {
-                            DispatchQueue.main.async {
-                                let url = URL(string: "instagram://library?LocalIdentifier=" + SharedManager.shared.instaVideoLocalPath)
-
-                                if UIApplication.shared.canOpenURL(url!) {
-                                    UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-                                }
-                                self?.stopIndicatorLoading()
-                            }
-                        } else {
-                            self?.stopIndicatorLoading()
-                        }
-                    }
-                }
-            }
-
-            self.isShareSheetPresenting = true
-            self.present(vc, animated: true, completion: nil)
-        }
-    }
+    
 
     func createAssetURL(url: URL, completion: @escaping (String) -> Void) {
         let photoLibrary = PHPhotoLibrary.shared()
@@ -3078,23 +2842,7 @@ extension ReelsVC: CommentsVCDelegate {
         }
     }
 
-    func openReportNews() {
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reportClick, eventDescription: "")
 
-        let reel = reelsArray[currentlyPlayingIndexPath.item]
-
-        let bullet = [Bullets(data: reel.reelDescription, audio: nil, duration: nil, image: nil)]
-        let content = articlesData(id: reel.id, title: reel.reelDescription, media: reel.media, image: reel.image, link: reel.media, color: nil, publish_time: reel.publishTime, source: reel.source, bullets: bullet, topics: nil, status: nil, mute: nil, type: Constant.newsArticle.ARTICLE_TYPE_VIDEO, meta: nil, info: nil, media_meta: reel.mediaMeta)
-
-        let vc = BottomSheetVC.instantiate(fromAppStoryboard: .registration)
-        vc.delegateBottomSheet = self
-        vc.article = content
-        vc.isFromReels = true
-        vc.openReportList = true
-        vc.modalPresentationStyle = .overFullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        present(vc, animated: true, completion: nil)
-    }
 
     func openViewMoreOptions() {
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reportClick, eventDescription: "")
@@ -3303,34 +3051,6 @@ extension ReelsVC {
         }
     }
 
-    func performWSuggestLess(_ id: String) {
-        if !(SharedManager.shared.isConnectedToNetwork()) {
-            SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
-            return
-        }
-
-        let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
-        WebService.URLResponse("news/articles/\(id)/suggest/less", method: .post, parameters: nil, headers: token, withSuccess: { response in
-
-            do {
-                let FULLResponse = try
-                    JSONDecoder().decode(messageData.self, from: response)
-
-                if let status = FULLResponse.message?.uppercased() {
-                    if status == Constant.STATUS_SUCCESS {
-                        SharedManager.shared.showAlertLoader(message: "You'll see less stories like this")
-                    } else {
-                        SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: status)
-                    }
-                }
-
-            } catch let jsonerror {
-                print("error parsing json objects", jsonerror)
-            }
-        }) { error in
-            print("error parsing json objects", error)
-        }
-    }
 }
 
 // MARK: - ReelsVC + ReelsCategoryVCDelegate
@@ -3493,15 +3213,7 @@ extension ReelsVC {
         }
     }
 
-    // Helper function inserted by Swift 4.2 migrator.
-    fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
-        return Dictionary(uniqueKeysWithValues: input.map { key, value in (key.rawValue, value) })
-    }
-
-    // Helper function inserted by Swift 4.2 migrator.
-    fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
-        return input.rawValue
-    }
+ 
 }
 
 // MARK: - ReelsVC + SharingDelegate, UIDocumentInteractionControllerDelegate
@@ -3557,7 +3269,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
             if let cell = self.collectionView.cellForItem(at: self.currentlyPlayingIndexPath) as? ReelsCC {
                 if time == .zero || time == nil {
                     self.forceScrollandPlayVideo(time: time)
-                } else if (time ?? .zero) >= (cell.player.currentDuration ?? .zero) {
+                } else if (time ?? .zero) >= (cell.player.currentDuration ) {
                     let nextIndexPath = IndexPath(item: self.currentlyPlayingIndexPath.item + 1, section: 0)
                     if nextIndexPath.item < self.reelsArray.count {
                         if self.isViewControllerVisible == false {
@@ -3567,7 +3279,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
                             return
                         }
 
-                        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds() ?? "")
+                        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds() )
 
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
 
