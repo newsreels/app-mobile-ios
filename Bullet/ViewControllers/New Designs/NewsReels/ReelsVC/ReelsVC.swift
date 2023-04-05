@@ -3364,7 +3364,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                             if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                                 cell.reelModel?.captionAPILoaded = true
                                 cell.reelModel?.captions = captions
-                                cell.setCaptionImage()
+                                
 
                                 cell.cellLayoutUpdate()
                             }
