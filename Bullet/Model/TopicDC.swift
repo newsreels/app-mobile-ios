@@ -181,7 +181,7 @@ public struct UserProfile: Codable {
     var email: String?
     var isGuest: Bool {
         if let email = email {
-            return !email.isEmpty
+            return email.isEmpty
         }
         return true
     }
