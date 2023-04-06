@@ -46,7 +46,6 @@ extension ReelsCC {
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
 
-        imgChannel.image = nil
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
@@ -148,7 +147,8 @@ extension ReelsCC {
     }
     
     func setFollowButton(hidden: Bool) {
-        imgUserPlus.isHidden = hidden
+        //todo: change follow text
+
     }
 
     func setLikeComment(model: Info?, showAnimation: Bool) {
@@ -270,15 +270,17 @@ extension ReelsCC {
             setFollowButton(hidden: source.favorite ?? false)
             lblChannelName.text = source.name?.capitalized ?? ""
             imgUser.sd_setImage(with: URL(string: source.icon ?? ""), placeholderImage: UIImage(named: MyThemes.current == .dark ? "icn_profile_placeholder_dark" : "icn_profile_placeholder_light"))
+            
         } else {
             setFollowButton(hidden: reelModel?.authors?.first?.favorite ?? false)
             lblChannelName.text = reelModel?.authors?.first?.username ?? reelModel?.authors?.first?.name ?? ""
             imgUser.sd_setImage(with: URL(string: reelModel?.authors?.first?.image ?? ""), placeholderImage: UIImage(named: MyThemes.current == .dark ? "icn_profile_placeholder_dark" : "icn_profile_placeholder_light"))
+            
         }
 
         let author = reelModel?.authors?.first?.username ?? reelModel?.authors?.first?.name ?? ""
         let source = reelModel?.source?.name ?? ""
-
+        
         if author == source || author == "" {
             lblAuthor.isHidden = true
             lblChannelName.text = source

@@ -66,15 +66,13 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var lblChannelName: UILabel!
     @IBOutlet var lblAuthor: UILabel!
     @IBOutlet var btnAuthor: UIButton!
-    @IBOutlet var imgChannel: UIImageView!
     @IBOutlet var imgPlayButton: UIImageView!
     @IBOutlet var imgLikeAnimation: UIImageView!
     @IBOutlet var viewPlayButton: UIView!
     @IBOutlet var viewUser: UIView!
     @IBOutlet var imgUser: UIImageView!
-    @IBOutlet var imgUserPlus: UIImageView!
     @IBOutlet var btnUserPlus: UIButton!
-    @IBOutlet var btnUserView: UIButton!
+    @IBOutlet weak var btnUserPlusWidth: NSLayoutConstraint!
     @IBOutlet var viewSubTitle: UIView!
     @IBOutlet var cSeeAutherStacViewHeight: NSLayoutConstraint!
     @IBOutlet var imgThumbnailView: CustomImageView!
@@ -87,7 +85,6 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imageMoreOptions: UIImageView!
     @IBOutlet var viewSound: UIView!
     @IBOutlet var imgSound: UIImageView!
-    @IBOutlet var gradientView: UIView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
     var currTime = -1.0
@@ -124,7 +121,11 @@ class ReelsCC: UICollectionViewCell {
         } else {
             player.isHidden = true
         }
-
+        
+        btnUserPlus.layer.cornerRadius = 8
+        btnUserPlus.borderWidth = 0.5
+        btnUserPlus.borderColor = .white
+        btnUserPlus.layer.masksToBounds = true
         player.playToEndTime = {
             self.delegate?.videoPlayingFinished(cell: self)
         }
@@ -146,7 +147,6 @@ class ReelsCC: UICollectionViewCell {
         lblChannelName.text = "                    "
         lblAuthor.text = "                    "
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
-        btnUserView.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
         hideLoader()
         ANLoader.hide()
     }

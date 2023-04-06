@@ -751,8 +751,15 @@ extension ReelsVC: ChannelDetailsVCDelegate {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {
                 cell.reelModel?.source = channel
-                cell.imgUserPlus.isHidden = channel?.favorite ?? false
-
+                // todo: follow
+//                cell.imgUserPlus.isHidden = channel?.favorite ?? false
+                if channel?.favorite ?? false {
+                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                    cell.btnUserPlusWidth.constant = 80
+                } else {
+                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                    cell.btnUserPlusWidth.constant = 70
+                }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
                 for (indexPa, reelObj) in reelsArray.enumerated() {
@@ -768,7 +775,15 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel?.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.imgUserPlus.isHidden = channel?.favorite ?? false
+                                // todo: follow
+//                                reelscell.imgUserPlus.isHidden = channel?.favorite ?? false
+                                if channel?.favorite ?? false {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 80
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                }
                             }
                         }
                     }
@@ -804,8 +819,15 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
             // Check source if its not available then use author
             if let _ = cellReel.reelModel?.source, let channel = cell?.articleModel?.source {
                 cellReel.reelModel?.source = channel
-                cellReel.imgUserPlus.isHidden = channel.favorite ?? false
-
+                // todo: follow
+//                cellReel.imgUserPlus.isHidden = channel.favorite ?? false
+                if channel.favorite ?? false {
+                    cellReel.btnUserPlus.setTitle("Following", for: .normal)
+                    cellReel.btnUserPlusWidth.constant = 80
+                } else {
+                    cellReel.btnUserPlus.setTitle("Follow", for: .normal)
+                    cellReel.btnUserPlusWidth.constant = 70
+                }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
                 for (indexPa, reelObj) in reelsArray.enumerated() {
@@ -821,7 +843,15 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.imgUserPlus.isHidden = channel.favorite ?? false
+                                // todo: follow
+//                                reelscell.imgUserPlus.isHidden = channel.favorite ?? false
+                                if channel.favorite ?? false {
+                                    reelscell.btnUserPlus.setTitle("Following", for: .normal)
+                                    reelscell.btnUserPlusWidth.constant = 80
+                                } else {
+                                    reelscell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    reelscell.btnUserPlusWidth.constant = 70
+                                }
                             }
                         }
                     }

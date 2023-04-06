@@ -16,7 +16,6 @@ extension ReelsCC {
 
     func play() {
         setImage()
-
         if let url = URL(string: reelModel?.media ?? "") {
             player.play(for: url)
             if SharedManager.shared.isAudioEnableReels == false {

@@ -340,8 +340,16 @@ extension ReelsVC: ReelsCCDelegate {
 
         if tagNo == 0 {
             // Follow
-            if cell.imgUserPlus.isHidden { return }
-            cell.imgUserPlus.isHidden = true
+            // todo: follow
+//            if cell.imgUserPlus.isHidden { return }
+//            cell.imgUserPlus.isHidden = true
+            if reelsArray[indexPath.item].source?.favorite ?? false {
+                cell.btnUserPlus.setTitle("Following", for: .normal)
+                cell.btnUserPlusWidth.constant = 80
+            } else {
+                cell.btnUserPlus.setTitle("Follow", for: .normal)
+                cell.btnUserPlusWidth.constant = 70
+            }
             cell.btnUserPlus.isUserInteractionEnabled = false
 
             var FullResponse: ReelsModel?
@@ -375,12 +383,21 @@ extension ReelsVC: ReelsCCDelegate {
                     cell.btnUserPlus.hideLoaderView()
                     cell.btnUserPlus.isUserInteractionEnabled = true
                     if status {
+                        DispatchQueue.main.async {
+                            // todo: follow
+//                            cell.imgUserPlus.isHidden = false
+                            if source.favorite ?? false {
+                                cell.btnUserPlus.setTitle("Following", for: .normal)
+                                cell.btnUserPlusWidth.constant = 80
+                            } else {
+                                cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                cell.btnUserPlusWidth.constant = 70
+                            }
+                        }
+
                         print("success")
                     } else {
                         print("failed")
-                        DispatchQueue.main.async {
-                            cell.imgUserPlus.isHidden = false
-                        }
                     }
                 }
             } else {
@@ -413,7 +430,15 @@ extension ReelsVC: ReelsCCDelegate {
                     } else {
                         print("failed")
                         DispatchQueue.main.async {
-                            cell.imgUserPlus.isHidden = false
+                            // todo: follow
+//                            cell.imgUserPlus.isHidden = false
+                            if self.reelsArray[indexPath.item].source?.favorite ?? false {
+                                cell.btnUserPlus.setTitle("Following", for: .normal)
+                                cell.btnUserPlusWidth.constant = 80
+                            } else {
+                                cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                cell.btnUserPlusWidth.constant = 70
+                            }
                         }
                     }
                 }
