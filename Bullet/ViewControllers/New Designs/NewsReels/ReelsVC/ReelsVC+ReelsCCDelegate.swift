@@ -527,5 +527,7 @@ extension ReelsVC: ReelsCCDelegate {
         playCurrentCellVideo()
     }
 
-    func didTapCaptions(cell _: ReelsCC) {}
+    func didTapCaptions(cell _: ReelsCC) {
+        print("caption")
+    }
 }

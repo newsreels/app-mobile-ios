@@ -157,12 +157,12 @@ extension ReelsCC {
         lblCommentCount.minimumScaleFactor = 0.5
 
         if (reelModel?.info?.isLiked ?? false) == false {
-            imgLike.isHighlighted = false
+            imgLike.image = UIImage(named: "newLikeIC")
         } else {
             if showAnimation {
                 startLikeAnimation()
             } else {
-                imgLike.isHighlighted = true
+                imgLike.image = UIImage(named: "newLikedIC")
             }
         }
     }
@@ -351,7 +351,7 @@ extension ReelsCC {
 
             self.imgLike.transform = self.transform.scaledBy(x: newScale, y: newScale)
 
-            self.imgLike.isHighlighted = true
+            self.imgLike.image = UIImage(named: "newLikedIC")
 
         }, completion: { _ in
 
