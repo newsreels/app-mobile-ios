@@ -30,6 +30,7 @@ extension ReelsCC {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
+        viewBottomFooter.isHidden = false
         btnUserPlus.layer.cornerRadius = 8
         btnUserPlus.borderWidth = 0.5
         btnUserPlus.borderColor = .white
@@ -41,23 +42,6 @@ extension ReelsCC {
         }
     }
     
-    func cellLayoutUpdate() {
-        if (reelModel?.captions?.count ?? 0) > 0 {
-            viewBottomFooter.isHidden = true
-            viewBottomTitleDescription.isHidden = true
-
-            currTime = -1
-            loadCaptions(time: 0)
-        } else {
-            if reelModel?.captionAPILoaded ?? false {
-                viewBottomFooter.isHidden = false
-                viewBottomTitleDescription.isHidden = false
-            } else {
-                viewBottomFooter.isHidden = true
-                viewBottomTitleDescription.isHidden = true
-            }
-        }
-    }
 
     func setupCell(model: Reel) {
         reelModel = model
@@ -147,7 +131,6 @@ extension ReelsCC {
 
         currTime = -1
         currTime = -1
-        cellLayoutUpdate()
     }
     
     func setImage() {
@@ -332,29 +315,35 @@ extension ReelsCC {
         setSeeMoreLabel()
         descriptionView.isHidden = true
         lblSeeMore.isHidden = true
+        viewBottomTitleDescription.isHidden = true
         if let type = reelModel?.mediaMeta?.type {
             if type == "fastreel", let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle == true {
                     lblSeeMore.isHidden = nativeTitle
+                    viewBottomTitleDescription.isHidden = nativeTitle
                     authorBottomConstraint?.constant = -25
                     descriptionView.isHidden = !nativeTitle
                     lblDescriptionAbove.text = newsDescription.uppercased()
                 }
             } else if type == "reel", let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle == true {
+                    print(newsDescription)
                     lblSeeMore.isHidden = !nativeTitle
+                    viewBottomTitleDescription.isHidden = !nativeTitle
                     authorBottomConstraint?.constant = 0
                     descriptionView.isHidden = nativeTitle
                 }
             } else {
                 authorBottomConstraint?.constant = -25
                 lblSeeMore.isHidden = true
+                viewBottomTitleDescription.isHidden = true
                 descriptionView.isHidden = true
             }
         } else {
             if let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle {
                     lblSeeMore.isHidden = !nativeTitle
+                    viewBottomTitleDescription.isHidden = !nativeTitle
                     authorBottomConstraint?.constant = 0
                 } else if !nativeTitle {
                     authorBottomConstraint?.constant = -25

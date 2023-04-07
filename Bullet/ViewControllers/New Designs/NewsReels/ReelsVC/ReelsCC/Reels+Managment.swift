@@ -43,7 +43,6 @@ extension ReelsCC {
         setSeeMoreLabel()
 
         currTime = -1
-        cellLayoutUpdate()
     }
 
     func PauseVideo() {

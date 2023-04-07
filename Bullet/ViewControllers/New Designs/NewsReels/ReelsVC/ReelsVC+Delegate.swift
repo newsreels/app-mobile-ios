@@ -217,10 +217,6 @@ extension ReelsVC: BottomSheetVCDelegate {
             SharedManager.shared.isCaptionsEnableReels = !SharedManager.shared.isCaptionsEnableReels
 
             if SharedManager.shared.isCaptionsEnableReels {
-                getCaptionsFromAPI()
-            }
-
-            if SharedManager.shared.isCaptionsEnableReels {
                 SharedManager.shared.showAlertLoader(message: "Turned on captions", type: .alert)
             } else {
                 SharedManager.shared.showAlertLoader(message: "Turned off captions", type: .alert)

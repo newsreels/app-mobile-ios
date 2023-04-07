@@ -152,8 +152,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         (cell as? ReelsCC)?.setImage()
-
-        (cell as? ReelsCC)?.cellLayoutUpdate()
     }
 
     func setReelAPIHitLogic() -> Int {

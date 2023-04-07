@@ -35,7 +35,7 @@ struct Reel: Codable {
     var iosType: String?
     var link: String?
     var language: String?
-    var captionAPILoaded: Bool?
+    var captionAPILoaded: Bool? = true
     var nativeTitle: Bool?
     
     enum CodingKeys: String, CodingKey {

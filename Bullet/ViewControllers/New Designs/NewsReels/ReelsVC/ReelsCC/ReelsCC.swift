@@ -116,8 +116,6 @@ class ReelsCC: UICollectionViewCell {
         loader.stopAnimating()
         pause()
         player.seek(to: .zero)
-        viewBottomFooter.isHidden = true
-        viewBottomTitleDescription.isHidden = true
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
         }

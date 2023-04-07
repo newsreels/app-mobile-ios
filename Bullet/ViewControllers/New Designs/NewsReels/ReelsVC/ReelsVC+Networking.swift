@@ -69,7 +69,6 @@ extension ReelsVC {
                                 cell.reelModel?.captionAPILoaded = true
                                 cell.reelModel?.captions = captions
 
-                                cell.cellLayoutUpdate()
                             }
                             return
                         }
@@ -80,7 +79,7 @@ extension ReelsVC {
                         self.reelsArray[selectedIndex].captionAPILoaded = true
                         if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                             cell.reelModel?.captionAPILoaded = true
-                            cell.cellLayoutUpdate()
+                            
                         }
                     }
                 }
@@ -95,7 +94,7 @@ extension ReelsVC {
                     self.reelsArray[selectedIndex].captionAPILoaded = true
                     if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                         cell.reelModel?.captionAPILoaded = true
-                        cell.cellLayoutUpdate()
+                        
                     }
                 }
             }
@@ -107,7 +106,7 @@ extension ReelsVC {
                 self.reelsArray[selectedIndex].captionAPILoaded = true
                 if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                     cell.reelModel?.captionAPILoaded = true
-                    cell.cellLayoutUpdate()
+                    
                 }
             }
         }
