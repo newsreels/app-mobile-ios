@@ -221,13 +221,11 @@ private extension ANLoader{
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             
             guard ANLoader.instance == nil else {
-                debugPrint("\n ==============================* ANLoader *=====================================")
                 debugPrint("Error: Loadering already active now, please stop that before creating a new one.")
                 return
             }
             
             guard topMostViewController != nil else {
-                debugPrint("\n ==============================* ANLoader *=====================================")
                 debugPrint("Error: You don't have any views set. You may be calling in viewDidLoad or try inside main thread.")
                 return
             }

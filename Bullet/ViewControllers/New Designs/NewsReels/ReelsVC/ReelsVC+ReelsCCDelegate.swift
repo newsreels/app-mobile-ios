@@ -417,8 +417,7 @@ extension ReelsVC: ReelsCCDelegate {
                         }
                         FullResponse?.reels = self.reelsArray
                         self.writeToCache(response: FullResponse)
-                        print("success")
-                    } else {
+                     } else {
                         print("failed")
                     }
                 }
@@ -471,8 +470,7 @@ extension ReelsVC: ReelsCCDelegate {
                         }
                         FullResponse?.reels = self.reelsArray
                         self.writeToCache(response: FullResponse)
-                        print("success")
-                    } else {
+                     } else {
                         print("failed")
 
                     }
@@ -588,6 +586,5 @@ extension ReelsVC: ReelsCCDelegate {
     }
 
     func didTapCaptions(cell _: ReelsCC) {
-        print("caption")
-    }
+     }
 }

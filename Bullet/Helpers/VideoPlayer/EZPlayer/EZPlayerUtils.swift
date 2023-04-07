@@ -31,8 +31,7 @@ public func printLog<T>(_ message: T...,
                         line: Int = #line)
 {
     if EZPlayer.showLog {
-        print("EZPlayer Log-->\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
-    }
+     }
 }
 
 

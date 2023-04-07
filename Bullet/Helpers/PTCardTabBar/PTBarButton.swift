@@ -209,11 +209,9 @@ class PTBarButton: ImageButton {
         
        
         if isSelected {
-            print("selected index", buttonIndex)
             titleLabel?.font = UIFont(name: Constant.FONT_ROBOTO_BOLD, size: 11)
             
         } else {
-            print("not selected index", buttonIndex)
             titleLabel?.font = UIFont(name: Constant.FONT_ROBOTO_REGULAR, size: 11)
         }
     

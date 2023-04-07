@@ -343,7 +343,7 @@ extension CustomShareVC: UICollectionViewDelegate, UICollectionViewDataSource, U
                 if UIApplication.shared.canOpenURL(whatsappURL) {
                     UIApplication.shared.open(whatsappURL, options: [: ], completionHandler: nil)
                 } else {
-                    //                        debugPrint("please install WhatsApp")
+					debugPrint("Error please install WhatsApp")
                 }
             }
         }

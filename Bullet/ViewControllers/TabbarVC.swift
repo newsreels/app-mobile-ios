@@ -100,7 +100,7 @@ class TabbarVC: PTCardTabBarController {
             if let error = error {
                 print("Error fetching remote instange ID: \(error)")
             } else if let result = result {
-                print("Remote instance ID token: \(result.token)")
+                
                 let externalUserId = result.token // You will supply the external user id to the OneSignal SDK
                 OneSignal.setExternalUserId(externalUserId)                
             }
@@ -136,11 +136,7 @@ class TabbarVC: PTCardTabBarController {
         
         reachabilitySwift.whenReachable = { reachability in
             
-            if reachability.connection == .wifi {
-                print("reachability Reachable via WiFi")
-            } else {
-                print("reachability Reachable via Cellular")
-            }
+ 
             self.performWSToUserConfig()
         }
         
@@ -190,7 +186,7 @@ class TabbarVC: PTCardTabBarController {
         let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
         WebService.URLResponse("user/config", method: .get, parameters: nil, headers: token, withSuccess: { (response) in
 
-            print("RESPONSEEE = \(response)")
+            
             
             do{
                 let FULLResponse = try

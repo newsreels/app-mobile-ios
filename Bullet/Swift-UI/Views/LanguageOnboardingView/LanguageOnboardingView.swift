@@ -189,8 +189,7 @@ struct LanguageOnboardingView: View {
             .padding(.horizontal, 16)
             .background(Color.white.cornerRadius(20))
             .onTapGesture {
-                print("LANGUAGE == \(language)")
-                viewModel.selectedLanguage = language
+                 viewModel.selectedLanguage = language
             }
             if language.id != viewModel.languages.last?.id {
                 Rectangle()

@@ -136,13 +136,12 @@ class ReelsCC: UICollectionViewCell {
         player.stateDidChanged = { state in
             switch state {
             case .none:
-                print("none")
+                break
             case let .error(error):
-                print("error - \(error.localizedDescription)")
+                break
             case .loading:
-                print("loading")
+                break
             case let .paused(playing, buffering):
-                print("paused - progress \(Int(playing * 100))% buffering \(Int(buffering * 100))%")
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
                     if self.loader.isHidden == false {
@@ -248,16 +247,12 @@ extension ReelsCC {
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
-            case .right:
-                print("Swiped right")
-            case .down:
-                print("Swiped down")
             case .left:
                 print("Swiped left")
                 delegate?.didSwipeRight(cell: self)
 
             case .up:
-                print("Swiped up")
+                break
             default:
                 break
             }

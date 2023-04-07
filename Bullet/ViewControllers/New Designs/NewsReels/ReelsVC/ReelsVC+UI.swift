@@ -350,8 +350,7 @@ extension ReelsVC {
             let translation = panGesture.translation(in: view)
             let x = translation.x // max(translation.x, 0)
 
-            print("UIPanGestureRecognizer translation x", -x)
-            slideViewHorizontalTo(x, reset: false)
+             slideViewHorizontalTo(x, reset: false)
 
         default:
 

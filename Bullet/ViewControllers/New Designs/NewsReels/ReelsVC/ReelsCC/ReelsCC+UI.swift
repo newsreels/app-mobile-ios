@@ -220,7 +220,6 @@ extension ReelsCC {
                 self.delegate?.didTapHashTag(cell: self, text: string)
             }
         }
-        print("Reels text", newsDescription)
     }
     
     func setupUIForSkelton() {
@@ -327,7 +326,6 @@ extension ReelsCC {
                 }
             } else if type == "reel", let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle == true {
-                    print(newsDescription)
                     lblSeeMore.isHidden = !nativeTitle
                     viewBottomTitleDescription.isHidden = !nativeTitle
                     authorBottomConstraint?.constant = 0

@@ -92,8 +92,6 @@ extension ReelsVC: ReelsCategoryVCDelegate {
         reelsArray.removeAll()
         nextPageData = ""
 
-        print("CONTEXT = \(SharedManager.shared.curReelsCategoryId)")
-
         setRefresh(scrollView: collectionView, manual: true)
     }
 
@@ -177,14 +175,13 @@ extension ReelsVC: BottomSheetVCDelegate {
             // Follow Source
             if sourceFollow {
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [article.source?.id ?? ""], isFav: false, type: .sources) { success in
-                    print("status ", success)
                     if success {
                         SharedManager.shared.showAlertLoader(message: "Unfollowed \(article.source?.name ?? "")", type: .alert)
                     }
                 }
             } else {
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [article.source?.id ?? ""], isFav: true, type: .sources) { success in
-                    print("status ", success)
+                    
                     if success {
                         SharedManager.shared.showAlertLoader(message: "followed \(article.source?.name ?? "")", type: .alert)
                     }
@@ -902,19 +899,16 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
     }
 
     func sideMenuDidAppear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appeared! (animated: \(animated))")
-
+ 
         isRightMenuLoaded = true
         stopVideo()
     }
 
     func sideMenuWillDisappear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
-    }
+     }
 
     func sideMenuDidDisappear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappeared! (animated: \(animated))")
-
+ 
         isRightMenuLoaded = false
         if SharedManager.shared.reelsAutoPlay {
             playCurrentCellVideo()
@@ -932,8 +926,7 @@ extension ReelsVC: FollowingVCDelegate {
 
 extension ReelsVC: SharingDelegate, UIDocumentInteractionControllerDelegate {
     func sharer(_: Sharing, didCompleteWithResults _: [String: Any]) {
-        print("shared")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {}
+         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {}
     }
 
     func sharer(_: Sharing, didFailWithError _: Error) {

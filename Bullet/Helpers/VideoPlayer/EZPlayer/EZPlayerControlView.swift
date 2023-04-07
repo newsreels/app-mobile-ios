@@ -679,8 +679,7 @@ extension EZPlayerControlView {
                 
                 if caption.rotation != 0 {
                     
-                    print("side Label-- Top")
-                    containerView.constrain(to: viewSubTitle).leading( multiplier: 0.5, priority: .defaultLow, activate: false)
+                     containerView.constrain(to: viewSubTitle).leading( multiplier: 0.5, priority: .defaultLow, activate: false)
                 }
                 else {
                     
@@ -702,8 +701,7 @@ extension EZPlayerControlView {
                 
                 if caption.rotation != 0 {
                     
-                    print("side Label-- Bottom")
-                    containerView.constrain(to: viewSubTitle).leading( multiplier: 0.5, priority: .defaultLow, activate: false)
+                     containerView.constrain(to: viewSubTitle).leading( multiplier: 0.5, priority: .defaultLow, activate: false)
            
                 } else {
                     
@@ -844,8 +842,7 @@ extension EZPlayerControlView {
     
     func updateSubTitlesWithTime(currTime: Double, captions:[Captions]) {
         
-        print("Video add label called")
-        //I'm checking all caption with loop. using Index as caption id
+         //I'm checking all caption with loop. using Index as caption id
         for (index, caption) in captions.enumerated() {
             
             // Skip iteration
@@ -1098,8 +1095,7 @@ extension EZPlayerControlView {
                 
                 if caption.rotation != 0 {
                     
-                    print("side Label single word")
-                    
+                     
                     self.viewSubTitle.layoutIfNeeded()
                     containerView.layoutIfNeeded()
                     
@@ -1142,8 +1138,7 @@ extension EZPlayerControlView {
                         highlightColor = UIColor(r: 0, g: 0, b: 0, a: 0)
                     }
                     else {
-                        //print("mahesh....", words.first?.word ?? "", words.first?.highlight_color ?? "")
-                        highlightColor = (words[i].highlight_color ?? "").hexStringToUIColor()
+                         highlightColor = (words[i].highlight_color ?? "").hexStringToUIColor()
                     }
                     
                     let shadow = NSShadow()
@@ -1218,8 +1213,7 @@ extension EZPlayerControlView {
             }
             if caption.rotation != 0 {
 
-                print("side Label Multi word")
-
+ 
                 containerView.layoutIfNeeded()
                 let xPosition = (self.viewSubTitle.frame.size.width * CGFloat(caption.position?.x ?? 0)) / 100
                 let width = (label.frame.size.width / 2) + (label.frame.size.height / 2)

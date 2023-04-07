@@ -306,14 +306,12 @@ struct SettingsMainview: View {
                 }
                 
                 SettingsRowView(settings: .normal(iconName: "notif_ic", title: NSLocalizedString("Notification Settings", comment: ""))) {
-                    print("Notification Settings")
-                    settings.isActive = true
+                     settings.isActive = true
                     settings.destinationView = AnyView(NotificationsView())
                     
                 }
                 SettingsRowView(settings: .normal(iconName: "fontsize_ic", title: NSLocalizedString("Font Size", comment: ""))) {
-                    print("Font Size")
-                    SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
+                     SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
                     
                 }
                 SettingsRowView(settings: .selection(iconName: "region_ic", title: NSLocalizedString("Region", comment: ""), description: languageHelper.selectedRegion?.name ?? "")) {

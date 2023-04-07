@@ -862,12 +862,7 @@ class ArticlesVC: UIViewController, UIGestureRecognizerDelegate {
        }
        
        reachabilitySwift.whenReachable = { reachability in
-           
-           if reachability.connection == .wifi {
-               print("reachability Reachable via WiFi")
-           } else {
-               print("reachability Reachable via Cellular")
-           }
+       
            if self.isNoInternet{
                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
                    self.loadNewData()

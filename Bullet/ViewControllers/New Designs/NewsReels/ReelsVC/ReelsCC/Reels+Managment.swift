@@ -29,7 +29,6 @@ extension ReelsCC {
     }
 
     func stopVideo() {
-        print("Stop Video called")
         removeAllCaptions()
 
         if SharedManager.shared.reelsAutoPlay == false {

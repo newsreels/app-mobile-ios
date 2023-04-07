@@ -61,9 +61,7 @@ class SwiftUIManager {
             vc.isBackButtonNeeded = true
             vc.modalPresentationStyle = .overFullScreen
             vc.reelsArray = reels
-            vc.reelsArray.map { reel in
-                print("ONE REEL = \(reel)")
-            }
+             
             vc.isFromDiscover = true
 //            vc.authorID = reel.authors?.first?.id ?? ""
             vc.scrollToItemFirstTime = true
@@ -122,8 +120,7 @@ class SwiftUIManager {
     @objc func goToChannelPage(notif: Notification) {
         
         if let source = notif.object as? ChannelInfo {
-            print("SOURCE = \(source)")
-            let detailsVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
+             let detailsVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
             detailsVC.isOpenFromReel = true
             detailsVC.isOpenForTopics = false
             detailsVC.fromDiscover = true

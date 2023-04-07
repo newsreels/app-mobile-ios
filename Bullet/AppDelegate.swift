@@ -63,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         // promptForPushNotifications will show the native iOS notification permission prompt.
         // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
         OneSignal.promptForPushNotifications(userResponse: { accepted in
-          print("User accepted notifications: \(accepted)")
+
         })
 
         
@@ -122,7 +122,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         setCrashLyticsUserDetails()
         let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-        print("device udid: ", deviceID)
         
         if let _ = launchOptions?[.url] as? [AnyHashable: Any] {
             
@@ -399,8 +398,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 
                 let userLang = FULLResponse.user?.language ?? "en"
                 let code = UserDefaults.standard.string(forKey: Constant.UD_languageSelected) ?? "en"
-                print("USER LANG = \(userLang)")
-                print("Code = \(code)")
                 
                 var id = ""
                 if let lang = SharedManager.shared.loadJsonLanguages(filename: "languages") {
@@ -416,7 +413,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 var languageID = SharedManager.shared.languageId == "en" ? "ee4add73-b717-4e32-bffb-fecbf82ee6d9" : "a635d498-d2c7-48e4-a8e5-2566c5cf4e2e"
                 
                 let params = ["region": LanguageHelper.languageShared.selectedRegion?.id ?? languageID]
-                print("PARAMS = \(params)")
+
                 
                 WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
                     ANLoader.hide()
@@ -428,12 +425,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                             SharedManager.shared.isTabReload = true
                             
                             SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? languageID, isRefreshedToken: true, completionHandler: { status in
-                                if status {
-                                    print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? languageID)")
-                                    print("language updated successfully")
-                                } else {
-                                    print("language updated failed")
-                                }
+                              
                                 
 //                                DispatchQueue.main.async {
 //                                    if FULLResponse.onboarded ?? false {
@@ -558,8 +550,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     func setCrashLyticsUserDetails() {
         
         let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-        print("device udid: ", deviceID)
-        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
+         let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
         let email = (UserDefaults.standard.value(forKey: Constant.UD_userEmail) as? String) ?? ""
         
         if userToken as! String == "" {
@@ -599,7 +590,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         if let code = langCode, !code.isEmpty {
             var id = ""
             if let lang = SharedManager.shared.loadJsonLanguages(filename: "languages") {
-                lang.map({print("$0.code = \($0.code)")})
+
                 if let selectedIndex = lang.firstIndex(where: { $0.code == code }) {
                     
                     id = lang[selectedIndex].id ?? ""
@@ -772,12 +763,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     func handleIncomingDynamicLink(_ dynamicLink: DynamicLink) {
         
         guard let incomingURL = dynamicLink.url else {
-            
-            print("link object has no url")
+             
             return
         }
         SharedManager.shared.isAppOpenFromDeepLink = true  //whenever open from Link set the flag true
-        print("Your incoming link params is \(incomingURL.absoluteString)")
+
         if self.isContainString(incomingURL.absoluteString, subString: "/articles?id=") {
             
             SharedManager.shared.isAppLaunchedThroughNotification = true
@@ -839,7 +829,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         AppsFlyerLib.shared().continue(userActivity, restorationHandler: nil)
         
         if let incomingURL = userActivity.webpageURL {
-            print("incoming URL is \(incomingURL)")
+
             let linkHandled = DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL) { ( dynamicLink, error) in
                 guard error == nil else {
                     print("Found an error \(error!.localizedDescription)")
@@ -1188,9 +1178,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         //                print("FIREBASE: Token Deleted")
         //            }
         //        }
-        Messaging.messaging().deleteToken { err in
-            print("FCM Token deleted")
-        }
+        
         
     }
     
@@ -1201,11 +1189,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
             Messaging.messaging().token { token, err in
                 if let error = err {
     
-                    print("Error fetching remote instange ID: \(error)")
+
                     completion(false)
                 }
                 if let token = token {
-                    print("NEW FCM TOKEN GENERATED")
+
                     //                            print(token)
                     UserDefaults.standard.set(token, forKey: Constant.UD_firebaseToken)
                     completion(true)
@@ -1318,7 +1306,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
             token = token + String(format: "%02.2hhx", arguments: [deviceToken[i]])
         }
         //   print("Registration succeeded!")
-        print("Notification Token: ", token)
+        
     }
     
     //get error here
@@ -1368,7 +1356,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         
-        print("Firebase registration token: \(fcmToken ?? "")")
+
         if UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) == ""{
             UserDefaults.standard.set(fcmToken, forKey: Constant.UD_firebaseToken)
         }
@@ -1379,7 +1367,7 @@ extension AppDelegate {
     
     //MARK: Handle Notification
     func handleNotificationTapped(userInfo: [AnyHashable : Any]) {
-        print("USER INFO = \(userInfo)")
+
         
         if let userInfoData = userInfo["custom"] as? [String:Any] {
             let notiData = userInfoData["a"] as? [String:Any]
@@ -1423,9 +1411,7 @@ extension AppDelegate {
 //            }
             
             
-        }else{
-            print("No USER INFO")
-        }
+        } 
     }
     
 }
@@ -1495,8 +1481,7 @@ extension AppDelegate: AppsFlyerLibDelegate {
     
     // Handle Organic/Non-organic installation
     func onConversionDataSuccess(_ data: [AnyHashable: Any]) {
-        
-        print("onConversionDataSuccess data:")
+         
         for (key, value) in data {
             print(key, ":", value)
         }
@@ -1505,18 +1490,15 @@ extension AppDelegate: AppsFlyerLibDelegate {
             if (status == "Non-organic") {
                 if let sourceID = data["media_source"],
                    let campaign = data["campaign"] {
-                    print("This is a Non-Organic install. Media source: \(sourceID)  Campaign: \(campaign)")
+                   
                 }
             } else {
-                print("This is an organic install.")
-            }
+             }
             if let is_first_launch = data["is_first_launch"] as? Bool,
                is_first_launch {
-                print("First Launch")
-                
+                 
             } else {
-                print("Not First Launch")
-            }
+             }
         }
     }
     

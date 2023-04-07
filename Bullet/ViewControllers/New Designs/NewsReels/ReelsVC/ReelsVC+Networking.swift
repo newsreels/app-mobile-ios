@@ -6,13 +6,13 @@
 //  Copyright © 2023 Ziro Ride LLC. All rights reserved.
 //
 
-import Foundation
 import DataCache
-import Reachability
+import Foundation
 import Photos
+import Reachability
 
 extension ReelsVC {
-     func getReelsCategories() {
+    func getReelsCategories() {
         // This should be done in a View Model manner, but this will be refactored later on.
         // Quick fix only
         let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
@@ -68,7 +68,6 @@ extension ReelsVC {
                             if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                                 cell.reelModel?.captionAPILoaded = true
                                 cell.reelModel?.captions = captions
-
                             }
                             return
                         }
@@ -79,7 +78,6 @@ extension ReelsVC {
                         self.reelsArray[selectedIndex].captionAPILoaded = true
                         if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                             cell.reelModel?.captionAPILoaded = true
-                            
                         }
                     }
                 }
@@ -94,7 +92,6 @@ extension ReelsVC {
                     self.reelsArray[selectedIndex].captionAPILoaded = true
                     if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                         cell.reelModel?.captionAPILoaded = true
-                        
                     }
                 }
             }
@@ -106,12 +103,10 @@ extension ReelsVC {
                 self.reelsArray[selectedIndex].captionAPILoaded = true
                 if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                     cell.reelModel?.captionAPILoaded = true
-                    
                 }
             }
         }
     }
-
 }
 
 extension ReelsVC {
@@ -121,7 +116,7 @@ extension ReelsVC {
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelViewed, eventDescription: "", article_id: content.id ?? "")
         }
     }
-    
+
     func checkInternetConnection() {
         do {
             reachability = try Reachability()
@@ -133,13 +128,8 @@ extension ReelsVC {
             return
         }
 
-        reachabilitySwift.whenReachable = { reachability in
+        reachabilitySwift.whenReachable = { _ in
 
-            if reachability.connection == .wifi {
-                print("reachability Reachable via WiFi")
-            } else {
-                print("reachability Reachable via Cellular")
-            }
             if self.isNoInternet {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.loadNewData()
@@ -160,10 +150,7 @@ extension ReelsVC {
             print("reachability Unable to start notifier")
         }
     }
-
-  
 }
-
 
 // MARK: - API
 
@@ -267,7 +254,6 @@ extension ReelsVC {
     }
 
     func performWSToGetReelsData(page: String, isRefreshRequired: Bool = false, contextID: String) {
-        print("API Called performWSToGetReelsData")
         if reelsArray.count == 0 {
             delegate?.loaderShowing(status: true)
             viewEmptyMessage.isHidden = true
@@ -316,8 +302,6 @@ extension ReelsVC {
             }
         }
 
-        print("URL = \(url)")
-
         var type = ""
         if !isBackButtonNeeded {
             if isOnFollowing {
@@ -326,8 +310,6 @@ extension ReelsVC {
                 type = "FOR_YOU"
             }
         }
-
-        print("performWSToGetReelsData URL = \(url)")
 
         let params = [
             "page": page,
@@ -457,9 +439,6 @@ extension ReelsVC {
                                 self.reelsArray.append(reel)
                             }
                         }
-                        print("reelsArray.count = \(self.reelsArray.count)")
-
-                        print("reelsArray.count DATA= \(reelsData.count)")
 
                         if self.cacheLimit < self.reelsArray.count {
                             self.cacheLimit = self.reelsArray.count
@@ -489,15 +468,9 @@ extension ReelsVC {
                                 self.getCurrentVisibleIndexPlayVideo()
                             }
                         }
-
-                        print("Reels array count = \(self.reelsArray.count)")
-                        self.reelsArray.forEach { value in
-                            print("VALUEEEE REELS = \(value)")
-                        }
                     }
 
                 } else {
-                    print("Empty Result")
                     if self.reelsArray.count == 0 {
                         if self.isOpenedFollowingPrefernce {
                             self.delegate?.switchBackToForYou()
@@ -541,7 +514,6 @@ extension ReelsVC {
     }
 }
 
-
 extension ReelsVC {
     func performWSToLikePost(article_id: String, isLike: Bool) {
         if !(SharedManager.shared.isConnectedToNetwork()) {
@@ -558,10 +530,6 @@ extension ReelsVC {
             do {
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
-
-                if let status = FULLResponse.message?.uppercased() {
-                    print("like status", status)
-                }
 
             } catch let jsonerror {
                 SharedManager.shared.logAPIError(url: "social/likes/article/\(article_id)", error: jsonerror.localizedDescription, code: "")
@@ -658,8 +626,6 @@ extension ReelsVC {
     }
 }
 
-
-
 extension ReelsVC {
     func performArticleArchive(_ id: String, isArchived: Bool) {
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.archiveClick, eventDescription: "", article_id: id)
@@ -711,10 +677,7 @@ extension ReelsVC {
                     urlData.write(toFile: filePath, atomically: true)
                     PHPhotoLibrary.shared().performChanges({
                         PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: URL(fileURLWithPath: filePath))
-                    }) { completed, _ in
-                        if completed {
-                            print("Video is saved!")
-                        }
+                    }) { _, _ in
                     }
                 }
             }
