@@ -82,7 +82,7 @@ class SlideMenuPageVC: UIPageViewController {
         
         let channelVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
         if channelInfo == nil {
-            channelVC.channelInfo = ChannelInfo(id: source.id, context: source.context, name: source.name, channelDescription: nil, link: source.link, icon: source.icon, name_image: source.name_image, portrait_image: source.portrait_image, image: source.image, updateCount: nil, channelModelType: nil, follower_count: nil, post_count: nil, own: nil, hasReel: nil, hasArticle: nil, favorite: nil, verified: nil)
+            channelVC.channelInfo = ChannelInfo(id: source.id, context: source.context, name: source.name, channelDescription: nil, link: source.link, icon: source.icon, name_image: source.name_image, portrait_image: source.portrait_image, image: source.image, updateCount: nil, channelModelType: nil, follower_count: nil, post_count: nil, own: nil, hasReel: nil, hasArticle: nil, verified: nil, favorite: nil)
             performGoToSource(source: source)
         } else {
             channelVC.channelInfo = channelInfo

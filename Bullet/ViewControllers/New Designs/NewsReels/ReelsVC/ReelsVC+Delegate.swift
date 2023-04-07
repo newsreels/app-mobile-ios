@@ -751,8 +751,6 @@ extension ReelsVC: ChannelDetailsVCDelegate {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {
                 cell.reelModel?.source = channel
-                // todo: follow
-//                cell.imgUserPlus.isHidden = channel?.favorite ?? false
                 if channel?.favorite ?? false {
                     cell.btnUserPlus.setTitle("Following", for: .normal)
                     cell.btnUserPlusWidth.constant = 80
@@ -769,14 +767,12 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                 }
 
                 let cellsArray = collectionView.visibleCells
-
+                
                 if cellsArray.count > 0 {
                     for cellObj in cellsArray {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel?.id {
                                 reelscell.reelModel?.source = channel
-                                // todo: follow
-//                                reelscell.imgUserPlus.isHidden = channel?.favorite ?? false
                                 if channel?.favorite ?? false {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
                                     cell.btnUserPlusWidth.constant = 80
@@ -819,8 +815,6 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
             // Check source if its not available then use author
             if let _ = cellReel.reelModel?.source, let channel = cell?.articleModel?.source {
                 cellReel.reelModel?.source = channel
-                // todo: follow
-//                cellReel.imgUserPlus.isHidden = channel.favorite ?? false
                 if channel.favorite ?? false {
                     cellReel.btnUserPlus.setTitle("Following", for: .normal)
                     cellReel.btnUserPlusWidth.constant = 80
@@ -843,8 +837,6 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel.id {
                                 reelscell.reelModel?.source = channel
-                                // todo: follow
-//                                reelscell.imgUserPlus.isHidden = channel.favorite ?? false
                                 if channel.favorite ?? false {
                                     reelscell.btnUserPlus.setTitle("Following", for: .normal)
                                     reelscell.btnUserPlusWidth.constant = 80
