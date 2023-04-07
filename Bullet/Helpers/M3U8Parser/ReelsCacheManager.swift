@@ -25,11 +25,7 @@ class ReelsCacheManager {
     static let shared = ReelsCacheManager()
     static let webServer = GCDWebServer()
     let queue = DispatchQueue(label: "serial")
-    private init(){
-        //        queue.name = "com.reelscache.serial"
-        //        queue.qualityOfService = .background
-        //        queue.maxConcurrentOperationCount = 1
-    }
+
     weak var delegate: ReelsCacheManagerDelegate?
     var reelsArray: [Reel]!
     var chunkList = [String]()
@@ -151,6 +147,8 @@ class ReelsCacheManager {
                                                     in: .userDomainMask)[0].path
             webServer.addGETHandler(forBasePath: "/", directoryPath: pathM3U8, indexFilename: nil, cacheAge: 0, allowRangeRequests: true)
             do {
+                GCDWebServer.setLogLevel(4)
+
                 try webServer.start(options: [
                     "Port": 9090,
                     "BindToLocalhost": true

@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         //UIApplication.shared.isIdleTimerDisabled = true
         
         self.getGCDHostURL()
-        OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+        OneSignal.setLogLevel(.LL_NONE, visualLevel: .LL_NONE)
         
         // OneSignal initialization
         OneSignal.initWithLaunchOptions(launchOptions)
@@ -76,9 +76,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         // Pass user's consent after acquiring it. For sample app purposes, this is set to YES.
         FBAdSettings.setAdvertiserTrackingEnabled(true)
         
+        FBAdSettings.setLogLevel(.none)
         #if DEBUG
         FBAdSettings.addTestDevice(FBAdSettings.testDeviceHash())
-        FBAdSettings.setLogLevel(.log)
         #else
         FBAdSettings.clearTestDevice(FBAdSettings.testDeviceHash())
         #endif
@@ -115,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         AppsFlyerLib.shared().appsFlyerDevKey = "ZajnjsVaGHX9SQURHUCwfV"
         AppsFlyerLib.shared().appleAppID = "1540932937"
         AppsFlyerLib.shared().delegate = self
-        AppsFlyerLib.shared().isDebug = true
+        AppsFlyerLib.shared().isDebug = false
         
         self.configureNotification(application)
         
@@ -158,7 +158,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
 //        SwiftRater.daysBeforeReminding = 1
         SwiftRater.appID = "1540932937"
         SwiftRater.showLaterButton = true
-        SwiftRater.showLog = true
+        SwiftRater.showLog = false
         SwiftRater.resetWhenAppUpdated = false
         
         // Set to false before submitting to App Store!!!!
@@ -710,7 +710,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         //GOOGLE LOGIN
         GIDSignIn.sharedInstance().clientID = WebserviceManager.shared.GOOGLE_CLIENT_ID
         
-        FirebaseConfiguration.shared.setLoggerLevel(FirebaseLoggerLevel.min)
+        FirebaseConfiguration.shared.setLoggerLevel(.error)
         //   FirebaseApp.configure()
         Messaging.messaging().delegate = self
         
