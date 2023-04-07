@@ -10,6 +10,37 @@ import UIKit
 import AVFoundation
 
 extension ReelsCC {
+    func setupViews() {
+        lblSeeMore.text = "                 "
+        lblChannelName.text = "                    "
+        lblAuthor.text = "                    "
+        setupUIForSkelton()
+        viewContent.backgroundColor = .black
+        loader.isHidden = true
+        loader.stopAnimating()
+        imgVolume.image = nil
+        lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
+        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
+        player.seek(to: .zero)
+        if SharedManager.shared.bulletsAutoPlay {
+            player.isHidden = false
+        } else {
+            player.isHidden = true
+        }
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
+        lblChannelName.addGestureRecognizer(tapGestureRecognizer)
+        lblChannelName.isUserInteractionEnabled = true
+        btnUserPlus.layer.cornerRadius = 8
+        btnUserPlus.borderWidth = 0.5
+        btnUserPlus.borderColor = .white
+        btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        btnUserPlus.layer.masksToBounds = true
+        btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
+        player.playToEndTime = {
+            self.delegate?.videoPlayingFinished(cell: self)
+        }
+    }
+    
     func cellLayoutUpdate() {
         if (reelModel?.captions?.count ?? 0) > 0 {
             viewBottomFooter.isHidden = true

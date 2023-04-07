@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -509,13 +508,13 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fe5-Of-lai" userLabel="View Footer">
                                         <rect key="frame" x="20" y="709.33333333333337" width="526" height="47"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="f5k-jC-EaM">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f5k-jC-EaM">
                                                 <rect key="frame" x="0.0" y="2" width="526" height="43"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6A3-qQ-5DZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="21.666666666666668"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="526" height="21.666666666666668"/>
                                                         <subviews>
-                                                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pv-5v-5A5" userLabel="View User">
+                                                            <view opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Pv-5v-5A5" userLabel="View User">
                                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="21.666666666666668"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H6t-rQ-Mq3">
@@ -527,7 +526,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GII-0m-Rqs">
-                                                                        <rect key="frame" x="0.0" y="-5" width="41.666666666666664" height="34"/>
+                                                                        <rect key="frame" x="0.0" y="-5" width="30" height="34"/>
                                                                         <connections>
                                                                             <action selector="didTapAuthor:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wXE-Ua-eJE"/>
                                                                         </connections>
@@ -547,7 +546,7 @@
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-m0-ZbI">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-m0-ZbI">
                                                                 <rect key="frame" x="32" y="0.0" width="9.6666666666666643" height="21.666666666666668"/>
                                                                 <fontDescription key="fontDescription" name="Muli-ExtraBold" family="Muli" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -556,25 +555,31 @@
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qty-Wc-h0K">
-                                                                <rect key="frame" x="49.666666666666671" y="0.0" width="70" height="21.666666666666668"/>
+                                                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eZe-Qi-weV">
+                                                                <rect key="frame" x="49.666666666666657" y="0.0" width="476.33333333333337" height="21.666666666666668"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qty-Wc-h0K">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="21.666666666666668"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="70" id="Ne4-ll-3Mh"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                                                        <state key="normal" title="Follow"/>
+                                                                        <connections>
+                                                                            <action selector="didTapFollow:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Why-gT-oC6"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="70" id="Ne4-ll-3Mh"/>
+                                                                    <constraint firstItem="Qty-Wc-h0K" firstAttribute="top" secondItem="eZe-Qi-weV" secondAttribute="top" id="SQh-Am-fEv"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Qty-Wc-h0K" secondAttribute="bottom" id="UAt-4s-2iH"/>
+                                                                    <constraint firstItem="Qty-Wc-h0K" firstAttribute="leading" secondItem="eZe-Qi-weV" secondAttribute="leading" id="brf-VX-K4n"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
-                                                                <state key="normal" title="Follow"/>
-                                                                <connections>
-                                                                    <action selector="didTapFollow:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Why-gT-oC6"/>
-                                                                </connections>
-                                                            </button>
+                                                            </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="AccentColor"/>
-                                                        <constraints>
-                                                            <constraint firstItem="GII-0m-Rqs" firstAttribute="trailing" secondItem="2ey-m0-ZbI" secondAttribute="trailing" id="8cA-me-hDs"/>
-                                                        </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjJ-uF-MJu">
-                                                        <rect key="frame" x="0.0" y="21.666666666666629" width="10.666666666666666" height="21.333333333333329"/>
+                                                        <rect key="frame" x="0.0" y="21.666666666666629" width="526" height="21.333333333333329"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21.329999999999998" id="1GH-yS-jDo"/>
                                                         </constraints>
@@ -586,7 +591,6 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" name="AppColorCoral"/>
                                                 <constraints>
                                                     <constraint firstItem="6A3-qQ-5DZ" firstAttribute="leading" secondItem="f5k-jC-EaM" secondAttribute="leading" id="3sx-vR-dH1"/>
                                                     <constraint firstAttribute="height" constant="43" id="Old-Kr-SnY"/>
@@ -712,6 +716,7 @@
                 <outlet property="constraintImgLikeHeight" destination="TUU-F4-wlA" id="ug5-KQ-EJ2"/>
                 <outlet property="descriptionView" destination="DdS-ox-iss" id="D19-85-k5s"/>
                 <outlet property="descriptionViewHeight" destination="rre-AI-RZ1" id="2oc-bv-a4E"/>
+                <outlet property="followStack" destination="6A3-qQ-5DZ" id="alT-90-bhA"/>
                 <outlet property="imageMoreOptions" destination="wnq-3a-wKo" id="S9M-jc-BFx"/>
                 <outlet property="imgLike" destination="kOE-AA-b9K" id="hse-E6-09A"/>
                 <outlet property="imgLikeAnimation" destination="ryo-vG-0Zx" id="bPP-lq-yfZ"/>
@@ -767,12 +772,6 @@
         <image name="newSendIC" width="25.333333969116211" height="25.333333969116211"/>
         <image name="newUnmuteIC" width="25.333333969116211" height="21.333333969116211"/>
         <image name="playButton" width="201.38499450683594" height="201.38499450683594"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="AppColorCoral">
-            <color red="0.96862745098039216" green="0.20392156862745098" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

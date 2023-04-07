@@ -753,10 +753,14 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                 cell.reelModel?.source = channel
                 if channel?.favorite ?? false {
                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                    cell.btnUserPlusWidth.constant = 80
+                    cell.btnUserPlusWidth.constant = 90
+                    cell.btnUserPlus.layoutIfNeeded()
+                    cell.followStack.layoutIfNeeded()
                 } else {
                     cell.btnUserPlus.setTitle("Follow", for: .normal)
                     cell.btnUserPlusWidth.constant = 70
+                    cell.btnUserPlus.layoutIfNeeded()
+                    cell.followStack.layoutIfNeeded()
                 }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
@@ -775,10 +779,14 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                                 reelscell.reelModel?.source = channel
                                 if channel?.favorite ?? false {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 80
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
                                 } else {
                                     cell.btnUserPlus.setTitle("Follow", for: .normal)
                                     cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
                                 }
                             }
                         }
@@ -818,9 +826,13 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                 if channel.favorite ?? false {
                     cellReel.btnUserPlus.setTitle("Following", for: .normal)
                     cellReel.btnUserPlusWidth.constant = 80
+                    cellReel.btnUserPlus.layoutIfNeeded()
+                    cellReel.followStack.layoutIfNeeded()
                 } else {
                     cellReel.btnUserPlus.setTitle("Follow", for: .normal)
                     cellReel.btnUserPlusWidth.constant = 70
+                    cellReel.btnUserPlus.layoutIfNeeded()
+                    cellReel.followStack.layoutIfNeeded()
                 }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
@@ -839,10 +851,14 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                                 reelscell.reelModel?.source = channel
                                 if channel.favorite ?? false {
                                     reelscell.btnUserPlus.setTitle("Following", for: .normal)
-                                    reelscell.btnUserPlusWidth.constant = 80
+                                    reelscell.btnUserPlusWidth.constant = 90
+                                    reelscell.btnUserPlus.layoutIfNeeded()
+                                    reelscell.followStack.layoutIfNeeded()
                                 } else {
                                     reelscell.btnUserPlus.setTitle("Follow", for: .normal)
                                     reelscell.btnUserPlusWidth.constant = 70
+                                    reelscell.btnUserPlus.layoutIfNeeded()
+                                    reelscell.followStack.layoutIfNeeded()
                                 }
                             }
                         }

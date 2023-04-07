@@ -52,10 +52,14 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 80
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
                             cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
                         }
                     }
                     
@@ -65,10 +69,14 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 80
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
                             cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
                         }
                     }
                     
@@ -369,10 +377,14 @@ extension ReelsVC: ReelsCCDelegate {
             // Follow
             if reelsArray[indexPath.item].source?.favorite ?? false {
                 cell.btnUserPlus.setTitle("Following", for: .normal)
-                cell.btnUserPlusWidth.constant = 80
+                cell.btnUserPlusWidth.constant = 90
+                cell.btnUserPlus.layoutIfNeeded()
+                cell.followStack.layoutIfNeeded()
             } else {
                 cell.btnUserPlus.setTitle("Follow", for: .normal)
                 cell.btnUserPlusWidth.constant = 70
+                cell.btnUserPlus.layoutIfNeeded()
+                cell.followStack.layoutIfNeeded()
             }
             cell.btnUserPlus.isUserInteractionEnabled = false
 
@@ -389,16 +401,20 @@ extension ReelsVC: ReelsCCDelegate {
                         for (indexP, rl) in self.reelsArray.enumerated() {
                             if rl.source?.id == self.reelsArray[indexPath.item].source?.id {
                                 self.reelsArray[indexP].source?.favorite = !fav
+                            }
                         }
-                            
                         DispatchQueue.main.async {
                             cell.btnUserPlus.hideLoaderView()
                             if !fav {
                                 cell.btnUserPlus.setTitle("Following", for: .normal)
-                                cell.btnUserPlusWidth.constant = 80
+                                cell.btnUserPlusWidth.constant = 90
+                                cell.btnUserPlus.layoutIfNeeded()
+                                cell.followStack.layoutIfNeeded()
                             } else {
                                 cell.btnUserPlus.setTitle("Follow", for: .normal)
                                 cell.btnUserPlusWidth.constant = 70
+                                cell.btnUserPlus.layoutIfNeeded()
+                                cell.followStack.layoutIfNeeded()
                             }
                         }
                         FullResponse?.reels = self.reelsArray
@@ -445,10 +461,14 @@ extension ReelsVC: ReelsCCDelegate {
                             cell.btnUserPlus.hideLoaderView()
                             if !fav {
                                 cell.btnUserPlus.setTitle("Following", for: .normal)
-                                cell.btnUserPlusWidth.constant = 80
+                                cell.btnUserPlusWidth.constant = 90
+                                cell.btnUserPlus.layoutIfNeeded()
+                                cell.followStack.layoutIfNeeded()
                             } else {
                                 cell.btnUserPlus.setTitle("Follow", for: .normal)
                                 cell.btnUserPlusWidth.constant = 70
+                                cell.btnUserPlus.layoutIfNeeded()
+                                cell.followStack.layoutIfNeeded()
                             }
                         }
                         FullResponse?.reels = self.reelsArray

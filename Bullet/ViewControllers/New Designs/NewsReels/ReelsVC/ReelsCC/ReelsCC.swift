@@ -72,6 +72,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var viewUser: UIView!
     @IBOutlet var imgUser: UIImageView!
     @IBOutlet var btnUserPlus: UIButton!
+    @IBOutlet weak var followStack: UIStackView!
     @IBOutlet weak var btnUserPlusWidth: NSLayoutConstraint!
     @IBOutlet var viewSubTitle: UIView!
     @IBOutlet var cSeeAutherStacViewHeight: NSLayoutConstraint!
@@ -105,30 +106,7 @@ class ReelsCC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        lblSeeMore.text = "                 "
-        lblChannelName.text = "                    "
-        lblAuthor.text = "                    "
-        setupUIForSkelton()
-        viewContent.backgroundColor = .black
-        loader.isHidden = true
-        loader.stopAnimating()
-        imgVolume.image = nil
-        lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
-        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-        player.seek(to: .zero)
-        if SharedManager.shared.bulletsAutoPlay {
-            player.isHidden = false
-        } else {
-            player.isHidden = true
-        }
-        
-        btnUserPlus.layer.cornerRadius = 8
-        btnUserPlus.borderWidth = 0.5
-        btnUserPlus.borderColor = .white
-        btnUserPlus.layer.masksToBounds = true
-        player.playToEndTime = {
-            self.delegate?.videoPlayingFinished(cell: self)
-        }
+        setupViews()
     }
     
     override func prepareForReuse() {
@@ -154,7 +132,6 @@ class ReelsCC: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         setDescriptionLabel()
-
         player.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
         player.backgroundColor = .clear
         imgThumbnailView.isHidden = false
