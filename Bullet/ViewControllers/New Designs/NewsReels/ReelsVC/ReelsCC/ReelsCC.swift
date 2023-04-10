@@ -154,10 +154,9 @@ class ReelsCC: UICollectionViewCell {
             case .playing:
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
-                    if self.loader.isHidden == false {
-                        self.loader.isHidden = true
-                        self.loader.stopAnimating()
-                    }
+                    self.loader.isHidden = true
+                    self.loader.stopAnimating()
+                    self.imgPlayButton.isHidden = true
                     self.play()
                     self.loader.stopAnimating()
                     self.hideLoader()
