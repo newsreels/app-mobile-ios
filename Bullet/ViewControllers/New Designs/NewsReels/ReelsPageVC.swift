@@ -21,14 +21,14 @@ class ReelsPageVC: UIPageViewController {
 //        self.transitionStyle = .scroll
         
         self.isDoubleSided = false
-        let startingViewController = self.viewControllerAtIndex(index: 0)
-        let secondViewController = self.viewControllerAtIndex(index: 1)
+         let startingViewController = self.viewControllerAtIndex(index: 0) as UIViewController
+        let secondViewController = self.viewControllerAtIndex(index: 1) as UIViewController
         
-        viewControllersArray.append(startingViewController!)
-        viewControllersArray.append(secondViewController!)
+        viewControllersArray.append(startingViewController)
+        viewControllersArray.append(secondViewController)
         
         
-        self.setViewControllers([startingViewController!], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
+        self.setViewControllers([startingViewController], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
         
     }
     
