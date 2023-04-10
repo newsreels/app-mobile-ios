@@ -78,7 +78,7 @@ class BulletDetailsVC: UIViewController {
     
     var isNestedVC = false
     var cellHeights = [IndexPath: CGFloat]()
-    var isRelatedArticletNeeded = true
+    var isRelatedArticletNeeded = false
     var isSimilarArticletNeeded = false
     var isFromPostArticle = false
     let pagingLoader = UIActivityIndicatorView()
@@ -1177,14 +1177,15 @@ extension BulletDetailsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderRelatedArticles") as! HeaderRelatedArticles
-        header.delegateHeader = self
-        header.isRequiredRelatedData = isRelatedArticletNeeded
-        header.isRequiredSimilarData = isSimilarArticletNeeded
-        header.setHeaderSimilarArticlesData(self.similarArticlesArr, reels: self.similarReelsArr)
-        return header
-        
+        if isRelatedArticletNeeded {
+            let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HeaderRelatedArticles") as! HeaderRelatedArticles
+            header.delegateHeader = self
+            header.isRequiredRelatedData = isRelatedArticletNeeded
+            header.isRequiredSimilarData = isSimilarArticletNeeded
+            header.setHeaderSimilarArticlesData(self.similarArticlesArr, reels: self.similarReelsArr)
+            return header
+        }
+        return UITableViewHeaderFooterView()
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -1957,12 +1958,12 @@ extension BulletDetailsVC {
                         if let reelsArray = FULLResponse.reels {
                             
                             self.similarReelsArr = reelsArray
-                            self.isSimilarArticletNeeded = (reelsArray.count ) > 0 ? true : false
+                            self.isSimilarArticletNeeded = false //(reelsArray.count ) > 0 ? true : false
                         }
                         else {
                             
                             self.similarArticlesArr = FULLResponse.group_articles
-                            self.isSimilarArticletNeeded = (self.similarArticlesArr?.count ?? 0) > 0 ? true : false
+                            self.isSimilarArticletNeeded = false //(self.similarArticlesArr?.count ?? 0) > 0 ? true : false
                         }
                         
 
