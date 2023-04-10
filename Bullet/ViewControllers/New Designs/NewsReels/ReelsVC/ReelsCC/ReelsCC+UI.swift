@@ -68,9 +68,7 @@ extension ReelsCC {
             // Geasture for video like
             if SharedManager.shared.bulletsAutoPlay {
                 player.play(for: url)
-            }
-            pause()
-            player.pause()
+            } 
 
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])

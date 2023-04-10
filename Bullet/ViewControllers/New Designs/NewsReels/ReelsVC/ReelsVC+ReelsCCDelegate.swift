@@ -105,8 +105,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if let cell = cell as? ReelsCC {
-            cell.stopVideo()
-            cell.pause()
+            cell.player.destroy()
         }
     }
 
@@ -127,7 +126,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 cell.viewPlayButton.isHidden = true
             } else {
                 cell.viewPlayButton.isHidden = false
-                cell.stopVideo()
             }
         }
         if reelsArray.count > 0 {
