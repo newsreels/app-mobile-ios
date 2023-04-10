@@ -140,7 +140,7 @@ class ReelsVC: UIViewController {
             }
         }
 
-        if SharedManager.shared.reloadRequiredFromTopics {
+        if SharedManager.shared.reloadRequiredFromTopics && !isFromDiscover {
             setRefresh(scrollView: collectionView, manual: true)
             SharedManager.shared.reloadRequiredFromTopics = false
         }
