@@ -16,8 +16,10 @@ extension ReelsCC {
         lblAuthor.text = "                    "
         setupUIForSkelton()
         viewContent.backgroundColor = .black
-        loader.isHidden = true
-        loader.stopAnimating()
+        if player.state != .playing {
+            loader.isHidden = false
+            loader.startAnimating()
+        }
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
