@@ -140,6 +140,11 @@ class ReelsCC: UICollectionViewCell {
             case let .error(error):
                 print(error)
             case .loading:
+                DispatchQueue.main.async {
+                    if self.loader.isHidden {
+                        self.loader.isHidden = false
+                    }
+                }
                 break
             case let .paused(playing, buffering):
                 print("stopped")
