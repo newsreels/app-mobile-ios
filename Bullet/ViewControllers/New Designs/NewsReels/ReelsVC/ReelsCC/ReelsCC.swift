@@ -136,7 +136,7 @@ class ReelsCC: UICollectionViewCell {
         player.stateDidChanged = { state in
             switch state {
             case .none:
-                break
+                print("none")
             case let .error(error):
                 print(error)
             case .loading:
