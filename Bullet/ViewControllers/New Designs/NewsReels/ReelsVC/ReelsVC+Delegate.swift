@@ -83,8 +83,8 @@ extension ReelsVC: ReelsCategoryVCDelegate {
     func reelsCategoryVCDismissed() {}
 
     func loadNewData() {
-        DataCache.instance.clean(byKey: Constant.CACHE_REELS)
-        DataCache.instance.clean(byKey: Constant.CACHE_REELS_Follow)
+//        DataCache.instance.clean(byKey: Constant.CACHE_REELS)
+//        DataCache.instance.clean(byKey: Constant.CACHE_REELS_Follow)
         stopVideo()
         setUpSelectedCategory()
         currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
