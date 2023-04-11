@@ -3224,7 +3224,7 @@ extension ArticlesVC: UITableViewDelegate, UITableViewDataSource {
         
         
         if let position = articles.firstIndex(where: {$0.id ?? "" == articles[indexPath.item].id}),
-           self.articles.count > 0 && (articles.count - position) > 0 && (articles.count - position) <= 3 &&
+           self.articles.count > 0 && (articles.count - position) > 0 && (articles.count - position) <= 6 &&
             !self.isLoadingMoreData && self.prefetchState == .idle {
             reloadNextPage()
         }
