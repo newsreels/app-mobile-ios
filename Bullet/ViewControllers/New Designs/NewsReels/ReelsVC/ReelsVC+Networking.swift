@@ -380,6 +380,7 @@ extension ReelsVC {
 
                         } else {
                             if isRefreshRequired {
+                                self.stopVideo()
                                 self.collectionView.isUserInteractionEnabled = false
                                 self.collectionView.setContentOffset(.zero, animated: false)
                                 self.collectionView.layoutIfNeeded()

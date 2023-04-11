@@ -156,7 +156,7 @@ class SharedManager {
     }
     var reelsAutoPlay: Bool {
         get {
-            return UserDefaults.standard.value(forKey: Constant.UD_isReelsAutoPlay) as? Bool ?? true
+            return UserDefaults.standard.value(forKey: Constant.UD_isReelsAutoPlay) as? Bool ?? false
         }
         set {
             UserDefaults.standard.setValue(newValue, forKey: Constant.UD_isReelsAutoPlay)

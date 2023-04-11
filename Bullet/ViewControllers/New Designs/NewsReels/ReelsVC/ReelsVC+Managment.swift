@@ -63,6 +63,7 @@ extension ReelsVC {
                         }
 
                         if SharedManager.shared.isAppLaunchedThroughNotification {
+                            self.stopVideo()
                             SharedManager.shared.isAppLaunchedThroughNotification = false
                             NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
                         }

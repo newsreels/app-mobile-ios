@@ -83,8 +83,9 @@ extension ReelsVC: ReelsCategoryVCDelegate {
     func reelsCategoryVCDismissed() {}
 
     func loadNewData() {
-//        DataCache.instance.clean(byKey: Constant.CACHE_REELS)
-//        DataCache.instance.clean(byKey: Constant.CACHE_REELS_Follow)
+        DataCache.instance.clean(byKey: Constant.CACHE_REELS)
+        DataCache.instance.clean(byKey: Constant.CACHE_REELS_Follow)
+        stopVideo()
         setUpSelectedCategory()
         currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
         collectionView.setContentOffset(.zero, animated: false)
@@ -881,14 +882,14 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
         }
         // Authors CollectionView
         if let source = reelsArray[currentlyPlayingIndexPath.item].source {
-            
+            stopVideo()
 
             if source.id == controller.currentlyOpenedChannedID {
                 return
             }
             controller.showChannelDetails(source: source)
         } else if let author = reelsArray[currentlyPlayingIndexPath.item].authors {
-            
+            stopVideo()
 
             if author.first?.id == controller.currentlyOpenedAuthorID {
                 return

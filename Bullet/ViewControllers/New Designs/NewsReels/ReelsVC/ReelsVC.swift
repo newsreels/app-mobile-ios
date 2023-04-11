@@ -263,7 +263,10 @@ class ReelsVC: UIViewController {
 
     override func viewWillDisappear(_: Bool) {
         ANLoader.hide()
-
+        DispatchQueue.main.async {
+            self.stopVideo()
+        }
+        stopVideo()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -272,11 +275,9 @@ class ReelsVC: UIViewController {
         NotificationCenter.default.removeObserver(self, name: AVAudioSession.interruptionNotification, object: nil)
         NotificationCenter.default.removeObserver(self)
         DispatchQueue.main.async {
-            if let cell = self.collectionView.cellForItem(at: self.currentlyPlayingIndexPath) as? ReelsCC {
-                cell.player.destroy()
-            }
+            self.stopVideo()
         }
-        
+        stopVideo()
         isViewDidAppear = false
         isViewControllerVisible = false
 

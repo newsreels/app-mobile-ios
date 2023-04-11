@@ -130,6 +130,7 @@ class WebService {
                 }
 
             case let .failure(error):
+                print(error)
                 SharedManager.shared.logAPIError(url: url, error: "", code: "\(response.response?.statusCode ?? 0)")
                 failure(error.localizedDescription)
             }

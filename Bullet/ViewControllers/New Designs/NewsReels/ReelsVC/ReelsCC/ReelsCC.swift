@@ -114,7 +114,7 @@ class ReelsCC: UICollectionViewCell {
 
         loader.isHidden = true
         loader.stopAnimating()
-        player.destroy()
+        pause()
         player.seek(to: .zero)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
@@ -140,14 +140,8 @@ class ReelsCC: UICollectionViewCell {
             case let .error(error):
                 print(error)
             case .loading:
-                DispatchQueue.main.async {
-                    if self.loader.isHidden {
-                        self.loader.isHidden = false
-                    }
-                }
-                break
+                print("loading")
             case let .paused(playing, buffering):
-                print("stopped")
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
                     if self.loader.isHidden == false {
@@ -159,9 +153,10 @@ class ReelsCC: UICollectionViewCell {
             case .playing:
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
-                    self.loader.isHidden = true
-                    self.loader.stopAnimating()
-                    self.imgPlayButton.isHidden = true
+                    if self.loader.isHidden == false {
+                        self.loader.isHidden = true
+                        self.loader.stopAnimating()
+                    }
                     self.play()
                     self.loader.stopAnimating()
                     self.hideLoader()

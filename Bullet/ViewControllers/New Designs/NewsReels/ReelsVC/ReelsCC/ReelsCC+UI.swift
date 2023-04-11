@@ -16,10 +16,8 @@ extension ReelsCC {
         lblAuthor.text = "                    "
         setupUIForSkelton()
         viewContent.backgroundColor = .black
-        if player.state != .playing {
-            loader.isHidden = false
-            loader.startAnimating()
-        }
+        loader.isHidden = true
+        loader.stopAnimating()
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
@@ -70,7 +68,7 @@ extension ReelsCC {
             // Geasture for video like
             if SharedManager.shared.bulletsAutoPlay {
                 player.play(for: url)
-            } 
+            }
 
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
