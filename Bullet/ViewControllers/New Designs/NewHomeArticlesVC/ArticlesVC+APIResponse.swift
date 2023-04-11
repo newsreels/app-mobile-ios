@@ -942,7 +942,6 @@ extension ArticlesVC {
                     return
                 }
                 
-                print("FULL RESPONSE TOPIC = \(FULLResponse.sections)")
                 
                 self.prefetchState = .idle
                 if self.nextPaginate == "" {
@@ -1010,7 +1009,13 @@ extension ArticlesVC {
                             self.startArticleCaching()
                             
                             self.isOpenedFollowingPrefernce = false
-                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                self.isLoadingMoreData = false
+                                if self.isLastCellVisible() {
+                                    self.reloadNextPage()
+                                }
+                                
+                            }
                             self.viewNoData.isHidden = true
                             self.viewEmptyMessage.isHidden = true
                             self.tblExtendedView.isHidden = false
