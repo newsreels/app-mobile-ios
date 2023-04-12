@@ -42,7 +42,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsCC", for: indexPath) as! ReelsCC
 
                 if indexPath.item < reelsArray.count {
-                    cell.setupCell(model: reelsArray[indexPath.item])
+                    cell.setupCell(model: reelsArray[indexPath.item], isFromDiscover: self.isFromDiscover)
                 }
 
                 cell.delegate = self

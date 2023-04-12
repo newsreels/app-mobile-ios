@@ -43,7 +43,7 @@ extension ReelsCC {
     }
     
 
-    func setupCell(model: Reel) {
+    func setupCell(model: Reel, isFromDiscover: Bool) {
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -69,7 +69,10 @@ extension ReelsCC {
             if SharedManager.shared.bulletsAutoPlay {
                 player.play(for: url)
             }
-
+            if !isFromDiscover {
+                pause()
+                player.pause()
+            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
