@@ -154,6 +154,16 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if indexPath != currentlyPlayingIndexPath,
+                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
+                }
+            }
+        }
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
@@ -364,15 +374,15 @@ extension ReelsVC {
             }
         }
         // Stop Old cell
-        if prevsIndex != currentlyPlayingIndexPath {
-            if reelsArray.count == 0 {
-                return
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if indexPath != currentlyPlayingIndexPath,
+                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
+                }
             }
-            if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC {
-                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.player.totalDuration.formatToMilliSeconds())
-            }
-
-            pauseCellVideo(indexPath: prevsIndex)
         }
     }
 }

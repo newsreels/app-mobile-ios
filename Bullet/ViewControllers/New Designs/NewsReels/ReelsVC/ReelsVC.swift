@@ -267,6 +267,15 @@ class ReelsVC: UIViewController {
             self.stopVideo()
         }
         stopVideo()
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
+                }
+            }
+        }
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
