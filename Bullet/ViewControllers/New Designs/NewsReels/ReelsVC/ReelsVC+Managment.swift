@@ -296,7 +296,7 @@ extension ReelsVC {
     }
 
     func adjustCellScrollPostion() {
-        if isCurrentlyScrolling == false {
+        if isCurrentlyScrolling == false, currentlyPlayingIndexPath.item < reelsArray.count {
             collectionView.layoutIfNeeded()
             collectionView.scrollToItem(at: currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
         }

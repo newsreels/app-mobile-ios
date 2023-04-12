@@ -1057,7 +1057,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         let flag = UserDefaults.standard.string(forKey: Constant.UD_languageFlag) ?? ""
         let languageName = UserDefaults.standard.value(forKey: Constant.UD_appLanguageName)
         let langId = SharedManager.shared.languageId
-        
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.logout, eventDescription: "")
 //        SharedManager.shared.isViewArticleSourceNotification = false
         SharedManager.shared.isAppLaunchedThroughNotification = false

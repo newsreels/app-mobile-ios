@@ -43,7 +43,7 @@ extension ReelsCC {
     }
     
 
-    func setupCell(model: Reel, isFromDiscover: Bool) {
+    func setupCell(model: Reel, fromMain: Bool) {
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -69,7 +69,7 @@ extension ReelsCC {
             if SharedManager.shared.bulletsAutoPlay {
                 player.play(for: url)
             }
-            if !isFromDiscover {
+            if fromMain {
                 pause()
                 player.pause()
             }

@@ -68,6 +68,7 @@ class ReelsVC: UIViewController {
     var isShowingProfileReels = false
     var isFromChannelView = false
     var isFromDiscover = false
+    var isFromArticles = false
     var userSelectedIndexPath = IndexPath(item: 0, section: 0)
     var authorID = ""
     var scrollToItemFirstTime = false
@@ -140,7 +141,7 @@ class ReelsVC: UIViewController {
             }
         }
 
-        if SharedManager.shared.reloadRequiredFromTopics && !isFromDiscover {
+        if SharedManager.shared.reloadRequiredFromTopics && !isFromArticles && !isFromDiscover {
             setRefresh(scrollView: collectionView, manual: true)
             SharedManager.shared.reloadRequiredFromTopics = false
         } else {

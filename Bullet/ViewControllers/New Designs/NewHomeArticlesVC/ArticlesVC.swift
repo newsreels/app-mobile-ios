@@ -2886,6 +2886,7 @@ extension ArticlesVC: HomeCardCellDelegate, YoutubeCardCellDelegate, VideoPlayer
             updateProgressbarStatus(isPause: true)
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             if let reels = content.suggestedReels {
                 vc.reelsArray = reels

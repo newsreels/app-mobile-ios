@@ -142,6 +142,9 @@ class ReelsCC: UICollectionViewCell {
             case .loading:
                 print("loading")
             case let .paused(playing, buffering):
+                if self.player.pausedReason == .waitingKeepUp {
+                    print("")
+                }
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
                     if self.loader.isHidden == false {

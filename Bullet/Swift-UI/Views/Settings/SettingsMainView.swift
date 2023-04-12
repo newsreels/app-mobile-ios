@@ -191,6 +191,7 @@ struct SettingsMainview: View {
         SettingsSectionView {
             VStack {
                 HStack (spacing: 16){
+                    
                     if let user = user {
                         AppURLImage(user.profile_image ?? "")
                             .frame(width: 56, height: 56)
@@ -235,7 +236,7 @@ struct SettingsMainview: View {
                     .padding(.leading, 70)
                 
                 
-                    if !SharedManager.shared.isGuestUser {
+                if user?.isGuest == false {
                         SettingsRowView(settings: .normal(title: NSLocalizedString("View and Edit Your Profile", comment: "")), showDivider: false) {
                             settings.isActive = true
                             settings.destinationView = AnyView(ProfileView())
@@ -323,12 +324,13 @@ struct SettingsMainview: View {
                     //                    }, isInSettings: true).navigationBarHidden(true))
                 }
                 
-                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
-                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
-                    SharedManager.shared.bulletsAutoPlay = value
-                    self.performWSToUpdateConfigView()
-                    
-                })))
+//                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
+//                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
+//                    SharedManager.shared.bulletsAutoPlay = value
+//                    self.performWSToUpdateConfigView()
+//
+//                })))
+                
                 //                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Reader Mode", comment: ""), value: $readerMode.onChange({ value in
                 //                    UserDefaults.standard.set(value, forKey: Constant.UD_isReaderMode)
                 //                    SharedManager.shared.readerMode = value
@@ -369,11 +371,7 @@ struct SettingsMainview: View {
                     SwiftUIManager.shared.setObserver(name: .SwiftUIGoToBlockList, object: nil)
                     
                 }
-                if SharedManager.shared.isGuestUser {
-                    SettingsRowView(settings: .normal(iconName: "login_ic", title: NSLocalizedString("Login", comment: "")), showDivider: false) {
-                        NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
-                    }
-                } else {
+                if user?.isGuest == false {
                     SettingsRowView(settings: .normal(iconName: "logout_ic", title: NSLocalizedString("Logout", comment: "")), showDivider: false) {
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.logoutClick)
                         
@@ -400,6 +398,14 @@ struct SettingsMainview: View {
                                 
                                 if FULLResponse.message?.lowercased() == "success" {
                                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                                    self.user = nil
+                                    
+                                    let emptyUser = UserProfile()
+                                    let encoder = JSONEncoder()
+                                    if let encoded = try? encoder.encode(emptyUser) {
+                                        SharedManager.shared.userDetails = encoded
+                                    }
+                                    
                                     appDelegate.newLogout()
                                 }
                                 
@@ -415,6 +421,10 @@ struct SettingsMainview: View {
                             Utilities.hideLoader()
                             print("error parsing json objects",error)
                         }
+                    }
+                } else   {
+                    SettingsRowView(settings: .normal(iconName: "login_ic", title: NSLocalizedString("Login", comment: "")), showDivider: false) {
+                        NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                     }
                 }
             }

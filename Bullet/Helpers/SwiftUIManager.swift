@@ -61,7 +61,6 @@ class SwiftUIManager {
             vc.isBackButtonNeeded = true
             vc.modalPresentationStyle = .overFullScreen
             vc.reelsArray = reels
-             
             vc.isFromDiscover = true
 //            vc.authorID = reel.authors?.first?.id ?? ""
             vc.scrollToItemFirstTime = true
