@@ -36,7 +36,6 @@ class GMView: UIView {
     @IBInspectable var lineWidth: CGFloat = 7 {
         willSet
         {
-            print("value is about to change")
         }
         didSet
         {

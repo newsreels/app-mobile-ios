@@ -10,25 +10,40 @@ import UIKit
 import AVFoundation
 
 extension ReelsCC {
-    func cellLayoutUpdate() {
-        if (reelModel?.captions?.count ?? 0) > 0 {
-            viewBottomFooter.isHidden = true
-            viewBottomTitleDescription.isHidden = true
-
-            currTime = -1
-            loadCaptions(time: 0)
+    func setupViews() {
+        lblSeeMore.text = "                 "
+        lblChannelName.text = "                    "
+        lblAuthor.text = "                    "
+        setupUIForSkelton()
+        viewContent.backgroundColor = .black
+        loader.isHidden = true
+        loader.stopAnimating()
+        imgVolume.image = nil
+        lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
+        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
+        player.seek(to: .zero)
+        if SharedManager.shared.bulletsAutoPlay {
+            player.isHidden = false
         } else {
-            if reelModel?.captionAPILoaded ?? false {
-                viewBottomFooter.isHidden = false
-                viewBottomTitleDescription.isHidden = false
-            } else {
-                viewBottomFooter.isHidden = true
-                viewBottomTitleDescription.isHidden = true
-            }
+            player.isHidden = true
+        }
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
+        lblChannelName.addGestureRecognizer(tapGestureRecognizer)
+        lblChannelName.isUserInteractionEnabled = true
+        viewBottomFooter.isHidden = false
+        btnUserPlus.layer.cornerRadius = 8
+        btnUserPlus.borderWidth = 0.5
+        btnUserPlus.borderColor = .white
+        btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        btnUserPlus.layer.masksToBounds = true
+        btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
+        player.playToEndTime = {
+            self.delegate?.videoPlayingFinished(cell: self)
         }
     }
+    
 
-    func setupCell(model: Reel) {
+    func setupCell(model: Reel, fromMain: Bool) {
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -46,7 +61,6 @@ extension ReelsCC {
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
 
-        imgChannel.image = nil
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
@@ -55,9 +69,10 @@ extension ReelsCC {
             if SharedManager.shared.bulletsAutoPlay {
                 player.play(for: url)
             }
-            pause()
-            player.pause()
-
+            if fromMain {
+                pause()
+                player.pause()
+            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
@@ -117,7 +132,6 @@ extension ReelsCC {
 
         currTime = -1
         currTime = -1
-        cellLayoutUpdate()
     }
     
     func setImage() {
@@ -148,7 +162,8 @@ extension ReelsCC {
     }
     
     func setFollowButton(hidden: Bool) {
-        imgUserPlus.isHidden = hidden
+        //todo: change follow text
+
     }
 
     func setLikeComment(model: Info?, showAnimation: Bool) {
@@ -157,12 +172,12 @@ extension ReelsCC {
         lblCommentCount.minimumScaleFactor = 0.5
 
         if (reelModel?.info?.isLiked ?? false) == false {
-            imgLike.isHighlighted = false
+            imgLike.image = UIImage(named: "newLikeIC")
         } else {
             if showAnimation {
                 startLikeAnimation()
             } else {
-                imgLike.isHighlighted = true
+                imgLike.image = UIImage(named: "newLikedIC")
             }
         }
     }
@@ -206,7 +221,6 @@ extension ReelsCC {
                 self.delegate?.didTapHashTag(cell: self, text: string)
             }
         }
-        print("Reels text", newsDescription)
     }
     
     func setupUIForSkelton() {
@@ -270,15 +284,17 @@ extension ReelsCC {
             setFollowButton(hidden: source.favorite ?? false)
             lblChannelName.text = source.name?.capitalized ?? ""
             imgUser.sd_setImage(with: URL(string: source.icon ?? ""), placeholderImage: UIImage(named: MyThemes.current == .dark ? "icn_profile_placeholder_dark" : "icn_profile_placeholder_light"))
+            
         } else {
             setFollowButton(hidden: reelModel?.authors?.first?.favorite ?? false)
             lblChannelName.text = reelModel?.authors?.first?.username ?? reelModel?.authors?.first?.name ?? ""
             imgUser.sd_setImage(with: URL(string: reelModel?.authors?.first?.image ?? ""), placeholderImage: UIImage(named: MyThemes.current == .dark ? "icn_profile_placeholder_dark" : "icn_profile_placeholder_light"))
+            
         }
 
         let author = reelModel?.authors?.first?.username ?? reelModel?.authors?.first?.name ?? ""
         let source = reelModel?.source?.name ?? ""
-
+        
         if author == source || author == "" {
             lblAuthor.isHidden = true
             lblChannelName.text = source
@@ -299,10 +315,12 @@ extension ReelsCC {
         setSeeMoreLabel()
         descriptionView.isHidden = true
         lblSeeMore.isHidden = true
+        viewBottomTitleDescription.isHidden = true
         if let type = reelModel?.mediaMeta?.type {
             if type == "fastreel", let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle == true {
                     lblSeeMore.isHidden = nativeTitle
+                    viewBottomTitleDescription.isHidden = nativeTitle
                     authorBottomConstraint?.constant = -25
                     descriptionView.isHidden = !nativeTitle
                     lblDescriptionAbove.text = newsDescription.uppercased()
@@ -310,18 +328,21 @@ extension ReelsCC {
             } else if type == "reel", let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle == true {
                     lblSeeMore.isHidden = !nativeTitle
+                    viewBottomTitleDescription.isHidden = !nativeTitle
                     authorBottomConstraint?.constant = 0
                     descriptionView.isHidden = nativeTitle
                 }
             } else {
                 authorBottomConstraint?.constant = -25
                 lblSeeMore.isHidden = true
+                viewBottomTitleDescription.isHidden = true
                 descriptionView.isHidden = true
             }
         } else {
             if let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle {
                     lblSeeMore.isHidden = !nativeTitle
+                    viewBottomTitleDescription.isHidden = !nativeTitle
                     authorBottomConstraint?.constant = 0
                 } else if !nativeTitle {
                     authorBottomConstraint?.constant = -25
@@ -351,7 +372,7 @@ extension ReelsCC {
 
             self.imgLike.transform = self.transform.scaledBy(x: newScale, y: newScale)
 
-            self.imgLike.isHighlighted = true
+            self.imgLike.image = UIImage(named: "newLikedIC")
 
         }, completion: { _ in
 

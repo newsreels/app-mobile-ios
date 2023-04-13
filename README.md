@@ -21,4 +21,11 @@ rm *.o; rm *.d; rm *.dia; rm *.swiftdeps~; rm *.swiftdeps
 4- downgrade XCode to 14.2 or lower.
 5- make sure you using the same pods I uploaded without making "pod install" or any modification.
 
-if non of these work try to reinstall XCode (14.2 or lower).
+if non of these work:
+Delete Xcode from Applications Folder and Empty Trash.
+
+Go to ~/Library/Developer and Delete CoreSimulator, Xcode, XCTestDevices Folder. Empty trash
+
+Goto ~/Library/Caches and delete everything starting with com.apple.dt.Xcode, Empty trash
+
+Then Restart your Mac and reinstall Xcode.

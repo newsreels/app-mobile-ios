@@ -2053,7 +2053,7 @@ extension ProfileArticlesVC: HomeCardCellDelegate, YoutubeCardCellDelegate, Vide
 //        self.present(vc, animated: true, completion: nil)
         
         let vc = BulletDetailsVC.instantiate(fromAppStoryboard: .Home)
-        vc.isRelatedArticletNeeded = true
+        vc.isRelatedArticletNeeded = false
         vc.isFromPostArticle = true
         vc.selectedArticleData = content
         vc.delegate = self
@@ -2128,7 +2128,7 @@ extension ProfileArticlesVC: HomeCardCellDelegate, YoutubeCardCellDelegate, Vide
 //        self.present(vc, animated: true, completion: nil)
         
         let vc = BulletDetailsVC.instantiate(fromAppStoryboard: .Home)
-        vc.isRelatedArticletNeeded = true
+        vc.isRelatedArticletNeeded = false
         vc.isFromPostArticle = true
         vc.selectedArticleData = content
         vc.channelInfo = self.channelInfo
@@ -3832,4 +3832,5 @@ extension ProfileArticlesVC {
     }
     
 }
+
 

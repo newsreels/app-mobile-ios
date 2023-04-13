@@ -42,8 +42,7 @@ final class NetworkOperation: AsyncOperation {
     }
     
     @objc func handleChangeInNetworkConnection() {
-        print("Log || Operation resumed")
-        self.attemptRequest()
+         self.attemptRequest()
         NotificationCenter.default.removeObserver(self)
     }
 

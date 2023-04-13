@@ -84,8 +84,7 @@ class MediaWatermark: NSObject {
             
             
             
-            print("videoSize--\(videoSize)")
-            let parentLayer = CALayer()
+             let parentLayer = CALayer()
             
             let videoLayer = CALayer()
             
@@ -191,7 +190,6 @@ class MediaWatermark: NSObject {
                             let videoAsset1 = AVAsset(url: outputURL!)
                             
                             guard let path = Bundle.main.path(forResource: SharedManager.shared.isReelsVideo ? "appLogo" : "appLogoPortrait", ofType:"mp4") else {
-                                //   debugPrint("video not found")
                                 
                                 SharedManager.shared.isReelsVideo = false
                                 return
@@ -355,8 +353,7 @@ class MediaWatermark: NSObject {
                         if completed {
                             
                             completionHandler(true)
-                            print("Video is saved!")
-                        }
+                         }
                         else {
                             
                             completionHandler(false)

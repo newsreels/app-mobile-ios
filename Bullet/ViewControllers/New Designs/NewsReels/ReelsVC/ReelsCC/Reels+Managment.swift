@@ -16,7 +16,6 @@ extension ReelsCC {
 
     func play() {
         setImage()
-
         if let url = URL(string: reelModel?.media ?? "") {
             player.play(for: url)
             if SharedManager.shared.isAudioEnableReels == false {
@@ -30,7 +29,6 @@ extension ReelsCC {
     }
 
     func stopVideo() {
-        print("Stop Video called")
         removeAllCaptions()
 
         if SharedManager.shared.reelsAutoPlay == false {
@@ -44,7 +42,6 @@ extension ReelsCC {
         setSeeMoreLabel()
 
         currTime = -1
-        cellLayoutUpdate()
     }
 
     func PauseVideo() {

@@ -11,8 +11,7 @@ import UIKit
 internal extension CGContext {
     func mask(with option: FillOption) -> CGImage? {
         guard let image = makeImage() else {
-            print("******** WARNING (MaskedLabel): Unable to create image from graphics context")
-            return nil
+             return nil
         }
         
         switch option {
@@ -33,8 +32,7 @@ internal extension CGContext {
                                         colorComponents: components,
                                         locations: locations,
                                         count: components.count / 4) else {
-                                            print("******** WARNING (MaskedLabel): Unable to create gradient from gradient colors")
-                                            return
+                                             return
         }
         
         drawLinearGradient(gradient, start: startPoint, end: endPoint, options: CGGradientDrawingOptions(rawValue: 0))
@@ -58,8 +56,7 @@ internal extension CGContext {
                                     provider: dataProvider,
                                     decode: image.decode,
                                     shouldInterpolate: true) else {
-                                        print("******** WARNING (MaskedLabel): Unable to create image mask from graphics context")
-                                        return nil
+                                         return nil
         }
         
         return imageMask

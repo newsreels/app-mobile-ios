@@ -77,8 +77,7 @@ class AppNavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         
         if showDarkStatusBar {
-            print("statusbar dark")
-            if #available(iOS 13.0, *) {
+             if #available(iOS 13.0, *) {
                 return .darkContent
             } else {
                 // Fallback on earlier versions
@@ -87,8 +86,7 @@ class AppNavigationController: UINavigationController {
             
         }
         else {
-            print("statusbar light")
-            if #available(iOS 13.0, *) {
+             if #available(iOS 13.0, *) {
     //            if SharedManager.shared.tabBarIndex == 0 || SharedManager.shared.tabBarIndex == 1 || SharedManager.shared.tabBarIndex == 3 {
     //                return .lightContent
     //            }

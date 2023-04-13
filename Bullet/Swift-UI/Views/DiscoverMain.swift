@@ -91,8 +91,7 @@ struct DiscoverMain: View {
             LanguageHelper.shared.performWSToUpdateUserContentLanguages(isPrimary: notif.object as? Bool ?? true) {
                 SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.shared.getSavedLanguage()?.id ?? "", isRefreshedToken: true, completionHandler: { status in
                     if status {
-                        print("language updated successfully")
-                        searchViewModel.getDiscover()
+                         searchViewModel.getDiscover()
 
                     } else {
                         print("language updated failed")

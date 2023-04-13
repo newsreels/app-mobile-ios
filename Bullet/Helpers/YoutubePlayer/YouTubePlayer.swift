@@ -362,8 +362,7 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
 
                 break
             case .onUpdateCurrentTime: 
-//                print("onUpdateCurrentTime", data ?? "")
-                updateMute()
+                 updateMute()
                 self.delegate?.playerUpdateCurrentTime(self, time: data ?? "")
             }
         }
@@ -398,5 +397,4 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
 
 private func printLog(_ strings: CustomStringConvertible...) {
     let toPrint = ["[YouTubePlayer]"] + strings
-    print(toPrint, separator: " ", terminator: "\n")
-}
+ }

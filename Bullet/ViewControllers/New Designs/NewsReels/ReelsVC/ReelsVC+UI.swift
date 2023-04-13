@@ -233,6 +233,7 @@ extension ReelsVC {
         } else {
             allCaughtUpView.isHidden = true
         }
+
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -274,6 +275,10 @@ extension ReelsVC {
         scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.35, repeats: false) { [weak self] _ in
             // The timer has fired, do something here (e.g. enable scrolling)
             self?.view.isUserInteractionEnabled = true
+        }
+        
+        if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
         }
     }
 
@@ -350,8 +355,7 @@ extension ReelsVC {
             let translation = panGesture.translation(in: view)
             let x = translation.x // max(translation.x, 0)
 
-            print("UIPanGestureRecognizer translation x", -x)
-            slideViewHorizontalTo(x, reset: false)
+             slideViewHorizontalTo(x, reset: false)
 
         default:
 

@@ -95,8 +95,7 @@ extension PHCachingImageManager {
         requestImage(for: asset, targetSize: PHImageManagerMaximumSize,
 					 contentMode: .aspectFill, options: options) { result, info in
             guard let image = result else {
-                print("No Result 🛑")
-                return
+                 return
             }
             DispatchQueue.main.async {
                 let isLowRes = (info?[PHImageResultIsDegradedKey] as? Bool) ?? false

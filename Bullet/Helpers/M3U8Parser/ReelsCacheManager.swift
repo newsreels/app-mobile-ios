@@ -25,11 +25,7 @@ class ReelsCacheManager {
     static let shared = ReelsCacheManager()
     static let webServer = GCDWebServer()
     let queue = DispatchQueue(label: "serial")
-    private init(){
-        //        queue.name = "com.reelscache.serial"
-        //        queue.qualityOfService = .background
-        //        queue.maxConcurrentOperationCount = 1
-    }
+
     weak var delegate: ReelsCacheManagerDelegate?
     var reelsArray: [Reel]!
     var chunkList = [String]()
@@ -151,6 +147,8 @@ class ReelsCacheManager {
                                                     in: .userDomainMask)[0].path
             webServer.addGETHandler(forBasePath: "/", directoryPath: pathM3U8, indexFilename: nil, cacheAge: 0, allowRangeRequests: true)
             do {
+                GCDWebServer.setLogLevel(4)
+
                 try webServer.start(options: [
                     "Port": 9090,
                     "BindToLocalhost": true
@@ -159,8 +157,7 @@ class ReelsCacheManager {
             } catch {
                 // handle error
             }
-            print("Visit \(webServer.serverURL?.absoluteString) in your web browser")
-            
+             
 //            if webServer.serverURL?.absoluteString == nil {
 //                ReelsCacheManager.shared.webServerHost = "http://localhost:9090/"
 //            }else{
@@ -213,8 +210,7 @@ class ReelsCacheManager {
                 let filePathName = "\(documentsHLSFilesPath)/\(fileToDelete)"
                 try fileManager.removeItem(atPath: filePathName)
                 let files = try fileManager.contentsOfDirectory(atPath: "\(documentsHLSFilesPath)")
-                print("all hls files in cache after deleting images: \(files)")
-            }
+             }
             if let documentsM3U8FilesPath = documentsM3U8FilesPath
             {
                 
@@ -224,12 +220,10 @@ class ReelsCacheManager {
                 try fileManager.removeItem(atPath: filePathName)
                 
                 let fileNames = try fileManager.contentsOfDirectory(atPath: "\(documentsM3U8FilesPath)")
-                print("all m3u8 files in cache: \(fileNames)")
-            }
+             }
             
             completion(0)
         } catch {
-            print("Could not clear temp folder: \(error)")
-        }
+         }
     }
 }
