@@ -5591,6 +5591,7 @@ extension ArticlesVC: sugClvReelsCCDelegate, HomeClvHeadlineCCDelegate, HomeHero
             
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             vc.reelsArray = reelsArray
             reelsArray.map({print("REELEHEHE = \($0)")})
@@ -6072,6 +6073,7 @@ extension ArticlesVC: HomeReelCarouselCCDelegate, HomeVideoCarouselCCDelegate, R
                         
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             if let reels = articles[indexPath.row].suggestedReels {
                 vc.reelsArray = reels
