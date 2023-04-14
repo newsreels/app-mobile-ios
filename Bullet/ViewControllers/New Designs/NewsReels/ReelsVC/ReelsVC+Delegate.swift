@@ -708,7 +708,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
                         }
 
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
-
+                        SharedManager.shared.performWSDurationAnalytics(reelId: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
 
                         self.playNextCellVideo(indexPath: nextIndexPath)
