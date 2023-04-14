@@ -210,6 +210,7 @@ class ArticlesVC: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var menuView: UIView!
     @IBOutlet var backWidthConst: NSLayoutConstraint!
     var isOpenedFollowingPrefernce = false
+    var isLoadingMoreData = false
     var fromDiscover: Bool = false
     var fromFollowing: Bool = false
     var contextID: String? = ""
@@ -862,12 +863,7 @@ class ArticlesVC: UIViewController, UIGestureRecognizerDelegate {
        }
        
        reachabilitySwift.whenReachable = { reachability in
-           
-           if reachability.connection == .wifi {
-               print("reachability Reachable via WiFi")
-           } else {
-               print("reachability Reachable via Cellular")
-           }
+       
            if self.isNoInternet{
                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
                    self.loadNewData()
@@ -1671,20 +1667,21 @@ extension ArticlesVC {
             focussedIndexPath = 0
             nextPaginate = ""
         }
-        
-        if pagingLoader.isAnimating {
+        DispatchQueue.main.async {
+            if self.pagingLoader.isAnimating {
             
-            self.pagingLoader.stopAnimating()
-            self.pagingLoader.hidesWhenStopped = true
+                self.pagingLoader.stopAnimating()
+                self.pagingLoader.hidesWhenStopped = true
+            
         }
-        pagingLoader.theme_color = GlobalPicker.activityViewColor
-        pagingLoader.startAnimating()
-        pagingLoader.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tblExtendedView.bounds.width, height: CGFloat(62))
+            self.pagingLoader.theme_color = GlobalPicker.activityViewColor
+            self.pagingLoader.startAnimating()
+            self.pagingLoader.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tblExtendedView.bounds.width, height: CGFloat(62))
         
-        self.tblExtendedView.tableFooterView = pagingLoader
+            self.tblExtendedView.tableFooterView = self.pagingLoader
         self.tblExtendedView.tableFooterView?.isHidden = false
         
-        
+        }
         //Normal API call
         if self.showArticleType != .topic && self.showArticleType != .places {
             
@@ -1841,16 +1838,17 @@ extension ArticlesVC {
 
    func removeDuplicateElements(feeds: [sectionsData]) -> [sectionsData] {
         var arrFeedFiltered = [sectionsData]()
-        for feed in feeds {
-            if !arrFilteredSections.contains(where: {$0.data?.header == feed.data?.header}) {
-                arrFilteredSections.append(feed)
-                arrFeedFiltered.append(feed)
-            }else{
-                arrFilteredSections.removeAll()
-                _ = removeDuplicateElements(feeds: feeds)
-            }
-        }
-        return arrFeedFiltered
+//        for feed in feeds {
+//            if !arrFilteredSections.contains(where: {$0.data?.header == feed.data?.header}) {
+//                arrFilteredSections.append(feed)
+//                arrFeedFiltered.append(feed)
+//            }else{
+//                arrFilteredSections.removeAll()
+//                _ = removeDuplicateElements(feeds: feeds)
+//            }
+//        }
+       
+        return feeds
     }
     
     func removeDuplicateElementsForCategory(feeds: [sectionsData]) -> [sectionsData] {
@@ -1880,6 +1878,7 @@ extension ArticlesVC {
 //            arrFilteredSections.removeAll()
 //            arrFeedFiltered = removeDuplicateElements(feeds: arrFeed)
 //        }
+        print(arrFeedFiltered)
             for (_, dictData) in arrFeedFiltered.enumerated() {
                 
                 let feedType = dictData.type?.uppercased() ?? ""
@@ -2050,9 +2049,9 @@ extension ArticlesVC {
 
         //append array
         let articlesPrevCount = self.articles.count
-        
-        self.articles += arrArticles
-        
+        self.articles.append(contentsOf: arrArticles)
+        print(arrArticles.count)
+        print(self.articles.count)
 //        if fromDiscover {
 //            self.articles = self.articles.filter({$0.id == contextID})
 //        }
@@ -2887,6 +2886,7 @@ extension ArticlesVC: HomeCardCellDelegate, YoutubeCardCellDelegate, VideoPlayer
             updateProgressbarStatus(isPause: true)
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             if let reels = content.suggestedReels {
                 vc.reelsArray = reels
@@ -3223,16 +3223,11 @@ extension ArticlesVC: UITableViewDelegate, UITableViewDataSource {
         print("Pre loading... index", indexPath.item)
         print("Pre loading... arrayCount", self.articles.count)
         
-        if self.articles.count > 0 && indexPath.item >= self.articles.count / 2 {
-            
-            cacheOffset += 10
-            if self.prefetchState == .idle {
-                
-                print("Pre loading... Called")
-                guard self.prefetchState == .idle && !isPullToRefresh && !(self.nextPaginate.isEmpty) else { return }
-                self.prefetchState = .fetching
-                self.getRefreshArticlesData()
-            }
+        
+        if let position = articles.firstIndex(where: {$0.id ?? "" == articles[indexPath.item].id}),
+           self.articles.count > 0 && (articles.count - position) > 0 && (articles.count - position) <= 6 &&
+            !self.isLoadingMoreData && self.prefetchState == .idle {
+            reloadNextPage()
         }
         print("LOADDD EWA!")
         if !articles.isEmpty{
@@ -3242,6 +3237,7 @@ extension ArticlesVC: UITableViewDelegate, UITableViewDataSource {
 
         cellHeights[indexPath] = cell.frame.size.height
     }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -4567,6 +4563,8 @@ extension ArticlesVC: UIScrollViewDelegate, UICollectionViewDelegate {
                     
 
         }
+        
+
     }
     
     func showBottomTabWhenTopVisible() {
@@ -4651,7 +4649,14 @@ extension ArticlesVC: UIScrollViewDelegate, UICollectionViewDelegate {
         }
     }
     
-    
+    func reloadNextPage() {
+        cacheOffset += 10
+        print("Pre loading... Called")
+        guard self.prefetchState == .idle && !self.isPullToRefresh && !(self.nextPaginate.isEmpty) else { return }
+        self.isLoadingMoreData = true
+        self.prefetchState = .fetching
+        self.getRefreshArticlesData()
+    }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         
         lastContentOffset = scrollView.contentOffset.y
@@ -4662,14 +4667,34 @@ extension ArticlesVC: UIScrollViewDelegate, UICollectionViewDelegate {
         if !isPullToRefresh {
             updateProgressbarStatus(isPause: true)
         }
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let visibleHeight = scrollView.frame.height
+        
+        if offsetY + visibleHeight >= contentHeight &&
+                !self.isLoadingMoreData && self.prefetchState == .idle {
+            reloadNextPage()
+            
+        
+        }
     }
-    
+    func isLastCellVisible() -> Bool {
+        guard let tableView = tblExtendedView else { return false } // Replace `tableView` with your own table view property
+        
+        if let lastVisibleIndexPath = tableView.indexPathsForVisibleRows?.last,
+            lastVisibleIndexPath.row == tableView.numberOfRows(inSection: 0) - 1 {
+            return true
+        }
+        return false
+    }
+
     func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
 
         ////print("scrollViewWillBeginDecelerating")
         if !isPullToRefresh {
             updateProgressbarStatus(isPause: true)
         }
+
     }
 
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -5566,6 +5591,7 @@ extension ArticlesVC: sugClvReelsCCDelegate, HomeClvHeadlineCCDelegate, HomeHero
             
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             vc.reelsArray = reelsArray
             reelsArray.map({print("REELEHEHE = \($0)")})
@@ -6047,6 +6073,7 @@ extension ArticlesVC: HomeReelCarouselCCDelegate, HomeVideoCarouselCCDelegate, R
                         
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.isBackButtonNeeded = true
+            vc.isFromArticles = true
             vc.modalPresentationStyle = .overFullScreen
             if let reels = articles[indexPath.row].suggestedReels {
                 vc.reelsArray = reels

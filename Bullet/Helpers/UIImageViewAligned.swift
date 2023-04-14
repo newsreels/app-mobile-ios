@@ -141,8 +141,7 @@ open class UIImageViewAligned: UIImageView {
     public private(set) var realImageView: UIImageView?
     var doOnce: () -> Void = {
         // The side effect that should only happen once
-        print("Running once, I hope")
-
+  
 
 
         // A dummy function that's evaluated every time we're accessed

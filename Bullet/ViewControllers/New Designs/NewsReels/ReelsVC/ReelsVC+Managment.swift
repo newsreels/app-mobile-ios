@@ -6,13 +6,13 @@
 //  Copyright © 2023 Ziro Ride LLC. All rights reserved.
 //
 
+import DataCache
 import GSPlayer
 import UIKit
-import DataCache
 
 extension ReelsVC {
     func setReels() {
-        if !isSugReels && isShowingProfileReels == false && isFromChannelView == false {
+        if !isSugReels, isShowingProfileReels == false, isFromChannelView == false {
             // do something in background
             let killTime = SharedManager.shared.refreshReelsOnKillApp ?? Date()
             let interval = Date().timeIntervalSince(killTime)
@@ -113,17 +113,14 @@ extension ReelsVC {
                 self.currentlyPlayingIndexPath = self.userSelectedIndexPath
                 self.sendVideoViewedAnalyticsEvent()
 
-                print("REELS AUTO PLAY EWA 2= \(SharedManager.shared.reelsAutoPlay)")
-
                 if SharedManager.shared.reelsAutoPlay {
                     self.playCurrentCellVideo()
                 }
             }
         }
     }
-    
+
     func setupNotification() {
-        
         NotificationCenter.default.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(appWillLoadForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -134,16 +131,12 @@ extension ReelsVC {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationToReelsView, object: nil)
-
-    
     }
 }
 
 extension ReelsVC {
     func pauseCellVideo(indexPath: IndexPath?) {
         if let indexPath = indexPath, let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-            print("video paused index after", indexPath.item)
-
             cell.stopVideo()
         }
     }
@@ -161,8 +154,16 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
-        getCaptionsFromAPI()
-
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if indexPath != currentlyPlayingIndexPath,
+                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
+                }
+            }
+        }
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
@@ -180,12 +181,9 @@ extension ReelsVC {
     }
 
     func playCurrentCellVideo() {
-        getCaptionsFromAPI()
-
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            print("video played at index", currentlyPlayingIndexPath)
             if cell.player.state != .playing {
                 DispatchQueue.main.async {
                     cell.loader.isHidden = false
@@ -200,7 +198,6 @@ extension ReelsVC {
             }
 
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
-            print("video played at index", currentlyPlayingIndexPath)
             cell.fetchAds(viewController: self)
         }
 
@@ -299,14 +296,12 @@ extension ReelsVC {
     }
 
     func adjustCellScrollPostion() {
-        if isCurrentlyScrolling == false {
+        if isCurrentlyScrolling == false, currentlyPlayingIndexPath.item < reelsArray.count {
             collectionView.layoutIfNeeded()
             collectionView.scrollToItem(at: currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
         }
     }
-
 }
-
 
 extension ReelsVC {
     func callWebsericeToGetNextVideos() {
@@ -316,7 +311,7 @@ extension ReelsVC {
             }
         }
     }
-    
+
     func getCaptionsFromAPI() {
         if reelsArray.count < currentlyPlayingIndexPath.item || reelsArray.count == 0 {
             return
@@ -370,7 +365,6 @@ extension ReelsVC {
         }
 
         if newIndexDetected == false {
-            print("index not detected, last index is,", currentlyPlayingIndexPath)
             if let cell = collectionView.visibleCells.first, let indexPath = collectionView.indexPath(for: cell) {
                 currentlyPlayingIndexPath = indexPath
                 if SharedManager.shared.reelsAutoPlay {
@@ -380,15 +374,15 @@ extension ReelsVC {
             }
         }
         // Stop Old cell
-        if prevsIndex != currentlyPlayingIndexPath {
-            if reelsArray.count == 0 {
-                return
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if indexPath != currentlyPlayingIndexPath,
+                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
+                }
             }
-            if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC {
-                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.player.totalDuration.formatToMilliSeconds())
-            }
-
-            pauseCellVideo(indexPath: prevsIndex)
         }
     }
 }

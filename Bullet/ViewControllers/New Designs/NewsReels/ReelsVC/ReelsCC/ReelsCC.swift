@@ -66,15 +66,14 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var lblChannelName: UILabel!
     @IBOutlet var lblAuthor: UILabel!
     @IBOutlet var btnAuthor: UIButton!
-    @IBOutlet var imgChannel: UIImageView!
     @IBOutlet var imgPlayButton: UIImageView!
     @IBOutlet var imgLikeAnimation: UIImageView!
     @IBOutlet var viewPlayButton: UIView!
     @IBOutlet var viewUser: UIView!
     @IBOutlet var imgUser: UIImageView!
-    @IBOutlet var imgUserPlus: UIImageView!
     @IBOutlet var btnUserPlus: UIButton!
-    @IBOutlet var btnUserView: UIButton!
+    @IBOutlet weak var followStack: UIStackView!
+    @IBOutlet weak var btnUserPlusWidth: NSLayoutConstraint!
     @IBOutlet var viewSubTitle: UIView!
     @IBOutlet var cSeeAutherStacViewHeight: NSLayoutConstraint!
     @IBOutlet var imgThumbnailView: CustomImageView!
@@ -87,7 +86,6 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imageMoreOptions: UIImageView!
     @IBOutlet var viewSound: UIView!
     @IBOutlet var imgSound: UIImageView!
-    @IBOutlet var gradientView: UIView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
     var currTime = -1.0
@@ -108,26 +106,7 @@ class ReelsCC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        lblSeeMore.text = "                 "
-        lblChannelName.text = "                    "
-        lblAuthor.text = "                    "
-        setupUIForSkelton()
-        viewContent.backgroundColor = .black
-        loader.isHidden = true
-        loader.stopAnimating()
-        imgVolume.image = nil
-        lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
-        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-        player.seek(to: .zero)
-        if SharedManager.shared.bulletsAutoPlay {
-            player.isHidden = false
-        } else {
-            player.isHidden = true
-        }
-
-        player.playToEndTime = {
-            self.delegate?.videoPlayingFinished(cell: self)
-        }
+        setupViews()
     }
     
     override func prepareForReuse() {
@@ -137,8 +116,6 @@ class ReelsCC: UICollectionViewCell {
         loader.stopAnimating()
         pause()
         player.seek(to: .zero)
-        viewBottomFooter.isHidden = true
-        viewBottomTitleDescription.isHidden = true
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
         }
@@ -146,7 +123,6 @@ class ReelsCC: UICollectionViewCell {
         lblChannelName.text = "                    "
         lblAuthor.text = "                    "
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
-        btnUserView.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
         hideLoader()
         ANLoader.hide()
     }
@@ -154,7 +130,6 @@ class ReelsCC: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         setDescriptionLabel()
-
         player.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
         player.backgroundColor = .clear
         imgThumbnailView.isHidden = false
@@ -163,11 +138,13 @@ class ReelsCC: UICollectionViewCell {
             case .none:
                 print("none")
             case let .error(error):
-                print("error - \(error.localizedDescription)")
+                print(error)
             case .loading:
                 print("loading")
             case let .paused(playing, buffering):
-                print("paused - progress \(Int(playing * 100))% buffering \(Int(buffering * 100))%")
+                if self.player.pausedReason == .waitingKeepUp {
+                    print("")
+                }
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = true
                     if self.loader.isHidden == false {
@@ -273,16 +250,12 @@ extension ReelsCC {
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
-            case .right:
-                print("Swiped right")
-            case .down:
-                print("Swiped down")
             case .left:
                 print("Swiped left")
                 delegate?.didSwipeRight(cell: self)
 
             case .up:
-                print("Swiped up")
+                break
             default:
                 break
             }

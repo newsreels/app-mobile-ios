@@ -101,8 +101,7 @@ class LanguageViewModel: ObservableObject {
                         completion()
                     }
                     if status {
-                        print("language updated successfully")
-                    } else {
+                     } else {
                         print("language updated failed")
                     }
                 })
@@ -116,8 +115,7 @@ class LanguageViewModel: ObservableObject {
                         completion()
                     }
                     if status {
-                        print("language updated successfully")
-                    } else {
+                     } else {
                         print("language updated failed")
                     }
                 })
@@ -207,8 +205,7 @@ class LanguageHelper {
             
             SharedManager.shared.performWSToUpdateLanguage(id: language.id, isRefreshedToken: true, completionHandler: { status in
                 if status {
-                    print("language updated successfully")
-
+ 
                 } else {
                     print("language updated failed")
                 }

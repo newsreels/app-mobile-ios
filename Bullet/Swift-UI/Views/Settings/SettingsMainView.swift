@@ -56,13 +56,14 @@ struct SettingsMainview: View {
                         contentSettings
                         accountSettings
                         termsAndPolicy
-                        SettingsSectionView(title: "Account") {
-                            SettingsRowView(settings: .normal(title: "Delete account")) {
-                                showConfirmAccount = true
+                        if !SharedManager.shared.isGuestUser {
+                            SettingsSectionView(title: "Account") {
+                                SettingsRowView(settings: .normal(title: "Delete account")) {
+                                    showConfirmAccount = true
+                                }
                             }
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
-                        
                         AppText("App Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0.0")", weight: .nunitoMedium, size: 14, color: .black.opacity(0.7))
                             .padding(.horizontal, 41)
                             .offset(y: -20)
@@ -190,6 +191,7 @@ struct SettingsMainview: View {
         SettingsSectionView {
             VStack {
                 HStack (spacing: 16){
+                    
                     if let user = user {
                         AppURLImage(user.profile_image ?? "")
                             .frame(width: 56, height: 56)
@@ -233,14 +235,18 @@ struct SettingsMainview: View {
                 //                    .padding(.trailing, -24)
                     .padding(.leading, 70)
                 
-                SettingsRowView(settings: .normal(title: NSLocalizedString("View and Edit Your Profile", comment: "")), showDivider: false) {
-                    if let user = user, !(user.email?.isEmpty ?? true) {
-                        settings.isActive = true
-                        settings.destinationView = AnyView(ProfileView())
+                
+                if user?.isGuest == false {
+                        SettingsRowView(settings: .normal(title: NSLocalizedString("View and Edit Your Profile", comment: "")), showDivider: false) {
+                            settings.isActive = true
+                            settings.destinationView = AnyView(ProfileView())
+                        }
                     } else {
-                        NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
+                        SettingsRowView(settings: .normal(title: NSLocalizedString("Create A new Account", comment: "")), showDivider: false) {
+                            NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
+                        }
                     }
-                }
+                
             }
             .background(Color.white)
             
@@ -301,14 +307,12 @@ struct SettingsMainview: View {
                 }
                 
                 SettingsRowView(settings: .normal(iconName: "notif_ic", title: NSLocalizedString("Notification Settings", comment: ""))) {
-                    print("Notification Settings")
-                    settings.isActive = true
+                     settings.isActive = true
                     settings.destinationView = AnyView(NotificationsView())
                     
                 }
                 SettingsRowView(settings: .normal(iconName: "fontsize_ic", title: NSLocalizedString("Font Size", comment: ""))) {
-                    print("Font Size")
-                    SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
+                     SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
                     
                 }
                 SettingsRowView(settings: .selection(iconName: "region_ic", title: NSLocalizedString("Region", comment: ""), description: languageHelper.selectedRegion?.name ?? "")) {
@@ -320,12 +324,13 @@ struct SettingsMainview: View {
                     //                    }, isInSettings: true).navigationBarHidden(true))
                 }
                 
-                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
-                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
-                    SharedManager.shared.bulletsAutoPlay = value
-                    self.performWSToUpdateConfigView()
-                    
-                })))
+//                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
+//                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
+//                    SharedManager.shared.bulletsAutoPlay = value
+//                    self.performWSToUpdateConfigView()
+//
+//                })))
+                
                 //                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Reader Mode", comment: ""), value: $readerMode.onChange({ value in
                 //                    UserDefaults.standard.set(value, forKey: Constant.UD_isReaderMode)
                 //                    SharedManager.shared.readerMode = value
@@ -366,50 +371,62 @@ struct SettingsMainview: View {
                     SwiftUIManager.shared.setObserver(name: .SwiftUIGoToBlockList, object: nil)
                     
                 }
-                
-                SettingsRowView(settings: .normal(iconName: "logout_ic", title: NSLocalizedString("Logout", comment: "")), showDivider: false) {
-                    SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.logoutClick)
-                    
-                    
-                    if !(SharedManager.shared.isConnectedToNetwork()){
+                if user?.isGuest == false {
+                    SettingsRowView(settings: .normal(iconName: "logout_ic", title: NSLocalizedString("Logout", comment: "")), showDivider: false) {
+                        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.logoutClick)
                         
-                        SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
-                        return
-                    }
-                    
-                    Utilities.showLoader()
-                    
-                    let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
-                    let refreshToken = UserDefaults.standard.value(forKey: Constant.UD_refreshToken) ?? ""
-                    let params = ["token": refreshToken]
-                    
-                    WebService.URLResponseAuth("auth/logout", method: .post, parameters: params, headers: userToken as? String, withSuccess: { (response) in
                         
-                        Utilities.hideLoader()
-                        
-                        do{
-                            let FULLResponse = try
-                            JSONDecoder().decode(userDC.self, from: response)
+                        if !(SharedManager.shared.isConnectedToNetwork()){
                             
-                            if FULLResponse.message?.lowercased() == "success" {
-                                let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                                appDelegate.newLogout()
-                            }
-                            
-                            
-                        } catch let jsonerror {
-                            Utilities.hideLoader()
-                            SharedManager.shared.logAPIError(url: "auth/logout", error: jsonerror.localizedDescription, code: "")
-                            print("error parsing json objects",jsonerror)
+                            SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
+                            return
                         }
                         
-                    }){ (error) in
+                        Utilities.showLoader()
                         
-                        Utilities.hideLoader()
-                        print("error parsing json objects",error)
+                        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
+                        let refreshToken = UserDefaults.standard.value(forKey: Constant.UD_refreshToken) ?? ""
+                        let params = ["token": refreshToken]
+                        
+                        WebService.URLResponseAuth("auth/logout", method: .post, parameters: params, headers: userToken as? String, withSuccess: { (response) in
+                            
+                            Utilities.hideLoader()
+                            
+                            do{
+                                let FULLResponse = try
+                                JSONDecoder().decode(userDC.self, from: response)
+                                
+                                if FULLResponse.message?.lowercased() == "success" {
+                                    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                                    self.user = nil
+                                    
+                                    let emptyUser = UserProfile()
+                                    let encoder = JSONEncoder()
+                                    if let encoded = try? encoder.encode(emptyUser) {
+                                        SharedManager.shared.userDetails = encoded
+                                    }
+                                    
+                                    appDelegate.newLogout()
+                                }
+                                
+                                
+                            } catch let jsonerror {
+                                Utilities.hideLoader()
+                                SharedManager.shared.logAPIError(url: "auth/logout", error: jsonerror.localizedDescription, code: "")
+                                print("error parsing json objects",jsonerror)
+                            }
+                            
+                        }){ (error) in
+                            
+                            Utilities.hideLoader()
+                            print("error parsing json objects",error)
+                        }
+                    }
+                } else   {
+                    SettingsRowView(settings: .normal(iconName: "login_ic", title: NSLocalizedString("Login", comment: "")), showDivider: false) {
+                        NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                     }
                 }
-                
             }
             
         }

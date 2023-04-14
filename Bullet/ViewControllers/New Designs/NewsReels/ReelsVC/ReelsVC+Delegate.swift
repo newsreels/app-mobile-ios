@@ -92,8 +92,6 @@ extension ReelsVC: ReelsCategoryVCDelegate {
         reelsArray.removeAll()
         nextPageData = ""
 
-        print("CONTEXT = \(SharedManager.shared.curReelsCategoryId)")
-
         setRefresh(scrollView: collectionView, manual: true)
     }
 
@@ -177,14 +175,13 @@ extension ReelsVC: BottomSheetVCDelegate {
             // Follow Source
             if sourceFollow {
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [article.source?.id ?? ""], isFav: false, type: .sources) { success in
-                    print("status ", success)
                     if success {
                         SharedManager.shared.showAlertLoader(message: "Unfollowed \(article.source?.name ?? "")", type: .alert)
                     }
                 }
             } else {
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [article.source?.id ?? ""], isFav: true, type: .sources) { success in
-                    print("status ", success)
+                    
                     if success {
                         SharedManager.shared.showAlertLoader(message: "followed \(article.source?.name ?? "")", type: .alert)
                     }
@@ -215,10 +212,6 @@ extension ReelsVC: BottomSheetVCDelegate {
             performWSuggestMoreOrLess(article.id ?? "", isMoreOrLess: false)
         } else if sender.tag == 9 {
             SharedManager.shared.isCaptionsEnableReels = !SharedManager.shared.isCaptionsEnableReels
-
-            if SharedManager.shared.isCaptionsEnableReels {
-                getCaptionsFromAPI()
-            }
 
             if SharedManager.shared.isCaptionsEnableReels {
                 SharedManager.shared.showAlertLoader(message: "Turned on captions", type: .alert)
@@ -715,7 +708,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
                         }
 
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
-
+                        SharedManager.shared.performWSDurationAnalytics(reelId: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
 
                         self.playNextCellVideo(indexPath: nextIndexPath)
@@ -751,8 +744,17 @@ extension ReelsVC: ChannelDetailsVCDelegate {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {
                 cell.reelModel?.source = channel
-                cell.imgUserPlus.isHidden = channel?.favorite ?? false
-
+                if channel?.favorite ?? false {
+                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                    cell.btnUserPlusWidth.constant = 90
+                    cell.btnUserPlus.layoutIfNeeded()
+                    cell.followStack.layoutIfNeeded()
+                } else {
+                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                    cell.btnUserPlusWidth.constant = 70
+                    cell.btnUserPlus.layoutIfNeeded()
+                    cell.followStack.layoutIfNeeded()
+                }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
                 for (indexPa, reelObj) in reelsArray.enumerated() {
@@ -762,13 +764,23 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                 }
 
                 let cellsArray = collectionView.visibleCells
-
+                
                 if cellsArray.count > 0 {
                     for cellObj in cellsArray {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel?.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.imgUserPlus.isHidden = channel?.favorite ?? false
+                                if channel?.favorite ?? false {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                }
                             }
                         }
                     }
@@ -804,8 +816,17 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
             // Check source if its not available then use author
             if let _ = cellReel.reelModel?.source, let channel = cell?.articleModel?.source {
                 cellReel.reelModel?.source = channel
-                cellReel.imgUserPlus.isHidden = channel.favorite ?? false
-
+                if channel.favorite ?? false {
+                    cellReel.btnUserPlus.setTitle("Following", for: .normal)
+                    cellReel.btnUserPlusWidth.constant = 80
+                    cellReel.btnUserPlus.layoutIfNeeded()
+                    cellReel.followStack.layoutIfNeeded()
+                } else {
+                    cellReel.btnUserPlus.setTitle("Follow", for: .normal)
+                    cellReel.btnUserPlusWidth.constant = 70
+                    cellReel.btnUserPlus.layoutIfNeeded()
+                    cellReel.followStack.layoutIfNeeded()
+                }
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
                 for (indexPa, reelObj) in reelsArray.enumerated() {
@@ -821,7 +842,17 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.imgUserPlus.isHidden = channel.favorite ?? false
+                                if channel.favorite ?? false {
+                                    reelscell.btnUserPlus.setTitle("Following", for: .normal)
+                                    reelscell.btnUserPlusWidth.constant = 90
+                                    reelscell.btnUserPlus.layoutIfNeeded()
+                                    reelscell.followStack.layoutIfNeeded()
+                                } else {
+                                    reelscell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    reelscell.btnUserPlusWidth.constant = 70
+                                    reelscell.btnUserPlus.layoutIfNeeded()
+                                    reelscell.followStack.layoutIfNeeded()
+                                }
                             }
                         }
                     }
@@ -868,19 +899,16 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
     }
 
     func sideMenuDidAppear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appeared! (animated: \(animated))")
-
+ 
         isRightMenuLoaded = true
         stopVideo()
     }
 
     func sideMenuWillDisappear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
-    }
+     }
 
     func sideMenuDidDisappear(menu _: SideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappeared! (animated: \(animated))")
-
+ 
         isRightMenuLoaded = false
         if SharedManager.shared.reelsAutoPlay {
             playCurrentCellVideo()
@@ -898,8 +926,7 @@ extension ReelsVC: FollowingVCDelegate {
 
 extension ReelsVC: SharingDelegate, UIDocumentInteractionControllerDelegate {
     func sharer(_: Sharing, didCompleteWithResults _: [String: Any]) {
-        print("shared")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {}
+         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {}
     }
 
     func sharer(_: Sharing, didFailWithError _: Error) {

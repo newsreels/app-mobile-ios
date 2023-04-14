@@ -529,7 +529,7 @@ extension UploadManager {
                         let videoData = try Data(contentsOf: url)
                         multipartFormData.append(videoData, withName: item.key, fileName: "video.mp4", mimeType: "video/mp4")
                     } catch {
-//                            debugPrint("Couldn't get Data from URL: \(url): \(error)")
+                           debugPrint("Error Couldn't get Data from URL: \(url): \(error)")
                     }
                 }
             }

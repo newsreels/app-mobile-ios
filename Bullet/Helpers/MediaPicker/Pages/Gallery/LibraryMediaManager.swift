@@ -90,7 +90,7 @@ class LibraryMediaManager {
         videosOptions.deliveryMode = .highQualityFormat
         imageManager?.requestAVAsset(forVideo: videoAsset, options: videosOptions) { asset, _, _ in
             do {
-                guard let asset = asset else { print("⚠️ PHCachingImageManager >>> Don't have the asset"); return }
+                guard let asset = asset else {  return }
                 
                 let assetComposition = AVMutableComposition()
                 let assetMaxDuration = self.getMaxVideoDuration(between: duration, andAssetDuration: asset.duration)
@@ -101,8 +101,7 @@ class LibraryMediaManager {
                 guard let videoTrack = asset.tracks(withMediaType: AVMediaType.video).first,
                     let videoCompositionTrack = assetComposition
                         .addMutableTrack(withMediaType: .video,
-                                         preferredTrackID: kCMPersistentTrackID_Invalid) else {
-                                            print("⚠️ PHCachingImageManager >>> Problems with video track")
+                                         preferredTrackID: kCMPersistentTrackID_Invalid) else { 
                                             return
                                             
                 }
@@ -152,8 +151,7 @@ class LibraryMediaManager {
                                                 self?.currentExportSessions.remove(at: index)
                                             }
                                             callback(url)
-                                        } else {
-                                            print("LibraryMediaManager -> Don't have URL.")
+                                        } else { 
                                             callback(nil)
                                         }
                                     case .failed:

@@ -427,7 +427,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         
         if mode == .library {
             
-            guard let libraryVC = libraryVC else { print("⚠️ YPPickerVC >>> YPLibraryVC deallocated"); return }
+            guard let libraryVC = libraryVC else {  return }
             
             libraryVC.doAfterPermissionCheck { [weak self] in
                 libraryVC.selectedMedia(photoCallback: { photo in
@@ -443,7 +443,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         
         if mode == .libraryPhotoOnly {
             
-            guard let libraryPhotoVC = libraryPhotoVC else { print("⚠️ YPPickerVC >>> YPLibraryVC deallocated"); return }
+            guard let libraryPhotoVC = libraryPhotoVC else { return }
             
             libraryPhotoVC.doAfterPermissionCheck { [weak self] in
                 libraryPhotoVC.selectedMedia(photoCallback: { photo in
@@ -459,7 +459,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         
         if mode == .libraryVideoOnly {
             
-            guard let libraryVideoVC = libraryVideoVC else { print("⚠️ YPPickerVC >>> YPLibraryVC deallocated"); return }
+            guard let libraryVideoVC = libraryVideoVC else {  return }
             
             libraryVideoVC.doAfterPermissionCheck { [weak self] in
                 libraryVideoVC.selectedMedia(photoCallback: { photo in

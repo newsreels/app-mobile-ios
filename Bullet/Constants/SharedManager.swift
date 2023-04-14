@@ -1066,7 +1066,8 @@ class SharedManager {
         if !FileManager.default.fileExists(atPath: dataPath) {
             do {
                 try FileManager.default.createDirectory(atPath: dataPath, withIntermediateDirectories: false, attributes: nil)
-            } catch { print("Folder creation error : \(error.localizedDescription)") }
+            } catch { 
+ 				}
         }
         return dataPath + "/"
     }
@@ -1078,7 +1079,8 @@ class SharedManager {
         if !FileManager.default.fileExists(atPath: dataPath) {
             do {
                 try FileManager.default.createDirectory(atPath: dataPath, withIntermediateDirectories: false, attributes: nil)
-            } catch { print("Folder creation error : \(error.localizedDescription)") }
+            } catch {
+ 				 }
         }
         return dataPath + "/"
     }
@@ -1178,20 +1180,7 @@ class SharedManager {
         //    ARTICLE_SWIPE
         if eventType == Constant.analyticsEvents.videoFinishedPlaying || eventType == Constant.analyticsEvents.reelsFinishedPlaying || eventType == Constant.analyticsEvents.reelViewed || eventType == Constant.analyticsEvents.articleViewed || eventType == Constant.analyticsEvents.articleDetailsPageOpened || eventType == Constant.analyticsEvents.articleSwipeEvent || eventType == Constant.analyticsEvents.videoDurationEvent || eventType == Constant.analyticsEvents.reelsDurationEvent {
             
-            
-            if eventType == Constant.analyticsEvents.videoDurationEvent {
-                print("analytics set videoDurationEvent \(duration)")
-            }
-            else if eventType == Constant.analyticsEvents.reelsDurationEvent {
-                print("analytics set reelsDurationEvent \(duration)")
-            }
-            else if eventType == Constant.analyticsEvents.videoFinishedPlaying {
-                print("analytics set videoFinishedPlaying")
-            }
-            else if eventType == Constant.analyticsEvents.reelsFinishedPlaying {
-                print("analytics set reelsFinishedPlaying")
-            }
-            
+         
             self.performWSToUpdateAnalytics(ArticleId: article_id, eventName: eventType, duration: duration)
             
             
@@ -1286,17 +1275,13 @@ class SharedManager {
 
         let url = isFromReel ? "analytics/reels/\(ArticleId)" : "analytics/articleview/\(ArticleId)"
         WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
-            print("ANALYTICS URL = \(url)")
-            do{
+             do{
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
 
                 if let message = FULLResponse.message, message.lowercased() == "ok" {
 
-                    #if DEBUG
-                    print("Aticle Analytics Success")
-                    #else
-                    #endif
+                   
                 }
                 else {
 
@@ -1318,6 +1303,46 @@ class SharedManager {
         }
     }
     
+    func performWSDurationAnalytics(reelId: String, duration: String) {
+                
+        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
+        
+        //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
+        
+        let url = "analytics/duration/\(reelId)"
+        let params: [String: Any] = ["duration": duration]
+        
+       let jsonData = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions()) as NSData
+
+        WebService.URLResponse(url, method: .post, parameters: nil, body: jsonData, headers: token, withSuccess: { (response) in
+            
+            do{
+                let FULLResponse = try
+                    JSONDecoder().decode(messageData.self, from: response)
+                print(FULLResponse)
+                if let message = FULLResponse.message, message.lowercased() == "ok" {
+                   
+                }
+                else {
+                    
+                    #if DEBUG
+                    self.showAPIFailureAlert()
+                    #else
+                    #endif
+                }
+                
+            } catch let jsonerror {
+                
+                SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
+                print("error parsing json objects",jsonerror)
+            }
+            
+        }) { (error) in
+            
+            print("error parsing json objects",error)
+        }
+    }
+    
     func performWSToUpdateAnalytics(ArticleId: String, eventName: String, duration: String) {
                 
         let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
@@ -1325,7 +1350,7 @@ class SharedManager {
         //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
         
         let url = "analytics/custom_event/\(ArticleId)/\(eventName)?duration=\(duration)"
-        print("analytics/custom_event/ == \(url)")
+       
         WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
             
             do{
@@ -1333,11 +1358,7 @@ class SharedManager {
                     JSONDecoder().decode(messageData.self, from: response)
                 
                 if let message = FULLResponse.message, message.lowercased() == "ok" {
-                    
-                    #if DEBUG
-                    print("Analytics Success")
-                    #else
-                    #endif
+                   
                 }
                 else {
                     
@@ -1501,8 +1522,7 @@ class SharedManager {
 
             do{
                 let json = try JSONSerialization.jsonObject(with: response, options: []) as? [String : Any]
-                print("JSONNNN = \(json)")
-            }catch{ print("erroMsg") }
+             }catch{ print("erroMsg") }
 
         }) { (error) in
             ANLoader.hide()
@@ -1580,8 +1600,7 @@ class SharedManager {
         }
         
         let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-        print("device udid: ", deviceID)
-        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
+         let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
         
         if userToken as! String == "" {
             
@@ -1838,8 +1857,7 @@ class SharedManager {
             params = ["authors":id]
             url = !isFav ? "news/authors/unfollow" : "news/authors/follow"
         }
-        print("PARAMSSSSSSS = \(params) URLLLL = \(url)")
-        
+         
         WebService.URLResponseJSONRequest(url, method: .post, parameters: params, headers: token, withSuccess: { (response) in
             
             do{
@@ -1949,8 +1967,7 @@ class SharedManager {
                     do {
                         try DataCache.instance.write(codable: FULLResponse, forKey: Constant.CACHE_REELS)
                     } catch {
-                        print("Write error \(error.localizedDescription)")
-                    }
+                     }
                 }
                 completionHandler(true)
                 
