@@ -146,22 +146,18 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 for i in indexPath.item - 2 ..< indexPath.item + 2 {
                     let indexPath = IndexPath(item: i, section: section)
                     
-                    if let urlString = reelsArray[indexPath.item].media,
+                    if indexPath.item >= 0,
+                       indexPath.item < reelsArray.count,
+                        let urlString = reelsArray[indexPath.item].media,
                        let videoURL = URL(string: urlString) {
                         // Do something with the cell at the given index path
                         let asset = AVAsset(url: videoURL)
                         let playerItem = AVPlayerItem(asset: asset)
-                        let player = AVPlayer(playerItem: playerItem)
-                        
-                        
                         // Configure the player to preload the video
-                        player.currentItem?.preferredForwardBufferDuration = 5
-                        player.currentItem?.canUseNetworkResourcesForLiveStreamingWhilePaused = true
-                        playersForPreload.append(player)
+                        queuePlayer.insert(playerItem, after: queuePlayer.currentItem )
                     }
                 }
             }
-            
         }
 
         delegate?.currentPlayingVideoChanged(newIndex: indexPath)

@@ -109,8 +109,6 @@ class ReelsCC: UICollectionViewCell {
         super.awakeFromNib()
         setupViews()
         setDescriptionLabel()
-        imgThumbnailView.isHidden = false
-        
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {

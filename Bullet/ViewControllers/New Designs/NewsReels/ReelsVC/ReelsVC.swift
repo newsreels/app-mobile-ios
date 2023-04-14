@@ -54,7 +54,7 @@ class ReelsVC: UIViewController {
     public var minimumVelocityToHide: CGFloat = 1500
     public var minimumScreenRatioToHide: CGFloat = 0.5
     public var animationDuration: TimeInterval = 0.2
-    var playersForPreload: [AVPlayer] = []
+
     var reelsArray = [Reel]()
     var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
     var nextPageData = ""
@@ -108,9 +108,14 @@ class ReelsVC: UIViewController {
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
-
+    var queuePlayer = AVQueuePlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Configure the queue player to preload the video
+        queuePlayer.automaticallyWaitsToMinimizeStalling = true
+        queuePlayer.currentItem?.preferredForwardBufferDuration = 5
+        queuePlayer.currentItem?.canUseNetworkResourcesForLiveStreamingWhilePaused = true
         setupView()
         setupCollectionView()
         checkInternetConnection()

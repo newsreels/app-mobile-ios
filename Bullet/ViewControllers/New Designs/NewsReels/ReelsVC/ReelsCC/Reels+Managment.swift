@@ -16,7 +16,6 @@ extension ReelsCC {
     }
 
     func play() {
-        self.imgThumbnailView.isHidden = false
         setImage()
         if let url = URL(string: reelModel?.media ?? "") {
             playerLayer.player?.pause()
@@ -129,7 +128,7 @@ extension ReelsCC {
             switch keyPath {
             case "playbackBufferEmpty":
                 // Show loader
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.imgThumbnailView.isHidden = false
                     if self.loader.isHidden == false {
                         self.loader.isHidden = true

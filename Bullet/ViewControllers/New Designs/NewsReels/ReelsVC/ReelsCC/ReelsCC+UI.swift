@@ -52,7 +52,6 @@ extension ReelsCC {
         viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
-        self.imgThumbnailView.isHidden = false
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
