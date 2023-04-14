@@ -102,9 +102,8 @@ class ReelsCC: UICollectionViewCell {
     var imageView: UIImageView?
     var isPlayWhenReady = false
     var reelModel: Reel?
-    var isLoaderShowing = false
     weak var delegate: ReelsCCDelegate?
-    
+    var isPlaying = false
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
@@ -127,9 +126,6 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-
-        loader.isHidden = true
-        loader.stopAnimating()
         pause()
         playerLayer.player?.seek(to: .zero)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
@@ -139,8 +135,6 @@ class ReelsCC: UICollectionViewCell {
         lblChannelName.text = "                    "
         lblAuthor.text = "                    "
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
-        hideLoader()
-        ANLoader.hide()
     }
 
     

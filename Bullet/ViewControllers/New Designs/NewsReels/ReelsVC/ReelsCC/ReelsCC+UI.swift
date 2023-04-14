@@ -16,8 +16,6 @@ extension ReelsCC {
         lblAuthor.text = "                    "
         setupUIForSkelton()
         viewContent.backgroundColor = .black
-        loader.isHidden = true
-        loader.stopAnimating()
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
@@ -36,6 +34,14 @@ extension ReelsCC {
     
 
     func setupCell(model: Reel, fromMain: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            self.imgThumbnailView.isHidden = false
+            self.loader.isHidden = false
+            self.loader.startAnimating()
+            self.hideLoader()
+        }
+        playerLayer.player = nil
+        playerLayer.player?.pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -60,9 +66,9 @@ extension ReelsCC {
             if SharedManager.shared.bulletsAutoPlay {
                 play()
             }
-            if fromMain {
-                pause()
-            }
+//            if fromMain {
+//                pause()
+//            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
@@ -105,8 +111,6 @@ extension ReelsCC {
 
         imgVolume.image = nil
         imgVolume.alpha = 0
-
-        hideLoader()
         setImage()
 
         // update like status of video
@@ -126,14 +130,14 @@ extension ReelsCC {
     
     func setImage() {
         if reelModel?.mediaMeta?.width ?? 0 > reelModel?.mediaMeta?.height ?? 0 {
-            imgThumbnailView?.contentMode = .scaleAspectFit
+            imgThumbnailView?.contentMode = .scaleAspectFill
             playerLayer.videoGravity = .resizeAspectFill
         } else {
             let containerRatio = frame.size.height / frame.size.width
             let videoRatio = (reelModel?.mediaMeta?.height ?? 1) / (reelModel?.mediaMeta?.width ?? 1)
 
             if containerRatio >= CGFloat(videoRatio) {
-                imgThumbnailView?.contentMode = .scaleAspectFit
+                imgThumbnailView?.contentMode = .scaleAspectFill
             } else {
                 imgThumbnailView?.contentMode = .scaleAspectFill
             }
@@ -253,7 +257,6 @@ extension ReelsCC {
     }
 
     func showLoader() {
-        isLoaderShowing = true
 
         imgVolumeAnimation.isHidden = true
         stackViewButtons.isHidden = true
@@ -265,7 +268,6 @@ extension ReelsCC {
     }
 
     func hideLoader() {
-        isLoaderShowing = false
 
         stackViewButtons.isHidden = false
 

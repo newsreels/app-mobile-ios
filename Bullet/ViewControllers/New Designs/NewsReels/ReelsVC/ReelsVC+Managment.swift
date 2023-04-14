@@ -174,18 +174,7 @@ extension ReelsVC {
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            if !(cell.playerLayer.player?.isPlaying ?? false) {
-                DispatchQueue.main.async {
-                    cell.loader.isHidden = false
-                    cell.loader.startAnimating()
-                }
-                cell.play()
-            } else {
-                DispatchQueue.main.async {
-                    cell.loader.isHidden = true
-                    cell.loader.stopAnimating()
-                }
-            }
+            cell.play()
 
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
