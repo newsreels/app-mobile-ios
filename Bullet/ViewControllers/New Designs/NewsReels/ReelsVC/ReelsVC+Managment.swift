@@ -154,16 +154,6 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if indexPath != currentlyPlayingIndexPath,
-                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    // Do something with the cell at the given index path
-                    cell.stopVideo()
-                }
-            }
-        }
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
@@ -184,7 +174,7 @@ extension ReelsVC {
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            if cell.player.state != .playing {
+            if !(cell.playerLayer.player?.isPlaying ?? false) {
                 DispatchQueue.main.async {
                     cell.loader.isHidden = false
                     cell.loader.startAnimating()

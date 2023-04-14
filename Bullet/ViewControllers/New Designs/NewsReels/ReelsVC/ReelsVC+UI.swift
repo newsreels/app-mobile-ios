@@ -278,7 +278,7 @@ extension ReelsVC {
         }
         
         if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         }
     }
 

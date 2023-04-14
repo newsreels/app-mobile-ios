@@ -21,12 +21,7 @@ extension ReelsCC {
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-        player.seek(to: .zero)
-        if SharedManager.shared.bulletsAutoPlay {
-            player.isHidden = false
-        } else {
-            player.isHidden = true
-        }
+            playerLayer.player?.seek(to: .zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
@@ -37,9 +32,6 @@ extension ReelsCC {
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
-        player.playToEndTime = {
-            self.delegate?.videoPlayingFinished(cell: self)
-        }
     }
     
 
@@ -60,18 +52,17 @@ extension ReelsCC {
         viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
-
+        self.imgThumbnailView.isHidden = false
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
 
             // Geasture for video like
             if SharedManager.shared.bulletsAutoPlay {
-                player.play(for: url)
+                play()
             }
             if fromMain {
                 pause()
-                player.pause()
             }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
@@ -137,7 +128,7 @@ extension ReelsCC {
     func setImage() {
         if reelModel?.mediaMeta?.width ?? 0 > reelModel?.mediaMeta?.height ?? 0 {
             imgThumbnailView?.contentMode = .scaleAspectFit
-            player.contentMode = .scaleAspectFit
+            playerLayer.videoGravity = .resizeAspectFill
         } else {
             let containerRatio = frame.size.height / frame.size.width
             let videoRatio = (reelModel?.mediaMeta?.height ?? 1) / (reelModel?.mediaMeta?.width ?? 1)
@@ -396,10 +387,10 @@ extension ReelsCC {
     func setVolumeStatus() {
         imgSound.image = nil
         if SharedManager.shared.isAudioEnableReels == false {
-            player.volume = 0.0
+            playerLayer.player?.volume = 0.0
             imgSound.image = UIImage(named: "newMuteIC")
         } else {
-            player.volume = 1.0
+            playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
     }

@@ -9,6 +9,7 @@
 import UIKit
 import DataCache
 import CoreMedia
+import AVFoundation
 
 // MARK: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 
@@ -92,6 +93,9 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
+
+                
+                
                 return cell
             }
         }
@@ -116,10 +120,10 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 cell.play()
             }
             if SharedManager.shared.isAudioEnableReels == false {
-                cell.player.volume = 0.0
+                cell.playerLayer.player?.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
             } else {
-                cell.player.volume = 1.0
+                cell.playerLayer.player?.volume = 1.0
                 cell.imgSound.image = UIImage(named: "newUnmuteIC")
             }
 
@@ -136,6 +140,28 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let indexPathReload = IndexPath(item: indexPath.row, section: 0)
                 collectionView.reloadItems(at: [indexPathReload])
             }
+            
+            // Preloading
+            for section in 0..<collectionView.numberOfSections {
+                for i in indexPath.item - 2 ..< indexPath.item + 2 {
+                    let indexPath = IndexPath(item: i, section: section)
+                    
+                    if let urlString = reelsArray[indexPath.item].media,
+                       let videoURL = URL(string: urlString) {
+                        // Do something with the cell at the given index path
+                        let asset = AVAsset(url: videoURL)
+                        let playerItem = AVPlayerItem(asset: asset)
+                        let player = AVPlayer(playerItem: playerItem)
+                        
+                        
+                        // Configure the player to preload the video
+                        player.currentItem?.preferredForwardBufferDuration = 5
+                        player.currentItem?.canUseNetworkResourcesForLiveStreamingWhilePaused = true
+                        playersForPreload.append(player)
+                    }
+                }
+            }
+            
         }
 
         delegate?.currentPlayingVideoChanged(newIndex: indexPath)
@@ -516,7 +542,7 @@ extension ReelsVC: ReelsCCDelegate {
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
@@ -567,7 +593,7 @@ extension ReelsVC: ReelsCCDelegate {
             vc.imgPlaceHolder = cell.imgThumbnailView
             vc.url = url
             vc.modalPresentationStyle = .fullScreen
-            vc.customDuration = CMTime(seconds: cell.player.currentDuration, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+            vc.customDuration = CMTime(seconds: cell.playerLayer.player?.currentDuration ?? 0, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
 
             // captions
             vc.captions = reelsArray[indexPath.item].captions
