@@ -618,47 +618,6 @@ extension ReelsVC: BottomSheetArticlesVCDelegate {
     }
 }
 
-// MARK: - ReelsVC + ReelsCacheManagerDelegate
-
-extension ReelsVC: ReelsCacheManagerDelegate {
-    func cachingCompleted(reel: Reel, position: Int) {
-        if position < reelsArray.count {
-            reelsArray[position] = reel
-        }
-
-        DispatchQueue.main.async {
-            if position == 10 {
-                ANLoader.hide()
-                self.stopIndicatorLoading()
-                let indexPaths = Array(1 ... 9).map { IndexPath(item: $0, section: 0) }
-                self.collectionView.reloadItems(at: indexPaths)
-            }
-        }
-
-        let indexPath = IndexPath(item: position, section: 0)
-        DispatchQueue.main.async {
-            if position > 10 {
-                self.collectionView.reloadItems(at: [indexPath])
-            }
-        }
-        currentCachePosition += 1
-        startReelsCaching()
-    }
-
-    func startReelsCaching() {
-        ReelsCacheManager.shared.delegate = self
-        if currentCachePosition < cacheLimit, currentCachePosition < reelsArray.count {
-            if reelsArray[currentCachePosition].iosType == nil {
-                ReelsCacheManager.shared.begin(reelModel: reelsArray[currentCachePosition], position: currentCachePosition)
-            } else {
-                currentCachePosition += 1
-                if currentCachePosition < reelsArray.count {
-                    ReelsCacheManager.shared.begin(reelModel: reelsArray[currentCachePosition], position: currentCachePosition)
-                }
-            }
-        }
-    }
-}
 
 // MARK: - ReelsVC + ReelsFullScreenVCDelegate
 
@@ -734,12 +693,6 @@ extension ReelsVC: ChannelDetailsVCDelegate {
     func backButtonPressedChannelDetailsVC() {}
 
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
-        if ReelsCacheManager.shared.reelViewedOnChannelPage {
-            reelsArray.removeAll()
-            collectionView.reloadData()
-            nextPageData = ""
-            performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.curReelsCategoryId)
-        }
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {

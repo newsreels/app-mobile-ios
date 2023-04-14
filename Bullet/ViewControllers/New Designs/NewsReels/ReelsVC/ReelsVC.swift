@@ -102,8 +102,6 @@ class ReelsVC: UIViewController {
     var isOpenedLightMode = false
     var isOpenedFollowingPrefernce = false
     var fromMain = false
-    var currentCachePosition = 1
-    var cacheLimit = 10
     var isPullToRefresh = false
     var reachability: Reachability?
     var isNoInternet = false
@@ -358,17 +356,14 @@ class ReelsVC: UIViewController {
     @IBAction func didTapBack(_: Any) {
         SharedManager.shared.isOnDiscover = true
         if isShowingProfileReels || isFromChannelView {
-            ReelsCacheManager.shared.reelViewedOnChannelPage = true
             navigationController?.popViewController(animated: true)
         } else if isFromDiscover {
             navigationController?.popViewController(animated: true)
-            ReelsCacheManager.shared.clearDiskCache()
             SharedManager.shared.reloadRequiredFromTopics = true
             return
         } else if isSugReels {
             dismiss(animated: true, completion: nil)
         } else {
-            ReelsCacheManager.shared.clearDiskCache()
             SharedManager.shared.reloadRequiredFromTopics = true
             dismiss(animated: true, completion: nil)
             return

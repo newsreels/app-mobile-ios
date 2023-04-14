@@ -85,10 +85,6 @@ extension ReelsVC {
                     }
                 }
             } else {
-                ReelsCacheManager.shared.clearDiskCache()
-                currentCachePosition = 1
-                cacheLimit = 10
-                startReelsCaching()
                 if SharedManager.shared.reelsContextNotification != "" {
                     performWSToGetReelsData(page: "", contextID: SharedManager.shared.reelsContextNotification)
                 } else {
@@ -96,10 +92,6 @@ extension ReelsVC {
                 }
             }
         } else {
-            ReelsCacheManager.shared.clearDiskCache()
-            currentCachePosition = 1
-            cacheLimit = 10
-            startReelsCaching()
             viewWillLayoutSubviews()
             collectionView.isUserInteractionEnabled = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -291,39 +283,20 @@ extension ReelsVC {
         }
     }
 
-    func getCaptionsFromAPI() {
-        if reelsArray.count < currentlyPlayingIndexPath.item || reelsArray.count == 0 {
-            return
-        }
-        if (reelsArray[currentlyPlayingIndexPath.item].captions?.count ?? 0) == 0 {
-            performWSToGetReelsCaptions(id: reelsArray[currentlyPlayingIndexPath.item].id ?? "")
 
-            // Force check api response loaded after 1 sec, if not recieved call api again
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                if self.reelsArray.count > self.currentlyPlayingIndexPath.item {
-                    if self.reelsArray[self.currentlyPlayingIndexPath.item].captionAPILoaded == false {
-                        self.performWSToGetReelsCaptions(id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
-                    }
+    func getCurrentVisibleIndexPlayVideo() {
+        // Stop Old cell
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if indexPath != currentlyPlayingIndexPath,
+                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    // Do something with the cell at the given index path
+                    cell.stopVideo()
                 }
             }
         }
-
-        let nextIndex = currentlyPlayingIndexPath.item + 1
-        if reelsArray.count > nextIndex {
-            if (reelsArray[nextIndex].captions?.count ?? 0) == 0 {
-                performWSToGetReelsCaptions(id: reelsArray[nextIndex].id ?? "")
-            }
-        }
-        let thirdIndex = currentlyPlayingIndexPath.item + 2
-        if reelsArray.count > thirdIndex {
-            if (reelsArray[thirdIndex].captions?.count ?? 0) == 0 {
-                performWSToGetReelsCaptions(id: reelsArray[thirdIndex].id ?? "")
-            }
-        }
-    }
-
-    func getCurrentVisibleIndexPlayVideo() {
-        let prevsIndex = currentlyPlayingIndexPath
+        
         var newIndexDetected = false
         // Play latest cell
         for cell in collectionView.visibleCells {
@@ -352,16 +325,6 @@ extension ReelsVC {
                 sendVideoViewedAnalyticsEvent()
             }
         }
-        // Stop Old cell
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if indexPath != currentlyPlayingIndexPath,
-                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    // Do something with the cell at the given index path
-                    cell.stopVideo()
-                }
-            }
-        }
+
     }
 }

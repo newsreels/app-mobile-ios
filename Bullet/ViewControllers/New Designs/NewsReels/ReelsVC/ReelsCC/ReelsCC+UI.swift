@@ -35,10 +35,19 @@ extension ReelsCC {
 
     func setupCell(model: Reel, fromMain: Bool) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            self.imgThumbnailView.isHidden = false
-            self.loader.isHidden = false
-            self.loader.startAnimating()
-            self.hideLoader()
+            if let player = self.playerLayer.player, let currentItem = player.currentItem {
+                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                let bufferStart = timeRange?.start.seconds ?? 0
+                let bufferDuration = timeRange?.duration.seconds ?? 0
+                let bufferEnd = bufferStart + bufferDuration
+                let bufferTime = bufferEnd - player.currentTime().seconds
+                if bufferTime == 0 {
+                    self.imgThumbnailView.isHidden = false
+                    self.loader.isHidden = false
+                    self.loader.startAnimating()
+                    self.hideLoader()
+                }
+            }
         }
         playerLayer.player = nil
         playerLayer.player?.pause()

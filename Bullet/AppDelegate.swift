@@ -53,7 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
 //        Thread.sleep(forTimeInterval: 1.5)
         //UIApplication.shared.isIdleTimerDisabled = true
         
-        self.getGCDHostURL()
         OneSignal.setLogLevel(.LL_NONE, visualLevel: .LL_NONE)
         
         // OneSignal initialization
@@ -248,17 +247,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         }
     }
     
-    func getGCDHostURL(){
-        let pathM3U8 = FileManager.default.urls(for: .documentDirectory,
-                                            in: .userDomainMask)[0].appendingPathComponent("M3U8Files")
-
-        if !ReelsCacheManager.shared.directoryExistsAtPath(pathM3U8.absoluteString){
-            ReelsCacheManager.shared.createDirIfNeeded(dirName: "M3U8Files")
-        }
-        ReelsCacheManager.getGCDHostURL()
-
-    }
-
+  
     func uploadTheToken(accessToken:String, userEmail: String, loginType: LoginType) {
         
         //access token for today extension

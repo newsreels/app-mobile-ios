@@ -239,8 +239,6 @@ extension ReelsVC {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if lblRefreshLabel.text == "Release to refresh" {
             isPullToRefresh = true
-            currentCachePosition = 1
-            cacheLimit = 10
             loadNewData()
         }
 
