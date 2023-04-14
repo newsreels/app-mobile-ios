@@ -517,7 +517,7 @@ extension ReelsVC: ReelsCCDelegate {
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
-
+        SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
             playNextCellVideo(indexPath: nextIndexPath)
