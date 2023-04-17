@@ -62,7 +62,12 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var stackViewButtons: UIStackView!
     @IBOutlet var viewEditArticle: UIView!
     @IBOutlet var btnEditArticle: UIButton!
-    @IBOutlet var loader: UIActivityIndicatorView!
+    @IBOutlet var loader: UIActivityIndicatorView!{
+    didSet{
+        print(loader.isHidden)
+        print("isHidden")
+    }
+}
     @IBOutlet var lblChannelName: UILabel!
     @IBOutlet var lblAuthor: UILabel!
     @IBOutlet var btnAuthor: UIButton!
@@ -104,8 +109,12 @@ class ReelsCC: UICollectionViewCell {
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        loader.isHidden = true
+        playerLayer.videoGravity = .resizeAspectFill
+        ANLoader.hide()
         setupViews()
         setDescriptionLabel()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
@@ -128,6 +137,7 @@ class ReelsCC: UICollectionViewCell {
         super.prepareForReuse()
         pause()
         playerLayer.player?.seek(to: .zero)
+        playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
         }

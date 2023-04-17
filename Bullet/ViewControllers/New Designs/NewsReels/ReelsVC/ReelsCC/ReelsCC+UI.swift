@@ -72,9 +72,9 @@ extension ReelsCC {
             reelUrl = model.media ?? ""
 
             // Geasture for video like
-            if SharedManager.shared.bulletsAutoPlay {
-                play()
-            }
+//            if SharedManager.shared.bulletsAutoPlay {
+//                play()
+//            }
 //            if fromMain {
 //                pause()
 //            }

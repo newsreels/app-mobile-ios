@@ -63,7 +63,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                             cell.followStack.layoutIfNeeded()
                         }
                     }
-                    
                 } else {
                     let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
                     DispatchQueue.main.async {
@@ -82,6 +81,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     }
                     
                 }
+               
                 if channelInfo != nil {
                     cell.viewEditArticle.isHidden = (channelInfo?.own ?? false) ? false : true
                 } else {
@@ -93,9 +93,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
-
-                
-                
                 return cell
             }
         }
@@ -140,21 +137,33 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let indexPathReload = IndexPath(item: indexPath.row, section: 0)
                 collectionView.reloadItems(at: [indexPathReload])
             }
-            
+            if players.first != nil {
+                players.removeValue(forKey: players.first?.key ?? "")
+            }
             // Preloading
             for section in 0..<collectionView.numberOfSections {
-                for i in indexPath.item - 2 ..< indexPath.item + 2 {
+                for i in indexPath.item - 5 ..< indexPath.item + 10 {
                     let indexPath = IndexPath(item: i, section: section)
-                    
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
+                       self.players[reelsArray[indexPath.item].id ?? ""] == nil,
                         let urlString = reelsArray[indexPath.item].media,
                        let videoURL = URL(string: urlString) {
-                        // Do something with the cell at the given index path
-                        let asset = AVAsset(url: videoURL)
-                        let playerItem = AVPlayerItem(asset: asset)
-                        // Configure the player to preload the video
-                        queuePlayer.insert(playerItem, after: queuePlayer.currentItem )
+                            let asset = AVAsset(url: videoURL)
+                            let playerItem = AVPlayerItem(asset: asset)
+                            
+                            // set preferredMaximumResolution to stream only the 240p resolution
+                            // set preferred resolution for 240p
+                            playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+                            
+                            // set preferred bitrate for 240p resolution
+                            playerItem.preferredPeakBitRate = Double(200000)
+                            playerItem.preferredForwardBufferDuration = 5
+                            //3. Create AVPlayerLayer object
+                            let player = AVPlayer(playerItem: playerItem)
+                            // Enable automatic preloading
+                            player.automaticallyWaitsToMinimizeStalling = true
+                            self.players[reelsArray[indexPath.item].id ?? ""] = player
                     }
                 }
             }

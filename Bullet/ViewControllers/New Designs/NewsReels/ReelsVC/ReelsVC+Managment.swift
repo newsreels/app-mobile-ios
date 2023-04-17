@@ -9,6 +9,7 @@
 import DataCache
 import GSPlayer
 import UIKit
+import AVFoundation
 
 extension ReelsVC {
     func setReels() {
@@ -165,9 +166,14 @@ extension ReelsVC {
     func playCurrentCellVideo() {
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
-        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
+           !cell.isPlaying {
+ 
+            if let item = players[reelsArray[currentlyPlayingIndexPath.item].id ?? ""] {
+                cell.playerLayer = AVPlayerLayer(player: item)
+            }
+            print(players.count)
             cell.play()
-
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
         }

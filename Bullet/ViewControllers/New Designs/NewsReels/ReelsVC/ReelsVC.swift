@@ -106,14 +106,10 @@ class ReelsVC: UIViewController {
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
-    var queuePlayer = AVQueuePlayer()
+    var players = [String: AVPlayer]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Configure the queue player to preload the video
-        queuePlayer.automaticallyWaitsToMinimizeStalling = true
-        queuePlayer.currentItem?.preferredForwardBufferDuration = 5
-        queuePlayer.currentItem?.canUseNetworkResourcesForLiveStreamingWhilePaused = true
         setupView()
         setupCollectionView()
         checkInternetConnection()

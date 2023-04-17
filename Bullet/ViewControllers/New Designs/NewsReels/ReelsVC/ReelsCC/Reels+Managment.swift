@@ -22,33 +22,35 @@ extension ReelsCC {
         if !isPlaying {
             isPlaying = true
             setImage()
-            if let url = URL(string: reelModel?.media ?? "") {
-                //2. Create AVPlayer object
+            if let url = URL(string: reelModel?.media ?? ""),
+               playerLayer.player == nil {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
-                
+                playerItem.preferredForwardBufferDuration = 5
+                playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 // set preferredMaximumResolution to stream only the 240p resolution
                 // set preferred resolution for 240p
                 playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                
                 // set preferred bitrate for 240p resolution
                 playerItem.preferredPeakBitRate = Double(200000)
-                
                 //3. Create AVPlayerLayer object
-                if playerLayer.player != nil {
-                    playerLayer.player?.replaceCurrentItem(with: playerItem)
-                } else {
-                    let player = AVPlayer(playerItem: playerItem)
-                    playerLayer = AVPlayerLayer(player: player)
+                let player = AVPlayer(playerItem: playerItem)
+                playerLayer = AVPlayerLayer(player: player)
+            }
+            
+            if let currentItem = playerLayer.player?.currentItem {
+                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                if let timeRange = timeRange {
+                    let bufferDuration = timeRange.duration.seconds
+                    print("buffer duration: \(bufferDuration) seconds")
                 }
-                playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
-                playerLayer.videoGravity = .resizeAspectFill
+            }
+                
                 playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
                 playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
                 playerContainer.layer.addSublayer(playerLayer)
                 playerLayer.frame = playerContainer.bounds
                 playerContainer.backgroundColor = .clear
-                //5. Play Video
                 playerLayer.player?.play()
                 if SharedManager.shared.isAudioEnableReels == false {
                     playerLayer.player?.volume = 0
@@ -57,7 +59,7 @@ extension ReelsCC {
                     playerLayer.player?.volume = 1
                     imgSound.image = UIImage(named: "newUnmuteIC")
                 }
-            }
+            
         }
     }
 
@@ -133,29 +135,16 @@ extension ReelsCC {
                         }
                         self.loader.stopAnimating()
                         self.hideLoader()
+                        ANLoader.hide()
                     }
-                case .paused:
-                    DispatchQueue.main.async {
-                        self.imgThumbnailView.isHidden = false
-                        self.loader.isHidden = false
-                        self.loader.startAnimating()
-                        self.hideLoader()
-                    }
-                    
-                case .waitingToPlayAtSpecifiedRate:
-                    DispatchQueue.main.async {
-                        self.imgThumbnailView.isHidden = false
-                        self.loader.isHidden = false
-                        self.loader.startAnimating()
-                        self.hideLoader()
-                        
-                    }
-                @unknown default:
-                    DispatchQueue.main.async {
-                        self.imgThumbnailView.isHidden = false
-                        self.loader.isHidden = false
-                        self.loader.startAnimating()
-                        self.hideLoader()
+                 default:
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        if self.playerLayer.player?.timeControlStatus != .playing {
+                            self.imgThumbnailView.isHidden = false
+                            self.loader.isHidden = false
+                            self.loader.startAnimating()
+                            self.hideLoader()
+                        }
                     }
                 }
             }
