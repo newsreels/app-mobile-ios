@@ -43,11 +43,7 @@ extension ReelsCC {
                 }
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 playerLayer.videoGravity = .resizeAspectFill
-                playerLayer.player?.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions.new, context: nil)
-                playerLayer.player?.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.new, context: nil)
-                playerItem.addObserver(self, forKeyPath: "playbackBufferEmpty", options: NSKeyValueObservingOptions.new, context: nil)
-                playerItem.addObserver(self, forKeyPath: "playbackLikelyToKeepUp", options: NSKeyValueObservingOptions.new, context: nil)
-                playerItem.addObserver(self, forKeyPath: "playbackBufferFull", options: NSKeyValueObservingOptions.new, context: nil)
+                playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
                 playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
                 playerContainer.layer.addSublayer(playerLayer)
                 playerLayer.frame = playerContainer.bounds
@@ -126,15 +122,9 @@ extension ReelsCC {
 
 extension ReelsCC {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
-        if object is AVPlayerItem {
-            if let player = playerLayer.player, let currentItem = player.currentItem {
-                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                let bufferStart = timeRange?.start.seconds ?? 0
-                let bufferDuration = timeRange?.duration.seconds ?? 0
-                let bufferEnd = bufferStart + bufferDuration
-                let bufferTime = bufferEnd - player.currentTime().seconds
-                if bufferTime > 2 {
+            if keyPath == "timeControlStatus", let player = object as? AVPlayer {
+                switch player.timeControlStatus {
+                case .playing:
                     DispatchQueue.main.async {
                         self.imgThumbnailView.isHidden = false
                         if self.loader.isHidden == false {
@@ -144,7 +134,23 @@ extension ReelsCC {
                         self.loader.stopAnimating()
                         self.hideLoader()
                     }
-                } else {
+                case .paused:
+                    DispatchQueue.main.async {
+                        self.imgThumbnailView.isHidden = false
+                        self.loader.isHidden = false
+                        self.loader.startAnimating()
+                        self.hideLoader()
+                    }
+                    
+                case .waitingToPlayAtSpecifiedRate:
+                    DispatchQueue.main.async {
+                        self.imgThumbnailView.isHidden = false
+                        self.loader.isHidden = false
+                        self.loader.startAnimating()
+                        self.hideLoader()
+                        
+                    }
+                @unknown default:
                     DispatchQueue.main.async {
                         self.imgThumbnailView.isHidden = false
                         self.loader.isHidden = false
@@ -152,43 +158,7 @@ extension ReelsCC {
                         self.hideLoader()
                     }
                 }
-                print("Buffer Time: \(bufferTime)")
             }
- 
-
-            
-//                        switch keyPath {
-//
-//            case "playbackBufferEmpty":
-//                // Show loader
-//                DispatchQueue.main.async {
-//                    self.imgThumbnailView.isHidden = false
-//                        self.loader.isHidden = false
-//                        self.loader.startAnimating()
-//                }
-//
-//            case "playbackLikelyToKeepUp":
-//                            // Show loader
-//                            DispatchQueue.main.async {
-//                                self.imgThumbnailView.isHidden = false
-//                                    self.loader.isHidden = false
-//                                    self.loader.startAnimating()
-//                            }
-//            case "playbackBufferFull":
-//                // Hide loader
-//                DispatchQueue.main.async {
-//                    self.imgThumbnailView.isHidden = false
-//                    if self.loader.isHidden == false {
-//                        self.loader.isHidden = true
-//                        self.loader.stopAnimating()
-//                    }
-//                    self.loader.stopAnimating()
-//                    self.hideLoader()
-//                }
-//            default:
-//                break
-//            }
-        }
     }
     
 }
