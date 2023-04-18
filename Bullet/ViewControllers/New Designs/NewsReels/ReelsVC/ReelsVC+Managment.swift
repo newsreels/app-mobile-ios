@@ -9,6 +9,7 @@
 import DataCache
 import GSPlayer
 import UIKit
+import AVFoundation
 
 extension ReelsVC {
     func setReels() {
@@ -85,10 +86,6 @@ extension ReelsVC {
                     }
                 }
             } else {
-                ReelsCacheManager.shared.clearDiskCache()
-                currentCachePosition = 1
-                cacheLimit = 10
-                startReelsCaching()
                 if SharedManager.shared.reelsContextNotification != "" {
                     performWSToGetReelsData(page: "", contextID: SharedManager.shared.reelsContextNotification)
                 } else {
@@ -96,10 +93,6 @@ extension ReelsVC {
                 }
             }
         } else {
-            ReelsCacheManager.shared.clearDiskCache()
-            currentCachePosition = 1
-            cacheLimit = 10
-            startReelsCaching()
             viewWillLayoutSubviews()
             collectionView.isUserInteractionEnabled = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -154,23 +147,13 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if indexPath != currentlyPlayingIndexPath,
-                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    // Do something with the cell at the given index path
-                    cell.stopVideo()
-                }
-            }
-        }
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
-            if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
+            if let _ = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
                 self.currentlyPlayingIndexPath = indexPath
                 if SharedManager.shared.reelsAutoPlay {
-                    cell.playVideo()
+                    self.playCurrentCellVideo()
                 }
                 self.sendVideoViewedAnalyticsEvent()
             } else if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsPhotoAdCC {
@@ -183,20 +166,15 @@ extension ReelsVC {
     func playCurrentCellVideo() {
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
-        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            if cell.player.state != .playing {
-                DispatchQueue.main.async {
-                    cell.loader.isHidden = false
-                    cell.loader.startAnimating()
-                }
-                cell.play()
-            } else {
-                DispatchQueue.main.async {
-                    cell.loader.isHidden = true
-                    cell.loader.stopAnimating()
-                }
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
+           !cell.isPlaying {
+ 
+            if let player = players[reelsArray[currentlyPlayingIndexPath.item].id ?? ""], player.currentItem != nil {
+                cell.playerLayer = AVPlayerLayer(player: player)
             }
-
+            print(players.count)
+            cell.playerLayer.player?.seek(to: .zero)
+            cell.play()
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
         }
@@ -312,39 +290,11 @@ extension ReelsVC {
         }
     }
 
-    func getCaptionsFromAPI() {
-        if reelsArray.count < currentlyPlayingIndexPath.item || reelsArray.count == 0 {
-            return
-        }
-        if (reelsArray[currentlyPlayingIndexPath.item].captions?.count ?? 0) == 0 {
-            performWSToGetReelsCaptions(id: reelsArray[currentlyPlayingIndexPath.item].id ?? "")
-
-            // Force check api response loaded after 1 sec, if not recieved call api again
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                if self.reelsArray.count > self.currentlyPlayingIndexPath.item {
-                    if self.reelsArray[self.currentlyPlayingIndexPath.item].captionAPILoaded == false {
-                        self.performWSToGetReelsCaptions(id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
-                    }
-                }
-            }
-        }
-
-        let nextIndex = currentlyPlayingIndexPath.item + 1
-        if reelsArray.count > nextIndex {
-            if (reelsArray[nextIndex].captions?.count ?? 0) == 0 {
-                performWSToGetReelsCaptions(id: reelsArray[nextIndex].id ?? "")
-            }
-        }
-        let thirdIndex = currentlyPlayingIndexPath.item + 2
-        if reelsArray.count > thirdIndex {
-            if (reelsArray[thirdIndex].captions?.count ?? 0) == 0 {
-                performWSToGetReelsCaptions(id: reelsArray[thirdIndex].id ?? "")
-            }
-        }
-    }
 
     func getCurrentVisibleIndexPlayVideo() {
-        let prevsIndex = currentlyPlayingIndexPath
+        // Stop Old cell
+        self.stopAllPlayers()
+        
         var newIndexDetected = false
         // Play latest cell
         for cell in collectionView.visibleCells {
@@ -373,13 +323,16 @@ extension ReelsVC {
                 sendVideoViewedAnalyticsEvent()
             }
         }
-        // Stop Old cell
+
+    }
+}
+
+extension ReelsVC {
+    func stopAllPlayers() {
         for section in 0..<collectionView.numberOfSections {
             for item in 0..<collectionView.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
-                if indexPath != currentlyPlayingIndexPath,
-                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    // Do something with the cell at the given index path
+                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
                     cell.stopVideo()
                 }
             }

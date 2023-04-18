@@ -16,17 +16,10 @@ extension ReelsCC {
         lblAuthor.text = "                    "
         setupUIForSkelton()
         viewContent.backgroundColor = .black
-        loader.isHidden = true
-        loader.stopAnimating()
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-        player.seek(to: .zero)
-        if SharedManager.shared.bulletsAutoPlay {
-            player.isHidden = false
-        } else {
-            player.isHidden = true
-        }
+            playerLayer.player?.seek(to: .zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
@@ -37,13 +30,40 @@ extension ReelsCC {
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
-        player.playToEndTime = {
-            self.delegate?.videoPlayingFinished(cell: self)
-        }
+
+        stackViewButtons.isHidden = false
+        lblAuthor.isHidden = true
+        cSeeAutherStacViewHeight.constant = 25
+        isFullText = false
+        setSeeMoreLabel()
+        descriptionView.isHidden = true
+        lblSeeMore.isHidden = true
+        viewBottomTitleDescription.isHidden = true
+        lblSeeMore.isHidden = false
+        viewBottomTitleDescription.isHidden = false
+        authorBottomConstraint?.constant = 0
+        descriptionView.isHidden = true
     }
     
 
     func setupCell(model: Reel, fromMain: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            if let player = self.playerLayer.player, let currentItem = player.currentItem {
+                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                let bufferStart = timeRange?.start.seconds ?? 0
+                let bufferDuration = timeRange?.duration.seconds ?? 0
+                let bufferEnd = bufferStart + bufferDuration
+                let bufferTime = bufferEnd - player.currentTime().seconds
+                if bufferTime == 0 {
+                    self.imgThumbnailView.isHidden = false
+                    self.loader.isHidden = false
+                    self.loader.startAnimating()
+                    self.hideLoader()
+                }
+            }
+        }
+        playerLayer.player = nil
+        playerLayer.player?.pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -60,19 +80,17 @@ extension ReelsCC {
         viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
-
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
 
             // Geasture for video like
-            if SharedManager.shared.bulletsAutoPlay {
-                player.play(for: url)
-            }
-            if fromMain {
-                pause()
-                player.pause()
-            }
+//            if SharedManager.shared.bulletsAutoPlay {
+//                play()
+//            }
+//            if fromMain {
+//                pause()
+//            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
@@ -115,8 +133,6 @@ extension ReelsCC {
 
         imgVolume.image = nil
         imgVolume.alpha = 0
-
-        hideLoader()
         setImage()
 
         // update like status of video
@@ -135,19 +151,8 @@ extension ReelsCC {
     }
     
     func setImage() {
-        if reelModel?.mediaMeta?.width ?? 0 > reelModel?.mediaMeta?.height ?? 0 {
-            imgThumbnailView?.contentMode = .scaleAspectFit
-            player.contentMode = .scaleAspectFit
-        } else {
-            let containerRatio = frame.size.height / frame.size.width
-            let videoRatio = (reelModel?.mediaMeta?.height ?? 1) / (reelModel?.mediaMeta?.width ?? 1)
-
-            if containerRatio >= CGFloat(videoRatio) {
-                imgThumbnailView?.contentMode = .scaleAspectFit
-            } else {
-                imgThumbnailView?.contentMode = .scaleAspectFill
-            }
-        }
+        imgThumbnailView?.contentMode = .scaleAspectFill
+        playerLayer.videoGravity = .resizeAspectFill
 
         imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         imgThumbnailView?.frame = viewContent.frame
@@ -263,7 +268,6 @@ extension ReelsCC {
     }
 
     func showLoader() {
-        isLoaderShowing = true
 
         imgVolumeAnimation.isHidden = true
         stackViewButtons.isHidden = true
@@ -275,7 +279,6 @@ extension ReelsCC {
     }
 
     func hideLoader() {
-        isLoaderShowing = false
 
         stackViewButtons.isHidden = false
 
@@ -396,10 +399,10 @@ extension ReelsCC {
     func setVolumeStatus() {
         imgSound.image = nil
         if SharedManager.shared.isAudioEnableReels == false {
-            player.volume = 0.0
+            playerLayer.player?.volume = 0.0
             imgSound.image = UIImage(named: "newMuteIC")
         } else {
-            player.volume = 1.0
+            playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
     }
