@@ -22,7 +22,7 @@ typealias CompletionHandler = () -> Void
 class WebService {
     // MARK: - API Calling Methods
 
-    class func URLResponse(_ url: String, method: HTTPMethod, parameters: [String: Any]?, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {
+    class func URLResponse(_ url: String, method: HTTPMethod, parameters: [String: Any]?, body: Any? = nil, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {
         let completeUrl: String = WebserviceManager.shared.API_BASE + url
         // print(completeUrl)
 
