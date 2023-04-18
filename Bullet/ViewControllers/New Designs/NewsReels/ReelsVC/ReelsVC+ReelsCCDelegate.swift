@@ -81,7 +81,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     }
                     
                 }
-               
                 if channelInfo != nil {
                     cell.viewEditArticle.isHidden = (channelInfo?.own ?? false) ? false : true
                 } else {
@@ -100,12 +99,18 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         return UICollectionViewCell()
     }
 
-    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt _: IndexPath) {
+    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
 
         if let cell = cell as? ReelsCC {
+            if indexPath.item == 0,
+               reelsArray.count != 0,
+               let id = reelsArray[0].id,
+               let player = players[id] {
+                players[id] = player
+            }
             cell.stopVideo()
             cell.pause()
         }
@@ -113,9 +118,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
-            if indexPath.item == 0 {
-                cell.play()
-            }
             if SharedManager.shared.isAudioEnableReels == false {
                 cell.playerLayer.player?.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
@@ -136,9 +138,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 reelsArray.remove(at: indexPath.row)
                 let indexPathReload = IndexPath(item: indexPath.row, section: 0)
                 collectionView.reloadItems(at: [indexPathReload])
-            }
-            if players.first != nil {
-                players.removeValue(forKey: players.first?.key ?? "")
             }
             // Preloading
             for section in 0..<collectionView.numberOfSections {
@@ -178,14 +177,19 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.showLoader()
         }
-        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic() { // numberofitem count
+        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic { // numberofitem count
             callWebsericeToGetNextVideos()
         }
 
         (cell as? ReelsCC)?.setImage()
+        if (isFromChannelView || isShowingProfileReels) && !isTapBack {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                getCurrentVisibleIndexPlayVideo()
+            }
+        }
     }
 
-    func setReelAPIHitLogic() -> Int {
+    var setReelAPIHitLogic: Int {
         if reelsArray.count >= 10 {
             return reelsArray.count - 8
         } else {

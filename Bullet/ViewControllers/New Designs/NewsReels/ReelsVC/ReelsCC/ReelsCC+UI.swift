@@ -30,6 +30,19 @@ extension ReelsCC {
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
+
+        stackViewButtons.isHidden = false
+        lblAuthor.isHidden = true
+        cSeeAutherStacViewHeight.constant = 25
+        isFullText = false
+        setSeeMoreLabel()
+        descriptionView.isHidden = true
+        lblSeeMore.isHidden = true
+        viewBottomTitleDescription.isHidden = true
+        lblSeeMore.isHidden = false
+        viewBottomTitleDescription.isHidden = false
+        authorBottomConstraint?.constant = 0
+        descriptionView.isHidden = true
     }
     
 
@@ -138,19 +151,8 @@ extension ReelsCC {
     }
     
     func setImage() {
-        if reelModel?.mediaMeta?.width ?? 0 > reelModel?.mediaMeta?.height ?? 0 {
-            imgThumbnailView?.contentMode = .scaleAspectFill
-            playerLayer.videoGravity = .resizeAspectFill
-        } else {
-            let containerRatio = frame.size.height / frame.size.width
-            let videoRatio = (reelModel?.mediaMeta?.height ?? 1) / (reelModel?.mediaMeta?.width ?? 1)
-
-            if containerRatio >= CGFloat(videoRatio) {
-                imgThumbnailView?.contentMode = .scaleAspectFill
-            } else {
-                imgThumbnailView?.contentMode = .scaleAspectFill
-            }
-        }
+        imgThumbnailView?.contentMode = .scaleAspectFill
+        playerLayer.videoGravity = .resizeAspectFill
 
         imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         imgThumbnailView?.frame = viewContent.frame

@@ -62,12 +62,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var stackViewButtons: UIStackView!
     @IBOutlet var viewEditArticle: UIView!
     @IBOutlet var btnEditArticle: UIButton!
-    @IBOutlet var loader: UIActivityIndicatorView!{
-    didSet{
-        print(loader.isHidden)
-        print("isHidden")
-    }
-}
+    @IBOutlet var loader: UIActivityIndicatorView!
     @IBOutlet var lblChannelName: UILabel!
     @IBOutlet var lblAuthor: UILabel!
     @IBOutlet var btnAuthor: UIButton!
@@ -144,7 +139,7 @@ class ReelsCC: UICollectionViewCell {
         lblSeeMore.text = "                 "
         lblChannelName.text = "                    "
         lblAuthor.text = "                    "
-        btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
+        
     }
 
     
