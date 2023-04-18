@@ -261,7 +261,6 @@
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
 		B8F1118929488F62004F1AD0 /* TopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1118829488F62004F1AD0 /* TopicsViewModel.swift */; };
-		B8F64F6D292280930093A6E1 /* ReelsCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F64F6C292280930093A6E1 /* ReelsCacheManager.swift */; };
 		BD5CA25FC719406ED60C0272 /* Pods_Bullet_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A3B1F30936C324E4DC45FE /* Pods_Bullet_WidgetExtension.framework */; };
 		C202A63B24826B5E00B7CEF4 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202A63A24826B5E00B7CEF4 /* ForgotPasswordVC.swift */; };
 		C202A63F2482769C00B7CEF4 /* SettingsCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202A63E2482769C00B7CEF4 /* SettingsCC.swift */; };
@@ -1415,7 +1414,6 @@
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
 		B8F1118829488F62004F1AD0 /* TopicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewModel.swift; sourceTree = "<group>"; };
-		B8F64F6C292280930093A6E1 /* ReelsCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCacheManager.swift; sourceTree = "<group>"; };
 		B9AC6198A6EEE91D8096194B /* Pods-Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.release.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.release.xcconfig"; sourceTree = "<group>"; };
 		C202A63A24826B5E00B7CEF4 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		C202A63E2482769C00B7CEF4 /* SettingsCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCC.swift; sourceTree = "<group>"; };
@@ -2995,7 +2993,6 @@
 			isa = PBXGroup;
 			children = (
 				B8E2BF33292B5C64001EFA8F /* ArticleImageCache */,
-				B8F64F6929226C330093A6E1 /* M3U8Parser */,
 				DEE8729327EDACF300441858 /* TagCellLayout */,
 				DE78FCF227BAFDFF00CCE284 /* MaskedLabel */,
 				C258C61A26DD061D003603D1 /* MediaWatermark */,
@@ -3151,14 +3148,6 @@
 				B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */,
 			);
 			path = ArticleImageCache;
-			sourceTree = "<group>";
-		};
-		B8F64F6929226C330093A6E1 /* M3U8Parser */ = {
-			isa = PBXGroup;
-			children = (
-				B8F64F6C292280930093A6E1 /* ReelsCacheManager.swift */,
-			);
-			path = M3U8Parser;
 			sourceTree = "<group>";
 		};
 		C20C9BB324ADBF1700148149 /* webView */ = {
@@ -6409,7 +6398,6 @@
 				3DF1A93226368446001F0DE9 /* ProfileFollowingVC.swift in Sources */,
 				6414AC6825AAD71C006D0221 /* HomeListAdsCC.swift in Sources */,
 				C27392C4262441C0000A3C57 /* GenericTableView.swift in Sources */,
-				B8F64F6D292280930093A6E1 /* ReelsCacheManager.swift in Sources */,
 				0773330F284B14C400760CA9 /* CryptoPricesCollectionViewCell.swift in Sources */,
 				DE7F422226E10B9700042A48 /* AuthorsDiscoverCC.swift in Sources */,
 				3DD5D99A269748E4002D9A8F /* suggestedReelsCC.swift in Sources */,

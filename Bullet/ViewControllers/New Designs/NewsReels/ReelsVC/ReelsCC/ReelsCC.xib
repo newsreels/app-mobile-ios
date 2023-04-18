@@ -46,7 +46,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-AZ-vMZ" customClass="CustomImageView" customModule="Newsreels" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="619" height="804"/>
                                     </imageView>
-                                    <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-zg-CI6" customClass="VideoPlayerView" customModule="GSPlayer">
+                                    <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-zg-CI6">
                                         <rect key="frame" x="0.0" y="0.0" width="619" height="804"/>
                                     </view>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1m-3U-Cbc">
@@ -733,7 +733,7 @@
                 <outlet property="lblLikeCount" destination="Ot4-Xt-Ktq" id="9fx-C4-OnW"/>
                 <outlet property="lblSeeMore" destination="7DD-EE-bMB" id="3VB-ot-Dnz"/>
                 <outlet property="loader" destination="Bgs-IR-Yhr" id="gmK-3p-hDK"/>
-                <outlet property="player" destination="YTR-zg-CI6" id="Fj9-zD-4Xq"/>
+                <outlet property="playerContainer" destination="YTR-zg-CI6" id="F6V-3J-ckz"/>
                 <outlet property="stackViewButtons" destination="FpE-bl-uc7" id="jGu-1B-DUj"/>
                 <outlet property="viewBackground" destination="QBa-BP-unJ" id="1rp-tI-JjE"/>
                 <outlet property="viewBottomFooter" destination="Fe5-Of-lai" id="C5M-If-rEn"/>

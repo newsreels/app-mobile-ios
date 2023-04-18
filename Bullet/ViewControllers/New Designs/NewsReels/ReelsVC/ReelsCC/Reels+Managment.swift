@@ -8,29 +8,62 @@
 
 import UIKit
 import CoreMedia
+import AVFoundation
 
 extension ReelsCC {
     func pause() {
-        player.pause(reason: .hidden)
+        if isPlaying {
+            isPlaying = false
+            playerLayer.player?.pause()
+        }
     }
 
     func play() {
-        setImage()
-        if let url = URL(string: reelModel?.media ?? "") {
-            player.play(for: url)
-            if SharedManager.shared.isAudioEnableReels == false {
-                player.volume = 0
-                imgSound.image = UIImage(named: "newMuteIC")
-            } else {
-                player.volume = 1
-                imgSound.image = UIImage(named: "newUnmuteIC")
+        if !isPlaying {
+            isPlaying = true
+            setImage()
+            if let url = URL(string: reelModel?.media ?? ""),
+               playerLayer.player == nil {
+                let asset = AVAsset(url: url)
+                let playerItem = AVPlayerItem(asset: asset)
+                playerItem.preferredForwardBufferDuration = 5
+                playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
+                // set preferredMaximumResolution to stream only the 240p resolution
+                // set preferred resolution for 240p
+                playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+                // set preferred bitrate for 240p resolution
+                playerItem.preferredPeakBitRate = Double(200000)
+                //3. Create AVPlayerLayer object
+                let player = AVPlayer(playerItem: playerItem)
+                playerLayer = AVPlayerLayer(player: player)
             }
+            
+            if let currentItem = playerLayer.player?.currentItem {
+                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                if let timeRange = timeRange {
+                    let bufferDuration = timeRange.duration.seconds
+                    print("buffer duration: \(bufferDuration) seconds")
+                }
+            }
+                
+                playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
+                playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
+                playerContainer.layer.addSublayer(playerLayer)
+                playerLayer.frame = playerContainer.bounds
+                playerContainer.backgroundColor = .clear
+                playerLayer.player?.play()
+                if SharedManager.shared.isAudioEnableReels == false {
+                    playerLayer.player?.volume = 0
+                    imgSound.image = UIImage(named: "newMuteIC")
+                } else {
+                    playerLayer.player?.volume = 1
+                    imgSound.image = UIImage(named: "newUnmuteIC")
+                }
+            
         }
     }
 
     func stopVideo() {
-        removeAllCaptions()
-
         if SharedManager.shared.reelsAutoPlay == false {
             viewPlayButton.isHidden = false
         }
@@ -53,17 +86,17 @@ extension ReelsCC {
         viewPlayButton.isHidden = true
         isPlayWhenReady = true
         if SharedManager.shared.isAudioEnableReels == false {
-            player.volume = 0.0
+            playerLayer.player?.volume = 0.0
             imgSound.image = UIImage(named: "newMuteIC")
         } else {
-            player.volume = 1.0
+            playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
 
-        if player.state != .playing {
+        if !(playerLayer.player?.isPlaying ?? false) {
             play()
-        } else if (player.totalDuration) >= (player.currentDuration) {
-            player.seek(to: .zero)
+        } else if (playerLayer.player?.totalDuration ?? 0) >= (playerLayer.player?.currentDuration ?? 0) {
+            playerLayer.player?.seek(to: .zero)
             play()
         }
 
@@ -74,48 +107,47 @@ extension ReelsCC {
         viewPlayButton.isHidden = true
         isPlayWhenReady = true
         if SharedManager.shared.isAudioEnableReels == false {
-            player.volume = 0.0
+            playerLayer.player?.volume = 0.0
             imgSound.image = UIImage(named: "newMuteIC")
         } else {
-            player.volume = 1.0
+            playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
 
         if let time = time {
-            player.seek(to: CMTime(seconds: time, preferredTimescale: CMTimeScale(NSEC_PER_SEC)))
+            playerLayer.player?.seek(to: CMTime(seconds: time, preferredTimescale: CMTimeScale(NSEC_PER_SEC)))
         }
 
         play()
-
-        removeAllCaptions()
     }
 }
 
 extension ReelsCC {
-    func loadCaptions(time: Double) {
-        if let captions = reelModel?.captions, captions.count > 0 {
-            if currTime != time {
-                currTime = time
-                updateSubTitlesWithTime(currTime: time, captions: captions)
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+            if keyPath == "timeControlStatus", let player = object as? AVPlayer {
+                switch player.timeControlStatus {
+                case .playing:
+                    DispatchQueue.main.async {
+                        self.imgThumbnailView.isHidden = false
+                        if self.loader.isHidden == false {
+                            self.loader.isHidden = true
+                            self.loader.stopAnimating()
+                        }
+                        self.loader.stopAnimating()
+                        self.hideLoader()
+                        ANLoader.hide()
+                    }
+                 default:
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        if self.playerLayer.player?.timeControlStatus != .playing {
+                            self.imgThumbnailView.isHidden = false
+                            self.loader.isHidden = false
+                            self.loader.startAnimating()
+                            self.hideLoader()
+                        }
+                    }
+                }
             }
-        }
     }
-
-    func removeAllCaptions() {
-        if let captionsLabel = captionsArr {
-            for label in captionsLabel {
-                label.removeFromSuperview()
-            }
-        }
-        if let captionsView = captionsViewArr {
-            for view in captionsView {
-                view.removeFromSuperview()
-            }
-        }
-        viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
-        captionsArr?.removeAll()
-        captionsViewArr?.removeAll()
-
-        currTime = -1.0
-    }
+    
 }

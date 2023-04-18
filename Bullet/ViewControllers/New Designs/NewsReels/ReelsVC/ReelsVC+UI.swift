@@ -239,8 +239,6 @@ extension ReelsVC {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if lblRefreshLabel.text == "Release to refresh" {
             isPullToRefresh = true
-            currentCachePosition = 1
-            cacheLimit = 10
             loadNewData()
         }
 
@@ -278,8 +276,8 @@ extension ReelsVC {
         }
         
         if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
-            SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+            SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         }
     }
 

@@ -43,7 +43,7 @@ protocol ReelsCCDelegate: AnyObject {
 // MARK: - ReelsCC
 
 class ReelsCC: UICollectionViewCell {
-    @IBOutlet var player: VideoPlayerView!
+    @IBOutlet weak var playerContainer: VideoPlayerView!
     @IBOutlet var descriptionViewHeight: NSLayoutConstraint!
     @IBOutlet var lblDescriptionAbove: UILabel!
     @IBOutlet var lblDescriptionGradient: UILabel!
@@ -88,6 +88,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
+    var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -101,71 +102,17 @@ class ReelsCC: UICollectionViewCell {
     var imageView: UIImageView?
     var isPlayWhenReady = false
     var reelModel: Reel?
-    var isLoaderShowing = false
     weak var delegate: ReelsCCDelegate?
+    var isPlaying = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupViews()
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-
         loader.isHidden = true
-        loader.stopAnimating()
-        pause()
-        player.seek(to: .zero)
-        for recognizer in viewSubTitle.gestureRecognizers ?? [] {
-            viewSubTitle.removeGestureRecognizer(recognizer)
-        }
-        lblSeeMore.text = "                 "
-        lblChannelName.text = "                    "
-        lblAuthor.text = "                    "
-        btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 12, left: 16, bottom: 12, right: 16)
-        hideLoader()
+        playerLayer.videoGravity = .resizeAspectFill
         ANLoader.hide()
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
+        setupViews()
         setDescriptionLabel()
-        player.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
-        player.backgroundColor = .clear
-        imgThumbnailView.isHidden = false
-        player.stateDidChanged = { state in
-            switch state {
-            case .none:
-                print("none")
-            case let .error(error):
-                print(error)
-            case .loading:
-                print("loading")
-            case let .paused(playing, buffering):
-                if self.player.pausedReason == .waitingKeepUp {
-                    print("")
-                }
-                DispatchQueue.main.async {
-                    self.imgThumbnailView.isHidden = true
-                    if self.loader.isHidden == false {
-                        self.loader.isHidden = true
-                        self.loader.stopAnimating()
-                    }
-                    self.hideLoader()
-                }
-            case .playing:
-                DispatchQueue.main.async {
-                    self.imgThumbnailView.isHidden = true
-                    if self.loader.isHidden == false {
-                        self.loader.isHidden = true
-                        self.loader.stopAnimating()
-                    }
-                    self.play()
-                    self.loader.stopAnimating()
-                    self.hideLoader()
-                }
-            }
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -178,6 +125,33 @@ class ReelsCC: UICollectionViewCell {
                 self.lblSeeMore.textAlignment = .left
             }
         }
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        pause()
+        playerLayer.player?.seek(to: .zero)
+        playerLayer.player?.replaceCurrentItem(with: nil)
+        for recognizer in viewSubTitle.gestureRecognizers ?? [] {
+            viewSubTitle.removeGestureRecognizer(recognizer)
+        }
+        lblSeeMore.text = "                 "
+        lblChannelName.text = "                    "
+        lblAuthor.text = "                    "
+        
+    }
+
+    
+    
+    @objc private func videoDidEnded() {
+        //do something here
+        self.delegate?.videoPlayingFinished(cell: self)
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+ 
+
     }
 
     override func draw(_: CGRect) {}
@@ -223,12 +197,12 @@ class ReelsCC: UICollectionViewCell {
             SharedManager.shared.isAudioEnableReels = true
             //            SharedManager.shared.isAudioEnable = true
 
-            player.volume = 1.0
+            playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         } else {
             SharedManager.shared.isAudioEnableReels = false
             //            SharedManager.shared.isAudioEnable = false
-            player.volume = 0.0
+            playerLayer.player?.volume = 0.0
             imgSound.image = UIImage(named: "newMuteIC")
         }
 
@@ -266,7 +240,7 @@ extension ReelsCC {
         if sender.state == .began {
             PauseVideo()
         } else if sender.state == .ended || sender.state == .failed || sender.state == .cancelled {
-            if player.state != .playing {
+            if !(playerLayer.player?.isPlaying ?? false) {
                 playVideo()
             }
         }
