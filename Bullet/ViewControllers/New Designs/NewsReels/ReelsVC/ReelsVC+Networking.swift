@@ -410,9 +410,6 @@ extension ReelsVC {
                                     if self.isRightMenuLoaded {
                                         return
                                     }
-                                    if self.currentlyPlayingIndexPath.item == 0 {
-                                        self.playCurrentCellVideo()
-                                    }
                                 }
                             }
                             if SharedManager.shared.isAppLaunchedThroughNotification {
