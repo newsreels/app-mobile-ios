@@ -150,10 +150,10 @@ extension ReelsVC {
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
-            if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
+            if let _ = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
                 self.currentlyPlayingIndexPath = indexPath
                 if SharedManager.shared.reelsAutoPlay {
-                    cell.playVideo()
+                    self.playCurrentCellVideo()
                 }
                 self.sendVideoViewedAnalyticsEvent()
             } else if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsPhotoAdCC {
@@ -173,6 +173,7 @@ extension ReelsVC {
                 cell.playerLayer = AVPlayerLayer(player: item)
             }
             print(players.count)
+            cell.playerLayer.player?.seek(to: .zero)
             cell.play()
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
