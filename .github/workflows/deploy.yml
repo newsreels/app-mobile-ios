@@ -27,9 +27,9 @@ jobs:
           PROVISIONING_PROFILE_DATA: ${{ secrets.PROVISIONING_PROFILE_DATA }}
         run: |
           exec .github/scripts/import-profile.sh
-      - name: Build app
+      - name: Build
         run: |
-          fastlane run build_app
+          xcodebuild -workspace Bullet.xcworkspace -scheme Bullet -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' build
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
