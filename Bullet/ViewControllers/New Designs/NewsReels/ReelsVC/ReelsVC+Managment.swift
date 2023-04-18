@@ -169,8 +169,8 @@ extension ReelsVC {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
            !cell.isPlaying {
  
-            if let item = players[reelsArray[currentlyPlayingIndexPath.item].id ?? ""] {
-                cell.playerLayer = AVPlayerLayer(player: item)
+            if let player = players[reelsArray[currentlyPlayingIndexPath.item].id ?? ""], player.currentItem != nil {
+                cell.playerLayer = AVPlayerLayer(player: player)
             }
             print(players.count)
             cell.playerLayer.player?.seek(to: .zero)
@@ -293,16 +293,7 @@ extension ReelsVC {
 
     func getCurrentVisibleIndexPlayVideo() {
         // Stop Old cell
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if indexPath != currentlyPlayingIndexPath,
-                   let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    // Do something with the cell at the given index path
-                    cell.stopVideo()
-                }
-            }
-        }
+        self.stopAllPlayers()
         
         var newIndexDetected = false
         // Play latest cell
@@ -333,5 +324,18 @@ extension ReelsVC {
             }
         }
 
+    }
+}
+
+extension ReelsVC {
+    func stopAllPlayers() {
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                    cell.stopVideo()
+                }
+            }
+        }
     }
 }

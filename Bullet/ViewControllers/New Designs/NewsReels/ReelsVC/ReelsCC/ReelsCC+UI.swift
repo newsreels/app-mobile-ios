@@ -151,19 +151,8 @@ extension ReelsCC {
     }
     
     func setImage() {
-        if reelModel?.mediaMeta?.width ?? 0 > reelModel?.mediaMeta?.height ?? 0 {
-            imgThumbnailView?.contentMode = .scaleAspectFill
-            playerLayer.videoGravity = .resizeAspectFill
-        } else {
-            let containerRatio = frame.size.height / frame.size.width
-            let videoRatio = (reelModel?.mediaMeta?.height ?? 1) / (reelModel?.mediaMeta?.width ?? 1)
-
-            if containerRatio >= CGFloat(videoRatio) {
-                imgThumbnailView?.contentMode = .scaleAspectFill
-            } else {
-                imgThumbnailView?.contentMode = .scaleAspectFill
-            }
-        }
+        imgThumbnailView?.contentMode = .scaleAspectFill
+        playerLayer.videoGravity = .resizeAspectFill
 
         imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         imgThumbnailView?.frame = viewContent.frame

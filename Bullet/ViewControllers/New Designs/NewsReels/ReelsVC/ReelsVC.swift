@@ -107,7 +107,7 @@ class ReelsVC: UIViewController {
     var isNoInternet = false
     var scrollTimer: Timer?
     var players = [String: AVPlayer]()
-    
+    var isTapBack = false
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -125,7 +125,6 @@ class ReelsVC: UIViewController {
 
     override func viewWillAppear(_: Bool) {
         (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
-
         if isWatchingRotatedVideos {
             return
         }
@@ -226,7 +225,6 @@ class ReelsVC: UIViewController {
 
     override func viewDidAppear(_: Bool) {
         setStatusBar()
-
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
             self.getArticleDataPayLoad()
         }
@@ -268,18 +266,7 @@ class ReelsVC: UIViewController {
         DispatchQueue.main.async {
             self.stopVideo()
         }
-            for section in 0..<self.collectionView.numberOfSections {
-                for item in 0..<self.collectionView.numberOfItems(inSection: section) {
-                    let indexPath = IndexPath(item: item, section: section)
-                    if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                        if cell.playerLayer.player?.isPlaying ?? false {
-                            DispatchQueue.main.async {
-                                cell.stopVideo()
-                            }
-                        }
-                    }
-                }
-            }
+        self.stopAllPlayers()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -351,6 +338,7 @@ class ReelsVC: UIViewController {
 
     @IBAction func didTapBack(_: Any) {
         SharedManager.shared.isOnDiscover = true
+        isTapBack = true
         if isShowingProfileReels || isFromChannelView {
             navigationController?.popViewController(animated: true)
         } else if isFromDiscover {
