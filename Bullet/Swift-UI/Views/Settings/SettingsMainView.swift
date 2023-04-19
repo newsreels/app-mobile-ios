@@ -80,6 +80,7 @@ struct SettingsMainview: View {
         }
         .onAppear{
             autoplayVideos =  SharedManager.shared.reelsAutoPlay
+            checkSecondaryLang()
         }
         .actionSheet(isPresented: $showConfirmAccount) {
             ActionSheet(
@@ -667,6 +668,13 @@ struct SettingsMainview: View {
             ANLoader.hide()
             //SharedManager.shared.showAPIFailureAlert()
             print("error parsing json objects",error)
+        }
+    }
+    
+    func checkSecondaryLang() {
+        if LanguageHelper.shared.getSecondaryLanguage()?.id != LanguageHelper.shared.getSavedLanguage()?.id {
+            guard let primary = LanguageHelper.shared.getSavedLanguage() else { return }
+            LanguageHelper.shared.saveSecondaryLanguage(language: primary)
         }
     }
 }

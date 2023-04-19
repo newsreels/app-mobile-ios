@@ -480,9 +480,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
     
     @objc func setHome() {
+        checkSecondaryLang()
         SharedManager.shared.curReelsCategoryId = ""
         SharedManager.shared.curArticlesCategoryId = ""
-
         if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
             SharedManager.shared.bulletsAutoPlay = true
             let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
@@ -1533,7 +1533,14 @@ extension AppDelegate {
     }
 }
 
-
+extension AppDelegate {
+    func checkSecondaryLang() {
+        if LanguageHelper.shared.getSecondaryLanguage()?.id != LanguageHelper.shared.getSavedLanguage()?.id {
+            guard let primary = LanguageHelper.shared.getSavedLanguage() else { return }
+            LanguageHelper.shared.saveSecondaryLanguage(language: primary)
+        }
+    }
+}
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
