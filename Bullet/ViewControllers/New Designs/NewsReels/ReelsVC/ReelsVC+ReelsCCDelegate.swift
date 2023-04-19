@@ -621,4 +621,16 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapCaptions(cell _: ReelsCC) {
      }
+    
+    func stopPrevious(cell: ReelsCC) {
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if let reelCell = collectionView.cellForItem(at: indexPath) as? ReelsCC,
+                   reelCell.reelModel?.id != cell.reelModel?.id{
+                    reelCell.stopVideo()
+                }
+            }
+        }
+    }
 }

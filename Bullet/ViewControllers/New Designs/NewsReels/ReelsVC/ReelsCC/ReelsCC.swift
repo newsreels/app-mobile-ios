@@ -35,7 +35,7 @@ protocol ReelsCCDelegate: AnyObject {
     func didSwipeRight(cell: ReelsCC)
     func didTapRotateVideo(cell: ReelsCC)
     func didTapPlayVideo(cell: ReelsCC)
-
+    func stopPrevious(cell: ReelsCC)
     func didTapCaptions(cell: ReelsCC)
     func didTapOpenCaptionType(cell: ReelsCC, action: String)
 }

@@ -173,6 +173,7 @@ extension ReelsCC {
     }
 
     func setDescriptionLabel() {
+        print("fucking \(reelModel?.reelDescription ?? "")")
         lblDescriptionAbove.text = (reelModel?.reelDescription ?? "").uppercased()
         lblDescriptionAbove.textColor = UIColor.white
         lblDescriptionAbove.font = UIFont(name: Constant.FONT_Gilroy_ExtraBold, size: 22 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 20 + adjustFontSizeForiPad())
@@ -298,6 +299,7 @@ extension ReelsCC {
             }
         }
 
+        print("fucking \(reelModel?.reelDescription ?? "")")
         newsDescription = reelModel?.reelDescription ?? ""
         isFullText = false
         setSeeMoreLabel()
@@ -326,8 +328,7 @@ extension ReelsCC {
                 viewBottomTitleDescription.isHidden = true
                 descriptionView.isHidden = true
             }
-        } else {
-            if let nativeTitle = reelModel?.nativeTitle {
+        } else if let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle {
                     lblSeeMore.isHidden = !nativeTitle
                     viewBottomTitleDescription.isHidden = !nativeTitle
@@ -335,7 +336,11 @@ extension ReelsCC {
                 } else if !nativeTitle {
                     authorBottomConstraint?.constant = -25
                 }
-            }
+        } else if !newsDescription.isEmpty {
+            lblSeeMore.isHidden = false
+            viewBottomTitleDescription.isHidden = false
+            authorBottomConstraint?.constant = 0
+            descriptionView.isHidden = true
         }
 
         let formater = NumberFormatter()

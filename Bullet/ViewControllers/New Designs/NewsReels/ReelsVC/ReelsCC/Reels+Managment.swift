@@ -120,7 +120,7 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 if SharedManager.shared.playingVideos.count > 1 {
-                    pause()
+                    delegate?.stopPrevious(cell: self)
                     guard let id = reelModel?.id else { return }
                     SharedManager.shared.playingVideos.append(id)
                 }
