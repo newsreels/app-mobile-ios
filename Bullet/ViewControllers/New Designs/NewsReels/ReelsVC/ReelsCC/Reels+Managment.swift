@@ -17,21 +17,15 @@ extension ReelsCC {
             playerLayer.player?.pause()
         }
     }
-
+    
     func play() {
         if !isPlaying {
-            let date = Date()
-            let calendar = Calendar.current
-            let minute = calendar.component(.minute, from: date)
-            let second = calendar.component(.second, from: date)
-            print("playing: \(reelModel?.id ?? "") at \(minute):\(second)")
             isPlaying = true
             setImage()
             if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
-                playerItem.preferredForwardBufferDuration = 10
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 // set preferredMaximumResolution to stream only the 240p resolution
                 // set preferred resolution for 240p
@@ -43,49 +37,41 @@ extension ReelsCC {
                 playerLayer = AVPlayerLayer(player: player)
             }
             
-            if let currentItem = playerLayer.player?.currentItem {
-                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                if let timeRange = timeRange {
-                    let bufferDuration = timeRange.duration.seconds
-                    print("buffer duration: \(bufferDuration) seconds")
-                }
+            playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
+            playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
+            playerContainer.layer.addSublayer(playerLayer)
+            playerLayer.frame = playerContainer.bounds
+            playerContainer.backgroundColor = .clear
+            playerLayer.player?.play()
+            if SharedManager.shared.isAudioEnableReels == false {
+                playerLayer.player?.volume = 0
+                imgSound.image = UIImage(named: "newMuteIC")
+            } else {
+                playerLayer.player?.volume = 1
+                imgSound.image = UIImage(named: "newUnmuteIC")
             }
-                
-                playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
-                playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
-                playerContainer.layer.addSublayer(playerLayer)
-                playerLayer.frame = playerContainer.bounds
-                playerContainer.backgroundColor = .clear
-                playerLayer.player?.play()
-                if SharedManager.shared.isAudioEnableReels == false {
-                    playerLayer.player?.volume = 0
-                    imgSound.image = UIImage(named: "newMuteIC")
-                } else {
-                    playerLayer.player?.volume = 1
-                    imgSound.image = UIImage(named: "newUnmuteIC")
-                }
             
         }
     }
-
+    
     func stopVideo() {
         if SharedManager.shared.reelsAutoPlay == false {
             viewPlayButton.isHidden = false
         }
         isPlayWhenReady = false
         pause()
-
+        
         viewTransparentBG.isHidden = true
         isFullText = false
         setSeeMoreLabel()
-
+        
         currTime = -1
     }
-
+    
     func PauseVideo() {
         isPlayWhenReady = false
     }
-
+    
     func playVideo() {
         setFollowButton(hidden: reelModel?.source?.favorite ?? false)
         viewPlayButton.isHidden = true
@@ -97,17 +83,17 @@ extension ReelsCC {
             playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
-
+        
         if !(playerLayer.player?.isPlaying ?? false) {
             play()
         } else if (playerLayer.player?.totalDuration ?? 0) >= (playerLayer.player?.currentDuration ?? 0) {
             playerLayer.player?.seek(to: .zero)
             play()
         }
-
+        
         SharedManager.shared.performWSToUpdateArticleAnalytics(ArticleId: reelModel?.id ?? "", isFromReel: true)
     }
-
+    
     func resumeVideoPlay(time: TimeInterval?) {
         viewPlayButton.isHidden = true
         isPlayWhenReady = true
@@ -118,48 +104,65 @@ extension ReelsCC {
             playerLayer.player?.volume = 1.0
             imgSound.image = UIImage(named: "newUnmuteIC")
         }
-
+        
         if let time = time {
             playerLayer.player?.seek(to: CMTime(seconds: time, preferredTimescale: CMTimeScale(NSEC_PER_SEC)))
         }
-
+        
         play()
     }
 }
 
 extension ReelsCC {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-            if keyPath == "timeControlStatus", let player = object as? AVPlayer {
-                switch player.timeControlStatus {
-                case .playing:
-                    DispatchQueue.main.async {
-                        self.imgThumbnailView.isHidden = false
-                        if self.loader.isHidden == false {
-                            self.loader.isHidden = true
-                            self.loader.stopAnimating()
-                        }
+        if keyPath == "timeControlStatus", let player = object as? AVPlayer {
+            switch player.timeControlStatus {
+            case .playing:
+                print("playing \(reelModel?.id ?? "")")
+                if SharedManager.shared.playingVideos.count > 1 {
+                    pause()
+                    guard let id = reelModel?.id else { return }
+                    SharedManager.shared.playingVideos.append(id)
+                }
+                if let id = reelModel?.id, !SharedManager.shared.playingVideos.contains(id) {
+                    SharedManager.shared.playingVideos.append(id)
+                }
+                
+                
+                DispatchQueue.main.async {
+                    self.imgThumbnailView.isHidden = false
+                    if self.loader.isHidden == false {
+                        self.loader.isHidden = true
                         self.loader.stopAnimating()
+                    }
+                    self.loader.stopAnimating()
+                    self.hideLoader()
+                    ANLoader.hide()
+                }
+            case .paused:
+                print("paused \(reelModel?.id ?? "")")
+                if let id = reelModel?.id, SharedManager.shared.playingVideos.contains(id) {
+                    SharedManager.shared.playingVideos.remove(object: id)
+                }
+            case .waitingToPlayAtSpecifiedRate:
+                                    if let currentItem = playerLayer.player?.currentItem {
+                                        let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                                        if let timeRange = timeRange {
+                                            let bufferDuration = timeRange.duration.seconds
+                                            print("waitingToPlayAtSpecifiedRate in buffer duration: \(bufferDuration) seconds")
+                                        }
+                                    }
+                print("waitingToPlayAtSpecifiedRate \(reelModel?.id ?? "")")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate  {
+                        self.imgThumbnailView.isHidden = false
+                        self.loader.isHidden = false
+                        self.loader.startAnimating()
                         self.hideLoader()
-                        ANLoader.hide()
-                    }
-                 default:
-                    if let currentItem = playerLayer.player?.currentItem {
-                        let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                        if let timeRange = timeRange {
-                            let bufferDuration = timeRange.duration.seconds
-                            print("paused in buffer duration: \(bufferDuration) seconds")
-                        }
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        if self.playerLayer.player?.timeControlStatus != .playing {
-                            self.imgThumbnailView.isHidden = false
-                            self.loader.isHidden = false
-                            self.loader.startAnimating()
-                            self.hideLoader()
-                        }
                     }
                 }
             }
+        }
     }
     
 }

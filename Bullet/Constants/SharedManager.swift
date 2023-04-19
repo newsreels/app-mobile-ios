@@ -145,6 +145,8 @@ class SharedManager {
     
     var isOnPrefrence = false
     var isFromPNBackground = false
+    var playingVideos = [String]()
+    
     //var dataSaver = false
     var videoAutoPlay: Bool {
         get {

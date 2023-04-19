@@ -107,9 +107,7 @@ class ReelsCC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        loader.isHidden = true
         playerLayer.videoGravity = .resizeAspectFill
-        ANLoader.hide()
         setupViews()
         setDescriptionLabel()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
@@ -225,7 +223,6 @@ extension ReelsCC {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case .left:
-                print("Swiped left")
                 delegate?.didSwipeRight(cell: self)
 
             case .up:

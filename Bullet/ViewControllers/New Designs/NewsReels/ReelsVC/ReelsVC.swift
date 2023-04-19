@@ -433,7 +433,7 @@ extension ReelsVC {
             if reelsArray.count > 0 {
                 if isRightMenuLoaded == false, isShareSheetPresenting == false {
                     if SharedManager.shared.reelsAutoPlay {
-                        playCurrentCellVideo()
+                        playCurrentCellVideo(isFromBackground: true)
                     }
                 }
             }

@@ -164,7 +164,7 @@ extension ReelsVC {
         }
     }
 
-    func playCurrentCellVideo() {
+    func playCurrentCellVideo(isFromBackground: Bool = false) {
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
@@ -173,8 +173,9 @@ extension ReelsVC {
             if let player = players[reelsArray[currentlyPlayingIndexPath.item].id ?? ""], player.currentItem != nil {
                 cell.playerLayer = AVPlayerLayer(player: player)
             }
-            print(players.count)
-            cell.playerLayer.player?.seek(to: .zero)
+            if !isFromBackground {
+                cell.playerLayer.player?.seek(to: .zero)
+            }
             cell.play()
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
