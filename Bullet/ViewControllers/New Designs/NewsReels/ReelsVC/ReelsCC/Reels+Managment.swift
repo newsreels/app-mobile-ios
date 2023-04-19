@@ -145,14 +145,13 @@ extension ReelsCC {
                     SharedManager.shared.playingVideos.remove(object: id)
                 }
             case .waitingToPlayAtSpecifiedRate:
-                                    if let currentItem = playerLayer.player?.currentItem {
-                                        let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                                        if let timeRange = timeRange {
-                                            let bufferDuration = timeRange.duration.seconds
-                                            print("waitingToPlayAtSpecifiedRate in buffer duration: \(bufferDuration) seconds")
-                                        }
-                                    }
-                print("waitingToPlayAtSpecifiedRate \(reelModel?.id ?? "")")
+                if let currentItem = playerLayer.player?.currentItem {
+                    let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                    if let timeRange = timeRange {
+                        let bufferDuration = timeRange.duration.seconds
+                        print("waitingToPlayAtSpecifiedRate, buffer: \(bufferDuration), currently: \((playerLayer.player?.currentItem?.currentDuration ?? 0))")
+                    }
+                }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate  {
                         self.imgThumbnailView.isHidden = false

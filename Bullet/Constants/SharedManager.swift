@@ -1321,7 +1321,6 @@ class SharedManager {
             do{
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
-                print(FULLResponse)
                 if let message = FULLResponse.message, message.lowercased() == "ok" {
                    
                 }
