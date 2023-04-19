@@ -182,7 +182,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         (cell as? ReelsCC)?.setImage()
-        if (isFromChannelView || isShowingProfileReels) && !isTapBack {
+        if !fromMain && !isTapBack {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
                 getCurrentVisibleIndexPlayVideo()
             }
