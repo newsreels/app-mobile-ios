@@ -290,7 +290,7 @@ struct SettingsMainview: View {
                     }
                 }
                 
-                
+                /*
                 SettingsRowView(settings: .selection(iconName: "language_ic", title: NSLocalizedString("Secondary Language", comment: ""), description: secondaryLanguage)) {
                     if let region = LanguageHelper.shared.getSavedRegion() {
                         languageHelper.getLanguage(withRegionID: region.id) {
@@ -305,6 +305,7 @@ struct SettingsMainview: View {
                         isShowRegionSelection = true
                     }
                 }
+                */
                 
                 SettingsRowView(settings: .normal(iconName: "notif_ic", title: NSLocalizedString("Notification Settings", comment: ""))) {
                      settings.isActive = true
@@ -315,6 +316,7 @@ struct SettingsMainview: View {
                      SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
                     
                 }
+                /*
                 SettingsRowView(settings: .selection(iconName: "region_ic", title: NSLocalizedString("Region", comment: ""), description: languageHelper.selectedRegion?.name ?? "")) {
                     isShowRegionSelection = true
                     //                    settings.isActive = true
@@ -323,6 +325,7 @@ struct SettingsMainview: View {
                     //                        settings.isActive = false
                     //                    }, isInSettings: true).navigationBarHidden(true))
                 }
+                */
                 
 //                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
 //                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
@@ -422,11 +425,11 @@ struct SettingsMainview: View {
                             print("error parsing json objects",error)
                         }
                     }
-                } else   {
+                }/* else   {
                     SettingsRowView(settings: .normal(iconName: "login_ic", title: NSLocalizedString("Login", comment: "")), showDivider: false) {
                         NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                     }
-                }
+                }*/
             }
             
         }
