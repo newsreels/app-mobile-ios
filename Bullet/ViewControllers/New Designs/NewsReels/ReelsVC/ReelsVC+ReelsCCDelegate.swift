@@ -112,7 +112,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 players[id] = player
             }
             cell.stopVideo()
-            cell.pause()
         }
     }
 

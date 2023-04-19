@@ -363,11 +363,12 @@ struct SettingsMainview: View {
                     print("Saved")
                     SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFavArticles, object: nil)
                 }
-                
-                SettingsRowView(settings: .normal(iconName: "emailPW_ic", title: NSLocalizedString("Change Password", comment: ""))) {
-                    print("Email and Password")
-                    SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChangePassword, object: nil)
-                    
+                if user?.isGuest == false {
+                    SettingsRowView(settings: .normal(iconName: "emailPW_ic", title: NSLocalizedString("Change Password", comment: ""))) {
+                        print("Email and Password")
+                        SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChangePassword, object: nil)
+                        
+                    }
                 }
                 
                 SettingsRowView(settings: .normal(iconName: "blocklist_ic", title: NSLocalizedString("Block List", comment: ""))) {

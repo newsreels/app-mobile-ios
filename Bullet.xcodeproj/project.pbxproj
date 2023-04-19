@@ -257,6 +257,8 @@
 		64FAD86F2610565800966CE7 /* BulletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FAD86D2610565800966CE7 /* BulletCell.swift */; };
 		64FAD8B1261056A300966CE7 /* BulletListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FAD8B0261056A300966CE7 /* BulletListCell.xib */; };
 		64FAD8BA261056CF00966CE7 /* BulletListCellWithoutImg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FAD8B9261056CF00966CE7 /* BulletListCellWithoutImg.xib */; };
+		AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */; };
+		AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */; };
 		B86BB28A2930D78700AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */; };
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
@@ -1410,6 +1412,8 @@
 		8ADB4746AAC4EF9043E69CA7 /* Pods-BULLET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BULLET.release.xcconfig"; path = "Target Support Files/Pods-BULLET/Pods-BULLET.release.xcconfig"; sourceTree = "<group>"; };
 		958BF5BD62760A40F22D0864 /* Pods_Bullet_BulletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bullet_BulletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVersion.swift; sourceTree = "<group>"; };
 		B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
@@ -2695,6 +2699,7 @@
 				C231CAF925512142001A550B /* GoogleService-Info.plist */,
 				C2F1B87C2622F0EC00D243FD /* GoogleService-InfoStaging.plist */,
 				641A8871245170CE00EB32C6 /* Info.plist */,
+				AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */,
 				C262522F2513B0150080324B /* Auth0.plist */,
 				64D2CC462442FC5300EC39EC /* Assets.xcassets */,
 				DE7BB8C6285399DE002F1F48 /* LaunchScreen.storyboard */,
@@ -2734,6 +2739,7 @@
 				643E200324838A0F0075FAA0 /* SearchSuggestionDC.swift */,
 				DEB0C138267F25B4000D1752 /* UserChannelsDC.swift */,
 				DE00673126B697EA0082780F /* UploadTask.swift */,
+				AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -5433,6 +5439,7 @@
 				DE7F421026E10B9700042A48 /* ReelsCarouselCC.xib in Resources */,
 				DE96B216289F695F0097CEEC /* Nunito-Italic.ttf in Resources */,
 				0773331D284B1CAD00760CA9 /* MenuTableViewCell.xib in Resources */,
+				AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */,
 				6414AC6925AAD71C006D0221 /* HomeListAdsCC.xib in Resources */,
 				DE96B20A289F695F0097CEEC /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				DE96B212289F695F0097CEEC /* Nunito-Black.ttf in Resources */,
@@ -5973,6 +5980,7 @@
 				DE6CE13526D5192F005F3D95 /* EZPlayerWindowView.swift in Sources */,
 				DE92C8402897CFC40073BD37 /* SectionTitleView.swift in Sources */,
 				C20C9BB524ADBF1700148149 /* webViewVC.swift in Sources */,
+				AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */,
 				DE8080FF265A37150078A4A8 /* ReelsCropperViewController.swift in Sources */,
 				643E1FFE24838A040075FAA0 /* SharedManager.swift in Sources */,
 				DED01B282651025D00616C2F /* YPLibraryVC+PanGesture.swift in Sources */,

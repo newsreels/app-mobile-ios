@@ -20,13 +20,18 @@ extension ReelsCC {
 
     func play() {
         if !isPlaying {
+            let date = Date()
+            let calendar = Calendar.current
+            let minute = calendar.component(.minute, from: date)
+            let second = calendar.component(.second, from: date)
+            print("playing: \(reelModel?.id ?? "") at \(minute):\(second)")
             isPlaying = true
             setImage()
             if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
-                playerItem.preferredForwardBufferDuration = 5
+                playerItem.preferredForwardBufferDuration = 10
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 // set preferredMaximumResolution to stream only the 240p resolution
                 // set preferred resolution for 240p
@@ -138,6 +143,13 @@ extension ReelsCC {
                         ANLoader.hide()
                     }
                  default:
+                    if let currentItem = playerLayer.player?.currentItem {
+                        let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                        if let timeRange = timeRange {
+                            let bufferDuration = timeRange.duration.seconds
+                            print("paused in buffer duration: \(bufferDuration) seconds")
+                        }
+                    }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         if self.playerLayer.player?.timeControlStatus != .playing {
                             self.imgThumbnailView.isHidden = false

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app_version</key>
+	<string>{&quot;android&quot;:{&quot;version&quot;:69,&quot;force_update&quot;:true},&quot;ios&quot;:{&quot;version&quot;:&quot;1.1.0&quot;,&quot;force_update&quot;:false}}</string>
+</dict>
+</plist>

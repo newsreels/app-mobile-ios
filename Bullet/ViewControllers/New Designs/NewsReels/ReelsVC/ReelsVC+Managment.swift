@@ -147,6 +147,7 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
+        self.stopAllPlayers()
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
