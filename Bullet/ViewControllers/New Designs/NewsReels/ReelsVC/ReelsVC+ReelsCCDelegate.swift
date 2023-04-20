@@ -181,7 +181,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         (cell as? ReelsCC)?.setImage()
-        if !fromMain && !isTapBack {
+        if !fromMain && !isTapBack && isFirstVideo{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
                 getCurrentVisibleIndexPlayVideo()
             }

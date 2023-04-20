@@ -108,6 +108,8 @@ class ReelsVC: UIViewController {
     var scrollTimer: Timer?
     var players = [String: AVPlayer]()
     var isTapBack = false
+    var isFirstVideo = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()

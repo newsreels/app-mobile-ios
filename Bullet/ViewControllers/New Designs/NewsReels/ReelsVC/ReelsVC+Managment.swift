@@ -296,7 +296,7 @@ extension ReelsVC {
     func getCurrentVisibleIndexPlayVideo() {
         // Stop Old cell
         self.stopAllPlayers()
-        
+        isFirstVideo = false
         var newIndexDetected = false
         // Play latest cell
         for cell in collectionView.visibleCells {
