@@ -243,7 +243,7 @@ struct SettingsMainview: View {
                             settings.destinationView = AnyView(ProfileView())
                         }
                     } else {
-                        SettingsRowView(settings: .normal(title: NSLocalizedString("Create A new Account", comment: "")), showDivider: false) {
+                        SettingsRowView(settings: .normal(title: NSLocalizedString("Sign Up/Sign In", comment: "")), showDivider: false) {
                             NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                         }
                     }
