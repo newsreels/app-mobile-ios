@@ -27,12 +27,8 @@ extension ReelsCC {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
-                // set preferredMaximumResolution to stream only the 240p resolution
-                // set preferred resolution for 240p
                 playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                // set preferred bitrate for 240p resolution
                 playerItem.preferredPeakBitRate = Double(200000)
-                //3. Create AVPlayerLayer object
                 let player = AVPlayer(playerItem: playerItem)
                 playerLayer = AVPlayerLayer(player: player)
             }
@@ -60,11 +56,8 @@ extension ReelsCC {
         }
         isPlayWhenReady = false
         pause()
-        
         viewTransparentBG.isHidden = true
         isFullText = false
-        setSeeMoreLabel()
-        
         currTime = -1
     }
     
@@ -136,7 +129,7 @@ extension ReelsCC {
                         self.loader.stopAnimating()
                     }
                     self.loader.stopAnimating()
-                    self.hideLoader()
+                        self.hideLoader()
                     ANLoader.hide()
                 }
             case .paused:
@@ -157,7 +150,7 @@ extension ReelsCC {
                         self.imgThumbnailView.isHidden = false
                         self.loader.isHidden = false
                         self.loader.startAnimating()
-                        self.hideLoader()
+//                        self.hideLoader()
                     }
                 }
             }

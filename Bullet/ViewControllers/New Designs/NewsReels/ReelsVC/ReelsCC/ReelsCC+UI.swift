@@ -39,14 +39,14 @@ extension ReelsCC {
         descriptionView.isHidden = true
         lblSeeMore.isHidden = true
         viewBottomTitleDescription.isHidden = true
-        lblSeeMore.isHidden = false
+        
         viewBottomTitleDescription.isHidden = false
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true
     }
     
 
-    func setupCell(model: Reel, fromMain: Bool) {
+    func setupCell(model: Reel, isFromDiscover: Bool) {
         playerLayer.player = nil
         playerLayer.player?.pause()
         reelModel = model
