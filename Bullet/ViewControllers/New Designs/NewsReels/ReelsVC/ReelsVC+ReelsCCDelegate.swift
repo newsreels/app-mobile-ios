@@ -43,7 +43,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsCC", for: indexPath) as! ReelsCC
 
                 if indexPath.item < reelsArray.count {
-                    cell.setupCell(model: reelsArray[indexPath.item], fromMain: self.fromMain)
+                    cell.setupCell(model: reelsArray[indexPath.item], isFromDiscover: self.isFromDiscover)
                 }
 
                 cell.delegate = self
@@ -105,10 +105,9 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if let cell = cell as? ReelsCC {
-            if indexPath.item == 0,
-               reelsArray.count != 0,
-               let id = reelsArray[0].id,
-               let player = players[id] {
+            if reelsArray.count != 0,
+               let id = reelsArray[indexPath.item].id,
+               let player = cell.playerLayer.player {
                 players[id] = player
             }
             cell.stopVideo()

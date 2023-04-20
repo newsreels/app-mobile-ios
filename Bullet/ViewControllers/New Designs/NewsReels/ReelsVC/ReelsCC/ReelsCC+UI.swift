@@ -140,7 +140,7 @@ extension ReelsCC {
         playerLayer.videoGravity = .resizeAspectFill
 
         imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        imgThumbnailView?.frame = viewContent.frame
+        imgThumbnailView?.frame = playerLayer.frame
 
         SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
             if image == nil {
