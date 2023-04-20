@@ -145,7 +145,6 @@ class SharedManager {
     
     var isOnPrefrence = false
     var isFromPNBackground = false
-    var playingVideos = [String]()
     
     //var dataSaver = false
     var videoAutoPlay: Bool {
@@ -379,7 +378,14 @@ class SharedManager {
     var isFromTabbarVC = false
     
     var viewAnimation: AppLoaderView?
-    
+    let playingPlayersNotification = Notification.Name("playingPlayers")
+    var playingPlayers: [String] = [] {
+        didSet {
+            if playingPlayers.count > 1 {
+                NotificationCenter.default.post(name: playingPlayersNotification, object: nil, userInfo: nil)
+            }
+        }
+    }
     
     var isFirstimeSplashScreenLoaded = false
     

@@ -88,7 +88,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer()
+    lazy var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -144,6 +144,9 @@ class ReelsCC: UICollectionViewCell {
     
     @objc private func videoDidEnded() {
         //do something here
+        self.playerLayer.player = nil
+        self.stopVideo()
+        self.pause()
         self.delegate?.videoPlayingFinished(cell: self)
     }
     override func layoutSubviews() {

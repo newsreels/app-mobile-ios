@@ -12,15 +12,22 @@ import AVFoundation
 
 extension ReelsCC {
     func pause() {
-        if isPlaying {
+        if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
+            if let id = reelModel?.id,
+               SharedManager.shared.playingPlayers.contains(id) {
+                SharedManager.shared.playingPlayers.remove(object: id)
+            }
             isPlaying = false
             playerLayer.player?.pause()
         }
     }
     
     func play() {
-        if !isPlaying {
+        if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
             isPlaying = true
+            if let id = reelModel?.id {
+                SharedManager.shared.playingPlayers.append(id)
+            }
             setImage()
             if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
@@ -112,16 +119,6 @@ extension ReelsCC {
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
-                if SharedManager.shared.playingVideos.count > 1 {
-                    delegate?.stopPrevious(cell: self)
-                    guard let id = reelModel?.id else { return }
-                    SharedManager.shared.playingVideos.append(id)
-                }
-                if let id = reelModel?.id, !SharedManager.shared.playingVideos.contains(id) {
-                    SharedManager.shared.playingVideos.append(id)
-                }
-                
-                
                 DispatchQueue.main.async {
                     self.imgThumbnailView.isHidden = false
                     if self.loader.isHidden == false {
@@ -134,9 +131,6 @@ extension ReelsCC {
                 }
             case .paused:
                 print("paused \(reelModel?.id ?? "")")
-                if let id = reelModel?.id, SharedManager.shared.playingVideos.contains(id) {
-                    SharedManager.shared.playingVideos.remove(object: id)
-                }
             case .waitingToPlayAtSpecifiedRate:
                 if let currentItem = playerLayer.player?.currentItem {
                     let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
@@ -150,7 +144,6 @@ extension ReelsCC {
                         self.imgThumbnailView.isHidden = false
                         self.loader.isHidden = false
                         self.loader.startAnimating()
-//                        self.hideLoader()
                     }
                 }
             }

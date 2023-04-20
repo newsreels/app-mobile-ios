@@ -109,9 +109,10 @@ class ReelsVC: UIViewController {
     var players = [String: AVPlayer]()
     var isTapBack = false
     var isFirstVideo = true
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(handlePlayingPlayersNotification), name: SharedManager.shared.playingPlayersNotification, object: nil)
         setupView()
         setupCollectionView()
         checkInternetConnection()
@@ -539,6 +540,22 @@ extension ReelsVC {
         } else {
             stopPullToRefresh()
             SharedManager.shared.hideLaoderFromWindow()
+        }
+    }
+    
+    @objc func handlePlayingPlayersNotification(_ notification: Notification) {
+        var playersToStop = SharedManager.shared.playingPlayers
+        playersToStop.removeLast()
+        for section in 0..<collectionView.numberOfSections {
+            for item in 0..<collectionView.numberOfItems(inSection: section) {
+                let indexPath = IndexPath(item: item, section: section)
+                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC,
+                   let id = reelsArray[indexPath.item].id,
+                   playersToStop.contains(id){
+                    cell.stopVideo()
+                    SharedManager.shared.playingPlayers.remove(object: id)
+                }
+            }
         }
     }
 }

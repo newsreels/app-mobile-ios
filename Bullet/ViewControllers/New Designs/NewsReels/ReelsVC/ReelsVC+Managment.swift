@@ -147,7 +147,7 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
-        self.stopAllPlayers()
+        print("fucking index will: \(indexPath.item)")
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
@@ -165,8 +165,7 @@ extension ReelsVC {
     }
 
     func playCurrentCellVideo(isFromBackground: Bool = false) {
-        if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
-
+        print("fucking index is: \(currentlyPlayingIndexPath.item)")
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
            !cell.isPlaying {
  
@@ -303,13 +302,14 @@ extension ReelsVC {
             let cellRect = cell.contentView.convert(cell.contentView.bounds, to: UIScreen.main.coordinateSpace)
             if cellRect.origin.x == 0, cellRect.origin.y == 0, let indexPath = collectionView.indexPath(for: cell) {
                 // Visible cell
-
-                currentlyPlayingIndexPath = indexPath
-                if SharedManager.shared.reelsAutoPlay {
-                    playCurrentCellVideo()
+                if currentlyPlayingIndexPath != indexPath {
+                    currentlyPlayingIndexPath = indexPath
+                    if SharedManager.shared.reelsAutoPlay {
+                        playCurrentCellVideo()
+                    }
+                    sendVideoViewedAnalyticsEvent()
+                    newIndexDetected = true
                 }
-                sendVideoViewedAnalyticsEvent()
-                newIndexDetected = true
             } else {
                 let indexPath = collectionView.indexPath(for: cell)
                 pauseCellVideo(indexPath: indexPath)
@@ -318,11 +318,14 @@ extension ReelsVC {
 
         if newIndexDetected == false {
             if let cell = collectionView.visibleCells.first, let indexPath = collectionView.indexPath(for: cell) {
-                currentlyPlayingIndexPath = indexPath
-                if SharedManager.shared.reelsAutoPlay {
-                    playCurrentCellVideo()
+                if currentlyPlayingIndexPath != indexPath {
+                    currentlyPlayingIndexPath = indexPath
+                    if SharedManager.shared.reelsAutoPlay {
+                        playCurrentCellVideo()
+                    }
+                    sendVideoViewedAnalyticsEvent()
+                    
                 }
-                sendVideoViewedAnalyticsEvent()
             }
         }
 

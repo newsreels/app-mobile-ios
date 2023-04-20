@@ -139,7 +139,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             }
             // Preloading
             for section in 0..<collectionView.numberOfSections {
-                for i in indexPath.item - 5 ..< indexPath.item + 10 {
+                for i in indexPath.item ... indexPath.item + 5 {
                     let indexPath = IndexPath(item: i, section: section)
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
@@ -182,7 +182,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         (cell as? ReelsCC)?.setImage()
         if !fromMain && !isTapBack && isFirstVideo{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
-                getCurrentVisibleIndexPlayVideo()
+                playCurrentCellVideo()
             }
         }
     }
@@ -537,6 +537,8 @@ extension ReelsVC: ReelsCCDelegate {
     func videoPlayingStarted(cell _: ReelsCC) {}
 
     func videoPlayingFinished(cell: ReelsCC) {
+        self.stopAllPlayers()
+        
         if isOpenfromNotificationList {
             sendVideoViewedAnalyticsEvent()
             if SharedManager.shared.reelsAutoPlay {
@@ -545,12 +547,13 @@ extension ReelsVC: ReelsCCDelegate {
             return
         }
 
-        guard let indexPath = collectionView.indexPath(for: cell) else { return }
-
+//        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+        let indexPath = currentlyPlayingIndexPath
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+        print("fucking index did: \(indexPath.item)")
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
             playNextCellVideo(indexPath: nextIndexPath)

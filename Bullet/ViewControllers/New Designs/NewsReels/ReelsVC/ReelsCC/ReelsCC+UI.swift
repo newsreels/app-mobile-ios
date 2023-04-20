@@ -173,7 +173,6 @@ extension ReelsCC {
     }
 
     func setDescriptionLabel() {
-        print("fucking \(reelModel?.reelDescription ?? "")")
         lblDescriptionAbove.text = (reelModel?.reelDescription ?? "").uppercased()
         lblDescriptionAbove.textColor = UIColor.white
         lblDescriptionAbove.font = UIFont(name: Constant.FONT_Gilroy_ExtraBold, size: 22 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 20 + adjustFontSizeForiPad())
@@ -299,7 +298,6 @@ extension ReelsCC {
             }
         }
 
-        print("fucking \(reelModel?.reelDescription ?? "")")
         newsDescription = reelModel?.reelDescription ?? ""
         isFullText = false
         setSeeMoreLabel()
