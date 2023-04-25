@@ -105,6 +105,7 @@ class ReelsCC: UICollectionViewCell {
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
     var loadingStartingTime: Date?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -129,7 +130,7 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-
+        self.playerLayer.player = nil
         pause()
         imgThumbnailView.isHidden = true
         playerLayer.player?.seek(to: .zero)
@@ -147,7 +148,6 @@ class ReelsCC: UICollectionViewCell {
     
     @objc private func videoDidEnded() {
         //do something here
-        self.playerLayer.player = nil
         self.stopVideo()
         self.pause()
         self.delegate?.videoPlayingFinished(cell: self)

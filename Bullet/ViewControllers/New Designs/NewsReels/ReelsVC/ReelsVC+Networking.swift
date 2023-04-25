@@ -355,7 +355,6 @@ extension ReelsVC {
                     }
 
                     if self.reelsArray.count == 0 {
-
                         self.reelsArray = reelsData
                         if self.reelsArray.count < 10 {
                             self.callWebsericeToGetNextVideos()
@@ -424,7 +423,6 @@ extension ReelsVC {
                         }
 
                     } else {
-                        let newIndexArray = [IndexPath]()
                         reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {
                                 self.reelsArray.append(reel)
@@ -439,7 +437,6 @@ extension ReelsVC {
 
                         self.collectionView.performBatchUpdates {
                             self.collectionView.layoutIfNeeded()
-                            self.collectionView.insertItems(at: newIndexArray)
                         } completion: { _ in
                             self.collectionView.layoutIfNeeded()
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
