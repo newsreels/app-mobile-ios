@@ -92,7 +92,8 @@ class ReelsVC: UIViewController {
     var isWatchingRotatedVideos = false
     let reelsRefreshTimeNeeded: CGFloat = 2
     var showSkeletonLoader = false
-    var isCurrentlyScrolling = false
+    var isCurrentlyScrolling
+    = false
     var refreshMaximumSpace: CGFloat = 100
     var isRefreshingReels = false
     var shareTitle = ""
@@ -106,7 +107,13 @@ class ReelsVC: UIViewController {
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
-    var players = [String: AVPlayer]()
+    var players = [PlayerPreloadModel]() {
+        didSet {
+            if players.count > 10 {
+                players.removeFirst()
+            }
+        }
+    }
     var isTapBack = false
     var isFirstVideo = true
 

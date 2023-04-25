@@ -1314,40 +1314,68 @@ class SharedManager {
     func performWSDurationAnalytics(reelId: String, duration: String) {
                 
         let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
-        
+        let parameters = "{\"duration\": \"\(duration)\"}"
+        let postData = parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "https://api.bullets.app/analytics/duration/\(reelId)")!,timeoutInterval: Double.infinity)
+        request.addValue("ios", forHTTPHeaderField: "x-app-platform")
+        request.addValue(Bundle.main.releaseVersionNumberPretty, forHTTPHeaderField: "x-app-version")
+        request.addValue(WebserviceManager.shared.API_VERSION, forHTTPHeaderField: "api-version")
+        request.addValue(Locale.current.languageCode ?? "en", forHTTPHeaderField: "x-user-language")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+
+        request.httpMethod = "POST"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          guard let data = data else {
+            print(String(describing: error))
+            return
+          }
+          print(String(data: data, encoding: .utf8)!)
+        }
+
+        task.resume()
+
+
         //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
-        
+        /*
         let url = "analytics/duration/\(reelId)"
         let params: [String: Any] = ["duration": duration]
-        
-       let jsonData = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions()) as NSData
 
-        WebService.URLResponse(url, method: .post, parameters: nil, body: jsonData, headers: token, withSuccess: { (response) in
-            
+        let jsonData = try! JSONSerialization.data(withJSONObject: params, options: [])
+        let jsonString = String(data: jsonData, encoding: .utf8)!
+        let jsonStringWithEscapedQuotes = jsonString.replacingOccurrences(of: "\"", with: "\\\"")
+
+
+        WebService.URLResponse(url, method: .post, data: jsonStringWithEscapedQuotes, headers: token, withSuccess: { (response) in
+
             do{
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
                 if let message = FULLResponse.message, message.lowercased() == "ok" {
-                   
+
                 }
                 else {
-                    
+
                     #if DEBUG
                     self.showAPIFailureAlert()
                     #else
                     #endif
                 }
-                
+
             } catch let jsonerror {
-                
+
                 SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
                 print("error parsing json objects",jsonerror)
             }
-            
+
         }) { (error) in
-            
+
             print("error parsing json objects",error)
         }
+         */
     }
     
     func performWSToUpdateAnalytics(ArticleId: String, eventName: String, duration: String) {

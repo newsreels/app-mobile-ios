@@ -108,7 +108,8 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             if reelsArray.count != 0,
                let id = reelsArray[indexPath.item].id,
                let player = cell.playerLayer.player {
-                players[id] = player
+                let playerPreload = PlayerPreloadModel(timeCreated: Date(), id: id, player: player)
+                players.append(playerPreload)
             }
             cell.stopVideo()
         }
@@ -143,24 +144,25 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     let indexPath = IndexPath(item: i, section: section)
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
-                       self.players[reelsArray[indexPath.item].id ?? ""] == nil,
-                        let urlString = reelsArray[indexPath.item].media,
+                       self.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player == nil,
+                       let urlString = reelsArray[indexPath.item].media,
                        let videoURL = URL(string: urlString) {
-                            let asset = AVAsset(url: videoURL)
-                            let playerItem = AVPlayerItem(asset: asset)
-                            
-                            // set preferredMaximumResolution to stream only the 240p resolution
-                            // set preferred resolution for 240p
-                            playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                            
-                            // set preferred bitrate for 240p resolution
-                            playerItem.preferredPeakBitRate = Double(200000)
-                            playerItem.preferredForwardBufferDuration = 5
-                            //3. Create AVPlayerLayer object
-                            let player = AVPlayer(playerItem: playerItem)
-                            // Enable automatic preloading
-                            player.automaticallyWaitsToMinimizeStalling = true
-                            self.players[reelsArray[indexPath.item].id ?? ""] = player
+                        let asset = AVAsset(url: videoURL)
+                        let playerItem = AVPlayerItem(asset: asset)
+                        
+                        // set preferredMaximumResolution to stream only the 240p resolution
+                        // set preferred resolution for 240p
+                        playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+                        
+                        // set preferred bitrate for 240p resolution
+                        playerItem.preferredPeakBitRate = Double(200000)
+                        playerItem.preferredForwardBufferDuration = 5
+                        //3. Create AVPlayerLayer object
+                        let player = AVPlayer(playerItem: playerItem)
+                        // Enable automatic preloading
+                        player.automaticallyWaitsToMinimizeStalling = true
+                        let playerPreload = PlayerPreloadModel(timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
+                        self.players.append(playerPreload)
                     }
                 }
             }
@@ -551,7 +553,7 @@ extension ReelsVC: ReelsCCDelegate {
         let indexPath = currentlyPlayingIndexPath
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+//        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         print("fucking index did: \(indexPath.item)")
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {

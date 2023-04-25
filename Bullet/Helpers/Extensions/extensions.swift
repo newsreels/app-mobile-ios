@@ -1968,7 +1968,8 @@ extension Double {
     func formatToMilliSeconds() -> String {
         
         let milli = (Double(self) * 1000)
-        return "\(milli)"
+        let int = Int(milli)
+        return "\(int)"
         
     }
     

@@ -259,6 +259,7 @@
 		64FAD8BA261056CF00966CE7 /* BulletListCellWithoutImg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FAD8B9261056CF00966CE7 /* BulletListCellWithoutImg.xib */; };
 		AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */; };
 		AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */; };
+		AC700E7629F6502500A6178C /* PlayersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700E7529F6502500A6178C /* PlayersPreload.swift */; };
 		B86BB28A2930D78700AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */; };
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
@@ -1414,6 +1415,7 @@
 		9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVersion.swift; sourceTree = "<group>"; };
+		AC700E7529F6502500A6178C /* PlayersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPreload.swift; sourceTree = "<group>"; };
 		B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
@@ -2740,6 +2742,7 @@
 				DEB0C138267F25B4000D1752 /* UserChannelsDC.swift */,
 				DE00673126B697EA0082780F /* UploadTask.swift */,
 				AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */,
+				AC700E7529F6502500A6178C /* PlayersPreload.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -6417,6 +6420,7 @@
 				DE7F422526E10B9700042A48 /* locationDiscCC.swift in Sources */,
 				DE954B0128AA27600046EDF1 /* HelpAndFeedBackView.swift in Sources */,
 				DED01B0D2651025D00616C2F /* YPCropView.swift in Sources */,
+				AC700E7629F6502500A6178C /* PlayersPreload.swift in Sources */,
 				DE356EC726416ECC00572DAA /* GenericPhotoCC.swift in Sources */,
 				B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */,
 				3D789316268657390097EBED /* AquamanProtocol.swift in Sources */,
@@ -6999,7 +7003,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7044,12 +7048,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -7074,7 +7076,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = GithubActions;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bullet/Bullet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -7173,9 +7174,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BULLET/BULLET.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
 				IBSC_WARNINGS = YES;
 				INFOPLIST_FILE = BULLET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -7188,6 +7191,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-widget";
 				PRODUCT_NAME = BULLET;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BulletExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7203,9 +7207,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BULLET/BULLET.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
 				IBSC_WARNINGS = YES;
 				INFOPLIST_FILE = BULLET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -7218,6 +7224,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-widget";
 				PRODUCT_NAME = BULLET;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BulletExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

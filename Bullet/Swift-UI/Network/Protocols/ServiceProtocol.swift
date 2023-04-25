@@ -26,7 +26,7 @@ protocol ServiceProtocol {
 extension ServiceProtocol {
     
     var baseURL: URL {
-        return URL(string: "https://api.bullets.app/")!
+        return URL(string: "https://api.newsreels.app/")!
     }
     
     var headers: Headers {
