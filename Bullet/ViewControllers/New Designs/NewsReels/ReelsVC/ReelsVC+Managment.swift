@@ -147,7 +147,6 @@ extension ReelsVC {
     }
 
     func playNextCellVideo(indexPath: IndexPath) {
-        print("fucking index will: \(indexPath.item)")
         UIView.animate(withDuration: 0.5) {
             self.collectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: false)
         } completion: { _ in
@@ -165,7 +164,6 @@ extension ReelsVC {
     }
 
     func playCurrentCellVideo(isFromBackground: Bool = false) {
-        print("fucking index is: \(currentlyPlayingIndexPath.item)")
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
            !cell.isPlaying {
  

@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "newChatIC.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "newChatIC@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "newChatIC@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "newChatIC.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {

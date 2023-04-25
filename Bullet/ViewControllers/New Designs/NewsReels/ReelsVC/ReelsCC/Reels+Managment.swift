@@ -145,6 +145,7 @@ extension ReelsCC {
                     let endDate = Date()
                     if endDate.timeIntervalSince(loadingStartingTime) > 2 {
                         SharedManager.shared.players.forEach({ item in
+                            print("fucking stuck")
                             // Cancel the loading of the player's current asset
                             item.player.currentItem?.cancelPendingSeeks()
                             item.player.currentItem?.asset.cancelLoading()

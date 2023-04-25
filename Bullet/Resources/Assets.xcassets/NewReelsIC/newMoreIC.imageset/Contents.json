@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "newMoreIC.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "newMoreIC@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "newMoreIC@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "newMoreIC.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {

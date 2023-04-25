@@ -390,10 +390,6 @@ class SharedManager {
     }
     var players = [PlayerPreloadModel]() {
         didSet {
-            print("fuck")
-            players.forEach({
-               print( $0.index)
-            })
             if players.count > 6 {
                 players.removeFirst()
             }

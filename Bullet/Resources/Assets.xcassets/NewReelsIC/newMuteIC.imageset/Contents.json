@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "newMuteIC.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "newMuteIC@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "newMuteIC@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "newMuteIC.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {

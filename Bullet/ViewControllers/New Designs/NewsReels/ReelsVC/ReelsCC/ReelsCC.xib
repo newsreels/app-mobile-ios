@@ -184,10 +184,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q16-Kh-VOG">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLikeIC" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-AA-b9K">
-                                                        <rect key="frame" x="10.666666666666629" y="16" width="26" height="25"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newLikeIC" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-AA-b9K">
+                                                        <rect key="frame" x="10.666666666666629" y="15" width="26" height="26"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="25" id="rCx-qy-FeK"/>
+                                                            <constraint firstAttribute="height" constant="26" id="rCx-qy-FeK"/>
                                                             <constraint firstAttribute="width" constant="26" id="u99-Xy-Zam"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
@@ -234,7 +234,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbO-nP-JJM">
                                                 <rect key="frame" x="0.0" y="66" width="45" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newChatIC" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-ix-HZU">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newChatIC" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-ix-HZU">
                                                         <rect key="frame" x="10.666666666666629" y="15" width="26" height="26"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="26" id="0Xi-iP-HsC"/>
@@ -282,7 +282,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-59-xEj">
                                                 <rect key="frame" x="0.0" y="132" width="45" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newSendIC" translatesAutoresizingMaskIntoConstraints="NO" id="0hI-lA-1pF">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newSendIC" translatesAutoresizingMaskIntoConstraints="NO" id="0hI-lA-1pF">
                                                         <rect key="frame" x="10.666666666666629" y="7" width="26" height="26"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="26" id="Cd4-AD-zs0"/>
@@ -328,7 +328,7 @@
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0va-TC-c3y">
                                                 <rect key="frame" x="0.0" y="190" width="45" height="40"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotWhite" translatesAutoresizingMaskIntoConstraints="NO" id="L8l-lD-CFP">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dotWhite" translatesAutoresizingMaskIntoConstraints="NO" id="L8l-lD-CFP">
                                                         <rect key="frame" x="11" y="8.6666666666666288" width="23" height="23"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="L8l-lD-CFP" secondAttribute="height" multiplier="1:1" id="9MN-BX-tYN"/>
@@ -360,10 +360,10 @@
                                                 <rect key="frame" x="0.0" y="190" width="45" height="40"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newBookmarkIC" translatesAutoresizingMaskIntoConstraints="NO" id="BSd-Vh-Rlx">
-                                                        <rect key="frame" x="13" y="9" width="19" height="23"/>
+                                                        <rect key="frame" x="9.6666666666666288" y="9" width="26" height="26"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="23" id="aeY-qK-OAg"/>
-                                                            <constraint firstAttribute="width" constant="19" id="vMe-79-7ro"/>
+                                                            <constraint firstAttribute="height" constant="26" id="aeY-qK-OAg"/>
+                                                            <constraint firstAttribute="width" constant="26" id="vMe-79-7ro"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -405,11 +405,11 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIU-xe-BHE">
                                                 <rect key="frame" x="0.0" y="198" width="45" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newUnmuteIC" translatesAutoresizingMaskIntoConstraints="NO" id="RKu-1y-9RO">
-                                                        <rect key="frame" x="10.666666666666629" y="12" width="26" height="22"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newUnmuteIC" translatesAutoresizingMaskIntoConstraints="NO" id="RKu-1y-9RO">
+                                                        <rect key="frame" x="10.666666666666629" y="10" width="26" height="26"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="26" id="Gg7-DY-viU"/>
-                                                            <constraint firstAttribute="height" constant="22" id="IBr-ZZ-NsU"/>
+                                                            <constraint firstAttribute="height" constant="26" id="IBr-ZZ-NsU"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -436,11 +436,11 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="129-aN-14R" userLabel="viewMoreOptions">
                                                 <rect key="frame" x="0.0" y="264" width="45" height="50"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newMoreIC" translatesAutoresizingMaskIntoConstraints="NO" id="wnq-3a-wKo">
-                                                        <rect key="frame" x="8" y="17" width="29" height="16"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newMoreIC" translatesAutoresizingMaskIntoConstraints="NO" id="wnq-3a-wKo">
+                                                        <rect key="frame" x="9.6666666666666288" y="12" width="26" height="26"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="16" id="Aiq-6L-knH"/>
-                                                            <constraint firstAttribute="width" constant="29" id="kdf-0D-DH5"/>
+                                                            <constraint firstAttribute="height" constant="26" id="Aiq-6L-knH"/>
+                                                            <constraint firstAttribute="width" constant="26" id="kdf-0D-DH5"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -763,11 +763,11 @@
         <image name="gradient" width="200" height="80"/>
         <image name="likeAnimateHeart" width="312" height="280.33334350585938"/>
         <image name="newBookmarkIC" width="22" height="26.666666030883789"/>
-        <image name="newChatIC" width="25.333333969116211" height="25.666666030883789"/>
-        <image name="newLikeIC" width="25.333333969116211" height="24.333333969116211"/>
-        <image name="newMoreIC" width="28.333333969116211" height="15.666666984558105"/>
-        <image name="newSendIC" width="25.333333969116211" height="25.333333969116211"/>
-        <image name="newUnmuteIC" width="25.333333969116211" height="21.333333969116211"/>
+        <image name="newChatIC" width="73" height="72"/>
+        <image name="newLikeIC" width="73" height="73"/>
+        <image name="newMoreIC" width="25" height="24"/>
+        <image name="newSendIC" width="25" height="25"/>
+        <image name="newUnmuteIC" width="25" height="25"/>
         <image name="playButton" width="201.38499450683594" height="201.38499450683594"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

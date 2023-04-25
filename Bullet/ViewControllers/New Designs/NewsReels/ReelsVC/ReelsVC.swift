@@ -122,6 +122,7 @@ class ReelsVC: UIViewController {
                     if SharedManager.shared.playingPlayers.count > 0 {
                         if let id = cell.reelModel?.id,
                            SharedManager.shared.playingPlayers.contains(id) {
+                            print("fucking stuck2")
                             SharedManager.shared.playingPlayers.remove(object: id)
                         }
                     }
