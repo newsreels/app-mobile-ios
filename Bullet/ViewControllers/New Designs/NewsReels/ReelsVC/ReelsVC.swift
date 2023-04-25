@@ -107,16 +107,42 @@ class ReelsVC: UIViewController {
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
-    var players = [PlayerPreloadModel]() {
-        didSet {
-            if players.count > 10 {
-                players.removeFirst()
-            }
-        }
-    }
     var isTapBack = false
     var isFirstVideo = true
+    var timer = Timer()
 
+    @objc func timerAction() {
+        if let visibleCells = collectionView.visibleCells as? [ReelsCC] {
+            for cell in visibleCells {
+                if cell.playerLayer.player?.timeControlStatus != .playing {
+                    if cell.reelModel == nil  {
+                        cell.reelModel = reelsArray[currentlyPlayingIndexPath.item]
+                    }
+                    
+                    if SharedManager.shared.playingPlayers.count > 0 {
+                        if let id = cell.reelModel?.id,
+                           SharedManager.shared.playingPlayers.contains(id) {
+                            SharedManager.shared.playingPlayers.remove(object: id)
+                        }
+                    }
+                    cell.isPlaying = false
+                    cell.play()
+                }
+            }
+        }
+      
+    }
+    
+    @objc func timeObserveNotification(_ notification: Notification) {
+        timer.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        
+    }
+    @objc func timerCancelNotification(_ notification: Notification) {
+        timer.invalidate()
+        stopAllPlayers()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(handlePlayingPlayersNotification), name: SharedManager.shared.playingPlayersNotification, object: nil)
@@ -138,6 +164,9 @@ class ReelsVC: UIViewController {
         if isWatchingRotatedVideos {
             return
         }
+        NotificationCenter.default.addObserver(self, selector: #selector(timeObserveNotification), name: SharedManager.shared.timeObserve, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(timerCancelNotification), name: SharedManager.shared.timerCancel, object: nil)
+        NotificationCenter.default.post(name: SharedManager.shared.timeObserve, object: nil, userInfo: nil)
         setupNotification()
         _ = try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)
         _ = try? AVAudioSession.sharedInstance().setActive(true)
@@ -406,7 +435,7 @@ extension ReelsVC {
 
     @objc func appMovedToBackground() {
         stopVideo()
-
+        NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -422,6 +451,7 @@ extension ReelsVC {
         } else {
             SharedManager.shared.hideLaoderFromWindow()
         }
+        NotificationCenter.default.post(name: SharedManager.shared.timeObserve, object: nil, userInfo: nil)
     }
 
     @objc func appMovedToForeground() {

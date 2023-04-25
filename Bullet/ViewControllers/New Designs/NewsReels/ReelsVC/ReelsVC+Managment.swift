@@ -169,7 +169,7 @@ extension ReelsVC {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
            !cell.isPlaying {
  
-            if let player = players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player, player.currentItem != nil {
+            if let player = SharedManager.shared.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player, player.currentItem != nil {
                 cell.playerLayer = AVPlayerLayer(player: player)
             }
             if !isFromBackground {

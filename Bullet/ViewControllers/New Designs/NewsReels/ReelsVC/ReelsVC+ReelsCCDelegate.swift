@@ -103,16 +103,15 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
-
-        if let cell = cell as? ReelsCC {
-            if reelsArray.count != 0,
-               let id = reelsArray[indexPath.item].id,
-               let player = cell.playerLayer.player {
-                let playerPreload = PlayerPreloadModel(timeCreated: Date(), id: id, player: player)
-                players.append(playerPreload)
-            }
-            cell.stopVideo()
-        }
+//        if let cell = cell as? ReelsCC {
+//            if reelsArray.count != 0,
+//               let id = reelsArray[indexPath.item].id,
+//               let player = cell.playerLayer.player {
+//                let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: id, player: player)
+//                SharedManager.shared.players.append(playerPreload)
+//            }
+//            cell.stopVideo()
+//        }
     }
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -140,11 +139,12 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             }
             // Preloading
             for section in 0..<collectionView.numberOfSections {
-                for i in indexPath.item ... indexPath.item + 5 {
+                for i in indexPath.item ... indexPath.item + 4 {
                     let indexPath = IndexPath(item: i, section: section)
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
-                       self.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player == nil,
+//                       SharedManager.shared.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player == nil,
+                       !SharedManager.shared.players.contains(where: {$0.id == reelsArray[indexPath.item].id ?? ""}) ,
                        let urlString = reelsArray[indexPath.item].media,
                        let videoURL = URL(string: urlString) {
                         let asset = AVAsset(url: videoURL)
@@ -156,13 +156,13 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                         
                         // set preferred bitrate for 240p resolution
                         playerItem.preferredPeakBitRate = Double(200000)
-                        playerItem.preferredForwardBufferDuration = 5
+                        playerItem.preferredForwardBufferDuration = 3
                         //3. Create AVPlayerLayer object
                         let player = AVPlayer(playerItem: playerItem)
                         // Enable automatic preloading
                         player.automaticallyWaitsToMinimizeStalling = true
-                        let playerPreload = PlayerPreloadModel(timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
-                        self.players.append(playerPreload)
+                        let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
+                        SharedManager.shared.players.append(playerPreload)
                     }
                 }
             }

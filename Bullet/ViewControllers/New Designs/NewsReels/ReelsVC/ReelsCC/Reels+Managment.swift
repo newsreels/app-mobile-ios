@@ -25,7 +25,8 @@ extension ReelsCC {
     func play() {
         if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
             isPlaying = true
-            if let id = reelModel?.id {
+            if let id = reelModel?.id,
+               !SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.append(id)
             }
             setImage()
@@ -119,8 +120,9 @@ extension ReelsCC {
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
+                loadingStartingTime = nil
                 DispatchQueue.main.async {
-                    self.imgThumbnailView.isHidden = false
+                    self.imgThumbnailView.isHidden = true
                     if self.loader.isHidden == false {
                         self.loader.isHidden = true
                         self.loader.stopAnimating()
@@ -130,8 +132,27 @@ extension ReelsCC {
                     ANLoader.hide()
                 }
             case .paused:
+                if SharedManager.shared.playingPlayers.count > 0 {
+                    if let id = reelModel?.id,
+                       SharedManager.shared.playingPlayers.contains(id) {
+                        SharedManager.shared.playingPlayers.remove(object: id)
+                    }
+                }
+                    isPlaying = false
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
+                if let loadingStartingTime {
+                    let endDate = Date()
+                    if endDate.timeIntervalSince(loadingStartingTime) > 2 {
+                        SharedManager.shared.players.forEach({ item in
+                            // Cancel the loading of the player's current asset
+                            item.player.currentItem?.cancelPendingSeeks()
+                            item.player.currentItem?.asset.cancelLoading()
+                        })
+                    }
+                } else {
+                    loadingStartingTime = Date()
+                }
                 if let currentItem = playerLayer.player?.currentItem {
                     let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
                     if let timeRange = timeRange {

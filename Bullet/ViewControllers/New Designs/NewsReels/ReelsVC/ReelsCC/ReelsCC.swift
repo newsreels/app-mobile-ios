@@ -104,9 +104,10 @@ class ReelsCC: UICollectionViewCell {
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
-    
+    var loadingStartingTime: Date?
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
@@ -128,7 +129,9 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+
         pause()
+        imgThumbnailView.isHidden = true
         playerLayer.player?.seek(to: .zero)
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
@@ -221,6 +224,10 @@ class ReelsCC: UICollectionViewCell {
 
 
 extension ReelsCC {
+    
+    @objc func expandTextTapGestureGestureAction(sender: UILongPressGestureRecognizer) {
+        lblSeeMore.numberOfLines = lblSeeMore.numberOfLines == 5 ? 2 : 5
+    }
     
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {

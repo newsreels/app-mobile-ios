@@ -47,6 +47,7 @@ extension ReelsCC {
     
 
     func setupCell(model: Reel, isFromDiscover: Bool) {
+        loadingStartingTime = nil
         playerLayer.player = nil
         playerLayer.player?.pause()
         reelModel = model
@@ -133,6 +134,11 @@ extension ReelsCC {
 
         currTime = -1
         currTime = -1
+        
+        let expandTextTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(expandTextTapGestureGestureAction(sender:)))
+         expandTextTapRecognizer.numberOfTapsRequired = 1
+         expandTextTapRecognizer.delegate = self
+         lblSeeMore.addGestureRecognizer(expandTextTapRecognizer)
     }
     
     func setImage() {
@@ -198,7 +204,7 @@ extension ReelsCC {
         lblSeeMore.customize { label in
 
             label.text = newsDescription
-            label.numberOfLines = 5
+            label.numberOfLines = 2
 
             label.enabledTypes = [.hashtag]
             label.hashtagColor = UIColor.white
