@@ -139,8 +139,27 @@ extension ReelsCC {
          expandTextTapRecognizer.delegate = self
          lblSeeMore.addGestureRecognizer(expandTextTapRecognizer)
     }
-    
     func setImage() {
+        if imgThumbnailView.image == nil {
+            imgThumbnailView.contentMode = .scaleToFill
+            imgThumbnailView.frame = playerLayer.bounds
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = playerLayer.frame
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = viewContent.frame
+            imgThumbnailView.sd_setImage(with: URL(string: reelModel?.image ?? ""), placeholderImage: nil)
+//            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
+//                if let image = image {
+//                    self?.imgThumbnailView.image = image
+//                } else {
+//                    self?.imgThumbnailView.sd_setImage(with: URL(string: self?.reelModel?.image ?? ""), placeholderImage: nil)
+//                }
+//            }
+        }
+        imgThumbnailView.layoutIfNeeded()
+    }
+    
+    func setImage2() {
         if imgThumbnailView.image == nil {
             imgThumbnailView?.contentMode = .scaleToFill
             imgThumbnailView.frame = playerLayer.bounds
@@ -156,6 +175,7 @@ extension ReelsCC {
                 }
             }
         }
+        imgThumbnailView?.layoutIfNeeded()
     }
     
     func setFollowButton(hidden: Bool) {

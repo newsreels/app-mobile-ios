@@ -51,6 +51,7 @@ extension ReelsCC {
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
+            imgThumbnailView.layoutIfNeeded()
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
                 imgSound.image = UIImage(named: "newMuteIC")
@@ -121,6 +122,8 @@ extension ReelsCC {
 extension ReelsCC {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "timeControlStatus", let player = object as? AVPlayer {
+            self.imgThumbnailView.isHidden = false
+            imgThumbnailView?.layoutIfNeeded()
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
