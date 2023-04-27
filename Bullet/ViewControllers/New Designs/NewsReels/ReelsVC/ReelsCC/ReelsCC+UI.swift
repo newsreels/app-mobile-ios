@@ -146,11 +146,13 @@ extension ReelsCC {
             imgThumbnailView.frame = playerLayer.bounds
             imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             imgThumbnailView?.frame = playerLayer.frame
-            DispatchQueue.global().async {
-                let url = URL(string: self.reelModel?.image ?? "")
-                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-                DispatchQueue.main.async {
-                    self.imgThumbnailView.image = UIImage(data: data!)
+            imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView?.frame = self.viewContent.frame
+            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
+                if image == nil {
+                    self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? "") , placeholderImage: nil)
+                } else {
+                    self?.imgThumbnailView?.image = image
                 }
             }
         }

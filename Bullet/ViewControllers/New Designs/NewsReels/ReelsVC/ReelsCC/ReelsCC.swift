@@ -132,7 +132,7 @@ class ReelsCC: UICollectionViewCell {
         super.prepareForReuse()
         self.playerLayer.player = nil
         pause()
-        imgThumbnailView.isHidden = true
+//        imgThumbnailView.isHidden = true
         playerLayer.player?.seek(to: .zero)
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
@@ -154,8 +154,8 @@ class ReelsCC: UICollectionViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
- 
-
+        setDescriptionLabel()
+hideLoader()
     }
 
     override func draw(_: CGRect) {}

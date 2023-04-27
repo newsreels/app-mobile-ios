@@ -1771,34 +1771,34 @@ class SharedManager {
     }
     
     func saveAllVideosThumbnailsToCache(imageURL: String?) {
-//        if let url = URL(string: imageURL ?? "") {
-//            SDWebImageManager.shared.loadImage(with: url, options: .highPriority, progress: nil) { image, data, error, cacheType, status, url in
-//                if error == nil {
-////                    print("image downloaded successfully \(cacheType), \(status), \(url?.absoluteString ?? "")")
-////                    if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
-////                        SDWebImageManager.shared.imageCache.queryImage(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
-////
-////                            if image != nil {
-////                                print("image present in cache")
-////                            }
-////
-////                        }
-////                    }
-//                    
-//                }
-//            }
-//        }
+        if let url = URL(string: imageURL ?? "") {
+            SDWebImageManager.shared.loadImage(with: url, options: .highPriority, progress: nil) { image, data, error, cacheType, status, url in
+                if error == nil {
+//                    print("image downloaded successfully \(cacheType), \(status), \(url?.absoluteString ?? "")")
+//                    if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
+//                        SDWebImageManager.shared.imageCache.queryImage(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
+//
+//                            if image != nil {
+//                                print("image present in cache")
+//                            }
+//
+//                        }
+//                    }
+                    
+                }
+            }
+        }
     }
     
     func loadImageFromCache(imageURL: String?, completionHandler: @escaping (_ image: UIImage?) -> Void) {
         
-//        if let url = URL(string: imageURL ?? "") {
-//            if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
-//               let _ = SDWebImageManager.shared.imageCache.queryImage!(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
-//                    completionHandler(image)
-//                }
-//            }
-//        }
+        if let url = URL(string: imageURL ?? "") {
+            if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
+               let _ = SDWebImageManager.shared.imageCache.queryImage!(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
+                    completionHandler(image)
+                }
+            }
+        }
     }
  
     func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
