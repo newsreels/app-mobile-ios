@@ -418,9 +418,9 @@ extension ReelsVC {
                             }
                         }
 
-                        for obj in self.reelsArray {
-                            SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
-                        }
+//                        for obj in self.reelsArray {
+//                            SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
+//                        }
 
                     } else {
                         reelsData.forEach { reel in

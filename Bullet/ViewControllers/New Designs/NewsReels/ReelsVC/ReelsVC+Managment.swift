@@ -70,9 +70,9 @@ extension ReelsVC {
                         }
                     }
 
-                    for obj in reelsArray {
-                        SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
-                    }
+//                    for obj in reelsArray {
+//                        SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
+//                    }
                 } else {
                     if SharedManager.shared.isFirstimeSplashScreenLoaded == false {
                         SharedManager.shared.isFirstimeSplashScreenLoaded = true
