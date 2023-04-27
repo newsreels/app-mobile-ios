@@ -230,8 +230,9 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapViewMore(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        pauseCellVideo(indexPath: indexPath)
-
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.stopAllPlayers()
+        }
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 
         let bullet = [Bullets(data: reel.reelDescription, audio: nil, duration: nil, image: nil)]
@@ -241,6 +242,7 @@ extension ReelsVC: ReelsCCDelegate {
         vc.selectedArticleData = content
         vc.delegate = self
         vc.isSwipeToDismissRequired = true
+        vc.isFromReels = true
         let navVC = AppNavigationController(rootViewController: vc)
         navVC.modalPresentationStyle = .overFullScreen
 

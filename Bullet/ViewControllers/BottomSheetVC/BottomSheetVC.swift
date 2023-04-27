@@ -83,6 +83,7 @@ class BottomSheetVC: UIViewController {
     var isSameAuthor = false
     var openReportList = false
     var isFromReels = false
+    var isFromChannel = false
     var isCaptionOptionNeeded = false
     var isOpenForChannelDetails = false
     
@@ -247,7 +248,7 @@ class BottomSheetVC: UIViewController {
         }
         
         if article.type == Constant.newsArticle.ARTICLE_TYPE_REEL {
-            self.isBlockSourceHidden = true
+            self.isBlockSourceHidden = false
         }
         
         
@@ -444,7 +445,7 @@ class BottomSheetVC: UIViewController {
 //        if !viewSavedArticleHidden {
 //            alertController.addAction(actionFollow)
 //        }
-        if !isBlockSourceHidden && isFromReels {
+        if !isBlockSourceHidden && (isFromReels || isFromChannel) {
             alertController.addAction(actionBlock)
         }
 //

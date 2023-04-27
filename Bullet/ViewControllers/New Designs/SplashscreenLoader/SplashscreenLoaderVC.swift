@@ -41,7 +41,9 @@ extension SplashscreenLoaderVC {
                self.compareVersions(currentVersion, apiVersion.version) == .orderedAscending {
                 self.showForceUpdateAlert(isForced: apiVersion.force_update)
             } else {
-                self.delegate?.dismissSplashscreenLoaderVC()
+                DispatchQueue.main.async {
+                    self.delegate?.dismissSplashscreenLoaderVC()
+                }
             }
         }
     }

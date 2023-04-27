@@ -87,11 +87,12 @@ class HomeDetailCardCell: UITableViewCell {
     
     @IBOutlet weak var followButton: UIButton!
     
+    @IBOutlet weak var bodyTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var lblShare: UILabel!
     @IBOutlet weak var shareImageView: UIImageView!
     @IBOutlet weak var moreImageView: UIImageView!
     
-    
+    var isFromReels = false
     var langCode = ""
     weak var delegate: HomeDetailCardCellDelegate?
     weak var delegateLikeComment: LikeCommentDelegate?
@@ -127,8 +128,6 @@ class HomeDetailCardCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewFooter.isHidden = true
-        followButton.isHidden = true
         // Initialization code
         setupUI()
         viewImageArticle.isHidden = true
@@ -160,7 +159,14 @@ class HomeDetailCardCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        
+        if !isFromReels {
+            viewFooter.isHidden = true
+            followButton.isHidden = true
+            DispatchQueue.main.async {
+                self.bodyTopConstraint.constant = 20
+            }
+            
+        }
         lblBulletTitle.font = SharedManager.shared.getTitleFont()
         imgWifi.cornerRadius = imgWifi.frame.size.width / 2
         followButton.cornerRadius = 12

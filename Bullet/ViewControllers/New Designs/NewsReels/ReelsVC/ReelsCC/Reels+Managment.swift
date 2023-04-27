@@ -20,7 +20,7 @@ extension ReelsCC {
             isPlaying = false
             playerLayer.player?.pause()
             playerLayer.player = nil
-        }
+        } 
     }
     
     func play() {
