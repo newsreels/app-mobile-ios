@@ -49,7 +49,7 @@ extension SplashscreenLoaderVC {
     }
     
     func showForceUpdateAlert(isForced: Bool) {
-        let alertController = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Update Available", message: isForced ? " There is a new version of Newsreels is available. please update for better performance." : "A new version of Newsreels is available. Would you like to update?", preferredStyle: .alert)
         let Update = UIAlertAction(title: "Update", style: .default) { _ in
             let appStoreURL = URL(string: "https://itunes.apple.com/app/id1540932937")
             UIApplication.shared.open(appStoreURL!, options: [:], completionHandler: nil)
