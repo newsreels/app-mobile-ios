@@ -44,6 +44,8 @@ extension ReelsCC {
             }
             
             playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
+            playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
+
             playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
@@ -117,6 +119,14 @@ extension ReelsCC {
         
         play()
     }
+    
+    func setPlayer(didFail: Bool = false) {
+        if didFail || playerLayer.player == nil {
+            pause()
+            playerLayer.removeFromSuperlayer()
+            play()
+        }
+    }
 }
 
 extension ReelsCC {
@@ -179,7 +189,18 @@ extension ReelsCC {
                     }
                 }
             }
-        }
+        } else if keyPath == #keyPath(AVPlayerItem.status), let playerItem = object as? AVPlayerItem {
+            print(playerItem.status)
+            switch playerItem.status {
+               case .failed:
+                   setPlayer(didFail: true)
+                   if let error = playerItem.error {
+                       print("Player item failed with error: \(error.localizedDescription)")
+                   }
+               default:
+                   break
+               }
+           }
     }
     
 }

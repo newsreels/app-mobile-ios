@@ -331,7 +331,7 @@ extension ReelsVC {
 }
 
 extension ReelsVC {
-    func stopAllPlayers() {
+   @objc func stopAllPlayers() {
         for section in 0..<collectionView.numberOfSections {
             for item in 0..<collectionView.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
@@ -342,7 +342,25 @@ extension ReelsVC {
         }
     }
     
-   @objc func stopUnvisiblePlayersNotification(_ notification: Notification) {
-//       stopAllPlayers()
+    @objc func handlePlaybackInterruption(notification: Notification) {
+        guard let userInfo = notification.userInfo, let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt, let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
+            return
+        }
+        switch type {
+        case .began:
+            // Interruption began, pause or stop AVPlayer
+            stopAllPlayers()
+        case .ended:
+            // Interruption ended, resume playback if possible
+            if let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt {
+                let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
+                if options.contains(.shouldResume) {
+                    (
+                        collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC
+                    )?.setPlayer()
+                    playCurrentCellVideo(isFromBackground: true)
+                }
+            }
+        }
     }
 }

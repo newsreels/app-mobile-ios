@@ -430,7 +430,7 @@ class BottomSheetVC: UIViewController {
         if !isDislikeHidden {
             alertController.addAction(actionDontLike)
         }
-        if !isGoToSourceHidden {
+        if !isGoToSourceHidden && isFromReels {
             alertController.addAction(actionGotoSource)
         }
         if !isSavedArticleHidden {
@@ -444,7 +444,7 @@ class BottomSheetVC: UIViewController {
 //        if !viewSavedArticleHidden {
 //            alertController.addAction(actionFollow)
 //        }
-        if !isBlockSourceHidden {
+        if !isBlockSourceHidden && isFromReels {
             alertController.addAction(actionBlock)
         }
 //
