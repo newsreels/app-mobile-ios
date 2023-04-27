@@ -43,7 +43,7 @@ protocol ReelsCCDelegate: AnyObject {
 // MARK: - ReelsCC
 
 class ReelsCC: UICollectionViewCell {
-    @IBOutlet weak var playerContainer: VideoPlayerView!
+    @IBOutlet weak var playerContainer: UIView!
     @IBOutlet var descriptionViewHeight: NSLayoutConstraint!
     @IBOutlet var lblDescriptionAbove: UILabel!
     @IBOutlet var lblDescriptionGradient: UILabel!

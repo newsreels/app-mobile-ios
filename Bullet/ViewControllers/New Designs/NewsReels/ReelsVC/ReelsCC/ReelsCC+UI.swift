@@ -46,10 +46,9 @@ extension ReelsCC {
     }
     
 
-    func setupCell(model: Reel, isFromDiscover: Bool) {
+    func setupCell(model: Reel) {
         loadingStartingTime = nil
-        playerLayer.player = nil
-        playerLayer.player?.pause()
+        pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -142,17 +141,17 @@ extension ReelsCC {
     }
     
     func setImage() {
-        imgThumbnailView?.contentMode = .scaleAspectFill
-        playerLayer.videoGravity = .resizeAspectFill
-
-        imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        imgThumbnailView?.frame = playerLayer.frame
-
-        SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
-            if image == nil {
-                self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? ""), placeholderImage: nil)
-            } else {
-                self?.imgThumbnailView?.image = image
+        if imgThumbnailView.image == nil {
+            imgThumbnailView?.contentMode = .scaleToFill
+            imgThumbnailView.frame = playerLayer.bounds
+            imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView?.frame = playerLayer.frame
+            DispatchQueue.global().async {
+                let url = URL(string: self.reelModel?.image ?? "")
+                let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                DispatchQueue.main.async {
+                    self.imgThumbnailView.image = UIImage(data: data!)
+                }
             }
         }
     }

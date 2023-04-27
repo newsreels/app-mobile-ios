@@ -112,22 +112,25 @@ class ReelsVC: UIViewController {
     var timer = Timer()
 
     @objc func timerAction() {
+//        NotificationCenter.default.post(name: SharedManager.shared.stopUnvisiblePlayersNotification, object: nil, userInfo: nil)
         if let visibleCells = collectionView.visibleCells as? [ReelsCC] {
             for cell in visibleCells {
-                if cell.playerLayer.player?.timeControlStatus != .playing {
-                    if cell.reelModel == nil  {
-                        cell.reelModel = reelsArray[currentlyPlayingIndexPath.item]
-                    }
-                    
-                    if SharedManager.shared.playingPlayers.count > 0 {
-                        if let id = cell.reelModel?.id,
-                           SharedManager.shared.playingPlayers.contains(id) {
-                            SharedManager.shared.playingPlayers.remove(object: id)
-                        }
-                    }
-                    cell.isPlaying = false
-                    cell.play()
-                }
+                print("timerAction")
+//                if cell.playerLayer.player?.timeControlStatus != .playing && cell.playerLayer.player?.timeControlStatus != .waitingToPlayAtSpecifiedRate {
+//                    if cell.reelModel == nil  {
+//                        cell.reelModel = reelsArray[currentlyPlayingIndexPath.item]
+//                    }
+//
+//                    if SharedManager.shared.playingPlayers.count > 0 {
+//                        if let id = cell.reelModel?.id,
+//                           SharedManager.shared.playingPlayers.contains(id) {
+//                            SharedManager.shared.playingPlayers.remove(object: id)
+//                        }
+//                    }
+//
+////                    cell.isPlaying = false
+////                    cell.play()
+//                }
             }
         }
       
@@ -139,8 +142,8 @@ class ReelsVC: UIViewController {
         
     }
     @objc func timerCancelNotification(_ notification: Notification) {
-        timer.invalidate()
-        stopAllPlayers()
+//        timer.invalidate()
+//        stopAllPlayers()
     }
     
     override func viewDidLoad() {

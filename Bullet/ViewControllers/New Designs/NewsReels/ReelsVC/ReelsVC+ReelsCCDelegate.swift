@@ -43,7 +43,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsCC", for: indexPath) as! ReelsCC
 
                 if indexPath.item < reelsArray.count {
-                    cell.setupCell(model: reelsArray[indexPath.item], isFromDiscover: self.isFromDiscover)
+                    cell.setupCell(model: reelsArray[indexPath.item])
                 }
 
                 cell.delegate = self
@@ -91,7 +91,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-
                 return cell
             }
         }
@@ -103,15 +102,15 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
-//        if let cell = cell as? ReelsCC {
+        if let cell = cell as? ReelsCC {
 //            if reelsArray.count != 0,
 //               let id = reelsArray[indexPath.item].id,
 //               let player = cell.playerLayer.player {
 //                let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: id, player: player)
 //                SharedManager.shared.players.append(playerPreload)
-//            }
-//            cell.stopVideo()
-//        }
+            //            }
+            cell.stopVideo()
+        }
     }
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -143,23 +142,15 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     let indexPath = IndexPath(item: i, section: section)
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
-//                       SharedManager.shared.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player == nil,
                        !SharedManager.shared.players.contains(where: {$0.id == reelsArray[indexPath.item].id ?? ""}) ,
                        let urlString = reelsArray[indexPath.item].media,
                        let videoURL = URL(string: urlString) {
                         let asset = AVAsset(url: videoURL)
                         let playerItem = AVPlayerItem(asset: asset)
-                        
-                        // set preferredMaximumResolution to stream only the 240p resolution
-                        // set preferred resolution for 240p
                         playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                        
-                        // set preferred bitrate for 240p resolution
                         playerItem.preferredPeakBitRate = Double(200000)
-                        playerItem.preferredForwardBufferDuration = 3
-                        //3. Create AVPlayerLayer object
+                        playerItem.preferredForwardBufferDuration = 5
                         let player = AVPlayer(playerItem: playerItem)
-                        // Enable automatic preloading
                         player.automaticallyWaitsToMinimizeStalling = true
                         let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
                         SharedManager.shared.players.append(playerPreload)
@@ -201,6 +192,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if showSkeletonLoader {
             return collectionView.frame.size
         }
+
         let lineSpacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumLineSpacing ?? 0
         return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height - lineSpacing)
     }
@@ -548,13 +540,11 @@ extension ReelsVC: ReelsCCDelegate {
             }
             return
         }
-
-//        guard let indexPath = collectionView.indexPath(for: cell) else { return }
         let indexPath = currentlyPlayingIndexPath
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
-
-//        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
-        SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+        if indexPath.item < reelsArray.count {
+            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying,
+                                                    eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
+        }
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
             playNextCellVideo(indexPath: nextIndexPath)

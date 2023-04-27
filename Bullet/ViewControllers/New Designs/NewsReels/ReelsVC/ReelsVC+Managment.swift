@@ -292,7 +292,7 @@ extension ReelsVC {
 
     func getCurrentVisibleIndexPlayVideo() {
         // Stop Old cell
-        self.stopAllPlayers()
+
         isFirstVideo = false
         var newIndexDetected = false
         // Play latest cell
@@ -340,5 +340,9 @@ extension ReelsVC {
                 }
             }
         }
+    }
+    
+   @objc func stopUnvisiblePlayersNotification(_ notification: Notification) {
+//       stopAllPlayers()
     }
 }

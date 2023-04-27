@@ -19,11 +19,13 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
+            playerLayer.player = nil
         }
     }
     
     func play() {
         if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
+            print("will play \(reelModel?.id ?? "")")
             isPlaying = true
             if let id = reelModel?.id,
                !SharedManager.shared.playingPlayers.contains(id) {
@@ -42,10 +44,12 @@ extension ReelsCC {
             }
             
             playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
-            playerContainer.frame = CGRectMake(0, 0, viewContent.frame.size.width, viewContent.frame.size.height)
             playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
+            playerLayer.videoGravity = .resize
+            playerContainer.layer.masksToBounds = true
+            playerLayer.masksToBounds = true
             playerLayer.player?.play()
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
@@ -139,6 +143,10 @@ extension ReelsCC {
                     }
                 }
                     isPlaying = false
+                
+                SharedManager.shared.performWSDurationAnalytics(reelId:
+                                                                    reelModel?.id ?? "",
+                                                                duration: playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
                 if let loadingStartingTime {

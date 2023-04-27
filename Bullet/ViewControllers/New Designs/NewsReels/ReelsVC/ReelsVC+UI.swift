@@ -46,6 +46,10 @@ extension ReelsVC {
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0 // Set the horizontal spacing between items
+        layout.minimumLineSpacing = 0 // Set the vertical spacing between items
+        collectionView.collectionViewLayout = layout // Assign the layout to your UICollectionView
     }
 
     func setupForCallMethod() {
@@ -277,7 +281,6 @@ extension ReelsVC {
         
         if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
 //            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
-            SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         }
     }
 
