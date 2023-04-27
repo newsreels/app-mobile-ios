@@ -381,6 +381,8 @@ class SharedManager {
     var timeObserve = Notification.Name("timeObserve")
     var timerCancel = Notification.Name("timerCancel")
     let playingPlayersNotification = Notification.Name("playingPlayers")
+    var stopReel = Notification.Name("stopReel")
+
     var playingPlayers: [String] = [] {
         didSet {
             if playingPlayers.count > 1 {

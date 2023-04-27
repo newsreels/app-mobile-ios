@@ -223,6 +223,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
 
         case 1:
             //Home
+            NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
             NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.homePageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
@@ -240,6 +241,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 2:
 
             //search
+            NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
             NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.searchPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = "LIST"
@@ -259,6 +261,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 3:
             
             //Following
+            NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
             NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
@@ -278,6 +281,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 4:
             
             //account
+            NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
             NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""

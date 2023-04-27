@@ -169,6 +169,7 @@ class ReelsVC: UIViewController {
         }
         NotificationCenter.default.addObserver(self, selector: #selector(timeObserveNotification), name: SharedManager.shared.timeObserve, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(timerCancelNotification), name: SharedManager.shared.timerCancel, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(timeObserveNotification), name: SharedManager.shared.stopReel, object: nil)
         NotificationCenter.default.post(name: SharedManager.shared.timeObserve, object: nil, userInfo: nil)
         setupNotification()
         _ = try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)

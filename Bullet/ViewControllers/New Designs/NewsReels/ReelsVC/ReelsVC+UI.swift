@@ -288,6 +288,7 @@ extension ReelsVC {
         if isRefreshingReels {
             return
         }
+        stopAllPlayers()
         if manual || collectionViewTopConstraint.constant >= refreshMaximumSpace {
             UIView.animate(withDuration: 0.25) {
                 self.collectionViewTopConstraint.constant = self.refreshMaximumSpace
