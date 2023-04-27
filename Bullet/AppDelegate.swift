@@ -483,25 +483,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         checkSecondaryLang()
         SharedManager.shared.curReelsCategoryId = ""
         SharedManager.shared.curArticlesCategoryId = ""
-        checkUpdate(complition: {
-            if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
-                SharedManager.shared.bulletsAutoPlay = true
-                let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
-                self.navigationController = AppNavigationController.init(rootViewController: vc)
-                self.navigationController.navigationBar.isHidden = true
-                self.window?.rootViewController = self.navigationController
-            } else {
-                let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-                self.doAuthRegistration(deviceID, loginType: .Guest) { value in }
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                self.navigationController = AppNavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: "AnimationLaunch"))
-                self.navigationController.navigationBar.isHidden = true
-                self.window?.rootViewController = self.navigationController
-            }
-        }
-        )
+        let vc = SplashscreenLoaderVC.instantiate(fromAppStoryboard: .OnboardingSB)
+        vc.delegate = self
+        self.window?.rootViewController = vc
     }
-    
+
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
 //        NotificationCenter.default.post(name: Notification.Name.notifyOrientationChange, object: nil)
 //        MediaManager.sharedInstance.orientationChanged()
@@ -1545,51 +1531,25 @@ extension AppDelegate {
     }
 }
 
-extension AppDelegate {
-    func checkUpdate(complition: @escaping () -> Void) {
-        complition()
-        let remoteConfig = RemoteConfig.remoteConfig()
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
-        remoteConfig.setDefaults(fromPlist: "remote_config_defaults")
-        print(remoteConfig.defaultValue(forKey: "app_version"))
-        remoteConfig.fetch { (status, error) -> Void in
-          if status == .success {
-            print("Config fetched!")
-            remoteConfig.activate { changed, error in
-                print(remoteConfig.configValue(forKey: "app_version"))
-            }
-          } else {
-            print("Config not fetched")
-            print("Error: \(error?.localizedDescription ?? "No error available.")")
-          }
-        }
-    }
-    
-    func parseVersion(json: Any) -> RemoteVersion? {
-        return nil
-    }
-    
-    func checkIfRemoteIsGreater(remoteVersion: String, currentVersion: String) -> Bool{
-        return false
-    }
-}
+
 
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
-        
-        SharedManager.shared.hideLaoderFromWindow()
-        
-        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
-        if userToken as! String == "" {
-            setLoginVC()
+        if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
+            SharedManager.shared.bulletsAutoPlay = true
+            let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
+            self.navigationController = AppNavigationController.init(rootViewController: vc)
+            self.navigationController.navigationBar.isHidden = true
+            self.window?.rootViewController = self.navigationController
+        } else {
+            let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
+            self.doAuthRegistration(deviceID, loginType: .Guest) { value in }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.navigationController = AppNavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: "AnimationLaunch"))
+            self.navigationController.navigationBar.isHidden = true
+            self.window?.rootViewController = self.navigationController
         }
-        else {
-            setHomeVC()
-        }
-        
     }
 }
 

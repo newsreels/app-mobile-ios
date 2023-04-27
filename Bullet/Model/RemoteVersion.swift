@@ -19,7 +19,7 @@ struct RemoteVersion: Codable {
         var force_update: Bool
     }
     struct IosVersion: Codable {
-        var version: String?
+        var version: String
         var force_update: Bool
     }
 }
