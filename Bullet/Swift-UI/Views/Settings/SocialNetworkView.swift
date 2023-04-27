@@ -27,10 +27,10 @@ struct SocialNetworkView: View {
                 .onTapGesture {
                     openLink(link: "https://www.youtube.com/channel/UCqrv55WJ0UP7jSwBI8gt13w")
                 }
-            Image("social_tiktok_ic")
-                .onTapGesture {
-                    openLink(link: "https://www.tiktok.com/@newsreels.india")
-                }
+//            Image("social_tiktok_ic")
+//                .onTapGesture {
+//                    openLink(link: "https://www.tiktok.com/@newsreels.india")
+//                }
             Spacer()
 
         }

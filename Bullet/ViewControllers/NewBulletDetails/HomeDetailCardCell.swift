@@ -127,7 +127,8 @@ class HomeDetailCardCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        viewFooter.isHidden = true
+        followButton.isHidden = true
         // Initialization code
         setupUI()
         viewImageArticle.isHidden = true
