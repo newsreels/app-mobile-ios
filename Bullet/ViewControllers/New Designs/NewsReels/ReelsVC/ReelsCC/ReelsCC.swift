@@ -10,9 +10,7 @@ import ActiveLabel
 import AVFoundation
 import PlayerKit
 import UIKit
-
 import CoreHaptics
-import GSPlayer
 
 // MARK: - ReelsCCDelegate
 
@@ -88,7 +86,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    lazy var playerLayer = AVPlayerLayer()
+    var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?

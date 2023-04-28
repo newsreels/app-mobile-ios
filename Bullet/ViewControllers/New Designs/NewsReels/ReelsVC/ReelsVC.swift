@@ -117,7 +117,6 @@ class ReelsVC: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     if cell.isVisible && cell.isNotOverlaid() {
                         if cell.playerLayer.player == nil || cell.playerLayer.player?.isPlaying != true {
-                            print("player got fucked")
                             self.stopAllPlayers()
                             cell.setPlayer(didFail: true)
                         }

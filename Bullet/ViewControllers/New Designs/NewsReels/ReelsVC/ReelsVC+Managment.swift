@@ -91,36 +91,6 @@ extension ReelsVC {
 }
 
 extension ReelsVC {
-    func check() {
-        checkPreload()
-        checkPlay()
-    }
-
-    func checkPreload() {
-        let urls = reelsArray.filter { $0.media != nil && !($0.media?.isEmpty ?? true) }
-            .suffix(2)
-
-        VideoPreloadManager.shared.set(waiting: urls.map { URL(string: $0.media!)! })
-    }
-
-    func checkPlay() {
-        let visibleCells = collectionView.visibleCells.compactMap { $0 as? ReelsCC }
-
-        guard visibleCells.count > 0 else { return }
-
-        let visibleFrame = CGRect(x: 0, y: collectionView.contentOffset.y, width: collectionView.bounds.width, height: collectionView.bounds.height)
-
-        let visibleCell = visibleCells
-            .filter { visibleFrame.intersection($0.frame).height >= $0.frame.height / 2 }
-            .first
-
-        if SharedManager.shared.bulletsAutoPlay {
-            visibleCell?.play()
-        }
-    }
-}
-
-extension ReelsVC {
     func isBackgroundRefreshRequired() -> Bool {
         if SharedManager.shared.minutesBetweenDates(SharedManager.shared.lastBackgroundTimeReels ?? Date(), Date()) >= reelsRefreshTimeNeeded, reelsArray.count > 0 {
             if SharedManager.shared.tabBarIndex == 0, isShowingProfileReels == false, isFromChannelView == false {
