@@ -19,9 +19,6 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
-            SharedManager.shared.performWSDurationAnalytics(reelId:
-                                                                reelModel?.id ?? "",
-                                                            duration: playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
             playerLayer.player = nil
         } 
     }

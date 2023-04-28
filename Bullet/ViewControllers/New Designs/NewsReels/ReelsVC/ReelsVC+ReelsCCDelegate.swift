@@ -103,6 +103,9 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             skeletonCell.hideLaoder()
         }
         if let cell = cell as? ReelsCC {
+            SharedManager.shared.performWSDurationAnalytics(reelId:
+                                                                cell.reelModel?.id ?? "",
+                                                            duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 //            if reelsArray.count != 0,
 //               let id = reelsArray[indexPath.item].id,
 //               let player = cell.playerLayer.player {
