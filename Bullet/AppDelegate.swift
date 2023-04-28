@@ -132,9 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
             //App launch from notification handler
             SharedManager.shared.isAppLaunchedThroughNotification = true
         }
-        
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.appOpen, eventDescription: "")
-        
+        storeStackTrace()
         let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
         NotificationCenter.default.addObserver(self, selector: #selector(setHome), name: .SwiftUIDidChangeLanguage, object: nil)
 
@@ -185,6 +183,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         return true
     }
+    
+    func storeStackTrace() {
+        NSSetUncaughtExceptionHandler { exception in
+            let userInfo = exception.userInfo as? [String: Any] ?? [:]
+            let error = NSError(domain: exception.name.rawValue, code: exception.reason?.hashValue ?? 0, userInfo: userInfo)
+            print("Uncaught exception: \(error)")
+            Crashlytics.crashlytics().record(error: error)
+        }
+     }
+    
     func doAuthRegistration(_ subjectToken: String, loginType: LoginType, completion: @escaping (Bool)->()) {
         // only Guest login here
         
