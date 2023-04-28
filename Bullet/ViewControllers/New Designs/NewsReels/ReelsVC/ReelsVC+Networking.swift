@@ -355,9 +355,13 @@ extension ReelsVC {
                                 NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
                             }
                         }
+                        for obj in self.reelsArray {
+                            SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
+                        }
                     } else {
                         reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {
+                                SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: reel.image ?? "")
                                 self.reelsArray.append(reel)
                             }
                         }

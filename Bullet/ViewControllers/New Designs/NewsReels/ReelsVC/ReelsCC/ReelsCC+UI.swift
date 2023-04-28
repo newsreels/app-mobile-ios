@@ -131,6 +131,7 @@ extension ReelsCC {
          expandTextTapRecognizer.delegate = self
          lblSeeMore.addGestureRecognizer(expandTextTapRecognizer)
     }
+    
     func setImage() {
         if imgThumbnailView.image == nil {
             imgThumbnailView.contentMode = .scaleToFill
@@ -139,7 +140,13 @@ extension ReelsCC {
             imgThumbnailView.frame = playerLayer.frame
             imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             imgThumbnailView.frame = viewContent.frame
-            imgThumbnailView.sd_setImage(with: URL(string: reelModel?.image ?? ""), placeholderImage: nil)
+            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
+                if image == nil {
+                    self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? "") , placeholderImage: nil)
+                } else {
+                    self?.imgThumbnailView?.image = image
+                }
+            }
         }
         imgThumbnailView.layoutIfNeeded()
     }
