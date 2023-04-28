@@ -114,10 +114,18 @@ class ReelsVC: UIViewController {
     @objc func timerAction() {
         if let visibleCells = collectionView.visibleCells as? [ReelsCC] {
             for cell in visibleCells {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    if cell.isVisible && cell.isNotOverlaid() {
+                        if cell.playerLayer.player == nil || cell.playerLayer.player?.isPlaying != true {
+                            print("player got fucked")
+                            self.stopAllPlayers()
+                            cell.setPlayer(didFail: true)
+                        }
+                    }
+                }
                 print("timerAction")
             }
         }
-      
     }
     
     @objc func timeObserveNotification(_ notification: Notification) {
@@ -493,7 +501,6 @@ extension ReelsVC {
     @objc func stopVideo() {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             cell.stopVideo()
-//            cell.pause()
         }
     }
 
