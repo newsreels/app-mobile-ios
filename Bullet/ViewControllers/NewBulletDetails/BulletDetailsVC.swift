@@ -2111,7 +2111,7 @@ extension BulletDetailsVC {
                             }
                             vc.delegateBottomSheet = self
                             vc.article = article
-                            vc.isFromReels = true
+                            vc.isFromReels = self.isFromReels
                             vc.sourceBlock = self.sourceBlock
                             vc.sourceFollow = self.sourceFollow
                             vc.article_archived = self.article_archived
