@@ -68,14 +68,6 @@ extension ReelsCC {
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
-
-            // Geasture for video like
-//            if SharedManager.shared.bulletsAutoPlay {
-//                play()
-//            }
-//            if fromMain {
-//                pause()
-//            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
@@ -148,34 +140,8 @@ extension ReelsCC {
             imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             imgThumbnailView.frame = viewContent.frame
             imgThumbnailView.sd_setImage(with: URL(string: reelModel?.image ?? ""), placeholderImage: nil)
-//            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
-//                if let image = image {
-//                    self?.imgThumbnailView.image = image
-//                } else {
-//                    self?.imgThumbnailView.sd_setImage(with: URL(string: self?.reelModel?.image ?? ""), placeholderImage: nil)
-//                }
-//            }
         }
         imgThumbnailView.layoutIfNeeded()
-    }
-    
-    func setImage2() {
-        if imgThumbnailView.image == nil {
-            imgThumbnailView?.contentMode = .scaleToFill
-            imgThumbnailView.frame = playerLayer.bounds
-            imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            imgThumbnailView?.frame = playerLayer.frame
-            imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            imgThumbnailView?.frame = self.viewContent.frame
-            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
-                if image == nil {
-                    self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? "") , placeholderImage: nil)
-                } else {
-                    self?.imgThumbnailView?.image = image
-                }
-            }
-        }
-        imgThumbnailView?.layoutIfNeeded()
     }
     
     func setFollowButton(hidden: Bool) {

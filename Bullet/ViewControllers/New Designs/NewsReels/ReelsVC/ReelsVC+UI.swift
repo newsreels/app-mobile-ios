@@ -269,18 +269,11 @@ extension ReelsVC {
     }
 
     func scrollViewDidEndDragging(_: UIScrollView, willDecelerate _: Bool) {
-        // Invalidate any existing timer
+        //slow the scrolling
         scrollTimer?.invalidate()
-        // Disable scrolling until the timer fires
         view.isUserInteractionEnabled = false
-        // Start a new timer with a delay of 0.5 second
         scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.35, repeats: false) { [weak self] _ in
-            // The timer has fired, do something here (e.g. enable scrolling)
             self?.view.isUserInteractionEnabled = true
-        }
-        
-        if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-//            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
         }
     }
 
@@ -353,11 +346,8 @@ extension ReelsVC {
     @objc func onPan(_ panGesture: UIPanGestureRecognizer, translationView _: UIView) {
         switch panGesture.state {
         case .began, .changed:
-            // If pan started or is ongoing then
-            // slide the view to follow the finger
             let translation = panGesture.translation(in: view)
-            let x = translation.x // max(translation.x, 0)
-
+            let x = translation.x
              slideViewHorizontalTo(x, reset: false)
 
         default:

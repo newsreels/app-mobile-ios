@@ -130,7 +130,6 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-//        self.playerLayer.player = nil
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false

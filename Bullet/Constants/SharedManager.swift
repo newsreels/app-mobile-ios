@@ -625,15 +625,6 @@ class SharedManager {
     
     
     func getCardViewTitleFont() -> UIFont {
-        
-//        for family in UIFont.familyNames {
-//            print("\(family)")
-//
-//            for name in UIFont.fontNames(forFamilyName: family) {
-//                print("\(name)")
-//            }
-//        }
-        
         switch selectedFontType {
         case .defaultSize:
             return UIFont.systemFont(ofSize: 26, weight: .bold)

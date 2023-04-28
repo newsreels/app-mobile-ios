@@ -45,68 +45,6 @@ extension ReelsVC {
             print("Faeild to get reels categories")
         }
     }
-
-    func performWSToGetReelsCaptions(id: String) {
-        let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
-        let url = "news/reels/\(id)/captions"
-
-        WebService.URLResponse(url, method: .get, parameters: nil, headers: token, withSuccess: { [weak self] response in
-            do {
-                let FULLResponse = try
-                    JSONDecoder().decode(subTitlesDC.self, from: response)
-
-                guard let self = self else {
-                    return
-                }
-
-                if let captions = FULLResponse.captions, captions.count > 0 {
-                    if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
-                        if (self.reelsArray[selectedIndex].captionAPILoaded ?? false) == false {
-                            self.reelsArray[selectedIndex].captions = captions
-                            self.reelsArray[selectedIndex].captionAPILoaded = true
-
-                            if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
-                                cell.reelModel?.captionAPILoaded = true
-                                cell.reelModel?.captions = captions
-                            }
-                            return
-                        }
-                    }
-                } else {
-                    // No captions
-                    if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
-                        self.reelsArray[selectedIndex].captionAPILoaded = true
-                        if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
-                            cell.reelModel?.captionAPILoaded = true
-                        }
-                    }
-                }
-
-            } catch let jsonerror {
-                print("error parsing json objects \(url) \n", jsonerror)
-                guard let self = self else {
-                    return
-                }
-                // No captions
-                if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
-                    self.reelsArray[selectedIndex].captionAPILoaded = true
-                    if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
-                        cell.reelModel?.captionAPILoaded = true
-                    }
-                }
-            }
-        }) { error in
-
-            print("error parsing json objects", error)
-            // No captions
-            if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
-                self.reelsArray[selectedIndex].captionAPILoaded = true
-                if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
-                    cell.reelModel?.captionAPILoaded = true
-                }
-            }
-        }
-    }
 }
 
 extension ReelsVC {
@@ -417,11 +355,6 @@ extension ReelsVC {
                                 NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
                             }
                         }
-
-//                        for obj in self.reelsArray {
-//                            SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
-//                        }
-
                     } else {
                         reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {

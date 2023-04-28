@@ -172,7 +172,7 @@ class BottomSheetVC: UIViewController {
                     
                     isReportHidden = false
                     isGoToSourceHidden = false
-                    isBlockSourceHidden = true
+                    isBlockSourceHidden = false
                     isFollowSourceHidden = true
 
                     if share_message == "" {

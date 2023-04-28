@@ -12,107 +12,6 @@ import UIKit
 import AVFoundation
 
 extension ReelsVC {
-    func setReels() {
-        if !isSugReels, isShowingProfileReels == false, isFromChannelView == false {
-            // do something in background
-            let killTime = SharedManager.shared.refreshReelsOnKillApp ?? Date()
-            let interval = Date().timeIntervalSince(killTime)
-            let minutes = (interval / 60).truncatingRemainder(dividingBy: 60)
-
-            if !isBackButtonNeeded {
-                SharedManager.shared.hideLaoderFromWindow()
-                var FullResponse: ReelsModel?
-                if isOnFollowing {
-                    FullResponse = try? DataCache.instance.readCodable(forKey: Constant.CACHE_REELS_Follow)
-                } else {
-                    FullResponse = try? DataCache.instance.readCodable(forKey: Constant.CACHE_REELS)
-                }
-
-                if let reels = FullResponse?.reels, reels.count > 0, minutes < Double(reelsRefreshTimeNeeded) {
-                    reelsArray = reels
-                    nextPageData = FullResponse?.meta?.next ?? ""
-
-                    if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "" {
-                        // LOAD ADS
-                        reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
-                        reelsArray = reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: true), afterEvery: SharedManager.shared.adsInterval)
-                    }
-                    collectionView.reloadData()
-
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        if self.isViewControllerVisible == false {
-                            return
-                        }
-                        if self.isRightMenuLoaded {
-                            return
-                        }
-                        self.sendVideoViewedAnalyticsEvent()
-                        if SharedManager.shared.reelsAutoPlay {
-                            self.playCurrentCellVideo()
-                            // Force play
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                if self.isViewControllerVisible == false {
-                                    return
-                                }
-                                if self.isRightMenuLoaded {
-                                    return
-                                }
-                                if self.currentlyPlayingIndexPath.item == 0 {
-                                    self.playCurrentCellVideo()
-                                }
-                            }
-                        }
-
-                        if SharedManager.shared.isAppLaunchedThroughNotification {
-                            self.stopVideo()
-                            SharedManager.shared.isAppLaunchedThroughNotification = false
-                            NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
-                        }
-                    }
-
-//                    for obj in reelsArray {
-//                        SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
-//                    }
-                } else {
-                    if SharedManager.shared.isFirstimeSplashScreenLoaded == false {
-                        SharedManager.shared.isFirstimeSplashScreenLoaded = true
-                        SharedManager.shared.showLoaderInWindow()
-                    }
-                    perform(#selector(autohideloader), with: nil, afterDelay: 5)
-                    if SharedManager.shared.reelsContextNotification != "" {
-                        performWSToGetReelsData(page: "", contextID: SharedManager.shared.reelsContextNotification)
-                    } else {
-                        performWSToGetReelsData(page: "", contextID: contextID)
-                    }
-                }
-            } else {
-                if SharedManager.shared.reelsContextNotification != "" {
-                    performWSToGetReelsData(page: "", contextID: SharedManager.shared.reelsContextNotification)
-                } else {
-                    performWSToGetReelsData(page: "", contextID: contextID)
-                }
-            }
-        } else {
-            viewWillLayoutSubviews()
-            collectionView.isUserInteractionEnabled = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                self.collectionView.isUserInteractionEnabled = true
-                if self.isViewControllerVisible == false {
-                    return
-                }
-                if self.isRightMenuLoaded {
-                    return
-                }
-                self.currentlyPlayingIndexPath = self.userSelectedIndexPath
-                self.sendVideoViewedAnalyticsEvent()
-
-                if SharedManager.shared.reelsAutoPlay {
-                    self.playCurrentCellVideo()
-                }
-            }
-        }
-    }
-
     func setupNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.didBecomeActiveNotification, object: nil)
@@ -348,10 +247,8 @@ extension ReelsVC {
         }
         switch type {
         case .began:
-            // Interruption began, pause or stop AVPlayer
             stopAllPlayers()
         case .ended:
-            // Interruption ended, resume playback if possible
             if let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt {
                 let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
                 if options.contains(.shouldResume) {

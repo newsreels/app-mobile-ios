@@ -19,6 +19,9 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
+            SharedManager.shared.performWSDurationAnalytics(reelId:
+                                                                reelModel?.id ?? "",
+                                                            duration: playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
             playerLayer.player = nil
         } 
     }
@@ -157,9 +160,6 @@ extension ReelsCC {
                 }
                     isPlaying = false
                 
-                SharedManager.shared.performWSDurationAnalytics(reelId:
-                                                                    reelModel?.id ?? "",
-                                                                duration: playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
                 if let loadingStartingTime {
