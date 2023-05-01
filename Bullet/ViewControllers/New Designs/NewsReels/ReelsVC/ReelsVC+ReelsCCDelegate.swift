@@ -171,12 +171,13 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.showLoader()
         }
-        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic { // numberofitem count
+        if reelsArray.count > 0, indexPath.item >= setReelAPIHitLogic { // numberofitem count
             callWebsericeToGetNextVideos()
         }
 
         (cell as? ReelsCC)?.setImage()
-        if !fromMain && !isTapBack && isFirstVideo{
+        if (!fromMain && !isTapBack && isFirstVideo) || isPagination {
+            isPagination = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
                 playCurrentCellVideo()
             }
@@ -232,8 +233,7 @@ extension ReelsVC: ReelsCCDelegate {
     }
 
     func didTapViewMore(cell: ReelsCC) {
-        guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.stopAllPlayers()
         }
         let reel = reelsArray[currentlyPlayingIndexPath.item]

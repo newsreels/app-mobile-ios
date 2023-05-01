@@ -192,6 +192,7 @@ extension ReelsVC {
     }
 
     func performWSToGetReelsData(page: String, isRefreshRequired: Bool = false, contextID: String) {
+        isApiCallAlreadyRunning = true
         if reelsArray.count == 0 {
             delegate?.loaderShowing(status: true)
             viewEmptyMessage.isHidden = true
@@ -204,12 +205,13 @@ extension ReelsVC {
             delegate?.loaderShowing(status: false)
             SharedManager.shared.hideLaoderFromWindow()
             SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
+            isApiCallAlreadyRunning = false
             return
         }
 
         let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
 
-        isApiCallAlreadyRunning = true
+        
 
         var url = ""
 
@@ -265,10 +267,12 @@ extension ReelsVC {
             SharedManager.shared.hideLaoderFromWindow()
 
             ANLoader.hide()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self?.isApiCallAlreadyRunning = false
+            }
             guard let self = self else {
                 return
             }
-            self.isApiCallAlreadyRunning = false
 
             do {
                 let FULLResponse = try
@@ -365,13 +369,13 @@ extension ReelsVC {
                                 self.reelsArray.append(reel)
                             }
                         }
-
+                        print(self.reelsArray.count)
                         if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
                             // LOAD ADS
                             self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
                             self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: false), afterEvery: SharedManager.shared.adsInterval)
                         }
-
+                        self.isPagination = true
                         self.collectionView.performBatchUpdates {
                             self.collectionView.layoutIfNeeded()
                         } completion: { _ in

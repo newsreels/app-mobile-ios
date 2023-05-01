@@ -64,7 +64,8 @@ extension ReelsVC {
 
     func playCurrentCellVideo(isFromBackground: Bool = false) {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
-           !cell.isPlaying {
+           let id = cell.reelModel?.id,
+           !SharedManager.shared.playingPlayers.contains(id) {
  
             if let player = SharedManager.shared.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player, player.currentItem != nil {
                 cell.playerLayer = AVPlayerLayer(player: player)
@@ -201,13 +202,15 @@ extension ReelsVC {
 
 extension ReelsVC {
    @objc func stopAllPlayers() {
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-                    cell.stopVideo()
-                }
-            }
+       DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+           for section in 0..<self.collectionView.numberOfSections {
+               for item in 0..<self.collectionView.numberOfItems(inSection: section) {
+                   let indexPath = IndexPath(item: item, section: section)
+                   if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                       cell.stopVideo()
+                   }
+               }
+           }
         }
     }
     

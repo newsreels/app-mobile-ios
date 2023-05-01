@@ -101,7 +101,6 @@ class ReelsCC: UICollectionViewCell {
     var isPlayWhenReady = false
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
-    var isPlaying = false
     var loadingStartingTime: Date?
     
     override func awakeFromNib() {

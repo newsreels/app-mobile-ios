@@ -269,10 +269,10 @@ extension ReelsVC {
     }
 
     func scrollViewDidEndDragging(_: UIScrollView, willDecelerate _: Bool) {
-        //slow the scrolling
+        //slow scroll
         scrollTimer?.invalidate()
         view.isUserInteractionEnabled = false
-        scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.35, repeats: false) { [weak self] _ in
+        scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { [weak self] _ in
             self?.view.isUserInteractionEnabled = true
         }
     }

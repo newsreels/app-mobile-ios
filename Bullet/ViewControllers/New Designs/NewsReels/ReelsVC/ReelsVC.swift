@@ -92,8 +92,7 @@ class ReelsVC: UIViewController {
     var isWatchingRotatedVideos = false
     let reelsRefreshTimeNeeded: CGFloat = 2
     var showSkeletonLoader = false
-    var isCurrentlyScrolling
-    = false
+    var isCurrentlyScrolling = false
     var refreshMaximumSpace: CGFloat = 100
     var isRefreshingReels = false
     var shareTitle = ""
@@ -109,29 +108,7 @@ class ReelsVC: UIViewController {
     var scrollTimer: Timer?
     var isTapBack = false
     var isFirstVideo = true
-    var timer = Timer()
-
-    @objc func timerAction() {
-        if let visibleCells = collectionView.visibleCells as? [ReelsCC] {
-            for cell in visibleCells {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    if cell.isVisible && cell.isNotOverlaid() {
-                        if cell.playerLayer.player == nil || cell.playerLayer.player?.isPlaying != true {
-                            self.stopAllPlayers()
-                            cell.setPlayer(didFail: true)
-                        }
-                    }
-                }
-                print("timerAction")
-            }
-        }
-    }
-    
-    @objc func timeObserveNotification(_ notification: Notification) {
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        
-    }
+    var isPagination = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,10 +131,8 @@ class ReelsVC: UIViewController {
         if isWatchingRotatedVideos {
             return
         }
-        NotificationCenter.default.addObserver(self, selector: #selector(timeObserveNotification), name: SharedManager.shared.timeObserve, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(stopAllPlayers), name: SharedManager.shared.stopReel, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handlePlaybackInterruption), name: AVAudioSession.interruptionNotification, object: nil)
-        NotificationCenter.default.post(name: SharedManager.shared.timeObserve, object: nil, userInfo: nil)
         setupNotification()
         _ = try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)
         _ = try? AVAudioSession.sharedInstance().setActive(true)
@@ -293,9 +268,6 @@ class ReelsVC: UIViewController {
 
     override func viewWillDisappear(_: Bool) {
         ANLoader.hide()
-        DispatchQueue.main.async {
-            self.stopVideo()
-        }
         self.stopAllPlayers()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
@@ -426,7 +398,6 @@ extension ReelsVC {
 
     @objc func appMovedToBackground() {
         stopVideo()
-        NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -442,7 +413,6 @@ extension ReelsVC {
         } else {
             SharedManager.shared.hideLaoderFromWindow()
         }
-        NotificationCenter.default.post(name: SharedManager.shared.timeObserve, object: nil, userInfo: nil)
     }
 
     @objc func appMovedToForeground() {
@@ -572,7 +542,10 @@ extension ReelsVC {
     
     @objc func handlePlayingPlayersNotification(_ notification: Notification) {
         var playersToStop = SharedManager.shared.playingPlayers
-        playersToStop.removeLast()
+        guard self.reelsArray.count > currentlyPlayingIndexPath.item, let id = self.reelsArray[currentlyPlayingIndexPath.item].id else {
+            return
+        }
+        playersToStop.removeAll(where: {$0 == id})
         for section in 0..<collectionView.numberOfSections {
             for item in 0..<collectionView.numberOfItems(inSection: section) {
                 let indexPath = IndexPath(item: item, section: section)
@@ -580,7 +553,6 @@ extension ReelsVC {
                    let id = reelsArray[indexPath.item].id,
                    playersToStop.contains(id){
                     cell.stopVideo()
-                    SharedManager.shared.playingPlayers.remove(object: id)
                 }
             }
         }

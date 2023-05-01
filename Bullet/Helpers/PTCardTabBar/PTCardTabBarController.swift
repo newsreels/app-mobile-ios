@@ -203,6 +203,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 0:
             
             //reels
+            NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
             SharedManager.shared.tabBarIndex = TabbarType.Reels.rawValue
@@ -224,7 +225,6 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 1:
             //Home
             NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
-            NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.homePageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
             SharedManager.shared.tabBarIndex = TabbarType.Home.rawValue
@@ -242,7 +242,6 @@ extension PTCardTabBarController: CardTabBarDelegate {
 
             //search
             NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
-            NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.searchPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = "LIST"
             SharedManager.shared.tabBarIndex = TabbarType.Search.rawValue
@@ -262,7 +261,6 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //Following
             NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
-            NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
             SharedManager.shared.tabBarIndex = TabbarType.Following.rawValue
@@ -282,7 +280,6 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //account
             NotificationCenter.default.post(name: SharedManager.shared.stopReel, object: nil, userInfo: nil)
-            NotificationCenter.default.post(name: SharedManager.shared.timerCancel, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
             SharedManager.shared.tabBarIndex = TabbarType.Profile.rawValue

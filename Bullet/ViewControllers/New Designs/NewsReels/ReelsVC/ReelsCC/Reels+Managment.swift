@@ -12,21 +12,21 @@ import AVFoundation
 
 extension ReelsCC {
     func pause() {
-        if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
+        if SharedManager.shared.playingPlayers.count > 0 {
             if let id = reelModel?.id,
                SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.remove(object: id)
             }
-            isPlaying = false
+            
             playerLayer.player?.pause()
-            playerLayer.player = nil
+            playerLayer.player?.replaceCurrentItem(with: nil)
         } 
     }
     
     func play() {
-        if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
+        if SharedManager.shared.playingPlayers.count < 1  {
             print("will play \(reelModel?.id ?? "")")
-            isPlaying = true
+            
             if let id = reelModel?.id,
                !SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.append(id)
@@ -155,7 +155,6 @@ extension ReelsCC {
                         SharedManager.shared.playingPlayers.remove(object: id)
                     }
                 }
-                    isPlaying = false
                 
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
