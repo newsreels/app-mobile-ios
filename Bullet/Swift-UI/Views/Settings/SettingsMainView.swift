@@ -56,7 +56,7 @@ struct SettingsMainview: View {
                         contentSettings
                         accountSettings
                         termsAndPolicy
-                        if !SharedManager.shared.isGuestUser {
+                        if user?.isGuest == false {
                             SettingsSectionView(title: "Account") {
                                 SettingsRowView(settings: .normal(title: "Delete account")) {
                                     showConfirmAccount = true

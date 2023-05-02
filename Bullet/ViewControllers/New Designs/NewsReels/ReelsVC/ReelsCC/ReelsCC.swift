@@ -86,7 +86,13 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer()
+    var playerLayer = AVPlayerLayer(player: NRPlayer()) {
+        didSet {
+            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHndler
+            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+        }
+    }
+    
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -102,14 +108,13 @@ class ReelsCC: UICollectionViewCell {
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
     var loadingStartingTime: Date?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
         playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
-        NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -127,7 +132,7 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        pause()
+        dispose()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
         playerLayer.player?.seek(to: .zero)
@@ -141,14 +146,13 @@ class ReelsCC: UICollectionViewCell {
         
     }
 
-    
-    
-    @objc private func videoDidEnded() {
+    @objc func videoDidEnded() {
         //do something here
         self.stopVideo()
-        self.pause()
+        self.dispose()
         self.delegate?.videoPlayingFinished(cell: self)
     }
+
     override func layoutSubviews() {
         super.layoutSubviews()
         setDescriptionLabel()
@@ -243,7 +247,7 @@ extension ReelsCC {
 
     @objc func longPressGestureAction(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            PauseVideo()
+            disposeVideo()
         } else if sender.state == .ended || sender.state == .failed || sender.state == .cancelled {
             if !(playerLayer.player?.isPlaying ?? false) {
                 playVideo()

@@ -42,7 +42,7 @@
 		2D4CA95829DD7F1B004ACDED /* CustomImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95729DD7F1B004ACDED /* CustomImageView+Extension.swift */; };
 		2D4CA95C29DD7FC8004ACDED /* ReelsCC+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */; };
 		2D4CA96029DD7FE9004ACDED /* ReelsCC+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */; };
-		2D4CA96229DD80E4004ACDED /* Reels+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */; };
+		2D4CA96229DD80E4004ACDED /* ReelsCC+Managment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4CA96129DD80E4004ACDED /* ReelsCC+Managment.swift */; };
 		2D8FC478B0505CCC0E48236D /* Pods_BulletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */; };
 		3D000200269D8A880093D88B /* FeedFooterCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0001FE269D8A880093D88B /* FeedFooterCC.swift */; };
 		3D000201269D8A880093D88B /* FeedFooterCC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0001FF269D8A880093D88B /* FeedFooterCC.xib */; };
@@ -257,6 +257,7 @@
 		64FAD86F2610565800966CE7 /* BulletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FAD86D2610565800966CE7 /* BulletCell.swift */; };
 		64FAD8B1261056A300966CE7 /* BulletListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FAD8B0261056A300966CE7 /* BulletListCell.xib */; };
 		64FAD8BA261056CF00966CE7 /* BulletListCellWithoutImg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64FAD8B9261056CF00966CE7 /* BulletListCellWithoutImg.xib */; };
+		AC64B9212A00D1B80089FD89 /* NRPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64B9202A00D1B80089FD89 /* NRPlayer.swift */; };
 		AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */; };
 		AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */; };
 		AC700E7629F6502500A6178C /* PlayersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700E7529F6502500A6178C /* PlayersPreload.swift */; };
@@ -1050,7 +1051,7 @@
 		2D4CA95729DD7F1B004ACDED /* CustomImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomImageView+Extension.swift"; sourceTree = "<group>"; };
 		2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsCC+Delegates.swift"; sourceTree = "<group>"; };
 		2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsCC+UI.swift"; sourceTree = "<group>"; };
-		2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reels+Managment.swift"; sourceTree = "<group>"; };
+		2D4CA96129DD80E4004ACDED /* ReelsCC+Managment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReelsCC+Managment.swift"; sourceTree = "<group>"; };
 		3D0001FE269D8A880093D88B /* FeedFooterCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFooterCC.swift; sourceTree = "<group>"; };
 		3D0001FF269D8A880093D88B /* FeedFooterCC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedFooterCC.xib; sourceTree = "<group>"; };
 		3D0805D526CD190E00D3ADCA /* HomeHeroCC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeroCC.xib; sourceTree = "<group>"; };
@@ -1413,6 +1414,7 @@
 		8ADB4746AAC4EF9043E69CA7 /* Pods-BULLET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BULLET.release.xcconfig"; path = "Target Support Files/Pods-BULLET/Pods-BULLET.release.xcconfig"; sourceTree = "<group>"; };
 		958BF5BD62760A40F22D0864 /* Pods_Bullet_BulletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bullet_BulletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5CD44822019B7C4A96C529 /* Pods_BulletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BulletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC64B9202A00D1B80089FD89 /* NRPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRPlayer.swift; sourceTree = "<group>"; };
 		AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVersion.swift; sourceTree = "<group>"; };
 		AC700E7529F6502500A6178C /* PlayersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPreload.swift; sourceTree = "<group>"; };
@@ -2209,6 +2211,7 @@
 		2D4CA94729DD5109004ACDED /* ReelsVC */ = {
 			isa = PBXGroup;
 			children = (
+				AC64B9242A00D72E0089FD89 /* NRPlayer */,
 				2D4CA94829DD5151004ACDED /* ReelsCC */,
 				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
 				2D4CA94929DD543E004ACDED /* ReelsVC+Delegate.swift */,
@@ -2225,7 +2228,7 @@
 			children = (
 				DE6277AD2611E4A300AFF196 /* ReelsCC.swift */,
 				2D4CA95B29DD7FC8004ACDED /* ReelsCC+Delegates.swift */,
-				2D4CA96129DD80E4004ACDED /* Reels+Managment.swift */,
+				2D4CA96129DD80E4004ACDED /* ReelsCC+Managment.swift */,
 				2D4CA95F29DD7FE9004ACDED /* ReelsCC+UI.swift */,
 				DE6277AE2611E4A300AFF196 /* ReelsCC.xib */,
 			);
@@ -3141,6 +3144,14 @@
 				B9AC6198A6EEE91D8096194B /* Pods-Service.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC64B9242A00D72E0089FD89 /* NRPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AC64B9202A00D1B80089FD89 /* NRPlayer.swift */,
+			);
+			path = NRPlayer;
 			sourceTree = "<group>";
 		};
 		B86F41E2292E95CB000044F2 /* Oswald */ = {
@@ -5278,6 +5289,9 @@
 		64D2CC322442FC5100EC39EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					player,
+				);
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Ziro Ride LLC";
@@ -6045,6 +6059,7 @@
 				DE92C8902897DA2F0073BD37 /* SearchHistoryListView.swift in Sources */,
 				C2D0D7882653E936008476DB /* RelevantCell.swift in Sources */,
 				3DC02A2126D50CFD00DA0D4D /* sugClvChannelsCC.swift in Sources */,
+				AC64B9212A00D1B80089FD89 /* NRPlayer.swift in Sources */,
 				DE1F329626C3154500E0E6BC /* DraftSavedArticlesPageVC.swift in Sources */,
 				3D692D452626D7D700CA77EE /* HomeFooterCC.swift in Sources */,
 				DED01B232651025D00616C2F /* YPSelectionsGalleryCell.swift in Sources */,
@@ -6476,7 +6491,7 @@
 				3D8F7F3C268CA1B30087D874 /* ESPullToRefresh.swift in Sources */,
 				DED2967328601BCF00BB7E6A /* Utilities.swift in Sources */,
 				DE92C8932897F1FA0073BD37 /* CryptoViewModel.swift in Sources */,
-				2D4CA96229DD80E4004ACDED /* Reels+Managment.swift in Sources */,
+				2D4CA96229DD80E4004ACDED /* ReelsCC+Managment.swift in Sources */,
 				C2C26A3524B32E9C00228A8D /* DefaultPageControl.swift in Sources */,
 				DEA1159F26B56F27008EC267 /* CustomCropperViewController.swift in Sources */,
 				2D4CA95C29DD7FC8004ACDED /* ReelsCC+Delegates.swift in Sources */,

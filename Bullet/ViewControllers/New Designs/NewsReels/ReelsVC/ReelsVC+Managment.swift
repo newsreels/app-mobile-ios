@@ -29,13 +29,19 @@ extension ReelsVC {
 extension ReelsVC {
     func pauseCellVideo(indexPath: IndexPath?) {
         if let indexPath = indexPath, let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
-            cell.stopVideo()
+            cell.pause()
         }
     }
-
+    
     func pauseVideo() {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            cell.PauseVideo()
+            cell.pause()
+        }
+    }
+    
+    func disposeVideo() {
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            cell.disposeVideo()
         }
     }
 
@@ -70,9 +76,9 @@ extension ReelsVC {
             if let player = SharedManager.shared.players.first(where: {$0.id == reelsArray[currentlyPlayingIndexPath.item].id ?? ""})?.player, player.currentItem != nil {
                 cell.playerLayer = AVPlayerLayer(player: player)
             }
-            if !isFromBackground {
-                cell.playerLayer.player?.seek(to: .zero)
-            }
+//            if !isFromBackground {
+//                cell.playerLayer.player?.seek(to: .zero)
+//            }
             cell.play()
         } else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
             cell.fetchAds(viewController: self)
@@ -214,6 +220,19 @@ extension ReelsVC {
         }
     }
     
+    func pauseAllPlayers() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            for section in 0..<self.collectionView.numberOfSections {
+                for item in 0..<self.collectionView.numberOfItems(inSection: section) {
+                    let indexPath = IndexPath(item: item, section: section)
+                    if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsCC {
+                        cell.pause()
+                    }
+                }
+            }
+         }
+     }
+    
     @objc func handlePlaybackInterruption(notification: Notification) {
         guard let userInfo = notification.userInfo, let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt, let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
             return
@@ -227,7 +246,7 @@ extension ReelsVC {
                 if options.contains(.shouldResume) {
                     (
                         collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC
-                    )?.setPlayer()
+                    )?.resetPlayer()
                     playCurrentCellVideo(isFromBackground: true)
                 }
             }

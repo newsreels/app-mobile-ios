@@ -13,5 +13,5 @@ struct PlayerPreloadModel {
     var index: Int
     var timeCreated: Date
     var id: String
-    var player: AVPlayer
+    var player: NRPlayer
 }

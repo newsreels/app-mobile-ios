@@ -141,7 +141,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             }
             // Preloading
             for section in 0..<collectionView.numberOfSections {
-                for i in indexPath.item ... indexPath.item + 4 {
+                for i in (indexPath.item)...indexPath.item + 4 {
                     let indexPath = IndexPath(item: i, section: section)
                     if indexPath.item >= 0,
                        indexPath.item < reelsArray.count,
@@ -153,7 +153,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                         playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
                         playerItem.preferredPeakBitRate = Double(200000)
                         playerItem.preferredForwardBufferDuration = 5
-                        let player = AVPlayer(playerItem: playerItem)
+                        let player = NRPlayer(playerItem: playerItem)
                         player.automaticallyWaitsToMinimizeStalling = true
                         let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
                         SharedManager.shared.players.append(playerPreload)
@@ -234,7 +234,7 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapViewMore(cell: ReelsCC) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.stopAllPlayers()
+            self.pauseAllPlayers()
         }
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 

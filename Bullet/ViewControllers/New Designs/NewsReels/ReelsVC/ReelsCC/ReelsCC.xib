@@ -43,10 +43,10 @@
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBa-BP-unJ">
                                 <rect key="frame" x="0.0" y="0.0" width="619" height="804"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-AZ-vMZ" customClass="CustomImageView" customModule="Newsreels" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-AZ-vMZ" customClass="CustomImageView" customModule="Newsreels" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="619" height="804"/>
                                     </imageView>
-                                    <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-zg-CI6">
+                                    <view tag="1" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTR-zg-CI6">
                                         <rect key="frame" x="0.0" y="0.0" width="619" height="804"/>
                                     </view>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1m-3U-Cbc">

@@ -397,7 +397,7 @@ extension ReelsVC {
     }
 
     @objc func appMovedToBackground() {
-        stopVideo()
+        pauseVideo()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -473,6 +473,7 @@ extension ReelsVC {
         }
     }
 
+    
     @objc func reelsOrientationChange() {
         if UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight {
             if reelsArray.count == 0 {

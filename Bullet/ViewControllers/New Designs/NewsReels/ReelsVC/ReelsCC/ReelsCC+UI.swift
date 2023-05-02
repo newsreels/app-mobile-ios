@@ -19,7 +19,7 @@ extension ReelsCC {
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-            playerLayer.player?.seek(to: .zero)
+//        playerLayer.player?.seek(to: .zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
@@ -48,7 +48,6 @@ extension ReelsCC {
 
     func setupCell(model: Reel) {
         loadingStartingTime = nil
-        pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {

@@ -1966,8 +1966,8 @@ extension Double {
     
     
     func formatToMilliSeconds() -> String {
-        
         let milli = (Double(self) * 1000)
+        guard !milli.isInfinite && !milli.isNaN else { return ""}
         let int = Int(milli)
         return "\(int)"
         
