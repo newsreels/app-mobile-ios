@@ -13,7 +13,6 @@ import PanModal
 import Reachability
 import SideMenu
 import UIKit
-import AVFoundation
 
 // MARK: - ReelsVCDelegate
 
@@ -54,7 +53,6 @@ class ReelsVC: UIViewController {
     public var minimumVelocityToHide: CGFloat = 1500
     public var minimumScreenRatioToHide: CGFloat = 0.5
     public var animationDuration: TimeInterval = 0.2
-
     var reelsArray = [Reel]()
     var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
     var nextPageData = ""
@@ -70,7 +68,6 @@ class ReelsVC: UIViewController {
     var isShowingProfileReels = false
     var isFromChannelView = false
     var isFromDiscover = false
-    var isFromArticles = false
     var userSelectedIndexPath = IndexPath(item: 0, section: 0)
     var authorID = ""
     var scrollToItemFirstTime = false
@@ -102,17 +99,18 @@ class ReelsVC: UIViewController {
     var isOpenedLightMode = false
     var isOpenedFollowingPrefernce = false
     var fromMain = false
+    var currentCachePosition = 1
+    var cacheLimit = 10
     var isPullToRefresh = false
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
     var isTapBack = false
     var isFirstVideo = true
-    var isPagination = false
-    
+    var isFromArticles = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePlayingPlayersNotification), name: SharedManager.shared.playingPlayersNotification, object: nil)
         setupView()
         setupCollectionView()
         checkInternetConnection()
@@ -128,15 +126,14 @@ class ReelsVC: UIViewController {
 
     override func viewWillAppear(_: Bool) {
         (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
+
         if isWatchingRotatedVideos {
             return
         }
-        NotificationCenter.default.addObserver(self, selector: #selector(stopAllPlayers), name: SharedManager.shared.stopReel, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(handlePlaybackInterruption), name: AVAudioSession.interruptionNotification, object: nil)
         setupNotification()
         _ = try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: .mixWithOthers)
         _ = try? AVAudioSession.sharedInstance().setActive(true)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             ANLoader.hide()
         }
 
@@ -149,11 +146,10 @@ class ReelsVC: UIViewController {
         if SharedManager.shared.reloadRequiredFromTopics && !isFromArticles && !isFromDiscover {
             setRefresh(scrollView: collectionView, manual: true)
             SharedManager.shared.reloadRequiredFromTopics = false
-        } else {
-            SharedManager.shared.reloadRequiredFromTopics = false
         }
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            print("video played at index", currentlyPlayingIndexPath)
             if SharedManager.shared.reelsAutoPlay {
                 cell.viewPlayButton.isHidden = true
             } else {
@@ -165,6 +161,7 @@ class ReelsVC: UIViewController {
         if isFirtTimeLoaded {
             if reelsArray.count > 0 {
                 sendVideoViewedAnalyticsEvent()
+                print("REELS AUTO PLAY EWA 4= \(SharedManager.shared.reelsAutoPlay)")
 
                 if SharedManager.shared.reelsAutoPlay {
                     if isWatchingRotatedVideos {
@@ -195,6 +192,8 @@ class ReelsVC: UIViewController {
                     } else if reelsArray.count > 0 {
                         sendVideoViewedAnalyticsEvent()
 
+                        print("REELS AUTO PLAY EWA 5= \(SharedManager.shared.reelsAutoPlay)")
+
                         if SharedManager.shared.reelsAutoPlay {
                             if isWatchingRotatedVideos {
                                 // Resume videos
@@ -222,6 +221,8 @@ class ReelsVC: UIViewController {
 
         SharedManager.shared.lastBackgroundTimeReels = Date()
 
+        print("APPDELEGATE SHOULD RESET REELS = \(appDelegate.shouldResetReels)")
+
         if appDelegate.shouldResetReels {
             reloadDataFromBG()
             appDelegate.shouldResetReels = false
@@ -230,6 +231,7 @@ class ReelsVC: UIViewController {
 
     override func viewDidAppear(_: Bool) {
         setStatusBar()
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
             self.getArticleDataPayLoad()
         }
@@ -268,7 +270,10 @@ class ReelsVC: UIViewController {
 
     override func viewWillDisappear(_: Bool) {
         ANLoader.hide()
-        self.stopAllPlayers()
+        DispatchQueue.main.async {
+            self.stopVideo()
+        }
+        stopVideo()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -321,7 +326,7 @@ class ReelsVC: UIViewController {
         if scrollToItemFirstTime {
             if userSelectedIndexPath.item < reelsArray.count {
                 collectionView.layoutIfNeeded()
-
+                print("USERSELECTEDINDEXPATH = \(userSelectedIndexPath)")
                 collectionView.scrollToItem(at: userSelectedIndexPath, at: .centeredVertically, animated: false)
             }
         }
@@ -342,14 +347,17 @@ class ReelsVC: UIViewController {
         SharedManager.shared.isOnDiscover = true
         isTapBack = true
         if isShowingProfileReels || isFromChannelView {
+            ReelsCacheManager.shared.reelViewedOnChannelPage = true
             navigationController?.popViewController(animated: true)
         } else if isFromDiscover {
             navigationController?.popViewController(animated: true)
+            ReelsCacheManager.shared.clearDiskCache()
             SharedManager.shared.reloadRequiredFromTopics = true
             return
         } else if isSugReels {
             dismiss(animated: true, completion: nil)
         } else {
+            ReelsCacheManager.shared.clearDiskCache()
             SharedManager.shared.reloadRequiredFromTopics = true
             dismiss(animated: true, completion: nil)
             return
@@ -383,9 +391,14 @@ extension ReelsVC {
             return
         }
         if type == .began {
+            print("Call-- began")
             stopVideo()
 
         } else {
+            print("Call-- end")
+
+            print("REELS AUTO PLAY EWA 3= \(SharedManager.shared.reelsAutoPlay)")
+
             if SharedManager.shared.reelsAutoPlay {
                 playCurrentCellVideo()
             }
@@ -397,7 +410,8 @@ extension ReelsVC {
     }
 
     @objc func appMovedToBackground() {
-        pauseVideo()
+        stopVideo()
+
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 
@@ -434,7 +448,7 @@ extension ReelsVC {
             if reelsArray.count > 0 {
                 if isRightMenuLoaded == false, isShareSheetPresenting == false {
                     if SharedManager.shared.reelsAutoPlay {
-                        playCurrentCellVideo(isFromBackground: true)
+                        playCurrentCellVideo()
                     }
                 }
             }
@@ -462,7 +476,9 @@ extension ReelsVC {
                     DispatchQueue.main.async {
                         self.loadNewData()
                     }
-                } else {}
+                } else {
+                    print("language updated failed")
+                }
             })
         }
     }
@@ -470,10 +486,10 @@ extension ReelsVC {
     @objc func stopVideo() {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             cell.stopVideo()
+//            cell.pause()
         }
     }
 
-    
     @objc func reelsOrientationChange() {
         if UIDevice.current.orientation == .landscapeLeft || UIDevice.current.orientation == .landscapeRight {
             if reelsArray.count == 0 {
@@ -489,6 +505,7 @@ extension ReelsVC {
     }
 
     @objc func tabBarTapped(notification _: Notification) {
+        print("tababr tapped event")
         if isViewDidAppear == false {
             return
         }
@@ -538,24 +555,6 @@ extension ReelsVC {
         } else {
             stopPullToRefresh()
             SharedManager.shared.hideLaoderFromWindow()
-        }
-    }
-    
-    @objc func handlePlayingPlayersNotification(_ notification: Notification) {
-        var playersToStop = SharedManager.shared.playingPlayers
-        guard self.reelsArray.count > currentlyPlayingIndexPath.item, let id = self.reelsArray[currentlyPlayingIndexPath.item].id else {
-            return
-        }
-        playersToStop.removeAll(where: {$0 == id})
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC,
-                   let id = reelsArray[indexPath.item].id,
-                   playersToStop.contains(id){
-                    cell.stopVideo()
-                }
-            }
         }
     }
 }

@@ -261,6 +261,7 @@
 		AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */; };
 		AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */; };
 		AC700E7629F6502500A6178C /* PlayersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700E7529F6502500A6178C /* PlayersPreload.swift */; };
+		AC8704CB2A06B98400D87459 /* ReelsCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */; };
 		B86BB28A2930D78700AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */; };
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
@@ -1418,6 +1419,7 @@
 		AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVersion.swift; sourceTree = "<group>"; };
 		AC700E7529F6502500A6178C /* PlayersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPreload.swift; sourceTree = "<group>"; };
+		AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsCacheManager.swift; sourceTree = "<group>"; };
 		B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
@@ -2211,6 +2213,7 @@
 		2D4CA94729DD5109004ACDED /* ReelsVC */ = {
 			isa = PBXGroup;
 			children = (
+				AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */,
 				AC64B9242A00D72E0089FD89 /* NRPlayer */,
 				2D4CA94829DD5151004ACDED /* ReelsCC */,
 				DE62778D2611E2E700AFF196 /* ReelsVC.swift */,
@@ -6428,6 +6431,7 @@
 				DE7F422226E10B9700042A48 /* AuthorsDiscoverCC.swift in Sources */,
 				3DD5D99A269748E4002D9A8F /* suggestedReelsCC.swift in Sources */,
 				3D8F7F35268CA1B30087D874 /* ESRefreshAnimator.swift in Sources */,
+				AC8704CB2A06B98400D87459 /* ReelsCacheManager.swift in Sources */,
 				DE6CE13926D5192F005F3D95 /* EZPlayerUtils.swift in Sources */,
 				3D54D96E26AD5D1900F6E7CE /* FollowersListVC.swift in Sources */,
 				DED01B5C2651025D00616C2F /* YPPhotoSaver.swift in Sources */,

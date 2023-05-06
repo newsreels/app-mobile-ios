@@ -73,11 +73,7 @@ extension NRPlayer {
         }
     }
     
-    func isStuckWithStaling() -> Bool {
-        print(self.shouldBePlaying)
-        print(self.stallingSeconds)
-        print(self.isPlaying)
-        print("isStuckWithStaling", self.currentItem as Any)
+    func isStuckWithStaling() -> Bool { 
         if self.shouldBePlaying == true
             && (self.currentItem == nil || self.timeControlStatus == .paused) {
             if stallingSeconds > 3 {
@@ -95,8 +91,6 @@ extension NRPlayer {
     }
     
     func isFreezeWithBuffering() -> Bool {
-        print("isFreezeWithBuffering", self.bufferFreezeSeconds)
-        print(self.timeControlStatus.rawValue)
         let maxWaiting = didResetVideo ? 5 : 10
         if self.shouldBePlaying == true
             && isStuckWithStaling() == false
@@ -115,8 +109,6 @@ extension NRPlayer {
         }
     }
     func isStuckWithBuffering() -> Bool {
-        print(self.bufferWaitingSeconds)
-        print("isStuckWithBuffering", self.timeControlStatus.rawValue)
         guard disapledBuffering == false else { return false }
         if self.shouldBePlaying == true
             && isStuckWithStaling() == false

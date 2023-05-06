@@ -108,7 +108,7 @@ class ReelsCC: UICollectionViewCell {
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
     var loadingStartingTime: Date?
-
+    var player = NRPlayer()
     override func awakeFromNib() {
         super.awakeFromNib()
         

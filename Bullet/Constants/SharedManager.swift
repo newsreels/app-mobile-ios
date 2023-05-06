@@ -381,6 +381,7 @@ class SharedManager {
     let playingPlayersNotification = Notification.Name("playingPlayers")
     var stopReel = Notification.Name("stopReel")
 
+    
     var playingPlayers: [String] = [] {
         didSet {
             if playingPlayers.count > 1 {
@@ -388,10 +389,12 @@ class SharedManager {
             }
         }
     }
-    var players = [PlayerPreloadModel]() {
+    
+    var players = [NRPlayer]() {
         didSet {
-            if players.count > 10 {
-                players.removeFirst()
+            if players.count > 5 {
+                players.first?.replaceCurrentItem(with: nil)
+                players.remove(at: 0)
             }
         }
     }

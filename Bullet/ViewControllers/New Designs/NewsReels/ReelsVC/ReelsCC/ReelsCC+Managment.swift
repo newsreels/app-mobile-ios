@@ -51,47 +51,44 @@ extension ReelsCC {
 }
     
     func play() {
-        if let currentTime = playerLayer.player?.currentTime(), currentTime > .zero && playerLayer.player?.currentItem != nil {
-            resume()
-            return
-        }
-        if SharedManager.shared.playingPlayers.count < 1  {
-            print("will play \(reelModel?.id ?? "")")
-            
-            if let id = reelModel?.id,
-               !SharedManager.shared.playingPlayers.contains(id) {
-                SharedManager.shared.playingPlayers.append(id)
+        
+        if let id = reelModel?.id,
+           SharedManager.shared.playingPlayers.count < 1 {
+            SharedManager.shared.playingPlayers.append(id)
+            if let currentDuration = playerLayer.player?.currentDuration, currentDuration > 0 {
+                resume()
+                return
             }
-            setImage()
-            if let url = URL(string: reelModel?.media ?? ""),
-               (playerLayer.player == nil || playerLayer.player?.currentItem == nil){
-                let asset = AVAsset(url: url)
-                let playerItem = AVPlayerItem(asset: asset)
-                playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
-                playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                playerItem.preferredPeakBitRate = Double(200000)
-                let player = NRPlayer(playerItem: playerItem)
-                playerLayer = AVPlayerLayer(player: player)
+                print("will play \(reelModel?.id ?? "")")
+                setImage()
+                if let url = URL(string: reelModel?.media ?? "") {
+                    let asset = AVAsset(url: url)
+                    let playerItem = AVPlayerItem(asset: asset)
+                    playerLayer.player?.automaticallyWaitsToMinimizeStalling = false
+                    playerLayer.player?.currentItem?.preferredForwardBufferDuration = 3
+                    playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+                    playerItem.preferredPeakBitRate = Double(200000)
+                    let player = NRPlayer(playerItem: playerItem)
+                    playerLayer = AVPlayerLayer(player: player)
+                }
+                playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
+                playerContainer.layer.addSublayer(playerLayer)
+                playerLayer.frame = playerContainer.bounds
+                playerContainer.backgroundColor = .clear
+                playerLayer.videoGravity = .resize
+                playerContainer.layer.masksToBounds = true
+                playerLayer.masksToBounds = true
+                NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+                playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
+                playerLayer.player?.play()
+                imgThumbnailView.layoutIfNeeded()
+                if SharedManager.shared.isAudioEnableReels == false {
+                    playerLayer.player?.volume = 0
+                    imgSound.image = UIImage(named: "newMuteIC")
+                } else {
+                    playerLayer.player?.volume = 1
+                    imgSound.image = UIImage(named: "newUnmuteIC")
             }
-            playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
-            playerContainer.layer.addSublayer(playerLayer)
-            playerLayer.frame = playerContainer.bounds
-            playerContainer.backgroundColor = .clear
-            playerLayer.videoGravity = .resize
-            playerContainer.layer.masksToBounds = true
-            playerLayer.masksToBounds = true
-            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
-            playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
-            playerLayer.player?.play()
-            imgThumbnailView.layoutIfNeeded()
-            if SharedManager.shared.isAudioEnableReels == false {
-                playerLayer.player?.volume = 0
-                imgSound.image = UIImage(named: "newMuteIC")
-            } else {
-                playerLayer.player?.volume = 1
-                imgSound.image = UIImage(named: "newUnmuteIC")
-            }
-            
         }
     }
     
@@ -158,14 +155,14 @@ extension ReelsCC {
     }
     
     func stallingHndler() {
+        ReelsCacheManager.shared.clearDiskCache()
         resetPlayer()
     }
     
     func bufferStuckHandler() {
         SharedManager.shared.players.forEach({ item in
             // Cancel the loading of the player's current asset
-            item.player.currentItem?.cancelPendingSeeks()
-            item.player.currentItem?.asset.cancelLoading()
+            item.dispose()
         })
         SharedManager.shared.players.removeAll()
     }
@@ -191,18 +188,7 @@ extension ReelsCC {
             case .paused:
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
-//                if let loadingStartingTime {
-//                    let endDate = Date()
-//                    if endDate.timeIntervalSince(loadingStartingTime) > 2 {
-//                        SharedManager.shared.players.forEach({ item in
-//                            // Cancel the loading of the player's current asset
-//                            item.player.currentItem?.cancelPendingSeeks()
-//                            item.player.currentItem?.asset.cancelLoading()
-//                        })
-//                    }
-//                } else {
-//                    loadingStartingTime = Date()
-//                }
+ 
                 if let currentItem = playerLayer.player?.currentItem {
                     let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
                     if let timeRange = timeRange {

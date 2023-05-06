@@ -9,7 +9,6 @@
 import UIKit
 import DataCache
 import CoreMedia
-import AVFoundation
 
 // MARK: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 
@@ -63,6 +62,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                             cell.followStack.layoutIfNeeded()
                         }
                     }
+                    
                 } else {
                     let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
                     DispatchQueue.main.async {
@@ -91,6 +91,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
                 return cell
             }
         }
@@ -98,31 +99,24 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         return UICollectionViewCell()
     }
 
-    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt _: IndexPath) {
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
+
         if let cell = cell as? ReelsCC {
-            SharedManager.shared.performWSDurationAnalytics(reelId:
-                                                                cell.reelModel?.id ?? "",
-                                                            duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
-//            if reelsArray.count != 0,
-//               let id = reelsArray[indexPath.item].id,
-//               let player = cell.playerLayer.player {
-//                let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: id, player: player)
-//                SharedManager.shared.players.append(playerPreload)
-            //            }
             cell.stopVideo()
+            cell.pause()
         }
     }
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
             if SharedManager.shared.isAudioEnableReels == false {
-                cell.playerLayer.player?.volume = 0.0
+                cell.player.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
             } else {
-                cell.playerLayer.player?.volume = 1.0
+                cell.player.volume = 1.0
                 cell.imgSound.image = UIImage(named: "newUnmuteIC")
             }
 
@@ -139,26 +133,10 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let indexPathReload = IndexPath(item: indexPath.row, section: 0)
                 collectionView.reloadItems(at: [indexPathReload])
             }
-            // Preloading
-            for section in 0..<collectionView.numberOfSections {
-                for i in (indexPath.item)...indexPath.item + 4 {
-                    let indexPath = IndexPath(item: i, section: section)
-                    if indexPath.item >= 0,
-                       indexPath.item < reelsArray.count,
-                       !SharedManager.shared.players.contains(where: {$0.id == reelsArray[indexPath.item].id ?? ""}) ,
-                       let urlString = reelsArray[indexPath.item].media,
-                       let videoURL = URL(string: urlString) {
-                        let asset = AVAsset(url: videoURL)
-                        let playerItem = AVPlayerItem(asset: asset)
-                        playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                        playerItem.preferredPeakBitRate = Double(200000)
-                        playerItem.preferredForwardBufferDuration = 5
-                        let player = NRPlayer(playerItem: playerItem)
-                        player.automaticallyWaitsToMinimizeStalling = true
-                        let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
-                        SharedManager.shared.players.append(playerPreload)
-                    }
-                }
+            
+            for i in indexPath.item...indexPath.item + 4 {
+                guard reelsArray.count > i && i >= 0 else { continue }
+                ReelsCacheManager.shared.begin(reelModel: reelsArray[i], position: i)
             }
         }
 
@@ -171,20 +149,14 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.showLoader()
         }
-        if reelsArray.count > 0, indexPath.item >= setReelAPIHitLogic { // numberofitem count
+        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic() { // numberofitem count
             callWebsericeToGetNextVideos()
         }
 
         (cell as? ReelsCC)?.setImage()
-        if (!fromMain && !isTapBack && isFirstVideo) || isPagination {
-            isPagination = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
-                playCurrentCellVideo()
-            }
-        }
     }
 
-    var setReelAPIHitLogic: Int {
+    func setReelAPIHitLogic() -> Int {
         if reelsArray.count >= 10 {
             return reelsArray.count - 8
         } else {
@@ -196,7 +168,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if showSkeletonLoader {
             return collectionView.frame.size
         }
-
         let lineSpacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumLineSpacing ?? 0
         return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height - lineSpacing)
     }
@@ -218,6 +189,10 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 // MARK: - ReelsVC + ReelsCCDelegate
 
 extension ReelsVC: ReelsCCDelegate {
+    func stopPrevious(cell: ReelsCC) {
+        
+    }
+    
     func didTapOpenSource(cell _: ReelsCC) {}
 
     func didSwipeRight(cell: ReelsCC) {
@@ -233,9 +208,9 @@ extension ReelsVC: ReelsCCDelegate {
     }
 
     func didTapViewMore(cell: ReelsCC) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.pauseAllPlayers()
-        }
+        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+        pauseCellVideo(indexPath: indexPath)
+
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 
         let bullet = [Bullets(data: reel.reelDescription, audio: nil, duration: nil, image: nil)]
@@ -245,7 +220,6 @@ extension ReelsVC: ReelsCCDelegate {
         vc.selectedArticleData = content
         vc.delegate = self
         vc.isSwipeToDismissRequired = true
-        vc.isFromReels = true
         let navVC = AppNavigationController(rootViewController: vc)
         navVC.modalPresentationStyle = .overFullScreen
 
@@ -515,16 +489,16 @@ extension ReelsVC: ReelsCCDelegate {
     }
 
     func didTapHashTag(cell _: ReelsCC, text: String) {
-//        let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
-//
-//        vc.titleText = "#\(text)"
-//        vc.isBackButtonNeeded = true
-//        vc.modalPresentationStyle = .fullScreen
-//        vc.delegate = self
-//        vc.isOpenFromTags = true
-//        let nav = AppNavigationController(rootViewController: vc)
-//        nav.modalPresentationStyle = .fullScreen
-//        present(nav, animated: true, completion: nil)
+        let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
+
+        vc.titleText = "#\(text)"
+        vc.isBackButtonNeeded = true
+        vc.modalPresentationStyle = .fullScreen
+        vc.delegate = self
+        vc.isOpenFromTags = true
+        let nav = AppNavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
 
     func didSingleTapDetected(cell: ReelsCC) {
@@ -536,8 +510,6 @@ extension ReelsVC: ReelsCCDelegate {
     func videoPlayingStarted(cell _: ReelsCC) {}
 
     func videoPlayingFinished(cell: ReelsCC) {
-        self.stopAllPlayers()
-        
         if isOpenfromNotificationList {
             sendVideoViewedAnalyticsEvent()
             if SharedManager.shared.reelsAutoPlay {
@@ -545,11 +517,13 @@ extension ReelsVC: ReelsCCDelegate {
             }
             return
         }
-        let indexPath = currentlyPlayingIndexPath
-        if indexPath.item < reelsArray.count {
-            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying,
-                                                    eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
-        }
+
+        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
+
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
             playNextCellVideo(indexPath: nextIndexPath)
@@ -599,7 +573,7 @@ extension ReelsVC: ReelsCCDelegate {
             vc.imgPlaceHolder = cell.imgThumbnailView
             vc.url = url
             vc.modalPresentationStyle = .fullScreen
-            vc.customDuration = CMTime(seconds: cell.playerLayer.player?.currentDuration ?? 0, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+            vc.customDuration = CMTime(seconds: cell.player.currentDuration, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
 
             // captions
             vc.captions = reelsArray[indexPath.item].captions
@@ -619,16 +593,4 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapCaptions(cell _: ReelsCC) {
      }
-    
-    func stopPrevious(cell: ReelsCC) {
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if let reelCell = collectionView.cellForItem(at: indexPath) as? ReelsCC,
-                   reelCell.reelModel?.id != cell.reelModel?.id{
-                    reelCell.stopVideo()
-                }
-            }
-        }
-    }
 }
