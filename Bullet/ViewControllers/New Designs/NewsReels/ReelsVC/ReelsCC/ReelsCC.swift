@@ -86,13 +86,13 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer(player: NRPlayer()) {
+    var player = NRPlayer()
+    {
         didSet {
-            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHndler
-            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+            print(player.currentItem == nil)
         }
     }
-    
+    var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -107,14 +107,16 @@ class ReelsCC: UICollectionViewCell {
     var isPlayWhenReady = false
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
+    var isPlaying = false
     var loadingStartingTime: Date?
-    var player = NRPlayer()
+    var index = 0
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        playerLayer.player = self.player
         playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
+        
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -132,11 +134,10 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        dispose()
+        pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
         playerLayer.player?.seek(to: .zero)
-        playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
         }
@@ -146,15 +147,17 @@ class ReelsCC: UICollectionViewCell {
         
     }
 
+    
+    
     @objc func videoDidEnded() {
         //do something here
         self.stopVideo()
-        self.dispose()
+        self.pause()
         self.delegate?.videoPlayingFinished(cell: self)
     }
-
     override func layoutSubviews() {
         super.layoutSubviews()
+        imgThumbnailView.isHidden = false
         setDescriptionLabel()
         hideLoader()
         imgThumbnailView?.layoutIfNeeded()
@@ -247,7 +250,7 @@ extension ReelsCC {
 
     @objc func longPressGestureAction(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            disposeVideo()
+            PauseVideo()
         } else if sender.state == .ended || sender.state == .failed || sender.state == .cancelled {
             if !(playerLayer.player?.isPlaying ?? false) {
                 playVideo()

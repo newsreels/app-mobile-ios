@@ -649,10 +649,10 @@ extension ReelsVC: ReelsCacheManagerDelegate {
             }
         }
         currentCachePosition += 1
-//        startReelsCaching()
+        startReelsCaching()
     }
 
-//    func startReelsCaching() {
+    func startReelsCaching() {
 //        ReelsCacheManager.shared.delegate = self
 //        if currentCachePosition < cacheLimit, currentCachePosition < reelsArray.count {
 //            if reelsArray[currentCachePosition].iosType == nil {
@@ -664,7 +664,7 @@ extension ReelsVC: ReelsCacheManagerDelegate {
 //                }
 //            }
 //        }
-//    }
+    }
 }
 
 // MARK: - ReelsVC + ReelsFullScreenVCDelegate

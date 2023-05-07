@@ -390,12 +390,9 @@ class SharedManager {
         }
     }
     
-    var players = [NRPlayer]() {
-        didSet {
-            if players.count > 5 {
-                players.first?.replaceCurrentItem(with: nil)
-                players.remove(at: 0)
-            }
+    var players = [PlayerPreloadModel]() {
+        willSet {
+
         }
     }
     var isFirstimeSplashScreenLoaded = false

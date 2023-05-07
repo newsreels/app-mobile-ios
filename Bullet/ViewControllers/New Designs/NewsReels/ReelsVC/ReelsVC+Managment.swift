@@ -88,6 +88,7 @@ extension ReelsVC {
                 ReelsCacheManager.shared.clearDiskCache()
                 currentCachePosition = 1
                 cacheLimit = 10
+                startReelsCaching()
                 if SharedManager.shared.reelsContextNotification != "" {
                     performWSToGetReelsData(page: "", contextID: SharedManager.shared.reelsContextNotification)
                 } else {
@@ -97,7 +98,8 @@ extension ReelsVC {
         } else {
             ReelsCacheManager.shared.clearDiskCache()
             currentCachePosition = 1
-            cacheLimit = 10 
+            cacheLimit = 10
+            startReelsCaching()
             viewWillLayoutSubviews()
             collectionView.isUserInteractionEnabled = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -148,7 +150,7 @@ extension ReelsVC {
 
     func pauseVideo() {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            cell.pause()
+            cell.PauseVideo()
         }
     }
 
@@ -185,6 +187,10 @@ extension ReelsVC {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             print("video played at index", currentlyPlayingIndexPath)
             if cell.player.timeControlStatus != .playing {
+                DispatchQueue.main.async {
+                    cell.loader.isHidden = false
+                    cell.loader.startAnimating()
+                }
                 cell.play()
             } else {
                 DispatchQueue.main.async {
@@ -345,7 +351,6 @@ extension ReelsVC {
     func getCurrentVisibleIndexPlayVideo() {
         let prevsIndex = currentlyPlayingIndexPath
         var newIndexDetected = false
-        isFirstVideo = false
         // Play latest cell
         for cell in collectionView.visibleCells {
             let cellRect = cell.contentView.convert(cell.contentView.bounds, to: UIScreen.main.coordinateSpace)

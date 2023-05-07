@@ -21,25 +21,6 @@ enum Resolution: String {
     case VeryLow = "240p"
 }
 
-class CacheObserver: NSObject {
-    
-    var compilition: (() -> Void)
-    init(compilition: @escaping () -> Void) {
-        self.compilition = compilition
-    }
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == #keyPath(AVPlayerItem.loadedTimeRanges), let playerItem = object as? AVPlayerItem {
-            let timeRange = playerItem.loadedTimeRanges.first?.timeRangeValue ?? CMTimeRange.zero
-            let bufferDuration = CMTimeGetSeconds(timeRange.duration)
-            if bufferDuration >= 3 {
-                compilition()
-                playerItem.removeObserver(self, forKeyPath: #keyPath(AVPlayerItem.loadedTimeRanges))
-            }
-        }
-    }
-}
-
-
 class ReelsCacheManager {
     
     static let shared = ReelsCacheManager()
@@ -76,7 +57,8 @@ class ReelsCacheManager {
         playerItem.preferredForwardBufferDuration = 3
         let player = NRPlayer(playerItem: playerItem)
         player.automaticallyWaitsToMinimizeStalling = false
-        SharedManager.shared.players.append(player) 
+        let preloadModel = PlayerPreloadModel(index: position, timeCreated: Date(), id: "\(position)", player: player)
+        SharedManager.shared.players.append(preloadModel)
     }
 
     func fetchResFileList(_ reel: Reel,_ position: Int){

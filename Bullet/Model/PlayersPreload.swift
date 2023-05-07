@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-struct PlayerPreloadModel {
+struct PlayerPreloadModel: Equatable {
     var index: Int
     var timeCreated: Date
     var id: String

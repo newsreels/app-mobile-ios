@@ -105,10 +105,8 @@ class ReelsVC: UIViewController {
     var reachability: Reachability?
     var isNoInternet = false
     var scrollTimer: Timer?
-    var isTapBack = false
-    var isFirstVideo = true
     var isFromArticles = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -345,7 +343,6 @@ class ReelsVC: UIViewController {
 
     @IBAction func didTapBack(_: Any) {
         SharedManager.shared.isOnDiscover = true
-        isTapBack = true
         if isShowingProfileReels || isFromChannelView {
             ReelsCacheManager.shared.reelViewedOnChannelPage = true
             navigationController?.popViewController(animated: true)

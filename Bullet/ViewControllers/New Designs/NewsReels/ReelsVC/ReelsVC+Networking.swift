@@ -68,7 +68,6 @@ extension ReelsVC {
                             if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                                 cell.reelModel?.captionAPILoaded = true
                                 cell.reelModel?.captions = captions
- 
                             }
                             return
                         }
@@ -93,7 +92,6 @@ extension ReelsVC {
                     self.reelsArray[selectedIndex].captionAPILoaded = true
                     if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                         cell.reelModel?.captionAPILoaded = true
-                       
                     }
                 }
             }
@@ -105,7 +103,6 @@ extension ReelsVC {
                 self.reelsArray[selectedIndex].captionAPILoaded = true
                 if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
                     cell.reelModel?.captionAPILoaded = true
-                    
                 }
             }
         }
@@ -380,7 +377,8 @@ extension ReelsVC {
                             self.callWebsericeToGetNextVideos()
                         }
                         self.currentCachePosition = 1
-                        self.cacheLimit = 10 
+                        self.cacheLimit = 10
+                        self.startReelsCaching()
 
                         if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false {
                             // LOAD ADS
@@ -462,6 +460,7 @@ extension ReelsVC {
                         if self.cacheLimit < self.reelsArray.count {
                             self.cacheLimit = self.reelsArray.count
                         }
+                        self.startReelsCaching()
                         if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
                             // LOAD ADS
                             self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }

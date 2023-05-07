@@ -11,84 +11,63 @@ import CoreMedia
 import AVFoundation
 
 extension ReelsCC {
-    func dispose() {
-        // remove the observer for AVPlayerItemDidPlayToEndTime
-        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
-        if SharedManager.shared.playingPlayers.count > 0 {
-            if let id = reelModel?.id,
-               SharedManager.shared.playingPlayers.contains(id) {
-                SharedManager.shared.playingPlayers.remove(object: id)
-            }
-            
-            (playerLayer.player as? NRPlayer)?.dispose()
-            playerLayer.player = nil
-        }
-    }
-    
     func pause() {
-        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
-        if SharedManager.shared.playingPlayers.count > 0 {
+        if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
             if let id = reelModel?.id,
                SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.remove(object: id)
+                playerLayer.player?.removeObserver(self, forKeyPath: "timeControlStatus", context: nil)
+                playerLayer.player?.currentItem?.removeObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), context: nil)
+                NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
             }
-            (playerLayer.player as? NRPlayer)?.pause()
-        }
+            isPlaying = false
+            playerLayer.player?.pause()
+            playerLayer.player = nil
+        } 
     }
     
-    func resume() {
-        if SharedManager.shared.playingPlayers.count < 1  {
-            print("will resume \(reelModel?.id ?? "")")
-            
+    func play() {
+        if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
+            print("will play \(reelModel?.id ?? "")")
+            isPlaying = true
             if let id = reelModel?.id,
                !SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.append(id)
             }
-            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+            setImage()
+            if index != 0,SharedManager.shared.players.count > index, SharedManager.shared.players[index].player.currentItem != nil {
+                player = SharedManager.shared.players[index].player
+                playerLayer = AVPlayerLayer(player: player)
+            } else if let url = URL(string: reelModel?.media ?? ""),
+               playerLayer.player?.currentItem == nil {
+                let asset = AVAsset(url: url)
+                let playerItem = AVPlayerItem(asset: asset)
+                playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
+                playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+                playerItem.preferredPeakBitRate = Double(200000)
+                player = NRPlayer(playerItem: playerItem)
+                playerLayer = AVPlayerLayer(player: player)
+            }
+            
             playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
-        (playerLayer.player as? NRPlayer)?.play()
-    }
-}
-    
-    func play() {
-        
-        if let id = reelModel?.id,
-           SharedManager.shared.playingPlayers.count < 1 {
-            SharedManager.shared.playingPlayers.append(id)
-            if let currentDuration = playerLayer.player?.currentDuration, currentDuration > 0 {
-                resume()
-                return
+            playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+            playerContainer.layer.addSublayer(playerLayer)
+            playerLayer.frame = playerContainer.bounds
+            playerContainer.backgroundColor = .clear
+            playerLayer.videoGravity = .resize
+            playerContainer.layer.masksToBounds = true
+            playerLayer.masksToBounds = true
+            playerLayer.player?.play()
+            imgThumbnailView.layoutIfNeeded()
+            if SharedManager.shared.isAudioEnableReels == false {
+                playerLayer.player?.volume = 0
+                imgSound.image = UIImage(named: "newMuteIC")
+            } else {
+                playerLayer.player?.volume = 1
+                imgSound.image = UIImage(named: "newUnmuteIC")
             }
-                print("will play \(reelModel?.id ?? "")")
-                setImage()
-                if let url = URL(string: reelModel?.media ?? "") {
-                    let asset = AVAsset(url: url)
-                    let playerItem = AVPlayerItem(asset: asset)
-                    playerLayer.player?.automaticallyWaitsToMinimizeStalling = false
-                    playerLayer.player?.currentItem?.preferredForwardBufferDuration = 3
-                    playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                    playerItem.preferredPeakBitRate = Double(200000)
-                    let player = NRPlayer(playerItem: playerItem)
-                    playerLayer = AVPlayerLayer(player: player)
-                }
-                playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
-                playerContainer.layer.addSublayer(playerLayer)
-                playerLayer.frame = playerContainer.bounds
-                playerContainer.backgroundColor = .clear
-                playerLayer.videoGravity = .resize
-                playerContainer.layer.masksToBounds = true
-                playerLayer.masksToBounds = true
-                NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
-                playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
-                playerLayer.player?.play()
-                imgThumbnailView.layoutIfNeeded()
-                if SharedManager.shared.isAudioEnableReels == false {
-                    playerLayer.player?.volume = 0
-                    imgSound.image = UIImage(named: "newMuteIC")
-                } else {
-                    playerLayer.player?.volume = 1
-                    imgSound.image = UIImage(named: "newUnmuteIC")
-            }
+            
         }
     }
     
@@ -97,13 +76,13 @@ extension ReelsCC {
             viewPlayButton.isHidden = false
         }
         isPlayWhenReady = false
-        dispose()
+        pause()
         viewTransparentBG.isHidden = true
         isFullText = false
         currTime = -1
     }
     
-    func disposeVideo() {
+    func PauseVideo() {
         isPlayWhenReady = false
     }
     
@@ -147,30 +126,20 @@ extension ReelsCC {
         play()
     }
     
-    func resetPlayer() {
-        print("will reset \(reelModel?.id ?? "")")
-            dispose()
+    func setPlayer(didFail: Bool = false) {
+        if didFail || playerLayer.player == nil {
+            pause()
             playerLayer.removeFromSuperlayer()
             play()
-    }
-    
-    func stallingHndler() {
-        ReelsCacheManager.shared.clearDiskCache()
-        resetPlayer()
-    }
-    
-    func bufferStuckHandler() {
-        SharedManager.shared.players.forEach({ item in
-            // Cancel the loading of the player's current asset
-            item.dispose()
-        })
-        SharedManager.shared.players.removeAll()
+        }
     }
 }
 
 extension ReelsCC {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "timeControlStatus", let player = object as? NRPlayer {
+        if keyPath == "timeControlStatus", let player = object as? AVPlayer {
+            self.imgThumbnailView.isHidden = false
+            imgThumbnailView?.layoutIfNeeded()
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
@@ -188,7 +157,6 @@ extension ReelsCC {
             case .paused:
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
- 
                 if let currentItem = playerLayer.player?.currentItem {
                     let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
                     if let timeRange = timeRange {
@@ -208,7 +176,7 @@ extension ReelsCC {
             print(playerItem.status)
             switch playerItem.status {
                case .failed:
-                   resetPlayer()
+                   setPlayer(didFail: true)
                    if let error = playerItem.error {
                        print("Player item failed with error: \(error.localizedDescription)")
                    }
