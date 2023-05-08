@@ -515,7 +515,7 @@ extension ReelsVC: ReelsCCDelegate {
         else if indexPath.item == reelsArray.count - 5, reelsArray.count > 1 {
             callWebsericeToGetNextVideos()
         } else if reelsArray.count > 0 {
-            let nextIndexPath = IndexPath(item: indexPath.item + 1, section: 0)
+            let nextIndexPath = IndexPath(item: currentlyPlayingIndexPath.item + 1, section: 0)
             if nextIndexPath.item < reelsArray.count {
                 playNextCellVideo(indexPath: nextIndexPath)
             }

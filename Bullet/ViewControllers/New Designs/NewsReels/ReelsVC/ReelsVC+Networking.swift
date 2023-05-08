@@ -10,7 +10,6 @@ import Foundation
 import DataCache
 import Reachability
 import Photos
-import SDWebImage
 
 extension ReelsVC {
      func getReelsCategories() {
@@ -446,15 +445,9 @@ extension ReelsVC {
                         for obj in self.reelsArray {
                             SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
                         }
-
+                        ReelsCacheManager.shared.clearCache()
                     } else {
-                        // Clear memory cache
-                        SDImageCache.shared.clearMemory()
-
-                        // Clear disk cache
-                        SDImageCache.shared.clearDisk {
-                            // This block will be called once the disk cache has been cleared
-                        }
+                        ReelsCacheManager.shared.clearCache()
                         let newIndexArray = [IndexPath]()
                         var newReels = [Reel]()
                         reelsData.forEach { reel in
@@ -463,7 +456,7 @@ extension ReelsVC {
                                 newReels.append(reel)
                             }
                         }
-                        self.reelsArray = self.filterDuplicates(newReels)
+                        self.reelsArray.append(contentsOf: self.filterDuplicates(newReels))
                         
                         print("reelsArray.count = \(self.reelsArray.count)")
 

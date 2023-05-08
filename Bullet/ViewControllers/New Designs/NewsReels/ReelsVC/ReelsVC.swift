@@ -13,7 +13,6 @@ import PanModal
 import Reachability
 import SideMenu
 import UIKit
-import SDWebImage
 
 // MARK: - ReelsVCDelegate
 
@@ -112,13 +111,7 @@ class ReelsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Clear memory cache
-        SDImageCache.shared.clearMemory()
-
-        // Clear disk cache
-        SDImageCache.shared.clearDisk {
-            // This block will be called once the disk cache has been cleared
-        }
+        ReelsCacheManager.shared.clearCache()
         setupView()
         setupCollectionView()
         checkInternetConnection()

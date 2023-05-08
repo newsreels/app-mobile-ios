@@ -269,7 +269,7 @@ extension ReelsVC {
                 return
             }
             if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC {
-                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+                SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
             }
 
             pauseCellVideo(indexPath: prevsIndex)

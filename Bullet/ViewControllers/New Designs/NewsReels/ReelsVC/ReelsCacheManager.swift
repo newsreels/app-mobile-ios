@@ -9,6 +9,8 @@
 import Foundation
 import GCDWebServer
 import AVFoundation
+import SDWebImage
+import WebKit
 
 protocol ReelsCacheManagerDelegate: NSObject {
     func cachingCompleted(reel: Reel, position: Int)
@@ -207,6 +209,29 @@ class ReelsCacheManager {
         }
     }
     
+    func clearCache() {
+        // Clear memory cache
+        SDImageCache.shared.clearMemory()
+
+        // Clear disk cache
+        SDImageCache.shared.clearDisk {
+            // This block will be called once the disk cache has been cleared
+        }
+        WKWebsiteDataStore.default().removeData(ofTypes: [WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeMemoryCache], modifiedSince: Date(timeIntervalSince1970: 0), completionHandler:{ })
+        URLCache.shared.removeAllCachedResponses()
+        clearDiskCache()
+        
+        do {
+            let cacheDirectory = try FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            let fileUrls = try FileManager.default.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil, options: .includesDirectoriesPostOrder)
+            for fileUrl in fileUrls {
+                try FileManager.default.removeItem(at: fileUrl)
+            }
+        } catch {
+            print("Error clearing cache: \(error.localizedDescription)")
+        }
+    }
+
     func deleteCachedReels(currentPosition: Int, reelsArray: [Reel], completion: (_ index: Int)->(Void)) {
         
         let fileManager = FileManager.default

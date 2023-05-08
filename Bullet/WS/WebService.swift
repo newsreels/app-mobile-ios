@@ -42,8 +42,10 @@ class WebService {
 //        Alamofire.Session.default.session.getAllTasks { tasks in
 //            tasks.forEach { $0.cancel() }
 //        }
-
-        AF.request(completeUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headersToken).validate(statusCode: 200 ..< 600).responseData(completionHandler: { response in
+        let requestModifier = { (request: inout URLRequest) in
+            request.timeoutInterval = 10
+        }
+        AF.request(completeUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headersToken, requestModifier: requestModifier).validate(statusCode: 200 ..< 600).responseData(completionHandler: { response in
 
             if let modifiedTime = response.response?.allHeaderFields["Last-Modified"] as? String {
                 if url == "news/discover" {

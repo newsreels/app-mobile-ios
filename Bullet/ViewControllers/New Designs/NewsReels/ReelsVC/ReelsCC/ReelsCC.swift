@@ -134,7 +134,6 @@ class ReelsCC: UICollectionViewCell {
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
-        playerLayer.player?.seek(to: .zero)
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
