@@ -122,10 +122,19 @@ extension ReelsCC {
     
     func setPlayer(didFail: Bool = false) {
         if didFail || playerLayer.player == nil {
+            ReelsCacheManager.shared.clearCache()
             pause()
             playerLayer.removeFromSuperlayer()
             play()
         }
+    }
+    
+    func stallingHandler() {
+        setPlayer(didFail: true)
+    }
+
+    func bufferStuckHandler() {
+        setPlayer(didFail: true)
     }
 }
 

@@ -86,7 +86,12 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer()
+    var playerLayer = AVPlayerLayer() {
+        didSet {
+            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
+        }
+    }
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?

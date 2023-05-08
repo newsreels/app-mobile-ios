@@ -111,7 +111,7 @@ class ReelsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ReelsCacheManager.shared.clearCache()
+        
         setupView()
         setupCollectionView()
         checkInternetConnection()
