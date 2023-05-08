@@ -49,6 +49,9 @@ extension NRPlayer {
     
     func dispose() {
         pause()
+        self.currentItem?.cancelPendingSeeks()
+        self.currentItem?.preferredForwardBufferDuration = 0
+        self.currentItem?.seek(to: .zero)
         self.replaceCurrentItem(with: nil)
     }
 }

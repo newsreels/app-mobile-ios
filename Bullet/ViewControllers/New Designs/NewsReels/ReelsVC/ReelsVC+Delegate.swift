@@ -704,7 +704,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
             if let cell = self.collectionView.cellForItem(at: self.currentlyPlayingIndexPath) as? ReelsCC {
                 if time == .zero || time == nil {
                     self.forceScrollandPlayVideo(time: time)
-                } else if (time ?? .zero) >= (cell.player.currentDuration) {
+                } else if (time ?? .zero) >= (cell.playerLayer.player?.currentDuration ?? 0) {
                     let nextIndexPath = IndexPath(item: self.currentlyPlayingIndexPath.item + 1, section: 0)
                     if nextIndexPath.item < self.reelsArray.count {
                         if self.isViewControllerVisible == false {
@@ -714,7 +714,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
                             return
                         }
 
-                        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+                        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 
                         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: self.reelsArray[self.currentlyPlayingIndexPath.item].id ?? "")
 

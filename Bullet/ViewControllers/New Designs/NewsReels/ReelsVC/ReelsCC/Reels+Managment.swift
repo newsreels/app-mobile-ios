@@ -12,44 +12,46 @@ import AVFoundation
 
 extension ReelsCC {
     func pause() {
-        if SharedManager.shared.playingPlayers.count > 0 {
+        if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
             if let id = reelModel?.id,
                SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.remove(object: id)
             }
+            isPlaying = false
             playerLayer.player?.pause()
-        } 
+            playerLayer.player = nil
+        }
     }
     
     func play() {
-        if SharedManager.shared.playingPlayers.count < 1  {
+        if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
             print("will play \(reelModel?.id ?? "")")
+            isPlaying = true
             if let id = reelModel?.id,
                !SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.append(id)
             }
             setImage()
-            if let id = self.reelModel?.id, let player = SharedManager.shared.players.first(where: {$0.id == id})?.player {
-                self.player = player
-                playerLayer = AVPlayerLayer(player: player)
-            } else if let url = URL(string: reelModel?.media ?? "") {
+            if let url = URL(string: reelModel?.media ?? ""),
+               playerLayer.player == nil {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
                 playerItem.preferredPeakBitRate = Double(200000)
-                player = NRPlayer(playerItem: playerItem)
+                let player = AVPlayer(playerItem: playerItem)
                 playerLayer = AVPlayerLayer(player: player)
             }
+            
             playerLayer.player?.addObserver(self, forKeyPath: "timeControlStatus", options: NSKeyValueObservingOptions.new, context: nil)
             playerLayer.player?.currentItem?.addObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), options: NSKeyValueObservingOptions.new, context: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+
+            playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
             playerLayer.videoGravity = .resize
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
-            playerContainer.layer.addSublayer(playerLayer)
             playerLayer.player?.play()
             imgThumbnailView.layoutIfNeeded()
             if SharedManager.shared.isAudioEnableReels == false {
@@ -118,84 +120,84 @@ extension ReelsCC {
         play()
     }
     
-    func resetPlayer() {
-            ReelsCacheManager.shared.clearDiskCache()
-            SharedManager.shared.players.forEach({$0.player.dispose()})
+    func setPlayer(didFail: Bool = false) {
+        if didFail || playerLayer.player == nil {
             pause()
+            playerLayer.removeFromSuperlayer()
             play()
-    }
-    
-    
-    func bufferStuckHandler() {
-        resetPlayer()
-    }
-    
-    func stallingHandler() {
-        resetPlayer()
+        }
     }
 }
 
 extension ReelsCC {
-    func checkPlayerStatus(_ player: NRPlayer) {
-        self.imgThumbnailView.isHidden = false
-        imgThumbnailView?.layoutIfNeeded()
-        switch player.timeControlStatus {
-        case .playing:
-            print("playing \(reelModel?.id ?? "")")
-            loadingStartingTime = nil
-            DispatchQueue.main.async {
-                self.imgThumbnailView.isHidden = true
-                if self.loader.isHidden == false {
-                    self.loader.isHidden = true
-                    self.loader.stopAnimating()
-                }
-                self.loader.stopAnimating()
-                    self.hideLoader()
-                ANLoader.hide()
-            }
-        case .paused:
-            print("paused \(reelModel?.id ?? "")")
-            playerLayer.player?.removeObserver(self, forKeyPath: "timeControlStatus", context: nil)
-            playerLayer.player?.currentItem?.removeObserver(self, forKeyPath: #keyPath(AVPlayerItem.status), context: nil)
-            NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
-            
-        case .waitingToPlayAtSpecifiedRate:
-            if let currentItem = playerLayer.player?.currentItem {
-                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                if let timeRange = timeRange {
-                    let bufferDuration = timeRange.duration.seconds
-                    print("waitingToPlayAtSpecifiedRate, buffer: \(bufferDuration), currently: \((playerLayer.player?.currentItem?.currentDuration ?? 0))")
-                }
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate  {
-                    self.imgThumbnailView.isHidden = false
-                    self.loader.isHidden = false
-                    self.loader.startAnimating()
-                }
-            }
-        @unknown default:
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "timeControlStatus", let player = object as? AVPlayer {
             self.imgThumbnailView.isHidden = false
             imgThumbnailView?.layoutIfNeeded()
-        }
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        DispatchQueue.main.async {
-            if keyPath == "timeControlStatus", let player = object as? NRPlayer {
-                self.checkPlayerStatus(player)
-            } else if keyPath == #keyPath(AVPlayerItem.status), let playerItem = object as? AVPlayerItem {
-                switch playerItem.status {
-                case .failed:
-                    self.resetPlayer()
-                    if let error = playerItem.error {
-                        print("Player item failed with error: \(error.localizedDescription)")
+            switch player.timeControlStatus {
+            case .playing:
+                print("playing \(reelModel?.id ?? "")")
+                loadingStartingTime = nil
+                DispatchQueue.main.async {
+                    self.imgThumbnailView.isHidden = true
+                    if self.loader.isHidden == false {
+                        self.loader.isHidden = true
+                        self.loader.stopAnimating()
                     }
-                default:
-                    break
+                    self.loader.stopAnimating()
+                        self.hideLoader()
+                    ANLoader.hide()
+                }
+            case .paused:
+                if SharedManager.shared.playingPlayers.count > 0 {
+                    if let id = reelModel?.id,
+                       SharedManager.shared.playingPlayers.contains(id) {
+                        SharedManager.shared.playingPlayers.remove(object: id)
+                    }
+                }
+                    isPlaying = false
+                
+                print("paused \(reelModel?.id ?? "")")
+            case .waitingToPlayAtSpecifiedRate:
+                if let loadingStartingTime {
+                    let endDate = Date()
+                    if endDate.timeIntervalSince(loadingStartingTime) > 2 {
+                        SharedManager.shared.players.forEach({ item in
+                            // Cancel the loading of the player's current asset
+                            item.player.currentItem?.cancelPendingSeeks()
+                            item.player.currentItem?.asset.cancelLoading()
+                        })
+                    }
+                } else {
+                    loadingStartingTime = Date()
+                }
+                if let currentItem = playerLayer.player?.currentItem {
+                    let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
+                    if let timeRange = timeRange {
+                        let bufferDuration = timeRange.duration.seconds
+                        print("waitingToPlayAtSpecifiedRate, buffer: \(bufferDuration), currently: \((playerLayer.player?.currentItem?.currentDuration ?? 0))")
+                    }
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate  {
+                        self.imgThumbnailView.isHidden = false
+                        self.loader.isHidden = false
+                        self.loader.startAnimating()
+                    }
                 }
             }
-        }
+        } else if keyPath == #keyPath(AVPlayerItem.status), let playerItem = object as? AVPlayerItem {
+            print(playerItem.status)
+            switch playerItem.status {
+               case .failed:
+                   setPlayer(didFail: true)
+                   if let error = playerItem.error {
+                       print("Player item failed with error: \(error.localizedDescription)")
+                   }
+               default:
+                   break
+               }
+           }
     }
     
 }

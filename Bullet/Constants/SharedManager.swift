@@ -382,13 +382,7 @@ class SharedManager {
     var stopReel = Notification.Name("stopReel")
 
     
-    var playingPlayers: [String] = [] {
-        didSet {
-            if playingPlayers.count > 1 {
-                NotificationCenter.default.post(name: playingPlayersNotification, object: nil, userInfo: nil)
-            }
-        }
-    }
+    var playingPlayers: [String] = []
     
     var players = [PlayerPreloadModel]() {
         didSet {

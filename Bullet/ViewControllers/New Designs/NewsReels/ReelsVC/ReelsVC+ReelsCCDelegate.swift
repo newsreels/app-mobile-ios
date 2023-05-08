@@ -34,19 +34,18 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if indexPath.item < reelsArray.count {
-            if reelsArray[indexPath.item].iosType == Constant.newsArticle.ARTICLE_TYPE_ADS {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsPhotoAdCC", for: indexPath) as! ReelsPhotoAdCC
-                cell.fetchAds(viewController: self)
-                return cell
-            } else {
+//            if reelsArray[indexPath.item].iosType == Constant.newsArticle.ARTICLE_TYPE_ADS {
+//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsPhotoAdCC", for: indexPath) as! ReelsPhotoAdCC
+//                cell.fetchAds(viewController: self)
+//                return cell
+//            } else
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsCC", for: indexPath) as! ReelsCC
 
                 if indexPath.item < reelsArray.count {
                     cell.setupCell(model: reelsArray[indexPath.item])
                 }
-
+                cell.hideLoader()
                 cell.delegate = self
-
                 if channelInfo != nil {
                     cell.viewEditArticle.isHidden = (channelInfo?.own ?? false) ? false : true
                 } else {
@@ -54,12 +53,11 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 }
                 cell.btnEditArticle.tag = indexPath.item
                 cell.btnAuthor.tag = indexPath.item
-                cell.index = indexPath.item
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
                 return cell
-            }
+            
         }
 
         return UICollectionViewCell()
@@ -78,11 +76,46 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
+            if let source = reelsArray[indexPath.item].source {
+                let fav = source.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+            } else {
+                let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+                
+            }
+            cell.setImage()
             if SharedManager.shared.isAudioEnableReels == false {
-                cell.player.volume = 0.0
+                cell.playerLayer.player?.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
             } else {
-                cell.player.volume = 1.0
+                cell.playerLayer.player?.volume = 1.0
                 cell.imgSound.image = UIImage(named: "newUnmuteIC")
             }
 
@@ -118,9 +151,11 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic() { // numberofitem count
             callWebsericeToGetNextVideos()
         }
-
-        (cell as? ReelsCC)?.setImage()
-
+        if !fromMain && !isTapBack && isFirstVideo{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
+                playCurrentCellVideo()
+            }
+        }
         
     }
 
@@ -464,7 +499,7 @@ extension ReelsVC: ReelsCCDelegate {
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
 
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.player.totalDuration.formatToMilliSeconds())
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
@@ -515,7 +550,7 @@ extension ReelsVC: ReelsCCDelegate {
             vc.imgPlaceHolder = cell.imgThumbnailView
             vc.url = url
             vc.modalPresentationStyle = .fullScreen
-            vc.customDuration = CMTime(seconds: cell.player.currentDuration, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+            vc.customDuration = CMTime(seconds: cell.playerLayer.player?.currentDuration ?? 0, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
 
             // captions
             vc.captions = reelsArray[indexPath.item].captions

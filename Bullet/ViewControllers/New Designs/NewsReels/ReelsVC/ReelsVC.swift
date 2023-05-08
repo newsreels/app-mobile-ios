@@ -13,6 +13,7 @@ import PanModal
 import Reachability
 import SideMenu
 import UIKit
+import SDWebImage
 
 // MARK: - ReelsVCDelegate
 
@@ -106,9 +107,18 @@ class ReelsVC: UIViewController {
     var isNoInternet = false
     var scrollTimer: Timer?
     var isFromArticles = false
+    var isTapBack = false
+    var isFirstVideo = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Clear memory cache
+        SDImageCache.shared.clearMemory()
+
+        // Clear disk cache
+        SDImageCache.shared.clearDisk {
+            // This block will be called once the disk cache has been cleared
+        }
         setupView()
         setupCollectionView()
         checkInternetConnection()
@@ -322,7 +332,7 @@ class ReelsVC: UIViewController {
         layout.invalidateLayout()
 
         if scrollToItemFirstTime {
-            if userSelectedIndexPath.item < reelsArray.count {
+            if userSelectedIndexPath.item < reelsArray.count, userSelectedIndexPath.item < collectionView.numberOfItems(inSection: 0) {
                 collectionView.layoutIfNeeded()
                 print("USERSELECTEDINDEXPATH = \(userSelectedIndexPath)")
                 collectionView.scrollToItem(at: userSelectedIndexPath, at: .centeredVertically, animated: false)
@@ -343,6 +353,7 @@ class ReelsVC: UIViewController {
 
     @IBAction func didTapBack(_: Any) {
         SharedManager.shared.isOnDiscover = true
+        isTapBack = true
         if isShowingProfileReels || isFromChannelView {
             ReelsCacheManager.shared.reelViewedOnChannelPage = true
             navigationController?.popViewController(animated: true)
@@ -552,6 +563,14 @@ extension ReelsVC {
         } else {
             stopPullToRefresh()
             SharedManager.shared.hideLaoderFromWindow()
+        }
+    }
+    
+    func filterDuplicates(_ array: [Reel]) -> [Reel] {
+        var seen = Set<String>()
+        return array.filter { reel in
+            guard let id = reel.id else { return true }
+            return seen.insert(id).inserted
         }
     }
 }

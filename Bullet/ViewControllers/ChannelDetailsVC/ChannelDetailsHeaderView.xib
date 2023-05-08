@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,18 +47,12 @@
                                     <color key="textColor" name="AppDarkGray"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFW-C1-Gnc">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFW-C1-Gnc">
                                     <rect key="frame" x="30" y="88.5" width="631" height="16.5"/>
                                     <string key="text">@New York Times
 </string>
                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                     <color key="textColor" name="AppLightGray"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-RQ-2wm" customClass="ActiveLabel" customModule="ActiveLabel">
-                                    <rect key="frame" x="345.5" y="185" width="0.0" height="0.0"/>
-                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                    <color key="textColor" red="0.13725490196078433" green="0.12549019607843137" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hQz-ZL-KQW">
@@ -279,12 +273,20 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-RQ-2wm" customClass="ActiveLabel" customModule="ActiveLabel">
+                                    <rect key="frame" x="30" y="88" width="631" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" red="0.13725490196078433" green="0.12549019607843137" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="F9Y-cW-hwF" firstAttribute="centerX" secondItem="qNa-v5-lW7" secondAttribute="centerX" constant="7" id="3HP-OX-YpM"/>
                                 <constraint firstItem="uyE-yu-yc6" firstAttribute="centerX" secondItem="qNa-v5-lW7" secondAttribute="centerX" id="6uX-gr-KJh"/>
                                 <constraint firstItem="yFW-C1-Gnc" firstAttribute="leading" secondItem="qNa-v5-lW7" secondAttribute="leading" constant="30" id="8l7-db-8Nu"/>
+                                <constraint firstItem="b8h-RQ-2wm" firstAttribute="top" secondItem="uyE-yu-yc6" secondAttribute="bottom" constant="5.5" id="DFY-YK-daQ"/>
+                                <constraint firstAttribute="trailing" secondItem="b8h-RQ-2wm" secondAttribute="trailing" constant="30" id="Keb-mc-KHH"/>
                                 <constraint firstItem="uyE-yu-yc6" firstAttribute="top" secondItem="qNa-v5-lW7" secondAttribute="top" constant="54" id="MNt-79-ZwH"/>
                                 <constraint firstItem="yFW-C1-Gnc" firstAttribute="top" secondItem="uyE-yu-yc6" secondAttribute="bottom" constant="6" id="PPL-DA-NI2"/>
                                 <constraint firstItem="VDd-AL-xcz" firstAttribute="centerX" secondItem="qNa-v5-lW7" secondAttribute="centerX" id="TEP-dg-j7u"/>
@@ -294,6 +296,7 @@
                                 <constraint firstItem="uyE-yu-yc6" firstAttribute="top" secondItem="thT-sT-Ouh" secondAttribute="bottom" constant="-10" id="ajT-69-Q6w"/>
                                 <constraint firstItem="hQz-ZL-KQW" firstAttribute="top" secondItem="yFW-C1-Gnc" secondAttribute="bottom" constant="18" id="fKO-FG-Ifo"/>
                                 <constraint firstAttribute="bottom" secondItem="VDd-AL-xcz" secondAttribute="bottom" constant="21" id="ght-Cs-Gk5"/>
+                                <constraint firstItem="b8h-RQ-2wm" firstAttribute="leading" secondItem="qNa-v5-lW7" secondAttribute="leading" constant="30" id="lZA-F3-PuH"/>
                                 <constraint firstItem="b8h-RQ-2wm" firstAttribute="centerX" secondItem="qNa-v5-lW7" secondAttribute="centerX" id="nUW-nV-C3E"/>
                                 <constraint firstItem="hQz-ZL-KQW" firstAttribute="centerX" secondItem="qNa-v5-lW7" secondAttribute="centerX" id="tHW-ua-amf"/>
                             </constraints>
@@ -350,7 +353,9 @@
         </view>
     </objects>
     <designables>
-        <designable name="b8h-RQ-2wm"/>
+        <designable name="b8h-RQ-2wm">
+            <size key="intrinsicContentSize" width="4" height="16.5"/>
+        </designable>
     </designables>
     <resources>
         <image name="ChannelOptions" width="16" height="9"/>

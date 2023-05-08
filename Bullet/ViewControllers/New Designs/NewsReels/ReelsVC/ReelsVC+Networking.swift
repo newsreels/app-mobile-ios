@@ -10,6 +10,7 @@ import Foundation
 import DataCache
 import Reachability
 import Photos
+import SDWebImage
 
 extension ReelsVC {
      func getReelsCategories() {
@@ -176,20 +177,20 @@ extension ReelsVC {
                     SharedManager.shared.isOnboardingPreferenceLoaded = onboarded
                 }
 
-                if let ads = FULLResponse.ads {
-                    UserDefaults.standard.set(ads.enabled, forKey: Constant.UD_adsAvailable)
-                    UserDefaults.standard.set(ads.ad_unit_key, forKey: Constant.UD_adsUnitKey)
-                    UserDefaults.standard.set(ads.type, forKey: Constant.UD_adsType)
-                    SharedManager.shared.adsInterval = ads.interval ?? 10
-
-                    if ads.type?.uppercased() == "FACEBOOK" {
-                        UserDefaults.standard.set(ads.facebook?.feed, forKey: Constant.UD_adsUnitFeedKey)
-                        UserDefaults.standard.set(ads.facebook?.reel, forKey: Constant.UD_adsUnitReelKey)
-                    } else {
-                        UserDefaults.standard.set(ads.admob?.feed, forKey: Constant.UD_adsUnitFeedKey)
-                        UserDefaults.standard.set(ads.admob?.reel, forKey: Constant.UD_adsUnitReelKey)
-                    }
-                }
+//                if let ads = FULLResponse.ads {
+//                    UserDefaults.standard.set(ads.enabled, forKey: Constant.UD_adsAvailable)
+//                    UserDefaults.standard.set(ads.ad_unit_key, forKey: Constant.UD_adsUnitKey)
+//                    UserDefaults.standard.set(ads.type, forKey: Constant.UD_adsType)
+//                    SharedManager.shared.adsInterval = ads.interval ?? 10
+//
+//                    if ads.type?.uppercased() == "FACEBOOK" {
+//                        UserDefaults.standard.set(ads.facebook?.feed, forKey: Constant.UD_adsUnitFeedKey)
+//                        UserDefaults.standard.set(ads.facebook?.reel, forKey: Constant.UD_adsUnitReelKey)
+//                    } else {
+//                        UserDefaults.standard.set(ads.admob?.feed, forKey: Constant.UD_adsUnitFeedKey)
+//                        UserDefaults.standard.set(ads.admob?.reel, forKey: Constant.UD_adsUnitReelKey)
+//                    }
+//                }
 
                 if let walletLink = FULLResponse.wallet {
                     UserDefaults.standard.set(walletLink, forKey: Constant.UD_WalletLink)
@@ -372,7 +373,7 @@ extension ReelsVC {
                         ReelsCacheManager.shared.clearDiskCache()
                         ReelsCacheManager.shared.delegate = self
 
-                        self.reelsArray = reelsData
+                        self.reelsArray = self.filterDuplicates(reelsData)
                         if self.reelsArray.count < 10 {
                             self.callWebsericeToGetNextVideos()
                         }
@@ -380,11 +381,11 @@ extension ReelsVC {
                         self.cacheLimit = 10
                         self.startReelsCaching()
 
-                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false {
-                            // LOAD ADS
-                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
-                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: true), afterEvery: SharedManager.shared.adsInterval)
-                        }
+//                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false {
+//                            // LOAD ADS
+//                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
+//                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: true), afterEvery: SharedManager.shared.adsInterval)
+//                        }
 
                         if self.showSkeletonLoader {
                             self.showSkeletonLoader = false
@@ -447,12 +448,23 @@ extension ReelsVC {
                         }
 
                     } else {
+                        // Clear memory cache
+                        SDImageCache.shared.clearMemory()
+
+                        // Clear disk cache
+                        SDImageCache.shared.clearDisk {
+                            // This block will be called once the disk cache has been cleared
+                        }
                         let newIndexArray = [IndexPath]()
+                        var newReels = [Reel]()
                         reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {
-                                self.reelsArray.append(reel)
+                                SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: reel.image ?? "")
+                                newReels.append(reel)
                             }
                         }
+                        self.reelsArray = self.filterDuplicates(newReels)
+                        
                         print("reelsArray.count = \(self.reelsArray.count)")
 
                         print("reelsArray.count DATA= \(reelsData.count)")
@@ -461,11 +473,11 @@ extension ReelsVC {
                             self.cacheLimit = self.reelsArray.count
                         }
                         self.startReelsCaching()
-                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
-                            // LOAD ADS
-                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
-                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: false), afterEvery: SharedManager.shared.adsInterval)
-                        }
+//                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
+//                            // LOAD ADS
+//                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
+//                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: false), afterEvery: SharedManager.shared.adsInterval)
+//                        }
 
                         self.collectionView.performBatchUpdates {
                             self.collectionView.layoutIfNeeded()

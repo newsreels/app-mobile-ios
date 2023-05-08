@@ -86,15 +86,6 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var player = NRPlayer()
-    {
-        didSet {
-            player.stallingHandler = self.stallingHandler
-            player.bufferStuckHandler = self.stallingHandler
-            print(player.currentItem == nil)
-        }
-    }
-
     var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
@@ -110,16 +101,16 @@ class ReelsCC: UICollectionViewCell {
     var isPlayWhenReady = false
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
+    var isPlaying = false
     var loadingStartingTime: Date?
-    var index = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        playerLayer.player = self.player
+        
         playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -137,10 +128,14 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
+            SharedManager.shared.playingPlayers.remove(object: id)
+        }
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
         playerLayer.player?.seek(to: .zero)
+        playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
         }
@@ -152,7 +147,7 @@ class ReelsCC: UICollectionViewCell {
 
     
     
-    @objc func videoDidEnded() {
+    @objc private func videoDidEnded() {
         //do something here
         self.stopVideo()
         self.pause()

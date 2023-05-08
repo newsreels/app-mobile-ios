@@ -24,4 +24,3 @@ extension ReelsCC: UIGestureRecognizerDelegate {
         return true
     }
 }
-
