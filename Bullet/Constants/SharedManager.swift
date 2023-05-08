@@ -391,8 +391,11 @@ class SharedManager {
     }
     
     var players = [PlayerPreloadModel]() {
-        willSet {
-
+        didSet {
+            if players.count > 5 {
+                players.first?.player.dispose()
+                players.removeFirst()
+            }
         }
     }
     var isFirstimeSplashScreenLoaded = false

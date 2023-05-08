@@ -100,7 +100,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 collectionView.reloadItems(at: [indexPathReload])
             }
             for i in indexPath.item...indexPath.item + 3 {
-                if reelsArray.count > i, !SharedManager.shared.players.contains(where: {$0.index == i}), i != 0 {
+                if reelsArray.count > i, !SharedManager.shared.players.contains(where: {$0.id == reelsArray[i].id ?? ""}), i != 0 {
                     ReelsCacheManager.shared.begin(reelModel: reelsArray[i], position: i)
                 }
             }

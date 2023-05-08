@@ -48,8 +48,9 @@ class ReelsCacheManager {
     }
     
     func cacheAVPlayerItem(_ reel: Reel,_ position: Int) {
-        guard let media = reel.media,
-        let url = URL(string: media) else { return }
+        guard let id = reel.id,
+              let media = reel.media,
+              let url = URL(string: media) else { return }
         let asset = AVAsset(url: url)
         let playerItem = AVPlayerItem(asset: asset)
         playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
@@ -57,7 +58,7 @@ class ReelsCacheManager {
         playerItem.preferredForwardBufferDuration = 3
         let player = NRPlayer(playerItem: playerItem)
         player.automaticallyWaitsToMinimizeStalling = false
-        let preloadModel = PlayerPreloadModel(index: position, timeCreated: Date(), id: "\(position)", player: player)
+        let preloadModel = PlayerPreloadModel(index: position, timeCreated: Date(), id: id, player: player)
         SharedManager.shared.players.append(preloadModel)
     }
 

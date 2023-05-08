@@ -93,7 +93,6 @@ extension NRPlayer {
     func isFreezeWithBuffering() -> Bool {
         let maxWaiting = didResetVideo ? 5 : 10
         if self.shouldBePlaying == true
-            && isStuckWithStaling() == false
             && bufferFreezeSeconds >= maxWaiting
             && self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
             bufferWaitingSeconds = 0
@@ -109,23 +108,21 @@ extension NRPlayer {
         }
     }
     func isStuckWithBuffering() -> Bool {
-        guard disapledBuffering == false else { return false }
-        if self.shouldBePlaying == true
-            && isStuckWithStaling() == false
-            && isFreezeWithBuffering() == false
-            && bufferWaitingSeconds >= 3 && self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
-            bufferWaitingSeconds = 0
-            stallingSeconds = 0
-            bufferFreezeSeconds = 0
-            disapledBuffering = true
-            return true
-        } else if self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
-            bufferWaitingSeconds += 1
+//        guard disapledBuffering == false else { return false }
+//        if self.shouldBePlaying == true
+//            && bufferWaitingSeconds >= 3 && self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
+//            bufferWaitingSeconds = 0
+//            stallingSeconds = 0
+//            bufferFreezeSeconds = 0
+//            disapledBuffering = true
+//            return true
+//        } else if self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
+//            bufferWaitingSeconds += 1
+//            return false
+//        } else {
+//            bufferWaitingSeconds = 0
             return false
-        } else {
-            bufferWaitingSeconds = 0
-            return false
-        }
+//        }
     }
     
 }

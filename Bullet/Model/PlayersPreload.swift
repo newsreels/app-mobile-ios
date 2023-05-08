@@ -9,9 +9,16 @@
 import Foundation
 import AVFoundation
 
-struct PlayerPreloadModel: Equatable {
+class PlayerPreloadModel {
     var index: Int
     var timeCreated: Date
     var id: String
     var player: NRPlayer
+    
+    init(index: Int, timeCreated: Date, id: String, player: NRPlayer) {
+        self.index = index
+        self.timeCreated = timeCreated
+        self.id = id
+        self.player = player
+    }
 }

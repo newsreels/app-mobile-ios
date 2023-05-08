@@ -89,9 +89,12 @@ class ReelsCC: UICollectionViewCell {
     var player = NRPlayer()
     {
         didSet {
+            player.stallingHandler = self.stallingHandler
+            player.bufferStuckHandler = self.stallingHandler
             print(player.currentItem == nil)
         }
     }
+
     var playerLayer = AVPlayerLayer()
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
@@ -107,11 +110,11 @@ class ReelsCC: UICollectionViewCell {
     var isPlayWhenReady = false
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
-    var isPlaying = false
     var loadingStartingTime: Date?
     var index = 0
     override func awakeFromNib() {
         super.awakeFromNib()
+
         playerLayer.player = self.player
         playerLayer.videoGravity = .resizeAspectFill
         setupViews()
@@ -157,7 +160,6 @@ class ReelsCC: UICollectionViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        imgThumbnailView.isHidden = false
         setDescriptionLabel()
         hideLoader()
         imgThumbnailView?.layoutIfNeeded()
