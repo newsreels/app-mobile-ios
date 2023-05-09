@@ -467,16 +467,16 @@ extension ReelsVC: ReelsCCDelegate {
     }
 
     func didTapHashTag(cell _: ReelsCC, text: String) {
-        let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
-
-        vc.titleText = "#\(text)"
-        vc.isBackButtonNeeded = true
-        vc.modalPresentationStyle = .fullScreen
-        vc.delegate = self
-        vc.isOpenFromTags = true
-        let nav = AppNavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        present(nav, animated: true, completion: nil)
+//        let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
+//
+//        vc.titleText = "#\(text)"
+//        vc.isBackButtonNeeded = true
+//        vc.modalPresentationStyle = .fullScreen
+//        vc.delegate = self
+//        vc.isOpenFromTags = true
+//        let nav = AppNavigationController(rootViewController: vc)
+//        nav.modalPresentationStyle = .fullScreen
+//        present(nav, animated: true, completion: nil)
     }
 
     func didSingleTapDetected(cell: ReelsCC) {

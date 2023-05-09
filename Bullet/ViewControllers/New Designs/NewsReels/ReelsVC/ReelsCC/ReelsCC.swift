@@ -109,6 +109,8 @@ class ReelsCC: UICollectionViewCell {
     var isPlaying = false
     var loadingStartingTime: Date?
     var totalDuration: Double?
+    var lblSeeMoreNumberOfLines = 2
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -136,6 +138,7 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
+        lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
@@ -233,7 +236,8 @@ class ReelsCC: UICollectionViewCell {
 extension ReelsCC {
     
     @objc func expandTextTapGestureGestureAction(sender: UILongPressGestureRecognizer) {
-        lblSeeMore.numberOfLines = lblSeeMore.numberOfLines == 5 ? 2 : 5
+        lblSeeMoreNumberOfLines = lblSeeMore.numberOfLines == 2 ? 5 : 2
+        setSeeMoreLabel()
     }
     
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {

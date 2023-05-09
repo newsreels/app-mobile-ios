@@ -637,6 +637,7 @@ extension ReelsVC {
                         detailsVC.isOpenFromReel = true
                         detailsVC.channelInfo = Info
                         detailsVC.delegate = self
+                        detailsVC.isFromReels = true
                         detailsVC.modalPresentationStyle = .fullScreen
 
                         let nav = AppNavigationController(rootViewController: detailsVC)
