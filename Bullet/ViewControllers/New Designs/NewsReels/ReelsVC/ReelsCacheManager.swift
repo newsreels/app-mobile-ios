@@ -221,15 +221,15 @@ class ReelsCacheManager {
         URLCache.shared.removeAllCachedResponses()
         clearDiskCache()
         
-        do {
-            let cacheDirectory = try FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            let fileUrls = try FileManager.default.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil, options: .includesDirectoriesPostOrder)
-            for fileUrl in fileUrls {
-                try FileManager.default.removeItem(at: fileUrl)
-            }
-        } catch {
-            print("Error clearing cache: \(error.localizedDescription)")
-        }
+//        do {
+//            let cacheDirectory = try FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+//            let fileUrls = try FileManager.default.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil, options: .includesDirectoriesPostOrder)
+//            for fileUrl in fileUrls {
+//                try FileManager.default.removeItem(at: fileUrl)
+//            }
+//        } catch {
+//            print("Error clearing cache: \(error.localizedDescription)")
+//        }
     }
 
     func deleteCachedReels(currentPosition: Int, reelsArray: [Reel], completion: (_ index: Int)->(Void)) {

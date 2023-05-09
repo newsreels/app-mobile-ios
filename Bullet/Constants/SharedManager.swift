@@ -384,14 +384,15 @@ class SharedManager {
     
     var playingPlayers: [String] = []
     
-    var players = [PlayerPreloadModel]() {
-        didSet {
-            if players.count > 5 {
-                players.first?.player.dispose()
-                players.removeFirst()
-            }
-        }
-    }
+    var players = [PlayerPreloadModel]()
+//    {
+//        didSet {
+//            if players.count > 5 {
+//                players.first?.player.dispose()
+//                players.removeFirst()
+//            }
+//        }
+//    }
     var isFirstimeSplashScreenLoaded = false
     
     var tabBarIndex: Int {
