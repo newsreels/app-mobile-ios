@@ -90,6 +90,7 @@ class ReelsCC: UICollectionViewCell {
         didSet {
             (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
             (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
+            (playerLayer.player as? NRPlayer)?.reelId = reelModel?.id
         }
     }
     var currTime = -1.0
@@ -159,6 +160,7 @@ class ReelsCC: UICollectionViewCell {
         //do something here
         self.stopVideo()
         self.pause()
+        ReelsCacheManager.shared.clearCache()
         self.delegate?.videoPlayingFinished(cell: self)
     }
     override func layoutSubviews() {

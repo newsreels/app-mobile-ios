@@ -14,6 +14,7 @@ class NRPlayer: AVPlayer {
     var bufferStuckHandler: (() -> Void)?
     var shouldBePlaying = false
     var timer: Timer?
+    var reelId: String?
     private var stallingSeconds = 0
     private var bufferWaitingSeconds = 0
     private var bufferFreezeSeconds = 0
@@ -73,6 +74,10 @@ extension NRPlayer {
         }
         if isStuckWithBuffering() {
             bufferStuckHandler?()
+        }
+        print(reelId)
+        if let reelId, !SharedManager.shared.playingPlayers.contains(reelId) {
+            pause()
         }
     }
  

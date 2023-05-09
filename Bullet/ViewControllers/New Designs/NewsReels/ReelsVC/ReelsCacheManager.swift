@@ -210,6 +210,7 @@ class ReelsCacheManager {
     }
     
     func clearCache() {
+        SharedManager.shared.players.removeAll()
         // Clear memory cache
         SDImageCache.shared.clearMemory()
 
