@@ -108,7 +108,7 @@ class ReelsCC: UICollectionViewCell {
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
     var loadingStartingTime: Date?
-    
+    var totalDuration: Double?
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -139,6 +139,7 @@ class ReelsCC: UICollectionViewCell {
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
+        totalDuration = playerLayer.player?.totalDuration
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)

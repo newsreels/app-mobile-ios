@@ -1243,7 +1243,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         }
         else if (url.scheme?.hasPrefix("fb"))! {
             
-//            return FBSDKCoreKit.ApplicationDelegate.shared.application(app, open: url, options: options)
+            return FBSDKCoreKit.ApplicationDelegate.shared.application(app, open: url, options: options)
         }
         //Set the callback URL type for google login for staging
         else if (url.scheme?.hasPrefix("com.googleusercontent.apps.883200977297-v760ap6sa48thpd1r4u5pf1kpbtfn0ia"))! {

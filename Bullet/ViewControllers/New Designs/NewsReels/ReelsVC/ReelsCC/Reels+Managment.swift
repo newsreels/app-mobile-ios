@@ -19,6 +19,7 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
+            totalDuration = playerLayer.player?.totalDuration
             playerLayer.player = nil
         }
     }

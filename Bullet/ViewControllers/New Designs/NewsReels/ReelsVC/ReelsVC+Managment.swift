@@ -23,6 +23,7 @@ extension ReelsVC {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataFromBG), name: NSNotification.Name(rawValue: "OpenedFromBackground"), object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(stopVideo), name: NSNotification.Name.stopVideoNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationToReelsView, object: nil)
 
     
@@ -268,8 +269,9 @@ extension ReelsVC {
             if reelsArray.count == 0 {
                 return
             }
-            if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC {
-                SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[prevsIndex.item].id ?? "", duration: prevCell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+            if let prevCell = collectionView.cellForItem(at: prevsIndex) as? ReelsCC,
+               let duration = prevCell.totalDuration?.formatToMilliSeconds() {
+                SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[prevsIndex.item].id ?? "", duration: duration)
             }
 
             pauseCellVideo(indexPath: prevsIndex)

@@ -75,7 +75,7 @@ extension NRPlayer {
             bufferStuckHandler?()
         }
     }
-    
+ 
     func isStuckWithStaling() -> Bool { 
         if self.shouldBePlaying == true
             && (self.currentItem == nil || self.timeControlStatus == .paused) {

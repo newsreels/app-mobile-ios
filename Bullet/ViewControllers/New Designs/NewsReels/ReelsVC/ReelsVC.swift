@@ -412,7 +412,8 @@ extension ReelsVC {
 
     @objc func appMovedToBackground() {
         stopVideo()
-
+        SharedManager.shared.players.removeAll()
+        ReelsCacheManager.shared.clearCache()
         SharedManager.shared.lastBackgroundTimeReels = Date()
     }
 

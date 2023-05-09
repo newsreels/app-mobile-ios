@@ -378,8 +378,6 @@ class SharedManager {
     var isFromTabbarVC = false
     var movedFromReels = false
     var viewAnimation: AppLoaderView?
-    let playingPlayersNotification = Notification.Name("playingPlayers")
-    var stopReel = Notification.Name("stopReel")
 
     
     var playingPlayers: [String] = []

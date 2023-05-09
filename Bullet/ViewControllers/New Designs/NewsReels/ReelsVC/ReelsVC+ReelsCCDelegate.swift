@@ -223,6 +223,7 @@ extension ReelsVC: ReelsCCDelegate {
         vc.selectedArticleData = content
         vc.delegate = self
         vc.isSwipeToDismissRequired = true
+        vc.isFromReels = true
         let navVC = AppNavigationController(rootViewController: vc)
         navVC.modalPresentationStyle = .overFullScreen
 
