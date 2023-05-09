@@ -19,8 +19,9 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
+            totalDuration = playerLayer.player?.totalDuration
             playerLayer.player = nil
-        } 
+        }
     }
     
     func play() {
@@ -32,7 +33,11 @@ extension ReelsCC {
                 SharedManager.shared.playingPlayers.append(id)
             }
             setImage()
-            if let url = URL(string: reelModel?.media ?? ""),
+            if let id = reelModel?.id,
+               let player = SharedManager.shared.players.first(where: {$0.id == id})?.player,
+               player.currentItem != nil, player.currentItem?.bufferDuration != nil{
+                playerLayer = AVPlayerLayer(player: player)
+            } else if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
                 let asset = AVAsset(url: url)
                 let playerItem = AVPlayerItem(asset: asset)
@@ -122,10 +127,19 @@ extension ReelsCC {
     
     func setPlayer(didFail: Bool = false) {
         if didFail || playerLayer.player == nil {
+            ReelsCacheManager.shared.clearCache()
             pause()
             playerLayer.removeFromSuperlayer()
             play()
         }
+    }
+    
+    func stallingHandler() {
+        setPlayer(didFail: true)
+    }
+
+    func bufferStuckHandler() {
+        setPlayer(didFail: true)
     }
 }
 
@@ -138,8 +152,10 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 loadingStartingTime = nil
-                DispatchQueue.main.async {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                     self.imgThumbnailView.isHidden = true
+                }
+                DispatchQueue.main.async {
                     if self.loader.isHidden == false {
                         self.loader.isHidden = true
                         self.loader.stopAnimating()

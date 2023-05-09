@@ -37,6 +37,7 @@ class ChannelDetailsVC: UIViewController {
     var isOpenFromReel = false
     var isOpenForTopics = false
     var context = ""
+    var isFromReels = false
     
     @IBOutlet weak var titleLabell: UILabel!
     weak var delegate: ChannelDetailsVCDelegate?
@@ -168,7 +169,8 @@ class ChannelDetailsVC: UIViewController {
         let vc = BottomSheetVC.instantiate(fromAppStoryboard: .registration)
         vc.delegateBottomSheet = self
         vc.article = content
-        vc.isOpenForChannelDetails = isopenForChannelReport
+        vc.isFromReels = self.isFromReels
+        vc.isOpenForChannelDetails = self.isFromReels == true ? false : isopenForChannelReport
         vc.modalPresentationStyle = .overFullScreen
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)

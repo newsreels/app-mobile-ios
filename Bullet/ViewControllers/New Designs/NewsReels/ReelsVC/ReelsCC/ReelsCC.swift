@@ -86,7 +86,13 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer()
+    var playerLayer = AVPlayerLayer() {
+        didSet {
+            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
+            (playerLayer.player as? NRPlayer)?.reelId = reelModel?.id
+        }
+    }
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -103,6 +109,8 @@ class ReelsCC: UICollectionViewCell {
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
     var loadingStartingTime: Date?
+    var totalDuration: Double?
+    var lblSeeMoreNumberOfLines = 2
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -128,10 +136,14 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
+            SharedManager.shared.playingPlayers.remove(object: id)
+        }
+        lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
-        playerLayer.player?.seek(to: .zero)
+        totalDuration = playerLayer.player?.totalDuration
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
@@ -148,6 +160,7 @@ class ReelsCC: UICollectionViewCell {
         //do something here
         self.stopVideo()
         self.pause()
+        ReelsCacheManager.shared.clearCache()
         self.delegate?.videoPlayingFinished(cell: self)
     }
     override func layoutSubviews() {
@@ -225,7 +238,8 @@ class ReelsCC: UICollectionViewCell {
 extension ReelsCC {
     
     @objc func expandTextTapGestureGestureAction(sender: UILongPressGestureRecognizer) {
-        lblSeeMore.numberOfLines = lblSeeMore.numberOfLines == 5 ? 2 : 5
+        lblSeeMoreNumberOfLines = lblSeeMore.numberOfLines == 2 ? 5 : 2
+        setSeeMoreLabel()
     }
     
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {

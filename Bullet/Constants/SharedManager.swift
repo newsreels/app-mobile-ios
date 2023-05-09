@@ -378,25 +378,19 @@ class SharedManager {
     var isFromTabbarVC = false
     var movedFromReels = false
     var viewAnimation: AppLoaderView?
-    var timeObserve = Notification.Name("timeObserve")
-    var timerCancel = Notification.Name("timerCancel")
-    let playingPlayersNotification = Notification.Name("playingPlayers")
-    var stopReel = Notification.Name("stopReel")
 
-    var playingPlayers: [String] = [] {
-        didSet {
-            if playingPlayers.count > 1 {
-                NotificationCenter.default.post(name: playingPlayersNotification, object: nil, userInfo: nil)
-            }
-        }
-    }
-    var players = [PlayerPreloadModel]() {
-        didSet {
-            if players.count > 6 {
-                players.removeFirst()
-            }
-        }
-    }
+    
+    var playingPlayers: [String] = []
+    
+    var players = [PlayerPreloadModel]()
+//    {
+//        didSet {
+//            if players.count > 5 {
+//                players.first?.player.dispose()
+//                players.removeFirst()
+//            }
+//        }
+//    }
     var isFirstimeSplashScreenLoaded = false
     
     var tabBarIndex: Int {
@@ -1319,7 +1313,7 @@ class SharedManager {
             let parameters = "{\"duration\": \"\(duration)\"}"
             let postData = parameters.data(using: .utf8)
             
-            var request = URLRequest(url: URL(string: "https://api.bullets.app/analytics/duration/\(reelId)")!,timeoutInterval: Double.infinity)
+            var request = URLRequest(url: URL(string: "https://api.newsreels.app/analytics/duration/\(reelId)")!,timeoutInterval: Double.infinity)
             request.addValue("ios", forHTTPHeaderField: "x-app-platform")
             request.addValue(Bundle.main.releaseVersionNumberPretty, forHTTPHeaderField: "x-app-version")
             request.addValue(WebserviceManager.shared.API_VERSION, forHTTPHeaderField: "api-version")

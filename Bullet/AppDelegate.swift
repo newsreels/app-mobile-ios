@@ -71,16 +71,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         // Facebook initialization
         ApplicationDelegate.shared.application( application,didFinishLaunchingWithOptions: launchOptions)
-        FBAudienceNetworkAds.initialize(with: nil, completionHandler: nil)
+//        FBAudienceNetworkAds.initialize(with: nil, completionHandler: nil)
         // Pass user's consent after acquiring it. For sample app purposes, this is set to YES.
-        FBAdSettings.setAdvertiserTrackingEnabled(true)
+//        FBAdSettings.setAdvertiserTrackingEnabled(true)
         
-        FBAdSettings.setLogLevel(.none)
-        #if DEBUG
-        FBAdSettings.addTestDevice(FBAdSettings.testDeviceHash())
-        #else
-        FBAdSettings.clearTestDevice(FBAdSettings.testDeviceHash())
-        #endif
+//        FBAdSettings.setLogLevel(.none)
+//        #if DEBUG
+//        FBAdSettings.addTestDevice(FBAdSettings.testDeviceHash())
+//        #else
+//        FBAdSettings.clearTestDevice(FBAdSettings.testDeviceHash())
+//        #endif
         
         SharedManager.shared.isAppLaunchFirstTIME = true
         if SharedManager.shared.AppFirstEverLaunch == false {

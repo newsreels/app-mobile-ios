@@ -257,14 +257,14 @@ class BottomSheetVC: UIViewController {
             
             self.lblGoToGuardian = "\((NSLocalizedString("Go to", comment: ""))) \(source.name ?? "")"
             self.lblFollowTheGuardian = self.sourceFollow ? "\(NSLocalizedString("Following", comment: "")) \(source.name ?? "")" : "\(NSLocalizedString("Follow", comment: "")) \(article.source?.name ?? "")"
-            self.lblBlockGuardian = self.sourceBlock ? "\(NSLocalizedString("Unblock articles from", comment: "")) \(source.name ?? "")" : "\(NSLocalizedString("Block articles from", comment: "")) \(source.name ?? "")"
+            self.lblBlockGuardian = self.sourceBlock ? "\(NSLocalizedString("Unblock reels from", comment: "")) \(source.name ?? "")" : "\(NSLocalizedString("Block reels from", comment: "")) \(source.name ?? "")"
         }
         else {
             
             let name = article.authors?.first?.name ?? ""
             self.lblGoToGuardian = "\((NSLocalizedString("Go to", comment: ""))) \(name)"
             self.lblFollowTheGuardian = self.sourceFollow ? "\(NSLocalizedString("Following", comment: "")) \(name)" : "\(NSLocalizedString("Follow", comment: "")) \(name)"
-            self.lblBlockGuardian = self.sourceBlock ? "\(NSLocalizedString("Unblock articles from", comment: "")) \(name)" : "\(NSLocalizedString("Block articles from", comment: "")) \(name)"
+            self.lblBlockGuardian = self.sourceBlock ? "\(NSLocalizedString("Unblock reels from", comment: "")) \(name)" : "\(NSLocalizedString("Block reels from", comment: "")) \(name)"
         }
 
         
@@ -431,7 +431,7 @@ class BottomSheetVC: UIViewController {
         if !isDislikeHidden {
             alertController.addAction(actionDontLike)
         }
-        if !isGoToSourceHidden && isFromReels {
+        if !isGoToSourceHidden && isFromReels && !lblGoToGuardian.isEmpty {
             alertController.addAction(actionGotoSource)
         }
         if !isSavedArticleHidden {

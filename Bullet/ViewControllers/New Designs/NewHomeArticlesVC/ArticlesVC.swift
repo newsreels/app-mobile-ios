@@ -2363,7 +2363,9 @@ extension ArticlesVC {
     func getCurrentFocussedCell() -> UITableViewCell {
         
         let index = self.getIndexPathForSelectedArticleCardAndListView()
-        if let cell = self.tblExtendedView.cellForRow(at: IndexPath(row: index, section: 0)) {
+        if  self.tblExtendedView.numberOfRows(inSection: 0) > 0,
+            self.tblExtendedView.numberOfRows(inSection: 0) > index,
+           let cell = self.tblExtendedView.cellForRow(at: IndexPath(row: index, section: 0)) {
             return cell
         }
 

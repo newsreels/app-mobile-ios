@@ -46,10 +46,6 @@ extension ReelsVC {
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 0 // Set the horizontal spacing between items
-        layout.minimumLineSpacing = 0 // Set the vertical spacing between items
-        collectionView.collectionViewLayout = layout // Assign the layout to your UICollectionView
     }
 
     func setupForCallMethod() {
@@ -237,12 +233,13 @@ extension ReelsVC {
         } else {
             allCaughtUpView.isHidden = true
         }
-
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if lblRefreshLabel.text == "Release to refresh" {
             isPullToRefresh = true
+            currentCachePosition = 1
+            cacheLimit = 10
             loadNewData()
         }
 
@@ -269,10 +266,13 @@ extension ReelsVC {
     }
 
     func scrollViewDidEndDragging(_: UIScrollView, willDecelerate _: Bool) {
-        //slow the scrolling
+        // Invalidate any existing timer
         scrollTimer?.invalidate()
+        // Disable scrolling until the timer fires
         view.isUserInteractionEnabled = false
+        // Start a new timer with a delay of 0.5 second
         scrollTimer = Timer.scheduledTimer(withTimeInterval: 0.35, repeats: false) { [weak self] _ in
+            // The timer has fired, do something here (e.g. enable scrolling)
             self?.view.isUserInteractionEnabled = true
         }
     }
@@ -281,7 +281,6 @@ extension ReelsVC {
         if isRefreshingReels {
             return
         }
-        stopAllPlayers()
         if manual || collectionViewTopConstraint.constant >= refreshMaximumSpace {
             UIView.animate(withDuration: 0.25) {
                 self.collectionViewTopConstraint.constant = self.refreshMaximumSpace
@@ -346,9 +345,13 @@ extension ReelsVC {
     @objc func onPan(_ panGesture: UIPanGestureRecognizer, translationView _: UIView) {
         switch panGesture.state {
         case .began, .changed:
+            // If pan started or is ongoing then
+            // slide the view to follow the finger
             let translation = panGesture.translation(in: view)
-            let x = translation.x
-             slideViewHorizontalTo(x, reset: false)
+            let x = translation.x // max(translation.x, 0)
+
+            print("UIPanGestureRecognizer translation x", -x)
+            slideViewHorizontalTo(x, reset: false)
 
         default:
 

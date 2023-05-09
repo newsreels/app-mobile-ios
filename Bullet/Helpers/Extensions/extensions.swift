@@ -42,6 +42,7 @@ extension Notification.Name {
     static let notifyToRemoveVCObservers = Notification.Name("RemoveVCObservers")
     static let notifyCloseSubCategoryView = Notification.Name("CloseSubCategoryView")
     static let notifyReelsTabBarTapped = Notification.Name("ReelsTabBarEvent")
+    static let stopVideoNotification = Notification.Name("stopVideoNotification")
     static let notifyArticlesTabBarTapped = Notification.Name("ArticlesTabBarEvent")
     static let notifySearchTabBarTapped = Notification.Name("SearchTabBarEvent")
     static let notifyVideoVolumeStatus = Notification.Name("VideoVolumeStatus")
@@ -1966,8 +1967,8 @@ extension Double {
     
     
     func formatToMilliSeconds() -> String {
-        
         let milli = (Double(self) * 1000)
+        guard !milli.isInfinite && !milli.isNaN else { return ""}
         let int = Int(milli)
         return "\(int)"
         

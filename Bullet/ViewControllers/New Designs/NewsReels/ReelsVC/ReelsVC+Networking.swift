@@ -6,13 +6,13 @@
 //  Copyright © 2023 Ziro Ride LLC. All rights reserved.
 //
 
-import DataCache
 import Foundation
-import Photos
+import DataCache
 import Reachability
+import Photos
 
 extension ReelsVC {
-    func getReelsCategories() {
+     func getReelsCategories() {
         // This should be done in a View Model manner, but this will be refactored later on.
         // Quick fix only
         let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
@@ -45,6 +45,69 @@ extension ReelsVC {
             print("Faeild to get reels categories")
         }
     }
+
+    func performWSToGetReelsCaptions(id: String) {
+        let token = UserDefaults.standard.string(forKey: Constant.UD_userToken)
+        let url = "news/reels/\(id)/captions"
+
+        WebService.URLResponse(url, method: .get, parameters: nil, headers: token, withSuccess: { [weak self] response in
+            do {
+                let FULLResponse = try
+                    JSONDecoder().decode(subTitlesDC.self, from: response)
+
+                guard let self = self else {
+                    return
+                }
+
+                if let captions = FULLResponse.captions, captions.count > 0 {
+                    if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
+                        if (self.reelsArray[selectedIndex].captionAPILoaded ?? false) == false {
+                            self.reelsArray[selectedIndex].captions = captions
+                            self.reelsArray[selectedIndex].captionAPILoaded = true
+
+                            if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
+                                cell.reelModel?.captionAPILoaded = true
+                                cell.reelModel?.captions = captions
+                            }
+                            return
+                        }
+                    }
+                } else {
+                    // No captions
+                    if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
+                        self.reelsArray[selectedIndex].captionAPILoaded = true
+                        if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
+                            cell.reelModel?.captionAPILoaded = true
+                        }
+                    }
+                }
+
+            } catch let jsonerror {
+                print("error parsing json objects \(url) \n", jsonerror)
+                guard let self = self else {
+                    return
+                }
+                // No captions
+                if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
+                    self.reelsArray[selectedIndex].captionAPILoaded = true
+                    if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
+                        cell.reelModel?.captionAPILoaded = true
+                    }
+                }
+            }
+        }) { error in
+
+            print("error parsing json objects", error)
+            // No captions
+            if let selectedIndex = self.reelsArray.firstIndex(where: { $0.id ?? "" == id }) {
+                self.reelsArray[selectedIndex].captionAPILoaded = true
+                if let cell = self.collectionView.cellForItem(at: IndexPath(item: selectedIndex, section: 0)) as? ReelsCC {
+                    cell.reelModel?.captionAPILoaded = true
+                }
+            }
+        }
+    }
+
 }
 
 extension ReelsVC {
@@ -54,7 +117,7 @@ extension ReelsVC {
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelViewed, eventDescription: "", article_id: content.id ?? "")
         }
     }
-
+    
     func checkInternetConnection() {
         do {
             reachability = try Reachability()
@@ -66,8 +129,13 @@ extension ReelsVC {
             return
         }
 
-        reachabilitySwift.whenReachable = { _ in
+        reachabilitySwift.whenReachable = { reachability in
 
+            if reachability.connection == .wifi {
+                print("reachability Reachable via WiFi")
+            } else {
+                print("reachability Reachable via Cellular")
+            }
             if self.isNoInternet {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.loadNewData()
@@ -88,7 +156,10 @@ extension ReelsVC {
             print("reachability Unable to start notifier")
         }
     }
+
+  
 }
+
 
 // MARK: - API
 
@@ -105,20 +176,20 @@ extension ReelsVC {
                     SharedManager.shared.isOnboardingPreferenceLoaded = onboarded
                 }
 
-                if let ads = FULLResponse.ads {
-                    UserDefaults.standard.set(ads.enabled, forKey: Constant.UD_adsAvailable)
-                    UserDefaults.standard.set(ads.ad_unit_key, forKey: Constant.UD_adsUnitKey)
-                    UserDefaults.standard.set(ads.type, forKey: Constant.UD_adsType)
-                    SharedManager.shared.adsInterval = ads.interval ?? 10
-
-                    if ads.type?.uppercased() == "FACEBOOK" {
-                        UserDefaults.standard.set(ads.facebook?.feed, forKey: Constant.UD_adsUnitFeedKey)
-                        UserDefaults.standard.set(ads.facebook?.reel, forKey: Constant.UD_adsUnitReelKey)
-                    } else {
-                        UserDefaults.standard.set(ads.admob?.feed, forKey: Constant.UD_adsUnitFeedKey)
-                        UserDefaults.standard.set(ads.admob?.reel, forKey: Constant.UD_adsUnitReelKey)
-                    }
-                }
+//                if let ads = FULLResponse.ads {
+//                    UserDefaults.standard.set(ads.enabled, forKey: Constant.UD_adsAvailable)
+//                    UserDefaults.standard.set(ads.ad_unit_key, forKey: Constant.UD_adsUnitKey)
+//                    UserDefaults.standard.set(ads.type, forKey: Constant.UD_adsType)
+//                    SharedManager.shared.adsInterval = ads.interval ?? 10
+//
+//                    if ads.type?.uppercased() == "FACEBOOK" {
+//                        UserDefaults.standard.set(ads.facebook?.feed, forKey: Constant.UD_adsUnitFeedKey)
+//                        UserDefaults.standard.set(ads.facebook?.reel, forKey: Constant.UD_adsUnitReelKey)
+//                    } else {
+//                        UserDefaults.standard.set(ads.admob?.feed, forKey: Constant.UD_adsUnitFeedKey)
+//                        UserDefaults.standard.set(ads.admob?.reel, forKey: Constant.UD_adsUnitReelKey)
+//                    }
+//                }
 
                 if let walletLink = FULLResponse.wallet {
                     UserDefaults.standard.set(walletLink, forKey: Constant.UD_WalletLink)
@@ -192,6 +263,7 @@ extension ReelsVC {
     }
 
     func performWSToGetReelsData(page: String, isRefreshRequired: Bool = false, contextID: String) {
+        print("API Called performWSToGetReelsData")
         if reelsArray.count == 0 {
             delegate?.loaderShowing(status: true)
             viewEmptyMessage.isHidden = true
@@ -240,6 +312,8 @@ extension ReelsVC {
             }
         }
 
+        print("URL = \(url)")
+
         var type = ""
         if !isBackButtonNeeded {
             if isOnFollowing {
@@ -248,6 +322,8 @@ extension ReelsVC {
                 type = "FOR_YOU"
             }
         }
+
+        print("performWSToGetReelsData URL = \(url)")
 
         let params = [
             "page": page,
@@ -293,15 +369,22 @@ extension ReelsVC {
                     }
 
                     if self.reelsArray.count == 0 {
-                        self.reelsArray = reelsData
+                        ReelsCacheManager.shared.clearDiskCache()
+                        ReelsCacheManager.shared.delegate = self
+
+                        self.reelsArray = self.filterDuplicates(reelsData)
                         if self.reelsArray.count < 10 {
                             self.callWebsericeToGetNextVideos()
                         }
-                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false {
-                            // LOAD ADS
-                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
-                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: true), afterEvery: SharedManager.shared.adsInterval)
-                        }
+                        self.currentCachePosition = 1
+                        self.cacheLimit = 10
+                        self.startReelsCaching()
+
+//                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false {
+//                            // LOAD ADS
+//                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
+//                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: true), afterEvery: SharedManager.shared.adsInterval)
+//                        }
 
                         if self.showSkeletonLoader {
                             self.showSkeletonLoader = false
@@ -347,6 +430,9 @@ extension ReelsVC {
                                     if self.isRightMenuLoaded {
                                         return
                                     }
+                                    if self.currentlyPlayingIndexPath.item == 0 {
+                                        self.playCurrentCellVideo()
+                                    }
                                 }
                             }
                             if SharedManager.shared.isAppLaunchedThroughNotification {
@@ -355,25 +441,40 @@ extension ReelsVC {
                                 NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
                             }
                         }
+
                         for obj in self.reelsArray {
                             SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: obj.image ?? "")
                         }
+                        ReelsCacheManager.shared.clearCache()
                     } else {
+                        ReelsCacheManager.shared.clearCache()
+                        let newIndexArray = [IndexPath]()
+                        var newReels = [Reel]()
                         reelsData.forEach { reel in
                             if !self.reelsArray.contains(where: { $0.id == reel.id }) {
                                 SharedManager.shared.saveAllVideosThumbnailsToCache(imageURL: reel.image ?? "")
-                                self.reelsArray.append(reel)
+                                newReels.append(reel)
                             }
                         }
+                        self.reelsArray.append(contentsOf: self.filterDuplicates(newReels))
+                        
+                        print("reelsArray.count = \(self.reelsArray.count)")
 
-                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
-                            // LOAD ADS
-                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
-                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: false), afterEvery: SharedManager.shared.adsInterval)
+                        print("reelsArray.count DATA= \(reelsData.count)")
+
+                        if self.cacheLimit < self.reelsArray.count {
+                            self.cacheLimit = self.reelsArray.count
                         }
+                        self.startReelsCaching()
+//                        if SharedManager.shared.adsAvailable, SharedManager.shared.adUnitReelID != "", self.isSugReels == false, self.isShowingProfileReels == false, self.isFromChannelView == false, self.fromMain {
+//                            // LOAD ADS
+//                            self.reelsArray.removeAll { $0.iosType == Constant.newsArticle.ARTICLE_TYPE_ADS }
+//                            self.reelsArray = self.reelsArray.adding(Reel(id: "", context: "", reelDescription: "", media: "", media_landscape: "", mediaMeta: nil, publishTime: "", source: nil, info: nil, authors: nil, captions: nil, image: "", status: "", iosType: Constant.newsArticle.ARTICLE_TYPE_ADS, nativeTitle: false), afterEvery: SharedManager.shared.adsInterval)
+//                        }
 
                         self.collectionView.performBatchUpdates {
                             self.collectionView.layoutIfNeeded()
+                            self.collectionView.insertItems(at: newIndexArray)
                         } completion: { _ in
                             self.collectionView.layoutIfNeeded()
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -389,9 +490,15 @@ extension ReelsVC {
                                 self.getCurrentVisibleIndexPlayVideo()
                             }
                         }
+
+                        print("Reels array count = \(self.reelsArray.count)")
+                        self.reelsArray.forEach { value in
+                            print("VALUEEEE REELS = \(value)")
+                        }
                     }
 
                 } else {
+                    print("Empty Result")
                     if self.reelsArray.count == 0 {
                         if self.isOpenedFollowingPrefernce {
                             self.delegate?.switchBackToForYou()
@@ -435,6 +542,7 @@ extension ReelsVC {
     }
 }
 
+
 extension ReelsVC {
     func performWSToLikePost(article_id: String, isLike: Bool) {
         if !(SharedManager.shared.isConnectedToNetwork()) {
@@ -451,6 +559,10 @@ extension ReelsVC {
             do {
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
+
+                if let status = FULLResponse.message?.uppercased() {
+                    print("like status", status)
+                }
 
             } catch let jsonerror {
                 SharedManager.shared.logAPIError(url: "social/likes/article/\(article_id)", error: jsonerror.localizedDescription, code: "")
@@ -525,6 +637,7 @@ extension ReelsVC {
                         detailsVC.isOpenFromReel = true
                         detailsVC.channelInfo = Info
                         detailsVC.delegate = self
+                        detailsVC.isFromReels = true
                         detailsVC.modalPresentationStyle = .fullScreen
 
                         let nav = AppNavigationController(rootViewController: detailsVC)
@@ -546,6 +659,8 @@ extension ReelsVC {
         }
     }
 }
+
+
 
 extension ReelsVC {
     func performArticleArchive(_ id: String, isArchived: Bool) {
@@ -598,7 +713,10 @@ extension ReelsVC {
                     urlData.write(toFile: filePath, atomically: true)
                     PHPhotoLibrary.shared().performChanges({
                         PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: URL(fileURLWithPath: filePath))
-                    }) { _, _ in
+                    }) { completed, _ in
+                        if completed {
+                            print("Video is saved!")
+                        }
                     }
                 }
             }

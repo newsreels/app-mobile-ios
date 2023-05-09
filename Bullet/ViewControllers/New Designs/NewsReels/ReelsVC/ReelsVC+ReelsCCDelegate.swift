@@ -9,7 +9,6 @@
 import UIKit
 import DataCache
 import CoreMedia
-import AVFoundation
 
 // MARK: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 
@@ -35,52 +34,18 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if indexPath.item < reelsArray.count {
-            if reelsArray[indexPath.item].iosType == Constant.newsArticle.ARTICLE_TYPE_ADS {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsPhotoAdCC", for: indexPath) as! ReelsPhotoAdCC
-                cell.fetchAds(viewController: self)
-                return cell
-            } else {
+//            if reelsArray[indexPath.item].iosType == Constant.newsArticle.ARTICLE_TYPE_ADS {
+//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsPhotoAdCC", for: indexPath) as! ReelsPhotoAdCC
+//                cell.fetchAds(viewController: self)
+//                return cell
+//            } else
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReelsCC", for: indexPath) as! ReelsCC
 
                 if indexPath.item < reelsArray.count {
                     cell.setupCell(model: reelsArray[indexPath.item])
                 }
-
+                cell.hideLoader()
                 cell.delegate = self
-                if let source = reelsArray[indexPath.item].source {
-                    let fav = source.favorite ?? false
-                    DispatchQueue.main.async {
-                        cell.btnUserPlus.hideLoaderView()
-                        if fav {
-                            cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
-                            cell.btnUserPlus.layoutIfNeeded()
-                            cell.followStack.layoutIfNeeded()
-                        } else {
-                            cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
-                            cell.btnUserPlus.layoutIfNeeded()
-                            cell.followStack.layoutIfNeeded()
-                        }
-                    }
-                } else {
-                    let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
-                    DispatchQueue.main.async {
-                        cell.btnUserPlus.hideLoaderView()
-                        if fav {
-                            cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
-                            cell.btnUserPlus.layoutIfNeeded()
-                            cell.followStack.layoutIfNeeded()
-                        } else {
-                            cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
-                            cell.btnUserPlus.layoutIfNeeded()
-                            cell.followStack.layoutIfNeeded()
-                        }
-                    }
-                    
-                }
                 if channelInfo != nil {
                     cell.viewEditArticle.isHidden = (channelInfo?.own ?? false) ? false : true
                 } else {
@@ -88,36 +53,64 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 }
                 cell.btnEditArticle.tag = indexPath.item
                 cell.btnAuthor.tag = indexPath.item
-
                 cell.contentView.frame = cell.bounds
                 cell.contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
                 return cell
-            }
+            
         }
 
         return UICollectionViewCell()
     }
 
-    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt _: IndexPath) {
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
+
         if let cell = cell as? ReelsCC {
-            SharedManager.shared.performWSDurationAnalytics(reelId:
-                                                                cell.reelModel?.id ?? "",
-                                                            duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
-//            if reelsArray.count != 0,
-//               let id = reelsArray[indexPath.item].id,
-//               let player = cell.playerLayer.player {
-//                let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: id, player: player)
-//                SharedManager.shared.players.append(playerPreload)
-            //            }
             cell.stopVideo()
+            cell.pause()
         }
     }
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
+            if let source = reelsArray[indexPath.item].source {
+                let fav = source.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+            } else {
+                let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+                
+            }
+            cell.setImage()
             if SharedManager.shared.isAudioEnableReels == false {
                 cell.playerLayer.player?.volume = 0.0
                 cell.imgSound.image = UIImage(named: "newMuteIC")
@@ -139,25 +132,9 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                 let indexPathReload = IndexPath(item: indexPath.row, section: 0)
                 collectionView.reloadItems(at: [indexPathReload])
             }
-            // Preloading
-            for section in 0..<collectionView.numberOfSections {
-                for i in indexPath.item ... indexPath.item + 4 {
-                    let indexPath = IndexPath(item: i, section: section)
-                    if indexPath.item >= 0,
-                       indexPath.item < reelsArray.count,
-                       !SharedManager.shared.players.contains(where: {$0.id == reelsArray[indexPath.item].id ?? ""}) ,
-                       let urlString = reelsArray[indexPath.item].media,
-                       let videoURL = URL(string: urlString) {
-                        let asset = AVAsset(url: videoURL)
-                        let playerItem = AVPlayerItem(asset: asset)
-                        playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
-                        playerItem.preferredPeakBitRate = Double(200000)
-                        playerItem.preferredForwardBufferDuration = 5
-                        let player = AVPlayer(playerItem: playerItem)
-                        player.automaticallyWaitsToMinimizeStalling = true
-                        let playerPreload = PlayerPreloadModel(index: indexPath.item, timeCreated: Date(), id: reelsArray[indexPath.item].id ?? "", player: player)
-                        SharedManager.shared.players.append(playerPreload)
-                    }
+            for i in indexPath.item...indexPath.item + 3 {
+                if reelsArray.count > i, !SharedManager.shared.players.contains(where: {$0.id == reelsArray[i].id ?? ""}), i != 0 {
+                    ReelsCacheManager.shared.begin(reelModel: reelsArray[i], position: i)
                 }
             }
         }
@@ -171,19 +148,18 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.showLoader()
         }
-        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic { // numberofitem count
+        if reelsArray.count > 0, indexPath.item == setReelAPIHitLogic() { // numberofitem count
             callWebsericeToGetNextVideos()
         }
-
-        (cell as? ReelsCC)?.setImage()
         if !fromMain && !isTapBack && isFirstVideo{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [self] in
                 playCurrentCellVideo()
             }
         }
+        
     }
 
-    var setReelAPIHitLogic: Int {
+    func setReelAPIHitLogic() -> Int {
         if reelsArray.count >= 10 {
             return reelsArray.count - 8
         } else {
@@ -195,7 +171,6 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         if showSkeletonLoader {
             return collectionView.frame.size
         }
-
         let lineSpacing = (collectionViewLayout as? UICollectionViewFlowLayout)?.minimumLineSpacing ?? 0
         return CGSize(width: collectionView.frame.size.width, height: collectionView.frame.size.height - lineSpacing)
     }
@@ -217,6 +192,10 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 // MARK: - ReelsVC + ReelsCCDelegate
 
 extension ReelsVC: ReelsCCDelegate {
+    func stopPrevious(cell: ReelsCC) {
+        
+    }
+    
     func didTapOpenSource(cell _: ReelsCC) {}
 
     func didSwipeRight(cell: ReelsCC) {
@@ -233,9 +212,8 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapViewMore(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.stopAllPlayers()
-        }
+        pauseCellVideo(indexPath: indexPath)
+
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 
         let bullet = [Bullets(data: reel.reelDescription, audio: nil, duration: nil, image: nil)]
@@ -403,108 +381,82 @@ extension ReelsVC: ReelsCCDelegate {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
 
         if tagNo == 0 {
-            var FullResponse: ReelsModel?
             // Follow
-            if reelsArray[indexPath.item].source?.favorite ?? false {
-                cell.btnUserPlus.setTitle("Following", for: .normal)
-                cell.btnUserPlusWidth.constant = 90
-                cell.btnUserPlus.layoutIfNeeded()
-                cell.followStack.layoutIfNeeded()
-            } else {
-                cell.btnUserPlus.setTitle("Follow", for: .normal)
-                cell.btnUserPlusWidth.constant = 70
-                cell.btnUserPlus.layoutIfNeeded()
-                cell.followStack.layoutIfNeeded()
-            }
+            if cell.btnUserPlus.isHidden { return }
+            cell.btnUserPlus.isHidden = true
             cell.btnUserPlus.isUserInteractionEnabled = false
 
+            var FullResponse: ReelsModel?
+            if isOnFollowing {
+                FullResponse = try? DataCache.instance.readCodable(forKey: Constant.CACHE_REELS_Follow)
+            } else {
+                FullResponse = try? DataCache.instance.readCodable(forKey: Constant.CACHE_REELS)
+            }
+
+            // Check source if its not available then use author
             if let source = reelsArray[indexPath.item].source {
                 let fav = source.favorite ?? false
+                reelsArray[indexPath.item].source?.favorite = !fav
+                cell.reelModel = reelsArray[indexPath.item]
+                // update all cells
+                for (indexP, rl) in reelsArray.enumerated() {
+                    if rl.source?.id == reelsArray[indexPath.item].source?.id {
+                        reelsArray[indexP].source?.favorite = !fav
+                        if let cellP = collectionView.cellForItem(at: IndexPath(item: indexP, section: 0)) as? ReelsCC {
+                            cellP.reelModel?.source?.favorite = !fav
+                            cellP.setFollowButton(hidden: cellP.reelModel?.source?.favorite ?? false)
+                        }
+                    }
+                }
+
+                FullResponse?.reels = reelsArray
+                writeToCache(response: FullResponse)
+
                 cell.btnUserPlus.showLoader()
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [source.id ?? ""], isFav: !fav, type: .sources) { status in
-                    
+                    cell.btnUserPlus.hideLoaderView()
                     cell.btnUserPlus.isUserInteractionEnabled = true
                     if status {
-                        self.reelsArray[indexPath.item].source?.favorite = !fav
-                        cell.reelModel = self.reelsArray[indexPath.item]
-                        // update all cells
-                        for (indexP, rl) in self.reelsArray.enumerated() {
-                            if rl.source?.id == self.reelsArray[indexPath.item].source?.id {
-                                self.reelsArray[indexP].source?.favorite = !fav
-                            }
-                        }
-                        DispatchQueue.main.async {
-                            cell.btnUserPlus.hideLoaderView()
-                            if !fav {
-                                cell.btnUserPlus.setTitle("Following", for: .normal)
-                                cell.btnUserPlusWidth.constant = 90
-                                cell.btnUserPlus.layoutIfNeeded()
-                                cell.followStack.layoutIfNeeded()
-                            } else {
-                                cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                cell.btnUserPlusWidth.constant = 70
-                                cell.btnUserPlus.layoutIfNeeded()
-                                cell.followStack.layoutIfNeeded()
-                            }
-                        }
-                        FullResponse?.reels = self.reelsArray
-                        self.writeToCache(response: FullResponse)
-                     } else {
+                        print("success")
+                    } else {
                         print("failed")
+                        DispatchQueue.main.async {
+                            cell.btnUserPlus.isHidden = false
+                        }
                     }
                 }
             } else {
                 let id = reelsArray[indexPath.item].authors?.first?.id ?? ""
                 let fav = reelsArray[indexPath.item].authors?.first?.favorite ?? false
+
                 if (reelsArray[indexPath.item].authors?.count ?? 0) > 0 {
                     reelsArray[indexPath.item].authors?[0].favorite = !fav
                 }
                 cell.reelModel = reelsArray[indexPath.item]
                 // update all cells
-                                for (indexP, rl) in reelsArray.enumerated() {
-                                    if rl.source?.id == reelsArray[indexPath.item].source?.id {
-                                        reelsArray[indexP].source?.favorite = !fav
-                                    }
-                                }
+                for (indexP, rl) in reelsArray.enumerated() {
+                    if rl.source?.id == reelsArray[indexPath.item].source?.id {
+                        reelsArray[indexP].source?.favorite = !fav
+                        if let cellP = collectionView.cellForItem(at: IndexPath(item: indexP, section: 0)) as? ReelsCC {
+                            cellP.reelModel?.source?.favorite = !fav
+                            cellP.setFollowButton(hidden: cellP.reelModel?.source?.favorite ?? false)
+                        }
+                    }
+                }
 
-                
+                writeToCache(response: FullResponse)
 
                 cell.btnUserPlus.showLoader()
                 SharedManager.shared.performWSToUpdateUserFollow(vc: self, id: [id], isFav: !fav, type: .authors) { status in
-                    
+                    cell.btnUserPlus.hideLoaderView()
                     cell.btnUserPlus.isUserInteractionEnabled = true
                     if status {
-                        self.reelsArray[indexPath.item].source?.favorite = !fav
-                        cell.reelModel = self.reelsArray[indexPath.item]
-                        // update all cells
-                        for (indexP, rl) in self.reelsArray.enumerated() {
-                            if rl.source?.id == self.reelsArray[indexPath.item].source?.id {
-                                self.reelsArray[indexP].source?.favorite = !fav
-                                if let cellP = self.collectionView.cellForItem(at: IndexPath(item: indexP, section: 0)) as? ReelsCC {
-                                    cellP.reelModel?.source?.favorite = !fav
-                                    cellP.setFollowButton(hidden: cellP.reelModel?.source?.favorite ?? false)
-                                }
-                            }
-                        }
-                        DispatchQueue.main.async {
-                            cell.btnUserPlus.hideLoaderView()
-                            if !fav {
-                                cell.btnUserPlus.setTitle("Following", for: .normal)
-                                cell.btnUserPlusWidth.constant = 90
-                                cell.btnUserPlus.layoutIfNeeded()
-                                cell.followStack.layoutIfNeeded()
-                            } else {
-                                cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                cell.btnUserPlusWidth.constant = 70
-                                cell.btnUserPlus.layoutIfNeeded()
-                                cell.followStack.layoutIfNeeded()
-                            }
-                        }
-                        FullResponse?.reels = self.reelsArray
-                        self.writeToCache(response: FullResponse)
-                     } else {
+                        print("success")
+                    } else {
                         print("failed")
-
+                        DispatchQueue.main.async {
+                            cell.btnUserPlus.isHidden = false
+                        }
                     }
                 }
             }
@@ -536,8 +488,6 @@ extension ReelsVC: ReelsCCDelegate {
     func videoPlayingStarted(cell _: ReelsCC) {}
 
     func videoPlayingFinished(cell: ReelsCC) {
-        self.stopAllPlayers()
-        
         if isOpenfromNotificationList {
             sendVideoViewedAnalyticsEvent()
             if SharedManager.shared.reelsAutoPlay {
@@ -545,11 +495,13 @@ extension ReelsVC: ReelsCCDelegate {
             }
             return
         }
-        let indexPath = currentlyPlayingIndexPath
-        if indexPath.item < reelsArray.count {
-            SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying,
-                                                    eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
-        }
+
+        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
+
+        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
             playNextCellVideo(indexPath: nextIndexPath)
@@ -564,7 +516,7 @@ extension ReelsVC: ReelsCCDelegate {
         else if indexPath.item == reelsArray.count - 5, reelsArray.count > 1 {
             callWebsericeToGetNextVideos()
         } else if reelsArray.count > 0 {
-            let nextIndexPath = IndexPath(item: indexPath.item + 1, section: 0)
+            let nextIndexPath = IndexPath(item: currentlyPlayingIndexPath.item + 1, section: 0)
             if nextIndexPath.item < reelsArray.count {
                 playNextCellVideo(indexPath: nextIndexPath)
             }
@@ -617,18 +569,5 @@ extension ReelsVC: ReelsCCDelegate {
         playCurrentCellVideo()
     }
 
-    func didTapCaptions(cell _: ReelsCC) {
-     }
-    
-    func stopPrevious(cell: ReelsCC) {
-        for section in 0..<collectionView.numberOfSections {
-            for item in 0..<collectionView.numberOfItems(inSection: section) {
-                let indexPath = IndexPath(item: item, section: section)
-                if let reelCell = collectionView.cellForItem(at: indexPath) as? ReelsCC,
-                   reelCell.reelModel?.id != cell.reelModel?.id{
-                    reelCell.stopVideo()
-                }
-            }
-        }
-    }
+    func didTapCaptions(cell _: ReelsCC) {}
 }
