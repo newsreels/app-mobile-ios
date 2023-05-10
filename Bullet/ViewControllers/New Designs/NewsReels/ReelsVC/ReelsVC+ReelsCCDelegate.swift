@@ -383,7 +383,6 @@ extension ReelsVC: ReelsCCDelegate {
         if tagNo == 0 {
             // Follow
             if cell.btnUserPlus.isHidden { return }
-            cell.btnUserPlus.isHidden = true
             cell.btnUserPlus.isUserInteractionEnabled = false
 
             var FullResponse: ReelsModel?
@@ -417,6 +416,40 @@ extension ReelsVC: ReelsCCDelegate {
                     cell.btnUserPlus.hideLoaderView()
                     cell.btnUserPlus.isUserInteractionEnabled = true
                     if status {
+                        if let source = self.reelsArray[indexPath.item].source {
+                            let fav = source.favorite ?? false
+                            DispatchQueue.main.async {
+                                cell.btnUserPlus.hideLoaderView()
+                                if fav {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                }
+                            }
+                        } else {
+                            let fav = self.reelsArray[indexPath.item].authors?.first?.favorite ?? false
+                            DispatchQueue.main.async {
+                                cell.btnUserPlus.hideLoaderView()
+                                if fav {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                }
+                            }
+                            
+                        }
                         print("success")
                     } else {
                         print("failed")
@@ -451,6 +484,40 @@ extension ReelsVC: ReelsCCDelegate {
                     cell.btnUserPlus.hideLoaderView()
                     cell.btnUserPlus.isUserInteractionEnabled = true
                     if status {
+                        if let source = self.reelsArray[indexPath.item].source {
+                            let fav = source.favorite ?? false
+                            DispatchQueue.main.async {
+                                cell.btnUserPlus.hideLoaderView()
+                                if fav {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                }
+                            }
+                        } else {
+                            let fav = self.reelsArray[indexPath.item].authors?.first?.favorite ?? false
+                            DispatchQueue.main.async {
+                                cell.btnUserPlus.hideLoaderView()
+                                if fav {
+                                    cell.btnUserPlus.setTitle("Following", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                } else {
+                                    cell.btnUserPlus.setTitle("Follow", for: .normal)
+                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlus.layoutIfNeeded()
+                                    cell.followStack.layoutIfNeeded()
+                                }
+                            }
+                            
+                        }
                         print("success")
                     } else {
                         print("failed")
