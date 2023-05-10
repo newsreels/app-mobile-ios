@@ -87,7 +87,6 @@ class SlideMenuPageVC: UIPageViewController {
         } else {
             channelVC.channelInfo = channelInfo
         }
-        channelVC.isFromReels = isFromReels
         self.setViewControllers([channelVC], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
         
     }
