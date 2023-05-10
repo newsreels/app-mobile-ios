@@ -47,6 +47,7 @@ extension ReelsCC {
 
     func setupCell(model: Reel) {
         loadingStartingTime = nil
+        pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {

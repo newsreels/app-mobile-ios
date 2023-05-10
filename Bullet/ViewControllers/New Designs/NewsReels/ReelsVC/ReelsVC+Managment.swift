@@ -248,10 +248,7 @@ extension ReelsVC {
                 }
                 sendVideoViewedAnalyticsEvent()
                 newIndexDetected = true
-            } else {
-                let indexPath = collectionView.indexPath(for: cell)
-                pauseCellVideo(indexPath: indexPath)
-            }
+            } 
         }
 
         if newIndexDetected == false {
