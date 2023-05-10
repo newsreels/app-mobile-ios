@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ChannelDetailsVCDelegate: AnyObject {
+protocol ChannelDetailsVCDelegate {
     
     func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?)
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?)
@@ -39,7 +39,7 @@ class ChannelDetailsVC: UIViewController {
     var context = ""
     
     @IBOutlet weak var titleLabell: UILabel!
-    weak var delegate: ChannelDetailsVCDelegate?
+    var delegate: ChannelDetailsVCDelegate?
     var topicTitle = ""
     var shareTitle =  ""
     var articleArchived = false

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrendingChannelsRow: View {
     
-    let channelData: ChannelInfo
+    @State var channelData: ChannelInfo
     var didFollow: (ChannelInfo) -> ()
 
     var body: some View {
@@ -30,7 +30,7 @@ struct TrendingChannelsRow: View {
         }
         .background(Color.white)
         .onTapGesture {
-            SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChannelData, object: channelData)
+            SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChannelData, object: (channelData, self))
         }
        
         .padding(.vertical, 10)
@@ -44,6 +44,20 @@ struct TrendingChannelsRow: View {
             } else {
                 Image(systemName: "plus").font(.system(size: 10, weight: .semibold))
             }
+        }
+    }
+}
+
+extension TrendingChannelsRow: ChannelDetailsVCDelegate {
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
+        if let channel, channel.id == self.channelData.id {
+            self.channelData = channel
+        }
+    }
+    
+    func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
+        if let channel, channel.id == self.channelData.id {
+            self.channelData = channel
         }
     }
 }
