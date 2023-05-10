@@ -222,6 +222,7 @@ extension ReelsVC: ReelsCCDelegate {
         let vc = BulletDetailsVC.instantiate(fromAppStoryboard: .Home)
         vc.selectedArticleData = content
         vc.delegate = self
+        vc.delegateFollow = self
         vc.isSwipeToDismissRequired = true
         vc.isFromReels = true
         let navVC = AppNavigationController(rootViewController: vc)

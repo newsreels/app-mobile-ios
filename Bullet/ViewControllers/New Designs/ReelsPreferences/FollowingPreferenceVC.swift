@@ -281,7 +281,7 @@ extension FollowingPreferenceVC {
 
 extension FollowingPreferenceVC: ChannelDetailsVCDelegate {
     
-    func backButtonPressedChannelDetailsVC() {
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
     }
     
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {

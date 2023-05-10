@@ -24,6 +24,10 @@ protocol BulletDetailsVCDelegate: AnyObject {
     func dismissBulletDetailsVC(selectedArticle: articlesData?)
 }
 
+protocol BulletDetailsVCFollowDelegate: AnyObject {
+    func dismissBulletDetailsVC(_ channel: ChannelInfo?)
+}
+
 class BulletDetailsVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -75,6 +79,7 @@ class BulletDetailsVC: UIViewController {
     var isViewPresenting: Bool = false
     weak var delegate: BulletDetailsVCLikeDelegate?
     weak var delegateVC: BulletDetailsVCDelegate?
+    weak var delegateFollow: BulletDetailsVCFollowDelegate?
     
     var isNestedVC = false
     var cellHeights = [IndexPath: CGFloat]()
@@ -283,7 +288,7 @@ class BulletDetailsVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         
         NotificationCenter.default.removeObserver(self)
-        
+        self.delegateFollow?.dismissBulletDetailsVC(self.channelInfo)
         isViewPresenting = false
         SharedManager.shared.isAppLaunchedThroughNotification = false
 //        SharedManager.shared.isViewArticleSourceNotification = false
@@ -3507,7 +3512,7 @@ extension BulletDetailsVC: HomeDetailCardCellDelegate, FullScreenVideoVCDelegate
                 
                 self.selectedArticleData?.source?.favorite = !(source.favorite ?? false)
                 cell.articleModel?.source?.favorite = !(source.favorite ?? false)
-                
+                self.channelInfo = cell.articleModel?.source
                 cell.setFollowingUI()
             }
             
@@ -3522,7 +3527,6 @@ extension BulletDetailsVC: HomeDetailCardCellDelegate, FullScreenVideoVCDelegate
                     DispatchQueue.main.async {
                         self.selectedArticleData?.authors?[0].isShowingLoader = false
                         cell.articleModel?.authors?[0].isShowingLoader = false
-                        
                         self.selectedArticleData?.source?.favorite = !(cell.articleModel?.authors?.first?.favorite ?? false)
                         cell.articleModel?.authors?[0].favorite = !(cell.articleModel?.authors?.first?.favorite ?? false)
                         

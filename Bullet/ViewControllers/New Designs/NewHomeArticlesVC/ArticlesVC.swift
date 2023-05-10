@@ -6224,7 +6224,7 @@ extension ArticlesVC: HomeReelCarouselCCDelegate, HomeVideoCarouselCCDelegate, R
 
 extension ArticlesVC: ChannelDetailsVCDelegate {
     
-    func backButtonPressedChannelDetailsVC() {
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
     }
     
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
