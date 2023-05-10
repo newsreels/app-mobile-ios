@@ -141,7 +141,8 @@ class BottomSheetVC: UIViewController {
             isDislikeHidden = true
             isCopyhidden = true
         }
-        else if isFromReels {
+        else
+        if isFromReels {
 
             if openReportList {
                 viewTbContainer.isHidden = false
