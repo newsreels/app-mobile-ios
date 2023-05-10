@@ -10,9 +10,7 @@ import ActiveLabel
 import AVFoundation
 import PlayerKit
 import UIKit
-
 import CoreHaptics
-import GSPlayer
 
 // MARK: - ReelsCCDelegate
 
@@ -35,7 +33,7 @@ protocol ReelsCCDelegate: AnyObject {
     func didSwipeRight(cell: ReelsCC)
     func didTapRotateVideo(cell: ReelsCC)
     func didTapPlayVideo(cell: ReelsCC)
-
+    func stopPrevious(cell: ReelsCC)
     func didTapCaptions(cell: ReelsCC)
     func didTapOpenCaptionType(cell: ReelsCC, action: String)
 }
@@ -43,7 +41,7 @@ protocol ReelsCCDelegate: AnyObject {
 // MARK: - ReelsCC
 
 class ReelsCC: UICollectionViewCell {
-    @IBOutlet weak var playerContainer: VideoPlayerView!
+    @IBOutlet weak var playerContainer: UIView!
     @IBOutlet var descriptionViewHeight: NSLayoutConstraint!
     @IBOutlet var lblDescriptionAbove: UILabel!
     @IBOutlet var lblDescriptionGradient: UILabel!
@@ -88,7 +86,13 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     
-    var playerLayer = AVPlayerLayer()
+    var playerLayer = AVPlayerLayer() {
+        didSet {
+            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
+            (playerLayer.player as? NRPlayer)?.reelId = reelModel?.id
+        }
+    }
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -104,12 +108,14 @@ class ReelsCC: UICollectionViewCell {
     var reelModel: Reel?
     weak var delegate: ReelsCCDelegate?
     var isPlaying = false
+    var loadingStartingTime: Date?
+    var totalDuration: Double?
+    var lblSeeMoreNumberOfLines = 2
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        loader.isHidden = true
+        
         playerLayer.videoGravity = .resizeAspectFill
-        ANLoader.hide()
         setupViews()
         setDescriptionLabel()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
@@ -130,8 +136,14 @@ class ReelsCC: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
+            SharedManager.shared.playingPlayers.remove(object: id)
+        }
+        lblSeeMoreNumberOfLines = 2
         pause()
-        playerLayer.player?.seek(to: .zero)
+        imgThumbnailView.image = nil
+        imgThumbnailView.isHidden = false
+        totalDuration = playerLayer.player?.totalDuration
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)
@@ -146,12 +158,16 @@ class ReelsCC: UICollectionViewCell {
     
     @objc private func videoDidEnded() {
         //do something here
+        self.stopVideo()
+        self.pause()
+        ReelsCacheManager.shared.clearCache()
         self.delegate?.videoPlayingFinished(cell: self)
     }
     override func layoutSubviews() {
         super.layoutSubviews()
- 
-
+        setDescriptionLabel()
+        hideLoader()
+        imgThumbnailView?.layoutIfNeeded()
     }
 
     override func draw(_: CGRect) {}
@@ -221,11 +237,15 @@ class ReelsCC: UICollectionViewCell {
 
 extension ReelsCC {
     
+    @objc func expandTextTapGestureGestureAction(sender: UILongPressGestureRecognizer) {
+        lblSeeMoreNumberOfLines = lblSeeMore.numberOfLines == 2 ? 5 : 2
+        setSeeMoreLabel()
+    }
+    
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case .left:
-                print("Swiped left")
                 delegate?.didSwipeRight(cell: self)
 
             case .up:

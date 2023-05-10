@@ -71,16 +71,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         // Facebook initialization
         ApplicationDelegate.shared.application( application,didFinishLaunchingWithOptions: launchOptions)
-        FBAudienceNetworkAds.initialize(with: nil, completionHandler: nil)
+//        FBAudienceNetworkAds.initialize(with: nil, completionHandler: nil)
         // Pass user's consent after acquiring it. For sample app purposes, this is set to YES.
-        FBAdSettings.setAdvertiserTrackingEnabled(true)
+//        FBAdSettings.setAdvertiserTrackingEnabled(true)
         
-        FBAdSettings.setLogLevel(.none)
-        #if DEBUG
-        FBAdSettings.addTestDevice(FBAdSettings.testDeviceHash())
-        #else
-        FBAdSettings.clearTestDevice(FBAdSettings.testDeviceHash())
-        #endif
+//        FBAdSettings.setLogLevel(.none)
+//        #if DEBUG
+//        FBAdSettings.addTestDevice(FBAdSettings.testDeviceHash())
+//        #else
+//        FBAdSettings.clearTestDevice(FBAdSettings.testDeviceHash())
+//        #endif
         
         SharedManager.shared.isAppLaunchFirstTIME = true
         if SharedManager.shared.AppFirstEverLaunch == false {
@@ -132,9 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
             //App launch from notification handler
             SharedManager.shared.isAppLaunchedThroughNotification = true
         }
-        
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.appOpen, eventDescription: "")
-        
+        storeStackTrace()
         let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
         NotificationCenter.default.addObserver(self, selector: #selector(setHome), name: .SwiftUIDidChangeLanguage, object: nil)
 
@@ -185,6 +183,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         return true
     }
+    
+    func storeStackTrace() {
+        NSSetUncaughtExceptionHandler { exception in
+            let userInfo = exception.userInfo as? [String: Any] ?? [:]
+            let error = NSError(domain: exception.name.rawValue, code: exception.reason?.hashValue ?? 0, userInfo: userInfo)
+            print("Uncaught exception: \(error)")
+            Crashlytics.crashlytics().record(error: error)
+        }
+     }
+    
     func doAuthRegistration(_ subjectToken: String, loginType: LoginType, completion: @escaping (Bool)->()) {
         // only Guest login here
         
@@ -480,25 +488,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
     
     @objc func setHome() {
+        checkSecondaryLang()
         SharedManager.shared.curReelsCategoryId = ""
         SharedManager.shared.curArticlesCategoryId = ""
-
-        if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
-            SharedManager.shared.bulletsAutoPlay = true
-            let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
-            self.navigationController = AppNavigationController.init(rootViewController: vc)
-            self.navigationController.navigationBar.isHidden = true
-            self.window?.rootViewController = self.navigationController
-        } else {
-            let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-            doAuthRegistration(deviceID, loginType: .Guest) { value in }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            navigationController = AppNavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: "AnimationLaunch"))
-            navigationController.navigationBar.isHidden = true
-            self.window?.rootViewController = self.navigationController
-        }
+        let vc = SplashscreenLoaderVC.instantiate(fromAppStoryboard: .OnboardingSB)
+        vc.delegate = self
+        self.window?.rootViewController = vc
     }
-    
+
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
 //        NotificationCenter.default.post(name: Notification.Name.notifyOrientationChange, object: nil)
 //        MediaManager.sharedInstance.orientationChanged()
@@ -1533,20 +1530,34 @@ extension AppDelegate {
     }
 }
 
+extension AppDelegate {
+    func checkSecondaryLang() {
+        if LanguageHelper.shared.getSecondaryLanguage()?.id != LanguageHelper.shared.getSavedLanguage()?.id {
+            guard let primary = LanguageHelper.shared.getSavedLanguage() else { return }
+            LanguageHelper.shared.saveSecondaryLanguage(language: primary)
+        }
+    }
+}
+
+
 
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
-        
-        SharedManager.shared.hideLaoderFromWindow()
-        
-        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
-        if userToken as! String == "" {
-            setLoginVC()
+        if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
+            SharedManager.shared.bulletsAutoPlay = true
+            let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
+            self.navigationController = AppNavigationController.init(rootViewController: vc)
+            self.navigationController.navigationBar.isHidden = true
+            self.window?.rootViewController = self.navigationController
+        } else {
+            let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
+            self.doAuthRegistration(deviceID, loginType: .Guest) { value in }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.navigationController = AppNavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: "AnimationLaunch"))
+            self.navigationController.navigationBar.isHidden = true
+            self.window?.rootViewController = self.navigationController
         }
-        else {
-            setHomeVC()
-        }
-        
     }
 }
+

@@ -88,7 +88,7 @@ class BulletDetailsVC: UIViewController {
     var googleNativeAd: GADUnifiedNativeAd?
     var isPlayingVideo = false
     var selectedCell: HomeDetailCardCell?
-    
+    var isFromReels = false
     var mediaWatermark = MediaWatermark()
     var DocController: UIDocumentInteractionController = UIDocumentInteractionController()
     @IBOutlet weak var indicator: InstagramActivityIndicator!
@@ -663,7 +663,7 @@ extension BulletDetailsVC: UITableViewDelegate, UITableViewDataSource {
                 self.selectedCell = cell
                 cell.delegate = self
                 cell.delegateLikeComment = self
-                
+                cell.isFromReels = self.isFromReels
                 cell.layoutIfNeeded()
                 return cell
             } else {
@@ -2063,6 +2063,7 @@ extension BulletDetailsVC {
                             vc.article_archived = self.article_archived
                             vc.article = article
                             vc.index = idx
+                            vc.isFromReels = true
                             vc.share_message = FULLResponse.share_message ?? ""
                             vc.delegate = self
                             vc.modalPresentationStyle = .overFullScreen
@@ -2077,6 +2078,7 @@ extension BulletDetailsVC {
                                 let vc = BottomSheetVC.instantiate(fromAppStoryboard: .registration)
                                 vc.delegateBottomSheet = self
                                 vc.article = article
+                                vc.isFromReels = true
                                 vc.isOtherAuthorArticleMenu = true
                                 vc.isSameAuthor = true
                                 vc.sourceBlock = self.sourceBlock
@@ -2109,6 +2111,7 @@ extension BulletDetailsVC {
                             }
                             vc.delegateBottomSheet = self
                             vc.article = article
+                            vc.isFromReels = self.isFromReels
                             vc.sourceBlock = self.sourceBlock
                             vc.sourceFollow = self.sourceFollow
                             vc.article_archived = self.article_archived

@@ -56,7 +56,7 @@ struct SettingsMainview: View {
                         contentSettings
                         accountSettings
                         termsAndPolicy
-                        if !SharedManager.shared.isGuestUser {
+                        if user?.isGuest == false {
                             SettingsSectionView(title: "Account") {
                                 SettingsRowView(settings: .normal(title: "Delete account")) {
                                     showConfirmAccount = true
@@ -80,6 +80,7 @@ struct SettingsMainview: View {
         }
         .onAppear{
             autoplayVideos =  SharedManager.shared.reelsAutoPlay
+            checkSecondaryLang()
         }
         .actionSheet(isPresented: $showConfirmAccount) {
             ActionSheet(
@@ -242,7 +243,7 @@ struct SettingsMainview: View {
                             settings.destinationView = AnyView(ProfileView())
                         }
                     } else {
-                        SettingsRowView(settings: .normal(title: NSLocalizedString("Create A new Account", comment: "")), showDivider: false) {
+                        SettingsRowView(settings: .normal(title: NSLocalizedString("Sign Up/Sign In", comment: "")), showDivider: false) {
                             NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                         }
                     }
@@ -290,7 +291,7 @@ struct SettingsMainview: View {
                     }
                 }
                 
-                
+                /*
                 SettingsRowView(settings: .selection(iconName: "language_ic", title: NSLocalizedString("Secondary Language", comment: ""), description: secondaryLanguage)) {
                     if let region = LanguageHelper.shared.getSavedRegion() {
                         languageHelper.getLanguage(withRegionID: region.id) {
@@ -305,6 +306,7 @@ struct SettingsMainview: View {
                         isShowRegionSelection = true
                     }
                 }
+                */
                 
                 SettingsRowView(settings: .normal(iconName: "notif_ic", title: NSLocalizedString("Notification Settings", comment: ""))) {
                      settings.isActive = true
@@ -315,6 +317,7 @@ struct SettingsMainview: View {
                      SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFontSize, object: nil)
                     
                 }
+                /*
                 SettingsRowView(settings: .selection(iconName: "region_ic", title: NSLocalizedString("Region", comment: ""), description: languageHelper.selectedRegion?.name ?? "")) {
                     isShowRegionSelection = true
                     //                    settings.isActive = true
@@ -323,6 +326,7 @@ struct SettingsMainview: View {
                     //                        settings.isActive = false
                     //                    }, isInSettings: true).navigationBarHidden(true))
                 }
+                */
                 
 //                SettingsRowView(settings: .switchToggle(title: NSLocalizedString("Auto Play Video And Reels", comment: ""), value: $autoplayVideos.onChange({ value in
 //                    UserDefaults.standard.set(value, forKey: Constant.UD_isReelsAutoPlay)
@@ -359,11 +363,12 @@ struct SettingsMainview: View {
                     print("Saved")
                     SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFavArticles, object: nil)
                 }
-                
-                SettingsRowView(settings: .normal(iconName: "emailPW_ic", title: NSLocalizedString("Change Password", comment: ""))) {
-                    print("Email and Password")
-                    SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChangePassword, object: nil)
-                    
+                if user?.isGuest == false {
+                    SettingsRowView(settings: .normal(iconName: "emailPW_ic", title: NSLocalizedString("Change Password", comment: ""))) {
+                        print("Email and Password")
+                        SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChangePassword, object: nil)
+                        
+                    }
                 }
                 
                 SettingsRowView(settings: .normal(iconName: "blocklist_ic", title: NSLocalizedString("Block List", comment: ""))) {
@@ -422,11 +427,11 @@ struct SettingsMainview: View {
                             print("error parsing json objects",error)
                         }
                     }
-                } else   {
+                }/* else   {
                     SettingsRowView(settings: .normal(iconName: "login_ic", title: NSLocalizedString("Login", comment: "")), showDivider: false) {
                         NotificationCenter.default.post(name: .SwiftUIGoToRegister, object: nil)
                     }
-                }
+                }*/
             }
             
         }
@@ -664,6 +669,13 @@ struct SettingsMainview: View {
             ANLoader.hide()
             //SharedManager.shared.showAPIFailureAlert()
             print("error parsing json objects",error)
+        }
+    }
+    
+    func checkSecondaryLang() {
+        if LanguageHelper.shared.getSecondaryLanguage()?.id != LanguageHelper.shared.getSavedLanguage()?.id {
+            guard let primary = LanguageHelper.shared.getSavedLanguage() else { return }
+            LanguageHelper.shared.saveSecondaryLanguage(language: primary)
         }
     }
 }

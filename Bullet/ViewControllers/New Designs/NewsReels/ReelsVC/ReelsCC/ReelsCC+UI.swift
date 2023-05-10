@@ -19,7 +19,6 @@ extension ReelsCC {
         imgVolume.image = nil
         lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
-            playerLayer.player?.seek(to: .zero)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
@@ -39,31 +38,16 @@ extension ReelsCC {
         descriptionView.isHidden = true
         lblSeeMore.isHidden = true
         viewBottomTitleDescription.isHidden = true
-        lblSeeMore.isHidden = false
+        
         viewBottomTitleDescription.isHidden = false
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true
     }
     
 
-    func setupCell(model: Reel, fromMain: Bool) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            if let player = self.playerLayer.player, let currentItem = player.currentItem {
-                let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
-                let bufferStart = timeRange?.start.seconds ?? 0
-                let bufferDuration = timeRange?.duration.seconds ?? 0
-                let bufferEnd = bufferStart + bufferDuration
-                let bufferTime = bufferEnd - player.currentTime().seconds
-                if bufferTime == 0 {
-                    self.imgThumbnailView.isHidden = false
-                    self.loader.isHidden = false
-                    self.loader.startAnimating()
-                    self.hideLoader()
-                }
-            }
-        }
-        playerLayer.player = nil
-        playerLayer.player?.pause()
+    func setupCell(model: Reel) {
+        loadingStartingTime = nil
+        pause()
         reelModel = model
         if let captionsLabel = captionsArr {
             for label in captionsLabel {
@@ -83,14 +67,6 @@ extension ReelsCC {
         viewTransparentBG.isHidden = true
         if let url = URL(string: model.media ?? "") {
             reelUrl = model.media ?? ""
-
-            // Geasture for video like
-//            if SharedManager.shared.bulletsAutoPlay {
-//                play()
-//            }
-//            if fromMain {
-//                pause()
-//            }
             let asset = AVURLAsset(url: url)
             asset.loadValuesAsynchronously(forKeys: ["playable", "tracks", "duration"])
             DispatchQueue.main.async {}
@@ -148,22 +124,30 @@ extension ReelsCC {
 
         currTime = -1
         currTime = -1
+        
+        let expandTextTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(expandTextTapGestureGestureAction(sender:)))
+         expandTextTapRecognizer.numberOfTapsRequired = 1
+         expandTextTapRecognizer.delegate = self
+         lblSeeMore.addGestureRecognizer(expandTextTapRecognizer)
     }
     
     func setImage() {
-        imgThumbnailView?.contentMode = .scaleAspectFill
-        playerLayer.videoGravity = .resizeAspectFill
-
-        imgThumbnailView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        imgThumbnailView?.frame = viewContent.frame
-
-        SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
-            if image == nil {
-                self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? ""), placeholderImage: nil)
-            } else {
-                self?.imgThumbnailView?.image = image
+        if imgThumbnailView.image == nil {
+            imgThumbnailView.contentMode = .scaleToFill
+            imgThumbnailView.frame = playerLayer.bounds
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = playerLayer.frame
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = viewContent.frame
+            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
+                if image == nil {
+                    self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? "") , placeholderImage: nil)
+                } else {
+                    self?.imgThumbnailView?.image = image
+                }
             }
         }
+        imgThumbnailView.layoutIfNeeded()
     }
     
     func setFollowButton(hidden: Bool) {
@@ -199,21 +183,19 @@ extension ReelsCC {
         viewUser.isHidden = false
         lblSeeMore.textColor = UIColor.white
 
-        if newsDescription.length > 85 {
-            lblSeeMore.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 15 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
+        if newsDescription.length > 85 { 
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 15 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
         } else if newsDescription.length > 60 {
-            lblSeeMore.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         } else {
-            lblSeeMore.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
+            
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
         }
-
+        lblSeeMore.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
         lblSeeMore.customize { label in
 
             label.text = newsDescription
-            label.numberOfLines = 5
+            label.numberOfLines = lblSeeMoreNumberOfLines
 
             label.enabledTypes = [.hashtag]
             label.hashtagColor = UIColor.white
@@ -341,8 +323,7 @@ extension ReelsCC {
                 viewBottomTitleDescription.isHidden = true
                 descriptionView.isHidden = true
             }
-        } else {
-            if let nativeTitle = reelModel?.nativeTitle {
+        } else if let nativeTitle = reelModel?.nativeTitle {
                 if nativeTitle {
                     lblSeeMore.isHidden = !nativeTitle
                     viewBottomTitleDescription.isHidden = !nativeTitle
@@ -350,7 +331,11 @@ extension ReelsCC {
                 } else if !nativeTitle {
                     authorBottomConstraint?.constant = -25
                 }
-            }
+        } else if !newsDescription.isEmpty {
+            lblSeeMore.isHidden = false
+            viewBottomTitleDescription.isHidden = false
+            authorBottomConstraint?.constant = 0
+            descriptionView.isHidden = true
         }
 
         let formater = NumberFormatter()

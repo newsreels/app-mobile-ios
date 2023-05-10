@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -510,7 +510,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wells Fargo is still in turmoil as profits plunge and customer refunds linger." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-ma-Opr">
-                                <rect key="frame" x="16" y="163" width="547" height="568"/>
+                                <rect key="frame" x="16" y="142" width="547" height="589"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -579,11 +579,11 @@
                             <constraint firstItem="kmG-2R-1hK" firstAttribute="top" secondItem="5in-1W-UMa" secondAttribute="bottom" constant="20" id="7kj-9d-v0S"/>
                             <constraint firstItem="5in-1W-UMa" firstAttribute="top" secondItem="ADT-Uo-Adf" secondAttribute="top" constant="22" id="GaS-Fj-edP"/>
                             <constraint firstItem="Uka-Tb-7kW" firstAttribute="top" secondItem="bDX-ma-Opr" secondAttribute="bottom" constant="22" id="JMu-x0-3mP"/>
-                            <constraint firstItem="bDX-ma-Opr" firstAttribute="top" secondItem="kmG-2R-1hK" secondAttribute="bottom" constant="22" id="KUt-n1-cHJ"/>
                             <constraint firstItem="6jI-Ty-1b4" firstAttribute="leading" secondItem="kmG-2R-1hK" secondAttribute="trailing" constant="8" id="ME0-0a-TZu"/>
                             <constraint firstAttribute="trailing" secondItem="bDX-ma-Opr" secondAttribute="trailing" constant="16" id="OIY-5c-Mkw"/>
                             <constraint firstItem="YJS-zP-xzF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GFT-Vt-TIG" secondAttribute="trailing" constant="8" id="Pzl-HB-qEK"/>
                             <constraint firstItem="GFT-Vt-TIG" firstAttribute="leading" secondItem="udg-uj-1sb" secondAttribute="trailing" constant="3" id="Sie-0R-rJb"/>
+                            <constraint firstItem="bDX-ma-Opr" firstAttribute="top" secondItem="5in-1W-UMa" secondAttribute="bottom" constant="75" id="Sti-4B-iFf"/>
                             <constraint firstItem="Uka-Tb-7kW" firstAttribute="leading" secondItem="ADT-Uo-Adf" secondAttribute="leading" constant="16" id="eG7-Xe-Use"/>
                             <constraint firstItem="udg-uj-1sb" firstAttribute="centerY" secondItem="Uka-Tb-7kW" secondAttribute="centerY" id="eGs-R2-Y7R"/>
                             <constraint firstAttribute="trailing" secondItem="YJS-zP-xzF" secondAttribute="trailing" constant="20" id="hZD-tJ-uys"/>
@@ -616,6 +616,7 @@
                 <outlet property="activityLoader" destination="zl8-ec-DAP" id="GIg-qS-eJw"/>
                 <outlet property="backgroundDetailsView" destination="ADT-Uo-Adf" id="3ax-13-yfE"/>
                 <outlet property="backgroundTopConstraint" destination="bag-bM-yvz" id="iJL-Ow-eTD"/>
+                <outlet property="bodyTopConstraint" destination="Sti-4B-iFf" id="JYQ-oQ-BkQ"/>
                 <outlet property="btnShare" destination="tjC-d2-bzr" id="MBt-VZ-9gh"/>
                 <outlet property="btnSource" destination="qUP-3E-1cy" id="ZUi-UW-aKd"/>
                 <outlet property="ctVideoHeight" destination="Ux9-6A-fFi" id="RWF-vi-LNz"/>

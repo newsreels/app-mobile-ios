@@ -144,7 +144,8 @@ class HomeCardCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        lblSource.isHidden = true
+        timeSeparatorView.isHidden = true
         //View Processing Article
         cellContainerView.backgroundColor = .clear
         viewContainer.backgroundColor = .white

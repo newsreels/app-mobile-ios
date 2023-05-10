@@ -36,8 +36,8 @@ class Constant {
     
     struct Production {
         
-        static let apiBase = "https://api.bullets.app/"
-        static let authBaseURL = "https://account.bullets.app/"
+        static let apiBase = "https://api.newsreels.app/"
+        static let authBaseURL = "https://account.newsreels.app/"
         static let authTokenURL = authBaseURL + "oauth/token"
         
         static let appClientID = "zvrRTNKY0An6YuC"

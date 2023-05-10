@@ -522,3 +522,31 @@ extension UIView {
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+
+extension UIView {
+    var isVisible: Bool {
+        get {
+            guard let superview = superview else { return false }
+            let viewFrame = superview.convert(frame, to: nil)
+            let screenBounds = UIScreen.main.bounds
+            let intersection = screenBounds.intersection(viewFrame)
+            return !intersection.isEmpty && intersection.size.width >= 1 && intersection.size.height >= 1
+        }
+    }
+
+    func isNotOverlaid() -> Bool {
+           var currentView: UIView? = self
+           while let view = currentView {
+               if let superview = view.superview {
+                   let myFrame = superview.convert(view.frame, to: self)
+                   if !self.bounds.contains(myFrame) {
+                       return false
+                   }
+                   currentView = superview
+               } else {
+                   break
+               }
+           }
+           return true
+       }
+}

@@ -1,19 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "newUnmuteIC.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "newUnmuteIC@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "newUnmuteIC@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "newUnmuteIC.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {

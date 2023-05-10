@@ -112,7 +112,8 @@ class HomeListViewCC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        timeSeparatorView.isHidden = true
+        lblSource.isHidden = true
         //View Processing Article
 //        viewDividerLine.theme_backgroundColor = GlobalPicker.dividerLineBG
         backgrView.backgroundColor = .white

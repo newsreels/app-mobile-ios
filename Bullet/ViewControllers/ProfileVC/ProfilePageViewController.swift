@@ -439,8 +439,8 @@ extension ProfilePageViewController {
         headerView.lblChannelName.text = self.selectedChannel?.name ?? ""
         headerView.lblusername.text = "@\(self.selectedChannel?.name ?? "")"
         followCount = self.selectedChannel?.follower_count ?? 0
-        headerView.lblFollowers.text = "\(followCount.formatUsingAbbrevation())"
-        headerView.lblPost.text = "\((self.selectedChannel?.post_count ?? 0).formatUsingAbbrevation())"
+//        headerView.lblFollowers.text = "\(followCount.formatUsingAbbrevation())"
+//        headerView.lblPost.text = "\((self.selectedChannel?.post_count ?? 0).formatUsingAbbrevation())"
 
         
         channelDescription = self.selectedChannel?.channelDescription ?? ""
@@ -471,8 +471,8 @@ extension ProfilePageViewController {
     func setSeeMoreLabel() {
                
         var shortString = channelDescription
-        if channelDescription.length > 150 {
-            let trimToCharacter = 50
+        if channelDescription.length > 100 {
+            let trimToCharacter = 100
             if isFullText == false {
                 //self.viewTransparentBG.isHidden = true
                 shortString = String(channelDescription.prefix(trimToCharacter)) + "... " + NSLocalizedString("See more", comment: "")
@@ -485,6 +485,7 @@ extension ProfilePageViewController {
         headerView.lblDescription.customize { (label) in
 
             label.text = shortString
+            label.adjustsFontSizeToFitWidth = true
             label.numberOfLines = 0
             label.enabledTypes = [seemoreType,lessType]
             label.customColor = [seemoreType : "#E01335".hexStringToUIColor(), lessType : "#E01335".hexStringToUIColor()]
@@ -519,7 +520,11 @@ extension ProfilePageViewController {
         }
         
         headerView.layoutIfNeeded()
-        self.headerViewHeight = headerView.viewBG.frame.height + extraHeight
+        headerView.viewBG.frame = CGRect(center: headerView.viewBG.frame.mid, size: CGSize(width: headerView.viewBG.frame.width, height: 250 + extraHeight + (headerView.lblDescription.frame.height - 14)))
+        
+        
+        headerView.viewRounded.frame = CGRect(center: headerView.viewRounded.frame.mid, size: CGSize(width: headerView.viewRounded.frame.width, height: 180 + extraHeight + (headerView.lblDescription.frame.height - 14)))
+        self.headerViewHeight = 250 + extraHeight + (headerView.lblDescription.frame.height - 14)
         self.updateHeaderViewHeight(animated: true,
                                     duration: 0.25) { (finish) in
             //do something here
@@ -616,7 +621,7 @@ extension ProfilePageViewController {
                 self.followCount -= 1
                 self.followChannel(isFollow: true)
             }
-            self.headerView.lblFollowers.text = "\(max(self.followCount, 0).formatUsingAbbrevation())"
+//            self.headerView.lblFollowers.text = "\(max(self.followCount, 0).formatUsingAbbrevation())"
             
         }
         
@@ -767,16 +772,16 @@ extension ProfilePageViewController {
             let fullName = (user.first_name ?? "") + " " + (user.last_name ?? "")
             self.headerViewProfile.lblFullname.text = fullName.trim()
             headerViewProfile.lblUsername.text = "@\(user.username ?? "")"
-            self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
-            self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"
+//            self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
+//            self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"
         }
         else {
             
             self.headerViewProfile.imgProfile.image = UIImage(named: "icn_profile_placeholder_light")
             self.headerViewProfile.imgCover.theme_image = GlobalPicker.imgCoverPlaceholder
             
-            self.headerViewProfile.lblFollowers.text = "\((0).formatUsingAbbrevation())"
-            self.headerViewProfile.lblPost.text = "\((0).formatUsingAbbrevation())"
+//            self.headerViewProfile.lblFollowers.text = "\((0).formatUsingAbbrevation())"
+//            self.headerViewProfile.lblPost.text = "\((0).formatUsingAbbrevation())"
         }
         
         performWSToGetAuthor(SharedManager.shared.userId)
@@ -958,8 +963,8 @@ extension ProfilePageViewController {
                     let uname = self.headerViewProfile.lblUsername.text ?? ""
                     self.headerViewProfile.lblUsername.text = uname.isEmpty ? "@\(user.username ?? "")" : "\(uname)"
 
-                    self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
-                    self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"
+//                    self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
+//                    self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"
 
                 }
                 else {

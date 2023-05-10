@@ -131,7 +131,7 @@ class SharedManager {
     var isDiscoverTabReload: Bool = false
     var isUserTapOnTabbar: Bool = false
     var subTabBarType: profilePageControllType = .none
-
+    let cache = NSCache<NSString, NSData>()
     var videoFocusedIndex: Int = 0
     var currentArticleIndex: Int = 0
     var duration: Int = 3
@@ -145,6 +145,7 @@ class SharedManager {
     
     var isOnPrefrence = false
     var isFromPNBackground = false
+    
     //var dataSaver = false
     var videoAutoPlay: Bool {
         get {
@@ -375,10 +376,21 @@ class SharedManager {
     var articleSearchListVCShowing = false
     var isVideoPlaying = false
     var isFromTabbarVC = false
-    
+    var movedFromReels = false
     var viewAnimation: AppLoaderView?
+
     
+    var playingPlayers: [String] = []
     
+    var players = [PlayerPreloadModel]()
+//    {
+//        didSet {
+//            if players.count > 5 {
+//                players.first?.player.dispose()
+//                players.removeFirst()
+//            }
+//        }
+//    }
     var isFirstimeSplashScreenLoaded = false
     
     var tabBarIndex: Int {
@@ -607,15 +619,6 @@ class SharedManager {
     
     
     func getCardViewTitleFont() -> UIFont {
-        
-//        for family in UIFont.familyNames {
-//            print("\(family)")
-//
-//            for name in UIFont.fontNames(forFamilyName: family) {
-//                print("\(name)")
-//            }
-//        }
-        
         switch selectedFontType {
         case .defaultSize:
             return UIFont.systemFont(ofSize: 26, weight: .bold)
@@ -1270,113 +1273,142 @@ class SharedManager {
 
         // Update Firebase Analytics
 //        self.sendAnalyticsEvent(eventType: Constant.articleViewed, eventDescription: "", article_id: ArticleId)
-
+        
         let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
-
-        let url = isFromReel ? "analytics/reels/\(ArticleId)" : "analytics/articleview/\(ArticleId)"
-        WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
-             do{
-                let FULLResponse = try
+        DispatchQueue.global(qos: .background).async {
+            let url = isFromReel ? "analytics/reels/\(ArticleId)" : "analytics/articleview/\(ArticleId)"
+            WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
+                do{
+                    let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
-
-                if let message = FULLResponse.message, message.lowercased() == "ok" {
-
-                   
+                    
+                    if let message = FULLResponse.message, message.lowercased() == "ok" {
+                        
+                        
+                    }
+                    else {
+                        
+#if DEBUG
+                        //                    self.showAPIFailureAlert()
+#else
+#endif
+                    }
+                    
+                } catch let jsonerror {
+                    
+                    //                SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
+                    print("error parsing json objects",jsonerror)
                 }
-                else {
-
-                    #if DEBUG
-//                    self.showAPIFailureAlert()
-                    #else
-                    #endif
-                }
-
-            } catch let jsonerror {
-
-//                SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
-                print("error parsing json objects",jsonerror)
+                
+            }) { (error) in
+                
+                print("error parsing json objects",error)
             }
-
-        }) { (error) in
-
-            print("error parsing json objects",error)
         }
     }
     
     func performWSDurationAnalytics(reelId: String, duration: String) {
-                
-        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
-        
+        DispatchQueue.global(qos: .background).async {
+            let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
+            let parameters = "{\"duration\": \"\(duration)\"}"
+            let postData = parameters.data(using: .utf8)
+            
+            var request = URLRequest(url: URL(string: "https://api.newsreels.app/analytics/duration/\(reelId)")!,timeoutInterval: Double.infinity)
+            request.addValue("ios", forHTTPHeaderField: "x-app-platform")
+            request.addValue(Bundle.main.releaseVersionNumberPretty, forHTTPHeaderField: "x-app-version")
+            request.addValue(WebserviceManager.shared.API_VERSION, forHTTPHeaderField: "api-version")
+            request.addValue(Locale.current.languageCode ?? "en", forHTTPHeaderField: "x-user-language")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+            
+            request.httpMethod = "POST"
+            request.httpBody = postData
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data else {
+                    print(String(describing: error))
+                    return
+                }
+                print(String(data: data, encoding: .utf8)!)
+            }
+            
+            task.resume()
+            
+        }
         //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
-        
+        /*
         let url = "analytics/duration/\(reelId)"
         let params: [String: Any] = ["duration": duration]
-        
-       let jsonData = try! JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions()) as NSData
 
-        WebService.URLResponse(url, method: .post, parameters: nil, body: jsonData, headers: token, withSuccess: { (response) in
-            
+        let jsonData = try! JSONSerialization.data(withJSONObject: params, options: [])
+        let jsonString = String(data: jsonData, encoding: .utf8)!
+        let jsonStringWithEscapedQuotes = jsonString.replacingOccurrences(of: "\"", with: "\\\"")
+
+
+        WebService.URLResponse(url, method: .post, data: jsonStringWithEscapedQuotes, headers: token, withSuccess: { (response) in
+
             do{
                 let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
-                print(FULLResponse)
                 if let message = FULLResponse.message, message.lowercased() == "ok" {
-                   
+
                 }
                 else {
-                    
+
                     #if DEBUG
                     self.showAPIFailureAlert()
                     #else
                     #endif
                 }
-                
+
             } catch let jsonerror {
-                
+
                 SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
                 print("error parsing json objects",jsonerror)
             }
-            
+
         }) { (error) in
-            
+
             print("error parsing json objects",error)
         }
+         */
     }
     
     func performWSToUpdateAnalytics(ArticleId: String, eventName: String, duration: String) {
-                
-        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
-        
-        //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
-        
-        let url = "analytics/custom_event/\(ArticleId)/\(eventName)?duration=\(duration)"
-       
-        WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
+        DispatchQueue.global(qos: .background).async {
+            let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
             
-            do{
-                let FULLResponse = try
+            //[POST] {{host}}/analytics/custom_event/:article_id/:event_name
+            
+            let url = "analytics/custom_event/\(ArticleId)/\(eventName)?duration=\(duration)"
+            
+            WebService.URLResponse(url, method: .post, parameters: nil, headers: token, withSuccess: { (response) in
+                
+                do{
+                    let FULLResponse = try
                     JSONDecoder().decode(messageData.self, from: response)
-                
-                if let message = FULLResponse.message, message.lowercased() == "ok" {
-                   
-                }
-                else {
                     
-                    #if DEBUG
-                    self.showAPIFailureAlert()
-                    #else
-                    #endif
+                    if let message = FULLResponse.message, message.lowercased() == "ok" {
+                        
+                    }
+                    else {
+                        
+#if DEBUG
+                        self.showAPIFailureAlert()
+#else
+#endif
+                    }
+                    
+                } catch let jsonerror {
+                    
+                    SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
+                    print("error parsing json objects",jsonerror)
                 }
                 
-            } catch let jsonerror {
+            }) { (error) in
                 
-                SharedManager.shared.logAPIError(url: url, error: jsonerror.localizedDescription, code: "")
-                print("error parsing json objects",jsonerror)
+                print("error parsing json objects",error)
             }
-            
-        }) { (error) in
-            
-            print("error parsing json objects",error)
         }
     }
     
@@ -1582,7 +1614,7 @@ class SharedManager {
     
     
     func logAPIError(url: String, error: String, code: String) {
-        
+        DispatchQueue.global(qos: .background).async {
         // testing
         // report only 500 and 503 for now
         var report = false
@@ -1596,11 +1628,11 @@ class SharedManager {
         
         let code = Int(code) ?? 0
         if (code < 300) {
-           return
+            return
         }
         
         let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-         let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
+        let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? ""
         
         if userToken as! String == "" {
             
@@ -1612,14 +1644,14 @@ class SharedManager {
                 "token": ""
             ] as [String : Any]
             
-//            NSDictionary *userInfo = @{
-//                NSLocalizedDescriptionKey: NSLocalizedString(@"The request failed.", nil),
-//                NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"The response returned a 404.", nil),
-//                NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(@"Does this page exist?", nil),
-//                ProductID: @"123456";
-//                UserID: @"Jane Smith"
-//            };
-
+            //            NSDictionary *userInfo = @{
+            //                NSLocalizedDescriptionKey: NSLocalizedString(@"The request failed.", nil),
+            //                NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"The response returned a 404.", nil),
+            //                NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(@"Does this page exist?", nil),
+            //                ProductID: @"123456";
+            //                UserID: @"Jane Smith"
+            //            };
+            
             let error = NSError(domain: url, code: Int(code), userInfo: keysAndValues)
             Crashlytics.crashlytics().record(error: error)
             //logEvent("\(url)", parameters: keysAndValues)
@@ -1639,7 +1671,7 @@ class SharedManager {
                 ] as [String : Any]
                 
                 
-//                Analytics.logEvent("\(url)", parameters: keysAndValues)
+                //                Analytics.logEvent("\(url)", parameters: keysAndValues)
                 
                 let error = NSError(domain: url, code: Int(code) , userInfo: keysAndValues)
                 Crashlytics.crashlytics().record(error: error)
@@ -1656,14 +1688,14 @@ class SharedManager {
                     "token": true
                 ] as [String : Any]
                 
-//                Analytics.logEvent("\(url)", parameters: keysAndValues)
+                //                Analytics.logEvent("\(url)", parameters: keysAndValues)
                 let error = NSError(domain: url, code: Int(code) , userInfo: keysAndValues)
                 Crashlytics.crashlytics().record(error: error)
                 
             }
             
         }
-        
+    }
         
         
     }
@@ -1726,7 +1758,6 @@ class SharedManager {
     }
     
     func saveAllVideosThumbnailsToCache(imageURL: String?) {
-        
         if let url = URL(string: imageURL ?? "") {
             SDWebImageManager.shared.loadImage(with: url, options: .highPriority, progress: nil) { image, data, error, cacheType, status, url in
                 if error == nil {
@@ -1744,7 +1775,6 @@ class SharedManager {
                 }
             }
         }
-        
     }
     
     func loadImageFromCache(imageURL: String?, completionHandler: @escaping (_ image: UIImage?) -> Void) {

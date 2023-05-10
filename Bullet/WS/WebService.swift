@@ -22,7 +22,7 @@ typealias CompletionHandler = () -> Void
 class WebService {
     // MARK: - API Calling Methods
 
-    class func URLResponse(_ url: String, method: HTTPMethod, parameters: [String: Any]?, body: Any? = nil, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {
+    class func URLResponse(_ url: String, method: HTTPMethod, parameters: [String: Any]?, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {
         let completeUrl: String = WebserviceManager.shared.API_BASE + url
         // print(completeUrl)
 
@@ -42,8 +42,10 @@ class WebService {
 //        Alamofire.Session.default.session.getAllTasks { tasks in
 //            tasks.forEach { $0.cancel() }
 //        }
-
-        AF.requestWithoutCache(completeUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headersToken).validate(statusCode: 200 ..< 600).responseData(completionHandler: { response in
+        let requestModifier = { (request: inout URLRequest) in
+            request.timeoutInterval = 10
+        }
+        AF.request(completeUrl, method: method, parameters: parameters, encoding: URLEncoding.default, headers: headersToken, requestModifier: requestModifier).validate(statusCode: 200 ..< 600).responseData(completionHandler: { response in
 
             if let modifiedTime = response.response?.allHeaderFields["Last-Modified"] as? String {
                 if url == "news/discover" {
@@ -136,7 +138,8 @@ class WebService {
             }
         })
     }
-
+    
+    
     class func URLResponseAuth(_ url: String, method: HTTPMethod, parameters: [String: Any]?, headers: String?, withSuccess success: @escaping apiSuccess, withAPIFailure failure: @escaping apiFailure) {
         let completeUrl: String = WebserviceManager.shared.AUTH_BASE_URL + url
         // print(completeUrl)
