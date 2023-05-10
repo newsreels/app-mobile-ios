@@ -18,12 +18,12 @@ extension ReelsCC {
                 SharedManager.shared.playingPlayers.remove(object: id)
             }
             isPlaying = false
-            if shouldContinue {
-                pausedDuration = playerLayer.player?.currentDuration
-            }
             playerLayer.player?.pause()
             totalDuration = playerLayer.player?.currentDuration
-            playerLayer.player = nil
+            if !shouldContinue {
+                playerLayer.player?.seek(to: .zero)
+                playerLayer.player = nil
+            }
         }
     }
     
@@ -62,9 +62,6 @@ extension ReelsCC {
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
-            if let pausedDuration {
-                playerLayer.player?.seek(to: CMTime(seconds: pausedDuration, preferredTimescale: CMTimeScale(NSEC_PER_SEC)))
-            }
             imgThumbnailView.layoutIfNeeded()
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
