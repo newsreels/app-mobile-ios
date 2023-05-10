@@ -63,7 +63,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         return UICollectionViewCell()
     }
 
-    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt _: IndexPath) {
+    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
