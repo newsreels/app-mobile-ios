@@ -31,11 +31,11 @@ extension ReelsVC {
 }
 
 extension ReelsVC {
-    func pauseCellVideo(indexPath: IndexPath?) {
+    func pauseCellVideo(indexPath: IndexPath?, shouldContinue: Bool = false) {
         if let indexPath = indexPath, let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
             print("video paused index after", indexPath.item)
 
-            cell.stopVideo()
+            cell.stopVideo(shouldContinue: shouldContinue)
         }
     }
 

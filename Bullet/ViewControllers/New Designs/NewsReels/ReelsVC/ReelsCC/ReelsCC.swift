@@ -111,6 +111,7 @@ class ReelsCC: UICollectionViewCell {
     var loadingStartingTime: Date?
     var totalDuration: Double?
     var lblSeeMoreNumberOfLines = 2
+    var pausedDuration: TimeInterval?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -139,6 +140,7 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
+        pausedDuration = nil
         lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil

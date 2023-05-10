@@ -11,15 +11,18 @@ import CoreMedia
 import AVFoundation
 
 extension ReelsCC {
-    func pause() {
+    func pause(shouldContinue: Bool = false) {
         if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
             if let id = reelModel?.id,
                SharedManager.shared.playingPlayers.contains(id) {
                 SharedManager.shared.playingPlayers.remove(object: id)
             }
             isPlaying = false
+            if shouldContinue {
+                pausedDuration = playerLayer.player?.currentDuration
+            }
             playerLayer.player?.pause()
-            totalDuration = playerLayer.player?.totalDuration
+            totalDuration = playerLayer.player?.currentDuration
             playerLayer.player = nil
         }
     }
@@ -33,7 +36,8 @@ extension ReelsCC {
                 SharedManager.shared.playingPlayers.append(id)
             }
             setImage()
-            if let id = reelModel?.id,
+            if self.playerLayer.player == nil,
+               let id = reelModel?.id,
                let player = SharedManager.shared.players.first(where: {$0.id == id})?.player,
                player.currentItem != nil, player.currentItem?.bufferDuration != nil{
                 playerLayer = AVPlayerLayer(player: player)
@@ -58,6 +62,9 @@ extension ReelsCC {
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
+            if let pausedDuration {
+                playerLayer.player?.seek(to: CMTime(seconds: pausedDuration, preferredTimescale: CMTimeScale(NSEC_PER_SEC)))
+            }
             imgThumbnailView.layoutIfNeeded()
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
@@ -70,12 +77,12 @@ extension ReelsCC {
         }
     }
     
-    func stopVideo() {
+    func stopVideo(shouldContinue: Bool = false) {
         if SharedManager.shared.reelsAutoPlay == false {
             viewPlayButton.isHidden = false
         }
         isPlayWhenReady = false
-        pause()
+        pause(shouldContinue: shouldContinue)
         viewTransparentBG.isHidden = true
         isFullText = false
         currTime = -1

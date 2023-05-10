@@ -200,7 +200,7 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didSwipeRight(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        pauseCellVideo(indexPath: indexPath)
+        pauseCellVideo(indexPath: indexPath, shouldContinue: true)
 
         if isRightMenuLoaded == false {
             setupSideMenu()
@@ -212,7 +212,7 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapViewMore(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        pauseCellVideo(indexPath: indexPath)
+        pauseCellVideo(indexPath: indexPath, shouldContinue: true)
 
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 
