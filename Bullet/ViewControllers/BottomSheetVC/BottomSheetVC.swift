@@ -134,9 +134,9 @@ class BottomSheetVC: UIViewController {
             isGoToSourceHidden = true
             isFollowSourceHidden = true
             isBlockSourceHidden = false
+            isReportHidden = false
             isSavedArticleHidden = true
             isShareArticleHidden = true
-            isReportHidden = false
             isLikeHidden = true
             isDislikeHidden = true
             isCopyhidden = true
@@ -446,7 +446,7 @@ class BottomSheetVC: UIViewController {
 //        if !viewSavedArticleHidden {
 //            alertController.addAction(actionFollow)
 //        }
-        if !isBlockSourceHidden && (isFromReels || isFromChannel) {
+        if !isBlockSourceHidden && (isFromReels || isFromChannel || isOpenForChannelDetails) {
             alertController.addAction(actionBlock)
         }
 //
