@@ -751,7 +751,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {
                 cell.reelModel?.source = channel
-                cell.btnUserPlus.isHidden = channel?.favorite ?? false
+                
 
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
@@ -768,7 +768,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel?.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.btnUserPlus.isHidden = channel?.favorite ?? false
+                                
                             }
                         }
                     }
@@ -804,7 +804,7 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
             // Check source if its not available then use author
             if let _ = cellReel.reelModel?.source, let channel = cell?.articleModel?.source {
                 cellReel.reelModel?.source = channel
-                cellReel.btnUserPlus.isHidden = channel.favorite ?? false
+                
 
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
@@ -821,7 +821,7 @@ extension ReelsVC: BulletDetailsVCLikeDelegate {
                         if let reelscell = cellObj as? ReelsCC {
                             if reelscell.reelModel?.source?.id == channel.id {
                                 reelscell.reelModel?.source = channel
-                                reelscell.btnUserPlus.isHidden = channel.favorite ?? false
+                                
                             }
                         }
                     }
