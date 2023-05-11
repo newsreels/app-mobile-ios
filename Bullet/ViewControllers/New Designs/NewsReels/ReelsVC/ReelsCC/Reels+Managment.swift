@@ -65,6 +65,10 @@ extension ReelsCC {
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
             imgThumbnailView.layoutIfNeeded()
+            if let collectionView = superview as? UICollectionView,
+               let index = collectionView.indexPath(for: self) {
+                (playerLayer.player as? NRPlayer)?.cellIndex = index
+            }
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
                 imgSound.image = UIImage(named: "newMuteIC")
