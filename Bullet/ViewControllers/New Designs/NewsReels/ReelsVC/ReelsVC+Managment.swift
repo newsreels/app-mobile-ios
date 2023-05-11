@@ -64,16 +64,11 @@ extension ReelsVC {
                 }
                 self.sendVideoViewedAnalyticsEvent()
             }
-//            else if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsPhotoAdCC {
-//                self.currentlyPlayingIndexPath = indexPath
-//                cell.fetchAds(viewController: self)
-//            }
+
         }
     }
 
     func playCurrentCellVideo() {
-        getCaptionsFromAPI()
-
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
@@ -83,10 +78,6 @@ extension ReelsVC {
             }
 
         }
-//        else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
-//            print("video played at index", currentlyPlayingIndexPath)
-//            cell.fetchAds(viewController: self)
-//        }
 
         delegate?.currentPlayingVideoChanged(newIndex: currentlyPlayingIndexPath)
 
