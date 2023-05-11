@@ -744,6 +744,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
 
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
         if ReelsCacheManager.shared.reelViewedOnChannelPage {
+            ReelsCacheManager.shared.reelViewedOnChannelPage = false
             reelsArray.removeAll()
             collectionView.reloadData()
             nextPageData = ""
@@ -816,6 +817,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
 extension ReelsVC: BulletDetailsVCFollowDelegate {
     func dismissBulletDetailsVC(_ channel: ChannelInfo?) {
         if ReelsCacheManager.shared.reelViewedOnChannelPage {
+            ReelsCacheManager.shared.reelViewedOnChannelPage = false
             reelsArray.removeAll()
             collectionView.reloadData()
             nextPageData = ""
