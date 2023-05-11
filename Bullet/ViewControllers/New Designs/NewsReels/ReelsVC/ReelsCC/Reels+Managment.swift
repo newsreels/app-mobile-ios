@@ -22,6 +22,8 @@ extension ReelsCC {
             totalDuration = playerLayer.player?.currentDuration
             if !shouldContinue {
                 playerLayer.player?.seek(to: .zero)
+                (playerLayer.player as? NRPlayer)?.endTimer()
+                imgThumbnailView.isHidden = false
                 playerLayer.player = nil
             }
         }
@@ -48,7 +50,7 @@ extension ReelsCC {
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
                 playerItem.preferredPeakBitRate = Double(200000)
-                let player = AVPlayer(playerItem: playerItem)
+                let player = NRPlayer(playerItem: playerItem)
                 playerLayer = AVPlayerLayer(player: player)
             }
             
@@ -156,7 +158,7 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 loadingStartingTime = nil
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     self.imgThumbnailView.isHidden = true
                 }
                 DispatchQueue.main.async {

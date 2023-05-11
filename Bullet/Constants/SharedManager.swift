@@ -142,7 +142,7 @@ class SharedManager {
     let relativeFontConstantLargeScreen: CGFloat = 0.051
 
     var isTutorialDone = false
-    
+    var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
     var isOnPrefrence = false
     var isFromPNBackground = false
     
