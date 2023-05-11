@@ -17,7 +17,7 @@ struct TrendingChannelsView: View {
         let sources: [ChannelInfo]?
     }
     
-    @State var sources: [ChannelInfo]? = nil
+    @State var sources: [ChannelInfo]
 
     var title: String = ""
     var isSearch: Bool = false
@@ -27,17 +27,17 @@ struct TrendingChannelsView: View {
         
         if isSearch == false {
             
-            if let sources = sources {
+            if !sources.isEmpty {
                 VStack {
                     //
                     SectionTitleView(title: "Trending Channels") { }
                         .padding(.vertical)
                     VStack {
-                        ForEach(sources, id: \.id) { channel in
+                        ForEach($sources, id: \.id) { channel in
                             TrendingChannelsRow(channelData: channel, didFollow: { channel in
                                 followChannel(channel)
                             })
-                            if channel.id != sources.last?.id {
+                            if channel.id.wrappedValue != sources.last?.id {
                                 Divider()
                             }
                         }
@@ -80,11 +80,11 @@ struct TrendingChannelsView: View {
                     .padding(.vertical)
                 VStack {
                     if let sources = sources {
-                        ForEach(sources, id: \.id) { channel in
+                        ForEach($sources, id: \.id) { channel in
                             TrendingChannelsRow(channelData: channel, didFollow: { channel in
                                 followChannel(channel)
                             })
-                            if channel.id != sources.last?.id {
+                            if channel.id.wrappedValue != sources.last?.id {
                                 Divider()
                             }
                         }
@@ -122,8 +122,9 @@ struct TrendingChannelsView: View {
                     SharedManager.shared.isForYouTabReelsReload = true
                     SharedManager.shared.isFollowingTabReelsReload = true
                     
-                    if let index = sources?.firstIndex(where: {$0.id == channel.id}) {
-                        sources![index].favorite = isFav
+                    if let index = sources.firstIndex(where: {$0.id == channel.id}) {
+                        sources[index].favorite = isFav
+                        
                     }
 
                 } else {
@@ -168,6 +169,6 @@ struct TrendingChannelsView: View {
 
 struct TrendingChannelsView_Preview: PreviewProvider {
     static var previews: some View {
-        TrendingChannelsView()
+        TrendingChannelsView(sources: [ChannelInfo]())
     }
 }

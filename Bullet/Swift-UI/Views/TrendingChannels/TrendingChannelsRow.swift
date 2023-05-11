@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrendingChannelsRow: View {
     
-    @State var channelData: ChannelInfo
+    @Binding var channelData: ChannelInfo
     var didFollow: (ChannelInfo) -> ()
 
     var body: some View {
