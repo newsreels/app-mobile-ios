@@ -563,14 +563,15 @@ extension LoginWithEmailVC {
                                             vc.isPresented = false
                                             self.navigationController?.pushViewController(vc, animated: true)
                                         }
-                                        else if FULLResponse.onboarded ==  false {
-
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
-                                                self.navigationController?.pushViewController(vc, animated: true)
-                                            }
-
-                                        }
+                                        //TODO: unforce onboarded
+//                                        else if FULLResponse.onboarded ==  false {
+//
+//                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                                let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
+//                                                self.navigationController?.pushViewController(vc, animated: true)
+//                                            }
+//
+//                                        }
                                         else {
                                             self.appDelegate?.setHomeVC()
 

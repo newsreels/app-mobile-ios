@@ -231,7 +231,9 @@ class SharedManager {
             return UserDefaults.standard.bool(forKey: Constant.isOnboardingPreferenceLoaded)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: Constant.isOnboardingPreferenceLoaded)
+            //TODO: unforce onboarded
+            UserDefaults.standard.set(true, forKey: Constant.isOnboardingPreferenceLoaded)
+//            UserDefaults.standard.set(newValue, forKey: Constant.isOnboardingPreferenceLoaded)
         }
     }
     

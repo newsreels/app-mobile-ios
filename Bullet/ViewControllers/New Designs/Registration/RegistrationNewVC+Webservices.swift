@@ -339,8 +339,9 @@ extension RegistrationNewVC {
                              
                                 
                                 DispatchQueue.main.async {
-                                    
-                                    if SharedManager.shared.isUserSetup && FULLResponse.onboarded ?? false {
+                                    //TODO: unforce onboarded
+//                                    if SharedManager.shared.isUserSetup && FULLResponse.onboarded ?? false {
+                                    if SharedManager.shared.isUserSetup  {
                                         self.appDelegate?.setHomeVC()
                                     }
                                     else {
