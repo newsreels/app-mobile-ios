@@ -60,7 +60,7 @@ extension ReelsCC {
             playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
-            playerLayer.videoGravity = .resize
+            playerLayer.videoGravity = .resizeAspectFill
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()

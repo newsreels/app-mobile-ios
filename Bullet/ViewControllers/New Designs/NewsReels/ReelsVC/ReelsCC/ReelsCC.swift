@@ -114,8 +114,6 @@ class ReelsCC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
