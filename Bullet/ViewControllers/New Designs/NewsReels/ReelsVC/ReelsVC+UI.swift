@@ -46,8 +46,6 @@ extension ReelsVC {
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
-
     }
 
     func setupForCallMethod() {
@@ -237,24 +235,6 @@ extension ReelsVC {
         }
     }
 
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
-    {
-        //This is the index of the "page" that we will be landing at
-        let nearestIndex = Int(CGFloat(targetContentOffset.pointee.x) / scrollView.bounds.size.width + 0.5)
-
-        //Just to make sure we don't scroll past your content
-        let clampedIndex = max( min( nearestIndex, reelsArray.count - 1 ), 0 )
-
-        //This is the actual x position in the scroll view
-        var xOffset = CGFloat(clampedIndex) * scrollView.bounds.size.width
-
-        //I've found that scroll views will "stick" unless this is done
-        xOffset = xOffset == 0.0 ? 1.0 : xOffset
-
-        //Tell the scroll view to land on our page
-        targetContentOffset.pointee.x = xOffset
-    }
-    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if lblRefreshLabel.text == "Release to refresh" {
             isPullToRefresh = true
@@ -285,16 +265,7 @@ extension ReelsVC {
         delegate?.currentPlayingVideoChanged(newIndex: currentlyPlayingIndexPath)
     }
 
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate
-        {
-            let currentIndex = floor(scrollView.contentOffset.x / scrollView.bounds.size.width)
-
-            let offset = CGPoint(x: scrollView.bounds.size.width * currentIndex, y: 0)
-
-            scrollView.setContentOffset(offset, animated: true)
-        }
-
+    func scrollViewDidEndDragging(_: UIScrollView, willDecelerate _: Bool) {
         // Invalidate any existing timer
         scrollTimer?.invalidate()
         // Disable scrolling until the timer fires
