@@ -131,11 +131,16 @@ extension ForgotPasswordVC {
                         self.isSentLink = true
                     }
                     else {
-                        
-                        self.dismiss(animated: true) {
-                            
-                            self.delegateVC?.onDismissForgotPwdView()
-                        }
+                        self.viewForSettingsForgot.isHidden = true
+                        self.viewResetPassord.isHidden = false
+                        self.lblResetEmail.text = "\(NSLocalizedString("A reset password link has been sent to", comment: "")) \(self.user_Name)"
+                        self.viewResetPassord.isHidden = true
+                        self.viewAlert.isHidden = false
+                        self.isSentLink = true
+//                        self.dismiss(animated: true) {
+//
+//                            self.delegateVC?.onDismissForgotPwdView()
+//                        }
                     }
                     self .btnLink.isUserInteractionEnabled = true
                 }

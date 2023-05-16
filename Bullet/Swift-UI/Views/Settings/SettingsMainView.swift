@@ -363,7 +363,7 @@ struct SettingsMainview: View {
                     print("Saved")
                     SwiftUIManager.shared.setObserver(name: .SwfitUIGoToFavArticles, object: nil)
                 }
-                if user?.isGuest == false {
+                if !(UserDefaults.standard.string(forKey: Constant.UD_userEmail)?.isEmpty ?? true), user?.isGuest == false {
                     SettingsRowView(settings: .normal(iconName: "emailPW_ic", title: NSLocalizedString("Change Password", comment: ""))) {
                         print("Email and Password")
                         SwiftUIManager.shared.setObserver(name: .SwiftUIGoToChangePassword, object: nil)
@@ -374,7 +374,6 @@ struct SettingsMainview: View {
                 SettingsRowView(settings: .normal(iconName: "blocklist_ic", title: NSLocalizedString("Block List", comment: ""))) {
                     print("Block List")
                     SwiftUIManager.shared.setObserver(name: .SwiftUIGoToBlockList, object: nil)
-                    
                 }
                 if user?.isGuest == false {
                     SettingsRowView(settings: .normal(iconName: "logout_ic", title: NSLocalizedString("Logout", comment: "")), showDivider: false) {
