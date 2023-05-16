@@ -5811,7 +5811,7 @@ extension HomeVC: HomeReelCarouselCCDelegate, HomeVideoCarouselCCDelegate, Reels
 
 extension HomeVC: ChannelDetailsVCDelegate {
     
-    func backButtonPressedChannelDetailsVC() {
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
     }
     
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {

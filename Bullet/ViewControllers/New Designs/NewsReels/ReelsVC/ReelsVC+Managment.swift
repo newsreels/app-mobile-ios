@@ -31,11 +31,11 @@ extension ReelsVC {
 }
 
 extension ReelsVC {
-    func pauseCellVideo(indexPath: IndexPath?) {
+    func pauseCellVideo(indexPath: IndexPath?, shouldContinue: Bool = false) {
         if let indexPath = indexPath, let cell = collectionView.cellForItem(at: indexPath) as? ReelsCC {
             print("video paused index after", indexPath.item)
 
-            cell.stopVideo()
+            cell.stopVideo(shouldContinue: shouldContinue)
         }
     }
 
@@ -64,16 +64,11 @@ extension ReelsVC {
                 }
                 self.sendVideoViewedAnalyticsEvent()
             }
-//            else if let cell = self.collectionView.cellForItem(at: indexPath) as? ReelsPhotoAdCC {
-//                self.currentlyPlayingIndexPath = indexPath
-//                cell.fetchAds(viewController: self)
-//            }
+
         }
     }
 
     func playCurrentCellVideo() {
-        getCaptionsFromAPI()
-
         if SharedManager.shared.isGuestUser == false, SharedManager.shared.isUserSetup == false, isViewControllerVisible {}
 
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
@@ -83,10 +78,6 @@ extension ReelsVC {
             }
 
         }
-//        else if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsPhotoAdCC {
-//            print("video played at index", currentlyPlayingIndexPath)
-//            cell.fetchAds(viewController: self)
-//        }
 
         delegate?.currentPlayingVideoChanged(newIndex: currentlyPlayingIndexPath)
 
@@ -248,10 +239,7 @@ extension ReelsVC {
                 }
                 sendVideoViewedAnalyticsEvent()
                 newIndexDetected = true
-            } else {
-                let indexPath = collectionView.indexPath(for: cell)
-                pauseCellVideo(indexPath: indexPath)
-            }
+            } 
         }
 
         if newIndexDetected == false {

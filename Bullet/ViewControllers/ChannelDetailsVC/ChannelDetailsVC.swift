@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol ChannelDetailsVCDelegate: AnyObject {
+protocol ChannelDetailsVCDelegate {
     
-    func backButtonPressedChannelDetailsVC()
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?)
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?)
 }
 
@@ -39,7 +39,7 @@ class ChannelDetailsVC: UIViewController {
     var context = ""
     
     @IBOutlet weak var titleLabell: UILabel!
-    weak var delegate: ChannelDetailsVCDelegate?
+    var delegate: ChannelDetailsVCDelegate?
     var topicTitle = ""
     var shareTitle =  ""
     var articleArchived = false
@@ -85,14 +85,23 @@ class ChannelDetailsVC: UIViewController {
         isFirstLoadView = false
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         SharedManager.shared.bulletPlayer = nil
-        
         if let vc = profileVC.currentViewController as? ProfileArticlesVC {
             vc.updateProgressbarStatus(isPause: true)
         }
         
+        if isOpenFromReel {
+            self.delegate?.backButtonPressedWhenFromReels(profileVC.selectedChannel)
+        }
+        else {
+            self.delegate?.backButtonPressedChannelDetailsVC(profileVC.selectedChannel)
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -188,7 +197,7 @@ class ChannelDetailsVC: UIViewController {
             self.delegate?.backButtonPressedWhenFromReels(profileVC.selectedChannel)
         }
         else {
-            self.delegate?.backButtonPressedChannelDetailsVC()
+            self.delegate?.backButtonPressedChannelDetailsVC(profileVC.selectedChannel)
         }
         self.dismiss(animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)

@@ -114,8 +114,6 @@ class ReelsCC: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        playerLayer.videoGravity = .resizeAspectFill
         setupViews()
         setDescriptionLabel()
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
@@ -139,11 +137,13 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
+        
         lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil
         imgThumbnailView.isHidden = false
         totalDuration = playerLayer.player?.totalDuration
+        playerLayer.player?.seek(to: .zero)
         playerLayer.player?.replaceCurrentItem(with: nil)
         for recognizer in viewSubTitle.gestureRecognizers ?? [] {
             viewSubTitle.removeGestureRecognizer(recognizer)

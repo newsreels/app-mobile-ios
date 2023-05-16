@@ -118,12 +118,13 @@ class SwiftUIManager {
     
     @objc func goToChannelPage(notif: Notification) {
         
-        if let source = notif.object as? ChannelInfo {
+        if let (source, row) = notif.object as? (ChannelInfo, TrendingChannelsRow) {
              let detailsVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
             detailsVC.isOpenFromReel = true
             detailsVC.isOpenForTopics = false
             detailsVC.fromDiscover = true
             detailsVC.channelInfo = source
+            detailsVC.delegate = row
             self.navigationController?.pushViewController(detailsVC  , animated: true)
         }
         

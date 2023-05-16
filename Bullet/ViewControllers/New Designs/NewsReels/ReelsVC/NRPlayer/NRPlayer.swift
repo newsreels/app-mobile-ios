@@ -15,6 +15,7 @@ class NRPlayer: AVPlayer {
     var shouldBePlaying = false
     var timer: Timer?
     var reelId: String?
+    var cellIndex: IndexPath?
     private var stallingSeconds = 0
     private var bufferWaitingSeconds = 0
     private var bufferFreezeSeconds = 0
@@ -33,7 +34,6 @@ extension NRPlayer {
     
     override func pause() {
         super.pause()
-        endTimer()
         shouldBePlaying = false
     }
     
@@ -75,16 +75,21 @@ extension NRPlayer {
         if isStuckWithBuffering() {
             bufferStuckHandler?()
         }
-        print(reelId)
-        if let reelId, !SharedManager.shared.playingPlayers.contains(reelId) {
-            pause()
+        if let cellIndex, let reelId {
+            if SharedManager.shared.playingPlayers.contains(reelId),
+               SharedManager.shared.currentlyPlayingIndexPath != cellIndex {
+                pause()
+            }
         }
+
     }
  
     func isStuckWithStaling() -> Bool { 
-        if self.shouldBePlaying == true
-            && (self.currentItem == nil || self.timeControlStatus == .paused) {
-            if stallingSeconds > 3 {
+        if let cellIndex,
+           SharedManager.shared.currentlyPlayingIndexPath == cellIndex,
+            self.shouldBePlaying == true,
+            (self.currentItem == nil || self.timeControlStatus == .paused) {
+            if stallingSeconds > 5 {
                 stallingSeconds = 0
                 bufferFreezeSeconds = 0
                 bufferWaitingSeconds = 0
@@ -100,7 +105,9 @@ extension NRPlayer {
     
     func isFreezeWithBuffering() -> Bool {
         let maxWaiting = didResetVideo ? 5 : 10
-        if self.shouldBePlaying == true
+        if let cellIndex,
+           SharedManager.shared.currentlyPlayingIndexPath == cellIndex,
+           self.shouldBePlaying == true
             && bufferFreezeSeconds >= maxWaiting
             && self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
             bufferWaitingSeconds = 0
@@ -116,21 +123,7 @@ extension NRPlayer {
         }
     }
     func isStuckWithBuffering() -> Bool {
-//        guard disapledBuffering == false else { return false }
-//        if self.shouldBePlaying == true
-//            && bufferWaitingSeconds >= 3 && self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
-//            bufferWaitingSeconds = 0
-//            stallingSeconds = 0
-//            bufferFreezeSeconds = 0
-//            disapledBuffering = true
-//            return true
-//        } else if self.timeControlStatus == .waitingToPlayAtSpecifiedRate {
-//            bufferWaitingSeconds += 1
-//            return false
-//        } else {
-//            bufferWaitingSeconds = 0
             return false
-//        }
     }
     
 }

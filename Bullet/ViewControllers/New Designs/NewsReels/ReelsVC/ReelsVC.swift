@@ -54,7 +54,11 @@ class ReelsVC: UIViewController {
     public var minimumScreenRatioToHide: CGFloat = 0.5
     public var animationDuration: TimeInterval = 0.2
     var reelsArray = [Reel]()
-    var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
+    var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0) {
+        willSet {
+            SharedManager.shared.currentlyPlayingIndexPath = newValue
+        }
+    }
     var nextPageData = ""
     var isApiCallAlreadyRunning = false
     var isFirtTimeLoaded = false

@@ -11,7 +11,7 @@ import CoreMedia
 import AVFoundation
 
 extension ReelsCC {
-    func pause() {
+    func pause(shouldContinue: Bool = false) {
         if isPlaying && SharedManager.shared.playingPlayers.count > 0 {
             if let id = reelModel?.id,
                SharedManager.shared.playingPlayers.contains(id) {
@@ -19,8 +19,13 @@ extension ReelsCC {
             }
             isPlaying = false
             playerLayer.player?.pause()
-            totalDuration = playerLayer.player?.totalDuration
-            playerLayer.player = nil
+            totalDuration = playerLayer.player?.currentDuration
+            if !shouldContinue {
+                playerLayer.player?.seek(to: .zero)
+                (playerLayer.player as? NRPlayer)?.endTimer()
+                imgThumbnailView.isHidden = false
+                playerLayer.player = nil
+            }
         }
     }
     
@@ -33,7 +38,8 @@ extension ReelsCC {
                 SharedManager.shared.playingPlayers.append(id)
             }
             setImage()
-            if let id = reelModel?.id,
+            if self.playerLayer.player == nil,
+               let id = reelModel?.id,
                let player = SharedManager.shared.players.first(where: {$0.id == id})?.player,
                player.currentItem != nil, player.currentItem?.bufferDuration != nil{
                 playerLayer = AVPlayerLayer(player: player)
@@ -44,7 +50,7 @@ extension ReelsCC {
                 playerLayer.player?.automaticallyWaitsToMinimizeStalling = true
                 playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
                 playerItem.preferredPeakBitRate = Double(200000)
-                let player = AVPlayer(playerItem: playerItem)
+                let player = NRPlayer(playerItem: playerItem)
                 playerLayer = AVPlayerLayer(player: player)
             }
             
@@ -54,11 +60,15 @@ extension ReelsCC {
             playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
-            playerLayer.videoGravity = .resize
+            playerLayer.videoGravity = .resizeAspectFill
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
             imgThumbnailView.layoutIfNeeded()
+            if let collectionView = superview as? UICollectionView,
+               let index = collectionView.indexPath(for: self) {
+                (playerLayer.player as? NRPlayer)?.cellIndex = index
+            }
             if SharedManager.shared.isAudioEnableReels == false {
                 playerLayer.player?.volume = 0
                 imgSound.image = UIImage(named: "newMuteIC")
@@ -70,12 +80,12 @@ extension ReelsCC {
         }
     }
     
-    func stopVideo() {
+    func stopVideo(shouldContinue: Bool = false) {
         if SharedManager.shared.reelsAutoPlay == false {
             viewPlayButton.isHidden = false
         }
         isPlayWhenReady = false
-        pause()
+        pause(shouldContinue: shouldContinue)
         viewTransparentBG.isHidden = true
         isFullText = false
         currTime = -1
@@ -152,7 +162,7 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 loadingStartingTime = nil
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     self.imgThumbnailView.isHidden = true
                 }
                 DispatchQueue.main.async {

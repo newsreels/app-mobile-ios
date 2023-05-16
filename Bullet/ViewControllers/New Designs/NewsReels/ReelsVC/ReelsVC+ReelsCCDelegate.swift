@@ -63,7 +63,7 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         return UICollectionViewCell()
     }
 
-    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt _: IndexPath) {
+    func collectionView(_: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let skeletonCell = cell as? ReelsSkeletonAnimation {
             skeletonCell.hideLaoder()
         }
@@ -200,7 +200,7 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didSwipeRight(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        pauseCellVideo(indexPath: indexPath)
+        pauseCellVideo(indexPath: indexPath, shouldContinue: true)
 
         if isRightMenuLoaded == false {
             setupSideMenu()
@@ -212,7 +212,7 @@ extension ReelsVC: ReelsCCDelegate {
 
     func didTapViewMore(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
-        pauseCellVideo(indexPath: indexPath)
+        pauseCellVideo(indexPath: indexPath, shouldContinue: true)
 
         let reel = reelsArray[currentlyPlayingIndexPath.item]
 
@@ -222,6 +222,7 @@ extension ReelsVC: ReelsCCDelegate {
         let vc = BulletDetailsVC.instantiate(fromAppStoryboard: .Home)
         vc.selectedArticleData = content
         vc.delegate = self
+        vc.delegateFollow = self
         vc.isSwipeToDismissRequired = true
         vc.isFromReels = true
         let navVC = AppNavigationController(rootViewController: vc)

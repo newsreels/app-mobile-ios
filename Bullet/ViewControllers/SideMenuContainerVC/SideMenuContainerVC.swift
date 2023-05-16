@@ -13,13 +13,13 @@ class SideMenuContainerVC: UIViewController {
     @IBOutlet weak var reelsContainerView: UIView!
 
     var pageVC: SlideMenuPageVC?
-    
+    var channel: ChannelInfo?
     var currentlyOpenedChannedID = ""
     var currentlyOpenedAuthorID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pageVC?.slideMenuDelegate = self
         // Do any additional setup after loading the view.
         
     }
@@ -47,4 +47,11 @@ class SideMenuContainerVC: UIViewController {
     
     
     
+}
+
+extension SideMenuContainerVC: SlideMenuPageDelegate {
+    func didDismiss(channel: ChannelInfo?) {
+        self.channel = channel
+        print(self.channel)
+    }
 }

@@ -142,7 +142,7 @@ class SharedManager {
     let relativeFontConstantLargeScreen: CGFloat = 0.051
 
     var isTutorialDone = false
-    
+    var currentlyPlayingIndexPath = IndexPath(item: 0, section: 0)
     var isOnPrefrence = false
     var isFromPNBackground = false
     
@@ -231,7 +231,9 @@ class SharedManager {
             return UserDefaults.standard.bool(forKey: Constant.isOnboardingPreferenceLoaded)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: Constant.isOnboardingPreferenceLoaded)
+            //TODO: unforce onboarded
+            UserDefaults.standard.set(true, forKey: Constant.isOnboardingPreferenceLoaded)
+//            UserDefaults.standard.set(newValue, forKey: Constant.isOnboardingPreferenceLoaded)
         }
     }
     

@@ -8,13 +8,19 @@
 
 import UIKit
 
+protocol SlideMenuPageDelegate {
+    func didDismiss(channel: ChannelInfo?)
+}
+
 class SlideMenuPageVC: UIPageViewController {
     
     var viewControllersArray = [UIViewController]()
-    
+    var slideMenuDelegate: SlideMenuPageDelegate?
 //    var channelVC: ChannelDetailsVC?
 //    var userProfileVC: AuthorProfileVC?
     var isFromReels = false
+    var channel: ChannelInfo?
+    
     override func viewDidLoad() {
         
         self.dataSource = self
@@ -87,23 +93,30 @@ class SlideMenuPageVC: UIPageViewController {
         } else {
             channelVC.channelInfo = channelInfo
         }
+        channelVC.delegate = self
         self.setViewControllers([channelVC], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
         
     }
 }
-
+extension SlideMenuPageVC: ChannelDetailsVCDelegate {
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
+        self.channel = channel
+        slideMenuDelegate?.didDismiss(channel: self.channel)
+    }
+    
+    func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
+        self.channel = channel
+    }
+}
 
 extension SlideMenuPageVC: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
         return nil
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        
         return nil
-        
     }
    
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {

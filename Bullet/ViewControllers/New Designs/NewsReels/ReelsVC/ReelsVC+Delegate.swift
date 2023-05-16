@@ -738,16 +738,19 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
 // MARK: - ReelsVC + ChannelDetailsVCDelegate
 
 extension ReelsVC: ChannelDetailsVCDelegate {
-    func backButtonPressedChannelDetailsVC() {}
+    func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
+        print("fuck")
+    }
 
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
         if ReelsCacheManager.shared.reelViewedOnChannelPage {
+            ReelsCacheManager.shared.reelViewedOnChannelPage = false
             reelsArray.removeAll()
             collectionView.reloadData()
             nextPageData = ""
             performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.curReelsCategoryId)
         }
-        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC, let channel {
             // Check source if its not available then use author
             if let _ = cell.reelModel?.source {
                 cell.reelModel?.source = channel
@@ -756,7 +759,7 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                 reelsArray[currentlyPlayingIndexPath.item].source = channel
 
                 for (indexPa, reelObj) in reelsArray.enumerated() {
-                    if reelObj.source?.id == channel?.id {
+                    if reelObj.source?.id == channel.id {
                         reelsArray[indexPa].source = channel
                     }
                 }
@@ -766,13 +769,119 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                 if cellsArray.count > 0 {
                     for cellObj in cellsArray {
                         if let reelscell = cellObj as? ReelsCC {
-                            if reelscell.reelModel?.source?.id == channel?.id {
+                            if reelscell.reelModel?.source?.id == channel.id {
                                 reelscell.reelModel?.source = channel
                                 
                             }
                         }
                     }
                 }
+            }
+                if let source = self.reelsArray[currentlyPlayingIndexPath.item].source {
+                    let fav = source.favorite ?? false
+                    DispatchQueue.main.async {
+                        cell.btnUserPlus.hideLoaderView()
+                        if fav {
+                            cell.btnUserPlus.setTitle("Following", for: .normal)
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        } else {
+                            cell.btnUserPlus.setTitle("Follow", for: .normal)
+                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        }
+                    }
+                } else {
+                    let fav = self.reelsArray[currentlyPlayingIndexPath.item].authors?.first?.favorite ?? false
+                    DispatchQueue.main.async {
+                        cell.btnUserPlus.hideLoaderView()
+                        if fav {
+                            cell.btnUserPlus.setTitle("Following", for: .normal)
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        } else {
+                            cell.btnUserPlus.setTitle("Follow", for: .normal)
+                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        }
+                    }
+            }
+        }
+    }
+}
+
+extension ReelsVC: BulletDetailsVCFollowDelegate {
+    func dismissBulletDetailsVC(_ channel: ChannelInfo?) {
+        if ReelsCacheManager.shared.reelViewedOnChannelPage {
+            ReelsCacheManager.shared.reelViewedOnChannelPage = false
+            reelsArray.removeAll()
+            collectionView.reloadData()
+            nextPageData = ""
+            performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.curReelsCategoryId)
+        }
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC, let channel {
+            // Check source if its not available then use author
+            if let _ = cell.reelModel?.source {
+                cell.reelModel?.source = channel
+                
+
+                reelsArray[currentlyPlayingIndexPath.item].source = channel
+
+                for (indexPa, reelObj) in reelsArray.enumerated() {
+                    if reelObj.source?.id == channel.id {
+                        reelsArray[indexPa].source = channel
+                    }
+                }
+
+                let cellsArray = collectionView.visibleCells
+
+                if cellsArray.count > 0 {
+                    for cellObj in cellsArray {
+                        if let reelscell = cellObj as? ReelsCC {
+                            if reelscell.reelModel?.source?.id == channel.id {
+                                reelscell.reelModel?.source = channel
+                                
+                            }
+                        }
+                    }
+                }
+            }
+                if let source = self.reelsArray[currentlyPlayingIndexPath.item].source {
+                    let fav = source.favorite ?? false
+                    DispatchQueue.main.async {
+                        cell.btnUserPlus.hideLoaderView()
+                        if fav {
+                            cell.btnUserPlus.setTitle("Following", for: .normal)
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        } else {
+                            cell.btnUserPlus.setTitle("Follow", for: .normal)
+                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        }
+                    }
+                } else {
+                    let fav = self.reelsArray[currentlyPlayingIndexPath.item].authors?.first?.favorite ?? false
+                    DispatchQueue.main.async {
+                        cell.btnUserPlus.hideLoaderView()
+                        if fav {
+                            cell.btnUserPlus.setTitle("Following", for: .normal)
+                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        } else {
+                            cell.btnUserPlus.setTitle("Follow", for: .normal)
+                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlus.layoutIfNeeded()
+                            cell.followStack.layoutIfNeeded()
+                        }
+                    }
             }
         }
     }
@@ -874,8 +983,67 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
         stopVideo()
     }
 
-    func sideMenuWillDisappear(menu _: SideMenuNavigationController, animated: Bool) {
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
         print("SideMenu Disappearing! (animated: \(animated))")
+        if let cell = self.collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC,
+           let channel = controller.channel {
+            if let _ = cell.reelModel?.source {
+                cell.reelModel?.source = channel
+                
+                reelsArray[currentlyPlayingIndexPath.item].source = channel
+                for (indexPa, reelObj) in reelsArray.enumerated() {
+                    if reelObj.source?.id == channel.id {
+                        reelsArray[indexPa].source = channel
+                    }
+                }
+                let cellsArray = collectionView.visibleCells
+                if cellsArray.count > 0 {
+                    for cellObj in cellsArray {
+                        if let reelscell = cellObj as? ReelsCC {
+                            if reelscell.reelModel?.source?.id == channel.id {
+                                reelscell.reelModel?.source = channel
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if let source = self.reelsArray[currentlyPlayingIndexPath.item].source {
+                let fav = source.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+            } else {
+                let fav = self.reelsArray[currentlyPlayingIndexPath.item].authors?.first?.favorite ?? false
+                DispatchQueue.main.async {
+                    cell.btnUserPlus.hideLoaderView()
+                    if fav {
+                        cell.btnUserPlus.setTitle("Following", for: .normal)
+                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    } else {
+                        cell.btnUserPlus.setTitle("Follow", for: .normal)
+                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlus.layoutIfNeeded()
+                        cell.followStack.layoutIfNeeded()
+                    }
+                }
+                
+            }
+        }
     }
 
     func sideMenuDidDisappear(menu _: SideMenuNavigationController, animated: Bool) {

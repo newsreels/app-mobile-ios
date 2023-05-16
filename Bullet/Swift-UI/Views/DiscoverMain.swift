@@ -124,7 +124,7 @@ struct DiscoverMain: View {
                     if let channels = data.sources {
                         TrendingChannelsView(sources: channels, isSearch: true)
                     } else {
-                        TrendingChannelsView()
+                        TrendingChannelsView(sources: [ChannelInfo]())
                     }
                 case .topics:
                     if let topics = data.topics { // this is search

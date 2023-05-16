@@ -638,7 +638,9 @@ extension ReelsVC {
                         detailsVC.channelInfo = Info
                         detailsVC.delegate = self
                         detailsVC.modalPresentationStyle = .fullScreen
-
+                        if let cell = self.collectionView.cellForItem(at: self.currentlyPlayingIndexPath) as? ReelsCC {
+                            cell.pause(shouldContinue: true)
+                        }
                         let nav = AppNavigationController(rootViewController: detailsVC)
                         nav.modalPresentationStyle = .fullScreen
                         self.present(nav, animated: true, completion: nil)
