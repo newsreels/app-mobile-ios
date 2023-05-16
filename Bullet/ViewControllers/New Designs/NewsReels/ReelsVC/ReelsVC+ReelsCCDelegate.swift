@@ -567,8 +567,10 @@ extension ReelsVC: ReelsCCDelegate {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
-
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+        if let duration = cell.totalDuration?.formatToMilliSeconds(), indexPath == currentlyPlayingIndexPath {
+         SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: duration)
+     }
+//        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
@@ -586,6 +588,7 @@ extension ReelsVC: ReelsCCDelegate {
         } else if reelsArray.count > 0 {
             let nextIndexPath = IndexPath(item: currentlyPlayingIndexPath.item + 1, section: 0)
             if nextIndexPath.item < reelsArray.count {
+
                 playNextCellVideo(indexPath: nextIndexPath)
             }
         }

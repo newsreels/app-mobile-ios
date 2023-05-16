@@ -416,6 +416,11 @@ extension ReelsVC {
 
     @objc func appMovedToBackground() {
         stopVideo()
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            if let duration = cell.totalDuration?.formatToMilliSeconds() {
+             SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
+         }
+        }
         SharedManager.shared.players.removeAll()
         ReelsCacheManager.shared.clearCache()
         SharedManager.shared.lastBackgroundTimeReels = Date()
@@ -489,10 +494,18 @@ extension ReelsVC {
         }
     }
 
-    @objc func stopVideo() {
+    @objc func stopVideoNotificationHandler() {
+        stopVideo()
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            if let duration = cell.totalDuration?.formatToMilliSeconds() {
+             SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
+         }
+        }
+    }
+    
+    func stopVideo() {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             cell.stopVideo()
-//            cell.pause()
         }
     }
 

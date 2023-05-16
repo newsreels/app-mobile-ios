@@ -111,12 +111,12 @@ class ReelsCC: UICollectionViewCell {
     var loadingStartingTime: Date?
     var totalDuration: Double?
     var lblSeeMoreNumberOfLines = 2
-    
+    var isPlayerEnded = false
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
         setDescriptionLabel()
-        NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -156,12 +156,15 @@ class ReelsCC: UICollectionViewCell {
 
     
     
-    @objc private func videoDidEnded() {
+    @objc func videoDidEnded() {
         //do something here
-        self.stopVideo()
-        self.pause()
-        ReelsCacheManager.shared.clearCache()
-        self.delegate?.videoPlayingFinished(cell: self)
+        if !isPlayerEnded {
+            isPlayerEnded = true
+            self.stopVideo()
+            self.pause()
+            ReelsCacheManager.shared.clearCache()
+            self.delegate?.videoPlayingFinished(cell: self)
+        }
     }
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -31,6 +31,8 @@ extension ReelsCC {
     
     func play() {
         if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
+            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+            isPlayerEnded = false
             print("will play \(reelModel?.id ?? "")")
             isPlaying = true
             if let id = reelModel?.id,

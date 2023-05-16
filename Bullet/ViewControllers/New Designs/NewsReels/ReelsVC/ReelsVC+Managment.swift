@@ -23,7 +23,7 @@ extension ReelsVC {
         NotificationCenter.default.addObserver(self, selector: #selector(reloadDataFromBG), name: NSNotification.Name(rawValue: "OpenedFromBackground"), object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(stopVideo), name: NSNotification.Name.stopVideoNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(stopVideoNotificationHandler), name: NSNotification.Name.stopVideoNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(getArticleDataPayLoad), name: NSNotification.Name.notifyGetPushNotificationToReelsView, object: nil)
 
     

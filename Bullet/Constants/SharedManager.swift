@@ -1322,10 +1322,9 @@ class SharedManager {
             request.addValue(Locale.current.languageCode ?? "en", forHTTPHeaderField: "x-user-language")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-            
+            print("fucking duration", Double(duration)! / 1000, reelId)
             request.httpMethod = "POST"
             request.httpBody = postData
-            
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data else {
                     print(String(describing: error))
