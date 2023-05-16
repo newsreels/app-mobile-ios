@@ -2219,7 +2219,7 @@ extension ViewMoreReelsVC: UIScrollViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
-        scrollView.decelerationRate = UIScrollView.DecelerationRate(rawValue: 0.994000); //0.998000
+        
     }
 
     func scrollToTopVisibleExtended(viewWillAppear: Bool = false) {
