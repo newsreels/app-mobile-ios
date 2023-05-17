@@ -311,12 +311,12 @@ extension ProfileReelsVC {
         else if isFromChannelView {
             
             //For Channels view
-            if isOwnChannel {
+//            if isOwnChannel {
                 url = "studio/reels?source=\(self.channelInfo?.id ?? "")"
-            }
-            else {
-                url = "news/reels?context=\(self.channelInfo?.context ?? "")"
-            }
+//            }
+//            else {
+//                url = "news/reels?context=\(self.channelInfo?.context ?? "")"
+//            }
         }
         else {
             
