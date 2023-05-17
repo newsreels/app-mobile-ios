@@ -425,7 +425,7 @@ extension ReelsVC {
     }
 
     @objc func appMovedToBackground() {
-        stopVideo()
+        stopVideo(shouldContinue: true)
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             if let duration = cell.totalDuration?.formatToMilliSeconds() {
              SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
@@ -529,9 +529,9 @@ extension ReelsVC {
         }
     }
     
-    func stopVideo() {
+    func stopVideo(shouldContinue: Bool = false) {
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            cell.stopVideo()
+            cell.stopVideo(shouldContinue: shouldContinue)
         }
     }
 
