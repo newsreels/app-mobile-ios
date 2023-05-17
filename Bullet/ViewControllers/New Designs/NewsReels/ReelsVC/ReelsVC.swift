@@ -505,7 +505,7 @@ extension ReelsVC {
     }
 
     @objc func stopVideoNotificationHandler() {
-        stopVideo()
+        pauseCellVideo(indexPath: currentlyPlayingIndexPath, shouldContinue: true)
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             if let duration = cell.totalDuration?.formatToMilliSeconds() {
              SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
