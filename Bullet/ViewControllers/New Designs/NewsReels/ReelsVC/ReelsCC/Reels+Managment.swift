@@ -43,7 +43,7 @@ extension ReelsCC {
             if self.playerLayer.player == nil,
                let id = reelModel?.id,
                let player = SharedManager.shared.players.first(where: {$0.id == id})?.player,
-               player.currentItem != nil, player.currentItem?.bufferDuration != nil{
+               player.currentItem != nil, player.currentItem?.bufferDuration != nil {
                 playerLayer = AVPlayerLayer(player: player)
             } else if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
