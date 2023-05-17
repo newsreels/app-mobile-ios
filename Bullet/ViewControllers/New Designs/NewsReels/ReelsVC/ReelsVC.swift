@@ -474,6 +474,22 @@ extension ReelsVC {
                 }
             }
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if let cell = self.collectionView.visibleCells.first as? ReelsCC {
+                if cell.playerLayer.player?.isPlaying == nil ||
+                    cell.playerLayer.player?.isPlaying == false ||
+                    cell.playerLayer.player?.currentItem == nil {
+                    SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        cell.setPlayer(didFail: true)
+                    }
+                }
+            } else {
+                self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
+                self.getCurrentVisibleIndexPlayVideo()
+            }
+        }
     }
 
     @objc func getArticleDataPayLoad() {
