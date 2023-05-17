@@ -239,8 +239,6 @@ extension ReelsVC: BottomSheetVCDelegate {
 extension ReelsVC: CommentsVCDelegate {
     func commentsVCDismissed(articleID: String) {
         isViewControllerVisible = true
-        appDelegate.setOrientationPortraitInly()
-
         if SharedManager.shared.reelsAutoPlay {
             playCurrentCellVideo()
         }

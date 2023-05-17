@@ -385,14 +385,6 @@ class SharedManager {
     var playingPlayers: [String] = []
     
     var players = [PlayerPreloadModel]()
-//    {
-//        didSet {
-//            if players.count > 5 {
-//                players.first?.player.dispose()
-//                players.removeFirst()
-//            }
-//        }
-//    }
     var isFirstimeSplashScreenLoaded = false
     
     var tabBarIndex: Int {
@@ -1322,7 +1314,6 @@ class SharedManager {
             request.addValue(Locale.current.languageCode ?? "en", forHTTPHeaderField: "x-user-language")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-            print("fucking duration", Double(duration)! / 1000, reelId)
             request.httpMethod = "POST"
             request.httpBody = postData
             let task = URLSession.shared.dataTask(with: request) { data, response, error in

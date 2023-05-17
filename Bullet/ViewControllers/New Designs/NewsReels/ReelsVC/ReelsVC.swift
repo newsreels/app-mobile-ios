@@ -130,8 +130,6 @@ class ReelsVC: UIViewController {
     }
 
     override func viewWillAppear(_: Bool) {
-        (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
-
         if isWatchingRotatedVideos {
             return
         }
@@ -240,10 +238,22 @@ class ReelsVC: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
             self.getArticleDataPayLoad()
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if let cell = self.collectionView.visibleCells.first as? ReelsCC {
+                if cell.playerLayer.player?.isPlaying == nil ||
+                    cell.playerLayer.player?.isPlaying == false ||
+                    cell.playerLayer.player?.currentItem == nil {
+                    SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                        cell.play()
+                    }
+                }
+            } else {
+                self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
+                self.getCurrentVisibleIndexPlayVideo()
+            }
+        }
         SharedManager.shared.isFirstimeSplashScreenLoaded = true
-
-        (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
-
         if scrollToItemFirstTime {
             currentlyPlayingIndexPath = userSelectedIndexPath
         }

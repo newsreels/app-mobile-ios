@@ -241,7 +241,6 @@ extension ReelsVC: ReelsCCDelegate {
 
         stopVideo()
         isViewControllerVisible = false
-        appDelegate.setOrientationPortraitInly()
 
         let content = reelsArray[indexPath.item]
         let vc = CommentsVC.instantiate(fromAppStoryboard: .Home)
@@ -630,7 +629,6 @@ extension ReelsVC: ReelsCCDelegate {
             MediaManager.sharedInstance.isLandscapeReelPresenting = true
 
             vc.modalPresentationStyle = .overFullScreen
-            (UIApplication.shared.delegate as! AppDelegate).setOrientationBothLandscape()
             present(vc, animated: true, completion: nil)
         }
     }
