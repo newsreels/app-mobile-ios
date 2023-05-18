@@ -239,18 +239,23 @@ class ReelsVC: UIViewController {
             self.getArticleDataPayLoad()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            guard SharedManager.shared.tabBarIndex == 0 else { return }
             if let cell = self.collectionView.visibleCells.first as? ReelsCC {
                 if cell.playerLayer.player?.isPlaying == nil ||
                     cell.playerLayer.player?.isPlaying == false ||
                     cell.playerLayer.player?.currentItem == nil {
                     SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                        cell.play()
+                        if SharedManager.shared.tabBarIndex == 0 {
+                            cell.play()
+                        }
                     }
                 }
-            } else {
+            } else if self.collectionView.numberOfItems(inSection: 0) > self.currentlyPlayingIndexPath.item {
                 self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
                 self.getCurrentVisibleIndexPlayVideo()
+            } else {
+                NotificationCenter.default.post(name: Notification.Name.notifyReelsTabBarTapped, object: nil, userInfo: nil)
             }
         }
         SharedManager.shared.isFirstimeSplashScreenLoaded = true
@@ -476,18 +481,23 @@ extension ReelsVC {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            guard SharedManager.shared.tabBarIndex == 0 else { return }
             if let cell = self.collectionView.visibleCells.first as? ReelsCC {
                 if cell.playerLayer.player?.isPlaying == nil ||
                     cell.playerLayer.player?.isPlaying == false ||
                     cell.playerLayer.player?.currentItem == nil {
                     SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        cell.setPlayer(didFail: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                        if SharedManager.shared.tabBarIndex == 0 {
+                            cell.setPlayer(didFail: true)
+                        }
                     }
                 }
-            } else {
+            } else if self.collectionView.numberOfItems(inSection: 0) > self.currentlyPlayingIndexPath.item {
                 self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
                 self.getCurrentVisibleIndexPlayVideo()
+            } else {
+                NotificationCenter.default.post(name: Notification.Name.notifyReelsTabBarTapped, object: nil, userInfo: nil)
             }
         }
     }
@@ -524,6 +534,7 @@ extension ReelsVC {
         pauseCellVideo(indexPath: currentlyPlayingIndexPath, shouldContinue: true)
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
             if let duration = cell.totalDuration?.formatToMilliSeconds() {
+                (cell.playerLayer.player as? NRPlayer)?.endTimer()
              SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
          }
         }
