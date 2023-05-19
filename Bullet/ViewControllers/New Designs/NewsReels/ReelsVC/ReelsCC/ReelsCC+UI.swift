@@ -31,7 +31,7 @@ extension ReelsCC {
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
-
+        seekBarDurationView.isHidden = true
         stackViewButtons.isHidden = false
         lblAuthor.isHidden = true
         cSeeAutherStacViewHeight.constant = 25
@@ -39,8 +39,6 @@ extension ReelsCC {
         setSeeMoreLabel()
         descriptionView.isHidden = true
         lblSeeMore.isHidden = true
-        viewBottomTitleDescription.isHidden = true
-        
         viewBottomTitleDescription.isHidden = false
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true

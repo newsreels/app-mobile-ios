@@ -66,12 +66,13 @@ extension ReelsCC {
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
+            self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
             playerLayer.player?.addPeriodicTimeObserver(forInterval: seekBarInterval, queue: DispatchQueue.main) { [weak self] time in
                 guard let self = self else { return }
                 let currentTime = CMTimeGetSeconds(time)
-                
-                // Update the seek bar (UISlider) value based on the current playback time
-                self.seekBar.value = Float(currentTime / (self.playerLayer.player?.totalDuration ?? 0))
+                self.seekBar.setValue(Float(currentTime / (self.playerLayer.player?.totalDuration ?? 0)), animated: true)
+                self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
+                self.seekBarCurrentDurationLabelValue = currentTime
             }
             seekBar.addTarget(self, action: #selector(seekBarTouchDown), for: .touchDown)
             seekBar.addTarget(self, action: #selector(seekBarTouchUpInside), for: .touchUpInside)
@@ -166,9 +167,13 @@ extension ReelsCC {
 
 extension ReelsCC {
     @objc func seekBarTouchDown() {
+        self.isSeeking = true
     }
 
     @objc func seekBarTouchUpInside() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.isSeeking = false
+        }
     }
 }
 extension ReelsCC {
@@ -180,7 +185,6 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 loadingStartingTime = nil
-                isSeeked = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     self.imgThumbnailView.isHidden = true
                 }
@@ -190,7 +194,9 @@ extension ReelsCC {
                         self.loader.stopAnimating()
                     }
                     self.loader.stopAnimating()
+                    if !self.isSeeking {
                         self.hideLoader()
+                    }
                     ANLoader.hide()
                 }
             case .paused:
@@ -201,7 +207,7 @@ extension ReelsCC {
                     }
                 }
                     isPlaying = false
-                if isSeeked {
+                if isSeeking {
                         self.imgThumbnailView.isHidden = false
                         self.loader.isHidden = false
                         self.loader.startAnimating()

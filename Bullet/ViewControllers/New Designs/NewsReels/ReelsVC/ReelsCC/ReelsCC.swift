@@ -86,14 +86,10 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var seekBar: UISlider!
+    @IBOutlet weak var seekBarDurationView: UIView!
+    @IBOutlet weak var seekBarCurrentDurationLabel: UILabel!
+    @IBOutlet weak var seekBarTotalDurationLabel: UILabel!
     
-    var playerLayer = AVPlayerLayer() {
-        didSet {
-            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
-            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
-            (playerLayer.player as? NRPlayer)?.reelId = reelModel?.id
-        }
-    }
     var currTime = -1.0
     var defaultLeftInset: CGFloat = 20.0
     var captionsArr: [UILabel]?
@@ -114,7 +110,49 @@ class ReelsCC: UICollectionViewCell {
     var lblSeeMoreNumberOfLines = 2
     var isPlayerEnded = false
     let seekBarInterval = CMTime(value: 1, timescale: 2)
-    var isSeeked = false
+    var seekBarCurrentDurationLabelValue = 0.0 {
+        didSet {
+            let formatter = DateComponentsFormatter()
+            formatter.allowedUnits = [.minute, .second]
+            formatter.zeroFormattingBehavior = .pad
+            if let formattedString = formatter.string(from: seekBarCurrentDurationLabelValue) {
+                seekBarCurrentDurationLabel.text = formattedString            }
+
+        }
+    }
+    var seekBarTotalDurationLabelValue = 0.0 {
+        didSet {
+            let formatter = DateComponentsFormatter()
+            formatter.allowedUnits = [.minute, .second]
+            formatter.zeroFormattingBehavior = .pad
+            if let formattedString = formatter.string(from: seekBarTotalDurationLabelValue) {
+                seekBarTotalDurationLabel.text = formattedString
+            }
+        }
+    }
+    var playerLayer = AVPlayerLayer() {
+        didSet {
+            (playerLayer.player as? NRPlayer)?.bufferStuckHandler = self.bufferStuckHandler
+            (playerLayer.player as? NRPlayer)?.stallingHandler = self.stallingHandler
+            (playerLayer.player as? NRPlayer)?.reelId = reelModel?.id
+        }
+    }
+    var isSeeking = false {
+        didSet {
+            if isSeeking {
+                self.viewBottomFooter.isHidden = true
+                self.stackViewButtons.isHidden = true
+                self.viewBottomTitleDescription.isHidden = true
+                self.seekBarDurationView.isHidden = false
+            } else {
+                self.viewBottomFooter.isHidden = false
+                self.stackViewButtons.isHidden = false
+                self.viewBottomTitleDescription.isHidden = false
+                self.seekBarDurationView.isHidden = true
+            }
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
@@ -140,6 +178,7 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
+        seekBarDurationView.isHidden = true
         seekBar.value = 0
         lblSeeMoreNumberOfLines = 2
         pause()
@@ -172,7 +211,9 @@ class ReelsCC: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         setDescriptionLabel()
-        hideLoader()
+        if !isSeeking {
+            hideLoader()
+        }
         imgThumbnailView?.layoutIfNeeded()
     }
 
@@ -186,7 +227,7 @@ class ReelsCC: UICollectionViewCell {
         let seekTime = CMTime(seconds: Double(slider.value) * totalTime, preferredTimescale: 1)
            
         self.playerLayer.player?.seek(to: seekTime)
-        isSeeked = true
+        self.seekBarCurrentDurationLabelValue =  Double(slider.value) * totalTime
     }
     @IBAction func didTapPlayButton(_: Any) {
         delegate?.didTapPlayVideo(cell: self)
