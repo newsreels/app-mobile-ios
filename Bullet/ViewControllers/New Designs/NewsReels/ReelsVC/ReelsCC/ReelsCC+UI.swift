@@ -17,7 +17,9 @@ extension ReelsCC {
         setupUIForSkelton()
         viewContent.backgroundColor = .black
         imgVolume.image = nil
-        lblChannelName.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 17 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
+        lblChannelName.font = UIFont(name: Constant.FONT_ROBOTO_BOLD, size: 15) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
+        lblChannelName.adjustsFontSizeToFitWidth = true
+        lblChannelName.minimumScaleFactor = 0.8
         lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
@@ -25,7 +27,7 @@ extension ReelsCC {
         viewBottomFooter.isHidden = false
         btnUserPlus.layer.cornerRadius = 8
         btnUserPlus.borderWidth = 0.5
-        btnUserPlus.borderColor = .white
+        btnUserPlus.borderColor = .white.withAlphaComponent(0.5)
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -181,7 +183,6 @@ extension ReelsCC {
 
     func setSeeMoreLabel() {
         viewUser.isHidden = false
-        lblSeeMore.textColor = UIColor.white
 
         if newsDescription.length > 85 { 
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 15 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
@@ -191,7 +192,8 @@ extension ReelsCC {
             
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
         }
-        lblSeeMore.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
+        lblSeeMore.font = UIFont(name: Constant.LibreFranklin_Medium, size: 13) ?? UIFont.boldSystemFont(ofSize: 13 + adjustFontSizeForiPad())
+        lblSeeMore.textColor =  UIColor(displayP3Red: 173, green: 173, blue: 173, alpha: 1)
         lblSeeMore.customize { label in
 
             label.text = newsDescription

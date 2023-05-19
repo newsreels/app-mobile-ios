@@ -173,7 +173,9 @@ class Constant {
     static let FONT_Oswald_Bold = "Oswald-Bold"
     static let FONT_Gilroy_ExtraBold = "Gilroy-ExtraBold"
     
-    
+    static let LibreFranklin_Bold = "LibreFranklin-Bold"
+    static let LibreFranklin_SemiBold = "LibreFranklin-SemiBold"
+    static let LibreFranklin_Medium = "LibreFranklin-Medium"
     static let tabFont = UIFont(name: FONT_Mulli_Semibold, size: 11)!
     static let tabFontSmall = UIFont(name: FONT_Mulli_Semibold, size: 10)!
 
