@@ -133,7 +133,7 @@ extension ReelsCC {
     
     func setImage() {
         if imgThumbnailView.image == nil {
-            imgThumbnailView.contentMode = .scaleAspectFill
+            imgThumbnailView.contentMode = .scaleAspectFit
             imgThumbnailView.frame = playerLayer.bounds
             imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             imgThumbnailView.frame = playerLayer.frame
