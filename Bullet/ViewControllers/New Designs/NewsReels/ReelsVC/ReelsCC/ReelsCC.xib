@@ -545,6 +545,14 @@
                                             <constraint firstAttribute="trailing" secondItem="f5k-jC-EaM" secondAttribute="trailing" id="lxj-aH-Hpd"/>
                                         </constraints>
                                     </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="abd-W4-bVj">
+                                        <rect key="frame" x="0.0" y="787" width="623" height="31"/>
+                                        <color key="minimumTrackTintColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="seekBarValueChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="L41-EK-EOj"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -561,6 +569,7 @@
                                     <constraint firstItem="KOH-qw-CwM" firstAttribute="width" secondItem="QBa-BP-unJ" secondAttribute="width" multiplier="0.03" id="EoB-5c-wUb"/>
                                     <constraint firstItem="iZX-AZ-vMZ" firstAttribute="top" secondItem="QBa-BP-unJ" secondAttribute="top" id="F8L-Rv-bQI"/>
                                     <constraint firstItem="8bS-tM-63S" firstAttribute="leading" secondItem="QBa-BP-unJ" secondAttribute="leading" id="Huj-8r-FTt"/>
+                                    <constraint firstAttribute="bottom" secondItem="abd-W4-bVj" secondAttribute="bottom" constant="-13" id="JZP-hg-F2u"/>
                                     <constraint firstItem="Sc6-Gd-Xe2" firstAttribute="centerY" secondItem="MEz-2H-eD5" secondAttribute="centerY" id="Jd9-zK-UtE"/>
                                     <constraint firstItem="YTR-zg-CI6" firstAttribute="leading" secondItem="QBa-BP-unJ" secondAttribute="leading" id="L9b-i4-o7A"/>
                                     <constraint firstItem="MEz-2H-eD5" firstAttribute="leading" secondItem="Brd-AR-RcV" secondAttribute="trailing" constant="12" id="LJp-Ah-9IB"/>
@@ -578,6 +587,8 @@
                                     <constraint firstItem="KOH-qw-CwM" firstAttribute="leading" secondItem="QBa-BP-unJ" secondAttribute="leading" id="YUR-Mj-CKR"/>
                                     <constraint firstItem="Vpj-hv-b0E" firstAttribute="leading" secondItem="KOH-qw-CwM" secondAttribute="trailing" constant="1.5" id="ZDe-4B-Ni0"/>
                                     <constraint firstAttribute="bottom" secondItem="KOH-qw-CwM" secondAttribute="bottom" id="Zsl-ys-vY6"/>
+                                    <constraint firstAttribute="trailing" secondItem="abd-W4-bVj" secondAttribute="trailing" constant="-2" id="Zys-Hi-KhL"/>
+                                    <constraint firstItem="abd-W4-bVj" firstAttribute="leading" secondItem="QBa-BP-unJ" secondAttribute="leading" constant="2" id="cb2-wC-lGh"/>
                                     <constraint firstItem="FpE-bl-uc7" firstAttribute="bottom" secondItem="7DD-EE-bMB" secondAttribute="bottom" constant="15" id="fJG-xS-bq8"/>
                                     <constraint firstAttribute="trailing" secondItem="izL-Do-EaD" secondAttribute="trailing" id="fgQ-95-hNO"/>
                                     <constraint firstItem="EBN-FX-pLj" firstAttribute="centerX" secondItem="QBa-BP-unJ" secondAttribute="centerX" id="g8B-sT-xrZ"/>
@@ -660,6 +671,7 @@
                 <outlet property="lblSeeMore" destination="7DD-EE-bMB" id="3VB-ot-Dnz"/>
                 <outlet property="loader" destination="Bgs-IR-Yhr" id="gmK-3p-hDK"/>
                 <outlet property="playerContainer" destination="YTR-zg-CI6" id="F6V-3J-ckz"/>
+                <outlet property="seekBar" destination="abd-W4-bVj" id="Xdu-4w-xet"/>
                 <outlet property="stackViewButtons" destination="FpE-bl-uc7" id="jGu-1B-DUj"/>
                 <outlet property="viewBackground" destination="QBa-BP-unJ" id="1rp-tI-JjE"/>
                 <outlet property="viewBottomFooter" destination="Fe5-Of-lai" id="C5M-If-rEn"/>
@@ -695,6 +707,9 @@
         <image name="newSendIC" width="25" height="25"/>
         <image name="newUnmuteIC" width="25" height="25"/>
         <image name="playButton" width="201.38499450683594" height="201.38499450683594"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

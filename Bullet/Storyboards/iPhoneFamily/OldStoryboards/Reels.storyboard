@@ -2873,7 +2873,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ArticlesMenuIcon" width="24" height="24"/>
+        <image name="ArticlesMenuIcon" width="81" height="80"/>
         <image name="BackArrowBlack" width="24" height="24"/>
         <image name="BackWhite" width="24" height="24"/>
         <image name="EmptySearch" width="311" height="197"/>

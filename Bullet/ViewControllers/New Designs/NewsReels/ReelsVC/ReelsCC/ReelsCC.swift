@@ -85,6 +85,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var viewSound: UIView!
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var seekBar: UISlider!
     
     var playerLayer = AVPlayerLayer() {
         didSet {
@@ -112,6 +113,8 @@ class ReelsCC: UICollectionViewCell {
     var totalDuration: Double?
     var lblSeeMoreNumberOfLines = 2
     var isPlayerEnded = false
+    let seekBarInterval = CMTime(value: 1, timescale: 2)
+    var isSeeked = false
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
@@ -137,7 +140,7 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
-        
+        seekBar.value = 0
         lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil
@@ -175,6 +178,16 @@ class ReelsCC: UICollectionViewCell {
 
     override func draw(_: CGRect) {}
 
+    @IBAction func seekBarValueChanged(_ sender: Any) {
+        guard let slider = sender as? UISlider else {
+            return
+        }
+        let totalTime = self.playerLayer.player?.totalDuration ?? 0
+        let seekTime = CMTime(seconds: Double(slider.value) * totalTime, preferredTimescale: 1)
+           
+        self.playerLayer.player?.seek(to: seekTime)
+        isSeeked = true
+    }
     @IBAction func didTapPlayButton(_: Any) {
         delegate?.didTapPlayVideo(cell: self)
     }
