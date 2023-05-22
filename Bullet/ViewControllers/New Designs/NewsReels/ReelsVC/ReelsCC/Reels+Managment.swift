@@ -62,7 +62,7 @@ extension ReelsCC {
             playerContainer.layer.addSublayer(playerLayer)
             playerLayer.frame = playerContainer.bounds
             playerContainer.backgroundColor = .clear
-            playerLayer.videoGravity = .resizeAspect
+            playerLayer.videoGravity = .resizeAspectFill
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
@@ -168,9 +168,11 @@ extension ReelsCC {
 extension ReelsCC {
     @objc func seekBarTouchDown() {
         self.isSeeking = true
+        self.seekBar.thumbTintColor = .white
     }
 
     @objc func seekBarTouchUpInside() {
+        self.seekBar.thumbTintColor = .clear
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.isSeeking = false
         }

@@ -143,7 +143,15 @@ class ReelsVC: UIViewController {
         if isBackButtonNeeded == false {
             if let ptcTBC = tabBarController as? PTCardTabBarController {
                 ptcTBC.showTabBar(true, animated: false)
+                ptcTBC.tabBar.backgroundImage = UIImage()
+                ptcTBC.tabBar.barTintColor = .clear
+                ptcTBC.tabBar.isTranslucent = true
+                            
+                ptcTBC.extendedLayoutIncludesOpaqueBars = true
+                ptcTBC.edgesForExtendedLayout = .all
+                
             }
+            
         }
 
         if SharedManager.shared.reloadRequiredFromTopics && !isFromArticles && !isFromDiscover {

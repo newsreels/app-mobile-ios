@@ -37,6 +37,21 @@ protocol ReelsCCDelegate: AnyObject {
     func didTapCaptions(cell: ReelsCC)
     func didTapOpenCaptionType(cell: ReelsCC, action: String)
 }
+import UIKit
+
+class CustomSlider: UISlider {
+    private let thumbSize: CGFloat = 5 // Adjust the size as desired
+
+      override func thumbRect(forBounds bounds: CGRect, trackRect rect: CGRect, value: Float) -> CGRect {
+          var thumbRect = super.thumbRect(forBounds: bounds, trackRect: rect, value: value)
+          let diff = thumbSize - thumbRect.size.width
+          thumbRect.origin.x -= diff / 2
+          thumbRect.size.width += diff
+          thumbRect.origin.y -= diff / 2
+          thumbRect.size.height += diff
+          return thumbRect
+      }
+}
 
 // MARK: - ReelsCC
 
@@ -85,7 +100,7 @@ class ReelsCC: UICollectionViewCell {
     @IBOutlet var viewSound: UIView!
     @IBOutlet var imgSound: UIImageView!
     @IBOutlet var authorBottomConstraint: NSLayoutConstraint!
-    @IBOutlet weak var seekBar: UISlider!
+    @IBOutlet weak var seekBar: CustomSlider!
     @IBOutlet weak var seekBarDurationView: UIView!
     @IBOutlet weak var seekBarCurrentDurationLabel: UILabel!
     @IBOutlet weak var seekBarTotalDurationLabel: UILabel!
@@ -179,6 +194,8 @@ class ReelsCC: UICollectionViewCell {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
         seekBarDurationView.isHidden = true
+        isSeeking = false
+        self.seekBar.thumbTintColor = .clear
         seekBar.value = 0
         lblSeeMoreNumberOfLines = 2
         pause()

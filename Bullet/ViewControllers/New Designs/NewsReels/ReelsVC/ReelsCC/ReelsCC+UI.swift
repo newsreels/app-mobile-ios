@@ -10,6 +10,14 @@ import UIKit
 import AVFoundation
 
 extension ReelsCC {
+    func imageWithImage(image:UIImage, scaledToSize newSize:CGSize) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        image.draw(in: CGRectMake(0, 0, newSize.width, newSize.height))
+        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+    
     func setupViews() {
         lblSeeMore.text = "                 "
         lblChannelName.text = "                    "
@@ -32,6 +40,8 @@ extension ReelsCC {
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
         seekBarDurationView.isHidden = true
+
+        self.seekBar.thumbTintColor = .clear
         stackViewButtons.isHidden = false
         lblAuthor.isHidden = true
         cSeeAutherStacViewHeight.constant = 25
@@ -43,7 +53,6 @@ extension ReelsCC {
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true
     }
-    
 
     func setupCell(model: Reel) {
         loadingStartingTime = nil
@@ -133,7 +142,7 @@ extension ReelsCC {
     
     func setImage() {
         if imgThumbnailView.image == nil {
-            imgThumbnailView.contentMode = .scaleAspectFit
+            imgThumbnailView.contentMode = .scaleAspectFill
             imgThumbnailView.frame = playerLayer.bounds
             imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             imgThumbnailView.frame = playerLayer.frame
