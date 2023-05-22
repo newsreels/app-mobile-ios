@@ -518,7 +518,7 @@ extension UploadManager {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
-        
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         AF.upload(multipartFormData: { (multipartFormData) in
             
             for item in params {

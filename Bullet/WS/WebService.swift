@@ -36,6 +36,7 @@ class WebService {
         //  headersToken["x-forwarded-for"] = "2.18.48.5"
         headersToken["x-app-platform"] = "ios"
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
         headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
@@ -74,6 +75,7 @@ class WebService {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
@@ -81,6 +83,7 @@ class WebService {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
@@ -157,6 +160,7 @@ class WebService {
         //  headersToken["x-forwarded-for"] = "2.18.48.5"
         headersToken["x-app-platform"] = "ios"
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
@@ -182,12 +186,14 @@ class WebService {
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
                                               "X-User-Timezone": TimeZone.current.identifier,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             } else {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
@@ -324,7 +330,7 @@ class WebService {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
-
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
             headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
         }
@@ -345,6 +351,7 @@ class WebService {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
@@ -353,6 +360,7 @@ class WebService {
                                               "x-app-platform": "ios",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
 
@@ -428,7 +436,7 @@ class WebService {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
-
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
             headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
         }
@@ -468,6 +476,7 @@ class WebService {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
@@ -476,6 +485,7 @@ class WebService {
                                               "x-app-platform": "ios",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
 
@@ -542,6 +552,7 @@ class WebService {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
             headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
         }
@@ -581,13 +592,16 @@ class WebService {
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
                                               "X-User-Timezone": TimeZone.current.identifier,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             } else {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "X-User-Timezone": TimeZone.current.identifier,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
 
@@ -656,7 +670,7 @@ class WebService {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
-
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
             headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
         }
@@ -709,7 +723,7 @@ class WebService {
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["X-User-Timezone"] = TimeZone.current.identifier
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
-
+        headersToken["x-user-ip"] = SharedManager.shared.getIPAddress() ?? ""
         if ((UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "") as? String ?? "").isEmpty {
             headersToken["x-user-language"] = Locale.current.languageCode ?? "en"
         }
@@ -748,12 +762,14 @@ class WebService {
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
                                               "X-User-Timezone": TimeZone.current.identifier,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "x-user-language": Locale.current.languageCode ?? "en",
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             } else {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                                              "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                                               "X-User-Timezone": TimeZone.current.identifier,
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
