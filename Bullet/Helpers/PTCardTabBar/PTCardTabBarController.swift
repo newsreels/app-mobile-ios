@@ -232,7 +232,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //customTabBar.theme_backgroundColor = GlobalPicker.customTabbarBGColor
             //smallBottomView.theme_backgroundColor = GlobalPicker.customTabbarBGColor
-            customTabBar.backgroundColor = .clear
+            customTabBar.backgroundColor = .white
             smallBottomView.backgroundColor = .white
             NotificationCenter.default.post(name: Notification.Name.notifyArticlesTabBarTapped, object: nil, userInfo: nil)
 
@@ -260,7 +260,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //customTabBar.theme_backgroundColor = GlobalPicker.customTabbarBGColor
             //smallBottomView.theme_backgroundColor = GlobalPicker.customTabbarBGColor
-            customTabBar.backgroundColor = .clear
+            customTabBar.backgroundColor = .white
             smallBottomView.backgroundColor = .white
             
             NotificationCenter.default.post(name: Notification.Name.notifySearchTabBarTapped, object: nil, userInfo: nil)
@@ -287,7 +287,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //customTabBar.theme_backgroundColor = GlobalPicker.customTabbarBGColor
             //smallBottomView.theme_backgroundColor = GlobalPicker.customTabbarBGColor
-            customTabBar.backgroundColor = .clear
+            customTabBar.backgroundColor = .white
             smallBottomView.backgroundColor = .white
             break
             
@@ -313,7 +313,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
             
             //customTabBar.theme_backgroundColor = GlobalPicker.customTabbarBGColor
             //smallBottomView.theme_backgroundColor = GlobalPicker.customTabbarBGColor
-            customTabBar.backgroundColor = .clear
+            customTabBar.backgroundColor = .white
             smallBottomView.backgroundColor = .white
             break
             

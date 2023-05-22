@@ -1310,6 +1310,7 @@ class SharedManager {
             var request = URLRequest(url: URL(string: "https://api.newsreels.app/analytics/duration/\(reelId)")!,timeoutInterval: Double.infinity)
             request.addValue("ios", forHTTPHeaderField: "x-app-platform")
             request.addValue(Bundle.main.releaseVersionNumberPretty, forHTTPHeaderField: "x-app-version")
+            request.addValue(TimeZone.current.identifier, forHTTPHeaderField: "X-User-Timezone")
             request.addValue(WebserviceManager.shared.API_VERSION, forHTTPHeaderField: "api-version")
             request.addValue(Locale.current.languageCode ?? "en", forHTTPHeaderField: "x-user-language")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")

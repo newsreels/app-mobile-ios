@@ -1564,10 +1564,6 @@ extension AppDelegate: SplashscreenLoaderVCDelegate {
 
 
 extension AppDelegate {
-    func getTimeZone() -> String{
-        var localTimeZoneIdentifier: String { return TimeZone.current.identifier }
-        return localTimeZoneIdentifier
-    }
     func getIPAddress() -> String? {
         var address : String?
 

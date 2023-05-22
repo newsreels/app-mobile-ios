@@ -1157,6 +1157,7 @@ extension PostArticleVC {
         headersToken["x-app-platform"] = "ios"
         headersToken["x-app-version"] = Bundle.main.releaseVersionNumberPretty
         headersToken["api-version"] = WebserviceManager.shared.API_VERSION
+        headersToken["X-User-Timezone"] = TimeZone.current.identifier
         
         var prevProgress: Float = 0
         

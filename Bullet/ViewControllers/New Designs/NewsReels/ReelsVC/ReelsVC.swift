@@ -112,7 +112,7 @@ class ReelsVC: UIViewController {
     var isFromArticles = false
     var isTapBack = false
     var isFirstVideo = true
-    
+    var retryGetReelsCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -143,13 +143,6 @@ class ReelsVC: UIViewController {
         if isBackButtonNeeded == false {
             if let ptcTBC = tabBarController as? PTCardTabBarController {
                 ptcTBC.showTabBar(true, animated: false)
-                ptcTBC.tabBar.backgroundImage = UIImage()
-                ptcTBC.tabBar.barTintColor = .clear
-                ptcTBC.tabBar.isTranslucent = true
-                            
-                ptcTBC.extendedLayoutIncludesOpaqueBars = true
-                ptcTBC.edgesForExtendedLayout = .all
-                
             }
             
         }
