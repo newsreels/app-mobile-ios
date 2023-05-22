@@ -108,21 +108,27 @@ public struct socialData: Codable {
 
 public struct Info: Codable {
     var viewCount: String?
-    var likeCount, commentCount: Int?
+    var views: Int? = nil
+    var likeCount: Int?
+    var commentCount: Int?
     var isLiked: Bool?
+    var socialLike: Int?
 
-    init(viewCount: String?, likeCount: Int?, commentCount: Int?, isLiked: Bool?) {
+    init(viewCount: String?, likeCount: Int?, commentCount: Int?, isLiked: Bool?, socialLike: Int?) {
         self.viewCount = viewCount
         self.likeCount = likeCount
         self.commentCount = commentCount
         self.isLiked = isLiked
+        self.socialLike = socialLike
     }
     
     enum CodingKeys: String, CodingKey {
         case viewCount = "view_count"
-        case likeCount = "like_count"
-        case commentCount = "comment_count"
-        case isLiked = "is_liked"
+         case views
+         case likeCount = "like_count"
+         case commentCount = "comment_count"
+         case isLiked = "is_liked"
+         case socialLike = "social_like"
     }
 }
 

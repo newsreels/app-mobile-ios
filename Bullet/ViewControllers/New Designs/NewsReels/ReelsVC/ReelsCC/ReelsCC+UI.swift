@@ -40,7 +40,6 @@ extension ReelsCC {
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
         seekBarDurationView.isHidden = true
-
         self.seekBar.thumbTintColor = .clear
         stackViewButtons.isHidden = false
         lblAuthor.isHidden = true
@@ -52,6 +51,7 @@ extension ReelsCC {
         viewBottomTitleDescription.isHidden = false
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true
+
     }
 
     func setupCell(model: Reel) {
@@ -69,7 +69,7 @@ extension ReelsCC {
                 view.removeFromSuperview()
             }
         }
-
+ 
         viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
@@ -168,7 +168,19 @@ extension ReelsCC {
         reelModel?.info = model
         lblLikeCount.minimumScaleFactor = 0.5
         lblCommentCount.minimumScaleFactor = 0.5
-
+        self.lblLikeCount.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 15)
+        self.lblLikeCount.textColor = .white
+        if let likesCount = model?.likeCount, likesCount > 0 {
+            self.lblLikeCount.text = String(likesCount)
+        } else {
+            self.lblLikeCount.text = ""
+        }
+        
+        if let commentCount = model?.commentCount, commentCount > 0 {
+            self.lblCommentCount.text = String(commentCount)
+        } else {
+            self.lblCommentCount.text = ""
+        }
         if (reelModel?.info?.isLiked ?? false) == false {
             imgLike.image = UIImage(named: "newLikeIC")
         } else {

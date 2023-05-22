@@ -266,7 +266,7 @@ extension ReelsVC: ReelsCCDelegate {
             likeCount = (likeCount ?? 0) + 1
         }
 
-        let info = Info(viewCount: reelsArray[indexPath.item].info?.viewCount, likeCount: likeCount, commentCount: reelsArray[indexPath.item].info?.commentCount, isLiked: !(reelsArray[indexPath.item].info?.isLiked ?? false))
+        let info = Info(viewCount: reelsArray[indexPath.item].info?.viewCount, likeCount: likeCount, commentCount: reelsArray[indexPath.item].info?.commentCount, isLiked: !(reelsArray[indexPath.item].info?.isLiked ?? false), socialLike: reelsArray[indexPath.item].info?.socialLike)
         reelsArray[indexPath.item].info = info
         cell.setLikeComment(model: reelsArray[indexPath.item].info, showAnimation: true)
 
