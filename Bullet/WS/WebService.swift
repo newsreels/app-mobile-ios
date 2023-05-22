@@ -81,7 +81,7 @@ class WebService {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
-                                              "X-User-Timezone": TimeZone.current.identifier
+                                              "X-User-Timezone": TimeZone.current.identifier,
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
 
@@ -351,7 +351,7 @@ class WebService {
                             } else {
                                 httpHeader = ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                                               "x-app-platform": "ios",
-                                              "X-User-Timezone": TimeZone.current.identifier
+                                              "X-User-Timezone": TimeZone.current.identifier,
                                               "x-app-version": Bundle.main.releaseVersionNumberPretty,
                                               "api-version": WebserviceManager.shared.API_VERSION]
                             }
