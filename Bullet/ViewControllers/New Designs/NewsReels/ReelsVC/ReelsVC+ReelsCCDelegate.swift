@@ -239,17 +239,14 @@ extension ReelsVC: ReelsCCDelegate {
     func didTapComment(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
 
-        stopVideo()
+        stopVideo(shouldContinue: true)
         isViewControllerVisible = false
 
         let content = reelsArray[indexPath.item]
         let vc = CommentsVC.instantiate(fromAppStoryboard: .Home)
         vc.articleID = content.id ?? ""
         vc.delegate = self
-        let navVC = UINavigationController(rootViewController: vc)
-        navVC.isNavigationBarHidden = true
-        navVC.modalPresentationStyle = .overFullScreen
-        present(navVC, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
 
     func didTapLike(cell: ReelsCC) {
