@@ -27,7 +27,7 @@ class CustomSlider: UISlider {
 
     }
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-           let expandedBounds = bounds.insetBy(dx: -20, dy: -20)
+           let expandedBounds = bounds.insetBy(dx: -20, dy: -30)
            return expandedBounds.contains(point)
        }
     private func thumbImage(radius: CGFloat, color: UIColor) -> UIImage {

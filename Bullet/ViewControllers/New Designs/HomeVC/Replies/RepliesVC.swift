@@ -63,7 +63,6 @@ class RepliesVC: UIViewController {
         registerCells()
         setLocalization()
         setupUI()
-        IQKeyboardManager.shared.enable = false
         txtViewComment.inputAccessoryView = nil
         addTextViewPlaceHolderLabel()
         txtViewComment.delegate = self
@@ -95,7 +94,10 @@ class RepliesVC: UIViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
+        IQKeyboardManager.shared.enableAutoToolbar = false
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -116,7 +118,6 @@ class RepliesVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = true
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -187,8 +188,11 @@ class RepliesVC: UIViewController {
     
     
     func setLocalization() {
-        
-        lblTitle.text = NSLocalizedString("Replies", comment: "")
+        if self.commentArray.count > 0 {
+            lblTitle.text = NSLocalizedString("\(self.commentArray.count) Replies", comment: "")
+        } else {
+            lblTitle.text = NSLocalizedString("Replies", comment: "")
+        }
     }
     
     
@@ -236,16 +240,16 @@ class RepliesVC: UIViewController {
             if currentlySelectedSection != nil && currentlySelectedRow != nil {
                 let userName = commentArray[currentlySelectedSection!].replies?[currentlySelectedRow!].user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
             } else if currentlySelectedSection != nil && currentlySelectedRow == nil {
                 let userName = commentArray[currentlySelectedSection!].user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
             } else {
                 
                 let userName = selectedComment?.user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
                 
             }
             self.keyboardControl(notification, isShowing: true)
@@ -330,7 +334,7 @@ class RepliesVC: UIViewController {
     @IBAction func didTapBtnClose(_ sender: Any) {
         
         self.view.endEditing(true)
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func didTapSendButton(_ sender: Any) {
@@ -585,8 +589,9 @@ extension RepliesVC {
         isApiCallAlreadyRunning = true
         
         WebService.URLResponse("social/comments/articles/\(articleID)?parent_id=\(parentID)&page=\(page)", method: .get, parameters: nil, headers: token, withSuccess: { [weak self] (response) in
-            ANLoader.hide()
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                ANLoader.hide()
+            }
             guard let self = self else {
                 return
             }
@@ -610,6 +615,7 @@ extension RepliesVC {
                                     self.commentArray.append(newComment)
                                 }
                             }
+                            self.setLocalization()
                             self.reloadTableUpdateContentSize()
                         }
                         
@@ -654,7 +660,7 @@ extension RepliesVC {
                         }
                         
                     }
-                    
+                    self.setLocalization()
                     // Meta data
                     if let next = FULLResponse.meta?.next, next.isEmpty == false {
                         self.childNextPageData["\(parentID )"] = next
@@ -703,7 +709,6 @@ extension RepliesVC {
         
         WebService.URLResponse("social/comments/create", method: .post, parameters: params, headers: token, withSuccess: { [weak self] (response) in
             ANLoader.hide()
-            
             guard let self = self else {
                 return
             }
@@ -720,7 +725,7 @@ extension RepliesVC {
                             
                             self.commentArray.insert(newComment, at: 0)
                         }
-                        
+                        self.setLocalization()
                         self.reloadTableScrollToTop()
                         
                     }
@@ -742,7 +747,7 @@ extension RepliesVC {
                                     }
                                     
                                 }
-                                
+                                self.setLocalization()
                                 self.reloadSectionUpdateContentSize(index: section)
                             }
                             

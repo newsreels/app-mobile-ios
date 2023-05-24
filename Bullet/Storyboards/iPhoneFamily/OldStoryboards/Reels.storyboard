@@ -489,7 +489,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lki-7A-Uou">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="828"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="821"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="2ci-Gi-oLi">
                                     <size key="itemSize" width="128" height="135"/>
@@ -730,7 +730,7 @@
                             <constraint firstItem="Ed0-pM-zRJ" firstAttribute="trailing" secondItem="lki-7A-Uou" secondAttribute="trailing" id="fd4-n2-F03"/>
                             <constraint firstItem="7Kz-b1-MDn" firstAttribute="leading" secondItem="Ed0-pM-zRJ" secondAttribute="leading" constant="73" id="gve-5Y-HMA"/>
                             <constraint firstItem="Ed0-pM-zRJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Drd-hn-Vwh" secondAttribute="trailing" constant="20" id="o5f-mp-iVT"/>
-                            <constraint firstAttribute="bottom" secondItem="lki-7A-Uou" secondAttribute="bottom" constant="68" id="r0F-jm-pth"/>
+                            <constraint firstAttribute="bottom" secondItem="lki-7A-Uou" secondAttribute="bottom" constant="75" id="r0F-jm-pth"/>
                             <constraint firstItem="Ed0-pM-zRJ" firstAttribute="trailing" secondItem="7Kz-b1-MDn" secondAttribute="trailing" constant="74" id="rLN-LR-bLE"/>
                             <constraint firstItem="SrC-Ke-Y66" firstAttribute="centerX" secondItem="7Rg-eb-YVe" secondAttribute="centerX" id="tcu-lH-MZA"/>
                         </constraints>

@@ -49,12 +49,10 @@ class CommentsVC: UIViewController {
         registerCells()
         setupUI()
         //        addGestureRecognizer()
-        IQKeyboardManager.shared.enable = false
         txtViewComment.inputAccessoryView = nil
         setLocalization()
         addTextViewPlaceHolderLabel()
         txtViewComment.delegate = self
-        //        tableView.keyboardDismissMode = .onDrag
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -64,7 +62,9 @@ class CommentsVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -80,7 +80,6 @@ class CommentsVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        IQKeyboardManager.shared.enable = true
         self.delegate?.commentsVCDismissed(articleID: self.articleID)
         NotificationCenter.default.removeObserver(self)
     }
@@ -494,7 +493,10 @@ extension CommentsVC: CommentsCCDelegate {
         vc.articleID = self.articleID
         vc.parentID = comment.id ?? ""
         vc.isReplyTagRequired = isReplyTagRequired
-        self.navigationController?.pushViewController(vc, animated: true)
+        let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        vc.modalTransitionStyle = modalStyle
+        self.present(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

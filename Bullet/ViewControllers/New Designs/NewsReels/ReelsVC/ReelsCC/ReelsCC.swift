@@ -181,7 +181,6 @@ class ReelsCC: UICollectionViewCell {
         }
         seekBarDurationView.isHidden = true
         isSeeking = false
-        self.seekBar.thumbTintColor = .clear
         seekBar.value = 0
         lblSeeMoreNumberOfLines = 2
         pause()
