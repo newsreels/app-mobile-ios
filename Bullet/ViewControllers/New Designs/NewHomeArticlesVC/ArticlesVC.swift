@@ -585,7 +585,13 @@ class ArticlesVC: UIViewController, UIGestureRecognizerDelegate {
         if fromDiscover {
             greetingLabel.text = categoryTitleString
         }
-        
+        if let originalImage = UIImage(named: "ArticlesMenuIcon") {
+        let color = UIColor.red
+        let coloredImage = originalImage.withRenderingMode(.alwaysTemplate)
+        articleMenuIcon.image =  coloredImage
+        articleMenuIcon.tintColor = Constant.appColor.darkGray
+    }
+
         if fromDiscover {
             articleMenuIcon.isHidden = true
             topicFollowIcon.isHidden = false
