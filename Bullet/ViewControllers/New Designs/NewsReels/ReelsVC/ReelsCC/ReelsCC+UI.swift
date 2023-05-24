@@ -8,7 +8,72 @@
 
 import UIKit
 import AVFoundation
+class CustomSlider: UISlider {
+    @IBInspectable var trackHeight: CGFloat = 3
+    
+    // Custom thumb view which will be converted to UIImage
+    // and set as thumb. You can customize it's colors, border, etc.
+    private lazy var thumbView: UIView = {
+        let thumb = UIView()
+        thumb.backgroundColor = .white//thumbTintColor
+        thumb.layer.borderWidth = 0.4
+        thumb.layer.borderColor = UIColor.darkGray.cgColor
+        return thumb
+    }()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.updateState()
 
+    }
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+           let expandedBounds = bounds.insetBy(dx: -20, dy: -20)
+           return expandedBounds.contains(point)
+       }
+    private func thumbImage(radius: CGFloat, color: UIColor) -> UIImage {
+        // Set proper frame
+        // y: radius / 2 will correctly offset the thumb
+        
+        thumbView.frame = CGRect(x: 0, y: radius / 2, width: radius, height: radius)
+        thumbView.layer.cornerRadius = radius / 2
+        thumbView.backgroundColor = color
+        // Convert thumbView to UIImage
+        // See this: https://stackoverflow.com/a/41288197/7235585
+        
+        let renderer = UIGraphicsImageRenderer(bounds: thumbView.bounds)
+        return renderer.image { rendererContext in
+            thumbView.layer.render(in: rendererContext.cgContext)
+        }
+    }
+    
+    override func trackRect(forBounds bounds: CGRect) -> CGRect {
+        // Set custom track height
+        // As seen here: https://stackoverflow.com/a/49428606/7235585
+        var newRect = super.trackRect(forBounds: bounds)
+        newRect.size.height = trackHeight
+        return newRect
+    }
+    
+    func updateState() {
+        if isHighlighted {
+            self.maximumTrackTintColor = .white.withAlphaComponent(0.4)
+            self.minimumTrackTintColor = .white.withAlphaComponent(0.9)
+            trackHeight = 5
+            layoutSubviews()
+            let thumb = thumbImage(radius: 15, color: .white.withAlphaComponent(0.9))
+            setThumbImage(thumb, for: .normal)
+            setThumbImage(thumb, for: .highlighted)
+        } else {
+            self.maximumTrackTintColor = .white.withAlphaComponent(0.2)
+            self.minimumTrackTintColor = .white.withAlphaComponent(0.8)
+            trackHeight = 3
+            layoutSubviews()
+            let thumb = thumbImage(radius: 6, color: .white.withAlphaComponent(0.8))
+            setThumbImage(thumb, for: .normal)
+            setThumbImage(thumb, for: .highlighted)
+        }
+    }
+}
 extension ReelsCC {
     func imageWithImage(image:UIImage, scaledToSize newSize:CGSize) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
@@ -25,22 +90,29 @@ extension ReelsCC {
         setupUIForSkelton()
         viewContent.backgroundColor = .black
         imgVolume.image = nil
-        lblChannelName.font = UIFont(name: Constant.FONT_ROBOTO_BOLD, size: 15) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
+        lblChannelName.font = UIFont(name: Constant.FONT_ROBOTO_BOLD, size: 17) ?? UIFont.boldSystemFont(ofSize: 17 + adjustFontSizeForiPad())
         lblChannelName.adjustsFontSizeToFitWidth = true
         lblChannelName.minimumScaleFactor = 0.8
-        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 12 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 12 + adjustFontSizeForiPad())
+        lblAuthor.font = UIFont(name: Constant.FONT_Mulli_BOLD, size: 16 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 16 + adjustFontSizeForiPad())
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAuthor))
         lblChannelName.addGestureRecognizer(tapGestureRecognizer)
         lblChannelName.isUserInteractionEnabled = true
         viewBottomFooter.isHidden = false
         btnUserPlus.layer.cornerRadius = 8
-        btnUserPlus.borderWidth = 0.5
+        btnUserPlus.borderWidth = 1
         btnUserPlus.borderColor = .white.withAlphaComponent(0.5)
         btnUserPlus.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
         seekBarDurationView.isHidden = true
-        self.seekBar.thumbTintColor = .clear
+//        self.seekBar.thumbTintColor = .clear
+//        if let thumbImage = UIImage(named: "seekBarThumb") {
+//            let thumbSize = CGSize(width: 5, height: 5)
+//            let resizedThumbImage = thumbImage.resized(to: thumbSize)
+//            self.seekBar.setThumbImage(resizedThumbImage, for: .normal)
+//            self.seekBar.setThumbImage(resizedThumbImage, for: .highlighted)
+//
+//        }
         stackViewButtons.isHidden = false
         lblAuthor.isHidden = true
         cSeeAutherStacViewHeight.constant = 25
@@ -211,7 +283,7 @@ extension ReelsCC {
             
             lblDescriptionAbove.font = UIFont(name: Constant.FONT_Mulli_Semibold, size: 18 + adjustFontSizeForiPad()) ?? UIFont.boldSystemFont(ofSize: 18 + adjustFontSizeForiPad())
         }
-        lblSeeMore.font = UIFont(name: Constant.LibreFranklin_Medium, size: 13) ?? UIFont.boldSystemFont(ofSize: 13 + adjustFontSizeForiPad())
+        lblSeeMore.font = UIFont(name: Constant.LibreFranklin_Medium, size: 15) ?? UIFont.boldSystemFont(ofSize: 15 + adjustFontSizeForiPad())
         lblSeeMore.textColor =  UIColor(displayP3Red: 173, green: 173, blue: 173, alpha: 1)
         lblSeeMore.customize { label in
 

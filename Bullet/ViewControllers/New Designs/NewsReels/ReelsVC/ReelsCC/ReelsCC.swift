@@ -39,20 +39,6 @@ protocol ReelsCCDelegate: AnyObject {
 }
 import UIKit
 
-class CustomSlider: UISlider {
-    private let thumbSize: CGFloat = 5 // Adjust the size as desired
-
-      override func thumbRect(forBounds bounds: CGRect, trackRect rect: CGRect, value: Float) -> CGRect {
-          var thumbRect = super.thumbRect(forBounds: bounds, trackRect: rect, value: value)
-          let diff = thumbSize - thumbRect.size.width
-          thumbRect.origin.x -= diff / 2
-          thumbRect.size.width += diff
-          thumbRect.origin.y -= diff / 2
-          thumbRect.size.height += diff
-          return thumbRect
-      }
-}
-
 // MARK: - ReelsCC
 
 class ReelsCC: UICollectionViewCell {
@@ -124,7 +110,7 @@ class ReelsCC: UICollectionViewCell {
     var totalDuration: Double?
     var lblSeeMoreNumberOfLines = 2
     var isPlayerEnded = false
-    let seekBarInterval = CMTime(value: 1, timescale: 2)
+
     var seekBarCurrentDurationLabelValue = 0.0 {
         didSet {
             let formatter = DateComponentsFormatter()

@@ -67,7 +67,7 @@ extension ReelsCC {
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
             self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
-            playerLayer.player?.addPeriodicTimeObserver(forInterval: seekBarInterval, queue: DispatchQueue.main) { [weak self] time in
+            playerLayer.player?.addPeriodicTimeObserver(forInterval: CMTime(value: 1, timescale: 5), queue: DispatchQueue.main) { [weak self] time in
                 guard let self = self else { return }
                 let currentTime = CMTimeGetSeconds(time)
                 self.seekBar.setValue(Float(currentTime / (self.playerLayer.player?.totalDuration ?? 0)), animated: true)
@@ -168,11 +168,11 @@ extension ReelsCC {
 extension ReelsCC {
     @objc func seekBarTouchDown() {
         self.isSeeking = true
-        self.seekBar.thumbTintColor = .white
+        self.seekBar.updateState()
     }
 
     @objc func seekBarTouchUpInside() {
-        self.seekBar.thumbTintColor = .clear
+        self.seekBar.updateState()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.isSeeking = false
         }

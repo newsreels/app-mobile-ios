@@ -283,6 +283,7 @@
 		AC7153532A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153412A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf */; };
 		AC7153542A1746D30066F1F2 /* LibreFranklin-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153422A1746D30066F1F2 /* LibreFranklin-Black.ttf */; };
 		AC8704CB2A06B98400D87459 /* ReelsCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */; };
+		ACA568862A1E23E8008A01AC /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568852A1E23E8008A01AC /* CustomSlider.swift */; };
 		B86BB28A2930D78700AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */; };
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
@@ -1459,6 +1460,7 @@
 		AC7153412A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-MediumItalic.ttf"; sourceTree = "<group>"; };
 		AC7153422A1746D30066F1F2 /* LibreFranklin-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Black.ttf"; sourceTree = "<group>"; };
 		AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsCacheManager.swift; sourceTree = "<group>"; };
+		ACA568852A1E23E8008A01AC /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
@@ -3085,6 +3087,7 @@
 				DEA3254D27C4E3A000039BAE /* LoaderButton.swift */,
 				DE996C3C27CDF64F005A6F6E /* GMView.swift */,
 				DE96B21F289F95190097CEEC /* SwiftUIManager.swift */,
+				ACA568852A1E23E8008A01AC /* CustomSlider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -6467,6 +6470,7 @@
 				C273928726243B48000A3C57 /* GenericVideoCell.swift in Sources */,
 				DEB7CC932817C70400F74136 /* menuCC.swift in Sources */,
 				DE98501D2671EDEE006C9DEC /* YouTubePlayer.swift in Sources */,
+				ACA568862A1E23E8008A01AC /* CustomSlider.swift in Sources */,
 				C2F5A25225868A3C00E401E8 /* AppLanguageVC.swift in Sources */,
 				DED01B4A2651025D00616C2F /* UIColor+Extensions.swift in Sources */,
 				3D8F7F36268CA1B30087D874 /* ESRefreshComponent.swift in Sources */,
