@@ -13,7 +13,7 @@ class SearchViewModel: ObservableObject {
     @Published var isSearching: Bool = false
     @Published var searchData: NewSearchData?
     @Published var discoverData: NewDiscoverData?
-
+    @Published var fetchedData = false
     @Published var histories: [SearchHistory] = []
     
     func search(_ text: String) {
@@ -45,6 +45,7 @@ class SearchViewModel: ObservableObject {
         URLSessionProvider.shared.request(NewDiscoverData.self, service: SearchService.getDiscover) { result in
             DispatchQueue.main.async {
                 self.isSearching = false
+                self.fetchedData = true
                 switch result {
                 case .success(let data):
                     self.discoverData = data

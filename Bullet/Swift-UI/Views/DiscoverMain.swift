@@ -43,6 +43,18 @@ struct DiscoverMain: View {
                         }
                         else if let data = searchViewModel.discoverData {
                             dataRows(discoverData: data.discover)
+                        } else if searchViewModel.fetchedData {
+                                VStack {
+                                    Image("noSearchResult")
+                                        .frame(height: 272)
+                                        .padding(.bottom, 50)
+                                    Text("Sorry! no result have been found :(")
+                                        .font(Font.title2)
+                                    Text("Sorry we can’t find what you’re looking for.\nPlease try in another way.")
+                                        .font(.caption2)
+                                        .multilineTextAlignment(.center)
+                                    Spacer()
+                                }
                         }
 //                        else {
 //                            VStack {
