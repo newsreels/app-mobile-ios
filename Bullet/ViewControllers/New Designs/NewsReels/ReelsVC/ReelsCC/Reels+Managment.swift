@@ -67,15 +67,6 @@ extension ReelsCC {
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
             self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
-            playerLayer.player?.addPeriodicTimeObserver(forInterval: CMTime(value: 1, timescale: 5), queue: DispatchQueue.main) { [weak self] time in
-                guard let self = self else { return }
-                let currentTime = CMTimeGetSeconds(time)
-                self.seekBar.setValue(Float(currentTime / (self.playerLayer.player?.totalDuration ?? 0)), animated: true)
-                self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
-                self.seekBarCurrentDurationLabelValue = currentTime
-            }
-            seekBar.addTarget(self, action: #selector(seekBarTouchDown), for: .touchDown)
-            seekBar.addTarget(self, action: #selector(seekBarTouchUpInside), for: .touchUpInside)
             imgThumbnailView.layoutIfNeeded()
             if let collectionView = superview as? UICollectionView,
                let index = collectionView.indexPath(for: self) {
@@ -166,19 +157,6 @@ extension ReelsCC {
 }
 
 extension ReelsCC {
-    @objc func seekBarTouchDown() {
-        self.isSeeking = true
-        self.seekBar.updateState()
-    }
-
-    @objc func seekBarTouchUpInside() {
-        self.seekBar.updateState()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.isSeeking = false
-        }
-    }
-}
-extension ReelsCC {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "timeControlStatus", let player = object as? AVPlayer {
             self.imgThumbnailView.isHidden = false
@@ -186,6 +164,22 @@ extension ReelsCC {
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
+                timeObserver = playerLayer.player?.addPeriodicTimeObserver(forInterval: CMTime(value: 1, timescale: 100), queue: DispatchQueue.main) { [weak self] time in
+                    guard let self = self else { return }
+                    let currentTime = CMTimeGetSeconds(time)
+                    UIView.animate(withDuration: self.isSeeking ? 0 :
+                                    currentTime == 0 ? 0 :
+                                    currentTime > 1.5 ? 1.3 : 0.9
+                    ) {
+                        if let total = self.playerLayer.player?.totalDuration, total > 0 {
+                            self.seekBar.setValue(Float(currentTime / (total)), animated: true)
+                        } else {
+                            print("fuck")
+                        }
+                    }
+                    self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
+                    self.seekBarCurrentDurationLabelValue = currentTime
+                }
                 loadingStartingTime = nil
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     self.imgThumbnailView.isHidden = true
@@ -247,3 +241,4 @@ extension ReelsCC {
     }
     
 }
+

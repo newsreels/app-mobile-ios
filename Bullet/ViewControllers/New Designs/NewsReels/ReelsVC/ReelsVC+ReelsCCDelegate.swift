@@ -69,6 +69,8 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if let cell = cell as? ReelsCC {
+            cell.seekBar.value = 0
+            cell.timeObserver = nil
             cell.stopVideo()
             cell.pause()
         }
@@ -76,6 +78,8 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
+            cell.seekBar.value = 0
+            cell.timeObserver = nil
             if let source = reelsArray[indexPath.item].source {
                 let fav = source.favorite ?? false
                 DispatchQueue.main.async {

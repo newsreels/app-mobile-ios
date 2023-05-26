@@ -110,6 +110,7 @@ class ReelsCC: UICollectionViewCell {
     var totalDuration: Double?
     var lblSeeMoreNumberOfLines = 2
     var isPlayerEnded = false
+    var timeObserver: Any?
 
     var seekBarCurrentDurationLabelValue = 0.0 {
         didSet {
@@ -158,7 +159,6 @@ class ReelsCC: UICollectionViewCell {
         super.awakeFromNib()
         setupViews()
         setDescriptionLabel()
-
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblSeeMore.semanticContentAttribute = .forceRightToLeft
@@ -179,9 +179,12 @@ class ReelsCC: UICollectionViewCell {
         if let id = self.reelModel?.id, SharedManager.shared.playingPlayers.count > 0, SharedManager.shared.playingPlayers.contains(id) {
             SharedManager.shared.playingPlayers.remove(object: id)
         }
+        if let observer = timeObserver {
+            playerLayer.player?.removeTimeObserver(observer)
+            timeObserver = nil
+        }
         seekBarDurationView.isHidden = true
         isSeeking = false
-        seekBar.value = 0
         lblSeeMoreNumberOfLines = 2
         pause()
         imgThumbnailView.image = nil
@@ -230,6 +233,18 @@ class ReelsCC: UICollectionViewCell {
            
         self.playerLayer.player?.seek(to: seekTime)
         self.seekBarCurrentDurationLabelValue =  Double(slider.value) * totalTime
+    }
+    
+    @IBAction func seekBarTouchDown() {
+        self.isSeeking = true
+        self.seekBar.updateState()
+    }
+
+    @IBAction func seekBarTouchUpInside() {
+        self.seekBar.updateState()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.isSeeking = false
+        }
     }
     @IBAction func didTapPlayButton(_: Any) {
         delegate?.didTapPlayVideo(cell: self)

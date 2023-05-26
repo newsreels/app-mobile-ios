@@ -653,12 +653,12 @@
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="abd-W4-bVj" customClass="CustomSlider" customModule="Newsreels" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="787" width="627" height="16"/>
+                                <rect key="frame" x="-3" y="787" width="625" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="inV-mU-l2K"/>
                                 </constraints>
-                                <color key="minimumTrackTintColor" systemColor="opaqueSeparatorColor"/>
-                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -666,6 +666,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="seekBarTouchDown" destination="gTV-IL-0wX" eventType="touchDown" id="u4g-RY-CFM"/>
+                                    <action selector="seekBarTouchUpInside" destination="gTV-IL-0wX" eventType="touchUpInside" id="8PJ-4C-T3X"/>
+                                    <action selector="seekBarTouchUpInside" destination="gTV-IL-0wX" eventType="touchUpOutside" id="Wmo-5J-mLf"/>
                                     <action selector="seekBarValueChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="vAw-qY-z9j"/>
                                 </connections>
                             </slider>
@@ -678,11 +681,11 @@
                         <constraints>
                             <constraint firstItem="QBa-BP-unJ" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" id="3ja-EB-Rhi"/>
                             <constraint firstAttribute="bottom" secondItem="abd-W4-bVj" secondAttribute="bottom" constant="2" id="5xd-Sz-put"/>
-                            <constraint firstAttribute="trailing" secondItem="abd-W4-bVj" secondAttribute="trailing" constant="-2" id="IJd-Ws-9Sq"/>
+                            <constraint firstAttribute="trailing" secondItem="abd-W4-bVj" secondAttribute="trailing" constant="-1" id="IJd-Ws-9Sq"/>
                             <constraint firstItem="QBa-BP-unJ" firstAttribute="top" secondItem="a1Y-yX-ZiR" secondAttribute="top" id="KEW-j8-7JR"/>
                             <constraint firstAttribute="trailing" secondItem="QBa-BP-unJ" secondAttribute="trailing" id="hxb-e3-gbV"/>
                             <constraint firstItem="Bgs-IR-Yhr" firstAttribute="centerX" secondItem="a1Y-yX-ZiR" secondAttribute="centerX" id="jsM-z4-D3o"/>
-                            <constraint firstItem="abd-W4-bVj" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" constant="-2" id="ljz-yL-V3J"/>
+                            <constraint firstItem="abd-W4-bVj" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" constant="-1" id="ljz-yL-V3J"/>
                             <constraint firstItem="Bgs-IR-Yhr" firstAttribute="centerY" secondItem="a1Y-yX-ZiR" secondAttribute="centerY" id="uLY-h1-G99"/>
                             <constraint firstAttribute="bottom" secondItem="QBa-BP-unJ" secondAttribute="bottom" constant="7" id="vA4-We-VxZ"/>
                         </constraints>
@@ -766,10 +769,10 @@
         <image name="newUnmuteIC" width="25" height="25"/>
         <image name="playButton" width="201.38499450683594" height="201.38499450683594"/>
         <image name="seekBarPlay" width="25" height="25"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

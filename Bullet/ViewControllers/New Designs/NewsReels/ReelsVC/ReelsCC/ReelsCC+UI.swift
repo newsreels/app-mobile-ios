@@ -20,12 +20,12 @@ class CustomSlider: UISlider {
         thumb.layer.borderColor = UIColor.darkGray.cgColor
         return thumb
     }()
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.updateState()
-
     }
+
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
            let expandedBounds = bounds.insetBy(dx: -20, dy: -30)
            return expandedBounds.contains(point)
@@ -105,14 +105,6 @@ extension ReelsCC {
         btnUserPlus.layer.masksToBounds = true
         btnUserPlus.titleLabel?.adjustsFontSizeToFitWidth = true
         seekBarDurationView.isHidden = true
-//        self.seekBar.thumbTintColor = .clear
-//        if let thumbImage = UIImage(named: "seekBarThumb") {
-//            let thumbSize = CGSize(width: 5, height: 5)
-//            let resizedThumbImage = thumbImage.resized(to: thumbSize)
-//            self.seekBar.setThumbImage(resizedThumbImage, for: .normal)
-//            self.seekBar.setThumbImage(resizedThumbImage, for: .highlighted)
-//
-//        }
         stackViewButtons.isHidden = false
         lblAuthor.isHidden = true
         cSeeAutherStacViewHeight.constant = 25
@@ -123,7 +115,6 @@ extension ReelsCC {
         viewBottomTitleDescription.isHidden = false
         authorBottomConstraint?.constant = 0
         descriptionView.isHidden = true
-
     }
 
     func setupCell(model: Reel) {
@@ -141,7 +132,6 @@ extension ReelsCC {
                 view.removeFromSuperview()
             }
         }
- 
         viewSubTitle.subviews.forEach { $0.removeFromSuperview() }
         captionsArr?.removeAll()
         captionsViewArr?.removeAll()
