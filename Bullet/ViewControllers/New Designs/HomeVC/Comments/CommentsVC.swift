@@ -472,7 +472,7 @@ extension CommentsVC: CommentsCCDelegate {
     
     func didTapTypeReply(cell: CommentsCC) {
         
-        openReplies(isReplyTagRequired: true, cell: cell)
+        openReplies(isReplyTagRequired: false, cell: cell)
     }
     
     func didTapOpenReply(cell: CommentsCC) {
@@ -495,7 +495,16 @@ extension CommentsVC: CommentsCCDelegate {
         vc.isReplyTagRequired = isReplyTagRequired
         let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
         vc.modalTransitionStyle = modalStyle
-        self.present(vc, animated: true)
+        // Set up a custom transition animation
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromRight
+        self.view.window?.layer.add(transition, forKey: kCATransition)
+        self.present(vc, animated: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.view.isHidden = true
+        }
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
     

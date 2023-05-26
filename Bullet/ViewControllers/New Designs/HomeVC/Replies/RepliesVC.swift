@@ -37,6 +37,7 @@ class RepliesVC: UIViewController {
 //    @IBOutlet weak var viewLine: UIView!
     @IBOutlet weak var viewVerticalLine: UIView!
     @IBOutlet weak var imgUserDP: UIImageView!
+    @IBOutlet weak var closeButton: UIButton!
     
     @IBOutlet var fieldContainerView: UIView!
     let lblPlaceHolder = UILabel()
@@ -50,7 +51,6 @@ class RepliesVC: UIViewController {
     var isApiCallAlreadyRunning = false
     var nextPageData = ""
     var childNextPageData = [String: String]()
-    
     var currentlySelectedSection: Int?
     var currentlySelectedRow: Int?
     var isReplyTagRequired = false
@@ -59,7 +59,8 @@ class RepliesVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        view.addGestureRecognizer(panGesture)
         registerCells()
         setLocalization()
         setupUI()
@@ -118,34 +119,12 @@ class RepliesVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+
         NotificationCenter.default.removeObserver(self)
     }
     
     override func viewWillLayoutSubviews() {
         super.updateViewConstraints()
-
-        
-////        var tableSize : CGFloat = 0
-////        if tableView.numberOfSections > 0 {
-////            if self.tableView.contentSize.height + viewBackground.frame.size.height > self.scrollView.frame.size.height {
-////                tableSize = self.tableView.contentSize.height
-////                self.constraintTableViewHeight.constant = tableSize
-////            } else {
-////                tableSize = self.scrollView.frame.size.height - viewBackground.frame.size.height
-////                self.constraintTableViewHeight.constant = tableSize
-////            }
-////        } else {
-////            self.constraintTableViewHeight.constant = tableSize
-////        }
-////
-//
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            if self.constraintTableViewHeight.constant == 0 && self.tableView.numberOfSections > 0{
-//                self.viewWillLayoutSubviews()
-//            }
-//        }
-        
-        
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
                 self.lblName.semanticContentAttribute = .forceRightToLeft
@@ -202,7 +181,13 @@ class RepliesVC: UIViewController {
 
         self.lblReplyToUserText.theme_textColor = GlobalPicker.commentVCTitleColor
         self.btnCancelReply.theme_setTitleColor(GlobalPicker.themeCommonColor, forState: .normal)
-    
+        let image = UIImage(named: "icn_close_gray")?.withRenderingMode(.alwaysTemplate)
+        closeButton.contentMode = .scaleAspectFit
+        closeButton.clipsToBounds = true
+        closeButton.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        image?.withTintColor(.black)
+        self.closeButton.setImage(image, for: .normal)
+        self.closeButton.setTitle("", for: .normal)
         self.fieldContainerView.layer.cornerRadius = 8
         self.fieldContainerView.layer.borderWidth = 1
         self.fieldContainerView.layer.borderColor = UIColor.init(hexString: "#DEE8F2").cgColor
@@ -308,7 +293,29 @@ class RepliesVC: UIViewController {
          
      }
      
-    
+    @objc func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let translation = gestureRecognizer.translation(in: view)
+
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            if translation.y > 0 {
+                view.transform = CGAffineTransform(translationX: 0, y: translation.y)
+            }
+        case .ended:
+            let velocity = gestureRecognizer.velocity(in: view)
+
+            if translation.y > view.bounds.height * 0.3 || velocity.y > 1000 {
+                dismiss(animated: true, completion: nil)
+                self.presentingViewController?.dismiss(animated: false)
+            } else {
+                UIView.animate(withDuration: 0.3) {
+                    self.view.transform = .identity
+                }
+            }
+        default:
+            break
+        }
+    }
     
     func resetTextViewContent() {
         currentlySelectedSection = nil
@@ -331,10 +338,15 @@ class RepliesVC: UIViewController {
     }
     
     // MARK: - Actions
-    @IBAction func didTapBtnClose(_ sender: Any) {
+    @IBAction func didTapBtnClose(_ sender: UIButton) {
         
         self.view.endEditing(true)
-        self.dismiss(animated: true)
+        self.dismiss(animated: false)
+        if sender.tag == 1 {
+            self.presentingViewController?.view.isHidden = false
+        } else {
+            self.presentingViewController?.dismiss(animated: false)
+        }
     }
     
     @IBAction func didTapSendButton(_ sender: Any) {
