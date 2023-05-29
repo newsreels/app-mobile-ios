@@ -29,7 +29,7 @@ class RepliesVC: UIViewController {
     @IBOutlet weak var lblReplyText: UILabel!
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
-    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var constraintReplyingToViewHeight: NSLayoutConstraint!
     @IBOutlet weak var lblReplyToUserText: UILabel!
     @IBOutlet weak var viewKeyboarInfo: UIView!
@@ -168,7 +168,11 @@ class RepliesVC: UIViewController {
     
     func setLocalization() {
         if self.commentArray.count > 0 {
-            lblTitle.text = NSLocalizedString("\(self.commentArray.count) Replies", comment: "")
+            var count = self.commentArray.count
+            self.commentArray.forEach({
+                count += $0.replies?.count ?? 0
+            })
+            lblTitle.text = NSLocalizedString("\(count) Replies", comment: "")
         } else {
             lblTitle.text = NSLocalizedString("Replies", comment: "")
         }
@@ -399,21 +403,21 @@ class RepliesVC: UIViewController {
 extension RepliesVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
-        viewBackground.layer.masksToBounds = false
-        viewBackground.layer.shadowRadius = 4
-        viewBackground.layer.shadowColor = UIColor.black.cgColor
-        viewBackground.layer.shadowOffset = CGSize(width: 0 , height: 4)
-        viewBackground.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
-                                                             y: viewBackground.bounds.maxY - viewBackground.layer.shadowRadius,
-                                                             width: viewBackground.bounds.width,
-                                                             height: viewBackground.layer.shadowRadius)).cgPath
-
-        
-        if scrollView.contentOffset.y > 0 {
-            viewBackground.layer.shadowOpacity = 0.25
-        } else {
-            viewBackground.layer.shadowOpacity = 0
-        }
+//        viewBackground.layer.masksToBounds = false
+//        viewBackground.layer.shadowRadius = 4
+//        viewBackground.layer.shadowColor = UIColor.black.cgColor
+//        viewBackground.layer.shadowOffset = CGSize(width: 0 , height: 4)
+//        viewBackground.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
+//                                                             y: viewBackground.bounds.maxY - viewBackground.layer.shadowRadius,
+//                                                             width: viewBackground.bounds.width,
+//                                                             height: viewBackground.layer.shadowRadius)).cgPath
+//
+//
+//        if scrollView.contentOffset.y > 0 {
+//            viewBackground.layer.shadowOpacity = 0.25
+//        } else {
+//            viewBackground.layer.shadowOpacity = 0
+//        }
     }
 }
 
@@ -437,7 +441,7 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 150
     }
     
 //    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -446,25 +450,27 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        if self.commentArray.count > 0 {
-            viewVerticalLine.isHidden = false
-        } else {
-            viewVerticalLine.isHidden = true
-        }
-        return self.commentArray.count
+//        if self.commentArray.count > 0 {
+//            viewVerticalLine.isHidden = false
+//        } else {
+//            viewVerticalLine.isHidden = true
+//        }
+//        return self.commentArray.count
+        viewVerticalLine.isHidden = true
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.commentArray[section].replies?.count ?? 0
+        return self.commentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepliesCC") as! RepliesCC
 //        cell.delegate = self
-        if let reply = commentArray[indexPath.section].replies?[indexPath.row] {
+        let reply = commentArray[indexPath.item]
             let comment = commentArray[indexPath.section]
             let isLast = self.commentArray.count - 1 == indexPath.section ? true : false
             cell.setupCell(replyModel: reply, commentModel: comment, indexpath: indexPath, isLastTopComment: isLast)
-        }
+        
         
         cell.delegate = self
         cell.layoutIfNeeded()
@@ -472,14 +478,14 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // Dequeue with the reuse identifier
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ReplyViewHeader") as! ReplyViewHeader
-        let isLast = self.commentArray.count - 1 == section ? true : false
-        header.setupHeader(model: commentArray[section], section: section, isLastComment: isLast)
-        header.delegate = self
-        return header
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        // Dequeue with the reuse identifier
+//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ReplyViewHeader") as! ReplyViewHeader
+//        let isLast = self.commentArray.count - 1 == section ? true : false
+//        header.setupHeader(model: commentArray[section], section: section, isLastComment: isLast)
+//        header.delegate = self
+//        return header
+//    }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
@@ -735,7 +741,7 @@ extension RepliesVC {
                     if let commentsData = FULLResponse.comments, commentsData.count > 0 {
                         if let newComment = commentsData.first {
                             
-                            self.commentArray.insert(newComment, at: 0)
+                            self.commentArray.append(newComment)
                         }
                         self.setLocalization()
                         self.reloadTableScrollToTop()

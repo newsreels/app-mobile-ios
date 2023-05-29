@@ -179,7 +179,7 @@ extension GenericTableView: LikeCommentDelegate {
             } else {
                 likeCount = (likeCount ?? 0) + 1
             }
-            let info = Info(viewCount: content.info?.viewCount, likeCount: likeCount, commentCount: content.info?.commentCount, isLiked: !(content.info?.isLiked ?? false), socialLike: content.info?.socialLike)
+            let info = Info(viewCount: content.info!.viewCount, likeCount: likeCount!, commentCount: content.info!.commentCount, isLiked: !(content.info?.isLiked ?? false), socialLike: content.info!.socialLike)
             content.info = info
             self.articlesArr?[indexPath.row].info = info
             model?.data?.articles = self.articlesArr

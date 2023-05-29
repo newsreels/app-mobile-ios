@@ -737,7 +737,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
 
 extension ReelsVC: ChannelDetailsVCDelegate {
     func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
-        print("fuck")
+
     }
 
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {

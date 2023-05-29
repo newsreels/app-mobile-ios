@@ -1964,7 +1964,7 @@ locations you choose</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="2Bw-38-EsZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                         <color key="textColor" name="AppDarkGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>

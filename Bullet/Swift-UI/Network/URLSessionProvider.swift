@@ -95,8 +95,7 @@ final class URLSessionProvider {
     private func handleDataResponse<T: Decodable> (data: Data?, usingContainer: Bool, pagination: PaginationControl<T>?, response: HTTPURLResponse?, error: Error?, jsonDecoder: JSONDecoder = URLSessionProvider.jsonDecoder, completion: (Result<T, APIServiceError>) -> (), customDecoder:  ((Data) throws -> ServerResponse<T>)? = nil) {
         guard let response = response else { return completion(.failure(.noResponse)) }
         guard let data = data else { return completion(.failure(.noData)) }
-        
-        
+        
         switch response.statusCode {
         case 200...299:
             do {

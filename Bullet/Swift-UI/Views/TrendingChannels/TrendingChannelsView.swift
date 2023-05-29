@@ -56,7 +56,7 @@ struct TrendingChannelsView: View {
                 if !isError {
                     loadingView
                         .onAppear {
-                            URLSessionProvider.shared.request(TrendingChannelsResponse.self, service: SearchService.getDiscoverDetails(.channels)) { result in
+                            URLSessionProvider.shared.request(TrendingChannelsResponse.self, service: SearchService.getDiscoverDetails(.channels), jsonDecoder: JSONDecoder()) { result in
                                 DispatchQueue.main.async {
                                     switch result {
                                     case .failure(let error):

@@ -29,10 +29,10 @@ struct Reel: Codable {
     var source: ChannelInfo?
     var info: Info?
     var authors: [Authors]?
-    var captions: [Captions]?
+    var captions: [Captions]? = nil
     var image: String?
-    var status: String?
-    var iosType: String?
+    var status: String? = nil
+    var iosType: String? = nil
     var link: String?
     var language: String?
     var captionAPILoaded: Bool? = true
@@ -43,39 +43,13 @@ struct Reel: Codable {
         case reelDescription = "description"
         case media,media_landscape
         case publishTime = "publish_time"
-        case source, authors, captions
+        case source, authors
         case info
         case mediaMeta = "media_meta"
-        case image, status
-        case iosType
+        case image
         case link, language
-        case captionAPILoaded
         case nativeTitle = "native_title"
     }
-    
-    init(from decoder: Decoder) throws {
-           let container = try decoder.container(keyedBy: CodingKeys.self)
-           
-           id = try container.decodeIfPresent(String.self, forKey: .id)
-           context = try container.decodeIfPresent(String.self, forKey: .context)
-           reelDescription = try container.decodeIfPresent(String.self, forKey: .reelDescription)
-           media = try container.decodeIfPresent(String.self, forKey: .media)
-           media_landscape = try container.decodeIfPresent(String.self, forKey: .media_landscape)
-           mediaMeta = try container.decodeIfPresent(MediaMeta.self, forKey: .mediaMeta)
-           publishTime = try container.decodeIfPresent(String.self, forKey: .publishTime)
-           source = try container.decodeIfPresent(ChannelInfo.self, forKey: .source)
-           info = try container.decodeIfPresent(Info.self, forKey: .info)
-           print(info!)
-           authors = try container.decodeIfPresent([Authors].self, forKey: .authors)
-           captions = try container.decodeIfPresent([Captions].self, forKey: .captions)
-           image = try container.decodeIfPresent(String.self, forKey: .image)
-           status = try container.decodeIfPresent(String.self, forKey: .status)
-           iosType = try container.decodeIfPresent(String.self, forKey: .iosType)
-           link = try container.decodeIfPresent(String.self, forKey: .link)
-           language = try container.decodeIfPresent(String.self, forKey: .language)
-           captionAPILoaded = try container.decodeIfPresent(Bool.self, forKey: .captionAPILoaded)
-           nativeTitle = try container.decodeIfPresent(Bool.self, forKey: .nativeTitle)
-       }
 }
 
 struct MediaMeta: Codable {

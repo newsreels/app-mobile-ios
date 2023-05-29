@@ -173,8 +173,6 @@ extension ReelsCC {
                     ) {
                         if let total = self.playerLayer.player?.totalDuration, total > 0 {
                             self.seekBar.setValue(Float(currentTime / (total)), animated: true)
-                        } else {
-                            print("fuck")
                         }
                     }
                     self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)

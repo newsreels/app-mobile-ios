@@ -123,7 +123,7 @@ struct TrendingReelsView: View {
                     if !isError {
                         loadingView
                             .onAppear {
-                                URLSessionProvider.shared.request(ReelsDiscoverResponse.self, service: SearchService.getDiscoverDetails(.reels)) { result in
+                                URLSessionProvider.shared.request(ReelsDiscoverResponse.self, service: SearchService.getDiscoverDetails(.reels), jsonDecoder: JSONDecoder()) { result in
                                     DispatchQueue.main.async {
                                         switch result {
                                         case .success(let response):
