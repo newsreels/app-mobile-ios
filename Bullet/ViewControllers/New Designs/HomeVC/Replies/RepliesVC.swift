@@ -11,34 +11,16 @@ import IQKeyboardManagerSwift
 class RepliesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var viewTextViewContainer: UIView!
     @IBOutlet weak var txtViewComment: AutoExpandingTextView!
     @IBOutlet weak var btnSendButton: UIButton!
     @IBOutlet weak var btnCloseButton: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
-//    @IBOutlet weak var constraintTxtViewHeightConstant: NSLayoutConstraint!
-    @IBOutlet weak var constraintViewTop: NSLayoutConstraint!
-    @IBOutlet weak var viewTypeTextContainer: UIView!
     @IBOutlet weak var constraintTxtBottomSpace: NSLayoutConstraint!
-    @IBOutlet weak var viewTitleUnderLine: UIView!
-    @IBOutlet weak var viewCommentUnderLine: UIView!
-    @IBOutlet weak var constraintTableViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var viewBackground: UIView!
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblReply: UILabel!
-    @IBOutlet weak var lblReplyText: UILabel!
-    @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var imgUser: UIImageView!
-    
     @IBOutlet weak var constraintReplyingToViewHeight: NSLayoutConstraint!
     @IBOutlet weak var lblReplyToUserText: UILabel!
     @IBOutlet weak var viewKeyboarInfo: UIView!
     @IBOutlet weak var btnCancelReply: UIButton!
-//    @IBOutlet weak var viewLine: UIView!
-    @IBOutlet weak var viewVerticalLine: UIView!
-    @IBOutlet weak var imgUserDP: UIImageView!
     @IBOutlet weak var closeButton: UIButton!
-    
     @IBOutlet var fieldContainerView: UIView!
     let lblPlaceHolder = UILabel()
     
@@ -73,20 +55,6 @@ class RepliesVC: UIViewController {
         tableView.estimatedSectionHeaderHeight =  UITableView.automaticDimension
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight =  200
-                
-        lblName.text = selectedComment?.user?.name?.capitalized ?? ""
-        if selectedComment?.user?.image?.isEmpty ?? false {
-            imgUser.theme_image = GlobalPicker.imgUserPlaceholder
-        }
-        else {
-            imgUser.sd_setImage(with: URL(string: selectedComment?.user?.image ?? "") , placeholderImage: nil)
-        }
-        
-        if let publishDate = selectedComment?.createdAt {
-            lblTime.text = SharedManager.shared.generateDatTimeOfNewsShortType(publishDate)
-        }
-        
-        lblReply.text = selectedComment?.comment ?? ""
         constraintReplyingToViewHeight.constant = 0
         
         performWSToGetCommentsData(articleID: articleID, parentID: parentID, page: "", isLoadingChildData: false)
@@ -127,8 +95,6 @@ class RepliesVC: UIViewController {
         super.updateViewConstraints()
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
-                self.lblName.semanticContentAttribute = .forceRightToLeft
-                self.lblName.textAlignment = .right
                 self.lblPlaceHolder.semanticContentAttribute = .forceRightToLeft
                 self.lblPlaceHolder.textAlignment = .right
                 self.txtViewComment.semanticContentAttribute = .forceRightToLeft
@@ -140,8 +106,6 @@ class RepliesVC: UIViewController {
             
         } else {
             DispatchQueue.main.async {
-                self.lblName.semanticContentAttribute = .forceLeftToRight
-                self.lblName.textAlignment = .left
                 self.lblPlaceHolder.semanticContentAttribute = .forceLeftToRight
                 self.lblPlaceHolder.textAlignment = .left
                 self.txtViewComment.semanticContentAttribute = .forceLeftToRight
@@ -359,17 +323,17 @@ class RepliesVC: UIViewController {
         
         if txtViewComment.text.trimmingCharacters(in: .whitespaces).isEmpty == false {
             
-            if currentlySelectedSection != nil && currentlySelectedRow == nil {
-                let parentID = commentArray[currentlySelectedSection!].id
-                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
-            } else if currentlySelectedSection != nil && currentlySelectedRow != nil {
-                
-                let parentID = commentArray[currentlySelectedSection!].id
-                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
-            } else {
+//            if currentlySelectedSection != nil && currentlySelectedRow == nil {
+//                let parentID = commentArray[currentlySelectedSection!].id
+//                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
+//            } else if currentlySelectedSection != nil && currentlySelectedRow != nil {
+//
+//                let parentID = commentArray[currentlySelectedSection!].id
+//                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
+//            } else {
                 
                 performWSToAddNewCommentsData(articleID: articleID, parentID: self.parentID, comment: txtViewComment.text ?? "", isAddingChildData: false)
-            }
+//            }
             
         }
         
@@ -437,26 +401,14 @@ extension RepliesVC: UITextViewDelegate {
 extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return UITableView.automaticDimension
+        return 95
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 95
     }
     
-//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
-    
-    
     func numberOfSections(in tableView: UITableView) -> Int {
-//        if self.commentArray.count > 0 {
-//            viewVerticalLine.isHidden = false
-//        } else {
-//            viewVerticalLine.isHidden = true
-//        }
-//        return self.commentArray.count
-        viewVerticalLine.isHidden = true
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -465,11 +417,10 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepliesCC") as! RepliesCC
-//        cell.delegate = self
+        cell.delegate = self
         let reply = commentArray[indexPath.item]
             let comment = commentArray[indexPath.section]
-            let isLast = self.commentArray.count - 1 == indexPath.section ? true : false
-            cell.setupCell(replyModel: reply, commentModel: comment, indexpath: indexPath, isLastTopComment: isLast)
+            cell.setupCell(replyModel: reply, commentModel: comment, indexpath: indexPath, isLastTopComment: false)
         
         
         cell.delegate = self
@@ -478,14 +429,13 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        // Dequeue with the reuse identifier
-//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ReplyViewHeader") as! ReplyViewHeader
-//        let isLast = self.commentArray.count - 1 == section ? true : false
-//        header.setupHeader(model: commentArray[section], section: section, isLastComment: isLast)
-//        header.delegate = self
-//        return header
-//    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        // Dequeue with the reuse identifier
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ReplyViewHeader") as! ReplyViewHeader
+        header.setupHeader(model: selectedComment!, section: section, isLastComment: false)
+        header.delegate = self
+        return header
+    }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude
@@ -625,6 +575,7 @@ extension RepliesVC {
                         if self.commentArray.count == 0 {
                             self.commentArray = commentsData
                             self.tableView.reloadData()
+                            self.setLocalization()
                         } else {
     //                        let newIndex = self.reelsArray.count
                             for newComment in commentsData {

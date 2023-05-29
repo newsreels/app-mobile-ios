@@ -50,6 +50,25 @@ struct Reel: Codable {
         case link, language
         case nativeTitle = "native_title"
     }
+    
+    init(from decoder: Decoder) throws {
+           let container = try decoder.container(keyedBy: CodingKeys.self)
+           
+           id = try container.decodeIfPresent(String.self, forKey: .id)
+           context = try container.decodeIfPresent(String.self, forKey: .context)
+           reelDescription = try container.decodeIfPresent(String.self, forKey: .reelDescription)
+           media = try container.decodeIfPresent(String.self, forKey: .media)
+           media_landscape = try container.decodeIfPresent(String.self, forKey: .media_landscape)
+           mediaMeta = try container.decodeIfPresent(MediaMeta.self, forKey: .mediaMeta)
+           publishTime = try container.decodeIfPresent(String.self, forKey: .publishTime)
+           source = try container.decodeIfPresent(ChannelInfo.self, forKey: .source)
+           info = try container.decodeIfPresent(Info.self, forKey: .info)
+           authors = try container.decodeIfPresent([Authors].self, forKey: .authors)
+           image = try container.decodeIfPresent(String.self, forKey: .image)
+           link = try container.decodeIfPresent(String.self, forKey: .link)
+           language = try container.decodeIfPresent(String.self, forKey: .language)
+           nativeTitle = try container.decodeIfPresent(Bool.self, forKey: .nativeTitle)
+       }
 }
 
 struct MediaMeta: Codable {

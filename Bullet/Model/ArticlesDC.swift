@@ -130,6 +130,18 @@ public struct Info: Codable {
          case isLiked = "is_liked"
          case socialLike = "social_like"
     }
+    
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        viewCount = try container.decodeIfPresent(String.self, forKey: .viewCount)
+        views = try container.decodeIfPresent(Int.self, forKey: .views)
+        likeCount = try container.decodeIfPresent(Int.self, forKey: .likeCount)
+        commentCount = try container.decodeIfPresent(Int.self, forKey: .commentCount)
+        isLiked = try container.decodeIfPresent(Bool.self, forKey: .isLiked)
+        socialLike = try container.decodeIfPresent(Int.self, forKey: .socialLike)
+        print("fuck", commentCount)
+    }
 }
 
 public struct Bullets : Codable, Equatable {

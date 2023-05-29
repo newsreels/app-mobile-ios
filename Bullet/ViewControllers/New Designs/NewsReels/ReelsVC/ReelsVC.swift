@@ -48,7 +48,8 @@ class ReelsVC: UIViewController {
     @IBOutlet var loaderView: UIView!
     @IBOutlet var refreshLoaderView: UIView!
     @IBOutlet var allCaughtUpView: UIStackView!
-
+    @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
+    
     weak var delegate: ReelsVCDelegate?
     public var minimumVelocityToHide: CGFloat = 1500
     public var minimumScreenRatioToHide: CGFloat = 0.5
@@ -125,6 +126,9 @@ class ReelsVC: UIViewController {
         if fromMain {
             loadNewData()
             getReelsCategories()
+            collectionViewBottomConstraint.constant = 75
+        } else {
+            collectionViewBottomConstraint.constant = 10
         }
         SharedManager.shared.isReelsLoadedFirstTime = true
     }

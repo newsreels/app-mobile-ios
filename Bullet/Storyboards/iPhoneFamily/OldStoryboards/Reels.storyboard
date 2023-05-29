@@ -745,6 +745,7 @@
                         <outlet property="btnBack" destination="0zE-dD-FEQ" id="6uf-mO-D4o"/>
                         <outlet property="btnContinue" destination="9BE-NH-a5E" id="Ufh-Ce-rC6"/>
                         <outlet property="collectionView" destination="lki-7A-Uou" id="TWG-22-fr2"/>
+                        <outlet property="collectionViewBottomConstraint" destination="r0F-jm-pth" id="Szf-hJ-shH"/>
                         <outlet property="collectionViewTopConstraint" destination="elK-z9-mlR" id="Wkg-cX-WdH"/>
                         <outlet property="imgArrow" destination="W4X-AD-nnL" id="nKV-6o-QaG"/>
                         <outlet property="imgLeftArrow" destination="TEU-2i-73B" id="tp5-2J-BSe"/>

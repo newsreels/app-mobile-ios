@@ -26,18 +26,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="RepliesCC" customModule="Newsreels" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="405" height="151"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="RepliesCC" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="405" height="151"/>
+                <rect key="frame" x="0.0" y="0.0" width="405" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROQ-9b-thk">
-                        <rect key="frame" x="0.0" y="0.0" width="405" height="151"/>
+                        <rect key="frame" x="0.0" y="0.0" width="405" height="109"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GkQ-nX-IVK">
-                                <rect key="frame" x="32" y="25" width="38" height="38"/>
+                                <rect key="frame" x="52" y="25" width="38" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="Lrt-xN-zWk"/>
                                     <constraint firstAttribute="width" secondItem="GkQ-nX-IVK" secondAttribute="height" multiplier="1:1" id="oQa-4l-40Y"/>
@@ -52,7 +52,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balistreri Theodore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqK-nb-Yq5">
-                                <rect key="frame" x="90" y="25" width="303" height="21"/>
+                                <rect key="frame" x="110" y="25" width="283" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="yDD-YS-qDT"/>
                                 </constraints>
@@ -61,13 +61,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="This is really nice information to have. Thank you for this." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lq-M3-5z4">
-                                <rect key="frame" x="90" y="52" width="303" height="14.5"/>
+                                <rect key="frame" x="110" y="52" width="283" height="22"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <color key="textColor" name="AppMediumGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZj-Rz-ZiB">
-                                <rect key="frame" x="90" y="71.5" width="30" height="22"/>
+                                <rect key="frame" x="110" y="79" width="30" height="22"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74z-ny-PYU">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
@@ -93,7 +93,7 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-AI-ZZa">
-                                <rect key="frame" x="130" y="71.5" width="44" height="22"/>
+                                <rect key="frame" x="150" y="79" width="44" height="22"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reply" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy9-ob-lzu">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="22"/>
@@ -125,7 +125,7 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5O-u1-hnP">
-                                <rect key="frame" x="393" y="93.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="393" y="101" width="0.0" height="0.0"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h4j-qe-14V">
                                         <subviews>
@@ -296,7 +296,7 @@
                             <constraint firstItem="5lq-M3-5z4" firstAttribute="trailing" secondItem="FqK-nb-Yq5" secondAttribute="trailing" id="Fj5-Ak-dMa"/>
                             <constraint firstItem="cBs-AI-ZZa" firstAttribute="centerY" secondItem="sZj-Rz-ZiB" secondAttribute="centerY" id="Xmj-Z8-a7b"/>
                             <constraint firstItem="FqK-nb-Yq5" firstAttribute="leading" secondItem="GkQ-nX-IVK" secondAttribute="trailing" constant="20" id="bpI-hY-BER"/>
-                            <constraint firstItem="GkQ-nX-IVK" firstAttribute="leading" secondItem="ROQ-9b-thk" secondAttribute="leading" constant="32" id="ctW-F5-FcV"/>
+                            <constraint firstItem="GkQ-nX-IVK" firstAttribute="leading" secondItem="ROQ-9b-thk" secondAttribute="leading" constant="52" id="ctW-F5-FcV"/>
                             <constraint firstItem="5lq-M3-5z4" firstAttribute="top" secondItem="FqK-nb-Yq5" secondAttribute="bottom" constant="6" id="cyZ-Tg-XSd"/>
                             <constraint firstItem="sZj-Rz-ZiB" firstAttribute="leading" secondItem="5lq-M3-5z4" secondAttribute="leading" id="dE8-lK-fpI"/>
                             <constraint firstItem="GkQ-nX-IVK" firstAttribute="top" secondItem="ROQ-9b-thk" secondAttribute="top" constant="25" id="dcq-C5-hSS"/>
@@ -335,7 +335,7 @@
                 <outlet property="viewReplyTextView" destination="vug-q0-Ic7" id="Vbk-9B-Fwu"/>
                 <outlet property="viewTextViewContainer" destination="ccn-D6-k37" id="s1d-m1-AdX"/>
             </connections>
-            <point key="canvasLocation" x="2.1739130434782612" y="189.84375"/>
+            <point key="canvasLocation" x="2.1739130434782612" y="175.78125"/>
         </tableViewCell>
     </objects>
     <resources>

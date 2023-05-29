@@ -1539,7 +1539,7 @@ locations you choose</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLj-Fe-naC">
-                                <rect key="frame" x="0.0" y="278" width="414" height="456"/>
+                                <rect key="frame" x="0.0" y="278" width="414" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-qF-dHU">
@@ -1594,8 +1594,147 @@ locations you choose</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-Aq-cuB">
-                                <rect key="frame" x="0.0" y="734" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="78"/>
                                 <subviews>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QHX-cc-YyD">
+                                        <rect key="frame" x="31" y="5" width="352" height="0.0"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ho-Ni-9pr">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="❤️">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="MWS-gj-c4Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-M1-w1c">
+                                                <rect key="frame" x="44" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="🙌">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Jmi-qo-Acu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-hh-b7k">
+                                                <rect key="frame" x="88" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="🔥">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Fbw-NH-Q53"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-ed-69q">
+                                                <rect key="frame" x="132" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="👏">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="dk1-gs-DM6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-1p-Noh">
+                                                <rect key="frame" x="176" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="😢">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Bjp-Kn-1Ui"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d08-Tm-Ri7">
+                                                <rect key="frame" x="220" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="😍">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="LV0-xL-Tgy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDq-pw-BIM">
+                                                <rect key="frame" x="264" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="😮">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="3AB-J7-TvO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-b0-iYU">
+                                                <rect key="frame" x="308" y="0.0" width="44" height="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="😂">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Nn3-IP-2Pl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="FiI-1l-wLW"/>
+                                        </constraints>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-nZ-cun">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
                                         <color key="backgroundColor" red="0.90588235289999997" green="0.91372549020000005" blue="0.92549019610000005" alpha="0.8980392157" colorSpace="calibratedRGB"/>
@@ -1611,7 +1750,7 @@ locations you choose</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-Uu-t3o">
-                                        <rect key="frame" x="16" y="88" width="382" height="58"/>
+                                        <rect key="frame" x="16" y="4" width="382" height="58"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnc-oJ-LHF">
                                                 <rect key="frame" x="342" y="17" width="26" height="26"/>
@@ -1668,145 +1807,6 @@ locations you choose</string>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QHX-cc-YyD">
-                                        <rect key="frame" x="31" y="5" width="352" height="40"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ho-Ni-9pr">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="❤️">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="MWS-gj-c4Y"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-M1-w1c">
-                                                <rect key="frame" x="44" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="🙌">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Jmi-qo-Acu"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-hh-b7k">
-                                                <rect key="frame" x="88" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="🔥">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Fbw-NH-Q53"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-ed-69q">
-                                                <rect key="frame" x="132" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="👏">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="dk1-gs-DM6"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-1p-Noh">
-                                                <rect key="frame" x="176" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="😢">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Bjp-Kn-1Ui"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d08-Tm-Ri7">
-                                                <rect key="frame" x="220" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="😍">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="LV0-xL-Tgy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDq-pw-BIM">
-                                                <rect key="frame" x="264" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="😮">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="3AB-J7-TvO"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-b0-iYU">
-                                                <rect key="frame" x="308" y="0.0" width="44" height="40"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="😂">
-                                                            <attributes>
-                                                                <font key="NSFont" size="15" name="AppleColorEmoji"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="reactionsTapped:" destination="bmT-pM-xFC" eventType="touchUpInside" id="Nn3-IP-2Pl"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="FiI-1l-wLW"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1822,7 +1822,7 @@ locations you choose</string>
                                     <constraint firstAttribute="bottom" secondItem="m0z-Uu-t3o" secondAttribute="bottom" constant="16" id="PrR-SB-Tdc"/>
                                     <constraint firstItem="QHX-cc-YyD" firstAttribute="centerX" secondItem="NnX-Aq-cuB" secondAttribute="centerX" id="S6T-c8-SeD"/>
                                     <constraint firstAttribute="trailing" secondItem="aWS-nZ-cun" secondAttribute="trailing" id="VlH-hx-nRq"/>
-                                    <constraint firstAttribute="height" constant="162" id="gFB-Jt-67t"/>
+                                    <constraint firstAttribute="height" constant="78" id="gFB-Jt-67t"/>
                                     <constraint firstItem="aWS-nZ-cun" firstAttribute="leading" secondItem="NnX-Aq-cuB" secondAttribute="leading" id="sY8-cA-zZM"/>
                                 </constraints>
                                 <variation key="default">
@@ -1941,127 +1941,8 @@ locations you choose</string>
                                     <constraint firstAttribute="trailing" secondItem="jD8-nv-3l9" secondAttribute="trailing" constant="8" id="ypt-KE-Wau"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-Wb-fsP">
-                                <rect key="frame" x="0.0" y="278" width="414" height="91.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rzp-9r-xpJ">
-                                        <rect key="frame" x="20" y="0.0" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="NlS-fa-4yo"/>
-                                            <constraint firstAttribute="width" secondItem="rzp-9r-xpJ" secondAttribute="height" multiplier="1:1" id="ygo-gE-zzV"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="24"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balistreri Theodore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il4-0g-Cjm">
-                                        <rect key="frame" x="90" y="0.0" width="312" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="2Bw-38-EsZ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
-                                        <color key="textColor" name="AppDarkGray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Test Test Test Test" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-mR-DXa">
-                                        <rect key="frame" x="90" y="31" width="312" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                        <color key="textColor" name="AppMediumGray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rz1-fy-b4a">
-                                        <rect key="frame" x="38" y="65" width="1" height="27"/>
-                                        <color key="backgroundColor" red="0.8980392157" green="0.89411764709999997" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="1" id="VEB-bi-K3H"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMY-PF-eWS">
-                                        <rect key="frame" x="90" y="55.5" width="30" height="22"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-4D-Ahc">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
-                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                                <color key="textColor" name="AppMediumGray"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgJ-nE-u5f">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="PgJ-nE-u5f" firstAttribute="top" secondItem="eMY-PF-eWS" secondAttribute="top" id="8Pp-CH-sC7"/>
-                                            <constraint firstAttribute="bottom" secondItem="b2d-4D-Ahc" secondAttribute="bottom" id="Cj3-v9-4pJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="PgJ-nE-u5f" secondAttribute="bottom" id="QBv-A9-ckY"/>
-                                            <constraint firstAttribute="trailing" secondItem="b2d-4D-Ahc" secondAttribute="trailing" id="Umi-Pb-1gC"/>
-                                            <constraint firstItem="b2d-4D-Ahc" firstAttribute="top" secondItem="eMY-PF-eWS" secondAttribute="top" id="XxX-wP-qyK"/>
-                                            <constraint firstItem="b2d-4D-Ahc" firstAttribute="leading" secondItem="eMY-PF-eWS" secondAttribute="leading" id="Yl4-Ca-UTP"/>
-                                            <constraint firstAttribute="trailing" secondItem="PgJ-nE-u5f" secondAttribute="trailing" id="aWY-8t-1X7"/>
-                                            <constraint firstAttribute="height" constant="22" id="okD-64-L9V"/>
-                                            <constraint firstItem="PgJ-nE-u5f" firstAttribute="leading" secondItem="eMY-PF-eWS" secondAttribute="leading" id="zla-jF-8Xb"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7c-ZE-nuT">
-                                        <rect key="frame" x="130" y="55.5" width="44" height="22"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reply" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCq-9H-YT8">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="22"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="SPQ-B7-AKn"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                                <color key="textColor" name="AppMediumGray"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="327-xS-MGR">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="22"/>
-                                                <connections>
-                                                    <action selector="didTapReplyButton:" destination="JvB-HD-Xjg" eventType="touchUpInside" id="amt-Az-jDW"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="327-xS-MGR" firstAttribute="top" secondItem="c7c-ZE-nuT" secondAttribute="top" id="EEB-A6-ENM"/>
-                                            <constraint firstAttribute="bottom" secondItem="eCq-9H-YT8" secondAttribute="bottom" id="Ejr-A4-xYg"/>
-                                            <constraint firstAttribute="trailing" secondItem="327-xS-MGR" secondAttribute="trailing" id="G0S-O4-eiK"/>
-                                            <constraint firstAttribute="bottom" secondItem="327-xS-MGR" secondAttribute="bottom" id="IZH-pX-PgB"/>
-                                            <constraint firstItem="327-xS-MGR" firstAttribute="leading" secondItem="c7c-ZE-nuT" secondAttribute="leading" id="LEn-O1-9GF"/>
-                                            <constraint firstAttribute="height" constant="22" id="bi4-Lb-Fxs"/>
-                                            <constraint firstAttribute="trailing" secondItem="eCq-9H-YT8" secondAttribute="trailing" id="eZ4-MC-0Pa"/>
-                                            <constraint firstItem="eCq-9H-YT8" firstAttribute="leading" secondItem="c7c-ZE-nuT" secondAttribute="leading" id="fox-rx-mKM"/>
-                                            <constraint firstItem="eCq-9H-YT8" firstAttribute="top" secondItem="c7c-ZE-nuT" secondAttribute="top" id="id1-jd-UVV"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="eMY-PF-eWS" firstAttribute="leading" secondItem="3ib-mR-DXa" secondAttribute="leading" id="2eR-I7-0Va"/>
-                                    <constraint firstItem="c7c-ZE-nuT" firstAttribute="centerY" secondItem="eMY-PF-eWS" secondAttribute="centerY" id="5KW-x5-fLW"/>
-                                    <constraint firstItem="3ib-mR-DXa" firstAttribute="leading" secondItem="il4-0g-Cjm" secondAttribute="leading" id="81D-f8-VHl"/>
-                                    <constraint firstItem="Rz1-fy-b4a" firstAttribute="top" secondItem="rzp-9r-xpJ" secondAttribute="bottom" constant="5" id="BLh-Mw-XXw"/>
-                                    <constraint firstItem="rzp-9r-xpJ" firstAttribute="leading" secondItem="mhm-Wb-fsP" secondAttribute="leading" constant="20" id="CGw-Ut-JAV"/>
-                                    <constraint firstItem="3ib-mR-DXa" firstAttribute="trailing" secondItem="il4-0g-Cjm" secondAttribute="trailing" id="NDI-Fh-yu6"/>
-                                    <constraint firstItem="c7c-ZE-nuT" firstAttribute="leading" secondItem="eMY-PF-eWS" secondAttribute="trailing" constant="10" id="OX8-oT-FcB"/>
-                                    <constraint firstItem="3ib-mR-DXa" firstAttribute="top" secondItem="il4-0g-Cjm" secondAttribute="bottom" constant="10" id="PuL-Zz-eJm"/>
-                                    <constraint firstAttribute="trailing" secondItem="il4-0g-Cjm" secondAttribute="trailing" constant="12" id="T1d-Oj-viB"/>
-                                    <constraint firstItem="Rz1-fy-b4a" firstAttribute="leading" secondItem="mhm-Wb-fsP" secondAttribute="leading" constant="38" id="f5S-AW-2Rr"/>
-                                    <constraint firstAttribute="bottom" secondItem="Rz1-fy-b4a" secondAttribute="bottom" constant="-0.33333333333334281" id="jaU-za-M9t"/>
-                                    <constraint firstItem="il4-0g-Cjm" firstAttribute="top" secondItem="rzp-9r-xpJ" secondAttribute="top" id="k5I-OZ-yDo"/>
-                                    <constraint firstAttribute="bottom" secondItem="eMY-PF-eWS" secondAttribute="bottom" constant="14" id="s2d-bi-c7m"/>
-                                    <constraint firstItem="rzp-9r-xpJ" firstAttribute="top" secondItem="mhm-Wb-fsP" secondAttribute="top" id="uBn-uu-Sir"/>
-                                    <constraint firstItem="eMY-PF-eWS" firstAttribute="top" secondItem="3ib-mR-DXa" secondAttribute="bottom" constant="10" id="vxf-cr-dCj"/>
-                                    <constraint firstItem="il4-0g-Cjm" firstAttribute="leading" secondItem="rzp-9r-xpJ" secondAttribute="trailing" constant="10" id="xm2-L1-2lq"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-h6-zbj">
-                                <rect key="frame" x="0.0" y="369.5" width="414" height="364.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-h6-zbj">
+                                <rect key="frame" x="0.0" y="268" width="414" height="550"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -2113,7 +1994,7 @@ locations you choose</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgb-X2-BIg">
-                                <rect key="frame" x="0.0" y="734" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="78"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdV-On-ftB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -2122,11 +2003,11 @@ locations you choose</string>
                                             <constraint firstAttribute="height" constant="1" id="39j-xQ-gMe"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-GO-A29">
-                                        <rect key="frame" x="31" y="6" width="352" height="40"/>
+                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-GO-A29">
+                                        <rect key="frame" x="31" y="6" width="352" height="0.0"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRC-ip-aR8">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2144,7 +2025,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hX-zb-fyf">
-                                                <rect key="frame" x="44" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="44" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2161,7 +2042,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-Gy-Ly3">
-                                                <rect key="frame" x="88" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="88" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2177,7 +2058,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ojb-0d-NnG">
-                                                <rect key="frame" x="132" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="132" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2193,7 +2074,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-Ee-Pha">
-                                                <rect key="frame" x="176" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="176" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2209,7 +2090,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRh-le-aw4">
-                                                <rect key="frame" x="220" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="220" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2225,7 +2106,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KB-qW-OfF">
-                                                <rect key="frame" x="264" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="264" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2241,7 +2122,7 @@ locations you choose</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAe-zV-mgV">
-                                                <rect key="frame" x="308" y="0.0" width="44" height="40"/>
+                                                <rect key="frame" x="308" y="0.0" width="44" height="0.0"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <attributedString key="attributedTitle">
@@ -2258,11 +2139,11 @@ locations you choose</string>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="kbg-zH-8X1"/>
+                                            <constraint firstAttribute="height" id="kbg-zH-8X1"/>
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztC-gG-wKM">
-                                        <rect key="frame" x="16" y="88" width="382" height="58"/>
+                                        <rect key="frame" x="16" y="4" width="382" height="58"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEh-8g-cHt">
                                                 <rect key="frame" x="342" y="17" width="26" height="26"/>
@@ -2331,7 +2212,7 @@ locations you choose</string>
                                     <constraint firstItem="myJ-GO-A29" firstAttribute="centerX" secondItem="kgb-X2-BIg" secondAttribute="centerX" id="LgL-sS-Jz7"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="myJ-GO-A29" secondAttribute="trailing" id="RGh-Y5-LXs"/>
                                     <constraint firstItem="IdV-On-ftB" firstAttribute="top" secondItem="kgb-X2-BIg" secondAttribute="top" id="RfJ-zA-tDE"/>
-                                    <constraint firstAttribute="height" constant="162" id="pfe-ct-V9B"/>
+                                    <constraint firstAttribute="height" constant="78" id="pfe-ct-V9B"/>
                                     <constraint firstAttribute="trailing" secondItem="IdV-On-ftB" secondAttribute="trailing" id="rOs-3r-ZbD"/>
                                     <constraint firstAttribute="bottom" secondItem="ztC-gG-wKM" secondAttribute="bottom" constant="16" id="x7k-T6-xau"/>
                                 </constraints>
@@ -2348,17 +2229,14 @@ locations you choose</string>
                             <constraint firstItem="kgb-X2-BIg" firstAttribute="top" secondItem="D84-8p-0Me" secondAttribute="bottom" id="Hkl-Ny-zrE"/>
                             <constraint firstItem="sLN-pJ-7xl" firstAttribute="top" secondItem="ALT-Ox-Y0T" secondAttribute="top" constant="150" id="Qq8-X3-ndU"/>
                             <constraint firstItem="D84-8p-0Me" firstAttribute="trailing" secondItem="ALT-Ox-Y0T" secondAttribute="trailing" id="b7q-im-UQk"/>
-                            <constraint firstItem="dTH-h6-zbj" firstAttribute="top" secondItem="mhm-Wb-fsP" secondAttribute="bottom" id="eSJ-TN-Zrl"/>
                             <constraint firstItem="ALT-Ox-Y0T" firstAttribute="trailing" secondItem="dTH-h6-zbj" secondAttribute="trailing" id="fdY-0A-NYG"/>
-                            <constraint firstItem="mhm-Wb-fsP" firstAttribute="top" secondItem="6vn-dk-jHe" secondAttribute="bottom" constant="10" id="fwg-yA-cGP"/>
                             <constraint firstAttribute="bottom" secondItem="sLN-pJ-7xl" secondAttribute="bottom" id="gH8-wt-kqq"/>
                             <constraint firstItem="dTH-h6-zbj" firstAttribute="leading" secondItem="ALT-Ox-Y0T" secondAttribute="leading" id="hKh-Xm-959"/>
-                            <constraint firstItem="mhm-Wb-fsP" firstAttribute="trailing" secondItem="ALT-Ox-Y0T" secondAttribute="trailing" id="o0U-7i-z0k"/>
+                            <constraint firstItem="dTH-h6-zbj" firstAttribute="top" secondItem="6vn-dk-jHe" secondAttribute="bottom" id="s9A-7y-Ii4"/>
                             <constraint firstItem="ALT-Ox-Y0T" firstAttribute="trailing" secondItem="6vn-dk-jHe" secondAttribute="trailing" id="sef-vm-2Od"/>
                             <constraint firstItem="D84-8p-0Me" firstAttribute="leading" secondItem="ALT-Ox-Y0T" secondAttribute="leading" id="uMn-at-cYv"/>
                             <constraint firstItem="kgb-X2-BIg" firstAttribute="trailing" secondItem="ALT-Ox-Y0T" secondAttribute="trailing" id="uqq-TM-Lcq"/>
                             <constraint firstItem="kgb-X2-BIg" firstAttribute="leading" secondItem="ALT-Ox-Y0T" secondAttribute="leading" id="v8q-yQ-Z1U"/>
-                            <constraint firstItem="mhm-Wb-fsP" firstAttribute="leading" secondItem="ALT-Ox-Y0T" secondAttribute="leading" id="xch-oz-83m"/>
                             <constraint firstItem="kgb-X2-BIg" firstAttribute="top" secondItem="dTH-h6-zbj" secondAttribute="bottom" id="zH1-dp-ea9"/>
                         </constraints>
                         <variation key="default">
@@ -2375,18 +2253,11 @@ locations you choose</string>
                         <outlet property="constraintReplyingToViewHeight" destination="Uxc-ZQ-tBb" id="qZo-mn-TIY"/>
                         <outlet property="constraintTxtBottomSpace" destination="9PO-0q-FFB" id="Thp-SH-fjA"/>
                         <outlet property="fieldContainerView" destination="ztC-gG-wKM" id="luC-zJ-cBB"/>
-                        <outlet property="imgUser" destination="rzp-9r-xpJ" id="0ST-i7-paT"/>
-                        <outlet property="lblName" destination="il4-0g-Cjm" id="mct-lP-tSO"/>
-                        <outlet property="lblReply" destination="3ib-mR-DXa" id="dDc-sD-sYE"/>
-                        <outlet property="lblReplyText" destination="eCq-9H-YT8" id="9aw-EM-9sG"/>
                         <outlet property="lblReplyToUserText" destination="pYK-e6-dyp" id="9qt-LV-Vqw"/>
-                        <outlet property="lblTime" destination="b2d-4D-Ahc" id="Q6W-Mo-nlN"/>
                         <outlet property="lblTitle" destination="5oL-d7-nPZ" id="jAU-0X-IXM"/>
                         <outlet property="tableView" destination="dTH-h6-zbj" id="GGM-pQ-P0G"/>
                         <outlet property="txtViewComment" destination="gQN-Zu-3Rm" id="T4i-uQ-Xtr"/>
-                        <outlet property="viewBackground" destination="mhm-Wb-fsP" id="7EO-sM-fxG"/>
                         <outlet property="viewKeyboarInfo" destination="D84-8p-0Me" id="Hbq-e5-rlt"/>
-                        <outlet property="viewVerticalLine" destination="Rz1-fy-b4a" id="6J7-Rx-fiZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHD-cU-VLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3932,7 +3803,6 @@ locations you choose</string>
         </designable>
     </designables>
     <resources>
-        <image name="AppleLogo" width="160" height="160"/>
         <image name="Aspect1" width="174" height="174"/>
         <image name="Aspect16" width="158" height="158"/>
         <image name="Aspect3" width="174" height="174"/>
@@ -3965,9 +3835,6 @@ locations you choose</string>
         </namedColor>
         <namedColor name="AppLightGray">
             <color red="0.74509803921568629" green="0.792156862745098" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="AppMediumGray">
-            <color red="0.41960784313725491" green="0.39215686274509803" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

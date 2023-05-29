@@ -19,12 +19,8 @@ class ReplyViewHeader: UITableViewHeaderFooterView {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblReply: UILabel!
     @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var viewUnderLine: UIView!
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var lblReplyText: UILabel!
-    @IBOutlet weak var viewLine1: UIView!
-    @IBOutlet weak var viewLine2: UIView!
-    @IBOutlet weak var imgCurve: UIImageView!
     
     
     
@@ -44,11 +40,7 @@ class ReplyViewHeader: UITableViewHeaderFooterView {
 //        self.lblReply.theme_textColor = GlobalPicker.commentTextViewTextColor
 //        self.lblTime.theme_textColor = GlobalPicker.commentTextViewTextColor
 //        self.lblReplyText.theme_textColor = GlobalPicker.commentTextViewTextColor
-        
-        self.viewLine1.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewLine2.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewUnderLine.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.imgCurve.theme_image = GlobalPicker.commentCurvedImage
+
         
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
@@ -57,7 +49,6 @@ class ReplyViewHeader: UITableViewHeaderFooterView {
                 self.lblReply.semanticContentAttribute = .forceRightToLeft
                 self.lblReply.textAlignment = .right
                 
-                self.imgCurve.transform = CGAffineTransform(scaleX: -1, y: 1)
             }
             
         } else {
@@ -67,7 +58,6 @@ class ReplyViewHeader: UITableViewHeaderFooterView {
                 self.lblReply.semanticContentAttribute = .forceLeftToRight
                 self.lblReply.textAlignment = .left
                 
-                self.imgCurve.transform = CGAffineTransform.identity
             }
         }
     }
@@ -93,19 +83,6 @@ class ReplyViewHeader: UITableViewHeaderFooterView {
             lblTime.text = SharedManager.shared.generateDatTimeOfNewsShortType(publishDate)
         }
         
-        if isLastComment {
-            viewLine2.isHidden = true
-            viewUnderLine.isHidden = true
-        } else {
-            viewLine2.isHidden = false
-            
-        }
-        
-        if (model.replies?.count ?? 0) > 0 {
-            viewUnderLine.isHidden = false
-        } else {
-            viewUnderLine.isHidden = true
-        }
     }
     
 //    @IBAction func didTapReplyButton(_ sender: Any) {
