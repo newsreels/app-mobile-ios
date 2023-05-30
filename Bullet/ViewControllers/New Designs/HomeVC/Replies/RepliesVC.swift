@@ -22,6 +22,7 @@ class RepliesVC: UIViewController {
     @IBOutlet weak var btnCancelReply: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet var fieldContainerView: UIView!
+    @IBOutlet weak var topGestureView: UIView!
     let lblPlaceHolder = UILabel()
     
     var currentlySelectedCellIndex: IndexPath?
@@ -40,7 +41,9 @@ class RepliesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+
+        topGestureView.addGestureRecognizer(tap)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         view.addGestureRecognizer(panGesture)
         registerCells()
@@ -129,6 +132,12 @@ class RepliesVC: UIViewController {
         self.txtViewComment.text.append(contentsOf: reactions[sender.tag])
     }
     
+    // function which is triggered when handleTap is called
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.dismiss(animated: false)
+        self.presentingViewController?.dismiss(animated: false)
+      }
     
     func setLocalization() {
         if self.commentArray.count > 0 {

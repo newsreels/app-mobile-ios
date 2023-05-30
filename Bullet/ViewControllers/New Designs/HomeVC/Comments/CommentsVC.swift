@@ -21,11 +21,10 @@ class CommentsVC: UIViewController {
     @IBOutlet weak var btnSendButton: UIButton!
     @IBOutlet weak var btnCloseButton: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
-    //    @IBOutlet weak var constraintTxtViewHeightConstant: NSLayoutConstraint!
-    @IBOutlet weak var constraintViewTop: NSLayoutConstraint!
     @IBOutlet weak var viewTypeTextContainer: UIView!
     @IBOutlet weak var constraintTxtBottomSpace: NSLayoutConstraint!
     @IBOutlet weak var viewCommentUnderLine: UIView!
+    @IBOutlet weak var topGestureView: UIView!
     
     @IBOutlet var navView: UIView!
     public var minimumVelocityToHide: CGFloat = 1500
@@ -49,6 +48,11 @@ class CommentsVC: UIViewController {
         registerCells()
         setupUI()
         //        addGestureRecognizer()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+
+        topGestureView.addGestureRecognizer(tap)
+
+        view.isUserInteractionEnabled = true
         txtViewComment.inputAccessoryView = nil
         setLocalization()
         addTextViewPlaceHolderLabel()
@@ -110,7 +114,10 @@ class CommentsVC: UIViewController {
         
     }
     
-    
+    // function which is triggered when handleTap is called
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true)
+      }
     // MARK: - Methods
     
     @IBAction func reactionsTapped(_ sender: UIButton) {
@@ -539,7 +546,7 @@ extension CommentsVC {
         
         WebService.URLResponse("social/comments/articles/\(articleID)?page=\(page)", method: .get, parameters: nil, headers: token, withSuccess: { [weak self] (response) in
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 ANLoader.hide()
             }
 
@@ -618,7 +625,9 @@ extension CommentsVC {
         ]
         
         WebService.URLResponse("social/comments/create", method: .post, parameters: params, headers: token, withSuccess: { [weak self] (response) in
-            ANLoader.hide()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                ANLoader.hide()
+            }
             
             guard let self = self else {
                 return
