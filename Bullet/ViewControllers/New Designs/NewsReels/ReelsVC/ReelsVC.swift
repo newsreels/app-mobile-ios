@@ -128,7 +128,7 @@ class ReelsVC: UIViewController {
             getReelsCategories()
             collectionViewBottomConstraint.constant = 75
         } else {
-            collectionViewBottomConstraint.constant = 10
+            collectionViewBottomConstraint.constant = 20
         }
         SharedManager.shared.isReelsLoadedFirstTime = true
     }

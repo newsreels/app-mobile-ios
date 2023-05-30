@@ -140,7 +140,6 @@ public struct Info: Codable {
         commentCount = try container.decodeIfPresent(Int.self, forKey: .commentCount)
         isLiked = try container.decodeIfPresent(Bool.self, forKey: .isLiked)
         socialLike = try container.decodeIfPresent(Int.self, forKey: .socialLike)
-        print("fuck", commentCount)
     }
 }
 

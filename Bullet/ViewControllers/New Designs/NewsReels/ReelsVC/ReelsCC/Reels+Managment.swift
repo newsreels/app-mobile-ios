@@ -165,8 +165,7 @@ extension ReelsCC {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
                 timeObserver = playerLayer.player?.addPeriodicTimeObserver(forInterval: CMTime(value: 1, timescale: 100), queue: DispatchQueue.main) { [weak self] time in
-                    guard let self = self else { return }
-                    let currentTime = CMTimeGetSeconds(time)
+                    guard let self = self, let currentTime = self.playerLayer.player?.currentTime else { return }
                     UIView.animate(withDuration: self.isSeeking ? 0 :
                                     currentTime == 0 ? 0 :
                                     currentTime > 1.5 ? 1.3 : 0.9

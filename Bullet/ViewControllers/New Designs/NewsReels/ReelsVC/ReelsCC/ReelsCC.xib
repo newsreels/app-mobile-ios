@@ -653,7 +653,7 @@
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="abd-W4-bVj" customClass="CustomSlider" customModule="Newsreels" customModuleProvider="target">
-                                <rect key="frame" x="-3" y="787" width="625" height="16"/>
+                                <rect key="frame" x="-2" y="787" width="623" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="inV-mU-l2K"/>
                                 </constraints>
@@ -681,11 +681,11 @@
                         <constraints>
                             <constraint firstItem="QBa-BP-unJ" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" id="3ja-EB-Rhi"/>
                             <constraint firstAttribute="bottom" secondItem="abd-W4-bVj" secondAttribute="bottom" constant="2" id="5xd-Sz-put"/>
-                            <constraint firstAttribute="trailing" secondItem="abd-W4-bVj" secondAttribute="trailing" constant="-1" id="IJd-Ws-9Sq"/>
+                            <constraint firstAttribute="trailing" secondItem="abd-W4-bVj" secondAttribute="trailing" id="IJd-Ws-9Sq"/>
                             <constraint firstItem="QBa-BP-unJ" firstAttribute="top" secondItem="a1Y-yX-ZiR" secondAttribute="top" id="KEW-j8-7JR"/>
                             <constraint firstAttribute="trailing" secondItem="QBa-BP-unJ" secondAttribute="trailing" id="hxb-e3-gbV"/>
                             <constraint firstItem="Bgs-IR-Yhr" firstAttribute="centerX" secondItem="a1Y-yX-ZiR" secondAttribute="centerX" id="jsM-z4-D3o"/>
-                            <constraint firstItem="abd-W4-bVj" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" constant="-1" id="ljz-yL-V3J"/>
+                            <constraint firstItem="abd-W4-bVj" firstAttribute="leading" secondItem="a1Y-yX-ZiR" secondAttribute="leading" id="ljz-yL-V3J"/>
                             <constraint firstItem="Bgs-IR-Yhr" firstAttribute="centerY" secondItem="a1Y-yX-ZiR" secondAttribute="centerY" id="uLY-h1-G99"/>
                             <constraint firstAttribute="bottom" secondItem="QBa-BP-unJ" secondAttribute="bottom" constant="7" id="vA4-We-VxZ"/>
                         </constraints>
