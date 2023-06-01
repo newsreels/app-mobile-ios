@@ -585,7 +585,13 @@ class ArticlesVC: UIViewController, UIGestureRecognizerDelegate {
         if fromDiscover {
             greetingLabel.text = categoryTitleString
         }
-        
+        if let originalImage = UIImage(named: "ArticlesMenuIcon") {
+        let color = UIColor.red
+        let coloredImage = originalImage.withRenderingMode(.alwaysTemplate)
+        articleMenuIcon.image =  coloredImage
+        articleMenuIcon.tintColor = Constant.appColor.darkGray
+    }
+
         if fromDiscover {
             articleMenuIcon.isHidden = true
             topicFollowIcon.isHidden = false
@@ -5094,7 +5100,7 @@ extension ArticlesVC: LikeCommentDelegate {
         } else {
             likeCount = (likeCount ?? 0) + 1
         }
-        let info = Info(viewCount: self.articles[indexPath.row].info?.viewCount, likeCount: likeCount, commentCount: self.articles[indexPath.row].info?.commentCount, isLiked: !(self.articles[indexPath.row].info?.isLiked ?? false))
+        let info = Info(viewCount: self.articles[indexPath.row].info?.viewCount, likeCount: likeCount, commentCount: self.articles[indexPath.row].info?.commentCount, isLiked: !(self.articles[indexPath.row].info?.isLiked ?? false), socialLike: self.articles[indexPath.row].info?.socialLike)
         self.articles[indexPath.row].info = info
         (cell as? HomeListViewCC)?.setLikeComment(model: self.articles[indexPath.row].info)
         (cell as? HomeCardCell)?.setLikeComment(model: self.articles[indexPath.row].info)

@@ -76,7 +76,7 @@ enum GlobalPicker {
     static let imgNotification: ThemeImagePicker = ["NotificationLight", "NotificationDark"]
     static let imgNotificationAlert: ThemeImagePicker = ["NotificationAlertLight", "NotificationAlertDark"]
     
-
+    static let GrayScale5: ThemeColorPicker = ["#FFFFFF", "#ADADAD"]
 
     static let backgroundListColor: ThemeColorPicker = ["#E7E7E7", "#1A1A1A"]
     static let successPopupBGColor: ThemeColorPicker = ["#FFF", "#181818"]

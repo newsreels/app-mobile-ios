@@ -211,13 +211,7 @@ class ReelsCacheManager {
     
     func clearCache() {
         SharedManager.shared.players.removeAll()
-        // Clear memory cache
-        SDImageCache.shared.clearMemory()
 
-        // Clear disk cache
-        SDImageCache.shared.clearDisk {
-            // This block will be called once the disk cache has been cleared
-        }
         WKWebsiteDataStore.default().removeData(ofTypes: [WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeMemoryCache], modifiedSince: Date(timeIntervalSince1970: 0), completionHandler:{ })
         URLCache.shared.removeAllCachedResponses()
         clearDiskCache()

@@ -4660,7 +4660,7 @@ extension HomeVC: LikeCommentDelegate {
         } else {
             likeCount = (likeCount ?? 0) + 1
         }
-        let info = Info(viewCount: self.articles[indexPath.row].info?.viewCount, likeCount: likeCount, commentCount: self.articles[indexPath.row].info?.commentCount, isLiked: !(self.articles[indexPath.row].info?.isLiked ?? false))
+        let info = Info(viewCount: self.articles[indexPath.row].info?.viewCount, likeCount: likeCount, commentCount: self.articles[indexPath.row].info?.commentCount, isLiked: !(self.articles[indexPath.row].info?.isLiked ?? false), socialLike: self.articles[indexPath.row].info?.socialLike)
         self.articles[indexPath.row].info = info
         (cell as? HomeListViewCC)?.setLikeComment(model: self.articles[indexPath.row].info)
         (cell as? HomeCardCell)?.setLikeComment(model: self.articles[indexPath.row].info)

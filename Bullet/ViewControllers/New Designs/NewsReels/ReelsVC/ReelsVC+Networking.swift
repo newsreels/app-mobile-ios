@@ -360,6 +360,7 @@ extension ReelsVC {
                 }
 
                 if let reelsData = FULLResponse.reels, reelsData.count > 0 {
+                    self.retryGetReelsCount = 0
                     self.isOpenedFollowingPrefernce = false
                     self.viewEmptyMessage.isHidden = true
 
@@ -498,6 +499,10 @@ extension ReelsVC {
                     }
 
                 } else {
+                    if self.retryGetReelsCount < 5 {
+                        self.retryGetReelsCount += 1
+                        self.performWSToGetReelsData(page: page, isRefreshRequired: isRefreshRequired, contextID: contextID)
+                    }
                     print("Empty Result")
                     if self.reelsArray.count == 0 {
                         if self.isOpenedFollowingPrefernce {
@@ -521,6 +526,10 @@ extension ReelsVC {
                 }
 
             } catch let jsonerror {
+                if self.retryGetReelsCount < 5 {
+                    self.retryGetReelsCount += 1
+                    self.performWSToGetReelsData(page: page, isRefreshRequired: isRefreshRequired, contextID: contextID)
+                }
                 self.delegate?.loaderShowing(status: false)
                 self.stopPullToRefresh()
                 SharedManager.shared.hideLaoderFromWindow()
@@ -531,6 +540,10 @@ extension ReelsVC {
                 print("error parsing json objects", jsonerror)
             }
         }) { error in
+            if self.retryGetReelsCount < 5 {
+                self.retryGetReelsCount += 1
+                self.performWSToGetReelsData(page: page, isRefreshRequired: isRefreshRequired, contextID: contextID)
+            }
             self.delegate?.loaderShowing(status: false)
             self.stopPullToRefresh()
             SharedManager.shared.hideLaoderFromWindow()

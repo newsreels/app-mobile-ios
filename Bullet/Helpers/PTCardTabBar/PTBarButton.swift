@@ -175,7 +175,7 @@ class PTBarButton: ImageButton {
         
         if SharedManager.shared.buttonTabSelected == 0 {
             setTitleColor(.white, for: .normal)
-            setTitleColor(.white, for: .selected)
+            setTitleColor(Constant.appColor.lightRed, for: .selected)
         }
         else {
             setTitleColor(Constant.appColor.darkGray, for: .normal)

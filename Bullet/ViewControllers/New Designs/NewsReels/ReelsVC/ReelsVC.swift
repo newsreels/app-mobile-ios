@@ -48,7 +48,8 @@ class ReelsVC: UIViewController {
     @IBOutlet var loaderView: UIView!
     @IBOutlet var refreshLoaderView: UIView!
     @IBOutlet var allCaughtUpView: UIStackView!
-
+    @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
+    
     weak var delegate: ReelsVCDelegate?
     public var minimumVelocityToHide: CGFloat = 1500
     public var minimumScreenRatioToHide: CGFloat = 0.5
@@ -112,7 +113,7 @@ class ReelsVC: UIViewController {
     var isFromArticles = false
     var isTapBack = false
     var isFirstVideo = true
-    
+    var retryGetReelsCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -125,13 +126,14 @@ class ReelsVC: UIViewController {
         if fromMain {
             loadNewData()
             getReelsCategories()
+            collectionViewBottomConstraint.constant = 75
+        } else {
+            collectionViewBottomConstraint.constant = 20
         }
         SharedManager.shared.isReelsLoadedFirstTime = true
     }
 
     override func viewWillAppear(_: Bool) {
-        (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
-
         if isWatchingRotatedVideos {
             return
         }
@@ -146,6 +148,7 @@ class ReelsVC: UIViewController {
             if let ptcTBC = tabBarController as? PTCardTabBarController {
                 ptcTBC.showTabBar(true, animated: false)
             }
+            
         }
 
         if SharedManager.shared.reloadRequiredFromTopics && !isFromArticles && !isFromDiscover {
@@ -240,10 +243,27 @@ class ReelsVC: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
             self.getArticleDataPayLoad()
         }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            guard SharedManager.shared.tabBarIndex == 0 else { return }
+            if let cell = self.collectionView.visibleCells.first as? ReelsCC {
+                if cell.playerLayer.player?.isPlaying == nil ||
+                    cell.playerLayer.player?.isPlaying == false ||
+                    cell.playerLayer.player?.currentItem == nil {
+                    SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                        if SharedManager.shared.tabBarIndex == 0 {
+                            cell.play()
+                        }
+                    }
+                }
+            } else if self.collectionView.numberOfItems(inSection: 0) > self.currentlyPlayingIndexPath.item {
+                self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
+                self.getCurrentVisibleIndexPlayVideo()
+            } else {
+                NotificationCenter.default.post(name: Notification.Name.notifyReelsTabBarTapped, object: nil, userInfo: nil)
+            }
+        }
         SharedManager.shared.isFirstimeSplashScreenLoaded = true
-
-        (UIApplication.shared.delegate as! AppDelegate).setOrientationPortraitInly()
-
         if scrollToItemFirstTime {
             currentlyPlayingIndexPath = userSelectedIndexPath
         }
@@ -415,7 +435,12 @@ extension ReelsVC {
     }
 
     @objc func appMovedToBackground() {
-        stopVideo()
+        stopVideo(shouldContinue: true)
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            if let duration = cell.totalDuration?.formatToMilliSeconds() {
+             SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
+         }
+        }
         SharedManager.shared.players.removeAll()
         ReelsCacheManager.shared.clearCache()
         SharedManager.shared.lastBackgroundTimeReels = Date()
@@ -459,6 +484,27 @@ extension ReelsVC {
                 }
             }
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            guard SharedManager.shared.tabBarIndex == 0 else { return }
+            if let cell = self.collectionView.visibleCells.first as? ReelsCC {
+                if cell.playerLayer.player?.isPlaying == nil ||
+                    cell.playerLayer.player?.isPlaying == false ||
+                    cell.playerLayer.player?.currentItem == nil {
+                    SharedManager.shared.currentlyPlayingIndexPath = self.collectionView.indexPath(for: cell) ?? IndexPath(item: 0, section: 0)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                        if SharedManager.shared.tabBarIndex == 0 {
+                            cell.setPlayer(didFail: true)
+                        }
+                    }
+                }
+            } else if self.collectionView.numberOfItems(inSection: 0) > self.currentlyPlayingIndexPath.item {
+                self.collectionView.scrollToItem(at: self.currentlyPlayingIndexPath, at: .centeredVertically, animated: false)
+                self.getCurrentVisibleIndexPlayVideo()
+            } else {
+                NotificationCenter.default.post(name: Notification.Name.notifyReelsTabBarTapped, object: nil, userInfo: nil)
+            }
+        }
     }
 
     @objc func getArticleDataPayLoad() {
@@ -489,10 +535,19 @@ extension ReelsVC {
         }
     }
 
-    @objc func stopVideo() {
+    @objc func stopVideoNotificationHandler() {
+        pauseCellVideo(indexPath: currentlyPlayingIndexPath, shouldContinue: true)
         if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
-            cell.stopVideo()
-//            cell.pause()
+            if let duration = cell.totalDuration?.formatToMilliSeconds() {
+                (cell.playerLayer.player as? NRPlayer)?.endTimer()
+             SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[currentlyPlayingIndexPath.item].id ?? "", duration: duration)
+         }
+        }
+    }
+    
+    func stopVideo(shouldContinue: Bool = false) {
+        if let cell = collectionView.cellForItem(at: currentlyPlayingIndexPath) as? ReelsCC {
+            cell.stopVideo(shouldContinue: shouldContinue)
         }
     }
 

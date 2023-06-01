@@ -264,7 +264,26 @@
 		AC6DA6C429EFC5EA001C0702 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */; };
 		AC6DA6C629EFC79D001C0702 /* RemoteVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */; };
 		AC700E7629F6502500A6178C /* PlayersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC700E7529F6502500A6178C /* PlayersPreload.swift */; };
+		AC7153432A1746D30066F1F2 /* LibreFranklin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153312A1746D30066F1F2 /* LibreFranklin-Light.ttf */; };
+		AC7153442A1746D30066F1F2 /* LibreFranklin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153322A1746D30066F1F2 /* LibreFranklin-Regular.ttf */; };
+		AC7153452A1746D30066F1F2 /* LibreFranklin-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153332A1746D30066F1F2 /* LibreFranklin-ExtraBoldItalic.ttf */; };
+		AC7153462A1746D30066F1F2 /* LibreFranklin-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153342A1746D30066F1F2 /* LibreFranklin-ExtraBold.ttf */; };
+		AC7153472A1746D30066F1F2 /* LibreFranklin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153352A1746D30066F1F2 /* LibreFranklin-Bold.ttf */; };
+		AC7153482A1746D30066F1F2 /* LibreFranklin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153362A1746D30066F1F2 /* LibreFranklin-SemiBold.ttf */; };
+		AC7153492A1746D30066F1F2 /* LibreFranklin-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153372A1746D30066F1F2 /* LibreFranklin-ExtraLight.ttf */; };
+		AC71534A2A1746D30066F1F2 /* LibreFranklin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153382A1746D30066F1F2 /* LibreFranklin-Italic.ttf */; };
+		AC71534B2A1746D30066F1F2 /* LibreFranklin-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153392A1746D30066F1F2 /* LibreFranklin-ThinItalic.ttf */; };
+		AC71534C2A1746D30066F1F2 /* LibreFranklin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533A2A1746D30066F1F2 /* LibreFranklin-BoldItalic.ttf */; };
+		AC71534D2A1746D30066F1F2 /* LibreFranklin-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533B2A1746D30066F1F2 /* LibreFranklin-ExtraLightItalic.ttf */; };
+		AC71534E2A1746D30066F1F2 /* LibreFranklin-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533C2A1746D30066F1F2 /* LibreFranklin-Thin.ttf */; };
+		AC71534F2A1746D30066F1F2 /* LibreFranklin-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533D2A1746D30066F1F2 /* LibreFranklin-LightItalic.ttf */; };
+		AC7153502A1746D30066F1F2 /* LibreFranklin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533E2A1746D30066F1F2 /* LibreFranklin-Medium.ttf */; };
+		AC7153512A1746D30066F1F2 /* LibreFranklin-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC71533F2A1746D30066F1F2 /* LibreFranklin-BlackItalic.ttf */; };
+		AC7153522A1746D30066F1F2 /* LibreFranklin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153402A1746D30066F1F2 /* LibreFranklin-SemiBoldItalic.ttf */; };
+		AC7153532A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153412A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf */; };
+		AC7153542A1746D30066F1F2 /* LibreFranklin-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7153422A1746D30066F1F2 /* LibreFranklin-Black.ttf */; };
 		AC8704CB2A06B98400D87459 /* ReelsCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */; };
+		ACA568862A1E23E8008A01AC /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA568852A1E23E8008A01AC /* CustomSlider.swift */; };
 		B86BB28A2930D78700AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */; };
 		B86F41E4292E95DF000044F2 /* oswald_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B86F41E3292E95DF000044F2 /* oswald_bold.otf */; };
 		B8E2BF35292B5C7D001EFA8F /* ArticleCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */; };
@@ -1422,7 +1441,26 @@
 		AC6DA6C329EFC5EA001C0702 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		AC6DA6C529EFC79D001C0702 /* RemoteVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVersion.swift; sourceTree = "<group>"; };
 		AC700E7529F6502500A6178C /* PlayersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPreload.swift; sourceTree = "<group>"; };
+		AC7153312A1746D30066F1F2 /* LibreFranklin-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Light.ttf"; sourceTree = "<group>"; };
+		AC7153322A1746D30066F1F2 /* LibreFranklin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Regular.ttf"; sourceTree = "<group>"; };
+		AC7153332A1746D30066F1F2 /* LibreFranklin-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		AC7153342A1746D30066F1F2 /* LibreFranklin-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AC7153352A1746D30066F1F2 /* LibreFranklin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Bold.ttf"; sourceTree = "<group>"; };
+		AC7153362A1746D30066F1F2 /* LibreFranklin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-SemiBold.ttf"; sourceTree = "<group>"; };
+		AC7153372A1746D30066F1F2 /* LibreFranklin-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AC7153382A1746D30066F1F2 /* LibreFranklin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Italic.ttf"; sourceTree = "<group>"; };
+		AC7153392A1746D30066F1F2 /* LibreFranklin-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AC71533A2A1746D30066F1F2 /* LibreFranklin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AC71533B2A1746D30066F1F2 /* LibreFranklin-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AC71533C2A1746D30066F1F2 /* LibreFranklin-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Thin.ttf"; sourceTree = "<group>"; };
+		AC71533D2A1746D30066F1F2 /* LibreFranklin-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-LightItalic.ttf"; sourceTree = "<group>"; };
+		AC71533E2A1746D30066F1F2 /* LibreFranklin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Medium.ttf"; sourceTree = "<group>"; };
+		AC71533F2A1746D30066F1F2 /* LibreFranklin-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AC7153402A1746D30066F1F2 /* LibreFranklin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		AC7153412A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AC7153422A1746D30066F1F2 /* LibreFranklin-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreFranklin-Black.ttf"; sourceTree = "<group>"; };
 		AC8704CA2A06B98400D87459 /* ReelsCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelsCacheManager.swift; sourceTree = "<group>"; };
+		ACA568852A1E23E8008A01AC /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-Gilroy-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B86F41E3292E95DF000044F2 /* oswald_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = oswald_bold.otf; sourceTree = "<group>"; };
 		B8E2BF34292B5C7D001EFA8F /* ArticleCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCacheManager.swift; sourceTree = "<group>"; };
@@ -3049,6 +3087,7 @@
 				DEA3254D27C4E3A000039BAE /* LoaderButton.swift */,
 				DE996C3C27CDF64F005A6F6E /* GMView.swift */,
 				DE96B21F289F95190097CEEC /* SwiftUIManager.swift */,
+				ACA568852A1E23E8008A01AC /* CustomSlider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -3155,6 +3194,31 @@
 				AC64B9202A00D1B80089FD89 /* NRPlayer.swift */,
 			);
 			path = NRPlayer;
+			sourceTree = "<group>";
+		};
+		AC7153302A1746D30066F1F2 /* Libre_Franklin */ = {
+			isa = PBXGroup;
+			children = (
+				AC7153312A1746D30066F1F2 /* LibreFranklin-Light.ttf */,
+				AC7153322A1746D30066F1F2 /* LibreFranklin-Regular.ttf */,
+				AC7153332A1746D30066F1F2 /* LibreFranklin-ExtraBoldItalic.ttf */,
+				AC7153342A1746D30066F1F2 /* LibreFranklin-ExtraBold.ttf */,
+				AC7153352A1746D30066F1F2 /* LibreFranklin-Bold.ttf */,
+				AC7153362A1746D30066F1F2 /* LibreFranklin-SemiBold.ttf */,
+				AC7153372A1746D30066F1F2 /* LibreFranklin-ExtraLight.ttf */,
+				AC7153382A1746D30066F1F2 /* LibreFranklin-Italic.ttf */,
+				AC7153392A1746D30066F1F2 /* LibreFranklin-ThinItalic.ttf */,
+				AC71533A2A1746D30066F1F2 /* LibreFranklin-BoldItalic.ttf */,
+				AC71533B2A1746D30066F1F2 /* LibreFranklin-ExtraLightItalic.ttf */,
+				AC71533C2A1746D30066F1F2 /* LibreFranklin-Thin.ttf */,
+				AC71533D2A1746D30066F1F2 /* LibreFranklin-LightItalic.ttf */,
+				AC71533E2A1746D30066F1F2 /* LibreFranklin-Medium.ttf */,
+				AC71533F2A1746D30066F1F2 /* LibreFranklin-BlackItalic.ttf */,
+				AC7153402A1746D30066F1F2 /* LibreFranklin-SemiBoldItalic.ttf */,
+				AC7153412A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf */,
+				AC7153422A1746D30066F1F2 /* LibreFranklin-Black.ttf */,
+			);
+			path = Libre_Franklin;
 			sourceTree = "<group>";
 		};
 		B86F41E2292E95CB000044F2 /* Oswald */ = {
@@ -3536,6 +3600,7 @@
 			isa = PBXGroup;
 			children = (
 				B86BB2892930D75500AAE160 /* FontsFree-Net-Gilroy-ExtraBold.ttf */,
+				AC7153302A1746D30066F1F2 /* Libre_Franklin */,
 				B86F41E2292E95CB000044F2 /* Oswald */,
 				DE96B1F6289F695F0097CEEC /* Nunito */,
 				DE73AD14284E11CD0068BDF5 /* Inter */,
@@ -5424,6 +5489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7153452A1746D30066F1F2 /* LibreFranklin-ExtraBoldItalic.ttf in Resources */,
 				C2B68DDB26F8A0A2008E73C9 /* appLogoPortrait.mp4 in Resources */,
 				C2B68DD926F89BD9008E73C9 /* appLogo.mp4 in Resources */,
 				C27C28B626E5F3F0002A495D /* ImageCreation.xib in Resources */,
@@ -5434,19 +5500,24 @@
 				C26388BB26D387A3000297A1 /* OnboardingTopicsCC.xib in Resources */,
 				DE87EAEE27B643D400639275 /* SelectTopicCC.xib in Resources */,
 				DE96B213289F695F0097CEEC /* Nunito-ExtraLight.ttf in Resources */,
+				AC71534E2A1746D30066F1F2 /* LibreFranklin-Thin.ttf in Resources */,
 				3D8EA4BD26D7AB0900CEEEB2 /* sugClvTopicsCC.xib in Resources */,
 				6473A35625CD271B00612279 /* GoogleService-Info.plist in Resources */,
 				3D0805ED26CD37D400D3ADCA /* Roboto-Medium.ttf in Resources */,
+				AC7153532A1746D30066F1F2 /* LibreFranklin-MediumItalic.ttf in Resources */,
 				DE7F421326E10B9700042A48 /* ReelCarouselCell.xib in Resources */,
+				AC71534B2A1746D30066F1F2 /* LibreFranklin-ThinItalic.ttf in Resources */,
 				DE7E01502701E6E40039A9A8 /* EmptyCell.xib in Resources */,
 				64FAD85C26104F6B00966CE7 /* HomeListViewCC.xib in Resources */,
 				C26388A826D38656000297A1 /* Onboarding.storyboard in Resources */,
 				DE98501E2671EDEE006C9DEC /* YTPlayer.html in Resources */,
 				DE7F422826E10B9700042A48 /* locationDiscoverCC.xib in Resources */,
+				AC7153442A1746D30066F1F2 /* LibreFranklin-Regular.ttf in Resources */,
 				C2C2A2E5269ADC33003BCBE3 /* FollowingAuthorsCC.xib in Resources */,
 				DE73AD43284E11CE0068BDF5 /* Inter-ExtraLightItalic-BETA.ttf in Resources */,
 				3D90BF2726C295490089562F /* RelatedCC.xib in Resources */,
 				DE15B3A3265517080054B2B2 /* RelevantTopCC.xib in Resources */,
+				AC7153462A1746D30066F1F2 /* LibreFranklin-ExtraBold.ttf in Resources */,
 				3D0805DF26CD2A2400D3ADCA /* HomeClvHeadlineCC.xib in Resources */,
 				DE7F421D26E10B9700042A48 /* SingleArticleCC.xib in Resources */,
 				3DC02A2026D50CFD00DA0D4D /* sugChannelCC.xib in Resources */,
@@ -5467,8 +5538,10 @@
 				DE994DA528E18E3F00D1DEDF /* NotFollowingAnythingTableViewCell.xib in Resources */,
 				3D0805D726CD190F00D3ADCA /* HomeHeroCC.xib in Resources */,
 				DE7F420E26E10B9700042A48 /* ChannelsDiscoverCC.xib in Resources */,
+				AC7153512A1746D30066F1F2 /* LibreFranklin-BlackItalic.ttf in Resources */,
 				DEB0C133267F1888000D1752 /* ProfileSelectionCC.xib in Resources */,
 				C226B42126107E9F00CDF065 /* VideoPlayerView.xib in Resources */,
+				AC71534C2A1746D30066F1F2 /* LibreFranklin-BoldItalic.ttf in Resources */,
 				DEA3253E27C4BDD900039BAE /* AddLocationCC.xib in Resources */,
 				3D0805F226CD37D400D3ADCA /* Roboto-BlackItalic.ttf in Resources */,
 				DE6CE14026D5192F005F3D95 /* EZPlayerAudibleLegibleViewController.xib in Resources */,
@@ -5483,6 +5556,7 @@
 				64061633259B1EC300F4049C /* TabView.xib in Resources */,
 				DEAA6C9A26B19FCE00BA906A /* ChannelIconCC.xib in Resources */,
 				07733304284B14A800760CA9 /* CollectionTableViewCell.xib in Resources */,
+				AC71534D2A1746D30066F1F2 /* LibreFranklin-ExtraLightItalic.ttf in Resources */,
 				DE73AD33284E11CD0068BDF5 /* Inter-ThinItalic-BETA.ttf in Resources */,
 				640616E3259C4E6F00F4049C /* YoutubeCardCell.xib in Resources */,
 				DE96B218289F695F0097CEEC /* Nunito-LightItalic.ttf in Resources */,
@@ -5494,6 +5568,8 @@
 				DE7F421826E10B9700042A48 /* HeadlineVerticalDiscoverCC.xib in Resources */,
 				C27392AB262440C1000A3C57 /* GenericTableView.xib in Resources */,
 				DE04B8C627BFC9550068C32C /* TopicsCC.xib in Resources */,
+				AC7153522A1746D30066F1F2 /* LibreFranklin-SemiBoldItalic.ttf in Resources */,
+				AC7153502A1746D30066F1F2 /* LibreFranklin-Medium.ttf in Resources */,
 				C2B203C326248B6C007B9DA4 /* GenericArticleView.xib in Resources */,
 				DE441A6C27FB11EE0035C739 /* SuggestedArticlesCC.xib in Resources */,
 				DE67434526263D3E009D02DA /* HeaderRelatedArticles.xib in Resources */,
@@ -5511,11 +5587,13 @@
 				C2C2A2F5269ADC4E003BCBE3 /* FollowingTopicCC.xib in Resources */,
 				3D51B5B22678CC750069E39E /* Schedule.storyboard in Resources */,
 				DE96B20C289F695F0097CEEC /* Nunito-ExtraLightItalic.ttf in Resources */,
+				AC7153432A1746D30066F1F2 /* LibreFranklin-Light.ttf in Resources */,
 				DE73AD29284E11CD0068BDF5 /* Inter-Thin-BETA.ttf in Resources */,
 				3D0805F126CD37D400D3ADCA /* Roboto-Italic.ttf in Resources */,
 				DE3D87F827AA6D5300CA6089 /* OnboardingSB.storyboard in Resources */,
 				DE96B215289F695F0097CEEC /* Nunito-BlackItalic.ttf in Resources */,
 				DED0E91A26958DBB00B6C973 /* SkeletonDicoveryCC.xib in Resources */,
+				AC71534A2A1746D30066F1F2 /* LibreFranklin-Italic.ttf in Resources */,
 				3D4C4E15267B112D00C20765 /* ScheduleYoutubeCC.xib in Resources */,
 				DE301958261F45710029D47D /* ReplyViewHeader.xib in Resources */,
 				DE73AD31284E11CD0068BDF5 /* Inter-Regular.ttf in Resources */,
@@ -5548,6 +5626,7 @@
 				DEEDCA702832619F001BB63E /* ProximaNova-Regular.otf in Resources */,
 				DEBF4EEB283F79C20087B66B /* FollowingHeaderView.xib in Resources */,
 				C2B203A926248225007B9DA4 /* GenericHeadlineView.xib in Resources */,
+				AC7153482A1746D30066F1F2 /* LibreFranklin-SemiBold.ttf in Resources */,
 				DE7F422126E10B9700042A48 /* AuthorsDiscoverCC.xib in Resources */,
 				07733322284B26DC00760CA9 /* TrendingTableViewCell.xib in Resources */,
 				DE73AD2D284E11CD0068BDF5 /* Inter-SemiBoldItalic.ttf in Resources */,
@@ -5590,6 +5669,7 @@
 				64FAD8BA261056CF00966CE7 /* BulletListCellWithoutImg.xib in Resources */,
 				DE73AD39284E11CD0068BDF5 /* Inter-BoldItalic.ttf in Resources */,
 				DE96B214289F695F0097CEEC /* Nunito-SemiBoldItalic.ttf in Resources */,
+				AC7153542A1746D30066F1F2 /* LibreFranklin-Black.ttf in Resources */,
 				64FAD86E2610565800966CE7 /* BulletCell.xib in Resources */,
 				3D3680972679CFD6002B8CE1 /* ScheduleCardCC.xib in Resources */,
 				3DA722F8268921CD00570A46 /* ViewProfileHeaderView.xib in Resources */,
@@ -5605,6 +5685,7 @@
 				DE73AD3D284E11CD0068BDF5 /* Inter-MediumItalic.ttf in Resources */,
 				DEA15C13268333D7001109C2 /* HomeSkeltonTabCell.xib in Resources */,
 				DE15B39F26539EDE0054B2B2 /* ReelsPreviewCC.xib in Resources */,
+				AC7153472A1746D30066F1F2 /* LibreFranklin-Bold.ttf in Resources */,
 				DE90D60126301E9F00EA4D88 /* MuliBlack.otf in Resources */,
 				3D0805F026CD37D400D3ADCA /* Roboto-BoldItalic.ttf in Resources */,
 				3DF4442A261C99AE00CA6D68 /* Help-Illustration.gif in Resources */,
@@ -5620,8 +5701,10 @@
 				DEA3254C27C4E0B400039BAE /* SuggestedCC.xib in Resources */,
 				DEB3E414268B1BA500A8FEEB /* AdHeaderFooter.xib in Resources */,
 				DE73AD35284E11CD0068BDF5 /* Inter-ExtraBold.ttf in Resources */,
+				AC71534F2A1746D30066F1F2 /* LibreFranklin-LightItalic.ttf in Resources */,
 				DEEDCA722832619F001BB63E /* ProximaNova-Black.otf in Resources */,
 				DEA3254227C4CA5A00039BAE /* TrendingTopicsCC.xib in Resources */,
+				AC7153492A1746D30066F1F2 /* LibreFranklin-ExtraLight.ttf in Resources */,
 				DE96B209289F695F0097CEEC /* Nunito-Medium.ttf in Resources */,
 				DE7F421526E10B9700042A48 /* HeadlinesDiscoverCC.xib in Resources */,
 				DE73AD37284E11CD0068BDF5 /* Inter-LightItalic-BETA.ttf in Resources */,
@@ -6387,6 +6470,7 @@
 				C273928726243B48000A3C57 /* GenericVideoCell.swift in Sources */,
 				DEB7CC932817C70400F74136 /* menuCC.swift in Sources */,
 				DE98501D2671EDEE006C9DEC /* YouTubePlayer.swift in Sources */,
+				ACA568862A1E23E8008A01AC /* CustomSlider.swift in Sources */,
 				C2F5A25225868A3C00E401E8 /* AppLanguageVC.swift in Sources */,
 				DED01B4A2651025D00616C2F /* UIColor+Extensions.swift in Sources */,
 				3D8F7F36268CA1B30087D874 /* ESRefreshComponent.swift in Sources */,
@@ -7021,10 +7105,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -7045,11 +7131,12 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.24;
+				MARKETING_VERSION = 2.0.25;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = GithubActions;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bullet/Bullet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7067,10 +7154,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -7091,10 +7180,11 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.24;
+				MARKETING_VERSION = 2.0.25;
 				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = GithubActions;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bullet/Bullet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

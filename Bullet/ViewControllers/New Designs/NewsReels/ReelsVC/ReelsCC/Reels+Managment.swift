@@ -31,6 +31,8 @@ extension ReelsCC {
     
     func play() {
         if !isPlaying && SharedManager.shared.playingPlayers.count < 1  {
+            NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnded), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerLayer.player?.currentItem)
+            isPlayerEnded = false
             print("will play \(reelModel?.id ?? "")")
             isPlaying = true
             if let id = reelModel?.id,
@@ -41,7 +43,7 @@ extension ReelsCC {
             if self.playerLayer.player == nil,
                let id = reelModel?.id,
                let player = SharedManager.shared.players.first(where: {$0.id == id})?.player,
-               player.currentItem != nil, player.currentItem?.bufferDuration != nil{
+               player.currentItem != nil, player.currentItem?.bufferDuration != nil {
                 playerLayer = AVPlayerLayer(player: player)
             } else if let url = URL(string: reelModel?.media ?? ""),
                playerLayer.player == nil {
@@ -64,6 +66,7 @@ extension ReelsCC {
             playerContainer.layer.masksToBounds = true
             playerLayer.masksToBounds = true
             playerLayer.player?.play()
+            self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
             imgThumbnailView.layoutIfNeeded()
             if let collectionView = superview as? UICollectionView,
                let index = collectionView.indexPath(for: self) {
@@ -161,6 +164,19 @@ extension ReelsCC {
             switch player.timeControlStatus {
             case .playing:
                 print("playing \(reelModel?.id ?? "")")
+                timeObserver = playerLayer.player?.addPeriodicTimeObserver(forInterval: CMTime(value: 1, timescale: 100), queue: DispatchQueue.main) { [weak self] time in
+                    guard let self = self, let currentTime = self.playerLayer.player?.currentTime else { return }
+                    UIView.animate(withDuration: self.isSeeking ? 0 :
+                                    currentTime == 0 ? 0 :
+                                    currentTime > 1.5 ? 1.3 : 0.9
+                    ) {
+                        if let total = self.playerLayer.player?.totalDuration, total > 0 {
+                            self.seekBar.setValue(Float(currentTime / (total)), animated: true)
+                        }
+                    }
+                    self.seekBarTotalDurationLabelValue = (self.playerLayer.player?.totalDuration ?? 0)
+                    self.seekBarCurrentDurationLabelValue = currentTime
+                }
                 loadingStartingTime = nil
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                     self.imgThumbnailView.isHidden = true
@@ -171,7 +187,9 @@ extension ReelsCC {
                         self.loader.stopAnimating()
                     }
                     self.loader.stopAnimating()
+                    if !self.isSeeking {
                         self.hideLoader()
+                    }
                     ANLoader.hide()
                 }
             case .paused:
@@ -182,21 +200,13 @@ extension ReelsCC {
                     }
                 }
                     isPlaying = false
-                
+                if isSeeking {
+                        self.imgThumbnailView.isHidden = false
+                        self.loader.isHidden = false
+                        self.loader.startAnimating()
+                }
                 print("paused \(reelModel?.id ?? "")")
             case .waitingToPlayAtSpecifiedRate:
-                if let loadingStartingTime {
-                    let endDate = Date()
-                    if endDate.timeIntervalSince(loadingStartingTime) > 2 {
-                        SharedManager.shared.players.forEach({ item in
-                            // Cancel the loading of the player's current asset
-                            item.player.currentItem?.cancelPendingSeeks()
-                            item.player.currentItem?.asset.cancelLoading()
-                        })
-                    }
-                } else {
-                    loadingStartingTime = Date()
-                }
                 if let currentItem = playerLayer.player?.currentItem {
                     let timeRange = currentItem.loadedTimeRanges.first?.timeRangeValue
                     if let timeRange = timeRange {
@@ -204,8 +214,9 @@ extension ReelsCC {
                         print("waitingToPlayAtSpecifiedRate, buffer: \(bufferDuration), currently: \((playerLayer.player?.currentItem?.currentDuration ?? 0))")
                     }
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate  {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    if self.playerLayer.player?.timeControlStatus == .waitingToPlayAtSpecifiedRate &&
+                        self.playerLayer.player?.currentDuration ?? 0 < 5  {
                         self.imgThumbnailView.isHidden = false
                         self.loader.isHidden = false
                         self.loader.startAnimating()
@@ -227,3 +238,4 @@ extension ReelsCC {
     }
     
 }
+

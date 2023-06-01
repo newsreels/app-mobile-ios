@@ -142,8 +142,11 @@ class CommentsCC: UITableViewCell {
 //        }
         
         if let replies = model.replies, replies.count > 0 {
-            
-            lblMoreReply.text = "View all replies (\(replies.count))"
+            var count = replies.count
+            replies.forEach({
+                count += $0.replies?.count ?? 0
+            })
+            lblMoreReply.text = "View all replies"
 
 //            viewLine1.isHidden = false
 //            imgCurve1.isHidden = false

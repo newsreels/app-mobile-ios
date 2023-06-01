@@ -108,21 +108,38 @@ public struct socialData: Codable {
 
 public struct Info: Codable {
     var viewCount: String?
-    var likeCount, commentCount: Int?
+    var views: Int? = nil
+    var likeCount: Int?
+    var commentCount: Int?
     var isLiked: Bool?
+    var socialLike: Int?
 
-    init(viewCount: String?, likeCount: Int?, commentCount: Int?, isLiked: Bool?) {
+    init(viewCount: String?, likeCount: Int?, commentCount: Int?, isLiked: Bool?, socialLike: Int?) {
         self.viewCount = viewCount
         self.likeCount = likeCount
         self.commentCount = commentCount
         self.isLiked = isLiked
+        self.socialLike = socialLike
     }
     
     enum CodingKeys: String, CodingKey {
         case viewCount = "view_count"
-        case likeCount = "like_count"
-        case commentCount = "comment_count"
-        case isLiked = "is_liked"
+         case views
+         case likeCount = "like_count"
+         case commentCount = "comment_count"
+         case isLiked = "is_liked"
+         case socialLike = "social_like"
+    }
+    
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        viewCount = try container.decodeIfPresent(String.self, forKey: .viewCount)
+        views = try container.decodeIfPresent(Int.self, forKey: .views)
+        likeCount = try container.decodeIfPresent(Int.self, forKey: .likeCount)
+        commentCount = try container.decodeIfPresent(Int.self, forKey: .commentCount)
+        isLiked = try container.decodeIfPresent(Bool.self, forKey: .isLiked)
+        socialLike = try container.decodeIfPresent(Int.self, forKey: .socialLike)
     }
 }
 

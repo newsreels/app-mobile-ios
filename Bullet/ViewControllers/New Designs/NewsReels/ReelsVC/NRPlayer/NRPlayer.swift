@@ -78,10 +78,10 @@ extension NRPlayer {
         if let cellIndex, let reelId {
             if SharedManager.shared.playingPlayers.contains(reelId),
                SharedManager.shared.currentlyPlayingIndexPath != cellIndex {
+                SharedManager.shared.playingPlayers.remove(object: reelId)
                 pause()
             }
         }
-
     }
  
     func isStuckWithStaling() -> Bool { 

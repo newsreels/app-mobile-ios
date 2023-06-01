@@ -11,34 +11,18 @@ import IQKeyboardManagerSwift
 class RepliesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var viewTextViewContainer: UIView!
     @IBOutlet weak var txtViewComment: AutoExpandingTextView!
     @IBOutlet weak var btnSendButton: UIButton!
     @IBOutlet weak var btnCloseButton: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
-//    @IBOutlet weak var constraintTxtViewHeightConstant: NSLayoutConstraint!
-    @IBOutlet weak var constraintViewTop: NSLayoutConstraint!
-    @IBOutlet weak var viewTypeTextContainer: UIView!
     @IBOutlet weak var constraintTxtBottomSpace: NSLayoutConstraint!
-    @IBOutlet weak var viewTitleUnderLine: UIView!
-    @IBOutlet weak var viewCommentUnderLine: UIView!
-    @IBOutlet weak var constraintTableViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var viewBackground: UIView!
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblReply: UILabel!
-    @IBOutlet weak var lblReplyText: UILabel!
-    @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var imgUser: UIImageView!
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var constraintReplyingToViewHeight: NSLayoutConstraint!
     @IBOutlet weak var lblReplyToUserText: UILabel!
     @IBOutlet weak var viewKeyboarInfo: UIView!
     @IBOutlet weak var btnCancelReply: UIButton!
-//    @IBOutlet weak var viewLine: UIView!
-    @IBOutlet weak var viewVerticalLine: UIView!
-    @IBOutlet weak var imgUserDP: UIImageView!
-    
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet var fieldContainerView: UIView!
+    @IBOutlet weak var topGestureView: UIView!
     let lblPlaceHolder = UILabel()
     
     var currentlySelectedCellIndex: IndexPath?
@@ -50,7 +34,6 @@ class RepliesVC: UIViewController {
     var isApiCallAlreadyRunning = false
     var nextPageData = ""
     var childNextPageData = [String: String]()
-    
     var currentlySelectedSection: Int?
     var currentlySelectedRow: Int?
     var isReplyTagRequired = false
@@ -58,12 +41,14 @@ class RepliesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+
+        topGestureView.addGestureRecognizer(tap)
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        view.addGestureRecognizer(panGesture)
         registerCells()
         setLocalization()
         setupUI()
-        IQKeyboardManager.shared.enable = false
         txtViewComment.inputAccessoryView = nil
         addTextViewPlaceHolderLabel()
         txtViewComment.delegate = self
@@ -73,20 +58,6 @@ class RepliesVC: UIViewController {
         tableView.estimatedSectionHeaderHeight =  UITableView.automaticDimension
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight =  200
-                
-        lblName.text = selectedComment?.user?.name?.capitalized ?? ""
-        if selectedComment?.user?.image?.isEmpty ?? false {
-            imgUser.theme_image = GlobalPicker.imgUserPlaceholder
-        }
-        else {
-            imgUser.sd_setImage(with: URL(string: selectedComment?.user?.image ?? "") , placeholderImage: nil)
-        }
-        
-        if let publishDate = selectedComment?.createdAt {
-            lblTime.text = SharedManager.shared.generateDatTimeOfNewsShortType(publishDate)
-        }
-        
-        lblReply.text = selectedComment?.comment ?? ""
         constraintReplyingToViewHeight.constant = 0
         
         performWSToGetCommentsData(articleID: articleID, parentID: parentID, page: "", isLoadingChildData: false)
@@ -95,7 +66,10 @@ class RepliesVC: UIViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
+        IQKeyboardManager.shared.enableAutoToolbar = false
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -116,39 +90,14 @@ class RepliesVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = true
+
         NotificationCenter.default.removeObserver(self)
     }
     
     override func viewWillLayoutSubviews() {
         super.updateViewConstraints()
-
-        
-////        var tableSize : CGFloat = 0
-////        if tableView.numberOfSections > 0 {
-////            if self.tableView.contentSize.height + viewBackground.frame.size.height > self.scrollView.frame.size.height {
-////                tableSize = self.tableView.contentSize.height
-////                self.constraintTableViewHeight.constant = tableSize
-////            } else {
-////                tableSize = self.scrollView.frame.size.height - viewBackground.frame.size.height
-////                self.constraintTableViewHeight.constant = tableSize
-////            }
-////        } else {
-////            self.constraintTableViewHeight.constant = tableSize
-////        }
-////
-//
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            if self.constraintTableViewHeight.constant == 0 && self.tableView.numberOfSections > 0{
-//                self.viewWillLayoutSubviews()
-//            }
-//        }
-        
-        
         if SharedManager.shared.isSelectedLanguageRTL() {
             DispatchQueue.main.async {
-                self.lblName.semanticContentAttribute = .forceRightToLeft
-                self.lblName.textAlignment = .right
                 self.lblPlaceHolder.semanticContentAttribute = .forceRightToLeft
                 self.lblPlaceHolder.textAlignment = .right
                 self.txtViewComment.semanticContentAttribute = .forceRightToLeft
@@ -160,8 +109,6 @@ class RepliesVC: UIViewController {
             
         } else {
             DispatchQueue.main.async {
-                self.lblName.semanticContentAttribute = .forceLeftToRight
-                self.lblName.textAlignment = .left
                 self.lblPlaceHolder.semanticContentAttribute = .forceLeftToRight
                 self.lblPlaceHolder.textAlignment = .left
                 self.txtViewComment.semanticContentAttribute = .forceLeftToRight
@@ -185,10 +132,23 @@ class RepliesVC: UIViewController {
         self.txtViewComment.text.append(contentsOf: reactions[sender.tag])
     }
     
+    // function which is triggered when handleTap is called
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        self.dismiss(animated: false)
+        self.presentingViewController?.dismiss(animated: false)
+      }
     
     func setLocalization() {
-        
-        lblTitle.text = NSLocalizedString("Replies", comment: "")
+        if self.commentArray.count > 0 {
+            var count = self.commentArray.count
+            self.commentArray.forEach({
+                count += $0.replies?.count ?? 0
+            })
+            lblTitle.text = NSLocalizedString("\(count) Replies", comment: "")
+        } else {
+            lblTitle.text = NSLocalizedString("Replies", comment: "")
+        }
     }
     
     
@@ -198,7 +158,13 @@ class RepliesVC: UIViewController {
 
         self.lblReplyToUserText.theme_textColor = GlobalPicker.commentVCTitleColor
         self.btnCancelReply.theme_setTitleColor(GlobalPicker.themeCommonColor, forState: .normal)
-    
+        let image = UIImage(named: "icn_close_gray")?.withRenderingMode(.alwaysTemplate)
+        closeButton.contentMode = .scaleAspectFit
+        closeButton.clipsToBounds = true
+        closeButton.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        image?.withTintColor(.black)
+        self.closeButton.setImage(image, for: .normal)
+        self.closeButton.setTitle("", for: .normal)
         self.fieldContainerView.layer.cornerRadius = 8
         self.fieldContainerView.layer.borderWidth = 1
         self.fieldContainerView.layer.borderColor = UIColor.init(hexString: "#DEE8F2").cgColor
@@ -236,16 +202,16 @@ class RepliesVC: UIViewController {
             if currentlySelectedSection != nil && currentlySelectedRow != nil {
                 let userName = commentArray[currentlySelectedSection!].replies?[currentlySelectedRow!].user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
             } else if currentlySelectedSection != nil && currentlySelectedRow == nil {
                 let userName = commentArray[currentlySelectedSection!].user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
             } else {
                 
                 let userName = selectedComment?.user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 38
+                constraintReplyingToViewHeight.constant = 0
                 
             }
             self.keyboardControl(notification, isShowing: true)
@@ -304,7 +270,29 @@ class RepliesVC: UIViewController {
          
      }
      
-    
+    @objc func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let translation = gestureRecognizer.translation(in: view)
+
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            if translation.y > 0 {
+                view.transform = CGAffineTransform(translationX: 0, y: translation.y)
+            }
+        case .ended:
+            let velocity = gestureRecognizer.velocity(in: view)
+
+            if translation.y > view.bounds.height * 0.3 || velocity.y > 1000 {
+                dismiss(animated: true, completion: nil)
+                self.presentingViewController?.dismiss(animated: false)
+            } else {
+                UIView.animate(withDuration: 0.3) {
+                    self.view.transform = .identity
+                }
+            }
+        default:
+            break
+        }
+    }
     
     func resetTextViewContent() {
         currentlySelectedSection = nil
@@ -327,10 +315,15 @@ class RepliesVC: UIViewController {
     }
     
     // MARK: - Actions
-    @IBAction func didTapBtnClose(_ sender: Any) {
+    @IBAction func didTapBtnClose(_ sender: UIButton) {
         
         self.view.endEditing(true)
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: false)
+        if sender.tag == 1 {
+            self.presentingViewController?.view.isHidden = false
+        } else {
+            self.presentingViewController?.dismiss(animated: false)
+        }
     }
     
     @IBAction func didTapSendButton(_ sender: Any) {
@@ -339,17 +332,17 @@ class RepliesVC: UIViewController {
         
         if txtViewComment.text.trimmingCharacters(in: .whitespaces).isEmpty == false {
             
-            if currentlySelectedSection != nil && currentlySelectedRow == nil {
-                let parentID = commentArray[currentlySelectedSection!].id
-                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
-            } else if currentlySelectedSection != nil && currentlySelectedRow != nil {
-                
-                let parentID = commentArray[currentlySelectedSection!].id
-                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
-            } else {
+//            if currentlySelectedSection != nil && currentlySelectedRow == nil {
+//                let parentID = commentArray[currentlySelectedSection!].id
+//                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
+//            } else if currentlySelectedSection != nil && currentlySelectedRow != nil {
+//
+//                let parentID = commentArray[currentlySelectedSection!].id
+//                performWSToAddNewCommentsData(articleID: articleID, parentID: parentID ?? "", comment: txtViewComment.text ?? "", isAddingChildData: true)
+//            } else {
                 
                 performWSToAddNewCommentsData(articleID: articleID, parentID: self.parentID, comment: txtViewComment.text ?? "", isAddingChildData: false)
-            }
+//            }
             
         }
         
@@ -383,21 +376,21 @@ class RepliesVC: UIViewController {
 extension RepliesVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
-        viewBackground.layer.masksToBounds = false
-        viewBackground.layer.shadowRadius = 4
-        viewBackground.layer.shadowColor = UIColor.black.cgColor
-        viewBackground.layer.shadowOffset = CGSize(width: 0 , height: 4)
-        viewBackground.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
-                                                             y: viewBackground.bounds.maxY - viewBackground.layer.shadowRadius,
-                                                             width: viewBackground.bounds.width,
-                                                             height: viewBackground.layer.shadowRadius)).cgPath
-
-        
-        if scrollView.contentOffset.y > 0 {
-            viewBackground.layer.shadowOpacity = 0.25
-        } else {
-            viewBackground.layer.shadowOpacity = 0
-        }
+//        viewBackground.layer.masksToBounds = false
+//        viewBackground.layer.shadowRadius = 4
+//        viewBackground.layer.shadowColor = UIColor.black.cgColor
+//        viewBackground.layer.shadowOffset = CGSize(width: 0 , height: 4)
+//        viewBackground.layer.shadowPath = UIBezierPath(rect: CGRect(x: 0,
+//                                                             y: viewBackground.bounds.maxY - viewBackground.layer.shadowRadius,
+//                                                             width: viewBackground.bounds.width,
+//                                                             height: viewBackground.layer.shadowRadius)).cgPath
+//
+//
+//        if scrollView.contentOffset.y > 0 {
+//            viewBackground.layer.shadowOpacity = 0.25
+//        } else {
+//            viewBackground.layer.shadowOpacity = 0
+//        }
     }
 }
 
@@ -417,38 +410,27 @@ extension RepliesVC: UITextViewDelegate {
 extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return UITableView.automaticDimension
+        return 95
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 95
     }
-    
-//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        if self.commentArray.count > 0 {
-            viewVerticalLine.isHidden = false
-        } else {
-            viewVerticalLine.isHidden = true
-        }
-        return self.commentArray.count
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.commentArray[section].replies?.count ?? 0
+        return self.commentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepliesCC") as! RepliesCC
-//        cell.delegate = self
-        if let reply = commentArray[indexPath.section].replies?[indexPath.row] {
+        cell.delegate = self
+        let reply = commentArray[indexPath.item]
             let comment = commentArray[indexPath.section]
-            let isLast = self.commentArray.count - 1 == indexPath.section ? true : false
-            cell.setupCell(replyModel: reply, commentModel: comment, indexpath: indexPath, isLastTopComment: isLast)
-        }
+            cell.setupCell(replyModel: reply, commentModel: comment, indexpath: indexPath, isLastTopComment: false)
+        
         
         cell.delegate = self
         cell.layoutIfNeeded()
@@ -459,8 +441,7 @@ extension RepliesVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // Dequeue with the reuse identifier
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ReplyViewHeader") as! ReplyViewHeader
-        let isLast = self.commentArray.count - 1 == section ? true : false
-        header.setupHeader(model: commentArray[section], section: section, isLastComment: isLast)
+        header.setupHeader(model: selectedComment!, section: section, isLastComment: false)
         header.delegate = self
         return header
     }
@@ -585,8 +566,9 @@ extension RepliesVC {
         isApiCallAlreadyRunning = true
         
         WebService.URLResponse("social/comments/articles/\(articleID)?parent_id=\(parentID)&page=\(page)", method: .get, parameters: nil, headers: token, withSuccess: { [weak self] (response) in
-            ANLoader.hide()
-            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                ANLoader.hide()
+            }
             guard let self = self else {
                 return
             }
@@ -602,6 +584,7 @@ extension RepliesVC {
                         if self.commentArray.count == 0 {
                             self.commentArray = commentsData
                             self.tableView.reloadData()
+                            self.setLocalization()
                         } else {
     //                        let newIndex = self.reelsArray.count
                             for newComment in commentsData {
@@ -610,6 +593,7 @@ extension RepliesVC {
                                     self.commentArray.append(newComment)
                                 }
                             }
+                            self.setLocalization()
                             self.reloadTableUpdateContentSize()
                         }
                         
@@ -654,7 +638,7 @@ extension RepliesVC {
                         }
                         
                     }
-                    
+                    self.setLocalization()
                     // Meta data
                     if let next = FULLResponse.meta?.next, next.isEmpty == false {
                         self.childNextPageData["\(parentID )"] = next
@@ -703,7 +687,6 @@ extension RepliesVC {
         
         WebService.URLResponse("social/comments/create", method: .post, parameters: params, headers: token, withSuccess: { [weak self] (response) in
             ANLoader.hide()
-            
             guard let self = self else {
                 return
             }
@@ -718,9 +701,9 @@ extension RepliesVC {
                     if let commentsData = FULLResponse.comments, commentsData.count > 0 {
                         if let newComment = commentsData.first {
                             
-                            self.commentArray.insert(newComment, at: 0)
+                            self.commentArray.append(newComment)
                         }
-                        
+                        self.setLocalization()
                         self.reloadTableScrollToTop()
                         
                     }
@@ -742,7 +725,7 @@ extension RepliesVC {
                                     }
                                     
                                 }
-                                
+                                self.setLocalization()
                                 self.reloadSectionUpdateContentSize(index: section)
                             }
                             

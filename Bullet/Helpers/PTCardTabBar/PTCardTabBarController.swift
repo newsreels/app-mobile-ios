@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 open class PTCardTabBarController: UITabBarController {
     
@@ -216,7 +217,7 @@ extension PTCardTabBarController: CardTabBarDelegate {
 //            self.customTabBar.theme_backgroundColor = GlobalPicker.customTabbarBGColorReels//UIColor.black
 //            smallBottomView.theme_backgroundColor = GlobalPicker.customTabbarBGColorReels
             
-            customTabBar.backgroundColor = .black
+            customTabBar.backgroundColor = .clear
             smallBottomView.backgroundColor = .black
             
             NotificationCenter.default.post(name: Notification.Name.notifyReelsTabBarTapped, object: nil, userInfo: nil)
@@ -241,6 +242,13 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 2:
 
             //search
+            // Clear memory cache
+            SDImageCache.shared.clearMemory()
+
+            // Clear disk cache
+            SDImageCache.shared.clearDisk {
+                // This block will be called once the disk cache has been cleared
+            }
             NotificationCenter.default.post(name: Notification.Name.stopVideoNotification, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.searchPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = "LIST"
@@ -260,6 +268,13 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 3:
             
             //Following
+            // Clear memory cache
+            SDImageCache.shared.clearMemory()
+
+            // Clear disk cache
+            SDImageCache.shared.clearDisk {
+                // This block will be called once the disk cache has been cleared
+            }
             NotificationCenter.default.post(name: Notification.Name.stopVideoNotification, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""
@@ -279,6 +294,13 @@ extension PTCardTabBarController: CardTabBarDelegate {
         case 4:
             
             //account
+            // Clear memory cache
+            SDImageCache.shared.clearMemory()
+
+            // Clear disk cache
+            SDImageCache.shared.clearDisk {
+                // This block will be called once the disk cache has been cleared
+            }
             NotificationCenter.default.post(name: Notification.Name.stopVideoNotification, object: nil, userInfo: nil)
             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.accountPageClick, eventDescription: "")
 //            SharedManager.shared.articleSearchModeType = ""

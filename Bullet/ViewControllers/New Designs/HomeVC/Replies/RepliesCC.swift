@@ -31,14 +31,10 @@ class RepliesCC: UITableViewCell {
     @IBOutlet weak var viewTextViewContainer: UIView!
     @IBOutlet weak var txtViewComment: AutoExpandingTextView!
     @IBOutlet weak var lblPlaceHolder: UILabel!
-    @IBOutlet weak var viewLine: UIView!
-    @IBOutlet weak var viewLine2: UIView!
-    @IBOutlet weak var viewLine3: UIView!
-    @IBOutlet weak var imgCurve1: UIImageView!
+  
     @IBOutlet weak var imgCurve2: UIImageView!
     @IBOutlet weak var imgCurve3: UIImageView!
     @IBOutlet weak var viewLineMoreReply: UIView!
-    @IBOutlet weak var viewLine4: UIView!
     
     var replyCount = 0
     var isSelectedData = false
@@ -64,14 +60,6 @@ class RepliesCC: UITableViewCell {
         viewLoader.isHidden = true
         viewReplyTextView.isHidden = true
         
-        
-        self.viewLine.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewLine2.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewLine3.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewLineMoreReply.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        self.viewLine4.theme_backgroundColor = GlobalPicker.commentNestedLineColor
-        
-        self.imgCurve1.theme_image = GlobalPicker.commentCurvedImage
         self.imgCurve2.theme_image = GlobalPicker.commentCurvedImage
         self.imgCurve3.theme_image = GlobalPicker.commentCurvedImage
         
@@ -98,8 +86,7 @@ class RepliesCC: UITableViewCell {
                 self.lblReply.textAlignment = .right
                 self.lblMore.semanticContentAttribute = .forceRightToLeft
                 self.lblMore.textAlignment = .right
-                
-                self.imgCurve1.transform = CGAffineTransform(scaleX: -1, y: 1)
+                 
                 self.imgCurve2.transform = CGAffineTransform(scaleX: -1, y: 1)
                 self.imgCurve3.transform = CGAffineTransform(scaleX: -1, y: 1)
             }
@@ -112,8 +99,7 @@ class RepliesCC: UITableViewCell {
                 self.lblReply.textAlignment = .left
                 self.lblMore.semanticContentAttribute = .forceLeftToRight
                 self.lblMore.textAlignment = .left
-                
-                self.imgCurve1.transform = CGAffineTransform.identity
+                 
                 self.imgCurve2.transform = CGAffineTransform.identity
                 self.imgCurve3.transform = CGAffineTransform.identity
             }
@@ -148,7 +134,6 @@ class RepliesCC: UITableViewCell {
     func setupCell(replyModel: Comment, commentModel: Comment, indexpath: IndexPath, isLastTopComment: Bool) {
         
         parentID = commentModel.id ?? ""
-        viewLine3.isHidden = true
         if (commentModel.replies?.count ?? 0) - 1 == indexpath.row {
             
             if let moreComment = commentModel.moreComment {
@@ -158,8 +143,6 @@ class RepliesCC: UITableViewCell {
                     // Last index with more comments
                     viewMoreReplies.isHidden = false
                     viewReplyTextView.isHidden = false
-                    
-                    viewLine2.isHidden = false
                     imgCurve2.isHidden = false
                     if moreComment == 1 {
                         lblMore.text = "View \(moreComment) \(NSLocalizedString("more reply", comment: ""))"
@@ -178,9 +161,7 @@ class RepliesCC: UITableViewCell {
         } else {
             viewMoreReplies.isHidden = true
             viewReplyTextView.isHidden = true
-            if (commentModel.replies?.count ?? 0) - 1 != indexpath.row {
-                viewLine3.isHidden = false
-            }
+ 
         }
         
         if replyModel.user?.image?.isEmpty ?? false {
@@ -208,12 +189,7 @@ class RepliesCC: UITableViewCell {
             }
 
         }
-        
-        if isLastTopComment {
-            viewLine4.isHidden = true
-        } else {
-            viewLine4.isHidden = false
-        }
+ 
         
         
         

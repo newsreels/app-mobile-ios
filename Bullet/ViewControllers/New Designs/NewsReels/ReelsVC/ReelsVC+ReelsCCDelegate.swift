@@ -69,6 +69,8 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
 
         if let cell = cell as? ReelsCC {
+            cell.seekBar.value = 0
+            cell.timeObserver = nil
             cell.stopVideo()
             cell.pause()
         }
@@ -76,18 +78,20 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
 
     func collectionView(_: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if let cell = cell as? ReelsCC {
+            cell.seekBar.value = 0
+            cell.timeObserver = nil
             if let source = reelsArray[indexPath.item].source {
                 let fav = source.favorite ?? false
                 DispatchQueue.main.async {
                     cell.btnUserPlus.hideLoaderView()
                     if fav {
                         cell.btnUserPlus.setTitle("Following", for: .normal)
-                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlusWidth.constant = 80
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     } else {
                         cell.btnUserPlus.setTitle("Follow", for: .normal)
-                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlusWidth.constant = 60
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     }
@@ -98,12 +102,12 @@ extension ReelsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
                     cell.btnUserPlus.hideLoaderView()
                     if fav {
                         cell.btnUserPlus.setTitle("Following", for: .normal)
-                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlusWidth.constant = 80
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     } else {
                         cell.btnUserPlus.setTitle("Follow", for: .normal)
-                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlusWidth.constant = 60
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     }
@@ -239,18 +243,14 @@ extension ReelsVC: ReelsCCDelegate {
     func didTapComment(cell: ReelsCC) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
 
-        stopVideo()
+        stopVideo(shouldContinue: true)
         isViewControllerVisible = false
-        appDelegate.setOrientationPortraitInly()
 
         let content = reelsArray[indexPath.item]
         let vc = CommentsVC.instantiate(fromAppStoryboard: .Home)
         vc.articleID = content.id ?? ""
         vc.delegate = self
-        let navVC = UINavigationController(rootViewController: vc)
-        navVC.isNavigationBarHidden = true
-        navVC.modalPresentationStyle = .overFullScreen
-        present(navVC, animated: true, completion: nil)
+        present(vc, animated: true, completion: nil)
     }
 
     func didTapLike(cell: ReelsCC) {
@@ -267,7 +267,7 @@ extension ReelsVC: ReelsCCDelegate {
             likeCount = (likeCount ?? 0) + 1
         }
 
-        let info = Info(viewCount: reelsArray[indexPath.item].info?.viewCount, likeCount: likeCount, commentCount: reelsArray[indexPath.item].info?.commentCount, isLiked: !(reelsArray[indexPath.item].info?.isLiked ?? false))
+        let info = Info(viewCount: reelsArray[indexPath.item].info?.viewCount, likeCount: likeCount, commentCount: reelsArray[indexPath.item].info?.commentCount, isLiked: !(reelsArray[indexPath.item].info?.isLiked ?? false), socialLike: reelsArray[indexPath.item].info?.socialLike)
         reelsArray[indexPath.item].info = info
         cell.setLikeComment(model: reelsArray[indexPath.item].info, showAnimation: true)
 
@@ -423,12 +423,12 @@ extension ReelsVC: ReelsCCDelegate {
                                 cell.btnUserPlus.hideLoaderView()
                                 if fav {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlusWidth.constant = 80
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 } else {
                                     cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlusWidth.constant = 60
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 }
@@ -439,12 +439,12 @@ extension ReelsVC: ReelsCCDelegate {
                                 cell.btnUserPlus.hideLoaderView()
                                 if fav {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlusWidth.constant = 80
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 } else {
                                     cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlusWidth.constant = 60
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 }
@@ -491,12 +491,12 @@ extension ReelsVC: ReelsCCDelegate {
                                 cell.btnUserPlus.hideLoaderView()
                                 if fav {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlusWidth.constant = 80
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 } else {
                                     cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlusWidth.constant = 60
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 }
@@ -507,12 +507,12 @@ extension ReelsVC: ReelsCCDelegate {
                                 cell.btnUserPlus.hideLoaderView()
                                 if fav {
                                     cell.btnUserPlus.setTitle("Following", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 90
+                                    cell.btnUserPlusWidth.constant = 80
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 } else {
                                     cell.btnUserPlus.setTitle("Follow", for: .normal)
-                                    cell.btnUserPlusWidth.constant = 70
+                                    cell.btnUserPlusWidth.constant = 60
                                     cell.btnUserPlus.layoutIfNeeded()
                                     cell.followStack.layoutIfNeeded()
                                 }
@@ -567,8 +567,10 @@ extension ReelsVC: ReelsCCDelegate {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
 
         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsFinishedPlaying, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "")
-
-        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
+        if let duration = cell.totalDuration?.formatToMilliSeconds(), indexPath == currentlyPlayingIndexPath {
+         SharedManager.shared.performWSDurationAnalytics(reelId: reelsArray[indexPath.item].id ?? "", duration: duration)
+     }
+//        SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.reelsDurationEvent, eventDescription: "", article_id: reelsArray[indexPath.item].id ?? "", duration: cell.playerLayer.player?.totalDuration.formatToMilliSeconds() ?? "")
 
         if isFromChannelView, indexPath.item == reelsArray.count - 1 {
             let nextIndexPath = IndexPath(item: 0, section: 0)
@@ -586,6 +588,7 @@ extension ReelsVC: ReelsCCDelegate {
         } else if reelsArray.count > 0 {
             let nextIndexPath = IndexPath(item: currentlyPlayingIndexPath.item + 1, section: 0)
             if nextIndexPath.item < reelsArray.count {
+
                 playNextCellVideo(indexPath: nextIndexPath)
             }
         }
@@ -627,7 +630,6 @@ extension ReelsVC: ReelsCCDelegate {
             MediaManager.sharedInstance.isLandscapeReelPresenting = true
 
             vc.modalPresentationStyle = .overFullScreen
-            (UIApplication.shared.delegate as! AppDelegate).setOrientationBothLandscape()
             present(vc, animated: true, completion: nil)
         }
     }

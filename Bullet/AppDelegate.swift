@@ -94,10 +94,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         IQKeyboardManager.shared.disabledToolbarClasses.append(ChangeEmailVC.self)
         IQKeyboardManager.shared.disabledToolbarClasses.append(ChangePasswordVC.self)
         IQKeyboardManager.shared.disabledToolbarClasses.append(contactUsVC.self)
-        IQKeyboardManager.shared.disabledToolbarClasses.append(CommentsVC.self)
-        IQKeyboardManager.shared.disabledTouchResignedClasses.append(CommentsVC.self)
-        IQKeyboardManager.shared.disabledToolbarClasses.append(RepliesVC.self)
-        IQKeyboardManager.shared.disabledTouchResignedClasses.append(RepliesVC.self)
         IQKeyboardManager.shared.disabledToolbarClasses.append(ChannelNameVC.self)
         IQKeyboardManager.shared.disabledTouchResignedClasses.append(ChannelNameVC.self)
         IQKeyboardManager.shared.disabledToolbarClasses.append(ChannelDescriptionVC.self)
@@ -1560,4 +1556,3 @@ extension AppDelegate: SplashscreenLoaderVCDelegate {
         }
     }
 }
-

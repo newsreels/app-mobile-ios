@@ -239,8 +239,6 @@ extension ReelsVC: BottomSheetVCDelegate {
 extension ReelsVC: CommentsVCDelegate {
     func commentsVCDismissed(articleID: String) {
         isViewControllerVisible = true
-        appDelegate.setOrientationPortraitInly()
-
         if SharedManager.shared.reelsAutoPlay {
             playCurrentCellVideo()
         }
@@ -739,7 +737,7 @@ extension ReelsVC: ReelsFullScreenVCDelegate {
 
 extension ReelsVC: ChannelDetailsVCDelegate {
     func backButtonPressedChannelDetailsVC(_ channel: ChannelInfo?) {
-        print("fuck")
+
     }
 
     func backButtonPressedWhenFromReels(_ channel: ChannelInfo?) {
@@ -783,12 +781,12 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlusWidth.constant = 80
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlusWidth.constant = 60
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         }
@@ -799,12 +797,12 @@ extension ReelsVC: ChannelDetailsVCDelegate {
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlusWidth.constant = 80
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlusWidth.constant = 60
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         }
@@ -856,12 +854,12 @@ extension ReelsVC: BulletDetailsVCFollowDelegate {
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlusWidth.constant = 80
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlusWidth.constant = 60
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         }
@@ -872,12 +870,12 @@ extension ReelsVC: BulletDetailsVCFollowDelegate {
                         cell.btnUserPlus.hideLoaderView()
                         if fav {
                             cell.btnUserPlus.setTitle("Following", for: .normal)
-                            cell.btnUserPlusWidth.constant = 90
+                            cell.btnUserPlusWidth.constant = 80
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         } else {
                             cell.btnUserPlus.setTitle("Follow", for: .normal)
-                            cell.btnUserPlusWidth.constant = 70
+                            cell.btnUserPlusWidth.constant = 60
                             cell.btnUserPlus.layoutIfNeeded()
                             cell.followStack.layoutIfNeeded()
                         }
@@ -1015,12 +1013,12 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
                     cell.btnUserPlus.hideLoaderView()
                     if fav {
                         cell.btnUserPlus.setTitle("Following", for: .normal)
-                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlusWidth.constant = 80
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     } else {
                         cell.btnUserPlus.setTitle("Follow", for: .normal)
-                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlusWidth.constant = 60
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     }
@@ -1031,12 +1029,12 @@ extension ReelsVC: SideMenuNavigationControllerDelegate {
                     cell.btnUserPlus.hideLoaderView()
                     if fav {
                         cell.btnUserPlus.setTitle("Following", for: .normal)
-                        cell.btnUserPlusWidth.constant = 90
+                        cell.btnUserPlusWidth.constant = 80
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     } else {
                         cell.btnUserPlus.setTitle("Follow", for: .normal)
-                        cell.btnUserPlusWidth.constant = 70
+                        cell.btnUserPlusWidth.constant = 60
                         cell.btnUserPlus.layoutIfNeeded()
                         cell.followStack.layoutIfNeeded()
                     }

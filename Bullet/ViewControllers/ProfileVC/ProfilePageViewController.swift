@@ -121,7 +121,7 @@ class ProfilePageViewController: AquamanPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(selectedChannel?.follower_count)
         if isFromChannelView  {
             self.initWithChannelData(info: selectedChannel)
             performGetChannelDetails(id: selectedChannel?.id ?? "")
@@ -437,7 +437,12 @@ extension ProfilePageViewController {
               
         //headerView.lblNavTitle.text = self.selectedChannel?.name ?? ""
         headerView.lblChannelName.text = self.selectedChannel?.name ?? ""
-        headerView.lblusername.text = "@\(self.selectedChannel?.name ?? "")"
+        if let followersCount = self.selectedChannel?.follower_count, followersCount > 0 {
+            headerView.lblusername.text = "@\(self.selectedChannel?.name ?? "") - \(followersCount) followers"
+        } else {
+            headerView.lblusername.text = "@\(self.selectedChannel?.name ?? "")"
+        }
+        
         followCount = self.selectedChannel?.follower_count ?? 0
 //        headerView.lblFollowers.text = "\(followCount.formatUsingAbbrevation())"
 //        headerView.lblPost.text = "\((self.selectedChannel?.post_count ?? 0).formatUsingAbbrevation())"
@@ -771,7 +776,11 @@ extension ProfilePageViewController {
                   
             let fullName = (user.first_name ?? "") + " " + (user.last_name ?? "")
             self.headerViewProfile.lblFullname.text = fullName.trim()
-            headerViewProfile.lblUsername.text = "@\(user.username ?? "")"
+            if let followersCount = user.follower_count, followersCount > 0 {
+                headerView.lblusername.text = "@\(user.username ?? "") - \(followersCount) followers"
+            } else {
+                headerView.lblusername.text = "@\(user.username ?? "")"
+            }
 //            self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
 //            self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"
         }
@@ -961,7 +970,13 @@ extension ProfilePageViewController {
                     self.headerViewProfile.lblFullname.text = fullName.trim()
                     
                     let uname = self.headerViewProfile.lblUsername.text ?? ""
-                    self.headerViewProfile.lblUsername.text = uname.isEmpty ? "@\(user.username ?? "")" : "\(uname)"
+                    if uname.isEmpty {
+                        if let followersCount = user.follower_count, followersCount > 0 {
+                            self.headerView.lblusername.text = "@\(user.username ?? "") - \(followersCount) followers"
+                        } else {
+                            self.headerView.lblusername.text = "@\(user.username ?? "")"
+                        }
+                    }
 
 //                    self.headerViewProfile.lblFollowers.text = "\((user.follower_count ?? 0).formatUsingAbbrevation()) Followers"
 //                    self.headerViewProfile.lblPost.text = "\((user.post_count ?? 0).formatUsingAbbrevation()) Posts"

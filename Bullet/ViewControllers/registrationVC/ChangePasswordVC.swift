@@ -219,11 +219,11 @@ extension ChangePasswordVC: ForgotPasswordVCDelegate {
     
     func onDismissForgotPwdView() {
         
-        let vc = RegistrationVC.instantiate(fromAppStoryboard: .registration)
-        vc.user_Name = UserDefaults.standard.string(forKey: Constant.UD_userEmail) ?? ""
-        vc.isSignInVC = true
-        vc.isFromProfileVC = true
-        self.present(vc, animated: true, completion: nil)
+//        let vc = RegistrationVC.instantiate(fromAppStoryboard: .registration)
+//        vc.user_Name = UserDefaults.standard.string(forKey: Constant.UD_userEmail) ?? ""
+//        vc.isSignInVC = true
+//        vc.isFromProfileVC = true
+//        self.present(vc, animated: true, completion: nil)
     }
     
 }

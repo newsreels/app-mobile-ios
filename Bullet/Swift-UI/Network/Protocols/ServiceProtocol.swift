@@ -32,7 +32,9 @@ extension ServiceProtocol {
     var headers: Headers {
         return ["Authorization": "Bearer \(UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? "")",
                 "x-app-platform": "ios",
+                "X-User-Timezone": TimeZone.current.identifier,
                 "x-app-version": Bundle.main.releaseVersionNumberPretty,
+                "x-user-ip": SharedManager.shared.getIPAddress() ?? "",
                 "api-version": WebserviceManager.shared.API_VERSION,
                 "Content-Type": "application/json"]
     }

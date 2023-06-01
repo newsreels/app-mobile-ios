@@ -21,11 +21,10 @@ class CommentsVC: UIViewController {
     @IBOutlet weak var btnSendButton: UIButton!
     @IBOutlet weak var btnCloseButton: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
-    //    @IBOutlet weak var constraintTxtViewHeightConstant: NSLayoutConstraint!
-    @IBOutlet weak var constraintViewTop: NSLayoutConstraint!
     @IBOutlet weak var viewTypeTextContainer: UIView!
     @IBOutlet weak var constraintTxtBottomSpace: NSLayoutConstraint!
     @IBOutlet weak var viewCommentUnderLine: UIView!
+    @IBOutlet weak var topGestureView: UIView!
     
     @IBOutlet var navView: UIView!
     public var minimumVelocityToHide: CGFloat = 1500
@@ -40,20 +39,24 @@ class CommentsVC: UIViewController {
     var nextPageData = ""
     var isViewFirstTimeLoaded = false
     weak var delegate: CommentsVCDelegate?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
+        view.addGestureRecognizer(panGesture)
         // Do any additional setup after loading the view.
         registerCells()
         setupUI()
         //        addGestureRecognizer()
-        IQKeyboardManager.shared.enable = false
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+
+        topGestureView.addGestureRecognizer(tap)
+
+        view.isUserInteractionEnabled = true
         txtViewComment.inputAccessoryView = nil
         setLocalization()
         addTextViewPlaceHolderLabel()
         txtViewComment.delegate = self
-        //        tableView.keyboardDismissMode = .onDrag
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -63,7 +66,9 @@ class CommentsVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -72,12 +77,14 @@ class CommentsVC: UIViewController {
             performWSToGetCommentsData(articleID: articleID, page: "", isRefreshData: true)
         }
         isViewFirstTimeLoaded = true
-        
+         navView.clipsToBounds = true
+        navView.layer.cornerRadius = 10
+        navView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner] // Top right corner, Top left corner respectively
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        IQKeyboardManager.shared.enable = true
+        self.delegate?.commentsVCDismissed(articleID: self.articleID)
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -107,7 +114,10 @@ class CommentsVC: UIViewController {
         
     }
     
-    
+    // function which is triggered when handleTap is called
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true)
+      }
     // MARK: - Methods
     
     @IBAction func reactionsTapped(_ sender: UIButton) {
@@ -176,6 +186,28 @@ class CommentsVC: UIViewController {
         self.keyboardControl(notification, isShowing: false)
     }
     
+    @objc func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let translation = gestureRecognizer.translation(in: view)
+
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            if translation.y > 0 {
+                view.transform = CGAffineTransform(translationX: 0, y: translation.y)
+            }
+        case .ended:
+            let velocity = gestureRecognizer.velocity(in: view)
+
+            if translation.y > view.bounds.height * 0.3 || velocity.y > 1000 {
+                dismiss(animated: true, completion: nil)
+            } else {
+                UIView.animate(withDuration: 0.3) {
+                    self.view.transform = .identity
+                }
+            }
+        default:
+            break
+        }
+    }
     
     private func keyboardControl(_ notification: Notification, isShowing: Bool) {
         
@@ -297,7 +329,6 @@ class CommentsVC: UIViewController {
                     if isCompleted {
                         // Dismiss the view when it dissapeared
                         self.dismiss(animated: false, completion: nil)
-                        self.delegate?.commentsVCDismissed(articleID: self.articleID)
                     }
                 })
             } else {
@@ -335,7 +366,6 @@ class CommentsVC: UIViewController {
         
         self.view.endEditing(true)
         self.dismiss(animated: true, completion: nil)
-        self.delegate?.commentsVCDismissed(articleID: articleID)
     }
     
     @IBAction func didTapSendButton(_ sender: Any) {
@@ -449,7 +479,7 @@ extension CommentsVC: CommentsCCDelegate {
     
     func didTapTypeReply(cell: CommentsCC) {
         
-        openReplies(isReplyTagRequired: true, cell: cell)
+        openReplies(isReplyTagRequired: false, cell: cell)
     }
     
     func didTapOpenReply(cell: CommentsCC) {
@@ -470,7 +500,19 @@ extension CommentsVC: CommentsCCDelegate {
         vc.articleID = self.articleID
         vc.parentID = comment.id ?? ""
         vc.isReplyTagRequired = isReplyTagRequired
-        self.navigationController?.pushViewController(vc, animated: true)
+        let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        vc.modalTransitionStyle = modalStyle
+        // Set up a custom transition animation
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.fade
+        transition.subtype = CATransitionSubtype.fromRight
+        self.view.window?.layer.add(transition, forKey: kCATransition)
+        self.present(vc, animated: false)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.view.isHidden = true
+        }
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
@@ -504,7 +546,7 @@ extension CommentsVC {
         
         WebService.URLResponse("social/comments/articles/\(articleID)?page=\(page)", method: .get, parameters: nil, headers: token, withSuccess: { [weak self] (response) in
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 ANLoader.hide()
             }
 
@@ -583,7 +625,9 @@ extension CommentsVC {
         ]
         
         WebService.URLResponse("social/comments/create", method: .post, parameters: params, headers: token, withSuccess: { [weak self] (response) in
-            ANLoader.hide()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                ANLoader.hide()
+            }
             
             guard let self = self else {
                 return
@@ -604,7 +648,7 @@ extension CommentsVC {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
                     }
-                    
+                    self.setLocalization()
                 }
                 
             } catch let jsonerror {
