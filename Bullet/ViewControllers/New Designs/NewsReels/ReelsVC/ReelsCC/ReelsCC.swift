@@ -118,8 +118,8 @@ class ReelsCC: UICollectionViewCell {
             formatter.allowedUnits = [.minute, .second]
             formatter.zeroFormattingBehavior = .pad
             if let formattedString = formatter.string(from: seekBarCurrentDurationLabelValue) {
-                seekBarCurrentDurationLabel.text = formattedString            }
-
+                seekBarCurrentDurationLabel.text = formattedString
+            }
         }
     }
     var seekBarTotalDurationLabelValue = 0.0 {
