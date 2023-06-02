@@ -37,7 +37,7 @@ class RepliesVC: UIViewController {
     var currentlySelectedSection: Int?
     var currentlySelectedRow: Int?
     var isReplyTagRequired = false
-    
+    var guestUser: (() -> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -179,10 +179,13 @@ class RepliesVC: UIViewController {
     func showPopUpProfileNotFound() {
         
         if SharedManager.shared.isGuestUser && SharedManager.shared.isLinkedUser == false {
-                        
-            let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
-            let navVC = UINavigationController(rootViewController: vc)
-            self.navigationController?.present(navVC, animated: true, completion: nil)
+                      
+            self.view.endEditing(true)
+            self.dismiss(animated: false) {
+                self.presentingViewController?.dismiss(animated: false, completion: {
+                    self.guestUser?()
+                })
+            }
         }
         else {
             
@@ -199,21 +202,10 @@ class RepliesVC: UIViewController {
     @objc func keyboardWillShow(notification: Notification) {
         
         if let user = try? JSONDecoder().decode(UserProfile.self, from: SharedManager.shared.userDetails), (user.setup ?? false) {
-            if currentlySelectedSection != nil && currentlySelectedRow != nil {
-                let userName = commentArray[currentlySelectedSection!].replies?[currentlySelectedRow!].user?.name?.capitalized ?? ""
-                lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 0
-            } else if currentlySelectedSection != nil && currentlySelectedRow == nil {
-                let userName = commentArray[currentlySelectedSection!].user?.name?.capitalized ?? ""
-                lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
-                constraintReplyingToViewHeight.constant = 0
-            } else {
-                
                 let userName = selectedComment?.user?.name?.capitalized ?? ""
                 lblReplyToUserText.text = "\(NSLocalizedString("Replying to", comment: "")) \(userName)"
                 constraintReplyingToViewHeight.constant = 0
-                
-            }
+            
             self.keyboardControl(notification, isShowing: true)
         } else {
             self.view.endEditing(true)

@@ -11,6 +11,7 @@ import IQKeyboardManagerSwift
 
 protocol CommentsVCDelegate: class {
     func commentsVCDismissed(articleID: String)
+    func guestUser()
 }
 
 class CommentsVC: UIViewController {
@@ -154,11 +155,9 @@ class CommentsVC: UIViewController {
     func showPopUpProfileNotFound() {
         
         if SharedManager.shared.isGuestUser && SharedManager.shared.isLinkedUser == false {
-            
-            let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
-            let navVC = UINavigationController(rootViewController: vc)
-            self.navigationController?.present(navVC, animated: true, completion: nil)
-            
+            self.dismiss(animated: false) {
+                self.delegate?.guestUser()
+            }
         }
         else {
             
@@ -500,6 +499,7 @@ extension CommentsVC: CommentsCCDelegate {
         vc.articleID = self.articleID
         vc.parentID = comment.id ?? ""
         vc.isReplyTagRequired = isReplyTagRequired
+        vc.guestUser = self.delegate?.guestUser
         let modalStyle: UIModalTransitionStyle = UIModalTransitionStyle.crossDissolve
         vc.modalTransitionStyle = modalStyle
         // Set up a custom transition animation

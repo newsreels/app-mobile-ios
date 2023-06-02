@@ -237,10 +237,20 @@ extension ReelsVC: BottomSheetVCDelegate {
 // MARK: - ReelsVC + CommentsVCDelegate
 
 extension ReelsVC: CommentsVCDelegate {
+    func guestUser() {
+        stopVideo(shouldContinue: true)
+        isViewControllerVisible = false
+        let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
+        vc.dismissalHandler = {self.playCurrentCellVideo()}
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        self.presentedViewController?.dismiss(animated: false)
+        self.navigationController?.present(navVC, animated: true, completion: nil)
+    }
     func commentsVCDismissed(articleID: String) {
         isViewControllerVisible = true
         if SharedManager.shared.reelsAutoPlay {
-            playCurrentCellVideo()
+                   playCurrentCellVideo()
         }
         SharedManager.shared.performWSToGetCommentsCount(id: articleID) { info in
             if info != nil {
