@@ -18,6 +18,136 @@ ReelsCC: A basic collection view cell that holds the video player, and interacti
 News Reels Player: Aka NRPlayer, This is an AVPlayer subclass. the idea was to make custom player but there was no enough time for that. 
 Bullet Details or View More: This is the details screen that appears when tapping on the video.
 
+### Caching
+These are the functions which handle the business of caching
+
+    func saveAllVideosThumbnailsToCache(imageURL: String?) {
+    
+    if let url = URL(string: imageURL ?? "") {
+    
+    SDWebImageManager.shared.loadImage(with: url, options: .highPriority, progress: nil) { image, data, error, cacheType, status, url in
+    
+    if error == nil {
+    
+    //  print("image downloaded successfully \(cacheType), \(status), \(url?.absoluteString ?? "")")
+    
+    //  if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
+    
+    //  SDWebImageManager.shared.imageCache.queryImage(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
+    
+    //
+    
+    //  if image != nil {
+    
+    //  print("image present in cache")
+    
+    //  }
+    
+    //
+    
+    //  }
+    
+    //  }
+    
+    }
+    
+    }
+    
+    }
+    
+    }
+    
+    func loadImageFromCache(imageURL: String?, completionHandler: @escaping (_ image: UIImage?) -> Void) {
+    
+    if let url = URL(string: imageURL ?? "") {
+    
+    if let cacheKey = SDWebImageManager.shared.cacheKey(for: url) {
+    
+    let _ = SDWebImageManager.shared.imageCache.queryImage!(forKey: cacheKey, options: [], context: nil, cacheType: .all) { image, data, typ in
+    
+    completionHandler(image)
+    
+    }
+    
+    }
+    
+    }
+    
+    }
+
+every time a new reels data page got featched, the saveAllVideosThumbnailsToCache get called to cache the thumbnail for all the reels in that page.
+
+
+in the ReelsCC, the setImage calls loadImageFromCache.
+
+    func setImage() {
+        if imgThumbnailView.image == nil {
+            imgThumbnailView.contentMode = .scaleAspectFill
+            imgThumbnailView.frame = playerLayer.bounds
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = playerLayer.frame
+            imgThumbnailView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            imgThumbnailView.frame = viewContent.frame
+            SharedManager.shared.loadImageFromCache(imageURL: reelModel?.image ?? "") { [weak self] image in
+                if image == nil {
+                    self?.imgThumbnailView?.sd_setImage(with: URL(string: self?.reelModel?.image ?? "") , placeholderImage: nil)
+                } else {
+                    self?.imgThumbnailView?.image = image
+                }
+            }
+        }
+        imgThumbnailView.layoutIfNeeded()
+    }
+
+
+### Videos Preloading:
+In the ReelsVC in willDisplay function, the below for loop is buffering the next 3 videos counted from the current index
+
+        if reelsArray.count > 0 {
+            if reelsArray[indexPath.row].reelDescription == "", reelsArray[indexPath.row].authors?.count == 0, reelsArray[indexPath.row].iosType == nil {
+                reelsArray.remove(at: indexPath.row)
+                let indexPathReload = IndexPath(item: indexPath.row, section: 0)
+                collectionView.reloadItems(at: [indexPathReload])
+            }
+            for i in indexPath.item...indexPath.item + 3 {
+                if reelsArray.count > i, !SharedManager.shared.players.contains(where: {$0.id == reelsArray[i].id ?? ""}), i != 0 {
+                    ReelsCacheManager.shared.begin(reelModel: reelsArray[i], position: i)
+                }
+            }
+        }
+
+the Business logic for the buffering is simple, AVPlayer hold the buffer its resources, so by using that the for loop above is calling this function:
+
+    func begin(reelModel: Reel, position: Int){
+        
+        if NetworkManager.isReachable {
+            resType = NetworkManager.isReachableViaWiFi ? Resolution.Medium : Resolution.Low
+        }
+        
+        queue.async { [weak self] in
+            self?.cacheAVPlayerItem(reelModel, position)
+        }
+        //        queue.waitUntilAllOperationsAreFinished()
+    }
+    
+    func cacheAVPlayerItem(_ reel: Reel,_ position: Int) {
+        guard let id = reel.id,
+              let media = reel.media,
+              let url = URL(string: media) else { return }
+        let asset = AVAsset(url: url)
+        let playerItem = AVPlayerItem(asset: asset)
+        playerItem.preferredMaximumResolution = CGSize(width: 426, height: 240)
+        playerItem.preferredPeakBitRate = Double(200000)
+        playerItem.preferredForwardBufferDuration = 3
+        let player = NRPlayer(playerItem: playerItem)
+        player.automaticallyWaitsToMinimizeStalling = false
+        let preloadModel = PlayerPreloadModel(index: position, timeCreated: Date(), id: id, player: player)
+        SharedManager.shared.players.append(preloadModel)
+    }
+
+and in the ReelsCC, in the Play function the buffered video is assigned to the cell.
+AVPlayer can share the buffered data between diffrent elements, for example if var A buffered video1 from URL1 if you try to creat var B and attemp to play Video1 from the same url (URL1) the AVPlayer will play the buffered data in the var A, so the assigning on the play function in the ReelsCC isn't necessary but just used to improve the resources managment, since they are class types, so when you assign them they will share the refrences for the value instead of creating new value.
+
 
 ## Discover
 The UI is made in SwiftUI.
