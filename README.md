@@ -1,4 +1,37 @@
 # newsreels-iOS
+- Languge: Swift 5.
+- Architecture: MVC.
+- UI: mainly UIKit with some screens in SwiftUI. 
+- Video Player: Native AVPlayer. Away from NRPlayer and AVPlayer there are other players in the code but they aren't used anymore, just as extensions to AVPlayer.
+AVFoundation is used for playing and preloading HLS videos. The preloading is made by setting preferredForwardBufferDuration value and making automaticallyWaitsToMinimizeStalling as true. The app preload get executed for the next 3 items forward from the current item in the collection view.
+- Communication Pattren: delegates for most cases, and for some functionalities it uses notifications.
+- Images Caching: SDWebImage
+- Minimum Deployment: iOS 14.0
+
+
+## Reels Module
+'Main' Path: Bullet/ViewControllers/New\ Designs/NewsReels/ReelsVC
+
+### The module components:
+View Controller: here lays the network requests, app state managment, video preloading, images cache, navigation, collection view delegate, and scroll view controll.
+Cell: A basic collection view that holds the video player, and interacting buttons. it communicate with the View Controller through delegate.
+News Reels Player: This is an AVPlayer subclass. the idea was to make custom player but there was no enough time for that. 
+Bullet Details or View More: This is the details screen that appears when tapping on the video.
+
+## Discover
+
+## Articles Module
+
+
+## Tab Bar
+
+
+## Profile
+
+
+
+## CI/CD
+
 
 ## important notes
 
