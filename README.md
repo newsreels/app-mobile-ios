@@ -1,6 +1,22 @@
+
 # newsreels-iOS
 
 ## Table Of Contents:
+
+- [newsreels-iOS](#newsreels-ios)
+  * [Table Of Contents:](#table-of-contents-)
+  * [About](#about)
+  * [Reels Module](#reels-module)
+    + [The module components:](#the-module-components-)
+    + [Caching](#caching)
+    + [Videos Preloading:](#videos-preloading-)
+  * [Discover](#discover)
+  * [Articles Module](#articles-module)
+    + [The module components:](#the-module-components--1)
+  * [Tab Bar](#tab-bar)
+  * [Profile (SettingsMainview)](#profile--settingsmainview-)
+  * [CI/CD](#ci-cd)
+  * [important notes](#important-notes)
 
 
 
