@@ -1,18 +1,18 @@
 
 # newsreels-iOS
 
-## Table Of Contents:
+## Table Of Contents
 
 - [newsreels-iOS](#newsreels-ios)
-  * [Table Of Contents:](#table-of-contents-)
+  * [Table Of Contents](#table-of-contents-)
   * [About](#about)
   * [Reels Module](#reels-module)
-    + [The module components:](#the-module-components-)
+    + [The module components](#the-module-components-)
     + [Caching](#caching)
-    + [Videos Preloading:](#videos-preloading-)
+    + [Videos Preloading](#videos-preloading-)
   * [Discover](#discover)
   * [Articles Module](#articles-module)
-    + [The module components:](#the-module-components--1)
+    + [The module components](#the-module-components--1)
   * [Tab Bar](#tab-bar)
   * [Profile (SettingsMainview)](#profile--settingsmainview-)
   * [CI/CD](#ci-cd)
@@ -35,7 +35,7 @@ AVFoundation is used for playing and preloading HLS videos. The preloading is ma
 ## Reels Module
 'Main' Path: Bullet/ViewControllers/New\ Designs/NewsReels/ReelsVC
 
-### The module components:
+### The module components
 ReelsVC: here lays the network requests, app state managment, video preloading, images cache, navigation, collection view delegate, and scroll view controll.
 ReelsCC: A basic collection view cell that holds the video player, and interacting buttons. it communicate with the View Controller through delegate.
 News Reels Player: Aka NRPlayer, This is an AVPlayer subclass. the idea was to make custom player but there was no enough time for that. 
@@ -123,7 +123,7 @@ in the ReelsCC, the setImage calls loadImageFromCache.
     }
 
 
-### Videos Preloading:
+### Videos Preloading
 In the ReelsVC in willDisplay function, the below for loop is buffering the next 3 videos counted from the current index
 
         if reelsArray.count > 0 {
@@ -139,7 +139,7 @@ In the ReelsVC in willDisplay function, the below for loop is buffering the next
             }
         }
 
-the Business logic for the buffering is simple, AVPlayer hold the buffer its resources, so by using that the for loop above is calling this function:
+the Business logic for the buffering is simple, AVPlayer hold the buffer its resources, so by using that the for loop above is calling this function
 
     func begin(reelModel: Reel, position: Int){
         
@@ -179,7 +179,7 @@ It contains: Trending Reels, Trending Channels, Top News, and search. when openi
 
 ## Articles Module
 
-### The module components:
+### The module components
 - ArticlesVC:
 this is the main Controller.
 - HomeCardCell:
