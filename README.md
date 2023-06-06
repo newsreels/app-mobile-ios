@@ -13,28 +13,47 @@ AVFoundation is used for playing and preloading HLS videos. The preloading is ma
 'Main' Path: Bullet/ViewControllers/New\ Designs/NewsReels/ReelsVC
 
 ### The module components:
-View Controller: here lays the network requests, app state managment, video preloading, images cache, navigation, collection view delegate, and scroll view controll.
-Cell: A basic collection view that holds the video player, and interacting buttons. it communicate with the View Controller through delegate.
-News Reels Player: This is an AVPlayer subclass. the idea was to make custom player but there was no enough time for that. 
+ReelsVC: here lays the network requests, app state managment, video preloading, images cache, navigation, collection view delegate, and scroll view controll.
+ReelsCC: A basic collection view cell that holds the video player, and interacting buttons. it communicate with the View Controller through delegate.
+News Reels Player: Aka NRPlayer, This is an AVPlayer subclass. the idea was to make custom player but there was no enough time for that. 
 Bullet Details or View More: This is the details screen that appears when tapping on the video.
 
+
 ## Discover
+The UI is made in SwiftUI.
+It contains: Trending Reels, Trending Channels, Top News, and search. when opening a reel from the trending reels the same above reels module is used. 
+
 
 ## Articles Module
 
+### The module components:
+- ArticlesVC:
+this is the main Controller.
+- HomeCardCell:
+This is for the top big card.
+- HomeListView:
+Normal size cards.
+- BulletDetailsVC
+This get opened when you tap on any article card of the above.
+- CustomBulletsCC
+This contains the article summary.
+
+there are seviral catigories in the Articles, and same as in the reels, each one has its own data but same endpoint to get the data with only different parameters. some categories contains reels, on tapping on any of them the above reels module is used.
+
 
 ## Tab Bar
+The PTCardTabBarController is used as a Tab Bar. the class TabbarVC is a high level to manage the tab bar.
 
 
-## Profile
-
+## Profile (SettingsMainview)
+the profile is designed in SwiftUI. The value of "user?.isGuest" is used to controll visibilty of rows in the view.
 
 
 ## CI/CD
+This repository contains piplines for testing and deploying. the piplines are disabled.
 
 
 ## important notes
-
 - the pods had conflict, and the conflict resolved by customizing the pods locally (Pods in Pods directory) so the pod isn't part in the GitIgnored and it's not recommended to reinstall the pods.
 the proper solution will be having these pods in a local module. untill we do that avoid reinstalling pods.
 
