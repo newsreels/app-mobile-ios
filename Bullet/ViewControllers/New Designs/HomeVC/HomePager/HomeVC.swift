@@ -4706,7 +4706,12 @@ extension HomeVC: BulletDetailsVCLikeDelegate {
 
 
 extension HomeVC: CommentsVCDelegate {
-    
+    func guestUser() {
+        let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(navVC, animated: true, completion: nil)
+    }
     func commentsVCDismissed(articleID: String) {
         self.updateProgressbarStatus(isPause: false)
         
