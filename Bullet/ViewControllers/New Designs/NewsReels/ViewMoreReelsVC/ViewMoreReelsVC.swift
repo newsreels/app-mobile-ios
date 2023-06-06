@@ -2448,7 +2448,12 @@ extension ViewMoreReelsVC: LikeCommentDelegate {
 
 // MARK: - BulletDetails Like Delegates
 extension ViewMoreReelsVC: BulletDetailsVCLikeDelegate, CommentsVCDelegate {
-    
+    func guestUser() {
+        let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(navVC, animated: true, completion: nil)
+    }
     func likeUpdated(articleID: String, isLiked: Bool, count: Int) {
         
         if let index = self.articles.firstIndex(where: { $0.id == articleID }) {

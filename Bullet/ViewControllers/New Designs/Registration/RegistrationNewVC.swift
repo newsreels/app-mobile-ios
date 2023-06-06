@@ -51,7 +51,8 @@ class RegistrationNewVC: UIViewController {
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var btnClose: UIButton!
     
-    
+    var dismissalHandler: (() -> Void)?
+    var shouldcallDismissHandler = true
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
     private let fbAPIURL = "https://graph.facebook.com/v6.0"
     
@@ -80,6 +81,13 @@ class RegistrationNewVC: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+        if shouldcallDismissHandler {
+            dismissalHandler?()
+        } else {
+            shouldcallDismissHandler = true
+        }
+    }
     // MARK: - Methods
     func setupUI() {
         
@@ -510,6 +518,7 @@ extension RegistrationNewVC {
                     self.emailContainerViewUI(isLoadingError: false)
                     self.emailTextField.resignFirstResponder()
                     let vc = LoginWithEmailVC.instantiate(fromAppStoryboard: .RegistrationSB)
+                    self.shouldcallDismissHandler = false
                     vc.email = self.emailTextField.text ?? ""
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
@@ -520,6 +529,7 @@ extension RegistrationNewVC {
                     self.emailTextField.resignFirstResponder()
                     
                     let vc = AddPasswordVC.instantiate(fromAppStoryboard: .RegistrationSB)
+                    self.shouldcallDismissHandler = false
                     vc.email = self.emailTextField.text?.trim() ?? ""
                     self.navigationController?.pushViewController(vc, animated: true)
                     

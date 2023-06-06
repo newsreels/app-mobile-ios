@@ -1947,7 +1947,12 @@ extension DiscoverCustomListVC: LikeCommentDelegate {
 }
 
 extension DiscoverCustomListVC: CommentsVCDelegate {
-    
+    func guestUser() {
+        let vc = RegistrationNewVC.instantiate(fromAppStoryboard: .RegistrationSB)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(navVC, animated: true, completion: nil)
+    }
     func commentsVCDismissed(articleID: String) {
 
         SharedManager.shared.performWSToGetCommentsCount(id: articleID) { info in
