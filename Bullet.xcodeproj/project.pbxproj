@@ -7105,12 +7105,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -7133,10 +7131,9 @@
 				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 2.0.25;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreels.app;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = GithubActions;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bullet/Bullet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7154,12 +7151,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -7181,10 +7176,9 @@
 				);
 				MACH_O_TYPE = mh_execute;
 				MARKETING_VERSION = 2.0.25;
-				PRODUCT_BUNDLE_IDENTIFIER = app.newsinbullets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newsreels.app;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = GithubActions;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bullet/Bullet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -7283,11 +7277,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BULLET/BULLET.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				IBSC_WARNINGS = YES;
 				INFOPLIST_FILE = BULLET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -7297,10 +7289,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newsreels.app.newsreels-widget";
 				PRODUCT_NAME = BULLET;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BulletExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -7316,11 +7307,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BULLET/BULLET.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				IBSC_WARNINGS = YES;
 				INFOPLIST_FILE = BULLET/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -7330,10 +7319,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newsreels.app.newsreels-widget";
 				PRODUCT_NAME = BULLET;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = BulletExtension;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -7451,7 +7439,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				INFOPLIST_FILE = Bullet_Widget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7460,7 +7448,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-bulletwidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newsreels.app.newsreels-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -7480,7 +7468,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 74;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				INFOPLIST_FILE = Bullet_Widget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7489,7 +7477,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "app.newsinbullets.newsreels-bulletwidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.newsreels.app.newsreels-widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         self.window?.makeKeyAndVisible()
         
         // Facebook initialization
-        ApplicationDelegate.shared.application( application,didFinishLaunchingWithOptions: launchOptions)
+      //  ApplicationDelegate.shared.application( application,didFinishLaunchingWithOptions: launchOptions)
 //        FBAudienceNetworkAds.initialize(with: nil, completionHandler: nil)
         // Pass user's consent after acquiring it. For sample app purposes, this is set to YES.
 //        FBAdSettings.setAdvertiserTrackingEnabled(true)
@@ -1540,6 +1540,7 @@ extension AppDelegate {
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
+      
         if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
             SharedManager.shared.bulletsAutoPlay = true
             let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)

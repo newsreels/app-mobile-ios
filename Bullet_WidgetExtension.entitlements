@@ -17,7 +17,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.app.newreels</string>
+		<string>group.newsreels.app</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array/>

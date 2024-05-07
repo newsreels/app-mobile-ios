@@ -36,7 +36,7 @@ class SplashscreenLoaderVC: UIViewController {
 
 extension SplashscreenLoaderVC {
     func checkUpdate() {
-        fetchAppVerionFromFB { apiVersion in
+        /*fetchAppVerionFromFB { apiVersion in
             if let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
                self.compareVersions(currentVersion, apiVersion.version) == .orderedAscending {
                 self.showForceUpdateAlert(isForced: apiVersion.force_update)
@@ -45,6 +45,9 @@ extension SplashscreenLoaderVC {
                     self.delegate?.dismissSplashscreenLoaderVC()
                 }
             }
+        }*/
+        DispatchQueue.main.async {
+            self.delegate?.dismissSplashscreenLoaderVC()
         }
     }
     
