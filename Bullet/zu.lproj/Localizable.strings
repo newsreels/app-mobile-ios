@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "iphuzu enhlamvu";
+"BULLETS" = "amaphuzu enhlamvu";
+"Headlines is not available." = "Izihloko zezindaba azitholakali.";
+"Check your internet Connection and try again." = "Hlola ukuxhumeka kwakho kwe-inthanethi uphinde uzame futhi.";
+"Choose Image" = "Khetha isithombe";
+"Headline" = "Isihloko";
+"Bullet 1" = "Inhlamvu 1";
+"Bullet 2" = "Inhlamvu 2";
+"Bullet 3 (Optional)" = "Inhlamvu 3 (Uyazikhethela)";
+"Bullet 4 (Optional)" = "Inhlamvu 4 (Uyazikhethela)";
+"Bullet 5 (Optional)" = "Inhlamvu 5 (Uyazikhethela)";
+"Bullet 6 (Optional)" = "Inhlamvu 6 (Uyazikhethela)";
+"Enter Aticle Headline" = "Faka Isihloko";
+"Enter source name" = "Faka uMthombo";
+"Enter reference link" = "Faka Inkomba";
+"Enter published date" = "Faka usuku lokushicilela";
+"Enter Bullet 1" = "Faka inhlamvu yokuqala";
+"Enter Bullet 2" = "Faka Inhlamvu Yesibili";
+"Post article successfully" = "Indatshana le ithunyelwe ngempumelelo";
+"Follow" = "Landela";
+"Unfollow" = "Yeka ukulandela";
+"Block articles from" = "VIMBELA izindatshana kusuka ku-";
+"Unblock articles from" = "VULA indatshana evela ku-";
+"Remove article" = "Susa indatshana";
+"Save article" = "Londoloza le ndatshana";
+"Terms & Conditions" = "Imigomo nemibandela";
+"Privacy Policy" = "Inqubomgomo yobumfihlo";
+"TERMS AND CONDITIONS" = "Imigomo nemibandela";
+"PRIVACY POLICY" = "Inqubomgomo yobumfihlo";
+"Fuel your curiosity" = "Funda izindaba eziningi ngomhlaba";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Funda izindaba ezimfushane nezinembile ngezihloko zakho eziyizintandokazi ezivela kwimithombo ethembekile emhlabeni jikelele.";
+"Save time" = "Yonga isikhathi sakho";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Funda izindaba ngamaphuzu ezinhlamvu";
+"Hands-free reading" = "Ukufundwa okungenazandla";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Asikho isikhathi sokufunda? Sebenzisa umsebenzi wenkulumo.";
+"Write your message..." = "Bhala umyalezo wakho ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "sithumele umyalezo uma udinga usizo ngokuthile, singathanda ukuzwa kuwe!";
+"Drop us a message" = "sithumele umyalezo";
+"Enter Name." = "Faka igama.";
+"Enter Email." = "Faka i-imeyili.";
+"Write your message." = "Bhala umyalezo wakho.";
+"Topic unblock successfully" = "Uvulele lesi sihloko";
+"Source unblock successfully" = "Uvulele lo mthombo";
+"Unblock Source" = "Vulela Umthombo";
+"Cancel" = "Vala";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Usithumelele impendulo, singathanda ukuzwa kuwe! Unemibuzo noma ukukhathazeka ngezomthetho? Zama ikhasi lethu losizo noma Xhumana nathi.";
+"Enter your suggestion." = "Faka isiphakamiso sakho.";
+"feedback sent." = "impendulo ithunyelwe ngempumelelo";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Ulimi libuyekezwa ngempumelelo.";
+"CONTINUE" = "QHUBEKA";
+"FOLLOW 3 TO CONTINUE" = "LANDELA u-3 UKUZE UQHUBEKE";
+"Unfollow Location" = "Yeka ukulandela indawo";
+"Saved Articles" = "Indatshana Ezisindisiwe";
+"Block" = "VIMBELA";
+"Are you sure you want block" = "Uqinisekile ukuthi ufuna ukukuvimba lokhu";
+"Once blocked, you wont be able to see any Articles related to this" = "Vimba lesi sihloko";
+"Block Topic" = "eziphakanyisiwe";
+"Suggested" = "Imithombo Ehlobene ayitholakali";
+"Related Sources not available" = "Imithombo Ehlobene ayitholakali";
+"Block Source" = "Vimba lo Mthombo";
+"News in Bullets App version" = "Uhlobo lohlelo lokusebenza lwe News Flash";
+"Next" = "Okulandelayo";
+"Login" = "Ngena ngemvume";
+"Terms" = "Imigomo";
+"By clicking Continue, you agree with our Terms." = "Khetha okuthi Qhubeka ukwamukela imigomo.";
+"in our Privacy Policy." = "kunqubomgomo yethu yobumfihlo.";
+"Access token missing." = "Uphawu lokufinyelela alukho.";
+"NEXT" = "OKULANDELAYO";
+"By checking this box, you agree to our " = "Chofoza ibhokisi ukwamukela Imigomo. Imininingwane yakho icutshungulwa ngokuya ngenqubomgomo yethu yobumfihlo.";
+"Terms of Service" = "Imibandela Yokusebenza";
+". We’ll handle your data according to our " = "Sizophatha imininingwane yakho ngokuya ngeyethu";
+"Password must be at least 8 characters." = "Iphasiwedi kumele okungenani ibe nezinhlamvu ezingu-8.";
+"Strong" = "Enamandla";
+"Medium" = "Okulingene";
+"Weak" = "Ebuthakathaka";
+"CREATE A NEW ACCOUNT" = "DALA I-AKHAWUNTI ENTSHA";
+"SIGN IN WITH EXISTING ACCOUNT" = "Ngena ngemvume nge-akhawunti ekhona";
+"You must agree to the Terms of Services to continue" = "Kufanele uvumelane Nemigomo Yezinsizakalo ukuze uqhubeke";
+"SIGN IN" = "Ngena ngemvume";
+"What's your password?" = "Ithini iphasiwedi yakho?";
+"SIGN UP" = "Bhalisela";
+"Choose your password?" = "Khetha iphasiwedi yakho";
+"Something went wrong" = "Kukhona okungahambanga kahle";
+"we will send email to" = "sizothumela i-imeyili ku-";
+"with a link to reset your password." = "enesixhumanisi sokusetha kabusha iphasiwedi yakho.";
+"A reset password link has been sent to" = "Isixhumanisi sokusetha kabusha iphasiwedi sithunyelwe ku- ";
+"Enter new email." = "Faka i-imeyili entsha.";
+"Enter password." = "Faka iphasiwedi.";
+"New Password " = "Iphasiwedi Entsha";
+" (8 characters min)" = "(okungenani izinhlamvu eziyi-8)";
+"Enter current password." = "Faka iphasiwedi yamanje.";
+"Enter new password." = "Faka iphasiwedi entsha.";
+"Enter confirm password." = "Qinisekisa Iphasiwedi.";
+"password do not matched!" = "amaphasiwedi awafani!";
+"GET STARTED" = "QALA";
+"SKIP" = "Eqa";
+"From where you would like to pick photo?" = "ungathanda ukukhetha isithombe esisuka kuphi?";
+"Camera" = "Ikhamera";
+"Photo Library" = "Umtapo Wezithombe";
+"Kindly open settings and enable access" = "Ngomusa vula izilungiselelo bese unika amandla ukufinyelela";
+"Open Settings" = "Vula izilungiselelo";
+"Access needed for your camera" = "Kudingeka ukufinyelela kukhamera yakho";
+"Access needed for your photo library" = "Kudingeka ukufinyelela kumtapo wakho wezithombe";
+"Done" = "Kwenziwe";
+"Pull to refresh" = "Donsa ukuze uvuselele";
+"Loading" = "Iyavula ";
+"Speech not available for this article" = "Inkulumo yale indatshana ayitholakali";
+"MANAGE LOCATION" = "PHATHA INDAWO";
+"OK" = "KULUNGILE";
+"Choose your News in Bullets Edition based on locale" = "Khetha izindaba zakho ku-Bullets Edition ngokususelwa endaweni";
+"Edition" = "Uhlelo";
+"EDITION / REGION" = "UHLELO / ISIFUNDA";
+"Your Topics" = "Izihloko zakho";
+"Your Channels" = "Iziteshi zakho";
+"Your Places" = "Izindawo zakho";
+"Enter email." = "Faka i-imeyili.";
+"Please enter a password." = "Sicela ufake iphasiwedi.";
+"Search articles" = "Sesha izindatshana";
+"No results" = "Ayikho imiphumela";
+"Edition / Region" = "I-Edishini / Isifunda";
+
+
+
+
+"0JC-Sb-Ouu.text" = "IMODI YOKUBONISA ";
+
+
+"Search" = "Cinga";
+
+
+"Select" = "Khetha ( ";
+
+
+"6H8-dI-k9P.text" = "Phatha izindawo ";
+
+
+"6KH-YP-5Lt.text" = "UMBALI";
+
+
+" ) icon on the article" = " ) isithonjana kundatshana ";
+
+
+"BLOCK" = "VIMBELA";
+
+
+"you want to read later then" = "ufuna ukufunda kamuva lapho ";
+
+
+"7oo-cf-l7Y.text" = "Ijubane lokufunda ";
+
+
+"88L-ip-pZw.text" = "Ijubane lokufunda ";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Akukho lutho lapha.Kubukeka sengathi akukho lutho lapha ngaphandle kwekati. Buyela ekhasini eliyinhloko?\nNgabe ufuna ukubuyela ekhasini lasekhaya?";
+
+
+"BpH-F1-i0z.normalTitle" = "Okwasendaweni";
+
+
+" ) to save article." = "  ukusindisa indatshana.";
+
+
+"FB0-YN-HZg.text" = " ukuqhubeka, khetha u-3";
+
+
+"H5Z-xJ-dWD.text" = "Izihloko zezindaba kanye\nAmaphuzu enhlamvu";
+
+
+"Search" = "Cinga";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "UMBONO OWANDISIWE ";
+
+
+"Jpx-nY-Is1.normalTitle" = "Iziteshi";
+
+
+"JqN-io-P1u.normalTitle" = " + Engeza kuzindawo";
+
+
+"What's your email?" = " Lithini ikheli lakho le-imeyili??";
+
+
+"Lw1-Md-nse.text" = " Buka ngoluhlu ";
+
+
+"LyT-pT-g53.text" = "EMHLABENI WONKE";
+
+
+"N6C-6i-Z2s.text" = "EMHLABENI WONKE";
+
+
+"Nru-uU-CsC.text" = "Iziphakamiso";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Izihloko";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Enza ngendlela oyifisayo";
+
+
+"Topics" = "Topics";
+
+
+"WXY-po-W1B.text" = "Izihloko zezindaba kanye\nAmaphuzu enhlamvu";
+
+
+"ans-Zy-T2Y.placeholder" = "Cinga izindawo";
+
+
+"bgE-Jc-u8H.text" = "Enza ngendlela oyifisayo";
+
+
+
+
+
+"Tap the ( " = "Thepha ( ";
+
+
+"Places" = "Indawo";
+
+
+"d1l-HK-OrG.text" = "IMODI YOKUBONISA";
+
+
+
+
+
+"Language" = "Ulimi";
+
+
+"e9g-Wr-suO.text" = "IZINHLOKO ZEKHANDA KUPHELA ";
+
+
+"GO HOME" = "buyela ekhasini eliyinhloko";
+
+
+"eh1-Oo-lEn.text" = "UMBONO OWANDISIWE ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "Buka ngoluhlu  ";
+
+
+"j2i-MT-VkA.text" = "Zama igama elingukhiye elihlukile ";
+
+
+"Top News" = "Izindaba Eziphezulu ";
+
+
+"jmO-aF-nJ9.text" = "Izihloko zezindaba kuphela ";
+
+
+"There is nothing in here" = "Akukho lutho lapha. Kubukeka sengathi akukho lutho lapha ngaphandle kwekati. Buyela ekhasini eliyinhloko?  ";
+
+
+"ma1-9p-bSa.text" = "Ayikho imiphumela etholakele ";
+
+
+"mce-jc-cKH.text" = "UMBALI";
+
+
+"Channels" = "Iziteshi";
+
+
+"Discover" = "Thola";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "Misa";
+
+
+"Discover" = "Thola";
+
+
+"No saved stories yet" = "Akukho lutho lapha";
+
+
+"wDG-kF-Hl8.text" = "Funda izindaba ngokuya ngendawo ";
+
+
+
+
+
+"wKj-3i-n0R.text" = "IZINDAWO";
+
+
+"xfF-RB-mWL.text" = "IZINDAWO";
+
+
+"Search" = "Sesha";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Thola izindaba ezifanele kakhulu esifundeni osikhethayo. Funda izindaba zezindaba ezikhethiwe ukukugcina wazi ngezindaba zakamuva ezivela noma yikuphi emhlabeni.";
+
+
+"Search articles" = "Sesha izindatshana";
+
+
+"6H8-dI-k9P.text" = "Phatha Izindawo";
+
+
+
+
+
+"Profile" = "Iphrofayela";
+
+
+"Editions" = "Ama-edishini";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Izindawo";
+
+
+
+
+
+"Search" = "Sesha";
+
+
+
+
+
+
+
+
+"Search" = "Sesha";
+
+
+"LANGUAGE" = "ULIMI";
+
+
+"Search" = "Sesha";
+
+
+"No results" = "Ayikho imiphumela etholakele";
+
+
+"Channels" = "Iziteshi";
+
+
+"Places" = "Izindawo";
+
+
+"Places" = "Izindawo";
+
+
+"e9F-hd-Ifm.text" = "UHLELO / ISIFUNDA";
+
+
+
+
+
+
+
+
+"PLACES" = "IZINDAWO";
+
+
+"SAVED ARTICLES" = "IZIHLOKO EZISINDISIWE";
+
+
+"Articles" = "Imibhalo";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "QHUBEKA";
+
+
+
+
+
+"w8f-2R-NgT.text" = "UHLELO / ISIFUNDA";
+
+
+"Try a different keyword" = "Zama igama elingukhiye elihlukile";
+
+
+"For You" = "Kwakho";
+
+
+"Results" = "Imiphumela";
+
+
+
+"About" = "Mayelana NATHI";
+
+
+"Share" = "Yabelana";
+
+
+"ACCOUNT" = "I-AKHAWUNTI";
+
+
+"Your Email" = "Imeyili yakho";
+
+
+"1sT-J6-qI0.text" = "INDATSHANA EZISINDISIWE ";
+
+
+"2XX-rr-GLC.text" = "Khetha iziteshi ezahlukahlukene emithonjeni engamakhulu ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Funda izindaba zakamuva nezici ezivela kuwo wonke umhlaba. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Beka igebe lesikhathi ukuze uthole izaziso. ";
+
+
+"Off" = "Cishiwe";
+
+
+
+
+
+"Bullet 2" = " Inhlamvu 2";
+
+
+"What's your email?" = "Ithini i-imeyili yakho? ";
+
+
+"New Password (8 Characters Min)" = "Iphasiwedi entsha (ubuncane bezinhlamvu eziyi-8) ";
+
+
+"Forgot Password?" = "Ukhohlwe iphasiwedi? ";
+
+
+"Account Settings" = "Amasethingi we-akhawunti ";
+
+
+"Learn how we process your data" = "Imininingwane yokucubungula idatha yakho ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Kulungile";
+
+
+"Block articles from The Guardian" = "Vimba izindatshana ezisuka ku --- ";
+
+
+"On" = "Vula";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Isikhungo Sosizo ";
+
+
+"Search" = "Cinga Iziteshi ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Khetha ifayela kusuka kugalari ";
+
+
+
+
+"Save article" = "Londoloza indatshana ";
+
+
+"ABOUT" = "MAYELANA LATHI";
+
+
+"Dark" = "Kumnyama";
+
+
+"Legal" = "Ezomthetho";
+
+
+"Go to The Guardian" = "Iya ku --- ";
+
+
+"Send reset link" = "Thumela isixhumanisi sokusetha kabusha ";
+
+
+
+
+
+"My Account" = "I-akhawunti yami ";
+
+
+"FEEDBACK" = "IMPENDULO";
+
+
+"Message" = "Umlayezo";
+
+
+"Confirm New Password" = "Qinisekisa Iphasiwedi Entsha ";
+
+
+"for ___" = "ngoba";
+
+
+"Search" = "Cinga izihloko ";
+
+
+"LANGUAGE" = "ULIMI";
+
+
+"Light" = "Ukukhanya";
+
+
+"FOLLOW 3 TO CONTINUE" = "ukuqhubeka, khetha u-3 ";
+
+
+
+
+"Off" = "Cima";
+
+
+"Language" = "Khetha";
+
+
+"LOG OUT" = "PHUMA";
+
+
+"Report content" = "Bika okuqukethwe ";
+
+
+"What's your email?" = "Ithini i-imeyili yakho?";
+
+
+"On" = "Vula";
+
+
+"More like this" = "Izindaba eziningi ezinjengalezi";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Faka ikheli le-imeyili ";
+
+
+"News in Bullets" = "Funda kabanzi ngesikhathi esincane.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Khetha iphasiwedi yakho ";
+
+
+"Cancel" = "Vala";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Funda izindaba ngokushesha ngalolu hlelo lokusebenza. Khetha izihloko zakho nemithombo. Ngemuva kwalokho funda izindaba zakho ngamaphuzu amafushane ezinhlamvu.";
+
+
+"Push Notification" = "Isaziso";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "I-imeyili ";
+
+
+"How can we help you?" = "Singasiza kanjani? ";
+
+
+"OJP-Wd-0d3.text" = "i-Pakistan";
+
+
+"CHANGE PASSWORD" = "SHINTSHA IPHASIWEDI ";
+
+
+"Change Email" = "Shintsha Ikheli Le-imeyili";
+
+
+"Medium" = "Okulingene";
+
+
+"SAVE CHANGES" = "LONDOLOZA IZINGUQUKO";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Sithumele umyalezo uma udinga usizo ngokuthile, singathanda ukuzwa kuwe!";
+
+
+"P5u-N3-Tw4.text" = "Ilebula";
+
+
+"Cancel" = "Vala";
+
+
+"Bullet 1" = "i-Bullet 1 ";
+
+
+"TIMED NOTIFICATIONS" = "IZAZISO";
+
+
+"POST ARTICLE" = "THUMELA INDATSHANA ";
+
+
+"CONTACT US" = "Xhumana nathi";
+
+
+"EDITION / REGION" = "I-edishini";
+
+
+"Search" = "Cinga";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Sithumele impendulo, singathanda ukuzwa kuwe! Unemibuzo noma ukukhathazeka ngezomthetho? Zama ikhasi lethu losizo noma Xhumana nathi. ";
+
+
+"Google" = "i-Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Sithumele umyalezo uma udinga usizo ngokuthile, singathanda ukuzwa kuwe!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "QHUBEKA";
+
+
+"Time To Update!" = "Buyekeza uhlelo lokusebenza! ";
+
+
+"NOTIFICATIONS" = "IZAZISO";
+
+
+"Search" = "Cinga";
+
+
+"By clicking Continue, you agree with our Terms." = "Khetha okuthi Qhubeka ukwamukela imigomo. ";
+
+
+"HELP / CONTACT US" = "USIZO/UKUXHUMANA";
+
+
+"Reset Password" = "Setha kabusha iphasiwedi";
+
+
+"SEND MESSAGE" = "THUMELA UMLAYEZO ";
+
+
+"Save article" = "Londoloza indatshana";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (Uyazikhethela) ";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = " Umyalezo wakho uthunyelwe.";
+
+
+"LEGAL" = "KWEZOMTHETHO";
+
+
+"Block List" = "Uhlu Lokuvimba ";
+
+
+"PERSONALIZATION" = "Ukwenza okuthandwa nguwe";
+
+
+"in our Privacy Policy." = "kunqubomgomo yethu yobumfihlo.";
+
+
+"CONTINUE" = "QHUBEKA";
+
+
+"Enter Name" = " Faka igama";
+
+
+"What's your email?" = " Ithini i-imeyili yakho?";
+
+
+"Hello there!" = "Sawubona! ";
+
+
+"PUSH NOTIFICATIONS" = "IZAZISO";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (Uyazikhethela)";
+
+
+"Source name" = "Igama Lomthombo";
+
+
+"Current Password" = "I-password Yamanje";
+
+
+"COLOR THEME" = "Itimu Yombala ";
+
+
+"eTp-X1-g34.text" = "Noma ngokusebenzisa";
+
+
+"CANCEL" = "VALA";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (Uyazikhethela) ";
+
+
+"Date published" = "usuku eshicilelwe ngayo ";
+
+
+"Send Password Reset Link" = "Thumela isixhumanisi sokusetha kabusha iphasiwedi";
+
+
+"CONTINUE WITH APPLE" = "Bhalisa nge-Apple ID ";
+
+
+"Off" = "Cima ";
+
+
+"BLOCK LIST" = "UHLU LOKUVIMBELA ";
+
+
+"HELP" = "USIZO";
+
+
+"Reference link" = "Isixhumanisi sereferensi ";
+
+
+"Your Password" = "Iphasiwedi yakho ";
+
+
+"SUBMIT" = "THUMELA";
+
+
+"HELP" = "USIZO";
+
+
+"MY ACCOUNT" = "I-AKHAWUNTI YAMI";
+
+
+"hbD-HP-tZd.normalTitle" = "Vulela";
+
+
+"OTHERS" = "Abanye";
+
+
+"BREAKING NEWS" = " IZINDABA EZIPHUMA";
+
+
+"Topics" = "Izihloko ezivinjiwe";
+
+
+"Message us," = "Sithumele umlayezo,";
+
+
+"Pick topics to start reading
+and saving articles" = "ulimi lohlelo lokusebenza";
+
+
+"Forgot Password?" = " Ukhohlwe iphasiwedi?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Izici ezintsha ziyangezwa. Ezinye izingqinamba zilungisiwe. ";
+
+
+"Success!" = "Impumelelo!";
+
+
+"Current Password" = "I-password Yamanje";
+
+
+"CONTENT" = "OKUQUKETHWE";
+
+
+"Headline" = "Isihloko";
+
+
+"neg-UC-UpK.text" = "Khetha izihloko ukuze uqale ukufunda nokulondoloza indatshana ";
+
+
+"CONTINUE WITH EMAIL ID" = "Qhubeka ne-ID yakho ye-imeyili ";
+
+
+"SAVE CHANGES" = "LONDOLOZA IZINGUQUKO";
+
+
+"Post an Article" = "THUMELA INDATSHANA";
+
+
+"Contact Us" = "Xhumana nathi";
+
+
+"On" = "Vula";
+
+
+"New Email Address" = "Ikheli le-imeyili elisha ";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Uyazikhethela) ";
+
+
+"Suggest an improvement" = "Phakamisa ukuthuthuka";
+
+
+"Channels" = "Imithombo Evinjiwe ";
+
+
+"From:" = "Kusuka ku:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "izincomo ezenziwe zaba ezakho";
+
+
+"I don't like this" = "Angikuthandi lokhu";
+
+
+"CONTINUE" = "QHUBEKA";
+
+
+"Name" = "iGama ";
+
+
+"Enter email" = " Faka i-imeyili";
+
+
+"HELP" = "USIZO";
+
+
+"FOLLOW 3 TO CONTINUE" = " Landela u-3 ukuze uqhubeke";
+
+
+"UPDATE APP" = "Buyekeza i-App";
+
+
+"Forgot Password?" = " Ukhohlwe iphasiwedi?";
+
+
+"Change Password" = "SHINTSHA iphasiwedi";
+
+
+"Reset Password" = "Setha kabusha iphasiwedi";
+
+
+
+
+
+
+
+
+"Report content" = "Bika ukukhathazeka kwakho";
+
+
+"CHANGE EMAIL ADDRESS" = "Shintsha Ikheli Le-imeyili";
+
+
+"Follow The Guardian" = "Landela ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Singeze izici eziningi ezintsha futhi salungisa ezinye izimbungulu ukwenza isipiliyoni sakho sibushelelezi ngangokunokwenzeka.";
+
+
+"Edition / Region" = "I-Edishini / Isifunda";
+
+
+"OK" = "KULUNGILE";
+
+
+"NARRATOR" = "UMBALI";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ukugcina unolwazi ngezindaba zezindaba ozithandayo akufanele kuthathe isikhathi sakho esiningi. Izindaba kumaBullets zithatha ukufundwa kwemizuzu emi-5 ejwayelekile futhi zikufiphaze kube izinhlamvu ezigayeka kalula. Manje, ungangena ezindabeni ezifanayo ngesikhashana nje sesikhathi - ukuze ufunde kabanzi ngesikhathi esincane.";
+
+
+"READING SPEED" = "ISIVinini SOKUFUNDA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Awukavimbi lutho okwamanje";
+
+
+"EDITION / REGION" = "UHLELO / ISIFUNDA";
+
+
+
+
+
+"HEADLINES ONLY" = "IZINHLOKO ZEKHANDA KUPHELA";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Izilungiselelo Zomsindo";
+
+
+"AUDIO SETTINGS" = "IZILUNGISELELO ZE-AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "AMAKHANDA NEZINKUNZI";
+
+
+"CONTINUE AS GUEST" = "Yeqa futhi ungene ngemvume njengesihambeli";
+
+
+"Topics" = "Izihloko";
+
+
+"Pick topics to start reading and saving articles" = "Khetha izihloko ukuze uqale ukufunda nokulondoloza ama-athikili";
+
+
+"Channels" = "Iziteshi";
+
+
+"Choose from hundreds \nof news publications" = "Khetha emakhulwini ezindaba ezishicilelwayo";
+
+
+"Pick topics to start reading\nand saving articles" = "Khetha izihloko ukuze uqale ukufunda nokulondoloza ama-athikili";
+
+"Pick editions to start reading\nand saving articles" = "Khetha i-edishini ukuqala ukufunda nokulondoloza ama-athikili";
+
+"Or with" = "Noma nge";
+
+"CONTINUE AS GUEST" = "QHUBEKA NJENGESIVakashi";
+
+"Terms of Service" = "Imibandela Yokusebenza";
+
+"Choose from hundreds \nof news publications" = "Khetha emakhulwini ezindaba ezishicilelwayo";
+
+"Select your preferred language\nfor News in Bullets." = "Khetha ulimi lwakho oluthandayo lwezindaba kuzinhlamvu.";
+
+"Choose a style" = "Khetha isitayela";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop noma ezicashile. Emini noma ebusuku. Enza ngendlela oyifisayo i-interface yakho.";
+
+"MINS AGO" = "emizuzwini edlule";
+
+"AN HOUR AGO" = "ehoreni eledlule";
+
+"HOURS AGO" = "amahora edlule";
+
+"1 WEEK AGO" = "1 iviki eledlule";
+
+"YESTERDAY" = "Izolo";
+
+"DAYS AGO" = "ezinsukwini ezedlule";
+
+"Go to" = "Iya ku";
+
+"You have reached the start." = "Usufinyelele ekuqaleni";
+
+"Source unblocked successfully" = "Umthombo uvulelwe ngempumelelo";
+
+"Invalid email format"  = "Ifomethi ye-imeyili engavumelekile";
+
+"Wrong email or password" = "I-imeyili noma iphasiwedi engalungile";
+
+

@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "Shape 1 (2).svg",
+      "idiom" : "universal",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "filename" : "method-draw-image.svg",
+      "idiom" : "universal",
+      "language-direction" : "right-to-left"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true,
+    "template-rendering-intent" : "template"
+  }
+}

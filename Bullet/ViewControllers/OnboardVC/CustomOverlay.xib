@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+<customFonts key="customFonts">
+        <array key="Muli Regular.otf">
+            <string>Muli-Regular</string>
+        </array>
+        <array key="MuliBold.otf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="MuliExtraBold.otf">
+            <string>Muli-ExtraBold</string>
+        </array>
+        <array key="MuliSemiBold.otf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qRh-M2-ev8" customClass="CustomOverlay" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thy-MX-zfS">
+                    <rect key="frame" x="87.5" y="579" width="200" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="44c-7g-9rb"/>
+                        <constraint firstAttribute="width" constant="200" id="OOf-Nx-U7R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="16"/>
+                    <state key="normal" title="GET STARTED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-wF-cys">
+                    <rect key="frame" x="307" y="579" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="St6-Kc-tQo"/>
+                        <constraint firstAttribute="height" constant="48" id="wCy-7X-QyZ"/>
+                    </constraints>
+                    <state key="normal" image="OnboardNext">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMw-dt-lF7">
+                    <rect key="frame" x="30" y="579" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="dee-U1-fis"/>
+                        <constraint firstAttribute="height" constant="48" id="vYH-df-br2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-ExtraBold" family="Muli" pointSize="16"/>
+                    <state key="normal" title="SKIP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bch-T8-ifC" customClass="PillPageControl" customModule="PageControls">
+                    <rect key="frame" x="128" y="545" width="119" height="4"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="activeTint">
+                            <color key="value" red="0.27450980392156865" green="0.85882352941176465" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="inactiveTint">
+                            <color key="value" red="0.27450980392156865" green="0.85882352941176465" blue="0.78823529411764703" alpha="0.2986140839041096" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3Qe-fW-3Bv"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aMw-dt-lF7" firstAttribute="leading" secondItem="qRh-M2-ev8" secondAttribute="leading" constant="30" id="6Ee-qJ-ks7"/>
+                <constraint firstItem="thy-MX-zfS" firstAttribute="centerX" secondItem="qRh-M2-ev8" secondAttribute="centerX" id="A01-CM-1kT"/>
+                <constraint firstItem="bch-T8-ifC" firstAttribute="centerX" secondItem="qRh-M2-ev8" secondAttribute="centerX" id="DBe-q0-LtH"/>
+                <constraint firstAttribute="bottom" secondItem="thy-MX-zfS" secondAttribute="bottom" constant="40" id="FXh-K4-tA7"/>
+                <constraint firstItem="aMw-dt-lF7" firstAttribute="centerY" secondItem="thy-MX-zfS" secondAttribute="centerY" id="W1O-RK-51Q"/>
+                <constraint firstItem="thy-MX-zfS" firstAttribute="top" secondItem="bch-T8-ifC" secondAttribute="bottom" constant="30" id="Yxm-nD-6eI"/>
+                <constraint firstItem="3Aa-wF-cys" firstAttribute="centerY" secondItem="thy-MX-zfS" secondAttribute="centerY" id="bxx-Mf-M6n"/>
+                <constraint firstAttribute="trailing" secondItem="3Aa-wF-cys" secondAttribute="trailing" constant="20" id="kkB-ED-LTM"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonContinue" destination="thy-MX-zfS" id="eab-t6-TUu"/>
+                <outlet property="buttonNext" destination="3Aa-wF-cys" id="Roq-Pz-1fn"/>
+                <outlet property="pillPageControl" destination="bch-T8-ifC" id="arh-E5-aRI"/>
+                <outlet property="skip" destination="aMw-dt-lF7" id="etN-kZ-H2E"/>
+            </connections>
+            <point key="canvasLocation" x="498.39999999999998" y="54.422788605697157"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="bch-T8-ifC">
+            <size key="intrinsicContentSize" width="119" height="4"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="OnboardNext" width="160" height="160"/>
+    </resources>
+</document>

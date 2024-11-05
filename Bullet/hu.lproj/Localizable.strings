@@ -1,0 +1,770 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "vázlatpont";
+"BULLETS" = "VÁTLATPONTOK";
+"Headlines is not available." = "A szalagcímek nem elérhetőek.";
+"Check your internet Connection and try again." = "Ellenőrizze az internetkapcsolatát és próbálja újra.";
+"Choose Image" = "Válasszon képet";
+"Headline" = "Szalagcím";
+"Bullet 1" = "Vátlazpont 1";
+"Bullet 2" = "Vátlazpont 2";
+"Bullet 3 (Optional)" = "Vátlazpont 3 (opcionális)";
+"Bullet 4 (Optional)" = "Vátlazpont 4 (opcionális)";
+"Bullet 5 (Optional)" = "Vátlazpont 5 (opcionális)    ";
+"Bullet 6 (Optional)" = "Vátlazpont 6 (opcionális)";
+"Enter Aticle Headline" = "Írja be a szalagcímet";
+"Enter source name" = "Írja be a forrást";
+"Enter reference link" = "Írja be a hivatkozást";
+"Enter published date" = "Írja be a közzététel dátumát";
+"Enter Bullet 1" = "Írja be az első vázlatpontot";
+"Enter Bullet 2" = "Írja be az második vázlatpontot";
+"Post article successfully" = "A cikk sikeresen közzé lett téve";
+"Follow" = "Követ";
+"Unfollow" = "Nem követ";
+"Block articles from" = "LETILT cikkeket innen";
+"Unblock articles from" = "ENGEDÉLYEZ cikkeket innen";
+"Remove article" = "Cikk törlése";
+"Save article" = "Cikk mentése";
+"Terms & Conditions" = "Felhasználási feltételek";
+"Privacy Policy" = "Adatvédelmi nyilatkozat";
+"TERMS AND CONDITIONS" = "FELHASZNÁLÁSI FELTÉTELEK";
+"PRIVACY POLICY" = "ADATVÉDELMI NYILATKOZAT";
+"Fuel your curiosity" = "Olvasson még több hírt a nagyvilágról";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Olvasson rövid és pontos híreket a kedvenc témáiról, megbízható forrásból a világ minden tájáról.";
+"Save time" = "Takarítson meg időt";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Olvassa el a hírt vázlatpontokban";
+"Hands-free reading" = "Felolvasás";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nincs ideje olvasni? Használja a felolvasás funkciót.";
+"Write your message..." = "Írja be üzenetét…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Küldjön nekünk üzenetet ha szüksége van segítségre valamivel kapcsolatban. Örömmel hallünk ön felől!";
+"Drop us a message" = "küldjön nekünk üzenetet";
+"Enter Name." = "Adja meg a nevét.";
+"Enter Email." = "Adja meg az Email címét.";
+"Write your message." = "Írja be üzenetét.";
+"Topic unblock successfully" = "Feloldotta ennek a témának a tiltását.";
+"Source unblock successfully" = "Feloldotta ennek a forrásnak a tiltását.";
+"Unblock Source" = "Forrás tiltásának feloldása";
+"Cancel" = "Mégse";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Küldjön nekünk visszajelzést, örömmel hallanánk öntől! Kérdése vagy jogi aggálya van? Próbálja a segítségnyújtás oldalunkat vagy lépjen velünk kapcsolatba.";
+"Enter your suggestion." = "Írja be javaslatát.";
+"feedback sent." = "a visszjelzés sikeresen el lett küldve";
+"30m" = "30 p";
+"1h" = "1 ó";
+"3h" = "3 ó";
+"6h" = "6 ó";
+"12h" = "12 ó";
+"24h" = "24 ó";
+"Language updated successfully." = "a nyelv sikeresen frissítve lett";
+"CONTINUE" = "FOLYTAT";
+"FOLLOW 3 TO CONTINUE" = "KÖVESSEN 3 TÉMÁT A FOLYTATÁSHOZ";
+"Unfollow Location" = "Ne kövesse ezt a helyet";
+"Saved Articles" = "Mentett cikkek";
+"Block" = "LETILT";
+"Are you sure you want block" = "Biztos, hogy le akarja tiltani ezt";
+"Once blocked, you wont be able to see any Articles related to this" = "Nem fogja látni a cikkeket ebből a csatornából, ha letiltja";
+"Block Topic" = "Téma letiltása    ";
+"Suggested" = "Javasolt";
+"Related Sources not available" = "A kapcsolódó források nem elérhetőek";
+"Block Source" = "Forrás letiltása";
+"News in Bullets App version" = "Hírek Röviden alkalmazásverzió";
+"Next" = "Következő";
+"Login" = "Bejelentkezés";
+"Terms" = "Feltételek";
+"By clicking Continue, you agree with our Terms." = "Válassza a folytatást a feltételek elfogadásához.";
+"in our Privacy Policy." = "az Adatvédelmi nyilatkozatunkban.";
+"Access token missing." = "Hozzáférési token hiányzik.";
+"NEXT" = "KÖVETKEZŐ";
+"By checking this box, you agree to our " = "Kattintson a négyzetbe a feltételek elfogadásához. Az adatai az Adatvédelmi nyilatkozatunk szerint lesz kezelve.";
+"Terms of Service" = "Felhasználási feltételek";
+". We’ll handle your data according to our " = ". Adatait kezelni a";
+"Password must be at least 8 characters." = "A jelszónak legalább 8 karakterből kell állnia.";
+"Strong" = "Erős";
+"Medium" = "Közepes";
+"Weak" = "Gyenge";
+"CREATE A NEW ACCOUNT" = "ÚJ FIÓK LÉTREHOZÁSA";
+"SIGN IN WITH EXISTING ACCOUNT" = "BEJELENTKEZÉS MEGLÉVŐ FIÓKKAL";
+"You must agree to the Terms of Services to continue" = "El kell fogadnia a Felhasználási feltételeket a folytatáshoz";
+"SIGN IN" = "Bejelentkezés";
+"What's your password?" = "Mi a jelszava?";
+"SIGN UP" = "Bejelentkezés";
+"Choose your password?" = "Válasszón jelszót";
+"Something went wrong" = "Valami hiba történt";
+"we will send email to" = "emailt fogunk küldeni";
+"with a link to reset your password." = "egy linkkel a jelszó visszaállításához.";
+"A reset password link has been sent to" = "Link a jelszó visszaállításához elküldve a";
+"Enter new email." = "Adja meg az új Email címét.";
+"Enter password." = "Adja meg a jelszavát.";
+"New Password " = "Új jelszó    ";
+" (8 characters min)" = "(8 karakter minimum)    ";
+"Enter current password." = "Adja meg jelenlegi jelszavát.    ";
+"Enter new password." = "Adja meg, mi legyen az új jelszava.";
+"Enter confirm password." = "Jelszó megerősítése";
+"password do not matched!" = "a jelszavak nem egyeznek!";
+"GET STARTED" = "KEZDJÜK";
+"SKIP" = "ÁTUGRÁS";
+"From where you would like to pick photo?" = "From where you would like to pick photo?";
+"Camera" = "Kamera";
+"Photo Library" = "Galéria";
+"Kindly open settings and enable access" = "Kérjük nyissa meg a beállításokat és engedélyezze";
+"Open Settings" = "Beállítások megnyitása";
+"Access needed for your camera" = "Hozzáférés szükséges a kamerájához";
+"Access needed for your photo library" = "Hozzáférés szükséges a galériájához";
+"Done" = "Kész";
+"Pull to refresh" = "Húzza meg a frissítéshez";
+"Loading" = "Töltés";
+"Speech not available for this article" = "Felolvasás nem elérhező ehhez a cikkhez";
+"MANAGE LOCATION" = "HELY KEZELÉSE";
+"OK" = "rendben";
+"Choose your News in Bullets Edition based on locale" = "Válassza ki hírét a Bullets Edition-ben a területi beállítás alapján";
+"Edition" = "Kiadás";
+"EDITION / REGION" = "KIADÁS / RÉGIÓ";
+"Your Topics" = "Az Ön témái";
+"Your Channels" = "A csatornáid";
+"Your Places" = "Saját helyek";
+"Enter email." = "Írja be az e-mail címet.";
+"Please enter a password." = "Adjon meg egy jelszót.";
+"Search articles" = "Cikkek keresése";
+"No results" = "Nincs eredmény";
+"Edition / Region" = "Kiadás / Régió";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOKKOL";
+"CANCEL" = "MÉGSE";
+"PLACES" = "HELYEK";
+"LANGUAGE" = "NYELV";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "MENTETT CIKKEK";
+"Topics" = "Témák";
+"Channels" = "Csatornák";
+"Editions" = "Kiadások";
+"No saved stories yet" = "Még nincsenek mentett történetek";
+"Tap the" = "Nyomjon a";
+"icon on the article" = "ikont a cikken";
+"you want to read later then" = "amelyiket később akarja olvasni, majd";
+"Select" = "Válassza a";
+"to save article." = "hogy elmentse a cikket.";
+"There is nothing in here" = "Nincsen találat";
+"Looks like there is nothing here but a cat." = "Nincs itt semmi.Úgy tűnik nincs itt semmi, csak egy macska.";
+"Would you like to go back to home?" = "Vissza a főoldalra? \nVissza akar menni a kezdőoldalra?";
+"GO HOME" = "HAZAMENNI";
+"Search" = "Keresés";
+"Discover" = "Felfedez";
+"Articles" = "Cikkek";
+"Try a different keyword" = "Próbálkozzon másik kulcsszóval";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Szerezd meg a legrelevánsabb híreket a választott régió számára. Olvassa el a gondozott híreket, hogy folyamatosan értesülhessen a legfrissebb hírekről a világ bármely pontjáról.";
+"Language" = "Nyelv";
+"Results" = "Eredmények";
+"For You" = "Neked";
+"Top News" = "Friss Hírek";
+"Choose a style" = "Válasszon stílust";
+"Pop or subtle. Day or night. Customize your interface." = "Pop vagy finom. Nappal vagy éjjel. Testreszabhatja a kezelőfelületet.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Rólunk";
+
+
+"Share" = "Megosztás";
+
+
+"ACCOUNT" = "FIÓK";
+
+
+"Your Email" = "Email címed";
+
+
+"1sT-J6-qI0.text" = "MENTETT CIKKEK";
+
+
+"2XX-rr-GLC.text" = "Válasszon csatornákat források százaiból";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Olvassal el a legfrissebb híreseményeket a világ bármely szegletéből..";
+
+
+"Set an interval in which you want to receive your news notifications." = "Válassza ki, milyen időközönként szeretne értesítést kapni.";
+
+
+"Off" = "Ki";
+
+
+
+
+
+"Bullet 2" = "Vázlatpont 2";
+
+
+"What's your email?" = "Mi az emailed?";
+
+
+"New Password (8 Characters Min)" = "Új jelszó (minimum 8 karakter)";
+
+
+"Forgot Password?" = "Elfelejtett jelszó?";
+
+
+"Account Settings" = "Fiókbeállítások";
+
+
+"Learn how we process your data" = "Információ az adat felhasználásáról";
+
+
+"3h" = "3 ó";
+
+
+"Ok" = "Igen";
+
+
+"Block articles from The Guardian" = "Cikkek blokkolása innen:";
+
+
+"On" = "Be";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Segítségnyújtás";
+
+
+"Search" = "Csatornák keresése";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Fájl kiválasztása galériából";
+
+
+
+
+"Save article" = "Cikk mentése";
+
+
+"ABOUT" = "RÓLUNK";
+
+
+"Dark" = "Sötét";
+
+
+"Legal" = "Jogi";
+
+
+"Go to The Guardian" = "Ide --";
+
+
+"Send reset link" = "Visszaállítási link küldése";
+
+
+
+
+
+"My Account" = "Fiókom";
+
+
+"FEEDBACK" = "VISSZAJELZÉS";
+
+
+"Message" = "Üzenet";
+
+
+"Confirm New Password" = "Új jelszó megerősítése";
+
+
+"for ___" = "részére:";
+
+
+"Search" = "Témák keresése";
+
+
+"LANGUAGE" = "NYELV  ";
+
+
+"Light" = "Világos";
+
+
+"FOLLOW 3 TO CONTINUE" = "folytatáshoz válasszon 3-at";
+
+
+
+
+"Off" = "Kikapcsol";
+
+
+"Language" = "Választ";
+
+
+"LOG OUT" = "KIJELENTKEZÉS";
+
+
+"Report content" = "Tartalom jelentése";
+
+
+"What's your email?" = "Mi az emailed?";
+
+
+"On" = "Bekapcsol";
+
+
+"More like this" = "Még több ilyen hírt";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 ó";
+
+
+"Enter Email Address" = "Adja meg Email címét";
+
+
+"News in Bullets" = "Olvass többet kevesebb idő alatt.";
+
+
+"6h" = "6 ó";
+
+
+"Choose your password" = "Válassz jelszót";
+
+
+"Cancel" = "Mégse";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Olvasson híreket gyorsan ezzel az alkalmazással. Válassza ki a témát és a forrást. Azután olvasson híreket vázlatpontokba szedve.";
+
+
+"Push Notification" = "Értesítés";
+
+
+"12h" = "12 ó";
+
+
+"24h" = "24 ó";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Hogyan segíthetünk?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "JELSZÓ MEGVÁLTOZTATÁSA";
+
+
+"Change Email" = "EMAIL CÍM MEGVÁLTOZTATÁSA";
+
+
+"Medium" = "Közepes";
+
+
+"SAVE CHANGES" = "MENTÉS";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Küldjön nekünk üzenetet, ha segítségre van szüksége. Örömmel hallunk ön felől!";
+
+
+"P5u-N3-Tw4.text" = "Címke";
+
+
+"Cancel" = "Mégse";
+
+
+"Bullet 1" = "Vázlatpont 1";
+
+
+"TIMED NOTIFICATIONS" = "ÉRTESÍTÉSEK";
+
+
+"POST ARTICLE" = "CIKK KÖZZÉTÉTELE";
+
+
+"CONTACT US" = "Kapcsolat";
+
+
+"EDITION / REGION" = "Kiadás";
+
+
+"Search" = "Keresés";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Küldjön nekünk visszajelzést! Kérdése vagy jogi aggályai vannak? Próbálja meg a Segítség oldalt vagy lépjen velünk kapcsolatba.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Küldjön nekünk üzenetet, ha segítségre van szüksége. Örömmel hallunk ön felől!";
+
+
+"30m" = "30 p";
+
+
+"CONTINUE" = "FOLYTAT";
+
+
+"Time To Update!" = "Frissítse az alkalmazást!";
+
+
+"NOTIFICATIONS" = "ÉRTESÍTÉSEK";
+
+
+"Search" = "Keresés";
+
+
+"By clicking Continue, you agree with our Terms." = "Válassza a folytatást, hogy elfogadja a feltételeket.";
+
+
+"HELP / CONTACT US" = "SEGÍTSÉG / KAPCSOLAT";
+
+
+"Reset Password" = "Jelszó visszaállítása";
+
+
+"SEND MESSAGE" = "ÜZENET KÜLDÉSEE";
+
+
+"Save article" = "Cikk mentése";
+
+
+"Bullet 6 (Optional)" = "Vázlatpont 6 (opcionális)";
+
+
+"HAPTICS" = "REZGÉS";
+
+
+"Your message has \vbeen sent." = "Az üzenete továbbítva.";
+
+
+"LEGAL" = "JOGI";
+
+
+"Block List" = "Tiltólista";
+
+
+"PERSONALIZATION" = "SZEMÉLYRESZABÁS";
+
+
+"in our Privacy Policy." = "az Adatvédelmi irányelveinkben.";
+
+
+"CONTINUE" = "FOLYTAT";
+
+
+"Enter Name" = "Adja meg a nevét";
+
+
+"What's your email?" = "Mi az Email címe?";
+
+
+"Hello there!" = "Jó napot!";
+
+
+"PUSH NOTIFICATIONS" = "ÉRTESÍTÉSEK";
+
+
+"Bullet 3 (Optional)" = "Vázlatpont 3 (opcionális)";
+
+
+"Source name" = "Forrás neve";
+
+
+"Current Password" = "Jelenlegi jelszó";
+
+
+"COLOR THEME" = "Színséma";
+
+
+"eTp-X1-g34.text" = "Vagy keresztül";
+
+
+"CANCEL" = "MÉGSE";
+
+
+"Bullet 4 (Optional)" = "Vázlatpont 4 (opcionális)";
+
+
+"Date published" = "Közzététel dátuma";
+
+
+"Send Password Reset Link" = "Link küldése a jelszó visszaállításához";
+
+
+"CONTINUE WITH APPLE" = "Bejelentkezés Apple ID-vel";
+
+
+"Off" = "Kikapcsol";
+
+
+"BLOCK LIST" = "Tiltólista";
+
+
+"HELP" = "SEGÍTSÉG";
+
+
+"Reference link" = "Hivatkozási link";
+
+
+"Your Password" = "Jelszavad";
+
+
+"SUBMIT" = "BEKÜLD";
+
+
+"HELP" = "SEGÍTSÉG";
+
+
+"MY ACCOUNT" = "FIÓKOM";
+
+
+"hbD-HP-tZd.normalTitle" = "Tiltás feloldása";
+
+
+"OTHERS" = "Egyéb";
+
+
+"BREAKING NEWS" = "LEGFRISSEBB HÍREK";
+
+
+"Topics" = "Tiltott témák";
+
+
+"Message us," = "Küldjön üzenetet,";
+
+
+"Pick topics to start reading
+and saving articles" = "alkalmazás nyelve";
+
+
+"Forgot Password?" = "Elfelejtett jelszó?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Új funkciók hozzáadva. Néhány hiba javítva.";
+
+
+"Success!" = "Sikeres!!";
+
+
+"Current Password" = "Jelenlegi jelszó";
+
+
+"CONTENT" = "TARTALOM";
+
+
+"Headline" = "Szalagcím";
+
+
+"neg-UC-UpK.text" = "Válasszon témákat és kezdjen el olvasni és elmenteni cikkeket.";
+
+
+"CONTINUE WITH EMAIL ID" = "Tovább Email azonosítóval";
+
+
+"SAVE CHANGES" = "MENTÉS";
+
+
+"Post an Article" = "Cikk közzététele";
+
+
+"Contact Us" = "Kapcsolat";
+
+
+"On" = "Bekapcsol";
+
+
+"New Email Address" = "Új email cím";
+
+
+"Bullet 5 (Optional)" = "Vátlazpont 5 (opcionális)";
+
+
+"Suggest an improvement" = "Küldjön be javaslatot";
+
+
+"Channels" = "Tiltott források";
+
+
+"From:" = "Küldő:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "SZEMÉLYRE SZABOTT JAVASLATOK";
+
+
+"I don't like this" = "Nem tetszik";
+
+
+"CONTINUE" = "FOLYTAT";
+
+
+"Name" = "Név";
+
+
+"Enter email" = "Adja meg Email címét";
+
+
+"HELP" = "SEGÍTSÉG";
+
+
+"FOLLOW 3 TO CONTINUE" = "Kövessen 3-at a folytatáshoz";
+
+
+"UPDATE APP" = "Alkalmazás frissítése";
+
+
+"Forgot Password?" = "Elfelejtett jelszó?";
+
+
+"Change Password" = "Jelszó megváltoztatása";
+
+
+"Reset Password" = "Jelszó visszaállítása";
+
+
+
+
+
+
+
+
+"Report content" = "Jelentse aggályát";
+
+
+"CHANGE EMAIL ADDRESS" = "EMAIL CÍM MEGVÁLTOZTATÁSA";
+
+
+"Follow The Guardian" = "Követ ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Sok új funkcióval bővítettük és kijavítottunk néhány hibát, hogy a lehető legsimább legyen az élmény.";
+
+
+"Edition / Region" = "Kiadás / Régió";
+
+
+"OK" = "rendben";
+
+
+"NARRATOR" = "NARRÁTOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Az Ön által kedvelt hírekről történő naprakész tájékoztatás nem igényel túl sok időt. A Bullets News a rendszeres 5 perces olvasást veszi át, és könnyen emészthető golyókká sűríti. Most ugyanazt a hírt csak töredék idő alatt tudja befogadni - így kevesebb idő alatt többet is elolvashat.";
+
+
+"READING SPEED" = "OLVASÁSI SEBESSÉG";
+
+
+
+
+
+"You haven't blocked anything yet" = "Még nem blokkoltál semmit";
+
+
+"EDITION / REGION" = "KIADÁS / RÉGIÓ";
+
+
+
+
+
+"HEADLINES ONLY" = "CSAK FÖLDSZÍNEK";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Hangbeállítások";
+
+
+"AUDIO SETTINGS" = "HANGBEÁLLÍTÁSOK";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "FEJEZETEK ÉS TÖRVÉNYEK";
+
+
+"CONTINUE AS GUEST" = "Ugrás és bejelentkezés a vendégként";
+
+
+"Topics" = "Témák";
+
+
+"Pick topics to start reading and saving articles" = "Válasszon témákat a cikkek olvasásának és mentésének megkezdéséhez";
+
+
+"Channels" = "Csatornák";
+
+
+"Choose from hundreds \nof news publications" = "Válasszon több száz hírkiadvány közül";
+
+
+"Pick topics to start reading\nand saving articles" = "Válasszon témákat a cikkek olvasásának és mentésének megkezdéséhez";
+
+"Pick editions to start reading\nand saving articles" = "Válasszon kiadásokat a cikkek olvasásának és mentésének megkezdéséhez";
+
+"Or with" = "Vagy azzal";
+
+"CONTINUE AS GUEST" = "FOLYTATÁS VENDÉGKÉNT";
+
+"Terms of Service" = "Szolgáltatás feltételei";
+
+"Choose from hundreds \nof news publications" = "Válasszon több száz hírkiadvány közül";
+
+"Select your preferred language\nfor News in Bullets." = "Válassza ki a kívánt nyelvet a Hírek felsorolásban.";
+
+"Choose a style" = "Válasszon stílust";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop vagy finom. Nappal vagy éjszaka. Testreszabhatja a kezelőfelületet.";
+
+"MINS AGO" = "perccel ezelőtt";
+
+"AN HOUR AGO" = "egy órája";
+
+"HOURS AGO" = "órákkal ezelőtt";
+
+"1 WEEK AGO" = "1 hete";
+
+"YESTERDAY" = "Tegnap";
+
+"DAYS AGO" = "napja";
+
+"Go to" = "menj a";
+
+"You have reached the start." = "Elérte a kezdést";
+
+"Source unblocked successfully" = "A forrás feloldása sikeresen megtörtént";
+
+"Invalid email format"  = "érvénytelen e-mail formátum";
+
+"Wrong email or password" = "Hibás e-mail vagy jelszó";
+
+

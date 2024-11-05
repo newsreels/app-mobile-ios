@@ -1,0 +1,1098 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "điểm-tin";
+"BULLETS" = "ĐIỂM TIN";
+"Headlines is not available." = "Tiêu đề không sẵn có.";
+"Check your internet Connection and try again." = "Kiểm tra kết nối internet của bạn và thử lại. ";
+"Choose Image" = "Chọn Ảnh";
+"Headline" = "Tiêu đề";
+"Bullet 1" = "Điểm tin 1";
+"Bullet 2" = "Điểm tin 2";
+"Bullet 3 (Optional)" = "Điểm tin 3 (Tùy chọn)";
+"Bullet 4 (Optional)" = "Điểm tin 4 (Tùy chọn)";
+"Bullet 5 (Optional)" = "Điểm tin 5 (Tùy chọn)";
+"Bullet 6 (Optional)" = "Điểm tin 6 (Tùy chọn)";
+"Enter Aticle Headline" = "Nhập Tiêu Đề";
+"Enter source name" = "Nhập Nguồn Tin";
+"Enter reference link" = "Nhập Nguồn Tham Khảo";
+"Enter published date" = "Nhập Ngày Xuất Bản";
+"Enter Bullet 1" = "Nhập Điểm Tin Đầu Tiên";
+"Enter Bullet 2" = "Nhập Điểm Tin Thứ Hai";
+"Post article successfully" = "Bài viết đã được đăng thành công";
+"Follow" = "Theo dõi";
+"Unfollow" = "Bỏ Theo Dõi";
+"Block articles from" = "CHẶN bài báo từ";
+"Unblock articles from" = "BỎ CHẶN bài báo từ";
+"Remove article" = "Gỡ bỏ bài báo";
+"Save article" = "Lưu bài báo này";
+"Terms & Conditions" = "Điều Khoản & Điều Kiện";
+"Privacy Policy" = "Chính Sách Quyền Riêng Tư";
+"TERMS AND CONDITIONS" = "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN";
+"PRIVACY POLICY" = "CHÍNH SÁCH QUYỀN RIÊNG TƯ";
+"Fuel your curiosity" = "Đọc nhiều tin hơn về thế giới";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Đọc tin ngắn và chính xác về chủ đề yêu thích của bạn từ những nguồn tin uy tín trên thế giới.";
+"Save time" = "Tiết kiệm thời gian của bạn";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Đọc tin ở mục điểm tin";
+"Hands-free reading" = "Chế độ đọc rảnh tay";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Không có thời gian để đọc? Sử dụng chức năng giọng nói.";
+"Write your message..." = "Viết tin nhắn của bạn…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "gửi chúng tôi tin nhắn nếu bạn cần trợ giúp, chúng tôi sẵn sàng để lắng nghe bạn!";
+"Drop us a message" = "gửi chúng tôi một tin nhắn";
+"Enter Name." = "Nhập Tên.";
+"Enter Email." = "Nhập Email.";
+"Write your message." = "Viết tin nhắn của bạn.";
+"Topic unblock successfully" = "Bạn đã bỏ chặn chủ đề này";
+"Source unblock successfully" = "Bạn đã bỏ chặn nguồn này";
+"Unblock Source" = "Bỏ Chặn Nguồn Tin";
+"Cancel" = "Hủy";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Hãy gửi cho chúng tôi phản hồi, chúng tôi muốn lắng nghe từ bạn! Bạn có câu hỏi hay vấn đề pháp lý nào không? Hãy thử trang Trợ giúp hoặc Liên hệ với chúng tôi.";
+"Enter your suggestion." = "Nhập gợi ý của bạn.";
+"feedback sent." = "phản hồi đã được gửi thành công";
+"30m" = "30M";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Ngôn ngữ đã được cập nhật thành công. ";
+"CONTINUE" = "TIẾP TỤC";
+"FOLLOW 3 TO CONTINUE" = "THEO DÕI 3 ĐỂ TIẾP TỤC";
+"Unfollow Location" = "Bỏ Theo Dõi Vị Trí";
+"Saved Articles" = "Bài Báo Đã Lưu";
+"Block" = "CHẶN";
+"Are you sure you want block" = "Bạn có chắc chắn bạn muốn chặn điều này";
+"Once blocked, you wont be able to see any Articles related to this" = "Bạn sẽ không thấy các bài báo từ kênh này nếu bạn chặn nó. ";
+"Block Topic" = "Chặn Chủ Đề Này";
+"Suggested" = "Được gợi ý";
+"Related Sources not available" = "Nguồn tin liên quan không khả dụng";
+"Block Source" = "Chặn Nguồn Tin Này";
+"News in Bullets App version" = "Phiên bản ứng dụng Điểm tin nhanh";
+"Next" = "Tiếp theo";
+"Login" = "Đăng nhập";
+"Terms" = "Điều khoản";
+"By clicking Continue, you agree with our Terms." = "Chọn Tiếp Tục để đồng ý với Điều khoản.";
+"in our Privacy Policy." = "trong Chính Sách về Quyền Riêng Tư của chúng tôi.";
+"Access token missing." = "Token truy cập bị thiếu.";
+"NEXT" = "TIẾP THEO";
+"By checking this box, you agree to our " = "Chọn vào ô để đồng ý với Điều khoản. Dữ liệu của bạn sẽ được xử lý dựa trên Chính sách về Quyền riêng tư của chúng tôi.";
+"Terms of Service" = "Điều khoản Dịch vụ";
+"We’ll handle your data according to our " = "Chúng tôi sẽ nắm giữ liệu của bạn dựa theo";
+"Password must be at least 8 characters." = "Mật khẩu phải bao gồm ít nhất 8 ký tự.";
+"Strong" = "Mạnh";
+"Medium" = "Trung bình";
+"Weak" = "Yếu";
+"CREATE A NEW ACCOUNT" = "TẠO TÀI KHOẢN MỚI";
+"SIGN IN WITH EXISTING ACCOUNT" = "ĐĂNG NHẬP VỚI TÀI KHOẢN SẴN CÓ";
+"You must agree to the Terms of Services to continue" = "Bạn phải đồng ý với Điều khoản Dịch vụ để tiếp tục";
+"SIGN IN" = "Đăng Nhập";
+"What's your password?" = "Mật khẩu của bạn là gì?";
+"SIGN UP" = "Đăng Ký";
+"Choose your password?" = "Chọn mật khẩu của bạn";
+"Something went wrong" = "Có lỗi xảy ra";
+"we will send email to" = "chúng tôi sẽ gửi email đến";
+"with a link to reset your password." = "với một đường link để đặt lại mật khẩu của bạn.";
+"A reset password link has been sent to" = "Một link để đặt lại mật khẩu đã được gửi đến";
+"Enter new email." = "Nhập email mới";
+"Enter password." = "Nhập mật khẩu";
+"New Password " = "Mật Khẩu Mới";
+" (8 characters min)" = "(tối thiểu 8 ký tự)";
+"Enter current password." = "Nhập mật khẩu hiện tại";
+"Enter new password." = "Nhập mật khẩu mới";
+"Enter confirm password." = "Xác nhận mật khẩu";
+"password do not matched!" = "mật khẩu không khớp!";
+"GET STARTED" = "BẮT ĐẦU";
+"SKIP" = "BỎ QUA";
+"From where you would like to pick photo?" = "Bạn muốn lấy hình ảnh từ đâu?";
+"Camera" = "Máy ảnh";
+"Photo Library" = "Thư Viện Hình Ảnh";
+"Kindly open settings and enable access" = "Kindly open settings and enable access";
+"Open Settings" = "Mở Cài Đặt";
+"Access needed for your camera" = "Cần được cấp phép truy cập camera của bạn";
+"Access needed for your photo library" = "Cần được cấp phép truy cập thư  viện ảnh của bạn";
+"Done" = "Hoàn thành";
+"Pull to refresh" = "Kéo để làm mới";
+"Loading" = "Đang tải";
+"Speech not available for this article" = "Chức năng giọng nói không khả dụng cho bài báo này";
+"MANAGE LOCATION" = "QUẢN LÝ VỊ TRÍ";
+"OK" = "đồng ý";
+"Choose your News in Bullets Edition based on locale" = "Chọn Tin tức của bạn trong Ấn bản Bullets dựa trên ngôn ngữ";
+"Edition" = "đồng ý";
+"EDITION / REGION" = "EDITION / REGION";
+"Your Topics" = "Chủ đề của bạn";
+"Your Channels" = "Kênh của bạn";
+"Your Places" = "Địa điểm của bạn";
+"Enter email." = "Nhập email.";
+"Please enter a password." = "Vui lòng nhập mật khẩu.";
+"Search articles" = "Tìm kiếm bài viết";
+"No results" = "Ko có kết quả";
+"Edition / Region" = "Phiên bản / Khu vực";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "CHẶN";
+"CANCEL" = "HỦY";
+"PLACES" = "NƠI";
+"LANGUAGE" = "NGÔN NGỮ";
+"Profile" = "Hồ sơ";
+"SAVED ARTICLES" = "BÀI VIẾT ĐÃ ĐƯỢC LƯU";
+"Topics" = "Chủ đề";
+"Channels" = "Kênh";
+"Editions" = "Các phiên bản";
+"No saved stories yet" = "Chưa có câu chuyện nào được lưu";
+"Tap the" = "Chạm vào";
+"icon on the article" = "trên bài báo";
+"you want to read later then" = "bạn muốn đọc sau";
+"Select" = "Lựa chọn";
+"to save article." = "để lưu bài báo.";
+"There is nothing in here" = "Không có gì ở đây";
+"Looks like there is nothing here but a cat." = "Có vẻ không có gì ở đây cả ngoài một con mèo.";
+"Would you like to go back to home?" = "Bạn có muốn trở về trang chủ?";
+"GO HOME" = "VỀ NHÀ";
+"Search" = "Tìm kiếm";
+"Discover" = "Khám phá";
+"Articles" = "Bài viết";
+"Try a different keyword" = "Hãy thử một từ khóa khác";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Nhận tin tức có liên quan nhất đến khu vực bạn chọn. Đọc những câu chuyện tin tức được sắp xếp để giúp bạn cập nhật những tin tức mới nhất từ ​​mọi nơi trên thế giới.";
+"Language" = "Ngôn ngữ";
+"Results" = "Các kết quả";
+"For You" = "Cho bạn";
+"Top News" = "Chóp Tin vặt";
+"Choose a style" = "Chọn một phong cách";
+"Pop or subtle. Day or night. Customize your interface." = "Nổi bật hoặc tinh tế. Ngày hay đêm. Tùy chỉnh giao diện của bạn.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "Về Chúng Tôi";
+
+
+"Share" = "Chia sẻ";
+
+
+"ACCOUNT" = "TÀI KHOẢN";
+
+
+"Your Email" = "Email của bạn";
+
+
+"1sT-J6-qI0.text" = "BÀI BÁO ĐÃ LƯU";
+
+
+"2XX-rr-GLC.text" = "Chọn kênh khác từ hàng trăm nguồn tin";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Đọc những tin tức sự kiện mới nhất từ khắp nơi trên thế giới.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Cài đặt khoảng thời gian nhận thông báo.";
+
+
+"Off" = "Tắt";
+
+
+
+
+
+"Bullet 2" = "Điểm tin 2";
+
+
+"What's your email?" = "Email của bạn là gì?";
+
+
+"New Password (8 Characters Min)" = "Mật Khẩu Mới (Tối Thiểu 8 Ký Tự)";
+
+
+"Forgot Password?" = "Quên Mật Khẩu?";
+
+
+"Account Settings" = "Cài Đặt Tài Khoản";
+
+
+"Learn how we process your data" = "Thông tin về việc xử lý dữ liệu của bạn";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Chặn tin tức từ ---";
+
+
+"On" = "Bật";
+
+
+"Auto" = "Tự động";
+
+
+"Help Center" = "Trung Tâm Trợ Giúp";
+
+
+"Search" = "Tìm Kênh";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Chọn tệp từ bộ sưu tập";
+
+
+
+
+"Save article" = "Lưu bài báo";
+
+
+"ABOUT" = "VỀ CHÚNG TÔI";
+
+
+"Dark" = "Tối";
+
+
+"Legal" = "Pháp lý";
+
+
+"Go to The Guardian" = "Đi đến ---";
+
+
+"Send reset link" = "Gửi link đặt lại";
+
+
+
+
+
+"My Account" = "Tài Khoản Của Tôi";
+
+
+"FEEDBACK" = "PHẢN HỒI";
+
+
+"Message" = "Tin Nhắn";
+
+
+"Confirm New Password" = "Xác Nhận Mật Khẩu Mới";
+
+
+"for ___" = "cho ___";
+
+
+"Search" = "Tìm Chủ Đề";
+
+
+"LANGUAGE" = "NGÔN NGỮ";
+
+
+"Light" = "Sáng";
+
+
+"FOLLOW 3 TO CONTINUE" = "để tiếp tục, chọn 3";
+
+
+
+
+"Off" = "Tắt";
+
+
+"Language" = "Chọn";
+
+
+"LOG OUT" = "ĐĂNG XUẤT";
+
+
+"Report content" = "Báo cáo nội dung";
+
+
+"What's your email?" = "Email của bạn là gì?";
+
+
+"On" = "Bật";
+
+
+"More like this" = "Nhiều tin tương tự hơn";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Nhập Địa Chỉ Email";
+
+
+"News in Bullets" = "Đọc nhiều hơn, tiết kiệm thời gian hơn.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Đặt mật khẩu của bạn";
+
+
+"Cancel" = "Hủy";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Đọc tin tức nhanh chóng với ứng dụng này. Chọn chủ đề và nguồn mà bạn muốn. Đọc tin tức của bạn bằng những điểm tin ngắn.";
+
+
+"Push Notification" = "Thông báo";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Chúng tôi có thể giúp như thế nào?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "ĐỔI MẬT KHẨU";
+
+
+"Change Email" = "ĐỔI ĐỊA CHỈ EMAIL";
+
+
+"Medium" = "Trung bình";
+
+
+"SAVE CHANGES" = "LƯU THAY ĐỔI";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Gửi chúng tôi tin nhắn nếu bạn cần trợ giúp, chúng tôi sẵn sàng để lắng nghe bạn!";
+
+
+"P5u-N3-Tw4.text" = "Nhãn";
+
+
+"Cancel" = "Hủy";
+
+
+"Bullet 1" = "Điểm tin 1";
+
+
+"TIMED NOTIFICATIONS" = "THÔNG BÁO";
+
+
+"POST ARTICLE" = "ĐĂNG BÀI";
+
+
+"CONTACT US" = "Liên Hệ Với Chúng Tôi";
+
+
+"EDITION / REGION" = "Phiên bản";
+
+
+"Search" = "Tìm kiếm";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Hãy gửi cho chúng tôi phản hồi, chúng tôi muốn lắng nghe từ bạn! Bạn có câu hỏi hay vấn đề pháp lý nào không? Hãy thử trang Trợ giúp hoặc Liên hệ với chúng tôi. ";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Gửi cho chúng tôi một tin nhắn nếu bạn cần trợ giúp, chúng tôi muốn lắng nghe từ bạn!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "TIẾP TỤC";
+
+
+"Time To Update!" = "Cập nhật ứng dụng!";
+
+
+"NOTIFICATIONS" = "THÔNG BÁO";
+
+
+"Search" = "Tìm kiếm";
+
+
+"By clicking Continue, you agree with our Terms." = "Chọn Tiếp tục để đồng ý với các Điều khoản";
+
+
+"HELP / CONTACT US" = "HỖ TRỢ/LIÊN HỆ";
+
+
+"Reset Password" = "Đặt Lại Mật Khẩu";
+
+
+"SEND MESSAGE" = "GỬI TIN NHẮN";
+
+
+"Save article" = "Lưu bài báo";
+
+
+"Bullet 6 (Optional)" = "Điểm tin 6 (Tùy chọn)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Tin nhắn của bạn đã được gửi";
+
+
+"LEGAL" = "PHÁP LÝ";
+
+
+"Block List" = "Danh Sách Chặn";
+
+
+"PERSONALIZATION" = "CÁ NHÂN HÓA";
+
+
+"in our Privacy Policy." = "trong điều khoản về Quyền Riêng Tư của chúng tôi.";
+
+
+"CONTINUE" = "TIẾP TỤC";
+
+
+"Enter Name" = "Điền tên";
+
+
+"What's your email?" = "Email của bạn là gì?";
+
+
+"Hello there!" = "Xin chào!";
+
+
+"PUSH NOTIFICATIONS" = "THÔNG BÁO";
+
+
+"Bullet 3 (Optional)" = "Điểm tin 3 (tùy chọn)";
+
+
+"Source name" = "Tên Của Nguồn Tin";
+
+
+"Current Password" = "Mật Khẩu Hiện Tại";
+
+
+"COLOR THEME" = "Màu Chủ Đề";
+
+
+"eTp-X1-g34.text" = "Hoặc thông qua";
+
+
+"CANCEL" = "HỦY";
+
+
+"Bullet 4 (Optional)" = "Điểm tin 4 (tùy chọn)";
+
+
+"Date published" = "Ngày xuất bản";
+
+
+"Send Password Reset Link" = "Gửi link để đặt lại mật khẩu";
+
+
+"CONTINUE WITH APPLE" = "Đăng ký bằng Apple ID ";
+
+
+"Off" = "Tắt";
+
+
+"BLOCK LIST" = "DANH SÁCH CHẶN";
+
+
+"HELP" = "TRỢ GIÚP";
+
+
+"Reference link" = "Link giới thiệu";
+
+
+"Your Password" = "Mật Khẩu Của Bạn";
+
+
+"SUBMIT" = "GỬI";
+
+
+"HELP" = "TRỢ GIÚP";
+
+
+"MY ACCOUNT" = "TÀI KHOẢN CỦA TÔI";
+
+
+"hbD-HP-tZd.normalTitle" = "Bỏ chặn";
+
+
+"OTHERS" = "Khác";
+
+
+"BREAKING NEWS" = "TIN NÓNG";
+
+"Message us," = "Gửi tin nhắn cho chúng tôi,";
+
+
+"Pick topics to start reading
+and saving articles" = "ngôn ngữ ứng dụng";
+
+
+"Forgot Password?" = "Quên Mật Khẩu?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Chúng tôi đã thêm rất nhiều tính năng mới và sửa một số lỗi để giúp bạn trải nghiệm mượt mà nhất có thể.";
+
+
+"Success!" = "Thành công!";
+
+
+"Current Password" = "Mật Khẩu Hiện Tại";
+
+
+"CONTENT" = "NỘI DUNG";
+
+
+"Headline" = "Tiêu đề";
+
+
+"neg-UC-UpK.text" = "Chọn chủ đề để đọc và lưu bài báo";
+
+
+"CONTINUE WITH EMAIL ID" = "Tiếp Tục Với Địa Chỉ Email Của Bạn";
+
+
+"SAVE CHANGES" = "LƯU THAY ĐỔI";
+
+
+"Post an Article" = "Đăng Bài Báo";
+
+
+"Contact Us" = "Liên hệ với chúng tôi";
+
+
+"On" = "Mở";
+
+
+"New Email Address" = "Địa Chỉ Email Mới";
+
+
+"Bullet 5 (Optional)" = "Điểm Tin 5 (Tùy chọn)";
+
+
+"Suggest an improvement" = "Đề xuất sửa đổi";
+
+
+
+"From:" = "Từ:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ĐỀ XUẤT CÁ NHÂN HÓA";
+
+
+"I don't like this" = "Tôi không thích điều này";
+
+
+"CONTINUE" = "TIẾP TỤC";
+
+
+"Name" = "Tên";
+
+
+"Enter email" = "Nhập Địa Chỉ Email";
+
+
+"HELP" = "TRỢ GIÚP";
+
+
+"FOLLOW 3 TO CONTINUE" = "Theo dõi 3 Để Tiếp tục";
+
+
+"UPDATE APP" = "Cập Nhật Ứng Dụng";
+
+
+"Forgot Password?" = "Quên Mật Khẩu?";
+
+
+"Change Password" = "Đổi Mật Khẩu";
+
+
+"Reset Password" = "Cài Lại Mật Khẩu";
+
+
+
+
+
+
+
+
+"Report content" = "Báo cáo vấn đề của bạn";
+
+
+"CHANGE EMAIL ADDRESS" = "THAY ĐỔI ĐỊA CHỈ EMAIL";
+
+
+"Follow The Guardian" = "Theo ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Chúng tôi đã thêm rất nhiều tính năng mới và sửa một số lỗi để giúp bạn trải nghiệm mượt mà nhất có thể.";
+
+
+"Edition / Region" = "Phiên bản / Khu vực";
+
+
+"OK" = "đồng ý";
+
+
+"NARRATOR" = "NGƯỜI DẪN CHUYỆN";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Cập nhật những tin bài bạn yêu thích sẽ không mất quá nhiều thời gian của bạn. Tin tức trong Bullets mất 5 phút đọc thông thường và cô đọng nó thành những viên đạn dễ tiêu hóa. Giờ đây, bạn có thể nhận cùng một tin tức chỉ trong một phần thời gian ngắn - vì vậy bạn có thể đọc nhiều hơn trong thời gian ngắn hơn.";
+
+
+"READING SPEED" = "TỐC ĐỘ ĐỌC";
+
+
+
+
+
+"You haven't blocked anything yet" = "Bạn chưa chặn bất kỳ thứ gì";
+
+
+"EDITION / REGION" = "EDITION / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "CHỈ TIÊU ĐỀ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Cài đặt âm thanh";
+
+
+"AUDIO SETTINGS" = "CÀI ĐẶT ÂM THANH";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TIÊU ĐỀ VÀ KÉO";
+
+
+"CONTINUE AS GUEST" = "BỎ QUA và ĐĂNG NHẬP NHƯ KHÁCH";
+
+
+"Pick topics to start reading and saving articles" = "Chọn chủ đề để bắt đầu đọc và lưu bài viết";
+
+
+"Channels" = "Kênh truyền hình";
+
+
+"Choose from hundreds \nof news publications" = "Chọn từ hàng trăm \ ấn phẩm tin tức";
+
+"Pick topics to start reading\nand saving articles" = "Chọn chủ đề để bắt đầu đọc và lưu bài viết";
+
+"Pick editions to start reading\nand saving articles" = "Chọn các ấn bản để bắt đầu đọc và lưu các bài báo";
+
+"Or with" = "Hoặc với";
+
+"CONTINUE AS GUEST" = "TIẾP TỤC NHƯ KHÁCH";
+
+"Terms of Service" = "Điều khoản dịch vụ";
+
+"Choose from hundreds \nof news publications" = "Chọn từ hàng trăm ấn phẩm tin tức";
+
+"Select your preferred language\nfor News in Bullets." = "Chọn ngôn ngữ ưa thích của bạn cho Tin tức trong Dấu đầu dòng.";
+
+"Choose a style" = "Chọn một phong cách";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop hoặc tinh tế. Ngày hoặc đêm. Tùy chỉnh giao diện của bạn.";
+
+"MINS AGO" = "MỘT VÀI PHÚT TRƯỚC";
+
+"AN HOUR AGO" = "MỘT TIẾNG TRƯỚC";
+
+"HOURS AGO" = "NHIỀU GIỜ TRƯỚC";
+
+"1 WEEK AGO" = "1 TUẦN TRƯỚC";
+
+"YESTERDAY" = "HÔM QUA";
+
+"DAYS AGO" = "NGÀY TRƯỚC";
+
+"Go to" = "Đi đến";
+
+"You have reached the start." = "Bạn đã đạt đến điểm bắt đầu.";
+
+"Source unblocked successfully" = "Đã bỏ chặn nguồn thành công";
+
+"Invalid email format"  = "Định dạng email không hợp lệ";
+
+"Wrong email or password" = "Email hoặc mật khẩu sai";
+
+
+
+"Personalize your reading experience" = "Cá nhân hóa trải nghiệm đọc của bạn";
+
+"Start following the news topics and channels you want to read." = "Bắt đầu theo dõi các chủ đề và kênh tin tức bạn muốn đọc.";
+
+"LET'S GO" = "Đi nào";
+
+"We’ll handle your data according to our\n" = "Chúng tôi sẽ xử lý dữ liệu của bạn theo";
+
+"By clicking Continue, you agree with our " = "Bằng cách nhấp vào Tiếp tục, bạn đồng ý với";
+
+"Learn how we process your data in our"  = "Tìm hiểu cách chúng tôi xử lý dữ liệu của bạn trong";
+
+"JUST NOW" = "NGAY B Y GIỜ";
+
+"Menu" = "Thực đơn";
+"Article Text Size" = "Kích thước văn bản bài viết";
+"Change the font size shown on the articles" = "Thay đổi kích thước phông chữ hiển thị trên các bài báo";
+"Small" = "Nhỏ";
+"Default" = "Mặc định";
+"Medium" = "Trung bình";
+"Large" = "Lớn";
+
+"Related Articles" = "Những bài viết liên quan";
+"View Full Article" = "Xem toàn bộ bài viết";
+
+"Create your profile" = "Tạo hồ sơ của bạn";
+"Set your profile" = "Đặt hồ sơ của bạn";
+"View your profile" = "Xem hồ sơ của bạn";
+"ARTICLE TEXT SIZE" = "KÍCH THƯỚC VĂN BẢN BÀI VIẾT";
+"DATA SAVER" = "TRÌNH TIẾT KIỆM DỮ LIỆU";
+"Edit Profile" = "Sửa Hồ sơ";
+"Profile Settings" = "Thiết đặt Hồ sơ";
+"Edit what viewers see in your profile." = "Chỉnh sửa nội dung người xem nhìn thấy trong trang cá nhân của bạn.";
+"COVER PHOTO" = "ẢNH BÌA";
+"Profile Name" = "Tên Hồ sơ";
+"Help and Feedback" = "Trợ giúp và Phản hồi";
+"HELP AND FEEDBACK" = "TRỢ GIÚP VÀ PHẢN HỒI";
+"Others" = "Khác";
+"Feedback & Suggestions" = "Phản hồi và đề xuất";
+"Help / Contact Us" = "Trợ giúp / Liên hệ với chúng tôi";
+"Terms and Conditions" = "Các điều khoản và điều kiện";
+"Notification" = "Thông báo";
+"Push Notifications" = "Đẩy thông báo";
+"Breaking News" = "Tin mới nhất";
+"Personalized Recommendations" = "Khuyến nghị cá nhân hóa";
+"Timed Notifications" = "Thông báo đã hẹn giờ";
+"Account" = "Tài khoản";
+"E-mail Address" = "Địa chỉ email";
+"Reels" = "Tin tứcreels";
+
+"Comments" = "Bình luận";
+"Write a reply..." = "Viết phản hồi...";
+"Reply" = "đáp lại";
+"Replies" = "trả lời";
+"View" = "Lượt xem";
+"more reply" = "đáp lại nhiều hơn";
+"more replies" = "trả lời nhiều hơn";
+"Home" = "Nhà";
+"Newsreels" = "Tin tứcreels";
+
+
+"Following" = "Sau đây";
+"First Name" = "Tên đầu tiên";
+"Last Name" = "Họ";
+
+"This feature requires photo access" = "Tính năng này yêu cầu quyền truy cập ảnh";
+"in phone settings, tap News in Bullets and turn on Photos" = "trong cài đặt điện thoại, nhấ News in Bullets và bật Ảnh";
+"Not Now" = "Không phải bây giờ";
+"Open Settings" = "Mở cài đặt";
+"No photos on this device" = "Không có ảnh nào trên thiết bị này";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "nếu bạn muốn thay đổi cài đặt truy cập ảnh, hãy chuyển đến cài đặt điện thoại, chạm vào News in Bullets đầu dòng và bật Ảnh";
+"Video duration" = "Thời lượng video";
+"Video too short" = "Video quá ngắn";
+"Video too long" = "Video quá dài";
+"Done" = "Làm xong";
+"Save" = "Lưu";
+"Processing.." = "Chế biến..";
+"Trim" = "Xén";
+"Cover" = "Che";
+"Albums" = "Tập ảnh";
+"Gallery" = "Bộ sưu tập";
+"Photos" = "Hình ảnh";
+"Videos" = "Đoạn video";
+"Next" = "Kế tiếp";
+"Crop" = "Cắt ảnh";
+
+
+"Locations" = "Sự đặt vào một chổ";
+"Authors" = "Các Tác giả";
+"Invalid Video" = "Video không hợp lệ";
+"Invalid Youtube link" = "Liên kết Youtube không hợp lệ";
+"Article published successfully" = "Bài viết được xuất bản thành công";
+"Article removed successfully" = "Bài viết bị loại bỏ thành công";
+"Edit Article" = "Chỉnh sửa Điều";
+"Delete Article" = "Xóa Điều";
+"Before you can comment, you need to update your profile" = "Trước khi bạn có thể đăng, bạn cần cập nhật hồ sơ của mình.";
+"Update profile" = "Cập nhật hồ sơ";
+"Views" = "Lượt xem";
+
+"Edit Newsreels" = "Sửa Bả Tin tứcreels";
+"Post article" = "Đăng bài viết";
+"SAVE" = "Lưu";
+"Caption" = "Chú thích";
+"Create a Caption" = "Tạo chú thích";
+
+"Create a headline" = "Tạo một tiêu đề tin tức";
+"Add Source Link (Optional)" = "Thêm liên kết nguồn (Tùy chọn)";
+"Enter a Caption" = "Nhập chú thích";
+"Enter article headline" = "Nhập tiêu đề của bài viết";
+
+"Add Bullet 1" = "Thêm dấu đầu dòng 1";
+"Add Bullet 2" = "Thêm dấu đầu dòng 2";
+"Add Bullet 3 (Optional)" = "Thêm dấu đầu dòng 3 (Tùy chọn)";
+"Add Bullet 4 (Optional)" = "Thêm dấu đầu dòng 4 (Tùy chọn)";
+"Add Bullet 5 (Optional)" = "Thêm dấu đầu dòng 5 (Tùy chọn)";
+
+"Add Bullet" = "Thêm dấu đầu dòng";
+
+"Uploading video..." = "Tải lên video...";
+"Bullet" = "Dấu đầu dòng";
+
+
+"Oops! Something went wrong. Please try again." = "Rất tiếc! Có gì đó không ổn. Vui lòng thử lại.";
+
+"Upload media" = "Tải lên phương tiện";
+"Upload Newsreels" = "Tải lên Tin tứcreels";
+"Upload YouTube link" = "Tải lên liên kết YouTube";
+"Before you post," = "Trước khi bạn đăng,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Hãy nhớ rằng bạn đang tham gia cộng đồng người đọc và nhà văn toàn cầu. Để bảo vệ mọi người khỏi bất kỳ hình thức thông tin sai lệch và lạm dụng nào, vui lòng xem lại";
+"Community Guidelines." = "Nguyên tắc cộng đồng.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "Bằng cách nhấn vào Tiếp tục, bạn đồng ý duy trì các nguyên tắc.";
+"Community Guidelines" = "Nguyên tắc cộng đồng";
+
+"Upload bullet image (optional)" = "Tải lên hình ảnh dấu đầu dòng (Tùy chọn)";
+"Delete" = "Xóa bỏ";
+"Replace" = "Thay thế";
+"Delete Bullet" = "Xóa dấu đầu dòng";
+
+"Add Tag" = "thêm vào các thẻ";
+"Get discovered locally" = "Được khám phá tại địa phương";
+"Add a location to your channel and get discovered by users near you." = "Thêm vị trí vào kênh của bạn và được người dùng ở gần bạn khám phá.";
+"Max 5" = "Tối đa 5.";
+"RECOMMENDED" = "Được đề xuất";
+"comma, separated, tags" = "dấu phẩy, phân cách, thẻ";
+
+"YouTube Article" = "Bài viết trên YouTube";
+"Paste a YouTube link to upload a video from YouTube." = "Dán liên kết YouTube để tải video lên từ YouTube.";
+"Paste a YouTube link to take import" = "Dán liên kết YouTube để hập khẩu";
+"IMPORT" = "Nhập khẩu";
+
+"Enter Youtube link" = "Nhập liên kết Youtube";
+"Preview" = "Xem trước";
+"POST" = "Bài đăng";
+"Post to My Profile" = "Đăng lên Hồ sơ của tôi";
+
+"RESULT" = "Các kết quả";
+"followers" = "người theo dõi";
+"Followers" = "Người theo dõi";
+"Posts" = "Bài đăng";
+"Profile updated successfully" = "Hồ sơ được cập nhật thành công";
+"Tags" = "Các thẻ";
+"No Posts Yet" = "Chưa có bài viết nào";
+
+
+"Add" = "Thêm vào";
+"Select Ratio" = "Chọn Tỷ lệ";
+"Add topics tags" = "Thêm thẻ chủ đề";
+"Be discovered by people following the topics you are posting about." = "Được khám phá bởi những người theo dõi các chủ đề bạn đang đăng.";
+"Reels edited successfully." = "Tin tứcreels đã chỉnh sửa thành công.";
+"Article edited successfully." = "Bài viết đã chỉnh sửa thành công.";
+"Reels uploaded successfully." = "Tin tứcreels được tải lên thành công.";
+"Enter verification code" = "Nhập mã xác minh";
+"RESEND" = "Gửi lai";
+"Processing..." =  "Chế biến..";
+"Scheduled on:" = "Đã lên lịch vào:";
+"Enter profile name" = "Nhập tên hồ sơ";
+"Ok, last thing is your channel image" = "Ok, điều cuối cùng là hình ảnh kênh của bạn";
+"Upload" = "Tải lên";
+"Before you can post article, you need to update your profile" = "Trước khi bạn có thể đăng, bạn cần cập nhật hồ sơ của mình.";
+"UPDATE" = "Cập nhật";
+"Scale" = "Quy mô ";
+"Saved Article" = "Bài báo đã lưu";
+"Removed Article" = "Bài báo đã xóa";
+"Ok, last thing is your profile image" = "Ok, điều cuối cùng là hình ảnh hồ sơ của bạn";
+"Relevant" = "Liên quan";
+
+"See More" = "xem thêm";
+"Less" = "xem ít hơn";
+"Autoplay" = "Tự chạy";
+"Reader Mode" = "Chế độ đọc";
+"Data Saver" = "TRÌNH TIẾT KIỆM DỮ LIỆU";
+"Please enter a valid OTP." = "Vui lòng nhập mã OTP hợp lệ.";
+"Enter a first name" = "Tên đầu tiên";
+"Enter a last name" = "Họ";
+
+"Password updated successfully" = "Đã cập nhật mật khẩu thành công";
+"Replying to" = "Trả lời";
+"Unblock Topic" = "Bỏ chặn chủ đề";
+"Please add your reel caption" = "Vui lòng thêm chú thích cuộn phim của bạn";
+"Please add bullet" = "Vui lòng thêm dấu đầu dòng";
+"Please add your article headline" = "Vui lòng thêm tiêu đề bài viết của bạn";
+"Please add bullet 1" = "Vui lòng thêm dấu đầu dòng 1";
+"Please add bullet 2" = "Vui lòng thêm dấu đầu dòng 2";
+
+
+"Please enter a valid channel name" = "Vui lòng nhập tên kênh hợp lệ";
+"Let people know what" = "Hãy cho mọi người biết những gì";
+"your channel is about" = "kênh của bạn là về";
+"Start by creating your" = "Bắt đầu bằng cách tạo";
+"channel name" = "Tên kênh";
+"Describe your channel" = "Mô tả kênh của bạn";
+"No pressure, you can change this later." = "Không có áp lực, bạn có thể thay đổi điều này sau.";
+"Channel created successfully" = "Kênh được tạo thành công";
+"Please enter your channel description" = "Vui lòng nhập mô tả kênh của bạn";
+"Channel name already in use" = "Tên kênh đã được sử dụng";
+"Post to" = "Để đăng để";
+
+"Available" = "Có sẵn";
+"Already in use" = "Đã được sử dụng";
+"SCHEDULE POST" = "Lên lịch đăng bài";
+"DRAFTS" = "Bản nháp";
+"View channel" = "Xem kênh.";
+"Create a channel" = "Tạo kênh";
+"Ok, last thing is" = "Ok, điều cuối cùng là";
+"your channel image" = "hình ảnh kênh của bạn";
+"looks amazing!" = "trông tuyệt vời!";
+"CREATE CHANNEL" = "Tạo kênh";
+"Scheduled Posts" = "Lên lịch đăng bài";
+
+"You don't have any drafts yet." = "Bạn chưa có bất kỳ bản nháp nào.";
+"Schedule" = "Lên lịch";
+"There aren't any scheduled posts yet." = "Vẫn chưa có bất kỳ bài đăng theo lịch trình nào.";
+"Schedule a Post" = "Lên lịch đăng bài";
+"Mod Tools" = "Công cụ Mod";
+"Unfollow Channel" = "Hủy theo dõi Kênh";
+"Follow Channel" = "Theo dõi Kênh";
+
+"Release to refresh" = "Phát hành để làm mới";
+"Loading..." =  "Đang tải...";
+"Schedule Post" = "Lên lịch đăng bài";
+"Moderator Tools" = "Công cụ người kiểm duyệt";
+"General" = "Chung";
+"Scheduled Posts" = "Bài đăng đã lên lịch";
+"Settings" = "Cài đặt";
+"channel and cover photo" = "Kênh và bìa ảnh";
+"Description" = "Sự miêu tả";
+"Will be posted in" = "Sẽ được đăng trong";
+"Will be posted on" = "Sẽ được đăng trên";
+"Will be posted now" = "Sẽ được đăng ngay bây giờ";
+"Select Date" = "Chọn ngày";
+"Select Time" = "Chọn thời gian";
+"Please select date" = "Vui lòng chọn ngày";
+"Please select time" = "Vui lòng chọn thời gian";
+"Continue with Apple" = "Tiếp tục với Apple";
+"Continue with Google" = "Tiếp tục với Google";
+"Continue with Facebook" = "Tiếp tục với Facebook";
+"Continue with email" = "Tiếp tục với email";
+"Login or create an account" = "đăng nhập hoặc tạo một tài khoản";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "Đăng nhập hoặc tạo tài khoản để đọc, chia sẻ và bình luận về các câu chuyện từ tất cả các chủ đề yêu thích của bạn.";
+"your profile image" = "hình ảnh hồ sơ của bạn";
+"Invalid OTP code" = "Mã OTP không hợp lệ";
+
+"View your profile" = "Xem hồ sơ của bạn";
+"NEWS DESK" = "Bàn tin tức";
+"YOUR CHANNELS" = "Các kênh của bạn";
+"GENERAL" = "Chung";
+"WALLET" = "Ví tiền";
+"POSTS" = "Bài đăng";
+"PERSONALIZATIONS" = "Hóa thành nhân cách";
+"NETWORK" = "Mạng lưới";
+"Need more channels?" = "Cần thêm kênh?";
+"VIEW ALL & MANAGE" = "Xem tất cả và quản lý";
+
+"Community Feed" = "Nguồn cấp dữ liệu cộng đồng";
+"Create your post" = "Tạo bài viết của bạn";
+"Media" = "Phương tiện truyền thông";
+"Youtube" = "YouTube";
+"You're all caught up" = "Tất cả bắt kịp và thực hiện";
+"You've seen all new posts" = "Bạn đã xem tất cả các bài đăng mới";
+"Go to top" = "Tới Top.";
+"Suggested Reels" = "Tin tứcreels được đề xuất";
+"Suggested Authors" = "Tác giả được đề xuất";
+
+
+
+"Share to" = "Chia sẻ đến";
+"Report" = "Báo cáo";
+"Unsave Video" = "Bỏ lưu video";
+"Save Video" = "Lưu video";
+"Aspect Ratio" = "Tỷ lệ khung hình";
+"Rotate" = "Giống hình bánh xe";
+"Flip Vertical" = "Lật dọc";
+"Flip Horizontal" = "Lật ngang";
+
+
+"Community" = "Cộng đồng";
+"APP LANGUAGE" = "NGÔN NGỮ ỨNG DỤNG";
+"You don't have any followers yet" = "Bạn chưa có bất kỳ người theo dõi nào";
+
+
+"View Original Article" = "Xem bài báo gốc";
+"Places" = "Nơi";
+"Languages" = "Ngôn ngữ";
+"New Posts" = "Bài xã mới";
+"No posts yet" = "Chưa có bài viết nào";
+"All Followers" = "Tất cả người theo dõi";
+"Add Place" = "Thêm Vị trí";
+"Add places tags" = "Thêm thẻ vị trí";
+"Be discovered by people following the places you are posting about." = "Được phát hiện bởi những người theo dõi những nơi bạn đang đăng về.";
+
+
+"START FOLLOWING" = "Bắt đầu theo sau";
+"You are not following anything yet" = "Bạn không theo sau bất cứ điều gì được nêu ra.";
+
+"Notifications" = "Thông báo";
+"General" = "Chung";
+"News" = "Tin tức";
+"VIEW MORE" = "Xem Thêm";
+"BULLETS AUTO PLAY" = "Đạn tự động phát";
+"VIDEOS AUTO PLAY" = "Video tự động phát";
+"REELS AUTO PLAY" = "Reels tự động phát";
+"READER THEME" = "CHỦ ĐỀ NGƯỜI ĐỌC";
+"News Content Language" = "Ngôn ngữ Nội dung Tin tức";
+"FAVORITES" = "Yêu thích";
+"Region/Places" = "Khu vực / Địa điểm";
+"Select Regions/Places" = "Chọn Vùng/Địa điểm";
+"Follow at least 3 topics" = "Theo dõi ít nhất 3 chủ đề";
+"Please Follow at least 3 topics" = "Vui lòng theo dõi ít nhất 3 chủ đề";
+"Explore Newsreels" = "Khám phá Tin tứcreels";
+"Related Reels" = "Liên quan tứcreels";
+"Explore Your Feed" = "Khám phá Nguồn cấp dữ liệu của bạn";
+"Sources" = "Nguồn";
+"Articles, topics, channels, authors" = "Bài báo, chủ đề, kênh, tác giả";
+"View/Manage" = "Xem / Quản lý";
+"Add to Favorites" = "Thêm vào mục yêu thích";
+"Remove from Favorites" = "Loại bỏ khỏi mục ưa thích";

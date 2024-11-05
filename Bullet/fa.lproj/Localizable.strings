@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "سرخط خبرها";
+"BULLETS" = "سرخط خبرها";
+"Headlines is not available." = "عناوین موجود نیست";
+"Check your internet Connection and try again." = "اتصال اینترنت خود را بررسی کنید و دوباره امتحان کنید.";
+"Choose Image" = "تصویر را انتخاب کنید";
+"Headline" = "عنوان";
+"Bullet 1" = "تیتر 1";
+"Bullet 2" = "تتیر 2";
+"Bullet 3 (Optional)" = "تیتر 3 (اختیاری)";
+"Bullet 4 (Optional)" = "تیتر 4 (اختیاری)";
+"Bullet 5 (Optional)" = "تیتر 5 (اختیاری)";
+"Bullet 6 (Optional)" = "تیتر 6 (اختیاری)";
+"Enter Aticle Headline" = "عنوان را وارد کنید";
+"Enter source name" = "منبع را وارد کنید";
+"Enter reference link" = "مرجع را وارد کنید";
+"Enter published date" = "تاریخ انتشار را وارد کنید";
+"Enter Bullet 1" = "وارد اولین تیترشوید";
+"Enter Bullet 2" = "وارد تیتر دوم شوید";
+"Post article successfully" = "مقاله با موفقیت ارسال شد";
+"Follow" = "دنبال کردن";
+"Unfollow" = "دنبال نکردن";
+"Block articles from" = "مسدود کردن مقالات از";
+"Unblock articles from" = " باز کردن مقالات از";
+"Remove article" = "مقاله را بردارید";
+"Save article" = "این مقاله را ذخیره کنید";
+"Terms & Conditions" = "شرایط و ضوابط";
+"Privacy Policy" = "قوانین حریم خصوصی";
+"TERMS AND CONDITIONS" = "شرایط و ضوابط";
+"PRIVACY POLICY" = "قوانین حریم خصوصی";
+"Fuel your curiosity" = "اخبار بیشتر در مورد جهان را بخوانید";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "اخبار کوتاه و دقیق در مورد موضوعات مورد علاقه خود را از منابع معتبر در سراسر جهان بخوانید.";
+"Save time" = "در وقت خود صرفه جویی کنید";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "سرخط خبرها را در نقاط مختلف بخوانید";
+"Hands-free reading" = "خواندن بدون دست";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "وقت خواندن ندارید؟ از عملکرد گفتاری استفاده کنید.";
+"Write your message..." = "پیام خود را بنویسید ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "اگر در مورد کاری به کمک نیاز دارید ، برای ما پیام ارسال کنید ، ما دوست داریم از شما بشنویم!";
+"Drop us a message" = "برای ما پیام بفرستید";
+"Enter Name." = "نام را وارد کنید.";
+"Enter Email." = "ایمیل وارد کنید";
+"Write your message." = "پیام خود را بنویسید";
+"Topic unblock successfully" = "این موضوع را رفع انسداد کرده اید";
+"Source unblock successfully" = "شما این منبع را رفع انسداد کرده اید";
+"Unblock Source" = "منبع را رفع انسداد کنید";
+"Cancel" = "لغو";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "برای ما بازخورد ارسال کنید ، ما دوست داریم از شما بشنویم! آیا سوال یا نگرانی قانونی دارید؟ صفحه راهنما را امتحان کنید یا با ما تماس بگیرید.";
+"Enter your suggestion." = "پیشنهاد خود را وارد کنید";
+"feedback sent." = "بازخورد با موفقیت ارسال می شود";
+"30m" = "  30 متز";
+"1h" = "1 ساعت";
+"3h" = "3 ساعت";
+"6h" = "6 ساعت";
+"12h" = "12 ساعت";
+"24h" = "24 ساعت";
+"Language updated successfully." = "زبان با موفقیت به روز می شود";
+"CONTINUE" = "ادامه دهید";
+"FOLLOW 3 TO CONTINUE" = "3 را دنبال کنید تا ادامه دهید";
+"Unfollow Location" = "دنبال نکردن مکان";
+"Saved Articles" = "مقالات ذخیره شده";
+"Block" = "مسدود کردن";
+"Are you sure you want block" = "آیا مطمئن هستید که می خواهید این مورد را مسدود کنید";
+"Once blocked, you wont be able to see any Articles related to this" = "در صورت مسدود کردن کانال ، مقالاتی از این کانال مشاهده نخواهید کرد.";
+"Block Topic" = "این موضوع را مسدود کنید";
+"Suggested" = "پیشنهادی";
+"Related Sources not available" = "منابع مرتبط در دسترس نیستند";
+"Block Source" = "این منبع را مسدود کنید";
+"News in Bullets App version" = "سرخط خبرها در نسخه برنامه";
+"Next" = "بعدی";
+"Login" = "وارد شدن";
+"Terms" = "مقررات";
+"By clicking Continue, you agree with our Terms." = "برای پذیرفتن شرایط ، ادامه را انتخاب کنید.";
+"in our Privacy Policy." = "در سیاست حفظ حریم خصوصی ما";
+"Access token missing." = "رمز دسترسی وجود ندارد.";
+"NEXT" = "بعدی";
+"By checking this box, you agree to our " = "برای پذیرش شرایط روی کادر کلیک کنید. داده های شما طبق قوانین حفظ حریم خصوصی ما پردازش می شود.";
+"Terms of Service" = "شرایط استفاده از خدمات";
+". We’ll handle your data according to our " = ". ما داده های شما را طبق اطلاعاتمان اداره خواهیم کرد";
+"Password must be at least 8 characters." = "رمز ورود باید حداقل 8 حرف باشد.";
+"Strong" = "قوی";
+"Medium" = "متوسط";
+"Weak" = "ضعیف";
+"CREATE A NEW ACCOUNT" = "ایجاد یک حساب کاربری جدید";
+"SIGN IN WITH EXISTING ACCOUNT" = "با حساب موجود وارد سیستم شوید";
+"You must agree to the Terms of Services to continue" = "برای ادامه کار باید با شرایط خدمات موافقت کنید";
+"SIGN IN" = "ورود";
+"What's your password?" = "رمز ورود شما چیست؟";
+"SIGN UP" = "ثبت نام";
+"Choose your password?" = "رمز عبور خود را انتخاب کنید";
+"Something went wrong" = "مشکلی پیش آمده است";
+"we will send email to" = "ما ایمیل می فرستیم به";
+"with a link to reset your password." = "با یک لینک برای تنظیم مجدد رمز عبور.";
+"A reset password link has been sent to" = "پیوندی برای بازنشانی گذرواژه به ارسال شده است";
+"Enter new email." = "ایمیل جدیدی وارد کنید.";
+"Enter password." = "رمز عبور را وارد کنید.";
+"New Password " = "رمز عبور جدید";
+" (8 characters min)" = "(8 حرف حداقل)";
+"Enter current password." = "رمز ورود فعلی را وارد کنید.";
+"Enter new password." = "گذرواژه جدید وارد کنید";
+"Enter confirm password." = "رمز ورود را تأیید کنید.";
+"password do not matched!" = "رمزهای ورود مطابقت ندارند!";
+"GET STARTED" = "شروع کنید";
+"SKIP" = "پرش";
+"From where you would like to pick photo?" = "دوست دارید از کجا عکس انتخاب کنید؟";
+"Camera" = "دوربین";
+"Photo Library" = "کتابخانه عکس";
+"Kindly open settings and enable access" = "لطفاً تنظیمات را باز کرده و دسترسی را فعال کنید";
+"Open Settings" = "تنظیمات را باز کنید";
+"Access needed for your camera" = "دسترسی مورد نیاز دوربین شما";
+"Access needed for your photo library" = "دسترسی مورد نیاز برای کتابخانه عکس شما";
+"Done" = "انجام شده";
+"Pull to refresh" = "برای تازه کردن بکشید";
+"Loading" = "بارگذاری";
+"Speech not available for this article" = "گفتار برای این مقاله موجود نیست";
+"MANAGE LOCATION" = "مدیریت مکان";
+"OK" = "خوب";
+"Choose your News in Bullets Edition based on locale" = "اخبار خود را در نسخه Bullets بر اساس محلی انتخاب کنید";
+"Edition" = "نسخه";
+"EDITION / REGION" = "ویرایش / منطقه";
+"Your Topics" = "مباحث شما";
+"Your Channels" = "کانال های شما";
+"Your Places" = "مکانهای شما";
+"Enter email." = "ایمیل وارد کنید";
+"Please enter a password." = "لطفا یک رمز عبور وارد کنید";
+"Search articles" = "مقالات را جستجو کنید";
+"No results" = "هیچ نتیجه ای";
+"Edition / Region" = "نسخه / منطقه";
+
+
+
+
+"0JC-Sb-Ouu.text" = "حالت نمایش";
+
+
+"Search" = "جستجو کردن";
+
+
+"Select" = "انتخاب کنید (";
+
+
+"6H8-dI-k9P.text" = "مدیریت مکان ها";
+
+
+"6KH-YP-5Lt.text" = "راوی";
+
+
+" ) icon on the article" = " ) نشان در مقاله";
+
+
+"BLOCK" = "مسدود كردن";
+
+
+"you want to read later then" = "مي خواهيد بعدا بخوانيد";
+
+
+"7oo-cf-l7Y.text" = "سرعت خواندن";
+
+
+"88L-ip-pZw.text" = "سرعت خواندن";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "اینجا چیزی نیست به نظر می رسد اینجا چیزی جز گربه وجود ندارد. به صفحه اصلی بر مي گردید؟ \nآیا می خواهید به صفحه اصلی برگردید؟";
+
+
+"BpH-F1-i0z.normalTitle" = "محلي";
+
+
+" ) to save article." = ") ذخیره كردن مقاله.";
+
+
+"FB0-YN-HZg.text" = "برای ادامه ، 3 را انتخاب کنید";
+
+
+"H5Z-xJ-dWD.text" = "عنواين خبري و nسرخط خبرها";
+
+
+"Search" = "جستجو کردن";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "نمای تمدید شده";
+
+
+"Jpx-nY-Is1.normalTitle" = "کانال ها";
+
+
+"JqN-io-P1u.normalTitle" = "+ افزودن به مکانها";
+
+
+"What's your email?" = "آدرس ایمیل شما چیست؟";
+
+
+"Lw1-Md-nse.text" = "نمايش دادن فهرست";
+
+
+"LyT-pT-g53.text" = "بین المللی";
+
+
+"N6C-6i-Z2s.text" = "بین المللی";
+
+
+"Nru-uU-CsC.text" = "پيشنهادات";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "موضوعات";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "شخصی سازی";
+
+
+"Topics" = "Topics";
+
+
+"WXY-po-W1B.text" = "عنواين خبري و \nسرخط خبرها";
+
+
+"ans-Zy-T2Y.placeholder" = "جستجو کردن مكان ها";
+
+
+"bgE-Jc-u8H.text" = "شخصی سازی";
+
+
+
+
+
+"Tap the ( " = "لمس ( ";
+
+
+"Places" = "مكان";
+
+
+"d1l-HK-OrG.text" = "حالت نمایش";
+
+
+
+
+
+"Language" = "زبان";
+
+
+"e9g-Wr-suO.text" = "فقط عنواين خبري ";
+
+
+"GO HOME" = "بازگشت به صفحه اصلی";
+
+
+"eh1-Oo-lEn.text" = "گسترش ديد";
+
+
+"hOf-26-eCm.text" = "1برابر";
+
+
+"il3-4J-X1V.text" = "نمايش دادن فهرست";
+
+
+"j2i-MT-VkA.text" = "كلمه كليدي ديگيري را امتحان كنيد";
+
+
+"Top News" = "اخبار برتر";
+
+
+"jmO-aF-nJ9.text" = "فقط عنواين خبري";
+
+
+"There is nothing in here" = "اینجا چیزی نیست";
+
+
+"ma1-9p-bSa.text" = "نتيجه اي يافت نشد";
+
+
+"mce-jc-cKH.text" = "راوی";
+
+
+"Channels" = "كانال ها";
+
+
+"Discover" = "كشف كردن";
+
+
+"pCy-AN-hsO.text" = "1 برابر";
+
+
+"CANCEL" = "لغو";
+
+
+"Discover" = "كشف كردن";
+
+
+"No saved stories yet" = "اینجا چیزی نیست";
+
+
+"wDG-kF-Hl8.text" = "اخبار را بر اساس موقعیت مکانی بخوانید";
+
+
+
+
+
+"wKj-3i-n0R.text" = "بومی سازی";
+
+
+"xfF-RB-mWL.text" = "بومی سازی";
+
+
+"Search" = "جستجو کردن";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "مرتبط ترین اخبار را به منطقه مورد نظر خود برسانید. برای به روز نگه داشتن آخرین اخبار از هرجای دنیا ، داستان های خبری را بخوانید.";
+
+
+"Search articles" = "مقالات را جستجو کنید";
+
+
+"6H8-dI-k9P.text" = "مکانها را مدیریت کنید";
+
+
+
+
+
+"Profile" = "مشخصات";
+
+
+"Editions" = "نسخه ها";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "مکانها";
+
+
+
+
+
+"Search" = "جستجو کردن";
+
+
+
+
+
+
+
+
+"Search" = "جستجو کردن";
+
+
+"LANGUAGE" = "زبان";
+
+
+"Search" = "جستجو کردن";
+
+
+"No results" = "نتیجه ای پیدا نشد";
+
+
+"Channels" = "کانال ها";
+
+
+"Places" = "مکانها";
+
+
+"Places" = "مکانها";
+
+
+"e9F-hd-Ifm.text" = "ویرایش / منطقه";
+
+
+
+
+
+
+
+
+"PLACES" = "مکانها";
+
+
+"SAVED ARTICLES" = "مقالات ذخیره شده";
+
+
+"Articles" = "مقالات";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ادامه هید";
+
+
+
+
+
+"w8f-2R-NgT.text" = "رایش / منطق";
+
+
+"Try a different keyword" = "کلمه کلیدی دیگری را امتحان کنید";
+
+
+"For You" = "برای شما";
+
+
+"Results" = "نتایج";
+
+
+
+"About" = "درباره ما";
+
+
+"Share" = "اشتراک گذاری";
+
+
+"ACCOUNT" = "حساب";
+
+
+"Your Email" = "ایمیل شما";
+
+
+"1sT-J6-qI0.text" = "مقالات ذخیره شده ";
+
+
+"2XX-rr-GLC.text" = "کانالهای مختلف را از صدها منبع انتخاب کنید ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "آخرین رویدادها و ویژگی های اخبار از سراسر جهان را بخوانید. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "برای دریافت اعلان ها فاصله زمانی تعیین کنید. ";
+
+
+"Off" = "خاموش";
+
+
+
+
+
+"Bullet 2" = " تیتر 2";
+
+
+"What's your email?" = "ایمیل شما چیست؟ ";
+
+
+"New Password (8 Characters Min)" = "رمز ورود جدید (حداقل 8 حرف) ";
+
+
+"Forgot Password?" = "رمز عبور خود را فراموش کرده اید؟ ";
+
+
+"Account Settings" = "تنظیمات حساب ";
+
+
+"Learn how we process your data" = "اطلاعات مربوط به پردازش داده های شما ";
+
+
+"3h" = "3 ساعت";
+
+
+"Ok" = "خوب";
+
+
+"Block articles from The Guardian" = "مسدود کردن مقالات از ---";
+
+
+"On" = "روشن کن";
+
+
+"Auto" = "خودکار";
+
+
+"Help Center" = "پشتیبانی ";
+
+
+"Search" = "جستجو در کانال ها ";
+
+
+"Facebook" = "فیس بوک";
+
+
+"Select file from gallery" = "پرونده را از گالری انتخاب کنید ";
+
+
+
+
+"Save article" = "مقاله را ذخیره کنید ";
+
+
+"ABOUT" = "درباره";
+
+
+"Dark" = "تاریک";
+
+
+"Legal" = "مجاز";
+
+
+"Go to The Guardian" = "برو به ... ";
+
+
+"Send reset link" = "ارسال پیوند تنظیم مجدد ";
+
+
+
+
+
+"My Account" = "حساب من ";
+
+
+"FEEDBACK" = "بازخورد";
+
+
+"Message" = "پیام";
+
+
+"Confirm New Password" = "رمز ورود جدید را تأیید کنید";
+
+
+"for ___" = "برای";
+
+
+"Search" = "جستجو برای موضوعات";
+
+
+"LANGUAGE" = "زبان";
+
+
+"Light" = "سبک";
+
+
+"FOLLOW 3 TO CONTINUE" = "برای ادامه ، 3 را انتخاب کنید";
+
+
+
+
+"Off" = "خاموش کردن";
+
+
+"Language" = "انتخاب کنید";
+
+
+"LOG OUT" = "خروج";
+
+
+"Report content" = "گزارش محتوا";
+
+
+"What's your email?" = "ایمیل شما چیست؟";
+
+
+"On" = "روشن کن";
+
+
+"More like this" = "اخبار بیشتر از این قبیل";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0 (پرش)";
+
+
+"1h" = "1 ساعت";
+
+
+"Enter Email Address" = "آدرس ایمیل را وارد کن";
+
+
+"News in Bullets" = "در مدت زمان کم بیشتر بخوانید";
+
+
+"6h" = "6 ساعت";
+
+
+"Choose your password" = "رمز عبور خود را انتخاب کنید";
+
+
+"Cancel" = "لغو";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "اخبار را به سرعت با این برنامه بخوانید. مباحث و منابع خود را انتخاب کنید. سپس اخبار خود را با سرخط اخبار کوتاه بخوانید.";
+
+
+"Push Notification" = "اطلاع";
+
+
+"12h" = "12 ساعت";
+
+
+"24h" = "24 ساعت";
+
+
+"E-mail" = "پست الکترونیک";
+
+
+"How can we help you?" = "چطور میتوانیم کمک کنیم؟";
+
+
+"OJP-Wd-0d3.text" = "پاکستان";
+
+
+"CHANGE PASSWORD" = "رمز عبور را تغییر دهید";
+
+
+"Change Email" = "آدرس ایمیل را تغییر دهید";
+
+
+"Medium" = "متوسط";
+
+
+"SAVE CHANGES" = "ذخیره تغییرات";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "اگر در مورد کاری به کمک نیاز دارید برای ما پیام ارسال کنید ، ما دوست داریم از شما بشنویم!";
+
+
+"P5u-N3-Tw4.text" = "برچسب";
+
+
+"Cancel" = "لغو";
+
+
+"Bullet 1" = "تیتر 1";
+
+
+"TIMED NOTIFICATIONS" = "اطلاعیه";
+
+
+"POST ARTICLE" = "ارسال یک مقاله";
+
+
+"CONTACT US" = "با ما تماس بگیرید";
+
+
+"EDITION / REGION" = "نسخه";
+
+
+"Search" = "جستجو کردن";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "برای ما بازخورد ارسال کنید ، ما دوست داریم از شما بشنویم! آیا سوال یا نگرانی قانونی دارید؟ صفحه راهنما را امتحان کنید یا با ما تماس بگیرید.";
+
+
+"Google" = "گوگل";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "اگر در مورد کاری به کمک نیاز دارید برای ما پیام ارسال کنید ، ما دوست داریم از شما بشنویم!";
+
+
+"30m" = "30 متر";
+
+
+"CONTINUE" = "ادامه دهید";
+
+
+"Time To Update!" = "برنامه را به روز کنید!";
+
+
+"NOTIFICATIONS" = "اطلاعیه";
+
+
+"Search" = "جستجو کردن";
+
+
+"By clicking Continue, you agree with our Terms." = "برای پذیرفتن شرایط ، ادامه را انتخاب کنید.";
+
+
+"HELP / CONTACT US" = "راهنما / تماس";
+
+
+"Reset Password" = "بازنشانی گذرواژه";
+
+
+"SEND MESSAGE" = "پیام فرستادن";
+
+
+"Save article" = "مقاله را ذخیره کنید";
+
+
+"Bullet 6 (Optional)" = "تیتر 6 (اختیاری)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "پیام شما ارسال شده است";
+
+
+"LEGAL" = "مجاز";
+
+
+"Block List" = "لیست مسدود شده ها";
+
+
+"PERSONALIZATION" = "شخصی";
+
+
+"in our Privacy Policy." = "در قوانین حفظ حریم خصوصی ما";
+
+
+"CONTINUE" = "ادامه هید";
+
+
+"Enter Name" = "نام را وارد کنید";
+
+
+"What's your email?" = "ایمیل شما چیست؟";
+
+
+"Hello there!" = "سلام!";
+
+
+"PUSH NOTIFICATIONS" = "اطلاعیه";
+
+
+"Bullet 3 (Optional)" = "تیتر 3 (اختیاری)";
+
+
+"Source name" = "نام منبع";
+
+
+"Current Password" = "رمز عبور فعلی";
+
+
+"COLOR THEME" = "تم رنگی";
+
+
+"eTp-X1-g34.text" = "یا از طریق";
+
+
+"CANCEL" = "لغو";
+
+
+"Bullet 4 (Optional)" = "تیتر 4 (اختیاری)";
+
+
+"Date published" = "تاریخ انتشار";
+
+
+"Send Password Reset Link" = "ارسال لینک برای بازنشانی رمز عبور";
+
+
+"CONTINUE WITH APPLE" = "از طریق Apple ID ثبت نام کنید";
+
+
+"Off" = "خاموش کردن";
+
+
+"BLOCK LIST" = "لیست مسدود شده ها";
+
+
+"HELP" = "کمک";
+
+
+"Reference link" = "پیوند مرجع";
+
+
+"Your Password" = "رمز عبور شما";
+
+
+"SUBMIT" = "ارسال";
+
+
+"HELP" = "کمک";
+
+
+"MY ACCOUNT" = "حساب من";
+
+
+"hbD-HP-tZd.normalTitle" = "رفع انسداد کنید";
+
+
+"OTHERS" = "دیگران";
+
+
+"BREAKING NEWS" = "خبر فوری";
+
+
+"Topics" = "موضوعات مسدود شده";
+
+
+"Message us," = "به ما پیام دهید ،";
+
+
+"Pick topics to start reading
+and saving articles" = "زبان برنامه";
+
+
+"Forgot Password?" = "رمز عبور خود را فراموش کرده اید؟";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ویژگی های جدید اضافه شده است. برخی از مسائل برطرف شده است.";
+
+
+"Success!" = "موفق باشید!!";
+
+
+"Current Password" = "رمز عبور فعلی";
+
+
+"CONTENT" = "محتوا";
+
+
+"Headline" = "عنوان";
+
+
+"neg-UC-UpK.text" = "برای شروع خواندن و ذخیره مقالات ، عناوین را انتخاب کنید";
+
+
+"CONTINUE WITH EMAIL ID" = "با شناسه ایمیل خود ادامه دهید";
+
+
+"SAVE CHANGES" = "ذخیره تغییرات";
+
+
+"Post an Article" = "ارسال مقاله";
+
+
+"Contact Us" = "با ما تماس بگیرید";
+
+
+"On" = "روشن کن";
+
+
+"New Email Address" = "آدرس ایمیل جدید";
+
+
+"Bullet 5 (Optional)" = "تیتر 5 (اختیاری)";
+
+
+"Suggest an improvement" = "پیشنهاد یک پیشرفت کنید";
+
+
+"Channels" = "منابع مسدود شده";
+
+
+"From:" = "از جانب:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "توصیه های شخصی شده";
+
+
+"I don't like this" = "من این را دوست ندارم";
+
+
+"CONTINUE" = "ادامه هید";
+
+
+"Name" = "نام";
+
+
+"Enter email" = "ایمیل وارد کنید";
+
+
+"HELP" = "کمک";
+
+
+"FOLLOW 3 TO CONTINUE" = "برای ادامه 3 را دنبال کنید";
+
+
+"UPDATE APP" = "برنامه را به روز کنید";
+
+
+"Forgot Password?" = "رمز عبور خود را فراموش کرده اید؟";
+
+
+"Change Password" = "رمز عبور را تغییر دهید";
+
+
+"Reset Password" = "بازنشانی گذرواژه";
+
+
+
+
+
+
+
+
+"Report content" = "نگرانی خود را گزارش دهید";
+
+
+"CHANGE EMAIL ADDRESS" = "آدرس ایمیل را تغییر دهید";
+
+
+"Follow The Guardian" = "دنبال کردن ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ما بسیاری از ویژگی های جدید را اضافه کرده و برخی از اشکالات را برطرف کرده ایم تا تجربه شما را تا حد ممکن روان کنیم.";
+
+
+"Edition / Region" = "نسخه / منطقه";
+
+
+"OK" = "خوب";
+
+
+"NARRATOR" = "راوی";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "به روز نگه داشتن اخبار موردعلاقه شما نباید وقت زیادی از شما بگیرد. اخبار در گلوله ها 5 دقیقه خواندن منظم را می گیرد و آنها را به گلوله های قابل هضم تبدیل می کند. اکنون می توانید در کسری از زمان همان اخبار را دریافت کنید - بنابراین می توانید در مدت زمان کمتری بیشتر بخوانید.";
+
+
+"READING SPEED" = "سرعت خواندن";
+
+
+
+
+
+"You haven't blocked anything yet" = "شما هنوز چیزی را مسدود نکرده اید";
+
+
+"EDITION / REGION" = "ویرایش / منطقه";
+
+
+
+
+
+"HEADLINES ONLY" = "فقط سربرگ ها";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "تنظیمات صدا";
+
+
+"AUDIO SETTINGS" = "تنظیمات صدا";
+
+
+
+
+
+
+
+
+"1x" = "1 برابر";
+
+
+"HEADLINES AND\nBULLETS" = "خطوط راهنما و گلوله ها";
+
+
+"CONTINUE AS GUEST" = "به عنوان مهمانی رد شوید و وارد شوید";
+
+
+"Topics" = "مباحث";
+
+
+"Pick topics to start reading and saving articles" = "برای شروع خواندن و ذخیره مقالات ، عناوین را انتخاب کنید";
+
+
+"Channels" = "کانال ها";
+
+
+"Choose from hundreds \nof news publications" = "از میان صدها نشریه خبری را انتخاب کنید";
+
+
+"Pick topics to start reading\nand saving articles" = "انتخاب موضوعات برای شروع خواندن و صرفه جویی در مقالات";
+
+"Pick editions to start reading\nand saving articles" = "انتخاب نسخه برای شروع خواندن و صرفه جویی در مقالات";
+
+"Or with" = "یا با";
+
+"CONTINUE AS GUEST" = "به عنوان میهمان ادامه دهید";
+
+"Terms of Service" = "شرایط استفاده از خدمات";
+
+"Choose from hundreds \nof news publications" = "از میان صدها نشریه خبری را انتخاب کنید";
+
+"Select your preferred language\nfor News in Bullets." = "زبان مورد نظر خود را برای News in Bullets انتخاب کنید.";
+
+"Choose a style" = "یک سبک را انتخاب کنید";
+
+"Pop or subtle. Day or night. Customize your interface." = "سرگرم کننده یا زیبا. شب یا روز رابط کاربری خود را سفارشی کنید.";
+
+"MINS AGO" = "دقایقی پیش";
+
+"AN HOUR AGO" = "یک ساعت پیش";
+
+"HOURS AGO" = "ساعاتی پیش";
+
+"1 WEEK AGO" = "1 هفته پیش";
+
+"YESTERDAY" = "دیروز";
+
+"DAYS AGO" = "چند روز پیش";
+
+"Go to" = "برو به";
+
+"You have reached the start." = "شما به آغاز رسیده اید";
+
+"Source unblocked successfully" = "منبع با موفقیت رفع انسداد شد";
+
+"Invalid email format"  = "قالب ایمیل نامعتبر است";
+
+"Wrong email or password" = "ایمیل یا رمز عبور اشتباه است";
+
+

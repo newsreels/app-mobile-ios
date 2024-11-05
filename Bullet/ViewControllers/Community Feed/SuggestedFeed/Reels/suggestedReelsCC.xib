@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="suggestedReelsCC" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="suggestedReelsCC" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="493"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="493"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pH-Hs-haO">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="473"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQ9-bh-aHA">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="473"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sf3-C8-Axg">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HV8-Ni-Z0k"/>
+                                    <constraint firstAttribute="width" secondItem="sf3-C8-Axg" secondAttribute="height" multiplier="1:1" id="YJz-CB-0xY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="model.authors?.first?.username ?? &quot;&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-Er-13m">
+                                <rect key="frame" x="10" y="448.5" width="131" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReelPlayButton" translatesAutoresizingMaskIntoConstraints="NO" id="7Ul-hS-LpO">
+                                <rect key="frame" x="72.5" y="217" width="42" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="UXt-Hx-z0J"/>
+                                    <constraint firstAttribute="height" constant="39" id="lmi-ja-PAe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sQ9-bh-aHA" secondAttribute="trailing" id="1dq-eq-xgy"/>
+                            <constraint firstItem="7Ul-hS-LpO" firstAttribute="centerY" secondItem="0pH-Hs-haO" secondAttribute="centerY" id="G5b-Ca-31J"/>
+                            <constraint firstAttribute="bottom" secondItem="Rl2-Er-13m" secondAttribute="bottom" constant="10" id="GOo-u3-VsP"/>
+                            <constraint firstItem="Rl2-Er-13m" firstAttribute="width" secondItem="0pH-Hs-haO" secondAttribute="width" multiplier="0.7" id="PjV-vP-c7k"/>
+                            <constraint firstItem="7Ul-hS-LpO" firstAttribute="centerX" secondItem="0pH-Hs-haO" secondAttribute="centerX" id="Svl-cI-inh"/>
+                            <constraint firstItem="sQ9-bh-aHA" firstAttribute="leading" secondItem="0pH-Hs-haO" secondAttribute="leading" id="VE1-um-4hF"/>
+                            <constraint firstItem="sf3-C8-Axg" firstAttribute="top" secondItem="0pH-Hs-haO" secondAttribute="top" constant="10" id="WOP-RG-4zM"/>
+                            <constraint firstItem="sQ9-bh-aHA" firstAttribute="top" secondItem="0pH-Hs-haO" secondAttribute="top" id="d6F-S2-vIE"/>
+                            <constraint firstItem="Rl2-Er-13m" firstAttribute="leading" secondItem="sf3-C8-Axg" secondAttribute="leading" id="e0Q-qG-aCf"/>
+                            <constraint firstItem="sf3-C8-Axg" firstAttribute="leading" secondItem="0pH-Hs-haO" secondAttribute="leading" constant="10" id="f99-8c-bLV"/>
+                            <constraint firstAttribute="bottom" secondItem="sQ9-bh-aHA" secondAttribute="bottom" id="rDy-wO-nWt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0pH-Hs-haO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YwZ-Eq-hlx"/>
+                <constraint firstItem="0pH-Hs-haO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="puo-Is-SL2"/>
+                <constraint firstAttribute="trailing" secondItem="0pH-Hs-haO" secondAttribute="trailing" constant="12" id="q3R-y4-mO9"/>
+                <constraint firstAttribute="bottom" secondItem="0pH-Hs-haO" secondAttribute="bottom" constant="20" id="xLC-BR-oON"/>
+            </constraints>
+            <size key="customSize" width="199" height="493"/>
+            <connections>
+                <outlet property="imgProfile" destination="sf3-C8-Axg" id="H9D-rp-Ygh"/>
+                <outlet property="imgReels" destination="sQ9-bh-aHA" id="emL-Fe-wey"/>
+                <outlet property="lblName" destination="Rl2-Er-13m" id="s7D-Ah-wDu"/>
+                <outlet property="viewBG" destination="0pH-Hs-haO" id="Ds9-Yh-847"/>
+            </connections>
+            <point key="canvasLocation" x="-100.72463768115942" y="169.75446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ReelPlayButton" width="29" height="34"/>
+    </resources>
+</document>

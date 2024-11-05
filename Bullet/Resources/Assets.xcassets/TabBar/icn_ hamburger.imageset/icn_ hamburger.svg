@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Group_14320" data-name="Group 14320" transform="translate(23679.994 17489.994)">
+    <g id="Group_14058" data-name="Group 14058" transform="translate(-23679.963 -17489.963)">
+      <g id="Rectangle_4168" data-name="Rectangle 4168" transform="translate(-0.031 -0.031)" fill="#fff" stroke="#fff" stroke-linecap="square" stroke-width="5">
+        <rect width="16" height="17" rx="2" stroke="none"/>
+        <rect x="2.5" y="2.5" width="11" height="12" rx="0.5" fill="none"/>
+      </g>
+      <g id="Rectangle_4171" data-name="Rectangle 4171" transform="translate(-0.031 21.969)" fill="#fff" stroke="#fff" stroke-linecap="square" stroke-width="5">
+        <rect width="16" height="16" rx="2" stroke="none"/>
+        <rect x="2.5" y="2.5" width="11" height="11" rx="0.5" fill="none"/>
+      </g>
+      <g id="Rectangle_4169" data-name="Rectangle 4169" transform="translate(21.969 -0.031)" fill="#fff" stroke="#fff" stroke-linecap="square" stroke-width="5">
+        <rect width="16" height="17" rx="2" stroke="none"/>
+        <rect x="2.5" y="2.5" width="11" height="12" rx="0.5" fill="none"/>
+      </g>
+      <g id="Rectangle_4170" data-name="Rectangle 4170" transform="translate(21.969 21.969)" fill="#fff" stroke="#fff" stroke-linecap="square" stroke-width="5">
+        <rect width="16" height="16" rx="2" stroke="none"/>
+        <rect x="2.5" y="2.5" width="11" height="11" rx="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

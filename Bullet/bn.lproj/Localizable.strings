@@ -1,0 +1,1348 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "সংবাদ শিরোনাম";
+"BULLETS" = "সংবাদ শিরোনাম";
+"Headlines is not available." = "শিরোনাম উপনীয় নয়।";
+"Check your internet Connection and try again." = "আপনার ইন্টারনেট সংযোগ চেক করে আবার চেষ্টা করুন।";
+"Choose Image" = "ছবি পছন্দ করুন";
+"Headline" = "শিরোনাম";
+"Bullet 1" = "বুলেট 1";
+"Bullet 2" = "বুলেট 2";
+"Bullet 3 (Optional)" = "বুলেট 3 (অপশনাল)";
+"Bullet 4 (Optional)" = "বুলেট 4 (অপশনাল)";
+"Bullet 5 (Optional)" = "বুলেট 5 (অপশনাল)";
+"Bullet 6 (Optional)" = "বুলেট 6 (অপশনাল)";
+"Enter Aticle Headline" = "শিরোনাম লিখুন";
+"Enter source name" = "সূত্র লিখুন";
+"Enter reference link" = "রেফারেন্স লিখুন";
+"Enter published date" = "প্রকাশের তারিখ লিখুন";
+"Enter Bullet 1" = "প্রথম বুলেট লিখুন";
+"Enter Bullet 2" = "দ্বিতীয় বুলেট লিখুন";
+"Post article successfully" = "প্রবন্ধটি সফলভাবে পোস্ট করা হয়েছে";
+"Follow" = "ফলো";
+"Unfollow" = "আনফলো";
+"Block articles from" = "থেকে প্রবন্ধগুলি ব্লক করুন";
+"Unblock articles from" = "থেকে প্রবন্ধগুলি আনব্লক করুন";
+"Remove article" = "প্রবন্ধটি সরান";
+"Save article" = "এই নিবন্ধটি সংরক্ষণ করুন";
+"Terms & Conditions" = "শর্তাবলী";
+"Privacy Policy" = "প্রাইভেসি পলিসি";
+"TERMS AND CONDITIONS" = "শর্তাবলী";
+"PRIVACY POLICY" = "প্রাইভেসি পলিসি";
+"Fuel your curiosity" = "বিশ্ব সম্পর্কে আরো সংবাদ পড়ুন";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "বিশ্বজুড়ে নির্ভরযোগ্য সূত্র থেকে আপনার পছন্দের বিষয়গুলি নিয়ে সংক্ষিপ্ত এবং নির্ভুল সংবাদ পড়ুন।";
+"Save time" = "আপনার সময় বাঁচান";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "খবর পড়ুন সংবাদ শিরোনামে";
+"Hands-free reading" = "হাত ব্যবহার মুক্ত পঠন";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "পড়ার সময় নেই? স্পিচ ফাংশনটি ব্যবহার করুন।";
+"Write your message..." = "আপনার বার্তা লিখুন ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "আপনার যদি কোনো সাহায্যের প্রয়োজন হয় তবে আমাদের কাছে একটি বার্তা পাঠান, আমরা আপনার কথা শুনতে আগ্রহী!";
+"Drop us a message" = "আমাদের কাছে একটি বার্তা পাঠান";
+"Enter Name." = "নাম লিখুন";
+"Enter Email." = "ইমেইল লিখুন";
+"Write your message." = "আপনার বার্তা লিখুন।";
+"Topic unblock successfully" = "আপনি এই বিষয়টিকে আনব্লক করেছেন";
+"Source unblock successfully" = "আপনি এই সূত্রটি আনব্লক করেছেন";
+"Unblock Source" = "সূত্র আনব্লক করুন";
+"Cancel" = "বাতিল করুন";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "আমাদের কাছে একটি ফিডব্যাক পাঠান, আমরা আপনার কথা শুনতে পছন্দ করব! আপনার কি প্রশ্ন বা আইনী আপত্তি আছে? আমাদের হেল্প পেইজ ব্যবহার করুন বা আমাদের সাথে যোগাযোগ করুন।";
+"Enter your suggestion." = "আপনার পরামর্শ লিখুন";
+"feedback sent." = "ফিডব্যাক সফলভাবে পাঠানো হয়েছে";
+"30m" = "30 মিনিট";
+"1h" = "1 ঘন্টা";
+"3h" = "3 ঘন্টা";
+"6h" = "6 ঘন্টা";
+"12h" = "12 ঘন্টা";
+"24h" = "24 ঘন্টা";
+"Language updated successfully." = "ভাষাটি সফলভাবে আপডেট হয়েছে।";
+"CONTINUE" = "এগিয়ে যান";
+"FOLLOW 3 TO CONTINUE" = "এগিয়ে যেতে 3 ফলো করুন";
+"Unfollow Location" = "অবস্থান আনফলো করুন";
+"Saved Articles" = "সংরক্ষিত প্রবন্ধ";
+"Block" = "ব্লক";
+"Are you sure you want block" = "আপনি কি নিশ্চিত যে আপনি এটি ব্লক করতে চান?";
+"Once blocked, you wont be able to see any Articles related to this" = "আপনি কি নিশ্চিত যে আপনি এটি ব্লক করতে চান?";
+"Block Topic" = "আপনি যদি এটিকে ব্লক করেন তবে এই চ্যানেল থেকে কোন প্রবন্ধ দেখতে পাবেন না।";
+"Suggested" = "এই বিষয়টিকে ব্লক করুন";
+"Related Sources not available" = "এসংক্রান্ত সূত্র পাওয়া যায় নি";
+"Block Source" = "এই সূত্রটি ব্লক করুন";
+"News in Bullets App version" = "সংবাদ শিরোনাম এ্যাপের ভার্সনে";
+"Next" = "পরবর্তী";
+"Login" = "লগইন";
+"Terms" = "শর্তাবলী";
+"By clicking Continue, you agree with our Terms." = "শর্তাবলী গ্রহণ করতে এগিয়ে যান বাটনটি নির্বাচন করুন।";
+"in our Privacy Policy." = "আমাদের প্রাইভেসি পলিসি তে।";
+"Access token missing." = "অ্যাক্সেস টোকেন অনুপস্থিত।";
+"NEXT" = "পরবর্তী";
+"By checking this box, you agree to our " = "শর্তাবলী গ্রহণ করতে বক্সটিতে ক্লিক করুন। আপনার ডেটা আমাদের প্রাইভেসি পলিসি আনুসারে প্রক্রিয়া করা হয়েছে।";
+"Terms of Service" = "সেবা পাওয়ার শর্তাবলী";
+". We’ll handle your data according to our " = "আমরা আমাদের অনুযায়ী আপনার ডেটা পরিচালনা করব";
+"Password must be at least 8 characters." = "পাসওয়ার্ড কমপক্ষে 8 অক্ষরের হতে হবে।";
+"Strong" = "শক্তিশালী";
+"Medium" = "মধ্যম";
+"Weak" = "দুর্বল";
+"CREATE A NEW ACCOUNT" = "একটি নতুন অ্যাকাউন্ট তৈরি করুন";
+"SIGN IN WITH EXISTING ACCOUNT" = "পুরনো অ্যাকাউন্ট দিয়ে সাইন ইন করুন";
+"You must agree to the Terms of Services to continue" = "এগিয়ে যাওয়ার জন্য আপনাকে অবশ্যই পরিষেবার শর্তাবলীতে সম্মতি দিতে হবে";
+"SIGN IN" = "সাইন ইন করুন";
+"What's your password?" = "আপনার পাসওয়ার্ড কি?";
+"SIGN UP" = "সাইন আপ করুন";
+"Choose your password?" = "আপনার পাসওয়ার্ড পছন্দ করুন";
+"Something went wrong" = "কিছু একটা ভুল হয়েছে";
+"we will send email to" = "আমরা ইমেইল পাঠাব";
+"with a link to reset your password." = "একটি লিঙ্ক সহ আপনার পাসওয়ার্ড রিসেট করতে";
+"A reset password link has been sent to" = "পাসওয়ার্ড রিসেট করার জন্য একটি লিঙ্ক পাঠানো হয়েছে";
+"Enter new email." = "নতুন ইমেইল দিন।";
+"Enter password." = "পাসওয়ার্ড লিখুন।";
+"New Password " = "নতুন পাসওয়ার্ড";
+" (8 characters min)" = "(8 ন্যূনতম অক্ষর)";
+"Enter current password." = "বর্তমান পাসওয়ার্ড লিখুন।";
+"Enter new password." = "নতুন পাসওয়ার্ড লিখুন।";
+"Enter confirm password." = "পাসওয়ার্ড নিশ্চিত করুন।";
+"password do not matched!" = "পাসওয়ার্ড মিলছে না!";
+"GET STARTED" = "এবার শুরু করা যাক";
+"SKIP" = "স্কিপ করুন";
+"From where you would like to pick photo?" = "আপনি কোথা থেকে ছবি তুলতে চান??";
+"Camera" = "ক্যামেরা";
+"Photo Library" = "ফটো লাইব্রেরি";
+"Kindly open settings and enable access" = "দয়া করে সেটিংস খুলুন এবং অ্যাক্সেস চালু করুন";
+"Open Settings" = "সেটিংস খুলুন";
+"Access needed for your camera" = "আপনার ক্যামেরার জন্য অ্যাক্সেস প্রয়োজন";
+"Access needed for your photo library" = "আপনার ফটো লাইব্রেরির জন্য অ্যাক্সেস প্রয়োজন";
+"Done" = "সম্পন্ন";
+"Pull to refresh" = "রিফ্রেশ করতে টানুন";
+"Loading" = "লোড হচ্ছে";
+"Speech not available for this article" = "এই প্রবন্ধটির জন্য স্পিচ উপনীয় নয়";
+"MANAGE LOCATION" = "লোকেশন পরিচালনা করুন";
+"OK" = "ঠিক আছে";
+"Choose your News in Bullets Edition based on locale" = "লোকেলের উপর ভিত্তি করে বুলেট সংস্করণে আপনার নিউজ চয়ন করুন";
+"Edition" = "সংস্করণ";
+"EDITION / REGION" = "সম্পাদনা / অঞ্চল";
+"Your Topics" = "আপনার বিষয়গুলি";
+"Your Channels" = "আপনার চ্যানেলগুলি";
+"Your Places" = "আপনার জায়গা";
+"Enter email." = "ইমেইল প্রদান করুন.";
+"Please enter a password." = "একটি পাসওয়ার্ড লিখুন দয়া করে।";
+"Search articles" = "নিবন্ধ অনুসন্ধান করুন";
+"No results" = "কোন ফলাফল নেই";
+"Edition / Region" = "সংস্করণ / অঞ্চল";
+
+
+
+
+
+"0JC-Sb-Ouu.text" = "ডিস্প্লে মোড ";
+
+
+"Search" = "সার্চ";
+
+
+"Select" = "নির্বাচন করুন ( ";
+
+
+"6H8-dI-k9P.text" = "অবস্থান পরিচালনা করুন ";
+
+
+"6KH-YP-5Lt.text" = "ন্যারেটর";
+
+
+" ) icon on the article" = " ) প্রবন্ধে আইকন ";
+
+
+"BLOCK" = "ব্লক";
+
+
+"you want to read later then" = "আপনি পরে পড়তে চাইলে ";
+
+
+"7oo-cf-l7Y.text" = "পড়ার গতি ";
+
+
+"88L-ip-pZw.text" = "পড়ার গতি ";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "এখানে কিছুই নেই। \nদেখে মনে হচ্ছে এখানে বিড়াল ছাড়া কিছুই নেই। মেইন পেইজে ফিরে যাবেন?";
+
+
+"BpH-F1-i0z.normalTitle" = "লোকাল";
+
+
+" ) to save article." = "  ) প্রবন্ধ সেভ করতে।.";
+
+
+"FB0-YN-HZg.text" = " এগিয়ে যেতে, 3 নির্বাচন করুন";
+
+
+"H5Z-xJ-dWD.text" = "শিরোনাম এবং\nসংবাদ শিরোনাম";
+
+
+"Search" = "সার্চ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "এক্সটেন্ডেড ভিউ ";
+
+
+"Jpx-nY-Is1.normalTitle" = "চ্যানেল";
+
+
+"JqN-io-P1u.normalTitle" = " + লোকেশনে যুক্ত করুন";
+
+
+"What's your email?" = " আপনার ইমেল ঠিকানা কি?";
+
+
+"Lw1-Md-nse.text" = " লিস্ট ভিউ";
+
+
+"LyT-pT-g53.text" = "আন্তর্জাতিক";
+
+
+"N6C-6i-Z2s.text" = "আন্তর্জাতিক";
+
+
+"Nru-uU-CsC.text" = "পরামর্শ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "বিষয়সমূহ";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "কাস্টমাইজ করুন";
+
+
+"Topics" = "বিষয়সমূূহ";
+
+
+"WXY-po-W1B.text" = "শিরোনাম এবং\nসংবাদ শিরোনাম";
+
+
+"ans-Zy-T2Y.placeholder" = "লোকেশন সার্চ করুন";
+
+
+"bgE-Jc-u8H.text" = "কাস্টমাইজ করুন";
+
+
+
+
+
+"Tap the ( " = "চাপুন ( ";
+
+
+"Places" = "লোকেশন";
+
+
+"d1l-HK-OrG.text" = "ডিস্প্লে মোড";
+
+
+
+
+
+"Language" = "ভাষা";
+
+
+"e9g-Wr-suO.text" = "শুধু শিরোনাম ";
+
+
+"GO HOME" = "মেইন পেইজে ফিরে যান";
+
+
+"eh1-Oo-lEn.text" = "এক্সটেন্ডেড ভিউ ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "লিস্ট ভিউ ";
+
+
+"j2i-MT-VkA.text" = "ভিন্ন একটি কীওয়ার্ড ব্যবহার করুন ";
+
+
+"Top News" = "শীর্ষ সংবাদ ";
+
+
+"jmO-aF-nJ9.text" = "শুধু শিরোনাম ";
+
+
+"There is nothing in here" = "এখানে কিছুই নেই। দেখে মনে হচ্ছে এখানে বিড়াল ছাড়া কিছুই নেই। মেইন পেইজে ফিরে যাবেন? ";
+
+
+"ma1-9p-bSa.text" = "কোন ফলাফল পাওয়া যায়নি ";
+
+
+"mce-jc-cKH.text" = "ন্যারেটর";
+
+
+"Channels" = "চ্যানেলসমূহ";
+
+
+"Discover" = "খুঁজে নিন";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "বাতিল";
+
+
+"Discover" = "খুঁজে নিন";
+
+
+"No saved stories yet" = "এখানে কিছুই নেই";
+
+
+"wDG-kF-Hl8.text" = "অবস্থান ভিত্তিক সংবাদ পড়ুন ";
+
+
+
+
+
+"wKj-3i-n0R.text" = "স্থানীয়করণ";
+
+
+"xfF-RB-mWL.text" = "স্থানীয়করণ";
+
+
+"Search" = "অনুসন্ধান করুন";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "আপনার চয়ন করা অঞ্চলে সর্বাধিক প্রাসঙ্গিক সংবাদ পান। বিশ্বের যে কোনও জায়গা থেকে আপনাকে সর্বশেষতম সংবাদগুলিতে আপডেট রাখার জন্য সংযুক্ত নিউজ স্টোরিগুলি পড়ুন।";
+
+
+"Search articles" = "নিবন্ধ অনুসন্ধান করুন";
+
+
+"6H8-dI-k9P.text" = "স্থান পরিচালনা করুন";
+
+
+
+
+
+"Profile" = "প্রোফাইল";
+
+
+"Editions" = "সংস্করণ";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "জায়গা";
+
+
+
+
+
+"Search" = "অনুসন্ধান করুন";
+
+
+
+
+
+
+
+
+"Search" = "অনুসন্ধান করুন";
+
+
+"LANGUAGE" = "ভাষা";
+
+
+"Search" = "অনুসন্ধান করুন";
+
+
+"No results" = "কোন ফলাফল পাওয়া যায়নি";
+
+
+"Channels" = "চ্যানেলগুলি";
+
+
+"Places" = "জায়গা";
+
+
+"Places" = "জায়গা";
+
+
+"e9F-hd-Ifm.text" = "সম্পাদনা / অঞ্চল";
+
+
+
+
+
+
+
+
+"PLACES" = "জায়গা";
+
+
+"SAVED ARTICLES" = "সংরক্ষিত নিবন্ধসমূহ";
+
+
+"Articles" = "নিবন্ধ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "চালিয়ে যান";
+
+
+
+
+
+"w8f-2R-NgT.text" = "সম্পাদনা / অঞ্চল";
+
+
+"Try a different keyword" = "একটি আলাদা কীওয়ার্ড চেষ্টা করুন";
+
+
+"For You" = "তোমার জন্য";
+
+
+"Results" = "ফলাফল";
+
+
+"About" = "আমাদের সম্পর্কে";
+
+
+"Share" = "শেয়ার করুন";
+
+
+"ACCOUNT" = "অ্যাকাউন্ট";
+
+
+"Your Email" = "আপনার ইমেইল";
+
+
+"1sT-J6-qI0.text" = "সংরক্ষিত প্রবন্ধসমূহ ";
+
+
+"2XX-rr-GLC.text" = "শত শত সূত্রের বিভিন্ন চ্যানেল পছন্দ করুন ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "বিশ্বজুড়ে সর্বশেষতম সংবাদের ইভেন্ট এবং ফিচারসমূহ পড়ুন। ";
+
+
+"Set an interval in which you want to receive your news notifications." = "নোটিফিকেশন পেতে সময়ের ব্যবধান সেট করুন। ";
+
+
+"Off" = "বন্ধ";
+
+
+
+
+
+"Bullet 2" = " বুলেট 2";
+
+
+"What's your email?" = "আপনার ইমেল কি? ";
+
+
+"New Password (8 Characters Min)" = "নতুন পাসওয়ার্ড (ন্যূনতম 8 অক্ষর) ";
+
+
+"Forgot Password?" = "পাসওয়ার্ড ভুলে গেছেন? ";
+
+
+"Account Settings" = "অ্যাকাউন্ট সেটিংস ";
+
+
+"Learn how we process your data" = "আপনার ডেটা প্রক্রিয়াকরণ সংক্রান্ত তথ্য ";
+
+
+"3h" = "3 ঘন্টা";
+
+
+"Ok" = "ঠিক আছে";
+
+
+"Block articles from The Guardian" = "থেকে প্রবন্ধগুলি ব্লক করুন --- ";
+
+
+"On" = "চালু করুন";
+
+
+"Auto" = "অটো";
+
+
+"Help Center" = "হেল্প সেন্টার ";
+
+
+"Search" = "চ্যানেল সার্চ করুন ";
+
+
+"Facebook" = "ফেসবুক";
+
+
+"Select file from gallery" = "গ্যালারী থেকে ফাইল নির্বাচন করুন ";
+
+
+
+
+"Save article" = "প্রবন্ধ সেব করুন ";
+
+
+"ABOUT" = "সম্পর্কিত";
+
+
+"Dark" = "ডার্ক";
+
+
+"Legal" = "আইনী";
+
+
+"Go to The Guardian" = "তে যান --- ";
+
+
+"Send reset link" = "রিসেট লিঙ্ক পাঠান ";
+
+
+
+
+
+"My Account" = "আমার অ্যাকাউন্ট ";
+
+
+"FEEDBACK" = "ফিডব্যাক";
+
+
+"Message" = "বার্তা";
+
+
+"Confirm New Password" = "নতুন পাসওয়ার্ড নিশ্চিত করুন ";
+
+
+"for ___" = "জন্য";
+
+
+"Search" = "বিষয়ের জন্য সার্চ ";
+
+
+"LANGUAGE" = "ভাষা";
+
+
+"Light" = "লাইট";
+
+
+"FOLLOW 3 TO CONTINUE" = "এগিয়ে যেতে, 3 নির্বাচন করুন ";
+
+
+
+
+"Off" = "বন্ধ করুন";
+
+
+"Language" = "পছন্দ করুন";
+
+
+"LOG OUT" = "লগ আউট";
+
+
+"Report content" = "কনটেন্ট রিপোর্ট করুন ";
+
+
+"What's your email?" = "আপনার ইমেল কি?";
+
+
+"On" = "চালু করুন";
+
+
+"More like this" = "এই ধরণের আরও সংবাদ";
+
+
+"Bullet App v1.1.0" = "বুলেট অ্যাপ v1.1.0 (স্কিপ করুন)";
+
+
+"1h" = "1 ঘন্টা";
+
+
+"Enter Email Address" = "ইমেইল অ্যাড্রেস দিন ";
+
+
+"News in Bullets" = "কম সময়ে আরও পড়ুন।";
+
+
+"6h" = "6 ঘন্টা";
+
+
+"Choose your password" = "আপনার পাসওয়ার্ড পছন্দ করুন ";
+
+
+"Cancel" = "বাতিল";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "এই অ্যাপ্লিকেশনটি ব্যবহার করে দ্রুত সংবাদ পড়ুন। আপনার বিষয়বস্তু এবং সূত্র পছন্দ করুন। তারপরে সংক্ষিপ্ত সংবাদ শিরোনাম দিয়ে আপনার সংবাদ পড়ুন।";
+
+
+"Push Notification" = "নোটিফিকেশন";
+
+
+"12h" = "12 ঘন্টা";
+
+
+"24h" = "24 ঘন্টা";
+
+
+"E-mail" = "ইমেইল";
+
+
+"How can we help you?" = "আমরা কিভাবে সাহায্য করতে পারি? ";
+
+
+"OJP-Wd-0d3.text" = "পাকিস্তান";
+
+
+"CHANGE PASSWORD" = "পাসওয়ার্ড পরিবর্তন করুন ";
+
+
+"Change Email" = "ইমেইল ​​এ্যড্রেস পরিবর্তন করুন";
+
+
+"Medium" = "মধ্যম";
+
+
+"SAVE CHANGES" = "পরিবর্তনগুলো সেভ করুন";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "আপনার যদি কোনও সাহায্যের প্রয়োজন হয় তবে আমাদের কাছে বার্তা পাঠান, আমরা আপনার কথঅ শুনতে আগ্রহী!";
+
+
+"P5u-N3-Tw4.text" = "লেবেল";
+
+
+"Cancel" = "বাতিল";
+
+
+"Bullet 1" = "বুলেট 1 ";
+
+
+"TIMED NOTIFICATIONS" = "নোটিফিকেশন";
+
+
+"POST ARTICLE" = "একটি প্রবন্ধ পোস্ট করুন ";
+
+
+"CONTACT US" = "যোগাযোগ করুন";
+
+
+"EDITION / REGION" = "সম্পাদনা";
+
+
+"Search" = "সার্চ করুন";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "আমাদের কাছে একটি ফিডব্যাক পাঠান, আমরা আপনার কথা শুনতে পছন্দ করব! আপনার কি কোনো প্রশ্ন বা আইনী আপত্তি আছে? তবে আমাদের হেল্প পেইজ ব্যবহার করুন বা আমাদের সাথে যোগাযোগ করুন। ";
+
+
+"Google" = "গুগল";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "আপনার যদি কোনো সাহায্যের প্রয়োজন হয় তবে আমাদের কাছে একটি বার্তা পাঠান, আমরা আপনার কথা শুনতে আগ্রহী!";
+
+
+"30m" = "30 মিনিট";
+
+
+"CONTINUE" = "এগিয়ে যান";
+
+
+"Time To Update!" = "অ্যাপটি আপডেট করুন! ";
+
+
+"NOTIFICATIONS" = "নোটিফিকেশন";
+
+
+"Search" = "সার্চ করুন";
+
+
+"By clicking Continue, you agree with our Terms." = "শর্তাবলীতে সম্মতি জানাতে এগিয়ে যান বাটনটি নির্বাচন করুন। ";
+
+
+"HELP / CONTACT US" = "হেল্প / যোগাযোগ";
+
+
+"Reset Password" = "পাসওয়ার্ড রিসেট করুন";
+
+
+"SEND MESSAGE" = "বার্তা পাঠান ";
+
+
+"Save article" = "প্রবন্ধ সেভ করুন";
+
+
+"Bullet 6 (Optional)" = "বুলেট 6 (অপশনাল) ";
+
+
+"HAPTICS" = "হ্যাপটিক্স";
+
+
+"Your message has \vbeen sent." = " আপনার বার্তা পাঠানো হয়েছে।";
+
+
+"LEGAL" = "আইনী";
+
+
+"Block List" = "ব্লক তালিকা ";
+
+
+"PERSONALIZATION" = "ব্যক্তিগতকরণ";
+
+
+"in our Privacy Policy." = "আমাদের প্রাইভেসি পলিসে তে।";
+
+
+"CONTINUE" = "এগিয়ে যান";
+
+
+"Enter Name" = " নাম লিখুন";
+
+
+"What's your email?" = " আপনার ইমেল কি?";
+
+
+"Hello there!" = "হ্যালো! ";
+
+
+"PUSH NOTIFICATIONS" = "নোটিফিকেশন";
+
+
+"Bullet 3 (Optional)" = "বুলেট 3 (অপশনাল)";
+
+
+"Source name" = "সূত্রের নাম";
+
+
+"Current Password" = "বর্তমান পাসওয়ার্ড";
+
+
+"COLOR THEME" = "কালার থিম ";
+
+
+"eTp-X1-g34.text" = "বা মাধ্যমে";
+
+
+"CANCEL" = "বাতিল করুন";
+
+
+"Bullet 4 (Optional)" = "বুলেট 4 (অপশনাল) ";
+
+
+"Date published" = "প্রকাশের তারিখ ";
+
+
+"Send Password Reset Link" = "পাসওয়ার্ড পুনরায় সেট করার লিঙ্কটি প্রেরণ করুন";
+
+
+"CONTINUE WITH APPLE" = "অ্যাপল আইডি দিয়ে সাইন আপ করুন ";
+
+
+"Off" = "বন্ধ করুন";
+
+
+"BLOCK LIST" = "ব্লক তালিকা ";
+
+
+"HELP" = "হেল্প";
+
+
+"Reference link" = "রেফারেন্স লিঙ্ক ";
+
+
+"Your Password" = "আপনার পাসওয়ার্ড ";
+
+
+"SUBMIT" = "জমা দিন";
+
+
+"HELP" = "হেল্প";
+
+
+"MY ACCOUNT" = "আমার অ্যাকাউন্ট";
+
+
+"hbD-HP-tZd.normalTitle" = "আনব্লক করুন";
+
+
+"OTHERS" = "অন্যান্য";
+
+
+"BREAKING NEWS" = " সদ্যপ্রাপ্ত সংবাদ";
+
+
+"Topics" = "ব্লককৃত বিষয়সমূহ";
+
+
+"Message us," = "আমাদের কাছে বার্তা পাঠান,";
+
+
+"Pick topics to start reading
+and saving articles" = "অ্যাপের ভাষা";
+
+
+"Forgot Password?" = " পাসওয়ার্ড ভুলে গেছেন?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "নতুন ফিচার যুক্ত করা হয়েচে। কিছু সমস্যা ঠিক করা হয়েছে। ";
+
+
+"Success!" = "সফল!";
+
+
+"Current Password" = "বর্তমান পাসওয়ার্ড";
+
+
+"CONTENT" = "কনটেন্ট";
+
+
+"Headline" = "শিরোনাম";
+
+
+"neg-UC-UpK.text" = "প্রবন্ধ পড়া এবং সেভ শুরু করতে বিষয় পছন্দ করুন ";
+
+
+"CONTINUE WITH EMAIL ID" = "আপনার ইমেল আইডি ব্যবহার করে এগিয়ে যান ";
+
+
+"SAVE CHANGES" = "পরিবর্তনগুলো সেভ করুন";
+
+
+"Post an Article" = "একটি প্রবন্ধ পোস্ট করুন";
+
+
+"Contact Us" = "যোগাযোগ করুন";
+
+
+"On" = "চালু করুন";
+
+
+"New Email Address" = "নতুন ইমেইল এ্যড্রেস ";
+
+
+"Bullet 5 (Optional)" = "বুলেট 5 (অপশনাল) ";
+
+
+"Suggest an improvement" = "উন্নতির জন্য পরামর্শ দিন";
+
+
+"Channels" = "ব্লককৃত সূত্র ";
+
+
+"From:" = "প্রেরক:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ব্যক্তিগতকৃত পরামর্শসমূহ";
+
+
+"I don't like this" = "আমি এটি পছন্দ করি না";
+
+
+"CONTINUE" = "এগিয়ে যান";
+
+
+"Name" = "নাম লিখুন";
+
+
+"Enter email" = " ইমেইল প্রদান করুন";
+
+
+"HELP" = "সাহায্য";
+
+
+"FOLLOW 3 TO CONTINUE" = " এগিয়ে যেতে 3 ফলো করুন";
+
+
+"UPDATE APP" = "এ্যাপ আপডেট করুন";
+
+
+"Forgot Password?" = " পাসওয়ার্ড ভুলে গেছেন??";
+
+
+"Change Password" = "পাসওয়ার্ড পরিবর্তন করুন";
+
+
+"Reset Password" = "পাসওয়ার্ড রিসেট করুন";
+
+
+
+
+
+
+
+
+"Report content" = "আপনার আপত্তি রিপোর্ট করুন";
+
+
+"CHANGE EMAIL ADDRESS" = "ইমেইল ​​এ্যড্রেস পরিবর্তন করুন";
+
+
+"Follow The Guardian" = "ফলো করুন ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "আপনার অভিজ্ঞতা যতটা সম্ভব মসৃণ করতে আমরা প্রচুর নতুন বৈশিষ্ট্য যুক্ত করেছি এবং কিছু বাগ ফিক্স করেছি।";
+
+
+"Edition / Region" = "সংস্করণ / অঞ্চল";
+
+
+"OK" = "ঠিক আছে";
+
+
+"NARRATOR" = "ন্যারেটর";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "আপনার পছন্দের সংবাদগুলির বিষয়ে আপডেট রাখা আপনার খুব বেশি সময় নেওয়া উচিত নয়। বুলেটগুলির সংবাদগুলি নিয়মিত 5 মিনিটের পঠন নেয় এবং এটিকে সহজে হজমযোগ্য বুলেটে ঘন করে। এখন, আপনি একই খবরের জন্য কিছু সময়ের মধ্যে নিতে পারেন - যাতে আপনি কম সময়ে আরও পড়তে পারেন।";
+
+
+"READING SPEED" = "রিডিং স্পিড";
+
+
+
+
+
+"You haven't blocked anything yet" = "আপনি এখনও কিছু অবরুদ্ধ করেননি";
+
+
+"EDITION / REGION" = "সম্পাদনা / অঞ্চল";
+
+
+
+
+
+"HEADLINES ONLY" = "কেবলমাত্র শিরোনাম";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "অডিও সেটিংস";
+
+
+"AUDIO SETTINGS" = "অডিও সেটিংস";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "শিরোনাম এবং বুলেটস";
+
+
+"CONTINUE AS GUEST" = "স্কিপ এবং লগ-ইন হিসাবে ভাল";
+
+
+"Topics" = "বিষয়গুলি";
+
+
+"Pick topics to start reading and saving articles" = "নিবন্ধগুলি পড়া এবং সংরক্ষণ শুরু করতে বিষয়গুলি চয়ন করুন";
+
+
+"Channels" = "চ্যানেলগুলি";
+
+
+"Choose from hundreds \nof news publications" = "শত শত সংবাদ প্রকাশনা থেকে চয়ন করুন";
+
+"Pick topics to start reading\nand saving articles" = "নিবন্ধগুলি পড়া এবং সংরক্ষণ শুরু করতে বিষয়গুলি চয়ন করুন";
+
+"Pick editions to start reading\nand saving articles" = "নিবন্ধগুলি পড়া এবং সংরক্ষণ শুরু করতে সংস্করণগুলি চয়ন করুন";
+
+"Or with" = "বা সাথে";
+
+"CONTINUE AS GUEST" = "অতিথি হিসাবে অবিরত থাকুন";
+
+"Terms of Service" = "সেবা পাবার শর্ত";
+
+"Choose from hundreds \nof news publications" = "শত শত সংবাদ প্রকাশনা থেকে চয়ন করুন";
+
+"Select your preferred language\nfor News in Bullets." = "বুলেটগুলিতে নিউজের জন্য আপনার পছন্দসই ভাষাটি নির্বাচন করুন।";
+
+"Choose a style" = "একটি শৈলী চয়ন করুন";
+
+"Pop or subtle. Day or night. Customize your interface." = "পপ বা সূক্ষ্ম। দিন বা রাত. আপনার ইন্টারফেস কাস্টমাইজ করুন।";
+
+"MINS AGO" = "মিনিট আগে";
+
+"AN HOUR AGO" = "এক ঘন্টা আগে";
+
+"HOURS AGO" = "ঘন্টা আগে";
+
+"1 WEEK AGO" = "1 সপ্তাহ আগে";
+
+"YESTERDAY" = "গতকাল";
+
+"DAYS AGO" = "দিন আগে";
+
+"Go to" = "যান";
+
+"You have reached the start." = "তুমি শুরুতে পৌঁছেছো।";
+
+"Source unblocked successfully" = "উৎস সফলভাবে আনব্লক করা হয়েছে";
+
+"Invalid email format"  = "অকার্যকর ইমেইল বিন্যাস";
+
+"Wrong email or password" = "ভুল ইমেইল বা পাসওয়ার্ড";
+
+
+"Personalize your reading experience" = "আপনার পড়ার অভিজ্ঞতা ব্যক্তিগতকরণ করুন";
+
+"Start following the news topics and channels you want to read." = "আপনি যে সংবাদ বিষয় এবং চ্যানেলগুলি পড়তে চান তা অনুসরণ করা শুরু করুন।";
+
+"LET'S GO" = "চলো যাই";
+
+"We’ll handle your data according to our\n" = "আমরা আমাদের অনুযায়ী আপনার ডেটা পরিচালনা করব";
+
+"By clicking Continue, you agree with our " = "চালিয়ে যান ক্লিক করে, আপনি আমাদের সাথে সম্মত হন";
+
+"Learn how we process your data in our"  = "আমাদের মধ্যে কীভাবে আমরা আপনার ডেটা প্রক্রিয়াকরণ করব তা শিখুন";
+
+"JUST NOW" = "শুধু এখন";
+
+"Menu" = "মেনু";
+"Article Text Size" = "নিবন্ধ পাঠ্য আকার";
+"Change the font size shown on the articles" = "নিবন্ধগুলিতে প্রদর্শিত ফন্টের আকারটি পরিবর্তন করুন";
+"Small" = "ছোট";
+"Default" = "ডিফল্ট";
+"Medium" = "মধ্যম";
+"Large" = "বড়";
+
+"Related Articles" = "সম্পরকিত প্রবন্ধ";
+"View Full Article" = "সম্পূর্ণ নিবন্ধ দেখুন";
+
+"Create your profile" = "আপনার প্রোফাইল তৈরি করুন";
+"Set your profile" = "আপনার প্রোফাইল সেট করুন";
+"View your profile" = "আপনার প্রোফাইল দেখুন";
+"ARTICLE TEXT SIZE" = "নিবন্ধ পাঠ্য আকার";
+"DATA SAVER" = "ডাটা সেভার";
+"Edit Profile" = "প্রোফাইল সম্পাদনা করুন";
+"Profile Settings" = "প্রোফাইল সেটিংস";
+"Edit what viewers see in your profile." = "দর্শকরা আপনার প্রোফাইলে যা দেখেন তা সম্পাদনা করুন।";
+"COVER PHOTO" = "কভার ফটো";
+"Profile Name" = "প্রোফাই লনাম";
+"Help and Feedback" = "সাহায্য এবং প্রতিক্রিয়া";
+"HELP AND FEEDBACK" = "সাহায্য এবং প্রতিক্রিয়া";
+"Others" = "অন্যান্য";
+"Feedback & Suggestions" = "মতামত এবং পরামর্শ";
+"Help / Contact Us" = "সহায়তা / আমাদের সাথে যোগাযোগ করুন";
+"Terms and Conditions" = "বিধি ও শর্তাবলী";
+"Notification" = "প্রজ্ঞাপন";
+"Push Notifications" = "পুশ নোটিফিকেশন";
+"Breaking News" = "সদ্যপ্রাপ্ত সংবাদ";
+"Personalized Recommendations" = "ব্যক্তিগতকৃত সুপারিশ";
+"Timed Notifications" = "সময়োপযোগী বিজ্ঞপ্তি";
+"Account" = "একাউন্ট";
+"E-mail Address" = "ই-মেইল ঠিকানা";
+"Reels" = "রিলস";
+
+"Comments" = "মন্তব্য";
+"Write a reply..." = "একটি প্রতিউত্তর লেখ...";
+"Reply" = "প্রত্যুত্তর";
+"Replies" = "জবাব";
+"View" = "ভিউ";
+"more reply" = "উত্তরগুলো";
+"more replies" = "আরও উত্তর";
+"Home" = "বাড়ি";
+"Newsreels" = "খবররিলস";
+
+
+"Following" = "অনুসরণ করছেন";
+"First Name" = "প্রথম নাম";
+"Last Name" = "শেষ নাম";
+
+"This feature requires photo access" = "এই বৈশিষ্ট্যটির জন্য ফটো অ্যাক্সেস প্রয়োজন";
+"in phone settings, tap News in Bullets and turn on Photos" = "ফোন সেটিংসে, বুলেটগুলিতে নিউজ আলতো চাপুন এবং ফটোগুলি চালু করুন";
+"Not Now" = "এখন না";
+"Open Settings" = "ওপেন সেটিংস";
+"No photos on this device" = "এই ডিভাইসে কোনও ফটো নেই";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "আপনি যদি ফটো অ্যাক্সেস সেটিংস পরিবর্তন করতে চান তবে ফোন সেটিংসে যান, বুলেটগুলিতে সংবাদ ট্যাপ করুন এবং ফটোগুলি চালু করুন";
+"Video duration" = "ভিডিও সময়কাল";
+"Video too short" = "ভিডিওটি খুব ছোট";
+"Video too long" = "ভিডিওটি খুব দীর্ঘ";
+"Done" = "সম্পন্ন";
+"Save" = "সংরক্ষণ";
+"Processing.." = "প্রক্রিয়াজাতকরণ ..";
+"Trim" = "ট্রিম ভিডিও";
+"Cover" = "আবরণ";
+"Albums" = "অ্যালবাম";
+"Gallery" = "গ্যালারী";
+"Photos" = "ফটো";
+"Videos" = "ভিডিও";
+"Next" = "পরবর্তী";
+"Crop" = "ফসল ইমেজ";
+
+
+"Locations" = "অবস্থানগুলি";
+"Authors" = "লেখক";
+"Invalid Video" = "অবৈধ ভিডিও";
+"Invalid Youtube link" = "অবৈধ ইউটিউব লিঙ্ক";
+"Article published successfully" = "নিবন্ধটি সফলভাবে প্রকাশিত";
+"Article removed successfully" = "নিবন্ধটি সফলভাবে সরানো হয়েছে";
+"Edit Article" = "নিবন্ধ সম্পাদনা করুন";
+"Delete Article" = "নিবন্ধ মুছুন";
+"Before you can comment, you need to update your profile" = "আপনি পোস্ট করার আগে, আপনাকে আপনার প্রোফাইল আপডেট করতে হবে।";
+"Update profile" = "প্রফাইল হালনাগাদ";
+"Views" = "ভিউ";
+
+"Edit Newsreels" = "নিউজরিলস সম্পাদনা করুন";
+"Post article" = "পোস্ট নিবন্ধ";
+"SAVE" = "সংরক্ষণ";
+"Caption" = "পরিচয়লিপি";
+"Create a Caption" = "একটি ক্যাপশন তৈরি করুন";
+
+"Create a headline" = "একটি সংবাদ শিরোনাম তৈরি করুন";
+"Add Source Link (Optional)" = "উৎস লিঙ্ক যোগ করুন (ঐচ্ছিক)";
+"Enter a Caption" = "পরিচয়লিপি প্রবেশ করান";
+"Enter article headline" = "নিবন্ধ শিরোনাম লিখুন";
+
+"Add Bullet 1" = "বুলেট 1 যোগ করুন";
+"Add Bullet 2" = "বুলেট 2 যোগ করুন";
+"Add Bullet 3 (Optional)" = "বুলেট 3 যোগ করুন (ঐচ্ছিক)";
+"Add Bullet 4 (Optional)" = "বুলেট 4 যোগ করুন (ঐচ্ছিক)";
+"Add Bullet 5 (Optional)" = "বুলেট 5 যোগ করুন (ঐচ্ছিক)";
+
+"Add Bullet" = "বুলেট যোগ করুন";
+
+"Uploading video..." = "ভিডিও আপলোড হচ্ছে...";
+"Bullet" = "বুলেট";
+
+
+"Oops! Something went wrong. Please try again." = "উফফফফ! কিছু ভুল হয়েছে. আবার চেষ্টা করুন.";
+
+"Upload media" = "মিডিয়া আপলোড করুন";
+"Upload Newsreels" = "নিউজরিয়েল আপলোড করুন";
+"Upload YouTube link" = "ইউটিউব লিঙ্ক আপলোড করুন";
+"Before you post," = "আপনি পোস্ট করার আগে,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "দয়া করে মনে রাখবেন আপনি পাঠক এবং লেখকদের একটি বিশ্বব্যাপী সম্প্রদায়ে যোগদান করছেন। যে কোনও ধরণের ভুল তথ্য এবং অপব্যবহার থেকে সবাইকে রক্ষা করতে, দয়া করে আমাদের পর্যালোচনা করুন";
+"Community Guidelines." = "কমিউনিটি গাইডলাইন";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "অবিরত আলতো চাপতে, আপনি গাইডলাইনগুলি ধরে রাখতে সম্মত হচ্ছেন।";
+"Community Guidelines" = "[কমিউনিটি গাইডলাইন]।";
+
+"Upload bullet image (optional)" = "বুলেট ছবি আপলোড করুন (ঐচ্ছিক)";
+"Delete" = "মুছে ফেলা";
+"Replace" = "প্রতিস্থাপন করা";
+"Delete Bullet" = "বুলেট মুছুন";
+
+"Add Tag" = "ট্যাগ যুক্ত করুন";
+"Get discovered locally" = "স্থানীয়ভাবে আবিষ্কৃত হন";
+"Add a location to your channel and get discovered by users near you." = "আপনার চ্যানেলে একটি অবস্থান যোগ করুন এবং আপনার কাছাকাছি ব্যবহারকারীদের দ্বারা আবিষ্কৃত হন।";
+"Max 5" = "সর্বোচ্চ 5";
+"RECOMMENDED" = "প্রস্তাবিত";
+"comma, separated, tags" = "কমা, পৃথক, ট্যাগ";
+
+"YouTube Article" = "ইউটিউব নিবন্ধ";
+"Paste a YouTube link to upload a video from YouTube." = "ইউটিউব থেকে ভিডিও আপলোড করতে একটি ইউটিউব লিঙ্ক আটকান।";
+"Paste a YouTube link to take import" = "আমদানি করতে একটি YouTube লিঙ্ক আটকান";
+"IMPORT" = "আমদানি করুন";
+
+"Enter Youtube link" = "ইউটিউব লিঙ্ক প্রবেশ করান";
+"Preview" = "পূর্বরূপ";
+"POST" = "পোস্ট";
+"Post to My Profile" = "আমার প্রোফাইলে পোস্ট করুন";
+
+"RESULT" = "ফলাফল";
+"followers" = "অনুসারী";
+"Followers" = "অনুসারী";
+"Posts" = "পোস্ট";
+"Profile updated successfully" = "প্রোফাইল সফলভাবে আপডেট করা হয়েছে";
+"Tags" = "ট্যাগ";
+"No Posts Yet" = "এখনও পযন্ত কোন পোষ্ট নাই";
+
+
+"Add" = "অ্যাড";
+"Select Ratio" = "অনুপাত নির্বাচন করুন";
+"Add topics tags" = "বিষয় ট্যাগ যুক্ত করুন";
+"Be discovered by people following the topics you are posting about." = "আপনি যে বিষয়গুলি সম্পর্কে পোস্ট করছেন তা অনুসরণ কারী ব্যক্তিদের দ্বারা আবিষ্কৃত হন।";
+"Reels edited successfully." = "রিলস সফলভাবে সম্পাদিত।";
+"Article edited successfully." = "নিবন্ধটি সফলভাবে সম্পাদিত হয়েছে।";
+"Reels uploaded successfully." = "রিলস সফলভাবে আপলোড হয়েছে।";
+"Enter verification code" = "আপনার যাচাইকরণ সংকেতটি প্রবেশ করুন";
+"RESEND" = "রিসেন্ড করুন";
+"Processing..." =  "প্রক্রিয়াজাতকরণ ...";
+"Scheduled on:" = "নির্ধারিত।:";
+"Enter profile name" = "প্রোফাইল নাম লিখুন";
+"Ok, last thing is your channel image" = "ঠিক আছে, শেষ জিনিসটি আপনার চ্যানেল ইমেজ";
+"Upload" = "আপলোড";
+"Before you can post article, you need to update your profile" = "আপনি পোস্ট করার আগে, আপনাকে আপনার প্রোফাইল আপডেট করতে হবে।";
+"UPDATE" = "হালনাগাদ";
+"Scale" = "স্কেল";
+"Saved Article" = "সংরক্ষিত নিবন্ধ";
+"Removed Article" = "নিবন্ধ সরানো হয়েছে";
+"Ok, last thing is your profile image" = "ঠিক আছে, শেষ জিনিসটি আপনার প্রোফাইল চিত্র";
+"Relevant" = "প্রাসঙ্গিক";
+
+"See More" = "আরো দেখুন";
+"Less" = "কম দেখুন";
+"Autoplay" = "স্বয়ংক্রিয় চালু";
+"Reader Mode" = "পাঠক মোড";
+"Data Saver" = "ডাটা সেভার";
+"Please enter a valid OTP." = "দয়া করে একটি বৈধ ওটিপি প্রবেশ করুন।";
+"Enter a first name" = "প্রথম নাম";
+"Enter a last name" = "শেষ নাম";
+
+
+"Password updated successfully" = "পাসওয়ার্ড সফলভাবে আপডেট হয়েছে";
+"Replying to" = "প্রতিউত্তর";
+"Unblock Topic" = "আনব্লক টপিক";
+"Please add your reel caption" = "অনুগ্রহ করে আপনার রিল ক্যাপশন যোগ করুন";
+"Please add bullet" = "দয়া করে বুলেট যোগ করুন";
+"Please add your article headline" = "অনুগ্রহ করে আপনার নিবন্ধের শিরোনাম যোগ করুন";
+"Please add bullet 1" = "অনুগ্রহ করে বুলেট 1 যোগ করুন";
+"Please add bullet 2" = "অনুগ্রহ করে বুলেট 2 যোগ করুন";
+
+
+
+"Please enter a valid channel name" = "দয়া করে একটি বৈধ চ্যানেলের নাম লিখুন";
+"Let people know what" = "মানুষকে জানান কি";
+"your channel is about" = "আপনার চ্যানেল সম্পর্কে";
+"Start by creating your" = "আপনার তৈরি করে শুরু করুন";
+"channel name" = "চ্যানেলের নাম";
+"Describe your channel" = "আপনার চ্যানেল বর্ণনা করুন";
+"No pressure, you can change this later." = "কোন চাপ নেই, আপনি এটি পরে পরিবর্তন করতে পারেন।";
+"Channel created successfully" = "চ্যানেল সফলভাবে তৈরি হয়েছে";
+"Please enter your channel description" = "দয়া করে আপনার চ্যানেলের বিবরণ লিখুন";
+"Channel name already in use" = "চ্যানেলের নাম ইতিমধ্যে ব্যবহৃত";
+"Post to" = "পোস্ট করো";
+
+"Available" = "উপলব্ধ";
+"Already in use" = "ইতিমধ্যে ব্যবহার করা হচ্ছে";
+"SCHEDULE POST" = "সময়সূচী পোস্ট";
+"DRAFTS" = "খসড়া";
+"View channel" = "চ্যানেল দেখুন";
+"Create a channel" = "একটি চ্যানেল তৈরি করুন";
+"Ok, last thing is" = "ঠিক আছে, শেষ জিনিস হয়";
+"your channel image" = "আপনার চ্যানেল চিত্র";
+"looks amazing!" = "অসাধারণ দেখাচ্ছে!";
+"CREATE CHANNEL" = "চ্যানেল তৈরি করুন";
+"Scheduled Posts" = "একটি পোস্ট নির্ধারণ করুন";
+
+"You don't have any drafts yet." = "আপনার কাছে এখনও কোনও খসড়া নেই।";
+"Schedule" = "সময়সূচী";
+"There aren't any scheduled posts yet." = "এখনও কোন নির্ধারিত পোস্ট নেই।";
+"Schedule a Post" = "একটি পোস্ট নির্ধারণ করুন";
+"Mod Tools" = "মডারেটর সরঞ্জাম";
+"Unfollow Channel" = "চ্যানেল আনফলো করুন";
+"Follow Channel" = "চ্যানেল অনুসরণ করুন";
+
+"Release to refresh" = "রিফ্রেশ করতে রিলিজ করুন";
+"Loading..." =  "লোড হচ্ছে ...";
+"Schedule Post" = "সময়সূচী পোস্ট";
+"Moderator Tools" = "মডারেটর সরঞ্জামসমূহ";
+"General" = "সাধারণ";
+"Scheduled Posts" = "তফসিল পোস্ট";
+"Settings" = "সেটিংস";
+"channel and cover photo" = "চ্যানেল এবং কভার ফটো";
+"Description" = "বর্ণনা";
+"Will be posted in" = "পোস্ট করা হবে মধ্যে";
+"Will be posted on" = "পোস্ট করা হবে উপর";
+"Will be posted now" = "এই এখন পোস্ট করা হবে";
+"Select Date" = "তারিখ নির্বাচন করুন";
+"Select Time" = "সময় নির্বাচন করুন";
+"Please select date" = "দয়া করে তারিখ নির্বাচন করুন";
+"Please select time" = "দয়া করে সময় নির্বাচন করুন";
+"Continue with Apple" = "অ্যাপলের সাথে চালিয়ে যান";
+"Continue with Google" = "গুগল দিয়ে চালিয়ে যান";
+"Continue with Facebook" = "ফেসবুক দিয়ে চালিয়ে যান";
+"Continue with email" = "ইমেল সহ চালিয়ে যান";
+"Login or create an account" = "লগিন করুন অথবা একটি একাউন্ট বানান";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "আপনার সমস্ত প্রিয় বিষয় থেকে গল্প পড়তে, ভাগ করতে এবং মন্তব্য করতে লগইন করুন বা একটি অ্যাকাউন্ট তৈরি করুন।";
+"your profile image" = "আপনার প্রোফাইল চিত্র";
+"Invalid OTP code" = "অবৈধ ওটিপি কোড";
+
+"View your profile" = "আপনার প্রোফাইল দেখুন";
+"NEWS DESK" = "নিউজ ডেস্ক";
+"YOUR CHANNELS" = "আপনার চ্যানেলগুলি";
+"GENERAL" = "সাধারণ";
+"WALLET" = "মানিব্যাগ";
+"POSTS" = "পোস্ট";
+"PERSONALIZATIONS" = "ব্যক্তিগতকরণ";
+"NETWORK" = "নেটওয়ার্ক";
+"Need more channels?" = "আরও চ্যানেল দরকার?";
+"VIEW ALL & MANAGE" = "সমস্ত দেখুন এবং পরিচালনা করুন";
+
+"Community Feed" = "সম্প্রদায় ফিড";
+"Create your post" = "আপনার পোস্ট তৈরি করুন";
+"Media" = "মিডিয়া";
+"Youtube" = "ইউটিউব";
+"You're all caught up" = "আপনি সব ধরা হয় আপ";
+"You've seen all new posts" = "আপনি সমস্ত নতুন পোস্ট দেখেছেন";
+"Go to top" = "শীর্ষে যান";
+"Suggested Reels" = "প্রস্তাবিত রিলস";
+"Suggested Authors" = "প্রস্তাবিত লেখক";
+
+
+​​"Share to" = "সঙ্গে ভাগ";
+"Report" = "​​রিপোর্ট";
+"Unsave Video" = "আনসেভ ভিডিও";
+"Save Video" = "ভিডিও সংরক্ষণ করুন";
+"Aspect Ratio" = "অ্যাসপেক্ট রেশিও";
+"Rotate" = "ঘুরান";
+"Flip Vertical" = "উল্লম্বভাবে ফ্লিপ";
+"Flip Horizontal" = "অনুভূমিকভাবে ফ্লিপ";
+
+
+"Community" = "সম্প্রদায়";
+"APP LANGUAGE" = "অ্যাপ ভাষা";
+"You don't have any followers yet" = "আপনার এখনও কোন অনুসারী নেই";
+
+
+"View Original Article" = "মূল নিবন্ধ দেখুন";
+"Places" = "জায়গা";
+"Languages" = "ভাষাগুলো";
+"New Posts" = "নতুন পোস্ট";
+"No posts yet" = "এখনও পযন্ত কোন পোষ্ট নাই";
+"All Followers" = "সকল অনুসারী";
+"Add Place" = "একটি জায়গা যোগ করুন";
+"Add places tags" = "স্থান ট্যাগ যোগ করুন";
+"Be discovered by people following the places you are posting about." = "আপনি যেসব স্থানে পোস্ট করছেন সেগুলি অনুসরণ করে লোকদের দ্বারা আবিষ্কার করুন।";
+
+
+
+"START FOLLOWING" = "অনুসরণ করা শুরু করুন";
+"You are not following anything yet" = "আপনি এখনও কিছু অনুসরণ করছেন না।";
+
+"Notifications" = "প্রজ্ঞাপন";
+"General" = "সাধারণ";
+"News" = "খবর";
+"VIEW MORE" = "আরো দেখুন";
+"BULLETS AUTO PLAY" = "বুলেট অটো প্লে";
+"VIDEOS AUTO PLAY" = "ভিডিও অটো প্লে";
+"REELS AUTO PLAY" = "রিলস অটো প্লে";
+"READER THEME" = "পাঠক থিম";
+"News Content Language" = "সংবাদ বিষয়বস্তু ভাষা";
+"FAVORITES" = "পছন্দসইগুলিতে";
+"Region/Places" = "অঞ্চল/স্থান";
+"Select Regions/Places" = "অঞ্চল/স্থান নির্বাচন করুন";
+"Follow at least 3 topics" = "কমপক্ষে 3 টি বিষয় অনুসরণ করুন";
+"Please Follow at least 3 topics" = "অনুগ্রহ করে কমপক্ষে 3টি বিষয় অনুসরণ করুন";
+"Explore Newsreels" = "নিউজরিলগুলি অন্বেষণ করুন";
+"Related Reels" = "সম্পর্কিত রিল";
+"Explore Your Feed" = "আপনার ফিড এক্সপ্লোর করুন";
+"Sources" = "উত্স";
+"Articles, topics, channels, authors" = "প্রবন্ধ, বিষয়, চ্যানেল, লেখক";
+"View/Manage" = "দেখুন/পরিচালনা করুন";
+"Add to Favorites" = "ফেভারিটে যোগ করুন";
+"Remove from Favorites" = "পছন্দের তালিকা থেকে অপসারণ";
+
+"Save" = "संचित करना";
+"Remove from Saved" = "सहेजे गए से निकालें";

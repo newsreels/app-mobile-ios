@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-BlackItalic.ttf">
+            <string>Roboto-BlackItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YourChannelCC" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="YourChannelCC" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="295"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="295"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pH-Hs-haO">
+                        <rect key="frame" x="0.0" y="0.0" width="198" height="293"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQ9-bh-aHA">
+                                <rect key="frame" x="0.0" y="0.0" width="198" height="293"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="CcD-A2-9Ai">
+                                <rect key="frame" x="0.0" y="255" width="142" height="28"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-WL-STm">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="555" text="   " lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIE-FK-LuU">
+                                                <rect key="frame" x="12" y="4" width="12" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-BlackItalic" family="Roboto" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="Six-al-o35">
+                                                <rect key="frame" x="12" y="4" width="90" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-CW-dC8">
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="28"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cIE-FK-LuU" secondAttribute="trailing" constant="12" id="4VP-PU-Vdt"/>
+                                            <constraint firstItem="cIE-FK-LuU" firstAttribute="top" secondItem="Yft-WL-STm" secondAttribute="top" constant="4" id="Ahl-9z-WnJ"/>
+                                            <constraint firstItem="Six-al-o35" firstAttribute="leading" secondItem="Yft-WL-STm" secondAttribute="leading" constant="12" id="DFg-eU-jwe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Six-al-o35" secondAttribute="bottom" constant="4" id="Hvt-z6-RQ7"/>
+                                            <constraint firstItem="cIE-FK-LuU" firstAttribute="leading" secondItem="Yft-WL-STm" secondAttribute="leading" constant="12" id="LOa-Bd-smG"/>
+                                            <constraint firstAttribute="trailing" secondItem="YJG-CW-dC8" secondAttribute="trailing" id="Snl-od-yLj"/>
+                                            <constraint firstAttribute="bottom" secondItem="YJG-CW-dC8" secondAttribute="bottom" id="Vzz-XP-E3S"/>
+                                            <constraint firstItem="YJG-CW-dC8" firstAttribute="top" secondItem="Yft-WL-STm" secondAttribute="top" id="Zhg-d4-dVn"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Six-al-o35" secondAttribute="trailing" constant="12" id="kL0-SI-obE"/>
+                                            <constraint firstAttribute="bottom" secondItem="cIE-FK-LuU" secondAttribute="bottom" constant="4" id="lgm-Z5-VOW"/>
+                                            <constraint firstItem="Six-al-o35" firstAttribute="top" secondItem="Yft-WL-STm" secondAttribute="top" constant="4" id="xKM-9r-kRh"/>
+                                            <constraint firstItem="YJG-CW-dC8" firstAttribute="leading" secondItem="Yft-WL-STm" secondAttribute="leading" id="ylL-uw-f0h"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_home_edge" translatesAutoresizingMaskIntoConstraints="NO" id="tbI-eu-I0S">
+                                        <rect key="frame" x="114" y="0.0" width="28" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tbI-eu-I0S" secondAttribute="height" multiplier="1:1" id="y1x-S6-gMC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="1Zc-Eh-WIS"/>
+                                    <constraint firstItem="Yft-WL-STm" firstAttribute="leading" secondItem="CcD-A2-9Ai" secondAttribute="leading" id="Kn5-9W-f7x"/>
+                                    <constraint firstAttribute="trailing" secondItem="tbI-eu-I0S" secondAttribute="trailing" id="O2V-3p-EM6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yft-WL-STm" secondAttribute="bottom" id="h8c-ZE-Kck"/>
+                                    <constraint firstItem="Yft-WL-STm" firstAttribute="bottom" secondItem="tbI-eu-I0S" secondAttribute="bottom" id="hfE-Lw-0gc"/>
+                                    <constraint firstItem="Yft-WL-STm" firstAttribute="leading" secondItem="CcD-A2-9Ai" secondAttribute="leading" id="iiN-JJ-jBZ"/>
+                                    <constraint firstItem="tbI-eu-I0S" firstAttribute="leading" secondItem="Yft-WL-STm" secondAttribute="trailing" id="mfn-Og-iiv"/>
+                                    <constraint firstItem="Yft-WL-STm" firstAttribute="top" secondItem="tbI-eu-I0S" secondAttribute="top" id="qMn-wD-6t5"/>
+                                    <constraint firstItem="Yft-WL-STm" firstAttribute="top" secondItem="CcD-A2-9Ai" secondAttribute="top" id="yzt-Xa-iIO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sQ9-bh-aHA" secondAttribute="trailing" id="1dq-eq-xgy"/>
+                            <constraint firstAttribute="bottom" secondItem="CcD-A2-9Ai" secondAttribute="bottom" constant="10" id="S9u-jj-3oQ"/>
+                            <constraint firstItem="sQ9-bh-aHA" firstAttribute="leading" secondItem="0pH-Hs-haO" secondAttribute="leading" id="VE1-um-4hF"/>
+                            <constraint firstItem="CcD-A2-9Ai" firstAttribute="leading" secondItem="0pH-Hs-haO" secondAttribute="leading" id="Yca-By-CVc"/>
+                            <constraint firstItem="sQ9-bh-aHA" firstAttribute="top" secondItem="0pH-Hs-haO" secondAttribute="top" id="d6F-S2-vIE"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CcD-A2-9Ai" secondAttribute="trailing" id="nJy-bU-hwj"/>
+                            <constraint firstAttribute="bottom" secondItem="sQ9-bh-aHA" secondAttribute="bottom" id="rDy-wO-nWt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="0pH-Hs-haO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YwZ-Eq-hlx"/>
+                <constraint firstItem="0pH-Hs-haO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="puo-Is-SL2"/>
+                <constraint firstAttribute="trailing" secondItem="0pH-Hs-haO" secondAttribute="trailing" constant="8" id="q3R-y4-mO9"/>
+                <constraint firstAttribute="bottom" secondItem="0pH-Hs-haO" secondAttribute="bottom" constant="2" id="xLC-BR-oON"/>
+            </constraints>
+            <size key="customSize" width="306" height="495"/>
+            <connections>
+                <outlet property="imgChannel" destination="sQ9-bh-aHA" id="WBu-rf-IPT"/>
+                <outlet property="imgEdge" destination="tbI-eu-I0S" id="rFs-7H-D4Y"/>
+                <outlet property="imgSource" destination="Six-al-o35" id="3mj-2R-rRH"/>
+                <outlet property="lblSource" destination="cIE-FK-LuU" id="as6-4J-sH2"/>
+                <outlet property="viewBG" destination="0pH-Hs-haO" id="Ds9-Yh-847"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="170.42410714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icn_home_edge" width="145" height="145"/>
+    </resources>
+</document>

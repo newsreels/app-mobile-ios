@@ -1,0 +1,770 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "κουκκίδα";
+"BULLETS" = "ΚΟΥΚΚΙΔΕΣ";
+"Headlines is not available." = "Οι τίτλοι δεν είναι διαθέσιμοι.";
+"Check your internet Connection and try again." = "Ελέγξτε τη Σύνδεση σας στο ίντερνετ και προσπαθήστε ξανά.";
+"Choose Image" = "Επιλέξτε Εικόνα";
+"Headline" = "Τίτλος";
+"Bullet 1" = "Κουκκίδα 1";
+"Bullet 2" = "Κουκκίδα 2";
+"Bullet 3 (Optional)" = "Κουκκίδα 3 (Προαιρετικά)";
+"Bullet 4 (Optional)" = "Κουκκίδα 4 (Προαιρετικά)";
+"Bullet 5 (Optional)" = "Κουκκίδα 5 (Προαιρετικά)";
+"Bullet 6 (Optional)" = "Κουκκίδα 6 (Προαιρετικά)";
+"Enter Aticle Headline" = "Εισάγετε τον Τίτλο";
+"Enter source name" = "Εισάγετε την Πηγή";
+"Enter reference link" = "Εισάγετε την Παραπομπή";
+"Enter published date" = "Εισάγετε την Ημερομηνία Δημοσίευσης";
+"Enter Bullet 1" = "Εισάγετε την Πρώτη Κουκκίδα";
+"Enter Bullet 2" = "Εισάγετε την Δεύτερη Κουκκίδα";
+"Post article successfully" = "Το άρθρο δημοσιεύθηκε με επιτυχία";
+"Follow" = "Ακολουθήστε";
+"Unfollow" = "Σταματήστε να ακολουθείτε";
+"Block articles from" = "ΑΠΟΚΛΕΙΣΜΟΣ άρθρων από";
+"Unblock articles from" = "ΚΑΤΑΡΓΗΣΗ ΑΠΟΚΛΕΙΣΜΟΥ άρθρων από";
+"Remove article" = "Αφαιρέστε το άρθρο";
+"Save article" = "Αποθηκεύστε αυτό το άρθρο";
+"Terms & Conditions" = "Όροι & Προϋποθέσεις";
+"Privacy Policy" = "Πολιτική Απορρήτου";
+"TERMS AND CONDITIONS" = "ΌΡΟΙ & ΠΡΟΥΠΟΘΕΣΕΙΣ";
+"PRIVACY POLICY" = "ΠΟΛΙΤΙΚΗ ΑΠΟΡΡΗΤΟΥ";
+"Fuel your curiosity" = "Διαβάστε περισσότερα νέα για όλο τον κόσμο";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Διαβάστε σύντομα και ακριβή νέα σχετικά με τα αγαπημένα σας θέματα από έμπιστες πηγές από όλο τον κόσμο.";
+"Save time" = "Εξοικονομήστε χρόνο";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Διαβάστε τα νέα σε τίτλους";
+"Hands-free reading" = "Ανάγνωση χωρίς χέρια";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Δεν έχετε χρόνο για διάβασμα; Χρησιμοποιήστε τη λειτουργία ομιλίας.";
+"Write your message..." = "Γράψτε το μήνυμά σας...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "στείλτε μας ένα μήνυμα αν χρειάζεστε βοήθεια με κάτι, θα θέλαμε να σας ακούσουμε!";
+"Drop us a message" = "στείλτε μας ένα μήνυμα";
+"Enter Name." = "Εισάγετε Όνομα.";
+"Enter Email." = "Εισάγετε Email.";
+"Write your message." = "Γράψτε το μήνυμά σας.";
+"Topic unblock successfully" = "Καταργήσατε τον αποκλεισμό αυτού του θέματος";
+"Source unblock successfully" = "Καταργήσατε τον αποκλεισμό αυτής της πηγής";
+"Unblock Source" = "Κατάργηση αποκλεισμού Πηγής";
+"Cancel" = "Ακύρωση";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Στείλτε μας τα σχόλιά σας, θα θέλαμε να σας ακούσουμε! Έχετε ερωτήσεις ή προβληματισμούς νομικού περιεχομένου; Ανατρέξτε στη Βοήθεια ή Επικοινωνήστε μαζί μας.";
+"Enter your suggestion." = "Εισάγετε την προτίμησή σας.";
+"feedback sent." = "τα σχόλιά σας έχουν σταλεί με επιτυχία";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "η Γλώσσα ενημερώθηκε με επιτυχία.";
+"CONTINUE" = "ΣΥΝΕΧΕΙΑ";
+"FOLLOW 3 TO CONTINUE" = "ΑΚΟΛΟΥΘΗΣΤΕ 3 ΓΙΑ ΝΑ ΣΥΝΕΧΙΣΕΤΕ";
+"Unfollow Location" = "Σταματήστε να ακολουθείτε την Τοποθεσία";
+"Saved Articles" = "Αποθηκευμένα Άρθρα";
+"Block" = "ΑΠΟΚΛΕΙΣΜΟΣ";
+"Are you sure you want block" = "Θέλετε σίγουρα να αποκλείσετε αυτό";
+"Once blocked, you wont be able to see any Articles related to this" = "Δεν θα βλέπετε άρθρα από αυτό το κανάλι αν προβείτε σε αποκλεισμό του.";
+"Block Topic" = "Αποκλεισμός αυτού του Θέματος";
+"Suggested" = "Προτεινόμενο";
+"Related Sources not available" = "Οι Σχετικές Πηγές δεν είναι διαθέσιμες.";
+"Block Source" = "Αποκλεισμός αυτής της Πηγής";
+"News in Bullets App version" = "Τα Νέα σε Τίτλους έκδοση Εφαρμογής";
+"Next" = "Επόμενο";
+"Login" = "Σύνδεση";
+"Terms" = "Όροι";
+"By clicking Continue, you agree with our Terms." = "Επιλέξτε Συνέχεια για να αποδεχτείτε τους Όρους.";
+"in our Privacy Policy." = "στην Πολιτική Απορρήτου μας.";
+"Access token missing." = "Λείπει το διακριτικό πρόσβασης.";
+"NEXT" = "ΕΠΟΜΕΝΟ";
+"By checking this box, you agree to our " = "Τσεκάρετε το πλαίσιο για να αποδεχτείτε τους Όρους. Η επεξεργασία των δεδομένων σας θα γίνει σύμφωνα με την Πολιτική Απορρήτου μας.";
+"Terms of Service" = "Όροι Χρήσης";
+". We’ll handle your data according to our " = ". Θα διαχειριστούμε τα δεδομένα σας σύμφωνα με τη δική μας";
+"Password must be at least 8 characters." = "Ο Κωδικός Πρόσβασης πρέπει να έχει τουλάχιστον 8 χαρακτήρες.";
+"Strong" = "Ισχυρός";
+"Medium" = "Μέτριος";
+"Weak" = "Αδύναμος";
+"CREATE A NEW ACCOUNT" = "ΔΗΜΙΟΥΡΓΗΣΤΕ ΕΝΑΝ ΝΕΟ ΛΟΓΑΡΙΑΣΜΟ";
+"SIGN IN WITH EXISTING ACCOUNT" = "ΣΥΝΔΕΘΕΙΤΕ ΜΕ ΤΟΝ ΥΠΑΡΧΟΝΤΑ ΛΟΓΑΡΙΑΣΜΟ ΣΑΣ";
+"You must agree to the Terms of Services to continue" = "Θα πρέπει να αποδεχτείτε τους Όρους Χρήσης για να συνεχίσετε";
+"SIGN IN" = "Συνδεθείτε";
+"What's your password?" = "Ποιος είναι ο Κωδικός Πρόσβασής σας;";
+"SIGN UP" = "Εγγραφείτε";
+"Choose your password?" = "Επιλέξτε τον Κωδικό Πρόσβασής σας";
+"Something went wrong" = "Κάτι πήγε στραβά";
+"we will send email to" = "θα στείλουμε ένα email στο";
+"with a link to reset your password." = "με ένα σύνδεσμο για επαναφορά του κωδικού πρόσβασης.";
+"A reset password link has been sent to" = "Ένας σύνδεσμος για επαναφορά του κωδικού πρόσβασης έχει σταλεί στο";
+"Enter new email." = "Εισάγετε ένα νέο email.";
+"Enter password." = "Εισάγετε τον κωδικό πρόσβασης.";
+"New Password " = "Νέος Κωδικός Πρόσβασης";
+" (8 characters min)" = "(8 χαρακτήρες το ελάχιστο)";
+"Enter current password." = "Εισάγετε τον τρέχοντα κωδικό πρόσβασης.";
+"Enter new password." = "Εισάγετε τον νέο κωδικό πρόσβασης.";
+"Enter confirm password." = "Επιβεβαιώστε τον κωδικό πρόσβασης.";
+"password do not matched!" = "Οι κωδικοί πρόσβασης δεν ταιριάζουν μετάξυ τους!";
+"GET STARTED" = "ΞΕΚΙΝΗΣΤΕ";
+"SKIP" = "ΠΑΡΑΛΕΙΨΗ";
+"From where you would like to pick photo?" = "Από πού θέλετε να επιλέξετε φωτογραφία;";
+"Camera" = "Κάμερα";
+"Photo Library" = "Συλλογή Φωτογραφιών";
+"Kindly open settings and enable access" = "Ανοίξτε τις ρυθμίσεις και ενεργοποιήστε την πρόσβαση";
+"Open Settings" = "Ανοίξτε τις Ρυθμίσεις  ";
+"Access needed for your camera" = "Απαιτείται πρόσβαση στην κάμερα";
+"Access needed for your photo library" = "Απαιτείται πρόσβαση στην συλλογή φωτογραφιών";
+"Done" = "Ολοκληρώθηκε";
+"Pull to refresh" = "Τραβήξτε για ανανέωση";
+"Loading" = "Φόρτωση";
+"Speech not available for this article" = "Η λειτουργία ομιλίας δεν είναι διαθέσιμη για το άρθρο αυτό";
+"MANAGE LOCATION" = "ΔΙΑΧΕΙΡΙΣΤΕΙΤΕ ΤΗΝ ΤΟΠΟΘΕΣΙΑ";
+"OK" = "Εντάξει";
+"Choose your News in Bullets Edition based on locale" = "Επιλέξτε τις Ειδήσεις σας στην έκδοση Bullets με βάση τις τοπικές ρυθμίσεις";
+"Edition" = "Εκδοση";
+"EDITION / REGION" = "ΕΚΔΟΣΗ / ΠΕΡΙΟΧΗ";
+"Your Topics" = "Τα θέματα σας";
+"Your Channels" = "Τα κανάλια σας";
+"Your Places" = "Τα μέρη σας";
+"Enter email." = "Εισάγετε ηλεκτρονική διεύθυνση.";
+"Please enter a password." = "Εισαγάγετε έναν κωδικό πρόσβασης.";
+"Search articles" = "Αναζήτηση άρθρων";
+"No results" = "Χωρίς αποτέλεσμα";
+"Edition / Region" = "Έκδοση / Περιοχή";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "ΑΠΟΚΛΕΙΣΜΟΣ";
+"CANCEL" = "ΜΑΤΑΙΩΣΗ";
+"PLACES" = "ΤΟΠΟΙ";
+"LANGUAGE" = "ΓΛΩΣΣΑ";
+"Profile" = "Προφίλ";
+"SAVED ARTICLES" = "ΑΠΟΘΗΚΕΥΜΕΝΑ ΑΡΘΡΑ";
+"Topics" = "Θέματα";
+"Channels" = "Κανάλια";
+"Editions" = "Εκδόσεις";
+"No saved stories yet" = "Δεν υπάρχουν ακόμη αποθηκευμένες ιστορίες";
+"Tap the" = "Πατήστε το";
+"icon on the article" = "εικονίδιο στο άρθρο";
+"you want to read later then" = "θέλετε να διαβάσετε αργότερα τότε";
+"Select" = "Επιλέξτε";
+"to save article." = "για να αποθηκεύσετε το άρθρο.";
+"There is nothing in here" = "Δεν υπάρχει τίποτα εδώ";
+"Looks like there is nothing here but a cat." = "Φαίνεται να μην υπάρχει τίποτα εδώ, παρά μόνο μια γάτα.";
+"Would you like to go back to home?" = "Επιστροφή στην αρχική σελίδα;";
+"GO HOME" = "ΠΗΓΑΙΝΕ ΣΠΙΤΙ";
+"Search" = "Αναζήτηση";
+"Discover" = "Ανακαλύψτε";
+"Articles" = "Άρθρα";
+"Try a different keyword" = "Δοκιμάστε μια διαφορετική λέξη-κλειδί";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Λάβετε τις πιο σχετικές ειδήσεις στην περιοχή που επιλέγετε. Διαβάστε ειδησεογραφικές ειδήσεις για να σας ενημερώσουμε για τα τελευταία νέα από οπουδήποτε στον κόσμο.";
+"Language" = "Γλώσσα";
+"Results" = "Αποτελέσματα";
+"For You" = "Για σενα";
+"Top News" = "Κυριότερα Νέα";
+"Choose a style" = "Επιλέξτε ένα στυλ";
+"Pop or subtle. Day or night. Customize your interface." = "Pop ή λεπτό. Μέρα ή νύχτα. Προσαρμόστε τη διεπαφή σας.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Σχετικά με Εμάς";
+
+
+"Share" = "Μοιραστείτε";
+
+
+"ACCOUNT" = "ΛΟΓΑΡΙΑΣΜΟΣ";
+
+
+"Your Email" = "Το Email σας";
+
+
+"1sT-J6-qI0.text" = "ΑΠΟΘΗΚΕΥΜΕΝΑ ΑΡΘΡΑ";
+
+
+"2XX-rr-GLC.text" = "Επιλέξτε διαφορετικά κανάλια από εκατοντάδες πηγές";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Διαβάστε τα πιο πρόσφατα νέα και άρθρα από ολόκληρο τον κόσμο.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Ορίστε ένα χρονικό διάστημα για τη λήψη ενημερώσεων.";
+
+
+"Off" = "Off";
+
+
+
+
+
+"Bullet 2" = "Κουκκίδα 2";
+
+
+"What's your email?" = "Ποιο είναι το email σας;";
+
+
+"New Password (8 Characters Min)" = "Νέος Κωδικός Πρόσβασης (8 Χαρακτήρες το Ελάχιστο)";
+
+
+"Forgot Password?" = "Ξεχάσατε τον Κωδικό σας;";
+
+
+"Account Settings" = "Ρυθμίσεις Λογαριασμού";
+
+
+"Learn how we process your data" = "Πληροφορίες για την επεξεργασία των δεδομένων σας";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Αποκλείστε άρθρα από ---";
+
+
+"On" = "Ενεργοποίηση";
+
+
+"Auto" = "Αυτόματο";
+
+
+"Help Center" = "Κέντρο Βοήθειας";
+
+
+"Search" = "Αναζήτηση Καναλιών";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Επιλέξτε αρχείο από τη συλλογή";
+
+
+
+
+"Save article" = "Αποθήκευση άρθρου";
+
+
+"ABOUT" = "ΣΧΕΤΙΚΑ";
+
+
+"Dark" = "Σκοτεινό";
+
+
+"Legal" = "Νομικό Περιεχόμενο";
+
+
+"Go to The Guardian" = "Μετάβαση σε ---";
+
+
+"Send reset link" = "Αποστολή συνδέσμου για επαναφορά κωδικού πρόσβασης";
+
+
+
+
+
+"My Account" = "Ο Λογαριασμός μου";
+
+
+"FEEDBACK" = "ΣΧΟΛΙΑ";
+
+
+"Message" = "Μήνυμα";
+
+
+"Confirm New Password" = "Επιβεβαίωση Νέου Κωδικού Πρόσβασης";
+
+
+"for ___" = "για ___";
+
+
+"Search" = "Αναζήτηση Θεμάτων";
+
+
+"LANGUAGE" = "ΓΛΩΣΣΑ";
+
+
+"Light" = "Φωτεινό";
+
+
+"FOLLOW 3 TO CONTINUE" = "για να συνεχίσετε, επιλέξτε 3 θέματα";
+
+
+
+
+"Off" = "Απενεργοποίηση";
+
+
+"Language" = "Επιλέξτε";
+
+
+"LOG OUT" = "ΑΠΟΣΥΝΔΕΣΗ";
+
+
+"Report content" = "Αναφορά περιεχομένου";
+
+
+"What's your email?" = "Ποιο είναι το email σας;";
+
+
+"On" = "Ενεργοποίηση";
+
+
+"More like this" = "Περισσότερα νέα όπως αυτό";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Εισάγετε ηλεκτρονική διεύθυνση";
+
+
+"News in Bullets" = "Διαβάστε περισσότερα σε λιγότερο χρόνο.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Επιλέξτε τον κωδικό σας";
+
+
+"Cancel" = "Ακύρωση";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Διαβάστε τα νέα γρήγορα με αυτή την εφαρμογή. Επιλέξτε τα θέματά σας και τις πηγές. Έπειτα διαβάστε τα νέα σε σύντομους τίτλους.";
+
+
+"Push Notification" = "Ειδοποίηση";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Πώς μπορούμε να βοηθήσουμε;";
+
+
+"OJP-Wd-0d3.text" = "Πακιστάν";
+
+
+"CHANGE PASSWORD" = "ΑΛΛΑΓΗ ΚΩΔΙΚΟΥ ΠΡΟΣΒΑΣΗΣ";
+
+
+"Change Email" = "ΑΛΛΑΓΗ ΔΙΕΥΘΥΝΣΗΣ EMAIL";
+
+
+"Medium" = "Μέτριο";
+
+
+"SAVE CHANGES" = "ΑΠΟΘΗΚΕΥΣΗ ΑΛΛΑΓΩΝ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Στείλτε μας μήνυμα αν χρειαστείτε βοήθεια με κάτι, θα θέλαμε να σας ακούσουμε!";
+
+
+"P5u-N3-Tw4.text" = "Ετικέτα";
+
+
+"Cancel" = "Ακύρωση";
+
+
+"Bullet 1" = "Κουκκίδα 1";
+
+
+"TIMED NOTIFICATIONS" = "ΕΙΔΟΠΟΙΗΣΕΙΣ";
+
+
+"POST ARTICLE" = "ΔΗΜΟΣΙΕΥΣΤΕ ΕΝΑ ΑΡΘΡΟ";
+
+
+"CONTACT US" = "Επικοινωνήστε Μαζί μας";
+
+
+"EDITION / REGION" = "Μετάδοση";
+
+
+"Search" = "Αναζήτηση";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Στείλτε μας τα σχόλιά σας, θα θέλαμε να σας ακούσουμε! Έχετε ερωτήσεις ή προβληματισμούς νομικού περιεχομένου; Ανατρέξτε στη Βοήθεια ή Επικοινωνήστε μαζί μας.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Στείλτε μας ένα μήνυμα αν χρειάζεστε βοήθεια με κάτι, θα θέλαμε να σας ακούσουμε!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "ΣΥΝΕΧΕΙΑ";
+
+
+"Time To Update!" = "Ανανεώστε την εφαρμογή!";
+
+
+"NOTIFICATIONS" = "ΕΙΔΟΠΟΙΗΣΕΙΣ";
+
+
+"Search" = "Αναζήτηση";
+
+
+"By clicking Continue, you agree with our Terms." = "Επιλέξτε Συνέχεια για να αποδεχτείτε τους Όρους.";
+
+
+"HELP / CONTACT US" = "ΒΟΗΘΕΙΑ/ ΕΠΙΚΟΙΝΩΝΙΑ";
+
+
+"Reset Password" = "Επαναφορά Κωδικού Πρόσβασης";
+
+
+"SEND MESSAGE" = "ΑΠΟΣΤΟΛΗ ΜΗΝΥΜΑΤΟΣ";
+
+
+"Save article" = "Αποθήκευση άρθρου";
+
+
+"Bullet 6 (Optional)" = "Κουκκίδα 6 (Προαιρετικά)";
+
+
+"HAPTICS" = "ΤΕΧΝΟΛΟΓΙΑ ΑΦΗΣ";
+
+
+"Your message has \vbeen sent." = "Το μήνυμά σας εστάλη.";
+
+
+"LEGAL" = "ΝΟΜΙΚΟ ΠΕΡΙΕΧΟΜΕΝΟ";
+
+
+"Block List" = "Λίστα Αποκλεισμού";
+
+
+"PERSONALIZATION" = "ΕΞΑΤΟΜΙΚΕΥΣΗ";
+
+
+"in our Privacy Policy." = "στην Πολιτική Απορρήτου μας.";
+
+
+"CONTINUE" = "ΣΥΝΕΧΕΙΑ";
+
+
+"Enter Name" = "Εισάγετε το Όνομα";
+
+
+"What's your email?" = "Ποιο είναι το email σας;";
+
+
+"Hello there!" = "Γεια σας!";
+
+
+"PUSH NOTIFICATIONS" = "ΕΙΔΟΠΟΙΗΣΕΙΣ";
+
+
+"Bullet 3 (Optional)" = "Κουκκίδα 3 (Προαιρετικά)";
+
+
+"Source name" = "Όνομα Πηγής";
+
+
+"Current Password" = "Τρέχων Κωδικός Πρόσβασης";
+
+
+"COLOR THEME" = "Χρώμα Θέματος";
+
+
+"eTp-X1-g34.text" = "Ή μέσω";
+
+
+"CANCEL" = "ΑΚΥΡΩΣΗ";
+
+
+"Bullet 4 (Optional)" = "Κουκκίδα 4 (Προαιρετικά)";
+
+
+"Date published" = "Ημερομηνία δημοσίευσης";
+
+
+"Send Password Reset Link" = "Αποστολή συνδέσμου για επαναφορά κωδικού πρόσβασης";
+
+
+"CONTINUE WITH APPLE" = "Εγγραφείτε μέσω του Apple ID";
+
+
+"Off" = "Απενεργοποίηση";
+
+
+"BLOCK LIST" = "ΛΙΣΤΑ ΑΠΟΚΛΕΙΣΜΟΥ";
+
+
+"HELP" = "ΒΟΗΘΕΙΑ";
+
+
+"Reference link" = "Σύνδεσμος Αναφοράς";
+
+
+"Your Password" = "Ο Κωδικός σας";
+
+
+"SUBMIT" = "ΥΠΟΒΟΛΗ";
+
+
+"HELP" = "ΒΟΗΘΕΙΑ";
+
+
+"MY ACCOUNT" = "Ο ΛΟΓΑΡΙΑΣΜΟΣ ΜΟΥ";
+
+
+"hbD-HP-tZd.normalTitle" = "Κατάργηση Αποκλεισμού";
+
+
+"OTHERS" = "Άλλα";
+
+
+"BREAKING NEWS" = "ΕΚΤΑΚΤΕΣ ΕΙΔΗΣΕΙΣ";
+
+
+"Topics" = "Αποκλεισμένα Θέματα";
+
+
+"Message us," = "Στείλτε μας μήνυμα,";
+
+
+"Pick topics to start reading
+and saving articles" = "γλώσσα εφαρμογής";
+
+
+"Forgot Password?" = "Ξεχάσατε τον Κωδικό Πρόσβασης;";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Νέα χαρακτηριστικά προστέθηκαν. Ορισμένα ζητήματα επιλύθηκαν.";
+
+
+"Success!" = "Επιτυχία!";
+
+
+"Current Password" = "Τρέχων Κωδικός Πρόσβασης";
+
+
+"CONTENT" = "ΠΕΡΙΕΧΟΜΕΝΟ";
+
+
+"Headline" = "Τίτλος";
+
+
+"neg-UC-UpK.text" = "Επιλέξτε θέματα για να αρχίσετε την ανάγνωση και να αποθηκεύσετε άρθρα";
+
+
+"CONTINUE WITH EMAIL ID" = "Συνεχίστε Με την ταυτότητα Email σας.";
+
+
+"SAVE CHANGES" = "ΑΠΟΘΗΚΕΥΣΗ ΑΛΛΑΓΩΝ";
+
+
+"Post an Article" = "Δημοσιεύστε ένα Άρθρο";
+
+
+"Contact Us" = "Επικοινωνήστε Μαζί μας";
+
+
+"On" = "Ενεργοποίηση";
+
+
+"New Email Address" = "Νέα διεύθυνση Email";
+
+
+"Bullet 5 (Optional)" = "Κουκκίδα 5 (Προαιρετικά)";
+
+
+"Suggest an improvement" = "Προτείνετε βελτιώσεις";
+
+
+"Channels" = "Αποκλεισμένες Πηγές";
+
+
+"From:" = "Από:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ΕΞΑΤΟΜΙΚΕΥΜΕΝΕΣ ΠΡΟΤΑΣΕΙΣ";
+
+
+"I don't like this" = "Δεν μου αρέσει αυτό";
+
+
+"CONTINUE" = "ΣΥΝΕΧΕΙΑ";
+
+
+"Name" = "Όνομα";
+
+
+"Enter email" = "Εισάγετε το email";
+
+
+"HELP" = "ΒΟΗΘΕΙΑ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Ακολουθήστε 3 για να Συνεχίσετε";
+
+
+"UPDATE APP" = "Ενημέρωση Εφαρμογής";
+
+
+"Forgot Password?" = "Ξεχάσατε τον Κωδικό Πρόσβασης;";
+
+
+"Change Password" = "Αλλαγή Κωδικού Πρόσβασης";
+
+
+"Reset Password" = "Επαναφορά Κωδικού Πρόσβασης";
+
+
+
+
+
+
+
+
+"Report content" = "Αναφέρετε τους προβληματισμούς σας";
+
+
+"CHANGE EMAIL ADDRESS" = "ΑΛΛΑΓΗ ΔΙΕΥΘΥΝΣΗΣ EMAIL";
+
+
+"Follow The Guardian" = "Ακολουθήστε ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Προσθέσαμε πολλές νέες δυνατότητες και διορθώσαμε ορισμένα σφάλματα για να κάνουμε την εμπειρία σας όσο πιο ομαλή γίνεται.";
+
+
+"Edition / Region" = "Έκδοση / Περιοχή";
+
+
+"OK" = "Εντάξει";
+
+
+"NARRATOR" = "ΑΦΗΓΗΤΗΣ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Η ενημέρωση σχετικά με τις ειδήσεις που αγαπάτε δεν πρέπει να αφιερώσει πολύ χρόνο. Το News in Bullets παίρνει την τακτική ανάγνωση 5 λεπτών και το συμπυκνώνει σε εύπεπτες σφαίρες. Τώρα, μπορείτε να λάβετε τις ίδιες ειδήσεις μόνο σε ένα μικρό μέρος του χρόνου - έτσι μπορείτε να διαβάσετε περισσότερα σε λιγότερο χρόνο.";
+
+
+"READING SPEED" = "ΑΝΑΓΝΩΣΗ ΤΑΧΥΤΗΤΑ";
+
+
+
+
+
+"You haven't blocked anything yet" = "Δεν έχετε αποκλείσει τίποτα ακόμη";
+
+
+"EDITION / REGION" = "ΕΚΔΟΣΗ / ΠΕΡΙΟΧΗ";
+
+
+
+
+
+"HEADLINES ONLY" = "ΜΟΝΟ ΑΡΧΕΣ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Ρυθμίσεις ήχου";
+
+
+"AUDIO SETTINGS" = "ΡΥΘΜΙΣΕΙΣ ΗΧΟΥ";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ΠΡΟΒΟΛΕΣ ΚΑΙ ΦΥΛΛΑ";
+
+
+"CONTINUE AS GUEST" = "ΠΑΡΑΚΟΛΟΥΘΗΣΗ ΚΑΙ ΣΥΝΔΕΣΗ ΩΣ ΕΞΥΠΗΡΕΤΗΣΗ";
+
+
+"Topics" = "Θέματα";
+
+
+"Pick topics to start reading and saving articles" = "Επιλέξτε θέματα για να αρχίσετε να διαβάζετε και να αποθηκεύετε άρθρα";
+
+
+"Channels" = "Κανάλια";
+
+
+"Choose from hundreds \nof news publications" = "Επιλέξτε από εκατοντάδες δημοσιεύσεις ειδήσεων";
+
+
+"Pick topics to start reading\nand saving articles" = "Επιλέξτε θέματα για να αρχίσετε να διαβάζετε και να αποθηκεύετε άρθρα";
+
+"Pick editions to start reading\nand saving articles" = "Επιλέξτε εκδόσεις για να αρχίσετε να διαβάζετε και να αποθηκεύετε άρθρα";
+
+"Or with" = "Ή με";
+
+"CONTINUE AS GUEST" = "ΣΥΝΕΧΙΖΕΤΕ Ως ΦΙΛΟΞΕΝΟΥΜΕΝΑ";
+
+"Terms of Service" = "Όροι Παροχής Υπηρεσιών";
+
+"Choose from hundreds \nof news publications" = "Επιλέξτε από εκατοντάδες δημοσιεύσεις ειδήσεων";
+
+"Select your preferred language\nfor News in Bullets." = "Επιλέξτε την προτιμώμενη γλώσσα σας για Ειδήσεις σε κουκκίδες";
+
+"Choose a style" = "Επιλέξτε ένα στυλ";
+
+"Pop or subtle. Day or night. Customize your interface." = "Ποπ ή λεπτή. Μερα ή νυχτα. Προσαρμόστε τη διεπαφή σας.";
+
+"MINS AGO" = "λεπτά πριν";
+
+"AN HOUR AGO" = "πριν από μία ώρα";
+
+"HOURS AGO" = "ώρες πριν";
+
+"1 WEEK AGO" = "Πριν από 1 εβδομάδα";
+
+"YESTERDAY" = "Εχθές";
+
+"DAYS AGO" = "μέρες πριν";
+
+"Go to" = "μεταβείτε στο";
+
+"You have reached the start." = "Φτάσατε στην αρχή";
+
+"Source unblocked successfully" = "Καταργήθηκε ο αποκλεισμός της πηγής με επιτυχία";
+
+"Invalid email format"  = "Μη έγκυρη μορφή email";
+
+"Wrong email or password" = "Λάθος email ή κωδικός πρόσβασης";
+
+

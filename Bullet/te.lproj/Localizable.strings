@@ -1,0 +1,760 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "బుల్లెట్ పాయింట్";
+"BULLETS" = "బుల్లెట్ పాయింట్లు";
+"Headlines is not available." = "శీర్షికలు అందుబాటులో లేవు.";
+"Check your internet Connection and try again." = "మీ ఇంటర్నెట్ సరిచేసుకొని, మళ్లీ ప్రయత్నించండి.";
+"Choose Image" = "చిత్రాన్ని ఎంచుకోండి";
+"Headline" = "శీర్షిక";
+"Bullet 1" = "బుల్లెట్ 1";
+"Bullet 2" = "బుల్లెట్ 2";
+"Bullet 3 (Optional)" = "బుల్లెట్ 3 (ఏదైనా)";
+"Bullet 4 (Optional)" = "బుల్లెట్ 4 (ఏదైనా)";
+"Bullet 5 (Optional)" = "బుల్లెట్ 5 (ఏదైనా)";
+"Bullet 6 (Optional)" = "బుల్లెట్ 6 (ఏదైనా)";
+"Enter Aticle Headline" = "శీర్షికను ఎంటర్ చేయండి";
+"Enter source name" = "మూలాన్ని ఎంటర్ చేయండి";
+"Enter reference link" = "రిఫరెన్స్ ఎంటర్ చేయండి";
+"Enter published date" = "ప్రచురణ తేదీని ఎంటర్ చేయండి";
+"Enter Bullet 1" = "మొదటి భాగాన్ని ఎంటర్ చేయండి";
+"Enter Bullet 2" = "రెండో భాగాన్నినమోదు చేయండి";
+"Post article successfully" = "వ్యాసం విజయవంతంగా పోస్ట్ చేయబడింది";
+"Follow" = "అనుసరించు";
+"Unfollow" = "అనుసరించకు ";
+"Block articles from" = "వ్యాసాలను బ్లాక్ చేయండి దాని నుంచి ";
+"Unblock articles from" = "వ్యాసాలను అన్ బ్లాక్ చేయండి దాని నుంచి ";
+"Remove article" = "వ్యాసాన్ని తీసెయ్యండి ";
+"Save article" = "ఈ వ్యాసాన్ని దాయండి ";
+"Terms & Conditions" = "నియమనిబంధనలు";
+"Privacy Policy" = "గోప్యతా విధానం";
+"TERMS AND CONDITIONS" = "నియమనిబంధనలు";
+"PRIVACY POLICY" = "గోప్యతా విధానం";
+"Fuel your curiosity" = "ప్రపంచం గురించి వార్తలు ఎక్కువగా చదవండి ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "ప్రపంచవ్యాప్తంగా ఉన్న విశ్వసనీయ మూలాల నుంచి మీకు ఇష్టమైన అంశాల గురించి సంక్షిప్త మరియు ఖచ్చితమైన వార్తలను చదవండి.";
+"Save time" = "మీ సమయాన్ని ఆదా చేయండి";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "బులెట్ పాయింట్ ల్లో వార్తలను చదవండి";
+"Hands-free reading" = "తేలికపాటి చదువు";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "చదవడానికి సమయం లేదా? స్పీచ్ ఫంక్షన్ ను ఉపయోగించుకోండి.";
+"Write your message..." = "మీ సందేశాన్ని రాయండి...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ఏదైనా సాయం అవసరం అయితే మాకు సందేశం పంపండి, మీ నుంచి వినడానికి మేం ఇష్టపడతాం!";
+"Drop us a message" = "మాకు ఒక సందేశం పంపండి";
+"Enter Name." = "పేరు నమోదు చేయండి.";
+"Enter Email." = "ఇమెయిల్ నమోదు చేయండి.";
+"Write your message." = "మీ సందేశాన్ని రాయండి.";
+"Topic unblock successfully" = "మీరు ఈ టాపిక్ ని అన్ బ్లాక్ చేశారు";
+"Source unblock successfully" = "మీరు ఈ మూలాన్ని అన్ బ్లాక్ చేశారు";
+"Unblock Source" = "మూలాన్ని అన్ బ్లాక్ చేయండి";
+"Cancel" = "రద్దు";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "మాకు ఫీడ్ బ్యాక్ పంపండి, మీ నుంచి వినడానికి మేం ఇష్టపడతాం. మీకు ప్రశ్నలు లేదా చట్టపరమైన ఆందోళనలు న్నాయా? మా సహాయ పేజీని ప్రయత్నించండి లేదా మమ్మల్నేసంప్రదించండి.";
+"Enter your suggestion." = "మీ సూచనను నమోదు చేయండి.";
+"feedback sent." = "ఫీడ్ బ్యాక్ విజయవంతంగా పంపబడింది";
+"30m" = "30నిమిషాలు.";
+"1h" = "1గంట ";
+"3h" = "3h ";
+"6h" = "6h ";
+"12h" = "12h ";
+"24h" = "24h ";
+"Language updated successfully." = "భాష విజయవంతంగా అప్ డేట్ చేయబడింది.";
+"CONTINUE" = "కొనసాగించు";
+"FOLLOW 3 TO CONTINUE" = "కొనసాగడానికి 3 అనుసరించండి";
+"Unfollow Location" = "స్థానాన్ని అనుసరించకండి ";
+"Saved Articles" = "భద్రపర్చిన వ్యాసాలు";
+"Block" = "రద్దు ";
+"Are you sure you want block" = "దీనిని మీరు కచ్చితంగా బ్లాక్ చేయాలని అనుకుంటున్నారా";
+"Once blocked, you wont be able to see any Articles related to this" = "మీరు దానిని బ్లాక్ చేసినట్లయితే ఈ ఛానల్ నుంచి వ్యాసాలని మీరు చూడలేరు.";
+"Block Topic" = "ఈ విషయాన్నీ రద్దుచెయ్యి ";
+"Suggested" = "సూచించబడింది";
+"Related Sources not available" = "సంబంధిత మూలాలు అందుబాటులో లేవు";
+"Block Source" = "ఈ మూలాన్ని రద్దుచెయ్యి ";
+"News in Bullets App version" = "విభాగ వార్తల ఆప్ వెర్షన్ ";
+"Next" = "తదుపరి";
+"Login" = "లాగిన్";
+"Terms" = "నిబంధనలు";
+"By clicking Continue, you agree with our Terms." = "నిబంధనలను ఆమోదించడం కొరకు కొనసాగటాన్ని ఎంచుకోండి.";
+"in our Privacy Policy." = "మా గోప్యతా విధానంలో";
+"Access token missing." = "యాక్సెస్ టోకెన్ మిస్ అయింది.";
+"NEXT" = "తరువాత";
+"By checking this box, you agree to our " = "నిబంధనలను ఆమోదించడం కొరకు బాక్స్ మీద నొక్కండి. మా గోప్యతా విధానం ప్రకారం మీ డేటా ప్రాసెస్ చేయబడుతుంది.";
+"Terms of Service" = "సేవా నిబంధనలు";
+". We’ll handle your data according to our " = ". మా కు అనుగుణంగా మేం మీ డేటాను హ్యాండిల్ చేస్తాం.";
+"Password must be at least 8 characters." = "పాస్ వర్డ్ కనీసం 8 అక్షరాలు ఉండాలి.";
+"Strong" = "బలమైన";
+"Medium" = "ఒక మోస్తరు";
+"Weak" = "బలహీన";
+"CREATE A NEW ACCOUNT" = "కొత్త ఖాతాను సృష్టించండి";
+"SIGN IN WITH EXISTING ACCOUNT" = "ఇప్పటికే ఉన్న ఖాతాతో సైన్ ఇన్ చేయండి";
+"You must agree to the Terms of Services to continue" = "కొనసాగడం కొరకు మీరు విధిగా సేవల నిబంధనలను అంగీకరించాలి.";
+"SIGN IN" = "సైన్ ఇన్";
+"What's your password?" = "మీ పాస్ వర్డ్ ఏమిటి?";
+"SIGN UP" = "సైన్ అప్";
+"Choose your password?" = "మీ పాస్వర్డ్ని ఎంచుకోండి";
+"Something went wrong" = "ఏదో తప్పు జరిగింది";
+"we will send email to" = "ఇమెయిల్ పంపుతాం";
+"with a link to reset your password." = "మీకు పాస్ వర్డ్ రీసెట్ చేయడానికి ఒక లింక్ తో";
+"A reset password link has been sent to" = "పాస్ వర్డ్ రీసెట్ చేయడానికి ఒక లింక్ పంపబడింది";
+"Enter new email." = "కొత్త ఇమెయిల్ నమోదు చేయండి.";
+"Enter password." = "పాస్వర్డ్ నమోదు చేయండి.";
+"New Password " = "కొత్త పాస్వర్డ్ ";
+" (8 characters min)" = "(కనీసం 8 అక్షరాలూ)";
+"Enter current password." = "ప్రస్తుత పాస్వర్డ్ని నమోదు చేయండి.";
+"Enter new password." = "కొత్త పాస్వర్డ్ని నమోదు చేయండి.";
+"Enter confirm password." = "పాస్వర్డ్ని నిర్ధారించండి.";
+"password do not matched!" = "పాస్ వర్డ్ లు జతకావడం లేదు!";
+"GET STARTED" = "ప్రారంభించండి";
+"SKIP" = "దాటెయ్యండి ";
+"From where you would like to pick photo?" = "మీరు ఎక్కడ నుంచి ఫోటో ని ఎంచుకోవాలని అనుకుంటున్నారు?";
+"Camera" = "కెమెరా";
+"Photo Library" = "ఫోటో లైబ్రరీ";
+"Kindly open settings and enable access" = "దయచేసి సెట్టింగ్ లను ఓపెన్ చేయండి మరియు యాక్సెస్ ని ఎనేబుల్ చేయండి.";
+"Open Settings" = "సెట్టింగులను తెరువు";
+"Access needed for your camera" = "మీ కెమెరాకు అవసరమైన అనుమతి ";
+"Access needed for your photo library" = "మీ ఫోటో లైబ్రరీకి అవసరమైన అనుమతి ";
+"Done" = "పూర్తయింది";
+"Pull to refresh" = "రిఫ్రెష్ చేయడానికి లాగండి";
+"Loading" = "లోడ్ అవుతూవుంది ";
+"Speech not available for this article" = "ఈ వ్యాసం కొరకు స్పీచ్ లభ్యం కావడం లేదు";
+"MANAGE LOCATION" = "లొకేషన్ నిర్వహించండి";
+"OK" = "అలాగే";
+"Choose your News in Bullets Edition based on locale" = "లొకేల్ ఆధారంగా మీ వార్తలను బుల్లెట్ ఎడిషన్‌లో ఎంచుకోండి";
+"Edition" = "ఎడిషన్";
+"EDITION / REGION" = "ఎడిషన్ / రీజియన్";
+"Your Topics" = "మీ విషయాలు";
+"Your Channels" = "మీ ఛానెల్‌లు";
+"Your Places" = "మీ స్థలాలు";
+"Enter email." = "ఇమెయిల్ నమోదు చేయండి.";
+"Please enter a password." = "దయచేసి పాస్‌వర్డ్‌ను నమోదు చేయండి.";
+"Search articles" = "కథనాలను శోధించండి";
+"No results" = "ఫలితాలు లేవు";
+"Edition / Region" = "ఎడిషన్ / ప్రాంతం";
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "అడ్డు";
+"CANCEL" = "రద్దు";
+"PLACES" = "స్థలాలు";
+"LANGUAGE" = "భాష";
+"Profile" = "ప్రొఫైల్";
+"SAVED ARTICLES" = "సేవ్ చేసిన కథనాలు";
+"Topics" = "విషయాలు";
+"Channels" = "ఛానల్స్";
+"Editions" = "సంచికలు";
+"No saved stories yet" = "ఇక్కడ ఏమీ లేదు";
+"Tap the" = "నొక్కండి";
+"icon on the article" = "వ్యాసం పై గుర్తు";
+"you want to read later then" = "తరువాత చదవాలని మీరు అనుకుంటున్నారు";
+"Select" = "ఎంపిక";
+"to save article." = "వ్యాసం సేవ్ చేయటానికి.";
+"There is nothing in here" = "ఇక్కడ ఏమీ లేదు.";
+"Looks like there is nothing here but a cat." = "ఇక్కడ పిల్లి తప్ప మరేమీ కనిపించడం లేదు.";
+"Would you like to go back to home?" = "మెయిన్ పేజీకి తిరిగి వెళ్లు?";
+"GO HOME" = "ఇంటికి వెళ్ళు";
+"Search" = "వెతకండి";
+"Discover" = "కనుగొను";
+"Articles" = "వ్యాసాలు";
+"Try a different keyword" = "వేరే కీవర్డ్‌ని ప్రయత్నించండి";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "మీరు ఎంచుకున్న ప్రాంతానికి అత్యంత సంబంధిత వార్తలను పొందండి. ప్రపంచంలో ఎక్కడి నుండైనా తాజా వార్తలను మీకు తెలియజేయడానికి వార్తా కథనాలను చదవండి.";
+"Language" = "భాష";
+"Results" = "ఫలితాలు";
+"For You" = "మీ కోసం";
+"Top News" = "అగ్ర వార్తలు";
+"Choose a style" = "శైలిని ఎంచుకోండి";
+"Pop or subtle. Day or night. Customize your interface." = "పాప్ లేదా సూక్ష్మ. పగలు లేదా రాత్రి. మీ ఇంటర్‌ఫేస్‌ను అనుకూలీకరించండి.";
+
+
+
+
+"About" = "మా గురించి";
+
+
+"Share" = "పంపు ";
+
+
+"ACCOUNT" = "ఖాతా ";
+
+
+"Your Email" = "మీ ఇమెయిల్";
+
+
+"1sT-J6-qI0.text" = "సేవ్ చేయబడ్డ వ్యాసాలు  ";
+
+
+"2XX-rr-GLC.text" = "వందల మూలాల నుంచి విభిన్న ఛానల్స్ ఎంచుకోండి ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ప్రపంచవ్యాప్తంగా ఉన్న తాజా న్యూస్ ఈవెంట్ లు మరియు లక్షణాలు చదవండి. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "నోటిఫికేషన్ లు అందుకోవడం కొరకు టైమ్ గ్యాప్ సెట్ చేయండి. ";
+
+
+"Off" = "ఆఫ్";
+
+
+
+
+
+"Bullet 2" = " బుల్లెట్ 2";
+
+
+"What's your email?" = "మీ ఇమెయిల్ ఏమిటి? ";
+
+
+"New Password (8 Characters Min)" = "కొత్త పాస్ వర్డ్ (కనీసం 8 క్యారెక్టర్లు) ";
+
+
+"Forgot Password?" = "పాస్ వర్డ్ మర్చిపోయారా? ";
+
+
+"Account Settings" = "ఖాతా సెట్టింగులు ";
+
+
+"Learn how we process your data" = "మీ డేటా ప్రాసెసింగ్ పై సమాచారం  ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "సరే";
+
+
+"Block articles from The Guardian" = " --- నుండి వ్యాసాలను నిరోధించు";
+
+
+"On" = "ప్రారంభించు";
+
+
+"Auto" = "దానికదే ";
+
+
+"Help Center" = "సహాయక కేంద్రం ";
+
+
+"Search" = "ఛానల్స్ శోధించు ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "గ్యాలరీ నుంచి ఫైలును ఎంచుకోండి ";
+
+
+
+
+"Save article" = "వ్యాసాన్ని సేవ్ చేయి ";
+
+
+"ABOUT" = "గురించి";
+
+
+"Dark" = "చీకటి";
+
+
+"Legal" = "చట్టబద్ధమైన";
+
+
+"Go to The Guardian" = " వెళ్లండి --- ";
+
+
+"Send reset link" = "రీసెట్ లింక్ పంపు ";
+
+
+
+
+
+"My Account" = "నా ఖాతా ";
+
+
+"FEEDBACK" = "అభిప్రాయం";
+
+
+"Message" = "సందేశం";
+
+
+"Confirm New Password" = "కొత్త పాస్వర్డ్ని నిర్ధారించు";
+
+
+"for ___" = "కోసం";
+
+
+"Search" = "అంశాల కొరకు వెతకండి";
+
+
+"LANGUAGE" = "భాష";
+
+
+"Light" = "కాంతి";
+
+
+"FOLLOW 3 TO CONTINUE" = "కొనసాగించడానికి, 3 ఎంచుకోండి";
+
+
+
+
+"Off" = "ఆపివేయండి";
+
+
+"Language" = "ఎంపిక";
+
+
+"LOG OUT" = "లాగ్ అవుట్";
+
+
+"Report content" = "కంటెంట్ ని నివేదించండి";
+
+
+"What's your email?" = "మీ ఇమెయిల్ ఏమిటి?";
+
+
+"On" = "ప్రారంభించు";
+
+
+"More like this" = "ఈ విధంగా మరిన్ని వార్తలు";
+
+
+"Bullet App v1.1.0" = "బుల్లెట్ యాప్ v1.1.0 (విడిచిపెట్టండి)";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "ఇమెయిల్ నమోదు చేయండి";
+
+
+"News in Bullets" = "తక్కువ సమయంలో ఎక్కువ చదవండి.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "మీ పాస్వర్డ్ని ఎంచుకోండి  ";
+
+
+"Cancel" = "రద్దు";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ఈ యాప్ తో వార్తలను త్వరగా చదవండి. మీ టాపిక్ లు మరియు సోర్సులను ఎంచుకోండి. తరువాత చిన్నచిన్న బుల్లెట్ పాయింట్లతో మీ వార్తలని చదవండి.";
+
+
+"Push Notification" = "నోటిఫికేషన్";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "ఇమెయిల్";
+
+
+"How can we help you?" = "మేము మీకు ఎలా సహాయపడగలం? ";
+
+
+"OJP-Wd-0d3.text" = "పాకిస్తాన్ ";
+
+
+"CHANGE PASSWORD" = "పాస్వర్డ్ ని మార్చండి ";
+
+
+"Change Email" = "ఇమెయిల్ చిరునామా ని మార్చండి ";
+
+
+"Medium" = "ఒక మోస్తరు";
+
+
+"SAVE CHANGES" = "మార్పులను సేవ్ చెయ్యండి ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "ఏదైనా సాయం అవసరం అయితే మాకు సందేశం పంపండి, మీ నుంచి వినడానికి మేం ఇష్టపడతాం.";
+
+
+"P5u-N3-Tw4.text" = "లేబుల్";
+
+
+"Cancel" = "రద్దు";
+
+
+"Bullet 1" = "బుల్లెట్ 1";
+
+
+"TIMED NOTIFICATIONS" = "నోటిఫికేషన్లు";
+
+
+"POST ARTICLE" = "వ్యాసాన్ని పోస్ట్ చేయండి";
+
+
+"CONTACT US" = "మమ్మల్ని సంప్రదించండి";
+
+
+"EDITION / REGION" = "సంచిక";
+
+
+"Search" = "శోధించు";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "మాకు మీ ఫీడ్ బ్యాక్ పంపండి, మీ నుంచి వినడానికి మేం ఇష్టపడతాం. మీకు ప్రశ్నలు లేదా చట్టపరమైన ఆందోళనలు ఉన్నాయా? మా సహాయ పేజీని ప్రయత్నించండి లేదా మమ్మల్ని సంప్రదించండి.";
+
+
+"Google" = "గూగుల్";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ఏదైనా సాయం అవసరం అయితే మాకు సందేశం పంపండి, మీ నుంచి వినడానికి మేం ఇష్టపడతాం.";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "కొనసాగించండి ";
+
+
+"Time To Update!" = "యాప్ అప్ డేట్ చేయండి!";
+
+
+"NOTIFICATIONS" = "నోటిఫికేషన్లు";
+
+
+"Search" = "శోధించు ";
+
+
+"By clicking Continue, you agree with our Terms." = "నిబంధనలను ఆమోదించడం కొరకు కొనసాగుని ఎంచుకోండి.";
+
+
+"HELP / CONTACT US" = "సహాయం/సంప్రదించండి ";
+
+
+"Reset Password" = "పాస్స్వర్డ్ని తిరిగి మార్చండి ";
+
+
+"SEND MESSAGE" = "సందేశం పంపు";
+
+
+"Save article" = "వ్యాసాన్ని సేవ్ చేయి";
+
+
+"Bullet 6 (Optional)" = "బుల్లెట్ 6 (ఏదైనా)";
+
+
+"HAPTICS" = "హప్టిక్";
+
+
+"Your message has \vbeen sent." = "మీ సందేశం పంపబడింది.";
+
+
+"LEGAL" = "చట్టబద్ధమైన";
+
+
+"Block List" = "నిషిద్ధ జాబితా";
+
+
+"PERSONALIZATION" = "వ్యక్తిగతీకరణ";
+
+
+"in our Privacy Policy." = "మా గోప్యతా విధానంలో";
+
+
+"CONTINUE" = "కొనసాగించు     ";
+
+
+"Enter Name" = "పేరు నమోదు చేయండి";
+
+
+"What's your email?" = "మీ ఇమెయిల్ ఏమిటి?";
+
+
+"Hello there!" = "హలో!";
+
+
+"PUSH NOTIFICATIONS" = "నోటిఫికేషన్లు";
+
+
+"Bullet 3 (Optional)" = "బుల్లెట్ 3 (ఏదైనా)";
+
+
+"Source name" = "సోర్స్ పేరు";
+
+
+"Current Password" = "ప్రస్తుత పాస్వర్డ్ ";
+
+
+"COLOR THEME" = "రంగు థీమ్";
+
+
+"eTp-X1-g34.text" = "లేదా ద్వారా";
+
+
+"CANCEL" = "రద్దు";
+
+
+"Bullet 4 (Optional)" = "బుల్లెట్ 4 (ఏదైనా)";
+
+
+"Date published" = "ప్రచురించబడిన తేదీ";
+
+
+"Send Password Reset Link" = "పాస్ వర్డ్ రీసెట్ కు లింక్ పంపండి";
+
+
+"CONTINUE WITH APPLE" = "Apple ID ద్వారా సైన్ అప్ చేయండి";
+
+
+"Off" = "ఆపివేయండి";
+
+
+"BLOCK LIST" = "బ్లాక్ లిస్ట్";
+
+
+"HELP" = "సహాయం ";
+
+
+"Reference link" = "రిఫరెన్స్ లింక్";
+
+
+"Your Password" = "మీ పాస్వర్డ్ ";
+
+
+"SUBMIT" = "సమర్పించు";
+
+
+"HELP" = "సహాయం ";
+
+
+"MY ACCOUNT" = "నా ఖాతా";
+
+
+"hbD-HP-tZd.normalTitle" = "అన్ బ్లాక్";
+
+
+"OTHERS" = "ఇతరాలు";
+
+
+"BREAKING NEWS" = "తాజా వార్తలు";
+
+
+"Topics" = "నిరోధించబడిన అంశాలు";
+
+
+"Message us," = "మాకు సందేశం పంపండి,";
+
+
+"Pick topics to start reading
+and saving articles" = "అనువర్తన భాష";
+
+
+"Forgot Password?" = "పాస్ వర్డ్ మర్చిపోయారా?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "కొత్త ఫీచర్లు జోడించబడ్డాయి. కొన్ని సమస్యలు పరిష్కరించబడ్డాయి.";
+
+
+"Success!" = "విజయవంతం!";
+
+
+"Current Password" = "ప్రస్తుత పాస్వర్డ్ ";
+
+
+"CONTENT" = "కంటెంట్";
+
+
+"Headline" = "శీర్షిక";
+
+
+"neg-UC-UpK.text" = "వ్యాసాలు చదవడం మరియు సేవ్ చేయడం ప్రారంభించడం కోసం అంశాలను ఎంచుకోండి";
+
+
+"CONTINUE WITH EMAIL ID" = "మీ ఇమెయిల్ ఐడితో జోడించండి";
+
+
+"SAVE CHANGES" = "మార్పులను సేవ్ చెయ్యండి ";
+
+
+"Post an Article" = "ఒక వ్యాసాన్ని పోస్ట్ చేయండి";
+
+
+"Contact Us" = "మమ్మల్ని సంప్రదించండి";
+
+
+"On" = "ఆన్ చెయ్యండి ";
+
+
+"New Email Address" = "కొత్త ఇమెయిల్ చిరునామా";
+
+
+"Bullet 5 (Optional)" = "బుల్లెట్ 5 (ఏదైనా)";
+
+
+"Suggest an improvement" = "మెరుగుదలను సూచించండి";
+
+
+"Channels" = "నిరోధిత మూలాలు";
+
+
+"From:" = "నుండి:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "వ్యక్తిగతీకరించబడ్డ సిఫారసులు";
+
+
+"I don't like this" = "నాకు ఇది ఇష్టంలేదు";
+
+
+"CONTINUE" = "కొనసాగించు";
+
+
+"Name" = "పేరు";
+
+
+"Enter email" = "సహాయం";
+
+
+"HELP" = "కొనసాగడానికి 3అనుసరించండి";
+
+
+"FOLLOW 3 TO CONTINUE" = "కొనసాగడానికి 3అనుసరించండి ";
+
+
+"UPDATE APP" = "అప్ ని అప్డేట్ చెయ్యండి ";
+
+
+"Forgot Password?" = "పాస్ వర్డ్ మర్చిపోయారా?";
+
+
+"Change Password" = "పాస్వర్డ్ ని మార్చండి ";
+
+
+"Reset Password" = "పాస్వర్డ్ ని తిరిగి మార్చండి ";
+
+
+
+
+
+
+
+
+"Report content" = "మీ ఆందోళనను నివేదించండి";
+
+
+"CHANGE EMAIL ADDRESS" = "ఇమెయిల్ చిరునామా ను మార్చండి ";
+
+
+"Follow The Guardian" = " అనుసరించండి---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "మీ అనుభవాన్ని సాధ్యమైనంత సున్నితంగా చేయడానికి మేము చాలా క్రొత్త లక్షణాలను జోడించాము మరియు కొన్ని దోషాలను పరిష్కరించాము.";
+
+
+"Edition / Region" = "ఎడిషన్ / ప్రాంతం";
+
+
+"OK" = "అలాగే";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "మీరు ఇష్టపడే వార్తా కథనాల గురించి నవీకరించడం మీ సమయాన్ని ఎక్కువగా తీసుకోకూడదు. బుల్లెట్లలోని వార్తలు సాధారణ 5 నిమిషాల పఠనాన్ని తీసుకుంటాయి మరియు సులభంగా జీర్ణమయ్యే బుల్లెట్లుగా ఘనీభవిస్తాయి. ఇప్పుడు, మీరు ఒకే వార్తలను కొంత సమయం లోనే తీసుకోవచ్చు - కాబట్టి మీరు తక్కువ సమయంలో ఎక్కువ చదవగలరు.";
+
+
+"READING SPEED" = "స్పీడ్ చదవడం";
+
+
+
+
+
+"You haven't blocked anything yet" = "మీరు ఇంకా దేనినీ నిరోధించలేదు";
+
+
+"EDITION / REGION" = "ఎడిషన్ / రీజియన్";
+
+
+
+
+
+"HEADLINES ONLY" = "హెడ్లైన్స్ మాత్రమే";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "ఆడియో సెట్టింగ్‌లు";
+
+
+"AUDIO SETTINGS" = "ఆడియో సెట్టింగ్‌లు";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "హెడ్లైన్స్ మరియు బుల్లెట్లు";
+
+
+"CONTINUE AS GUEST" = "అతిథిగా స్కిప్ & లాగ్-ఇన్";
+
+
+"Topics" = "విషయాలు";
+
+
+"Pick topics to start reading and saving articles" = "కథనాలను చదవడం మరియు సేవ్ చేయడం ప్రారంభించడానికి అంశాలను ఎంచుకోండి";
+
+
+"Channels" = "ఛానెల్‌లు";
+
+
+"Choose from hundreds \nof news publications" = "వందలాది వార్తా ప్రచురణల నుండి ఎంచుకోండి";
+
+
+"Pick topics to start reading\nand saving articles" = "ఆర్టికల్స్ చదవడం మరియు సేవ్ చేయడం ప్రారంభించడం కొరకు టాపిక్ లను ఎంచుకోండి";
+
+"Pick editions to start reading\nand saving articles" = "ఆర్టికల్స్ చదవడం మరియు సేవ్ చేయడం ప్రారంభించడం కొరకు ఎడిషన్ లను ఎంచుకోండి";
+
+"Or with" = "లేదా తో";
+
+"CONTINUE AS GUEST" = "అతిథిగా కొనసాగించండి";
+
+"Terms of Service" = "సేవా నిబంధనలు";
+
+"Choose from hundreds \nof news publications" = "వందలాది వార్తా ప్రచురణల నుండి ఎంచుకోండి";
+
+"Select your preferred language\nfor News in Bullets." = "బులెట్స్‌లో వార్తల కోసం మీకు ఇష్టమైన భాషను ఎంచుకోండి.";
+
+"Choose a style" = "శైలిని ఎంచుకోండి";
+
+"Pop or subtle. Day or night. Customize your interface." = "పాప్ లేదా సూక్ష్మ. పగలు లేదా రాత్రి. మీ ఇంటర్‌ఫేస్‌ను అనుకూలీకరించండి.";
+
+"MINS AGO" = "నిమిషాల క్రితం";
+
+"AN HOUR AGO" = "ఒక గంట క్రితం";
+
+"HOURS AGO" = "గంటల క్రితం";
+
+"1 WEEK AGO" = "1 వారం క్రితం";
+
+"YESTERDAY" = "నిన్న";
+
+"DAYS AGO" = "రోజుల క్రితం";
+
+"Go to" = "వెళ్ళండి";
+
+"You have reached the start." = "మీరు ప్రారంభానికి చేరుకున్నారు";
+
+"Source unblocked successfully" = "మూలం విజయవంతంగా అన్‌బ్లాక్ చేయబడింది";
+
+"Invalid email format"  = "చెల్లని ఇమెయిల్ ఆకృతి";
+
+"Wrong email or password" = "తప్పు ఇమెయిల్ లేదా పాస్‌వర్డ్";
+
+

@@ -1,0 +1,769 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "כדור-נקודה";
+"BULLETS" = "נקודות מובלטות";
+"Headlines is not available." = "הכותרות אינן זמינות.";
+"Check your internet Connection and try again." = "בדוק את החיבור לאינטרנט ונסה שוב.";
+"Choose Image" = "בחר תמונה";
+"Headline" = "כּוֹתֶרֶת";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (אופציונלי)";
+"Bullet 4 (Optional)" = "Bullet 4 (אופציונלי)";
+"Bullet 5 (Optional)" = "Bullet 5 (אופציונלי)";
+"Bullet 6 (Optional)" = "Bullet 6 (אופציונלי)";
+"Enter Aticle Headline" = "הזן את הכותרת";
+"Enter source name" = "הזן את המקור";
+"Enter reference link" = "הזן את הסימוכין";
+"Enter published date" = "הזן את תאריך הפרסום";
+"Enter Bullet 1" = "הזן את הכדור הראשון";
+"Enter Bullet 2" = "הזן את הכדור השני";
+"Post article successfully" = "המאמר פורסם בהצלחה";
+"Follow" = "לעקוב אחר";
+"Unfollow" = "לעקוב";
+"Block articles from" = "לחסום את המאמרים מן";
+"Unblock articles from" = "לבטל את חסימת המאמרים";
+"Remove article" = "הסר את המאמר";
+"Save article" = "שמור את המאמר הזה";
+"Terms & Conditions" = "תנאי שימוש";
+"Privacy Policy" = "מדיניות פרטיות";
+"TERMS AND CONDITIONS" = "תנאים";
+"PRIVACY POLICY" = "מדיניות פרטיות";
+"Fuel your curiosity" = "קראו עוד חדשות על העולם";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "קראו חדשות קצרות ומדויקות על הנושאים אהוב עליך ממקורות מהימנים ברחבי העולם.";
+"Save time" = "שמור את הזמן שלך";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "קרא את החדשות-כדור נקודות";
+"Hands-free reading" = "קריאה דיבורית";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "אין זמן לקרוא? השתמש בפונקצית הדיבור.";
+"Write your message..." = "כתוב את ההודעה שלך ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "שלח לנו הודעה אם אתה זקוק לעזרה עם משהו, נשמח לשמוע ממך!";
+"Drop us a message" = "שלחו לנו הודעה";
+"Enter Name." = "הכנס שם.";
+"Enter Email." = "הזן דואר אלקטרוני.";
+"Write your message." = "כתוב את ההודעה שלך.";
+"Topic unblock successfully" = "אתה לא חסום בנושא זה";
+"Source unblock successfully" = "אתה לא חסום מקור זה";
+"Unblock Source" = "מקור שחרור";
+"Cancel" = "לְבַטֵל";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "שלח לנו משוב, נשמח לשמוע ממך! האם יש לך שאלות או חששות משפטיים? נסה בדף העזרה שלנו או צור קשר.";
+"Enter your suggestion." = "הזן את ההצעה שלך.";
+"feedback sent." = "המשוב נשלח בהצלחה";
+"30m" = "30צ";
+"1h" = "1י";
+"3h" = "3י";
+"6h" = "6י";
+"12h" = "12י";
+"24h" = "24י";
+"Language updated successfully." = "השפה היא עודכנה בהצלחה.";
+"CONTINUE" = "לְהַמשִׁיך";
+"FOLLOW 3 TO CONTINUE" = "עקוב 3 להמשיך";
+"Unfollow Location" = "לעקוב מיקום";
+"Saved Articles" = "מאמרים שמורים";
+"Block" = "לַחסוֹם";
+"Are you sure you want block" = "האם אתה בטוח שאתה רוצה לחסום זו";
+"Once blocked, you wont be able to see any Articles related to this" = "לא תראה מאמרים מערוץ זה אם אתה חוסם אותו.";
+"Block Topic" = "בלוק זה נושא";
+"Suggested" = "מוּצָע";
+"Related Sources not available" = "המקורות קשור אינם זמינים";
+"Block Source" = "חסום מקור זה";
+"News in Bullets App version" = "חדשות תבליטים גרסת האפליקציה";
+"Next" = "הַבָּא";
+"Login" = "התחברות";
+"Terms" = "תנאים";
+"By clicking Continue, you agree with our Terms." = "בחר המשך להסכים לתנאים.";
+"in our Privacy Policy." = "במדיניות הפרטיות שלנו.";
+"Access token missing." = "אסימון גישה חסר.";
+"NEXT" = "הַבָּא";
+"By checking this box, you agree to our " = "לחץ על התיבה כדי לקבל את התנאים. עיבוד הנתונים בכפוף למדיניות הפרטיות שלנו.";
+"Terms of Service" = "תנאי השירות";
+". We’ll handle your data according to our " = ". אנו מטפלים נתון בהתאם שלנו";
+"Password must be at least 8 characters." = "הסיסמה חייבת להיות לפחות 8 תווים.";
+"Strong" = "חָזָק";
+"Medium" = "בינוני";
+"Weak" = "חלש";
+"CREATE A NEW ACCOUNT" = "צור חשבון חדש";
+"SIGN IN WITH EXISTING ACCOUNT" = "חשבון קיים היכנס עם";
+"You must agree to the Terms of Services to continue" = "אתה חייב להסכים לתנאים של שירותים להמשיך";
+"SIGN IN" = "להתחבר";
+"What's your password?" = "מה הסיסמה שלך?";
+"SIGN UP" = "הירשם";
+"Choose your password?" = "בחר את הסיסמה";
+"Something went wrong" = "משהו השתבש";
+"we will send email to" = "ואנו נשלח דואל";
+"with a link to reset your password." = "עם קישור לאיפוס הסיסמה.";
+"A reset password link has been sent to" = "קישור לאיפוס הסיסמא נשלח";
+"Enter new email." = "הזן את כתובת הדואל החדש.";
+"Enter password." = "הזן את הסיסמה.";
+"New Password " = "סיסמה חדשה";
+" (8 characters min)" = "(8 תווים דקים)";
+"Enter current password." = "הכנס סיסמא נוכחית.";
+"Enter new password." = "הכנס סיסמה חדשה.";
+"Enter confirm password." = "אשר סיסמה.";
+"password do not matched!" = "סיסמאות לא תואמות!";
+"GET STARTED" = "להתחיל";
+"SKIP" = "לדלג";
+"From where you would like to pick photo?" = "מאיפה אתה רוצה לקחת תמונה?";
+"Camera" = "מַצלֵמָה";
+"Photo Library" = "ספריית תמונות";
+"Kindly open settings and enable access" = "הגדרות פתוח חביבות וגישה לאפשר";
+"Open Settings" = "פתח את הגדרות";
+"Access needed for your camera" = "גישת דרוש המצלמה שלך";
+"Access needed for your photo library" = "גישה דרוש ספריית התמונות שלך";
+"Done" = "בוצע";
+"Pull to refresh" = "משוך לרענון";
+"Loading" = "טעינה";
+"Speech not available for this article" = "דיבור אינו זמין עבור מאמר זה";
+"MANAGE LOCATION" = "ניהול מיקום";
+"OK" = "בסדר";
+"Choose your News in Bullets Edition based on locale" = "בחר את מהדורת החדשות שלך בכדורים בהתאם למיקום";
+"Edition" = "מַהֲדוּרָה";
+"EDITION / REGION" = "מהדורה / אזור";
+"Your Topics" = "הנושאים שלך";
+"Your Channels" = "הערוצים שלך";
+"Your Places" = "המקומות שלך";
+"Enter email." = "הזן דואל.";
+"Please enter a password." = "הקלד סיסמא בבקשה.";
+"Search articles" = "חפש מאמרים";
+"No results" = "אין תוצאות";
+"Edition / Region" = "מהדורה / אזור";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "לַחסוֹם";
+"CANCEL" = "לְבַטֵל;";
+"PLACES" = "מקומות";
+"LANGUAGE" = "שפה";
+"Profile" = "פּרוֹפִיל";
+"SAVED ARTICLES" = "פריטים שמורים";
+"Topics" = "נושאים";
+"Channels" = "ערוצים";
+"Editions" = "מהדורות";
+"No saved stories yet" = "עדיין אין סיפורים שמורים";
+"Tap the" = "הקש על";
+"icon on the article" = "סמל על המאמר";
+"you want to read later then" = "אתה רוצה לקרוא יאוחר";
+"Select" = "בחר";
+"to save article." = "כדי להציל את המאמר.";
+"There is nothing in here" = "אין שום דבר כאן";
+"Looks like there is nothing here but a cat." = "נראה שאין כאן אלא חתול.";
+"Would you like to go back to home?" = "האם תרצה לחזור הביתה?";
+"GO HOME" = "חזור הביתה";
+"Search" = "לחפש";
+"Discover" = "לְגַלוֹת";
+"Articles" = "מאמרים";
+"Try a different keyword" = "נסה מילת מפתח אחרת";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "קבל את החדשות הרלוונטיות ביותר לאזור שתבחר. קרא סיפורי חדשות שאצרו כדי לעדכן אותך בחדשות האחרונות מכל מקום בעולם.";
+"Language" = "שפה";
+"Results" = "תוצאות";
+"For You" = "בשבילך";
+"Top News" = "רֹאש חֲדָשׁוֹתׁ";
+"Choose a style" = "בחר סגנון";
+"Pop or subtle. Day or night. Customize your interface." = "פופ או עדין. יום או לילה. התאם אישית את הממשק שלך.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+"About" = "עלינו";
+
+
+"Share" = "לַחֲלוֹק";
+
+
+"ACCOUNT" = "חֶשְׁבּוֹן";
+
+
+"Your Email" = "האימייל שלך";
+
+
+"1sT-J6-qI0.text" = "מאמרים נשמרו";
+
+
+"2XX-rr-GLC.text" = "בחר ערוצים שונים ממאות מקורות";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "קרא את החדשות האירועים ואת התכונות החדשות ביותר מכל רחבי העולם.";
+
+
+"Set an interval in which you want to receive your news notifications." = "הגדר פער זמן לקבלת התראות.";
+
+
+"Off" = "כבוי";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "מה המייל שלך?";
+
+
+"New Password (8 Characters Min)" = "סיסמה חדשה (8 תווים לפחות)";
+
+
+"Forgot Password?" = "שכחת ססמא?";
+
+
+"Account Settings" = "הגדרות חשבון";
+
+
+"Learn how we process your data" = "מידע על עיבוד הנתונים שלך";
+
+
+"3h" = "3י";
+
+
+"Ok" = "בסדר";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "להדליק";
+
+
+"Auto" = "אוטומטי";
+
+
+"Help Center" = "מרכז עזרה";
+
+
+"Search" = "ערוצי חיפוש";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "קובץ בחר מגלריה";
+
+
+
+
+"Save article" = "מאמר שמור";
+
+
+"ABOUT" = "על אודות";
+
+
+"Dark" = "אפל";
+
+
+"Legal" = "משפטי";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "שלח קישור איפוס";
+
+
+
+
+
+"My Account" = "החשבון שלי";
+
+
+"FEEDBACK" = "מָשׁוֹב";
+
+
+"Message" = "הוֹדָעָה";
+
+
+"Confirm New Password" = "תאשר סיסמא חדשה";
+
+
+"for ___" = "___ל";
+
+
+"Search" = "חפש נושאים";
+
+
+"LANGUAGE" = "שפה";
+
+
+"Light" = "אוֹר";
+
+
+"FOLLOW 3 TO CONTINUE" = "כדי להמשיך, לבחור 3";
+
+
+
+
+"Off" = "לכבות";
+
+
+"Language" = "בחר";
+
+
+"LOG OUT" = "להתנתק";
+
+
+"Report content" = "דיווח על תוכן";
+
+
+"What's your email?" = "מה המייל שלך?";
+
+
+"On" = "להדליק";
+
+
+"More like this" = "חדשות נוספות כמו זו";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1י";
+
+
+"Enter Email Address" = "הזן כתובת דואל";
+
+
+"News in Bullets" = "קראו יותר בפחות זמן.";
+
+
+"6h" = "6י";
+
+
+"Choose your password" = "בחר את הסיסמה";
+
+
+"Cancel" = "לְבַטֵל";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "קראו את החדשות במהירות באמצעות האפליקציה הזו. בחר נושאים והמקורות שלך. ואז לקרוא את העיתונים שלכם עם נקודות כדור קצר.";
+
+
+"Push Notification" = "הוֹדָעָה";
+
+
+"12h" = "12י";
+
+
+"24h" = "24י";
+
+
+"E-mail" = "אימייל";
+
+
+"How can we help you?" = "איך אנחנו יכולים לעזור?";
+
+
+"OJP-Wd-0d3.text" = "פקיסטן";
+
+
+"CHANGE PASSWORD" = "שנה סיסמא";
+
+
+"Change Email" = "שנה כתובת דואר אלקטרוני";
+
+
+"Medium" = "בינוני";
+
+
+"SAVE CHANGES" = "שמור שינויים";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "שלח לנו הודעה אם אתה זקוק לעזרה עם משהו, נשמח לשמוע ממך!";
+
+
+"P5u-N3-Tw4.text" = "תווית";
+
+
+"Cancel" = "לְבַטֵל";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "התראות";
+
+
+"POST ARTICLE" = "סעיף לפרסם";
+
+
+"CONTACT US" = "צור קשר";
+
+
+"EDITION / REGION" = "מַהֲדוּרָה";
+
+
+"Search" = "לחפש";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "שלח לנו הודעה אם אתה זקוק לעזרה עם משהו, נשמח לשמוע ממך!";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "שלח לנו הודעה אם אתה זקוק לעזרה במשהו, נשמח לשמוע ממך!";
+
+
+"30m" = "30צ";
+
+
+"CONTINUE" = "לְהַמשִׁיך";
+
+
+"Time To Update!" = "עדכון אפליקציית!";
+
+
+"NOTIFICATIONS" = "התראות";
+
+
+"Search" = "לחפש";
+
+
+"By clicking Continue, you agree with our Terms." = "בחר המשך להסכים לתנאים.";
+
+
+"HELP / CONTACT US" = "עזרה / קשר";
+
+
+"Reset Password" = "לאפס את הסיסמה";
+
+
+"SEND MESSAGE" = "לשלוח הודעה";
+
+
+"Save article" = "מאמר שמור";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (אופציונלי)";
+
+
+"HAPTICS" = "haptics";
+
+
+"Your message has \vbeen sent." = "הודעתך נשלחה.";
+
+
+"LEGAL" = "משפטי";
+
+
+"Block List" = "רשימת חסומים";
+
+
+"PERSONALIZATION" = "התאמה אישית";
+
+
+"in our Privacy Policy." = "במדיניות הפרטיות שלנו.";
+
+
+"CONTINUE" = "לְהַמשִׁיך";
+
+
+"Enter Name" = "הכנס שם";
+
+
+"What's your email?" = "מה המייל שלך?";
+
+
+"Hello there!" = "שלום!";
+
+
+"PUSH NOTIFICATIONS" = "התראות";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (אופציונלי)";
+
+
+"Source name" = "שם המקור";
+
+
+"Current Password" = "סיסמה נוכחית";
+
+
+"COLOR THEME" = "עיצוב צבעים";
+
+
+"eTp-X1-g34.text" = "או דרך";
+
+
+"CANCEL" = "לְבַטֵל";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (אופציונלי)";
+
+
+"Date published" = "תאריך פרסום";
+
+
+"Send Password Reset Link" = "קישור שלח איפוס סיסמה";
+
+
+"CONTINUE WITH APPLE" = "הירשמו באמצעות Apple ID";
+
+
+"Off" = "לכבות";
+
+
+"BLOCK LIST" = "רשימת חסומים";
+
+
+"HELP" = "עֶזרָה";
+
+
+"Reference link" = "קישור הפניה";
+
+
+"Your Password" = "הסיסמה שלך";
+
+
+"SUBMIT" = "שלח";
+
+
+"HELP" = "עֶזרָה";
+
+
+"MY ACCOUNT" = "החשבון שלי";
+
+
+"hbD-HP-tZd.normalTitle" = "שחרור";
+
+
+"OTHERS" = "אחרים";
+
+
+"BREAKING NEWS" = "חדשות מרעישות";
+
+
+"Topics" = "נושאי חסימה";
+
+
+"Message us," = "לנו מסר,";
+
+
+"Pick topics to start reading
+and saving articles" = "שפת אפליקציה";
+
+
+"Forgot Password?" = "שכחת ססמא?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "תכונות חדשות מתווספות. כמה בעיות נפתרות.";
+
+
+"Success!" = "הַצלָחָה!";
+
+
+"Current Password" = "סיסמה נוכחית";
+
+
+"CONTENT" = "תוֹכֶן";
+
+
+"Headline" = "כּוֹתֶרֶת";
+
+
+"neg-UC-UpK.text" = "בחר נושאים להתחיל לקרוא ושמירת מאמרים";
+
+
+"CONTINUE WITH EMAIL ID" = "המשך עם מזהה האימייל שלך";
+
+
+"SAVE CHANGES" = "שמור שינויים";
+
+
+"Post an Article" = "לכתוב מאמר";
+
+
+"Contact Us" = "צור קשר";
+
+
+"On" = "להדליק";
+
+
+"New Email Address" = "כתובת דואר אלקטרוני חדשה";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (אופציונלי)";
+
+
+"Suggest an improvement" = "הצע שיפור";
+
+
+"Channels" = "מקורות חסימה";
+
+
+"From:" = "מ:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "המלצות אישיות";
+
+
+"I don't like this" = "אני לא אוהב את זה";
+
+
+"CONTINUE" = "לְהַמשִׁיך";
+
+
+"Name" = "שֵׁם";
+
+
+"Enter email" = "הזן את כתובת הדואל";
+
+
+"HELP" = "עֶזרָה";
+
+
+"FOLLOW 3 TO CONTINUE" = "עקוב 3 כדי המשך";
+
+
+"UPDATE APP" = "עדכון של אפליקציית";
+
+
+"Forgot Password?" = "שכחת ססמא?";
+
+
+"Change Password" = "שנה סיסמא";
+
+
+"Reset Password" = "לאפס את הסיסמה";
+
+
+
+
+
+
+
+
+"Report content" = "דווח על הדאגה שלך";
+
+
+"CHANGE EMAIL ADDRESS" = "שנה כתובת דואר אלקטרוני";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "הוספנו המון תכונות חדשות ותיקנו כמה באגים כדי להפוך את החוויה שלך לחלקה ככל האפשר.";
+
+
+"Edition / Region" = "מהדורה / אזור";
+
+
+"OK" = "בסדר";
+
+
+"NARRATOR" = "מספר";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "התעדכנות אודות סיפורי החדשות שאתה אוהב לא צריכה לקחת יותר מדי מזמנך. חדשות בכדורים לוקח את הקריאה הרגילה של 5 דקות ומעבה אותה לכדורים הניתנים לעיכול בקלות. עכשיו, אתה יכול לקחת את אותן חדשות רק בחלק קטן מהזמן - כך שתוכל לקרוא יותר בפחות זמן.";
+
+
+"READING SPEED" = "מהירות קריאה";
+
+
+
+
+
+"You haven't blocked anything yet" = "עדיין לא חסמת דבר";
+
+
+"EDITION / REGION" = "מהדורה / אזור";
+
+
+
+
+
+"HEADLINES ONLY" = "כותרות בלבד";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "הגדרות אודיו";
+
+
+"AUDIO SETTINGS" = "הגדרות אודיו";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "כותרות ובולטים";
+
+
+"CONTINUE AS GUEST" = "דילוג והתחברות כאורחים";
+
+
+"Topics" = "נושאים";
+
+
+"Pick topics to start reading and saving articles" = "בחר נושאים להתחיל לקרוא ולשמור מאמרים";
+
+
+"Channels" = "ערוצים";
+
+
+"Choose from hundreds \nof news publications" = "בחר מתוך מאות פרסומי חדשות";
+
+
+"Pick topics to start reading\nand saving articles" = "בחר נושאים להתחיל לקרוא ולשמור מאמרים";
+
+"Pick editions to start reading\nand saving articles" = "בחר מהדורות כדי להתחיל לקרוא ולשמור מאמרים";
+
+"Or with" = "או עם";
+
+"CONTINUE AS GUEST" = "המשך כאורח";
+
+"Terms of Service" = "תנאי השירות";
+
+"Choose from hundreds \nof news publications" = "בחר מתוך מאות פרסומי חדשות";
+
+"Select your preferred language\nfor News in Bullets." = "בחר את השפה המועדפת עליך עבור חדשות בכדורים.";
+
+"Choose a style" = "בחר סגנון";
+
+"Pop or subtle. Day or night. Customize your interface." = "פופ או עדין. יום או לילה. התאם אישית את הממשק שלך.";
+
+"MINS AGO" = "לפני דקות";
+
+"AN HOUR AGO" = "לפני שעה";
+
+"HOURS AGO" = "לפני שעות";
+
+"1 WEEK AGO" = "לפני שבוע 1";
+
+"YESTERDAY" = "אתמול";
+
+"DAYS AGO" = "לפני מספר ימים";
+
+"Go to" = "לך ל";
+
+"You have reached the start." = "הגעת להתחלה";
+
+"Source unblocked successfully" = "המקור בוטל בהצלחה";
+
+"Invalid email format"  = "פורמט דואל לא חוקי";
+
+"Wrong email or password" = "אימייל או סיסמה שגויים";
+
+
+

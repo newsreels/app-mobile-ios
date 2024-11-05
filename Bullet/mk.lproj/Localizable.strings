@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "куршум точка";
+"BULLETS" = "ПОД ТОЧКИ";
+"Headlines is not available." = "Насловите не се достапни.";
+"Check your internet Connection and try again." = "Проверете ја вашата интернет конекција и обидете се повторно.";
+"Choose Image" = "Избери слика";
+"Headline" = "наслов";
+"Bullet 1" = "куршум 1";
+"Bullet 2" = "куршум 2";
+"Bullet 3 (Optional)" = "Куршум 3 (опционално)";
+"Bullet 4 (Optional)" = "Куршум 4 (опционално)";
+"Bullet 5 (Optional)" = "Куршум 5 (опционално)";
+"Bullet 6 (Optional)" = "Куршум 6 (опционално)";
+"Enter Aticle Headline" = "Внесете наслов";
+"Enter source name" = "Внесете Изворот";
+"Enter reference link" = "Внесете Референтната";
+"Enter published date" = "Внесете го датумот на објавувањето на";
+"Enter Bullet 1" = "Внесете Првиот куршум";
+"Enter Bullet 2" = "Внесете го вториот куршум";
+"Post article successfully" = "Веста е успешно испратени";
+"Follow" = "Следете";
+"Unfollow" = "unfollow";
+"Block articles from" = "Блокирање на статии од";
+"Unblock articles from" = "Деблокирање на статии од";
+"Remove article" = "Отстрани член";
+"Save article" = "Зачувај оваа статија";
+"Terms & Conditions" = "Услови на употреба";
+"Privacy Policy" = "Политика за приватност";
+"TERMS AND CONDITIONS" = "ПРАВИЛА И УСЛОВИ";
+"PRIVACY POLICY" = "ПОЛИТИКА ЗА ПРИВАТНОСТ";
+"Fuel your curiosity" = "Прочитај повеќе вести за светот";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Прочитај кратки и точни информации за вашите омилени теми од доверливи извори во целиот свет.";
+"Save time" = "Зачувај вашето време";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Читање на вести на куршум поени";
+"Hands-free reading" = "Hands-free читање";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Нема време за читање? Користете ја функцијата за говор.";
+"Write your message..." = "Напишете ја Вашата порака ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "пратете ни порака ако ви треба помош со нешто, би сакал да се слушне од вас!";
+"Drop us a message" = "ни испрати порака";
+"Enter Name." = "Внесете име.";
+"Enter Email." = "Внесете е-мејл.";
+"Write your message." = "Напишете ја пораката.";
+"Topic unblock successfully" = "Вие Одблокиран оваа тема";
+"Source unblock successfully" = "Вие Одблокиран овој извор";
+"Unblock Source" = "Деблокирај Извор";
+"Cancel" = "Откажи";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Испратете ни повратни информации, ние би сакале да се слушне од тебе! Дали имате прашања или правни проблеми? Обиди се со нашите страница Помош или контактирајте со нас.";
+"Enter your suggestion." = "Внесете ја вашата сугестија.";
+"feedback sent." = "на повратни информации е успешно испратена";
+"30m" = "30 милиони";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Јазикот е успешно ажурирана.";
+"CONTINUE" = "ПРОДОЛЖИ";
+"FOLLOW 3 TO CONTINUE" = "Следете 3 за да продолжиш";
+"Unfollow Location" = "unfollow Локација";
+"Saved Articles" = "зачувани членови";
+"Block" = "БЛОК";
+"Are you sure you want block" = "Дали сте сигурни дека сакате да го блокира овој";
+"Once blocked, you wont be able to see any Articles related to this" = "Вие нема да видите статии од овој канал, ако го блокира.";
+"Block Topic" = "Блокирај го ова на тема";
+"Suggested" = "Препорачан";
+"Related Sources not available" = "Поврзани извори не се достапни";
+"Block Source" = "Блокирај го ова Извор";
+"News in Bullets App version" = "Вести на куршуми верзија на апликација";
+"Next" = "Следна";
+"Login" = "Логирај Се";
+"Terms" = "Услови";
+"By clicking Continue, you agree with our Terms." = "Одберете Continue за да ги прифати условите.";
+"in our Privacy Policy." = "во нашата Политика на приватност.";
+"Access token missing." = "Пристап знак недостасува.";
+"NEXT" = "Следна";
+"By checking this box, you agree to our " = "Кликнете на прозорецот за да ги прифати условите. Вашите лични податоци се обработуваат во согласност со нашата Политика на приватност.";
+"Terms of Service" = "Услови за Користење";
+". We’ll handle your data according to our " = ". Ние ќе се справи со вашите податоци во согласност со нашите";
+"Password must be at least 8 characters." = "Лозинката мора да содржи најмалку 8 карактери.";
+"Strong" = "силна";
+"Medium" = "средни";
+"Weak" = "слаба";
+"CREATE A NEW ACCOUNT" = "Креирај нова сметка";
+"SIGN IN WITH EXISTING ACCOUNT" = "Пријавете се со постоечка сметка";
+"You must agree to the Terms of Services to continue" = "Мора да се согласувате со Условите на услуги да продолжи";
+"SIGN IN" = "Најави се";
+"What's your password?" = "Што е вашата лозинка?";
+"SIGN UP" = "Регистрирај се";
+"Choose your password?" = "Изберете ја вашата лозинка";
+"Something went wrong" = "Нешто тргна наопаку";
+"we will send email to" = "ние ќе испрати e-mail на";
+"with a link to reset your password." = "со линк за да ја ресетирате вашата лозинка.";
+"A reset password link has been sent to" = "А линк до ресетирање на лозинката е испратена до";
+"Enter new email." = "Внесете нов е-мејл.";
+"Enter password." = "Внесете ја лозинката.";
+"New Password " = "нова лозинка";
+" (8 characters min)" = "(8 знаци мин)";
+"Enter current password." = "Внесете ја тековната лозинка.";
+"Enter new password." = "Внесете нова лозинка.";
+"Enter confirm password." = "Потврди ја лозинката.";
+"password do not matched!" = "Лозинките не се совпаѓаат!";
+"GET STARTED" = "ПОЧНИ";
+"SKIP" = "Прескокнете";
+"From where you would like to pick photo?" = "Од каде што би сакале да ги слика?";
+"Camera" = "Камера";
+"Photo Library" = "Фото библиотека";
+"Kindly open settings and enable access" = "Ве молиме отвори поставки и да им овозможи пристап";
+"Open Settings" = "Отворете ги поставките";
+"Access needed for your camera" = "потребниот пристап за вашиот фото апарат";
+"Access needed for your photo library" = "потребни за пристап за вашиот фото библиотека";
+"Done" = "Направено";
+"Pull to refresh" = "Повлечете за да се освежи";
+"Loading" = "Вчитување";
+"Speech not available for this article" = "Говор не се достапни за овој напис";
+"MANAGE LOCATION" = "УПРАВУВАЊЕ ЛОКАЦИЈА";
+"OK" = "добро";
+"Choose your News in Bullets Edition based on locale" = "Изберете ги вашите вести во едицијата куршуми засновани на локално ниво";
+"Edition" = "Издание";
+"EDITION / REGION" = "ИЗДАВАЕ / РЕГИОН";
+"Your Topics" = "Вашите теми";
+"Your Channels" = "Вашите канали";
+"Your Places" = "Вашите места";
+"Enter email." = "Внесете е-пошта.";
+"Please enter a password." = "Внесете лозинка.";
+"Search articles" = "Пребарувајте статии";
+"No results" = "Нема резултати";
+"Edition / Region" = "Издание / регион";
+
+
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "0JC-Sb-Ouu"; */
+"0JC-Sb-Ouu.text" = "Режим на прикажување";
+
+
+"Search" = "Барај";
+
+
+"Select" = "изберете ( ";
+
+
+"6H8-dI-k9P.text" = "Управување со локации";
+
+
+"6KH-YP-5Lt.text" = "наратор";
+
+
+" ) icon on the article" = " ), Икона на членот";
+
+
+"BLOCK" = "БЛОК";
+
+
+"you want to read later then" = "сакате да ја прочитате подоцна од";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "7oo-cf-l7Y"; */
+"7oo-cf-l7Y.text" = "Брзина на читање";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "88L-ip-pZw"; */
+"88L-ip-pZw.text" = "Брзина на читање";
+
+/* Class = "UILabel"; text = "There is nothing in here \nDo you want to go back to home page?"; ObjectID = "9hT-gC-mbD"; */
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Не постои ништо тука \nДали сакате да се вратите на почетната страница?";
+
+
+"BpH-F1-i0z.normalTitle" = "локалните";
+
+
+" ) to save article." = " ) За да ја зачувате статијата.";
+
+/* Class = "UILabel"; text = "to continue, choose 3"; ObjectID = "FB0-YN-HZg"; */
+"FB0-YN-HZg.text" = "да продолжи, изберете 3";
+
+/* Class = "UILabel"; text = "Headlines and\nBullet points"; ObjectID = "H5Z-xJ-dWD"; */
+"H5Z-xJ-dWD.text" = "наслови и\nПод точки";
+
+
+"Search" = "Барај";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "Зголемена VIEW";
+
+
+"Jpx-nY-Is1.normalTitle" = "канали";
+
+
+"JqN-io-P1u.normalTitle" = "+ Додај во локации";
+
+/* Class = "UILabel"; text = "What is your Email address?"; ObjectID = "KRg-gX-n95"; */
+"What's your email?" = "Која е вашата E-mail адреса?";
+
+
+"Lw1-Md-nse.text" = "ЛИСТА VIEW";
+
+
+"LyT-pT-g53.text" = "МЕЃУНАРОДНИ";
+
+
+"N6C-6i-Z2s.text" = "МЕЃУНАРОДНИ";
+
+/* Class = "UILabel"; text = "Suggestions"; ObjectID = "Nru-uU-CsC"; */
+"Nru-uU-CsC.text" = "предлози";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Теми";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Персонализација на";
+
+
+"Topics" = "Теми";
+
+/* Class = "UILabel"; text = "HEADLINES AND\nBULLET POINTS"; ObjectID = "WXY-po-W1B"; */
+"WXY-po-W1B.text" = "Насловите и\nПОД ТОЧКИ";
+
+
+"ans-Zy-T2Y.placeholder" = "Пребарај за локации";
+
+
+"bgE-Jc-u8H.text" = "Персонализација на";
+
+
+
+
+
+"Tap the ( " = "Допрете на ( ";
+
+
+"Places" = "локација";
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "d1l-HK-OrG"; */
+"d1l-HK-OrG.text" = "Режим на прикажување";
+
+
+
+
+
+"Language" = "Јазик";
+
+
+"e9g-Wr-suO.text" = "НАСЛОВИ САМО";
+
+/* Class = "UILabel"; text = "go back to main page"; ObjectID = "eda-67-Bla"; */
+"GO HOME" = "се врати на главната страница";
+
+
+"eh1-Oo-lEn.text" = "Зголемена VIEW";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ЛИСТА VIEW";
+
+
+"j2i-MT-VkA.text" = "Обиди се со различни клучни зборови";
+
+
+"Top News" = "Топ вести";
+
+
+"jmO-aF-nJ9.text" = "Само наслови";
+
+
+"There is nothing in here" = "Не постои ништо тука";
+
+
+"ma1-9p-bSa.text" = "Не се пронајдени резултати";
+
+
+"mce-jc-cKH.text" = "наратор";
+
+
+"Channels" = "канали";
+
+
+"Discover" = "Откријте";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "Откажи";
+
+
+"Discover" = "Откријте";
+
+/* Class = "UILabel"; text = "There is nothing in here"; ObjectID = "vnX-zd-Bgt"; */
+"No saved stories yet" = "Не постои ништо тука";
+
+/* Class = "UILabel"; text = "Read news based on location"; ObjectID = "wDG-kF-Hl8"; */
+"wDG-kF-Hl8.text" = "Прочитајте Вести врз основа на локација";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ЛОКАЛИЗАЦИЈА";
+
+
+"xfF-RB-mWL.text" = "ЛОКАЛИЗАЦИЈА";
+
+
+"Search" = "Пребарување";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Добијте ги најрелевантните вести за регионот што го избравте. Прочитајте новини раскажани за да ве информираат за најновите вести од каде било во светот.";
+
+
+"Search articles" = "Пребарувајте статии";
+
+
+"6H8-dI-k9P.text" = "Управувајте со места";
+
+
+
+
+
+"Profile" = "Профил";
+
+
+"Editions" = "Изданија";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Места";
+
+
+
+
+
+"Search" = "Пребарување";
+
+
+
+
+
+
+
+
+"Search" = "Пребарување";
+
+
+"LANGUAGE" = "ЈАЗИК";
+
+
+"Search" = "Пребарување";
+
+
+"No results" = "Не се пронајдени резултати";
+
+
+"Channels" = "Канали";
+
+
+"Places" = "Места";
+
+
+"Places" = "Места";
+
+
+"e9F-hd-Ifm.text" = "ИЗДАВАЕ / РЕГИОН";
+
+
+
+
+
+
+
+
+"PLACES" = "МЕСТА";
+
+
+"SAVED ARTICLES" = "СПАСЕНИ АРТИЦИ";
+
+
+"Articles" = "Написи";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ПРОДОЛУВАЈТЕ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ИЗДАВАЕ / РЕГИОН";
+
+
+"Try a different keyword" = "Пробајте друг клучен збор";
+
+
+"For You" = "За тебе";
+
+
+"Results" = "Резултати";
+
+
+
+"About" = "за нас";
+
+
+"Share" = "Сподели";
+
+
+"ACCOUNT" = "СМЕТКА";
+
+
+"Your Email" = "Твојата електронска пошта";
+
+
+"1sT-J6-qI0.text" = "зачувани ЧЛЕНОВИТЕ";
+
+
+"2XX-rr-GLC.text" = "Изберете различни канали од стотици извори";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Прочитајте ги најновите настани, вести и карактеристики од целиот свет.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Поставување на времето јазот за да добивате известувања.";
+
+
+"Off" = "Исклучено";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "Која е твојата е-пошта?";
+
+
+"New Password (8 Characters Min)" = "Нова лозинка (8 Ликови Минимална)";
+
+
+"Forgot Password?" = "Ја заборави лозинката?";
+
+
+"Account Settings" = "Преференци на профилот";
+
+
+"Learn how we process your data" = "Информации за обработка на вашите податоци";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Добро";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "Вклучи ја, уклучи ја, ме пали";
+
+
+"Auto" = "Автоматски";
+
+
+"Help Center" = "Центар за помош";
+
+
+"Search" = "Барај канали";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Изберете датотека од галеријата";
+
+
+
+
+"Save article" = "Зачувај член";
+
+
+"ABOUT" = "ЗА";
+
+
+"Dark" = "темно";
+
+
+"Legal" = "правни";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "Испрати линк за ресетирање";
+
+
+
+
+
+"My Account" = "Мојот акаунт";
+
+
+"FEEDBACK" = "ПОВРАТНИ ИНФОРМАЦИИ";
+
+
+"Message" = "порака";
+
+
+"Confirm New Password" = "Потврди Нова лозинка";
+
+
+"for ___" = "за ___";
+
+
+"Search" = "Пребарај за Теми";
+
+
+"LANGUAGE" = "ЈАЗИК";
+
+
+"Light" = "светлина";
+
+
+"FOLLOW 3 TO CONTINUE" = "да продолжи, изберете 3";
+
+
+
+
+"Off" = "Исклучи";
+
+
+"Language" = "Избери";
+
+
+"LOG OUT" = "Одјавете се";
+
+
+"Report content" = "содржина на извештајот";
+
+
+"What's your email?" = "Која е твојата е-пошта?";
+
+
+"On" = "Вклучи ја, уклучи ја, ме пали";
+
+
+"More like this" = "Повеќе вести како оваа";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Внесете е-мејл адреса";
+
+
+"News in Bullets" = "Прочитајте повеќе за помалку време.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Изберете ја вашата лозинка";
+
+
+"Cancel" = "Откажи";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Читање на вести брзо со оваа апликација. Изберете го вашиот теми и извори. Потоа ги чита вашиот вести со кратки bullet поени.";
+
+
+"Push Notification" = "известување";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Е-пошта";
+
+
+"How can we help you?" = "Како можеме да ви помогнеме?";
+
+
+"OJP-Wd-0d3.text" = "Пакистан";
+
+
+"CHANGE PASSWORD" = "ПРОМЕНИ ГО ПАСВОРДОТ";
+
+
+"Change Email" = "ПРОМЕНИ ЈА Е-МАИЛ АДРЕСАТА";
+
+
+"Medium" = "средни";
+
+
+"SAVE CHANGES" = "Зачувај ги промените";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Пратете ни порака ако ви треба помош со нешто, би сакал да се слушне од вас!";
+
+
+"P5u-N3-Tw4.text" = "етикета";
+
+
+"Cancel" = "Откажи";
+
+
+"Bullet 1" = "куршум 1";
+
+
+"TIMED NOTIFICATIONS" = "ИЗВЕСТУВАЊА";
+
+
+"POST ARTICLE" = "POST статија";
+
+
+"CONTACT US" = "Контактирајте не";
+
+
+"EDITION / REGION" = "Издание";
+
+
+"Search" = "Барај";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Испратете ни повратни информации, ние би сакале да се слушне од тебе! Дали имате прашања или правни проблеми? Обиди се со нашите страница Помош или контактирајте со нас.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Пратете ни порака ако ви треба помош со нешто, би сакал да се слушне од вас!";
+
+
+"30m" = "30 милиони";
+
+
+"CONTINUE" = "ПРОДОЛЖИ";
+
+
+"Time To Update!" = "Ажурирање на стан!";
+
+
+"NOTIFICATIONS" = "ИЗВЕСТУВАЊА";
+
+
+"Search" = "Барај";
+
+
+"By clicking Continue, you agree with our Terms." = "Одберете Continue за да ги прифати условите.";
+
+
+"HELP / CONTACT US" = "Помош / Контакт";
+
+
+"Reset Password" = "Ресетирање на Лозинка";
+
+
+"SEND MESSAGE" = "ИСПРАТИ ПОРАКА";
+
+
+"Save article" = "Зачувај член";
+
+
+"Bullet 6 (Optional)" = "Куршум 6 (опционално)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Твојата порака не е пратена.";
+
+
+"LEGAL" = "ПРАВНИ";
+
+
+"Block List" = "Забрани Листа";
+
+
+"PERSONALIZATION" = "Персонализација";
+
+
+"in our Privacy Policy." = "во нашата Политика на приватност.";
+
+
+"CONTINUE" = "ПРОДОЛЖИ";
+
+
+"Enter Name" = "внесете име";
+
+
+"What's your email?" = "Која е твојата е-пошта?";
+
+
+"Hello there!" = "Здраво!";
+
+
+"PUSH NOTIFICATIONS" = "ИЗВЕСТУВАЊА";
+
+
+"Bullet 3 (Optional)" = "Куршум 3 (опционално)";
+
+
+"Source name" = "Името на изворот";
+
+
+"Current Password" = "Сегашна лозинка";
+
+
+"COLOR THEME" = "боја тема";
+
+
+"eTp-X1-g34.text" = "или преку";
+
+
+"CANCEL" = "Откажи";
+
+
+"Bullet 4 (Optional)" = "Куршум 4 (опционално)";
+
+
+"Date published" = "датум на објавување";
+
+
+"Send Password Reset Link" = "Испрати линк за ресетирање на лозинката";
+
+
+"CONTINUE WITH APPLE" = "Пријавете се преку Apple ID";
+
+
+"Off" = "Исклучи";
+
+
+"BLOCK LIST" = "БЛОК ЛИСТА";
+
+
+"HELP" = "ПОМОШ";
+
+
+"Reference link" = "врска референца";
+
+
+"Your Password" = "Вашата лозинка";
+
+
+"SUBMIT" = "ПОДНЕСУВАЊЕ";
+
+
+"HELP" = "ПОМОШ";
+
+
+"MY ACCOUNT" = "МОЈОТ АКАУНТ";
+
+
+"hbD-HP-tZd.normalTitle" = "Деблокирај";
+
+
+"OTHERS" = "други, пак,";
+
+
+"BREAKING NEWS" = "УДАРНИ ВЕСТИ";
+
+
+"Topics" = "блокирани Теми";
+
+
+"Message us," = "Порака нас,";
+
+
+"Pick topics to start reading
+and saving articles" = "стан јазик";
+
+
+"Forgot Password?" = "Ја заборави лозинката?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "се додаваат нови функции. Некои прашања се фиксни.";
+
+
+"Success!" = "Успех!";
+
+
+"Current Password" = "Сегашна лозинка";
+
+
+"CONTENT" = "СОДРЖИНА";
+
+
+"Headline" = "наслов";
+
+
+"neg-UC-UpK.text" = "Изберете теми да почнам со читање и заштеда на статии";
+
+
+"CONTINUE WITH EMAIL ID" = "Продолжи со вашата e-mail проект";
+
+
+"SAVE CHANGES" = "Зачувај ги промените";
+
+
+"Post an Article" = "Постави член";
+
+
+"Contact Us" = "Контактирајте не";
+
+
+"On" = "Вклучи ја, уклучи ја, ме пали";
+
+
+"New Email Address" = "нова Емаил адреса";
+
+
+"Bullet 5 (Optional)" = "Куршум 5 (опционално)";
+
+
+"Suggest an improvement" = "Укажуваат на подобрување";
+
+
+"Channels" = "блокирани извори";
+
+
+"From:" = "од:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "персонализирани препораки";
+
+
+"I don't like this" = "Не ми се допаѓа ова";
+
+
+"CONTINUE" = "ПРОДОЛЖИ";
+
+
+"Name" = "име";
+
+
+"Enter email" = "внесете е-пошта";
+
+
+"HELP" = "ПОМОШ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Следете 3 за да продолжиш";
+
+
+"UPDATE APP" = "ажурирање App";
+
+
+"Forgot Password?" = "Ја заборави лозинката?";
+
+
+"Change Password" = "Промени го пасвордот";
+
+
+"Reset Password" = "Ресетирање на Лозинка";
+
+
+
+
+
+
+
+
+"Report content" = "Ја пријавите вашата загриженост";
+
+
+"CHANGE EMAIL ADDRESS" = "ПРОМЕНИ ЈА Е-МАИЛ АДРЕСАТА";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Додадовме многу нови функции и поправивме некои грешки за да го направиме вашето искуство што е можно мазно.";
+
+
+"Edition / Region" = "Издание / регион";
+
+
+"OK" = "добро";
+
+
+"NARRATOR" = "НАРАТОР";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ажурирањето за вестите што ги сакате не треба да ви одзема премногу време. Вестите во куршумите ги чита редовните 5 минути и ги кондензираат во куршуми лесно сварливи. Сега, можете да ги прифатите истите вести за само мал дел од времето - за да можете да прочитате повеќе за помалку време.";
+
+
+"READING SPEED" = "ЧИТАЕ БРЗИНА";
+
+
+
+
+
+"You haven't blocked anything yet" = "Сè уште не блокиравте ништо";
+
+
+"EDITION / REGION" = "ИЗДАВАЕ / РЕГИОН";
+
+
+
+
+
+"HEADLINES ONLY" = "САМО ОБЛАСТИ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Аудио поставки";
+
+
+"AUDIO SETTINGS" = "АУДИО ПОСТАВУВАА";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "НАСЛОВИ И ЛИКОВИ";
+
+
+"CONTINUE AS GUEST" = "Прескокнете и пријавете се како гостин";
+
+
+"Topics" = "Теми";
+
+
+"Pick topics to start reading and saving articles" = "Изберете теми за да започнете да читате и зачувувате статии";
+
+
+"Channels" = "Канали";
+
+
+"Choose from hundreds \nof news publications" = "Изберете од стотици публикации за вести";
+
+
+"Pick topics to start reading\nand saving articles" = "Изберете теми за да започнете да читате и зачувувате статии";
+
+"Pick editions to start reading\nand saving articles" = "Изберете изданија за да започнете да читате и зачувувате статии";
+
+"Or with" = "Или со";
+
+"CONTINUE AS GUEST" = "Продолжете како гостин";
+
+"Terms of Service" = "Услови на користење";
+
+"Choose from hundreds \nof news publications" = "Изберете од стотици публикации за вести";
+
+"Select your preferred language\nfor News in Bullets." = "Изберете го преферираниот јазик за Вести во куршуми.";
+
+"Choose a style" = "Изберете стил";
+
+"Pop or subtle. Day or night. Customize your interface." = "Поп или суптилен. Ден или ноќ. Прилагодете го вашиот интерфејс.";
+
+"MINS AGO" = "пред неколку минути";
+
+"AN HOUR AGO" = "пред еден час";
+
+"HOURS AGO" = "пред неколку часа";
+
+"1 WEEK AGO" = "пред 1 недела";
+
+"YESTERDAY" = "Вчера";
+
+"DAYS AGO" = "денови предходно";
+
+"Go to" = "Оди до";
+
+"You have reached the start." = "Го достигнавте почетокот";
+
+"Source unblocked successfully" = "Изворот е успешно деблокиран";
+
+"Invalid email format"  = "Невалиден формат на е-пошта";
+
+"Wrong email or password" = "Погрешна е-пошта или лозинка";
+
+

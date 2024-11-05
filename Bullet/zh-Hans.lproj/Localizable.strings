@@ -1,0 +1,694 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "关键字";
+"BULLETS" = "关键字";
+"Headlines is not available." = "标题不存在";
+"Check your internet Connection and try again." = "检查网络连接并重试";
+"Choose Image" = "选择图片";
+"Headline" = "标题";
+"Bullet 1" = "关键字1";
+"Bullet 2" = "关键字2";
+"Bullet 3 (Optional)" = "关键字3（可选）";
+"Bullet 4 (Optional)" = "关键字4（可选）";
+"Bullet 5 (Optional)" = "关键字5（可选）";
+"Bullet 6 (Optional)" = "关键字6（可选）";
+"Enter Aticle Headline" = "输入标题";
+"Enter source name" = "输入来源";
+"Enter reference link" = "输入参考资料";
+"Enter published date" = "输入发布日期";
+"Enter Bullet 1" = "输入第一个关键字";
+"Enter Bullet 2" = "输入第二个关键字";
+"Post article successfully" = "文章已成功发布";
+"Follow" = "关注";
+"Unfollow" = "取消关注";
+"Block articles from" = "屏蔽来自  的文章";
+"Unblock articles from" = "解除屏蔽来自  的文章";
+"Remove article" = "删除文章";
+"Save article" = "收藏文章";
+"Terms & Conditions" = "条款和条件";
+"Privacy Policy" = "隐私政策";
+"TERMS AND CONDITIONS" = "条款和条件";
+"PRIVACY POLICY" = "隐私政策";
+"Fuel your curiosity" = "阅读更多全球新闻";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "通过世界各地可信的新闻来源，阅读有关你最爱话题的简短准确的新闻。";
+"Save time" = "节约时间";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "用关键字看新闻";
+"Hands-free reading" = "免提阅读";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "没有时间阅读？使用语音功能";
+"Write your message..." = "输入消息…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "如果你需要帮助，请给我们留言，我们希望听到你的意见!";
+"Drop us a message" = "给我们发消息";
+"Enter Name." = "输入姓名";
+"Enter Email." = "输入电子邮箱";
+"Write your message." = "输入消息…";
+"Topic unblock successfully" = "你屏蔽了该主题";
+"Source unblock successfully" = "你解除屏蔽该主题";
+"Unblock Source" = "解除屏蔽来源";
+"Cancel" = "撤销";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "请给我们反馈，我们很乐意听到你的回信！您有什么问题或法律上的顾虑吗?请查看帮助页面或联系我们。";
+"Enter your suggestion." = "输入你的建议";
+"feedback sent." = "反馈已发送成功";
+"30m" = "30分";
+"1h" = "1小时";
+"3h" = "3小时";
+"6h" = "6小时";
+"12h" = "12小时";
+"24h" = "24小时";
+"Language updated successfully." = "语言更新成功";
+"CONTINUE" = "继续";
+"FOLLOW 3 TO CONTINUE" = "按3继续";
+"Unfollow Location" = "取消关注位置";
+"Saved Articles" = "已收藏文章";
+"Block" = "屏蔽";
+"Are you sure you want block" = "你确定要屏蔽这个";
+"Once blocked, you wont be able to see any Articles related to this" = "屏蔽后，你将看不到来自该频道的文章。";
+"Block Topic" = "屏蔽该主题";
+"Suggested" = "建议";
+"Related Sources not available" = "没有相关的资料来源";
+"Block Source" = "屏蔽来源";
+"News in Bullets App version" = "关键字版本新闻";
+"Next" = "下一步";
+"Login" = "登录";
+"Terms" = "条款";
+"By clicking Continue, you agree with our Terms." = "选择继续接受条款";
+"in our Privacy Policy." = "在我们的隐私政策中";
+"Access token missing." = "访问通证丢失。";
+"NEXT" = "下一步";
+"By checking this box, you agree to our " = "单击该方框以接受条款。您的资料将根据我们的隐私政策处理。";
+"Terms of Service" = "服务条款";
+". We’ll handle your data according to our " = "。我们将根据我们的要求处理您的数据";
+"Password must be at least 8 characters." = "密码必须至少为8个字符。";
+"Strong" = "强";
+"Medium" = "中";
+"Weak" = "弱";
+"CREATE A NEW ACCOUNT" = "创建一个新账户";
+"SIGN IN WITH EXISTING ACCOUNT" = "用已有账户登录";
+"You must agree to the Terms of Services to continue" = "您必须同意服务条款才能继续使用";
+"SIGN IN" = "注册";
+"What's your password?" = "输入密码";
+"SIGN UP" = "登录";
+"Choose your password?" = "选择密码";
+"Something went wrong" = "出错了";
+"we will send email to" = "我们将发送邮箱至";
+"with a link to reset your password." = "带有重置密码的链接。";
+"A reset password link has been sent to" = "重设密码的链接已发送到";
+"Enter new email." = "输入新的电子邮箱";
+"Enter password." = "输入密码";
+"New Password " = "新密码";
+" (8 characters min)" = "（至少8个字符）";
+"Enter current password." = "输入当前密码";
+"Enter new password." = "输入新密码";
+"Enter confirm password." = "确认密码";
+"password do not matched!" = "密码不匹配！";
+"GET STARTED" = "开始";
+"SKIP" = "跳过";
+"From where you would like to pick photo?" = "你想从哪里选取照片?";
+"Camera" = "相机";
+"Photo Library" = "图库";
+"Kindly open settings and enable access" = "请打开设置并启用访问权限";
+"Open Settings" = "打开设置";
+"Access needed for your camera" = "访问相机权限";
+"Access needed for your photo library" = "访问图库权限";
+"Done" = "完成";
+"Pull to refresh" = "下拉更新";
+"Loading" = "下载";
+"Speech not available for this article" = "本文中没有语音";
+"MANAGE LOCATION" = "管理位置";
+"OK" = "行";
+"Choose your News in Bullets Edition based on locale" = "根据区域设置选择Bullet Edition中的新闻";
+"Edition" = "版";
+"EDITION / REGION" = "版本/地区";
+"Your Topics" = "您的主题";
+"Your Channels" = "您的频道";
+"Your Places" = "您的位置";
+"Enter email." = "输入电子邮件。";
+"Please enter a password." = "请输入密码。";
+"Search articles" = "搜索文章";
+"No results" = "没结果";
+"Edition / Region" = "版本/地区";
+
+
+"VIEW MODE" = "显示模式";
+
+"Search" = "搜索";
+
+"Select ( " = "选择（";
+
+"Manage Locations" = "管理位置";
+"NARRATOR" = "旁白";
+
+" ) icon on the article" = "）文章上的图标";
+
+"BLOCK" = "屏蔽";
+
+"you want to read later then" = "你想稍后阅读";
+
+"READING SPEED" = "阅读速度";
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "看起来这里除了猫什么都没有。\n返回首页?";
+
+"Local" = "本地";
+
+" ) to save article." = " ）收藏文章";
+
+"FOLLOW 3 TO CONTINUE" = "继续，选择3";
+
+"HEADLINES AND\nBULLETS" = "标题和\n关键字";
+
+"Search" = "搜索";
+
+"---" = "---";
+
+"EXTENDED VIEW" = "扩展视图";
+
+"Channels" = "频道";
+
+"+ Add Locations" = "+ 添加到位置";
+
+"What's your email?" = "输入邮箱地址";
+
+"LIST VIEW" = "列表视图";
+
+"INTERNATIONAL" = "国际";
+
+"Suggested" = "建议";
+
+"---" = "---";
+
+"Topics" = "主题";
+
+"---" = "---";
+
+"Customize" = "定制";
+
+"Topics" = "主题";
+
+"HEADLINES AND\nBULLETS" = "标题和\n关键字";
+
+"Search Locations" = "搜索位置";
+
+"Customize" = "定制";
+
+"---" = "---";
+
+"Tap the ( " = "点击（ ";
+
+"Location" = "位置";
+
+"VIEW MODE" = "显示方式";
+
+"---" = "---";
+
+"Language" = "语言";
+
+"HEADLINES ONLY" = "仅标题";
+
+"GO HOME" = "返回主页";
+
+"EXTENDED VIEW" = "扩展视图";
+
+"1x" = "1x";
+
+"LIST VIEW" = "列表视图";
+
+"Try a different keyword" = "尝试其他关键字";
+
+"Top News" = "头条新闻";
+
+"HEADLINES ONLY" = "仅显示标题";
+
+"There is nothing in here" = "这里什么也没有。";
+
+"No results found" = "未找到结果";
+
+"NARRATOR" = "旁白";
+
+"Channels" = "频道";
+
+"Discover" = "发现";
+
+"1x" = "1x";
+
+"CANCEL" = "取消";
+
+"Discover" = "发现";
+
+"No saved stories yet" = "这里什么也没有。";
+
+"Read news stories based on\nlocations you choose" = "根据位置看新闻";
+
+"---" = "---";
+
+"LOCALIZATION" = "定位";
+
+"LOCALIZATION" = "定位";
+
+"Search" = "搜索";
+
+"Topics" = "话题";
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "获取与您选择的地区最相关的新闻。阅读精选的新闻故事，使您可以随时了解世界各地的最新新闻。";
+
+"Search articles" = "搜索文章";
+
+"Manage Places" = "管理地点";
+
+"---" = "---";
+
+"Profile" = "个人资料";
+
+"Editions" = "版本";
+
+"--" = "--";
+
+"Places" = "地方";
+
+"---" = "---";
+
+"Search" = "搜索";
+
+"---" = "---";
+
+"--" = "--";
+
+"Search" = "搜索";
+
+"LANGUAGE" = "语言";
+
+"Search" = "搜索";
+
+"No results found" = "未找到结果";
+
+"Channels" = "频道";
+
+"Places" = "地方";
+
+"Places" = "地方";
+
+"EDITION / REGION" = "版本/地区";
+
+"--" = "--";
+
+"---" = "---";
+
+"PLACES" = "地点";
+
+"SAVED ARTICLES" = "保存的文章";
+
+"Articles" = "文章";
+
+"---" = "---";
+
+"CONTINUE" = "继续";
+
+"---" = "---";
+
+"EDITION / REGION" = "版本/地区";
+
+"Try a different keyword" = "尝试其他关键字";
+
+"For You" = "为你";
+
+"Results" = "结果";
+
+"About" = "关于我们";
+
+"Share" = "分享";
+
+"ACCOUNT" = "账户";
+
+"Your Email" = "邮箱";
+
+"SAVED ARTICLES" = "已收藏文章";
+
+"Choose channels from hundreds of different sources" = "从海量资源中选择频道";
+
+"Your daily dose of balanced news stories that matter. Get the latest news events and features from all over the world." = "阅读世界各地的最新事件和热点新闻。";
+
+"Set an interval in which you want to receive your news notifications." = "设置接收通知的时间间隔。";
+
+"Off" = "关闭";
+
+"___" = "___";
+
+"Bullet 2" = "关键词2";
+
+"What's your email?" = "请填写邮箱地址";
+
+"New Password (8 Characters Min)" = "新密码（至少8个字母）";
+
+"Forgot Password?" = "忘记密码？";
+
+"Account Settings" = "账户设置";
+
+"Learn how we process your data" = "数据处理信息";
+
+"3h" = "3小时";
+
+"Ok" = "好";
+
+"Block articles from The Guardian" = "屏蔽来自---的文章";
+
+"On" = "打开";
+
+"On" = "自动";
+
+"Help Center" = "帮助中心";
+
+"Search Sources" = "搜索频道";
+
+"Facebook" = "Facebook";
+
+"Select file from gallery" = "从图库中选择文件";
+
+"---" = "---";
+
+"Save article" = "收藏文章";
+
+"ABOUT" = "关于我们";
+
+"Dark" = "暗";
+
+"Legal" = "法律条款";
+
+"Go to The Guardian" = "转到";
+
+"Send reset link" = "发送重置链接";
+
+"---" = "---";
+
+"My Account"= "我的账户";
+
+"FEEDBACK" = "反馈";
+
+"Message" = "消息";
+
+"Confirm New Password" = "确认新密码";
+
+"for ___" = "至 ___";
+
+"Search Topics" = "搜索主题";
+
+"LANGUAGE" = "语言";
+
+"Light" = "明";
+
+"FOLLOW 3 TO CONTINUE" = "继续，选择3";
+
+"---" = "---";
+
+"Off" = "关闭";
+
+"Choose" = "选择";
+
+"LOG OUT" = "注销";
+
+"Report content" = "报道内容";
+
+"What's your email?" = "输入电子邮箱";
+
+"On" = "打开";
+
+"More like this" = "更多类似新闻";
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+"1 сағат (1 сағ)" = "1小时";
+
+"Enter Email Address" = "输入邮箱地址";
+
+"Read more in less time." = "省时，多读";
+
+"6 сағат (6 сағ)" = "6小时";
+
+"Choose your password" = "输入密码";
+
+"Cancel" = "撤销";
+
+"Great news stories are everywhere. We capture the gist of news in short snappy bullets and connect you with your favorite publishers. Bullets is the first of its kind AI-generated news aggregator app that delivers meaningful news stories in a handful of words. Every word works hard for its living and enables you to find the news you are interested in, from hundreds and thousands of news sources. You can also get news from your regional publishers at your fingertips." = "用本应用快速看新闻。选择主题和资源，然后通过关键字阅读新闻。";
+
+"Push Notification" = "通知";
+
+"12h" = "12小时";
+
+"24 сағат (24 сағ)" = "24小时";
+
+"E-mail" = "邮箱";
+
+"How can we help you?" = "我们怎么帮助你？";
+
+"Pakistan" = "巴基斯坦";
+
+"CHANGE PASSWORD" = "修改密码";
+
+"Change Email" = "修改邮箱地址";
+
+"Medium" = "中度";
+
+"SAVE CHANGES" = "保存修改";
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "如果你需要帮助，请给我们留言，我们希望听到你的意见!";
+
+"Label" = "标签";
+
+"Cancel" = "撤销";
+
+"Bullet 1" = "关键词1";
+
+"TIMED NOTIFICATIONS" = "通知";
+
+"POST ARTICLE" = "发布一篇文章";
+
+"CONTACT US" = "联系我们";
+
+"EDITION" = "版本";
+
+"Search" = "搜索";
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "请给我们反馈，我们很乐意听到你的回信！您有什么问题或法律上的顾虑吗?请查看帮助页面或联系我们。";
+
+"Google" = "谷歌";
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "如果你需要帮助，请给我们留言，我们希望听到你的意见!";
+
+"30m" = "30分钟";
+
+"CONTINUE" = "继续";
+
+"Time To Update!" = "更新应用！";
+
+"NOTIFICATIONS" = "通知";
+
+"Search" = "搜索";
+
+"By clicking Continue, you agree with our Terms." = "选择继续接受条款";
+
+"HELP / CONTACT US" = "帮助/联系";
+
+"Reset Password" = "重置密码";
+
+"SEND MESSAGE" = "发送信息";
+
+"Save article" = "保存文章";
+
+"Bullet 6 (Optional)" = "关键字6（可选）";
+
+"HAPTICS" = "触屏";
+
+"Your message has \vbeen sent." = "信息发送成功";
+
+"LEGAL" = "法律";
+
+"Block List" = "屏蔽列表";
+
+"PERSONALIZATION" = "个性化";
+
+"in our Privacy Policy." = "在我们的隐私政策中。";
+
+"CONTINUE" = "继续";
+
+"Enter Name" = "输入名字";
+
+"What's your email?" = "输入邮箱地址";
+
+"Hello there!" = "你好！";
+
+"PUSH NOTIFICATIONS" = "通知";
+
+"Bullet 3 (Optional)" = "关键字3（可选）";
+
+"Source name" = "来源名称    来源名称";
+
+"Current Password" = "当前密码";
+
+"COLOR THEME" = "主题色";
+
+"Or with" = "或通过";
+
+"CANCEL" = "撤销";
+
+"Bullet 4 (Optional)" = "关键字4（可选）";
+
+"Date published"= "发布日期    发布日期";
+
+"Send Password Reset Link" = "发送链接到密码重置";
+
+"Sign up with Apple"= "通过Apple ID注册";
+
+"Off" = "关闭";
+
+"BLOCK LIST" = "屏蔽列表";
+
+"HELP" = "帮助";
+
+"Reference link" = "参考链接";
+
+"Your Password" = "密码";
+
+"SUBMIT" = "提交";
+
+"HELP" = "帮助";
+
+"MY ACCOUNT" = "我的账户";
+
+"Unblock" = "解除屏蔽";
+
+"OTHERS" = "其他";
+
+"BREAKING NEWS" = "热点新闻";
+
+"Blocked Topics" = "屏蔽主题";
+
+"Message us,"  = "留言";
+
+"app language"= "应用语言";
+
+"Forgot Password?" = "忘记密码？";
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "添加了新属性，解决了一些问题。";
+
+"Success!" = "成功！";
+
+"Current Password" = "当前密码";
+
+"CONTENT" = "内容";
+
+"Headline" = "主题";
+
+"Pick topics to start reading and saving articles" = "选择开始阅读和保存文章的主题";
+
+"CONTINUE WITH EMAIL ID" = "继续使用你的电子邮件ID";
+
+"SAVE CHANGES" = "保存更改";
+
+"Post an Article" = "发布一篇文章";
+
+"Contact Us" = "联系我们";
+
+"On" = "打开";
+
+"New Email Address" = "新邮件地址";
+
+"Bullet 5 (Optional)" = "关键字5（可选）";
+
+"Suggest an improvement" = "建议改进";
+
+"Blocked Sources" = "已屏蔽资源";
+
+"From:" = "来自：";
+
+"PERSONALIZED RECOMMENDATIONS" = "个性化推荐";
+
+"I don't like this" = "我不喜欢";
+
+"CONTINUE" = "继续";
+
+"Name" = "名字";
+
+"Enter email" = "输入邮箱地址";
+
+"HELP" = "帮助";
+
+"FOLLOW 3 TO CONTINUE" = "按3继续";
+
+"UPDATE APP" = "更新App";
+
+"Forgot Password?" = "忘记密码？";
+
+"Change Password" = "更改密码";
+
+"Reset Password" = "重置密码";
+
+"---" = "---";
+
+"---" = "---";
+
+"Report content" = "举报您的担忧";
+
+"CHANGE EMAIL ADDRESS" = "更改邮箱地址";
+
+"Follow The Guardian" = "按---";
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "我们添加了许多新功能，并修复了一些错误，以使您的体验尽可能流畅。";
+
+"Edition / Region" = "版本/地区";
+
+"OK"= "行";
+
+"NARRATOR" = "旁白";
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "不断更新您喜欢的新闻故事，不会花费太多时间。 《子弹中的新闻》需要定期阅读5分钟，然后将其压缩成易于消化的子弹。现在，您只需一小部分时间就可以接收相同的新闻-因此您可以在更少的时间内阅读更多内容。";
+
+"READING SPEED" = "阅读速度";
+
+"---" = "---";
+
+"You haven't blocked anything yet" = "您尚未屏蔽任何内容";
+
+"EDITION / REGION" = "版本/地区";
+
+"---" = "---";
+
+"HEADLINES ONLY" = "仅标题";
+
+" 1.0" = " 1.0";
+
+"---" = "---";
+
+"Audio Settings" = "音讯设定";
+
+"---" = "---";
+
+"---" = "---";
+
+"---" = "---";
+
+"AUDIO SETTINGS" = "音频设置";
+
+"---" = "---";
+
+"---" = "---";
+
+"1x" = "1倍";
+
+"HEADLINES AND\nBULLETS" = "标题和项目符号";
+
+"SKIP & LOG-IN AS GUEST" = "跳过并以访客身份登录";
+
+"Topics" = "主题";
+
+"Pick topics to start reading and saving articles" = "选择主题以开始阅读和保存文章";
+
+"Channels" = "频道数";
+
+"Choose from hundreds \nof news publications" = "从数百种新闻出版物中选择";
+
+
+"CONTINUE AS GUEST" = "以访客继续";

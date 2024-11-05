@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ಬುಲೆಟ್ - ಪಾಯಿಂಟ್";
+"BULLETS" = "ಬುಲೆಟ್ ಪಾಯಿಂಟ್";
+"Headlines is not available." = "ಮುಖ್ಯಾಂಶಗಳು ಲಭ್ಯವಿಲ್ಲ.";
+"Check your internet Connection and try again." = "ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.";
+"Choose Image" = "ಚಿತ್ರವನ್ನು ಆರಿಸಿ";
+"Headline" = "ಹೆಡ್‌ಲೈನ್";
+"Bullet 1" = "ಬುಲೆಟ್ 1";
+"Bullet 2" = "ಬುಲೆಟ್ 2";
+"Bullet 3 (Optional)" = "ಬುಲೆಟ್ 3 (ಐಚ್ಛಿಕ)";
+"Bullet 4 (Optional)" = "ಬುಲೆಟ್ 4 (ಐಚ್ಛಿಕ)";
+"Bullet 5 (Optional)" = "ಬುಲೆಟ್ 5  (ಐಚ್ಛಿಕ)";
+"Bullet 6 (Optional)" = "ಬುಲೆಟ್ 6  (ಐಚ್ಛಿಕ)";
+"Enter Aticle Headline" = "ಹೆಡ್‌ಲೈನ್ ನಮೂದಿಸಿ";
+"Enter source name" = "ಮೂಲವನ್ನು ನಮೂದಿಸಿ";
+"Enter reference link" = "ಉಲ್ಲೇಖವನ್ನು ನಮೂದಿಸಿ";
+"Enter published date" = "ಪ್ರಕಟಿಸುವ ದಿನಾಂಕವನ್ನು ನಮೂದಿಸಿ";
+"Enter Bullet 1" = "ಮೊದಲ ಬುಲೆಟ್ ಅನ್ನು ನಮೂದಿಸಿ";
+"Enter Bullet 2" = "ಎರಡನೇ ಬುಲೆಟ್ ಅನ್ನು ನಮೂದಿಸಿ";
+"Post article successfully" = "ಲೇಖನವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೋಸ್ಟ್ ಮಾಡಲಾಗಿದೆ";
+"Follow" = "ಅನುಸರಿಸಿ";
+"Unfollow" = "ಅನುಸರಿಸಬೇಡಿ";
+"Block articles from" = "ಲೇಖನಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ";
+"Unblock articles from" = "ಲೇಖನಗಳನ್ನು ಅನ್ಬ್ಲಾಕ್ ಮಾಡಿ";
+"Remove article" = "ಲೇಖನವನ್ನು ತೆಗೆದುಹಾಕಿ";
+"Save article" = "ಈ ಲೇಖನವನ್ನು ಉಳಿಸಿ";
+"Terms & Conditions" = "ನಿಯಮಗಳು & ಷರತ್ತುಗಳು";
+"Privacy Policy" = "ಗೌಪ್ಯತಾ ನೀತಿ";
+"TERMS AND CONDITIONS" = "ನಿಯಮಗಳು & ಷರತ್ತುಗಳು";
+"PRIVACY POLICY" = "ಗೌಪ್ಯತಾ ನೀತಿ";
+"Fuel your curiosity" = "ಪ್ರಪಂಚದ ಬಗ್ಗೆ ಹೆಚ್ಚಿನ ಸುದ್ದಿಗಳನ್ನು ಓದಿ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "ಪ್ರಪಂಚದಾದ್ಯಂತದ ವಿಶ್ವಾಸಾರ್ಹ ಮೂಲಗಳಿಂದ ನಿಮ್ಮ ನೆಚ್ಚಿನ ವಿಷಯಗಳ ಬಗ್ಗೆ ಸಣ್ಣ ಮತ್ತು ನಿಖರವಾದ ಸುದ್ದಿಗಳನ್ನು ಓದಿ.";
+"Save time" = "ನಿಮ್ಮ ಸಮಯವನ್ನು ಉಳಿಸಿ";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "ಸುದ್ದಿಗಳನ್ನು ಬುಲೆಟ್ ಪಾಯಿಂಟ್‌ಗಳಲ್ಲಿ ಓದಿ";
+"Hands-free reading" = "ಹ್ಯಾಂಡ್ಸ್-ಫ್ರೀ ಓದುವಿಕೆ";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "ಓದಲು ಸಮಯವಿಲ್ಲವೇ? ಧ್ವನಿ ಸುದ್ದಿ ಕಾರ್ಯವನ್ನು ಬಳಸಿ.";
+"Write your message..." = "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಬರೆಯಿರಿ ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ನಿಮಗೆ ಏನಾದರೂ ಸಹಾಯ ಬೇಕಾದರೆ ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ, ನಿಮ್ಮಿಂದ ಕೇಳಲು  ನಾವು ಇಷ್ಟಪಡುತ್ತೇವೆ!";
+"Drop us a message" = "ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ";
+"Enter Name." = "ಹೆಸರನ್ನು ನಮೂದಿಸಿ.";
+"Enter Email." = "ಇಮೇಲ್ ನಮೂದಿಸಿ.";
+"Write your message." = "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಬರೆಯಿರಿ.";
+"Topic unblock successfully" = "ನೀವು ಈ ವಿಷಯವನ್ನು ಅನಿರ್ಬಂಧಿಸಿದ್ದೀರಿ";
+"Source unblock successfully" = "ನೀವು ಈ ಮೂಲವನ್ನು ಅನಿರ್ಬಂಧಿಸಿದ್ದೀರಿ";
+"Unblock Source" = "ಮೂಲವನ್ನು ಅನಿರ್ಬಂಧಿಸಿ";
+"Cancel" = "ರದ್ದುಮಾಡಿ";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಕಳುಹಿಸಿ, ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾವು ಇಷ್ಟಪಡುತ್ತೇವೆ! ನೀವು ಪ್ರಶ್ನೆಗಳನ್ನು ಅಥವಾ ಕಾನೂನು ಕಾಳಜಿಗಳನ್ನು ಹೊಂದಿದ್ದೀರಾ?  ನಮ್ಮ ಸಹಾಯ ಪುಟವನ್ನು ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.";
+"Enter your suggestion." = "ನಿಮ್ಮ ಸಲಹೆಯನ್ನು ನಮೂದಿಸಿ.";
+"feedback sent." = "ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ";
+"30m" = "30 ಮಿ";
+"1h" = "1 ಗಂ";
+"3h" = "3 ಗಂ";
+"6h" = "6 ಗಂ";
+"12h" = "12 ಗಂ";
+"24h" = "24 ಗಂ";
+"Language updated successfully." = "ಭಾಷೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ.";
+"CONTINUE" = "ಮುಂದುವರಿಸಿ";
+"FOLLOW 3 TO CONTINUE" = "ಮುಂದುವರಿಸಲು 3 ಅನ್ನು ಅನುಸರಿಸಿ";
+"Unfollow Location" = "ಸ್ಥಳವನ್ನು ಅನುಸರಿಸಬೇಡಿ";
+"Saved Articles" = "ಲೇಖನಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ";
+"Block" = "ಬ್ಲಾಕ್";
+"Are you sure you want block" = "ಇದನ್ನು ನಿರ್ಬಂಧಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?";
+"Once blocked, you wont be able to see any Articles related to this" = "ನೀವು ಅದನ್ನು ನಿರ್ಬಂಧಿಸಿದರೆ ಈ ಚಾನಲ್‌ನಿಂದ ಲೇಖನಗಳನ್ನು ನೀವು ನೋಡುವುದಿಲ್ಲ.";
+"Block Topic" = "ಈ ವಿಷಯವನ್ನು ನಿರ್ಬಂಧಿಸಿ";
+"Suggested" = "ಸೂಚಿಸಲಾಗಿದೆ";
+"Related Sources not available" = "ಸಂಬಂಧಿತ ಮೂಲಗಳು ಲಭ್ಯವಿಲ್ಲ";
+"Block Source" = "ಈ ಮೂಲವನ್ನು ನಿರ್ಬಂಧಿಸಿ";
+"News in Bullets App version" = "ಸಂಕ್ಷಿಪ್ತ ನ್ಯೂಸ್ ಅಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿಯಲ್ಲಿ ಸುದ್ದಿ";
+"Next" = "ಮುಂದೆ";
+"Login" = "ಲಾಗಿನ್ ಮಾಡಿ";
+"Terms" = "ನಿಯಮಗಳು ";
+"By clicking Continue, you agree with our Terms." = "ನಿಯಮಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ಮುಂದುವರಿಸಿ ಆಯ್ಕೆಮಾಡಿ.";
+"in our Privacy Policy." = "ನಮ್ಮ ಗೌಪ್ಯತೆ ನೀತಿಯಲ್ಲಿ.";
+"Access token missing." = "ಪ್ರವೇಶ ಟೋಕನ್ ಕಾಣೆಯಾಗಿದೆ.";
+"NEXT" = "ಮುಂದಿನ";
+"By checking this box, you agree to our " = "ನಿಯಮಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ಬಾಕ್ಸ್ ಕ್ಲಿಕ್ ಮಾಡಿ. ನಮ್ಮ ಡೇಟಾವನ್ನು ನಮ್ಮ ಗೌಪ್ಯತೆ ನೀತಿಯ ಪ್ರಕಾರ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತದೆ.";
+"Terms of Service" = "ಸೇವಾ ನಿಯಮಗಳು";
+". We’ll handle your data according to our " = ". ನಿಮ್ಮ ಪ್ರಕಾರ ನಾವು ನಿಮ್ಮ ಡೇಟಾವನ್ನು ನಿರ್ವಹಿಸುತ್ತೇವೆ";
+"Password must be at least 8 characters." = "ಪಾಸ್ವರ್ಡ್ ಕನಿಷ್ಠ 8 ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿರಬೇಕು.";
+"Strong" = "ಪ್ರಬಲವಾಗಿದೆ";
+"Medium" = "ಮಧ್ಯಮ";
+"Weak" = "ದುರ್ಬಲ";
+"CREATE A NEW ACCOUNT" = "ಹೊಸ ಖಾತೆಯನ್ನು ತೆರೆ";
+"SIGN IN WITH EXISTING ACCOUNT" = "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಖಾತೆಯೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ";
+"You must agree to the Terms of Services to continue" = "ಮುಂದುವರಿಯಲು ನೀವು ಸೇವಾ ನಿಯಮಗಳಿಗೆ ಸಮ್ಮತಿಸಬೇಕು";
+"SIGN IN" = "ಸೈನ್ ಇನ್ ಮಾಡಿ";
+"What's your password?" = "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಯಾವುದು?";
+"SIGN UP" = "ಸೈನ್ ಅಪ್ ಮಾಡಿ";
+"Choose your password?" = "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ";
+"Something went wrong" = "ಏನೋ ತಪ್ಪಾಗಿದೆ";
+"we will send email to" = "ನಾವು ಇಮೇಲ್ ಕಳುಹಿಸುತ್ತೇವೆ";
+"with a link to reset your password." = "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಲಿಂಕ್‌ನೊಂದಿಗೆ ಮರುಹೊಂದಿಸಿ";
+"A reset password link has been sent to" = "ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಲು ಲಿಂಕ್ ಅನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ";
+"Enter new email." = "ಹೊಸ ಇಮೇಲ್ ನಮೂದಿಸಿ.";
+"Enter password." = "ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ.";
+"New Password " = "ಹೊಸ ಪಾಸ್‌ವರ್ಡ್";
+" (8 characters min)" = "(8 ಅಕ್ಷರಗಳು ನಿಮಿಷ)";
+"Enter current password." = "ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ.";
+"Enter new password." = "ಹೊಸ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ.";
+"Enter confirm password." = "ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಿಸಿ.";
+"password do not matched!" = "ಪಾಸ್ವರ್ಡ್ ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ!";
+"GET STARTED" = "ಪ್ರಾರಂಭಿಸಿ";
+"SKIP" = "ಸ್ಕಿಪ್";
+"From where you would like to pick photo?" = "ನೀವು ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಲು ಎಲ್ಲಿಂದ ಬಯಸುತ್ತೀರಿ?";
+"Camera" = "ಕ್ಯಾಮೆರಾ";
+"Photo Library" = "ಫೋಟೋ ಲೈಬ್ರರಿ";
+"Kindly open settings and enable access" = "ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ ಮತ್ತು ಪ್ರವೇಶವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ";
+"Open Settings" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ";
+"Access needed for your camera" = "ನಿಮ್ಮ ಕ್ಯಾಮರಾಕ್ಕೆ ಪ್ರವೇಶ ಅಗತ್ಯವಿದೆ ";
+"Access needed for your photo library" = "ನಿಮ್ಮ ಫೋಟೋ ಲೈಬ್ರರಿಗೆ ಪ್ರವೇಶ ಅಗತ್ಯವಿದೆ";
+"Done" = "ಮುಗಿದಿದೆ";
+"Pull to refresh" = "ರಿಫ್ರೆಶ್ ಮಾಡಲು ಎಳೆಯಿರಿ";
+"Loading" = "ಲೋಡ್ ಆಗುತ್ತಿದೆ";
+"Speech not available for this article" = "ಈ ಲೇಖನಕ್ಕೆ ಧ್ವನಿ ಲಭ್ಯವಿಲ್ಲ";
+"MANAGE LOCATION" = "ಸ್ಥಳವನ್ನು ನಿರ್ವಹಿಸಿ";
+"OK" = "ಸರಿ";
+"Choose your News in Bullets Edition based on locale" = "ಲೊಕೇಲ್ ಆಧರಿಸಿ ಬುಲೆಟ್ಸ್ ಆವೃತ್ತಿಯಲ್ಲಿ ನಿಮ್ಮ ಸುದ್ದಿಗಳನ್ನು ಆರಿಸಿ";
+"Edition" = "ಆವೃತ್ತಿ";
+"EDITION / REGION" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+"Your Topics" = "ನಿಮ್ಮ ವಿಷಯಗಳು";
+"Your Channels" = "ನಿಮ್ಮ ಚಾನಲ್‌ಗಳು";
+"Your Places" = "ನಿಮ್ಮ ಸ್ಥಳಗಳು";
+"Enter email." = "ಇಮೇಲ್ ನಮೂದಿಸಿ.";
+"Please enter a password." = "ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ.";
+"Search articles" = "ಲೇಖನಗಳನ್ನು ಹುಡುಕಿ";
+"No results" = "ಫಲಿತಾಂಶಗಳಿಲ್ಲ";
+"Edition / Region" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+
+
+
+
+"0JC-Sb-Ouu.text" = "ಡಿಸ್ಪ್ಲೇ  ಮೋಡ್";
+
+
+"Search" = "ಹುಡುಕಿರಿ";
+
+
+"Select" = "ಆಯ್ಕೆ ಮಾಡಿ ( ";
+
+
+"6H8-dI-k9P.text" = "ಸ್ಥಳಗಳನ್ನು ನಿರ್ವಹಿಸಿ";
+
+
+"6KH-YP-5Lt.text" = "ನಿರೂಪಕ";
+
+
+" ) icon on the article" = " ) ಲೇಖನದ ಐಕಾನ್";
+
+
+"BLOCK" = "ಬ್ಲಾಕ್";
+
+
+"you want to read later then" = "ನೀವು ನಂತರ ಓದಲು ಬಯಸುತ್ತೀರಿ";
+
+
+"7oo-cf-l7Y.text" = "ಓದುವ ವೇಗ";
+
+
+"88L-ip-pZw.text" = "ಓದುವ ವೇಗ";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "ಇಲ್ಲಿ ಬೆಕ್ಕನ್ನು ಹೊರತುಪಡಿಸಿ ಏನೂ ಇಲ್ಲ \nಮುಖ್ಯ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ?";
+
+
+"BpH-F1-i0z.normalTitle" = "ಸ್ಥಳೀಯ";
+
+
+" ) to save article." = " ) ಲೇಖನವನ್ನು ಉಳಿಸಲು.";
+
+
+"FB0-YN-HZg.text" = "ಮುಂದುವರಿಸಲು, 3 ಆಯ್ಕೆಮಾಡಿ";
+
+
+"H5Z-xJ-dWD.text" = "ಮುಖ್ಯಾಂಶಗಳು ಮತ್ತು\nಬುಲೆಟ್ ಪಾಯಿಂಟ್";
+
+
+"Search" = "ಹುಡುಕಿ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ವಿಸ್ತೃತ ವೀಕ್ಷಣೆ";
+
+
+"Jpx-nY-Is1.normalTitle" = "ಚಾನಲ್‌ಗಳು";
+
+
+"JqN-io-P1u.normalTitle" = "+ಸ್ಥಳಗಳಿಗೆ ಸೇರಿಸಿ";
+
+
+"What's your email?" = "ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸ ಯಾವುದು?";
+
+
+"Lw1-Md-nse.text" = "ಪಟ್ಟಿ ವೀಕ್ಷಣೆ";
+
+
+"LyT-pT-g53.text" = "ಅಂತಾರಾಷ್ಟ್ರೀಯ";
+
+
+"N6C-6i-Z2s.text" = "ಅಂತಾರಾಷ್ಟ್ರೀಯ";
+
+
+"Nru-uU-CsC.text" = "ಸಲಹೆಗಳು";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "ವಿಷಯಗಳು";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "ಕಸ್ಟಮೈಸ್ ಮಾಡಿ";
+
+
+"Topics" = "ವಿಷಯಗಳು";
+
+
+"WXY-po-W1B.text" = "ಹೆಡ್ಲೈನ್ಸ್ ಮತ್ತು\nಬುಲೆಟ್ ಪಾಯಿಂಟ್";
+
+
+"ans-Zy-T2Y.placeholder" = "ಸ್ಥಳಗಳಿಗಾಗಿ ಹುಡುಕಿ";
+
+
+"bgE-Jc-u8H.text" = "ಕಸ್ಟಮೈಸ್ ಮಾಡಿ";
+
+
+
+
+
+"Tap the ( " = "ಟ್ಯಾಪ್ ಮಾಡಿ ( ";
+
+
+"Places" = "ಸ್ಥಳ";
+
+
+"d1l-HK-OrG.text" = "ಡಿಸ್ಪ್ಲೇ ಮೋಡ್";
+
+
+
+
+
+"Language" = "ಭಾಷೆ";
+
+
+"e9g-Wr-suO.text" = "ಹೆಡ್ಲೈನ್ಸ್ ಮಾತ್ರ";
+
+
+"GO HOME" = "ಮುಖ್ಯ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ";
+
+
+"eh1-Oo-lEn.text" = "ವಿಸ್ತೃತ ವೀಕ್ಷಣೆ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ಪಟ್ಟಿ ವೀಕ್ಷಣೆ";
+
+
+"j2i-MT-VkA.text" = "ಬೇರೆ ಕೀವರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ";
+
+
+"Top News" = "ಉನ್ನತ ಸುದ್ದಿ";
+
+
+"jmO-aF-nJ9.text" = "ಮುಖ್ಯಾಂಶಗಳು ಮಾತ್ರ";
+
+
+"There is nothing in here" = "ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ.";
+
+
+"ma1-9p-bSa.text" = "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬರಲಿಲ್ಲ";
+
+
+"mce-jc-cKH.text" = "ನಿರೂಪಕ";
+
+
+"Channels" = "ಚಾನಲ್‌ಗಳು";
+
+
+"Discover" = "ಅನ್ವೇಷಿಸಿ";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ರದ್ದುಗೊಳಿಸಿ";
+
+
+"Discover" = "ಅನ್ವೇಷಿಸಿ";
+
+
+"No saved stories yet" = "ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ";
+
+
+"wDG-kF-Hl8.text" = "ಸ್ಥಳದ ಆಧಾರದ ಮೇಲೆ ಸುದ್ದಿಗಳನ್ನು ಓದಿ";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ಸ್ಥಳೀಕರಣ";
+
+
+"xfF-RB-mWL.text" = "ಸ್ಥಳೀಕರಣ";
+
+
+"Search" = "ಹುಡುಕಿ Kannada";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಪ್ರದೇಶಕ್ಕೆ ಹೆಚ್ಚು ಪ್ರಸ್ತುತವಾದ ಸುದ್ದಿಗಳನ್ನು ಪಡೆಯಿರಿ. ಪ್ರಪಂಚದ ಎಲ್ಲಿಂದಲಾದರೂ ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳ ಕುರಿತು ನಿಮ್ಮನ್ನು ನವೀಕರಿಸಲು ಸುದ್ದಿಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ.";
+
+
+"Search articles" = "ಲೇಖನಗಳನ್ನು ಹುಡುಕಿ";
+
+
+"6H8-dI-k9P.text" = "ಸ್ಥಳಗಳನ್ನು ನಿರ್ವಹಿಸಿ";
+
+
+
+
+
+"Profile" = "ಪ್ರೊಫೈಲ್";
+
+
+"Editions" = "ಆವೃತ್ತಿಗಳು";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "ಸ್ಥಳಗಳು";
+
+
+
+
+
+"Search" = "ಹುಡುಕಿ Kannada";
+
+
+
+
+
+
+
+
+"Search" = "ಹುಡುಕಿ Kannada";
+
+
+"LANGUAGE" = "ಭಾಷೆ";
+
+
+"Search" = "ಹುಡುಕಿ Kannada";
+
+
+"No results" = "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಕಂಡುಬರಲಿಲ್ಲ";
+
+
+"Channels" = "ಚಾನಲ್‌ಗಳು";
+
+
+"Places" = "ಸ್ಥಳಗಳು";
+
+
+"Places" = "ಸ್ಥಳಗಳು";
+
+
+"e9F-hd-Ifm.text" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+
+
+
+
+
+
+
+
+"PLACES" = "ಸ್ಥಳಗಳು";
+
+
+"SAVED ARTICLES" = "ಉಳಿಸಿದ ಲೇಖನಗಳು";
+
+
+"Articles" = "ಲೇಖನಗಳು";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ಮುಂದುವರಿಸಿ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+
+
+"Try a different keyword" = "ಬೇರೆ ಕೀವರ್ಡ್ ಪ್ರಯತ್ನಿಸಿ";
+
+
+"For You" = "ನಿನಗಾಗಿ";
+
+
+"Results" = "ಫಲಿತಾಂಶಗಳು";
+
+
+
+"About" = "ನಮ್ಮ ಬಗ್ಗೆ";
+
+
+"Share" = "ಹಂಚಿಕೊಳ್ಳಿ";
+
+
+"ACCOUNT" = "ಖಾತೆ";
+
+
+"Your Email" = "ನಿಮ್ಮ ಇಮೇಲ್";
+
+
+"1sT-J6-qI0.text" = "ಉಳಿಸಿದ ಲೇಖನಗಳು";
+
+
+"2XX-rr-GLC.text" = "ನೂರಾರು ಮೂಲಗಳಿಂದ ವಿಭಿನ್ನ ಚಾನಲ್‌ಗಳನ್ನು ಆರಿಸಿ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ಪ್ರಪಂಚದಾದ್ಯಂತದ ಇತ್ತೀಚಿನ ಸುದ್ದಿ ಘಟನೆಗಳು ಮತ್ತು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಓದಿ.";
+
+
+"Set an interval in which you want to receive your news notifications." = "ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ಸಮಯದ ಅಂತರವನ್ನು ಹೊಂದಿಸಿ.";
+
+
+"Off" = "ಆರಿಸಿ";
+
+
+
+
+
+"Bullet 2" = "ಬುಲೆಟ್ 2";
+
+
+"What's your email?" = "ನಿಮ್ಮ ಇಮೇಲ್ ಯಾವುದು?";
+
+
+"New Password (8 Characters Min)" = "ಹೊಸ ಪಾಸ್‌ವರ್ಡ್ (ಕನಿಷ್ಠ 8 ಅಕ್ಷರಗಳು)";
+
+
+"Forgot Password?" = "ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?";
+
+
+"Account Settings" = "ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+
+
+"Learn how we process your data" = "ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವ ಮಾಹಿತಿ";
+
+
+"3h" = "3 ಗಂ";
+
+
+"Ok" = "ಸರಿ";
+
+
+"Block articles from The Guardian" = "ಲೇಖನಗಳನ್ನು ನಿರ್ಬಂಧಿಸಿ ---";
+
+
+"On" = "ಆನ್ ಮಾಡಿ";
+
+
+"Auto" = "ಸ್ವಯಂ";
+
+
+"Help Center" = "ಸಹಾಯ ಕೇಂದ್ರ";
+
+
+"Search" = "ಚಾನಲ್‌ಗಳನ್ನು ಹುಡುಕಿ";
+
+
+"Facebook" = "ಫೇಸ್ಬುಕ್";
+
+
+"Select file from gallery" = "ಗ್ಯಾಲರಿಯಿಂದ ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ";
+
+
+
+
+"Save article" = "ಲೇಖನವನ್ನು ಉಳಿಸಿ";
+
+
+"ABOUT" = "ಬಗ್ಗೆ";
+
+
+"Dark" = "ಡಾರ್ಕ್";
+
+
+"Legal" = "ಕಾನೂನು";
+
+
+"Go to The Guardian" = "ಗೆ ಹೋಗಿ ---";
+
+
+"Send reset link" = "ಮರುಹೊಂದಿಸುವ ಲಿಂಕ್ ಕಳುಹಿಸಿ";
+
+
+
+
+
+"My Account" = "ನನ್ನ ಖಾತೆ";
+
+
+"FEEDBACK" = "ನನ್ನ ಖಾತೆ";
+
+
+"Message" = "ಸಂದೇಶ";
+
+
+"Confirm New Password" = "ಹೊಸ ಪಾಸ್ವರ್ಡ್ನ್ನು ಖಚಿತಪಡಿಸಿ";
+
+
+"for ___" = "ಗಾಗಿ ___";
+
+
+"Search" = "ವಿಷಯಗಳಿಗಾಗಿ ಹುಡುಕಿ";
+
+
+"LANGUAGE" = "ಭಾಷೆ";
+
+
+"Light" = "ಬೆಳಕು";
+
+
+"FOLLOW 3 TO CONTINUE" = "ಮುಂದುವರಿಸಲು, 3 ಆಯ್ಕೆಮಾಡಿ";
+
+
+
+
+"Off" = "ಆರಿಸು";
+
+
+"Language" = "ಆಯ್ಕೆಮಾಡಿ";
+
+
+"LOG OUT" = "ಲಾಗ್ ಔಟ್";
+
+
+"Report content" = "ವಿಷಯವನ್ನು ವರದಿ ಮಾಡಿ";
+
+
+"What's your email?" = "ನಿಮ್ಮ ಇಮೇಲ್ ಯಾವುದು?";
+
+
+"On" = "ಆನ್ ಮಾಡಿ";
+
+
+"More like this" = "ಈ ರೀತಿಯ ಹೆಚ್ಚಿನ ಸುದ್ದಿ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 ಗಂ";
+
+
+"Enter Email Address" = "ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ";
+
+
+"News in Bullets" = "ಕಡಿಮೆ ಸಮಯದಲ್ಲಿ ಹೆಚ್ಚು ಓದಿ.";
+
+
+"6h" = "6 ಗಂ";
+
+
+"Choose your password" = "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಆಯ್ಕೆಮಾಡಿ";
+
+
+"Cancel" = "ರದ್ದುಮಾಡಿ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ಈ ಅಪ್ಲಿಕೇಶನ್‌ನೊಂದಿಗೆ ಸುದ್ದಿಗಳನ್ನು ತ್ವರಿತವಾಗಿ ಓದಿ. ನಿಮ್ಮ ವಿಷಯಗಳು ಮತ್ತು  ಮೂಲಗಳನ್ನು ಆರಿಸಿ. ನಂತರ ಸಣ್ಣ ಬುಲೆಟ್  ಪಾಯಿಂಟ್‌ಗಳೊಂದಿಗೆ ನಿಮ್ಮ ಸುದ್ದಿಗಳನ್ನು ಓದಿ.";
+
+
+"Push Notification" = "ಅಧಿಸೂಚನೆ";
+
+
+"12h" = "12 ಗಂ";
+
+
+"24h" = "24 ಗಂ";
+
+
+"E-mail" = "ಇಮೇಲ್";
+
+
+"How can we help you?" = "ನಾವು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?";
+
+
+"OJP-Wd-0d3.text" = "ಪಾಕಿಸ್ತಾನ";
+
+
+"CHANGE PASSWORD" = "ಪಾಸ್ವರ್ಡ್ನ್ನು ಬದಲಿಸಿ";
+
+
+"Change Email" = "ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಬದಲಾಯಿಸಿ";
+
+
+"Medium" = "ಮಾಧ್ಯಮ";
+
+
+"SAVE CHANGES" = "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "ನಿಮಗೆ ಏನಾದರೂ ಸಹಾಯ ಬೇಕಾದರೆ ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ, ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾವು ಇಷ್ಟಪಡುತ್ತೇವೆ!";
+
+
+"P5u-N3-Tw4.text" = "ಲೇಬಲ್";
+
+
+"Cancel" = "ರದ್ದುಮಾಡಿ";
+
+
+"Bullet 1" = "ಬುಲೆಟ್ 1";
+
+
+"TIMED NOTIFICATIONS" = "ಅಧಿಸೂಚನೆಗಳು";
+
+
+"POST ARTICLE" = "ಲೇಖನವನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ";
+
+
+"CONTACT US" = "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ";
+
+
+"EDITION / REGION" = "ಆವೃತ್ತಿ";
+
+
+"Search" = "ಹುಡುಕಿ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ನಮಗೆ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಕಳುಹಿಸಿ, ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾವು ಇಷ್ಟಪಡುತ್ತೇವೆ! ನೀವು  ಪ್ರಶ್ನೆಗಳನ್ನು ಅಥವಾ ಕಾನೂನು ಕಾಳಜಿಗಳನ್ನು ಹೊಂದಿದ್ದೀರಾ? ನಮ್ಮ ಸಹಾಯ ಪುಟವನ್ನು  ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.";
+
+
+"Google" = "ಗೂಗಲ್";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ನಿಮಗೆ ಏನಾದರೂ ಸಹಾಯ ಬೇಕಾದರೆ ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ, ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಾವು ಇಷ್ಟಪಡುತ್ತೇವೆ!";
+
+
+"30m" = "30 ಮಿ";
+
+
+"CONTINUE" = "ಮುಂದುವರಿಸಿ";
+
+
+"Time To Update!" = "ಅಪ್ಲಿಕೇಶನ್ ನವೀಕರಿಸಿ!";
+
+
+"NOTIFICATIONS" = "ಅಧಿಸೂಚನೆಗಳು";
+
+
+"Search" = "ಹುಡುಕಿ";
+
+
+"By clicking Continue, you agree with our Terms." = "ನಿಯಮಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ಮುಂದುವರಿಸಿ ಆಯ್ಕೆಮಾಡಿ.";
+
+
+"HELP / CONTACT US" = "ಸಹಾಯ / ಸಂಪರ್ಕಿಸಿ";
+
+
+"Reset Password" = "ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ";
+
+
+"SEND MESSAGE" = "ಸಂದೇಶ ಕಳುಹಿಸಿ";
+
+
+"Save article" = "ಲೇಖನವನ್ನು ಉಳಿಸಿ";
+
+
+"Bullet 6 (Optional)" = "ಬುಲೆಟ್ 6 (ಐಚ್ಛಿಕ)";
+
+
+"HAPTICS" = "ಹ್ಯಾಪ್ಟಿಕ್ಸ್";
+
+
+"Your message has \vbeen sent." = "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಿದೆ.";
+
+
+"LEGAL" = "ಕಾನೂನು";
+
+
+"Block List" = "ಬ್ಲಾಕ್ ಪಟ್ಟಿ";
+
+
+"PERSONALIZATION" = "ವೈಯಕ್ತಿಕಗೊಳಿಸುವಿಕೆ";
+
+
+"in our Privacy Policy." = "ನಮ್ಮ ಗೌಪ್ಯತೆ ನೀತಿಯಲ್ಲಿ.";
+
+
+"CONTINUE" = "ಮುಂದುವರಿಸಿ";
+
+
+"Enter Name" = "ಹೆಸರನ್ನು ನಮೂದಿಸಿ";
+
+
+"What's your email?" = "ನಿಮ್ಮ ಇಮೇಲ್ ಯಾವುದು?";
+
+
+"Hello there!" = "ಹಲೋ!";
+
+
+"PUSH NOTIFICATIONS" = "ಅಧಿಸೂಚನೆಗಳು";
+
+
+"Bullet 3 (Optional)" = "ಬುಲೆಟ್ 3 (ಐಚ್ಛಿಕ)";
+
+
+"Source name" = "ಮೂಲದ ಹೆಸರು";
+
+
+"Current Password" = "ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್ ";
+
+
+"COLOR THEME" = "ಬಣ್ಣ ಥೀಮ್";
+
+
+"eTp-X1-g34.text" = "ಅಥವಾ ಮೂಲಕ";
+
+
+"CANCEL" = "ರದ್ದುಗೊಳಿಸಿ";
+
+
+"Bullet 4 (Optional)" = "ಬುಲೆಟ್ 4 (ಐಚ್ಛಿಕ)";
+
+
+"Date published" = "ದಿನಾಂಕ ಪ್ರಕಟಿಸಲಾಗಿದೆ";
+
+
+"Send Password Reset Link" = "ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಲು ಲಿಂಕ್ ಕಳುಹಿಸಿ";
+
+
+"CONTINUE WITH APPLE" = "ಆಪಲ್ ಐಡಿ ಮೂಲಕ ಸೈನ್ ಅಪ್ ಮಾಡಿ";
+
+
+"Off" = "ಆರಿಸು";
+
+
+"BLOCK LIST" = "ಬ್ಲಾಕ್ ಪಟ್ಟಿ";
+
+
+"HELP" = "ಸಹಾಯ";
+
+
+"Reference link" = "ಉಲ್ಲೇಖ ಲಿಂಕ್";
+
+
+"Your Password" = "ನಿಮ್ಮ  ಪಾಸ್ವರ್ಡ್";
+
+
+"SUBMIT" = "ಸಲ್ಲಿಸು";
+
+
+"HELP" = "ಸಹಾಯ";
+
+
+"MY ACCOUNT" = "ನನ್ನ ಖಾತೆ";
+
+
+"hbD-HP-tZd.normalTitle" = "ಅನಿರ್ಬಂಧಿಸಿ";
+
+
+"OTHERS" = "ಇತರರು";
+
+
+"BREAKING NEWS" = "ಬಿಸಿ ಬಿಸಿ ಸುದ್ದಿ";
+
+
+"Topics" = "ನಿರ್ಬಂಧಿಸಿದ ವಿಷಯಗಳು";
+
+
+"Message us," = "ನಮಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ,";
+
+
+"Pick topics to start reading
+and saving articles" = "ಅಪ್ಲಿಕೇಶನ್ ಭಾಷೆ";
+
+
+"Forgot Password?" = "ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ಹೊಸ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಕೆಲವು ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಲಾಗಿದೆ.";
+
+
+"Success!" = "ಯಶಸ್ಸು!";
+
+
+"Current Password" = "ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್";
+
+
+"CONTENT" = "ವಿಷಯ";
+
+
+"Headline" = "ಹೆಡ್‌ಲೈನ್";
+
+
+"neg-UC-UpK.text" = "ಲೇಖನಗಳನ್ನು ಓದಲು ಮತ್ತು ಉಳಿಸಲು ಪ್ರಾರಂಭಿಸಲು ವಿಷಯಗಳನ್ನು ಆರಿಸಿ";
+
+
+"CONTINUE WITH EMAIL ID" = "ನಿಮ್ಮ ಇಮೇಲ್ ಐಡಿಯೊಂದಿಗೆ ಮುಂದುವರಿಸಿ";
+
+
+"SAVE CHANGES" = "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು";
+
+
+"Post an Article" = "ಲೇಖನವನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ";
+
+
+"Contact Us" = "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ";
+
+
+"On" = "ಆನ್ ಮಾಡಿ";
+
+
+"New Email Address" = "ಹೊಸ ಇಮೇಲ್ ವಿಳಾಸ";
+
+
+"Bullet 5 (Optional)" = "ಬುಲೆಟ್ 5 (ಐಚ್ಛಿಕ)";
+
+
+"Suggest an improvement" = "ಸುಧಾರಣೆಯನ್ನು ಸೂಚಿಸಿ";
+
+
+"Channels" = "ನಿರ್ಬಂಧಿಸಿದ ಮೂಲಗಳು";
+
+
+"From:" = "ಇವರಿಂದ:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ವೈಯಕ್ತಿಕ ಶಿಫಾರಸುಗಳು";
+
+
+"I don't like this" = "ನನಗೆ ಇದು ಇಷ್ಟವಿಲ್ಲ";
+
+
+"CONTINUE" = "ಮುಂದುವರಿಸಿ";
+
+
+"Name" = "ಹೆಸರು";
+
+
+"Enter email" = "ಇಮೇಲ್ ನಮೂದಿಸಿ";
+
+
+"HELP" = "ಸಹಾಯ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ಮುಂದುವರಿಸಲು 3 ಅನ್ನು ಅನುಸರಿಸಿ";
+
+
+"UPDATE APP" = "ಅಪ್ಲಿಕೇಶನ್ ನವೀಕರಿಸಿ";
+
+
+"Forgot Password?" = "ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?";
+
+
+"Change Password" = "ಪಾಸ್ವರ್ಡ್ ಬದಲಾಯಿಸಿ";
+
+
+"Reset Password" = "ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ";
+
+
+
+
+
+
+
+
+"Report content" = "ನಿಮ್ಮ ಕಾಳಜಿಯನ್ನು ವರದಿ ಮಾಡಿ";
+
+
+"CHANGE EMAIL ADDRESS" = "ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಬದಲಾಯಿಸಿ";
+
+
+"Follow The Guardian" = "ಅನುಸರಿಸಿ ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸಾಧ್ಯವಾದಷ್ಟು ಸುಗಮವಾಗಿಸಲು ನಾವು ಸಾಕಷ್ಟು ಹೊಸ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಸೇರಿಸಿದ್ದೇವೆ ಮತ್ತು ಕೆಲವು ದೋಷಗಳನ್ನು ಸರಿಪಡಿಸುತ್ತೇವೆ.";
+
+
+"Edition / Region" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+
+
+"OK" = "ಸರಿ";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ನೀವು ಇಷ್ಟಪಡುವ ಸುದ್ದಿಗಳ ಬಗ್ಗೆ ನವೀಕೃತವಾಗಿರುವುದು ನಿಮ್ಮ ಸಮಯವನ್ನು ಹೆಚ್ಚು ತೆಗೆದುಕೊಳ್ಳಬಾರದು. ಬುಲೆಟ್‌ಗಳಲ್ಲಿನ ಸುದ್ದಿಗಳು ನಿಯಮಿತವಾಗಿ 5 ನಿಮಿಷಗಳ ಓದುವನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ಸುಲಭವಾಗಿ ಜೀರ್ಣವಾಗುವ ಗುಂಡುಗಳಾಗಿ ಸಾಂದ್ರೀಕರಿಸುತ್ತವೆ. ಈಗ, ನೀವು ಒಂದೇ ಸುದ್ದಿಯನ್ನು ಸಮಯದ ಸ್ವಲ್ಪ ಭಾಗದಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳಬಹುದು - ಆದ್ದರಿಂದ ನೀವು ಕಡಿಮೆ ಸಮಯದಲ್ಲಿ ಹೆಚ್ಚು ಓದಬಹುದು.";
+
+
+"READING SPEED" = "ವೇಗವನ್ನು ಓದುವುದು";
+
+
+
+
+
+"You haven't blocked anything yet" = "ನೀವು ಇನ್ನೂ ಏನನ್ನೂ ನಿರ್ಬಂಧಿಸಿಲ್ಲ";
+
+
+"EDITION / REGION" = "ಆವೃತ್ತಿ / ಪ್ರದೇಶ";
+
+
+
+
+
+"HEADLINES ONLY" = "ಹೆಡ್ಲೈನ್ಸ್ ಮಾತ್ರ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "ಆಡಿಯೋ ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+
+
+"AUDIO SETTINGS" = "ಆಡಿಯೊ ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ಹೆಡ್‌ಲೈನ್‌ಗಳು ಮತ್ತು ಬುಲೆಟ್‌ಗಳು";
+
+
+"CONTINUE AS GUEST" = "ಅತಿಥಿಯಾಗಿ ಸ್ಕಿಪ್ ಮತ್ತು ಲಾಗ್-ಇನ್ ಮಾಡಿ";
+
+
+"Topics" = "ವಿಷಯಗಳು";
+
+
+"Pick topics to start reading and saving articles" = "ಲೇಖನಗಳನ್ನು ಓದಲು ಮತ್ತು ಉಳಿಸಲು ಪ್ರಾರಂಭಿಸಲು ವಿಷಯಗಳನ್ನು ಆರಿಸಿ";
+
+
+"Channels" = "ಚಾನಲ್‌ಗಳು";
+
+
+"Choose from hundreds \nof news publications" = "ನೂರಾರು ಸುದ್ದಿ ಪ್ರಕಟಣೆಗಳಿಂದ ಆರಿಸಿ";
+
+
+"Pick topics to start reading\nand saving articles" = "ಲೇಖನಗಳನ್ನು ಓದಲು ಮತ್ತು ಉಳಿಸಲು ಪ್ರಾರಂಭಿಸಲು ವಿಷಯಗಳನ್ನು ಆರಿಸಿ";
+
+"Pick editions to start reading\nand saving articles" = "ಲೇಖನಗಳನ್ನು ಓದಲು ಮತ್ತು ಉಳಿಸಲು ಪ್ರಾರಂಭಿಸಲು ಆವೃತ್ತಿಗಳನ್ನು ಆರಿಸಿ";
+
+"Or with" = "ಅಥವಾ ಜೊತೆ";
+
+"CONTINUE AS GUEST" = "ಅತಿಥಿಯಾಗಿ ಮುಂದುವರಿಸಿ";
+
+"Terms of Service" = "ಸೇವಾ ನಿಯಮಗಳು";
+
+"Choose from hundreds \nof news publications" = "ನೂರಾರು ಸುದ್ದಿ ಪ್ರಕಟಣೆಗಳಿಂದ ಆರಿಸಿ";
+
+"Select your preferred language\nfor News in Bullets." = "ಬುಲೆಟ್‌ಗಳಲ್ಲಿನ ಸುದ್ದಿಗಳಿಗಾಗಿ ನಿಮ್ಮ ಆದ್ಯತೆಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.";
+
+"Choose a style" = "ಶೈಲಿಯನ್ನು ಆರಿಸಿ";
+
+"Pop or subtle. Day or night. Customize your interface." = "ಪಾಪ್ ಅಥವಾ ಸೂಕ್ಷ್ಮ. ಹಗಲು ಅಥವಾ ರಾತ್ರಿ. ನಿಮ್ಮ ಇಂಟರ್ಫೇಸ್ ಅನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ.";
+
+"MINS AGO" = "ನಿಮಿಷಗಳ ಹಿಂದೆ";
+
+"AN HOUR AGO" = "ಒಂದು ಗಂಟೆಯ ಹಿಂದೆ";
+
+"HOURS AGO" = "ಗಂಟೆಗಳ ಹಿಂದೆ";
+
+"1 WEEK AGO" = "1 ವಾರ ಹಿಂದೆ";
+
+"YESTERDAY" = "ನಿನ್ನೆ";
+
+"DAYS AGO" = "ದಿನಗಳ ಹಿಂದೆ";
+
+"Go to" = "ಗೆ ಹೋಗಿ";
+
+"You have reached the start." = "ನೀವು ಪ್ರಾರಂಭವನ್ನು ತಲುಪಿದ್ದೀರಿ";
+
+"Source unblocked successfully" = "ಮೂಲವನ್ನು ಅನಿರ್ಬಂಧಿಸಲಾಗಿದೆ";
+
+"Invalid email format"  = "ಅಮಾನ್ಯವಾದ ಇಮೇಲ್ ಸ್ವರೂಪ";
+
+"Wrong email or password" = "ತಪ್ಪಾದ ಇಮೇಲ್ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್";
+
+

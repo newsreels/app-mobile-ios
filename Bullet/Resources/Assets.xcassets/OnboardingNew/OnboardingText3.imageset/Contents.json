@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Subscribe, share and follow a unique experience.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

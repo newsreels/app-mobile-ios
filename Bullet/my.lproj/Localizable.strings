@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ဘူးလက်ပွှိုင့််";
+"BULLETS" = "ဘူးလက်ပွှိုင့်များ";
+"Headlines is not available." = "ခေါင်းစည်းများမရနိုင်သေးပါ";
+"Check your internet Connection and try again." = "သင့်အင်တာနက်ကော်နက်ရှင်ကို စစ်ဆေးပြီး ပြန်လည်ကြိုးစားကြည့်ပါ";
+"Choose Image" = "ပုံကိုရွေးပါ";
+"Headline" = "ခေါင်းစည်း";
+"Bullet 1" = "ဘူးလက် ၁";
+"Bullet 2" = "ဘူးလက် ၂";
+"Bullet 3 (Optional)" = "ဘူးလက် ၃ (မဖြစ်မနေမဟုတ်ပါ)";
+"Bullet 4 (Optional)" = "ဘူးလက် ၄ (မဖြစ်မနေမဟုတ်ပါ)";
+"Bullet 5 (Optional)" = "ဘူးလက် ၅ (မဖြစ်မနေမဟုတ်ပါ)";
+"Bullet 6 (Optional)" = "ဘူးလက် ၆ (မဖြစ်မနေမဟုတ်ပါ)";
+"Enter Aticle Headline" = "ခေါင်းစည်းကိုထည့်ပါ";
+"Enter source name" = "အရင်းအမြစ်ကို ထည့်ပါ";
+"Enter reference link" = "ကိုးကားကို ထည့်ပါ";
+"Enter published date" = "ပုံနှိပ်နေ့စွဲကို ထည့်ပါ့";
+"Enter Bullet 1" = "ပထမ ဘူးလက်ကို ထည့်ပါ";
+"Enter Bullet 2" = "ဒုတိယ ဘူးလက်ကို ထည့်ပါ";
+"Post article successfully" = "ဆောင်းပါးကို အောင်မြင်စွာတင်ပြီးပါပြီ်";
+"Follow" = "ဖောလိုးလုပ်ပါ";
+"Unfollow" = "ဖောလိုးမလုပ်ပါ်";
+"Block articles from" = "မှဆောင်းပါးများကို ဘလော့မည်";
+"Unblock articles from" = "မှဆောင်းပါးများကို ဘလော့ဖြည်မည််";
+"Remove article" = "ဆောင်းပါးကို ဖယ်ရှားပါ";
+"Save article" = "ဆောင်းပါးကို သိမ်းမည််";
+"Terms & Conditions" = "အသုံးအနှုန်းများနှင့်အခြေအနေများ";
+"Privacy Policy" = "လုံခြုံရေးဆိုင်ရာမူဝါဒ";
+"TERMS AND CONDITIONS" = "အသုံးအနှုန်းများနှင့်အခြေအနေများ";
+"PRIVACY POLICY" = "လုံခြုံရေးဆိုင်ရာမူဝါဒ";
+"Fuel your curiosity" = "ကမ္ဘာ့သတင်းများကို ပိုမိုဖတ်ရှုပါ";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "ကမ္ဘာတစ်လွှားမှ ယုံကြည်ရသော အရင်းအမြစ်များဆီက သင်ကြိုက်နှစ်သက်သည့် ခေါင်းစဉ်များမှ တိုရှင်းတိကျသော သတင်းများကို ဖတ်ပါ";
+"Save time" = "သင့်အချိန်ကို ချွေတာပါ";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "ဘူးလက်ပွှိုင့်များမှာ သတင်းတွေကို ဖတ်ပါ";
+"Hands-free reading" = "လက်မလိုသော စာဖတ်ခြင်း";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "ဖတ်ချိန်မရှိဘူးလား? စကားပြောဖန်ရှင်ကို အသုံးပြုပါ";
+"Write your message..." = "သင့်မက်ဆေ့ချ်ကိုရေးပါ";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "အကူအညီလိုပါက ကျွန်ုပ်တို့ထံမက်ဆေ့ချ်ပို့ပါ သင့်ဆီကစကားသံကိုကြားရတာနှစ်သက်လှပါတယ်!";
+"Drop us a message" = "ကျွန်ုပ်တို့ဆီ မက်ဆေ့ချ်ပို့ပါ";
+"Enter Name." = "အမည်ထည့်ပါ";
+"Enter Email." = "အီးမေးလ်ထည့်ပါ";
+"Write your message." = "သင့်မက်ဆေ့ချ်ကိုရေးပါ";
+"Topic unblock successfully" = "ဒီခေါင်းစဉ်ကို သင်ဘလော့ဖြည်ခဲ့သည်";
+"Source unblock successfully" = "ဒီအရင်းအမြစ်ကို သင်ဘလော့ဖြည်ခဲ့သည်";
+"Unblock Source" = "အရင်းအမြစ်ကို ဘလော့ဖြည်ပါ";
+"Cancel" = "မလုပ်တော့ပါ";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "တုံ့ပြန်ချက်ကိုကျွန်ပ်တို့ဆီပေးပို့ပါ သင့်ဆီကကြားရဖို့ နှစ်သက်လှ ပါတယ်! ဥပဒေကြောင်းဆိုင်ရာ စိုးရိမ်မှုနှင့် မေးခွန်းများရှိပါသလား? အကူအညီပေးစာမျက်နှာ သို့မဟုတ် ကျွန်ပ်တို့ထံဆက်သွယ်ပါ";
+"Enter your suggestion." = "သင့်အကြံပြုချက်ကို ထည့်ပါ";
+"feedback sent." = "တုံ့ပြန်ချက်ကို အောင်မြင်စွာပေးပို့ပြီးပါပြီ";
+"30m" = "၃၀ မိနစ်";
+"1h" = "၁နာရီ";
+"3h" = "၃နာရီ";
+"6h" = "၆နာရီ";
+"12h" = "၁၂နာရီ";
+"24h" = "၂၄နာရီ";
+"Language updated successfully." = "ဘာသာစကားကို အောင်မြင်စွာမြှင့်တင်ပြီးပါပြီ";
+"CONTINUE" = "ဆက်လုပ်ရန်";
+"FOLLOW 3 TO CONTINUE" = "ဆက်လုပ်ရန် ၃ ကို ဖောလိုးလုပ်ပါ";
+"Unfollow Location" = "တည်နေရာကို ဖောလိုးမလုပ်ပါ";
+"Saved Articles" = "သိမ်းခဲ့သော ဆောင်းပါးများ";
+"Block" = "ဘလော့မည်";
+"Are you sure you want block" = "ဒီအရာကို ဘလော့မှာ သေချာပါသလား";
+"Once blocked, you wont be able to see any Articles related to this" = "ဒီချန်နယ်ကို သင်ဘလော့ပါက ဆောင်းပါးများကို မြင်ရတော့မည်မဟုတ်ပါ";
+"Block Topic" = "ဒီခေါင်းစဉ်ကို ဘလော့ပါ";
+"Suggested" = "အကြံပြုထားသည်";
+"Related Sources not available" = "ဆက်စပ်သော အရင်းအမြစ်များမရနိုင်ပါ";
+"Block Source" = "ဒီအရင်းအမြစ်ကို ဘလော့ပါ";
+"News in Bullets App version" = "ဘူးလက်အက်ပ်ဗားရှင်းရှိ သတင်းများ";
+"Next" = "နောက်သို့";
+"Login" = "ဝင်ရောက်မည််";
+"Terms" = "အသုံးအနှုန်းများ ";
+"By clicking Continue, you agree with our Terms." = "အသုံးအနှုန်းများကိုလက်ခံဖို့ ဆက်လုပ်ရန်ကိုရွေးပါ";
+"in our Privacy Policy." = "ကျွန်ုပ်တို့၏ လုံခြုံရေးဆိုင်ရာ မူဝါဒတွင်";
+"Access token missing." = "ရနိုင်သော တုံကင် ပျောက်နေပါသည်";
+"NEXT" = "နောက်သို့";
+"By checking this box, you agree to our " = "အသုံးအနှုန်းများကို လက်ခံဖို့ ဘောက်ခ်စ်ကို နှိပ်ပါ။ သင့်ဒေတာကို ကျွန်ုပ်တို့၏ လုံခြုံရေးဆိုင်ရာ မူဝါဒနှင့်အညီ ဆောင်ရွက်ပါသည်";
+"Terms of Service" = "ဝန်ဆောင်မှုအသုံးအနှုန်းများ";
+". We’ll handle your data according to our " = "သင်ဒေတာကို ကျွန်ုပ်တို့၏ ….အရ ကိုင်တွယ်ပါမည်";
+"Password must be at least 8 characters." = "စကားဝှက်က စကားလုံး ၈လုံးအနည်းဆုံးရှိရပါမည်";
+"Strong" = "အားကောင်း";
+"Medium" = "အလယ်အလတ်";
+"Weak" = "အားနည်း";
+"CREATE A NEW ACCOUNT" = "အကောင့်အသစ်ဖန်တီးမည််";
+"SIGN IN WITH EXISTING ACCOUNT" = "လက်ရှိအကောင့်ဖြင့် ဝင်မည်";
+"You must agree to the Terms of Services to continue" = "ဆက်လုပ်ရန် ဝန်ဆောင်မှုအသုံးအနှုန်းများကို သင်သဘောတူရမည်";
+"SIGN IN" = "ဝင်မည်";
+"What's your password?" = "သင့်စကားဝှက်က ဘာလဲ?";
+"SIGN UP" = "ဝင်ရောက်စာရင်းသွင်းမည်";
+"Choose your password?" = "သင့်စကားဝှက်ကို ရွေးပါ";
+"Something went wrong" = "တစ်ခုခုမှားနေပါသည်";
+"we will send email to" = "ကျွန်ုပ်တို့အီးမေးလ်ပို့ပါမည်";
+"with a link to reset your password." = "သင့်စကားဝှက်ကို ပြင်ဆင်ရန်လင့်ခ်နှင့်အတူ";
+"A reset password link has been sent to" = "သင့်စကားဝှက်ကိုပြင်ဆင်ရန် လင့်ခ်တစ်ခုပေးပို့ပြီးပါပြီီ";
+"Enter new email." = "အီးမေးလ်အသစ်ထည့်ပါ";
+"Enter password." = "စကားဝှက်ထည့်ပါ";
+"New Password " = "စကားဝှက်အသစ်ထည့်ပါ";
+" (8 characters min)" = "(စကားလုံး ၈ လုံးထက်မပိုရ)";
+"Enter current password." = "လက်ရှိသုံးသောစကားဝှက်ကိုထည့်ပါ";
+"Enter new password." = "စကားဝှက်အသစ်ထည့်ပါ";
+"Enter confirm password." = "စကားဝှက်ကိုအတည်ပြုမည်";
+"password do not matched!" = "စကားဝှက်မတူညီပါ";
+"GET STARTED" = "စတင်မည်";
+"SKIP" = "ကျော်မည်";
+"From where you would like to pick photo?" = "ဘယ်နေရာမှ ဓာတ်ပုံကိုသင်ယူမည်နည်း?";
+"Camera" = "ကင်မရာ";
+"Photo Library" = "ဓတ်ပုံအခန်း်";
+"Kindly open settings and enable access" = "ချိန်ညှိခြင်းများကိုဖွင့်၍ ဝင်ရောက်ခွင့်ပေးပါ";
+"Open Settings" = "ချိန်ညှိခြင်းများကို ဖွင့်မည်";
+"Access needed for your camera" = "ကင်မရာအတွက် ဝင်ရောက်ခွင့် လိုအပ်သည်";
+"Access needed for your photo library" = "ဓတ်ပုံအခန်းအတွက် ဝင်ရောက်ခွင့်လိုအပ်သည််";
+"Done" = "ပြီးပြီ";
+"Pull to refresh" = "အသစ်ရရန် ဆွဲချပါဲ";
+"Loading" = "လုပ်ဆောင်နေသည်";
+"Speech not available for this article" = "်ဒီဆောင်းပါးအတွက် စကားသံမရသေးပါ";
+"MANAGE LOCATION" = "တည်နေရာကို စီမံမည်";
+"OK" = "ရလား";
+"Choose your News in Bullets Edition based on locale" = "ဒေသပေါ် မူတည်၍ သင်၏သတင်းကို Bullets Edition တွင်ရွေးချယ်ပါ";
+"Edition" = "ထုတ်ဝေ";
+"EDITION / REGION" = "တည်းဖြတ် / ဒေသ";
+"Your Topics" = "သင့်ခေါင်းစဉ်များ";
+"Your Channels" = "သင့်ရဲ့လိုင်းများ";
+"Your Places" = "သင်၏နေရာများ";
+"Enter email." = "အီးမေးလ်ထည့်ပါ";
+"Please enter a password." = "ကျေးဇူးပြုပြီးစကားဝှက်ကိုရေးပါ";
+"Search articles" = "ဆောင်းပါးများကိုရှာဖွေပါ";
+"No results" = "ရလဒ်မရှိပါ";
+"Edition / Region" = "ထုတ်ဝေ / တိုင်းဒေသကြီး";
+
+
+
+
+"0JC-Sb-Ouu.text" = "ပြသခြင်းမုဒ်";
+
+
+"Search" = "ရှာဖွေရန်";
+
+
+"Select" = "ရွေးပါ (";
+
+
+"6H8-dI-k9P.text" = "တည်နေရာများကိုစီမံပါ";
+
+
+"6KH-YP-5Lt.text" = "နာရေတာ";
+
+
+" ) icon on the article" = ") ဆောင်းပါးအပေါ်က အိုင်ကွန််";
+
+
+"BLOCK" = "ဘလော့မည်";
+
+
+"you want to read later then" = "နောက်ပိုင်းတွင် သင်ဖက်ရှုချင်ပါက";
+
+
+"7oo-cf-l7Y.text" = "စာဖက်နှုန်း";
+
+
+"88L-ip-pZw.text" = "စာဖက်နှုန်း";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "ဒီနေရာမှာ ဘာမှမရှိပါ ဒီနေရာမှ ဘာမှမရှိပေမဲ့ တစ်ခုခုတော့ရနိုင်ပါသေးတယ် အဓိကစာမျက်နှာကို ပြန်သွားမလား?";
+
+
+"BpH-F1-i0z.normalTitle" = "ဒေသတွင်း";
+
+
+" ) to save article." = ") ဆောင်းပါးကိုသိမ်းရန်";
+
+
+"FB0-YN-HZg.text" = "ဆက်လုပ်ရန် ၃ ကိုရွေးပါ";
+
+
+"H5Z-xJ-dWD.text" = "ခေါင်းစည်းများနှင့် \nဘူးလက်ပွှိုင့်များ";
+
+
+"Search" = "ရှာပါ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "အကျယ်ချဲ့မြင်ကွင်း";
+
+
+"Jpx-nY-Is1.normalTitle" = "ချန်နယ်များ";
+
+
+"JqN-io-P1u.normalTitle" = "တည်နေရာများထည့်ပါ";
+
+
+"What's your email?" = "သင့်အီးမေးလ်လိပ်စာကဘာလဲ?";
+
+
+"Lw1-Md-nse.text" = "စာရင်းမြင်ကွင်း";
+
+
+"LyT-pT-g53.text" = "နိုင်ငံတကာ";
+
+
+"N6C-6i-Z2s.text" = "နိုင်ငံတကာ";
+
+
+"Nru-uU-CsC.text" = "အကြံပြုချက်များ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "ခေါင်းစဉ်များ";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "စိတ်ကြိုက်လုပ်မည်";
+
+
+"Topics" = "ခေါင်းစဉ်များ";
+
+
+"WXY-po-W1B.text" = "ခေါင်းစည်းများနှင့် \nဘူးလက်ပွှိုင့်များ";
+
+
+"ans-Zy-T2Y.placeholder" = "တည်နေရာများကို ရှာပါ";
+
+
+"bgE-Jc-u8H.text" = "စိတ်ကြိုက်လုပ်မည်";
+
+
+
+
+
+"Tap the ( " = "ထိပါ (";
+
+
+"Places" = "တည်နေရာ";
+
+
+"d1l-HK-OrG.text" = "ပြသခြင်းမုဒ်";
+
+
+
+
+
+"Language" = "ဘာသာစကား";
+
+
+"e9g-Wr-suO.text" = "ခေါင်းစည်းများသာ";
+
+
+"GO HOME" = "အဓိကစာမျက်နှာကို ပြန်သွားပါ";
+
+
+"eh1-Oo-lEn.text" = "အကျယ်ချဲ့မြင်ကွင်း";
+
+
+"hOf-26-eCm.text" = "၁ ဆ";
+
+
+"il3-4J-X1V.text" = "စာရင်းမြင်ကွင်း";
+
+
+"j2i-MT-VkA.text" = "အခြားစာလုံးကိုကြိုးစားကြည့်ပါ";
+
+
+"Top News" = "ထိပ်ပိုင်းသတင်းများ";
+
+
+"jmO-aF-nJ9.text" = "ခေါင်းစည်းများသာ";
+
+
+"There is nothing in here" = "ဒီနေရာမှာ ဘာမှမရှိပါဒီနေရာမှ ဘာမှမရှိပေမဲ့ တစ်ခုခုတော့ရနိုင်ပါသေးတယ် အဓိကစာမျက်နှာကို ပြန်သွားမလား?";
+
+
+"ma1-9p-bSa.text" = "ရလဒ်များမရှိပါ့";
+
+
+"mce-jc-cKH.text" = "နာရေတာ";
+
+
+"Channels" = "ချန်နယ်များ";
+
+
+"Discover" = "ရှာဖွေမည်";
+
+
+"pCy-AN-hsO.text" = "၁ ဆ";
+
+
+"CANCEL" = "မလုပ်တော့ပါ";
+
+
+"Discover" = "ရှာဖွေမည်";
+
+
+"No saved stories yet" = "ဒီနေရာမှာ ဘာမှမရှိပါှိ";
+
+
+"wDG-kF-Hl8.text" = "တည်နေရာကိုအခြေခံပြီး သတင်းများဖတ်မည်";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ဒေသနှင့်ကိုက်ညီအောင်ဖန်တီးခြင်း";
+
+
+"xfF-RB-mWL.text" = "ဒေသနှင့်ကိုက်ညီအောင်ဖန်တီးခြင်း";
+
+
+"Search" = "ရှာပါ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "သင်နှင့်သက်ဆိုင်သောသတင်းကိုသင်ရွေးချယ်သောဒေသသို့ရယူပါ။ ကမ္ဘာပေါ်ရှိမည်သည့်နေရာမှမဆိုနောက်ဆုံးပေါ်သတင်းများကိုသင့်အားမွမ်းမံနိုင်ရန်အတွက်ပြင်ဆင်ထားသောသတင်းဆောင်းပါးများကိုဖတ်ပါ။";
+
+
+"Search articles" = "ဆောင်းပါးများကိုရှာဖွေပါ";
+
+
+"6H8-dI-k9P.text" = "နေရာများစီမံပါ";
+
+
+
+
+
+"Profile" = "ကိုယ်ရေးအကျဉ်း";
+
+
+"Editions" = "တည်းဖြတ်ခြင်း";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "နေရာများ";
+
+
+
+
+
+"Search" = "ရှာပါ";
+
+
+
+
+
+
+
+
+"Search" = "ရှာပါ";
+
+
+"LANGUAGE" = "ဘာသာစကား";
+
+
+"Search" = "ရှာပါ";
+
+
+"No results" = "ရလဒ်မရှိပါ";
+
+
+"Channels" = "လိုင်းများ";
+
+
+"Places" = "နေရာများ";
+
+
+"Places" = "နေရာများ";
+
+
+"e9F-hd-Ifm.text" = "တည်းဖြတ် / ဒေသ";
+
+
+
+
+
+
+
+
+"PLACES" = "နေရာများ";
+
+
+"SAVED ARTICLES" = "ဆောင်းပါးများကယ်တင်ခဲ့သည်";
+
+
+"Articles" = "ဆောင်းပါးများ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ဆက်လက်";
+
+
+
+
+
+"w8f-2R-NgT.text" = "တည်းဖြတ် / ဒေသ";
+
+
+"Try a different keyword" = "အခြားသော့ချက်စာလုံးတစ်လုံးကိုစမ်းကြည့်ပါ";
+
+
+"For You" = "သင့်အတွက်";
+
+
+"Results" = "ရလဒ်များ";
+
+
+
+"About" = "ကျွန်ပ်တို့အကြောင်း";
+
+
+"Share" = "မျှဝေရန်";
+
+
+"ACCOUNT" = "အကောင့်ု";
+
+
+"Your Email" = "သင်၏ အီးမေးလ်";
+
+
+"1sT-J6-qI0.text" = "သိမ်းခဲ့သော ဆောင်းပါးများ";
+
+
+"2XX-rr-GLC.text" = "အမြောက်အမြားသော အရင်းအမြစ်များမှအမျိုးမျိုးသော သတင်းချန်နယ်များကို ရွေးပါ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ကမ္ဘာတလွှားမှ နောက်ဆုံးရ သတင်းများ၊ ပွဲများနှင့် အင်္ဂါရပ်များကို ဖတ်ပါ။";
+
+
+"Set an interval in which you want to receive your news notifications." = "အသိပေးချက်များလက်ခံရရှိရန် ကြားအချိန်သတ်မှတ်ပါ။";
+
+
+"Off" = "ပိတ်";
+
+
+
+
+
+"Bullet 2" = "ဘူးလက် ၂";
+
+
+"What's your email?" = "သင့်ရဲ့ အီးမေးလ်ကဘာလဲ?";
+
+
+"New Password (8 Characters Min)" = "စကားဝှက်အသစ် (စကားလုံး ၈ လုံးအောက်မနည်းရ)";
+
+
+"Forgot Password?" = "စကားဝှက်မေ့နေသလား?";
+
+
+"Account Settings" = "အကောင့်ချိန်ညှိခြင်းများ";
+
+
+"Learn how we process your data" = "သင့်ဒေတာကိုဆောင်ရွက်ရန်သတင်းအချက်အလက်";
+
+
+"3h" = "၃နာရီ";
+
+
+"Ok" = "အိုကေ";
+
+
+"Block articles from The Guardian" = "….မှ ဆောင်းပါးများကို ဘလော့မည်";
+
+
+"On" = "ဖွင့်သည်";
+
+
+"Auto" = "အလိုအလျောက်";
+
+
+"Help Center" = "အကူအညီပေးစင်တာ";
+
+
+"Search" = "ချန်နယ်များကို ရှာပါ";
+
+
+"Facebook" = "ဖေ့စ်ဘွတ်";
+
+
+"Select file from gallery" = "ပြခန်းမှဖိုင်ကိုရွေးပါ";
+
+
+
+
+"Save article" = "ဆောင်းပါးကို သိမ်းပါ်";
+
+
+"ABOUT" = "အကြောင်း";
+
+
+"Dark" = "အမှောင်";
+
+
+"Legal" = "ဥပဒေဆိုင်ရာ";
+
+
+"Go to The Guardian" = "…သို့သွားမည်";
+
+
+"Send reset link" = "ပြင်ဆင်မည့်လင့်ခ်ကိုပို့ပါ";
+
+
+
+
+
+"My Account" = "ကျွန်ုပ်၏အကောင့်";
+
+
+"FEEDBACK" = "တုံ့ပြန်ချက်";
+
+
+"Message" = "မက်ဆေ့ချ်";
+
+
+"Confirm New Password" = "စကားဝှက်အသစ်ကို အတည်ပြုပါ";
+
+
+"for ___" = "အတွက် ___";
+
+
+"Search" = "ခေါင်းစဉ်များကိုရှာပါ်";
+
+
+"LANGUAGE" = "ဘာသာစကား";
+
+
+"Light" = "အလင်း";
+
+
+"FOLLOW 3 TO CONTINUE" = "ဆက်လုပ်ရန် ၃ ကိုရွေးပါ";
+
+
+
+
+"Off" = "ပိတ်သည်";
+
+
+"Language" = "ရွေးပါ";
+
+
+"LOG OUT" = "ထွက်မည်";
+
+
+"Report content" = "ကွန်းတန့်ကိုအစီရင်ခံမည်";
+
+
+"What's your email?" = "သင့်အီးမေးလ်ကဘာလဲ?";
+
+
+"On" = "ဖွင့်သည်";
+
+
+"More like this" = "ဤကဲ့သို့နောက်ထပ်သတင်းများ";
+
+
+"Bullet App v1.1.0" = "ဘူးလက် အက်ပ် ဗားရှင်း ၁.၁.၀ (ကျော်ပါ)";
+
+
+"1h" = "၁နာရီ";
+
+
+"Enter Email Address" = "အီးမေးလ်လိပ်စာကိုထည့်ပါ";
+
+
+"News in Bullets" = "အချိန်နည်းနည်းနဲ့များများဖက်ပါ";
+
+
+"6h" = "၆နာရီ";
+
+
+"Choose your password" = "သင့်စကားဝှက်ကို ရွေးပါ";
+
+
+"Cancel" = "မလုပ်တော့ပါ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ဒီအက်ပ်ဖြင့် သတင်းများကိုအမြန် ဖတ်ပါ။ ခေါင်းစဉ်များနှင့် အရင်းအမြစ်များကို ရွေးပါ။ ထို့နောက်ဘူးလက်ပွှုင့်တိုများအလိုက်ဖတ်ပါ။";
+
+
+"Push Notification" = "အသိပေးချက်";
+
+
+"12h" = "၁၂နာရီ";
+
+
+"24h" = "၂၄နာရီ";
+
+
+"E-mail" = "အီးမေးလ်";
+
+
+"How can we help you?" = "ကျွန်ုပ်တို့ဘာကူညီရမလဲ?";
+
+
+"OJP-Wd-0d3.text" = "ပါကစ်စတန်";
+
+
+"CHANGE PASSWORD" = "စကားဝှက်ပြောင်းမည််";
+
+
+"Change Email" = "အီးမေးလ်လိပ်စာပြောင်းမည်";
+
+
+"Medium" = "အလယ်အလတ်";
+
+
+"SAVE CHANGES" = "ပြောင်းလဲမှုများကိုသိမ်းပါ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "အကူအညီလိုပါက ကျွန်ုပ်တို့ထံ မက်ဆေ့ချ်ပို့ပါ သင့်ဆီကစကားသံကို ကြားရတာနှစ်သက်လှပါတယ်";
+
+
+"P5u-N3-Tw4.text" = "အညွှန်း";
+
+
+"Cancel" = "မလုပ်တော့ပါ";
+
+
+"Bullet 1" = "ဘူးလက် ၁";
+
+
+"TIMED NOTIFICATIONS" = "အသိပေးချက်များ ";
+
+
+"POST ARTICLE" = "ဆောင်းပါးကို တင်ပါ်";
+
+
+"CONTACT US" = "ကျွန်ပ်တို့ကို ဆက်သွယ်ပါ";
+
+
+"EDITION / REGION" = "တည်းဖြတ်ခြင်း";
+
+
+"Search" = "ရှာပါ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "တုံ့ပြန်ချက်ကိုကျွန်ပ်တို့ဆီပေးပို့ပါ သင့်ဆီကကြားရဖို့ နှစ်သက်လှ ပါတယ်! ဥပဒေကြောင်းဆိုင်ရာ စိုးရိမ်မှုနှင့် မေးခွန်းများရှိပါသလား? အကူအညီပေးစာမျက်နှာ သို့မဟုတ် ကျွန်ပ်တို့ထံဆက်သွယ်ပါ";
+
+
+"Google" = "ဂူးဂဲလ်";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "အကူအညီလိုပါက ကျွန်ုပ်တို့ထံ မက်ဆေ့ချ်ပို့ပါ သင့်ဆီကစကားသံကို ကြားရတာနှစ်သက်လှပါတယ်!";
+
+
+"30m" = "၃၀မိနစ်";
+
+
+"CONTINUE" = "ဆက်လုပ်ရန်";
+
+
+"Time To Update!" = "အက်ပ်ကိုအဆင့်မြင့်တင်ပါ!";
+
+
+"NOTIFICATIONS" = "အသိပေးချက်များ";
+
+
+"Search" = "ရှာပါ";
+
+
+"By clicking Continue, you agree with our Terms." = "အသုံးအနှုန်းများကိုလက်ခံဖို့ ဆက်လုပ်ရန်ကိုရွေးပါ";
+
+
+"HELP / CONTACT US" = "အကူအညီ / ဆက်သွယ်ရန်";
+
+
+"Reset Password" = "စကားဝှက်ပြင်ဆင်မည်";
+
+
+"SEND MESSAGE" = "မက်ဆေ့ချ်ပို့မည်";
+
+
+"Save article" = "ဆောင်းပါးကိုသိမ်းပါ်";
+
+
+"Bullet 6 (Optional)" = "ဘူးလက် ၆ (မဖြစ်မနေမဟုတ်ပါ)";
+
+
+"HAPTICS" = "ဟက်ပ်တစ်";
+
+
+"Your message has \vbeen sent." = "သင့်မက်ဆေ့ချ်ကိုပို့ပြီးပါပြီ";
+
+
+"LEGAL" = "ဥပဒေဆိုင်ရာ";
+
+
+"Block List" = "ဘလော့စာရင်း";
+
+
+"PERSONALIZATION" = "ကိုယ်စိတ်ကြိုက်ပြင်ဆင်ခြင်း";
+
+
+"in our Privacy Policy." = "ကျွန်ုပ်တို့၏လုံခြုံမှုဆိုင်ရာမူဝါဒတွင်";
+
+
+"CONTINUE" = "ဆက်လုပ်ရန်";
+
+
+"Enter Name" = "အမည်ထည့်ပါ";
+
+
+"What's your email?" = "သင့်အီးမေးလ်ကဘာလဲ?";
+
+
+"Hello there!" = "မင်္ဂလာပါ!";
+
+
+"PUSH NOTIFICATIONS" = "အသိပေးချက်များ";
+
+
+"Bullet 3 (Optional)" = "ဘူးလက် ၃ (မဖြစ်မနေမဟုတ်ပါ)";
+
+
+"Source name" = "အရင်းအမြစ်၏အမည််";
+
+
+"Current Password" = "လက်ရှိသုံးသော စကားဝှက်";
+
+
+"COLOR THEME" = "အရောင်အပြင်အဆင်";
+
+
+"eTp-X1-g34.text" = "သို့မဟုတ်ဖြတ်၍";
+
+
+"CANCEL" = "မလုပ်တော့ပါ";
+
+
+"Bullet 4 (Optional)" = "ဘူးလက် ၄ (မဖြစ်မနေမဟုတ်ပါ)";
+
+
+"Date published" = "ပုံနှိပ်နေ့စွဲ";
+
+
+"Send Password Reset Link" = "စကားဝှက်ပြင်ဆင်ရန် လင့်ခ်ကိုပို့ပါ";
+
+
+"CONTINUE WITH APPLE" = "Apple ID ဖြင့် ဝင်ရောက်စာရင်းသွင်းမည်";
+
+
+"Off" = "ပိတ်သည်";
+
+
+"BLOCK LIST" = "ဘလော့စာရင်း";
+
+
+"HELP" = "အကူအညီ";
+
+
+"Reference link" = "ကိုးကားလင့်ခ်ု";
+
+
+"Your Password" = "သင့်စကားဝှက်ု";
+
+
+"SUBMIT" = "ပေးပို့တင်ပြခြင်း";
+
+
+"HELP" = "အကူအညီ";
+
+
+"MY ACCOUNT" = "ကျွန်ပ်အကောင့်";
+
+
+"hbD-HP-tZd.normalTitle" = "ဘလော့ဖြည်မည်";
+
+
+"OTHERS" = "အခြား";
+
+
+"BREAKING NEWS" = "သတင်းထူးများ";
+
+
+"Topics" = "ဘလော့ထားသော ခေါင်းစဉ်များ";
+
+
+"Message us," = "ကျွန်ုပ်တို့ထံ မက်ဆေ့ချ်ပို့ပါ";
+
+
+"Pick topics to start reading
+and saving articles" = "အက်ပ်ဘာသာစကား";
+
+
+"Forgot Password?" = "စကားဝှက်မေ့နေသလား?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "အင်္ဂါရပ်အသစ်များကိုထည့်ပြီးပါပြီ။  အချို့ ပြဿနာများကို ဖြေရှင်းပြီးပါပြီ။";
+
+
+"Success!" = "အောင်မြင်သည်!";
+
+
+"Current Password" = "လက်ရှိသုံးသော စကားဝှက််";
+
+
+"CONTENT" = "ကွန်းတန့်";
+
+
+"Headline" = "ခေါင်းစည်း်";
+
+
+"neg-UC-UpK.text" = "ဆောင်းပါးများကို ဖတ်ခြင်းနှင့်သိမ်းခြင်း ပြုလုပ်ရန် ခေါင်းစဉ်များကို ရွေးပါ";
+
+
+"CONTINUE WITH EMAIL ID" = "သင့်အီးမေးလ် ID ဖြင့် ဆက်လုပ်ရန်";
+
+
+"SAVE CHANGES" = "ပြောင်းလဲမှုများကိုသိမ်းပါ";
+
+
+"Post an Article" = "ဆောင်းပါးကိုတင်ပါ";
+
+
+"Contact Us" = "ကျွန်ုပ်တို့ကို ဆက်သွယ်ပါ";
+
+
+"On" = "ဖွင့်သည်";
+
+
+"New Email Address" = "အီးမေးလ်လိပ်စာအသစ််";
+
+
+"Bullet 5 (Optional)" = "ဘူးလက် ၅ (မဖြစ်မနေမဟုတ်ပါ)";
+
+
+"Suggest an improvement" = "တိုးတတ်မှုကိုအကြံပြုပါ";
+
+
+"Channels" = "ဘလော့ထားသောအရင်းအမြစ်များ";
+
+
+"From:" = "မှ";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ကိုယ်ရေးကိုယ်တာ ရည်ညွှန်းအကြံပြုချက်များ";
+
+
+"I don't like this" = "ကျွန်ုပ်ဒါကိုမကြိုက်ပါ";
+
+
+"CONTINUE" = "ဆက်လုပ်ရန်";
+
+
+"Name" = "အမည်";
+
+
+"Enter email" = "အီးမေးလ်ထည့်ပါ";
+
+
+"HELP" = "အကူအညီ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ဆက်လုပ်ရန် ၃ နောက်ကိုလိုက်ပါ";
+
+
+"UPDATE APP" = "အက်ပ်ကိုမြင့်တင်ပါ";
+
+
+"Forgot Password?" = "စကားဝှက်မေ့နေသလား?";
+
+
+"Change Password" = "စကားဝှက်ပြောင်းမည်";
+
+
+"Reset Password" = "စကားဝှက်ပြင်ဆင်မည်";
+
+
+
+
+
+
+
+
+"Report content" = "သင့်ပြဿနာကို အစီရင်ခံပါ်";
+
+
+"CHANGE EMAIL ADDRESS" = "အီးမေးလ်လိပ်စာကို ပြောင်းမည်ု";
+
+
+"Follow The Guardian" = "နောက်လိုက်ပါ";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "ကျွန်ုပ်တို့သည်သင်၏အတွေ့အကြုံများကိုချောချောမွေ့မွေ့ဖြစ်စေရန်အင်္ဂါရပ်အသစ်များစွာထပ်မံဖြည့်စွက်ပြီး bug အချို့ကိုပြုပြင်ပေးခဲ့သည်။";
+
+
+"Edition / Region" = "ထုတ်ဝေ / တိုင်းဒေသကြီး";
+
+
+"OK" = "ရလား";
+
+
+"NARRATOR" = "နောက်ခံစကားပြောသူ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "သင်ကြိုက်နှစ်သက်သည့်သတင်းများနှင့် ပတ်သက်၍ နောက်ဆုံးအခြေအနေကိုဆက်ထိန်းထားခြင်းသည်သင်၏အချိန်များစွာမယူသင့်ပါ။ Bullet in News သည်ပုံမှန် ၅ မိနစ်ဖတ်ပြီးအလွယ်တကူရနိုင်သောကျည်ဆန်အဖြစ်သို့ရောက်သွားသည်။ အခုဆိုရင်၊ သင်ဟာသတင်းတစ်ပုဒ်ကိုအချိန်အနည်းငယ်လောက်ယူနိုင်ပြီးအချိန်နည်းနည်းဖြင့်ပိုမိုဖတ်နိုင်ပြီ။";
+
+
+"READING SPEED" = "ဖတ်မြန်";
+
+
+
+
+
+"You haven't blocked anything yet" = "သင်ဘာမှမပိတ်ရသေးပါ";
+
+
+"EDITION / REGION" = "တည်းဖြတ် / ဒေသ";
+
+
+
+
+
+"HEADLINES ONLY" = "HEADLINES တစ်ခုတည်းသော";
+
+
+" 1.0" = "၁.၀";
+
+
+
+
+
+"Audio Settings" = "အသံချိန်ညှိချက်များ";
+
+
+"AUDIO SETTINGS" = "တေးဂီတဆိုင်ရာချိန်ညှိချက်များ";
+
+
+
+
+
+
+
+
+"1x" = "၁x";
+
+
+"HEADLINES AND\nBULLETS" = "ဦး ခေါင်းနှင့် BULLETS";
+
+
+"CONTINUE AS GUEST" = "ည့်သည်အဖြစ် Skip & ဆိုင်းအင်";
+
+
+"Topics" = "ခေါင်းစဉ်များ";
+
+
+"Pick topics to start reading and saving articles" = "ဆောင်းပါးများကိုစတင်ဖတ်ရှုခြင်းနှင့်သိမ်းဆည်းရန်အကြောင်းအရာများကိုရွေးချယ်ပါ";
+
+
+"Channels" = "လိုင်းများ";
+
+
+"Choose from hundreds \nof news publications" = "ရာနှင့်ချီသောသတင်းစာစောင်များမှရွေးချယ်ပါ";
+
+
+"Pick topics to start reading\nand saving articles" = "ဆောင်းပါးများကိုစတင်ဖတ်ခြင်းနှင့်သိမ်းဆည်းရန်အကြောင်းအရာများကိုရွေးချယ်ပါ";
+
+"Pick editions to start reading\nand saving articles" = "ဆောင်းပါးများကိုစတင်ဖတ်ရှုခြင်းနှင့်သိမ်းဆည်းရန်အတွက်ထုတ်ဝေတစ်ခုကိုရွေးချယ်ပါ";
+
+"Or with" = "ဒါမှမဟုတ်";
+
+"CONTINUE AS GUEST" = "a ည့်သည်အဖြစ်ဝင်ရောက်ပါ";
+
+"Terms of Service" = "ဝန်ဆောင်မှု၏စည်းကမ်းချက်များ";
+
+"Choose from hundreds \nof news publications" = "ရာနှင့်ချီသောသတင်းစာစောင်များမှရွေးချယ်ပါ";
+
+"Select your preferred language\nfor News in Bullets." = "Bullet in News အတွက်သင်ကြိုက်နှစ်သက်သောဘာသာစကားကိုရွေးချယ်ပါ။";
+
+"Choose a style" = "စတိုင်ရွေးပါ";
+
+"Pop or subtle. Day or night. Customize your interface." = "ပေါ့ပ်သို့မဟုတ်သိမ်မွေ့။ နေ့သို့မဟုတ်ည။ သင့်ရဲ့ interface ကိုစိတ်ကြိုက်။";
+
+"MINS AGO" = "လွန်ခဲ့သောမိနစ်အနည်းငယ်က";
+
+"AN HOUR AGO" = "တစ်နာရီအကြာ";
+
+"HOURS AGO" = "နာရီအကြာ";
+
+"1 WEEK AGO" = "လွန်ခဲ့သော ၁ ပတ်က";
+
+"YESTERDAY" = "မနေ့က";
+
+"DAYS AGO" = "လွန်ခဲ့သောရက်ပေါင်း";
+
+"Go to" = "သွား:";
+
+"You have reached the start." = "သင်စတင်ခဲ့ပြီ";
+
+"Source unblocked successfully" = "ရင်းမြစ်အောင်မြင်စွာပိတ်ဆို့ထား";
+
+"Invalid email format"  = "မမှန်ကန်သောအီးမေးလ်ပုံစံ";
+
+"Wrong email or password" = "အီးမေး (သို့) စကားဝှက်မှားနေတယ်";
+
+

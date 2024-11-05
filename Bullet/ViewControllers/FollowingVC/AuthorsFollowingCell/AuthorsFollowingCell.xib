@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AuthorsFollowingCell" id="gTV-IL-0wX" customClass="AuthorsFollowingCell" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYM-bL-7JK">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="201"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk4-29-5FQ">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="201"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Dc-Ts-69P">
+                                        <rect key="frame" x="77" y="20" width="64" height="64"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.20392156859999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="aau-FS-85C"/>
+                                            <constraint firstAttribute="width" secondItem="1Dc-Ts-69P" secondAttribute="height" multiplier="1:1" id="f85-hq-Huz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksS-Ha-f4b">
+                                        <rect key="frame" x="20" y="96" width="178" height="19"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.13725490196078433" green="0.12549019607843137" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-HB-A5E">
+                                        <rect key="frame" x="20" y="117" width="178" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" red="0.41960784313725491" green="0.39215686274509803" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brr-SU-0tY">
+                                        <rect key="frame" x="66.5" y="152" width="85" height="29"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.20392156859999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="bEd-EW-NP0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="7" maxX="15" maxY="7"/>
+                                        <state key="normal" title="Follow"/>
+                                        <connections>
+                                            <action selector="didTapFollow:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tXR-ju-JOg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ksS-Ha-f4b" secondAttribute="trailing" constant="20" id="4G8-PO-sQb"/>
+                                    <constraint firstItem="ksS-Ha-f4b" firstAttribute="leading" secondItem="Wk4-29-5FQ" secondAttribute="leading" constant="20" id="AEw-Tj-KTD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Brr-SU-0tY" secondAttribute="bottom" constant="20" id="CRf-za-5Jg"/>
+                                    <constraint firstAttribute="trailing" secondItem="ymv-HB-A5E" secondAttribute="trailing" constant="20" id="EYc-cw-nhG"/>
+                                    <constraint firstItem="ymv-HB-A5E" firstAttribute="top" secondItem="ksS-Ha-f4b" secondAttribute="bottom" constant="2" id="FfV-h5-E7J"/>
+                                    <constraint firstItem="1Dc-Ts-69P" firstAttribute="centerX" secondItem="Wk4-29-5FQ" secondAttribute="centerX" id="SlX-wj-RPx"/>
+                                    <constraint firstItem="ymv-HB-A5E" firstAttribute="leading" secondItem="Wk4-29-5FQ" secondAttribute="leading" constant="20" id="fWb-Ic-RzF"/>
+                                    <constraint firstItem="1Dc-Ts-69P" firstAttribute="top" secondItem="Wk4-29-5FQ" secondAttribute="top" constant="20" id="gKI-rf-gCS"/>
+                                    <constraint firstItem="ksS-Ha-f4b" firstAttribute="top" secondItem="1Dc-Ts-69P" secondAttribute="bottom" constant="12" id="ndQ-9N-tMI"/>
+                                    <constraint firstItem="Brr-SU-0tY" firstAttribute="centerX" secondItem="Wk4-29-5FQ" secondAttribute="centerX" id="rx5-hK-hUt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wk4-29-5FQ" firstAttribute="top" secondItem="ZYM-bL-7JK" secondAttribute="top" id="4OF-A1-coX"/>
+                            <constraint firstItem="Wk4-29-5FQ" firstAttribute="leading" secondItem="ZYM-bL-7JK" secondAttribute="leading" id="eLx-gt-GbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Wk4-29-5FQ" secondAttribute="bottom" id="qhD-5C-Eoq"/>
+                            <constraint firstAttribute="trailing" secondItem="Wk4-29-5FQ" secondAttribute="trailing" id="xBU-RJ-AIc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZYM-bL-7JK" secondAttribute="bottom" id="3oE-Om-Hy2"/>
+                <constraint firstItem="ZYM-bL-7JK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EHg-g3-aDp"/>
+                <constraint firstAttribute="trailing" secondItem="ZYM-bL-7JK" secondAttribute="trailing" id="aKc-H2-a64"/>
+                <constraint firstItem="ZYM-bL-7JK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wOt-qK-6rj"/>
+            </constraints>
+            <size key="customSize" width="190" height="175"/>
+            <connections>
+                <outlet property="authorView" destination="Wk4-29-5FQ" id="Pao-P0-P0m"/>
+                <outlet property="btnFollow" destination="Brr-SU-0tY" id="TPp-ah-DYi"/>
+                <outlet property="imgAuthor" destination="1Dc-Ts-69P" id="XEQ-lO-vVV"/>
+                <outlet property="lblAuthorName" destination="ksS-Ha-f4b" id="efN-az-K9I"/>
+                <outlet property="usernameLabel" destination="ymv-HB-A5E" id="cJ7-xj-t3P"/>
+                <outlet property="viewBG" destination="ZYM-bL-7JK" id="EaN-Aw-khH"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="111.49553571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

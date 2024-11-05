@@ -1,0 +1,1009 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "natuknice";
+"BULLETS" = "NATUKNICE";
+"Headlines is not available." = "Naslovi nisu dostupni.";
+"Check your internet Connection and try again." = "Provjerite svoju povezanost s internetom i pokušajte ponovno.";
+"Choose Image" = "Odaberite sliku";
+"Headline" = "Naslov";
+"Bullet 1" = "Natuknica 1";
+"Bullet 2" = "Natuknica 2";
+"Bullet 3 (Optional)" = "Natuknica 3 (nije obavezno)";
+"Bullet 4 (Optional)" = "Natuknica 4 (nije obavezno)";
+"Bullet 5 (Optional)" = "Natuknica 5 (nije obavezno)";
+"Bullet 6 (Optional)" = "Natuknica 6 (nije obavezno)";
+"Enter Aticle Headline" = "Unesite naslov";
+"Enter source name" = "Unesite izvor";
+"Enter reference link" = "Unesite referencu";
+"Enter published date" = "Unesite datum objave";
+"Enter Bullet 1" = "Unesite prvu natuknicu";
+"Enter Bullet 2" = "Unesite drugu natuknicu";
+"Post article successfully" = "Članak je uspješno objavljen";
+"Follow" = "Zapratite";
+"Unfollow" = "Prestanite pratiti";
+"Block articles from" = "BLOKIRAJ članke od";
+"Unblock articles from" = "ODBLOKIRAJ članke odUkloni članak";
+"Remove article" = "Ukloni članak";
+"Save article" = "Spremi ovaj članak";
+"Terms & Conditions" = "Uvjeti i odredbe";
+"Privacy Policy" = "Politika privatnosti";
+"TERMS AND CONDITIONS" = "UVJETI I ODREDBE";
+"PRIVACY POLICY" = "POLITIKA PRIVATNOSTI";
+"Fuel your curiosity" = "Pročitajte više vijesti iz svijeta";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Pročitajte kratke i točne vijesti o svojim omiljenim temama iz pouzdanih izvora širom svijeta.";
+"Save time" = "Uštedite svoje vrijeme";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Pročitajte vijesti u natuknicama";
+"Hands-free reading" = "Čitanje bez ruku";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nemate vremena za čitanje? Iskoristite funkciju glasovnog čitanja.";
+"Write your message..." = "Napišite svoju poruku…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "pošaljite nam poruku ako trebate pomoć u nečemu, voljeli bismo čuti vaše mišljenje!";
+"Drop us a message" = "pošaljite nam poruku";
+"Enter Name." = "Upišite ime.";
+"Enter Email." = "Upišite email.";
+"Write your message." = "Napišite svoju poruku.";
+"Topic unblock successfully" = "Odblokirali ste ovu temu";
+"Source unblock successfully" = "Odblokirali ste ovaj izvor";
+"Unblock Source" = "Odblokiraj izvor";
+"Cancel" = "Odustani";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Pošaljite nam povratne informacije, voljeli bismo čuti vaše mišljenje! Imate li pitanja ili pravnih nedoumica? Isprobajte našu stranicu za pomoć ili nas kontaktirajte.";
+"Enter your suggestion." = "Upišite svoj prijedlog.";
+"feedback sent." = "povratne informacije su uspješno poslane";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Jezik je uspješno ažuriran";
+"CONTINUE" = "NASTAVI";
+"FOLLOW 3 TO CONTINUE" = "SLIJEDITE 3 DA NASTAVITE";
+"Unfollow Location" = "Prestani pratiti lokaciju";
+"Saved Articles" = "Spremljeni članci";
+"Block" = "BLOKIRAJ";
+"Are you sure you want block" = "Jeste li sigurni da želite blokirati ovo";
+"Once blocked, you wont be able to see any Articles related to this" = "Nećete vidjeti članke ovog kanala ako ga blokirate.";
+"Block Topic" = "Blokiraj ovu temu";
+"Suggested" = "Predloženo";
+"Related Sources not available" = "Slični izvori nisu dostupni";
+"Block Source" = "Blokiraj ovaj izvor";
+"News in Bullets App version" = "Vijesti u natuknicama Verzija aplikacije";
+"Next" = "Dalje";
+"Login" = "Prijava";
+"Terms" = "Uvjeti";
+"By clicking Continue, you agree with our Terms." = "Odaberite Nastavi da prihvatite Uvjete.";
+"in our Privacy Policy." = "u našim Pravilima privatnosti.";
+"Access token missing." = "Nedostaje token za pristup.";
+"NEXT" = "DALJE";
+"By checking this box, you agree to our " = "Kliknite okvir da biste prihvatili Uvjete. Vaši se podaci obrađuju u skladu s našim Pravilima privatnosti.";
+"Terms of Service" = "Uvjeti usluge";
+". We’ll handle your data according to our " = ". Obrađivat ćemo vaše podatke prema našim";
+"Password must be at least 8 characters." = "Lozinka mora biti barem 8 znakova duga.";
+"Strong" = "Jaka";
+"Medium" = "Srednje jaka";
+"Weak" = "Slaba";
+"CREATE A NEW ACCOUNT" = "NAPRAVITE NOVI RAČUN";
+"SIGN IN WITH EXISTING ACCOUNT" = "PRIJAVITE SE S POSTOJEĆIM RAČUNOM";
+"You must agree to the Terms of Services to continue" = "Morate prihvatiti Uvjete i odredbe da nastavite";
+"SIGN IN" = "Prijavite se";
+"What's your password?" = "Koja je vaša lozinka?";
+"SIGN UP" = "Registrirajte se";
+"Choose your password?" = "Odaberite svoju lozinku";
+"Something went wrong" = "Nešto je pošlo po krivu";
+"we will send email to" = "poslat ćemo email na";
+"with a link to reset your password." = "s linkom za resetiranje vaše lozinke.";
+"A reset password link has been sent to" = "Link za resetiranje lozinke je poslan na ";
+"Enter new email." = "Upišite novu email adresu.";
+"Enter password." = "Upišite lozinku.";
+"New Password " = "Nova lozinka";
+" (8 characters min)" = "(min 8 znakova)";
+"Enter current password." = "Upišite trenutnu lozinku.";
+"Enter new password." = "Upišite novu lozinku.";
+"Enter confirm password." = "Potvrdite lozinku.";
+"password do not matched!" = "lozinke se ne podudaraju!";
+"GET STARTED" = "ZAPOČNITE";
+"SKIP" = "PRESKOČI";
+"From where you would like to pick photo?" = "Odakle biste odabrali fotografiju?";
+"Camera" = "Kamera";
+"Photo Library" = "Foto galerija";
+"Kindly open settings and enable access" = "Molimo otvorite postavke i omogućite pristup";
+"Open Settings" = "Otvorite Postavke";
+"Access needed for your camera" = "Potreban je pristup za vašu kameru";
+"Access needed for your photo library" = "Potreban je pristup za vašu foto galeriju";
+"Done" = "Gotovo";
+"Pull to refresh" = "Povucite za osvježavanje";
+"Loading" = "Učitavanje";
+"Speech not available for this article" = "Govor nije dostupan za ovaj članak";
+"MANAGE LOCATION" = "UPRAVLJAJ LOKACIJOM";
+"OK" = "u redu";
+"Choose your News in Bullets Edition based on locale" = "Odaberite svoje vijesti u izdanju Bullets na temelju lokalnog jezika";
+"Edition" = "Izdanje";
+"EDITION / REGION" = "IZDANJE / REGIJA";
+"Your Topics" = "Vaše teme";
+"Your Channels" = "Vaši kanali";
+"Your Places" = "Vaša mjesta";
+"Enter email." = "Unesite e-mail.";
+"Please enter a password." = "Unesite lozinku.";
+"Search articles" = "Pretražujte članke";
+"No results" = "Nema rezultata";
+"Edition / Region" = "Izdanje / Regija";
+
+
+
+"0JC-Sb-Ouu.text" = "NAČIN PRIKAZA";
+
+
+"Search" = "Traži";
+
+
+"Select" = "Odaberi ( ";
+
+
+"6H8-dI-k9P.text" = "Upravljaj lokacijama";
+
+
+"6KH-YP-5Lt.text" = "PRIPOVJEDAČ";
+
+
+" ) icon on the article" = " ) ikonu na člankue";
+
+
+"BLOCK" = "BLOKIRAJ";
+
+
+"you want to read later then" = "kojeg želite kasnije pročitati";
+
+
+"7oo-cf-l7Y.text" = "Brzina čitanja";
+
+
+"88L-ip-pZw.text" = "Brzina čitanja";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Ovdje nema ničeg. Izgleda da ovdje nema ničeg osim mačke. Želite li se vratiti na glavnu stranicu? \nŽelite li se vratiti na početnu?";
+
+
+"BpH-F1-i0z.normalTitle" = "Lokalno";
+
+
+" ) to save article." = " ) da spremite članak.";
+
+
+"FB0-YN-HZg.text" = "da nastavite, odaberite 3";
+
+
+"H5Z-xJ-dWD.text" = "Naslovi i\nNatuknice";
+
+
+"Search" = "Traži";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "PROŠIRENI PRIKAZ";
+
+
+"Jpx-nY-Is1.normalTitle" = "Kanali";
+
+
+"JqN-io-P1u.normalTitle" = "+ Dodaj u Lokacije";
+
+
+"What's your email?" = "Koja je vaša email adresa?";
+
+
+"Lw1-Md-nse.text" = "PRIKAZ POPISA";
+
+
+"LyT-pT-g53.text" = "INTERNACIONALNO";
+
+
+"N6C-6i-Z2s.text" = "INTERNACIONALNO";
+
+
+"Nru-uU-CsC.text" = "Prijedlozi";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Teme";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Uredi";
+
+
+"Topics" = "Teme";
+
+
+"WXY-po-W1B.text" = "NASLOVI I\nNATUKNICE";
+
+
+"ans-Zy-T2Y.placeholder" = "Potraži lokacije";
+
+
+"bgE-Jc-u8H.text" = "Uredi";
+
+
+
+
+
+"Tap the ( " = "Pritisnite (";
+
+
+"Places" = "Lokacija";
+
+
+"d1l-HK-OrG.text" = "NAČIN PRIKAZA";
+
+
+
+
+
+"Language" = "Jezik";
+
+
+"e9g-Wr-suO.text" = "SAMO NASLOVI";
+
+
+"GO HOME" = "natrag na glavnu stranicu";
+
+
+"eh1-Oo-lEn.text" = "PROŠIRENI PRIKAZ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "PRIKAZ POPISA";
+
+
+"j2i-MT-VkA.text" = "Isprobajte drukčiju tipkovnicu";
+
+
+"Top News" = "Glavne vijesti";
+
+
+"jmO-aF-nJ9.text" = "Samo naslovi";
+
+
+"There is nothing in here" = "Ovdje nema ničeg. ";
+
+
+"ma1-9p-bSa.text" = "Nema rezultata";
+
+
+"mce-jc-cKH.text" = "PRIPOVJEDAČ";
+
+
+"Channels" = "Kanali";
+
+
+"Discover" = "Istraži";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ODUSTANI";
+
+
+"Discover" = "Istraži";
+
+
+"No saved stories yet" = "Ovdje nema ničeg";
+
+
+"wDG-kF-Hl8.text" = "Pročitaj vijesti na temelju lokacije";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALIZACIJA";
+
+
+"xfF-RB-mWL.text" = "LOKALIZACIJA";
+
+
+"Search" = "traži";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Doznajte najrelevantnije vijesti o regiji koju ste odabrali. Čitajte vijesti odabrane kako biste bili u toku s najnovijim vijestima s bilo kojeg mjesta na svijetu.";
+
+
+"Search articles" = "Pretražujte članke";
+
+
+"6H8-dI-k9P.text" = "Upravljanje mjestima";
+
+
+
+
+
+"Profile" = "Profil";
+
+
+"Editions" = "Izdanja";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Mjesta";
+
+
+
+
+
+"Search" = "traži";
+
+
+
+
+
+
+
+
+"Search" = "traži";
+
+
+"LANGUAGE" = "JEZIK";
+
+
+"Search" = "traži";
+
+
+"No results" = "Nema rezultata";
+
+
+"Channels" = "Kanali";
+
+
+"Places" = "Mjesta";
+
+
+"Places" = "Mjesta";
+
+
+"e9F-hd-Ifm.text" = "IZDANJE / REGIJA";
+
+
+
+
+
+
+
+
+"PLACES" = "MJESTA";
+
+
+"SAVED ARTICLES" = "SPREMLJENI ČLANCI";
+
+
+"Articles" = "Članci";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "NASTAVITI";
+
+
+
+
+
+"w8f-2R-NgT.text" = "IZDANJE / REGIJA";
+
+
+"Try a different keyword" = "Pokušajte s drugom ključnom riječi";
+
+
+"For You" = "Za tebe";
+
+
+"Results" = "Rezultati";
+
+
+
+
+"About" = "O nama";
+
+
+"Share" = "Podijeli";
+
+
+"ACCOUNT" = "RAČUN";
+
+
+"Your Email" = "Vaš email";
+
+
+"1sT-J6-qI0.text" = "SPREMLJENI ČLANCI ";
+
+
+"2XX-rr-GLC.text" = "Odaberite različite kanale iz stotine izvora ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Pročitajte najnovije vijesti i značajke iz cijelog svijeta. ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Odredite vremenski razmak za primanje obavijesti. ";
+
+
+"Off" = "Isključi";
+
+
+
+
+
+"Bullet 2" = " Natuknica 2";
+
+
+"What's your email?" = "Koja je vaša email adresa?";
+
+
+"New Password (8 Characters Min)" = "Nova lozinka (minimalno 8 znakova) ";
+
+
+"Forgot Password?" = "Zaboravili ste lozinku? ";
+
+
+"Account Settings" = "Postavke računa ";
+
+
+"Learn how we process your data" = "Informacije o obradi vaših podataka ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "U redu";
+
+
+"Block articles from The Guardian" = "Blokirajte članke od ---";
+
+
+"On" = "Uključi";
+
+
+"Auto" = "Automatski";
+
+
+"Help Center" = "Centar za pomoć ";
+
+
+"Search" = "Potraži kanale ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Odaberi datoteku iz galerije ";
+
+
+
+
+"Save article" = "Spremi članak ";
+
+
+"ABOUT" = "VIŠE";
+
+
+"Dark" = "Tamni način rada";
+
+
+"Legal" = "Pravno";
+
+
+"Go to The Guardian" = "Idi na --- ";
+
+
+"Send reset link" = "Pošalji link za resetiranje ";
+
+
+
+
+
+"My Account" = "Moj račun ";
+
+
+"FEEDBACK" = "POVRATNE INFORMACIJE";
+
+
+"Message" = "Poruka";
+
+
+"Confirm New Password" = "Potvrdi novu lozinku";
+
+
+"for ___" = "za";
+
+
+"Search" = "Potraži temes";
+
+
+"LANGUAGE" = "JEZIK";
+
+
+"Light" = "Svjetli način rada";
+
+
+"FOLLOW 3 TO CONTINUE" = "za nastavak, odaberite 3";
+
+
+
+
+"Off" = "Isključi";
+
+
+"Language" = "Odaberi";
+
+
+"LOG OUT" = "ODJAVI SE";
+
+
+"Report content" = "Prijavi sadržaj";
+
+
+"What's your email?" = "Koja je vaša email adresa?";
+
+
+"On" = "Uključi";
+
+
+"More like this" = "Više vijesti poput ove";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Upišite email adresu";
+
+
+"News in Bullets" = "Pročitajte više u manje vremena.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Odaberite svoju lozinku";
+
+
+"Cancel" = "Odustani";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Brzo pročitajte vijesti s ovom aplikacijom. Odaberite svoje teme i izvore, a zatim pročitajte vijesti u kratkim natuknicama.";
+
+
+"Push Notification" = "Obavijest";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Kako vam možemo pomoći?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "PROMIJENITE LOZINKU";
+
+
+"Change Email" = "PROMIJENITE EMAIL ADRESU";
+
+
+"Medium" = "Medij";
+
+
+"SAVE CHANGES" = "SPREMI PROMJENE";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Pošaljite nam poruku ako trebate pomoć u nečemu, voljeli bismo čuti vaše mišljenje!";
+
+
+"P5u-N3-Tw4.text" = "Oznaka";
+
+
+"Cancel" = "Odustani";
+
+
+"Bullet 1" = "Natuknica 1";
+
+
+"TIMED NOTIFICATIONS" = "OBAVIJESTI";
+
+
+"POST ARTICLE" = "OBJAVI ČLANAK";
+
+
+"CONTACT US" = "Kontaktirajte nas";
+
+
+"EDITION / REGION" = "Izdanje";
+
+
+"Search" = "Traži";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Pošaljite nam povratne informacije, voljeli bismo čuti vaše mišljenje! Imate li pitanja ili pravnih nedoumica? Isprobajte našu stranicu za pomoć ili nas kontaktirajte.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Pošaljite nam poruku ako trebate pomoć u nečemu, voljeli bismo čuti vaše mišljenje!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "NASTAVI";
+
+
+"Time To Update!" = "Ažuriraj aplikaciju!";
+
+
+"NOTIFICATIONS" = "OBAVIJESTI";
+
+
+"Search" = "Traži";
+
+
+"By clicking Continue, you agree with our Terms." = "Odaberite Nastavi da prihvatite Uvjete.";
+
+
+"HELP / CONTACT US" = "POMOĆ / KONTAKT";
+
+
+"Reset Password" = "Resetirajte lozinku";
+
+
+"SEND MESSAGE" = "POŠALJITE PORUKU";
+
+
+"Save article" = "Spremi članak";
+
+
+"Bullet 6 (Optional)" = "Natuknica 6 (nije obavezno)";
+
+
+"HAPTICS" = "TAKTILNO";
+
+
+"Your message has \vbeen sent." = "Vaša poruka je poslana.";
+
+
+"LEGAL" = "PRAVNO";
+
+
+"Block List" = "Popis blokiranih";
+
+
+"PERSONALIZATION" = "PERSONALIZACIJA";
+
+
+"in our Privacy Policy." = "u našim Pravilima privatnosti.";
+
+
+"CONTINUE" = "NASTAVI";
+
+
+"Enter Name" = "Upišite ime";
+
+
+"What's your email?" = "Koja je vaša email adresa?";
+
+
+"Hello there!" = "Bok!";
+
+
+"PUSH NOTIFICATIONS" = "OBAVIJESTI";
+
+
+"Bullet 3 (Optional)" = "Natuknica 3 (nije obavezno)";
+
+
+"Source name" = "Ime izvora";
+
+
+"Current Password" = "Trenutna lozinka";
+
+
+"COLOR THEME" = "Tema boja";
+
+
+"eTp-X1-g34.text" = "Ili kroz";
+
+
+"CANCEL" = "ODUSTANI";
+
+
+"Bullet 4 (Optional)" = "Natuknica 4 (nije obavezno)";
+
+
+"Date published" = "Datum objave";
+
+
+"Send Password Reset Link" = "Pošalji link za resetiranje lozinke";
+
+
+"CONTINUE WITH APPLE" = "Registrirajte se putem Apple ID-a";
+
+
+"Off" = "Isključi";
+
+
+"BLOCK LIST" = "POPIS BLOKIRANIH";
+
+
+"HELP" = "POMOĆ";
+
+
+"Reference link" = "Referentni link";
+
+
+"Your Password" = "Vaša lozinka";
+
+
+"SUBMIT" = "PODNESI";
+
+
+"HELP" = "POMOĆ";
+
+
+"MY ACCOUNT" = "MOJ RAČUN";
+
+
+"hbD-HP-tZd.normalTitle" = "Odblokiraj";
+
+
+"OTHERS" = "Drugi";
+
+
+"BREAKING NEWS" = "IZVANREDNE VIJESTI";
+
+
+"Topics" = "Blokirane teme";
+
+
+"Message us," = "Pošaljite nam poruku,";
+
+
+"Pick topics to start reading
+and saving articles" = "jezik aplikacije";
+
+
+"Forgot Password?" = "Zaboravili ste lozinku?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Nove značajke su dodane. Neki problemi su popravljeni.";
+
+
+"Success!" = "Uspjeh!!";
+
+
+"Current Password" = "Trenutna lozinka";
+
+
+"CONTENT" = "SADRŽAJ";
+
+
+"Headline" = "Naslov";
+
+
+"neg-UC-UpK.text" = "Odaberite teme kako biste započeli čitati i spremati članke";
+
+
+"CONTINUE WITH EMAIL ID" = "Nastavite sa svojim ID-om emaila";
+
+
+"SAVE CHANGES" = "SPREMI PROMJENE";
+
+
+"Post an Article" = "Objavi članak";
+
+
+"Contact Us" = "Kontaktirajte nas";
+
+
+"On" = "Uključi";
+
+
+"New Email Address" = "Nova email adresa";
+
+
+"Bullet 5 (Optional)" = "Natuknica 5 (nije obavezno)";
+
+
+"Suggest an improvement" = "Predložite poboljšanje";
+
+
+"Channels" = "Blokirani izvori";
+
+
+"From:" = "Od:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONALIZIRANI PRIJEDLOZI";
+
+
+"I don't like this" = "Ne sviđa mi se ovo";
+
+
+"CONTINUE" = "NASTAVI";
+
+
+"Name" = "Ime";
+
+
+"Enter email" = "Upišite email";
+
+
+"HELP" = "POMOĆ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Slijedite 3 da Nastavite";
+
+
+"UPDATE APP" = "Ažurirajte aplikaciju";
+
+
+"Forgot Password?" = "Zaboravili ste lozinku?";
+
+
+"Change Password" = "Promijenite lozinku";
+
+
+"Reset Password" = "Resetirajte lozinku";
+
+
+
+
+
+
+
+
+"Report content" = "Prijavite svoju zabrinutost";
+
+
+"CHANGE EMAIL ADDRESS" = "PROMIJENITE EMAIL ADRESU";
+
+
+"Follow The Guardian" = "Slijedite ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Dodali smo puno novih značajki i ispravili neke programske pogreške kako bismo vaše iskustvo učinili što glatkijim.";
+
+
+"Edition / Region" = "Izdanje / Regija";
+
+
+"OK" = "u redu";
+
+
+"NARRATOR" = "PRIPOVJEDAČ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ažuriranje vijesti koje volite ne bi vam trebalo oduzeti previše vremena. News in Bullets uzima redovno petominutno čitanje i sažima ga u lako probavljive metke. Sada možete uzeti iste vijesti u samo djeliću vremena - tako da možete pročitati više za manje vremena.";
+
+
+"READING SPEED" = "BRZINA ČITANJA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Još niste ništa blokirali";
+
+
+"EDITION / REGION" = "IZDANJE / REGIJA";
+
+
+
+
+
+"HEADLINES ONLY" = "SAMO GLAVE";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Audio postavke";
+
+
+"AUDIO SETTINGS" = "AUDIO POSTAVKE";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "NASLOVI I METKI";
+
+
+"CONTINUE AS GUEST" = "SKIPI I PRIJAVITE SE KAO GOST";
+
+
+"Topics" = "Teme";
+
+
+"Pick topics to start reading and saving articles" = "Odaberite teme za početak čitanja i spremanja članaka";
+
+
+
+"Channels" = "Kanali";
+
+
+"Choose from hundreds \nof news publications" = "Izaberite između stotina novinskih publikacija";
+
+
+"Pick topics to start reading\nand saving articles" = "Odaberite teme za početak čitanja i spremanja članaka";
+
+"Pick editions to start reading\nand saving articles" = "Odaberite izdanja da biste započeli čitanje i spremanje članaka";
+
+"Or with" = "Ili sa";
+
+"CONTINUE AS GUEST" = "NASTAVITE KAO GOST";
+
+"Terms of Service" = "Uvjeti pružanja usluge";
+
+"Choose from hundreds \nof news publications" = "Izaberite između stotina novinskih publikacija";
+
+"Select your preferred language\nfor News in Bullets." = "Odaberite željeni jezik za News in Bullets.";
+
+"Choose a style" = "Odaberite stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop ili suptilan. Danju ili noću. Prilagodite svoje sučelje.";
+
+"MINS AGO" = "prije nekoliko minuta";
+
+"AN HOUR AGO" = "prije sat vremena";
+
+"HOURS AGO" = "Sati prije";
+
+"1 WEEK AGO" = "Prije 1 tjedan";
+
+"YESTERDAY" = "Jučer";
+
+"DAYS AGO" = "dana prije";
+
+"Go to" = "Odi u";
+
+"You have reached the start." = "Stigli ste do početka";
+
+"Source unblocked successfully" = "Izvor je uspješno deblokiran";
+
+"Invalid email format"  = "Nevažeći format e-pošte";
+
+"Wrong email or password" = "Pogrešna adresa e-pošte ili lozinke";
+
+

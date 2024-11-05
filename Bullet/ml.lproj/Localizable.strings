@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ബുള്ളറ്റ്-പോയിന്റ്";
+"BULLETS" = "ബുള്ളറ്റ് POINTS";
+"Headlines is not available." = "തലക്കെട്ടുകൾ ലഭ്യമല്ല.";
+"Check your internet Connection and try again." = "നിങ്ങളുടെ ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.";
+"Choose Image" = "ചിത്രം തിരഞ്ഞെടുക്കുക";
+"Headline" = "തലവാചകം";
+"Bullet 1" = "ബുള്ളറ്റ് 1";
+"Bullet 2" = "ബുള്ളറ്റ് 2";
+"Bullet 3 (Optional)" = "ബുള്ളറ്റ് 3 (ഓപ്ഷണൽ)";
+"Bullet 4 (Optional)" = "ബുള്ളറ്റ് 4 (ഓപ്ഷണൽ)";
+"Bullet 5 (Optional)" = "ബുള്ളറ്റ് 5 (ഓപ്ഷണൽ)";
+"Bullet 6 (Optional)" = "ബുള്ളറ്റ് 6 (ഓപ്ഷണൽ)";
+"Enter Aticle Headline" = "തലക്കെട്ട് നൽകുക";
+"Enter source name" = "ഉറവിടം നൽകുക";
+"Enter reference link" = "റഫറൻസ് നൽകുക";
+"Enter published date" = "പ്രസിദ്ധീകരിക്കുക തീയതി നൽകുക";
+"Enter Bullet 1" = "ആദ്യ ബുള്ളറ്റ് നൽകുക";
+"Enter Bullet 2" = "രണ്ടാം ബുള്ളറ്റ് നൽകുക";
+"Post article successfully" = "ലേഖനം വിജയകരമായി പോസ്റ്റ് ആണ്";
+"Follow" = "പിന്തുടരുക";
+"Unfollow" = "പിന്തുടരൽ";
+"Block articles from" = "നിന്നുള്ള ലേഖനങ്ങൾ തടയാൻ";
+"Unblock articles from" = "നിന്നുള്ള ലേഖനങ്ങൾ തടഞ്ഞത്";
+"Remove article" = "ലേഖനം നീക്കം";
+"Save article" = "ഈ ലേഖനം സംരക്ഷിക്കുക";
+"Terms & Conditions" = "വ്യവസ്ഥകളും നിബന്ധനകളും";
+"Privacy Policy" = "സ്വകാര്യതാനയം";
+"TERMS AND CONDITIONS" = "ഉപാധികളും നിബന്ധനകളും";
+"PRIVACY POLICY" = "സ്വകാര്യതാനയം";
+"Fuel your curiosity" = "ലോകം കൂടുതൽ വാർത്തകൾ വായിക്കുക";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "ലോകമെമ്പാടുമുള്ള വിശ്വസനീയ ഉറവിടങ്ങളിൽ നിന്നും നിങ്ങളുടെ പ്രിയപ്പെട്ട വിഷയങ്ങളെക്കുറിച്ച് ചെറുതും കൃത്യമായ വാർത്ത വായിക്കുക.";
+"Save time" = "നിങ്ങളുടെ സമയം ലാഭിക്കുക";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "ബുള്ളറ്റ്-പോയിന്റ് വാർത്തകൾ വായിക്കാൻ";
+"Hands-free reading" = "ഹാൻഡ്സ് ഫ്രീ വായന";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "വായന ഇല്ല സമയം? പ്രസംഗം പ്രവർത്തനം ഉപയോഗിക്കുക.";
+"Write your message..." = "നിങ്ങളുടെ സന്ദേശം എഴുതുക ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ഞങ്ങളെ എന്തെങ്കിലും സഹായം ആവശ്യമെങ്കിൽ ഞങ്ങൾ നിങ്ങളെ അറിയാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു ഒരു സന്ദേശം അയയ്ക്കുക!";
+"Drop us a message" = "ഞങ്ങളെ ഒരു സന്ദേശം അയയ്ക്കുക";
+"Enter Name." = "പേര് നൽകുക.";
+"Enter Email." = "ഇമെയിൽ നൽകുക.";
+"Write your message." = "നിങ്ങളുടെ സന്ദേശം എഴുതുക.";
+"Topic unblock successfully" = "ഈ വിഷയം തടഞ്ഞത് മാറ്റും";
+"Source unblock successfully" = "ഈ ഉറവിടം തടഞ്ഞത് മാറ്റും";
+"Unblock Source" = "അൺബ്ലോക്കുചെയ്യുക ഉറവിടം";
+"Cancel" = "റദ്ദാക്കുക";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ഒരു ഫീഡ്ബാക്ക് ഞങ്ങളെ അയയ്ക്കുക, ഞങ്ങൾ നിങ്ങളിൽ നിന്ന് അറിയാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു! നിങ്ങൾ ചോദ്യങ്ങളോ നിയമ ആശങ്കകൾ ഉണ്ടോ? ഞങ്ങളുടെ സഹായ പേജ് അല്ലെങ്കിൽ ബന്ധപ്പെടുക ശ്രമിക്കുക.";
+"Enter your suggestion." = "നിങ്ങളുടെ നിർദ്ദേശം നൽകുക.";
+"feedback sent." = "ഫീഡ്ബാക്ക് വിജയകരമായി അയച്ചു";
+"30m" = "30m";
+"1h" = "1 മണിക്കൂർ";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "ഭാഷ വിജയകരമായി അപ്ഡേറ്റ് ചെയ്യുന്നത്.";
+"CONTINUE" = "തുടരുക";
+"FOLLOW 3 TO CONTINUE" = "പിന്തുടരുക 3 തുടരാൻ";
+"Unfollow Location" = "പിന്തുടരുന്നത് ഒഴിവാക്കുക സ്ഥലം";
+"Saved Articles" = "സംരക്ഷിച്ച ലേഖനങ്ങൾ";
+"Block" = "ബ്ലോക്ക്";
+"Are you sure you want block" = "നിങ്ങൾ ഇത് തടയണമെന്നുണ്ടോ";
+"Once blocked, you wont be able to see any Articles related to this" = "നിങ്ങൾ അത് തടയാൻ എങ്കിൽ ഈ ചാനലിൽ നിന്ന് ലേഖനങ്ങൾ കാണില്ല.";
+"Block Topic" = "ഈ വിഷയം തടയുക";
+"Suggested" = "നിർദ്ദേശിച്ചത്";
+"Related Sources not available" = "ബന്ധപ്പെട്ട ഉറവിടങ്ങൾ ഇല്ലാത്ത";
+"Block Source" = "ഈ ഉറവിടം തടയുക";
+"News in Bullets App version" = "ബുള്ളറ്റുകൾ അപ്ലിക്കേഷൻ പതിപ്പിൽ വാർത്ത";
+"Next" = "അടുത്തത്";
+"Login" = "ലോഗിൻ";
+"Terms" = "നിബന്ധനകൾ";
+"By clicking Continue, you agree with our Terms." = "നിബന്ധനകൾ അംഗീകരിക്കാൻ തുടരുക തിരഞ്ഞെടുക്കുക.";
+"in our Privacy Policy." = "ഞങ്ങളുടെ സ്വകാര്യത നയത്തിൽ.";
+"Access token missing." = "ആക്സസ് ടോക്കൺ കാണുന്നില്ല.";
+"NEXT" = "അടുത്തത്";
+"By checking this box, you agree to our " = "നിബന്ധനകൾ അംഗീകരിക്കാൻ ബോക്സ് ക്ലിക്ക്. നിങ്ങളുടെ ഡാറ്റ ഞങ്ങളുടെ സ്വകാര്യതാ നയം അനുസരിച്ച് പ്രതീക്ഷിക്കുന്നു.";
+"Terms of Service" = "സേവന നിബന്ധനകൾ";
+". We’ll handle your data according to our " = ". ഞങ്ങളുടെ പ്രകാരം നിങ്ങളുടെ ഡാറ്റ കൈകാര്യം ചെയ്യും";
+"Password must be at least 8 characters." = "പാസ്വേഡ് കുറഞ്ഞത് 8 പ്രതീകങ്ങൾ ഉണ്ടായിരിക്കണം.";
+"Strong" = "ശക്തമായ";
+"Medium" = "മീഡിയം";
+"Weak" = "ദുർബല";
+"CREATE A NEW ACCOUNT" = "ഒരു പുതിയ അക്കൌണ്ട് ഉണ്ടാക്കുക";
+"SIGN IN WITH EXISTING ACCOUNT" = "നിലവിലുള്ള ഒരു അക്കൗണ്ടുമായി സൈൻ";
+"You must agree to the Terms of Services to continue" = "നിങ്ങൾ തുടരാൻ സേവനങ്ങൾ നിബന്ധനകൾ അംഗീകരിക്കണം";
+"SIGN IN" = "സൈൻ ഇൻ";
+"What's your password?" = "നിങ്ങളുടെ പാസ്വേഡ് എന്താണ്?";
+"SIGN UP" = "സൈൻ അപ്പ് ചെയ്യുക";
+"Choose your password?" = "നിങ്ങളുടെ പാസ്വേഡ് തിരഞ്ഞെടുക്കുക";
+"Something went wrong" = "എന്തോ കുഴപ്പം സംഭവിച്ചു";
+"we will send email to" = "നമ്മൾ ഇമെയിൽ അയക്കും";
+"with a link to reset your password." = "നിങ്ങളുടെ പാസ്വേഡ് റീസെറ്റ് ഒരു ലിങ്ക് കൂടെ.";
+"A reset password link has been sent to" = "റീസെറ്റ് പാസ്വേഡ് ഒരു ലിങ്ക് അയച്ചു ചെയ്തു";
+"Enter new email." = "പുതിയ ഇമെയിൽ നൽകുക.";
+"Enter password." = "പാസ്വേഡ് നല്കൂ.";
+"New Password " = "പുതിയ പാസ്വേഡ്";
+" (8 characters min)" = "(8 അക്ഷരങ്ങൾ മി)";
+"Enter current password." = "നിലവിലെ പാസ്വേഡ് നൽകുക.";
+"Enter new password." = "പുതിയ പാസ്വേഡ് നൽകുക.";
+"Enter confirm password." = "പാസ്വേഡ് സ്ഥിരീകരിക്കുക.";
+"password do not matched!" = "പാസ്വേഡുകൾ പൊരുത്തപ്പെടുന്നില്ല!";
+"GET STARTED" = "തുടങ്ങി";
+"SKIP" = "ഉപേക്ഷിക്കുക";
+"From where you would like to pick photo?" = "നിങ്ങൾ ഫോട്ടോ എടുക്കാൻ ആഗ്രഹിക്കുന്ന നിന്നും?";
+"Camera" = "കാമറ";
+"Photo Library" = "ഫോട്ടോ ലൈബ്രറി";
+"Kindly open settings and enable access" = "ഹൃദ്യമായി ഓപ്പൺ ക്രമീകരണങ്ങളും ആക്സസ് പ്രവർത്തനക്ഷമമാക്കുക";
+"Open Settings" = "തുറക്കുക ക്രമീകരണങ്ങൾ";
+"Access needed for your camera" = "ആക്സസ് നിങ്ങളുടെ ക്യാമറ ആവശ്യമായ";
+"Access needed for your photo library" = "ആക്സസ് നിങ്ങളുടെ ഫോട്ടോ ലൈബ്രറിയിൽ ആവശ്യമായ";
+"Done" = "ചെയ്തുകഴിഞ്ഞു";
+"Pull to refresh" = "പുതുക്കാൻ വലിക്കുക";
+"Loading" = "ലോഡിംഗ്";
+"Speech not available for this article" = "സ്പീച്ച് ഈ ലേഖനം ലഭ്യമല്ല";
+"MANAGE LOCATION" = "സ്ഥാനം കൈകാര്യം ചെയ്യുക";
+"OK" = "ശരി";
+"Choose your News in Bullets Edition based on locale" = "ലോക്കേലിനെ അടിസ്ഥാനമാക്കി ബുള്ളറ്റ് പതിപ്പിലെ നിങ്ങളുടെ വാർത്ത തിരഞ്ഞെടുക്കുക";
+"Edition" = "പതിപ്പ്";
+"EDITION / REGION" = "പതിപ്പ് / പ്രദേശം";
+"Your Topics" = "നിങ്ങളുടെ വിഷയങ്ങൾ";
+"Your Channels" = "നിങ്ങളുടെ ചാനലുകൾ";
+"Your Places" = "നിങ്ങളുടെ സ്ഥലങ്ങൾ";
+"Enter email." = "ഇമെയിൽ നൽകുക.";
+"Please enter a password." = "ഒരു പാസ്‌വേഡ് നൽകുക.";
+"Search articles" = "ലേഖനങ്ങൾ തിരയുക";
+"No results" = "ഫലങ്ങളൊന്നുമില്ല";
+"Edition / Region" = "പതിപ്പ് / പ്രദേശം";
+
+
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "0JC-Sb-Ouu"; */
+"0JC-Sb-Ouu.text" = "ഡിസ്പ്ലേ മോഡ്";
+
+
+"Search" = "തിരയൽ";
+
+
+"Select" = "തിരഞ്ഞെടുക്കുക ( ";
+
+
+"6H8-dI-k9P.text" = "ലൊക്കേഷനുകൾ നിയന്ത്രിക്കുക";
+
+
+"6KH-YP-5Lt.text" = "ആഖ്യാതാവ്";
+
+
+" ) icon on the article" = " ) ലേഖനം ഐക്കൺ";
+
+
+"BLOCK" = "ബ്ലോക്ക്";
+
+
+"you want to read later then" = "നിങ്ങൾ പിന്നീട് തുടർന്ന് വായിക്കാൻ ആഗ്രഹിക്കുന്നു";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "7oo-cf-l7Y"; */
+"7oo-cf-l7Y.text" = "വായനയുടെ വേഗത";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "88L-ip-pZw"; */
+"88L-ip-pZw.text" = "വായനയുടെ വേഗത";
+
+/* Class = "UILabel"; text = "There is nothing in here \nDo you want to go back to home page?"; ObjectID = "9hT-gC-mbD"; */
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "ഇവിടെ ഒന്നും ഇല്ല \nഹോം പേജ് തിരികെ പോകേണ്ടത്?";
+
+
+"BpH-F1-i0z.normalTitle" = "പ്രാദേശിക";
+
+
+" ) to save article." = " ) ലേഖനം സംരക്ഷിക്കാൻ.";
+
+/* Class = "UILabel"; text = "to continue, choose 3"; ObjectID = "FB0-YN-HZg"; */
+"FB0-YN-HZg.text" = "തുടരാൻ, തിരഞ്ഞെടുക്കുക 3";
+
+/* Class = "UILabel"; text = "Headlines and\nBullet points"; ObjectID = "H5Z-xJ-dWD"; */
+"H5Z-xJ-dWD.text" = "പ്രധാനവാർത്തകൾ,\nബുള്ളറ്റ് പോയിന്റ്";
+
+
+"Search" = "തിരയൽ";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "വിപുലീകരിച്ച കാണുക";
+
+
+"Jpx-nY-Is1.normalTitle" = "ചാനലുകൾ";
+
+
+"JqN-io-P1u.normalTitle" = "+ ലൊക്കേഷനുകൾ ചേർക്കുക";
+
+/* Class = "UILabel"; text = "What is your Email address?"; ObjectID = "KRg-gX-n95"; */
+"What's your email?" = "നിങ്ങളുടെ ഇമെയിൽ വിലാസം എന്താണ്?";
+
+
+"Lw1-Md-nse.text" = "ലിസ്റ്റ് കാഴ്ച";
+
+
+"LyT-pT-g53.text" = "അന്തർദേശീയം";
+
+
+"N6C-6i-Z2s.text" = "അന്തർദേശീയം";
+
+/* Class = "UILabel"; text = "Suggestions"; ObjectID = "Nru-uU-CsC"; */
+"Nru-uU-CsC.text" = "നിർദ്ദേശങ്ങൾ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "വിഷയങ്ങൾ";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "ഇഷ്ടാനുസൃതമാക്കുക";
+
+
+"Topics" = "വിഷയങ്ങൾ";
+
+/* Class = "UILabel"; text = "HEADLINES AND\nBULLET POINTS"; ObjectID = "WXY-po-W1B"; */
+"WXY-po-W1B.text" = "പ്രധാനവാർത്തകൾ,\nബുള്ളറ്റ് POINTS";
+
+
+"ans-Zy-T2Y.placeholder" = "ലൊക്കേഷനുകൾ തിരയുക";
+
+
+"bgE-Jc-u8H.text" = "ഇഷ്ടാനുസൃതമാക്കുക";
+
+
+
+
+
+"Tap the ( " = "ടാപ്പ് ( ";
+
+
+"Places" = "സ്ഥലം";
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "d1l-HK-OrG"; */
+"d1l-HK-OrG.text" = "ഡിസ്പ്ലേ മോഡ്";
+
+
+
+
+
+"Language" = "ഭാഷ";
+
+
+"e9g-Wr-suO.text" = "മാത്രം തലക്കെട്ടുകൾ";
+
+/* Class = "UILabel"; text = "go back to main page"; ObjectID = "eda-67-Bla"; */
+"GO HOME" = "പ്രധാന മടങ്ങി";
+
+
+"eh1-Oo-lEn.text" = "വിപുലീകരിച്ച കാണുക";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ലിസ്റ്റ് കാഴ്ച";
+
+
+"j2i-MT-VkA.text" = "മറ്റൊരു പദങ്ങൾ പരീക്ഷിക്കുക";
+
+
+"Top News" = "മികച്ച വാർത്ത";
+
+
+"jmO-aF-nJ9.text" = "മാത്രം പ്രധാനവാർത്തകൾ";
+
+
+"There is nothing in here" = "ഇവിടെ ഒന്നും ഇല്ല";
+
+
+"ma1-9p-bSa.text" = "ഒരു ഫലവും കണ്ടെത്താനായില്ല";
+
+
+"mce-jc-cKH.text" = "ആഖ്യാതാവ്";
+
+
+"Channels" = "ചാനലുകൾ";
+
+
+"Discover" = "കണ്ടെത്തുക";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "റദ്ദാക്കണമെന്ന്";
+
+
+"Discover" = "കണ്ടെത്തുക";
+
+/* Class = "UILabel"; text = "There is nothing in here"; ObjectID = "vnX-zd-Bgt"; */
+"No saved stories yet" = "ഇവിടെ ഒന്നും ഇല്ല";
+
+/* Class = "UILabel"; text = "Read news based on location"; ObjectID = "wDG-kF-Hl8"; */
+"wDG-kF-Hl8.text" = "ലൊക്കേഷൻ അടിസ്ഥാനമാക്കി വാർത്തകൾ വായിക്കുക";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ലോക്കലൈസേഷൻ";
+
+
+"xfF-RB-mWL.text" = "ലോക്കലൈസേഷൻ";
+
+
+"Search" = "തിരയുക";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന പ്രദേശത്തേക്ക് ഏറ്റവും പ്രസക്തമായ വാർത്തകൾ നേടുക. ലോകത്തെവിടെ നിന്നും ഏറ്റവും പുതിയ വാർത്തകൾ അപ്‌ഡേറ്റ് ചെയ്യുന്നതിന് ക്യൂറേറ്റുചെയ്‌ത വാർത്തകൾ വായിക്കുക.";
+
+
+"Search articles" = "ലേഖനങ്ങൾ തിരയുക";
+
+
+"6H8-dI-k9P.text" = "സ്ഥലങ്ങൾ നിയന്ത്രിക്കുക";
+
+
+
+
+
+"Profile" = "പ്രൊഫൈൽ";
+
+
+"Editions" = "പതിപ്പുകൾ";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "സ്ഥലങ്ങൾ";
+
+
+
+
+
+"Search" = "തിരയുക";
+
+
+
+
+
+
+
+
+"Search" = "തിരയുക";
+
+
+"LANGUAGE" = "ഭാഷ";
+
+
+"Search" = "തിരയുക";
+
+
+"No results" = "ഒരു വിവരങ്ങളും കിട്ടിയില്ല";
+
+
+"Channels" = "ചാനലുകൾ";
+
+
+"Places" = "സ്ഥലങ്ങൾ";
+
+
+"Places" = "സ്ഥലങ്ങൾ";
+
+
+"e9F-hd-Ifm.text" = "പതിപ്പ് / പ്രദേശം";
+
+
+
+
+
+
+
+
+"PLACES" = "സ്ഥലങ്ങൾ";
+
+
+"SAVED ARTICLES" = "സംരക്ഷിച്ച ലേഖനങ്ങൾ";
+
+
+"Articles" = "ലേഖനങ്ങൾ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "തുടരുക";
+
+
+
+
+
+"w8f-2R-NgT.text" = "പതിപ്പ് / പ്രദേശം";
+
+
+"Try a different keyword" = "മറ്റൊരു കീവേഡ് പരീക്ഷിക്കുക";
+
+
+"For You" = "നിനക്കായ്";
+
+
+"Results" = "ഫലം";
+
+
+
+"About" = "ഞങ്ങളേക്കുറിച്ച്";
+
+
+"Share" = "പങ്കിടുക";
+
+
+"ACCOUNT" = "ACCOUNT,";
+
+
+"Your Email" = "നിങ്ങളുടെ ഇമെയിൽ";
+
+
+"1sT-J6-qI0.text" = "സംരക്ഷിച്ചു ലേഖനങ്ങളും";
+
+
+"2XX-rr-GLC.text" = "ഉറവിടങ്ങളിൽ നൂറുകണക്കിന് നിന്ന് വ്യത്യസ്ത ചാനലുകൾ തിരഞ്ഞെടുക്കുക";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "ലോകത്തിലെ എല്ലാ വാർത്തകളും ഇവന്റുകൾ ഫീച്ചറുകളും വായിക്കുക.";
+
+
+"Set an interval in which you want to receive your news notifications." = "അറിയിപ്പുകൾ ലഭിക്കാൻ ഒരു കാലം വിടവ് സജ്ജമാക്കുക.";
+
+
+"Off" = "ഓഫ്";
+
+
+
+
+
+"Bullet 2" = "ബുള്ളറ്റ് 2";
+
+
+"What's your email?" = "നിങ്ങളുടെ ഇമെയിൽ എന്താണ്?";
+
+
+"New Password (8 Characters Min)" = "പുതിയ പാസ്വേഡ് (8 അക്ഷരങ്ങൾ)";
+
+
+"Forgot Password?" = "പാസ്വേഡ് മറന്നോ?";
+
+
+"Account Settings" = "അക്കൗണ്ട് ക്രമീകരണങ്ങൾ";
+
+
+"Learn how we process your data" = "നിങ്ങളുടെ ഡാറ്റ പ്രോസസ്സ് വിവരങ്ങൾ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "ശരി";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "ഓൺ ചെയ്യുക";
+
+
+"Auto" = "ഓട്ടോ";
+
+
+"Help Center" = "സഹായകേന്ദ്രം";
+
+
+"Search" = "ചാനലുകൾ തിരയുക";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "ഗാലറിയിൽ നിന്ന് ഫയൽ തിരഞ്ഞെടുക്കുക";
+
+
+
+
+"Save article" = "ലേഖനം സംരക്ഷിക്കുക";
+
+
+"ABOUT" = "ആമുഖം";
+
+
+"Dark" = "ഇരുണ്ട";
+
+
+"Legal" = "നിയമ";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "റീസെറ്റ് ലിങ്ക് അയയ്ക്കുക";
+
+
+
+
+
+"My Account" = "എന്റെ അക്കൗണ്ട്";
+
+
+"FEEDBACK" = "ഫീഡ്ബാക്ക്";
+
+
+"Message" = "സന്ദേശം";
+
+
+"Confirm New Password" = "പുതിയ പാസ്വേഡ് സ്ഥിരീകരിക്കുക";
+
+
+"for ___" = "വേണ്ടി ___";
+
+
+"Search" = "വിഷയങ്ങൾക്കായി തിരയുക";
+
+
+"LANGUAGE" = "LANGUAGE എന്ന";
+
+
+"Light" = "വെളിച്ചം";
+
+
+"FOLLOW 3 TO CONTINUE" = "തുടരാൻ, തിരഞ്ഞെടുക്കുക 3";
+
+
+
+
+"Off" = "ഓഫ് ആക്കുക";
+
+
+"Language" = "തിരഞ്ഞെടുക്കുക";
+
+
+"LOG OUT" = "ലോഗ് ഔട്ട് ചെയ്യുക";
+
+
+"Report content" = "റിപ്പോർട്ട് ഉള്ളടക്കം";
+
+
+"What's your email?" = "നിങ്ങളുടെ ഇമെയിൽ എന്താണ്?";
+
+
+"On" = "ഓൺ ചെയ്യുക";
+
+
+"More like this" = "ഇതുപോലുള്ള കൂടുതൽ വാർത്തകൾ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 മണിക്കൂർ";
+
+
+"Enter Email Address" = "ഇ - മെയിൽ വിലാസം രേഖപ്പെടുത്തുക";
+
+
+"News in Bullets" = "ചുരുങ്ങിയ സമയം കൂടുതൽ വായിക്കുക.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "നിങ്ങളുടെ പാസ്വേഡ് തിരഞ്ഞെടുക്കുക";
+
+
+"Cancel" = "റദ്ദാക്കുക";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ഈ അപ്ലിക്കേഷൻ ഉപയോഗിച്ച് വേഗത്തിൽ വാർത്ത വായിക്കുക. നിങ്ങളുടെ വിഷയങ്ങളും ഉറവിടങ്ങൾ തിരഞ്ഞെടുക്കുക. അപ്പോൾ ചെറിയ ബുള്ളറ്റ് പോയിന്റ് നിങ്ങളുടെ വാർത്തകൾ വായിക്കാൻ.";
+
+
+"Push Notification" = "അറിയിപ്പ്";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "ഇമെയിൽ";
+
+
+"How can we help you?" = "എങ്ങനെ നമുക്ക് സഹായിക്കാം?";
+
+
+"OJP-Wd-0d3.text" = "പാകിസ്ഥാൻ";
+
+
+"CHANGE PASSWORD" = "പാസ്വേഡ് മാറ്റുക";
+
+
+"Change Email" = "ഇ മെയിൽ വിലാസം മാറ്റുക";
+
+
+"Medium" = "മീഡിയം";
+
+
+"SAVE CHANGES" = "മാറ്റങ്ങൾ സൂക്ഷിക്കുക";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "നിങ്ങൾ എന്തെങ്കിലും സഹായം ആവശ്യമെങ്കിൽ ഞങ്ങൾ നിങ്ങളെ അറിയാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു ഒരു സന്ദേശം അയയ്ക്കുക ഞങ്ങളെ!";
+
+
+"P5u-N3-Tw4.text" = "ലേബൽ";
+
+
+"Cancel" = "റദ്ദാക്കുക";
+
+
+"Bullet 1" = "ബുള്ളറ്റ് 1";
+
+
+"TIMED NOTIFICATIONS" = "അറിയിപ്പുകൾ";
+
+
+"POST ARTICLE" = "പോസ്റ്റ് ആർട്ടിക്കിൾ";
+
+
+"CONTACT US" = "ഞങ്ങളെ സമീപിക്കുക";
+
+
+"EDITION / REGION" = "പതിപ്പ്";
+
+
+"Search" = "തിരയൽ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ഒരു ഫീഡ്ബാക്ക് ഞങ്ങളെ അയയ്ക്കുക, ഞങ്ങൾ നിങ്ങളിൽ നിന്ന് അറിയാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു! നിങ്ങൾ ചോദ്യങ്ങളോ നിയമ ആശങ്കകൾ ഉണ്ടോ? ഞങ്ങളുടെ സഹായ പേജ് അല്ലെങ്കിൽ ബന്ധപ്പെടുക ശ്രമിക്കുക.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "നിങ്ങൾ എന്തെങ്കിലും സഹായം ആവശ്യമെങ്കിൽ ഞങ്ങൾ നിങ്ങളെ അറിയാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു ഒരു സന്ദേശം അയയ്ക്കുക ഞങ്ങളെ!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "തുടരുക";
+
+
+"Time To Update!" = "അപ്ലിക്കേഷൻ അപ്ഡേറ്റ് ചെയ്യുക!";
+
+
+"NOTIFICATIONS" = "അറിയിപ്പുകൾ";
+
+
+"Search" = "തിരയൽ";
+
+
+"By clicking Continue, you agree with our Terms." = "നിബന്ധനകൾ അംഗീകരിക്കാൻ തുടരുക തിരഞ്ഞെടുക്കുക.";
+
+
+"HELP / CONTACT US" = "സഹായം / ബന്ധപ്പെടുക";
+
+
+"Reset Password" = "പാസ്വേഡ് റീസെറ്റ്";
+
+
+"SEND MESSAGE" = "സന്ദേശം അയയ്ക്കുകE";
+
+
+"Save article" = "ലേഖനം സംരക്ഷിക്കുക";
+
+
+"Bullet 6 (Optional)" = "ബുള്ളറ്റ് 6 (ഓപ്ഷണൽ)";
+
+
+"HAPTICS" = "ഹാപ്റ്റിക്സ്";
+
+
+"Your message has \vbeen sent." = "നിങ്ങളുടെ സന്ദേശം അയച്ചു.";
+
+
+"LEGAL" = "നിയമപരമായ";
+
+
+"Block List" = "Bബ്ലോക്ക് പട്ടിക";
+
+
+"PERSONALIZATION" = "വ്യക്തിഗതമാക്കൽ";
+
+
+"in our Privacy Policy." = "ഞങ്ങളുടെ സ്വകാര്യത നയത്തിൽ.";
+
+
+"CONTINUE" = "തുടരുക";
+
+
+"Enter Name" = "പേര് നൽകുക";
+
+
+"What's your email?" = "നിങ്ങളുടെ ഇമെയിൽ എന്താണ്?";
+
+
+"Hello there!" = "ഹലോ!";
+
+
+"PUSH NOTIFICATIONS" = "അറിയിപ്പുകൾ";
+
+
+"Bullet 3 (Optional)" = "ബുള്ളറ്റ് 3 (ഓപ്ഷണൽ)";
+
+
+"Source name" = "ഉറവിടം പേര്";
+
+
+"Current Password" = "ഇപ്പോഴത്തെ പാസ്സ്വേർഡ്";
+
+
+"COLOR THEME" = "കളർ തീം";
+
+
+"eTp-X1-g34.text" = "അല്ലെങ്കിൽ വഴി";
+
+
+"CANCEL" = "റദ്ദാക്കണമെന്ന്";
+
+
+"Bullet 4 (Optional)" = "ബുള്ളറ്റ് 4 (ഓപ്ഷണൽ)";
+
+
+"Date published" = "പ്രസിദ്ധീകരിച്ച തീയതി";
+
+
+"Send Password Reset Link" = "പാസ്വേഡ് റീസെറ്റ് ലിങ്ക് അയയ്ക്കുക";
+
+
+"CONTINUE WITH APPLE" = "ആപ്പിൾ ഐഡി വഴി സൈൻ അപ്പ്";
+
+
+"Off" = "ഓഫ് ആക്കുക";
+
+
+"BLOCK LIST" = "പട്ടിക";
+
+
+"HELP" = "സഹായിക്കൂ";
+
+
+"Reference link" = "റഫറൻസ് ലിങ്ക്";
+
+
+"Your Password" = "നിങ്ങളുടെ പാസ്സ്വേര്ഡ്";
+
+
+"SUBMIT" = "സമർപ്പിക്കുക";
+
+
+"HELP" = "സഹായിക്കൂ";
+
+
+"MY ACCOUNT" = "എന്റെ അക്കൗണ്ട്";
+
+
+"hbD-HP-tZd.normalTitle" = "തടയൽ മാറ്റുക";
+
+
+"OTHERS" = "മറ്റുള്ളവ";
+
+
+"BREAKING NEWS" = "ബ്രേക്കിംഗ് ന്യൂസ്";
+
+
+"Topics" = "തടഞ്ഞ വിഷയങ്ങൾ";
+
+
+"Message us," = "നമ്മുടെ,";
+
+
+"Pick topics to start reading
+and saving articles" = "അപ്ലിക്കേഷൻ ഭാഷ";
+
+
+"Forgot Password?" = "പാസ്വേഡ് മറന്നോ?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "പുതിയ സവിശേഷതകൾ ചേർത്തു. ചില പ്രശ്നങ്ങൾ പരിഹരിച്ചു.";
+
+
+"Success!" = "വിജയിച്ചു!";
+
+
+"Current Password" = "ഇപ്പോഴത്തെ പാസ്സ്വേർഡ്";
+
+
+"CONTENT" = "ഉള്ളടക്കം";
+
+
+"Headline" = "തലവാചകം";
+
+
+"neg-UC-UpK.text" = "വായനയും സംരക്ഷിക്കുന്നത് ലേഖനങ്ങളും ആരംഭിക്കാൻ വിഷയങ്ങൾ തിരഞ്ഞെടുക്കുക";
+
+
+"CONTINUE WITH EMAIL ID" = "നിങ്ങളുടെ ഇമെയിൽ ഐഡി ഉപയോഗിച്ച് തുടരുക";
+
+
+"SAVE CHANGES" = "മാറ്റങ്ങൾ സൂക്ഷിക്കുക";
+
+
+"Post an Article" = "ഒരു ലേഖനം പോസ്റ്റ്";
+
+
+"Contact Us" = "ഞങ്ങളെ സമീപിക്കുക";
+
+
+"On" = "ഓൺ ചെയ്യുക";
+
+
+"New Email Address" = "പുതിയ ഇ മെയിൽ വിലാസം";
+
+
+"Bullet 5 (Optional)" = "ബുള്ളറ്റ് 5 (ഓപ്ഷണൽ)";
+
+
+"Suggest an improvement" = "ഒരു പുരോഗതി നിർദ്ദേശിക്കുക";
+
+
+"Channels" = "തടഞ്ഞ ഉറവിടങ്ങൾ";
+
+
+"From:" = "നിന്നും:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "വ്യക്തിപര ശുപാർശകൾ";
+
+
+"I don't like this" = "ഞാൻ ഇഷ്ടമല്ല";
+
+
+"CONTINUE" = "തുടരുക";
+
+
+"Name" = "പേര്";
+
+
+"Enter email" = "ഇമെയിൽ നൽകുക";
+
+
+"HELP" = "സഹായിക്കൂ";
+
+
+"FOLLOW 3 TO CONTINUE" = "തുടരുക 3 പിന്തുടരുക";
+
+
+"UPDATE APP" = "അപ്ഡേറ്റ് അപ്ലിക്കേഷൻ";
+
+
+"Forgot Password?" = "പാസ്വേഡ് മറന്നോ?";
+
+
+"Change Password" = "പാസ്വേഡ് മാറ്റുക";
+
+
+"Reset Password" = "പാസ്വേഡ് റീസെറ്റ്";
+
+
+
+
+
+
+
+
+"Report content" = "നിങ്ങളുടെ വിഷയം റിപ്പോർട്ട്";
+
+
+"CHANGE EMAIL ADDRESS" = "ഇ മെയിൽ വിലാസം മാറ്റുക";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "നിങ്ങളുടെ അനുഭവം കഴിയുന്നത്ര സുഗമമാക്കുന്നതിന് ഞങ്ങൾ‌ ധാരാളം പുതിയ സവിശേഷതകൾ‌ ചേർ‌ക്കുകയും ചില ബഗുകൾ‌ പരിഹരിക്കുകയും ചെയ്‌തു.";
+
+
+"Edition / Region" = "പതിപ്പ് / പ്രദേശം";
+
+
+"OK" = "ശരി";
+
+
+"NARRATOR" = "NARRATOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "നിങ്ങൾ ഇഷ്ടപ്പെടുന്ന വാർത്തകളെക്കുറിച്ച് അപ്‌ഡേറ്റ് ചെയ്യുന്നത് നിങ്ങളുടെ സമയം വളരെയധികം എടുക്കരുത്. ബുള്ളറ്റുകളിലെ വാർത്തകൾ 5 മിനിറ്റ് പതിവായി വായിക്കുകയും എളുപ്പത്തിൽ ആഗിരണം ചെയ്യാവുന്ന ബുള്ളറ്റുകളായി ചുരുക്കുകയും ചെയ്യുന്നു. ഇപ്പോൾ, ഒരേ വാർത്തയിൽ നിങ്ങൾക്ക് ഒരു ചെറിയ സമയത്തിനുള്ളിൽ തന്നെ എടുക്കാം - അതിനാൽ കുറഞ്ഞ സമയം കൊണ്ട് നിങ്ങൾക്ക് കൂടുതൽ വായിക്കാൻ കഴിയും.";
+
+
+"READING SPEED" = "സ്പീഡ് വായിക്കുന്നു";
+
+
+
+
+
+"You haven't blocked anything yet" = "നിങ്ങൾ ഇതുവരെ ഒന്നും തടഞ്ഞിട്ടില്ല";
+
+
+"EDITION / REGION" = "പതിപ്പ് / പ്രദേശം";
+
+
+
+
+
+"HEADLINES ONLY" = "ഹെഡ്‌ലൈനുകൾ മാത്രം";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "ഓഡിയോ ക്രമീകരണങ്ങൾ";
+
+
+"AUDIO SETTINGS" = "ഓഡിയോ ക്രമീകരണങ്ങൾ";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ഹെഡ്‌ലൈനുകളും ബുള്ളറ്റുകളും";
+
+
+"CONTINUE AS GUEST" = "അതിഥിയായി ലോഗിൻ ചെയ്യുക";
+
+
+"Topics" = "വിഷയങ്ങൾ";
+
+
+"Pick topics to start reading and saving articles" = "ലേഖനങ്ങൾ വായിക്കാനും സംരക്ഷിക്കാനും ആരംഭിക്കുന്നതിന് വിഷയങ്ങൾ തിരഞ്ഞെടുക്കുക";
+
+
+"Channels" = "ചാനലുകൾ";
+
+
+"Choose from hundreds \nof news publications" = "നൂറുകണക്കിന് വാർത്താ പ്രസിദ്ധീകരണങ്ങളിൽ നിന്ന് തിരഞ്ഞെടുക്കുക";
+
+
+"Pick topics to start reading\nand saving articles" = "ലേഖനങ്ങൾ വായിക്കാനും സംരക്ഷിക്കാനും ആരംഭിക്കുന്നതിന് വിഷയങ്ങൾ തിരഞ്ഞെടുക്കുക";
+
+"Pick editions to start reading\nand saving articles" = "ലേഖനങ്ങൾ വായിക്കാനും സംരക്ഷിക്കാനും ആരംഭിക്കുന്നതിന് പതിപ്പുകൾ തിരഞ്ഞെടുക്കുക";
+
+"Or with" = "അല്ലെങ്കിൽ കൂടെ";
+
+"CONTINUE AS GUEST" = "അതിഥിയായി പ്രവേശിക്കുക";
+
+"Terms of Service" = "സേവന നിബന്ധനകൾ";
+
+"Choose from hundreds \nof news publications" = "നൂറുകണക്കിന് വാർത്താ പ്രസിദ്ധീകരണങ്ങളിൽ നിന്ന് തിരഞ്ഞെടുക്കുക";
+
+"Select your preferred language\nfor News in Bullets." = "ബുള്ളറ്റുകളിലെ വാർത്തകൾക്കായി നിങ്ങൾ തിരഞ്ഞെടുത്ത ഭാഷ തിരഞ്ഞെടുക്കുക.";
+
+"Choose a style" = "ഒരു ശൈലി തിരഞ്ഞെടുക്കുക";
+
+"Pop or subtle. Day or night. Customize your interface." = "പോപ്പ് അല്ലെങ്കിൽ സൂക്ഷ്മ. രാവും പകലും. നിങ്ങളുടെ ഇന്റർഫേസ് ഇച്ഛാനുസൃതമാക്കുക.";
+
+"MINS AGO" = "മിനിറ്റ് മുമ്പ്";
+
+"AN HOUR AGO" = "ഒരു മണിക്കൂർ മുമ്പ്";
+
+"HOURS AGO" = "മണിക്കൂറുകള്ക്ക് മുന്പ്";
+
+"1 WEEK AGO" = "1 ആഴ്ച മുമ്പ്";
+
+"YESTERDAY" = "ഇന്നലെ";
+
+"DAYS AGO" = "ദിവസങ്ങൾക്ക് മുൻപ്";
+
+"Go to" = "എന്നതിലേക്ക് പോകുക";
+
+"You have reached the start." = "നിങ്ങൾ ആരംഭത്തിലെത്തി";
+
+"Source unblocked successfully" = "ഉറവിടം വിജയകരമായി അൺബ്ലോക്ക് ചെയ്തു";
+
+"Invalid email format"  = "ഇമെയിൽ ഫോർമാറ്റ് അസാധുവാണ്";
+
+"Wrong email or password" = "തെറ്റായ ഇമെയിലോ പാസ് വേഡോ";
+
+

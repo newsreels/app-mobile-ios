@@ -1,0 +1,1009 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Bullet-հոդված";
+"BULLETS" = "BULLET ՀՈԴՎԱԾՆԵՐ";
+"Headlines is not available." = "Վերնագրերը հասանելի չեն";
+"Check your internet Connection and try again." = "Ստուգեք ինտերնետ կապը և կրկին փորձեք";
+"Choose Image" = "Ընտրեք նկարը";
+"Headline" = "Վերնագիր";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (ըստ ցանկության)";
+"Bullet 4 (Optional)" = "Bullet 4 (ըստ ցանկության)";
+"Bullet 5 (Optional)" = "Bullet 5 (ըստ ցանկության)";
+"Bullet 6 (Optional)" = "Bullet 6 (ըստ ցանկության)";
+"Enter Aticle Headline" = "Մուտքագրեք վերնագիրը";
+"Enter source name" = "Մուտքագրեք աղբյուրը";
+"Enter reference link" = "Մուտքագրեք հղումը ";
+"Enter published date" = "Մուտքագրեք հրապարակման ամսաթիվը";
+"Enter Bullet 1" = "Մուտքագրեք առաջին Bullet-ը";
+"Enter Bullet 2" = "Մուտքագրեք երկրորդ Bullet-ը";
+"Post article successfully" = "Հոդվածը հաջողությամբ հրապարակված է";
+"Follow" = "Հետևել";
+"Unfollow" = "Ապաբաժանորդագրվել";
+"Block articles from" = "ԱՐԳԵԼԱՓԱԿԵԼ հոդվածները --- -ից";
+"Unblock articles from" = "ԱՊԱԱՐԳԵԿԱՓԱԿԵԼ ՀՈԴՎԱԾՆԵՐԸ --- -ից";
+"Remove article" = "Ջնջել հոդվածը";
+"Save article" = "Պահպանել հոդվածը";
+"Terms & Conditions" = "Ընդհանուր դրույթներ և պայմաններ";
+"Privacy Policy" = "Գաղտնիության քաղաքականություն";
+"TERMS AND CONDITIONS" = "ԸՆԴՀԱՆՈՒՐ ԴՐՈՒՅԹՆԵՐ ԵՎ ՊԱՅՄԱՆՆԵՐ";
+"PRIVACY POLICY" = "ԳԱՂՏՆԻՈՒԹՅԱՆ ՔԱՂԱՔԱԿԱՆՈՒԹՅՈՒՆ";
+"Fuel your curiosity" = "Կարդալ ավելի շատ աշխարհի մասին";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Կարդացեք ձեր սիրած թեմաների մասին կարճ և ճշգրիտ նորություններ աշխարհի վստահելի աղբյուրներից";
+"Save time" = "Խնայեք ձեր ժամանակը";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Կարդացեք լուրերի հիմնական կարևոր մասերը";
+"Hands-free reading" = "Առանց ձեռքերի ընթերցում";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Կարդալու ժամանակ չկա՞ Օգտագործեք ձայնային տարբերակը";
+"Write your message..." = "Գրեք ձեր նամակը․․․";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Ուղարկեք մեզ նամակ, եթե ինչ-որ հարցում օգնության կարիք ունեք, մենք սիրով կպատասխանենք";
+"Drop us a message" = "ուղարկեք մեզ նամակ";
+"Enter Name." = "Մուտքարգեք անուն";
+"Enter Email." = "Մուտքագրեք էլ․ հասցե";
+"Write your message." = "Գրեք ձեր նամակը։";
+"Topic unblock successfully" = "Դուք ապաարգելափակեցիք այս թեման";
+"Source unblock successfully" = "Դուք ապաարգելափակեցիք այս աղբյուրը";
+"Unblock Source" = "Ապաարգելափակել աղբյուրը";
+"Cancel" = "Չեղարկել";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Ուղարկեք մեզ նամակ, մենք սիրով կպատասխանենք: Հարցեր կամ իրավական խնդիրնե՞ր ունեք: Փորձեք մեր Օգնության էջը կամ կապվեք մեզ հետ:";
+"Enter your suggestion." = "Մուտքագրեք ձեր առաջարկը";
+"feedback sent." = "Պատասխանը հաջողությամբ ուղարկված է";
+"30m" = "30ր";
+"1h" = "1ժ";
+"3h" = "3ժ";
+"6h" = "6ժ";
+"12h" = "12ժ";
+"24h" = "24ժ";
+"Language updated successfully." = "Լեզուն հաջողությամբ թարմացված է";
+"CONTINUE" = "ՇԱՐՈՒՆԱԿԵԼ";
+"FOLLOW 3 TO CONTINUE" = "ՀԵՏԵՎԵՔ 3-ին ՇԱՐՈՒՆԱԿԵԼՈՒ ՀԱՄԱՐ";
+"Unfollow Location" = "Ապաբաժանորդագրվել վայրից";
+"Saved Articles" = "Պահպանված հովդածներ";
+"Block" = "ԱՐԳԵԼԱՓԱԿԵԼ";
+"Are you sure you want block" = "Վստա՞հ եք, որ ցանկանում եք արգելափակել այս";
+"Once blocked, you wont be able to see any Articles related to this" = "Դուք այլևս չեք տեսնի հոդվածներ այս ալիքից եթե արգելափակեք այն";
+"Block Topic" = "Արգելափակել այս թեման";
+"Suggested" = "Առաջարկվել է";
+"Related Sources not available" = "Կապակցված աղբյուրները հասանելի չեն";
+"Block Source" = "Արգելափակել այս աղբյուրը";
+"News in Bullets App version" = "Նորություններ Bullets հավելվածի տարբերակում";
+"Next" = "Հաջորդը";
+"Login" = "Մուտքանուն";
+"Terms" = "Պայմաններ";
+"By clicking Continue, you agree with our Terms." = "Սեղմեք շարունակել պայմաններին համաձայնվելու համար";
+"in our Privacy Policy." = "մեր գաղտնիության քաղաքականությունում";
+"Access token missing." = "Մուտքի նշանը բացակայում է";
+"NEXT" = "ՀԱՋՈՐԴԸ";
+"By checking this box, you agree to our " = "Սեղմեք վանդակին՝ պայմաններն ընդունելու համար: Ձեր տվյալները մշակվում են ըստ մեր գաղտնիության քաղաքականության:";
+"Terms of Service" = "Ծառայությունների մատուցման պայմաններ";
+". We’ll handle your data according to our " = "Մենք կկարգավորենք ձեր տվյալները ՝ համաձայն մեր տվյալների";
+"Password must be at least 8 characters." = "Գաղտնաբառը պետք է կազմված լինի առնվազն 8 նիշից";
+"Strong" = "Ուժեղ";
+"Medium" = "Միջին";
+"Weak" = "Թույլ";
+"CREATE A NEW ACCOUNT" = "ՍՏԵՂԾԵԼ ՆՈՐ ՀԱՇԻՎ";
+"SIGN IN WITH EXISTING ACCOUNT" = "ՄՈՒՏՔ ԳՈՐԾԵԼ ԳՈՅՈՒԹՅՈՒՆ ՈՒՆԵՑՈՂ ՀԱՇՎՈՎ";
+"You must agree to the Terms of Services to continue" = "Շարունակելու համար դուք պետք է համաձայնվեք ծառայությունների մատուցման պայմանների հետ";
+"SIGN IN" = "Մուտք գործել ";
+"What's your password?" = "Ո՞րն է ձեր գաղտնաբառը";
+"SIGN UP" = "Գրանցվել";
+"Choose your password?" = "Ընտրեք ձեր գաղտնաբառը";
+"Something went wrong" = "Ինչ որ բան այն չէ";
+"we will send email to" = "մենք կուղարկենք նամակ";
+"with a link to reset your password." = "գաղտնաբառի վերականգնման հղումով";
+"A reset password link has been sent to" = "Գաղտնաբառի վերականգնման հղումը ուղարկվել է";
+"Enter new email." = "Մուտքագրել նոր էլ․ հասցե";
+"Enter password." = "Մուտքագրել գաղտնաբառ";
+"New Password " = "Նոր գաղտնաբառ";
+" (8 characters min)" = "(առնվազն 8 նիշ)";
+"Enter current password." = "Մուտքագրել ընթացիկ գաղտնաբառը";
+"Enter new password." = "Մուտքագրել նոր գաղտնաբառը";
+"Enter confirm password." = "Հաստատել գաղտնաբառը";
+"password do not matched!" = "Գաղտնաբառերը չե՛ն համընկնում";
+"GET STARTED" = "ՍԿՍԵԼ";
+"SKIP" = "ԲԱՑ ԹՈՂՆԵԼ";
+"From where you would like to pick photo?" = "Որտեղի՞ց եք նախընտրում վերցնել նկար";
+"Camera" = "Տեսախցիկ";
+"Photo Library" = "Պատկերասրահ";
+"Kindly open settings and enable access" = "Բացեք պարամետրերը և թույլատրեք";
+"Open Settings" = "Բացել կարգավորումները";
+"Access needed for your camera" = "Տեսախցիկի համար անհրաժեշտ է թույլտվություն";
+"Access needed for your photo library" = "Պատկերասրահի համար անհրաժեշտ է թույլտվություն";
+"Done" = "Կատարված է";
+"Pull to refresh" = "Քաշեք՝ թարմացնելու համար";
+"Loading" = "Բեռնում";
+"Speech not available for this article" = "Ձայնային տարբերակը հասանելի չէ այս հոդվածի համար";
+"MANAGE LOCATION" = "Կարգավորել վայրը";
+"OK" = "լավ";
+"Choose your News in Bullets Edition based on locale" = "Ընտրեք տեղական տվյալների հիման վրա ձեր նորությունները Bullets Edition- ում";
+"Edition" = "Հրատարակություն";
+"EDITION / REGION" = "ԽՄԲԱԳՐՈՒՄ / ՇՐIONԱՆ";
+"Your Topics" = "Ձեր թեմաները";
+"Your Channels" = "Ձեր ալիքները";
+"Your Places" = "Ձեր տեղերը";
+"Enter email." = "Մուտքագրեք էլ.";
+"Please enter a password." = "Խնդրում ենք մուտքագրել գաղտնաբառ:";
+"Search articles" = "Հոդվածներ որոնեք";
+"No results" = "Ոչ մի արդյունք";
+"Edition / Region" = "Հրատարակություն / մարզ";
+
+
+
+
+"0JC-Sb-Ouu.text" = "ՑՈՒՑԱԴՐՄԱՆ ՌԵԺԻՄԸ";
+
+
+"Search" = "Որոնում";
+
+
+"Select" = "Ընտրել ( ";
+
+
+"6H8-dI-k9P.text" = "Կարգավորել վայրերը";
+
+
+"6KH-YP-5Lt.text" = "ՊԱՏՄՈՂ";
+
+
+" ) icon on the article" = " ) հոդվածի վրայի պատկերը";
+
+
+"BLOCK" = "ԱՐԳԵԼԱՓԱԿԵԼ";
+
+
+"you want to read later then" = "ցանկանում եք կարդալ ավելի ուշ";
+
+
+"7oo-cf-l7Y.text" = "Ընթերցման արագությունը";
+
+
+"88L-ip-pZw.text" = "Ընթերցման արագությունը";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Այստեղ ոչինչ չկա։ Կարծես թե այստեղ բացի կատվից ոչինչ չկա: Վերադառնա՞լ գլխավոր էջ \nՑանկանո՞ւմ եք վերադառնալ գլխավոր էջ";
+
+
+"BpH-F1-i0z.normalTitle" = "Լոկալ";
+
+
+" ) to save article." = " ) հոդվածը պահպանելու համար";
+
+
+"FB0-YN-HZg.text" = "Շարունակելու համար ընտրեք 3-ը";
+
+
+"H5Z-xJ-dWD.text" = "Վերնագրերը և\nԿարևոր մասեր";
+
+
+"Search" = "Որոնում";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ԸՆԴԼԱՅՆՎԱԾ ՏԱՐԲԵՐԱԿ";
+
+
+"Jpx-nY-Is1.normalTitle" = "Ալիքներ";
+
+
+"JqN-io-P1u.normalTitle" = " +Ավելացնել վայրերին";
+
+
+"What's your email?" = "Ո՞րն է ձեր էլ․ հասցեն";
+
+
+"Lw1-Md-nse.text" = "ՑՈՒՑԱԿՈՎ ՏԱՐԲԵՐԱԿ";
+
+
+"LyT-pT-g53.text" = "ՄԻՋԱԶԳԱՅԻՆ";
+
+
+"N6C-6i-Z2s.text" = "ՄԻՋԱԶԳԱՅԻՆ";
+
+
+"Nru-uU-CsC.text" = "Առաջարկներ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Թեմաներ";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Անհատականացնել";
+
+
+"Topics" = "Թեմաներ";
+
+
+"WXY-po-W1B.text" = "ՎԵՐՆԱԳՐԵՐ ԵՎ\nԿԱՐԵՎՈՐ ՄԱՍԵՐ";
+
+
+"ans-Zy-T2Y.placeholder" = "Վայրերի որոնում";
+
+
+"bgE-Jc-u8H.text" = "Անհատականացնել";
+
+
+
+
+
+"Tap the ( " = "Սեղմեք (";
+
+
+"Places" = "Գտնվելու վայրը";
+
+
+"d1l-HK-OrG.text" = "ՑՈՒՑԱԴՐՄԱՆ ՌԵԺԻՄԸ";
+
+
+
+
+
+"Language" = "Լեզու";
+
+
+"e9g-Wr-suO.text" = "ՄԻԱՅՆ ՎԵՐՆԱԳՐԵՐ";
+
+
+"GO HOME" = "վերադառնալ գլխավոր էջ";
+
+
+"eh1-Oo-lEn.text" = "ԸՆԴԼԱՅՆՎԱԾ ՏԱՐԲԵՐԱԿ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ՑՈՒՑԱԿՈՎ ՏԱՐԲԵՐԱԿ";
+
+
+"j2i-MT-VkA.text" = "Փորձել ուրիշ բանալի-բառ";
+
+
+"Top News" = "Գլխավոր նորություններ";
+
+
+"jmO-aF-nJ9.text" = "Միայն վերնագրեր";
+
+
+"There is nothing in here" = "Այստեղ ոչինչ չկա։ Կարծես թե այստեղ բացի կատվից ոչինչ չկա։
+Վերադառնա՞լ գլխավոր էջ։";
+
+
+"ma1-9p-bSa.text" = "Ոչինչ չի գտնվել";
+
+
+"mce-jc-cKH.text" = "ՊԱՏՄՈՂ";
+
+
+"Channels" = "Ալիքներ";
+
+
+"Discover" = "Բացահայտել";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ՉԵՂԱՐԿԵԼ";
+
+
+"Discover" = "Բացահայտել";
+
+
+"No saved stories yet" = "Այստեղ ոչինչ չկա";
+
+
+"wDG-kF-Hl8.text" = "Կարդալ նորություններ ըստ վայրի";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ԼՈԿԱԼԻԶԱՑԻԱ";
+
+
+"xfF-RB-mWL.text" = "ԼՈԿԱԼԻԶԱՑԻԱ";
+
+
+"Search" = "Որոնում";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Ստացեք առավել համապատասխան նորություններ ձեր ընտրած տարածաշրջանից: Կարդացեք նորությունների պատմությունները, որոնք ձեզ պահում են աշխարհի ցանկացած վայրից ամենավերջին նորությունների վերաբերյալ:";
+
+
+"Search articles" = "Հոդվածներ որոնեք";
+
+
+"6H8-dI-k9P.text" = "Կառավարել տեղերը";
+
+
+
+
+
+"Profile" = "Պրոֆիլ";
+
+
+"Editions" = "Հրատարակություններ";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Տեղերը";
+
+
+
+
+
+"Search" = "Որոնում";
+
+
+
+
+
+
+
+
+"Search" = "Որոնում";
+
+
+"LANGUAGE" = "ԼԵԶՈՒ";
+
+
+"Search" = "Որոնում";
+
+
+"No results" = "Ոչ մի արդյունք չի գտնվել";
+
+
+"Channels" = "Ալիքներ";
+
+
+"Places" = "Տեղերը";
+
+
+"Places" = "Տեղերը";
+
+
+"e9F-hd-Ifm.text" = "ԽՄԲԱԳՐՈՒՄ / ՇՐIONԱՆ";
+
+
+
+
+
+
+
+
+"PLACES" = "ՏԵՂԵՐԸ";
+
+
+"SAVED ARTICLES" = "ՓՐԿՎԱ ՀՈԴՎԱՆԵՐ";
+
+
+"Articles" = "Հոդվածներ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ՇԱՐՈՒՆԱԿԵԼ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ԽՄԲԱԳՐՈՒՄ / ՇՐIONԱՆ";
+
+
+"Try a different keyword" = "Փորձեք այլ հիմնաբառ";
+
+
+"For You" = "Քեզ համար";
+
+
+"Results" = "Արդյունքներ";
+
+
+
+"About" = "Մեր մասին";
+
+
+"Share" = "Կիսվել";
+
+
+"ACCOUNT" = "ՀԱՇԻՎ";
+
+
+"Your Email" = "Ձեր էլ․ հասցեն";
+
+
+"1sT-J6-qI0.text" = "ՊԱՀՊԱՆՎԱԾ ՀՈԴՎԱԾՆԵՐ ";
+
+
+"2XX-rr-GLC.text" = "Ընտրեք տարբեր ալիքներ հարյուրավոր աղբյուրներից ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Կարդացեք ամենավերջին նորություններն ու իրադարձությունները ամբողջ աշխարհից ";
+
+
+"Set an interval in which you want to receive your news notifications." = "Ընտրեք ծանուցումներ ստանալու ժամանակահատվածը ";
+
+
+"Off" = "Անջտ․";
+
+
+
+
+
+"Bullet 2" = " Bullet 2";
+
+
+"What's your email?" = "Ո՞րն է ձեր էլ․ հասցեն։ ";
+
+
+"New Password (8 Characters Min)" = "Նոր գաղտնաբառ (նվազագույնը 8 նիշ) ";
+
+
+"Forgot Password?" = "Մոռացե՞լ եք գաղտնաբառը ";
+
+
+"Account Settings" = "Հաշվի կարգավորումներ ";
+
+
+"Learn how we process your data" = "Տեղեկատվություն ձեր տվյալների մշակման մասին ";
+
+
+"3h" = "3ժ";
+
+
+"Ok" = "Լավ";
+
+
+"Block articles from The Guardian" = "Արգելափակել հոդվածներ --- -ից";
+
+
+"On" = "Միացնել";
+
+
+"Auto" = "Ավտոմատ";
+
+
+"Help Center" = "Օգնության կենտրոն ";
+
+
+"Search" = "Ալիքների որոնում ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Ընտրեք ֆայլը պատկերասրահից ";
+
+
+
+
+"Save article" = "Պահպանել հոդվածը ";
+
+
+"ABOUT" = "ՄԱՍԻՆ";
+
+
+"Dark" = "Մուգ";
+
+
+"Legal" = "Լեգալ";
+
+
+"Go to The Guardian" = "Գնալ -- ";
+
+
+"Send reset link" = "Ուղարկել վերականգնման հղումը ";
+
+
+
+
+
+"My Account" = "Իմ հաշիվը ";
+
+
+"FEEDBACK" = "ՀԵՏԱԴԱՐՁ ԿԱՊ";
+
+
+"Message" = "Նամակ";
+
+
+"Confirm New Password" = "Հաստատել նոր գաղտնաբառը";
+
+
+"for ___" = "համար";
+
+
+"Search" = "Թեմաների որոնում";
+
+
+"LANGUAGE" = "ԼԵԶՈՒ";
+
+
+"Light" = "Բաց";
+
+
+"FOLLOW 3 TO CONTINUE" = "շարունակելու համար ընտրեք 3-ը";
+
+
+
+
+"Off" = "Անջատել";
+
+
+"Language" = "Ընտրել";
+
+
+"LOG OUT" = "ԴՈՒՐՍ ԳԱԼ";
+
+
+"Report content" = "Բողոքել";
+
+
+"What's your email?" = "Ո՞րն է ձեր էլ․ հասցեն։";
+
+
+"On" = "Միացնել";
+
+
+"More like this" = "Ավելի նմանատիպ նորություններ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1ժ";
+
+
+"Enter Email Address" = "Մուտքագրեք էլ․ հասցեն";
+
+
+"News in Bullets" = "Կարդալ ավելին ավելի քիչ ժամանակում.";
+
+
+"6h" = "6ժ";
+
+
+"Choose your password" = "Ընտրեք գաղտնաբառ";
+
+
+"Cancel" = "Չեղարկել";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Արագ կարդացեք նորությունները այս հավելվածի միջոցով: Ընտրեք ձեր թեմաներն ու աղբյուրները: Այնուհետև կարդացեք ձեր նորությունների հիմնական կարևոր մասերը:";
+
+
+"Push Notification" = "Ծանուցումներ";
+
+
+"12h" = "12ժ";
+
+
+"24h" = "24ժ";
+
+
+"E-mail" = "Էլ․ հասցե";
+
+
+"How can we help you?" = "Ինչպե՞ս կարող ենք օգնել";
+
+
+"OJP-Wd-0d3.text" = "Պակիստան";
+
+
+"CHANGE PASSWORD" = "ՓՈԽԵԼ ԳԱՂՏՆԱԲԱՌԸ";
+
+
+"Change Email" = "ՓՈԽԵԼ ԷԼ․ ՀԱՍՑԵՆ";
+
+
+"Medium" = "Միջին";
+
+
+"SAVE CHANGES" = "ՊԱՀՊԱՆԵԼ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Կապնվեք մեզ հետ եթե օգնության կարիք ունեք, մենք սիրով  կօգնենք։";
+
+
+"P5u-N3-Tw4.text" = "Պիտակ";
+
+
+"Cancel" = "Չեղարկել";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "ԾԱՆՈՒՑՈՒՄՆԵՐ";
+
+
+"POST ARTICLE" = "ՏԵՂԱԴՐԵԼ ՀՈԴՎԱԾ";
+
+
+"CONTACT US" = "Կապ մեզ հետ";
+
+
+"EDITION / REGION" = "Տարբերակ";
+
+
+"Search" = "Որոնում";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Ուղարկեք մեզ նամակ, մենք սիրով կպատասխանենք: Հարցեր կամ իրավական խնդիրնե՞ր ունեք: Փորձեք մեր օգնության էջը կամ կապվեք մեզ հետ:";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Կապնվեք մեզ հետ եթե օգնության կարիք ունեք, մենք սիրով  կօգնենք։";
+
+
+"30m" = "30ր";
+
+
+"CONTINUE" = "ՇԱՐՈՒՆԱԿԵԼ";
+
+
+"Time To Update!" = "Թարմացրե՛ք հավելվածը";
+
+
+"NOTIFICATIONS" = "ԾԱՆՈՒՑՈՒՄՆԵՐ";
+
+
+"Search" = "Որոնում";
+
+
+"By clicking Continue, you agree with our Terms." = "Սեղմեք շարունակել պայմանները ընդունելու համար";
+
+
+"HELP / CONTACT US" = "ՕԳՆՈՒԹՅՈՒՆ / ԿԱՊ";
+
+
+"Reset Password" = "Վերականգնել գաղտնաբառը";
+
+
+"SEND MESSAGE" = "ՈՒՂԱՐԿԵԼ ՆԱՄԱԿ";
+
+
+"Save article" = "Պահպանել հոդվածը";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (ըստ ցանկության)";
+
+
+"HAPTICS" = "Հպումներ";
+
+
+"Your message has \vbeen sent." = "Ձեր նամակը ուղարկված է.";
+
+
+"LEGAL" = "ԼԵԳԱԼ";
+
+
+"Block List" = "Արգելափակվածների ցուցակ";
+
+
+"PERSONALIZATION" = "ԱՆՀԱՏԱԿԱՆԱՑՈՒՄ";
+
+
+"in our Privacy Policy." = "մեր գաղտնիության քաղաքականության մեջ";
+
+
+"CONTINUE" = "ՇԱՐՈՒՆԱԿԵԼ";
+
+
+"Enter Name" = "Մուտքագրել անուն";
+
+
+"What's your email?" = "Ո՞րն է ձեր էլ․ հասցեն";
+
+
+"Hello there!" = "Ողջո՛ւյն!";
+
+
+"PUSH NOTIFICATIONS" = "ԾԱՆՈՒՑՈՒՄՆԵՐ";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (ըստ ցանկության)";
+
+
+"Source name" = "Աղբյուրի անունը";
+
+
+"Current Password" = "Ընթացիկ գաղտնաբառը";
+
+
+"COLOR THEME" = "Գունավոր թեմա";
+
+
+"eTp-X1-g34.text" = "Կամ միջոցով";
+
+
+"CANCEL" = "ՉԵՂԱՐԿԵԼ";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (ըստ ցանկության)";
+
+
+"Date published" = "Հրապարակման ամսաթիվը";
+
+
+"Send Password Reset Link" = "Ուղարկել գաղտնաբառի վերականգնման հղումը";
+
+
+"CONTINUE WITH APPLE" = "Մուտք գործել Apple ID-ի միջոցով";
+
+
+"Off" = "Անջատել";
+
+
+"BLOCK LIST" = "ԱՐԳԵԼԱՓԱԿՎԱԾՆԵՐԻ ՑՈՒՑԱԿ";
+
+
+"HELP" = "ՕԳՆՈՒԹՅՈՒՆ";
+
+
+"Reference link" = "Աղբյուրի հղում";
+
+
+"Your Password" = "Ձեր գաղտնաբառը";
+
+
+"SUBMIT" = "ՀԱՍՏԱՏԵԼ ";
+
+
+"HELP" = "ՕԳՆՈՒԹՅՈՒՆ";
+
+
+"MY ACCOUNT" = "ԻՄ ՀԱՇԻՎԸ";
+
+
+"hbD-HP-tZd.normalTitle" = "Ապաարգելափակել";
+
+
+"OTHERS" = "Ուրիշները";
+
+
+"BREAKING NEWS" = "ՑՆՑՈՂ ԼՈԻՐԵՐ";
+
+
+"Topics" = "Արգելափակված թեմաներ";
+
+
+"Message us," = "Կապնվեք մեզ հետ,,";
+
+
+"Pick topics to start reading
+and saving articles" = "հավելվածի լեզուն";
+
+
+"Forgot Password?" = "Մոռացե՞լ եք գաղտնաբառը";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ավելացվել են նոր առանձնահատկություններ: Ուղղվել են որոշ խնդիրներ։";
+
+
+"Success!" = "Հաջողություն!!";
+
+
+"Current Password" = "Ընթացիկ գաղտնաբառը";
+
+
+"CONTENT" = "ԲՈՎԱՆԴԱԿՈՒԹՅՈՒՆ";
+
+
+"Headline" = "Վերնագիր";
+
+
+"neg-UC-UpK.text" = "Ընտրեք թեմաներ՝ հոդվածներ կարդալու և պահպանելու համար";
+
+
+"CONTINUE WITH EMAIL ID" = "Շարունակել էլ․ փոստի ID-ով";
+
+
+"SAVE CHANGES" = "ՊԱՀՊԱՆԵԼ ՓՈՓՈԽՈՒԹՅՈՒՆՆԵՐԸ";
+
+
+"Post an Article" = "Տեղադրել հոդված";
+
+
+"Contact Us" = "Կապ մեզ հետ";
+
+
+"On" = "Միացնել";
+
+
+"New Email Address" = "Նոր էլ․ հասցե";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (ըստ ցանկության)";
+
+
+"Suggest an improvement" = "Առաջարկել բարելավում";
+
+
+"Channels" = "Արգելափակված աղբյուրներ";
+
+
+"From:" = "Ումից։";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ԱՆՀԱՏԱԿԱՆԱՑՎԱԾ ԱՌԱՋԱՐԿՈՒԹՅՈՒՆՆԵՐ";
+
+
+"I don't like this" = "Ինձ այս դուր չի գալիս";
+
+
+"CONTINUE" = "ՇԱՐՈՒՆԱԿԵԼ";
+
+
+"Name" = "Անուն";
+
+
+"Enter email" = "Մուտքագրեք էլ․ հասցեն";
+
+
+"HELP" = "ՕԳՆՈՒԹՅՈՒՆ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Հետևեք 3-ին շարունակելու համար";
+
+
+"UPDATE APP" = "Թարմացնել հավելվածը";
+
+
+"Forgot Password?" = "Մոռացե՞լ եք գաղտնաբառը";
+
+
+"Change Password" = "Փոփոխել գաղտնաբառը";
+
+
+"Reset Password" = "Նոր գաղտնաբառ ";
+
+
+
+
+
+
+
+
+"Report content" = "Տեղեկացրեք ձեր մտահոգության մասին";
+
+
+"CHANGE EMAIL ADDRESS" = "ՓՈԽԵԼ ԷԼ․ ՀԱՍՑԵՆ";
+
+
+"Follow The Guardian" = "Հետևել ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Մենք ավելացրեցինք բազմաթիվ նոր գործառույթներ և շտկեցինք որոշ սխալներ ՝ ձեր փորձը հնարավորինս հարթ դարձնելու համար:";
+
+
+"Edition / Region" = "Հրատարակություն / մարզ";
+
+
+"OK" = "լավ";
+
+
+"NARRATOR" = "ՊԱՏՄՈՂ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Ձեր սիրած նորությունների մասին թարմացում պահելը չպետք է շատ ժամանակ խլի: Bullets in News- ը տևում է կանոնավոր 5 րոպեանոց ընթերցում և խտացնում դրանք հեշտությամբ մարսվող փամփուշտների: Այժմ նույն լուրերը կարող եք ընդունել ժամանակի մի փոքր հատվածում, այնպես որ ավելի քիչ ժամանակում կարող եք ավելին կարդալ:";
+
+
+"READING SPEED" = "Ընթերցանության արագությունը";
+
+
+
+
+
+"You haven't blocked anything yet" = "Դուք դեռ ոչինչ չեք արգելափակել";
+
+
+"EDITION / REGION" = "ԽՄԲԱԳՐՈՒՄ / ՇՐIONԱՆ";
+
+
+
+
+
+"HEADLINES ONLY" = "ՄԻԱՅՆ ԱՌԱՆՈՐԴՆԵՐ";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Աուդիո կարգավորումներ";
+
+
+"AUDIO SETTINGS" = "ԱՈՒԴԻԱ ԿԱՐԳԱՎՈՐՈՒՄՆԵՐ";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "ԱՌԱՆՈՐԴՆԵՐ ԵՎ ՓՈՒԼԵՐ";
+
+
+"CONTINUE AS GUEST" = "Բաց թողնել և մուտք գործել որպես հյուր";
+
+
+"Topics" = "Թեմաներ";
+
+
+"Pick topics to start reading and saving articles" = "Ընտրեք թեմաներ ՝ հոդվածներ կարդալու և պահպանելու համար";
+
+
+"Channels" = "Ալիքներ";
+
+
+"Choose from hundreds \nof news publications" = "Ընտրեք նորությունների հարյուրավոր հրապարակումներից";
+
+
+"Pick topics to start reading\nand saving articles" = "Ընտրեք թեմաները, որպեսզի սկսեք կարդալ եւ խնայել հոդվածները";
+
+"Pick editions to start reading\nand saving articles" = "Ընտրեք հրատարակություններ ՝ հոդվածներ կարդալու և պահպանելու համար";
+
+"Or with" = "Կամ հետ";
+
+"CONTINUE AS GUEST" = "ՇԱՐՈՒՆԱԿԵԼ ՈՐՊԵՍ ՀՅՈՒՐ";
+
+"Terms of Service" = "Ծառայությունների մատուցման պայմաններ";
+
+"Choose from hundreds \nof news publications" = "Ընտրեք նորությունների հարյուրավոր հրապարակումներից";
+
+"Select your preferred language\nfor News in Bullets." = "Ընտրեք նախընտրած լեզուն News in Bullets:";
+
+"Choose a style" = "Ընտրեք ոճ";
+
+"Pop or subtle. Day or night. Customize your interface." = "Փոփ կամ նուրբ: Օր կամ գիշեր: Անհատականացրեք ձեր ինտերֆեյսը:";
+
+"MINS AGO" = "Րոպեներ առաջ";
+
+"AN HOUR AGO" = "ՄԵԿ ԺԱՄ ԱՌԱՋ";
+
+"HOURS AGO" = "ԺԱՄԵՐ ԱՌԱՋ";
+
+"1 WEEK AGO" = "1 շաբաթ առաջ";
+
+"YESTERDAY" = "ԵՐԵԿ";
+
+"DAYS AGO" = "ՕՐԵՐ ԱՌԱՋ";
+
+"Go to" = "Գնացեք դեպի";
+
+"You have reached the start." = "Դուք հասաք մեկնարկի";
+
+"Source unblocked successfully" = "Աղբյուրը հաջողությամբ փակվեց";
+
+"Invalid email format"  = "Անվավեր էլեկտրոնային փոստի ձեւանմուշ";
+
+"Wrong email or password" = "Սխալ նամակ կամ գաղտնաբառ";
+
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeadlineFooterCC" id="8bz-nK-DdA" customClass="HeadlineFooterCC" customModule="Bullet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-dE-HW7" userLabel="ViewImgBG">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="250"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nGX-T0-95G">
+                                <rect key="frame" x="0.0" y="0.0" width="214" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nGX-T0-95G" firstAttribute="leading" secondItem="rRI-dE-HW7" secondAttribute="leading" id="5iH-Kq-kho"/>
+                            <constraint firstAttribute="bottom" secondItem="nGX-T0-95G" secondAttribute="bottom" id="RVG-tL-Por"/>
+                            <constraint firstAttribute="trailing" secondItem="nGX-T0-95G" secondAttribute="trailing" id="sof-7G-PHo"/>
+                            <constraint firstItem="nGX-T0-95G" firstAttribute="top" secondItem="rRI-dE-HW7" secondAttribute="top" id="wKe-tC-czD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcU-k4-yjz">
+                        <rect key="frame" x="96" y="117" width="22" height="16.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tickUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-ly-Kuf">
+                        <rect key="frame" x="12" y="12" width="18" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="PHa-PY-Gax"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.054901960780000002" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcV-4U-fXH">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OcV-4U-fXH" secondAttribute="height" multiplier="1:1" id="uwY-8e-Fwo"/>
+                            <constraint firstAttribute="height" constant="40" id="w8T-PA-fML"/>
+                        </constraints>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rcU-k4-yjz" secondAttribute="trailing" constant="30" id="0GB-im-w29"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rcU-k4-yjz" secondAttribute="bottom" constant="20" id="6tC-lk-uAe"/>
+                <constraint firstItem="rcU-k4-yjz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bz-nK-DdA" secondAttribute="leading" constant="30" id="FVd-Mx-EDf"/>
+                <constraint firstItem="rcU-k4-yjz" firstAttribute="centerX" secondItem="rRI-dE-HW7" secondAttribute="centerX" id="GFN-cC-ZfX"/>
+                <constraint firstAttribute="bottom" secondItem="rRI-dE-HW7" secondAttribute="bottom" id="IKq-lw-guo"/>
+                <constraint firstItem="rcU-k4-yjz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mhh-ly-Kuf" secondAttribute="bottom" constant="10" id="O4f-l3-1TT"/>
+                <constraint firstAttribute="trailing" secondItem="rRI-dE-HW7" secondAttribute="trailing" constant="16" id="OPO-bt-Y1j"/>
+                <constraint firstItem="mhh-ly-Kuf" firstAttribute="leading" secondItem="8bz-nK-DdA" secondAttribute="leading" constant="12" id="Ohz-GZ-25k"/>
+                <constraint firstItem="rcU-k4-yjz" firstAttribute="centerY" secondItem="rRI-dE-HW7" secondAttribute="centerY" id="Oj6-Fu-kXh"/>
+                <constraint firstItem="mhh-ly-Kuf" firstAttribute="top" secondItem="8bz-nK-DdA" secondAttribute="top" constant="12" id="U9F-i5-EV6"/>
+                <constraint firstItem="OcV-4U-fXH" firstAttribute="top" secondItem="8bz-nK-DdA" secondAttribute="top" id="Veq-jc-e4o"/>
+                <constraint firstItem="rRI-dE-HW7" firstAttribute="top" secondItem="8bz-nK-DdA" secondAttribute="top" id="XbG-Ck-rdl"/>
+                <constraint firstItem="mhh-ly-Kuf" firstAttribute="width" secondItem="mhh-ly-Kuf" secondAttribute="height" multiplier="1:1" id="cdC-5C-G6n"/>
+                <constraint firstItem="OcV-4U-fXH" firstAttribute="leading" secondItem="8bz-nK-DdA" secondAttribute="leading" id="f4i-bq-FUo"/>
+                <constraint firstItem="rRI-dE-HW7" firstAttribute="leading" secondItem="8bz-nK-DdA" secondAttribute="leading" id="gGR-dR-Sbn"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btnAddTopic" destination="OcV-4U-fXH" id="GmV-Jn-ZML"/>
+                <outlet property="imgBG" destination="nGX-T0-95G" id="hKv-ej-vbx"/>
+                <outlet property="imgMark" destination="mhh-ly-Kuf" id="FY1-xu-yke"/>
+                <outlet property="lblHeadline" destination="rcU-k4-yjz" id="eCS-7L-OWD"/>
+                <outlet property="viewBG" destination="rRI-dE-HW7" id="XAY-TC-WRs"/>
+            </connections>
+            <point key="canvasLocation" x="-157.97101449275362" y="157.36607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tickUnselected" width="35.009998321533203" height="25.711000442504883"/>
+    </resources>
+</document>

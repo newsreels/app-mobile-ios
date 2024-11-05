@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "bala-point";
+"BULLETS" = "BIÑETA";
+"Headlines is not available." = "titularrak ez daude eskuragarri.";
+"Check your internet Connection and try again." = "Begiratu zure internet konexioa eta saiatu berriro.";
+"Choose Image" = "Aukeratu irudia";
+"Headline" = "Titularra";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (aukerakoa)";
+"Bullet 4 (Optional)" = "Bullet 4 (aukerakoa)";
+"Bullet 5 (Optional)" = "Bullet 5 (aukerakoa)";
+"Bullet 6 (Optional)" = "Bullet 6 (aukerakoa)";
+"Enter Aticle Headline" = "Idatzi titular";
+"Enter source name" = "Idatzi Iturria";
+"Enter reference link" = "Idatzi erreferentzia";
+"Enter published date" = "Sartu Argitaratu data";
+"Enter Bullet 1" = "Idatzi First Bullet";
+"Enter Bullet 2" = "Idatzi Bigarren Bullet";
+"Post article successfully" = "Artikulu arrakastaz argitaratu da";
+"Follow" = "Jarraitu";
+"Unfollow" = "utzi";
+"Block articles from" = "Bloke artikuluak";
+"Unblock articles from" = "Desblokeatu artikuluak";
+"Remove article" = "Kendu artikulu";
+"Save article" = "Artikulu hau Save";
+"Terms & Conditions" = "Baldintzak";
+"Privacy Policy" = "Privacy Policy";
+"TERMS AND CONDITIONS" = "BALDINTZA";
+"PRIVACY POLICY" = "PRIBATUTASUN POLITIKA";
+"Fuel your curiosity" = "Irakurri munduari buruzko albiste gehiago";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Irakurri zure gogoko gaiei buruzko albisteak labur eta zehatza, mundu osoko konfiantzazko iturrietatik.";
+"Save time" = "Zure denbora Save";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Irakurri bala-puntu berriak";
+"Hands-free reading" = "Esku libreko irakurketa";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "No time irakurtzeko? Erabili hizkera funtzioa.";
+"Write your message..." = "Idatzi zure mezua ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "bidali mezu bat zerbait laguntza behar baduzu, maite dituzun entzun genuke!";
+"Drop us a message" = "bidali mezu bat";
+"Enter Name." = "Sartu izena.";
+"Enter Email." = "Idatzi Posta elektronikoa.";
+"Write your message." = "Idatzi mezua.";
+"Topic unblock successfully" = "You Unblocked Gai honi";
+"Source unblock successfully" = "You Unblocked iturburu hau";
+"Unblock Source" = "Desblokeatu Iturria";
+"Cancel" = "Utzi";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bidali iritzia bat, maite dituzun entzun genuke! Ez zalantza edo kezka duzula? Saiatu gure Laguntza orria edo jarri gurekin harremanetan.";
+"Enter your suggestion." = "Idatzi zure iradokizun.";
+"feedback sent." = "iritzia ongi bidali da";
+"30m" = "30m";
+"1h" = "1 h";
+"3h" = "3 h";
+"6h" = "6 h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Hizkuntza ongi eguneratu da.";
+"CONTINUE" = "JARRAITU";
+"FOLLOW 3 TO CONTINUE" = "Jarraitu 3 JARRAITZEKO";
+"Unfollow Location" = "utzi Kokapena";
+"Saved Articles" = "Gordetako artikuluak";
+"Block" = "BLOCK";
+"Are you sure you want block" = "Ziur al zaude hau ezabatu nahi duzula";
+"Once blocked, you wont be able to see any Articles related to this" = "Ez duzu ikusi artikulu kanal hau bertatik blokeatu baduzu.";
+"Block Topic" = "Blokeatu Topic honetan";
+"Suggested" = "iradoki";
+"Related Sources not available" = "Related iturburuak ez daude eskuragarri";
+"Block Source" = "Blokeatu Iturria honetan";
+"News in Bullets App version" = "Berriak Bullets aplikazioa bertsioan";
+"Next" = "hurrengo";
+"Login" = "Saioa hasi";
+"Terms" = "baldintzak";
+"By clicking Continue, you agree with our Terms." = "Aukeratu Jarraitu baldintzak onartzeko.";
+"in our Privacy Policy." = "Gure pribatutasun politika ere.";
+"Access token missing." = "Sarbide token falta da.";
+"NEXT" = "NEXT";
+"By checking this box, you agree to our " = "Klik koadroan baldintzak onartzeko. Zure datuak gure pribatutasun politika arabera prozesatu.";
+"Terms of Service" = "Zerbitzu-baldintzak";
+". We’ll handle your data according to our " = ". Zure datuak kudeatzeko egingo dugu arabera, gure";
+"Password must be at least 8 characters." = "Pasahitza gutxienez 8 karaktere izan behar ditu.";
+"Strong" = "strong";
+"Medium" = "Medium";
+"Weak" = "ahula";
+"CREATE A NEW ACCOUNT" = "Sortu kontu berria";
+"SIGN IN WITH EXISTING ACCOUNT" = "Saioa hasi kontu";
+"SIGN IN WITH EXISTING ACCOUNT" = "Saioa hasi kontu";
+"You must agree to the Terms of Services to continue" = "Hasi saioa";
+"SIGN IN" = "Zein da zure pasahitza?";
+"What's your password?" = "Izena eman";
+"SIGN UP" = "Aukeratu pasahitza";
+"Choose your password?" = "Zerbait oker joan";
+"Something went wrong" = "email bidaliko dizugu to";
+"we will send email to" = "link batekin zure pasahitza berrezartzeko.";
+"with a link to reset your password." = "pasahitza berrezartzeko lotura bat bidali dira";
+"A reset password link has been sent to" = "Sartu e-posta berria.";
+"Enter new email." = "Sartu pasahitza.";
+"Enter password." = "pasahitz berria";
+"New Password " = "(8 karaktere min)";
+" (8 characters min)" = "Sartu uneko pasahitza.";
+"Enter current password." = "Idatzi pasahitz berria.";
+"Enter new password." = "Pasahitza baieztatu.";
+"Enter confirm password." = "pasahitzak ez datoz bat!";
+"password do not matched!" = "HASI";
+"GET STARTED" = "SKIP";
+"SKIP" = "";
+"From where you would like to pick photo?" = "nondik argazki jaso nahi dituzu?";
+"Camera" = "Kamara";
+"Photo Library" = "photo Library";
+"Kindly open settings and enable access" = "Atsegin handiz ezarpenak irekia eta gaitu sarbidea";
+"Open Settings" = "Open ezarpenak";
+"Access needed for your camera" = "Sarbide kamera egiteko beharrezko";
+"Access needed for your photo library" = "Sarbide beharrezkoak zure argazki liburutegi";
+"Done" = "Done";
+"Pull to refresh" = "Tira freskatzeko";
+"Loading" = "Lanean";
+"Speech not available for this article" = "Ahotsaren ez Artikulu hau eskuragarri";
+"MANAGE LOCATION" = "Kudeatu kokapen";
+"OK" = "Ados";
+"Choose your News in Bullets Edition based on locale" = "Aukeratu Bullets edizioan dituzun albisteak lokalean oinarrituta";
+"Edition" = "Edizioa";
+"EDITION / REGION" = "EDIZIOA / ESKUALDEA";
+"Your Topics" = "Zure Gaiak";
+"Your Channels" = "Zure kanalak";
+"Your Places" = "Zure Lekuak";
+"Enter email." = "Idatzi posta elektronikoa.";
+"Please enter a password." = "Mesedez, sartu pasahitza.";
+"Search articles" = "Bilatu artikuluak";
+"No results" = "Emaitzarik ez";
+"Edition / Region" = "Edizioa / Eskualdea";
+
+
+
+
+"0JC-Sb-Ouu.text" = "Erakutsi modua";
+
+
+
+
+"Select" = "Aukeratu ( ";
+
+
+"6H8-dI-k9P.text" = "Kudeatu kokapenak";
+
+
+"6KH-YP-5Lt.text" = "Narratzailea";
+
+
+" ) icon on the article" = " ) Artikulu ikonoa";
+
+
+"BLOCK" = "BLOCK";
+
+
+"you want to read later then" = "geroago, ondoren behar dituen";
+
+
+"7oo-cf-l7Y.text" = "irakurketa-abiadura";
+
+
+"88L-ip-pZw.text" = "irakurketa-abiadura";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Ez dago ezer hemen \nEz atzera joan orrira nahi duzu?";
+
+
+"BpH-F1-i0z.normalTitle" = "Tokiko";
+
+
+" ) to save article." = " ) Artikulu gordetzeko.";
+
+
+"FB0-YN-HZg.text" = "FOLLOW 3 TO CONTINUE";
+
+
+"H5Z-xJ-dWD.text" = "Azalean eta\nBiñeta";
+
+
+"Search" = "Search";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "EXTENDED VIEW";
+
+
+"Jpx-nY-Is1.normalTitle" = "kanalak";
+
+
+"JqN-io-P1u.normalTitle" = "+ Locations Gehitu";
+
+
+"What's your email?" = "Zein da zure e-posta?";
+
+
+"Lw1-Md-nse.text" = "Zerrenda ikuspegia";
+
+
+"LyT-pT-g53.text" = "NAZIOARTEKO";
+
+
+"N6C-6i-Z2s.text" = "NAZIOARTEKO";
+
+
+"Nru-uU-CsC.text" = "Iradokizun";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Gaiak";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Pertsonalizatu";
+
+
+"Topics" = "Gaiak";
+
+
+"WXY-po-W1B.text" = "titularrak eta\nBIÑETA";
+
+
+"ans-Zy-T2Y.placeholder" = "Search kokapenak for";
+
+
+"bgE-Jc-u8H.text" = "Pertsonalizatu";
+
+
+
+
+
+"Tap the ( " = "Ukitu (";
+
+
+"Places" = "Kokalekua";
+
+
+"d1l-HK-OrG.text" = "Erakutsi modua";
+
+
+
+
+
+"Language" = "Hizkuntza";
+
+
+"e9g-Wr-suO.text" = "Azalean ONLY";
+
+
+"GO HOME" = "Joan atzera orri nagusira";
+
+
+"eh1-Oo-lEn.text" = "EXTENDED VIEW";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "Zerrenda ikuspegia";
+
+
+"j2i-MT-VkA.text" = "Saiatu beste gako-";
+
+
+"Top News" = "Top News";
+
+
+"jmO-aF-nJ9.text" = "Azalean Only";
+
+
+"There is nothing in here" = "Ez dago ezer hemen";
+
+
+"ma1-9p-bSa.text" = "Ez dugu ezer topatu";
+
+
+"mce-jc-cKH.text" = "Narratzailea";
+
+
+"Channels" = "kanalak";
+
+
+"Discover" = "Ezagutu";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "Utzi";
+
+
+"Discover" = "Ezagutu";
+
+
+"No saved stories yet" = "Ez dago ezer hemen";
+
+
+"wDG-kF-Hl8.text" = "Irakurri albiste kokapenean oinarrituta";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOCALIZATION";
+
+
+"xfF-RB-mWL.text" = "LOCALIZATION";
+
+
+"Search" = "Bilatu";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Lortu aukeratutako eskualdeko albiste garrantzitsuenak. Irakurri munduko edozein lekutatik etorritako azken berrien berri izateko.";
+
+
+"Search articles" = "Bilatu artikuluak";
+
+
+"6H8-dI-k9P.text" = "Kudeatu lekuak";
+
+
+
+
+
+"Profile" = "Profila";
+
+
+"Editions" = "Edizioak";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Lekuak";
+
+
+
+
+
+"Search" = "Bilatu";
+
+
+
+
+
+
+
+
+"Search" = "Bilatu";
+
+
+"LANGUAGE" = "HIZKUNTZA";
+
+
+"Search" = "Bilatu";
+
+
+"No results" = "Ez da emaitzarik aurkitu";
+
+
+"Channels" = "Kanalak";
+
+
+"Places" = "Lekuak";
+
+
+"Places" = "Lekuak";
+
+
+"e9F-hd-Ifm.text" = "EDIZIOA / ESKUALDEA";
+
+
+
+
+
+
+
+
+"PLACES" = "LEKUAK";
+
+
+"SAVED ARTICLES" = "GORDEKO ARTIKULUAK";
+
+
+"Articles" = "Artikuluak";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "JARRAITU";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDIZIOA / ESKUALDEA";
+
+
+"Try a different keyword" = "Saiatu beste hitz gako batekin";
+
+
+"For You" = "Zuretzat";
+
+
+"Results" = "Emaitzak";
+
+
+"About" = "Guri buruz";
+
+
+"Share" = "Share";
+
+
+"ACCOUNT" = "KONTUA";
+
+
+"Your Email" = "Zure emaila";
+
+
+"1sT-J6-qI0.text" = "SAVED ARTIKULUAK";
+
+
+"2XX-rr-GLC.text" = "Aukeratu kanal desberdinak iturri ehunka";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Irakurri azken albisteak ekitaldiak eta ezaugarri guztietako mundu osoan zehar.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Ezarri denbora hutsune bat jakinarazpenak jasotzeko.";
+
+
+"Off" = "Off";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "Zein da zure e-posta?";
+
+
+"New Password (8 Characters Min)" = "Pasahitza berria (8 Pertsonaiak Gutxieneko)";
+
+
+"Forgot Password?" = "Pasahitza ahaztua?";
+
+
+"Account Settings" = "Kontu ezarpenak";
+
+
+"Learn how we process your data" = "Zure datuak prozesatzeko buruzko informazioa";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ados";
+
+
+"Block articles from The Guardian" = "The Guardian-tik Block artikulu";
+
+
+"On" = "Piztu";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Laguntza Zentroa";
+
+
+"Search" = "Search kanalak";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Aukeratu galeria fitxategi";
+
+
+
+
+"Save article" = "Save artikulu";
+
+
+"ABOUT" = "GARA";
+
+
+"Dark" = "Iluna";
+
+
+"Legal" = "Lege";
+
+
+"Go to The Guardian" = "Guardian joan";
+
+
+"Send reset link" = "Bidali aldatzeko esteka";
+
+
+
+
+
+"My Account" = "Nire kontua";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Mezua";
+
+
+"Confirm New Password" = "Berretsi pasahitza New";
+
+
+"for ___" = "egiteko";
+
+
+"Search" = "Search Gaiak for";
+
+
+"LANGUAGE" = "LANGUAGE";
+
+
+"Light" = "Argia";
+
+
+"FOLLOW 3 TO CONTINUE" = "Jarraitzeko, aukeratu 3";
+
+
+
+
+"Off" = "Itzali";
+
+
+"Language" = "Aukeratu";
+
+
+"LOG OUT" = "SAIOA AMAITU";
+
+
+"Report content" = "txostena edukirik";
+
+
+"What's your email?" = "Zein da zure e-posta??";
+
+
+"On" = "Piztu";
+
+
+"More like this" = "Albiste gehiago hau bezalako";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Idatzi helbide elektroniko";
+
+
+"News in Bullets" = "Irakurri gehiago denbora gutxiagoan.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Aukeratu pasahitza";
+
+
+"Cancel" = "Utzi";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Irakurri albiste azkar aplikazio honekin. Aukeratu zure gai eta iturri. Ondoren, zure albiste bala puntu labur irakurri.";
+
+
+"Push Notification" = "Jakinarazpen";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Emaila";
+
+
+"How can we help you?" = "Nola lagun zaitzakegu?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "ALDATU PASAHITZA";
+
+
+"Change Email" = "CHANGE E-posta helbidea";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "ALDAKETAK GORDE";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Bidali mezu bat zerbait laguntza behar baduzu, maite dituzun entzun genuke!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "Utzi";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "JAKINARAZPENAK";
+
+
+"POST ARTICLE" = "Post ARTIKULUA";
+
+
+"CONTACT US" = "Jarri gurekin harremanetan";
+
+
+"EDITION / REGION" = "edizioa";
+
+
+"Search" = "Search";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bidali iritzia bat, maite dituzun entzun genuke! Ez zalantza edo kezka duzula? Saiatu gure Laguntza orria edo jarri gurekin harremanetan.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Bidali mezu bat zerbait laguntza behar baduzu, maite dituzun entzun genuke!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "JARRAITU";
+
+
+"Time To Update!" = "Eguneratu aplikazioa!";
+
+
+"NOTIFICATIONS" = "JAKINARAZPENAK";
+
+
+"Search" = "Search";
+
+
+"By clicking Continue, you agree with our Terms." = "Aukeratu Jarraitu baldintzak onartzeko.";
+
+
+"HELP / CONTACT US" = "LAGUNTZA / HARREMANETARAKO";
+
+
+"Reset Password" = "Berrezarri pasahitza";
+
+
+"SEND MESSAGE" = "MEZUA BIDALI";
+
+
+"Save article" = "Save artikulu";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (aukerakoa)";
+
+
+"HAPTICS" = "Haptikoak";
+
+
+"Your message has \vbeen sent." = "Zure mezua bidali da..";
+
+
+"LEGAL" = "LEGE";
+
+
+"Block List" = "Bloke zerrenda";
+
+
+"PERSONALIZATION" = "PERTSONALIZAZIOA";
+
+
+"in our Privacy Policy." = "Gure pribatutasun politika ere.";
+
+
+"CONTINUE" = "JARRAITU";
+
+
+"Enter Name" = "Sartu izena";
+
+
+"What's your email?" = "What's your email?";
+
+
+"Hello there!" = "Hello there!";
+
+
+"PUSH NOTIFICATIONS" = "JAKINARAZPENAK";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (aukerakoa)";
+
+
+"Source name" = "Iturria izena";
+
+
+"Current Password" = "oraingo pasahitza";
+
+
+"COLOR THEME" = "Kolore-gaia";
+
+
+"eTp-X1-g34.text" = "edo bidez";
+
+
+"CANCEL" = "Utzi";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (aukerakoa)";
+
+
+"Date published" = "argitaratutako data";
+
+
+"Send Password Reset Link" = "pasahitza berrezartzeko lotura Bidali";
+
+
+"CONTINUE WITH APPLE" = "Eman izena Apple ID bitartez";
+
+
+"Off" = "Itzali";
+
+
+"BLOCK LIST" = "blokeoen zerrenda";
+
+
+"HELP" = "LAGUNTZA";
+
+
+"Reference link" = "Erreferentzia link";
+
+
+"Your Password" = "zure pasahitza";
+
+
+"SUBMIT" = "BIDALI";
+
+
+"HELP" = "LAGUNTZA";
+
+
+"MY ACCOUNT" = "NIRE KONTUA";
+
+
+"hbD-HP-tZd.normalTitle" = "Desblokeatu";
+
+
+"OTHERS" = "Beste batzuk";
+
+
+"BREAKING NEWS" = "Breaking News";
+
+
+"Topics" = "Blokeatutako Gaiak";
+
+
+"Message us," = "Mezua digu,,";
+
+
+"Pick topics to start reading
+and saving articles" = "Aplikazio hizkuntza";
+
+
+"Forgot Password?" = "Pasahitza ahaztua?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ezaugarri berriak gehitu dira. arazo batzuk konpondu dira.";
+
+
+"Success!" = "Arrakasta!!";
+
+
+"Current Password" = "oraingo pasahitza";
+
+
+"CONTENT" = "EDUKIA";
+
+
+"Headline" = "Titularra";
+
+
+"neg-UC-UpK.text" = "Aukeratu gaiak artikuluen irakurketa eta aurrezten hasteko";
+
+
+"CONTINUE WITH EMAIL ID" = "Jarraitu zure Emaila IDarekin";
+
+
+"SAVE CHANGES" = "ALDAKETAK GORDE";
+
+
+"Post an Article" = "Argitaratu artikulu bat";
+
+
+"Contact Us" = "Jarri gurekin harremanetan";
+
+
+"On" = "Piztu";
+
+
+"New Email Address" = "Posta elektroniko berria";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (aukerakoa)";
+
+
+"Suggest an improvement" = "hobekuntza proposatu";
+
+
+"Channels" = "Blokeatutako iturriak";
+
+
+"From:" = "From:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "gomendio pertsonalizatuak";
+
+
+"I don't like this" = "Ez dut hau gustatzen";
+
+
+"CONTINUE" = "JARRAITU";
+
+
+"Name" = "izena";
+
+
+"Enter email" = "Sartu e-posta";
+
+
+"HELP" = "LAGUNTZA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Jarraitu 3 Jarraitu";
+
+
+"UPDATE APP" = "Update aplikazioa";
+
+
+"Forgot Password?" = "Pasahitza ahaztua?";
+
+
+"Change Password" = "Aldatu pasahitza";
+
+
+"Reset Password" = "Berrezarri pasahitza";
+
+
+
+
+
+
+
+
+"Report content" = "Salatu zure kezka";
+
+
+"CHANGE EMAIL ADDRESS" = "CHANGE E-posta helbidea";
+
+
+"Follow The Guardian" = "Jarraitu The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ezaugarri berri ugari gehitu ditugu eta akats batzuk konpondu ditugu zure esperientzia ahalik eta arinena izan dadin.";
+
+
+"Edition / Region" = "Edizioa / Eskualdea";
+
+
+"OK" = "Ados";
+
+
+"NARRATOR" = "NARRATZAILEA";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Maite dituzun berriei buruz eguneratuta egoteak ez luke zure denbora gehiegi hartu behar. Bullets-en News-ek 5 minutuko ohiko irakurketa hartzen du eta erraz digeritzen diren buletan kondentsatzen du. Orain, albiste berdinak denbora gutxian har ditzakezu - denbora gutxiagoan gehiago irakurri ahal izateko.";
+
+
+"READING SPEED" = "IRAKURKETA ABIADURA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Oraindik ez duzu ezer blokeatu";
+
+
+"EDITION / REGION" = "EDIZIOA / ESKUALDEA";
+
+
+
+
+
+"HEADLINES ONLY" = "ATALBURUAK BAKARRIK";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Audio ezarpenak";
+
+
+"AUDIO SETTINGS" = "AUDIO EZARPENAK";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TITULARRAK ETA BULLEAK";
+
+
+"CONTINUE AS GUEST" = "SALTU ETA SARTU GONBIDATUTA";
+
+
+"Topics" = "Gaiak";
+
+
+"Pick topics to start reading and saving articles" = "Aukeratu gaiak artikuluak irakurtzen eta gordetzen hasteko";
+
+
+"Channels" = "Kanalak";
+
+
+"Choose from hundreds \nof news publications" = "Aukeratu ehunka albiste argitalpenen artean";
+
+
+"Pick topics to start reading\nand saving articles" = "Aukeratu gaiak artikuluak irakurtzen eta gordetzen hasteko";
+
+"Pick editions to start reading\nand saving articles" = "Aukeratu edizioak artikuluak irakurtzen eta gordetzen hasteko";
+
+"Or with" = "Edo honekin";
+
+"CONTINUE AS GUEST" = "Jarraitu gonbidatu gisa";
+
+"Terms of Service" = "Zerbitzu-baldintzak";
+
+"Choose from hundreds \nof news publications" = "Aukeratu ehunka albiste argitalpenen artean";
+
+"Select your preferred language\nfor News in Bullets." = "Aukeratu Bullets-eko Albisteetarako nahi duzun hizkuntza.";
+
+"Choose a style" = "Aukeratu estilo bat";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop edo sotila. Egunez edo gauez. Pertsonalizatu zure interfazea.";
+
+"MINS AGO" = "duela minutu batzuk";
+
+"AN HOUR AGO" = "duela ordubete";
+
+"HOURS AGO" = "duela ordu batzuk";
+
+"1 WEEK AGO" = "Duela astebete";
+
+"YESTERDAY" = "Atzo";
+
+"DAYS AGO" = "duela egun batzuk";
+
+"Go to" = "Joan";
+
+"You have reached the start." = "Irteerara iritsi zara";
+
+"Source unblocked successfully" = "Iturria behar bezala desblokeatu da";
+
+"Invalid email format"  = "Posta elektronikoaren formatu baliogabea";
+
+"Wrong email or password" = "Posta elektroniko edo pasahitz okerra";
+
+
+

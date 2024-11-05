@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReelsSkeletonAnimation" id="gTV-IL-0wX" customClass="ReelsSkeletonAnimation" customModule="Newsreels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="477" height="655"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="477" height="655"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii4-PY-7VC">
+                        <rect key="frame" x="0.0" y="0.0" width="477" height="655"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVN-7w-LEh">
+                                <rect key="frame" x="0.0" y="0.0" width="477" height="655"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szB-lI-osk">
+                                        <rect key="frame" x="0.0" y="0.0" width="477" height="655"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4s-NE-rgl" customClass="GMView" customModule="Newsreels" customModuleProvider="target">
+                                                <rect key="frame" x="208.5" y="317.5" width="60" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="z4s-NE-rgl" secondAttribute="height" multiplier="1:1" id="2Ek-8I-31f"/>
+                                                    <constraint firstAttribute="width" constant="60" id="9gt-9M-PxP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="z4s-NE-rgl" firstAttribute="centerY" secondItem="szB-lI-osk" secondAttribute="centerY" constant="20" id="XpX-CS-WYh"/>
+                                            <constraint firstItem="z4s-NE-rgl" firstAttribute="centerX" secondItem="szB-lI-osk" secondAttribute="centerX" id="oyo-vt-MzK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="szB-lI-osk" firstAttribute="leading" secondItem="IVN-7w-LEh" secondAttribute="leading" id="A7m-tY-Hcw"/>
+                                    <constraint firstAttribute="trailing" secondItem="szB-lI-osk" secondAttribute="trailing" id="DVp-og-WKa"/>
+                                    <constraint firstItem="szB-lI-osk" firstAttribute="top" secondItem="IVN-7w-LEh" secondAttribute="top" id="jaG-90-XcD"/>
+                                    <constraint firstAttribute="bottom" secondItem="szB-lI-osk" secondAttribute="bottom" id="uvM-ra-hjE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IVN-7w-LEh" firstAttribute="leading" secondItem="Ii4-PY-7VC" secondAttribute="leading" id="MVy-01-K5Z"/>
+                            <constraint firstAttribute="bottom" secondItem="IVN-7w-LEh" secondAttribute="bottom" id="Sqh-p7-wR9"/>
+                            <constraint firstItem="IVN-7w-LEh" firstAttribute="top" secondItem="Ii4-PY-7VC" secondAttribute="top" id="gan-Ls-Efq"/>
+                            <constraint firstAttribute="trailing" secondItem="IVN-7w-LEh" secondAttribute="trailing" id="okm-AR-IAa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isUserInteractionDisabledWhenSkeletonIsActive" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ii4-PY-7VC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0nm-5b-cwG"/>
+                <constraint firstAttribute="trailing" secondItem="Ii4-PY-7VC" secondAttribute="trailing" id="2L7-G3-zEu"/>
+                <constraint firstItem="Ii4-PY-7VC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="D0M-8f-kyb"/>
+                <constraint firstAttribute="bottom" secondItem="Ii4-PY-7VC" secondAttribute="bottom" id="fH8-ET-mXA"/>
+            </constraints>
+            <size key="customSize" width="477" height="655"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="circularView" destination="z4s-NE-rgl" id="rTY-F7-gdy"/>
+                <outlet property="loaderView" destination="szB-lI-osk" id="o4P-K1-N3m"/>
+            </connections>
+            <point key="canvasLocation" x="357.24637681159425" y="323.10267857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,1104 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ponto";
+"BULLETS" = "PONTOS";
+"Headlines is not available." = "As manchetes estão indisponíveis.";
+"Check your internet Connection and try again." = "Verifique sua conexão com a Internet e tente de novo.";
+"Choose Image" = "Escolher imagem";
+"Headline" = "Manchete";
+"Bullet 1" = "Ponto 1";
+"Bullet 2" = "Ponto 2";
+"Bullet 3 (Optional)" = "Ponto 3 (Opcional)";
+"Bullet 4 (Optional)" = "Ponto 4 (Opcional)";
+"Bullet 5 (Optional)" = "Ponto 5 (Opcional)";
+"Bullet 6 (Optional)" = "Ponto 6 (Opcional)";
+"Enter Aticle Headline" = "Insira a manchete";
+"Enter source name" = "Insira a fonte";
+"Enter reference link" = "Insira a referência";
+"Enter published date" = "Insira a data de publicação";
+"Enter Bullet 1" = "Insira o primeiro ponto";
+"Enter Bullet 2" = "Insira o segundo ponto";
+"Post article successfully" = "O artigo foi publicado com sucesso";
+"Follow" = "Seguir";
+"Unfollow" = "Parar de seguir";
+"Block articles from" = "BLOQUEAR artigos de";
+"Unblock articles from" = "DESBLOQUEAR artigos de";
+"Remove article" = "Remover o artigo";
+"Save article" = "Salvar este artigo";
+"Terms & Conditions" = "Termos e condições";
+"Privacy Policy" = "Política de privacidade";
+"TERMS AND CONDITIONS" = "TERMOS E CONDIÇÕES";
+"PRIVACY POLICY" = "POLÍTICA DE PRIVACIDADE";
+"Fuel your curiosity" = "Leia mais notícias sobre o mundo";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Leia notícias curtas e verdadeiras sobre seus tópicos favoritos de fontes internacionais confiáveis. ";
+"Save time" = "Poupe seu tempo";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Leia notícias resumidas em pontos";
+"Hands-free reading" = "Narração de voz";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Não tem tempo para ler? Use a função de voz.";
+"Write your message..." = "Escreva sua mensagem...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "envie-nos uma mensagem se precisar de ajuda, adoraríamos receber seus comentários!";
+"Drop us a message" = "envie-nos uma mensagem";
+"Enter Name." = "Insira o nome.";
+"Enter Email." = "Insira o e-mail.";
+"Write your message." = "Escreva sua mensagem.";
+"Topic unblock successfully" = "Você desbloqueou este tópico";
+"Source unblock successfully" = "Você desbloqueou esta fonte";
+"Unblock Source" = "Desbloquear fonte";
+"Cancel" = "Cancelar";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Envie-nos uma mensagem, adoraríamos receber seus comentários! Você tem alguma dúvida ou preocupação jurídica? Acesse nossa página de Ajuda ou Fale conosco.";
+"Enter your suggestion." = "Insira sua sugestão.";
+"feedback sent." = "comentários enviados com sucesso";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Idioma atualizado com sucesso.";
+"CONTINUE" = "CONTINUAR";
+"FOLLOW 3 TO CONTINUE" = "SIGA 3 PARA PROSSEGUIR";
+"Unfollow Location" = "Parar de seguir local";
+"Saved Articles" = "Artigos salvos";
+"Block" = "BLOQUEAR";
+"Are you sure you want block" = "Tem certeza que quer bloquear isto";
+"Once blocked, you wont be able to see any Articles related to this" = "Você não verá artigos deste canal se bloqueá-lo.";
+"Block Topic" = "Bloquear este tópico";
+"Suggested" = "Sugestões";
+"Related Sources not available" = "As fontes relacionadas estão indisponíveis";
+"Block Source" = "Bloquear esta fonte";
+"News in Bullets App version" = "Versão do app Notícias Resumidas ";
+"Next" = "Próximo";
+"Login" = "Entrar";
+"Terms" = "Termos";
+"By clicking Continue, you agree with our Terms." = "Selecione Continuar para aceitar os Termos.";
+"in our Privacy Policy." = "em nossa Política de privacidade.";
+"Access token missing." = "O token de acesso está faltando.";
+"NEXT" = "PRÓXIMO";
+"By checking this box, you agree to our " = "Clique na caixa para aceitar os Termos. Seus dados serão processados de acordo com nossa Política de privacidade.";
+"Terms of Service" = "Termos de serviço";
+". We’ll handle your data according to our " = ". Processaremos seus dados de acordo com nossa";
+"Password must be at least 8 characters." = "A senha deve ter no mínimo 8 caracteres.";
+"Strong" = "Forte";
+"Medium" = "Razoável";
+"Weak" = "Fraca";
+"CREATE A NEW ACCOUNT" = "CRIE UMA NOVA CONTA";
+"SIGN IN WITH EXISTING ACCOUNT" = "ENTRAR COM CONTA EXISTENTE";
+"You must agree to the Terms of Services to continue" = "Você deve concordar com os Termos de serviço para prosseguir";
+"SIGN IN" = "Entrar";
+"What's your password?" = "Qual a sua senha?";
+"SIGN UP" = "Cadastro";
+"Choose your password?" = "Escolha sua senha";
+"Something went wrong" = "Algo deu errado";
+"we will send email to" = "enviaremos um e-mail a";
+"with a link to reset your password." = "com um link para redefinir sua senha.";
+"A reset password link has been sent to" = "Um link para redefinir a senha foi enviado a";
+"Enter new email." = "Insira o novo e-mail.";
+"Enter password." = "Insira a senha.";
+"New Password " = "Nova senha";
+" (8 characters min)" = "(mínimo de 8 caracteres)";
+"Enter current password." = "Insira a senha atual.";
+"Enter new password." = "Insira a nova senha.";
+"Enter confirm password." = "Confirmar senha.";
+"password do not matched!" = "as senhas não batem!";
+"GET STARTED" = "INICIAR";
+"SKIP" = "PULAR";
+"From where you would like to pick photo?" = "De onde você gostaria de escolher a foto?";
+"Camera" = "Câmera";
+"Photo Library" = "Biblioteca de fotos";
+"Kindly open settings and enable access" = "Por favor, abra os ajustes e permita o acesso";
+"Open Settings" = "Abrir ajustes";
+"Access needed for your camera" = "Necessário acesso à sua câmera";
+"Access needed for your photo library" = "Necessário acesso à sua biblioteca de fotos";
+"Done" = "Pronto";
+"Pull to refresh" = "Puxe para atualizar";
+"Loading" = "Carregando";
+"Speech not available for this article" = "Narração indisponível neste artigo";
+"MANAGE LOCATION" = "GERENCIAR LOCAL";
+"OK" = "Está bem";
+"Choose your News in Bullets Edition based on locale" = "Escolha o seu News in Bullets Edition com base na localidade";
+"Edition" = "Edição";
+"EDITION / REGION" = "EDIÇÃO / REGIÃO";
+"Your Topics" = "Seus Tópicos";
+"Your Channels" = "Seus canais";
+"Your Places" = "Seus lugares";
+"Enter email." = "Digite o e-mail.";
+"Please enter a password." = "Por favor insira uma senha.";
+"Search articles" = "Artigos de pesquisa";
+"No results" = "Sem resultados";
+"Edition / Region" = "Edição / Região";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOQUEAR";
+"CANCEL" = "CANCELAR";
+"PLACES" = "LUGARES";
+"LANGUAGE" = "LÍNGUA";
+"Profile" = "Perfil";
+"SAVED ARTICLES" = "ARTIGOS SALVOS";
+"Topics" = "Tópicos";
+"Channels" = "Canais";
+"Editions" = "Edições";
+"No saved stories yet" = "Ainda não há histórias salvas";
+"Tap the" = "Toque em";
+"icon on the article" = "ícone no artigo";
+"you want to read later then" = "você quer ler mais tarde então";
+"Select" = "Selecione";
+"to save article." = "para salvar o artigo.";
+"There is nothing in here" = "Não há nada aqui";
+"Looks like there is nothing here but a cat." = "Parece que não há nada aqui além de um gato.";
+"Would you like to go back to home?" = "Você gostaria de voltar para casa?";
+"GO HOME" = "IR PARA CASA";
+"Search" = "Procurar";
+"Discover" = "Descobrir";
+"Articles" = "Artigos";
+"Try a different keyword" = "Experimente uma palavra-chave diferente";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Receba as notícias mais relevantes para a região que você escolher. Leia notícias selecionadas para mantê-lo atualizado sobre as últimas notícias de qualquer lugar do mundo.";
+"Language" = "Língua";
+"Results" = "Resultados";
+"For You" = "Para você";
+"Top News" = "Principais";
+"Choose a style" = "Escolha um estilo";
+"Pop or subtle. Day or night. Customize your interface." = "Pop ou sutil. Dia ou noite. Personalize sua interface.";
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Sobre Nós";
+
+
+"Share" = "Compartilhar";
+
+
+"ACCOUNT" = "CONTA";
+
+
+"Your Email" = "Seu e-mail";
+
+
+"1sT-J6-qI0.text" = "ARTIGOS SALVOS";
+
+
+"2XX-rr-GLC.text" = "Selecione canais de diversas fontes";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Leia as notícias e eventos recentes de todo o mundo.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Ajuste um intervalo de tempo para receber notificações.";
+
+
+"Off" = "Inativo.";
+
+
+
+
+
+"Bullet 2" = "Ponto 2";
+
+
+"What's your email?" = "Qual o seu e-mail?";
+
+
+"New Password (8 Characters Min)" = "Nova senha (mínimo de 8 caracteres)";
+
+
+"Forgot Password?" = "Esqueceu sua senha?";
+
+
+"Account Settings" = "Configurações de conta";
+
+
+"Learn how we process your data" = "Informações sobre o processamento de seus dados";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "Bloquear artigos de ---";
+
+
+"On" = "Ativar";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Centro de ajuda";
+
+
+"Search" = "Buscar canais";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Selecionar arquivo da galeria";
+
+
+
+
+"Save article" = "Salvar artigo";
+
+
+"ABOUT" = "SOBRE";
+
+
+"Dark" = "Escuro";
+
+
+"Legal" = "Jurídico";
+
+
+"Go to The Guardian" = "Ir para ---";
+
+
+"Send reset link" = "Enviar link de redefinição";
+
+
+
+
+
+"My Account" = "Minha conta";
+
+
+"FEEDBACK" = "COMENTÁRIOS";
+
+
+"Message" = "Mensagem";
+
+
+"Confirm New Password" = "Confirmar nova senha";
+
+
+"for ___" = "para ___";
+
+
+"Search" = "Buscar tópicos";
+
+
+"LANGUAGE" = "IDIOMA";
+
+
+"Light" = "Claro";
+
+
+"FOLLOW 3 TO CONTINUE" = "para prosseguir, escolha 3";
+
+
+
+
+"Off" = "Desativar";
+
+
+"Language" = "Escolher";
+
+
+"LOG OUT" = "SAIR";
+
+
+"Report content" = "Denunciar Conteúdo";
+
+
+"What's your email?" = "Qual o seu e-mail?";
+
+
+"On" = "Ativar";
+
+
+"More like this" = "Mais notícias como esta";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Insira o endereço de e-mail";
+
+
+"News in Bullets" = "Leia mais em menos tempo.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Escolha sua senha";
+
+
+"Cancel" = "Cancelar";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Leia notícias rapidamente com este app. Escolha seus tópicos e fontes. Então, leia suas notícias resumidas em pontos curtos.";
+
+
+"Push Notification" = "Notificação";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-mail";
+
+
+"How can we help you?" = "Como podemos ajudá-lo?";
+
+
+"OJP-Wd-0d3.text" = "Paquistão";
+
+
+"CHANGE PASSWORD" = "ALTERAR SENHA";
+
+
+"Change Email" = "ALTERAR ENDEREÇO DE E-MAIL";
+
+
+"Medium" = "Razoável";
+
+
+"SAVE CHANGES" = "SALVAR ALTERAÇÕES";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Envie-nos uma mensagem se precisar de ajuda, adoraríamos receber seus comentários!";
+
+
+"P5u-N3-Tw4.text" = "Rótulo";
+
+
+"Cancel" = "Cancelar";
+
+
+"Bullet 1" = "Ponto 1";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFICAÇÕES";
+
+
+"POST ARTICLE" = "PUBLICAR UM ARTIGO";
+
+
+"CONTACT US" = "Fale conosco";
+
+
+"EDITION / REGION" = "Edição";
+
+
+"Search" = "Buscar";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Envie-nos uma mensagem, adoraríamos receber seus comentários! Você tem alguma dúvida ou preocupação jurídica? Acesse nossa Página de ajuda ou Fale conosco.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Envie-nos uma mensagem se precisar de ajuda, adoraríamos receber seus comentários!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "CONTINUAR";
+
+
+"Time To Update!" = "Atualize o app!";
+
+
+"NOTIFICATIONS" = "NOTIFICAÇÕES";
+
+
+"Search" = "Buscar";
+
+
+"By clicking Continue, you agree with our Terms." = "Selecione Continuar para aceitar os Termos.";
+
+
+"HELP / CONTACT US" = "AJUDA / CONTATO";
+
+
+"Reset Password" = "Redefinir senha";
+
+
+"SEND MESSAGE" = "ENVIAR MENSAGEM";
+
+
+"Save article" = "Salvar artigo";
+
+
+"Bullet 6 (Optional)" = "Ponto 6 (Opcional)";
+
+
+"HAPTICS" = "HÁPTICA";
+
+
+"Your message has \vbeen sent." = "Sua mensagem foi enviada.";
+
+
+"LEGAL" = "JURÍDICO";
+
+
+"Block List" = "Lista de bloqueios";
+
+
+"PERSONALIZATION" = "PERSONALIZAÇÃO";
+
+
+"in our Privacy Policy." = "em nossa Política de privacidade.";
+
+
+"CONTINUE" = "CONTINUAR";
+
+
+"Enter Name" = "Insira o nome";
+
+
+"What's your email?" = "Qual o seu e-mail?";
+
+
+"Hello there!" = "Olá!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFICAÇÕES";
+
+
+"Bullet 3 (Optional)" = "Ponto 3 (Opcional)";
+
+
+"Source name" = "Nome da fonte";
+
+
+"Current Password" = "Senha atual";
+
+
+"COLOR THEME" = "Tema de cores";
+
+
+"eTp-X1-g34.text" = "Ou pelo";
+
+
+"CANCEL" = "CANCELAR";
+
+
+"Bullet 4 (Optional)" = "Ponto 4 (Opcional)";
+
+
+"Date published" = "Data de publicação";
+
+
+"Send Password Reset Link" = "Enviar link de redefinição de senha";
+
+
+"CONTINUE WITH APPLE" = "Cadastre-se com ID Apple";
+
+
+"Off" = "Desativar";
+
+
+"BLOCK LIST" = "LISTA DE BLOQUEIOS";
+
+
+"HELP" = "AJUDA";
+
+
+"Reference link" = "Link de referência";
+
+
+"Your Password" = "Sua senha";
+
+
+"SUBMIT" = "ENVIAR";
+
+
+"HELP" = "AJUDA";
+
+
+"MY ACCOUNT" = "MINHA CONTA";
+
+
+"hbD-HP-tZd.normalTitle" = "Desbloquear";
+
+
+"OTHERS" = "Outros";
+
+
+"BREAKING NEWS" = "NOTÍCIAS DE ÚLTIMA HORA";
+
+
+"Topics" = "Tópicos bloqueados";
+
+
+"Message us," = "Fale conosco,";
+
+
+"Pick topics to start reading
+and saving articles" = "idioma do app";
+
+
+"Forgot Password?" = "Esqueceu sua senha?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Novas funções adicionadas. Alguns problemas resolvidos.";
+
+
+"Success!" = "Sucesso!";
+
+
+"Current Password" = "Senha atual";
+
+
+"CONTENT" = "CONTEÚDO";
+
+
+"Headline" = "Manchete";
+
+
+"neg-UC-UpK.text" = "Selecione tópicos para começar a ler e a salvar artigos";
+
+
+"CONTINUE WITH EMAIL ID" = "Continuar com seu e-mail";
+
+
+"SAVE CHANGES" = "SALVAR ALTERAÇÕES";
+
+
+"Post an Article" = "Publicar um artigo";
+
+
+"Contact Us" = "Fale conosco";
+
+
+"On" = "Ativar";
+
+
+"New Email Address" = "Novo endereço de e-mail";
+
+
+"Bullet 5 (Optional)" = "Ponto 5 (Opcional)";
+
+
+"Suggest an improvement" = "Fazer uma sugestão";
+
+
+"Channels" = "Fontes Bloqueadas";
+
+
+"From:" = "De:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "RECOMENDAÇÕES PERSONALIZADAS";
+
+
+"I don't like this" = "Não gosto disso";
+
+
+"CONTINUE" = "CONTINUAR";
+
+
+"Name" = "Nome";
+
+
+"Enter email" = "Insira o e-mail";
+
+
+"HELP" = "AJUDA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Siga 3 para prosseguir";
+
+
+"UPDATE APP" = "Atualizar app";
+
+
+"Forgot Password?" = "Esqueceu sua senha?";
+
+
+"Change Password" = "Alterar senha";
+
+
+"Reset Password" = "Redefinir senha";
+
+
+
+
+
+
+
+
+"Report content" = "Faça sua queixa";
+
+
+"CHANGE EMAIL ADDRESS" = "ALTERAR ENDEREÇO DE E-MAIL";
+
+
+"Follow The Guardian" = "Seguir ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Adicionamos muitos recursos novos e corrigimos alguns bugs para tornar sua experiência o mais tranquila possível.";
+
+
+"Edition / Region" = "Edição / Região";
+
+
+"OK" = "Está bem";
+
+
+"NARRATOR" = "NARRADOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Manter-se atualizado sobre as notícias que você adora não deve demorar muito. O News in Bullets leva a leitura regular de 5 minutos e condensado em marcadores de fácil digestão. Agora, você pode receber as mesmas notícias em apenas uma fração do tempo - para que possa ler mais em menos tempo.";
+
+
+"READING SPEED" = "VELOCIDADE DE LEITURA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Você ainda não bloqueou nada";
+
+
+"EDITION / REGION" = "EDIÇÃO / REGIÃO";
+
+
+
+
+
+"HEADLINES ONLY" = "SOMENTE TÍTULO";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Configurações de áudio";
+
+
+"AUDIO SETTINGS" = "CONFIGURAÇÕES DE ÁUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TÍTULOS E BALAS";
+
+
+"CONTINUE AS GUEST" = "Pule e faça login como convidado";
+
+
+"Topics" = "Tópicos";
+
+
+"Pick topics to start reading and saving articles" = "Escolha tópicos para começar a ler e salvar artigos";
+
+
+"Channels" = "Canais";
+
+
+"Choose from hundreds \nof news publications" = "Escolha entre centenas \ de publicações de notícias";
+
+"Pick topics to start reading\nand saving articles" = "Escolha tópicos para começar a ler e salvar artigos";
+
+"Pick editions to start reading\nand saving articles" = "Escolha as edições para começar a ler e salvar artigos";
+
+"Or with" = "Ou com";
+
+"CONTINUE AS GUEST" = "CONTINUE COMO UM HÓSPEDE";
+
+"Terms of Service" = "Termos de serviço";
+
+"Choose from hundreds \nof news publications" = "Escolha entre centenas de publicações de notícias";
+
+"Select your preferred language\nfor News in Bullets." = "Selecione seu idioma preferido para Notícias em Bullets.";
+
+"Choose a style" = "Escolha um estilo";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop ou sutil. Dia ou noite. Personalize sua interface.";
+
+"MINS AGO" = "MINUTOS ATRÁS";
+
+"AN HOUR AGO" = "UMA HORA ATRÁS";
+
+"HOURS AGO" = "HORAS ATRÁS";
+
+"1 WEEK AGO" = "UMA SEMANA ATRÁS";
+
+"YESTERDAY" = "ONTEM";
+
+"DAYS AGO" = "DIAS ATRÁS";
+
+"Go to" = "Vamos para";
+
+"You have reached the start." = "Você chegou ao início.";
+
+"Source unblocked successfully" = "Fonte desbloqueada com sucesso";
+
+"Invalid email format"  = "Formato de email inválido";
+
+"Wrong email or password" = "e-mail ou senha incorretos";
+
+
+"Personalize your reading experience" = "Personalize a sua experiência de leitura";
+
+"Start following the news topics and channels you want to read." = "Comece a seguir os tópicos e canais noticiosos que pretende ler.";
+
+"LET'S GO" = "Vamos";
+
+"We’ll handle your data according to our\n" = "Trataremos os seus dados de acordo com os nossos";
+
+"By clicking Continue, you agree with our " = "Ao clicar Continuar, concorda com o nosso";
+
+"Learn how we process your data in our"  = "Saiba como processamos os seus dados na nossa";
+
+"JUST NOW" = "AGORA MESMO";
+
+"Menu" = "Menu";
+"Article Text Size" = "Tamanho do texto do artigo";
+"Change the font size shown on the articles" = "Altere o tamanho da fonte mostrado nos artigos";
+"Small" = "Pequeno";
+"Default" = "Predefinição";
+"Medium" = "Médio";
+"Large" = "Grande";
+
+"Related Articles" = "Artigos Relacionados";
+"View Full Article" = "Ver Artigo Completo";
+
+"Create your profile" = "Crie o seu perfil";
+"Set your profile" = "Defina o seu perfil";
+"View your profile" = "Veja o seu perfil";
+"ARTICLE TEXT SIZE" = "TAMANHO DO TEXTO DO ARTIGO";
+"DATA SAVER" = "POUPANÇA DE DADOS";
+"Edit Profile" = "Editar Perfil";
+"Profile Settings" = "Definições de perfil";
+"Edit what viewers see in your profile." = "Edite o que os espectadores vêem no seu perfil.";
+"COVER PHOTO" = "FOTO DE CAPA";
+"Profile Name" = "Nome do perfil";
+"Help and Feedback" = "Ajuda e Feedback";
+"HELP AND FEEDBACK" = "AJUDA E FEEDBACK";
+"Others" = "Outras";
+"Feedback & Suggestions" = "Feedback e sugestões";
+"Help / Contact Us" = "Ajuda / Fale conosco";
+"Terms and Conditions" = "Termos e Condições";
+"Notification" = "Notificação";
+"Push Notifications" = "Notificações via push";
+"Breaking News" = "Últimas notícias";
+"Personalized Recommendations" = "Recomendações Personalizadas";
+"Timed Notifications" = "Notificações cronometradas";
+"Account" = "Conta";
+"E-mail Address" = "Endereço de e-mail";
+"Reels" = "Carretels";
+
+"Comments" = "Comentários";
+"Write a reply..." = "Escreva uma resposta...";
+"Reply" = "Resposta";
+"Replies" = "Respostas";
+"View" = "Modos de exibição";
+"more reply" = "mais resposta";
+"more replies" = "mais respostas";
+"Home" = "Pagina inicial";
+"Newsreels" = "Carretéis de notícias";
+
+"Following" = "Seguindo";
+"First Name" = "Primeiro nome";
+"Last Name" = "Sobrenome";
+
+"This feature requires photo access" = "Este recurso requer acesso à foto";
+"in phone settings, tap News in Bullets and turn on Photos" = "em configurações de telefone, toque em News in Bullets e ligue fotos";
+"Not Now" = "Agora não";
+"Open Settings" = "Abrir Definições";
+"No photos on this device" = "Não há fotos neste dispositivo.";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "se quiser alterar as configurações de acesso às fotos, vá para as configurações do telefone, toque em News in Bullets e ative Fotos";
+"Video duration" = "Duração do vídeo";
+"Video too short" = "Vídeo muito curto";
+"Video too long" = "Vídeo muito longo";
+"Done" = "Feito";
+"Save" = "Salve";
+"Processing.." = "Processamento..";
+"Trim" = "Aparar";
+"Cover" = "Cobrir";
+"Albums" = "Álbuns";
+"Gallery" = "Galeria";
+"Photos" = "Fotos";
+"Videos" = "Vídeos";
+"Next" = "Próximo";
+"Crop" = "Cortar imagem";
+
+
+"Locations" = "Localizações";
+"Authors" = "Autores";
+"Invalid Video" = "Vídeo Inválido";
+"Invalid Youtube link" = "Link do Youtube inválido";
+"Article published successfully" = "Artigo publicado com sucesso";
+"Article removed successfully" = "Artigo removido com sucesso";
+"Edit Article" = "Editar artigo";
+"Delete Article" = "Excluir artigo";
+"Before you can comment, you need to update your profile" = "Antes de poder publicar, tem de atualizar o seu perfil.";
+"Update profile" = "Atualizar perfil";
+"Views" = "Modos de exibição";
+
+"Edit Newsreels" = "Editar cinejornais";
+"Post article" = "Postar artigo";
+"SAVE" = "Salve";
+"Caption" = "Uma legenda";
+"Create a Caption" = "Crie uma legenda";
+
+"Create a headline" = "Criar uma manchete";
+"Add Source Link (Optional)" = "Adicionar link de origem (opcional)";
+"Enter a Caption" = "Insira a legenda";
+"Enter article headline" = "Insira manchete do artigo";
+
+"Add Bullet 1" = "Adicionar bullet 1";
+"Add Bullet 2" = "Adicionar bullet 2";
+"Add Bullet 3 (Optional)" = "Adicionar bullet 3 (opcional)";
+"Add Bullet 4 (Optional)" = "Adicionar bullet 4 (opcional)";
+"Add Bullet 5 (Optional)" = "Adicionar bullet 5 (opcional)";
+
+"Add Bullet" = "Adicionar bullet";
+
+"Uploading video..." = "Carregar Vídeo...";
+"Bullet" = "Bullet";
+
+
+"Oops! Something went wrong. Please try again." = "Oops! Alguma coisa correu mal. Por favor, tente de novo.";
+
+"Upload media" = "Upload de mídia";
+"Upload Newsreels" = "Carregar cinejornais";
+"Upload YouTube link" = "Carregar link do YouTube";
+"Before you post," = "Antes de postar,";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "Por favor, lembre-se que está se juntando a uma comunidade global de leitores e escritores. A fim de proteger todos de qualquer forma de desinformação e abuso, por favor, reveja a nossa";
+"Community Guidelines." = "Diretrizes da comunidade.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "Ao tocar em Continuar, você concorda em seguir as diretrizes.";
+"Community Guidelines" = "Diretrizes da comunidade";
+
+"Upload bullet image (optional)" = "Upload imagem de bullet (opcional)";
+"Delete" = "Excluir";
+"Replace" = "Substituir";
+"Delete Bullet" = "Excluir bullet";
+
+"Add Tag" = "Adicionar etiqueta";
+"Get discovered locally" = "Seja descoberto localmente";
+"Add a location to your channel and get discovered by users near you." = "Adicione uma localização ao seu canal e seja descoberto pelos utilizadores perto de si.";
+"Max 5" = "Máximo 5";
+"RECOMMENDED" = "Recomendado";
+"comma, separated, tags" = "vírgula, separadas, tags";
+
+"YouTube Article" = "Artigo do YouTube";
+"Paste a YouTube link to upload a video from YouTube." = "Cole uma ligação do YouTube para fazer o upload de um vídeo do YouTube.";
+"Paste a YouTube link to take import" = "Cole uma ligação do YouTube para tomar a importação";
+"IMPORT" = "Importação";
+
+"Enter Youtube link" = "Digite o link do YouTube.";
+"Preview" = "Antevisão";
+"POST" = "Postar";
+"Post to My Profile" = "Postar no meu perfil";
+
+"RESULT" = "Resultados";
+"followers" = "seguidores";
+"Followers" = "Seguidores";
+"Posts" = "Postagens";
+"Profile updated successfully" = "Perfil atualizado com sucesso";
+"Tags" = "Tags";
+"No Posts Yet" = "Ainda não há postagens";
+
+
+"Add" = "Adicionar";
+"Select Ratio" = "Selecionar Rácio";
+"Add topics tags" = "Adicionar tags de tópicos";
+"Be discovered by people following the topics you are posting about." = "Seja descoberto por pessoas que seguem os tópicos sobre os quais você está postando.";
+"Reels edited successfully." = "As cinejornais editadas com sucesso.";
+"Article edited successfully." = "Artigo editado com sucesso.";
+"Reels uploaded successfully." = "As cinejornais foram carregadas com sucesso.";
+"Enter verification code" = "Insira o código de verificação";
+"RESEND" = "REENVIAR";
+"Processing..." =  "Em processamento...";
+"Scheduled on:" = "Agendado em:";
+"Enter profile name" = "Insira o nome do perfil";
+"Ok, last thing is your channel image" = "Ok, a última coisa é a imagem do seu canal";
+"Upload" = "Fazer upload";
+"Before you can post article, you need to update your profile" = "Antes de poder publicar, tem de atualizar o seu perfil.";
+"UPDATE" = "Atualizar";
+"Scale" = "Escala";
+"Saved Article" = "Artigo Salvo";
+"Removed Article" = "Artigo Removido";
+"Ok, last thing is your profile image" = "Ok, a última coisa é a sua imagem de perfil";
+"Relevant" = "Relevante";
+
+"See More" = "veja mais";
+"Less" = "veja menos";
+"Autoplay" = "Reprodução automática";
+"Reader Mode" = "Modo Leitor";
+"Data Saver" = "POUPANÇA DE DADOS";
+"Please enter a valid OTP." = "Insira um OTP válido.";
+"Enter a first name" = "Primeiro nome";
+"Enter a last name" = "Sobrenome";
+
+"Password updated successfully" = "Senha atualizada com sucesso";
+"Replying to" = "Respondendo a";
+"Unblock Topic" = "Desbloquear Tópico";
+"Please add your reel caption" = "Por favor, adicione a legenda da sua bobinas";
+"Please add bullet" = "Por favor, adicione bullet";
+"Please add your article headline" = "Por favor, adicione a manchete do seu artigo";
+"Please add bullet 1" = "Por favor, Adicionar bullet 1";
+"Please add bullet 2" = "Por favor, Adicionar bullet 2";
+
+"Please enter a valid channel name" = "Por favor, insira um nome de canal válido";
+"Let people know what" = "Deixe as pessoas saberem o que";
+"your channel is about" = "seu canal é sobre";
+"Start by creating your" = "Comece por criar o seu";
+"channel name" = "Nome do canal";
+"Describe your channel" = "Descreva o seu canal";
+"No pressure, you can change this later." = "Sem pressão, você pode mudar isso mais tarde.";
+"Channel created successfully" = "Canal criado com sucesso";
+"Please enter your channel description" = "Por favor, insira a descrição do seu canal";
+"Channel name already in use" = "Nome do canal já em uso";
+"Post to" = "Postar para";
+
+"Available" = "Disponível";
+"Already in use" = "Já está em uso";
+"SCHEDULE POST" = "Agendar Post";
+"DRAFTS" = "Rascunhos";
+"View channel" = "Ver canal";
+"Create a channel" = "Criar um canal";
+"Ok, last thing is" = "Ok, a última coisa é.";
+"your channel image" = "sua imagem de canal";
+"looks amazing!" = "parece incrível!";
+"CREATE CHANNEL" = "Criar canal";
+"Scheduled Posts" = "Agendar um post";
+
+"You don't have any drafts yet." = "Você ainda não tem rascunhos.";
+"Schedule" = "Horário";
+"There aren't any scheduled posts yet." = "Não existem postagens agendadas ainda.";
+"Schedule a Post" = "Agendar um post";
+"Mod Tools" = "Ferramentas Mod";
+"Unfollow Channel" = "Parar de seguir canal";
+"Follow Channel" = "Seguir Canal";
+
+"Release to refresh" = "Lançamento para refrescar";
+"Loading..." =  "Carregando...";
+"Schedule Post" = "Agendar Post";
+"Moderator Tools" = "Ferramentas do moderador";
+"General" = "Geral";
+"Scheduled Posts" = "Postos Agendados";
+"Settings" = "Configurações";
+"channel and cover photo" = "canal e foto de capa";
+"Description" = "Descrição";
+"Will be posted in" = "Será postado adentro";
+"Will be posted on" = "Será postado em";
+"Will be posted now" = "Será postado agora";
+"Select Date" = "Selecione Data";
+"Select Time" = "Selecione Tempo";
+"Please select date" = "Por favor, selecione a data";
+"Please select time" = "Por favor, selecione o tempo";
+"Continue with Apple" = "Continue com a Apple";
+"Continue with Google" = "Continue com o Google";
+"Continue with Facebook" = "Continue com o Facebook";
+"Continue with email" = "Continue com o e-mail";
+"Login or create an account" = "Entre ou crie uma conta";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "Faça login ou crie uma conta para ler, compartilhar e comentar histórias de todos os seus tópicos favoritos.";
+"your profile image" = "sua imagem de perfil";
+"Invalid OTP code" = "Código OTP inválido";
+
+"View your profile" = "Veja o seu perfil";
+"NEWS DESK" = "Mesa de Notícias";
+"YOUR CHANNELS" = "Seus canais";
+"GENERAL" = "Geral";
+"WALLET" = "carteira";
+"POSTS" = "Postagens";
+"PERSONALIZATIONS" = "Personalizações";
+"NETWORK" = "Rede";
+"Need more channels?" = "Precisa de mais canais?";
+"VIEW ALL & MANAGE" = "Ver tudo & gerir";
+
+"Community Feed" = "Feed da Comunidade";
+"Create your post" = "Crie o seu post";
+"Media" = "Meios de comunicação";
+"Youtube" = "YouTube";
+"You're all caught up" = "Você está todo atualizado";
+"You've seen all new posts" = "Já viu todos os novos posts.";
+"Go to top" = "Ir para o topo";
+"Suggested Reels" = "Cinejornais Sugeridas";
+"Suggested Authors" = "Autores Sugeridos";
+
+
+"Share to" = "Partilhar Para";
+"Report" = "Relatório";
+"Unsave Video" = "Vídeo Não Salvo";
+"Save Video" = "Salvar Vídeo";
+"Aspect Ratio" = "Relação de aspeto";
+"Rotate" = "Rodar";
+"Flip Vertical" = "Virar na Vertical";
+"Flip Horizontal" = "Virar na Horizontal";
+
+
+"Community" = "Comunidade";
+"APP LANGUAGE" = "IDIOMA DO APLICATIVO";
+"You don't have any followers yet" = "Você ainda não tem nenhum seguidor";
+
+
+"View Original Article" = "Ver Artigo Original";
+"Places" = "Lugares";
+"Languages" = "Idiomas";
+"New Posts" = "Novos posts";
+"No posts yet" = "Ainda não há postagens";
+"All Followers" = "Todos os Seguidores";
+"Add Place" = "Adicionar Lugar";
+"Add places tags" = "Adicionar Tags de Lugares";
+"Be discovered by people following the places you are posting about." = "Seja descoberto por pessoas que seguem os lugares sobre os quais você está postando.";
+
+
+"START FOLLOWING" = "Comece a Seguir";
+"You are not following anything yet" = "Você não está seguindo nada ainda.";
+
+"Notifications" = "Notificação";
+"General" = "Geral";
+"News" = "Notícia";
+"VIEW MORE" = "Ver Mais";
+"BULLETS AUTO PLAY" = "Reprodução automática Bullets";
+"VIDEOS AUTO PLAY" = "Reprodução automática Vídeos";
+"REELS AUTO PLAY" = "Reprodução automática carretéis  ";
+"READER THEME" = "TEMA DO LEITOR";
+"News Content Language" = "Idioma do Conteúdo de Notícias";
+"FAVORITES" = "Favoritos";
+"Region/Places" = "Regiões / Lugares";
+"Select Regions/Places" = "Selecione Regiões / Lugares";
+"Follow at least 3 topics" = "Siga pelo menos 3 tópicos";
+"Please Follow at least 3 topics" = "For favor siga pelo menos 3 tópicos";
+"Explore Newsreels" = "Explore os Cinejornais";
+"Related Reels" = "Relacionadas cinejornais";
+"Explore Your Feed" = "Explore seu feed";
+"Sources" = "Fontes";
+"Articles, topics, channels, authors" = "Artigos, tópicos, canais, autores";
+"View/Manage" = "Ver / Gerenciar";
+"Add to Favorites" = "Adicionar aos favoritos";
+"Remove from Favorites" = "Remover dos favoritos";
+
+
+

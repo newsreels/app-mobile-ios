@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "ចំណុចសង្ខេបៗ";
+"BULLETS" = "ចំណុចសង្ខេបៗ";
+"Headlines is not available." = "មិនមានព័ត៌មានថ្មីៗទេ។";
+"Check your internet Connection and try again." = "ពិនិត្យមើលអ៊ីនធើណិតរបស់អ្នក ហើយសាកល្បងម្តងទៀត។";
+"Choose Image" = "ជ្រើសរើសរូបភាព";
+"Headline" = "ចំណងជើង";
+"Bullet 1" = "ចំណុចទី ១";
+"Bullet 2" = "ចំណុចទី ២";
+"Bullet 3 (Optional)" = "ចំណុចទី ៣ (ជាជម្រើស)";
+"Bullet 4 (Optional)" = "ចំណុចទី ៤ (ជាជម្រើស)";
+"Bullet 5 (Optional)" = "ចំណុចទី ៥ (ជាជម្រើស)";
+"Bullet 6 (Optional)" = "ចំណុចទី ៦ (ជាជម្រើស)";
+"Enter Aticle Headline" = "បញ្ចូលចំណងជើង";
+"Enter source name" = "បញ្ចូលប្រភពព័ត៌មាន";
+"Enter reference link" = "បញ្ចូលសេចក្តីយោង";
+"Enter published date" = "បញ្ចូលកាលបរិច្ឆេទចេញផ្សាយ";
+"Enter Bullet 1" = "បញ្ចូលចំណុចទីមួយ";
+"Enter Bullet 2" = "បញ្ចូលចំណុចទី ២";
+"Post article successfully" = "អត្ថបទត្រូវបានចុះផ្សាយដោយជោគជ័យ";
+"Follow" = "ដើរតាម";
+"Unfollow" = "ដើរតាម";
+"Block articles from" = "រារាំងអត្ថបទពី";
+"Unblock articles from" = "លែងរារាំងអត្ថបទពី";
+"Remove article" = "ដកអត្ថបទចេញ";
+"Save article" = "រក្សាទុកអត្ថបទនេះ";
+"Terms & Conditions" = "ល័ក្ខខ័ណ្ឌ និងខផ្សេងៗ";
+"Privacy Policy" = "គោលការណ៍​ភាព​ឯកជន";
+"TERMS AND CONDITIONS" = "ល័ក្ខខ័ណ្ឌ និងខផ្សេងៗ";
+"PRIVACY POLICY" = "គោលការណ៍​ភាព​ឯកជន";
+"Fuel your curiosity" = "សូមអានព័ត៌មានបន្ថែមអំពីពិភពលោក";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "អានព័ត៌មានខ្លីៗ និងត្រឹមត្រូវអំពីប្រធានបទដែលអ្នកចូលចិត្តពីប្រភពដែលទុកចិត្តជុំវិញពិភពលោក។";
+"Save time" = "សន្សំពេលវេលារបស់អ្នក";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "អានព័ត៌មានជាចំណុចខ្លីៗ";
+"Hands-free reading" = "ការអានដោយមិនបាច់មើល";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "គ្មានពេលអានទេ? ប្រើមុខងារអានឲ្យអ្នកស្តាប់។";
+"Write your message..." = "សរសេរសាររបស់អ្នក ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ផ្ញើសារមកយើង ប្រសិនបើអ្នកត្រូវការជំនួយអ្វីមួយ យើងចង់ឮពីអ្នក!";
+"Drop us a message" = "ផ្ញើសារមកយើង";
+"Enter Name." = "បញ្ចូលឈ្មោះ។";
+"Enter Email." = "បញ្ចូលអ៊ីមែល។";
+"Write your message." = "សរសេរសាររបស់អ្នក។";
+"Topic unblock successfully" = "អ្នកមិនរារាំងប្រធានបទបែបនេះទេ";
+"Source unblock successfully" = "អ្នកលែងរារាំងប្រភពនេះ";
+"Unblock Source" = "លែងរារាំងប្រភពព័ត៌មាន";
+"Cancel" = "បោះបង់";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "សូមផ្ញើមកយើងនូវមតិកែលម្អ យើងចង់ឮពីអ្នក! តើអ្នកមានសំណួរ ឬការព្រួយបារម្ភផ្នែកច្បាប់ទេ? សាកល្បងទំព័រជំនួយរបស់យើង ឬទាក់ទងមកយើង។";
+"Enter your suggestion." = "បញ្ចូលយោបល់របស់អ្នក។";
+"feedback sent." = "មតិកែលម្អត្រូវបានផ្ញើដោយជោគជ័យ";
+"30m" = "៣០ នាទី";
+"1h" = "១ ម៉ោង";
+"3h" = "៣ ម៉ោង";
+"6h" = "៦ ម៉ោង";
+"12h" = "១២ ម៉ោង";
+"24h" = "២៤ ម៉ោង";
+"Language updated successfully." = "ភាសាត្រូវបានធ្វើបច្ចុប្បន្នភាពដោយជោគជ័យ។";
+"CONTINUE" = "បន្ត";
+"FOLLOW 3 TO CONTINUE" = "ធ្វើតាម ៣ ដើម្បីបន្ត";
+"Unfollow Location" = "លែងតាមទីតាំងនេះ";
+"Saved Articles" = "រក្សាទុកអត្ថបទ";
+"Block" = "រារាំង";
+"Are you sure you want block" = "តើអ្នកប្រាកដជាចង់រារាំងអត្ថបទបែបនេះ";
+"Once blocked, you wont be able to see any Articles related to this" = "អ្នកនឹងមិនឃើញអត្ថបទពីប្រភេពនេះទៀតទេ ប្រសិនបើអ្នករារាំងវា។";
+"Block Topic" = "រារាំងប្រធានបទបែបនេះ";
+"Suggested" = "ត្រូវបានណែនាំ";
+"Related Sources not available" = "ប្រភពពាក់ព័ន្ធមិនមានទេ";
+"Block Source" = "រារាំងប្រភពព័ត៌មាននេះ";
+"News in Bullets App version" = "កំណែកម្មវិធីព័ត៌មានជាចំណុចខ្លីៗ ";
+"Next" = "បន្ទាប់";
+"Login" = "ចូល";
+"Terms" = "ល័ក្ខខ័ណ្ឌ";
+"By clicking Continue, you agree with our Terms." = "ជ្រើសយកបន្ត ដើម្បីយល់ព្រមតាមល័ក្ខខ័ណ្ឌផ្សេងៗ។";
+"in our Privacy Policy." = "នៅក្នុងគោលការណ៍ភាពឯកជនរបស់យើង។";
+"Access token missing." = "បាត់សញ្ញាដើម្បីចូលប្រើ។";
+"NEXT" = "បន្ទាប់";
+"By checking this box, you agree to our " = "ចុចលើប្រអប់ ដើម្បីទទួលយកល័ក្ខខ័ណ្ឌផ្សេងៗ។ ទិន្នន័យរបស់អ្នកត្រូវបានរក្សាទុកស្របតាមគោលការណ៍ភាពឯកជន របស់យើង។";
+"Terms of Service" = "លក្ខខណ្ឌ​​សេវាកម្ម";
+". We’ll handle your data according to our " = " យើងនឹងថែរក្សាទិន្នន័យរបស់អ្នក យោងទៅតាម";
+"Password must be at least 8 characters." = "លេខសម្ងាត់ត្រូវតែមានយ៉ាងហោចណាស់ ៨ ខ្ទង់។";
+"Strong" = "ខ្លាំង";
+"Medium" = "មធ្យម";
+"Weak" = "ខ្សោយ";
+"CREATE A NEW ACCOUNT" = "បង្កើតគណនីថ្មី";
+"SIGN IN WITH EXISTING ACCOUNT" = "ចុះឈ្មោះចូលប្រើតាមគណនីដែលមានស្រាប់";
+"You must agree to the Terms of Services to continue" = "អ្នកត្រូវតែយល់ព្រមនឹងលក្ខខណ្ឌសេវាកម្មដើម្បីបន្ត";
+"SIGN IN" = "ចូល";
+"What's your password?" = "តើលេខសម្ងាត់របស់អ្នកគឺជាអ្វី?";
+"SIGN UP" = "ចុះ​ឈ្មោះ";
+"Choose your password?" = "ជ្រើសពាក្យសម្ងាត់របស់អ្នក";
+"Something went wrong" = "មាន​អ្វីមួយ​មិន​ប្រក្រតី";
+"we will send email to" = "យើងនឹងផ្ញើអ៊ីមែលទៅ";
+"with a link to reset your password." = "មានតំណភ្ជាប់ ដើម្បីកំណត់ពាក្យសម្ងាត់របស់អ្នកឡើងវិញ។";
+"A reset password link has been sent to" = "តំណភ្ជាប់ ដើម្បីកំណត់ពាក្យសម្ងាត់ឡើងវិញ ត្រូវបានផ្ញើ";
+"Enter new email." = "បញ្ចូលអ៊ីមែលថ្មី។";
+"Enter password." = "បញ្ចូលពាក្យសម្ងាត់។";
+"New Password " = "ពាក្យសម្ងាត់​ថ្មី";
+" (8 characters min)" = "(៨ ខ្ទង់យ៉ាងតិច)";
+"Enter current password." = "បញ្ចូលពាក្យសម្ងាត់បច្ចុប្បន្ន។";
+"Enter new password." = "បញ្ចូលពាក្យសម្ងាត់ថ្មី។";
+"Enter confirm password." = "បញ្ជាក់ពាក្យសម្ងាត់។";
+"password do not matched!" = "ពាក្យសម្ងាត់មិនត្រូវគ្នាទេ!";
+"GET STARTED" = "ចាប់ផ្តើម";
+"SKIP" = "រំលង";
+"From where you would like to pick photo?" = "តើអ្នកចង់យករូបថតពីកន្លែងណា?";
+"Camera" = "កាមេរ៉ា";
+"Photo Library" = "បណ្ណាល័យរូបថត";
+"Kindly open settings and enable access" = "សូមបើកការកំណត់ ហើយអនុញ្ញាតិឲ្យកម្មវិធីដំណើរការ";
+"Open Settings" = "បើកការកំណត់";
+"Access needed for your camera" = "ត្រូវការសិទ្ធិប្រើកាមេរ៉ារបស់អ្នកជាចាំបាច់";
+"Access needed for your photo library" = "ត្រូវការសិទ្ធិប្រើបណ្ណាល័យរូបថតរបស់អ្នកជាចាំបាច់";
+"Done" = "រួចរាល់";
+"Pull to refresh" = "ទាញចុះក្រោមដើម្បីធ្វើឱ្យរកអ្វីដែលថ្មីៗ";
+"Loading" = "កំពុងផ្ទុក";
+"Speech not available for this article" = "ការអានមិនមានសម្រាប់អត្ថបទនេះទេ";
+"MANAGE LOCATION" = "គ្រប់គ្រងទីតាំង";
+"OK" = "យល់ព្រម";
+"Choose your News in Bullets Edition based on locale" = "ជ្រើសរើសព័ត៌មានរបស់អ្នកនៅក្នុងព្រឹត្តិបត្រព្រឹត្តិប័ត្រផ្អែកលើមូលដ្ឋាន";
+"Edition" = "បោះពុម្ព";
+"EDITION / REGION" = "ការកែសំរួល / នីតិកម្ម";
+"Your Topics" = "ប្រធានបទរបស់អ្នក";
+"Your Channels" = "ឆានែលរបស់អ្នក";
+"Your Places" = "កន្លែងរបស់អ្នក";
+"Enter email." = "បញ្ចូលអ៊ីមែល។";
+"Please enter a password." = "សូមបញ្ចូលពាក្យសម្ងាត់។";
+"Search articles" = "ស្វែងរកអត្ថបទ";
+"No results" = "គ្មាន​លទ្ធផល";
+"Edition / Region" = "បោះពុម្ព / តំបន់";
+
+
+
+
+"0JC-Sb-Ouu.text" = "របៀប​បង្ហាញ";
+
+
+"Search" = "ស្វែងរក";
+
+
+"Select" = "ជ្រើសរើស ( ";
+
+
+"6H8-dI-k9P.text" = "គ្រប់គ្រងទីតាំង";
+
+
+"6KH-YP-5Lt.text" = "អ្នកអត្ថាធិប្បាយ";
+
+
+" ) icon on the article" = ") រូបតំណាងនៅលើអត្ថបទ";
+
+
+"BLOCK" = "រារាំង";
+
+
+"you want to read later then" = "អ្នកចង់អាននៅពេលក្រោយ";
+
+
+"7oo-cf-l7Y.text" = "ល្បឿននៃការអាន";
+
+
+"88L-ip-pZw.text" = "ល្បឿននៃការអាន";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "គ្មានអ្វីនៅទីនេះទេ។ មើលទៅដូចជាគ្មានអ្វីនៅទីនេះទេ ប៉ុន្តែមានតែឆ្មាមួយប៉ុណ្ណោះ។ ត្រលប់ទៅទំព័រដើមវិញ?\nតើអ្នកចង់ត្រឡប់ទៅទំព័រដើមវិញទេ?";
+
+
+"BpH-F1-i0z.normalTitle" = "ក្នុងស្រុក";
+
+
+" ) to save article." = " ) ដើម្បីរក្សាទុកអត្ថបទ";
+
+
+"FB0-YN-HZg.text" = "ដើម្បីបន្ដ ជ្រើសរើសយក ៣";
+
+
+"H5Z-xJ-dWD.text" = "ចំណងជើង និង\nចំណុច";
+
+
+"Search" = "ស្វែងរក";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ការពង្រីកមើល";
+
+
+"Jpx-nY-Is1.normalTitle" = "ប៉ុស្តិ៍";
+
+
+"JqN-io-P1u.normalTitle" = "+ បន្ថែមទីតាំង";
+
+
+"What's your email?" = "សូមផ្តល់អាស័យដ្ឋានអ៊ីមែលរបស់អ្នក?";
+
+
+"Lw1-Md-nse.text" = "មើលជាបញ្ជី";
+
+
+"LyT-pT-g53.text" = "អន្តរជាតិ";
+
+
+"N6C-6i-Z2s.text" = "អន្តរជាតិ";
+
+
+"Nru-uU-CsC.text" = "ការណែនាំ";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "ប្រធានបទផ្សេងៗ";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "ប្តូរតាមអ្វីដែលចង់បាន";
+
+
+"Topics" = "ប្រធានបទផ្សេងៗ";
+
+
+"WXY-po-W1B.text" = "ចំណងជើង និង\nចំណុច";
+
+
+"ans-Zy-T2Y.placeholder" = "ស្វែងរកទីតាំង";
+
+
+"bgE-Jc-u8H.text" = "ប្តូរតាមអ្វីដែលចង់បាន";
+
+
+
+
+
+"Tap the ( " = "ប៉ះលើ ( ";
+
+
+"Places" = "ទីតាំង";
+
+
+"d1l-HK-OrG.text" = "របៀប​បង្ហាញ";
+
+
+
+
+
+"Language" = "ភាសា";
+
+
+"e9g-Wr-suO.text" = "មានតែចំណងជើងប៉ុណ្ណោះ";
+
+
+"GO HOME" = "ត្រលប់ទៅទំព័រដើមវិញ";
+
+
+"eh1-Oo-lEn.text" = "ការពង្រីកមើល";
+
+
+"hOf-26-eCm.text" = "ល្បឿន x១";
+
+
+"il3-4J-X1V.text" = "មើលជាបញ្ជី";
+
+
+"j2i-MT-VkA.text" = "សាកល្បងពាក្យគន្លឹះផ្សេងទៀត";
+
+
+"Top News" = "ព័ត៌មានពេញនិយម";
+
+
+"jmO-aF-nJ9.text" = "";
+
+
+"There is nothing in here" = "គ្មានអ្វីនៅទីនេះទេ។";
+
+
+"ma1-9p-bSa.text" = "រកមិនឃើញលទ្ធផល";
+
+
+"mce-jc-cKH.text" = "អ្នកអត្ថាធិប្បាយ";
+
+
+"Channels" = "ប៉ុស្តិ៍";
+
+
+"Discover" = "ស្វែងយល់";
+
+
+"pCy-AN-hsO.text" = "ល្បឿន x ១";
+
+
+"CANCEL" = "បញ្ឈប់";
+
+
+"Discover" = "ស្វែងយល់";
+
+
+"No saved stories yet" = "មិនមានអ្វីនៅទីនេះទេ";
+
+
+"wDG-kF-Hl8.text" = "អានព័ត៌មានផ្អែកលើទីតាំង";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ការធ្វើមូលដ្ឋានីយកម្ម";
+
+
+"xfF-RB-mWL.text" = "ការធ្វើមូលដ្ឋានីយកម្ម";
+
+
+"Search" = "ស្វែងរក";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "យកព័ត៌មានដែលពាក់ព័ន្ធបំផុតទៅតំបន់ដែលអ្នកជ្រើសរើស។ អានរឿងរ៉ាវព័ត៌មានដែលប្រមូលផ្តុំដើម្បីឱ្យអ្នកធ្វើបច្ចុប្បន្នភាពព័ត៌មានថ្មីៗពីគ្រប់ទីកន្លែងក្នុងពិភពលោក។";
+
+
+"Search articles" = "ស្វែងរកអត្ថបទ";
+
+
+"6H8-dI-k9P.text" = "គ្រប់គ្រងកន្លែង";
+
+
+
+
+
+"Profile" = "ប្រវត្តិរូប";
+
+
+"Editions" = "ការបោះពុម្ព";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "កន្លែង";
+
+
+
+
+
+"Search" = "ស្វែងរក";
+
+
+
+
+
+
+
+
+"Search" = "ស្វែងរក";
+
+
+"LANGUAGE" = "ភាសា LANGUAGE";
+
+
+"Search" = "ស្វែងរក";
+
+
+"No results" = "រកមិនឃើញលទ្ធផល";
+
+
+"Channels" = "ឆានែល";
+
+
+"Places" = "កន្លែង";
+
+
+"Places" = "កន្លែង";
+
+
+"e9F-hd-Ifm.text" = "ការកែប្រែ / ច្បាប់";
+
+
+
+
+
+
+
+
+"PLACES" = "PLACES";
+
+
+"SAVED ARTICLES" = "មាត្រាដែលបានរក្សាទុក";
+
+
+"Articles" = "អត្ថបទ";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "បន្ត";
+
+
+
+
+
+"w8f-2R-NgT.text" = "ការកែសំរួល / នីតិកម្ម";
+
+
+"Try a different keyword" = "សាកល្បងពាក្យគន្លឹះផ្សេងទៀត";
+
+
+"For You" = "សម្រាប់​អ្នក";
+
+
+"Results" = "លទ្ធផល";
+
+
+
+"About" = "អំពី​ពួក​យើង";
+
+
+"Share" = "ចែករំលែក";
+
+
+"ACCOUNT" = "គណនី";
+
+
+"Your Email" = "អ៊ីមែល​របស់​អ្នក";
+
+
+"1sT-J6-qI0.text" = "អត្ថបទដែលបានរក្សាទុក";
+
+
+"2XX-rr-GLC.text" = "ជ្រើសរើសបណ្តាញផ្សេងៗ ពីប្រភពព័ត៌មានរាប់រយ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "អានព្រឹត្តិការណ៍ និងព័ត៌មានថ្មីៗពីទូទាំងពិភពលោក។";
+
+
+"Set an interval in which you want to receive your news notifications." = "កំណត់ចន្លោះពេល ដើម្បីទទួលបានការជូនដំណឹង។";
+
+
+"Off" = "បិទ";
+
+
+
+
+
+"Bullet 2" = "ចំណុចទី ២";
+
+
+"What's your email?" = "";
+
+
+"New Password (8 Characters Min)" = "ពាក្យសម្ងាត់ថ្មី (តិចបំផុត ៨ តួអក្សរ)";
+
+
+"Forgot Password?" = "ភ្លេច​លេខសំងាត់​?";
+
+
+"Account Settings" = "ការកំណត់​គណនី";
+
+
+"Learn how we process your data" = "ព័ត៌មានស្តីពីការរក្សាទុកទិន្នន័យរបស់អ្នក";
+
+
+"3h" = "៣ ម៉ោង";
+
+
+"Ok" = "យល់ព្រម";
+
+
+"Block articles from The Guardian" = "លែងចង់បានអត្ថបទពី ---";
+
+
+"On" = "បើក";
+
+
+"Auto" = "ស្វ័យប្រវត្តិ";
+
+
+"Help Center" = "មជ្ឈមណ្ឌល​ជំនួយ";
+
+
+"Search" = "ស្វែងរកប្រភពព័ត៌មាន";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "ជ្រើសរើសឯកសារពីវិចិត្រសាល";
+
+
+
+
+"Save article" = "រក្សាទុកអត្ថបទ";
+
+
+"ABOUT" = "អំពី";
+
+
+"Dark" = "ងងឹត";
+
+
+"Legal" = "បទប្បញ្ញត្តិ";
+
+
+"Go to The Guardian" = "ទៅកាន់ ---";
+
+
+"Send reset link" = "តំណភ្ជាប់ដើម្បីកំណត់ឡើងវិញ";
+
+
+
+
+
+"My Account" = "គណនី​របស់ខ្ញុំ";
+
+
+"FEEDBACK" = "មតិកែលម្អ";
+
+
+"Message" = "សារ";
+
+
+"Confirm New Password" = "បញ្ជាក់​លេខសម្ងាត់​ថ្មី";
+
+
+"for ___" = "សម្រាប់ ___";
+
+
+"Search" = "ស្វែងរកប្រធានបទផ្សេងៗ";
+
+
+"LANGUAGE" = "ភាសា";
+
+
+"Light" = "ភ្លឺ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ដើម្បីបន្ដ ជ្រើសយកប្រធានបទ ៣";
+
+
+
+
+"Off" = "ជ្រើសរើស";
+
+
+"Language" = "ជ្រើសរើស";
+
+
+"LOG OUT" = "ចាកចេញ";
+
+
+"Report content" = "រាយការណ៍មាតិកា";
+
+
+"What's your email?" = "សូមផ្តល់អ៊ីមែលរបស់អ្នក?";
+
+
+"On" = "បើក";
+
+
+"More like this" = "ព័ត៌មានផ្សេងៗទៀតបែបនេះ";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0 (រំលង)";
+
+
+"1h" = "១ ម៉ោង";
+
+
+"Enter Email Address" = "បញ្ចូលអាសយដ្ឋានអ៊ីម៉ែល";
+
+
+"News in Bullets" = "អានច្រើន ដោយចំណាពេលតិច។";
+
+
+"6h" = "";
+
+
+"Choose your password" = "ជ្រើសពាក្យសម្ងាត់របស់អ្នក";
+
+
+"Cancel" = "បោះបង់";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "អានព័ត៌មានយ៉ាងរហ័សជាមួយកម្មវិធីនេះ។ ជ្រើសរើសប្រធានបទ និងប្រភពព័ត៌មានរបស់អ្នក។ បន្ទាប់មកអានព័ត៌មានរបស់អ្នកជាចំណុចខ្លីៗ។";
+
+
+"Push Notification" = "ការជូនដំណឹង";
+
+
+"12h" = "១២ ម៉ោង";
+
+
+"24h" = "២៤ ម៉ោង";
+
+
+"E-mail" = "អ៊ីមែល";
+
+
+"How can we help you?" = "តើយើងអាចជួយអ្វីបាន?";
+
+
+"OJP-Wd-0d3.text" = "ប៉ាគីស្ថាន";
+
+
+"CHANGE PASSWORD" = "ផ្លាស់ប្តូរលេខសម្ងាត់";
+
+
+"Change Email" = "ផ្លាស់ប្តូរអាស័យដ្ឋានអ៊ីមែលរបស់អ្នក";
+
+
+"Medium" = "មធ្យម";
+
+
+"SAVE CHANGES" = "រក្សាទុកការផ្លាស់ប្តូរ";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "ផ្ញើសារមកយើង ប្រសិនបើអ្នកត្រូវការជំនួយអ្វីមួយ យើងចង់ឮពីអ្នក!";
+
+
+"P5u-N3-Tw4.text" = "ស្លាក​សញ្ញា";
+
+
+"Cancel" = "បោះបង់";
+
+
+"Bullet 1" = "ចំណុចទី ១";
+
+
+"TIMED NOTIFICATIONS" = "សេចក្តីជូនដំណឹង";
+
+
+"POST ARTICLE" = "ចុះផ្សាយអត្ថបទ";
+
+
+"CONTACT US" = "ទាក់ទង​​ពួក​យើង";
+
+
+"EDITION / REGION" = "លេខបោះពុម្ព";
+
+
+"Search" = "ស្វែងរក";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "សូមផ្ញើមកយើងនូវមតិកែលម្អ យើងចង់ឮពីអ្នក! តើអ្នកមានសំណួរ ឬការព្រួយបារម្ភផ្នែកច្បាប់ទេ? សាកល្បង ទំព័រជំនួយរបស់យើង ឬទាក់ទងមកយើង។";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ផ្ញើសារមកយើង ប្រសិនបើអ្នកត្រូវការជំនួយអ្វីមួយ យើងចង់ឮពីអ្នក!";
+
+
+"30m" = "៣០ នាទី";
+
+
+"CONTINUE" = "បន្ត";
+
+
+"Time To Update!" = "ធ្វើបច្ចុប្បន្នភាពកម្មវិធី!";
+
+
+"NOTIFICATIONS" = "ការជូនដំណឹង";
+
+
+"Search" = "ស្វែងរក";
+
+
+"By clicking Continue, you agree with our Terms." = "ជ្រើសយកបន្ត ដើម្បីយល់ព្រមល័ក្ខខ័ណ្ឌផ្សេងៗ។";
+
+
+"HELP / CONTACT US" = "ជំនួយ / ទំនាក់ទំនង";
+
+
+"Reset Password" = "កំណត់ពាក្យសម្ងាត់ឡើងវិញ";
+
+
+"SEND MESSAGE" = "ផ្ញើ​សារ";
+
+
+"Save article" = "រក្សាទុកអត្ថបទ";
+
+
+"Bullet 6 (Optional)" = "ចំណុចទី ៦ (ជាជម្រើស)";
+
+
+"HAPTICS" = "លំញ័រ";
+
+
+"Your message has \vbeen sent." = "សាររបស់អ្នកត្រូវបានផ្ញើ។";
+
+
+"LEGAL" = "ច្បាប់";
+
+
+"Block List" = "បញ្ជីនៃការរារាំង";
+
+
+"PERSONALIZATION" = "បុគ្គលនីយកម្ម";
+
+
+"in our Privacy Policy." = "បុគ្គលនីយកម្ម";
+
+
+"CONTINUE" = "បន្ត";
+
+
+"Enter Name" = "បញ្ចូលឈ្មោះ";
+
+
+"What's your email?" = "ផ្តល់អ៊ីមែលរបស់អ្នក?";
+
+
+"Hello there!" = "សួស្តី!";
+
+
+"PUSH NOTIFICATIONS" = "ការជូនដំណឹង";
+
+
+"Bullet 3 (Optional)" = "ចំណុចទី ៣ (ជាជម្រើស)";
+
+
+"Source name" = "ឈ្មោះប្រភពព័ត៌មាន";
+
+
+"Current Password" = "ពាក្យសំងាត់​បច្ចុប្បន្ន";
+
+
+"COLOR THEME" = "ពណ៌របស់កម្មវិធី";
+
+
+"eTp-X1-g34.text" = "ឬតាមរយៈ";
+
+
+"CANCEL" = "បោះបង់";
+
+
+"Bullet 4 (Optional)" = "";
+
+
+"Date published" = "កាលបរិច្ឆេទចេញផ្សាយ";
+
+
+"Send Password Reset Link" = "ផ្ញើតំណដើម្បីកំណត់ពាក្យសម្ងាត់ឡើងវិញ";
+
+
+"CONTINUE WITH APPLE" = "ចុះឈ្មោះតាមរយៈ Apple ID";
+
+
+"Off" = "បិទ";
+
+
+"BLOCK LIST" = "បញ្ជីនៃការរារាំង";
+
+
+"HELP" = "ជំនួយ";
+
+
+"Reference link" = "តំណយោង";
+
+
+"Your Password" = "លេខសំងាត់​របស់​អ្នក";
+
+
+"SUBMIT" = "ដាក់បញ្ចូល";
+
+
+"HELP" = "ជំនួយ";
+
+
+"MY ACCOUNT" = "គណនី​របស់ខ្ញុំ";
+
+
+"hbD-HP-tZd.normalTitle" = "លែងរារាំង";
+
+
+"OTHERS" = "ផ្សេងៗទៀត";
+
+
+"BREAKING NEWS" = "ព័ត៌មានទាន់ហេតុការណ៍";
+
+
+"Topics" = "ប្រធានបទដែលត្រូវបានរារាំង";
+
+
+"Message us," = "ផ្ញើសារមកយើង";
+
+
+"Pick topics to start reading
+and saving articles" = "ភាសាកម្មវិធី";
+
+
+"Forgot Password?" = "ភ្លេច​លេខសំងាត់​?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "លក្ខណៈពិសេសថ្មីៗត្រូវបានបន្ថែម។ បញ្ហាខ្លះៗត្រូវបានដោះស្រាយ។";
+
+
+"Success!" = "ជោគជ័យ!";
+
+
+"Current Password" = "លេខសំងាត់​បច្ចុប្បន្ន";
+
+
+"CONTENT" = "មាតិកា";
+
+
+"Headline" = "ចំណងជើង";
+
+
+"neg-UC-UpK.text" = "ជ្រើសរើសប្រធានបទ ដើម្បីចាប់ផ្តើមអាន និងរក្សាទុកអត្ថបទផ្សេងៗ";
+
+
+"CONTINUE WITH EMAIL ID" = "បន្តជាមួយអាស័យដ្ឋានអ៊ីមែលរបស់អ្នក";
+
+
+"SAVE CHANGES" = "រក្សាទុកការផ្លាស់ប្តូរ";
+
+
+"Post an Article" = "ចុះផ្សាយអត្ថបទ";
+
+
+"Contact Us" = "ទាក់ទង​​ពួក​យើង";
+
+
+"On" = "បើក";
+
+
+"New Email Address" = "អាសយដ្ឋានអ៊ីមែលថ្មី";
+
+
+"Bullet 5 (Optional)" = "ចំណុចទី ៥ (ជាជម្រើស)";
+
+
+"Suggest an improvement" = "ស្នើឱ្យមានការកែលម្អ";
+
+
+"Channels" = "ប្រភពដែលបានរារាំង";
+
+
+"From:" = "មកពី៖";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ការណែនាំសម្រាប់អ្នកផ្ទាល់";
+
+
+"I don't like this" = "ខ្ញុំមិនចូលចិត្តបែបនេះទេ";
+
+
+"CONTINUE" = "បន្ត";
+
+
+"Name" = "ឈ្មោះ";
+
+
+"Enter email" = "បញ្ចូលអ៊ីមែល";
+
+
+"HELP" = "ជំនួយ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ធ្វើតាម ៣ ដើម្បីបន្ត";
+
+
+"UPDATE APP" = "ធ្វើបច្ចុប្បន្នភាពកម្មវិធី";
+
+
+"Forgot Password?" = "ភ្លេច​លេខសំងាត់​?";
+
+
+"Change Password" = "ផ្លាស់ប្តូរពាក្យសម្ងាត់";
+
+
+"Reset Password" = "កំណត់ពាក្យសម្ងាត់ឡើងវិញ";
+
+
+
+
+
+
+
+
+"Report content" = "រាយការណ៍ពីកង្វល់របស់អ្នក";
+
+
+"CHANGE EMAIL ADDRESS" = "ផ្លាស់ប្តូរអាស័យដ្ឋានអ៊ីមែល";
+
+
+"Follow The Guardian" = "ធ្វើតាម ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "យើងបានបន្ថែមមុខងារថ្មីៗជាច្រើននិងជួសជុលកំហុសមួយចំនួនដើម្បី ធ្វើឲ្យ បទពិសោធន៍របស់អ្នករលូនតាមដែលអាចធ្វើទៅបាន។";
+
+
+"Edition / Region" = "បោះពុម្ព / តំបន់";
+
+
+"OK" = "យល់ព្រម";
+
+
+"NARRATOR" = "ណារ៉ាអរ";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "ធ្វើឱ្យទាន់សម័យអំពីរឿងរ៉ាវព័ត៌មានដែលអ្នកស្រឡាញ់មិនគួរចំណាយពេលច្រើនពេកទេ។ ព័ត៌មាននៅក្នុងចំណុចត្រូវចំណាយពេល ៥ នាទីអានជាប្រចាំនិងបញ្ចូលវាទៅជាគ្រាប់ដែលអាចរំលាយបានយ៉ាងងាយស្រួល។ ឥឡូវអ្នកអាចទទួលយកព័ត៌មានដូចគ្នាក្នុងពេលតែមួយភាគ - ដូច្នេះអ្នកអាចអានបានក្នុងពេលតិច។";
+
+
+"READING SPEED" = "អានរហ័ស";
+
+
+
+
+
+"You haven't blocked anything yet" = "អ្នកមិនទាន់បានរារាំងអ្វីនៅឡើយទេ";
+
+
+"EDITION / REGION" = "ការកែប្រែ / ច្បាប់";
+
+
+
+
+
+"HEADLINES ONLY" = "មានតែ HEADLINES ប៉ុណ្ណោះ";
+
+
+" 1.0" = "១.០";
+
+
+
+
+
+"Audio Settings" = "ការកំណត់សំឡេង";
+
+
+"AUDIO SETTINGS" = "កំណត់អូឌីយ៉ូ";
+
+
+
+
+
+
+
+
+"1x" = "១ គុណ";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES និង BULLETS";
+
+
+"CONTINUE AS GUEST" = "ស្ទ្រីបនិងឡៃដិនជាភ្ញៀវ";
+
+
+"Topics" = "ប្រធានបទ";
+
+
+"Pick topics to start reading and saving articles" = "ជ្រើសរើសប្រធានបទដើម្បីចាប់ផ្តើមអាននិងរក្សាទុកអត្ថបទ";
+
+
+"Channels" = "ឆានែល";
+
+
+"Choose from hundreds \nof news publications" = "ជ្រើសរើសចេញពីការបោះពុម្ពផ្សាយព័ត៌មានរាប់រយ";
+
+
+"Pick topics to start reading\nand saving articles" = "ជ្រើសរើសប្រធានបទដើម្បីចាប់ផ្តើមអាននិងរក្សាទុកអត្ថបទ";
+
+"Pick editions to start reading\nand saving articles" = "ជ្រើសរើសការបោះពុម្ពដើម្បីចាប់ផ្តើមអាននិងរក្សាទុកអត្ថបទ";
+
+"Or with" = "ឬជាមួយ";
+
+"CONTINUE AS GUEST" = "បន្តជាភ្ញៀវ";
+
+"Terms of Service" = "លក្ខខណ្ឌ​នៃ​សេវាកម្ម";
+
+"Choose from hundreds \nof news publications" = "ជ្រើសរើសចេញពីការបោះពុម្ពផ្សាយព័ត៌មានរាប់រយ";
+
+"Select your preferred language\nfor News in Bullets." = "ជ្រើសរើសភាសាដែលអ្នកពេញចិត្តសំរាប់ព័ត៌មាននៅក្នុងព្រឹត្តិប័ត្រ។";
+
+"Choose a style" = "ជ្រើសរើសស្ទីល";
+
+"Pop or subtle. Day or night. Customize your interface." = "ប៉ុបឬល្បិច។ ថ្ងៃឬយប់។ ប្តូរចំណុចប្រទាក់របស់អ្នកតាមបំណង។";
+
+"MINS AGO" = "នាទីមុន";
+
+"AN HOUR AGO" = "មួយ​ម៉ោង​មុន";
+
+"HOURS AGO" = "ច្រើន​ម៉ោង​កន្លងទៅ";
+
+"1 WEEK AGO" = "១ សប្តាហ៍មុន";
+
+"YESTERDAY" = "ម្សិលមិញ";
+
+"DAYS AGO" = "ថ្ងៃ​មុន";
+
+"Go to" = "ទៅ";
+
+"You have reached the start." = "អ្នកបានឈានដល់ចំណុចចាប់ផ្តើមហើយ";
+
+"Source unblocked successfully" = "ប្រភព បាន ដោះ សោ ដោយ ជោគជ័យ";
+
+"Invalid email format"  = "ទ្រង់ទ្រាយអ៊ីមែលមិនត្រឹមត្រូវ";
+
+"Wrong email or password" = "អ៊ីមែលឬលេខសម្ងាត់មិនត្រឹមត្រូវ";
+
+

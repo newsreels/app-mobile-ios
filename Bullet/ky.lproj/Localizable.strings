@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Алсыз";
+"BULLETS" = "ЖАҢЫ АККАУНТ АЧУУ";
+"Headlines is not available." = "Баш макалалар жеткиликтүү эмес.";
+"Check your internet Connection and try again." = "Интернетке туташууңузду текшерип, дагы бир жолу аракет кылып көрүңүз.";
+"Choose Image" = "Сүрөттү тандаңыз";
+"Headline" = "Баш сөз";
+"Bullet 1" = "Башкы 1";
+"Bullet 2" = "Башкы 2";
+"Bullet 3 (Optional)" = "Башкы 3 (Милдеттүү эмес)";
+"Bullet 4 (Optional)" = "Башкы 4 (Милдеттүү эмес)";
+"Bullet 5 (Optional)" = "Башкы 5(Милдеттүү эмес)";
+"Bullet 6 (Optional)" = "Башкы 6 (Милдеттүү эмес)";
+"Enter Aticle Headline" = "Баш сөздү киргизиңиз";
+"Enter source name" = "Булакты киргизиңиз";
+"Enter reference link" = "Маалымдаманы киргизиңиз";
+"Enter published date" = "Жарыяланган күндү киргизиңиз";
+"Enter Bullet 1" = "Биринчи башкы ойду киргизиңиз";
+"Enter Bullet 2" = "Экинчи башкы киргизиңиз";
+"Post article successfully" = "Макала ийгиликтүү жайгаштырылды";
+"Follow" = "Эрчүү";
+"Unfollow" = "Жазылууну токтотуу";
+"Block articles from" = "Макалаларды бөгөттөө";
+"Unblock articles from" = "Макалаларды БӨГӨТТӨН чыгаруу";
+"Remove article" = "Макаланы алып салыңыз";
+"Save article" = "Бул макаланы сактаңыз";
+"Terms & Conditions" = "Шарттар";
+"Privacy Policy" = "Купуялык саясаты";
+"TERMS AND CONDITIONS" = "ШАРТТАРЫ";
+"PRIVACY POLICY" = "КУПИЯЛЫК САЯСАТЫ";
+"Fuel your curiosity" = "Дүйнө жөнүндө көбүрөөк жаңылыктарды окуңуз";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Сүйүктүү темаларыңыз боюнча кыска жана так жаңылыктарды дүйнө жүзү боюнча ишенимдүү булактардан окуңуз.";
+"Save time" = "Убактыңызды үнөмдө";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Жаңылыктарды белгиленгендерде окуңуз";
+"Hands-free reading" = "Колсуз окуу";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Окууга убактыңыз жокпу? Айтып берүү функциясын колдонуңуз.";
+"Write your message..." = "Билдирүүңүздү жазыңыз ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "бир нерсе боюнча жардамга муктаж болсоңуз, бизге билдирүү жөнөтүңүз, биз сизден кабар алуунуга кубаныятабыз!";
+"Drop us a message" = "бизге билдирүү жөнөтүү";
+"Enter Name." = "Атын киргизиңиз.";
+"Enter Email." = "Электрондук почтаны киргизиңиз.";
+"Write your message." = "Билдирүүңүздү жазыңыз.";
+"Topic unblock successfully" = "Сиз бул теманы бөгөттөн чыгардыңыз";
+"Source unblock successfully" = "Бул булакты бөгөттөн чыгардыңыз";
+"Unblock Source" = "Булакты бөгөттөн чыгаруу";
+"Cancel" = "Жокко чыгаруу";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Бизге пикир жөнөтүңүз, биз сизден жооп алууну каалайбыз! Сизде суроолор же юридикалык суроолор барбы? Жардам баракчабызды байкап көрүңүз же Биз менен байланышыңыз.";
+"Enter your suggestion." = "Сунушуңузду киргизиңиз.";
+"feedback sent." = "пикир ийгиликтүү жөнөтүлөт";
+"30m" = "30м";
+"1h" = "1с";
+"3h" = "3с";
+"6h" = "6с";
+"12h" = "12c";
+"24h" = "24c";
+"Language updated successfully." = "Тил ийгиликтүү жаңыртылды";
+"CONTINUE" = "УЛАНТЫҢЫЗ";
+"FOLLOW 3 TO CONTINUE" = "УЛАНТУУ ҮЧҮН 3 ";
+"Unfollow Location" = "Жайгашкан жерди токтотуу";
+"Saved Articles" = "Сакталган макалалар";
+"Block" = "БЛОК";
+"Are you sure you want block" = "Чын эле ушуну бөгөп коёсузбу?";
+"Once blocked, you wont be able to see any Articles related to this" = "Эгер аны бөгөсөңүз, анда бул каналдан макалаларды көрө албайсыз.";
+"Block Topic" = "Бул теманы бөгөттөө";
+"Suggested" = "Сунушталды";
+"Related Sources not available" = "Тиешелүү булактар ​​жеткиликтүү эмес";
+"Block Source" = "Бул Булакты бөгөттөө";
+"News in Bullets App version" = "Жаңылыктар Башкы колдонмо нускасында";
+"Next" = "КИЙИНКИ";
+"Login" = "Кирүү";
+"Terms" = "Шарттар";
+"By clicking Continue, you agree with our Terms." = "Шарттарды кабыл алуу үчүн Улантууну тандаңыз.";
+"in our Privacy Policy." = "биздин Купуялык саясатыбызда.";
+"Access token missing." = "Мүмкүнчүлүк белгиси жок.";
+"NEXT" = "КИЙИНКИ";
+"By checking this box, you agree to our " = "Шарттарды кабыл алуу үчүн кутучаны чыкылдатыңыз. Сиздин маалыматтар Купуялык саясатыбызга ылайык иштелип чыгат.";
+"Terms of Service" = "Тейлөө шарттары";
+". We’ll handle your data according to our " = ". Биз сиздин дайындарыңызды биздин ылайык ";
+"Password must be at least 8 characters." = "Пароль кеминде 8 белгиден турушу керек.";
+"Strong" = "Күчтүү";
+"Medium" = "Орто";
+"Weak" = "Алсыз";
+"CREATE A NEW ACCOUNT" = "ЖАҢЫ АККАУНТ АЧУУ";
+"SIGN IN WITH EXISTING ACCOUNT" = "БАР БОЛГОН АККАУНТУҢУЗ МЕНЕН КИРИҢИЗ";
+"You must agree to the Terms of Services to continue" = "Улантуу үчүн Тейлөө шарттарына макул болуңуз";
+"SIGN IN" = "Кирүү";
+"What's your password?" = "Парольуңуз кандай?";
+"SIGN UP" = "Кирүү";
+"Choose your password?" = "Пароль тандаңыз";
+"Something went wrong" = "Бир жерден ката кетти";
+"we will send email to" = "биз электрондук кат жөнөтөбүз";
+"with a link to reset your password." = "парольду баштапкы абалга келтирүүчү шилтеме менен.";
+"A reset password link has been sent to" = "Парольду баштапкы абалга келтирүү шилтемеси жөнөтүлдү";
+"Enter new email." = "Жаңы электрондук почта дарегин киргизиңиз.";
+"Enter password." = "Пароль киргизиңиз.";
+"New Password " = "Жаңы Пароль";
+" (8 characters min)" = "(8 белги мин)";
+"Enter current password." = "Учурдагы пароль киргизиңиз.";
+"Enter new password." = "Жаңы пароль киргизиңиз.";
+"Enter confirm password." = "Парольду ырастоо";
+"password do not matched!" = "паролдор дал келбейт!";
+"GET STARTED" = "БАШТОО";
+"SKIP" = "ӨТКӨРҮҮ";
+"From where you would like to pick photo?" = "Сүрөттү кайдан тандап алгыңыз келет?";
+"Camera" = "Камера";
+"Photo Library" = "Сүрөт китепканасы";
+"Kindly open settings and enable access" = "Сураныч жөндөөлөрдү ачып, кирүүгө мүмкүнчүлүк бериңиз";
+"Open Settings" = "Орнотууларды ачыңыз";
+"Access needed for your camera" = "Камераңызга улуксаат алуу керек";
+"Access needed for your photo library" = "Сүрөт китепканаңызга улуксаат алуу керек";
+"Done" = "Бүттү";
+"Pull to refresh" = "Жаңыртуу үчүн тартыңыз";
+"Loading" = "Жүктөө";
+"Speech not available for this article" = "Бул макала үчүн сөз жок";
+"MANAGE LOCATION" = "Жайгашкан жерди башкаруу";
+"OK" = "Макул";
+"Choose your News in Bullets Edition based on locale" = "Bullets Edition жаңылыктарыңызды жергиликтүү тилге жараша тандаңыз";
+"Edition" = "Edition";
+"EDITION / REGION" = "EDITION / REGION";
+"Your Topics" = "Сиздин темаларыңыз";
+"Your Channels" = "Сиздин каналдары";
+"Your Places" = "Сиздин жерлер";
+"Enter email." = "Электрондук почта дарегин киргизиңиз.";
+"Please enter a password." = "Сыр сөз киргизиңиз.";
+"Search articles" = "Макалаларды издөө";
+"No results" = "Натыйжа жок";
+"Edition / Region" = "Нускасы / Регион";
+
+
+
+
+"0JC-Sb-Ouu.text" = "КӨРСӨТҮҮ РЕЖИМИ";
+
+
+"Search" = "Издөө";
+
+
+"Select" = "Тандоо ( ";
+
+
+"6H8-dI-k9P.text" = "Жайгашууларды башкаруу";
+
+
+"6KH-YP-5Lt.text" = "Айтып бергич";
+
+
+" ) icon on the article" = " ) макалада сүрөтчө";
+
+
+"BLOCK" = "БЛОК";
+
+
+"you want to read later then" = "кийинчерээк окугуңуз келет";
+
+
+"7oo-cf-l7Y.text" = "Окуунун ылдамдыгы";
+
+
+"88L-ip-pZw.text" = "Окуунун ылдамдыгы";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Бул жерде эч нерсе жок. Бул жерде мышыктан башка эч нерсе жок окшойт. Башкы бетке кайтып барасызбы?\nБашкы бетке кайтып келгиңиз келеби?";
+
+
+"BpH-F1-i0z.normalTitle" = "Жергиликтүү";
+
+
+" ) to save article." = " ) макаланы сактоо.";
+
+
+"FB0-YN-HZg.text" = "улантуу үчүн, 3 тандаңыз";
+
+
+"H5Z-xJ-dWD.text" = "Башкы аталыштар жана\nБашкы ой";
+
+
+"Search" = "Поиск";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "ЖОЛДОТУЛГАН КӨРҮҮ";
+
+
+"Jpx-nY-Is1.normalTitle" = "Каналы";
+
+
+"JqN-io-P1u.normalTitle" = "'+ Жайгашкан жерлерге кошуу";
+
+
+"What's your email?" = "Электрондук почтаңыздын дареги кандай?";
+
+
+"Lw1-Md-nse.text" = "ТИЗМЕ КӨРҮҮ";
+
+
+"LyT-pT-g53.text" = "ЭЛ АРАЛЫК";
+
+
+"N6C-6i-Z2s.text" = "ЭЛ АРАЛЫК";
+
+
+"Nru-uU-CsC.text" = "Сунуштар";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Темалар";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Ыңгайлаштыруу";
+
+
+"Topics" = "Темалар";
+
+
+"WXY-po-W1B.text" = "Башкы аталыштар жана\nБашкы ойлор";
+
+
+"ans-Zy-T2Y.placeholder" = "Жайгашкан жерлерди издөө";
+
+
+"bgE-Jc-u8H.text" = "Ыңгайлаштыруу";
+
+
+
+
+
+"Tap the ( " = "Басуу ( ";
+
+
+"Places" = "Жайгашкан жер";
+
+
+"d1l-HK-OrG.text" = "КӨРСӨТҮҮ РЕЖИМИ";
+
+
+
+
+
+"Language" = "Тил";
+
+
+"e9g-Wr-suO.text" = "Башкы аталыштар гана";
+
+
+"GO HOME" = "башкы бетке кайтуу";
+
+
+"eh1-Oo-lEn.text" = "ЖОЛДОТУЛГАН КӨРҮҮ";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "ТИЗМЕ КӨРҮҮ";
+
+
+"j2i-MT-VkA.text" = "Башка издөө сөзүн байкап көрүңүз";
+
+
+"Top News" = "Башкы жаңылыктар";
+
+
+"jmO-aF-nJ9.text" = "Башкы аталыштар гана";
+
+
+"There is nothing in here" = "Бул жерде эч нерсе жок.Бул жерде мышыктан башка эч нерсе жок окшойт. Башкы бетке кайтып барасызбы?";
+
+
+"ma1-9p-bSa.text" = "Эч нерсе табылган жок";
+
+
+"mce-jc-cKH.text" = "Айтып бергич";
+
+
+"Channels" = "Каналдар";
+
+
+"Discover" = "Табуу";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "Жокко чыгаруу";
+
+
+"Discover" = "Табуу";
+
+
+"No saved stories yet" = "Бул жерде эч нерсе жок";
+
+
+"wDG-kF-Hl8.text" = "Жаңылыктарды жайгашкан жерине жараша окуп чыгыңыз";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ЛОКАЛДАНДЫРУУ";
+
+
+"xfF-RB-mWL.text" = "ЛОКАЛДАНДЫРУУ";
+
+
+"Search" = "Издөө";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Сиз тандаган аймакка эң актуалдуу жаңылыктарды алыңыз. Дүйнөнүн кайсы бурчунан болбосун акыркы жаңылыктардан кабардар болуп туруу үчүн даярдалган жаңылыктарды окуңуз.";
+
+
+"Search articles" = "Макалаларды издөө";
+
+
+"6H8-dI-k9P.text" = "Жерлерди башкаруу";
+
+
+
+
+
+"Profile" = "Профиль";
+
+
+"Editions" = "Editions";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Жерлер";
+
+
+
+
+
+"Search" = "Издөө";
+
+
+
+
+
+
+
+
+"Search" = "Издөө";
+
+
+"LANGUAGE" = "ТИЛ";
+
+
+"Search" = "Издөө";
+
+
+"No results" = "Эч нерсе табылган жок";
+
+
+"Channels" = "Каналдар";
+
+
+"Places" = "Жерлер";
+
+
+"Places" = "Жерлер";
+
+
+"e9F-hd-Ifm.text" = "EDITION / REGION";
+
+
+
+
+
+
+
+
+"PLACES" = "ЖЕРЛЕР";
+
+
+"SAVED ARTICLES" = "САКТАЛГАН МАКАЛАЛАР";
+
+
+"Articles" = "Макалалар";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "УЛАНТЫҢЫЗ";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDITION / REGION";
+
+
+"Try a different keyword" = "Башка ачкыч сөздү байкап көрүңүз";
+
+
+"For You" = "Сен үчүн";
+
+
+"Results" = "Жыйынтыктар";
+
+
+
+"About" = "Биз жөнүндө";
+
+
+"Share" = "Бөлүшүү";
+
+
+"ACCOUNT" = "Аккаунт";
+
+
+"Your Email" = "Электрондук почтаңыз";
+
+
+"1sT-J6-qI0.text" = "САКТАЛГАН МАКАЛАЛАР";
+
+
+"2XX-rr-GLC.text" = "Жүздөгөн булактардан ар кандай каналдарды тандаңыз";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Дүйнө жүзүндөгү акыркы жаңылыктарды жана өзгөчөлүктөрдү окуңуз.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Эскертмелерди алуу үчүн убакыт аралыгын коюңуз.";
+
+
+"Off" = "Өчүк";
+
+
+
+
+
+"Bullet 2" = "Башкы ой 2";
+
+
+"What's your email?" = "Электрондук почтаңыз кандай?";
+
+
+"New Password (8 Characters Min)" = "Жаңы сыр сөз (Минималдуу 8 белгиден турат)";
+
+
+"Forgot Password?" = "Паролду унуттуңузбу?";
+
+
+"Account Settings" = "Аккаунт орнотуулары";
+
+
+"Learn how we process your data" = "Маалыматтарыңызды иштетүү боюнча маалымат";
+
+
+"3h" = "3с";
+
+
+"Ok" = "Ок";
+
+
+"Block articles from The Guardian" = ".--- макалаларын бөгөттөө";
+
+
+"On" = "Күйгүзүү";
+
+
+"Auto" = "Авто";
+
+
+"Help Center" = "Жардам борбору";
+
+
+"Search" = "Каналдарды издөө";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Галереядан файлды тандаңыз";
+
+
+
+
+"Save article" = "Макаланы сактоо";
+
+
+"ABOUT" = "ЖӨНҮНДӨ";
+
+
+"Dark" = "Караңгы";
+
+
+"Legal" = "Юридикалык";
+
+
+"Go to The Guardian" = "Баруу";
+
+
+"Send reset link" = "Баштапкы абалга шилтеме жөнөтүү";
+
+
+
+
+
+"My Account" = "Менин аккаунтум";
+
+
+"FEEDBACK" = "Менин аккаунтум";
+
+
+"Message" = "Билдирүү";
+
+
+"Confirm New Password" = "Жаңы сырсөздү ырастаңыз";
+
+
+"for ___" = "үчүн ___";
+
+
+"Search" = "Темаларды издөө";
+
+
+"LANGUAGE" = "Тил";
+
+
+"Light" = "Жарык";
+
+
+"FOLLOW 3 TO CONTINUE" = "улантуу үчүн, 3 тандаңыз";
+
+
+
+
+"Off" = "Өчүрүү";
+
+
+"Language" = "Тандоо";
+
+
+"LOG OUT" = "ЧЫГУУ";
+
+
+"Report content" = "Отчеттун мазмуну";
+
+
+"What's your email?" = "Электрондук почтаңыз кандай?";
+
+
+"On" = "Күйгүзүү";
+
+
+"More like this" = "Ушул сыяктуу дагы көп жаңылыктар";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1c";
+
+
+"Enter Email Address" = "Электрондук почта дарегин киргизиңиз";
+
+
+"News in Bullets" = "Аз убакыттын ичинде көбүрөөк окуңуз .";
+
+
+"6h" = "6с";
+
+
+"Choose your password" = "Сырсөзүңүздү тандаңыз";
+
+
+"Cancel" = "Жокко чыгаруу";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Бул колдонмо менен жаңылыктарды тез окуп чыгыңыз. Темаларыңызды жана булактарыңызды тандаңыз. Андан кийин жаңылыктарыңызды кыска чекиттер менен окуңуз.";
+
+
+"Push Notification" = "Эскертүү";
+
+
+"12h" = "12с";
+
+
+"24h" = "24с";
+
+
+"E-mail" = "Электрондук почта";
+
+
+"How can we help you?" = "Кантип жардам бере алабыз?";
+
+
+"OJP-Wd-0d3.text" = "Пакистан";
+
+
+"CHANGE PASSWORD" = "ПАРОЛДУ ӨЗГӨРТҮҮ";
+
+
+"Change Email" = "Почта дарегин өзгөртүү";
+
+
+"Medium" = "Орто";
+
+
+"SAVE CHANGES" = "ӨЗГӨРҮҮЛӨРДҮ САКТОО";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Эгер бир нерсе боюнча жардамга муктаж болсоңуз, бизге билдирүү жөнөтүңүз, биз сизден кабар алууну каалайбыз!";
+
+
+"P5u-N3-Tw4.text" = "Белги";
+
+
+"Cancel" = "Жокко чыгаруу";
+
+
+"Bullet 1" = "Жокко чыгаруу";
+
+
+"TIMED NOTIFICATIONS" = "БИЛДИРҮҮЛӨР";
+
+
+"POST ARTICLE" = "МАКАЛАНЫ ЖАКТОО";
+
+
+"CONTACT US" = "Биз менен байланыш";
+
+
+"EDITION / REGION" = "чыгаруу";
+
+
+"Search" = "Издөө";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Бизге пикир жөнөтүңүз, биз сизден жооп алууну каалайбыз! Сизде суроолор же юридикалык суроолор барбы? Жардам баракчабызды байкап көрүңүз же Биз менен байланышыңыз.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Эгер бир нерсе боюнча жардамга муктаж болсоңуз, бизге билдирүү жөнөтүңүз, биз сизден кабар алууну каалайбыз!";
+
+
+"30m" = "30м";
+
+
+"CONTINUE" = "УЛАНТЫҢЫЗ";
+
+
+"Time To Update!" = "Колдонмону жаңыртыңыз!";
+
+
+"NOTIFICATIONS" = "БИЛДИРҮҮЛӨР";
+
+
+"Search" = "Издөө";
+
+
+"By clicking Continue, you agree with our Terms." = "Шарттарды кабыл алуу үчүн Улантууну тандаңыз.";
+
+
+"HELP / CONTACT US" = "ЖАРДАМ / БАЙЛАНЫШ";
+
+
+"Reset Password" = "Сырсөздү баштапкы абалга келтирүү";
+
+
+"SEND MESSAGE" = "БИЛДИРҮҮ ЖӨНӨТҮҮ";
+
+
+"Save article" = "Макаланы сактоо";
+
+
+"Bullet 6 (Optional)" = "Башкы ой 6 (Милдеттүү эмес)";
+
+
+"HAPTICS" = "тийүү сезимдери";
+
+
+"Your message has \vbeen sent." = "Сиздин билдирүүңүз жөнөтүлдү.";
+
+
+"LEGAL" = "ЮРИДИКАЛЫК";
+
+
+"Block List" = "Блок тизмеси";
+
+
+"PERSONALIZATION" = "Персоналдаштыруу";
+
+
+"in our Privacy Policy." = "биздин Купуялык саясатыбызда.";
+
+
+"CONTINUE" = "УЛАНТУУ";
+
+
+"Enter Name" = "Атыңызды киргизиңиз";
+
+
+"What's your email?" = "Электрондук почтаңыз кандай?";
+
+
+"Hello there!" = "Салам!";
+
+
+"PUSH NOTIFICATIONS" = "БИЛДИРҮҮЛӨР";
+
+
+"Bullet 3 (Optional)" = "Башкы ой 3 (Милдеттүү эмес)";
+
+
+"Source name" = "Булактын аты";
+
+
+"Current Password" = "Учурдагы Пороль";
+
+
+"COLOR THEME" = "Түстүү Тема";
+
+
+"eTp-X1-g34.text" = "Же ( аркылуу";
+
+
+"CANCEL" = "ЖОК КЫЛУУ";
+
+
+"Bullet 4 (Optional)" = "Башкы ой 4 (Милдеттүү эмес)";
+
+
+"Date published" = "Жарыяланган күнү";
+
+
+"Send Password Reset Link" = "Порольду баштапкы абалга келтирүү үчүн шилтеме жөнөтүңүз";
+
+
+"CONTINUE WITH APPLE" = "Apple ID аркылуу катталуу";
+
+
+"Off" = "Өчүрүү";
+
+
+"BLOCK LIST" = "БӨГӨТ ТИЗМЕСИ";
+
+
+"HELP" = "ЖАРДАМ";
+
+
+"Reference link" = "Маалымдама шилтемеси";
+
+
+"Your Password" = "Сиздин Порольуңуз";
+
+
+"SUBMIT" = "ЖӨНӨТҮҮ";
+
+
+"HELP" = "ЖАРДАМ";
+
+
+"MY ACCOUNT" = "МЕНИН АККАУНТУМ";
+
+
+"hbD-HP-tZd.normalTitle" = "Бөгөттөн чыгаруу";
+
+
+"OTHERS" = "Башкалар";
+
+
+"BREAKING NEWS" = "АКЫРКЫ ЖАҢЫЛЫКТАР";
+
+
+"Topics" = "Бөгөттөлгөн темалар";
+
+
+"Message us," = "Бизге билдирүү жөнөтүңүз";
+
+
+"Pick topics to start reading
+and saving articles" = "колдонмо тили";
+
+
+"Forgot Password?" = "Паролду унуттуңузбу?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Жаңы функциялар кошулду. Айрым маселелер чечилди.";
+
+
+"Success!" = "Ийгилик!";
+
+
+"Current Password" = "Учурдагы Пароль";
+
+
+"CONTENT" = "МАЗМУНУ";
+
+
+"Headline" = "Башкы аталыш сап";
+
+
+"neg-UC-UpK.text" = "Макалаларды окуп, сактай баштоо үчүн темаларды тандаңыз";
+
+
+"CONTINUE WITH EMAIL ID" = "Электрондук почта ID менен улантуу";
+
+
+"SAVE CHANGES" = "ӨЗГӨРҮҮЛӨРДҮ САКТОО";
+
+
+"Post an Article" = "Макала жарыялаңыз";
+
+
+"Contact Us" = "Биз менен байланышыңыз";
+
+
+"On" = "Күйгүзүү";
+
+
+"New Email Address" = "Жаңы электрондук почта дареги";
+
+
+"Bullet 5 (Optional)" = "Башкы ой 5 (Милдеттүү эмес)";
+
+
+"Suggest an improvement" = "Жакшыртууну сунуштаңыз";
+
+
+"Channels" = "Бөгөттөлгөн булактар";
+
+
+"From:" = "Кимден:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "ЖЕКЕ СУНУШТАР";
+
+
+"I don't like this" = "Мага бул жакпайт";
+
+
+"CONTINUE" = "УЛАНТЫҢЫЗ";
+
+
+"Name" = "Атыңыз";
+
+
+"Enter email" = "Электрондук почта дарегин киргизиңиз";
+
+
+"HELP" = "ЖАРДАМ";
+
+
+"FOLLOW 3 TO CONTINUE" = "Улантуу үчүн 3кө өтүңүз";
+
+
+"UPDATE APP" = "Колдонмону жаңыртуу";
+
+
+"Forgot Password?" = "Паролду унуттуңузбу?";
+
+
+"Change Password" = "Порольду өзгөртүү";
+
+
+"Reset Password" = "Поролду баштапкы абалга келтирүү";
+
+
+
+
+
+
+
+
+"Report content" = "Сиздин тынчсызданууңуз жөнүндө кабарлаңыз";
+
+
+"CHANGE EMAIL ADDRESS" = "ПОЧТА ДАРЕГИН ӨЗГӨРТҮҮ";
+
+
+"Follow The Guardian" = "Ээрчүү ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Тажрыйбаңызды мүмкүн болушунча жылмакай кылуу үчүн көптөгөн жаңы функцияларды коштук жана айрым мүчүлүштүктөрдү оңдоп койдук.";
+
+
+"Edition / Region" = "Нускасы / Регион";
+
+
+"OK" = "Макул";
+
+
+"NARRATOR" = "НАРРАТОР";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Сүйгөн жаңылыктарыңыз жөнүндө жаңылыктарды сактап туруу көп убактыңызды албашы керек. Bullets жаңылыктары үзгүлтүксүз 5 мүнөттүк окууну талап кылат жана аны оңой сиңүүчү окторго айландырат. Эми, ошол эле жаңылыкты убакыттын аз гана бөлүгүндө кабыл алсаңыз болот - андыктан кыска убакыттын ичинде көбүрөөк окуй аласыз.";
+
+
+"READING SPEED" = "ОКУУ ТЕЗДИГИ";
+
+
+
+
+
+"You haven't blocked anything yet" = "Азырынча эч нерсени жапкан жоксуз";
+
+
+"EDITION / REGION" = "EDITION / REGION";
+
+
+
+
+
+"HEADLINES ONLY" = "БАШЧЫЛАР";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Аудио орнотуулары";
+
+
+"AUDIO SETTINGS" = "Аудио орнотуулары";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "Headlines жана жарнактар";
+
+
+"CONTINUE AS GUEST" = "ӨТКӨРҮП КОНОК БОЛУП КИРҮҮ";
+
+
+"Topics" = "Темалар";
+
+
+"Pick topics to start reading and saving articles" = "Макалаларды окуп жана сактоону баштоо үчүн темаларды тандаңыз";
+
+
+"Channels" = "Каналдар";
+
+
+"Choose from hundreds \nof news publications" = "Жүздөгөн жаңылыктарды тандоо";
+
+
+"Pick topics to start reading\nand saving articles" = "Макалаларды окуп жана сактоону баштоо үчүн темаларды тандаңыз";
+
+"Pick editions to start reading\nand saving articles" = "Макалаларды окуп, сактай баштоо үчүн чыгарылыштарды тандаңыз";
+
+"Or with" = "Же менен";
+
+"CONTINUE AS GUEST" = "КОНОК БОЛУП УЛАНТЫҢЫЗ";
+
+"Terms of Service" = "Тейлөө шарттары";
+
+"Choose from hundreds \nof news publications" = "Жүздөгөн жаңылыктарды тандоо";
+
+"Select your preferred language\nfor News in Bullets." = "News in Bullets үчүн жактырылган тилди тандаңыз.";
+
+"Choose a style" = "Стилди тандаңыз";
+
+"Pop or subtle. Day or night. Customize your interface." = "Поп же тымызын. Күн же түн. Интерфейсиңизди ыңгайлаштырыңыз.";
+
+"MINS AGO" = "мүнөт мурун";
+
+"AN HOUR AGO" = "бир саат мурун";
+
+"HOURS AGO" = "саат мурун";
+
+"1 WEEK AGO" = "1 жума мурун";
+
+"YESTERDAY" = "Кечээ";
+
+"DAYS AGO" = "күн мурун";
+
+"Go to" = "Баруу";
+
+"You have reached the start." = "Сиз башталышка жеттиңиз";
+
+"Source unblocked successfully" = "Булак ийгиликтүү бөгөттөн чыгарылды";
+
+"Invalid email format"  = "Электрондук почтанын форматы жараксыз";
+
+"Wrong email or password" = "Электрондук почта же сыр сөз туура эмес";
+
+

@@ -1,0 +1,1103 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "포인트";
+"BULLETS" = "포인트";
+"Headlines is not available." = "해당 헤드라인이 불가능합니다.";
+"Check your internet Connection and try again." = "인터넷 연결을 확인하시고 재시도 해주세요.";
+"Choose Image" = "이미지 선택";
+"Headline" = "헤드라인";
+"Bullet 1" = "포인트 1";
+"Bullet 2" = "포인트 2";
+"Bullet 3 (Optional)" = "포인트 3 (선택)";
+"Bullet 4 (Optional)" = "포인트 4 (선택)";
+"Bullet 5 (Optional)" = "포인트 5 (선택)";
+"Bullet 6 (Optional)" = "포인트 6 (선택)";
+"Enter Aticle Headline" = "헤드라인 입력";
+"Enter source name" = "매체 입력";
+"Enter reference link" = "출처 입력";
+"Enter published date" = "작성일 입력";
+"Enter Bullet 1" = "첫 포인트를 입력하세요";
+"Enter Bullet 2" = "두번째 포인트를 입력하세요.";
+"Post article successfully" = "기사가 성공적으로 게시되었습니다.";
+"Follow" = "팔로우 하기";
+"Unfollow" = "팔로우 취소";
+"Block articles from" = "기사 차단하기";
+"Unblock articles from" = "차단 취소하기";
+"Remove article" = "기사 제거하기";
+"Save article" = "해당 기사 저장";
+"Terms & Conditions" = "이용약관";
+"Privacy Policy" = "개인정보보호정책";
+"TERMS AND CONDITIONS" = "이용약관";
+"PRIVACY POLICY" = "개인정보보호정책";
+"Fuel your curiosity" = "세계 뉴스 더 읽기";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "전세계의 신뢰할 수 있는 출처로부터 당신이 선호하는 주제에 대한 정확하고 간략한 뉴스를 읽으세요";
+"Save time" = "시간을 절약하세요";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "포인트로 뉴스 읽기";
+"Hands-free reading" = "핸즈프리 리딩";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "읽을 시간이 없으시다구요? 스피치 기능을 사용해보세요.";
+"Write your message..." = "메시지를 입력해주세요...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "도움이 필요하시다면 메시지를 보내주세요.";
+"Drop us a message" = "메시지를 보내주세요.";
+"Enter Name." = "이름 입력";
+"Enter Email." = "이메일주소 입력";
+"Write your message." = "메시지 쓰기";
+"Topic unblock successfully" = "해당 주제를 차단해제 하셨습니다.";
+"Source unblock successfully" = "해당 출처를 차단해제 하셨습니다.";
+"Unblock Source" = "매체 차단해제";
+"Cancel" = "취소";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "피드백을 보내주세요. 당신의 의견이 듣고 싶습니다! 질문이나 법적문제가 있나요? 도움말 페이지를 확인하시거나 연락주세요.";
+"Enter your suggestion." = "당신의 의견을 입력해주세요.";
+"feedback sent." = "피드백이 성공적으로 전송되었습니다.";
+"30m" = "30분";
+"1h" = "1시간";
+"3h" = "3시간";
+"6h" = "6시간";
+"12h" = "12시간";
+"24h" = "24시간";
+"Language updated successfully." = "언어가 성공적으로 업데이트 되었습니다.";
+"CONTINUE" = "계속";
+"FOLLOW 3 TO CONTINUE" = "진행을 위해 3번을 따르세요";
+"Unfollow Location" = "지역 언팔로우하기";
+"Saved Articles" = "저장된 글";
+"Block" = "차단";
+"Are you sure you want block" = "정말로 차단하시겠습니까?";
+"Once blocked, you wont be able to see any Articles related to this" = "차단하시면 해당 채널의 글을 볼 수 없습니다.";
+"Block Topic" = "해당 토픽 차단";
+"Suggested" = "제안된";
+"Related Sources not available" = "관련 매체가 불가능합니다.";
+"Block Source" = "해당 매체 차단";
+"News in Bullets App version" = "포인트 뉴스 앱 버전";
+"Next" = "다음";
+"Login" = "로그인";
+"Terms" = "약관";
+"By clicking Continue, you agree with our Terms." = "약관에 동의하시면 계속을 선택해주세요.";
+"in our Privacy Policy." = "우리의 개인정보보호정책에 따라";
+"Access token missing." = "접근 토큰이 유실되었습니다.";
+"NEXT" = "다음";
+"By checking this box, you agree to our " = "약관 동의 박스에 체크해주세요. 당신의 정보는 저희의 개인정보 보호에 따라 저장됩니다.";
+"Terms of Service" = "서비스 이용약관";
+". We’ll handle your data according to our " = "당신의 정보는 우리의 (sth) 에 따라 처리됩니다.";
+"Password must be at least 8 characters." = "비밀번호는 최소 8자 이상이어야 합니다.";
+"Strong" = "굵게";
+"Medium" = "보통";
+"Weak" = "가늘게";
+"CREATE A NEW ACCOUNT" = "새 계정 생성";
+"SIGN IN WITH EXISTING ACCOUNT" = "기존 계정으로 로그인하기";
+"You must agree to the Terms of Services to continue" = "서비스 이용약관에 동의하셔야만 계속하실 수 있습니다.";
+"SIGN IN" = "로그인";
+"What's your password?" = "비밀번호가 무엇입니까?";
+"SIGN UP" = "회원가입";
+"Choose your password?" = "비밀번호를 선택하세요.";
+"Something went wrong" = "잘못되었습니다.";
+"we will send email to" = "이메일을 보내드리겠습니다.";
+"with a link to reset your password." = "비밀번호 재설정 링크로";
+"A reset password link has been sent to" = "비밀번호 재설정 링크가 보내졌습니다.";
+"Enter new email." = "새로운 이메일주소 입력";
+"Enter password." = "비밀번호 입력";
+"New Password " = "새로운 비밀번호";
+" (8 characters min)" = "(최소 8자)";
+"Enter current password." = "현재 비밀번호 입력";
+"Enter new password." = "새로운 비밀번호 입력";
+"Enter confirm password." = "비밀번호 확인";
+"password do not matched!" = "비밀번호가 일치하지 않습니다!";
+"GET STARTED" = "시작하기";
+"SKIP" = "넘기기";
+"From where you would like to pick photo?" = "어디에서 사진을 선택하시겠습니까?";
+"Camera" = "카메라";
+"Photo Library" = "사진보관함";
+"Kindly open settings and enable access" = "설정을 열고 액세스를 설정하십시오.";
+"Open Settings" = "설정 열기";
+"Access needed for your camera" = "카메라에 접근이 필요합니다.";
+"Access needed for your photo library" = "사진보관함에 접근이 필요합니다.";
+"Done" = "완료";
+"Pull to refresh" = "당겨서 새로고침";
+"Loading" = "로딩 중";
+"Speech not available for this article" = "이 글은 스피치 기능이 불가능합니다.";
+"MANAGE LOCATION" = "위치 관리";
+"OK" = "확인";
+"Choose your News in Bullets Edition based on locale" = "로케일에 따라 Bullets Edition에서 뉴스 선택";
+"Edition" = "판";
+"EDITION / REGION" = "에디션 / 지역";
+"Your Topics" = "주제";
+"Your Channels" = "내 채널";
+"Your Places" = "귀하의 장소";
+"Enter email." = "이메일을 입력하세요.";
+"Please enter a password." = "비밀번호를 입력하세요.";
+"Search articles" = "기사 검색";
+"No results" = "결과 없음";
+"Edition / Region" = "에디션 / 지역";
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "차단";
+"CANCEL" = "취소";
+"PLACES" = "장소";
+"LANGUAGE" = "언어";
+"Profile" = "프로필";
+"SAVED ARTICLES" = "저장된 기사";
+"Topics" = "토픽";
+"Channels" = "채널";
+"Editions" = "에디션";
+"No saved stories yet" = "아직 저장된 스토리가 없습니다.";
+"Tap the" = "탭하세요";
+"icon on the article" = "기사에 있는 아이콘";
+"you want to read later then" = "다음에 읽기를 원하신다면";
+"Select" = "선택";
+"to save article." = "이 기사를 저장하기 위해.";
+"There is nothing in here" = "아무 것도 없습니다.";
+"Looks like there is nothing here but a cat." = "여기에는 고양이 밖에없는 것 같습니다.";
+"Would you like to go back to home?" = "집으로 돌아가시겠습니까?";
+"GO HOME" = "집에가";
+"Search" = "토픽";
+"Discover" = "발견";
+"Articles" = "조항";
+"Try a different keyword" = "다른 키워드 시도";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "선택한 지역에 가장 관련성이 높은 뉴스를 받아보세요. 전 세계 어디에서나 최신 뉴스를 계속 업데이트 할 수 있도록 선별 된 뉴스 스토리를 읽어보세요.";
+"Language" = "언어";
+"Results" = "결과";
+"For You" = "당신을 위해";
+"Top News" = "탑 뉴스";
+"Choose a style" = "스타일 선택";
+"Pop or subtle. Day or night. Customize your interface." = "팝 또는 미묘. 낮이든 밤이든. 인터페이스를 사용자 정의하십시오.";
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+"About" = "소개";
+
+
+"Share" = "공유";
+
+
+"ACCOUNT" = "계정";
+
+
+"Your Email" = "당신의 이메일";
+
+
+"1sT-J6-qI0.text" = "저장된 기사";
+
+
+"2XX-rr-GLC.text" = "수 백개의 매체 중에서 다른 채널을 선택해보세요";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "전세계에서 일어나는 모든 사건과 일들에 대한 최신 뉴스를 읽으세요.";
+
+
+"Set an interval in which you want to receive your news notifications." = "알림을 받기 위한 시간 간격을 설정하세요";
+
+
+"Off" = "끄기";
+
+
+
+
+
+"Bullet 2" = "포인트 2";
+
+
+"What's your email?" = "당신의 이메일 주소는 무엇입니까?";
+
+
+"New Password (8 Characters Min)" = "새로운 비밀번호(최소 8자)";
+
+
+"Forgot Password?" = "비밀번호를 잊으셨나요?";
+
+
+"Account Settings" = "계정 설정";
+
+
+"Learn how we process your data" = "데이터 처리에 대한 정보";
+
+
+"3h" = "3시간";
+
+
+"Ok" = "Ok";
+
+
+"Block articles from The Guardian" = "--- 기사들 차단";
+
+
+"On" = "켜기";
+
+
+"Auto" = "자동";
+
+
+"Help Center" = "도움말 센터";
+
+
+"Search" = "채널찾기";
+
+
+"Facebook" = "페이스북";
+
+
+"Select file from gallery" = "사진보관함에서 선택하기";
+
+
+
+
+"Save article" = "기사 저장하기";
+
+
+"ABOUT" = "소개";
+
+
+"Dark" = "다크모드";
+
+
+"Legal" = "약관";
+
+
+"Go to The Guardian" = "---로 이동";
+
+
+"Send reset link" = "재설정 링크 전송";
+
+
+
+
+
+"My Account" = "내 계정";
+
+
+"FEEDBACK" = "피드백";
+
+
+"Message" = "메시지";
+
+
+"Confirm New Password" = "새로운 비밀번호 확인";
+
+
+"for ___" = "(위한) ___";
+
+
+"Search" = "주제 검색";
+
+
+"LANGUAGE" = "언어";
+
+
+"Light" = "라이트모드";
+
+
+"FOLLOW 3 TO CONTINUE" = "계속하시려면 3을 선택하세요";
+
+
+
+
+"Off" = "끄기";
+
+
+"Language" = "선택하기";
+
+
+"LOG OUT" = "로그아웃";
+
+
+"Report content" = "콘텐츠 신고하기";
+
+
+"What's your email?" = "이메일 주소가 어떻게 되시나요?";
+
+
+"On" = "켜기";
+
+
+"More like this" = "비슷한 뉴스";
+
+
+"Bullet App v1.1.0" = "포인트 뉴스 v1.1.0 (스킵하기)";
+
+
+"1h" = "1시간";
+
+
+"Enter Email Address" = "이메일 주소를 입력하세요.";
+
+
+"News in Bullets" = "더 짧은 시간 안에 읽어보세요";
+
+
+"6h" = "6시간";
+
+
+"Choose your password" = "비밀번호를 선택하세요";
+
+
+"Cancel" = "취소";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "앱으로 뉴스를 빠르게 읽습니다. 주제와 출처를 선택하세요. 중요 항목들을 짧게 읽어드립니다.";
+
+
+"Push Notification" = "알림";
+
+
+"12h" = "12시간";
+
+
+"24h" = "24시간";
+
+
+"E-mail" = "이메일";
+
+
+"How can we help you?" = "무엇을 도와드릴까요?";
+
+
+"OJP-Wd-0d3.text" = "파키스탄";
+
+
+"CHANGE PASSWORD" = "비밀번호 변경하기";
+
+
+"Change Email" = "이메일 변경";
+
+
+"Medium" = "중간";
+
+
+"SAVE CHANGES" = "변경사항 저장";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "도움이 필요하시면 저희에게 메시지를 보내 주십시오. 귀하의 의견을 듣고 싶습니다!";
+
+
+"P5u-N3-Tw4.text" = "라벨";
+
+
+"Cancel" = "취소";
+
+
+"Bullet 1" = "포인트 1";
+
+
+"TIMED NOTIFICATIONS" = "알림";
+
+
+"POST ARTICLE" = "기사 게시";
+
+
+"CONTACT US" = "문의하기";
+
+
+"EDITION / REGION" = "에디션";
+
+
+"Search" = "검색";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "피드백을 보내주십시오. 귀하의 의견을 듣고 싶습니다! 질문이나 법적 문제가 있습니까? 도움말 페이지 또는 연락처로 문의하십시오.";
+
+
+"Google" = "구글";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "도움이 필요하시면 저희에게 메시지를 보내 주십시오. 귀하의 의견을 듣고 싶습니다!";
+
+
+"30m" = "30분";
+
+
+"CONTINUE" = "계속하기";
+
+
+"Time To Update!" = "앱을 업데이트 해주세요";
+
+
+"NOTIFICATIONS" = "알림";
+
+
+"Search" = "검색";
+
+
+"By clicking Continue, you agree with our Terms." = "약관에 동의하시려면 계속하기를 선택해주세요.";
+
+
+"HELP / CONTACT US" = "도움말 / 문의하기";
+
+
+"Reset Password" = "비밀번호 재설정";
+
+
+"SEND MESSAGE" = "메시지 전송";
+
+
+"Save article" = "기사 저장";
+
+
+"Bullet 6 (Optional)" = "포인트 6 (선택)";
+
+
+"HAPTICS" = "진동";
+
+
+"Your message has \vbeen sent." = "메시지가 전송되었습니다.";
+
+
+"LEGAL" = "약관";
+
+
+"Block List" = "차단목록";
+
+
+"PERSONALIZATION" = "개인맞춤";
+
+
+"in our Privacy Policy." = "우리의 개인정보보호정책에서";
+
+
+"CONTINUE" = "계속";
+
+
+"Enter Name" = "이름을 입력하세요";
+
+
+"What's your email?" = "이메일을 알려주세요";
+
+
+"Hello there!" = "안녕하세요!";
+
+
+"PUSH NOTIFICATIONS" = "알림";
+
+
+"Bullet 3 (Optional)" = "포인트 3 (선택)";
+
+
+"Source name" = "매체명";
+
+
+"Current Password" = "현재 비밀번호";
+
+
+"COLOR THEME" = "색상 설정";
+
+
+"eTp-X1-g34.text" = "또는";
+
+
+"CANCEL" = "취소";
+
+
+"Bullet 4 (Optional)" = "포인트 4 (선택)";
+
+
+"Date published" = "작성일";
+
+
+"Send Password Reset Link" = "재설정 링크 전송";
+
+
+"CONTINUE WITH APPLE" = "애플 ID로 회원가입";
+
+
+"Off" = "끄기";
+
+
+"BLOCK LIST" = "차단된 목록";
+
+
+"HELP" = "도움말";
+
+
+"Reference link" = "참조 링크";
+
+
+"Your Password" = "당신의 비밀번호";
+
+
+"SUBMIT" = "제출";
+
+
+"HELP" = "도움말";
+
+
+"MY ACCOUNT" = "내 계정";
+
+
+"hbD-HP-tZd.normalTitle" = "차단해제";
+
+
+"OTHERS" = "기타";
+
+
+"BREAKING NEWS" = "속보";
+
+
+"Topics" = "차단된 토픽";
+
+
+"Message us," = "우리에게 연락주세요,";
+
+
+"Pick topics to start reading
+and saving articles" = "앱 언어";
+
+
+"Forgot Password?" = "비밀번호를 잊으셨나요?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "새로운 기능들이 추가되었습니다. 일부 문제점들이 해결되었습니다.";
+
+
+"Success!" = "성공!";
+
+
+"Current Password" = "현재 비밀번호";
+
+
+"CONTENT" = "내용";
+
+
+"Headline" = "헤드라인";
+
+
+"neg-UC-UpK.text" = "기사 읽기 및 저장을 시작할 항목 선택";
+
+
+"CONTINUE WITH EMAIL ID" = "이메일 ID 로 계속 진행하세요";
+
+
+"SAVE CHANGES" = "변경사항 저장하기";
+
+
+"Post an Article" = "기사 게시";
+
+
+"Contact Us" = "문의하기";
+
+
+"On" = "켜기";
+
+
+"New Email Address" = "새 이메일 주소";
+
+
+"Bullet 5 (Optional)" = "포인트 5 (선택)";
+
+
+"Suggest an improvement" = "개선사항 제안";
+
+
+"Channels" = "차단된 매체";
+
+
+"From:" = "발신:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "개인 맞춤 추천";
+
+
+"I don't like this" = "별로에요";
+
+
+"CONTINUE" = "계속";
+
+
+"Name" = "이름";
+
+
+"Enter email" = "이메일주소 입력";
+
+
+"HELP" = "도움말";
+
+
+"FOLLOW 3 TO CONTINUE" = "진행하려면 3번을 따르세요";
+
+
+"UPDATE APP" = "앱 업데이트";
+
+
+"Forgot Password?" = "비밀번호를 잊으셨나요?";
+
+
+"Change Password" = "비밀번호 변경하기";
+
+
+"Reset Password" = "비밀번호 재설정";
+
+
+
+
+
+
+
+
+"Report content" = "문제점 보고하기";
+
+
+"CHANGE EMAIL ADDRESS" = "이메일 주소 변경";
+
+
+"Follow The Guardian" = "--- 팔로우하세요";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "많은 새로운 기능을 추가하고 가능한 한 원활하게 경험할 수 있도록 몇 가지 버그를 수정했습니다.";
+
+
+"Edition / Region" = "에디션 / 지역";
+
+
+"OK" = "확인";
+
+
+"NARRATOR" = "내레이터";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "좋아하는 뉴스 기사를 업데이트하는 데 너무 많은 시간이 걸리지 않아야합니다. News in Bullets는 정기적으로 5 분 동안 읽고 쉽게 소화 할 수있는 총알로 압축합니다. 이제 짧은 시간에 동일한 뉴스를 받아 볼 수 있으므로 더 짧은 시간에 더 많은 것을 읽을 수 있습니다.";
+
+
+"READING SPEED" = "읽기 속도";
+
+
+
+
+
+"You haven't blocked anything yet" = "아직 아무것도 차단하지 않았습니다.";
+
+
+"EDITION / REGION" = "에디션 / 지역";
+
+
+
+
+
+"HEADLINES ONLY" = "헤드 라인 만";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "오디오 설정";
+
+
+"AUDIO SETTINGS" = "오디오 설정";
+
+
+
+
+
+
+
+
+"1x" = "1 배";
+
+
+"HEADLINES AND\nBULLETS" = "헤드 라인 및 글 머리 기호";
+
+
+"CONTINUE AS GUEST" = "손님으로 건너 뛰고 로그인";
+
+
+"Topics" = "토픽";
+
+
+"Pick topics to start reading and saving articles" = "기사를 읽고 저장할 주제를 선택하세요.";
+
+
+"Channels" = "채널";
+
+
+"Choose from hundreds \nof news publications" = "수백 개의 뉴스 간행물 중에서 선택";
+
+"Pick topics to start reading\nand saving articles" = "아티클 읽기 및 저장을 시작하는 항목을 선택합니다.";
+
+"Pick editions to start reading\nand saving articles" = "기사를 읽고 저장하기 시작하는 에디션을 선택합니다.";
+
+"Or with" = "또는";
+
+"CONTINUE AS GUEST" = "게스트로 계속";
+
+"Terms of Service" = "서비스 약관";
+
+"Choose from hundreds \nof news publications" = "수백 개의 뉴스 간행물 중에서 선택";
+
+"Select your preferred language\nfor News in Bullets." = "글 머리 기호 뉴스에서 선호하는 언어를 선택하십시오.";
+
+"Choose a style" = "스타일 선택";
+
+"Pop or subtle. Day or night. Customize your interface." = "팝 또는 미묘. 낮이든 밤이든. 인터페이스를 사용자 정의하십시오.";
+
+"MINS AGO" = "몇분 전에";
+
+"AN HOUR AGO" = "한 시간 전";
+
+"HOURS AGO" = "몇 시간 전";
+
+"1 WEEK AGO" = "1주일 전";
+
+"YESTERDAY" = "어제";
+
+"DAYS AGO" = "며칠 전에";
+
+"Go to" = "로 가다";
+
+"You have reached the start." = "시작에 도달했습니다.";
+
+"Source unblocked successfully" = "소스가 성공적으로 차단 해제됨";
+
+"Invalid email format"  = "잘못된 이메일 형식";
+
+"Wrong email or password" = "잘못된 이메일 또는 비밀번호";
+
+
+"Personalize your reading experience" = "독서 경험 개인화";
+
+"Start following the news topics and channels you want to read." = "읽고 싶은 뉴스 주제와 채널을 따르십시오.";
+
+"LET'S GO" = "갑시다";
+
+"We’ll handle your data according to our\n" = "당사는 귀하의 데이터를 당사에 따라 처리합니다.";
+
+"By clicking Continue, you agree with our " = "계속을 클릭하여, 당신은 우리의 동의";
+
+"Learn how we process your data in our"  = "당사에서 귀하의 데이터를 처리하는 방법 알아보기";
+
+"JUST NOW" = "방금";
+
+"Menu" = "메뉴";
+"Article Text Size" = "기사 텍스트 크기";
+"Change the font size shown on the articles" = "기사에 표시되는 글꼴 크기 변경";
+"Small" = "작은";
+"Default" = "기본값";
+"Medium" = "매질";
+"Large" = "큰";
+
+"Related Articles" = "관련 기사";
+"View Full Article" = "전체 기사보기";
+
+"Create your profile" = "프로필 만들기";
+"Set your profile" = "프로필을 설정하십시오";
+"View your profile" = "프로필보기";
+"ARTICLE TEXT SIZE" = "기사 텍스트 크기";
+"DATA SAVER" = "데이터 세이버";
+"Edit Profile" = "프로필 수정";
+"Profile Settings" = "프로필 설정";
+"Edit what viewers see in your profile." = "프로필에 시청자가 표시되는 내용을 편집합니다.";
+"COVER PHOTO" = "표지 사진";
+"Profile Name" = "프로필 이름";
+"Help and Feedback" = "도움말 및 피드백";
+"HELP AND FEEDBACK" = "도움말 및 피드백";
+"Others" = "다른 사람";
+"Feedback & Suggestions" = "피드백 및 제안";
+"Help / Contact Us" = "도움말 / 문의";
+"Terms and Conditions" = "이용 약관";
+"Notification" = "통보";
+"Push Notifications" = "푸시 통보";
+"Breaking News" = "긴급 속보";
+"Personalized Recommendations" = "맞춤형 추천";
+"Timed Notifications" = "시간 제한 알림";
+"Account" = "계정";
+"E-mail Address" = "이메일 주소";
+"Reels" = "릴스";
+
+"Comments" = "코멘트";
+"Write a reply..." = "답장을 작성...";
+"Reply" = "답 글";
+"Replies" = "답장";
+"View" = "견해";
+"more reply" = "더 많은 답변";
+"more replies" = "더 많은 답변";
+"Home" = "홈";
+"Newsreels" = "뉴스릴";
+
+"Following" = "이하의 것";
+"First Name" = "이름";
+"Last Name" = "수리남";
+
+"This feature requires photo access" = "이 기능에는 사진 액세스가 필요합니다.";
+"in phone settings, tap News in Bullets and turn on Photos" = "전화 설정에서, 를 News in Bullets 누르고 사진을 켭니다";
+"Not Now" = "지금은 아니에요";
+"Open Settings" = "열기 설정";
+"No photos on this device" = "이 장치에는 사진이 없습니다.";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "사진 접근 설정을 변경하려면 휴대 전화 설정으로 이동하여을 탭한 다 News in Bullets 사진을 켜십시오.";
+"Video duration" = "비디오 지속 시간";
+"Video too short" = "동영상이 너무 짧습니다.";
+"Video too long" = "동영상이 너무 깁니다.";
+"Done" = "끝난";
+"Save" = "구해내다";
+"Processing.." = "가공..";
+"Trim" = "손질";
+"Cover" = "덮개";
+"Albums" = "앨범";
+"Gallery" = "갤러리";
+"Photos" = "사진";
+"Videos" = "동영상";
+"Next" = "다음";
+"Crop" = "이미지 자르기";
+
+
+"Locations" = "위치";
+"Authors" = "저자";
+"Invalid Video" = "유효하지 않은 비디오";
+"Invalid Youtube link" = "잘못된 유튜브 링크";
+"Article published successfully" = "성공적으로 게시된 기사";
+"Article removed successfully" = "성공적으로 삭제된 기사";
+"Edit Article" = "기사 편집";
+"Delete Article" = "기사 삭제";
+"Before you can comment, you need to update your profile" = "게시하기 전에 프로필을 업데이트해야합니다.";
+"Update profile" = "프로필 업데이트";
+"Views" = "견해";
+
+"Edit Newsreels" = "뉴스릴 편집";
+"Post article" = "게시 기사";
+"SAVE" = "구해내다";
+"Caption" = "캡션";
+"Create a Caption" = "캡션 만들기";
+
+"Create a headline" = "헤드라인 만들기";
+"Add Source Link (Optional)" = "소스 링크 추가 (선택 과목)";
+"Enter a Caption" = "캡션 입력";
+"Enter article headline" = "아티클 헤드라인 입력";
+
+"Add Bullet 1" = "글 머리 기호 1 추가";
+"Add Bullet 2" = "글 머리 기호 2 추가";
+"Add Bullet 3 (Optional)" = "글 머리 기호 3 추가 (선택 과목)";
+"Add Bullet 4 (Optional)" = "글 머리 기호 4 추가 (선택 과목)";
+"Add Bullet 5 (Optional)" = "글 머리 기호 5 추가 (선택 과목)";
+
+"Add Bullet" = "글 머리 기호 추가";
+
+"Uploading video..." = "비디오 업로드...";
+"Bullet" = "글 머리";
+
+
+"Oops! Something went wrong. Please try again." = "죄송합니다! 뭔가 잘못 됐어. 다시 시도하십시오.";
+
+"Upload media" = "미디어 업로드";
+"Upload Newsreels" = "뉴스릴 업로드";
+"Upload YouTube link" = "유튜브 링크 업로드";
+"Before you post," = "게시하기 전에";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "독자와 작가의 글로벌 커뮤니티에 가입하고 있음을 기억하십시오. 모든 형태의 잘못된 정보와 남용으로부터 모든 사람을 보호하기 위해 당사를 검토하십시오.";
+"Community Guidelines." = "커뮤니티 가이드라인.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "계속을 탭하면 지침을 유지하는 데 동의합니다.";
+"Community Guidelines" = "커뮤니티 가이드라인";
+
+"Upload bullet image (optional)" = "글머리 기호 이미지 업로드 (선택 과목)";
+"Delete" = "없애다";
+"Replace" = "바꾸다";
+"Delete Bullet" = "글머리 기호 삭제";
+
+"Add Tag" = "태그 추가";
+"Get discovered locally" = "로컬로 인정 받으십시오";
+"Add a location to your channel and get discovered by users near you." = "채널에 위치를 추가하고 가까운 사용자가 발견 할 수 있습니다.";
+"Max 5" = "최대 5";
+"RECOMMENDED" = "추천";
+"comma, separated, tags" = "쉼표, 구분, 태그";
+
+"YouTube Article" = "유튜브 기사";
+"Paste a YouTube link to upload a video from YouTube." = "유튜브 링크를 붙여 유튜브 에서 동영상을 업로드합니다.";
+"Paste a YouTube link to take import" = "가져오기 위해 유튜브 링크를 붙여넣기";
+"IMPORT" = "가져오기";
+
+"Enter Youtube link" = "유튜브 링크 입력";
+"Preview" = "미리 보기";
+"POST" = "올리기";
+"Post to My Profile" = "내 프로필에 게시";
+
+"RESULT" = "결과";
+"followers" = "종동부";
+"Followers" = "종동부";
+"Posts" = "게시물";
+"Profile updated successfully" = "프로파일이 성공적으로 업데이트되었습니다.";
+"Tags" = "태그";
+"No Posts Yet" = "아직 게시물 없음";
+
+
+"Add" = "더하다";
+"Select Ratio" = "비율 선택";
+"Add topics tags" = "주제 태그 추가";
+"Be discovered by people following the topics you are posting about." = "게시중인 주제를 팔로우하는 사람들에게 발견됩니다.";
+"Reels edited successfully." = "릴이 성공적으로 편집되었습니다.";
+"Article edited successfully." = "기사가 성공적으로 편집되었습니다.";
+"Reels uploaded successfully." = "릴이 성공적으로 업로드되었습니다.";
+"Enter verification code" = "인증 코드 입력";
+"RESEND" = "재전송";
+"Processing..." =  "가공...";
+"Scheduled on:" = "예정된 에";
+"Enter profile name" = "프로필 이름 입력";
+"Ok, last thing is your channel image" = "좋아, 마지막 것은 채널 이미지입니다";
+"Upload" = "업로드";
+"Before you can post article, you need to update your profile" = "게시하기 전에 프로필을 업데이트해야합니다.";
+"UPDATE" = "최신 정보";
+"Scale" = "규모";
+"Saved Article" = "저장된 기사";
+"Removed Article" = "제거 된 기사";
+"Ok, last thing is your profile image" = "좋아, 마지막은 프로필 이미지";
+"Relevant" = "관련된";
+
+"See More" = "더 보기";
+"Less" = "더 적은 참조";
+"Autoplay" = "자동 재생";
+"Reader Mode" = "리더 모드";
+"Data Saver" = "데이터 세이버";
+"Please enter a valid OTP." = "유효한 OTP를 입력하십시오.";
+"Enter a first name" = "이름";
+"Enter a last name" = "수리남";
+
+
+"Password updated successfully" = "비밀번호가 성공적으로 업데이트되었습니다.";
+"Replying to" = "회신";
+"Unblock Topic" = "주제 차단 해제";
+"Please add your reel caption" = "부디 릴 캡션을 추가하십시오";
+"Please add bullet" = "부디 총알을 추가하십시오";
+"Please add your article headline" = "부디 기사 헤드라인을 추가하십시오";
+"Please add bullet 1" = "부디 글 머리 기호 1 추가";
+"Please add bullet 2" = "부디 글 머리 기호 2 추가";
+
+"Please enter a valid channel name" = "유효한 채널 이름을 입력하십시오";
+"Let people know what" = "사람들에게 무엇을 알려주세요.";
+"your channel is about" = "채널에 관한 것입니다.";
+"Start by creating your" = "만들기 시작합니다 너의";
+"channel name" = "채널 이름";
+"Describe your channel" = "채널 설명";
+"No pressure, you can change this later." = "압력없음, 당신은 나중에 이것을 변경할 수 있습니다.";
+"Channel created successfully" = "채널이 성공적으로 생성됨";
+"Please enter your channel description" = "채널 설명을 입력해 주세요.";
+"Channel name already in use" = "이미 사용 중채널 이름";
+"Post to" = "에 게시물";
+
+"Available" = "사용 가능";
+"Already in use" = "이미 사용 중입니다.";
+"SCHEDULE POST" = "일정 게시";
+"DRAFTS" = "초안";
+"View channel" = "채널 보기";
+"Create a channel" = "채널 만들기";
+"Ok, last thing is" = "좋아, 마지막 것은";
+"your channel image" = "채널 이미지";
+"looks amazing!" = "놀라운 보인다!";
+"CREATE CHANNEL" = "채널 만들기";
+"Scheduled Posts" = "스케줄 이 게시물";
+
+"You don't have any drafts yet." = "아직 초안이 없습니다.";
+"Schedule" = "시간표";
+"There aren't any scheduled posts yet." = "아직 예약 된 게시물이 없습니다.";
+"Schedule a Post" = "스케줄 이 게시물";
+"Mod Tools" = "모드 도구";
+"Unfollow Channel" = "언팔로우 채널";
+"Follow Channel" = "채널 팔로우";
+
+"Release to refresh" = "새로 고침하려면 놓으세요.";
+"Loading..." =  "로드 중 ...";
+"Schedule Post" = "일정 게시";
+"Moderator Tools" = "중재자 도구";
+"General" = "일반 모드";
+"Scheduled Posts" = "예약 된 게시물";
+"Settings" = "설정";
+"channel and cover photo" = "채널 및 표지 사진";
+"Description" = "묘사";
+"Will be posted in" = "게시됩니다 안에";
+"Will be posted on" = "에 게시됩니다";
+"Will be posted now" = "지금 게시됩니다";
+"Select Date" = "날짜 선택";
+"Select Time" = "시간 선택";
+"Please select date" = "날짜를 선택하세요";
+"Please select time" = "시간을 선택하십시오.";
+"Continue with Apple" = "애플사로 계속";
+"Continue with Google" = "구글 을 와계속하십시오";
+"Continue with Facebook" = "페이스 북으로 계속";
+"Continue with email" = "이메일로 계속";
+"Login or create an account" = "로그인 또는 계정 생성";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "모든 좋아하는 주제의 이야기에 대해 읽고 공유하고 설명 할 계정을 로그인하거나 작성하십시오.";
+"your profile image" = "프로필 이미지";
+"Invalid OTP code" = "잘못된 OTP 코드";
+
+"View your profile" = "프로필보기";
+"NEWS DESK" = "뉴스 데스크";
+"YOUR CHANNELS" = "귀하의 채널";
+"GENERAL" = "일반 모드";
+"WALLET" = "지갑";
+"POSTS" = "게시물";
+"PERSONALIZATIONS" = "개인화";
+"NETWORK" = "네트워크";
+"Need more channels?" = "더 많은 채널이 필요하십니까?";
+"VIEW ALL & MANAGE" = "모두 보기 및 관리";
+
+"Community Feed" = "커뮤니티 피드";
+"Create your post" = "게시물 만들기";
+"Media" = "미디어";
+"Youtube" = "유튜브";
+"You're all caught up" = "당신은 모든 것들과 함께 끝났습니다";
+"You've seen all new posts" = "당신은 모든 새로운 게시물을 보았습니다";
+"Go to top" = "맨 위로 이동";
+"Suggested Reels" = "추천 릴";
+"Suggested Authors" = "추천 저자";
+
+
+"Share to" = "공유";
+"Report" = "보고서";
+"Unsave Video" = "저장 취소 비디오";
+"Save Video" = "비디오를 저장하십시오";
+"Aspect Ratio" = "종횡비";
+"Rotate" = "회전하다";
+"Flip Vertical" = "수직으로 뒤집습니다";
+"Flip Horizontal" = "수평으로 뒤집기";
+
+
+"Community" = "지역 사회";
+"APP LANGUAGE" = "앱 언어";
+"You don't have any followers yet" = "아직 팔로워가 없습니다.";
+
+
+"View Original Article" = "원본 기사 보기";
+"Places" = "장소";
+"Languages" = "언어";
+"New Posts" = "새 게시물";
+"No posts yet" = "아직 게시물없음";
+"All Followers" = "모든 팔로워";
+"Add Place" = "장소 추가";
+"Add places tags" = "장소 태그 추가";
+"Be discovered by people following the places you are posting about." = "내가 게시한 장소를 팔로우하는 사람들에게 발견됩니다.";
+
+
+"START FOLLOWING" = "팔로우 시작";
+"You are not following anything yet" = "당신은 아직 아무것도 따르지 않습니다.";
+
+"Notifications" = "통보";
+"General" = "일반 모드";
+"News" = "소식";
+"VIEW MORE" = "더보기";
+"BULLETS AUTO PLAY" = "총알 자동 재생";
+"VIDEOS AUTO PLAY" = "동영상 자동 재생";
+"REELS AUTO PLAY" = "릴 자동 재생";
+"READER THEME" = "독자 테마";
+"News Content Language" = "뉴스 콘텐츠 언어";
+"FAVORITES" = "즐겨찾기";
+"Region/Places" = "지역/장소";
+"Select Regions/Places" = "지역/장소 선택";
+"Follow at least 3 topics" = "최소 3개의 주제를 팔로우하세요";
+"Please Follow at least 3 topics" = "부디최소 3개의 주제를 팔로우하세요";
+"Explore Newsreels" = "뉴스릴 탐험";
+"Related Reels" = "관련 릴";
+"Explore Your Feed" = "피드를 탐험 해보세요";
+"Sources" = "출처";
+"Articles, topics, channels, authors" = "기사, 주제, 채널, 저자";
+"View/Manage" = "보기/관리";
+"Add to Favorites" = "즐겨 찾기에 추가";
+"Remove from Favorites" = "즐겨찾기에서 제거";
+
+
+

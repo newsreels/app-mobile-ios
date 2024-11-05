@@ -1,0 +1,176 @@
+{
+    "captions": [{
+            "view_template": "1",
+            "sentence": " today's fresh start to fit this is",
+            "words": [{
+                    "word": " today's",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                },{
+                    "word": "fresh",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "start",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "to",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "fit",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "this",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "is",
+                    "delay": 5.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+                ,{
+                    "word": "Wasif Chotia",
+                    "delay": 1.0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+            ],
+            "textBackground": "#000000",
+            "rotation": 0,
+            "textAnimation": "None",
+            "textAlignment": "Center",
+            "duration": {
+                "start": 1,
+                "end": 9
+            },
+            "margin": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "padding": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "position": {
+                "x": 70,
+                "y": 50
+            }
+        }, {
+            "sentence": " all about workouts to improve balance",
+            "words": [{
+                    "word": " all about workouts to improve balance",
+                    "delay": 0,
+                    "style": "bold",
+                    "fontFamily": "Roboto",
+                    "textSize": 10,
+                    "textColor": "#FFFFFF",
+                    "highlightColor": "#FFFFFF",
+                    "shadowColor": "#000000",
+                    "highlight": false,
+                    "shadow": true,
+                    "underline": false
+                }
+            ],
+            "textBackground": "#000000",
+            "rotation": 0,
+            "textAnimation": "None",
+            "textAlignment": "Center",
+            "duration": {
+                "start": 10,
+                "end": 16
+            },
+            "margin": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "padding": {
+                "top": 0,
+                "bottom": 0,
+                "left": 0,
+                "right": 0
+            },
+            "position": {
+                "x": 70,
+                "y": 50
+            }
+        }
+    ]
+}
+

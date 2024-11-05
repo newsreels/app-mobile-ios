@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Following-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FollowingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FollowingViewController" customModule="Newsreels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notFollowing" translatesAutoresizingMaskIntoConstraints="NO" id="CRQ-V2-Wek">
+                                <rect key="frame" x="0.0" y="204" width="414" height="421"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CRQ-V2-Wek" secondAttribute="height" multiplier="414:421" id="PJ6-t2-GIa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're Not Following Anything!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H2-ot-SWg">
+                                <rect key="frame" x="57" y="675" width="301" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-fB-n1L">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRQ-V2-Wek" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="9Yk-t2-kDG"/>
+                            <constraint firstItem="Nug-fB-n1L" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ga6-43-7jQ"/>
+                            <constraint firstItem="CRQ-V2-Wek" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="GaD-pV-JHc"/>
+                            <constraint firstItem="Nug-fB-n1L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OHa-YJ-7fs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1H2-ot-SWg" secondAttribute="trailing" constant="56" id="PGI-vL-ixQ"/>
+                            <constraint firstItem="CRQ-V2-Wek" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="iEd-yH-vRD"/>
+                            <constraint firstItem="1H2-ot-SWg" firstAttribute="top" secondItem="CRQ-V2-Wek" secondAttribute="bottom" constant="50" id="tzc-5z-Y0G"/>
+                            <constraint firstItem="1H2-ot-SWg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="57" id="ufN-hg-9uC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Nug-fB-n1L" secondAttribute="trailing" id="vfH-cn-ir9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nug-fB-n1L" secondAttribute="bottom" id="w1x-ep-cTj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Following" id="VEX-fK-w3d"/>
+                    <connections>
+                        <outlet property="tableView" destination="Nug-fB-n1L" id="tpO-gc-DTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fa7-OL-aUv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hxX-s6-2GF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eWf-I8-uMV">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="vny-5S-475"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJa-TP-i6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notFollowing" width="375" height="381.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

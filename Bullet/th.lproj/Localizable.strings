@@ -1,0 +1,1077 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "สัญลักษณ์แสดงหัวข้อย่อย";
+"BULLETS" = "เครื่องหมายหัวข้อ";
+"Headlines is not available." = "หัวข้อข่าวไม่สามารถใช้ได้";
+"Check your internet Connection and try again." = "ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วลองอีกครั้ง";
+"Choose Image" = "เลือกรูปภาพ";
+"Headline" = "พาดหัวข่าว";
+"Bullet 1" = "สัญลักษณ์แสดงหัวข้อย่อย 1";
+"Bullet 2" = "สัญลักษณ์แสดงหัวข้อย่อย 2";
+"Bullet 3 (Optional)" = "สัญลักษณ์แสดงหัวข้อย่อย 3 (ไม่บังคับ)";
+"Bullet 4 (Optional)" = "สัญลักษณ์แสดงหัวข้อย่อย 4 (ไม่บังคับ)";
+"Bullet 5 (Optional)" = "สัญลักษณ์แสดงหัวข้อย่อย 5 (ไม่บังคับ)";
+"Bullet 6 (Optional)" = "สัญลักษณ์แสดงหัวข้อย่อย 6 (ไม่บังคับ)";
+"Enter Aticle Headline" = "ป้อนบรรทัดแรก";
+"Enter source name" = "ป้อนแหล่งที่มา";
+"Enter reference link" = "ป้อนข้อมูลอ้างอิง";
+"Enter published date" = "ป้อนวันที่เผยแพร่";
+"Enter Bullet 1" = "ป้อนหัวข้อย่อยแรก";
+"Enter Bullet 2" = "ป้อนสัญลักษณ์แสดงหัวข้อย่อยที่สอง";
+"Post article successfully" = "โพสต์บทความเรียบร้อยแล้ว";
+"Follow" = "ติดตาม";
+"Unfollow" = "เลิกติดตาม";
+"Block articles from" = "บล็อกบทความจาก";
+"Unblock articles from" = "ปลดบล็อกบทความจาก";
+"Remove article" = "ปลดบล็อกบทความจาก";
+"Save article" = "บันทึกบทความนี้";
+"Terms & Conditions" = "ข้อตกลงและเงื่อนไข";
+"Privacy Policy" = "นโยบายความเป็นส่วนตัว";
+"TERMS AND CONDITIONS" = "ข้อกำหนดและเงื่อนไข";
+"PRIVACY POLICY" = "นโยบายความเป็นส่วนตัว";
+"Fuel your curiosity" = "อ่านข่าวเพิ่มเติมเกี่ยวกับโลก";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "อ่านข่าวสั้น ๆ และแม่นยำเกี่ยวกับหัวข้อโปรดของคุณจากแหล่งที่เชื่อถือได้ทั่วโลก";
+"Save time" = "ประหยัดเวลาของคุณ";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "อ่านข่าวในหัวข้อย่อย";
+"Hands-free reading" = "การอ่านแบบแฮนด์ฟรี";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "ไม่มีเวลาอ่าน? ใช้ฟังก์ชันเสียงพูด";
+"Write your message..." = "เขียนข้อความของคุณ ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ส่งข้อความถึงเราหากคุณต้องการความช่วยเหลือเรายินที่จะรับฟังจากคุณ!";
+"Drop us a message" = "ส่งข้อความถึงเรา";
+"Enter Name." = "ใส่ชื่อ.";
+"Enter Email." = "กรอกอีเมล.";
+"Write your message." = "เขียนข้อความของคุณ";
+"Topic unblock successfully" = "คุณเลิกบล็อกหัวข้อนี้แล้ว";
+"Source unblock successfully" = "คุณเลิกบล็อกแหล่งที่มานี้แล้ว";
+"Unblock Source" = "เลิกบล็อกแหล่งที่มา";
+"Cancel" = "ยกเลิก";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ส่งข้อเสนอแนะถึงเราเรายินดีที่จะรับฟังคุณ! คุณมีคำถามหรือข้อกังวลทางกฎหมายหรือไม่? ลองติดต่อเพจเพื่อขอความช่วยเหลือหรือติดต่อเรา";
+"Enter your suggestion." = "ป้อนคำแนะนำของคุณ ";
+"feedback sent." = "ส่งข้อเสนอแนะเรียบร้อยแล้ว";
+"30m" = "30 นาที";
+"1h" = "1 ชม";
+"3h" = "3 ชม";
+"6h" = "6 ชม";
+"12h" = "12 ชม";
+"24h" = "24 ชม";
+"Language updated successfully." = "อัปเดตภาษาเรียบร้อยแล้ว";
+"CONTINUE" = "ดำเนินการต่อ";
+"FOLLOW 3 TO CONTINUE" = "ปฏิบัติตาม3 เพื่อดำเนินการต่อ";
+"Unfollow Location" = "เลิกติดตามตำแหน่ง";
+"Saved Articles" = "บทความที่บันทึกไว้";
+"Block" = "บล็อก";
+"Are you sure you want block" = "แน่ใจและต้องการที่จะบล็อกใช่ไหม";
+"Once blocked, you wont be able to see any Articles related to this" = "คุณจะไม่เห็นบทความจากช่องนี้หากคุณบล็อก";
+"Block Topic" = "บล็อกหัวข้อนี้";
+"Suggested" = "แนะนำ";
+"Related Sources not available" = "แหล่งที่มาที่เกี่ยวข้องไม่สามารถใช้ได้";
+"Block Source" = "บล็อกแหล่งที่มานี้";
+"News in Bullets App version" = "ข่าวสารในเวอร์ชันหัวข้อย่อยของแอป";
+"Next" = "ต่อไป";
+"Login" = "เข้าสู่ระบบ";
+"Terms" = "เงื่อนไข";
+"By clicking Continue, you agree with our Terms." = "เลือกดำเนินการต่อเพื่อยอมรับข้อกำหนด";
+"in our Privacy Policy." = "ในนโยบายความเป็นส่วนตัวของเรา";
+"Access token missing." = "โทเค็นในการเข้าถึงขาดหายไป.";
+"NEXT" = "ต่อไป";
+"By checking this box, you agree to our " = "คลิกที่ช่องเพื่อยอมรับข้อกำหนด ข้อมูลของคุณได้รับการประมวลผลตามนโยบายความเป็นส่วนตัวของเรา";
+"Terms of Service" = "เงื่อนไขของการให้บริการ";
+". We’ll handle your data according to our " = "เราจะจัดการตามข้อมูลของคุณไปยังเรา";
+"Password must be at least 8 characters." = "รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร";
+"Strong" = "แข็งแรง";
+"Medium" = "ปานกลาง";
+"Weak" = "อ่อนแอ";
+"CREATE A NEW ACCOUNT" = "สร้างบัญชีใหม่";
+"SIGN IN WITH EXISTING ACCOUNT" = "ลงชื่อเข้าใช้ด้วยบัญชีที่มีอยู่";
+"You must agree to the Terms of Services to continue" = "คุณต้องยอมรับข้อกำหนดในการให้บริการเพื่อดำเนินการต่อ";
+"SIGN IN" = "เข้าสู่ระบบ";
+"What's your password?" = "รหัสผ่านของคุณคืออะไร?";
+"SIGN UP" = "ลงชื่อ";
+"Choose your password?" = "เลือกรหัสผ่านของคุณ";
+"Something went wrong" = "อะไรบางอย่างผิดปกติ";
+"we will send email to" = "เราจะส่งอีเมลไปที่";
+"with a link to reset your password." = "พร้อมลิงก์สำหรับรีเซ็ตรหัสผ่านของคุณ";
+"A reset password link has been sent to" = "ลิงก์สำหรับรีเซ็ตรหัสผ่านถูกส่งไปที่";
+"Enter new email." = "ป้อนอีเมลใหม่";
+"Enter password." = "ใส่รหัสผ่าน.";
+"New Password " = "รหัสผ่านใหม่";
+" (8 characters min)" = "(ขั้นต่ำ 8 อักขระ)";
+"Enter current password." = "ป้อนรหัสผ่านปัจจุบัน";
+"Enter new password." = "ใส่รหัสผ่านใหม่.";
+"Enter confirm password." = "ยืนยันรหัสผ่าน.";
+"password do not matched!" = "รหัสผ่านไม่ตรงกัน!";
+"GET STARTED" = "เริ่ม";
+"SKIP" = "ข้าม";
+"From where you would like to pick photo?" = "คุณต้องการเลือกรูปถ่ายจากที่ใด";
+"Camera" = "กล้อง";
+"Photo Library" = "คลังภาพ";
+"Kindly open settings and enable access" = "กรุณาเปิดการตั้งค่าและเปิดใช้งานในการเข้าถึง";
+"Open Settings" = "เปิดการตั้งค่า";
+"Access needed for your camera" = "จำเป็นต้องเข้าถึงกล้องของคุณ";
+"Access needed for your photo library" = "จำเป็นต้องเข้าถึงคลังรูปภาพของคุณ";
+"Done" = "เสร็จแล้ว";
+"Pull to refresh" = "ดึงเพื่อรีเฟรช";
+"Loading" = "กำลังโหลด";
+"Speech not available for this article" = "ไม่มีเสียงพูดสำหรับบทความนี้";
+"MANAGE LOCATION" = "จัดการสถานที่";
+"OK" = "ตกลง";
+"Choose your News in Bullets Edition based on locale" = "เลือกข่าวสารของคุณใน Bullets Edition ตามสถานที่";
+"Edition" = "ฉบับ";
+"EDITION / REGION" = "EDITION / ภูมิภาค";
+"Your Topics" = "หัวข้อของคุณ";
+"Your Channels" = "ช่องของคุณ";
+"Your Places" = "สถานที่ของคุณ";
+"Enter email." = "กรอกอีเมล.";
+"Please enter a password." = "กรุณาใส่รหัสผ่าน";
+"Search articles" = "ค้นหาบทความ";
+"No results" = "ไม่มีผลลัพธ์";
+"Edition / Region" = "ฉบับ / ภูมิภาค";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "บล็อก";
+"CANCEL" = "ยกเลิก";
+"PLACES" = "สถานที่";
+"LANGUAGE" = "ภาษา";
+"Profile" = "ข้อมูลส่วนตัว";
+"SAVED ARTICLES" = "บทความที่บันทึกไว้";
+"Topics" = "หัวข้อ";
+"Channels" = "ช่อง";
+"Editions" = "ฉบับ";
+"No saved stories yet" = "ยังไม่มีเรื่องราวที่บันทึกไว้";
+"Tap the" = "แตะที่";
+"icon on the article" = "ไอคอนบนบทความ";
+"you want to read later then" = "คุณต้องการอ่านในภายหลัง";
+"Select" = "เลือก";
+"to save article." = "เพื่อบันทึกบทความ.";
+"There is nothing in here" = "ที่นี่ไม่มีอะไรเลย";
+"Looks like there is nothing here but a cat." = "ดูเหมือนว่าที่นี่จะไม่มีอะไรนอกจากแมว";
+"Would you like to go back to home?" = "คุณต้องการกลับไปที่บ้านหรือไม่?";
+"GO HOME" = "กลับบ้าน";
+"Search" = "ค้นหา";
+"Discover" = "ค้นพบ";
+"Articles" = "บทความ";
+"Try a different keyword" = "ลองใช้คำหลักอื่น";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "รับข่าวสารที่เกี่ยวข้องกับภูมิภาคที่คุณเลือกมากที่สุด อ่านเรื่องราวข่าวที่จัดทำขึ้นเพื่อให้คุณได้รับข่าวสารล่าสุดจากทุกที่ในโลก";
+"Language" = "ภาษา";
+"Results" = "ผล";
+"For You" = "สำหรับคุณ";
+"Top News" = "ข่าวเด่น";
+"Choose a style" = "เลือกสไตล์";
+"Pop or subtle. Day or night. Customize your interface." = "ป๊อปหรือบอบบางกลางวันหรือกลางคืนปรับแต่งอินเทอร์เฟซของคุณ";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "เกี่ยวกับเรา";
+
+
+"Share" = "แบ่งปัน";
+
+
+"ACCOUNT" = "บัญชีผู้ใช้";
+
+
+"Your Email" = "อีเมลของคุณ";
+
+
+"1sT-J6-qI0.text" = "บทความที่บันทึกไว้ ";
+
+
+"2XX-rr-GLC.text" = "เลือกช่องทางต่างๆที่มาจากหลายร้อยแหล่ง ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "อ่านข่าวกิจกรรมล่าสุดและคุณสมบัติจากทั่วทุกมุมโลก ";
+
+
+"Set an interval in which you want to receive your news notifications." = "กำหนดระยะเวลาในการรับการแจ้งเตือน ";
+
+
+"Off" = "ปิด";
+
+
+
+
+
+"Bullet 2" = " สัญลักษณ์แสดงหัวข้อย่อย 2";
+
+
+"What's your email?" = "อีเมลของคุณคืออะไร? ";
+
+
+"New Password (8 Characters Min)" = "รหัสผ่านใหม่ (ขั้นต่ำ 8 ตัวอักษร) ";
+
+
+"Forgot Password?" = "ลืมรหัสผ่าน? ";
+
+
+"Account Settings" = "การตั้งค่าบัญชี ";
+
+
+"Learn how we process your data" = "เกี่ยวกับการประมวลผลข้อมูลของคุณ ";
+
+
+"3h" = "3 ชม";
+
+
+"Ok" = "โอเค";
+
+
+"Block articles from The Guardian" = "บล็อกบทความจาก ---";
+
+
+"On" = "เปิด";
+
+
+"Auto" = "อัตโนมัติ";
+
+
+"Help Center" = "ศูนย์ช่วยเหลือ ";
+
+
+"Facebook" = "เฟสบุ๊ค";
+
+
+"Select file from gallery" = "เลือกไฟล์จากแกลเลอรี ";
+
+
+
+
+"Save article" = "บันทึกบทความ ";
+
+
+"ABOUT" = "เกี่ยวกับ";
+
+
+"Dark" = "มืด";
+
+
+"Legal" = "กฎหมาย";
+
+
+"Go to The Guardian" = "ไปที่ --- ";
+
+
+"Send reset link" = "ส่งลิงค์รีเซ็ต ";
+
+
+
+
+
+"My Account" = "บัญชีของฉัน ";
+
+
+"FEEDBACK" = "ข้อเสนอแนะ";
+
+
+"Message" = "ข้อความ";
+
+
+"Confirm New Password" = "ยืนยันรหัสผ่านใหม่";
+
+
+"for ___" = "สำหรับ";
+
+
+"LANGUAGE" = "ภาษา";
+
+
+"Light" = "สว่าง";
+
+
+"FOLLOW 3 TO CONTINUE" = "เพื่อดำเนินการต่อ เลือก 3";
+
+
+
+
+"Off" = "ปิด";
+
+
+"Language" = "เลือก";
+
+
+"LOG OUT" = "ออกจากระบบ";
+
+
+"Report content" = "รายงานเนื้อหา";
+
+
+"What's your email?" = "อีเมลของคุณคืออะไร?";
+
+
+"On" = "เปิด";
+
+
+"More like this" = "ข่าวเพิ่มเติมเช่นนี้";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1ชม";
+
+
+"Enter Email Address" = "ป้อนที่อยู่อีเมล";
+
+
+"News in Bullets" = "อ่านมากในการใช้เวลาที่น้อยลง";
+
+
+"6h" = "6 ชม";
+
+
+"Choose your password" = "เลือกรหัสผ่านของคุณ";
+
+
+"Cancel" = "ยกเลิก";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "อ่านข่าวได้อย่างรวดเร็วด้วยแอพนี้ เลือกหัวข้อและแหล่งที่มาของคุณ จากนั้นอ่านข่าวของคุณด้วยสัญลักษณ์แสดงหัวข้อย่อยสั้น ๆ";
+
+
+"Push Notification" = "การแจ้งเตือน";
+
+
+"12h" = "12 ชม";
+
+
+"24h" = "24 ชม";
+
+
+"E-mail" = "อีเมล";
+
+
+"How can we help you?" = "เราจะช่วยได้อย่างไร?";
+
+
+"OJP-Wd-0d3.text" = "ปากีสถาน";
+
+
+"CHANGE PASSWORD" = "เปลี่ยนรหัสผ่าน";
+
+
+"Change Email" = "เปลี่ยนที่อยู่อีเมลล์";
+
+
+"Medium" = "ปานกลาง";
+
+
+"SAVE CHANGES" = "บันทึกการเปลี่ยนแปลง";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "หากคุณต้องการความช่วยเหลือ ส่งข้อความหาเรา เรายินดีที่จะรับฟังคุณ!";
+
+
+"P5u-N3-Tw4.text" = "ฉลาก";
+
+
+"Cancel" = "ยกเลิก";
+
+
+"Bullet 1" = "สัญลักษณ์แสดงหัวข้อย่อย 1";
+
+
+"TIMED NOTIFICATIONS" = "การแจ้งเตือน";
+
+
+"POST ARTICLE" = "โพสต์บทความ";
+
+
+"CONTACT US" = "ติดต่อเรา";
+
+
+"EDITION / REGION" = "ฉบับ";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "ส่งข้อเสนอแนะถึงเรา เรายินดีที่จะรับฟังคุณ!คุณมีคำถามหรือข้อกังวลทางกฎหมายหรือไม่?ลองติดต่อทางหน้าเพจเพื่อขอความช่วยเหลือหรือติดต่อเรา";
+
+
+"Google" = "กูเกิล";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "ส่งข้อความถึงเราหากคุณต้องการความช่วยเหลือเรายินดีที่จะรับฟังคุณ!";
+
+
+"30m" = "30 นาที";
+
+
+"CONTINUE" = "ดำเนินการต่อ";
+
+
+"Time To Update!" = "อัปเดตแอป!";
+
+
+"NOTIFICATIONS" = "การแจ้งเตือน";
+
+
+"By clicking Continue, you agree with our Terms." = "เลือกดำเนินการต่อเพื่อยอมรับข้อกำหนด";
+
+
+"HELP / CONTACT US" = "ช่วยเหลือ / ติดต่อ";
+
+
+"Reset Password" = "รีเซ็ตรหัสผ่าน";
+
+
+"SEND MESSAGE" = "ส่งข้อความ";
+
+
+"Save article" = "บันทึกบทความ";
+
+
+"Bullet 6 (Optional)" = "สัญญาลักษ์หัวข้อย่อย 6 (ไม่จำเป็น)";
+
+
+"HAPTICS" = "สัมผัส";
+
+
+"Your message has \vbeen sent." = "ข้อความของคุณถูกส่งแล้ว.";
+
+
+"LEGAL" = "ตามกฎหมาย";
+
+
+"Block List" = "รายการบล็อก";
+
+
+"PERSONALIZATION" = "ส่วนบุคคล";
+
+
+"in our Privacy Policy." = "ในนโยบายความเป็นส่วนตัวของเรา";
+
+
+"CONTINUE" = "ดำเนินการต่อ";
+
+
+"Enter Name" = "ใส่ชื่อ";
+
+
+"What's your email?" = "อีเมลของคุณคืออะไร?";
+
+
+"Hello there!" = "สวัสดี!";
+
+
+"PUSH NOTIFICATIONS" = "การแจ้งเตือน";
+
+
+"Bullet 3 (Optional)" = "สัญญาลักษ์หัวข้อย่อย 3 (ไม่จำเป็น)";
+
+
+"Source name" = "ชื่อของแหล่งที่มา";
+
+
+"Current Password" = "รหัสผ่านปัจจุบัน";
+
+
+"COLOR THEME" = "ธีมสี";
+
+
+"eTp-X1-g34.text" = "หรือผ่าน";
+
+
+"CANCEL" = "ยกเลิก";
+
+
+"Bullet 4 (Optional)" = "สัญญาลักษ์หัวข้อย่อย 4 (ไม่จำเป็น)";
+
+
+"Date published" = "วันที่เผยแพร่";
+
+
+"Send Password Reset Link" = "ส่งลิงค์เพื่อรีเซ็ตรหัสผ่าน";
+
+
+"CONTINUE WITH APPLE" = "ลงทะเบียนผ่าน Apple ID";
+
+
+"Off" = "ปิด";
+
+
+"BLOCK LIST" = "รายการบล็อก";
+
+
+"HELP" = "ช่วยเหลือ";
+
+
+"Reference link" = "ลิงค์อ้างอิง";
+
+
+"Your Password" = "รหัสผ่านของคุณ";
+
+
+"SUBMIT" = "ส่ง";
+
+
+"HELP" = "ช่วยเหลือ";
+
+
+"MY ACCOUNT" = "บัญชีของฉัน";
+
+
+"hbD-HP-tZd.normalTitle" = "เลิกบล็อก";
+
+
+"OTHERS" = "อื่น ๆ";
+
+
+"BREAKING NEWS" = "ข่าวด่วน";
+
+
+"Message us," = "ส่งข้อความถึงเรา";
+
+
+"Pick topics to start reading
+and saving articles" = "แอปภาษา";
+
+
+"Forgot Password?" = "ลืมรหัสผ่าน?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "มีการเพิ่มคุณสมบัติใหม่ ปัญหาบางอย่างได้รับการแก้ไขแล้";
+
+
+"Success!" = "สำเร็จ!";
+
+
+"Current Password" = "รหัสผ่านปัจจุบัน";
+
+
+"CONTENT" = "เนื้อหา";
+
+
+"Headline" = "พาดหัวข่าว";
+
+
+"neg-UC-UpK.text" = "เลือกหัวข้อเพื่อเริ่มอ่านและบันทึกบทความ";
+
+
+"CONTINUE WITH EMAIL ID" = "ดำเนินการต่อด้วยรหัสอีเมลของคุณ";
+
+
+"SAVE CHANGES" = "บันทึกการเปลี่ยนแปลง";
+
+
+"Post an Article" = "โพสต์บทความ";
+
+
+"Contact Us" = "ติดต่อเรา";
+
+
+"On" = "เปิด";
+
+
+"New Email Address" = "ที่อยู่อีเมลใหม่";
+
+
+"Bullet 5 (Optional)" = "สัญญาลักษ์หัวข้อย่อย 5 (ไม่จำเป็น)";
+
+
+"Suggest an improvement" = "แนะนำการปรับปรุง";
+
+
+"From:" = "จาก:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "คำแนะนำส่วนบุคคล";
+
+
+"I don't like this" = "ฉันไม่ชอบสิ่งนี้";
+
+
+"CONTINUE" = "ดำเนินการต่อ";
+
+
+"Name" = "ชื่อ";
+
+
+"Enter email" = "กรอกอีเมล";
+
+
+"HELP" = "ช่วยเหลือ";
+
+
+"FOLLOW 3 TO CONTINUE" = "ติดตาม 3 เพื่อดำเนินการต่อ";
+
+
+"UPDATE APP" = "อัปเดตแอป";
+
+
+"Forgot Password?" = "ลืมรหัสผ่าน?";
+
+
+"Change Password" = "เปลี่ยนรหัสผ่าน";
+
+
+"Reset Password" = "รีเซ็ตรหัสผ่าน";
+
+
+
+
+
+
+
+
+"Report content" = "รายงานข้อกังวลของคุณ";
+
+
+"CHANGE EMAIL ADDRESS" = "เปลี่ยนที่อยู่อีเมลล์";
+
+
+"Follow The Guardian" = "ติดตาม ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "เราได้เพิ่มคุณสมบัติใหม่มากมายและแก้ไขข้อบกพร่องบางอย่างเพื่อให้ประสบการณ์ของคุณราบรื่นที่สุด";
+
+
+"Edition / Region" = "ฉบับ / ภูมิภาค";
+
+
+"OK" = "ตกลง";
+
+
+"NARRATOR" = "ผู้บรรยาย";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "การติดตามข่าวสารที่คุณชื่นชอบไม่ควรใช้เวลามากเกินไป News in Bullets ใช้เวลาอ่านปกติ 5 นาทีและย่อเป็นสัญลักษณ์แสดงหัวข้อย่อยที่ย่อยง่าย ตอนนี้คุณสามารถรับข่าวสารเดียวกันในช่วงเวลาสั้น ๆ - เพื่อให้คุณอ่านได้มากขึ้นในเวลาที่น้อยลง";
+
+
+"READING SPEED" = "ความเร็วในการอ่าน";
+
+
+
+
+
+"You haven't blocked anything yet" = "คุณยังไม่ได้บล็อกอะไร";
+
+
+"EDITION / REGION" = "EDITION / ภูมิภาค";
+
+
+
+
+
+"HEADLINES ONLY" = "HEADLINES เท่านั้น";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "การตั้งค่าเสียง";
+
+
+"AUDIO SETTINGS" = "การตั้งค่าเสียง";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "HEADLINES และ BULLETS";
+
+"CONTINUE AS GUEST" = "ข้ามและเข้าสู่ระบบในฐานะแขก";
+
+
+"Pick topics to start reading and saving articles" = "เลือกหัวข้อเพื่อเริ่มอ่านและบันทึกบทความ";
+
+
+"Choose from hundreds \nof news publications" = "เลือกจากสิ่งพิมพ์ข่าวหลายร้อยรายการ";
+
+"Pick topics to start reading\nand saving articles" = "เลือกหัวข้อเพื่อเริ่มอ่านและบันทึกบทความ";
+
+"Pick editions to start reading\nand saving articles" = "เลือกฉบับเพื่อเริ่มอ่านและบันทึกบทความ";
+
+"Or with" = "หรือด้วย";
+
+"CONTINUE AS GUEST" = "ดําเนินการต่อในฐานะแขก";
+
+"Terms of Service" = "เงื่อนไขการให้บริการ";
+
+"Choose from hundreds \nof news publications" = "เลือกจากสิ่งพิมพ์ข่าวหลายร้อยรายการ";
+
+"Select your preferred language\nfor News in Bullets." = "เลือกภาษาที่คุณต้องการสำหรับ News in Bullets";
+
+"Choose a style" = "เลือกสไตล์";
+
+"Pop or subtle. Day or night. Customize your interface." = "ป๊อปหรือบอบบาง กลางวันหรือกลางคืน. ปรับแต่งอินเทอร์เฟซของคุณ";
+
+"MINS AGO" = "นาทีที่ผ่านมา";
+
+"AN HOUR AGO" = "ชั่วโมงที่ผ่านมา";
+
+"HOURS AGO" = "ชั่วโมงที่แล้ว";
+
+"1 WEEK AGO" = "1 สัปดาห์ที่ผ่านมา";
+
+"YESTERDAY" = "เมื่อวานนี้";
+
+"DAYS AGO" = "วันที่ผ่านมา";
+
+"Go to" = "ไปที่";
+
+"You have reached the start." = "คุณมาถึงจุดเริ่มต้นแล้ว";
+
+"Source unblocked successfully" = "เลิกบล็อกแหล่งที่มาเรียบร้อยแล้ว";
+
+"Invalid email format"  = "รูปแบบอีเมลไม่ถูกต้อง";
+
+"Wrong email or password" = "อีเมลหรือรหัสผ่านไม่ถูกต้อง";
+
+
+"Personalize your reading experience" = "ปรับแต่งประสบการณ์การอ่านในแบบของคุณ";
+
+"Start following the news topics and channels you want to read." = "เริ่มติดตามหัวข้อข่าวและช่องที่คุณต้องการอ่าน";
+
+"LET'S GO" = "ไปกันเถอะ";
+
+"We’ll handle your data according to our\n" = "เราจะจัดการข้อมูลของคุณตามนั้น";
+
+"By clicking Continue, you agree with our " = "การคลิกดำเนินการต่อแสดงว่าคุณเห็นด้วยกับ";
+
+"Learn how we process your data in our"  = "เรียนรู้ว่าเราประมวลผลข้อมูลของคุณอย่างไร";
+
+"JUST NOW" = "แค่ตอนนี้";
+
+"Menu" = "เมนู";
+"Article Text Size" = "ขนาดข้อความของบทความ";
+"Change the font size shown on the articles" = "เปลี่ยนขนาดตัวอักษรที่แสดงในบทความ";
+"Small" = "เล็ก";
+"Default" = "ค่าเริ่มต้น";
+"Medium" = "ปานกลาง";
+"Large" = "ขนาด ใหญ่";
+
+"Related Articles" = "บทความที่เกี่ยวข้อง";
+"View Full Article" = "ดูบทความฉบับเต็ม";
+
+"Create your profile" = "สร้างโปรไฟล์ของคุณ";
+"Set your profile" = "ตั้งค่าโปรไฟล์ของคุณ";
+"View your profile" = "ดูโปรไฟล์ของคุณ";
+"ARTICLE TEXT SIZE" = "ขนาดข้อความของบทความ";
+"DATA SAVER" = "ประหยัดข้อมูล";
+"Edit Profile" = "แก้ไขโปรไฟล์";
+"Profile Settings" = "การตั้งค่าโปรไฟล์";
+"Edit what viewers see in your profile." = "แก้ไขสิ่งที่ผู้ชมเห็นในโปรไฟล์ของคุณ";
+"COVER PHOTO" = "ภาพปก";
+"Profile Name" = "ชื่อโปรไฟล์";
+"Help and Feedback" = "ความช่วยเหลือและคําติชม";
+"HELP AND FEEDBACK" = "ความช่วยเหลือและคําติชม";
+"Others" = "อื่น ๆ";
+"Feedback & Suggestions" = "ข้อเสนอแนะและข้อเสนอแนะ";
+"Help / Contact Us" = "ช่วยเหลือ / ติดต่อเรา";
+"Terms and Conditions" = "ข้อกำหนดและเงื่อนไข";
+"Notification" = "การแจ้งเตือน";
+"Push Notifications" = "ผลักดันการแจ้งเตือน";
+"Breaking News" = "ข่าวด่วน";
+"Personalized Recommendations" = "คำแนะนำส่วนบุคคล";
+"Timed Notifications" = "การแจ้งเตือนตามระยะเวลา";
+"Account" = "บัญชีผู้ใช้";
+"E-mail Address" = "ที่อยู่อีเมล";
+"Reels" = "ข่าวreels";
+
+"Comments" = "แสดงความคิดเห็น";
+"Write a reply..." = "เขียนข้อความตอบกลับ...";
+"Reply" = "ตอบกลับ";
+"Replies" = "ตอบกลับ";
+"View" = "มุมมอง";
+"more reply" = "ตอบกลับ";
+"more replies" = "ตอบกลับเพิ่มเติม";
+"Home" = "บ้าน";
+"Newsreels" = "ข่าวreels";
+
+"Following" = "กำลังติดตาม";
+"First Name" = "ชื่อ";
+"Last Name" = "นามสกุล";
+
+"This feature requires photo access" = "คุณสมบัตินี้ต้องการการเข้าถึงภาพถ่าย";
+"in phone settings, tap News in Bullets and turn on Photos" = "ในการตั้งค่าโทรศัพท์ ให้แตะ ข่าวในสัญลักษณ์แสดงหัวข้อย่อย แล้วเปิดใช้รูปภาพ";
+"Not Now" = "ไม่ใช่ตอนนี้";
+"Open Settings" = "เปิดการตั้งค่า";
+"No photos on this device" = "ไม่มีรูปภาพบนอุปกรณ์นี้";
+"if you want to change photo access settings, go to phone settings, tap News in Bullets and turn on Photos" = "หากคุณต้องการเปลี่ยนการตั้งค่าการเข้าถึงรูปภาพ ให้ไปที่การตั้งค่าโทรศัพท์ แล้วแตะ ข่าวในสัญลักษณ์แสดงหัวข้อย่อย แล้วเปิดใช้รูปภาพ";
+"Video duration" = "ระยะเวลาวิดีโอ";
+"Video too short" = "วิดีโอสั้นเกินไป";
+"Video too long" = "วิดีโอยาวเกินไป";
+"Done" = "เสร็จแล้ว";
+"Save" = "ประหยัด";
+"Processing.." = "กำลังดำเนินการ ..";
+"Trim" = "แก้ไขวีดีโอ";
+"Cover" = "ปก";
+"Albums" = "อัลบั้ม";
+"Gallery" = "แกลลอรี่";
+"Photos" = "รูป ภาพ";
+"Videos" = "วิดีโอ";
+"Next" = "ต่อไป";
+"Crop" = "ครอบตัดรูปภาพ";
+
+
+"Locations" = "ตำแหน่งที่ตั้ง";
+"Authors" = "ผู้เขียน";
+"Invalid Video" = "วิดีโอไม่ถูกต้อง";
+"Invalid Youtube link" = "ลิงก์ Youtube ไม่ถูกต้อง";
+"Article published successfully" = "เผยแพร่บทความเรียบร้อยแล้ว";
+"Article removed successfully" = "ลบบทความเรียบร้อยแล้ว";
+"Edit Article" = "แก้ไขบทความ";
+"Delete Article" = "ลบบทความ";
+"Before you can comment, you need to update your profile" = "ก่อนที่คุณจะสามารถโพสต์คุณต้องอัปเดตโปรไฟล์ของคุณ";
+"Update profile" = "อัปเดตโปรไฟล์";
+"Views" = "มุมมอง";
+
+"Edit Newsreels" = "แก้ไข ข่าวประชาสัมพันธ์";
+"Post article" = "ติดประกาศบทความ";
+"SAVE" = "ประหยัด";
+"Caption" = "คําอธิบายภาพ";
+"Create a Caption" = "การสร้างคําอธิบายภาพ";
+
+"Create a headline" = "สร้างพาดหัว";
+"Add Source Link (Optional)" = "เพิ่มลิงก์แหล่งที่มา (ไม่บังคับ)";
+"Enter a Caption" = "ใส่คําอธิบายภาพ";
+"Enter article headline" = "ใส่พาดหัวบทความ";
+
+"Add Bullet 1" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย 1";
+"Add Bullet 2" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย 2";
+"Add Bullet 3 (Optional)" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย 3 (ไม่บังคับ)";
+"Add Bullet 4 (Optional)" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย 4 (ไม่บังคับ)";
+"Add Bullet 5 (Optional)" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย 5 (ไม่บังคับ)";
+
+"Add Bullet" = "เพิ่มสัญลักษณ์แสดงหัวข้อย่อย";
+
+"Uploading video..." = "กำลังอัปโหลดวิดีโอ...";
+"Bullet" = "ลักษณ์แสดงหัวข้อย่อย";
+
+
+"Oops! Something went wrong. Please try again." = "อ๊ะ! บางอย่างผิดพลาด. กรุณาลองอีกครั้ง.";
+
+"Upload media" = "อัปโหลดสื่อ";
+"Upload Newsreels" = "อัปโหลด ข่าวประชาสัมพันธ์";
+"Upload YouTube link" = "อัปโหลดลิงค์ YouTube";
+"Before you post," = "ก่อนที่คุณจะโพสต์";
+"Please remember that you are joining a global community of readers and writers. In order to protect everybody from any form of misinformation and abuse, please review our " = "โปรดจําไว้ว่าคุณกําลังเข้าร่วมชุมชนผู้อ่านและนักเขียนทั่วโลก เพื่อปกป้องทุกคนจากรูปแบบใดๆของข้อมูลที่ผิดและการละเมิด, โปรดตรวจสอบของเรา";
+"Community Guidelines." = "หลักเกณฑ์ของชุมชน.";
+"By tapping Continue, you are agreeing to uphold the guidelines." = "การแตะดำเนินการต่อแสดงว่าคุณยินยอมที่จะรักษาหลักเกณฑ์";
+"Community Guidelines" = "หลักเกณฑ์ของชุมชน";
+
+"Upload bullet image (optional)" = "อัปโหลดภาพสัญลักษณ์แสดงหัวข้อย่อย (ไม่บังคับ)";
+"Delete" = "ลบ";
+"Replace" = "แทนที่";
+"Delete Bullet" = "ลบสัญลักษณ์แสดงหัวข้อย่อย";
+
+"Add Tag" = "เพิ่มแท็ก";
+"Get discovered locally" = "ที่จะได้รับการยอมรับในท้องถิ่น";
+"Add a location to your channel and get discovered by users near you." = "เพิ่มตําแหน่งที่ตั้งลงในช่องของคุณและค้นพบโดยผู้ใช้ที่อยู่ใกล้คุณ";
+"Max 5" = "สูงสุด 5";
+"RECOMMENDED" = "แนะ นำ";
+"comma, separated, tags" = "เครื่องหมายจุลภาค, แยก, แท็ก";
+
+"YouTube Article" = "บทความ YouTube";
+"Paste a YouTube link to upload a video from YouTube." = "วางลิงก์ YouTube เพื่ออัปโหลดวิดีโอจาก YouTube";
+"Paste a YouTube link to take import" = "วางลิงก์ YouTube เพื่อนำเข้า";
+"IMPORT" = "นําเข้า";
+
+"Enter Youtube link" = "ป้อนลิงก์ Youtube";
+"Preview" = "ดูก่อน";
+"POST" = "โพสต์";
+"Post to My Profile" = "โพสต์ไปที่โปรไฟล์ของฉัน";
+
+"RESULT" = "ผล";
+"followers" = "ผู้ติดตาม";
+"Followers" = "ผู้ติดตาม";
+"Posts" = "โพสต์";
+"Profile updated successfully" = "อัพเดตโปรไฟล์เสร็จเรียบร้อยแล้ว";
+"Tags" = " แท็ก";
+"No Posts Yet" = "ยังไม่มีโพสต์";
+
+
+"Add" = "เพิ่ม";
+"Select Ratio" = "เลือกอัตราส่วน";
+"Add topics tags" = "เพิ่มแท็กหัวข้อ";
+"Be discovered by people following the topics you are posting about." = "ถูกค้นพบโดยคนที่ติดตามหัวข้อที่คุณกำลังโพสต์เกี่ยวกับ";
+"Reels edited successfully." = "รีลได้รับการแก้ไขเรียบร้อยแล้ว";
+"Article edited successfully." = "บทความแก้ไขเรียบร้อยแล้ว";
+"Reels uploaded successfully." = "รีลที่อัปโหลดเรียบร้อยแล้ว";
+"Enter verification code" = "ป้อนรหัสยืนยัน";
+"RESEND" = "ส่งอีกครั้ง";
+"Processing..." =  "กำลังดำเนินการ ..";
+"Scheduled on:" = "มีกำหนดแล้วสำหรับ";
+"Enter profile name" = "ป้อนชื่อโพรไฟล์";
+"Ok, last thing is your channel image" = "ตกลงสิ่งสุดท้ายที่เป็นภาพช่องของคุณ";
+"Upload" = "อัปโหลด";
+"Before you can post article, you need to update your profile" = "ก่อนที่คุณจะสามารถโพสต์คุณต้องอัปเดตโปรไฟล์ของคุณ";
+"UPDATE" = "อัปเดต";
+"Scale" = "มาตราส่วน";
+"Saved Article" = "บทความที่บันทึกไว้";
+"Removed Article" = "บทความที่เอาออก";
+"Ok, last thing is your profile image" = "ตกลงสิ่งสุดท้ายที่เป็นภาพโปรไฟล์ของคุณ";
+"Relevant" = "เกี่ยว ข้อง กับ";
+
+"See More" = "ดูเพิ่มเติม";
+"Less" = "ดูน้อยลง";
+"Autoplay" = "เล่นอัตโนมัติ";
+"Reader Mode" = "โหมดเครื่องอ่าน";
+"Data Saver" = "ประหยัดข้อมูล";
+"Please enter a valid OTP." = "โปรดป้อน OTP ที่ถูกต้อง";
+"Enter a first name" = "ชื่อ";
+"Enter a last name" = "นามสกุล";
+
+"Password updated successfully" = "อัปเดตรหัสผ่านสำเร็จแล้ว";
+"Replying to" = "การตอบกลับไปยัง";
+"Unblock Topic" = "เลิกบล็อกหัวข้อ";
+"Please add your reel caption" = "โปรดเพิ่มคําอธิบายภาพรีลของคุณ";
+"Please add bullet" = "โปรดเพิ่มสัญลักษณ์แสดงหัวข้อย่อย";
+"Please add your article headline" = "โปรดเพิ่มพาดหัวบทความของคุณ";
+"Please add bullet 1" = "โปรดเพิ่มสัญลักษณ์แสดงหัวข้อย่อย 1";
+"Please add bullet 2" = "โปรดเพิ่มสัญลักษณ์แสดงหัวข้อย่อย 2";
+
+"Please enter a valid channel name" = "โปรดป้อนชื่อช่องที่ถูกต้อง";
+"Let people know what" = "แจ้งให้ผู้คนรู้ว่าอะไร";
+"your channel is about" = "ช่องของคุณเกี่ยวกับ";
+"Start by creating your" = "เริ่มต้นด้วยการสร้าง .ของคุณ";
+"channel name" = "ชื่อช่อง";
+"Describe your channel" = "อธิบายช่องของคุณ";
+"No pressure, you can change this later." = "ไม่มีแรงกดดันคุณสามารถเปลี่ยนสิ่งนี้ได้ในภายหลัง";
+"Channel created successfully" = "สร้างช่องทางเสร็จเรียบร้อยแล้ว";
+"Please enter your channel description" = "กรุณาใส่คําอธิบายช่องของคุณ";
+"Channel name already in use" = "ชื่อแชนเนลถูกใช้อยู่แล้ว";
+"Post to" = "โพสต์ถึง";
+
+"Available" = "ใช้ได้";
+"Already in use" = "ใช้อยู่แล้ว";
+"SCHEDULE POST" = "กำหนดการโพสต์";
+"DRAFTS" = "ร่างจดหมาย";
+"View channel" = "ดูช่อง";
+"Create a channel" = "สร้างช่อง";
+"Ok, last thing is" = "โอเค สิ่งสุดท้ายที่คือ";
+"your channel image" = "รูปช่องของคุณ";
+"looks amazing!" = "ดูน่าทึ่ง!";
+"CREATE CHANNEL" = "สร้างช่อง";
+"Scheduled Posts" = "กำหนดเวลาโพสต์";
+
+"You don't have any drafts yet." = "คุณยังไม่มีดราฟต์เลย";
+"Schedule" = "กำหนดการ";
+"There aren't any scheduled posts yet." = "ยังไม่มีโพสต์ที่กําหนดเวลาไว้";
+"Schedule a Post" = "กำหนดเวลาโพสต์";
+"Mod Tools" = "เครื่องมือ mod";
+"Unfollow Channel" = "เลิกติดตามช่อง";
+"Follow Channel" = "ติดตามช่อง";
+
+"Release to refresh" = "ปล่อยเพื่อรีเฟรช";
+"Loading..." =  "กำลังโหลด...";
+"Schedule Post" = "กำหนดการโพสต์";
+"Moderator Tools" = "เครื่องมือผู้ดูแล";
+"General" = "ทั่วไป";
+"Scheduled Posts" = "โพสต์ตามกำหนดการ";
+"Settings" = "การตั้งค่า";
+"channel and cover photo" = "ช่องและภาพปก";
+"Description" = "คำอธิบาย";
+"Will be posted in" = "จะถูกโพสต์ใน";
+"Will be posted on" = "จะถูกโพสต์บน";
+"Will be posted now" = "จะโพสต์ตอนนี้";
+"Select Date" = "เลือกวันที่";
+"Select Time" = "เลือกเวลา";
+"Please select date" = "กรุณาเลือกวันที่";
+"Please select time" = "กรุณาเลือกเวลา";
+"Continue with Apple" = "ดําเนินการต่อด้วย Apple";
+"Continue with Google" = "ดําเนินการต่อด้วย Google";
+"Continue with Facebook" = "ดําเนินการต่อด้วย Facebook";
+"Continue with email" = "ดําเนินการต่อด้วยอีเมล";
+"Login or create an account" = "เข้าสู่ระบบหรือสร้างบัญชี";
+"Login or create an account to read, share and comment on stories from all your favorite topics." = "เข้าสู่ระบบหรือสร้างบัญชีเพื่ออ่าน แบ่งปัน และแสดงความคิดเห็นในเรื่องราวจากหัวข้อที่คุณชื่นชอบทั้งหมด";
+"your profile image" = "รูปโปรไฟล์ของคุณ";
+"Invalid OTP code" = "รหัส OTP ไม่ถูกต้อง";
+
+"View your profile" = "ดูโปรไฟล์ของคุณ";
+"NEWS DESK" = "โต๊ะข่าว";
+"YOUR CHANNELS" = "ช่องของคุณ";
+"GENERAL" = "ทั่วไป";
+"WALLET" = "กระเป๋าเงิน";
+"POSTS" = "โพสต์";
+"PERSONALIZATIONS" = "การปรับเปลี่ยนในแบบของคุณ";
+"NETWORK" = "เครือข่าย";
+"Need more channels?" = "ต้องการช่องเพิ่มเติม?";
+"VIEW ALL & MANAGE" = "ดูทั้งหมด & จัดการ";
+
+"Community Feed" = "ฟีดชุมชน";
+"Create your post" = "สร้างโพสต์ของคุณ";
+"Media" = "สื่อ";
+"Youtube" = "ยูทูป";
+"You're all caught up" = "คุณทุกคนตามทันแล้ว";
+"You've seen all new posts" = "คุณได้เห็นโพสต์ใหม่ทั้งหมดแล้ว";
+"Go to top" = "ไปที่ด้านบน";
+"Suggested Reels" = "แนะนำ ข่าวประชาสัมพันธ์";
+"Suggested Authors" = "ผู้เขียนที่แนะนํา";
+
+
+"Share to" = "แบ่งปันไปที่";
+"Report" = "รายงาน";
+"Unsave Video" = "วิดีโอที่ไม่ได้บันทึก";
+"Save Video" = "บันทึกวิดีโอนี้";
+"Aspect Ratio" = "อัตราส่วนภาพ";
+"Rotate" = "หมุน";
+"Flip Vertical" = "พลิกแนวตั้ง";
+"Flip Horizontal" = "พลิกแนวนอน";
+
+
+"Community" = "ชุมชน";
+"APP LANGUAGE" = "ภาษาแอป";
+"You don't have any followers yet" = "คุณยังไม่มีผู้ติดตามเลย";
+
+
+"View Original Article" = "ดูบทความต้นฉบับ";
+"Places" = "สถานที่";
+"Languages" = "ภาษา";
+"New Posts" = "ใหม่โพสต์";
+"No posts yet" = "ยังไม่มีโพสต์";
+"All Followers" = "ผู้ติดตามทั้งหมด";
+"Add Place" = "เพิ่มสถานที่";
+"Add places tags" = "เพิ่มแท็กสถานที่";
+"Be discovered by people following the places you are posting about." = "ถูกค้นพบโดยผู้ที่ติดตามสถานที่ที่คุณกำลังโพสต์เกี่ยวกับ";
+
+"START FOLLOWING" = "เริ่มติดตาม";
+"You are not following anything yet" = "คุณยังไม่ได้เริ่มติดตามอะไรเลย";
+
+"Notifications" = "การแจ้งเตือน";
+"General" = "ทั่วไป";
+"News" = "ข่าว";
+"VIEW MORE" = "ดูเพิ่มเติม";
+"BULLETS AUTO PLAY" = "สัญลักษณ์แสดงหัวข้อย่อยเล่นอัตโนมัติ";
+"VIDEOS AUTO PLAY" = "วิดีโอเล่นอัตโนมัติ";
+"REELS AUTO PLAY" = "เล่นอัตโนมัติรีล";
+"READER THEME" = "ชุดรูปแบบผู้อ่าน";
+"News Content Language" = "ภาษาเนื้อหาข่าว";
+"FAVORITES" = "รายการโปรด";
+"Region/Places" = "ภูมิภาค / สถานที่";
+"Select Regions/Places" = "เลือกภูมิภาค/สถานที่";
+"Follow at least 3 topics" = "ติดตามอย่างน้อย 3 หัวข้อ";
+"Please Follow at least 3 topics" = "โปรดติดตามอย่างน้อย 3 หัวข้อ";
+"Explore Newsreels" = "สำรวจ ข่าวประชาสัมพันธ์";
+"Related Reels" = "วงล้อที่เกี่ยวข้อง";
+"Explore Your Feed" = "สำรวจฟีดของคุณ";
+"Sources" = "แหล่ง";
+"Articles, topics, channels, authors" = "บทความ หัวข้อ ช่อง ผู้เขียน";
+"View/Manage" = "ดู/จัดการ";
+"Add to Favorites" = "เพิ่มในรายการโปรด";
+"Remove from Favorites" = "ลบออกจากรายการโปรด";

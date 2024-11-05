@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "apakšpunkts";
+"BULLETS" = "BULLET PUNKTI";
+"Headlines is not available." = "Virsraksti nav pieejami.";
+"Check your internet Connection and try again." = "Pārbaudiet savu interneta savienojumu un mēģiniet vēlreiz.";
+"Choose Image" = "Izvēlieties attēlu";
+"Headline" = "virsraksts";
+"Bullet 1" = "Bullet 1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3 (pēc izvēles)";
+"Bullet 4 (Optional)" = "Bullet 4 (pēc izvēles)";
+"Bullet 5 (Optional)" = "Bullet 5 (pēc izvēles)";
+"Bullet 6 (Optional)" = "Bullet 6 (pēc izvēles)";
+"Enter Aticle Headline" = "Ievadiet Headline";
+"Enter source name" = "Ievadiet Source";
+"Enter reference link" = "Ievadiet Reference";
+"Enter published date" = "Ievadiet Publicēšanas datums";
+"Enter Bullet 1" = "Ievadiet First Bullet";
+"Enter Bullet 2" = "Ievadiet otro aizzīmes";
+"Post article successfully" = "Rakstā tiek publicēti veiksmīgi";
+"Follow" = "Sekojiet";
+"Unfollow" = "Nesekot";
+"Block articles from" = "Bloķēt rakstus";
+"Unblock articles from" = "Atbloķēt rakstus";
+"Remove article" = "Noņemt rakstu";
+"Save article" = "Saglabāt šo rakstu";
+"Terms & Conditions" = "Noteikumi";
+"Privacy Policy" = "Privātuma politika";
+"TERMS AND CONDITIONS" = "NOTEIKUMI UN NOSACĪJUMI";
+"PRIVACY POLICY" = "PRIVĀTUMA POLITIKA";
+"Fuel your curiosity" = "Lasīt vairāk ziņas par pasaulē";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Lasiet īsu un precīzu ziņu par savām iecienītākajām tēmām no uzticamiem avotiem visā pasaulē.";
+"Save time" = "Saglabāt savu laiku";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Lasīt ziņas aizzīmju punktiem";
+"Hands-free reading" = "lasījums Hands-free";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nav laika lasīšanai? Izmantojiet runas funkciju.";
+"Write your message..." = "Uzrakstiet savu ziņu ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "sūtiet mums ziņu, ja jums ir nepieciešama palīdzība ar kaut ko, mēs labprāt vēlētos dzirdēt no jums!";
+"Drop us a message" = "sūtiet mums ziņu";
+"Enter Name." = "Ievadiet nosaukumu.";
+"Enter Email." = "Ievadiet e-pastu.";
+"Write your message." = "Uzrakstiet savu ziņu.";
+"Topic unblock successfully" = "Jūs Atbloķētas šo tēmu";
+"Source unblock successfully" = "Jūs Atbloķētas šī avota";
+"Unblock Source" = "Atbloķēt Source";
+"Cancel" = "atcelt";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Sūtiet mums atsauksmes, mēs labprāt vēlētos dzirdēt no jums! Vai jums ir jautājumi vai juridiskas problēmas? Izmēģiniet mūsu palīdzības lapu vai sazinieties ar mums.";
+"Enter your suggestion." = "Ievadiet savu ierosinājumu.";
+"feedback sent." = "atgriezeniskā saite ir nosūtīta veiksmīgi";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Valodas ir veiksmīgi atjaunināts.";
+"CONTINUE" = "TURPINĀT";
+"FOLLOW 3 TO CONTINUE" = "Sekojiet 3. TURPINĀT";
+"Unfollow Location" = "Nesekot vieta";
+"Saved Articles" = "Saglabātās raksti";
+"Block" = "BLOĶĒT";
+"Are you sure you want block" = "Vai esat pārliecināts, ka vēlaties bloķēt šo";
+"Once blocked, you wont be able to see any Articles related to this" = "Jūs neredzēsiet rakstus šajā kanālā, ja to bloķēt.";
+"Block Topic" = "Bloķēt šo tēmu";
+"Suggested" = "Ieteikts";
+"Related Sources not available" = "Saistītu avotu nav pieejami";
+"Block Source" = "Bloķēt šo Source";
+"News in Bullets App version" = "Jaunumi Bullets App versijā";
+"Next" = "Nākamais";
+"Login" = "Pieslēgties";
+"Terms" = "noteikumi";
+"By clicking Continue, you agree with our Terms." = "Izvēlieties Turpināt, lai piekritis Noteikumiem.";
+"in our Privacy Policy." = "mūsu konfidencialitātes politiku.";
+"Access token missing." = "Piekļuves pilnvara ir pazudis.";
+"NEXT" = "NĀKAMAIS";
+"By checking this box, you agree to our " = "Noklikšķiniet lodziņā, lai pieņemtu noteikumus. Jūsu dati tiek apstrādāti saskaņā ar mūsu konfidencialitātes politiku.";
+"Terms of Service" = "Pakalpojumu sniegšanas noteikumi";
+". We’ll handle your data according to our " = ". Mēs apstrādāt savus datus saskaņā ar mūsu";
+"Password must be at least 8 characters." = "Parolei jābūt vismaz 8 rakstzīmēm.";
+"Strong" = "stiprs";
+"Medium" = "vidējs";
+"Weak" = "vājš";
+"CREATE A NEW ACCOUNT" = "IZVEIDOT JAUNU KONTU";
+"SIGN IN WITH EXISTING ACCOUNT" = "Pierakstieties ar jau esošu kontu";
+"You must agree to the Terms of Services to continue" = "Jums jāpiekrīt pakalpojumu sniegšanas noteikumus, lai turpinātu";
+"SIGN IN" = "Ielogoties";
+"What's your password?" = "Kāds ir jūsu paroli?";
+"SIGN UP" = "Pierakstīties";
+"Choose your password?" = "Izvēlies savu paroli";
+"Something went wrong" = "Kaut kas nogāja greizi";
+"we will send email to" = "mēs nosūtīsim e-pastu";
+"with a link to reset your password." = "ar saiti, lai atiestatītu savu paroli.";
+"A reset password link has been sent to" = "Saite uz reset paroli ir nosūtīts";
+"Enter new email." = "Ievadiet jaunu e-pasta adresi.";
+"Enter password." = "Ievadi paroli.";
+"New Password " = "jauna parole";
+" (8 characters min)" = "(8 rakstzīmes min)";
+"Enter current password." = "Ievadiet pašreizējo paroli.";
+"Enter new password." = "Ievadiet jaunu paroli.";
+"Enter confirm password." = "Apstipriniet paroli.";
+"password do not matched!" = "Paroles nesakrīt!";
+"GET STARTED" = "SĀC";
+"SKIP" = "Izlaist";
+"From where you would like to pick photo?" = "No kurienes jūs vēlaties saņemt fotogrāfiju?";
+"Camera" = "kamera";
+"Photo Library" = "Foto bibliotēka";
+"Kindly open settings and enable access" = "Laipni atvērtas iestatījumus un ļauj piekļūt";
+"Open Settings" = "Atvērt iestatījumi";
+"Access needed for your camera" = "Piekļuve nepieciešams jūsu kameru";
+"Access needed for your photo library" = "Piekļuve nepieciešama jūsu fotoattēlu bibliotēkā";
+"Done" = "Gatavs";
+"Pull to refresh" = "Velciet, lai atsvaidzinātu";
+"Loading" = "iekraušana";
+"Speech not available for this article" = "Runa nav pieejama šo rakstu";
+"MANAGE LOCATION" = "Pārvaldīt atrašanās vietas";
+"OK" = "labi";
+"Choose your News in Bullets Edition based on locale" = "Izvēlieties savu Ziņu Bullets Edition, pamatojoties uz lokalizāciju";
+"Edition" = "Izdevums";
+"EDITION / REGION" = "IZDEVUMS / REĢIONS";
+"Your Topics" = "Jūsu tēmas";
+"Your Channels" = "Jūsu kanāli";
+"Your Places" = "Jūsu vietas";
+"Enter email." = "Ievadiet e-pastu.";
+"Please enter a password." = "Lūdzu, ievadiet paroli.";
+"Search articles" = "Meklēt rakstus";
+"No results" = "Nav rezultātu";
+"Edition / Region" = "Izdevums / reģions";
+
+
+
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "0JC-Sb-Ouu"; */
+"0JC-Sb-Ouu.text" = "PARĀDĪŠANAS REŽĪMS";
+
+
+"Search" = "Meklēt";
+
+
+"Select" = "Izvēlieties ( ";
+
+
+"6H8-dI-k9P.text" = "Pārvaldīt atrašanās vietas";
+
+
+"6KH-YP-5Lt.text" = "stāstītājs";
+
+
+" ) icon on the article" = " ) Icon par rakstu";
+
+
+"BLOCK" = "BLOĶĒT";
+
+
+"you want to read later then" = "jūs vēlaties lasīt vēlāk";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "7oo-cf-l7Y"; */
+"7oo-cf-l7Y.text" = "Ātrums lasījuma";
+
+/* Class = "UILabel"; text = "Speed of reading"; ObjectID = "88L-ip-pZw"; */
+"88L-ip-pZw.text" = "Ātrums lasījuma";
+
+/* Class = "UILabel"; text = "There is nothing in here \nDo you want to go back to home page?"; ObjectID = "9hT-gC-mbD"; */
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Nekas šeit \nVai jūs vēlaties doties atpakaļ uz mājas lapā?";
+
+
+"BpH-F1-i0z.normalTitle" = "vietējs";
+
+
+" ) to save article." = " ), Lai saglabātu rakstu.";
+
+/* Class = "UILabel"; text = "to continue, choose 3"; ObjectID = "FB0-YN-HZg"; */
+"FB0-YN-HZg.text" = "turpināt, izvēlēties 3";
+
+/* Class = "UILabel"; text = "Headlines and\nBullet points"; ObjectID = "H5Z-xJ-dWD"; */
+"H5Z-xJ-dWD.text" = "Virsraksti un\naizzīmes";
+
+
+"Search" = "Meklēt";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "EXTENDED SKATĪT";
+
+
+"Jpx-nY-Is1.normalTitle" = "kanāli";
+
+
+"JqN-io-P1u.normalTitle" = "+ Pievienot vietās";
+
+/* Class = "UILabel"; text = "What is your Email address?"; ObjectID = "KRg-gX-n95"; */
+"What's your email?" = "Kāda ir jūsu e-pasta adrese?";
+
+
+"Lw1-Md-nse.text" = "LIST SKATĪT";
+
+
+"LyT-pT-g53.text" = "STARPTAUTISKA";
+
+
+"N6C-6i-Z2s.text" = "STARPTAUTISKA";
+
+/* Class = "UILabel"; text = "Suggestions"; ObjectID = "Nru-uU-CsC"; */
+"Nru-uU-CsC.text" = "Ieteikumi";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Tēmas";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "pielāgot";
+
+
+"Topics" = "Tēmas";
+
+/* Class = "UILabel"; text = "HEADLINES AND\nBULLET POINTS"; ObjectID = "WXY-po-W1B"; */
+"WXY-po-W1B.text" = "virsrakstus un\nBULLET PUNKTI";
+
+
+"ans-Zy-T2Y.placeholder" = "Meklēt Vietas";
+
+
+"bgE-Jc-u8H.text" = "pielāgot";
+
+
+
+
+
+"Tap the ( " = "Pieskarieties ( ";
+
+
+"Places" = "vieta";
+
+/* Class = "UILabel"; text = "Display Mode"; ObjectID = "d1l-HK-OrG"; */
+"d1l-HK-OrG.text" = "PARĀDĪŠANAS REŽĪMS";
+
+
+
+
+
+"Language" = "valoda";
+
+
+"e9g-Wr-suO.text" = "Tikai virsraksti";
+
+
+"GO HOME" = "doties atpakaļ uz galveno lapu";
+
+
+"eh1-Oo-lEn.text" = "EXTENDED SKATĪT";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "LIST SKATĪT";
+
+
+"j2i-MT-VkA.text" = "Mēģiniet citu atslēgvārdu";
+
+
+"Top News" = "Populārākās ziņas";
+
+
+"jmO-aF-nJ9.text" = "Tikai Virsraksti";
+
+
+"There is nothing in here" = "Nekas šeit";
+
+
+"ma1-9p-bSa.text" = "Nekas nav atrasts";
+
+
+"mce-jc-cKH.text" = "stāstītājs";
+
+
+"Channels" = "kanāli";
+
+
+"Discover" = "Atklājiet";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ATCELT";
+
+
+"Discover" = "Atklājiet";
+
+
+"No saved stories yet" = "Nekas šeit";
+
+
+"wDG-kF-Hl8.text" = "Lasīt ziņas, pamatojoties uz vietu";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALIZĀCIJA";
+
+
+"xfF-RB-mWL.text" = "LOKALIZĀCIJA";
+
+
+"Search" = "Meklēt";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Saņemiet visatbilstošākās ziņas izvēlētajam reģionam. Lasiet apkopotos ziņu stāstus, lai jūs būtu informēts par jaunākajām ziņām no jebkuras vietas pasaulē.";
+
+
+"Search articles" = "Meklēt rakstus";
+
+
+"6H8-dI-k9P.text" = "Pārvaldīt vietas";
+
+
+
+
+
+"Profile" = "Profils";
+
+
+"Editions" = "Izdevumi";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Vietas";
+
+
+
+
+
+"Search" = "Meklēt";
+
+
+
+
+
+
+
+
+"Search" = "Meklēt";
+
+
+"LANGUAGE" = "VALODA";
+
+
+"Search" = "Meklēt";
+
+
+"No results" = "Nekas nav atrasts";
+
+
+"Channels" = "Kanāli";
+
+
+"Places" = "Vietas";
+
+
+"Places" = "Vietas";
+
+
+"e9F-hd-Ifm.text" = "IZDEVUMS / REĢIONS";
+
+
+
+
+
+
+
+
+"PLACES" = "VIETAS";
+
+
+"SAVED ARTICLES" = "Ietaupīti izstrādājumi";
+
+
+"Articles" = "Raksti";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "TURPINĀT";
+
+
+
+
+
+"w8f-2R-NgT.text" = "IZDEVUMS / REĢIONS";
+
+
+"Try a different keyword" = "Izmēģiniet citu atslēgvārdu";
+
+
+"For You" = "Tev";
+
+
+"Results" = "Rezultāti";
+
+
+"About" = "Par mums";
+
+
+"Share" = "daļa";
+
+
+"ACCOUNT" = "KONTS";
+
+
+"Your Email" = "Tavs e-pasts";
+
+
+"1sT-J6-qI0.text" = "Saglabāts RAKSTI";
+
+
+"2XX-rr-GLC.text" = "Izvēlēties dažādus kanālus no simtiem avotiem";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Lasiet jaunākās ziņas notikumiem un funkcijas no visas pasaules.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Iestatiet laika intervālu, lai saņemtu paziņojumus.";
+
+
+"Off" = "no";
+
+
+
+
+
+"Bullet 2" = "Bullet 2";
+
+
+"What's your email?" = "Kāds ir tavs e-pasts?";
+
+
+"New Password (8 Characters Min)" = "Jaunā parole (vismaz 8 rakstzīmes)";
+
+
+"Forgot Password?" = "Aizmirsi paroli?";
+
+
+"Account Settings" = "Konta iestatījumi";
+
+
+"Learn how we process your data" = "Informācija par apstrādi savus datus";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Labi";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "Ieslēdz";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Palīdzības centrs";
+
+
+"Search" = "Meklēt kanāli";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Izvēlieties failu no galerijas";
+
+
+
+
+"Save article" = "Saglabāt rakstu";
+
+
+"ABOUT" = "PAR";
+
+
+"Dark" = "tumšs";
+
+
+"Legal" = "likumīgs";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "Nosūti atiestatīšanas saiti";
+
+
+
+
+
+"My Account" = "Mans Konts";
+
+
+"FEEDBACK" = "ATSAUKSMES";
+
+
+"Message" = "ziņa";
+
+
+"Confirm New Password" = "Apstipriniet jauno paroli";
+
+
+"for ___" = "priekš ___";
+
+
+"Search" = "Meklēt tēmas";
+
+
+"LANGUAGE" = "VALODA";
+
+
+"Light" = "gaisma";
+
+
+"FOLLOW 3 TO CONTINUE" = "turpināt, izvēlēties 3";
+
+
+
+
+"Off" = "Izslēgt";
+
+
+"Language" = "izvēlēties";
+
+
+"LOG OUT" = "IZLOGOTIES";
+
+
+"Report content" = "Ziņot par saturu";
+
+
+"What's your email?" = "Kāds ir tavs e-pasts?";
+
+
+"On" = "Ieslēdz";
+
+
+"More like this" = "Vairāk ziņu kā šis";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Ievadiet e-pasta adresi";
+
+
+"News in Bullets" = "Lasīt vairāk īsākā laikā.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Izvēlies savu paroli";
+
+
+"Cancel" = "atcelt";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Lasiet ziņas ātri ar šo app. Izvēlies savu tēmu un avotus. Tad lasītu ziņas ar īsām aizzīmju punktiem.";
+
+
+"Push Notification" = "paziņojums";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "E-pasts";
+
+
+"How can we help you?" = "Kā mēs varam palīdzēt?";
+
+
+"OJP-Wd-0d3.text" = "Pakistāna";
+
+
+"CHANGE PASSWORD" = "Mainīt paroli";
+
+
+"Change Email" = "MAINĪT EPASTA ADRESI";
+
+
+"Medium" = "vidējs";
+
+
+"SAVE CHANGES" = "SAGLABĀT IZMAIŅAS";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Sūtiet mums ziņu, ja jums ir nepieciešama palīdzība ar kaut ko, mēs labprāt vēlētos dzirdēt no jums!";
+
+
+"P5u-N3-Tw4.text" = "etiķete";
+
+
+"Cancel" = "atcelt";
+
+
+"Bullet 1" = "Bullet 1";
+
+
+"TIMED NOTIFICATIONS" = "PAZIŅOJUMI";
+
+
+"POST ARTICLE" = "POST rakstu";
+
+
+"CONTACT US" = "Sazinies ar mums";
+
+
+"EDITION / REGION" = "izdevums";
+
+
+"Search" = "Meklēt";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Sūtiet mums atsauksmes, mēs labprāt vēlētos dzirdēt no jums! Vai jums ir jautājumi vai juridiskas problēmas? Izmēģiniet mūsu palīdzības lapu vai sazinieties ar mums.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Sūtiet mums ziņu, ja jums ir nepieciešama palīdzība ar kaut ko, mēs labprāt vēlētos dzirdēt no jums!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "TURPINĀT";
+
+
+"Time To Update!" = "Atjaunināt lietotni!";
+
+
+"NOTIFICATIONS" = "PAZIŅOJUMI";
+
+
+"Search" = "Meklēt";
+
+
+"By clicking Continue, you agree with our Terms." = "Izvēlieties Turpināt, lai piekritis Noteikumiem.";
+
+
+"HELP / CONTACT US" = "Palīdzība / Kontakti";
+
+
+"Reset Password" = "Atiestatīt paroli";
+
+
+"SEND MESSAGE" = "SŪTĪT ZIŅU";
+
+
+"Save article" = "Saglabāt rakstu";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (pēc izvēles)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Jūsu ziņojums ir nosūtīts.";
+
+
+"LEGAL" = "JURIDISKA";
+
+
+"Block List" = "Block saraksts";
+
+
+"PERSONALIZATION" = "Personalizācija";
+
+
+"in our Privacy Policy." = "mūsu konfidencialitātes politiku.";
+
+
+"CONTINUE" = "TURPINĀT";
+
+
+"Enter Name" = "Ievadiet nosaukumu";
+
+
+"What's your email?" = "Kāds ir tavs e-pasts?";
+
+
+"Hello there!" = "Sveiki!";
+
+
+"PUSH NOTIFICATIONS" = "PAZIŅOJUMI";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (pēc izvēles)";
+
+
+"Source name" = "Nosaukums Source";
+
+
+"Current Password" = "Pašreizējā parole";
+
+
+"COLOR THEME" = "Krāsu motīvs";
+
+
+"eTp-X1-g34.text" = "vai caur";
+
+
+"CANCEL" = "ATCELT";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (pēc izvēles)";
+
+
+"Date published" = "Publicēšanas datums";
+
+
+"Send Password Reset Link" = "Nosūtīt saiti paroles atiestatīšanas";
+
+
+"CONTINUE WITH APPLE" = "Pierakstieties, izmantojot Apple ID";
+
+
+"Off" = "Izslēgt";
+
+
+"BLOCK LIST" = "BLOCK LIST";
+
+
+"HELP" = "PALĪDZĪBA";
+
+
+"Reference link" = "Atsauces saite";
+
+
+"Your Password" = "Tava parole";
+
+
+"SUBMIT" = "IESNIEGT";
+
+
+"HELP" = "PALĪDZĪBA";
+
+
+"MY ACCOUNT" = "MANS KONTS";
+
+
+"hbD-HP-tZd.normalTitle" = "Atbloķēt";
+
+
+"OTHERS" = "pārējie";
+
+
+"BREAKING NEWS" = "jaunākās ziņas";
+
+
+"Topics" = "Bloķēto tēmas";
+
+
+"Message us," = "Message us,";
+
+
+"Pick topics to start reading
+and saving articles" = "lietotne valoda";
+
+
+"Forgot Password?" = "Aizmirsi paroli?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Jaunās funkcijas ir pievienoti. Dažas problēmas ir novērstas.";
+
+
+"Success!" = "Veiksmes!";
+
+
+"Current Password" = "Pašreizējā parole";
+
+
+"CONTENT" = "SATURS";
+
+
+"Headline" = "virsraksts";
+
+
+"neg-UC-UpK.text" = "Tēmu izvēle, lai sāktu lasīt un ietaupīt rakstus";
+
+
+"CONTINUE WITH EMAIL ID" = "Turpiniet ar savu e-pasta ID";
+
+
+"SAVE CHANGES" = "SAGLABĀT IZMAIŅAS";
+
+
+"Post an Article" = "Izlikt pantu";
+
+
+"Contact Us" = "Sazinies ar mums";
+
+
+"On" = "Ieslēdz";
+
+
+"New Email Address" = "jauna e-pasta adrese";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (pēc izvēles)";
+
+
+"Suggest an improvement" = "Ieteikt uzlabojumu";
+
+
+"Channels" = "Bloķēto avoti";
+
+
+"From:" = "No:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "personalizēti ieteikumi";
+
+
+"I don't like this" = "Man tas nepatīk";
+
+
+"CONTINUE" = "TURPINĀT";
+
+
+"Name" = "nosaukums";
+
+
+"Enter email" = "Ievadiet e-pasta adresi";
+
+
+"HELP" = "PALĪDZĪBA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Sekojiet 3, lai turpinātu";
+
+
+"UPDATE APP" = "Atjaunināt App";
+
+
+"Forgot Password?" = "Aizmirsi paroli?";
+
+
+"Change Password" = "Paroles maiņa";
+
+
+"Reset Password" = "Atiestatīt paroli";
+
+
+
+
+
+
+
+
+"Report content" = "Ziņojiet savas bažas";
+
+
+"CHANGE EMAIL ADDRESS" = "MAINĪT EPASTA ADRESI";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Mēs pievienojām daudz jaunu funkciju un labojām dažas kļūdas, lai padarītu jūsu pieredzi pēc iespējas vienmērīgāku.";
+
+
+"Edition / Region" = "Izdevums / reģions";
+
+
+"OK" = "labi";
+
+
+"NARRATOR" = "RAKSTĪTĀJS";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Informēšana par iecienītākajām ziņām nedrīkst aizņemt pārāk daudz laika. News in Bullets regulāri izlasa 5 minūtes un sabiezina tos viegli sagremojamās lodēs. Tagad jūs varat uzņemt tos pašus jaunumus tikai nedaudz laika, lai jūs varētu izlasīt vairāk īsākā laikā.";
+
+
+"READING SPEED" = "LASĪŠANAS ĀTRUMS";
+
+
+
+
+
+"You haven't blocked anything yet" = "Jūs vēl neko neesat bloķējis";
+
+
+"EDITION / REGION" = "IZDEVUMS / REĢIONS";
+
+
+
+
+
+"HEADLINES ONLY" = "TIKAI GALVENĀS";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Audio iestatījumi";
+
+
+"AUDIO SETTINGS" = "AUDIO IESTATĪJUMI";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "GALVENES UN BULLES";
+
+
+"CONTINUE AS GUEST" = "PĀRTRAUKT UN PIESLĒGTIES KĀ VIESIS";
+
+
+"Topics" = "Tēmas";
+
+
+"Pick topics to start reading and saving articles" = "Izvēlieties tēmas, lai sāktu lasīt un saglabāt rakstus";
+
+
+"Channels" = "Kanāli";
+
+
+"Choose from hundreds \nof news publications" = "Izvēlieties no simtiem ziņu publikāciju";
+
+
+"Pick topics to start reading\nand saving articles" = "Izvēlieties tēmas, lai sāktu lasīt un saglabāt rakstus";
+
+"Pick editions to start reading\nand saving articles" = "Izvēlieties izdevumus, lai sāktu lasīt un saglabāt rakstus";
+
+"Or with" = "Vai ar";
+
+"CONTINUE AS GUEST" = "TURPINĀT KĀ VIESI";
+
+"Terms of Service" = "Pakalpojuma noteikumi";
+
+"Choose from hundreds \nof news publications" = "Izvēlieties no simtiem ziņu publikāciju";
+
+"Select your preferred language\nfor News in Bullets." = "Atlasiet vēlamo valodu ziņām aizzīmēs.";
+
+"Choose a style" = "Izvēlieties stilu";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop vai smalks. Diena vai nakts. Pielāgojiet savu saskarni.";
+
+"MINS AGO" = "pirms minūtēm";
+
+"AN HOUR AGO" = "pirms stundas";
+
+"HOURS AGO" = "pirms vairākām stundām";
+
+"1 WEEK AGO" = "Pirms 1 nedēļas";
+
+"YESTERDAY" = "Vakar";
+
+"DAYS AGO" = "dienas atpakaļ";
+
+"Go to" = "Iet uz";
+
+"You have reached the start." = "Jūs esat sasniedzis sākumu";
+
+"Source unblocked successfully" = "Avots veiksmīgi atbloķēts";
+
+"Invalid email format"  = "Nederīgs e-pasta formāts";
+
+"Wrong email or password" = "Nepareizs e-pasts vai parole";
+
+

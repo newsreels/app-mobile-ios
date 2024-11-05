@@ -1,0 +1,1009 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Pika kryesore";
+"BULLETS" = "PIKAT KRYESORE";
+"Headlines is not available." = "Titujt kryesorë nuk janë në dizspozicion.";
+"Check your internet Connection and try again." = "Kontrolloni lidhjen tuaj të internetit dhe provoni përsëri";
+"Choose Image" = "Zgjedhni foton";
+"Headline" = "Titulli kryesor";
+"Bullet 1" = "Bullet1";
+"Bullet 2" = "Bullet 2";
+"Bullet 3 (Optional)" = "Bullet 3( Opsional)";
+"Bullet 4 (Optional)" = "Bullet 4( Opsional)";
+"Bullet 5 (Optional)" = "Bullet 5( Opsional)";
+"Bullet 6 (Optional)" = "Bullet 6( Opsional)";
+"Enter Aticle Headline" = "Shkruani titullin kryesor";
+"Enter source name" = "Shkruani burimin";
+"Enter reference link" = "Shkruani referencat";
+"Enter published date" = "Shkruani datën e publikimit";
+"Enter Bullet 1" = "Shkruani bullet e parë";
+"Enter Bullet 2" = "Shkruani bulletin e dytë";
+"Post article successfully" = "Ky artikull është publikuar me sukses";
+"Follow" = "Ndiqni";
+"Unfollow" = "Mos e ndjekni";
+"Block articles from" = "BLLOKONI artikujt nga";
+"Unblock articles from" = "ZHBLLOKONI artikujt nga";
+"Remove article" = "Largoni artikullin    ";
+"Save article" = "Ruani artikullin";
+"Terms & Conditions" = "Termat dhe Kushtet";
+"Privacy Policy" = "Rregullorja e Privatësisë";
+"TERMS AND CONDITIONS" = "TERMAT DHE KUSHTET";
+"PRIVACY POLICY" = "RREGULLORJA E PRIVATËSISË";
+"Fuel your curiosity" = "Lexoni më shumë lajme rreth botës";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Lexoni lajme të shkurta dhe të duhura rreth temave tuaja të preferuara nga burime të sigurta rreth botës.";
+"Save time" = "Kurseni kohën tuaj";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Lexoni lajme në pika të shkurta";
+"Hands-free reading" = "Lexim i lirë";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "A nuk keni kohë për të lexuar? Përdorni funksionin e zërit";
+"Write your message..." = "Shkruani mesazhin tuaj";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Na dërgoni një mesazh nëse keni nevojë për ndihmë me diçka, ne do të donim të ju ndihmojmë.";
+"Drop us a message" = "Na dërgoni ne një mesazh";
+"Enter Name." = "Shkruani emrin";
+"Enter Email." = "Shkruani email adresën";
+"Write your message." = "Shkruani mesazhin tuaj";
+"Topic unblock successfully" = "Ju e keni zhbllokuar këtë temë";
+"Source unblock successfully" = "Ju e keni zhbllokuar këtë burim";
+"Unblock Source" = "Zhbllokoni burimin";
+"Cancel" = "Anuloni";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Na dërgoni ne reagime, ne do të donim të dëgjonim nga ju! A keni pytje ose shqetësime ligjore? Provoni faqen tonë për ndihmë ose na kontaktoni.";
+"Enter your suggestion." = "Shkruani sugjerimet tuaja";
+"feedback sent." = "Reagimi është dërguar me sukses";
+"30m" = "30 minuta";
+"1h" = "1 orë";
+"3h" = "3 orë";
+"6h" = "6 orë";
+"12h" = "12 orë";
+"24h" = "24 orë";
+"Language updated successfully." = "Gjuha është aktualizuar me sukses.";
+"CONTINUE" = "VAZHDONI";
+"FOLLOW 3 TO CONTINUE" = "NDJEKNI 3 PËR TË VAZHDUAR";
+"Unfollow Location" = "Mos e ndjekni Lokacionin";
+"Saved Articles" = "Artikujt e ruajtur";
+"Block" = "BLLOKONI ";
+"Are you sure you want block" = "A jeni i sigurtë që dëshironi të bllokoni këtë";
+"Once blocked, you wont be able to see any Articles related to this" = "Ju nuk do të shihni artikuj nga ky kanal nëse e bllokoni atë";
+"Block Topic" = "Bllokoni kërtë temë";
+"Suggested" = "Të sugjeruara";
+"Related Sources not available" = "Burimet përkatëse nuk janë në dispozicion";
+"Block Source" = "Bllokoni këtë burim";
+"News in Bullets App version" = "Versioni i Lajme në pika të shkurta";
+"Next" = "Tjetra";
+"Login" = "Kyquni";
+"Terms" = "Kushtet";
+"By clicking Continue, you agree with our Terms." = "Prekni Vazhdoni për të pranuar kushtet.";
+"in our Privacy Policy." = "Në rregulloren tonë të privatësisë";
+"Access token missing." = "Qasja po mungon";
+"NEXT" = "TJETRA";
+"By checking this box, you agree to our " = "Klikoni në kuti për të pranuar kushtet. Të dhënat e juaja janë përpunuar sipas Rregullores tonë të Privatësisë.";
+"Terms of Service" = "Kushtet e shërbimit";
+". We’ll handle your data according to our " = "Ne do të kujdesemi për të dhënat tuaja sipas";
+"Password must be at least 8 characters." = "Fjalëkalimi duhet të ketë të paktën 8 karaktere";
+"Strong" = "I Fuqishëm";
+"Medium" = "Mesatar";
+"Weak" = "I Dobët";
+"CREATE A NEW ACCOUNT" = "Krijoni një llogari të re";
+"SIGN IN WITH EXISTING ACCOUNT" = "Kyquni me një llogari ekzistuese";
+"You must agree to the Terms of Services to continue" = "Ju duhet ti pranoni kushtet e shërbimeve për të vazhduar";
+"SIGN IN" = "Kyquni";
+"What's your password?" = "Cili është fjalëkalimi juaj?";
+"SIGN UP" = "Krijoni një llogari të re";
+"Choose your password?" = "Zgjedhni fjalëkalimin tuaj";
+"Something went wrong" = "Diçka nuk ka shkuar në rregull";
+"we will send email to" = "Ne do të dërgojmë email në";
+"with a link to reset your password." = "Me një link për të rikrijuar fjalëkalimin";
+"A reset password link has been sent to" = "Një link për të rirkrijuar fjalëkalimin është dërguar te";
+"Enter new email." = "Shkruani email adresën e re";
+"Enter password." = "Shkruani fjalëkalimin";
+"New Password " = "Fjalëkalimi i ri";
+" (8 characters min)" = "(8 karaktere min.)";
+"Enter current password." = "Shkruani fjalëkalimin aktual";
+"Enter new password." = "Shkruani fjalëkalimin e ri";
+"Enter confirm password." = "Konfirmoni fjalëkalimin";
+"password do not matched!" = "Fjalëkalimet nuk përshtaten";
+"GET STARTED" = "FILLONI";
+"SKIP" = "ANASHKALONI";
+"From where you would like to pick photo?" = "Prej ku do të dëshironit të zgjedhni foton?";
+"Camera" = "Kamera";
+"Photo Library" = "Galeria e fotove";
+"Kindly open settings and enable access" = "Hapni ndryshimet dhe mundësoni qasjen.s";
+"Open Settings" = "Hapni ndryshimet";
+"Access needed for your camera" = "Nevojitet qasja në kamerën tuaj";
+"Access needed for your photo library" = "Nevojitet qasja në galerinë tuaj të fotove";
+"Done" = "Përfundoi";
+"Pull to refresh" = "Tërhiqni për rifreskim";
+"Loading" = "Duke u mbushur";
+"Speech not available for this article" = "Zëri nuk është në dispozicion për këtë artikull";
+"MANAGE LOCATION" = "MENAXHONI LOKACIONIN";
+"OK" = "Ne rregull";
+"Choose your News in Bullets Edition based on locale" = "Zgjidhni Lajmet tuaja në Edicionin Bullets bazuar në vendndodhjen";
+"Edition" = "Botimi";
+"EDITION / REGION" = "EDICIONI / RAJONI";
+"Your Topics" = "Temat tuaja";
+"Your Channels" = "Kanalet tuaja";
+"Your Places" = "Vendet tuaja";
+"Enter email." = "Fut email.";
+"Please enter a password." = "Ju lutemi shkruani një fjalëkalim.";
+"Search articles" = "Kërkoni artikuj";
+"No results" = "Nuk ka rezultate";
+"Edition / Region" = "Botimi / rajoni";
+
+
+
+
+"0JC-Sb-Ouu.text" = "MËNYRA E SHFAQJES";
+
+
+"Search" = "KËRKONI";
+
+
+"Select" = "ZGJEDHNI ";
+
+
+"6H8-dI-k9P.text" = "Menaxhoni lokacionet";
+
+
+"6KH-YP-5Lt.text" = "RRËFYESI";
+
+
+" ) icon on the article" = " IKONA NË ARTIKULL";
+
+
+"BLOCK" = "BLLOKO";
+
+
+"you want to read later then" = "DESHIRON TA LEXOSH MË VONË";
+
+
+"7oo-cf-l7Y.text" = "SHPEJTESIA E LEXIMIT";
+
+
+"88L-ip-pZw.text" = "SHPEJTESIA E LEXIMIT";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "KTHEHU TE FAQJA KRYESORE \nA DESHIRONI TË KTHEHENI TE FAQJA KRYESORE?";
+
+
+"BpH-F1-i0z.normalTitle" = "LOKALE";
+
+
+" ) to save article." = " RUANI ARTIKULLIN";
+
+
+"FB0-YN-HZg.text" = "PËR TË VAZHDUAR,ZGJEDHNI 3";
+
+
+"H5Z-xJ-dWD.text" = "TITUJT KRYESORË DHE\nPIKAT KRYESORE";
+
+
+"Search" = "KËRKO";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "PAMJE E ZGJERUAR";
+
+
+"Jpx-nY-Is1.normalTitle" = "KANALET";
+
+
+"JqN-io-P1u.normalTitle" = "SHTO LOKACIONIN";
+
+
+"What's your email?" = "CILA ËSHTË EMAIL ADRESA JUAJ?";
+
+
+"Lw1-Md-nse.text" = "PARAQITJA E LISTËS";
+
+
+"LyT-pT-g53.text" = "NDËRKOMBËTARE";
+
+
+"N6C-6i-Z2s.text" = "NDËRKOMBËTARE";
+
+
+"Nru-uU-CsC.text" = "Sugjerimet";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "TEMAT";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "RREGULLONI";
+
+
+"Topics" = "TEMAT";
+
+
+"WXY-po-W1B.text" = "TITUJT KRYESORË\nPIKAT KRYESORE";
+
+
+"ans-Zy-T2Y.placeholder" = "KËRKONI PËR LOKACIONET";
+
+
+"bgE-Jc-u8H.text" = "RREGULLONI";
+
+
+
+
+
+"Tap the ( " = "PREKNI ";
+
+
+"Places" = "LOKACIONI";
+
+
+"d1l-HK-OrG.text" = "MËNYRA E SHFAQJES";
+
+
+
+
+
+"Language" = "GJUHA";
+
+
+"e9g-Wr-suO.text" = "VETËM TITUJT KRYESORË";
+
+
+"GO HOME" = "KTHEHU TE FAQJA KRYESORE";
+
+
+"eh1-Oo-lEn.text" = "PAMJE E ZGJERUAR";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "PAMJA E LISTËS";
+
+
+"j2i-MT-VkA.text" = "PROVONI NJË TAST TJETËR";
+
+
+"Top News" = "LAJMET KRYESORE";
+
+
+"jmO-aF-nJ9.text" = "VETËM TITUJT KRYESORË";
+
+
+"There is nothing in here" = " KTHEHU PRAPA TE FAQJA KRYESORE";
+
+
+"ma1-9p-bSa.text" = "NUK JANË GJETUR REZULTATE";
+
+
+"mce-jc-cKH.text" = "RRËFYESI";
+
+
+"Channels" = "KANALET";
+
+
+"Discover" = "ZBULONI";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ANULONI";
+
+
+"Discover" = "ZBULONI";
+
+
+"No saved stories yet" = "KËTU NUK KA ASGJE";
+
+
+"wDG-kF-Hl8.text" = "LEXONI LAJMET VARËSISHT NGA LOKACIONI";
+
+
+
+
+
+"wKj-3i-n0R.text" = "LOKALIZIMI";
+
+
+"xfF-RB-mWL.text" = "LOKALIZIMI";
+
+
+"Search" = "Kërko";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Merrni lajmet më të rëndësishme për rajonin që zgjidhni. Lexoni histori të lajmeve të kuruara për t'ju mbajtur të azhurnuar me lajmet më të fundit nga kudo në botë.";
+
+
+"Search articles" = "Kërkoni artikuj";
+
+
+"6H8-dI-k9P.text" = "Menaxho vendet";
+
+
+
+
+
+"Profile" = "Profili";
+
+
+"Editions" = "Botimet";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Vendet";
+
+
+
+
+
+"Search" = "Kërko";
+
+
+
+
+
+
+
+
+"Search" = "Kërko";
+
+
+"LANGUAGE" = "GJUHE";
+
+
+"Search" = "Kërko";
+
+
+"No results" = "Nuk u gjetën rezultate";
+
+
+"Channels" = "Kanalet";
+
+
+"Places" = "Vendet";
+
+
+"Places" = "Vendet";
+
+
+"e9F-hd-Ifm.text" = "EDICIONI / RAJONI";
+
+
+
+
+
+
+
+
+"PLACES" = "VENDET";
+
+
+"SAVED ARTICLES" = "Artikuj të shpëtuar";
+
+
+"Articles" = "Artikuj";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "VAZHDONI";
+
+
+
+
+
+"w8f-2R-NgT.text" = "EDICIONI / RAJONI";
+
+
+"Try a different keyword" = "Provo një fjalë kyçe tjetër";
+
+
+"For You" = "Për ty";
+
+
+"Results" = "Rezultatet";
+
+
+
+"About" = "RRETH NESH";
+
+
+"Share" = "SHPËRNDANI";
+
+
+"ACCOUNT" = "LLOGARIA";
+
+
+"Your Email" = "EMAIL ADRESA JUAJ";
+
+
+"1sT-J6-qI0.text" = "ARTIKUJT E RUAJTUR ";
+
+
+"2XX-rr-GLC.text" = "ZGJEDHNI KANALE TË NDRYSHME NGA QINDRA BURIME ";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "LEXONI LAJMET E FUNDIT DHE EVENTET NGA E GJITHE BOTA ";
+
+
+"Set an interval in which you want to receive your news notifications." = "ZGJEDHNI NJË HAPËSIRË KOHORE TË PRANONI NJOFTIMET ";
+
+
+"Off" = "I FIKUR";
+
+
+
+
+
+"Bullet 2" = " Bullet 2";
+
+
+"What's your email?" = "CILA ËSHTË EMAIL ADRESA JUAJ";
+
+
+"New Password (8 Characters Min)" = "Fjalkalimi i ri (Minimumi 8 karaktere) ";
+
+
+"Forgot Password?" = "E keni harruar fjalkalimin? ";
+
+
+"Account Settings" = "Ndryshimet e llogarisë ";
+
+
+"Learn how we process your data" = "Informacione rreth përpunimit të të dhënave t ";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Në rregull";
+
+
+"Block articles from The Guardian" = "Bllokoni artikujt nga ";
+
+
+"On" = "Aktivizoni";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Qendra për ndihmë ";
+
+
+"Search" = "Kërkoni kanalet ";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Zgjedhni dokumentin nga galeria ";
+
+
+
+
+"Save article" = "Ruani artikullin ";
+
+
+"ABOUT" = "Rreth nesh";
+
+
+"Dark" = "Errësirë";
+
+
+"Legal" = "Ligjore";
+
+
+"Go to The Guardian" = "Shkoni te  ";
+
+
+"Send reset link" = "Dërgoni linkun reset ";
+
+
+
+
+
+"My Account" = "Llogaria ime ";
+
+
+"FEEDBACK" = "Reagimet";
+
+
+"Message" = "Mesazhet";
+
+
+"Confirm New Password" = "Konfirmoni fjalëkalimin e ri ";
+
+
+"for ___" = "për";
+
+
+"Search" = "Kërkoni për Tema";
+
+
+"LANGUAGE" = "Gjuha";
+
+
+"Light" = "Drita";
+
+
+"FOLLOW 3 TO CONTINUE" = "Për të vazhduar, zgjedhni 3";
+
+
+
+
+"Off" = "Deaktivizoni";
+
+
+"Language" = "Zgjedhni";
+
+
+"LOG OUT" = "Shkyquni";
+
+
+"Report content" = "Raportoni përmbajten";
+
+
+"What's your email?" = "Cila ështe email adresa juaj?";
+
+
+"On" = "Aktivizoni";
+
+
+"More like this" = "Më shumë lajme të tilla";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Vendosni email adresën";
+
+
+"News in Bullets" = "Lexoni më shumë në kohë më të shkurtër";
+
+
+"6h" = "6orë";
+
+
+"Choose your password" = "Zgjedhni fjalëkalimin tuaj";
+
+
+"Cancel" = "Anuloni";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Lexoni lajmet shpejt me këtë aplikacion. Zgjedhni temat dhe burimet tuaja. Pastaj lexoni lajme tuaja në pika të shkurta";
+
+
+"Push Notification" = "Noftim";
+
+
+"12h" = "12 orë";
+
+
+"24h" = "24 orë";
+
+
+"E-mail" = "Email adresa ";
+
+
+"How can we help you?" = "Si mundemi të ju ndihmojmë?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan ";
+
+
+"CHANGE PASSWORD" = "Ndryshoni fjalëkalimin";
+
+
+"Change Email" = "Ndryshoni email adresen tuaj";
+
+
+"Medium" = "Mesatare";
+
+
+"SAVE CHANGES" = "Ruani ndryshimet";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Na dergoni një mesazh nëse keni nevojë për ndihmë për dicka, ne do të donim të dëgjonim nga ju!";
+
+
+"P5u-N3-Tw4.text" = "Emërtimi";
+
+
+"Cancel" = "Anuloni";
+
+
+"Bullet 1" = "Bullet1";
+
+
+"TIMED NOTIFICATIONS" = "Njoftimet";
+
+
+"POST ARTICLE" = "Postoni një artikull";
+
+
+"CONTACT US" = "Na kontaktoni ne";
+
+
+"EDITION / REGION" = "Edicioni";
+
+
+"Search" = "Kërkoni";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Na dërgoni reagimet tuaja, ne do të donim të dëgjonim nga ju. A Keni ndonjë pyetje ose shqetësime ligjore.Provoni faqen tonë për ndihmë ose na kontaktoni ne";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Na dërgoni një mesazh nëse keni nevojë për diçka, ne do të donim të dëgjonim nga ju!";
+
+
+"30m" = "30min";
+
+
+"CONTINUE" = "Vazhdoni";
+
+
+"Time To Update!" = "Aktualizoni aplikacionin";
+
+
+"NOTIFICATIONS" = "Njoftimet";
+
+
+"Search" = "Kërkoni";
+
+
+"By clicking Continue, you agree with our Terms." = "Zgjedhni Vazhdoni për ti pranuar kushtet";
+
+
+"HELP / CONTACT US" = "NDIHMA / KONTAKTI ";
+
+
+"Reset Password" = "Rivendosni fjalkalimin";
+
+
+"SEND MESSAGE" = "DËRGONI MESAZH";
+
+
+"Save article" = "Ruani artikullin";
+
+
+"Bullet 6 (Optional)" = "Bullet 6 (Opcional) ";
+
+
+"HAPTICS" = "HAPTIK";
+
+
+"Your message has \vbeen sent." = "Mesazhi juaj është dërguar";
+
+
+"LEGAL" = "Ligjore";
+
+
+"Block List" = "Lista e bllokimeve";
+
+
+"PERSONALIZATION" = "PERSONALIZIMI";
+
+
+"in our Privacy Policy." = "Në rregulloren tonë të privatësisë";
+
+
+"CONTINUE" = "Vazhdoni";
+
+
+"Enter Name" = "Vendoni emrin";
+
+
+"What's your email?" = "Cila është email adresa juaj";
+
+
+"Hello there!" = "Përshëndetje";
+
+
+"PUSH NOTIFICATIONS" = "NJOFTIMET";
+
+
+"Bullet 3 (Optional)" = "Bullet 3 (Opsionale) ";
+
+
+"Source name" = "Emri i burimit";
+
+
+"Current Password" = "Fjalëkalimi aktual ";
+
+
+"COLOR THEME" = "NGJYRA    ";
+
+
+"eTp-X1-g34.text" = "Ose përmes";
+
+
+"CANCEL" = "ANULONI";
+
+
+"Bullet 4 (Optional)" = "Bullet 4 (Optionale) )";
+
+
+"Date published" = "Data e publikimit";
+
+
+"Send Password Reset Link" = "Dërgoni linkun për të rikrijuar fjalëkalimin tuaj";
+
+
+"CONTINUE WITH APPLE" = "Regjistrohuni përmes Apple ID";
+
+
+"Off" = "Deaktivizoni";
+
+
+"BLOCK LIST" = "LISTA E BLLOKIMEVE";
+
+
+"HELP" = "NDIHMA ";
+
+
+"Reference link" = "Linku i referencave";
+
+
+"Your Password" = "Fjalëkalimi juaj";
+
+
+"SUBMIT" = "Dërgoni";
+
+
+"HELP" = "NDIHMA";
+
+
+"MY ACCOUNT" = "LLOGARIA IME";
+
+
+"hbD-HP-tZd.normalTitle" = "ZHBLLOKONI";
+
+
+"OTHERS" = "Të tjera";
+
+
+"BREAKING NEWS" = "Lajme të reja të fundit";
+
+
+"Topics" = "Tema të bllokuara";
+
+
+"Message us," = "Na shkruani mesazh";
+
+
+"Pick topics to start reading
+and saving articles" = "Gjuha e aplikacionit";
+
+
+"Forgot Password?" = "E keni harruar fjalkalimin?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Karakteristika të reja janë shtuar. Disa probleme janë rregulluar";
+
+
+"Success!" = "Sukses!!";
+
+
+"Current Password" = "Fjalkalimi aktual";
+
+
+"CONTENT" = "PËRMBAJTJA";
+
+
+"Headline" = "Titulli kryesor";
+
+
+"neg-UC-UpK.text" = "Zgjedhni temat për të filluar të lexoni dhe të ruani artikujt";
+
+
+"CONTINUE WITH EMAIL ID" = "Vazhdoni me email adresen tuaj";
+
+
+"SAVE CHANGES" = "RUANI NDRYSHIMET";
+
+
+"Post an Article" = "Postoni një artikull";
+
+
+"Contact Us" = "Na kontaktoni ne";
+
+
+"On" = "Aktivizoni";
+
+
+"New Email Address" = "Email Adresa juaj e re";
+
+
+"Bullet 5 (Optional)" = "Bullet 5 (Opsionale) ";
+
+
+"Suggest an improvement" = "Sugjeroni një përmisim";
+
+
+"Channels" = "Burimet e bllokuara";
+
+
+"From:" = "Nga:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "REKOMANDIMET E PERSONALIZUARA";
+
+
+"I don't like this" = "Mua nuk më pëlqen kjo";
+
+
+"CONTINUE" = "VAZHDONI";
+
+
+"Name" = "Emri ";
+
+
+"Enter email" = "Vendosni email adresën";
+
+
+"HELP" = "NDIHMA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Ndjekni 3 për të vazhduar";
+
+
+"UPDATE APP" = "Aktualizoni aplikacionin";
+
+
+"Forgot Password?" = "A e keni harruarr fjalëkalimin tuaj?    ";
+
+
+"Change Password" = "Ndryshoni fjalëkalimin";
+
+
+"Reset Password" = "Rikrijoni fjalkalimin";
+
+
+
+
+
+
+
+
+"Report content" = "Raportoni shqetësimet tuaja";
+
+
+"CHANGE EMAIL ADDRESS" = "NDRYSHONI EMAIL ADRESËN TUAJ";
+
+
+"Follow The Guardian" = "Ndjekni-";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Ne shtuam shumë veçori të reja dhe rregullojmë disa gabime për ta bërë përvojën tuaj sa më të qetë të jetë e mundur.";
+
+
+"Edition / Region" = "Botimi / rajoni";
+
+
+"OK" = "Ne rregull";
+
+
+"NARRATOR" = "TRANSMETUESI";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Mbajtja e azhurnuar për lajmet që ju doni nuk duhet të marrë shumë nga koha juaj. Lajmet në plumba lexojnë rregullisht 5 minuta dhe i kondensojnë ato në plumba lehtësisht të tretshëm. Tani, ju mund të merrni të njëjtat lajme në vetëm një pjesë të kohës - kështu që të mund të lexoni më shumë në më pak kohë.";
+
+
+"READING SPEED" = "LEXIMI I Shpejtësisë";
+
+
+
+
+
+"You haven't blocked anything yet" = "Nuk keni bllokuar asgjë akoma";
+
+
+"EDITION / REGION" = "EDICIONI / RAJONI";
+
+
+
+
+
+"HEADLINES ONLY" = "VETEM HEADLINES";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Cilësimet e audios";
+
+
+"AUDIO SETTINGS" = "RREGULLAT AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "KARTAT DHE BULLAT";
+
+
+"CONTINUE AS GUEST" = "SHKALO & LOG-IN SI M GSUAN";
+
+
+"Topics" = "Temat";
+
+
+"Pick topics to start reading and saving articles" = "Zgjidhni temat për të filluar leximin dhe ruajtjen e artikujve";
+
+
+
+"Channels" = "Kanalet";
+
+
+"Choose from hundreds \nof news publications" = "Zgjidhni nga qindra botime të lajmeve";
+
+
+"Pick topics to start reading\nand saving articles" = "Zgjidhni temat për të filluar leximin dhe ruajtjen e artikujve";
+
+"Pick editions to start reading\nand saving articles" = "Zgjidhni botime për të filluar leximin dhe ruajtjen e artikujve";
+
+"Or with" = "Ose me";
+
+"CONTINUE AS GUEST" = "VAZHDO SI MYSAFIR";
+
+"Terms of Service" = "Kushtet e shërbimit";
+
+"Choose from hundreds \nof news publications" = "Zgjidhni nga qindra botime të lajmeve";
+
+"Select your preferred language\nfor News in Bullets." = "Zgjidhni gjuhën tuaj të preferuar për News in Bullets.";
+
+"Choose a style" = "Zgjidhni një stil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop apo delikate. Dita apo nata. Personalizoni ndërfaqen tuaj.";
+
+"MINS AGO" = "MINUTA MË PARË";
+
+"AN HOUR AGO" = "NJË ORË MË PARË";
+
+"HOURS AGO" = "ORË MË PARË";
+
+"1 WEEK AGO" = "1 JAVË MË PARË";
+
+"YESTERDAY" = "DJE";
+
+"DAYS AGO" = "DITË MË PARË";
+
+"Go to" = "Shko në";
+
+"You have reached the start." = "Ju keni arritur në fillim";
+
+"Source unblocked successfully" = "Burimi u zhbllokua me sukses";
+
+"Invalid email format"  = "Format i pavlefshëm i postës elektronike";
+
+"Wrong email or password" = "Email ose fjalëkalim i gabuar";
+
+

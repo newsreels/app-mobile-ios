@@ -1,0 +1,770 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "Punt clau";
+"BULLETS" = "PUNTS CLAU";
+"Headlines is not available." = "Els titulars no estan disponibles.";
+"Check your internet Connection and try again." = "Verifiqui la seva connexió a Internet i torni a intentar-ho.";
+"Choose Image" = "Triar imatge";
+"Headline" = "Titular";
+"Bullet 1" = "Bala 1";
+"Bullet 2" = "Bala 2";
+"Bullet 3 (Optional)" = "Bala 3 (opcional)";
+"Bullet 4 (Optional)" = "Bala 4 (opcional)";
+"Bullet 5 (Optional)" = "Bala 5 (opcional)";
+"Bullet 6 (Optional)" = "Bala 6 (opcional)";
+"Enter Aticle Headline" = "Ingressi el títol";
+"Enter source name" = "Ingressi la Font";
+"Enter reference link" = "Ingressi la referència";
+"Enter published date" = "Ingressi la data de publicació";
+"Enter Bullet 1" = "Introdueixi la primera bala";
+"Enter Bullet 2" = "Introdueixi la segona bala";
+"Post article successfully" = "L'article s'ha publicat correctament.";
+"Follow" = "Seguir";
+"Unfollow" = "Deixar de seguir";
+"Block articles from" = "BLOQUEJAR els articles de";
+"Unblock articles from" = "DESBLOQUEJAR els articles de";
+"Remove article" = "Llevar l'article";
+"Save article" = "Guardar aquest article";
+"Terms & Conditions" = "Termes i condicions";
+"Privacy Policy" = "Política de privacitat";
+"TERMS AND CONDITIONS" = "TERMES I CONDICIONS";
+"PRIVACY POLICY" = "POLÍTICA DE PRIVACITAT";
+"Fuel your curiosity" = "Llegir més notícies sobre l'actualitat";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Llegeixi notícies breus i precises sobre els seus temes favorits de fonts de confiança de tot el món.";
+"Save time" = "Estalviï el seu temps";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Llegir les notícies en bales";
+"Hands-free reading" = "Lectura mans lliures";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "No tens temps per a llegir? Utilitzi la funció de veu.";
+"Write your message..." = "Escriu el teu missatge...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "enviï'ns un missatge si necessita ajuda amb alguna cosa, ens encantaria saber de vostè!";
+"Drop us a message" = "Mandanos un missatge";
+"Enter Name." = "Ingressi el seu nom.";
+"Enter Email." = "Ingressi correu electrònic.";
+"Write your message." = "Escriu el teu missatge.";
+"Topic unblock successfully" = "Vas desbloquejar aquest tema";
+"Source unblock successfully" = "Vas desbloquejar aquesta font";
+"Unblock Source" = "Desbloquejar font";
+"Cancel" = "Cancel·lar";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Enviï'ns els seus comentaris, ens encantaria saber de vostè! Té preguntes o inquietuds legals? Provi la nostra pàgina d'ajuda o contacti'ns.";
+"Enter your suggestion." = "Ingressi el seu suggeriment.";
+"feedback sent." = "els comentaris s'envien amb èxit";
+"30m" = "30m";
+"1h" = "1h";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "l'idioma es va actualitzar correctament.";
+"CONTINUE" = "SEGUIR";
+"FOLLOW 3 TO CONTINUE" = "SEGUEIX 3 PER A CONTINUAR";
+"Unfollow Location" = "Deixar de seguir la ubicació";
+"Saved Articles" = "Articles guardats";
+"Block" = "BLOQUEJAR";
+"Are you sure you want block" = "Estàs segur que vols bloquejar això?";
+"Once blocked, you wont be able to see any Articles related to this" = "No veurà articles d'aquest canal si el bloqueja.";
+"Block Topic" = "Bloquejar aquest tema";
+"Suggested" = "Va suggerir";
+"Related Sources not available" = "Les fonts relacionades no estan disponibles";
+"Block Source" = "Bloquejar aquesta font";
+"News in Bullets App version" = "Novetats en la versió de l'aplicació Bala";
+"Next" = "pròxim";
+"Login" = "Iniciar sessió";
+"Terms" = "Condicions";
+"By clicking Continue, you agree with our Terms." = "Seleccioni Continuar per a acceptar els Termes.";
+"in our Privacy Policy." = "en la nostra Política de privacitat.";
+"Access token missing." = "Falta el token d'accés.";
+"NEXT" = "SEGÜENT";
+"By checking this box, you agree to our " = "Faci clic en la casella per a acceptar els Termes. Les seves dades es processen d'acord amb la nostra Política de privacitat.";
+"Terms of Service" = "Termes de servei";
+". We’ll handle your data according to our " = ". Tractarem les seves dades d'acord amb nostra";
+"Password must be at least 8 characters." = "La contrasenya ha de tenir almenys 8 caràcters.";
+"Strong" = "Fort";
+"Medium" = "Mig";
+"Weak" = "Febles";
+"CREATE A NEW ACCOUNT" = "CREA UN COMPTE NOU";
+"SIGN IN WITH EXISTING ACCOUNT" = "INICIAR SESSIÓ AMB COMPTE EXISTENT";
+"You must agree to the Terms of Services to continue" = "Ha d'acceptar els Termes de servei per a continuar";
+"SIGN IN" = "Registrar-se";
+"What's your password?" = "Com és la teva contrasenya";
+"SIGN UP" = "Registra't";
+"Choose your password?" = "tria la teva contrasenya";
+"Something went wrong" = "Alguna cosa va sortir malament";
+"we will send email to" = "enviarem un correu electrònic a amb";
+"with a link to reset your password." = "un enllaç per a restablir la seva contrasenya.";
+"A reset password link has been sent to" = "S'ha enviat un enllaç per a restablir la contrasenya a Ingrese";
+"Enter new email." = "un nou correu electrònic.";
+"Enter password." = "Introduir la contrasenya.";
+"New Password " = "Nova contrasenya";
+" (8 characters min)" = "(8 caràcters mínim)";
+"Enter current password." = "Introduir la contrasenya actual.";
+"Enter new password." = "Introdueixi nova contrasenya.";
+"Enter confirm password." = "Confirmar contrasenya.";
+"password do not matched!" = "Les contrasenyes no coincideixen!";
+"GET STARTED" = "COMENÇAR";
+"SKIP" = "OMETRE";
+"From where you would like to pick photo?" = "D'on li agradaria triar la foto?";
+"Camera" = "Cambra";
+"Photo Library" = "Llibreria fotogràfica";
+"Kindly open settings and enable access" = "Amablement obri la configuració i habiliti l'accés";
+"Open Settings" = "Configuració oberta";
+"Access needed for your camera" = "Accés necessari per a la seva càmera";
+"Access needed for your photo library" = "Accés necessari per a la seva biblioteca de fotos";
+"Done" = "Fet";
+"Pull to refresh" = "Tiri per a actualitzar";
+"Loading" = "Carregant";
+"Speech not available for this article" = "Discurs no disponible per a aquest article";
+"MANAGE LOCATION" = "ADMINISTRAR UBICACIÓ";
+"OK" = "D'ACORD";
+"Choose your News in Bullets Edition based on locale" = "Trieu les vostres notícies a Bullets Edition segons la configuració regional";
+"Edition" = "Edició";
+"EDITION / REGION" = "EDICIÓ / REGIÓ";
+"Your Topics" = "Els vostres temes";
+"Your Channels" = "Els vostres canals";
+"Your Places" = "Els vostres llocs";
+"Enter email." = "Introduïu el correu electrònic.";
+"Please enter a password." = "Introduïu una contrasenya.";
+"Search articles" = "Cerqueu articles";
+"No results" = "Sense resultats";
+"Edition / Region" = "Edició / Regió";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "BLOQUEJAR";
+"CANCEL" = "CANCEL·LAR";
+"PLACES" = "LLOCS";
+"LANGUAGE" = "LLENGUATGE";
+"Profile" = "Perfil";
+"SAVED ARTICLES" = "ARTICLES SALVATS";
+"Topics" = "Temes";
+"Channels" = "Canales";
+"Editions" = "Edicions";
+"No saved stories yet" = "No hi ha res aqui";
+"Tap the" = "Toc en el";
+"icon on the article" = "icona en l'article";
+"you want to read later then" = "vols llegir més tard llavors";
+"Select" = "Seleccioni";
+"to save article." = "per a guardar l'article.";
+"There is nothing in here" = "No hi ha res aquí.";
+"Looks like there is nothing here but a cat." = "Sembla que aquí no hi ha res més que un gat.";
+"Would you like to go back to home?" = "Tornar a la pàgina principal?";
+"GO HOME" = "ANAR A CASA";
+"Search" = "Buscar";
+"Discover" = "Descubrir";
+"Articles" = "Articles";
+"Try a different keyword" = "Proveu una paraula clau diferent";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Obteniu les notícies més rellevants per a la regió que trieu. Llegiu notícies seleccionades per mantenir-vos al dia de les últimes notícies de qualsevol part del món.";
+"Language" = "Llenguatge";
+"Results" = "Resultats";
+"For You" = "Per a Vostè";
+"Top News" = "Cim Notícies";
+"Choose a style" = "Trieu un estil";
+"Pop or subtle. Day or night. Customize your interface." = "Pop o subtil. Dia o nit. Personalitzeu la vostra interfície.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+"About" = "Sobre nosaltres";
+
+
+"Share" = "Compartir";
+
+
+"ACCOUNT" = "COMPTE";
+
+
+"Your Email" = "El teu correu electrònic";
+
+
+"1sT-J6-qI0.text" = "ARTICLES GUARDATS";
+
+
+"2XX-rr-GLC.text" = "Triï diferents canals de centenars de fonts";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Llegeixi les últimes notícies, esdeveniments i característiques de tot el món.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Estableixi un interval de temps per a rebre notificacions.";
+
+
+"Off" = "Apagat";
+
+
+
+
+
+"Bullet 2" = "Bala 2";
+
+
+"What's your email?" = "Quin és el teu correu electrònic?";
+
+
+"New Password (8 Characters Min)" = "Nova contrasenya (mínim 8 caràcters)";
+
+
+"Forgot Password?" = "Se't va oblidar la teva contrasenya?";
+
+
+"Account Settings" = "Configuracions del compte";
+
+
+"Learn how we process your data" = "Informació sobre el tractament de les seves dades";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Okay";
+
+
+"Block articles from The Guardian" = "Bloquejar articles de ---";
+
+
+"On" = "Encendre";
+
+
+"Auto" = "Acte";
+
+
+"Help Center" = "Centre d'ajuda";
+
+
+"Search" = "Canales de cerca";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Seleccionar arxiu de la galeria";
+
+
+
+
+"Save article" = "Guardar article";
+
+
+"ABOUT" = "SOBRE";
+
+
+"Dark" = "Fosc";
+
+
+"Legal" = "Legal";
+
+
+"Go to The Guardian" = "Anar ---";
+
+
+"Send reset link" = "Enviar enllaç de restabliment";
+
+
+
+
+
+"My Account" = "El meu compte";
+
+
+"FEEDBACK" = "RETROALIMENTACIÓ";
+
+
+"Message" = "Missatge";
+
+
+"Confirm New Password" = "Confirmar nova contrasenya";
+
+
+"for ___" = "per a Cerca ___";
+
+
+"Search" = "per temes";
+
+
+"LANGUAGE" = "IDIOMA";
+
+
+"Light" = "Lleuger";
+
+
+"FOLLOW 3 TO CONTINUE" = "per a continuar, tria 3";
+
+
+
+
+"Off" = "Apagar";
+
+
+"Language" = "Triar";
+
+
+"LOG OUT" = "TANCAR SESSIÓ";
+
+
+"Report content" = "Reportar contingut";
+
+
+"What's your email?" = "Quin és el teu correu electrònic?";
+
+
+"On" = "Encendre";
+
+
+"More like this" = "Més notícies com aquesta";
+
+
+"Bullet App v1.1.0" = "Bala App v1.1.0";
+
+
+"1h" = "1h";
+
+
+"Enter Email Address" = "Introdueixi l'adreça de correu electrònic";
+
+
+"News in Bullets" = "Llegir més en menys temps.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "tria la teva contrasenya";
+
+
+"Cancel" = "Cancel·lar";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Llegeixi les notícies ràpidament amb aquesta aplicació. Triï els seus temes i fonts. Després llegeixi les seves notícies amb bales breus.";
+
+
+"Push Notification" = "Notificació";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Com podem ajudar?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "CANVIA LA CONTRASENYA";
+
+
+"Change Email" = "CANVIAR ADREÇA DE CORREU ELECTRÒNIC";
+
+
+"Medium" = "Mitjà";
+
+
+"SAVE CHANGES" = "GUARDAR CANVIS";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Enviï'ns un missatge si necessita ajuda amb alguna cosa, ens encantaria saber de vostè!";
+
+
+"P5u-N3-Tw4.text" = "Etiqueta";
+
+
+"Cancel" = "Cancel·lar";
+
+
+"Bullet 1" = "Bala 1";
+
+
+"TIMED NOTIFICATIONS" = "NOTIFICACIONS";
+
+
+"POST ARTICLE" = "PUBLICAR UN ARTICLE";
+
+
+"CONTACT US" = "Contacti'ns";
+
+
+"EDITION / REGION" = "Edició";
+
+
+"Search" = "Buscar";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Enviï'ns els seus comentaris, ens encantaria saber de vostè! Té preguntes o inquietuds legals? Provi la nostra pàgina d'ajuda o contacti'ns.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Enviï'ns un missatge si necessita ajuda amb alguna cosa, ens encantaria saber de vostè!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "SEGUIR";
+
+
+"Time To Update!" = "Actualitza l'aplicació!";
+
+
+"NOTIFICATIONS" = "NOTIFICACIONS";
+
+
+"Search" = "Buscar";
+
+
+"By clicking Continue, you agree with our Terms." = "Seleccioni Continuar per a acceptar els Termes.";
+
+
+"HELP / CONTACT US" = "AJUDA / CONTACTE";
+
+
+"Reset Password" = "Restablir la contrasenya";
+
+
+"SEND MESSAGE" = "ENVIAR MISSATGE";
+
+
+"Save article" = "Guardar article";
+
+
+"Bullet 6 (Optional)" = "Bala 6 (opcional)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "El teu missatge ha estat enviat.";
+
+
+"LEGAL" = "LEGAL";
+
+
+"Block List" = "Llista de bloquejos";
+
+
+"PERSONALIZATION" = "PERSONALITZACIÓ";
+
+
+"in our Privacy Policy." = "en la nostra Política de Privacitat.";
+
+
+"CONTINUE" = "SEGUIR";
+
+
+"Enter Name" = "Ingressi el seu nom";
+
+
+"What's your email?" = "Quin és el teu correu electrònic?";
+
+
+"Hello there!" = "Hola!";
+
+
+"PUSH NOTIFICATIONS" = "NOTIFICACIONS";
+
+
+"Bullet 3 (Optional)" = "Bala 3 (opcional)";
+
+
+"Source name" = "Nom de la font";
+
+
+"Current Password" = "contrasenya actual";
+
+
+"COLOR THEME" = "Tema de color";
+
+
+"eTp-X1-g34.text" = "O a través de";
+
+
+"CANCEL" = "CANCEL·LAR";
+
+
+"Bullet 4 (Optional)" = "Bala 4 (opcional)";
+
+
+"Date published" = "Data de publicació";
+
+
+"Send Password Reset Link" = "Enviar enllaç per a restablir la contrasenya";
+
+
+"CONTINUE WITH APPLE" = "Registrar-se a través de ID d'Apple";
+
+
+"Off" = "Apagar";
+
+
+"BLOCK LIST" = "LLISTA DE BLOQUEJOS";
+
+
+"HELP" = "AJUDA";
+
+
+"Reference link" = "Link de referència";
+
+
+"Your Password" = "La teva contrasenya";
+
+
+"SUBMIT" = "ENVIAR";
+
+
+"HELP" = "AJUDA";
+
+
+"MY ACCOUNT" = "EL MEU COMPTE";
+
+
+"hbD-HP-tZd.normalTitle" = "Desembussar";
+
+
+"OTHERS" = "Altres";
+
+
+"BREAKING NEWS" = "NOTÍCIES D'ÚLTIMA HORA";
+
+
+"Topics" = "Temes bloquejats";
+
+
+"Message us," = "Envia'ns un missatge,";
+
+
+"Pick topics to start reading
+and saving articles" = "idioma de l'aplicació";
+
+
+"Forgot Password?" = "Se't va oblidar la teva contrasenya?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "S'agreguen noves funcions. Alguns problemes estan solucionats.";
+
+
+"Success!" = "Èxit!";
+
+
+"Current Password" = "Contrasenya Actual";
+
+
+"CONTENT" = "CONTINGUT";
+
+
+"Headline" = "Titular";
+
+
+"neg-UC-UpK.text" = "Triï temes per a començar a llegir i guardar articles";
+
+
+"CONTINUE WITH EMAIL ID" = "Continuar amb el seu ID de correu electrònic";
+
+
+"SAVE CHANGES" = "GUARDAR CANVIS";
+
+
+"Post an Article" = "Publica un article";
+
+
+"Contact Us" = "Contacti'ns";
+
+
+"On" = "Encendre";
+
+
+"New Email Address" = "Nova adreça de correu electrònic";
+
+
+"Bullet 5 (Optional)" = "Bala 5 (opcional)";
+
+
+"Suggest an improvement" = "Suggerir una millora";
+
+
+"Channels" = "Fonts bloquejades";
+
+
+"From:" = "Des de:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "RECOMANACIONS PERSONALITZADES";
+
+
+"I don't like this" = "No m'agrada això";
+
+
+"CONTINUE" = "SEGUIR";
+
+
+"Name" = "Nom";
+
+
+"Enter email" = "Ingressi correu electrònic";
+
+
+"HELP" = "AJUDA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Segueixi 3 per a continuar";
+
+
+"UPDATE APP" = "Actualitzar aplicació";
+
+
+"Forgot Password?" = "Se t'ha oblidat la teva contrasenya?";
+
+
+"Change Password" = "Canvia la contrasenya";
+
+
+"Reset Password" = "Restablir la contrasenya";
+
+
+
+
+
+
+
+
+"Report content" = "Informe la seva inquietud";
+
+
+"CHANGE EMAIL ADDRESS" = "CANVIAR ADREÇA DE CORREU ELECTRÒNIC";
+
+
+"Follow The Guardian" = "Seguir ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Hem afegit moltes funcions noves i hem corregit alguns errors perquè la vostra experiència sigui el més fluida possible.";
+
+
+"Edition / Region" = "Edició / Regió";
+
+
+"OK" = "D'acord";
+
+
+"NARRATOR" = "NARRADOR";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Mantenir-se actualitzat sobre les notícies que t’agraden no hauria de trigar massa temps. News in Bullets pren la lectura habitual de 5 minuts i el condensa en vinyetes fàcilment digeribles. Ara podeu rebre les mateixes notícies en només una fracció del temps, de manera que podeu llegir-ne més en menys temps.";
+
+
+"READING SPEED" = "VELOCITAT DE LECTURA";
+
+
+
+
+
+"You haven't blocked anything yet" = "Encara no heu bloquejat res";
+
+
+"EDITION / REGION" = "EDICIÓ / REGIÓ";
+
+
+
+
+
+"HEADLINES ONLY" = "NOMÉS TITULARS";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Configuració d'àudio";
+
+
+"AUDIO SETTINGS" = "CONFIGURACIONS D'ÀUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "TITULARIS I BULLETES";
+
+
+"CONTINUE AS GUEST" = "OBSERVEIX I INICI DE SESSIÓ COM A CONVIDAT";
+
+
+"Topics" = "Temes";
+
+
+"Pick topics to start reading and saving articles" = "Tria temes per començar a llegir i desar articles";
+
+
+"Channels" = "Canals";
+
+
+"Choose from hundreds \nof news publications" = "Tria entre centenars de publicacions de notícies";
+
+
+"Pick topics to start reading\nand saving articles" = "Tria temes per començar a llegir i desar articles";
+
+"Pick editions to start reading\nand saving articles" = "Tria edicions per començar a llegir i desar articles";
+
+"Or with" = "O amb";
+
+"CONTINUE AS GUEST" = "CONTINUA COM A CONVIDAT";
+
+"Terms of Service" = "Termes del servei";
+
+"Choose from hundreds \nof news publications" = "Tria entre centenars de publicacions de notícies";
+
+"Select your preferred language\nfor News in Bullets." = "Seleccioneu l'idioma preferit per a Notícies a Bullets.";
+
+"Choose a style" = "Trieu un estil";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop o subtil. Dia o nit. Personalitzeu la vostra interfície.";
+
+"MINS AGO" = "fa uns minuts";
+
+"AN HOUR AGO" = "fa una hora";
+
+"HOURS AGO" = "Fa hores";
+
+"1 WEEK AGO" = "Fa 1 setmana";
+
+"YESTERDAY" = "Ahir";
+
+"DAYS AGO" = "fa uns dies";
+
+"Go to" = "Anar a";
+
+"You have reached the start." = "Has arribat al començament";
+
+"Source unblocked successfully" = "La font s'ha desbloquejat correctament";
+
+"Invalid email format"  = "El format de correu electrònic no és vàlid";
+
+"Wrong email or password" = "Correu electrònic o contrasenya incorrectes";
+
+

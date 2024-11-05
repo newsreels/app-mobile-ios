@@ -1,0 +1,774 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "madde işareti";
+"BULLETS" = "madde işaretleri";
+"Headlines is not available." = "Manşetler mevcut değil";
+"Check your internet Connection and try again." = "İnternet bağlantınızı kontrol edin ve yeniden deneyin.";
+"Choose Image" = "Resim seçin";
+"Headline" = "Manşet";
+"Bullet 1" = "İşaret 1";
+"Bullet 2" = "İşaret 2";
+"Bullet 3 (Optional)" = "İşaret 3 (İsteğe Bağlı)";
+"Bullet 4 (Optional)" = "İşaret 4 (İsteğe Bağlı)";
+"Bullet 5 (Optional)" = "İşaret 5 (İsteğe Bağlı)";
+"Bullet 6 (Optional)" = "İşaret 6 (İsteğe Bağlı)";
+"Enter Aticle Headline" = "Manşet Gir";
+"Enter source name" = "Kaynak Gir";
+"Enter reference link" = "Referans Gir";
+"Enter published date" = "Yayınlanma tarihi gir";
+"Enter Bullet 1" = "İlk İşareti Gir";
+"Enter Bullet 2" = "İkinci İşareti Gir";
+"Post article successfully" = "Makale başarılı bir şekilde yayınlanmıştır";
+"Follow" = "Takip et";
+"Unfollow" = "Takipten çık";
+"Block articles from" = "…'dan makaleleri ENGELLE";
+"Unblock articles from" = "…'dan makalelerin ENGELİNİ KALDIR";
+"Remove article" = "Makaleyi kaldır";
+"Save article" = "Makeleyi kaydet";
+"Terms & Conditions" = "Şartlar & Koşullar";
+"Privacy Policy" = "Gizlilik Politikası";
+"TERMS AND CONDITIONS" = "ŞARTLAR VE KOŞULLAR";
+"PRIVACY POLICY" = "GİZLİLİK POLİTİKASI";
+"Fuel your curiosity" = "Dünya hakkında daha fazla haber Oku";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Dünyanın dört bir yanındaki güvenilir kaynaklardan en sevdiğiniz konularla ilgili kısa ve doğru haberleri okuyun.";
+"Save time" = "Zamandan tasarruf et";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Hızlı&Kısa Haberleri oku";
+"Hands-free reading" = "Eller serbest okuma";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Okumak için zaman yok? Konuşma işlevini kullanın.";
+"Write your message..." = "Mesajınızı yazın…";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "bir konuda yardıma ihtiyacınız varsa bize bir mesaj gönderin, sizden duymak isteriz!";
+"Drop us a message" = "Bize mesaj gönder";
+"Enter Name." = "İsim Giriniz.";
+"Enter Email." = "Email Giriniz.";
+"Write your message." = "Mesajınızı yazın.";
+"Topic unblock successfully" = "Bu konunun engelini kaldırdınız";
+"Source unblock successfully" = "Bu kaynağın engelini kaldırdınız";
+"Unblock Source" = "Kaynağın engelini kaldır";
+"Cancel" = "İptal";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bize bir geri bildirim gönderin, sizden duymak isteriz! Sorularınız veya yasal endişeleriniz var mı? Yardım sayfamızı deneyin veya bize ulaşın.";
+"Enter your suggestion." = "Önerinizi girin.";
+"feedback sent." = "geri bildirim başarıyla gönderildi";
+"30m" = "30 dakika";
+"1h" = "1 saat";
+"3h" = "3 saat";
+"6h" = "6 saat";
+"12h" = "12 saat";
+"24h" = "24 saat";
+"Language updated successfully." = "Dil başarıyla güncellendi";
+"CONTINUE" = "DEVAM ET";
+"FOLLOW 3 TO CONTINUE" = "DEVAM ETMEK İÇİN 3'Ü TAKİP EDİN";
+"Unfollow Location" = "Konumu takipten çıkın";
+"Saved Articles" = "Kaydedilmiş Makaleler";
+"Block" = "ENGELLE";
+"Are you sure you want block" = "Bunu engellemek istediğinize emin misiniz";
+"Once blocked, you wont be able to see any Articles related to this" = "Eğer engellerseniz bu kanaldan makaleleri görmeyeceksiniz.";
+"Block Topic" = "Bu konuyu engelle";
+"Suggested" = "Önerilen";
+"Related Sources not available" = "İlgili kaynaklar mevcut değil";
+"Block Source" = "Bu kaynağı engelle";
+"News in Bullets App version" = "Hızlı&Kısa Haberler Uygulama Sürümü";
+"Next" = "Devam";
+"Login" = "Giriş";
+"Terms" = "Şartlar";
+"By clicking Continue, you agree with our Terms." = "Şartları kabul etmek için devamı seçin";
+"in our Privacy Policy." = "gizlilik politikamızda";
+"Access token missing." = "Erişim belirteci eksik";
+"NEXT" = "DEVAM";
+"By checking this box, you agree to our " = "Şartları kabul etmek için kutuyu tıklatın. Verileriniz Gizlilik Politikamıza göre işlenir.";
+"Terms of Service" = "Hizmet Şartları";
+". We’ll handle your data according to our " = "Verilerinizi ..'mıza göre işleyeceğiz";
+"Password must be at least 8 characters." = "Şifreniz en az 8 karakter olmalıdır.";
+"Strong" = "Güçlü";
+"Medium" = "Orta";
+"Weak" = "Zayıf";
+"CREATE A NEW ACCOUNT" = "YENİ BİR HESAP OLUŞTUR";
+"SIGN IN WITH EXISTING ACCOUNT" = "MEVCUT HESABINLA GİRİŞ YAP";
+"You must agree to the Terms of Services to continue" = "Devam etmek için hizmet şartlarını kabul etmeniz gerekir";
+"SIGN IN" = "Giriş Yap";
+"What's your password?" = "Şifreniz nedir?";
+"SIGN UP" = "Giriş Yap";
+"Choose your password?" = "Şifrenizi Seçin";
+"Something went wrong" = "Bir şeyler ters gitti";
+"we will send email to" = "..'ya email göndereceğiz";
+"with a link to reset your password." = "bağlantıyla şifrenizi sıfırlamak için";
+"A reset password link has been sent to" = "Şifrenizi sıfırlamak için ..'ya bağlantı gönderildi";
+"Enter new email." = "Yeni email girin";
+"Enter password." = "Şifreyi gir";
+"New Password " = "Yeni şifre";
+" (8 characters min)" = "(en az 8 karakter)";
+"Enter current password." = "Şuanki şifrenizi girin";
+"Enter new password." = "Yeni şifre girin";
+"Enter confirm password." = "Şifreyi onayla.";
+"password do not matched!" = "Şifreler eşleşmiyor!";
+"GET STARTED" = "BAŞLAYIN";
+"SKIP" = "ATLA";
+"From where you would like to pick photo?" = "Nereden fotoğraf seçmek istersiniz?";
+"Camera" = "Kamera";
+"Photo Library" = "Fotoğraf Kütüphanesi";
+"Kindly open settings and enable access" = "Lütfen ayarları açın ve erişimi etkinleştirin";
+"Open Settings" = "Ayarları aç";
+"Access needed for your camera" = "Kameraya erişim gerekli";
+"Access needed for your photo library" = "Fotoğraf Kütüphanesine erişim gerekli";
+"Done" = "Tamam";
+"Pull to refresh" = "Yenilemek için çekin";
+"Loading" = "Yükleniyor";
+"Speech not available for this article" = "Bu makale için konuşma uygun değil";
+"MANAGE LOCATION" = "KONUMLARI YÖNET";
+"OK" = "OKTAMAM MI";
+"Choose your News in Bullets Edition based on locale" = "Bullets Edition'daki Haberlerinizi yerel ayara göre seçin";
+"Edition" = "Baskı";
+"EDITION / REGION" = "BASKI / BÖLGE";
+"Your Topics" = "Konularınız";
+"Your Channels" = "Kanallarınız";
+"Your Places" = "Yerleriniz";
+"Enter email." = "E-posta girin.";
+"Please enter a password." = "Lütfen bir şifre girin.";
+"Search articles" = "Makalelerde ara";
+"No results" = "Sonuç yok";
+"Edition / Region" = "Baskı / Bölge";
+
+
+
+//LATEST STRING - 13/2/2021
+"BLOCK" = "ENGELLE";
+"CANCEL" = "İPTAL";
+"PLACES" = "YERLER";
+"LANGUAGE" = "DİL";
+"Profile" = "Profil";
+"SAVED ARTICLES" = "KAYDEDİLEN MAKALELER";
+"Topics" = "Konular";
+"Channels" = "Kanallar";
+"Editions" = "Sürümler";
+"No saved stories yet" = "Henüz kaydedilmiş hikaye yok";
+"Tap the" = "Dokun";
+"icon on the article" = "makaledeki simge";
+"you want to read later then" = "Daha sonra okumak isteyebilirsiniz";
+"Select" = "Seç";
+"to save article." = "Makaleyi kaydetmek için.";
+"There is nothing in here" = "Burada bir şey yok.";
+"Looks like there is nothing here but a cat." = "Görünüşe göre burada bir kediden başka bir şey yok.";
+"Would you like to go back to home?" = "Eve geri dönmek ister misin?";
+"GO HOME" = "EVE GİT";
+"Search" = "Ara";
+"Discover" = "Keşfet";
+"Articles" = "Nesne";
+"Try a different keyword" = "Farklı bir anahtar kelime deneyin";
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Seçtiğiniz bölgeyle en alakalı haberleri alın. Dünyanın her yerinden en son haberlerden haberdar olmanızı sağlamak için seçilmiş haberleri okuyun.";
+"Language" = "Dil";
+"Results" = "Sonuçlar";
+"For You" = "Sen İçin";
+"Top News" = "Üst Haberler";
+"Choose a style" = "Bir stil seçin";
+"Pop or subtle. Day or night. Customize your interface." = "Pop veya ince. Gündüz veya gece. Arayüzünüzü özelleştirin.";
+
+
+
+//TUTORIAL STRING
+"HELP" = "HELP";
+"Dark" = "Dark";
+"Light" = "Light";
+
+
+
+
+
+
+"About" = "Hakkımızda";
+
+
+"Share" = "Paylaş";
+
+
+"ACCOUNT" = "Hesap";
+
+
+"Your Email" = "E-mail adresiniz.";
+
+
+"1sT-J6-qI0.text" = "Kaydedilmiş Makaleler";
+
+
+"2XX-rr-GLC.text" = "Yüzden fazla kaynaktan farklı kanallar seçin.";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Dünyanın her yerinden son gelişmeleri okuyun.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Bildirimleri almak için bir zaman aralığı ayarlayın.";
+
+
+"Off" = "Kapalı";
+
+
+
+
+
+"Bullet 2" = "İşaret 2";
+
+
+"What's your email?" = "E-mail adresiniz nedir?";
+
+
+"New Password (8 Characters Min)" = "Yeni Şifre(Minimum 8 karakter)";
+
+
+"Forgot Password?" = "Şifrenizi mi unuttunuz?";
+
+
+"Account Settings" = "Hesap Ayarları";
+
+
+"Learn how we process your data" = "Verilerinizin işlenmesiyle ilgili bilgiler";
+
+
+"3h" = "3 saat";
+
+
+"Ok" = "Tamam";
+
+
+"Block articles from The Guardian" = "___'ın makalelerini engelle.";
+
+
+"On" = "Aç";
+
+
+"Auto" = "Otomatik";
+
+
+"Help Center" = "Yardım Merkezi";
+
+
+"Search" = "Kanalları Ara";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Galeriden dosya seç.";
+
+
+
+
+"Save article" = "Kaydedilmiş Makaleler";
+
+
+"ABOUT" = "Hakkımızda";
+
+
+"Dark" = "Karanlık";
+
+
+"Legal" = "Yasal";
+
+
+"Go to The Guardian" = "___'ya git.";
+
+
+"Send reset link" = "Sıfırlama linki gönder.";
+
+
+
+
+
+"My Account" = "Hesabım";
+
+
+"FEEDBACK" = "Geri bildirim";
+
+
+"Message" = "Mesaj";
+
+
+"Confirm New Password" = "Yeni Şifreyi Onayla";
+
+
+"for ___" = "için ___";
+
+
+"Search" = "Konuları Ara";
+
+
+"LANGUAGE" = "Dil";
+
+
+"Light" = "Aydınlık";
+
+
+"FOLLOW 3 TO CONTINUE" = "Devam etmek için 3'ü seçin.";
+
+
+
+
+"Off" = "Kapat";
+
+
+"Language" = "Seç";
+
+
+"LOG OUT" = "ÇIKIŞ YAP";
+
+
+"Report content" = "İçeriği rapor et.";
+
+
+"What's your email?" = "E-mail adresiniz nedir?";
+
+
+"On" = "Aç";
+
+
+"More like this" = "Bunun gibi daha fazla haber";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 saat";
+
+
+"Enter Email Address" = "E-mail Adresinizi Girin";
+
+
+"News in Bullets" = "Daha kısa zamanda daha fazla okuyun.";
+
+
+"6h" = "6 saat";
+
+
+"Choose your password" = "Şifrenizi seçiniz.";
+
+
+"Cancel" = "İptal";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Bu uygulama ile haberleri hızlıca okuyun.Konuları ve kaynakları seçin.Sonra haberlerinizi kısa madde işaretleriyle okuyun.";
+
+
+"Push Notification" = "Bildirimler";
+
+
+"12h" = "12 saat";
+
+
+"24h" = "24 saat";
+
+
+"E-mail" = "Email";
+
+
+"How can we help you?" = "Nasıl yardımcı olabiliriz?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "ŞİFREYİ DEĞİŞTİR";
+
+
+"Change Email" = "EMAIL ADRESİNİ DEĞİŞTİR";
+
+
+"Medium" = "Orta";
+
+
+"SAVE CHANGES" = "DEĞİŞİKLİKLERİ KAYDET";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Bir konuda yardıma ihtiyacınız varsa bize bir mesaj gönderin, sizden duymak isteriz!";
+
+
+"P5u-N3-Tw4.text" = "Etiket";
+
+
+"Cancel" = "İptal";
+
+
+"Bullet 1" = "İşaret 1";
+
+
+"TIMED NOTIFICATIONS" = "Bildirimler";
+
+
+"POST ARTICLE" = "BİR MAKALE PAYLAŞ";
+
+
+"CONTACT US" = "Bizimle İletişime Geç";
+
+
+"EDITION / REGION" = "Sürüm";
+
+
+"Search" = "Ara";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Bize geri bildirim gönderin ! Sorularınız veya yasal endişeleriniz var mı?Yardım sayfamızı deneyin veya bizimle iletişime geçin.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Bize geri bildirim gönderin ! Sorularınız veya yasal endişeleriniz var mı?Yardım sayfamızı deneyin veya bizimle iletişime geçin.";
+
+
+"30m" = "30 dakika";
+
+
+"CONTINUE" = "DEVAM ET";
+
+
+"Time To Update!" = "Uygulamayı güncelleyin!";
+
+
+"NOTIFICATIONS" = "Bildirimler";
+
+
+"Search" = "Ara";
+
+
+"By clicking Continue, you agree with our Terms." = "Şartları kabul etmek için Devam'ı seçin.";
+
+
+"HELP / CONTACT US" = "YARDIM / İLETİŞİME GEÇ";
+
+
+"Reset Password" = "Şifreyi Sıfırla";
+
+
+"SEND MESSAGE" = "MESAJ GÖNDER";
+
+
+"Save article" = "Makaleyi kaydet";
+
+
+"Bullet 6 (Optional)" = "İşaret 6(İsteğe Bağlı)";
+
+
+"HAPTICS" = "Dokunsallar";
+
+
+"Your message has \vbeen sent." = "Mesajınız gönderildi.";
+
+
+"LEGAL" = "YASAL";
+
+
+"Block List" = "Engelliler Listesi";
+
+
+"PERSONALIZATION" = "KİŞİSELLEŞTİRME";
+
+
+"in our Privacy Policy." = "Bizim Gizlilik Politikamızda";
+
+
+"CONTINUE" = "DEVAM";
+
+
+"Enter Name" = "İsim Gir";
+
+
+"What's your email?" = "Email'iniz nedir?";
+
+
+"Hello there!" = "Merhaba!";
+
+
+"PUSH NOTIFICATIONS" = "BİLDİRİMLER";
+
+
+"Bullet 3 (Optional)" = "İşaret 3 (İsteğe Bağlı)";
+
+
+"Source name" = "Kaynağın Adı";
+
+
+"Current Password" = "Şuanki Şifreniz";
+
+
+"COLOR THEME" = "Tema Rengi";
+
+
+"eTp-X1-g34.text" = "Veya aracılığıyla";
+
+
+"CANCEL" = "İPTAL";
+
+
+"Bullet 4 (Optional)" = "İşaret 4 (İsteğe Bağlı)";
+
+
+"Date published" = "Tarih yayınlandı";
+
+
+"Send Password Reset Link" = "Şifreyi sıfırlamak için bağlantı gönder.";
+
+
+"CONTINUE WITH APPLE" = "Apple ID ile giriş yap";
+
+
+"Off" = "Kapat";
+
+
+"BLOCK LIST" = "Engelliler Listesi";
+
+
+"HELP" = "YARDIM";
+
+
+"Reference link" = "Referans bağlantısı";
+
+
+"Your Password" = "Şifreniz";
+
+
+"SUBMIT" = "Sunmak";
+
+
+"HELP" = "YARDIM";
+
+
+"MY ACCOUNT" = "HESABIM";
+
+
+"hbD-HP-tZd.normalTitle" = "Engeli kaldır";
+
+
+"OTHERS" = "Diğerleri";
+
+
+"BREAKING NEWS" = "SON DAKİKA HABERLERİ";
+
+
+"Topics" = "Engellenmiş Konular";
+
+
+"Message us," = "Bize mesaj atın,";
+
+
+"Pick topics to start reading
+and saving articles" = "Uygulama dili";
+
+
+"Forgot Password?" = "Şifrenizi mi unuttunuz?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Yeni özellikler eklendi.Bazı sorunlar düzeltildi.";
+
+
+"Success!" = "Başarılı!";
+
+
+"Current Password" = "Şuanki Şifreniz";
+
+
+"CONTENT" = "İÇERİK";
+
+
+"Headline" = "Manşet ";
+
+
+"neg-UC-UpK.text" = "Okumaya başlamak için başlıkları seçin ve makaleleri kaydedin.";
+
+
+"CONTINUE WITH EMAIL ID" = "Email ID'niz ile devam edin";
+
+
+"SAVE CHANGES" = "DEĞİŞİKLİKLERİ KAYDET";
+
+
+"Post an Article" = "Bir makale paylaş";
+
+
+"Contact Us" = "Bizimle İletişime Geç";
+
+
+"On" = "Aç";
+
+
+"New Email Address" = "Yeni Email Adresi";
+
+
+"Bullet 5 (Optional)" = "İşaret 5 (İsteğe Bağlı)";
+
+
+"Suggest an improvement" = "Geliştirme önerin";
+
+
+"Channels" = "Engellenmiş Kaynaklar";
+
+
+"From:" = "-den ,-dan";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "KİŞİSELLEŞTİRİLMİŞ ÖNERİLER";
+
+
+"I don't like this" = "Bunu beğenmedim";
+
+
+"CONTINUE" = "DEVAM";
+
+
+"Name" = "İsim";
+
+
+"Enter email" = "Email gir";
+
+
+"HELP" = "YARDIM";
+
+
+"FOLLOW 3 TO CONTINUE" = "Devam etmek için 3'ü takip edin";
+
+
+"UPDATE APP" = "Uygulamayı Güncelle";
+
+
+"Forgot Password?" = "Şifreni mi unuttun?";
+
+
+"Change Password" = "Şifreyi Değiştir";
+
+
+"Reset Password" = "Şifreyi Sıfırla";
+
+
+
+
+
+
+
+
+"Report content" = "Endişenizi rapor edin";
+
+
+"CHANGE EMAIL ADDRESS" = "EMAIL ADRESİNİ DEĞİŞTİR";
+
+
+"Follow The Guardian" = "Takip et ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Deneyiminizi olabildiğince sorunsuz hale getirmek için birçok yeni özellik ekledik ve bazı hataları düzelttik.";
+
+
+"Edition / Region" = "Baskı / Bölge";
+
+
+"OK" = "TAMAM MI";
+
+
+"NARRATOR" = "DIŞ SES";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Sevdiğiniz haber hikayelerini güncel tutmak çok fazla zamanınızı almamalıdır. Bullets'teki haberler, 5 dakikalık düzenli okumayı alır ve kolayca sindirilebilir mermilere dönüştürür. Artık aynı haberi çok kısa sürede alabilirsiniz - böylece daha kısa sürede daha çok okuyabilirsiniz.";
+
+
+"READING SPEED" = "OKUMA HIZI";
+
+
+
+
+
+"You haven't blocked anything yet" = "Henüz hiçbir şeyi engellemedin";
+
+
+"EDITION / REGION" = "BASKI / BÖLGE";
+
+
+
+
+
+"HEADLINES ONLY" = "YALNIZCA BAŞLIKLAR";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Ses ayarları";
+
+
+"AUDIO SETTINGS" = "SES AYARLARI";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "BAŞLIKLAR VE MERMİLER";
+
+
+"CONTINUE AS GUEST" = "MİSAFİR OLARAK ATLA & OTURUM AÇ";
+
+
+"Topics" = "Konular";
+
+
+"Pick topics to start reading and saving articles" = "Makaleleri okumaya ve kaydetmeye başlamak için konu seçin";
+
+
+"Channels" = "Kanallar";
+
+
+"Choose from hundreds \nof news publications" = "Yüzlerce haber yayını arasından seçim yapın";
+
+
+"Pick topics to start reading\nand saving articles" = "Makaleleri okumaya ve kaydetmeye başlamak için konu seçin";
+
+"Pick editions to start reading\nand saving articles" = "Makaleleri okumaya ve kaydetmeye başlamak için sürümleri seçin";
+
+"Or with" = "Veya ile";
+
+"CONTINUE AS GUEST" = "MİSAFİR OLARAK DEVAM ET";
+
+"Terms of Service" = "Kullanım Şartları";
+
+"Choose from hundreds \nof news publications" = "Yüzlerce haber yayını arasından seçim yapın";
+
+"Select your preferred language\nfor News in Bullets." = "Bullets'teki Haberler için tercih ettiğiniz dili seçin.";
+
+"Choose a style" = "Bir stil seçin";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop veya ince. Gün ya da gece. Arayüzünüzü özelleştirin.";
+
+"MINS AGO" = "dakika önce";
+
+"AN HOUR AGO" = "bir saat önce";
+
+"HOURS AGO" = "saatler önce";
+
+"1 WEEK AGO" = "1 hafta önce";
+
+"YESTERDAY" = "Dün";
+
+"DAYS AGO" = "günler önce";
+
+"Go to" = "Şuraya git";
+
+"You have reached the start." = "Başlangıca ulaştınız";
+
+"Source unblocked successfully" = "Kaynağın engellemesi başarıyla kaldırıldı";
+
+"Invalid email format"  = "Geçersiz e-posta formatı";
+
+"Wrong email or password" = "Yanlış e-posta veya şifre";
+
+
+"Following" = "Takip etme";
+"First Name" = "İsim";
+"Last Name" = "Soyadı";

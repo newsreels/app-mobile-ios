@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "punktas";
+"BULLETS" = "PUNKTAI";
+"Headlines is not available." = "Antraštės negalimos";
+"Check your internet Connection and try again." = "Patikrinkite savo interneto ryšį ir pabandykite iš naujo.";
+"Choose Image" = "Pasirinkti nuotrauką";
+"Headline" = "Antraštė";
+"Bullet 1" = "1-as punktas";
+"Bullet 2" = "2-as punktas";
+"Bullet 3 (Optional)" = "3-ias punktas (pasirinktinai)";
+"Bullet 4 (Optional)" = "4-as punktas (pasirinktinai)";
+"Bullet 5 (Optional)" = "5-as punktas (pasirinktinai)";
+"Bullet 6 (Optional)" = "6-as punktas (pasirinktinai)";
+"Enter Aticle Headline" = "Įveskite antraštę";
+"Enter source name" = "Įveskite šaltinį";
+"Enter reference link" = "Įveskite nuorodą";
+"Enter published date" = "Įveskite paskelbimo datą";
+"Enter Bullet 1" = "Įveskite pirmąjį punktą";
+"Enter Bullet 2" = "Įveskite antrąjį punktą";
+"Post article successfully" = "Straipsnis sėkmingai paskelbtas";
+"Follow" = "Sekti";
+"Unfollow" = "Nebesekti";
+"Block articles from" = "BLOKUOTI straipsnius iš";
+"Unblock articles from" = "ATBLOKUOTI straipsnius iš";
+"Remove article" = "Pašalinti straipsnį";
+"Save article" = "Išsaugoti šį straipsnį";
+"Terms & Conditions" = "Sąlygos";
+"Privacy Policy" = "Privatumo politika";
+"TERMS AND CONDITIONS" = "SĄLYGOS";
+"PRIVACY POLICY" = "PRIVATUMO POLITIKA";
+"Fuel your curiosity" = "Skaitykite daugiau naujienų apie pasaulį";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Skaitykite trumpas ir tikslias naujienas jūsų mėgstamiausiomis temomis iš patikimų šaltinių iš viso pasaulio.";
+"Save time" = "Taupykite savo laiką";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Skaitykite naujienas punktais";
+"Hands-free reading" = "Laisvų rankų skaitymas";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Nėra laiko skaitymui? Naudokite kalbos funkciją.";
+"Write your message..." = "Parašykite savo žinutę...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "jei prisireikė pagalbos, parašykite mums žinutę - su malonumu su jumis pabendrautume!";
+"Drop us a message" = "parašykite mums žinutę";
+"Enter Name." = "Įveskite vardą.";
+"Enter Email." = "Įveskite el. paštą.";
+"Write your message." = "Parašykite savo žinutę.";
+"Topic unblock successfully" = "Jūs atblokavote šią temą";
+"Source unblock successfully" = "Jūs atblokavote šį šaltinį";
+"Unblock Source" = "Atblokuoti šaltinį";
+"Cancel" = "Atšaukti";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Mes labai norėtume išgirsti jūsų atsiliepimus! Ar turite klausimų ar teisinių problemų? Išbandykite mūsų Pagalbos puslapį arba Susisiekite su mumis.";
+"Enter your suggestion." = "Įveskite savo pasiūlymą.";
+"feedback sent." = "atsiliepimas išsiųstas sėkmingai";
+"30m" = "30 min.";
+"1h" = "1 val.";
+"3h" = "3 val.";
+"6h" = "6 val.";
+"12h" = "12 val.";
+"24h" = "24 val.";
+"Language updated successfully." = "Kalba buvo sėkmingai atnaujinta.";
+"CONTINUE" = "TĘSTI";
+"FOLLOW 3 TO CONTINUE" = "PASEKITE 3, KAD GALĖTUMĖTE TĘSTI";
+"Unfollow Location" = "Nebesekti vietovės";
+"Saved Articles" = "Išsaugoti straipsniai";
+"Block" = "BLOKUOTI";
+"Are you sure you want block" = "Ar esate įsitikinę, kad norite tai blokuoti?";
+"Once blocked, you wont be able to see any Articles related to this" = "Daugiau nebematysite straipsnių iš šio kanalo, jei jį užblokuosite.";
+"Block Topic" = "Blokuoti šią temą";
+"Suggested" = "Siūloma";
+"Related Sources not available" = "Susiję šaltiniai yra negalimi";
+"Block Source" = "Blokuoti šį šaltinį";
+"News in Bullets App version" = "„Naujienos akimirksniu“ programėlės versija";
+"Next" = "Toliau";
+"Login" = "Prisijungti";
+"Terms" = "Sąlygos";
+"By clicking Continue, you agree with our Terms." = "Paspauskite „Tęsti“, kad priimtumėte Sąlygas.";
+"in our Privacy Policy." = "mūsų Privatumo politikoje";
+"Access token missing." = "Nėra prieigos žetono";
+"NEXT" = "TOLIAU";
+"By checking this box, you agree to our " = "Paspauskite ant dėžutės, kad priimtumėte Sąlygas. Jūsų duomenys yra tvarkomi pagal mūsų Privatumo politiką.";
+"Terms of Service" = "Paslaugų teikimo sąlygos";
+". We’ll handle your data according to our " = ". Mes tvarkysime jūsų duomenis pagal mūsų ";
+"Password must be at least 8 characters." = "Slaptažodis privalo būti bent 8 simbolių ilgio.";
+"Strong" = "Stiprus";
+"Medium" = "Vidutiniškas";
+"Weak" = "Silpnas";
+"CREATE A NEW ACCOUNT" = "SUKURTI NAUJĄ PASKYRA";
+"SIGN IN WITH EXISTING ACCOUNT" = "PRISIJUNGTI SU EGZISTUOJANČIA PASKYRA";
+"You must agree to the Terms of Services to continue" = "Norėdami tęsti privalote sutikti su Paslaugos teikimo sąlygomis";
+"SIGN IN" = "Prisijungti";
+"What's your password?" = "Koks jūsų slaptažodis?";
+"SIGN UP" = "Užsiregistruoti";
+"Choose your password?" = "Sukurkite savo slaptažodį";
+"Something went wrong" = "Įvyko klaida";
+"we will send email to" = "mes išsiųsime el. laišką į";
+"with a link to reset your password." = "su nuoroda jūsų slaptažodžio atstatymui";
+"A reset password link has been sent to" = "Nuoroda slaptažodžio atstatymui buvo išsiųsta į";
+"Enter new email." = "Įveskite naują el. paštą.";
+"Enter password." = "Įveskite slaptažodį";
+"New Password " = "Naujas slaptažodis";
+" (8 characters min)" = "(ne mažiau 8 simbolių)";
+"Enter current password." = "Įveskite dabartinį slaptažodį.";
+"Enter new password." = "Įveskite naują slaptažodį.";
+"Enter confirm password." = "Patvirtinkite slaptažodį.";
+"password do not matched!" = "Slaptažodžiai nesutampa!";
+"GET STARTED" = "PRADĖTI";
+"SKIP" = "PRALEISTI";
+"From where you would like to pick photo?" = "Iš kur norėtumėte pasirinkti nuotrauką?";
+"Camera" = "Kamera";
+"Photo Library" = "Nuotraukų biblioteka";
+"Kindly open settings and enable access" = "Prieigą suteikite atsidarius nustatymus";
+"Open Settings" = "Atidaryti nustatymus";
+"Access needed for your camera" = "Reikalinga prieiga prie jūsų kameros";
+"Access needed for your photo library" = "Reikalinga prieiga prie jūsų nuotraukų bibliotekos";
+"Done" = "Atlikta";
+"Pull to refresh" = "Norint atnaujinti, patraukite žemyn";
+"Loading" = "Kraunama";
+"Speech not available for this article" = "Kalbos funkcija šiam straipsniui negalima";
+"MANAGE LOCATION" = "TVARKYTI VIETĄ";
+"OK" = "Gerai";
+"Choose your News in Bullets Edition based on locale" = "Pasirinkite savo naujienas „Bullets Edition“ pagal lokalę";
+"Edition" = "Leidimas";
+"EDITION / REGION" = "LEIDIMAS / REGIONAS";
+"Your Topics" = "Jūsų temos";
+"Your Channels" = "Jūsų kanalai";
+"Your Places" = "Jūsų vietos";
+"Enter email." = "Įveskite el. Pašto adresą.";
+"Please enter a password." = "Įveskite slaptažodį.";
+"Search articles" = "Ieškoti straipsnių";
+"No results" = "Jokių rezultatų";
+"Edition / Region" = "Leidimas / regionas";
+
+
+
+
+"0JC-Sb-Ouu.text" = "RODYMO REŽIMAS";
+
+
+"Search" = "Paieška";
+
+
+"Select" = "paspauskite (";
+
+
+"6H8-dI-k9P.text" = "Tvarkyti vietas";
+
+
+"6KH-YP-5Lt.text" = "PASAKOTOJAS";
+
+
+" ) icon on the article" = ") ikonos ant straipsnio";
+
+
+"BLOCK" = "BLOKUOTI";
+
+
+"you want to read later then" = ", kurį norite perskaityti vėliau, tada";
+
+
+"7oo-cf-l7Y.text" = "Skaitymo greitis";
+
+
+"88L-ip-pZw.text" = "Skaitymo greitis";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Panašu, kad čia nieko nėra, išskyrus katę. \nGrįžti į pagrindinį puslapį?";
+
+
+"BpH-F1-i0z.normalTitle" = "Vietinis";
+
+
+" ) to save article." = " ) kad išsaugotumėte straipsnį.";
+
+
+"FB0-YN-HZg.text" = "kad tęstumėte, pasirinkite 3";
+
+
+"H5Z-xJ-dWD.text" = "Antraštės ir \nPunktai";
+
+
+"Search" = "Paieška";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "IŠPLĖSTAS VAIZDAS";
+
+
+"Jpx-nY-Is1.normalTitle" = "Kanalai";
+
+
+"JqN-io-P1u.normalTitle" = "+ Pridėti prie vietų";
+
+
+"What's your email?" = "Koks yra jūsų el. pašto adresas?";
+
+
+"Lw1-Md-nse.text" = "Sąrašas";
+
+
+"LyT-pT-g53.text" = "TARPTAUTINIS";
+
+
+"N6C-6i-Z2s.text" = "TARPTAUTINIS";
+
+
+"Nru-uU-CsC.text" = "Pasiūlymai";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "Temos";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "Personalizuoti";
+
+
+"Topics" = "Temos";
+
+
+"WXY-po-W1B.text" = "ANTRAŠTĖS IR \nPUNKTAI";
+
+
+"ans-Zy-T2Y.placeholder" = "Ieškoti vietų";
+
+
+"bgE-Jc-u8H.text" = "Personalizuoti";
+
+
+
+
+
+"Tap the ( " = "Paspauskite ant ( ";
+
+
+"Places" = "Vieta";
+
+
+"d1l-HK-OrG.text" = "RODYMO REŽIMAS";
+
+
+
+
+
+"Language" = "Kalba";
+
+
+"e9g-Wr-suO.text" = "TIK ANTRAŠTĖS";
+
+
+"GO HOME" = "grįžti į pagrindinį puslapį";
+
+
+"eh1-Oo-lEn.text" = "IŠPLĖSTAS VAIZDAS";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "SĄRAŠAS";
+
+
+"j2i-MT-VkA.text" = "Pabandykite kitokį raktažodį";
+
+
+"Top News" = "Svarbiausios naujienos";
+
+
+"jmO-aF-nJ9.text" = "Tik antraštės";
+
+
+"There is nothing in here" = "Čia nieko nėra.";
+
+
+"ma1-9p-bSa.text" = "Rezultatų nerasta";
+
+
+"mce-jc-cKH.text" = "PASAKOTOJAS";
+
+
+"Channels" = "Kanalai";
+
+
+"Discover" = "Atrasti";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "ATŠAUKTI";
+
+
+"Discover" = "Atrasti";
+
+
+"No saved stories yet" = "Čia nieko nėra.";
+
+
+"wDG-kF-Hl8.text" = "Skaitykite naujienas pagal vietą";
+
+
+
+
+
+"wKj-3i-n0R.text" = "VIETOS NUSTATYMAS";
+
+
+"xfF-RB-mWL.text" = "VIETOS NUSTATYMAS";
+
+
+"Search" = "Paieška";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Gaukite aktualiausias naujienas jūsų pasirinktam regionui. Skaitykite kuruojamas naujienas, kad būtumėte informuoti apie naujausias naujienas iš bet kurios pasaulio vietos.";
+
+
+"Search articles" = "Ieškoti straipsnių";
+
+
+"6H8-dI-k9P.text" = "Tvarkyti vietas";
+
+
+
+
+
+"Profile" = "Profilis";
+
+
+"Editions" = "Leidiniai";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Vietos";
+
+
+
+
+
+"Search" = "Paieška";
+
+
+
+
+
+
+
+
+"Search" = "Paieška";
+
+
+"LANGUAGE" = "KALBA";
+
+
+"Search" = "Paieška";
+
+
+"No results" = "Nieko nerasta";
+
+
+"Channels" = "Kanalai";
+
+
+"Places" = "Vietos";
+
+
+"Places" = "Vietos";
+
+
+"e9F-hd-Ifm.text" = "LEIDIMAS / REGIONAS";
+
+
+
+
+
+
+
+
+"PLACES" = "VIETOS";
+
+
+"SAVED ARTICLES" = "IŠSAUGOTI DIRBINIAI";
+
+
+"Articles" = "Straipsniai";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "TĘSTI";
+
+
+
+
+
+"w8f-2R-NgT.text" = "LEIDIMAS / REGIONAS";
+
+
+"Try a different keyword" = "Išbandykite kitą raktinį žodį";
+
+
+"For You" = "Tau";
+
+
+"Results" = "Rezultatai";
+
+
+
+"About" = "Apie mus";
+
+
+"Share" = "Dalintis";
+
+
+"ACCOUNT" = "PASKYRA";
+
+
+"Your Email" = "Jūsų el. paštas";
+
+
+"1sT-J6-qI0.text" = "Išsaugoti straipsniai";
+
+
+"2XX-rr-GLC.text" = "Išsirinkite kanalus iš šimtų mūsų šaltinių";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Skaitykite apie naujausius įvykius ir straipsnius iš viso pasaulio";
+
+
+"Set an interval in which you want to receive your news notifications." = "Nustatykite kas kiek laiko norite gauti pranešimus.";
+
+
+"Off" = "Išjungti";
+
+
+
+
+
+"Bullet 2" = "2-as punktas";
+
+
+"What's your email?" = "Koks yra jūsų el. paštas?";
+
+
+"New Password (8 Characters Min)" = "Naujas slaptažodis (ne mažiau 8 simbolių ilgio)";
+
+
+"Forgot Password?" = "Pamiršote savo slaptažodį?";
+
+
+"Account Settings" = "Paskyros nustatymai";
+
+
+"Learn how we process your data" = "Informacija apie jūsų duomenų tvarkymą";
+
+
+"3h" = "3 val.";
+
+
+"Ok" = "Gerai";
+
+
+"Block articles from The Guardian" = "Blokuoti straipsnius iš ---";
+
+
+"On" = "Įjungti";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Pagalbos centras";
+
+
+"Search" = "Ieškoti kanalų";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Pasirinkti failą iš galerijos";
+
+
+
+
+"Save article" = "Išsaugoti straipsnį";
+
+
+"ABOUT" = "APIE";
+
+
+"Dark" = "Tamsi";
+
+
+"Legal" = "Teisinė informacija";
+
+
+"Go to The Guardian" = "Eiti į";
+
+
+"Send reset link" = "Išsiųsti atstatymo nuorodą";
+
+
+
+
+
+"My Account" = "Mano paskyra";
+
+
+"FEEDBACK" = "ATSILIEPIMAI";
+
+
+"Message" = "Žinutė";
+
+
+"Confirm New Password" = "Patvirtinti naują slaptažodį";
+
+
+"for ___" = "dėl ___";
+
+
+"Search" = "Ieškoti temų";
+
+
+"LANGUAGE" = "KALBA";
+
+
+"Light" = "Šviesi";
+
+
+"FOLLOW 3 TO CONTINUE" = "kad tęstumėte, pasirinkite 3";
+
+
+
+
+"Off" = "Išjungti";
+
+
+"Language" = "Pasirinkite";
+
+
+"LOG OUT" = "ATSIJUNGTI";
+
+
+"Report content" = "Pranešti apie turinį";
+
+
+"What's your email?" = "Koks yra jūsų el. paštas?";
+
+
+"On" = "Įjungti";
+
+
+"More like this" = "Daugiau panašių naujienų";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "1 val.";
+
+
+"Enter Email Address" = "Įvesti el. pašto adresą";
+
+
+"News in Bullets" = "Perskaitykite daugiau per trumpesnį laiką";
+
+
+"6h" = "6 val.";
+
+
+"Choose your password" = "Sugalvokite savo slaptažodį";
+
+
+"Cancel" = "Atšaukti";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Naudodamiesi šia programėle žinias perskaitykite akimirksniu. Pasirinkite savo temas ir šaltinius, tuomet - skaitykite savo naujienas trumpais punktais.";
+
+
+"Push Notification" = "Pranešimas";
+
+
+"12h" = "12 val.";
+
+
+"24h" = "24 val.";
+
+
+"E-mail" = "El. paštas";
+
+
+"How can we help you?" = "Kuo galime padėti?";
+
+
+"OJP-Wd-0d3.text" = "Pakistanas";
+
+
+"CHANGE PASSWORD" = "PAKEISTI SLAPTAŽODĮ";
+
+
+"Change Email" = "PAKEISTI EL. PAŠTO ADRESĄ";
+
+
+"Medium" = "Vidutiniškas";
+
+
+"SAVE CHANGES" = "IŠSAUGOTI PAKEITIMUS";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Jei prisireikė pagalbos, parašykite mums žinutę - su malonumu su jumis pabendrautume!";
+
+
+"P5u-N3-Tw4.text" = "Etiketė";
+
+
+"Cancel" = "Atšaukti";
+
+
+"Bullet 1" = "1-as punktas";
+
+
+"TIMED NOTIFICATIONS" = "PRANEŠIMAI";
+
+
+"POST ARTICLE" = "PASKELBTI STRAIPSNĮ";
+
+
+"CONTACT US" = "Susisiekite su mumis";
+
+
+"EDITION / REGION" = "Versija";
+
+
+"Search" = "Paieška";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Mes labai norėtume išgirsti jūsų atsiliepimus! Ar turite klausimų ar teisinių problemų? Išbandykite mūsų Pagalbos puslapį arba Susisiekite su mumis.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Jei prisireikė pagalbos, parašykite mums žinutę - su malonumu su jumis pabendrautume!";
+
+
+"30m" = "30 min.";
+
+
+"CONTINUE" = "TĘSTI";
+
+
+"Time To Update!" = "Atnaujinkite programėle!";
+
+
+"NOTIFICATIONS" = "PRANEŠIMAI";
+
+
+"Search" = "Paieška";
+
+
+"By clicking Continue, you agree with our Terms." = "Paspauskite „Tęsti“, kad priimtumėte Sąlygas.";
+
+
+"HELP / CONTACT US" = "PAGALBA / KONTAKTAI";
+
+
+"Reset Password" = "Iš naujo nustatyti slaptažodį";
+
+
+"SEND MESSAGE" = "SIŲSTI ŽINUTĘ";
+
+
+"Save article" = "Išsaugoti straipsnį";
+
+
+"Bullet 6 (Optional)" = "6-as punktas (pasirinktinai)";
+
+
+"HAPTICS" = "Sensorinė funkcija";
+
+
+"Your message has \vbeen sent." = "Jūsų žinutė buvo išsiųsta.";
+
+
+"LEGAL" = "TEISINĖ INFORMACIJA";
+
+
+"Block List" = "Blokų sąrašas";
+
+
+"PERSONALIZATION" = "PERSONALIZACIJA";
+
+
+"in our Privacy Policy." = "mūsų Privatumo politikoje.";
+
+
+"CONTINUE" = "TĘSTI";
+
+
+"Enter Name" = "Įveskite vardą";
+
+
+"What's your email?" = "Koks yra jūsų el. paštas?";
+
+
+"Hello there!" = "Sveiki!";
+
+
+"PUSH NOTIFICATIONS" = "PRANEŠIMAI";
+
+
+"Bullet 3 (Optional)" = "3-ias punktas (pasirinktinai)";
+
+
+"Source name" = "Šaltinio pavadinimas";
+
+
+"Current Password" = "Dabartinis slaptažodis";
+
+
+"COLOR THEME" = "Spalvų tema";
+
+
+"eTp-X1-g34.text" = "Arba per";
+
+
+"CANCEL" = "ATŠAUKTI";
+
+
+"Bullet 4 (Optional)" = "4-as punktas (pasirinktinai)";
+
+
+"Date published" = "Paskelbimo data";
+
+
+"Send Password Reset Link" = "Išsiųsti slaptažodžio atstatymo nuorodą";
+
+
+"CONTINUE WITH APPLE" = "Prisijungti per „Apple ID“";
+
+
+"Off" = "Išjungti";
+
+
+"BLOCK LIST" = "BLOKŲ SĄRAŠAS";
+
+
+"HELP" = "PAGALBA";
+
+
+"Reference link" = "Nuoroda";
+
+
+"Your Password" = "Jūsų slaptažodis";
+
+
+"SUBMIT" = "PATEIKTI";
+
+
+"HELP" = "PAGALBA";
+
+
+"MY ACCOUNT" = "MANO PASKYRA";
+
+
+"hbD-HP-tZd.normalTitle" = "Atblokuoti";
+
+
+"OTHERS" = "Kita";
+
+
+"BREAKING NEWS" = "NAUJAUSIOS ŽINIOS";
+
+
+"Topics" = "Užblokuotos temos";
+
+
+"Message us," = "Parašykite mums,";
+
+
+"Pick topics to start reading
+and saving articles" = "programėlės kalba";
+
+
+"Forgot Password?" = "Pamiršote savo slaptažodį?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Pridėtos naujos funkcijos. Kai kurios problemos yra pataisytos.";
+
+
+"Success!" = "Sėkmė!";
+
+
+"Current Password" = "Dabartinis slaptažodis";
+
+
+"CONTENT" = "TURINYS";
+
+
+"Headline" = "Antraštė";
+
+
+"neg-UC-UpK.text" = "Išsirinkite temas, kad pradėtumėte skaityti ir išsisaugoti straipsnius";
+
+
+"CONTINUE WITH EMAIL ID" = "Tęskite su savo el. pašto ID";
+
+
+"SAVE CHANGES" = "IŠSAUGOTI PAKEITIMUS";
+
+
+"Post an Article" = "Paskelbti straipsnį";
+
+
+"Contact Us" = "Susisiekite su mumis";
+
+
+"On" = "Įjungti";
+
+
+"New Email Address" = "Naujas el. pašto adresas";
+
+
+"Bullet 5 (Optional)" = "5-as punktas (pasirinktinai)";
+
+
+"Suggest an improvement" = "Pasiūlyti pakeitimą";
+
+
+"Channels" = "Užblokuoti šaltiniai";
+
+
+"From:" = "Nuo:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "PERSONALIZUOTOS REKOMENDACIJOS";
+
+
+"I don't like this" = "Man tai nepatinka";
+
+
+"CONTINUE" = "TĘSTI";
+
+
+"Name" = "Vardas";
+
+
+"Enter email" = "Įveskite el. paštą";
+
+
+"HELP" = "PAGALBA";
+
+
+"FOLLOW 3 TO CONTINUE" = "Pasekite 3, kad tęstumėte";
+
+
+"UPDATE APP" = "Atnaujinti programėlę";
+
+
+"Forgot Password?" = "Pamiršote savo slaptažodį?";
+
+
+"Change Password" = "Pakeisti slaptažodį";
+
+
+"Reset Password" = "Iš naujo nustatyti slaptažodį";
+
+
+
+
+
+
+
+
+"Report content" = "Praneškite apie savo susirūpinimą";
+
+
+"CHANGE EMAIL ADDRESS" = "PAKEISTI EL. PAŠTO ADRESĄ";
+
+
+"Follow The Guardian" = "Pasekti ---";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Pridėjome daug naujų funkcijų ir ištaisėme kai kurias klaidas, kad jūsų patirtis būtų kuo sklandesnė.";
+
+
+"Edition / Region" = "Leidimas / regionas";
+
+
+"OK" = "Gerai";
+
+
+"NARRATOR" = "Pasakotojas";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Nuolat atnaujindami mėgstamas naujienas neturėtumėte skirti per daug laiko. „Bullets“ naujienos reguliariai skaito 5 minutes ir sutraukia jas į lengvai virškinamas kulkas. Dabar galite priimti tas pačias naujienas tik per truputį laiko, kad galėtumėte daugiau perskaityti per trumpesnį laiką.";
+
+
+"READING SPEED" = "Skaitymo greitis";
+
+
+
+
+
+"You haven't blocked anything yet" = "Jūs dar nieko neužblokavote";
+
+
+"EDITION / REGION" = "LEIDIMAS / REGIONAS";
+
+
+
+
+
+"HEADLINES ONLY" = "TIK AUKŠTYNĖS";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Garso nustatymai";
+
+
+"AUDIO SETTINGS" = "GARSO NUSTATYMAI";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "Antraštės ir biuleteniai";
+
+
+"CONTINUE AS GUEST" = "Praleisti ir prisijungti kaip svečius";
+
+
+"Topics" = "Temos";
+
+
+"Pick topics to start reading and saving articles" = "Pasirinkite temas, kad pradėtumėte skaityti ir išsaugoti straipsnius";
+
+
+"Channels" = "Kanalai";
+
+
+"Choose from hundreds \nof news publications" = "Pasirinkite iš šimtų naujienų leidinių";
+
+
+"Pick topics to start reading\nand saving articles" = "Pasirinkite temas, kad pradėtumėte skaityti ir išsaugoti straipsnius";
+
+"Pick editions to start reading\nand saving articles" = "Pasirinkite leidimus, kad pradėtumėte skaityti ir išsaugoti straipsnius";
+
+"Or with" = "Arba su";
+
+"CONTINUE AS GUEST" = "TĘSTI KAIP SVEČIUI";
+
+"Terms of Service" = "Paslaugų teikimo sąlygos";
+
+"Choose from hundreds \nof news publications" = "Pasirinkite iš šimtų naujienų leidinių";
+
+"Select your preferred language\nfor News in Bullets." = "Pasirinkite norimą kalbų naujienų kalbų kalbą.";
+
+"Choose a style" = "Pasirinkite stilių";
+
+"Pop or subtle. Day or night. Customize your interface." = "Popas ar subtilus. Diena ar naktis. Tinkinkite savo sąsają.";
+
+"MINS AGO" = "minučių senumo";
+
+"AN HOUR AGO" = "prieš valandą";
+
+"HOURS AGO" = "Valandos";
+
+"1 WEEK AGO" = "prieš 1 savaitę";
+
+"YESTERDAY" = "Vakar";
+
+"DAYS AGO" = "Dienas";
+
+"Go to" = "eiti į";
+
+"You have reached the start." = "Jūs pasiekėte pradžią";
+
+"Source unblocked successfully" = "Šaltinis sėkmingai atblokuotas";
+
+"Invalid email format"  = "Neteisingas el. Pašto formatas";
+
+"Wrong email or password" = "Neteisingas elektroninis paštas arba slaptažodis";
+
+

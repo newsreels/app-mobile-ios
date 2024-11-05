@@ -1,0 +1,1008 @@
+/*
+  Localizable.strings
+  Bullet
+
+  Created by Mahesh on 13/12/2020.
+  Copyright © 2020 Ziro Ride LLC. All rights reserved.
+*/
+
+
+"Bullets" = "risasi-kumweka";
+"BULLETS" = "BULLET POINTS";
+"Headlines is not available." = "vichwa vya habari hazipatikani.";
+"Check your internet Connection and try again." = "Angalia internet yako Connection na jaribu tena.";
+"Choose Image" = "Chagua Picha";
+"Headline" = "Kichwa cha habari";
+"Bullet 1" = "Risasi 1";
+"Bullet 2" = "Risasi 2";
+"Bullet 3 (Optional)" = "Risasi 3 (Hiari)";
+"Bullet 4 (Optional)" = "Risasi 4 (Hiari)";
+"Bullet 5 (Optional)" = "Risasi 5 (Hiari)";
+"Bullet 6 (Optional)" = "Risasi 6 (Hiari)";
+"Enter Aticle Headline" = "Weka Kichwa";
+"Enter source name" = "Weka Chanzo";
+"Enter reference link" = "Weka Kumbukumbu";
+"Enter published date" = "Weka Tarehe ilipochapishwa";
+"Enter Bullet 1" = "Weka risasi ya kwanza";
+"Enter Bullet 2" = "Weka risasi Pili";
+"Post article successfully" = "Makala ni mafanikio posted";
+"Follow" = "Kufuata";
+"Unfollow" = "Acha kumfuata";
+"Block articles from" = "KUZUIA makala kutoka";
+"Unblock articles from" = "Tuma RUHUSU makala kutoka";
+"Remove article" = "Ondoa makala";
+"Save article" = "Save makala hii";
+"Terms & Conditions" = "Sheria na Masharti";
+"Privacy Policy" = "Sera ya faragha";
+"TERMS AND CONDITIONS" = "SHERIA NA MASHARTI";
+"PRIVACY POLICY" = "Sera ya faragha";
+"Fuel your curiosity" = "Soma habari zaidi kuhusu ulimwengu";
+"Get clutter-free news about your\nfavorite topics from trusted sources\naround the world." = "Soma short na sahihi habari kuhusu mada yako kutoka vyanzo vya kuaminika duniani kote.";
+"Save time" = "Save muda wako";
+"Read the news in bullet form to\nshorten a 5-minute read into just a\nfew seconds." = "Soma habari katika risasi-pointi";
+"Hands-free reading" = "Mikono ya bure ya kusoma";
+"No time to read? Use our intuitive\ntext-to-speech feature." = "Hakuna muda kwa ajili ya kusoma? Matumizi ya kazi hotuba.";
+"Write your message..." = "Andika ujumbe wako ...";
+"Drop us a message if you need help with something, we'd love to hear from you!" = "tutumie ujumbe kama unahitaji msaada na kitu, tunataka upendo kusikia kutoka kwako!";
+"Drop us a message" = "tutumie ujumbe";
+"Enter Name." = "Ingiza Jina.";
+"Enter Email." = "Weka barua pepe.";
+"Write your message." = "Andika ujumbe wako.";
+"Topic unblock successfully" = "You Imefunguliwa mada hii";
+"Source unblock successfully" = "You Imefunguliwa chanzo hiki";
+"Unblock Source" = "Rudisha Chanzo";
+"Cancel" = "kufuta";
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Tuma maoni yetu, tunataka upendo kusikia kutoka kwako! Je, una maswali au shaka kisheria? Jaribu chetu cha Msaada ukurasa au kuwasiliana nasi.";
+"Enter your suggestion." = "Weka maoni yako.";
+"feedback sent." = "maoni imetumwa kwa mafanikio";
+"30m" = "30m";
+"1h" = "saa 1";
+"3h" = "3h";
+"6h" = "6h";
+"12h" = "12h";
+"24h" = "24h";
+"Language updated successfully." = "Lugha ya imesasishwa.";
+"CONTINUE" = "ENDELEA";
+"FOLLOW 3 TO CONTINUE" = "Fuata 3 NA ENDELEA";
+"Unfollow Location" = "Acha kumfuata Location";
+"Saved Articles" = "kuokolewa Makala";
+"Block" = "ZUIA";
+"Are you sure you want block" = "Una uhakika unataka kuzuia hili";
+"Once blocked, you wont be able to see any Articles related to this" = "Huwezi kuona makala kutoka kwenye kituo hiki kama kuzuia.";
+"Block Topic" = "Kuzuia hili Topic";
+"Suggested" = "Mapendekezo";
+"Related Sources not available" = "Vyanzo Kurasa hazipatikani";
+"Block Source" = "Kuzuia hili Chanzo";
+"News in Bullets App version" = "Habari katika Bullets Toleo la programu";
+"Next" = "Next";
+"Login" = "Ingia";
+"Terms" = "Masharti";
+"By clicking Continue, you agree with our Terms." = "Chagua Endelea kukubali Masharti.";
+"in our Privacy Policy." = "katika Sera yetu ya Faragha.";
+"Access token missing." = "Ishara ya upatikanaji haipo.";
+"NEXT" = "NEXT";
+"By checking this box, you agree to our " = "Click sanduku na kukubali Masharti. Data yako kusindika kwa mujibu wa Sera yetu ya Faragha.";
+"Terms of Service" = "Masharti ya Huduma";
+". We’ll handle your data according to our " = ". Sisi vinavyoshughulikia data yako kulingana na yetu";
+"Password must be at least 8 characters." = "Nenosiri lazima liwe na angalau herufi 8.";
+"Strong" = "Nguvu";
+"Medium" = "Medium";
+"Weak" = "dhaifu";
+"CREATE A NEW ACCOUNT" = "FUNGUA A NEW ACCOUNT";
+"SIGN IN WITH EXISTING ACCOUNT" = "Ingia katika akaunti iliyopo";
+"You must agree to the Terms of Services to continue" = "Ni lazima ukubali Sheria na Masharti ya kuendelea";
+"SIGN IN" = "Weka sahihi";
+"What's your password?" = "Nini nywila yako?";
+"SIGN UP" = "Jisajili";
+"Choose your password?" = "Chagua nenosiri lako";
+"Something went wrong" = "Tatizo lilitokea";
+"we will send email to" = "sisi kutuma barua pepe kwa";
+"with a link to reset your password." = "na kiungo upya nenosiri lako.";
+"A reset password link has been sent to" = "kiungo kwa password reset imetumwa kwa";
+"Enter new email." = "Ingiza barua pepe mpya.";
+"Enter password." = "Weka nenosiri.";
+"New Password " = "New Password";
+" (8 characters min)" = "(8 wahusika min)";
+"Enter current password." = "Weka nenosiri la sasa.";
+"Enter new password." = "Weka nenosiri jipya.";
+"Enter confirm password." = "Thibitisha nenosiri.";
+"password do not matched!" = "nywila hailingani!";
+"GET STARTED" = "kupata kuanza";
+"SKIP" = "ruka";
+"From where you would like to pick photo?" = "Kutoka ambapo ungependa kuchukua picha?";
+"Camera" = "Kamera";
+"Photo Library" = "Maktaba ya Picha";
+"Kindly open settings and enable access" = "Tafadhali mazingira wazi na kuwezesha upatikanajia";
+"Open Settings" = "Fungua Mipangilio";
+"Access needed for your camera" = "Access zinahitajika kwa ajili ya kamera yako";
+"Access needed for your photo library" = "Access zinahitajika kwa ajili ya maktaba yako";
+"Done" = "Kufanyika";
+"Pull to refresh" = "Kuvuta na kupata mahitaji";
+"Loading" = "Loading";
+"Speech not available for this article" = "Hotuba haipatikani kwa makala hii";
+"MANAGE LOCATION" = "kUSIMAMIA LOCATIONN";
+"OK" = "sawa";
+"Choose your News in Bullets Edition based on locale" = "Chagua Habari yako katika Toleo la Risasi kulingana na eneo lako";
+"Edition" = "Toleo";
+"EDITION / REGION" = "TOLEO / MKOA";
+"Your Topics" = "Mada Zako";
+"Your Channels" = "Vituo vyako";
+"Your Places" = "Maeneo Yako";
+"Enter email." = "Ingiza barua pepe.";
+"Please enter a password." = "Tafadhali ingiza nywila.";
+"Search articles" = "Tafuta makala";
+"No results" = "Hakuna matokeo";
+"Edition / Region" = "Toleo / Mkoa";
+
+
+
+
+"0JC-Sb-Ouu.text" = "DISPLAY MODE";
+
+
+"Search" = "Tafuta";
+
+
+"Select" = "Kuchagua (";
+
+
+"6H8-dI-k9P.text" = "kusimamia Maeneo";
+
+
+"6KH-YP-5Lt.text" = "NARRATOR";
+
+
+" ) icon on the article" = ") Icon kwenye makala";
+
+
+"BLOCK" = "ZUIA";
+
+
+"you want to read later then" = "unataka kusoma baadaye basi";
+
+
+"7oo-cf-l7Y.text" = "Kasi ya kusoma";
+
+
+"88L-ip-pZw.text" = "Kasi ya kusoma";
+
+
+"Looks like there is nothing here but a cat. \nWould you like to go back to home?" = "Hakuna kitu hapa\nJe, unataka kwenda nyuma kwenye ukurasa wa nyumbani?    Je, unataka kwenda nyuma kwenye ukurasa wa nyumbani?";
+
+
+"BpH-F1-i0z.normalTitle" = "Mitaa";
+
+
+" ) to save article." = ") Ili kuokoa makala.";
+
+
+"FB0-YN-HZg.text" = "kuendelea, kuchagua 3";
+
+
+"H5Z-xJ-dWD.text" = "vichwa vya habari na\npointi risasi";
+
+
+"Search" = "Tafuta";
+
+
+
+
+
+"Hro-zH-1Vd.text" = "XTENDED VIEWW";
+
+
+"Jpx-nY-Is1.normalTitle" = "Vituo";
+
+
+"JqN-io-P1u.normalTitle" = "+ Ongeza kwenye Maeneo";
+
+
+"What's your email?" = "Ni nini Anuani ya barua pepe yako?";
+
+
+"Lw1-Md-nse.text" = "LIST VIEW";
+
+
+"LyT-pT-g53.text" = "INTERNATIONAL";
+
+
+"N6C-6i-Z2s.text" = "INTERNATIONAL";
+
+
+"Nru-uU-CsC.text" = "mapendekezo";
+
+
+
+
+
+"SjW-kG-gB7.normalTitle" = "mada";
+
+
+
+
+
+"Uaz-bC-jXS.text" = "kukufaa";
+
+
+"Topics" = "mada";
+
+
+"WXY-po-W1B.text" = "Hvichwa vya habari na\nBULLET POINTS";
+
+
+"ans-Zy-T2Y.placeholder" = "Tafuta Maeneo";
+
+
+"bgE-Jc-u8H.text" = "kukufaa";
+
+
+
+
+
+"Tap the ( " = "Gonga (";
+
+
+"Places" = "eneo";
+
+
+"d1l-HK-OrG.text" = "DISPLAY MODE";
+
+
+
+
+
+"Language" = "lugha";
+
+
+"e9g-Wr-suO.text" = "vichwa vya habari ONLY";
+
+
+"GO HOME"  ="rudi nyuma kwenye ukurasa kuu";
+
+
+"eh1-Oo-lEn.text" = "EXTENDED VIEW";
+
+
+"hOf-26-eCm.text" = "1x";
+
+
+"il3-4J-X1V.text" = "LIST VIEW";
+
+
+"j2i-MT-VkA.text" = "Jaribu keyword tofauti";
+
+
+"Top News" = "News Top";
+
+
+"jmO-aF-nJ9.text" = "vichwa vya habari tu";
+
+
+"There is nothing in here" = "Hakuna kitu hapa";
+
+
+"ma1-9p-bSa.text" = "Hakuna matokeo";
+
+
+"mce-jc-cKH.text" = "NARRATOR";
+
+
+"Channels" = "Vituo";
+
+
+"Discover" = "Discover";
+
+
+"pCy-AN-hsO.text" = "1x";
+
+
+"CANCEL" = "GHAIRI";
+
+
+"Discover" = "Discover";
+
+
+"No saved stories yet" = "Hakuna kitu hapa";
+
+
+"wDG-kF-Hl8.text" = "Soma habari kulingana na eneo";
+
+
+
+
+
+"wKj-3i-n0R.text" = "ujaniishaji";
+
+
+"xfF-RB-mWL.text" = "ujanibishaji";
+
+
+"Search" = "Tafuta";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Pata habari muhimu zaidi kwa mkoa unaochagua. Soma hadithi za habari zilizopangwa ili kukuhabarisha habari mpya kutoka popote ulimwenguni.";
+
+
+"Search articles" = "Tafuta makala";
+
+
+"6H8-dI-k9P.text" = "Dhibiti Maeneo";
+
+
+
+
+
+"Profile" = "Profaili";
+
+
+"Editions" = "Matoleo";
+
+
+
+
+
+"BpH-F1-i0z.normalTitle" = "Maeneo";
+
+
+
+
+
+"Search" = "Tafuta";
+
+
+
+
+
+
+
+
+"Search" = "Tafuta";
+
+
+"LANGUAGE" = "LUGHA";
+
+
+"Search" = "Tafuta";
+
+
+"No results" = "Hakuna matokeo yaliyopatikana";
+
+
+"Channels" = "Njia";
+
+
+"Places" = "Maeneo";
+
+
+"Places" = "Maeneo";
+
+
+"e9F-hd-Ifm.text" = "TOLEO / MKOA";
+
+
+
+
+
+
+
+
+"PLACES" = "MAENEO";
+
+
+"SAVED ARTICLES" = "MAKALA ZILIZOOKOA";
+
+
+"Articles" = "Nakala";
+
+
+
+
+
+"pgJ-g5-tAm.normalTitle" = "ENDELEA";
+
+
+
+
+
+"w8f-2R-NgT.text" = "TOLEO / MKOA";
+
+
+"Try a different keyword" = "Jaribu neno kuu tofauti";
+
+
+"For You" = "Kwa ajili yako";
+
+
+"Results" = "Matokeo";
+
+
+
+"About" = "Swahili";
+
+
+"Share" = "Kushiriki";
+
+
+"ACCOUNT" = "ACCOUNT";
+
+
+"Your Email" = "Barua pepe yako";
+
+
+"1sT-J6-qI0.text" = "SIMEHIFADHIWA MAKALA";
+
+
+"2XX-rr-GLC.text" = "Chagua vituo tofauti na mamia ya vyanzo";
+
+
+"Get the most relevant news to the region you choose. Read news stories curated to keep you updated on the latest news from anywhere in the world." = "Soma matukio ya habari za karibuni na habari kutoka duniani kote.";
+
+
+"Set an interval in which you want to receive your news notifications." = "Kuweka muda pengo kupokea notisi.";
+
+
+"Off" = "Off";
+
+
+
+
+
+"Bullet 2" = "risasi 2";
+
+
+"What's your email?" = "Nini barua pepe yako?";
+
+
+"New Password (8 Characters Min)" = "New Password (8 Wahusika wa Chini)";
+
+
+"Forgot Password?" = "Umesahau nywila?";
+
+
+"Account Settings" = "Mipangilio ya akaunti";
+
+
+"Learn how we process your data" = "Maelezo kuhusu usindikaji data yako";
+
+
+"3h" = "3h";
+
+
+"Ok" = "Sawa";
+
+
+"Block articles from The Guardian" = "Block articles from The Guardian";
+
+
+"On" = "Washa";
+
+
+"Auto" = "Auto";
+
+
+"Help Center" = "Kituo cha Msaada";
+
+
+"Search" = "Search Vituo";
+
+
+"Facebook" = "Facebook";
+
+
+"Select file from gallery" = "Chagua faili kutoka nyumba ya sanaa";
+
+
+
+
+"Save article" = "Save makala";
+
+
+"ABOUT" = "KUHUSU";
+
+
+"Dark" = "Dark";
+
+
+"Legal" = "kisheria";
+
+
+"Go to The Guardian" = "Go to The Guardian";
+
+
+"Send reset link" = "Tuma kiungo upya";
+
+
+
+
+
+"My Account" = "Akaunti yangu";
+
+
+"FEEDBACK" = "FEEDBACK";
+
+
+"Message" = "Ujumbe";
+
+
+"Confirm New Password" = "Thibitisha New Passwordd";
+
+
+"for ___" = "kwa ___";
+
+
+"Search" = "Tafuta Mada";
+
+
+"LANGUAGE" = "LANGUAGE";
+
+
+"Light" = "Mwanga";
+
+
+"FOLLOW 3 TO CONTINUE" = "kuendelea, kuchagua 3";
+
+
+
+
+"Off" = "Kuzima";
+
+
+"Language" = "Chagua";
+
+
+"LOG OUT" = "LOG OUT";
+
+
+"Report content" = "ripoti maudhui";
+
+
+"What's your email?" = "Nini barua pepe yako?";
+
+
+"On" = "Washa";
+
+
+"More like this" = "habari zaidi kama hii";
+
+
+"Bullet App v1.1.0" = "Bullet App v1.1.0";
+
+
+"1h" = "saa 1";
+
+
+"Enter Email Address" = "Weka Barua Pepe";
+
+
+"News in Bullets" = "Soma zaidi katika muda wa chini.";
+
+
+"6h" = "6h";
+
+
+"Choose your password" = "Chagua nenosiri lako";
+
+
+"Cancel" = "kufuta";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Soma habari haraka na programu hii. Chagua mada yako na vyanzo. Kisha kusoma habari yako na pointi short risasi.";
+
+
+"Push Notification" = "Taarifa";
+
+
+"12h" = "12h";
+
+
+"24h" = "24h";
+
+
+"E-mail" = "Barua pepe";
+
+
+"How can we help you?" = "Tunawezaje kusaidia?";
+
+
+"OJP-Wd-0d3.text" = "Pakistan";
+
+
+"CHANGE PASSWORD" = "BADILISHA NENO LA SIRI";
+
+
+"Change Email" = "BADILISHA EMAIL ADDRESS";
+
+
+"Medium" = "Medium";
+
+
+"SAVE CHANGES" = "HIFADHI MABADILIKO";
+
+
+"It looks like you are experiencing problems with our app. We are here to help so please get in touch with us" = "Tutumie ujumbe kama unahitaji msaada na kitu, tunataka upendo kusikia kutoka kwako!";
+
+
+"P5u-N3-Tw4.text" = "Label";
+
+
+"Cancel" = "kufuta";
+
+
+"Bullet 1" = "risasi 1";
+
+
+"TIMED NOTIFICATIONS" = "kuarifiwa";
+
+
+"POST ARTICLE" = "POST AN MAKALA";
+
+
+"CONTACT US" = "Wasiliana nasi";
+
+
+"EDITION / REGION" = "EDITION";
+
+
+"Search" = "Tafuta";
+
+
+"Have feedback? We'd love to hear it, but please don't share sensitive information. Have questions or legal concerns? Try help or support." = "Tuma maoni yetu, tunataka upendo kusikia kutoka kwako! Je, una maswali au shaka kisheria? Jaribu chetu cha Msaada ukurasa au kuwasiliana nasi.";
+
+
+"Google" = "Google";
+
+
+"Drop us a message if you need help with something, we'd love to hear from you!" = "Tutumie ujumbe kama unahitaji msaada na kitu, tunataka upendo kusikia kutoka kwako!";
+
+
+"30m" = "30m";
+
+
+"CONTINUE" = "ENDELEA";
+
+
+"Time To Update!" = "Sasisha programu!";
+
+
+"NOTIFICATIONS" = "kuarifiwa";
+
+
+"Search" = "Tafuta";
+
+
+"By clicking Continue, you agree with our Terms." = "Chagua Endelea kukubali Masharti.";
+
+
+"HELP / CONTACT US" = "HELP / CONTACT";
+
+
+"Reset Password" = "Rudisha siri";
+
+
+"SEND MESSAGE" = "kutuma ujumbe";
+
+
+"Save article" = "Save makala";
+
+
+"Bullet 6 (Optional)" = "Risasi 6 (Hiari)";
+
+
+"HAPTICS" = "HAPTICS";
+
+
+"Your message has \vbeen sent." = "Ujumbe wako umetumwa..";
+
+
+"LEGAL" = "KISHERIA";
+
+
+"Block List" = "Orodha Block";
+
+
+"PERSONALIZATION" = "Ubinafsishaji";
+
+
+"in our Privacy Policy." = "katika Sera yetu ya Faragha.";
+
+
+"CONTINUE" = "ENDELEA";
+
+
+"Enter Name" = "Ingiza Jina";
+
+
+"What's your email?" = "Nini barua pepe yako?";
+
+
+"Hello there!" = "Hello!";
+
+
+"PUSH NOTIFICATIONS" = "kuarifiwa";
+
+
+"Bullet 3 (Optional)" = "Risasi 3 (Hiari)";
+
+
+"Source name" = "Jina la Chanzo";
+
+
+"Current Password" = "Nenosiri la sasa";
+
+
+"COLOR THEME" = "rangi Theme";
+
+
+"eTp-X1-g34.text" = "au kwa njia ya";
+
+
+"CANCEL" = "GHAIRI";
+
+
+"Bullet 4 (Optional)" = "Risasi 4 (Hiari)";
+
+
+"Date published" = "tarehe ya kuchapisha";
+
+
+"Send Password Reset Link" = "Tuma kiungo kwa password reset";
+
+
+"CONTINUE WITH APPLE" = "Jisajili kwa njia ya Apple ID";
+
+
+"Off" = "Kuzima";
+
+
+"BLOCK LIST" = "ZUIA LIST";
+
+
+"HELP" = "HELP";
+
+
+"Reference link" = "Kumbukumbu kiungo";
+
+
+"Your Password" = "Nenosiri";
+
+
+"SUBMIT" = "WASILISHA";
+
+
+"HELP" = "HELP";
+
+
+"MY ACCOUNT" = "AKAUNTI YANGU";
+
+
+"hbD-HP-tZd.normalTitle" = "Rudisha";
+
+
+"OTHERS" = "wengine";
+
+
+"BREAKING NEWS" = "Kuvunja habari";
+
+
+"Topics" = "Blocked Mada";
+
+
+"Message us," = "Ujumbe wetu,";
+
+
+"Pick topics to start reading
+and saving articles" = "lugha ya programu";
+
+
+"Forgot Password?" = "Umesahau nywila?";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Makala mpya ni aliongeza. Baadhi ya masuala ni fasta.";
+
+
+"Success!" = "Success!";
+
+
+"Current Password" = "Mafanikio!";
+
+
+"CONTENT" = "CONTENT";
+
+
+"Headline" = "Kichwa cha habari";
+
+
+"neg-UC-UpK.text" = "Chagua mada kuanza kusoma na kuokoa makala    Chagua mada kuanza kusoma na kuokoa makala";
+
+
+"CONTINUE WITH EMAIL ID" = "Kuendelea Pamoja pepe ID yako";
+
+
+"SAVE CHANGES" = "HIFADHI MABADILIKO";
+
+
+"Post an Article" = "Chapisha Ibara";
+
+
+"Contact Us" = "Wasiliana nasi";
+
+
+"On" = "Washa";
+
+
+"New Email Address" = "Mpya ya Barua Pepe";
+
+
+"Bullet 5 (Optional)" = "Risasi 5 (Hiari)";
+
+
+"Suggest an improvement" = "zinaonyesha kuboresha";
+
+
+"Channels" = "Blocked Vyanzo";
+
+
+"From:" = "Kutoka:";
+
+
+"PERSONALIZED RECOMMENDATIONS" = "mapendekezo MsakoPERSONALIZED RECOMMENDATIONS";
+
+
+"I don't like this" = "Sipendi huu";
+
+
+"CONTINUE" = "ENDELEA";
+
+
+"Name" = "jina";
+
+
+"Enter email" = "Ingiza barua pepe";
+
+
+"HELP" = "HELP";
+
+
+"FOLLOW 3 TO CONTINUE" = "Kufuata 3 hadi Kuendelea";
+
+
+"UPDATE APP" = "Mwisho App";
+
+
+"Forgot Password?" = "Umesahau nywila?";
+
+
+"Change Password" = "Badilisha neno la siri";
+
+
+"Reset Password" = "Rudisha siri";
+
+
+
+
+
+
+
+
+"Report content" = "Kuripoti hoja yako";
+
+
+"CHANGE EMAIL ADDRESS" = "BADILISHA EMAIL ADDRESSCHANGE EMAIL ADDRESS";
+
+
+"Follow The Guardian" = "Follow The Guardian";
+
+
+"We added lots of new features and fix some bugs to make your experience as smooth as possible." = "Tumeongeza vipengee vingi vipya na kurekebisha mende kadhaa ili kufanya uzoefu wako uwe laini iwezekanavyo.";
+
+
+"Edition / Region" = "Toleo / Mkoa";
+
+
+"OK" = "sawa";
+
+
+"NARRATOR" = "MSIMULIZI";
+
+
+"Keeping updated about the news stories you love should not take too much of your time. News in Bullets takes the regular 5-minute read and condense it into easily digestible bullets. Now, you can take in the same news in just a fraction of the time – so you can read more in less time." = "Kuweka habari mpya juu ya hadithi unazopenda haipaswi kuchukua muda wako mwingi. Habari katika Risasi huchukua kusoma kwa kawaida kwa dakika 5 na kuziingiza kwenye risasi zinazoweza kuyeyuka kwa urahisi. Sasa, unaweza kuchukua habari zile zile kwa sehemu ndogo tu ya wakati - ili uweze kusoma zaidi kwa muda mfupi.";
+
+
+"READING SPEED" = "KUSOMA KASI";
+
+
+
+
+
+"You haven't blocked anything yet" = "Hujazuia chochote bado";
+
+
+"EDITION / REGION" = "TOLEO / MKOA";
+
+
+
+
+
+"HEADLINES ONLY" = "Vichwa vya habari TU";
+
+
+" 1.0" = " 1.0";
+
+
+
+
+
+"Audio Settings" = "Mipangilio ya Sauti";
+
+
+"AUDIO SETTINGS" = "MIPANGO YA AUDIO";
+
+
+
+
+
+
+
+
+"1x" = "1x";
+
+
+"HEADLINES AND\nBULLETS" = "VICHWA VYA KICHWA NA MABONGO";
+
+
+"CONTINUE AS GUEST" = "RUKA NA UNGIA KATIKA MGENI";
+
+
+"Topics" = "Mada";
+
+
+"Pick topics to start reading and saving articles" = "Chagua mada ili kuanza kusoma na kuhifadhi nakala";
+
+
+"Channels" = "Njia";
+
+
+"Choose from hundreds \nof news publications" = "Chagua kutoka kwa mamia ya machapisho ya habari";
+
+
+"Pick topics to start reading\nand saving articles" = "Chagua mada za kuanza kusoma na kuhifadhi makala";
+
+"Pick editions to start reading\nand saving articles" = "Chagua matoleo ya kuanza kusoma na kuhifadhi makala";
+
+"Or with" = "Au na";
+
+"CONTINUE AS GUEST" = "ENDELEA KAMA MGENI";
+
+"Terms of Service" = "Masharti ya Huduma";
+
+"Choose from hundreds \nof news publications" = "Chagua kutoka kwa mamia ya machapisho ya habari";
+
+"Select your preferred language\nfor News in Bullets." = "Chagua lugha unayopendelea ya News in Bullets.";
+
+"Choose a style" = "Chagua mtindo";
+
+"Pop or subtle. Day or night. Customize your interface." = "Pop au hila. Mchana au usiku. Customize interface yako.";
+
+"MINS AGO" = "dakika zilizopita";
+
+"AN HOUR AGO" = "saa moja iliyopita";
+
+"HOURS AGO" = "masaa yaliyopita";
+
+"1 WEEK AGO" = "Wiki 1 iliyopita";
+
+"YESTERDAY" = "Jana";
+
+"DAYS AGO" = "siku zilizopita";
+
+"Go to" = "Enda kwa";
+
+"You have reached the start." = "Umefikia mwanzo";
+
+"Source unblocked successfully" = "Chanzo kimefunguliwa kwa ufanisi";
+
+"Invalid email format"  = "Umbizo la baruapepe ni batili";
+
+"Wrong email or password" = "Barua pepe au nywila isiyo sahihi";
+
+
