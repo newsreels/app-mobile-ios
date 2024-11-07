@@ -38,6 +38,9 @@ PODS:
   - Firebase/Crashlytics (7.7.0):
     - Firebase/CoreOnly
     - FirebaseCrashlytics (~> 7.7.0)
+  - Firebase/DynamicLinks (7.7.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 7.7.0)
   - Firebase/Messaging (7.7.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 7.7.0)
@@ -70,6 +73,8 @@ PODS:
     - GoogleDataTransport (~> 8.0)
     - nanopb (~> 2.30907.0)
     - PromisesObjC (~> 1.2)
+  - FirebaseDynamicLinks (7.7.0):
+    - FirebaseCore (~> 7.0)
   - FirebaseInstallations (7.11.0):
     - FirebaseCore (~> 7.0)
     - GoogleUtilities/Environment (~> 7.0)
@@ -238,6 +243,7 @@ DEPENDENCIES:
   - FBSDKShareKit (= 11.0.1)
   - Firebase/Core (= 7.7.0)
   - Firebase/Crashlytics (= 7.7.0)
+  - Firebase/DynamicLinks (= 7.7.0)
   - Firebase/Messaging (= 7.7.0)
   - Firebase/Performance (= 7.7.0)
   - FlexiblePageControl
@@ -295,6 +301,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCrashlytics
+    - FirebaseDynamicLinks
     - FirebaseInstallations
     - FirebaseInstanceID
     - FirebaseMessaging
@@ -363,6 +370,7 @@ SPEC CHECKSUMS:
   FirebaseCore: ac35d680a0bf32319a59966a1478e0741536b97b
   FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
   FirebaseCrashlytics: 47af228115805e190b566db12c028263531b8ce0
+  FirebaseDynamicLinks: 3ddc15a6f7e1813710d265acc662e5dfe034ac36
   FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
   FirebaseInstanceID: ad5135045a498d7775903efd39762d2cdfa1be27
   FirebaseMessaging: ce33c2537fdda1d1a4bc82b2245e3c3bf9107684
@@ -413,6 +421,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
   UIImageViewAlignedSwift: 12b0b06da988015e6d5dec09ee29d5ae1a244848
 
-PODFILE CHECKSUM: 3bb7bed0def07f1fb2885c546b4b862b58821b76
+PODFILE CHECKSUM: 347c3738f25912dcb1860c731353d63216cb97ef
 
 COCOAPODS: 1.15.2

@@ -19,7 +19,6 @@ class TermsVC: UIViewController, WKUIDelegate ,WKNavigationDelegate  {
     var viewWeb: WKWebView!
     var webURL = ""
     var titleWeb = ""
-    let TAG = "TermsVC"
     
     var email = ""
     var password = ""
@@ -211,21 +210,16 @@ extension TermsVC {
         
         let params = ["email":email,
                       "password": password,
-                      "first_name": "",
-                      "last_name": "",
                       "termsandcondition": true] as [String : Any]
         
-        WebService.URLResponseAuth("pyauth/register", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
+        WebService.URLResponseAuth("auth/register", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
             
             self.hideLoaderVC()
             
             do{
-                
-                let responseString = String(data: response, encoding: .utf8) 
-                 print("\(self.TAG) Response String: \(responseString)")
                 let FULLResponse = try
                     JSONDecoder().decode(userDC.self, from: response)
-                print("\(self.TAG) FULL REPONSE ",response);
+                
                 if FULLResponse.success == true {
                     
                     print("user_id: ",FULLResponse.user_id ?? "")
@@ -244,14 +238,13 @@ extension TermsVC {
             } catch let jsonerror {
                 
                 self.hideLoaderVC()
-                print("\(self.TAG) jsonerror ",jsonerror);
+                
                 print("error parsing json objects",jsonerror)
                 SharedManager.shared.logAPIError(url: "auth/account-setpassword", error: jsonerror.localizedDescription, code: "")
             }
             
         }){ (error) in
-            print("\(self.TAG) error ",error);
-        
+            
             self.hideLoaderVC()
             
             print("error parsing json objects",error)

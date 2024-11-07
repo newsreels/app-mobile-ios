@@ -333,61 +333,48 @@ class func URLResponseAuth(_ url: String, method: HTTPMethod, parameters: [Strin
 //        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
 //        var oauthparams = OAuthAuthorizationGrant.refreshToken(refreshToken as! String).parameters
 //        oauthparams["scope"] = "offline_access"
+
         
         let refreshToken = UserDefaults.standard.value(forKey: Constant.UD_refreshToken) ?? ""
-        
-        UserDefaults.standard.set(refreshToken, forKey: Constant.UD_userToken)
-        UserDefaults.standard.synchronize()
 
-        // access token for today extension
-        if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-            userDefaults.set(refreshToken as AnyObject, forKey: "accessToken")
-            userDefaults.synchronize()
+        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
+        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
+        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
+
+        let parameters: [String: String] = ["refresh_token": refreshToken as! String]
+
+        heimdall.requestAccessToken(grantType: "refresh_token", parameters: parameters) { result in
+
+            switch result {
+            case .success:
+                //     print("success")
+
+                if let refreshToken = heimdall.accessToken?.refreshToken {
+                    UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
+                }
+
+                if heimdall.hasAccessToken {
+                    if let accessToken = heimdall.accessToken?.accessToken {
+                        UserDefaults.standard.set(accessToken, forKey: Constant.UD_userToken)
+                        UserDefaults.standard.synchronize()
+
+                        // access token for today extension
+                        if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
+                            userDefaults.set(accessToken as AnyObject, forKey: "accessToken")
+                            userDefaults.synchronize()
+                        }
+
+                        callBack(true)
+                    }
+                }
+
+            case let .failure(error):
+                SharedManager.shared.logAPIError(url: "requestAccessToken", error: error.localizedDescription, code: "")
+                print("failure: \(error.localizedDescription)")
+                print("access token failed", UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "")
+                callBack(false)
+            }
         }
-        callBack(true)
-        
-        
-//
-//        let refreshToken = UserDefaults.standard.value(forKey: Constant.UD_refreshToken) ?? ""
-//
-//        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
-//        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
-//        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
-//
-//        let parameters: [String: String] = ["refresh_token": refreshToken as! String]
-//
-//        heimdall.requestAccessToken(grantType: "refresh_token", parameters: parameters) { result in
-//
-//            switch result {
-//            case .success:
-//                //     print("success")
-//
-//                if let refreshToken = heimdall.accessToken?.refreshToken {
-//                    UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
-//                }
-//
-//                if heimdall.hasAccessToken {
-//                    if let accessToken = heimdall.accessToken?.accessToken {
-//                        UserDefaults.standard.set(accessToken, forKey: Constant.UD_userToken)
-//                        UserDefaults.standard.synchronize()
-//
-//                        // access token for today extension
-//                        if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-//                            userDefaults.set(accessToken as AnyObject, forKey: "accessToken")
-//                            userDefaults.synchronize()
-//                        }
-//
-//                        callBack(true)
-//                    }
-//                }
-//
-//            case let .failure(error):
-//                SharedManager.shared.logAPIError(url: "requestAccessToken", error: error.localizedDescription, code: "")
-//                print("failure: \(error.localizedDescription)")
-//                print("access token failed", UserDefaults.standard.value(forKey: Constant.UD_userToken) ?? "")
-//                callBack(false)
-//            }
-//        }
     }
 
     // MARK: - Webservice with JSON BODY version

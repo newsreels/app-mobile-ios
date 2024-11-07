@@ -72,7 +72,7 @@ class DiscoverViewController: UIViewController, UITableViewDelegate, UITableView
         title = "Search"
         navigationItem.searchController = searchController
         if #available(iOS 13.0, *) {
-            searchController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "Channels, Topics, & Stories")
+            searchController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "Channels, Topics, & Stories4")
         } else {
             searchController.searchBar.placeholder = "Channels, Topics, & Stories"
         }

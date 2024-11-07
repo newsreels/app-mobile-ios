@@ -64,6 +64,7 @@ fileprivate struct SearchBar: UIViewControllerRepresentable {
             searchController.searchBar.placeholder = "Channels, Topics & Stories"
             searchController.searchBar.searchTextField.font = UIFont.systemFont(ofSize: 8)
             searchController.searchBar.delegate = self
+            searchController.searchBar.searchTextField.font = UIFont.systemFont(ofSize: 16) // Increase font size
             searchController.searchBar.searchTextField.delegate = self
             searchController.isActive = true
             

@@ -19,7 +19,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 //import FacebookCore
 import FirebaseAnalytics
-//import GoogleMobileAds
+import GoogleMobileAds
 import SwiftRater
 import Toast_Swift
 import AppsFlyerLib
@@ -29,6 +29,7 @@ import DataCache
 import OneSignal
 import Heimdallr
 import AuthenticationServices
+import FirebaseDynamicLinks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
@@ -133,7 +134,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(setHome), name: .SwiftUIDidChangeLanguage, object: nil)
 
         // Initialize Google Mobile Ads SDK.
-//        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         //<--- AppStore Prompt
         let count = SharedManager.shared.appUsageCount ?? 0
@@ -192,114 +193,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     func doAuthRegistration(_ subjectToken: String, loginType: LoginType, completion: @escaping (Bool)->()) {
         // only Guest login here
         
+        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
+        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
+        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
         
-        
-        
-        let tokenURL = WebserviceManager.shared.AUTH_BASE_URL+"pyauth/guestlogintoken";
         var parameters = [String : String]()
+        var grantType = ""
+        print("SHAHZAIB -> subjectToken: \(subjectToken)")
         parameters["language"] = SharedManager.shared.languageId
-        parameters["device_code"] = subjectToken
-        parameters["client_id"] =  WebserviceManager.shared.APP_CLIENT_ID
-        parameters["client_secret"] = WebserviceManager.shared.APP_CLIENT_SECRET
-        parameters["grantType"] = ""
+        if loginType == .Guest {
+            
+            grantType = "device_code"
+            parameters["device_code"] = subjectToken
+            SharedManager.shared.isGuestUser = true
+        }
+
+//        let oauthparams = OAuthAuthorizationGrant.extension("token_exchange", parameters)
+//        oauthparams["scope"] = "offline_access"
+//        oauthparams["audience"] = Constant.authAudienceURL
         
-        WebService.callApi(url: tokenURL , parameters : parameters ) { result in
+        heimdall.requestAccessToken(grantType: grantType, parameters: parameters) { result in
+            
             switch result {
-            case .success(let data):
-                
-                var accessToken : String? = nil
-                do{
-                    let OAuth = try JSONDecoder().decode(OAuth.self, from: data)
-                    print("\(Constant.TAG) -> ACCESS TOKEN ",OAuth.access_token)
-                    accessToken = OAuth.access_token
-                }
-                catch{
-                    completion(false)
-                    print("\(Constant.TAG) -> ERROR PARSING TOKEN ")
-                    return
-                }
-                print("accessToken: ", accessToken)
-                UserDefaults.standard.set(accessToken, forKey: Constant.UD_refreshToken)
-                if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
+            case .success():
+                print("SHAHZAIB -> SUCCESS: ")
+                DispatchQueue.main.async {
                     
-                    userDefaults.set(accessToken as AnyObject, forKey: "WRefreshToken")
-                    userDefaults.synchronize()
+                    if heimdall.hasAccessToken {
+                        
+                        guard let accessToken = heimdall.accessToken?.accessToken else {
+                            completion(false)
+                            return
+                        }
+                        print("SHAHZAIB -> accessToken: \(accessToken)")
+                        print("accessToken: ", accessToken)
+                        if let refreshToken = heimdall.accessToken?.refreshToken {
+                            
+                            UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
+                            if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
+                                
+                                userDefaults.set(refreshToken as AnyObject, forKey: "WRefreshToken")
+                                userDefaults.synchronize()
+                            }
+                        }
+                        completion(true)
+                        self.uploadTheToken(accessToken: accessToken, userEmail: "", loginType: loginType)
+                    }
                 }
-                self.uploadTheToken(accessToken: accessToken!, userEmail: "", loginType: loginType)
-                completion(true)
                 
             case .failure(let error):
                 completion(false)
 
                 let errorAlert = error.localizedDescription
-                print("failure22: \(errorAlert)")
+                print("SHAHZAIB -> failure: \(errorAlert)")
                 DispatchQueue.main.async {
                     SharedManager.shared.showAlertLoader(message: NSLocalizedString("Oops! Something went wrong. Please try again.", comment: ""), type: .alert)
                 }
             }
-
         }
-
-        
-//        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
-//        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
-//        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
-//        
-//        var parameters = [String : String]()
-//        var grantType = ""
-//        
-//        parameters["language"] = SharedManager.shared.languageId
-//        if loginType == .Guest {
-//            
-//            grantType = "device_code"
-//            parameters["device_code"] = subjectToken
-//            SharedManager.shared.isGuestUser = true
-//        }
-//        print("client_id \(WebserviceManager.shared.APP_CLIENT_ID)")
-//        print("client_secret \(WebserviceManager.shared.APP_CLIENT_SECRET)")
-//        print("PARSAMS \(parameters)")
-////        let oauthparams = OAuthAuthorizationGrant.extension("token_exchange", parameters)
-////        oauthparams["scope"] = "offline_access"
-////        oauthparams["audience"] = Constant.authAudienceURL
-        
-//        heimdall.requestAccessToken(grantType: grantType, parameters: parameters) { result in
-//            
-//            switch result {
-//            case .success():
-//                
-//                DispatchQueue.main.async {
-//                    
-//                    if heimdall.hasAccessToken {
-//                        
-//                        guard let accessToken = heimdall.accessToken?.accessToken else {
-//                            completion(false)
-//                            return
-//                        }
-//                        print("accessToken: ", accessToken)
-//                        if let refreshToken = heimdall.accessToken?.refreshToken {
-//                            
-//                            UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
-//                            if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-//                                
-//                                userDefaults.set(refreshToken as AnyObject, forKey: "WRefreshToken")
-//                                userDefaults.synchronize()
-//                            }
-//                        }
-//                        self.uploadTheToken(accessToken: accessToken, userEmail: "", loginType: loginType)
-//                        completion(true)
-//                    }
-//                }
-//                
-//            case .failure(let error):
-//                completion(false)
-//
-//                let errorAlert = error.localizedDescription
-//                print("failure22: \(errorAlert)")
-//                DispatchQueue.main.async {
-//                    SharedManager.shared.showAlertLoader(message: NSLocalizedString("Oops! Something went wrong. Please try again.", comment: ""), type: .alert)
-//                }
-//            }
-//        }
     }
     
   
@@ -338,29 +289,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     // resigter user webservice Respones
     func performWSToUpdateFirebaseTokenOnServer(userAccessToken: String, fcmToken:String, loginType : LoginType = .Guest) {
         
-        let HeaderToken  = userAccessToken
-        let params = ["token":fcmToken]
+        self.performWSToUserConfig(loginType: loginType)
         
-        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(userDC.self, from: response)
-                
-                if FULLResponse.message?.lowercased() == "success" {
-
-                    self.performWSToUserConfig(loginType: loginType)
-                }
-         
-                
-            } catch let jsonerror {
-                print("error parsing json objects",jsonerror)
-                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
-            }
-            
-        }){ (error) in
-            
-            print("error parsing json objects",error)
-        }
+//        let HeaderToken  = userAccessToken
+//        let params = ["token":fcmToken]
+//        
+//        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(userDC.self, from: response)
+//                
+//                if FULLResponse.message?.lowercased() == "success" {
+//
+//                    self.performWSToUserConfig(loginType: loginType)
+//                }
+//         
+//                
+//            } catch let jsonerror {
+//                print("error parsing json objects",jsonerror)
+//                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
+//            }
+//            
+//        }){ (error) in
+//            
+//            print("error parsing json objects",error)
+//        }
     }
     
     func performWSToUserConfig(loginType: LoginType) {
@@ -459,43 +412,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 let params = ["region": LanguageHelper.languageShared.selectedRegion?.id ?? languageID]
 
                 
-                WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
-                    ANLoader.hide()
-                    do{
-                        let FULLResponsee = try
-                            JSONDecoder().decode(messageData.self, from: response)
-                        
-                        if FULLResponsee.message?.lowercased() == "success" {
-                            SharedManager.shared.isTabReload = true
-                            
-                            SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? languageID, isRefreshedToken: true, completionHandler: { status in
-                              
-                                
-//                                DispatchQueue.main.async {
-//                                    if FULLResponse.onboarded ?? false {
+                SharedManager.shared.isTabReload = true
+                
+                SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? languageID, isRefreshedToken: true, completionHandler: { status in
+                    
+                    
+                    //                                DispatchQueue.main.async {
+                    //                                    if FULLResponse.onboarded ?? false {
+                    //
+                    //                                        self.setHomeVC()
+                    //                                    }
+                    //                                    else {
+                    //
+                    //                                        let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
+                    //                                        let navVC = UINavigationController(rootViewController: vc)
+                    ////                                            self.navigationController?.present(navVC, animated: true, completion: nil)
+                    //                                    }
+                    //                                }
+                    self.setHomeVC()
+                })
+                    
+                    
+//                WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
+//                    ANLoader.hide()
+//                    do{
+//                        let FULLResponsee = try
+//                            JSONDecoder().decode(messageData.self, from: response)
+//                        
+//                        if FULLResponsee.message?.lowercased() == "success" {
+//                            SharedManager.shared.isTabReload = true
+//                            
+//                            SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? languageID, isRefreshedToken: true, completionHandler: { status in
+//                              
+//                                
+////                                DispatchQueue.main.async {
+////                                    if FULLResponse.onboarded ?? false {
+////
+////                                        self.setHomeVC()
+////                                    }
+////                                    else {
+////
+////                                        let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
+////                                        let navVC = UINavigationController(rootViewController: vc)
+//////                                            self.navigationController?.present(navVC, animated: true, completion: nil)
+////                                    }
+////                                }
+//                                self.setHomeVC()
 //
-//                                        self.setHomeVC()
-//                                    }
-//                                    else {
+//                            })
+//                        }
+//                        
+//                    } catch let jsonerror {
+//                        print("error parsing json objects",jsonerror)
+//                    }
+//                }) { (error) in
+//                    ANLoader.hide()
+//                    print("error parsing json objects",error)
 //
-//                                        let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
-//                                        let navVC = UINavigationController(rootViewController: vc)
-////                                            self.navigationController?.present(navVC, animated: true, completion: nil)
-//                                    }
-//                                }
-                                self.setHomeVC()
-
-                            })
-                        }
-                        
-                    } catch let jsonerror {
-                        print("error parsing json objects",jsonerror)
-                    }
-                }) { (error) in
-                    ANLoader.hide()
-                    print("error parsing json objects",error)
-
-                }
+//                }
                 
 //                if userLang != code {
 //
@@ -793,54 +767,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
     
     
-    
-//    func handleIncomingDynamicLink(_ dynamicLink: DynamicLink) {
-//        
-//        guard let incomingURL = dynamicLink.url else {
-//             
-//            return
-//        }
-//        SharedManager.shared.isAppOpenFromDeepLink = true  //whenever open from Link set the flag true
-//
-//        if self.isContainString(incomingURL.absoluteString, subString: "/articles?id=") {
-//            
-//            SharedManager.shared.isAppLaunchedThroughNotification = true
-//            SharedManager.shared.clearProgressBar()
-//            
-//            if let range = incomingURL.absoluteString.range(of: "/articles?id=") {
-//                let urlID = incomingURL.absoluteString[range.upperBound...]
-//                print(urlID)
-//                
-//                SharedManager.shared.articleIdNotification = String(urlID)
-//                
-//                if SharedManager.shared.isAppOpenFromDeepLink {
-//                    
-//                    NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
-//                    
-//                }
-//                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.widgetOpen, eventDescription: "")
-//            }
-//        }
-//        else if self.isContainString(incomingURL.absoluteString, subString: "/reel?context=") {
-//            
-//            SharedManager.shared.isAppLaunchedThroughNotification = true
-//            SharedManager.shared.clearProgressBar()
-//            
-//            if let range = incomingURL.absoluteString.range(of: "/reel?context=") {
-//                let urlID = incomingURL.absoluteString[range.upperBound...]
-//                print(urlID)
-//                
-//                SharedManager.shared.reelsContextNotification = String(urlID)
-//                
-//                if SharedManager.shared.isAppOpenFromDeepLink {
-//                    
-//                    NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
-//                    
-//                }
-//                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.widgetOpen, eventDescription: "")
-//            }
-//        }
-//    }
+    func handleIncomingDynamicLink(_ dynamicLink: DynamicLink) {
+        
+        guard let incomingURL = dynamicLink.url else {
+             
+            return
+        }
+        SharedManager.shared.isAppOpenFromDeepLink = true  //whenever open from Link set the flag true
+
+        if self.isContainString(incomingURL.absoluteString, subString: "/articles?id=") {
+            
+            SharedManager.shared.isAppLaunchedThroughNotification = true
+            SharedManager.shared.clearProgressBar()
+            
+            if let range = incomingURL.absoluteString.range(of: "/articles?id=") {
+                let urlID = incomingURL.absoluteString[range.upperBound...]
+                print(urlID)
+                
+                SharedManager.shared.articleIdNotification = String(urlID)
+                
+                if SharedManager.shared.isAppOpenFromDeepLink {
+                    
+                    NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
+                    
+                }
+                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.widgetOpen, eventDescription: "")
+            }
+        }
+        else if self.isContainString(incomingURL.absoluteString, subString: "/reel?context=") {
+            
+            SharedManager.shared.isAppLaunchedThroughNotification = true
+            SharedManager.shared.clearProgressBar()
+            
+            if let range = incomingURL.absoluteString.range(of: "/reel?context=") {
+                let urlID = incomingURL.absoluteString[range.upperBound...]
+                print(urlID)
+                
+                SharedManager.shared.reelsContextNotification = String(urlID)
+                
+                if SharedManager.shared.isAppOpenFromDeepLink {
+                    
+                    NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
+                    
+                }
+                SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.widgetOpen, eventDescription: "")
+            }
+        }
+    }
 
     
     // Open URI-scheme for iOS 9 and above
@@ -864,20 +837,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
         if let incomingURL = userActivity.webpageURL {
 
-//            let linkHandled = DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL) { ( dynamicLink, error) in
-//                guard error == nil else {
-//                    print("Found an error \(error!.localizedDescription)")
-//                    return
-//                }
-//                if let dynamicLink = dynamicLink {
-////                    self.handleIncomingDynamicLink(dynamicLink)
-//                }
-//            }
-//            if linkHandled {
-//                return true
-//            } else {
-//                return false
-//            }
+            let linkHandled = DynamicLinks.dynamicLinks().handleUniversalLink(incomingURL) { ( dynamicLink, error) in
+                guard error == nil else {
+                    print("Found an error \(error!.localizedDescription)")
+                    return
+                }
+                if let dynamicLink = dynamicLink {
+                    self.handleIncomingDynamicLink(dynamicLink)
+                }
+            }
+            if linkHandled {
+                return true
+            } else {
+                return false
+            }
         }
         return false
     }
@@ -1444,7 +1417,7 @@ extension AppDelegate {
 //            }
             
             
-        } 
+        }
     }
     
 }
@@ -1592,6 +1565,7 @@ extension AppDelegate {
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
+        print("SHAHZAIB -> dismissSplashscreenLoaderVC")
         if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
             SharedManager.shared.bulletsAutoPlay = true
             let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
@@ -1600,17 +1574,11 @@ extension AppDelegate: SplashscreenLoaderVCDelegate {
             self.window?.rootViewController = self.navigationController
         } else {
             let deviceID =  UIDevice.current.identifierForVendor?.uuidString ?? ""
-            self.doAuthRegistration(deviceID, loginType: .Guest) { value in
-                if value
-                {
-                    SharedManager.shared.bulletsAutoPlay = true
-                    let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
-                    self.navigationController = AppNavigationController.init(rootViewController: vc)
-                    self.navigationController.navigationBar.isHidden = true
-                    self.window?.rootViewController = self.navigationController
-                }
-            }
-          
+            self.doAuthRegistration(deviceID, loginType: .Guest) { value in }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.navigationController = AppNavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: "AnimationLaunch"))
+            self.navigationController.navigationBar.isHidden = true
+            self.window?.rootViewController = self.navigationController
         }
     }
 }

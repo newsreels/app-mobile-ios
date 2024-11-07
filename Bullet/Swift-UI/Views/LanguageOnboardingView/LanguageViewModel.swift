@@ -61,6 +61,7 @@ class LanguageViewModel: ObservableObject {
     }
     
     func saveSelectedRegionAndLanguage(isInSettings: Bool = false, completion: (() -> Void)?) {
+        print("SHAHZAIB saveSelectedRegionAndLanguage() ")
         if let selectedRegion = selectedRegion, let selectedLanguage = selectedLanguage {
             do {
                 // Create JSON Encoder
@@ -95,7 +96,7 @@ class LanguageViewModel: ObservableObject {
             }
             
             SharedManager.shared.performWSToUpdateRegion(selectedRegion.id) { status in
-            
+                print("SHAHZAIB saveSelectedRegionAndLanguage()status ")
                 SharedManager.shared.performWSToUpdateLanguage(id: selectedLanguage.id, isRefreshedToken: true, completionHandler: { status in
                     if let completion = completion {
                         completion()

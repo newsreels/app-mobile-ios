@@ -14,6 +14,7 @@ target 'Bullet' do
   pod 'Firebase/Messaging' , '7.7.0'
   pod 'Firebase/Crashlytics', '7.7.0'
   pod 'Firebase/Performance' , '7.7.0'
+  pod 'Firebase/DynamicLinks', '7.7.0'   
   pod 'Google-Mobile-Ads-SDK', '~> 7.68.0'
   pod 'GoogleSignIn' , '5.0.2'
   pod 'ReachabilitySwift'

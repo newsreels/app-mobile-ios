@@ -15,7 +15,7 @@ class RegistrationCompletedVC: UIViewController {
     @IBOutlet weak var title2Label: UILabel!
     @IBOutlet weak var continueButton: UIButton!
     
-let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    let appDelegate = UIApplication.shared.delegate as? AppDelegate
     var email = ""
     var password = ""
     var linkToken = ""
@@ -88,7 +88,7 @@ extension RegistrationCompletedVC {
         continueButton.showLoader()
         
         let params = ["email": email]
-        WebService.URLResponseAuth("pyauth/checkemail", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
+        WebService.URLResponseAuth("auth/verify", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
             
             self.continueButton.hideLoaderView()
             
@@ -96,7 +96,7 @@ extension RegistrationCompletedVC {
                 let FULLResponse = try
                     JSONDecoder().decode(userDC.self, from: response)
                 
-                if FULLResponse.exist == true  {
+                if FULLResponse.exist == true {
                     // Email verified
                     
                     SharedManager.shared.showAlertLoader(message: "Email verifcation completed successfully.", type: .alert)
@@ -129,38 +129,27 @@ extension RegistrationCompletedVC {
         
         continueButton.showLoader()
 //        self.showLoaderInVC()
-//        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
-//        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
-//        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
+        let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
+        let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
+        let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
 
-        
-        let tokenURL = WebserviceManager.shared.AUTH_BASE_URL+"pyauth/login";
         var parameters = [String : String]()
-        parameters["email"] = self.email
+        parameters["username"] = self.email
         parameters["password"] = self.password
         parameters["language"] = SharedManager.shared.languageId
-        
-        
-        WebService.callApi(url: tokenURL , parameters : parameters ) { result in
+
+        heimdall.requestAccessToken(grantType: "password", parameters: parameters) { result in
+           
+//            self.hideLoaderVC()
             switch result {
-            case .success(let data):
+            case .success():
                 
                 DispatchQueue.main.async {
-                  
-            
-                    var accessToken : String? = nil
-                    do{
-                        let OAuth = try JSONDecoder().decode(OAuth.self, from: data)
-                        print("\(Constant.TAG) -> ACCESS TOKEN ",OAuth.access_token)
-                        accessToken = OAuth.access_token
-                    }
-                    catch{
-                        print("\(Constant.TAG) -> ERROR PARSING TOKEN ")
-                    }
-                   
-                 
-                    if let accessToken = accessToken {
+                    
+                    if heimdall.hasAccessToken {
                         
+                        if let accessToken = heimdall.accessToken?.accessToken {
+                            
                             self.performWSToGetUserInfo(token: accessToken) {
                                 
                                 DispatchQueue.main.async {
@@ -198,149 +187,66 @@ extension RegistrationCompletedVC {
                                     let params = ["region": LanguageHelper.languageShared.selectedRegion?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9"]
 
                                     
-                                    WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
-                                        do{
-                                            let FULLResponsee = try
-                                                JSONDecoder().decode(messageData.self, from: response)
-                                            
-                                            print("PARMS REGION = \(params)")
-                                            if FULLResponsee.message?.lowercased() == "success" {
-                                                SharedManager.shared.isTabReload = true
-                                                
-                                                SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9", isRefreshedToken: true, completionHandler: { status in
-                                                    ANLoader.hide()
-                                                    if status {
-                                                        print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9")")
-                                                        print("language updated successfully")
-                                                    } else {
-                                                        print("language updated failed")
-                                                    }
-                                                    
-                                                    DispatchQueue.main.async {
-                                                        let fToken = UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) ?? ""
-                                                        if fToken == "" {
-                                                            
-                                                            self.appDelegate?.registerFirebaseToken { (Bool) in
-                                                                
-                                                                let fcmNewToken = UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) ?? ""
-                                                                self.performWSToUpdateFirebaseTokenOnServer(userAccessToken: accessToken, fcmToken: fcmNewToken)
-                                                            }
-                                                        }
-                                                        else {
-                                                            
-                                                            self.performWSToUpdateFirebaseTokenOnServer(userAccessToken: accessToken, fcmToken: fToken)
-                                                        }
-                                                        
-                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                            if SharedManager.shared.isUserSetup {
-                                                                self.appDelegate?.setHomeVC()
-                                                            }
-                                                            else {
-                                                                let vc = AddUsernameVC.instantiate(fromAppStoryboard: .RegistrationSB)
-                                                                self.navigationController?.pushViewController(vc, animated: true)
-                                                            }
-                                                        }
-                                                        
-                                                       
-                                                        
-                                                    }
-                                                })
+                                
+                                        SharedManager.shared.isTabReload = true
+                                        
+                                        SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9", isRefreshedToken: true, completionHandler: { status in
+                                            ANLoader.hide()
+                                            if status {
+                                                print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9")")
+                                                print("language updated successfully")
+                                            } else {
+                                                print("language updated failed")
                                             }
                                             
-                                        } catch let jsonerror {
-                                            ANLoader.hide()
-                                            print("error parsing json objects",jsonerror)
-                                        }
-                                    }) { (error) in
-                                        ANLoader.hide()
-                                        print("error parsing json objects",error)
-
-                                    }
-
-                                    
-                                }
-                                print("Access Token", accessToken)
-
-                    
-                        }
-                        
-//                        if let refreshToken = heimdall.accessToken?.refreshToken {
-//                            
-//                            self.continueButton.hideLoaderView()
-////                            self.hideLoaderVC()
-//                            UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
-//                            
-//                            if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-//                                
-//                                userDefaults.set(refreshToken as AnyObject, forKey: "WRefreshToken")
-//                                userDefaults.synchronize()
-//                            }
-//                        }
-                    }
-                }
-                
-            case .failure(let error):
-                
-                self.continueButton.hideLoaderView()
-//                self.hideLoaderVC()
-                let errorAlert = error.localizedDescription
-                print("\(Constant.TAG) failure: \(errorAlert)")
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                }
-            }
-
-        }
-
-//        heimdall.requestAccessToken(grantType: "password", parameters: parameters) { result in
-//            self.continueButton.hideLoaderView()
-////            self.hideLoaderVC()
-//            switch result {
-//            case .success():
-//                
-//                DispatchQueue.main.async {
-//                    
-//                    if heimdall.hasAccessToken {
-//                        
-//                        if let accessToken = heimdall.accessToken?.accessToken {
-//                            
-//                            self.performWSToGetUserInfo(token: accessToken) {
-//                                
-//                                DispatchQueue.main.async {
-//                                    
-//                                    if SharedManager.shared.isGuestUser && SharedManager.shared.isLinkedUser == false {
-//                                        
-//                                        let guestToken = UserDefaults.standard.string(forKey: Constant.UD_userToken) ?? ""
+                                            DispatchQueue.main.async {
+                                                let fToken = UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) ?? ""
+                                                if fToken == "" {
+                                                    
+                                                    self.appDelegate?.registerFirebaseToken { (Bool) in
+                                                        
+                                                        let fcmNewToken = UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) ?? ""
+                                                        self.performWSToUpdateFirebaseTokenOnServer(userAccessToken: accessToken, fcmToken: fcmNewToken)
+                                                    }
+                                                }
+                                                else {
+                                                    
+                                                    self.performWSToUpdateFirebaseTokenOnServer(userAccessToken: accessToken, fcmToken: fToken)
+                                                }
+                                                let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
+                                                let firstPart = self.email.split(separator: "@").first
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                    
+                                                   
+                                                                    let params = ["name": firstPart ?? "",
+                                                                                  
+                                                                                  "username": firstPart ?? ""] as [String : Any]
+                                                                    
+                                                    WebService.multiParamsULResponseMultipleImages("auth/update-profile", method: .patch, parameters: params, headers: token, ImageDic: nil) { (response) in
+                                                        
+                                                        
+                                                    } withAPIFailure: { (error) in
+                                                                    }
+                                                    self.continueButton.hideLoaderView()
+                                                    //                                                    if SharedManager.shared.isUserSetup {
+                                                    //                                                        self.appDelegate?.setHomeVC()
+                                                    //                                                    }
+                                                    //                                                    else {
+                                                    //                                                        let vc = AddUsernameVC.instantiate(fromAppStoryboard: .RegistrationSB)
+                                                    //                                                        self.navigationController?.pushViewController(vc, animated: true)
+                                                    //                                                    }
+                                                    
+                                                    self.appDelegate?.setHomeVC()
+                                                  
+                                                    
+                                                }
+                                                
+                                               
+                                                
+                                            }
+                                        })
+                            
 //
-////                                        if !SharedManager.shared.isUserSetup {
-////                                            self.performWSToLinkUser(accessToken: accessToken, token: guestToken) {}
-////                                        }
-//                                    }
-//                                    
-//                                    //access token for today extension
-//                                    if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-//                                        userDefaults.set(accessToken as AnyObject, forKey: "accessToken")
-//                                        userDefaults.synchronize()
-//                                    }
-//                                    
-//                                    //set new token for guest login
-//                                    UserDefaults.standard.set(accessToken, forKey: Constant.UD_userToken)
-//                                    
-//                                    //let userEmail = self.txtEmail.text ?? ""
-//                                    //let userPass = self.txtPassword.text ?? ""
-//                                    UserDefaults.standard.set(self.email, forKey: Constant.UD_userEmail)
-//                                    //UserDefaults.standard.set(userPass, forKey: Constant.UD_userPassword)
-//                                    
-//                                    self.view.endEditing(true)
-//                                    
-////                                    SharedManager.shared.performWSToGetReelsData(completionHandler: { status in
-////                                        print("status", status)
-////                                    })
-//                                    
-//                                    let token = UserDefaults.standard.object(forKey: Constant.UD_userToken) as? String ?? ""
-//                                    let params = ["region": LanguageHelper.languageShared.selectedRegion?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9"]
-//
-//                                    
 //                                    WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
 //                                        do{
 //                                            let FULLResponsee = try
@@ -399,42 +305,42 @@ extension RegistrationCompletedVC {
 //                                        print("error parsing json objects",error)
 //
 //                                    }
-//
-//                                    
-//                                }
-//                                print("Access Token", accessToken)
-//
-//                            }
-//                        }
-//                        
-//                        if let refreshToken = heimdall.accessToken?.refreshToken {
-//                            
-//                            self.continueButton.hideLoaderView()
-////                            self.hideLoaderVC()
-//                            UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
-//                            
-//                            if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
-//                                
-//                                userDefaults.set(refreshToken as AnyObject, forKey: "WRefreshToken")
-//                                userDefaults.synchronize()
-//                            }
-//                        }
-//                    }
-//                }
-//                
-//            case .failure(let error):
-//                
-//                self.continueButton.hideLoaderView()
-////                self.hideLoaderVC()
-//                let errorAlert = error.localizedDescription
-//                print("failure: \(errorAlert)")
-//                
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-//                    
-////                    self.viewHintPassword(hintText: errorAlert, textColor: UIColor(displayP3Red: 217.0/255.0, green: 77.0/255.0, blue: 69.0/255.0, alpha: 1), alertImgWidth: 20.0, isHidden: false)
-//                }
-//            }
-//        }
+
+                                    
+                                }
+                                print("Access Token", accessToken)
+
+                            }
+                        }
+                        
+                        if let refreshToken = heimdall.accessToken?.refreshToken {
+                            
+                            self.continueButton.hideLoaderView()
+//                            self.hideLoaderVC()
+                            UserDefaults.standard.set(refreshToken, forKey: Constant.UD_refreshToken)
+                            
+                            if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
+                                
+                                userDefaults.set(refreshToken as AnyObject, forKey: "WRefreshToken")
+                                userDefaults.synchronize()
+                            }
+                        }
+                    }
+                }
+                
+            case .failure(let error):
+                
+                self.continueButton.hideLoaderView()
+//                self.hideLoaderVC()
+                let errorAlert = error.localizedDescription
+                print("failure: \(errorAlert)")
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    
+//                    self.viewHintPassword(hintText: errorAlert, textColor: UIColor(displayP3Red: 217.0/255.0, green: 77.0/255.0, blue: 69.0/255.0, alpha: 1), alertImgWidth: 20.0, isHidden: false)
+                }
+            }
+        }
     }
     
     func performWSToGetUserInfo(token: String, completionHandler: @escaping () -> Void) {
@@ -520,33 +426,34 @@ extension RegistrationCompletedVC {
     
     func performWSToUpdateFirebaseTokenOnServer(userAccessToken: String, fcmToken:String) {
         
-        let HeaderToken  = userAccessToken
-        let params = ["token":fcmToken]
-        
-        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(userDC.self, from: response)
-                
-                if FULLResponse.message?.lowercased() == "success" {
-                    
-                    UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
-
-                }
-                else {
-                    
-                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
-                 //   print(FULLResponse.message ?? "")
-                }
-                
-            } catch let jsonerror {
-                print("error parsing json objects",jsonerror)
-                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
-            }
-            
-        }){ (error) in
-            print("error parsing json objects",error)
-        }
+        UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
+//        let HeaderToken  = userAccessToken
+//        let params = ["token":fcmToken]
+//        
+//        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(userDC.self, from: response)
+//                
+//                if FULLResponse.message?.lowercased() == "success" {
+//                    
+//                    UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
+//
+//                }
+//                else {
+//                    
+//                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
+//                 //   print(FULLResponse.message ?? "")
+//                }
+//                
+//            } catch let jsonerror {
+//                print("error parsing json objects",jsonerror)
+//                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
+//            }
+//            
+//        }){ (error) in
+//            print("error parsing json objects",error)
+//        }
     }
     
 }

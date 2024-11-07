@@ -1536,74 +1536,85 @@ class SharedManager {
     }
  
     func performWSToUpdateRegion(_ regionID: String, completionHandler: @escaping (_ status: Bool) -> Void) {
-        
+        completionHandler(true)
 //        ANLoader.showLoading()
 
-        let params = ["region": regionID]
-        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
-        
-        WebService.URLResponse("news/regions", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
-            completionHandler(true)
-            ANLoader.hide()
-
-            do{
-                let json = try JSONSerialization.jsonObject(with: response, options: []) as? [String : Any]
-             }catch{ print("erroMsg") }
-
-        }) { (error) in
-            ANLoader.hide()
-            completionHandler(false)
-            print("error parsing json objects",error)
-        }
+//        let params = ["region": regionID]
+//        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
+//        
+//        WebService.URLResponse("news/regions", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
+//            completionHandler(true)
+//            ANLoader.hide()
+//
+//            do{
+//                let json = try JSONSerialization.jsonObject(with: response, options: []) as? [String : Any]
+//             }catch{ print("erroMsg") }
+//
+//        }) { (error) in
+//            ANLoader.hide()
+//            completionHandler(false)
+//            print("error parsing json objects",error)
+//        }
     }
 
     
     func performWSToUpdateLanguage(id: String, isRefreshedToken: Bool, completionHandler: @escaping (_ status: Bool) -> Void) {
         
-        let params = ["language": id]
-        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
+//        let params = ["language": id]
+//        let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
         
 //        ANLoader.showLoading()
-        WebService.URLResponseAuth("auth/update-profile/language", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
-            ANLoader.hide()
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(messageDC.self, from: response)
-                
-                if FULLResponse.message?.uppercased() == Constant.STATUS_SUCCESS {
-                    
-                    if isRefreshedToken {
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
 
-                            WebService.checkValidToken { _ in
+            WebService.checkValidToken { _ in
 
-                                completionHandler(true)
-                            }
-                        })
-                    }
-                    else {
-                        completionHandler(true)
-                    }
-                    
-                } else {
-                    completionHandler(false)
-                }
-                
-                
-                
-            } catch let jsonerror {
-                
-                SharedManager.shared.logAPIError(url: "auth/update-profile/language", error: jsonerror.localizedDescription, code: "")
-                completionHandler(false)
-                print("error parsing json objects",jsonerror)
+                completionHandler(true)
             }
-            
-        }) { (error) in
+        })
+//        print("SHAHZAIB performWSToUpdateLanguage() ")
+//        WebService.URLResponseAuth("auth/update-profile/language", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
+//            
+//            print("SHAHZAIB performWSToUpdateLanguage() response")
 //            ANLoader.hide()
-            completionHandler(false)
-            print("error parsing json objects",error)
-        }
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(messageDC.self, from: response)
+//                
+//                if FULLResponse.message?.uppercased() == Constant.STATUS_SUCCESS {
+//                    
+//                    if isRefreshedToken {
+//                        
+//                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+//
+//                            WebService.checkValidToken { _ in
+//
+//                                completionHandler(true)
+//                            }
+//                        })
+//                    }
+//                    else {
+//                        completionHandler(true)
+//                    }
+//                    
+//                } else {
+//                    completionHandler(false)
+//                }
+//                
+//                
+//                
+//            } catch let jsonerror {
+//                print("SHAHZAIB performWSToUpdateLanguage() jsonerror")
+//                SharedManager.shared.logAPIError(url: "auth/update-profile/language", error: jsonerror.localizedDescription, code: "")
+//                completionHandler(false)
+//                print("error parsing json objects",jsonerror)
+//            }
+//            
+//        }) { (error) in
+//            print("SHAHZAIB performWSToUpdateLanguage() error")
+////            ANLoader.hide()
+//            completionHandler(false)
+//            print("error parsing json objects",error)
+//        }
     }
     
     

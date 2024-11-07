@@ -37,7 +37,6 @@ class RegistrationNewVC: UIViewController {
     @IBOutlet weak var googleLabel: UILabel!
     @IBOutlet weak var fbLabel: UILabel!
     
-    
     @IBOutlet weak var appleButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
     @IBOutlet weak var fbButton: UIButton!
@@ -499,7 +498,7 @@ extension RegistrationNewVC {
         
         showLoader(button: continueButton)
         
-        WebService.URLResponseAuth("pyauth/checkemail", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
+        WebService.URLResponseAuth("auth/verify", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
             
             self.hideloader()
             do{

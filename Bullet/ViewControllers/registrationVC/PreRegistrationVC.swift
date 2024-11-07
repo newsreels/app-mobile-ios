@@ -551,36 +551,36 @@ extension PreRegistrationVC {
     // resigter user webservice Respones
     func performWSToUpdateFirebaseTokenOnServer(userAccessToken: String, fcmToken:String) {
         
-        let HeaderToken  = userAccessToken
-        let params = ["token":fcmToken]
-        
-        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(userDC.self, from: response)
-                
-                if FULLResponse.message?.lowercased() == "success" {
-
-//                    self.performWSToUserConfig()
-                }
-                else {
-
-                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
-                }
-                
-                ANLoader.hide()
-            } catch let jsonerror {
-                
-                ANLoader.hide()
-                print("error parsing json objects",jsonerror)
-                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
-            }
-            
-        }){ (error) in
-            
-            ANLoader.hide()
-            print("error parsing json objects",error)
-        }
+//        let HeaderToken  = userAccessToken
+//        let params = ["token":fcmToken]
+//        
+//        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(userDC.self, from: response)
+//                
+//                if FULLResponse.message?.lowercased() == "success" {
+//
+////                    self.performWSToUserConfig()
+//                }
+//                else {
+//
+//                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
+//                }
+//                
+//                ANLoader.hide()
+//            } catch let jsonerror {
+//                
+//                ANLoader.hide()
+//                print("error parsing json objects",jsonerror)
+//                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
+//            }
+//            
+//        }){ (error) in
+//            
+//            ANLoader.hide()
+//            print("error parsing json objects",error)
+//        }
     }
     
     func performWSToUserConfig() {

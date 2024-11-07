@@ -400,33 +400,34 @@ extension LoginWithEmailVC {
     
     func performWSToUpdateFirebaseTokenOnServer(userAccessToken: String, fcmToken:String) {
         
-        let HeaderToken  = userAccessToken
-        let params = ["token":fcmToken]
-        
-        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(userDC.self, from: response)
-                
-                if FULLResponse.message?.lowercased() == "success" {
-                    
-                    UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
-
-                }
-                else {
-                    
-                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
-                 //   print(FULLResponse.message ?? "")
-                }
-                
-            } catch let jsonerror {
-                print("error parsing json objects",jsonerror)
-                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
-            }
-            
-        }){ (error) in
-            print("error parsing json objects",error)
-        }
+        UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
+//        let HeaderToken  = userAccessToken
+//        let params = ["token":fcmToken]
+//        
+//        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(userDC.self, from: response)
+//                
+//                if FULLResponse.message?.lowercased() == "success" {
+//                    
+//                    UserDefaults.standard.set(true, forKey: Constant.UD_isHapticOn)
+//
+//                }
+//                else {
+//                    
+//                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
+//                 //   print(FULLResponse.message ?? "")
+//                }
+//                
+//            } catch let jsonerror {
+//                print("error parsing json objects",jsonerror)
+//                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
+//            }
+//            
+//        }){ (error) in
+//            print("error parsing json objects",error)
+//        }
     }
     
     

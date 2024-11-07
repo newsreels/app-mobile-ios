@@ -334,37 +334,37 @@ extension OnboardingNewVC {
     
     // resigter user webservice Respones
     func performWSToUpdateFirebaseTokenOnServer(userAccessToken: String, fcmToken:String) {
-        
-        let HeaderToken  = userAccessToken
-        let params = ["token":fcmToken]
-        
-        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
-            do{
-                let FULLResponse = try
-                    JSONDecoder().decode(userDC.self, from: response)
-                
-                if FULLResponse.message?.lowercased() == "success" {
-
-//                    self.performWSToUserConfig()
-                }
-                else {
-
-                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
-                }
-                
-                self.hideloader()
-            } catch let jsonerror {
-                
-                self.hideloader()
-                print("error parsing json objects",jsonerror)
-                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
-            }
-            
-        }){ (error) in
-            
-            self.hideloader()
-            print("error parsing json objects",error)
-        }
+//        
+//        let HeaderToken  = userAccessToken
+//        let params = ["token":fcmToken]
+//        
+//        WebService.URLResponse("notification/token", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+//            do{
+//                let FULLResponse = try
+//                    JSONDecoder().decode(userDC.self, from: response)
+//                
+//                if FULLResponse.message?.lowercased() == "success" {
+//
+////                    self.performWSToUserConfig()
+//                }
+//                else {
+//
+//                    SharedManager.shared.showAlertView(source: self, title: ApplicationAlertMessages.kAppName, message: FULLResponse.message ?? "")
+//                }
+//                
+//                self.hideloader()
+//            } catch let jsonerror {
+//                
+//                self.hideloader()
+//                print("error parsing json objects",jsonerror)
+//                SharedManager.shared.logAPIError(url: "notification/token", error: jsonerror.localizedDescription, code: "")
+//            }
+//            
+//        }){ (error) in
+//            
+//            self.hideloader()
+//            print("error parsing json objects",error)
+//        }
     }
     
     func performWSToUserConfig(loginType: LoginType) {
@@ -466,27 +466,20 @@ extension OnboardingNewVC {
                     let params = ["region": LanguageHelper.languageShared.selectedRegion?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9"]
 
                     
-                    WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
-                        ANLoader.hide()
-                        do{
-                            let FULLResponsee = try
-                                JSONDecoder().decode(messageData.self, from: response)
+        
+                        SharedManager.shared.isTabReload = true
+                        
+                        SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9", isRefreshedToken: true, completionHandler: { status in
+                            self.hideloader()
+                            if status {
+                                print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9")")
+                                print("language updated successfully")
+                            } else {
+                                print("language updated failed")
+                            }
                             
-                            print("PARMS REGION = \(params)")
-                            if FULLResponsee.message?.lowercased() == "success" {
-                                SharedManager.shared.isTabReload = true
-                                
-                                SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9", isRefreshedToken: true, completionHandler: { status in
-                                    self.hideloader()
-                                    if status {
-                                        print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9")")
-                                        print("language updated successfully")
-                                    } else {
-                                        print("language updated failed")
-                                    }
-                                    
-                                    DispatchQueue.main.async {
-                                        self.hideloader()
+                            DispatchQueue.main.async {
+                                self.hideloader()
 //                                        if FULLResponse.onboarded ?? false {
 //
 //                                            self.appDelegate?.setHomeVC()
@@ -497,19 +490,54 @@ extension OnboardingNewVC {
 //                                            let navVC = UINavigationController(rootViewController: vc)
 //                                            self.navigationController?.present(navVC, animated: true, completion: nil)
 //                                        }
-                                        self.appDelegate?.setHomeVC()
-                                    }
-                                })
+                                self.appDelegate?.setHomeVC()
                             }
-                            
-                        } catch let jsonerror {
-                            print("error parsing json objects",jsonerror)
-                        }
-                    }) { (error) in
-                        ANLoader.hide()
-                        print("error parsing json objects",error)
-
-                    }
+                        })
+                    
+//                    WebService.URLResponseJSONRequest("news/regions/", method: .patch, parameters: params, headers: token, withSuccess: { (response) in
+//                        ANLoader.hide()
+//                        do{
+//                            let FULLResponsee = try
+//                                JSONDecoder().decode(messageData.self, from: response)
+//                            
+//                            print("PARMS REGION = \(params)")
+//                            if FULLResponsee.message?.lowercased() == "success" {
+//                                SharedManager.shared.isTabReload = true
+//                                
+//                                SharedManager.shared.performWSToUpdateLanguage(id: LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9", isRefreshedToken: true, completionHandler: { status in
+//                                    self.hideloader()
+//                                    if status {
+//                                        print("SELECTED LANGUAGE = \(LanguageHelper.languageShared.selectedLanguage?.id ?? "ee4add73-b717-4e32-bffb-fecbf82ee6d9")")
+//                                        print("language updated successfully")
+//                                    } else {
+//                                        print("language updated failed")
+//                                    }
+//                                    
+//                                    DispatchQueue.main.async {
+//                                        self.hideloader()
+////                                        if FULLResponse.onboarded ?? false {
+////
+////                                            self.appDelegate?.setHomeVC()
+////                                        }
+////                                        else {
+////
+////                                            let vc = SelectTopicsVC.instantiate(fromAppStoryboard: .RegistrationSB)
+////                                            let navVC = UINavigationController(rootViewController: vc)
+////                                            self.navigationController?.present(navVC, animated: true, completion: nil)
+////                                        }
+//                                        self.appDelegate?.setHomeVC()
+//                                    }
+//                                })
+//                            }
+//                            
+//                        } catch let jsonerror {
+//                            print("error parsing json objects",jsonerror)
+//                        }
+//                    }) { (error) in
+//                        ANLoader.hide()
+//                        print("error parsing json objects",error)
+//
+//                    }
                   
                 }
                 else {

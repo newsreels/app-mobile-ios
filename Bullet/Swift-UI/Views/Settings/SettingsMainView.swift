@@ -269,27 +269,27 @@ struct SettingsMainview: View {
     var contentSettings: some View {
         SettingsSectionView(title: NSLocalizedString("Content Settings", comment: "")) {
             VStack (spacing: 0) {
-                SettingsRowView(settings: .selection(iconName: "language_ic", title: NSLocalizedString("Primary Language", comment: ""), description: primaryLanguage)) {
-                    if let region = LanguageHelper.shared.getSavedRegion() {
-                        languageHelper.getLanguage(withRegionID: region.id) {
-                            settings.isActive = true
-                            settings.destinationView = AnyView(LanguageSelectorView(languages: languageHelper.languages, navTitle: NSLocalizedString("Primary Language", comment: ""), selectedLanguage: LanguageHelper.shared.getSavedLanguage() ?? languageHelper.selectedLanguage, dismiss: { language in
-                                ANLoader.showLoading()
-                                LanguageHelper.shared.saveLanguage(language: language, isInSettings: true)
-                                languageHelper.selectedLanguage = language
-                                languageHelper.saveSelectedRegionAndLanguage(isInSettings: true, completion: {
-                                    DispatchQueue.main.async {
-                                        SwiftUIManager.shared.setObserver(name: .SwiftUIDidChangeLanguage, object: true)
-                                    }
-                                })
-                                primaryLanguage = language.name
-                                settings.isActive = false
-                            }))
-                        }
-                    } else {
-                        isShowRegionSelection = true
-                    }
-                }
+//                SettingsRowView(settings: .selection(iconName: "language_ic", title: NSLocalizedString("Primary Language", comment: ""), description: primaryLanguage)) {
+//                    if let region = LanguageHelper.shared.getSavedRegion() {
+//                        languageHelper.getLanguage(withRegionID: region.id) {
+//                            settings.isActive = true
+//                            settings.destinationView = AnyView(LanguageSelectorView(languages: languageHelper.languages, navTitle: NSLocalizedString("Primary Language", comment: ""), selectedLanguage: LanguageHelper.shared.getSavedLanguage() ?? languageHelper.selectedLanguage, dismiss: { language in
+//                                ANLoader.showLoading()
+//                                LanguageHelper.shared.saveLanguage(language: language, isInSettings: true)
+//                                languageHelper.selectedLanguage = language
+//                                languageHelper.saveSelectedRegionAndLanguage(isInSettings: true, completion: {
+//                                    DispatchQueue.main.async {
+//                                        SwiftUIManager.shared.setObserver(name: .SwiftUIDidChangeLanguage, object: true)
+//                                    }
+//                                })
+//                                primaryLanguage = language.name
+//                                settings.isActive = false
+//                            }))
+//                        }
+//                    } else {
+//                        isShowRegionSelection = true
+//                    }
+//                }
                 
                 /*
                 SettingsRowView(settings: .selection(iconName: "language_ic", title: NSLocalizedString("Secondary Language", comment: ""), description: secondaryLanguage)) {
