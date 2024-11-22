@@ -263,7 +263,7 @@ extension ReelsVC {
     }
 
     func performWSToGetReelsData(page: String, isRefreshRequired: Bool = false, contextID: String) {
-        print("API Called performWSToGetReelsData")
+        print("API Called performWSToGetReelsData",contextID)
         if reelsArray.count == 0 {
             delegate?.loaderShowing(status: true)
             viewEmptyMessage.isHidden = true
@@ -330,12 +330,11 @@ extension ReelsVC {
             "type": type,
             "tag": isOpenFromTags ? titleText.replace(string: "#", replacement: "") : "",
         ] as [String: Any]
-        print("sunny",params)
-        print("ghayoor",contextID)
+        
         viewEmptyMessage.isUserInteractionEnabled = false
 
         WebService.URLResponse(url, method: .get, parameters: params, headers: token, withSuccess: { [weak self] response in
-
+   
             self?.delegate?.loaderShowing(status: false)
 
             self?.stopPullToRefresh()

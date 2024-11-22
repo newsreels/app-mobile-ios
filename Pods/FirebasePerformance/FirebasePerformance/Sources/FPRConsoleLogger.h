@@ -12,9 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "FirebaseCore/Sources/Private/FIRLogger.h"
+#import "FirebaseCore/Extension/FIRLogger.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+FOUNDATION_EXTERN NSString* const kFIRLoggerPerf;
 
 #define FPRLogDebug(messageCode, ...) FIRLogDebug(kFIRLoggerPerf, messageCode, __VA_ARGS__)
 #define FPRLogError(messageCode, ...) FIRLogError(kFIRLoggerPerf, messageCode, __VA_ARGS__)
@@ -86,5 +88,8 @@ FOUNDATION_EXTERN NSString* const kFPRMemoryCollection;
 
 // FPRSDKConfiguration message codes.
 FOUNDATION_EXTERN NSString* const kFPRSDKFeaturesBlock;
+
+// FPRGDTEvent message codes.
+FOUNDATION_EXTERN NSString* const kFPRTransportBytesError;
 
 NS_ASSUME_NONNULL_END

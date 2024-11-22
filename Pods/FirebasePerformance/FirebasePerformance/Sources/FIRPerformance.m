@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "FirebasePerformance/Sources/Public/FIRPerformance.h"
+#import "FirebasePerformance/Sources/Public/FirebasePerformance/FIRPerformance.h"
 #import "FirebasePerformance/Sources/FIRPerformance+Internal.h"
 #import "FirebasePerformance/Sources/FIRPerformance_Private.h"
 
@@ -51,8 +51,8 @@ static NSString *const kFirebasePerfErrorDomain = @"com.firebase.perf";
     FPRLogError(kFPRTraceNotCreated, @"Failed creating trace %@. Firebase is not configured.",
                 name);
     [NSException raise:kFirebasePerfErrorDomain
-                format:@"The default Firebase app has not yet been configured. Add [FirebaseApp "
-                       @"configure] to your application initialization."];
+                format:@"The default Firebase app has not yet been configured. Add "
+                       @"`FirebaseApp.configure()` to your application initialization."];
     return nil;
   }
   FIRTrace *trace = [[FIRTrace alloc] initWithName:name];
@@ -86,10 +86,7 @@ static NSString *const kFirebasePerfErrorDomain = @"com.firebase.perf";
 }
 
 - (void)setDataCollectionEnabled:(BOOL)dataCollectionEnabled {
-  BOOL performanceDataCollectionEnabled = self.dataCollectionEnabled;
-  if (performanceDataCollectionEnabled != dataCollectionEnabled) {
-    [[FPRConfigurations sharedInstance] setDataCollectionEnabled:dataCollectionEnabled];
-  }
+  [[FPRConfigurations sharedInstance] setDataCollectionEnabled:dataCollectionEnabled];
 }
 
 - (BOOL)isInstrumentationEnabled {

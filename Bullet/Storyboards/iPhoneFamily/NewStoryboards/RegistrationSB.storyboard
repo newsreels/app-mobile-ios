@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qGO-Oa-Q57">
-                                <rect key="frame" x="20" y="489" width="350" height="205"/>
+                                <rect key="frame" x="20" y="489" width="350" height="130"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgI-02-rQl">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
@@ -254,11 +254,11 @@
                                             <constraint firstAttribute="trailing" secondItem="bi8-yw-9NY" secondAttribute="trailing" id="nU9-5C-zKd"/>
                                         </constraints>
                                     </view>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YG-Nv-kWg">
-                                        <rect key="frame" x="0.0" y="150" width="350" height="55"/>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YG-Nv-kWg">
+                                        <rect key="frame" x="0.0" y="130" width="350" height="16"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oag-T6-qMq">
-                                                <rect key="frame" x="15" y="15" width="25" height="25"/>
+                                                <rect key="frame" x="15" y="-4.3333333333333712" width="25" height="25"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2G-ZY-xjM">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -298,13 +298,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue with Facebook" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAP-Bm-wfP">
-                                                <rect key="frame" x="78.333333333333329" y="8" width="193.66666666666669" height="39"/>
+                                                <rect key="frame" x="78.333333333333329" y="8" width="193.66666666666669" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGb-f7-Dcd">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="16"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <connections>
                                                     <action selector="didTapFBLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Cfr-Jh-2nH"/>

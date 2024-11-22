@@ -50,8 +50,11 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
 /** @brief Serial queue to manage the updation of session Ids. */
 @property(nonatomic, readwrite) dispatch_queue_t sessionIdSerialQueue;
 
-/** Updates the current trace with the current session details. */
-- (void)updateTraceWithCurrentSession;
+/**
+ * Updates the current trace with the current session details.
+ * @param sessionDetails Updated session details of the currently active session.
+ */
+- (void)updateTraceWithCurrentSession:(FPRSessionDetails *)sessionDetails;
 
 @end
 
@@ -91,7 +94,7 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
 
   NSString *trimmedURLString = [FPRNetworkTrace stringByTrimmingURLString:URLRequest];
   if (!trimmedURLString || trimmedURLString.length <= 0) {
-    FPRLogInfo(kFPRNetworkTraceURLLengthExceeds, @"URL length outside limits, returning nil.");
+    FPRLogWarning(kFPRNetworkTraceURLLengthExceeds, @"URL length outside limits, returning nil.");
     return nil;
   }
 
@@ -137,14 +140,20 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
   return [NSString stringWithFormat:@"Request: %@", _URLRequest];
 }
 
-- (void)updateTraceWithCurrentSession {
+- (void)sessionChanged:(NSNotification *)notification {
   if (self.traceStarted && !self.traceCompleted) {
-    dispatch_async(self.sessionIdSerialQueue, ^{
-      FPRSessionManager *sessionManager = [FPRSessionManager sharedInstance];
-      FPRSessionDetails *sessionDetails = sessionManager.sessionDetails;
-      if (sessionDetails) {
-        [self.activeSessions addObject:sessionDetails];
-      }
+    NSDictionary<NSString *, FPRSessionDetails *> *userInfo = notification.userInfo;
+    FPRSessionDetails *sessionDetails = [userInfo valueForKey:kFPRSessionIdNotificationKey];
+    if (sessionDetails) {
+      [self updateTraceWithCurrentSession:sessionDetails];
+    }
+  }
+}
+
+- (void)updateTraceWithCurrentSession:(FPRSessionDetails *)sessionDetails {
+  if (sessionDetails != nil) {
+    dispatch_sync(self.sessionIdSerialQueue, ^{
+      [self.activeSessions addObject:sessionDetails];
     });
   }
 }
@@ -185,15 +194,19 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
 
 - (void)start {
   if (!self.traceCompleted) {
-    [[FPRGaugeManager sharedInstance] collectAllGauges];
+    [[FPRSessionManager sharedInstance] collectAllGaugesOnce];
     self.traceStarted = YES;
     self.backgroundActivityTracker = [[FPRTraceBackgroundActivityTracker alloc] init];
     [self checkpointState:FPRNetworkTraceCheckpointStateInitiated];
 
+    if ([self.URLRequest.HTTPMethod isEqualToString:@"POST"] ||
+        [self.URLRequest.HTTPMethod isEqualToString:@"PUT"]) {
+      self.requestSize = self.URLRequest.HTTPBody.length;
+    }
     FPRSessionManager *sessionManager = [FPRSessionManager sharedInstance];
-    [self updateTraceWithCurrentSession];
+    [self updateTraceWithCurrentSession:[sessionManager.sessionDetails copy]];
     [sessionManager.sessionNotificationCenter addObserver:self
-                                                 selector:@selector(updateTraceWithCurrentSession)
+                                                 selector:@selector(sessionChanged:)
                                                      name:kFPRSessionIdUpdatedNotification
                                                    object:sessionManager];
   }
@@ -241,7 +254,7 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
     [self checkpointState:FPRNetworkTraceCheckpointStateResponseCompleted];
 
     // Send the network trace for logging.
-    [[FPRGaugeManager sharedInstance] collectAllGauges];
+    [[FPRSessionManager sharedInstance] collectAllGaugesOnce];
     [[FPRClient sharedInstance] logNetworkTrace:self];
 
     self.traceCompleted = YES;
@@ -441,6 +454,10 @@ NSString *const kFPRNetworkTracePropertyName = @"fpr_networkTrace";
                                      value:nil
                                association:GUL_ASSOCIATION_RETAIN_NONATOMIC];
   }
+}
+
+- (BOOL)isValid {
+  return _hasValidResponseCode;
 }
 
 @end

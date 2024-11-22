@@ -22,6 +22,7 @@
 @class FIRCLSExistingReportManager;
 @class FIRCLSAnalyticsManager;
 @class FIRCLSManagerData;
+@class FIRCLSContextManager;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (FBLPromise<NSNumber *> *)startWithProfilingMark:(FIRCLSProfileMark)mark;
 
-- (FBLPromise<NSNumber *> *)checkForUnsentReports;
+- (FBLPromise<FIRCrashlyticsReport *> *)checkForUnsentReports;
 - (FBLPromise *)sendUnsentReports;
 - (FBLPromise *)deleteUnsentReports;
 

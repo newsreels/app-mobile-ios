@@ -116,7 +116,7 @@ class ReelsVC: UIViewController {
     var retryGetReelsCount = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("SHAHZAIB ReelsVC VIEWDIDLOAD")
         setupView()
         setupCollectionView()
         checkInternetConnection()
@@ -216,7 +216,9 @@ class ReelsVC: UIViewController {
 
         isFirtTimeLoaded = true
         isViewDidAppear = false
+
         isViewControllerVisible = true
+        print("SHAHZAIB isViewControllerVisible ",isViewControllerVisible)
 
         SharedManager.shared.isReelsFollowingNeedRefresh = false
         if isOnFollowing {
@@ -295,7 +297,9 @@ class ReelsVC: UIViewController {
         }
         stopVideo()
         isViewDidAppear = false
+        
         isViewControllerVisible = false
+        print("SHAHZAIB isViewControllerVisible ",isViewControllerVisible)
 
         if indicator.isAnimating {
             indicator.stopAnimating()
@@ -492,17 +496,21 @@ extension ReelsVC {
     }
 
     @objc func getArticleDataPayLoad() {
-        if SharedManager.shared.reelsContextNotification != "" {
-            if SharedManager.shared.isFromPNBackground {
-                reelsArray.removeAll()
-                collectionView.reloadData()
-                nextPageData = ""
-                SharedManager.shared.isAppLaunchedThroughNotification = false
-                performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.reelsContextNotification)
-                SharedManager.shared.isFromPNBackground = false
-            }
-            SharedManager.shared.reelsContextNotification = ""
-        }
+        print("SHAHZAIB getArticleDataPayLoad() REELSVC")
+//        if SharedManager.shared.reelsContextNotification != "" {
+//            
+//            print("SHAHZAIB reelsContextNotification() REELSVC")
+//            if SharedManager.shared.isFromPNBackground {
+//                print("SHAHZAIB reelsContextNotification() REELSVC")
+//                reelsArray.removeAll()
+//                collectionView.reloadData()
+//                nextPageData = ""
+//                SharedManager.shared.isAppLaunchedThroughNotification = false
+//                performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.reelsContextNotification)
+//                SharedManager.shared.isFromPNBackground = false
+//            }
+////            SharedManager.shared.reelsContextNotification = ""
+//        }
     }
 
     @objc func changeReelsDataLanguage() {
@@ -593,6 +601,7 @@ extension ReelsVC {
 
             if SharedManager.shared.reelsContextNotification != "" {
                 performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.reelsContextNotification)
+                SharedManager.shared.reelsContextNotification = ""
             } else {
                 performWSToGetReelsData(page: "", isRefreshRequired: true, contextID: SharedManager.shared.curReelsCategoryId)
             }

@@ -16,6 +16,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * Different modes of prewarm-detection
+ * KeepNone = No app start events are allowed
+ * ActivePrewarm = Only detect prewarming using ActivePrewarm environment
+ * KeepAll = All app start events are allowed
+ */
+typedef NS_ENUM(NSInteger, PrewarmDetectionMode) {
+  PrewarmDetectionModeKeepNone = 0,
+  PrewarmDetectionModeActivePrewarm = 1,
+  PrewarmDetectionModeKeepAll = 2
+};
+
 /** A typedef for ensuring that config names are one of the below specified strings. */
 typedef NSString* const FPRConfigName;
 
@@ -61,6 +73,14 @@ FOUNDATION_EXTERN FPRConfigName kFPRConfigInstrumentationEnabled;
 - (void)update;
 
 #pragma mark - Configuration fetcher methods.
+
+/**
+ * Returns the mode that prewarm-detection should drop events in.
+ *
+ * @see PrewarmDetectionMode
+ * @return filter mode of app start traces prewarm-detection
+ */
+- (PrewarmDetectionMode)prewarmDetectionMode;
 
 /**
  * Returns the percentage of instances that would send trace events. Range [0-1].
@@ -186,13 +206,6 @@ FOUNDATION_EXTERN FPRConfigName kFPRConfigInstrumentationEnabled;
  * @return An integer value specifying the frequency of capture in milliseconds.
  */
 - (uint32_t)memorySamplingFrequencyInBackgroundInMS;
-
-/**
- * Returns a float specifying the transport percentage for FLL. Range [0-100].
- *
- * @return The percentage of devices sending events to FLL.
- */
-- (float_t)fllTransportPercentage;
 
 @end
 

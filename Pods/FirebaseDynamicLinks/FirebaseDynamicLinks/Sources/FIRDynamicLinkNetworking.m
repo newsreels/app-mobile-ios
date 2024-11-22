@@ -21,6 +21,7 @@
 
 #import "FirebaseDynamicLinks/Sources/GINInvocation/GINArgument.h"
 #import "FirebaseDynamicLinks/Sources/GINInvocation/GINInvocation.h"
+#import "FirebaseDynamicLinks/Sources/Utilities/FDLDeviceHeuristicsHelper.h"
 #import "FirebaseDynamicLinks/Sources/Utilities/FDLUtilities.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -40,6 +41,8 @@ NSString *const kFDLResolvedLinkMinAppVersionKey = @"iosMinAppVersion";
 static NSString *const kFDLAnalyticsDataSourceKey = @"utmSource";
 static NSString *const kFDLAnalyticsDataMediumKey = @"utmMedium";
 static NSString *const kFDLAnalyticsDataCampaignKey = @"utmCampaign";
+static NSString *const kFDLAnalyticsDataTermKey = @"utmTerm";
+static NSString *const kFDLAnalyticsDataContentKey = @"utmContent";
 static NSString *const kHeaderIosBundleIdentifier = @"X-Ios-Bundle-Identifier";
 static NSString *const kGenericErrorDomain = @"com.firebase.dynamicLinks";
 
@@ -170,9 +173,11 @@ NSData *_Nullable FIRDataWithDictionary(NSDictionary *dictionary, NSError **_Nul
             NSString *utmSource = result[kFDLAnalyticsDataSourceKey];
             NSString *utmMedium = result[kFDLAnalyticsDataMediumKey];
             NSString *utmCampaign = result[kFDLAnalyticsDataCampaignKey];
-            resolvedURL = FIRDLDeepLinkURLWithInviteID(invitationIDString, deepLinkString,
-                                                       utmSource, utmMedium, utmCampaign, NO, nil,
-                                                       minAppVersion, self->_URLScheme, nil);
+            NSString *utmContent = result[kFDLAnalyticsDataContentKey];
+            NSString *utmTerm = result[kFDLAnalyticsDataTermKey];
+            resolvedURL = FIRDLDeepLinkURLWithInviteID(
+                invitationIDString, deepLinkString, utmSource, utmMedium, utmCampaign, utmContent,
+                utmTerm, NO, nil, minAppVersion, self->_URLScheme, nil);
           }
         }
         handler(resolvedURL, extractedError);
@@ -207,15 +212,14 @@ NSData *_Nullable FIRDataWithDictionary(NSDictionary *dictionary, NSError **_Nul
 
   NSMutableDictionary *requestBody = [@{
     @"bundleId" : [NSBundle mainBundle].bundleIdentifier,
-    @"device" : @{
-      @"screenResolutionHeight" : @(resolutionHeight),
-      @"screenResolutionWidth" : @(resolutionWidth),
-      @"languageCode" : locale,
-      @"languageCodeRaw" : localeRaw,
-      @"languageCodeFromWebview" : localeFromWebView,
-      @"timezone" : timezone,
-      @"deviceModelName" : modelName,
-    },
+    @"device" :
+        [FDLDeviceHeuristicsHelper FDLDeviceInfoDictionaryFromResolutionHeight:resolutionHeight
+                                                               resolutionWidth:resolutionWidth
+                                                                        locale:locale
+                                                                     localeRaw:localeRaw
+                                                             localeFromWebview:localeFromWebView
+                                                                      timeZone:timezone
+                                                                     modelName:modelName],
     @"iosVersion" : IOSVersion,
     @"sdkVersion" : FDLSDKVersion,
     @"visualStyle" : @(uniqueMatchVisualStyle),
@@ -236,7 +240,9 @@ NSData *_Nullable FIRDataWithDictionary(NSDictionary *dictionary, NSError **_Nul
                                                              error:&serializationError];
 
     if (serializationError) {
-      *errorPtr = serializationError;
+      if (errorPtr != nil) {
+        *errorPtr = serializationError;
+      }
       return nil;
     }
 

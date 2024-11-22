@@ -51,7 +51,7 @@
 @end
 
 /** Returns the dispatch queue for all instrumentation to occur on. */
-static dispatch_queue_t GetInstrumentationQueue() {
+static dispatch_queue_t GetInstrumentationQueue(void) {
   static dispatch_queue_t queue = nil;
   static dispatch_once_t token = 0;
   dispatch_once(&token, ^{
@@ -78,6 +78,7 @@ typedef void (^FPRDownloadTaskCompletionHandler)(NSURL *_Nullable location,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentSharedSession(FPRNSURLSessionInstrument *instrument,
                              FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(sharedSession);
@@ -107,6 +108,7 @@ void InstrumentSharedSession(FPRNSURLSessionInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentSessionWithConfiguration(FPRNSURLSessionInstrument *instrument,
                                         FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(sessionWithConfiguration:);
@@ -138,6 +140,7 @@ void InstrumentSessionWithConfiguration(FPRNSURLSessionInstrument *instrument,
  *      selectors.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentSessionWithConfigurationDelegateDelegateQueue(
     FPRNSURLSessionInstrument *instrument,
     FPRClassInstrumentor *instrumentor,
@@ -181,6 +184,7 @@ void InstrumentSessionWithConfigurationDelegateDelegateQueue(
  */
 
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDataTaskWithURL(FPRNSURLSessionInstrument *instrument,
                                FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(dataTaskWithURL:);
@@ -212,6 +216,7 @@ void InstrumentDataTaskWithURL(FPRNSURLSessionInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDataTaskWithURLCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                 FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(dataTaskWithURL:completionHandler:);
@@ -251,6 +256,7 @@ void InstrumentDataTaskWithURLCompletionHandler(FPRNSURLSessionInstrument *instr
  */
 
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDataTaskWithRequest(FPRNSURLSessionInstrument *instrument,
                                    FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(dataTaskWithRequest:);
@@ -282,6 +288,7 @@ void InstrumentDataTaskWithRequest(FPRNSURLSessionInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDataTaskWithRequestCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                     FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(dataTaskWithRequest:completionHandler:);
@@ -321,6 +328,7 @@ void InstrumentDataTaskWithRequestCompletionHandler(FPRNSURLSessionInstrument *i
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentUploadTaskWithRequestFromFile(FPRNSURLSessionInstrument *instrument,
                                              FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(uploadTaskWithRequest:fromFile:);
@@ -352,6 +360,7 @@ void InstrumentUploadTaskWithRequestFromFile(FPRNSURLSessionInstrument *instrume
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentUploadTaskWithRequestFromFileCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                               FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(uploadTaskWithRequest:fromFile:completionHandler:);
@@ -383,6 +392,7 @@ void InstrumentUploadTaskWithRequestFromFileCompletionHandler(FPRNSURLSessionIns
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentUploadTaskWithRequestFromData(FPRNSURLSessionInstrument *instrument,
                                              FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(uploadTaskWithRequest:fromData:);
@@ -395,8 +405,14 @@ void InstrumentUploadTaskWithRequestFromData(FPRNSURLSessionInstrument *instrume
       ThrowExceptionBecauseInstrumentHasBeenDeallocated(selector, instrumentor.instrumentedClass);
     }
     typedef NSURLSessionUploadTask *(*OriginalImp)(id, SEL, NSURLRequest *, NSData *);
+    // To avoid a runtime warning in Xcode 15, the given `URLRequest`
+    // should have a nil `HTTPBody`. To workaround this, the `HTTPBody` data is removed
+    // and requestData is replaced with it, if it bodyData was `nil`.
+    NSMutableURLRequest *requestWithoutHTTPBody = [request mutableCopy];
+    NSData *requestData = bodyData ?: requestWithoutHTTPBody.HTTPBody;
+    requestWithoutHTTPBody.HTTPBody = nil;
     NSURLSessionUploadTask *uploadTask =
-        ((OriginalImp)currentIMP)(session, selector, request, bodyData);
+        ((OriginalImp)currentIMP)(session, selector, requestWithoutHTTPBody, requestData);
     if (uploadTask.originalRequest) {
       FPRNetworkTrace *trace =
           [[FPRNetworkTrace alloc] initWithURLRequest:uploadTask.originalRequest];
@@ -415,6 +431,7 @@ void InstrumentUploadTaskWithRequestFromData(FPRNSURLSessionInstrument *instrume
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentUploadTaskWithRequestFromDataCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                               FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(uploadTaskWithRequest:fromData:completionHandler:);
@@ -436,7 +453,13 @@ void InstrumentUploadTaskWithRequestFromDataCompletionHandler(FPRNSURLSessionIns
     }
     typedef NSURLSessionUploadTask *(*OriginalImp)(id, SEL, NSURLRequest *, NSData *,
                                                    FPRDataTaskCompletionHandler);
-    return ((OriginalImp)currentIMP)(session, selector, request, bodyData,
+    // To avoid a runtime warning in Xcode 15, the given `URLRequest`
+    // should have a nil `HTTPBody`. To workaround this, the `HTTPBody` data is removed
+    // and requestData is replaced with it, if it bodyData was `nil`.
+    NSMutableURLRequest *requestWithoutHTTPBody = [request mutableCopy];
+    NSData *requestData = bodyData ?: requestWithoutHTTPBody.HTTPBody;
+    requestWithoutHTTPBody.HTTPBody = nil;
+    return ((OriginalImp)currentIMP)(session, selector, requestWithoutHTTPBody, requestData,
                                      wrappedCompletionHandler);
   }];
 }
@@ -447,6 +470,7 @@ void InstrumentUploadTaskWithRequestFromDataCompletionHandler(FPRNSURLSessionIns
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentUploadTaskWithStreamedRequest(FPRNSURLSessionInstrument *instrument,
                                              FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(uploadTaskWithStreamedRequest:);
@@ -477,6 +501,7 @@ void InstrumentUploadTaskWithStreamedRequest(FPRNSURLSessionInstrument *instrume
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDownloadTaskWithURL(FPRNSURLSessionInstrument *instrument,
                                    FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(downloadTaskWithURL:);
@@ -507,6 +532,7 @@ void InstrumentDownloadTaskWithURL(FPRNSURLSessionInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDownloadTaskWithURLCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                     FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(downloadTaskWithURL:completionHandler:);
@@ -546,6 +572,7 @@ void InstrumentDownloadTaskWithURLCompletionHandler(FPRNSURLSessionInstrument *i
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDownloadTaskWithRequest(FPRNSURLSessionInstrument *instrument,
                                        FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(downloadTaskWithRequest:);
@@ -576,6 +603,7 @@ void InstrumentDownloadTaskWithRequest(FPRNSURLSessionInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentDownloadTaskWithRequestCompletionHandler(FPRNSURLSessionInstrument *instrument,
                                                         FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(downloadTaskWithRequest:completionHandler:);

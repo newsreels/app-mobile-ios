@@ -19,9 +19,11 @@
 
 #import "FirebasePerformance/Sources/FPRConsoleLogger.h"
 
-#import "FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
+#import "FirebaseCore/Extension/FirebaseCoreInternal.h"
 
 #define ONE_DAY_SECONDS 24 * 60 * 60
+
+static NSDate *FPRAppStartTime = nil;
 
 typedef NS_ENUM(NSInteger, FPRConfigValueType) {
   // Config value type String.
@@ -45,12 +47,13 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
 /** @brief Last time the configs were cached. */
 @property(nonatomic) NSDate *lastCachedTime;
 
-/** @brief Status of the last remote config fetch. */
-@property(nonatomic) FIRRemoteConfigFetchStatus lastFetchStatus;
-
 @end
 
 @implementation FPRRemoteConfigFlags
+
++ (void)load {
+  FPRAppStartTime = [NSDate date];
+}
 
 + (nullable instancetype)sharedInstance {
   static FPRRemoteConfigFlags *instance = nil;
@@ -69,6 +72,11 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
     _fprRemoteConfig = config;
     _userDefaults = [FPRConfigurations sharedInstance].userDefaults;
     self.fetchInProgress = NO;
+
+    // Set the overall delay to 5+random(25) making the config fetch delay at a max of 30 seconds
+    self.applicationStartTime = FPRAppStartTime;
+    self.appStartConfigFetchDelayInSeconds =
+        kFPRMinAppStartConfigFetchDelayInSeconds + arc4random_uniform(25);
 
     NSMutableDictionary<NSString *, NSNumber *> *keysToCache =
         [[NSMutableDictionary<NSString *, NSNumber *> alloc] init];
@@ -95,7 +103,7 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
     [keysToCache setObject:@(FPRConfigValueTypeInteger)
                     forKey:@"fpr_session_gauge_memory_capture_frequency_bg_ms"];
     [keysToCache setObject:@(FPRConfigValueTypeInteger) forKey:@"fpr_session_max_duration_min"];
-    [keysToCache setObject:@(FPRConfigValueTypeFloat) forKey:@"fpr_log_transport_ios_percent"];
+    [keysToCache setObject:@(FPRConfigValueTypeInteger) forKey:@"fpr_prewarm_detection"];
     self.configKeys = [keysToCache copy];
 
     [self update];
@@ -111,8 +119,10 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
 
   NSTimeInterval timeIntervalSinceLastFetch =
       [self.fprRemoteConfig.lastFetchTime timeIntervalSinceNow];
-  if (!self.fprRemoteConfig.lastFetchTime ||
-      ABS(timeIntervalSinceLastFetch) > kFPRConfigFetchIntervalInSeconds) {
+  NSTimeInterval timeSinceAppStart = [self.applicationStartTime timeIntervalSinceNow];
+  if ((ABS(timeSinceAppStart) > self.appStartConfigFetchDelayInSeconds) &&
+      (!self.fprRemoteConfig.lastFetchTime ||
+       ABS(timeIntervalSinceLastFetch) > kFPRConfigFetchIntervalInSeconds)) {
     self.fetchInProgress = YES;
     [self.fprRemoteConfig
         fetchAndActivateWithCompletionHandler:^(FIRRemoteConfigFetchAndActivateStatus status,
@@ -134,19 +144,6 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
     // Update the last fetched time to know that remote config fetch has happened in the past.
     self.lastFetchedTime = self.fprRemoteConfig.lastFetchTime;
   }
-}
-
-- (BOOL)containsRemoteConfigFlags {
-  // Ideally this should not be tied to any specific flag but since "fpr_enabled" is and should
-  // always be available we simply check for its existence to validate that the RC flags exists
-  // in the cache or not.
-  id cachedValueObject = [self cachedValueForConfigFlag:@"fpr_enabled"];
-
-  if (cachedValueObject) {
-    return true;
-  }
-
-  return false;
 }
 
 #pragma mark - Util methods.
@@ -342,12 +339,6 @@ typedef NS_ENUM(NSInteger, FPRConfigValueType) {
 - (int)sessionMaxDurationWithDefaultValue:(int)maxDurationInMinutes {
   return [self getIntValueForFlag:@"fpr_session_max_duration_min"
                      defaultValue:maxDurationInMinutes];
-}
-
-#pragma mark - Google Data Transport related methods
-
-- (float)fllTransportPercentageWithDefaultValue:(float)percentage {
-  return [self getFloatValueForFlag:@"fpr_log_transport_ios_percent" defaultValue:percentage];
 }
 
 @end

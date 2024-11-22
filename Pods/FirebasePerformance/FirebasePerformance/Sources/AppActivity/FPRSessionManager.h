@@ -19,13 +19,17 @@
 /* Notification name when the session Id gets updated. */
 FOUNDATION_EXTERN NSString *_Nonnull const kFPRSessionIdUpdatedNotification;
 
+/* Notification name when the session Id gets updated. */
+FOUNDATION_EXTERN NSString *_Nonnull const kFPRSessionIdNotificationKey;
+
 /** This class manages the current active sessionId of the application and provides mechanism for
  *  propagating the session Id.
  */
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 @interface FPRSessionManager : NSObject
 
 /** The current active session managed by the session manager. */
-@property(nonatomic, readonly, nonnull) FPRSessionDetails *sessionDetails;
+@property(atomic, readonly, nonnull) FPRSessionDetails *sessionDetails;
 
 /**
  * The notification center managed by the session manager. All the notifications by the session
@@ -42,9 +46,9 @@ FOUNDATION_EXTERN NSString *_Nonnull const kFPRSessionIdUpdatedNotification;
 
 - (nullable instancetype)init NS_UNAVAILABLE;
 
-/**
- * Starts tracking the application state changes to begin session ID state changes.
- */
-- (void)startTrackingAppStateChanges;
+- (void)updateSessionId:(nonnull NSString *)sessionIdString;
+
+// Collects all the enabled gauge metrics once.
+- (void)collectAllGaugesOnce;
 
 @end

@@ -14,6 +14,9 @@
 
 #import "FirebasePerformance/Sources/FPRConsoleLogger.h"
 
+// The Firebase service used in the Firebase logger.
+FIRLoggerService kFIRLoggerPerf = @"[FirebasePerformance]";
+
 // FPR Client message codes.
 NSString* const kFPRClientInitialize = @"I-PRF100001";
 NSString* const kFPRClientTempDirectory = @"I-PRF100002";
@@ -78,3 +81,6 @@ NSString* const kFPRMemoryCollection = @"I-PRF900004";
 
 // FPRSDKConfiguration message codes.
 NSString* const kFPRSDKFeaturesBlock = @"I-PRF910001";
+
+// FPRGDTEvent message codes.
+NSString* const kFPRTransportBytesError = @"I-PRF920001";

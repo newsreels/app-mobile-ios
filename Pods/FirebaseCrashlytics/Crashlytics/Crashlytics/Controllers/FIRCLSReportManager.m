@@ -41,8 +41,10 @@
 #import "Crashlytics/Crashlytics/Components/FIRCLSApplication.h"
 #import "Crashlytics/Crashlytics/Components/FIRCLSUserLogging.h"
 #import "Crashlytics/Crashlytics/Controllers/FIRCLSAnalyticsManager.h"
+#import "Crashlytics/Crashlytics/Controllers/FIRCLSContextManager.h"
 #import "Crashlytics/Crashlytics/Controllers/FIRCLSExistingReportManager.h"
 #import "Crashlytics/Crashlytics/Controllers/FIRCLSManagerData.h"
+#import "Crashlytics/Crashlytics/Controllers/FIRCLSMetricKitManager.h"
 #import "Crashlytics/Crashlytics/Controllers/FIRCLSNotificationManager.h"
 #import "Crashlytics/Crashlytics/DataCollection/FIRCLSDataCollectionArbiter.h"
 #import "Crashlytics/Crashlytics/DataCollection/FIRCLSDataCollectionToken.h"
@@ -74,7 +76,7 @@
 #endif
 
 /**
- * A FIRReportAction is used to indicate how to handle unsent reports.
+ * A FirebaseReportAction is used to indicate how to handle unsent reports.
  */
 typedef NS_ENUM(NSInteger, FIRCLSReportAction) {
   /** Upload the reports to Crashlytics. */
@@ -84,7 +86,7 @@ typedef NS_ENUM(NSInteger, FIRCLSReportAction) {
 };
 
 /**
- * This is just a helper to make code using FIRReportAction more readable.
+ * This is just a helper to make code using FirebaseReportAction more readable.
  */
 typedef NSNumber FIRCLSWrappedReportAction;
 @implementation NSNumber (FIRCLSWrappedReportAction)
@@ -92,11 +94,6 @@ typedef NSNumber FIRCLSWrappedReportAction;
   return [self intValue];
 }
 @end
-
-/**
- * This is a helper to make code using NSNumber for bools more readable.
- */
-typedef NSNumber FIRCLSWrappedBool;
 
 @interface FIRCLSReportManager () {
   FIRCLSFileManager *_fileManager;
@@ -106,7 +103,7 @@ typedef NSNumber FIRCLSWrappedBool;
 
   // A promise that will be resolved when unsent reports are found on the device, and
   // processReports: can be called to decide how to deal with them.
-  FBLPromise<FIRCLSWrappedBool *> *_unsentReportsAvailable;
+  FBLPromise<FIRCrashlyticsReport *> *_unsentReportsAvailable;
 
   // A promise that will be resolved when the user has provided an action that they want to perform
   // for all the unsent reports.
@@ -139,9 +136,14 @@ typedef NSNumber FIRCLSWrappedBool;
 @property(nonatomic, strong) FIRCLSAnalyticsManager *analyticsManager;
 @property(nonatomic, strong) FIRCLSExistingReportManager *existingReportManager;
 
+@property(nonatomic, strong) FIRCLSContextManager *contextManager;
+
 // Internal Managers
 @property(nonatomic, strong) FIRCLSSettingsManager *settingsManager;
 @property(nonatomic, strong) FIRCLSNotificationManager *notificationManager;
+#if CLS_METRICKIT_SUPPORTED
+@property(nonatomic, strong) FIRCLSMetricKitManager *metricKitManager;
+#endif
 
 @end
 
@@ -166,6 +168,7 @@ typedef NSNumber FIRCLSWrappedBool;
   _installIDModel = managerData.installIDModel;
   _settings = managerData.settings;
   _executionIDModel = managerData.executionIDModel;
+  _contextManager = managerData.contextManager;
 
   _existingReportManager = existingReportManager;
   _analyticsManager = analyticsManager;
@@ -184,21 +187,35 @@ typedef NSNumber FIRCLSWrappedBool;
 
   _notificationManager = [[FIRCLSNotificationManager alloc] init];
 
+  // This needs to be called before any values are read from settings
+  NSTimeInterval currentTimestamp = [NSDate timeIntervalSinceReferenceDate];
+  [self.settings reloadFromCacheWithGoogleAppID:self.googleAppID currentTimestamp:currentTimestamp];
+
+#if CLS_METRICKIT_SUPPORTED
+  if (@available(iOS 15, *)) {
+    if (self.settings.metricKitCollectionEnabled) {
+      FIRCLSDebugLog(@"MetricKit data collection enabled.");
+      _metricKitManager = [[FIRCLSMetricKitManager alloc] initWithManagerData:managerData
+                                                        existingReportManager:existingReportManager
+                                                                  fileManager:_fileManager];
+    }
+  }
+#endif
+
   _launchMarker = [[FIRCLSLaunchMarkerModel alloc] initWithFileManager:_fileManager];
 
   return self;
 }
 
-// This method returns a promise that is resolved with a wrapped FIRReportAction once the user has
-// indicated whether they want to upload currently cached reports.
-// This method should only be called when we have determined there is at least 1 unsent report.
-// This method waits until either:
+// This method returns a promise that is resolved with a wrapped FirebaseReportAction once the user
+// has indicated whether they want to upload currently cached reports. This method should only be
+// called when we have determined there is at least 1 unsent report. This method waits until either:
 //    1. Data collection becomes enabled, in which case, the promise will be resolved with Send.
 //    2. The developer uses the processCrashReports API to indicate whether the report
 //       should be sent or deleted, at which point the promise will be resolved with the action.
 - (FBLPromise<FIRCLSWrappedReportAction *> *)waitForReportAction {
-  FIRCLSDebugLog(@"[Crashlytics:Crash] Notifying that unsent reports are available.");
-  [_unsentReportsAvailable fulfill:@YES];
+  FIRCrashlyticsReport *unsentReport = self.existingReportManager.newestUnsentReport;
+  [_unsentReportsAvailable fulfill:unsentReport];
 
   // If data collection gets enabled while we are waiting for an action, go ahead and send the
   // reports, and any subsequent explicit response will be ignored.
@@ -208,16 +225,35 @@ typedef NSNumber FIRCLSWrappedBool;
             return @(FIRCLSReportActionSend);
           }];
 
-  FIRCLSDebugLog(@"[Crashlytics:Crash] Waiting for send/deleteUnsentReports to be called.");
   // Wait for either the processReports callback to be called, or data collection to be enabled.
   return [FBLPromise race:@[ collectionEnabled, _reportActionProvided ]];
 }
 
-- (FBLPromise<FIRCLSWrappedBool *> *)checkForUnsentReports {
+/*
+ * This method returns a promise that is resolved once
+ * MetricKit diagnostic reports have been received by `metricKitManager`.
+ */
+- (FBLPromise *)waitForMetricKitData {
+  // If the platform is not iOS or the iOS version is less than 15, immediately resolve the promise
+  // since no MetricKit diagnostics will be available.
+  FBLPromise *promise = [FBLPromise resolvedWith:nil];
+#if CLS_METRICKIT_SUPPORTED
+  if (@available(iOS 15, *)) {
+    if (self.settings.metricKitCollectionEnabled) {
+      promise = [self.metricKitManager waitForMetricKitDataAvailable];
+    }
+  }
+  return promise;
+#endif
+  return promise;
+}
+
+- (FBLPromise<FIRCrashlyticsReport *> *)checkForUnsentReports {
   bool expectedCalled = NO;
   if (!atomic_compare_exchange_strong(&_checkForUnsentReportsCalled, &expectedCalled, YES)) {
-    FIRCLSErrorLog(@"checkForUnsentReports should only be called once per execution.");
-    return [FBLPromise resolvedWith:@NO];
+    FIRCLSErrorLog(@"Either checkForUnsentReports or checkAndUpdateUnsentReports should be called "
+                   @"once per execution.");
+    return [FBLPromise resolvedWith:nil];
   }
   return _unsentReportsAvailable;
 }
@@ -235,9 +271,9 @@ typedef NSNumber FIRCLSWrappedBool;
 - (FBLPromise<NSNumber *> *)startWithProfilingMark:(FIRCLSProfileMark)mark {
   NSString *executionIdentifier = self.executionIDModel.executionID;
 
-  // This needs to be called before any values are read from settings
-  NSTimeInterval currentTimestamp = [NSDate timeIntervalSinceReferenceDate];
-  [self.settings reloadFromCacheWithGoogleAppID:self.googleAppID currentTimestamp:currentTimestamp];
+  // This needs to be called before the new report is created for
+  // this run of the app.
+  [self.existingReportManager collectExistingReports];
 
   if (![self validateAppIdentifiers]) {
     return [FBLPromise resolvedWith:@NO];
@@ -251,9 +287,7 @@ typedef NSNumber FIRCLSWrappedBool;
     return [FBLPromise resolvedWith:@NO];
   }
 
-  // Grab existing reports
   BOOL launchFailure = [self.launchMarker checkForAndCreateLaunchMarker];
-  NSArray *preexistingReportPaths = _fileManager.activePathContents;
 
   FIRCLSInternalReport *report = [self setupCurrentReport:executionIdentifier];
   if (!report) {
@@ -265,15 +299,15 @@ typedef NSNumber FIRCLSWrappedBool;
     report = nil;
   }
 
-  // Regenerate the Install ID on a background thread if it needs to rotate because
-  // fetching the Firebase Install ID can be slow on some devices. This should happen after we
-  // create the session on disk so that we can update the Install ID in the written crash report
-  // metadata.
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-    [self checkAndRotateInstallUUIDIfNeededWithReport:report];
-  });
+#if CLS_METRICKIT_SUPPORTED
+  if (@available(iOS 15, *)) {
+    if (self.settings.metricKitCollectionEnabled) {
+      [self.metricKitManager registerMetricKitManager];
+    }
+  }
+#endif
 
-  FBLPromise<NSNumber *> *promise = [FBLPromise resolvedWith:@(report != nil)];
+  FBLPromise<NSNumber *> *promise;
 
   if ([self.dataArbiter isCrashlyticsCollectionEnabled]) {
     FIRCLSDebugLog(@"Automatic data collection is enabled.");
@@ -282,56 +316,48 @@ typedef NSNumber FIRCLSWrappedBool;
 
     [self beginSettingsWithToken:dataCollectionToken];
 
-    [self beginReportUploadsWithToken:dataCollectionToken
-               preexistingReportPaths:preexistingReportPaths
-                         blockingSend:launchFailure];
+    // Wait for MetricKit data to be available, then continue to send reports and resolve promise.
+    promise = [[self waitForMetricKitData]
+        onQueue:_dispatchQueue
+           then:^id _Nullable(id _Nullable metricKitValue) {
+             [self beginReportUploadsWithToken:dataCollectionToken blockingSend:launchFailure];
 
-    // If data collection is enabled, the SDK will not notify the user
-    // when unsent reports are available, or respect Send / DeleteUnsentReports
-    [_unsentReportsAvailable fulfill:@NO];
-
+             // If data collection is enabled, the SDK will not notify the user
+             // when unsent reports are available, or respect Send / DeleteUnsentReports
+             [self->_unsentReportsAvailable fulfill:nil];
+             return @(report != nil);
+           }];
   } else {
     FIRCLSDebugLog(@"Automatic data collection is disabled.");
+    FIRCLSDebugLog(@"[Crashlytics:Crash] %d unsent reports are available. Waiting for "
+                   @"send/deleteUnsentReports to be called.",
+                   self.existingReportManager.unsentReportsCount);
 
-    // TODO: This counting of the file system happens on the main thread. Now that some of the other
-    // work below has been made async and moved to the dispatch queue, maybe we can move this code
-    // to the dispatch queue as well.
-    int unsentReportsCount =
-        [self.existingReportManager unsentReportsCountWithPreexisting:preexistingReportPaths];
-    if (unsentReportsCount > 0) {
-      FIRCLSDebugLog(
-          @"[Crashlytics:Crash] %d unsent reports are available. Checking for upload permission.",
-          unsentReportsCount);
-      // Wait for an action to get sent, either from processReports: or automatic data collection.
-      promise = [[self waitForReportAction]
-          onQueue:_dispatchQueue
-             then:^id _Nullable(FIRCLSWrappedReportAction *_Nullable wrappedAction) {
-               // Process the actions for the reports on disk.
-               FIRCLSReportAction action = [wrappedAction reportActionValue];
-               if (action == FIRCLSReportActionSend) {
-                 FIRCLSDebugLog(@"Sending unsent reports.");
-                 FIRCLSDataCollectionToken *dataCollectionToken =
-                     [FIRCLSDataCollectionToken validToken];
+    // Wait for an action to get sent, either from processReports: or automatic data collection,
+    // and for MetricKit data to be available.
+    promise = [[FBLPromise all:@[ [self waitForReportAction], [self waitForMetricKitData] ]]
+        onQueue:_dispatchQueue
+           then:^id _Nullable(NSArray *_Nullable wrappedActionAndData) {
+             // Process the actions for the reports on disk.
+             FIRCLSReportAction action = [[wrappedActionAndData firstObject] reportActionValue];
 
-                 [self beginSettingsWithToken:dataCollectionToken];
+             if (action == FIRCLSReportActionSend) {
+               FIRCLSDebugLog(@"Sending unsent reports.");
+               FIRCLSDataCollectionToken *dataCollectionToken =
+                   [FIRCLSDataCollectionToken validToken];
 
-                 [self beginReportUploadsWithToken:dataCollectionToken
-                            preexistingReportPaths:preexistingReportPaths
-                                      blockingSend:NO];
+               [self beginSettingsWithToken:dataCollectionToken];
 
-               } else if (action == FIRCLSReportActionDelete) {
-                 FIRCLSDebugLog(@"Deleting unsent reports.");
-                 [self.existingReportManager
-                     deleteUnsentReportsWithPreexisting:preexistingReportPaths];
-               } else {
-                 FIRCLSErrorLog(@"Unknown report action: %d", action);
-               }
-               return @(report != nil);
-             }];
-    } else {
-      FIRCLSDebugLog(@"[Crashlytics:Crash] There are no unsent reports.");
-      [_unsentReportsAvailable fulfill:@NO];
-    }
+               [self beginReportUploadsWithToken:dataCollectionToken blockingSend:NO];
+
+             } else if (action == FIRCLSReportActionDelete) {
+               FIRCLSDebugLog(@"Deleting unsent reports.");
+               [self.existingReportManager deleteUnsentReports];
+             } else {
+               FIRCLSErrorLog(@"Unknown report action: %d", action);
+             }
+             return @(report != nil);
+           }];
   }
 
   if (report != nil) {
@@ -366,16 +392,6 @@ typedef NSNumber FIRCLSWrappedBool;
   return promise;
 }
 
-- (void)checkAndRotateInstallUUIDIfNeededWithReport:(FIRCLSInternalReport *)report {
-  [self.installIDModel regenerateInstallIDIfNeededWithBlock:^(BOOL didRotate) {
-    if (!didRotate) {
-      return;
-    }
-
-    FIRCLSContextUpdateMetadata(report, self.settings, self.installIDModel, self->_fileManager);
-  }];
-}
-
 - (void)beginSettingsWithToken:(FIRCLSDataCollectionToken *)token {
   if (self.settings.isCacheExpired) {
     // This method can be called more than once if the user calls
@@ -388,17 +404,13 @@ typedef NSNumber FIRCLSWrappedBool;
 }
 
 - (void)beginReportUploadsWithToken:(FIRCLSDataCollectionToken *)token
-             preexistingReportPaths:(NSArray *)preexistingReportPaths
                        blockingSend:(BOOL)blockingSend {
   if (self.settings.collectReportsEnabled) {
-    [self.existingReportManager processExistingReportPaths:preexistingReportPaths
-                                       dataCollectionToken:token
-                                                  asUrgent:blockingSend];
-    [self.existingReportManager handleContentsInOtherReportingDirectoriesWithToken:token];
+    [self.existingReportManager sendUnsentReportsWithToken:token asUrgent:blockingSend];
 
   } else {
     FIRCLSInfoLog(@"Collect crash reports is disabled");
-    [self.existingReportManager deleteUnsentReportsWithPreexisting:preexistingReportPaths];
+    [self.existingReportManager deleteUnsentReports];
   }
 }
 
@@ -408,7 +420,9 @@ typedef NSNumber FIRCLSWrappedBool;
     return NO;
   }
 
-  if (!FIRCLSContextInitialize(report, self.settings, self.installIDModel, _fileManager)) {
+  if (![self.contextManager setupContextWithReport:report
+                                          settings:self.settings
+                                       fileManager:_fileManager]) {
     return NO;
   }
 
@@ -450,10 +464,11 @@ typedef NSNumber FIRCLSWrappedBool;
   // that Crashlytics needs, "__mh_execute_header" (wich is defined in mach-o/ldsyms.h as
   // _MH_EXECUTE_SYM). From https://github.com/firebase/firebase-ios-sdk/issues/5020
   if (!self.appIDModel) {
-    FIRCLSErrorLog(
-        @"Crashlytics could not find the symbol for the app's main function and cannot "
-        @"start up. This can happen when Exported Symbols File is set in Build Settings. To "
-        @"resolve this, add \"__mh_execute_header\" as a newline to your Exported Symbols File.");
+    FIRCLSErrorLog(@"Crashlytics could not find the symbol for the app's main function and cannot "
+                   @"start up. This can be resolved 2 ways depending on your setup:\n 1. If you "
+                   @"have Exported Symbols File set in your Build Settings, add "
+                   @"\"__mh_execute_header\" as a newline in your Exported Symbols File.\n 2. If "
+                   @"you have -exported_symbols_list in your linker flags, remove it.");
     return NO;
   }
 

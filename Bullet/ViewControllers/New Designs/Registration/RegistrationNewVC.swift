@@ -462,6 +462,7 @@ extension RegistrationNewVC : GIDSignInDelegate {
 //        let familyName = user.profile.familyName
         
         let idToken = user.authentication.idToken ?? "" // Safe to send to the server
+        print("TOKEN ",idToken)
         self.doAuthRegistration(idToken, loginType: .Google)
     }
     

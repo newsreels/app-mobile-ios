@@ -150,7 +150,7 @@ extension UIView {
 
 extension UIViewController {
     
-    func showLoaderInVC(size: CGSize = .zero, color: UIColor = .white, padding: CGFloat? = nil, userInteractionEnabled: Bool = false, backgroundColorNeeded: Bool = true) {
+func showLoaderInVC(size: CGSize = .zero, color: UIColor = .white, padding: CGFloat? = nil, userInteractionEnabled: Bool = false, backgroundColorNeeded: Bool = true) {
         
         DispatchQueue.main.async {
             

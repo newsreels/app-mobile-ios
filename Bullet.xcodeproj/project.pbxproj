@@ -177,7 +177,6 @@
 		5E6A78942CD27A8100439CC6 /* Content.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2A2C0FD25C15EB500A3075B /* Content.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E6A78972CD27A8100439CC6 /* Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2A2C0DC25C15EA100A3075B /* Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5E6A78C12CD29EBA00439CC6 /* Pods_Bullet_Bullet_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6A78C02CD29EBA00439CC6 /* Pods_Bullet_Bullet_WidgetExtension.framework */; };
-		5E6A78C22CD29EBA00439CC6 /* Pods_Bullet_Bullet_WidgetExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6A78C02CD29EBA00439CC6 /* Pods_Bullet_Bullet_WidgetExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64061633259B1EC300F4049C /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6406162D259B1EC300F4049C /* TabView.xib */; };
 		64061634259B1EC300F4049C /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406162E259B1EC300F4049C /* TabCollectionCell.swift */; };
 		64061635259B1EC300F4049C /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406162F259B1EC300F4049C /* TabView.swift */; };
@@ -1021,17 +1020,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5E6A78C32CD29EBA00439CC6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5E6A78C22CD29EBA00439CC6 /* Pods_Bullet_Bullet_WidgetExtension.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C23988B524DEAC8100C3807B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -5352,7 +5340,6 @@
 				C2B879C3259B0968001477F1 /* Frameworks */,
 				C2B879C4259B0968001477F1 /* Resources */,
 				E1145567D96D222B3077BE52 /* [CP] Copy Pods Resources */,
-				5E6A78C32CD29EBA00439CC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -7083,7 +7070,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.0;
+				CURRENT_PROJECT_VERSION = 4.4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KL56LJ56EP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7106,7 +7093,7 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.25;
+				MARKETING_VERSION = 2.0.29;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.bullet.reel;
 				PRODUCT_NAME = Newsreels;
@@ -7129,7 +7116,7 @@
 				CODE_SIGN_ENTITLEMENTS = Bullet/Bullet.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4.0;
+				CURRENT_PROJECT_VERSION = 4.4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KL56LJ56EP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7152,7 +7139,7 @@
 					"$(PROJECT_DIR)/Bullet/Helpers/SGSegmentedProgressBarLibrary",
 				);
 				MACH_O_TYPE = mh_execute;
-				MARKETING_VERSION = 2.0.25;
+				MARKETING_VERSION = 2.0.29;
 				PRODUCT_BUNDLE_IDENTIFIER = app.bullet.reel;
 				PRODUCT_NAME = Newsreels;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -7208,7 +7195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				INFOPLIST_FILE = BulletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7227,7 +7214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7T24Z46Y2;
+				DEVELOPMENT_TEAM = KL56LJ56EP;
 				INFOPLIST_FILE = BulletUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

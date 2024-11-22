@@ -16,6 +16,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FirebaseRemoteConfig/Sources/Public/FirebaseRemoteConfig/FIRRemoteConfig.h"
+
 typedef NS_ENUM(NSInteger, RCNDBSource) {
   RCNDBSourceActive,
   RCNDBSourceDefault,
@@ -37,13 +39,15 @@ typedef NS_ENUM(NSInteger, RCNDBSource) {
 @property(nonatomic, readonly, copy) NSDictionary *activeConfig;
 /// Local default config that is provided by external users;
 @property(nonatomic, readonly, copy) NSDictionary *defaultConfig;
+/// Active Rollout metadata that is currently used.
+@property(nonatomic, readonly, copy) NSArray<NSDictionary *> *activeRolloutMetadata;
 
 - (instancetype)init NS_UNAVAILABLE;
 
 /// Designated initializer;
 - (instancetype)initWithDBManager:(RCNConfigDBManager *)DBManager NS_DESIGNATED_INITIALIZER;
 
-/// Returns true if initalization succeeded.
+/// Returns true if initialization succeeded.
 - (BOOL)initializationSuccessful;
 
 /// Update config content from fetch response in JSON format.
@@ -62,5 +66,11 @@ typedef NS_ENUM(NSInteger, RCNDBSource) {
 
 /// Gets the active config and Personalization metadata.
 - (NSDictionary *)getConfigAndMetadataForNamespace:(NSString *)FIRNamespace;
+
+/// Sets the fetched rollout metadata to active with a success completion handler.
+- (void)activateRolloutMetadata:(void (^)(BOOL success))completionHandler;
+
+/// Returns the updated parameters between fetched and active config.
+- (FIRRemoteConfigUpdate *)getConfigUpdateForNamespace:(NSString *)FIRNamespace;
 
 @end

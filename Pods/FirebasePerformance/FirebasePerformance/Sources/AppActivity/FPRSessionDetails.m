@@ -33,9 +33,16 @@
   return self;
 }
 
-- (NSUInteger)sessionLengthInMinutes {
-  NSTimeInterval sessionLengthInSeconds = ABS([self.sessionCreationTime timeIntervalSinceNow]);
-  return (sessionLengthInSeconds / 60);
+- (FPRSessionDetails *)copyWithZone:(NSZone *)zone {
+  FPRSessionDetails *detailsCopy = [[[self class] allocWithZone:zone] initWithSessionId:_sessionId
+                                                                                options:_options];
+  detailsCopy.sessionCreationTime = _sessionCreationTime;
+  return detailsCopy;
+}
+
+- (NSUInteger)sessionLengthInMinutesFromDate:(NSDate *)now {
+  NSTimeInterval sessionLengthInSeconds = ABS([now timeIntervalSinceDate:self.sessionCreationTime]);
+  return (NSUInteger)(sessionLengthInSeconds / 60);
 }
 
 - (BOOL)isEqual:(FPRSessionDetails *)detailsObject {

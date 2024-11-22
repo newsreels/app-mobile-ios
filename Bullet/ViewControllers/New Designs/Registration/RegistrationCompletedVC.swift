@@ -90,7 +90,7 @@ extension RegistrationCompletedVC {
         let params = ["email": email]
         WebService.URLResponseAuth("auth/verify", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
             
-            self.continueButton.hideLoaderView()
+//            self.continueButton.hideLoaderView()
             
             do{
                 let FULLResponse = try
@@ -127,8 +127,8 @@ extension RegistrationCompletedVC {
     
     func doOAuthRegistration() {
         
-        continueButton.showLoader()
-//        self.showLoaderInVC()
+//        continueButton.showLoader()
+        self.showLoaderInVC()
         let tokenURL = URL(string: WebserviceManager.shared.AUTH_TOKEN_URL)!
         let useCredentials = OAuthClientCredentials(id: WebserviceManager.shared.APP_CLIENT_ID, secret: WebserviceManager.shared.APP_CLIENT_SECRET)
         let heimdall = Heimdallr(tokenURL: tokenURL, credentials: useCredentials)
@@ -227,7 +227,7 @@ extension RegistrationCompletedVC {
                                                         
                                                     } withAPIFailure: { (error) in
                                                                     }
-                                                    self.continueButton.hideLoaderView()
+//                                                    self.continueButton.hideLoaderView()
                                                     //                                                    if SharedManager.shared.isUserSetup {
                                                     //                                                        self.appDelegate?.setHomeVC()
                                                     //                                                    }
@@ -235,8 +235,12 @@ extension RegistrationCompletedVC {
                                                     //                                                        let vc = AddUsernameVC.instantiate(fromAppStoryboard: .RegistrationSB)
                                                     //                                                        self.navigationController?.pushViewController(vc, animated: true)
                                                     //                                                    }
-                                                    
-                                                    self.appDelegate?.setHomeVC()
+                                              
+                                                    self.appDelegate?.setHomeVC(completed: {
+                                        
+                                                        self.hideLoaderVC()
+//                                                        self.continueButton.hideLoaderView()
+                                                    })
                                                   
                                                     
                                                 }

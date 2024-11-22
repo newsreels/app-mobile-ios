@@ -21,7 +21,7 @@
 #import "FirebasePerformance/Sources/Configurations/FPRRemoteConfigFlags+Private.h"
 #import "FirebasePerformance/Sources/Configurations/FPRRemoteConfigFlags.h"
 
-#import "FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
+#import "FirebaseCore/Extension/FirebaseCoreInternal.h"
 
 FPRConfigName kFPRConfigDataCollectionEnabled = @"dataCollectionEnabled";
 
@@ -300,6 +300,15 @@ static dispatch_once_t gSharedInstanceToken;
   return logSource;
 }
 
+- (PrewarmDetectionMode)prewarmDetectionMode {
+  PrewarmDetectionMode mode = PrewarmDetectionModeActivePrewarm;
+  if (self.remoteConfigFlags) {
+    mode = [self.remoteConfigFlags getIntValueForFlag:@"fpr_prewarm_detection"
+                                         defaultValue:(int)mode];
+  }
+  return mode;
+}
+
 #pragma mark - Log sampling configurations.
 
 - (float)logTraceSamplingRate {
@@ -472,38 +481,6 @@ static dispatch_once_t gSharedInstanceToken;
         sessionGaugeMemoryCaptureFrequencyInBackgroundWithDefaultValue:samplingFrequency];
   }
   return samplingFrequency;
-}
-
-#pragma mark - Google Data Transport related configurations.
-
-- (float_t)fllTransportPercentage {
-  // Order of precedence is:
-  //
-  // Any RC config flags exists?
-  //   -> Yes
-  //     -> If Transport flag exists, honor the value (active rollout scenario)
-  //     -> Otherwise, send to Fll (deprecation scenario)
-  //   -> No
-  //     -> Send to clearcut (onboarding scenario)
-  //
-  // If a PList override also exists than that takes the priority
-
-  // By default send to Clearcut
-  float transportPercentage = 0.0f;  // Range [0 - 100]
-
-  if (self.remoteConfigFlags && [self.remoteConfigFlags containsRemoteConfigFlags]) {
-    // If Transport flag exists, honor the value (active rollout scenario)
-    // Otherwise, send to Fll (deprecation scenario)
-    transportPercentage = [self.remoteConfigFlags fllTransportPercentageWithDefaultValue:100.0f];
-  }
-
-  // If a PList override also exists than that takes the priority
-  id plistObject = [self objectForInfoDictionaryKey:@"fllTransportPercentage"];
-  if (plistObject) {
-    transportPercentage = [plistObject floatValue];
-  }
-
-  return transportPercentage;
 }
 
 @end

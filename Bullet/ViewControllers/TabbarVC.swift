@@ -24,25 +24,25 @@ class TabbarVC: PTCardTabBarController {
     var followingTab: FollowingViewController?
     
     override func viewDidLoad() {
-        
+        NSLog("TabbarVC LOADED.")
         self.tabBar.isHidden = true
         self.view.theme_backgroundColor = GlobalPicker.tabBarTintColor
-        
+        sendFcmTokenToServer()
         homeTab = ArticlesVC.instantiate(fromAppStoryboard: .Main)
         
         discoverTab = DiscoverVC.instantiate(fromAppStoryboard: .Discover)
         
-//        vc3 = ReelsVC.instantiate(fromAppStoryboard: .Reels)
+        //        vc3 = ReelsVC.instantiate(fromAppStoryboard: .Reels)
         reelsTab = ReelsContainerVC.instantiate(fromAppStoryboard: .Reels)
         
         
-//        let detailsVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
-//        detailsVC.isOpenFromReel = false
-//        detailsVC.channelInfo = nil
-//        detailsVC.isShowingMenuProfile = true
+        //        let detailsVC = ChannelDetailsVC.instantiate(fromAppStoryboard: .Schedule)
+        //        detailsVC.isOpenFromReel = false
+        //        detailsVC.channelInfo = nil
+        //        detailsVC.isShowingMenuProfile = true
         
         profileTab = SettingsVC.instantiate(fromAppStoryboard: .Profile)
-//        let vc5 = CommunityFeedVC.instantiate(fromAppStoryboard: .Schedule)
+        //        let vc5 = CommunityFeedVC.instantiate(fromAppStoryboard: .Schedule)
         
         followingTab = FollowingViewController.instantiate(fromAppStoryboard: .FollowingSB)
         
@@ -67,60 +67,73 @@ class TabbarVC: PTCardTabBarController {
         
         let nav5 = CustomNavigationController(rootViewController: followingTab!)
         nav5.titleString = "Following"
-//        nav5.title = "Following"
+        //        nav5.title = "Following"
         
         //AppNavigationController(rootViewController: followingTab!)
         //nav4.navigationBar.isHidden = true
-
-//        let nav5 = AppNavigationController(rootViewController: vc5)
-
+        
+        //        let nav5 = AppNavigationController(rootViewController: vc5)
+        
         nav1.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_home_gray"), tag: 1)
         nav3.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "ReelsIcon"), tag: 2)
-//        nav5.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_search_gray"), tag: 3)
+        //        nav5.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_search_gray"), tag: 3)
         nav2.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_search_gray"), tag: 3)
         nav4.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_profile_gray"), tag: 4)
         nav5.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "icn_profile_gray"), tag: 5)
         
         // initaial tab bar index
         self.viewControllers = [nav3, nav1, BaseNavigationController(rootViewController: BaseHostingController(rootView: DiscoverMain().navigationBarHidden(true))), nav5,  BaseNavigationController(rootViewController: BaseHostingController(rootView: SettingsMainview().navigationBarHidden(true)))]
-//        self.viewControllers = [nav3, nav1, nav2, nav5,  nav4]
-
+        //        self.viewControllers = [nav3, nav1, nav2, nav5,  nav4]
         
+        
+        print("SHAHZAIB ADDING OBSERVER")
         //Taps on Recived push notification
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.getArticleDataPayLoad(_:)), name: NSNotification.Name.notifyGetPushNotificationArticleData, object: nil)
+      
         SharedManager.shared.isAppOpenFromDeepLink = true
         
         SwiftUIManager.shared.navigationController = self.navigationController
         SwiftUIManager.shared.addObservers()
         
         checkInternetConnection()
-
-        InstanceID.instanceID().instanceID(handler: { (result, error) in
-            if let error = error {
-                print("Error fetching remote instange ID: \(error)")
-            } else if let result = result {
-                
-                let externalUserId = result.token // You will supply the external user id to the OneSignal SDK
-                OneSignal.setExternalUserId(externalUserId)                
-            }
-        })
-
+        
+        //        InstanceID.instanceID().instanceID(handler: { (result, error) in
+        //            if let error = error {
+        //                print("Error fetching remote instange ID: \(error)")
+        //            } else if let result = result {
+        //
+        //                let externalUserId = result.token // You will supply the external user id to the OneSignal SDK
+        //                OneSignal.setExternalUserId(externalUserId)
+        //            }
+        //        })
+        
         super.viewDidLoad()
     }
     
-//
-//    override open var shouldAutorotate : Bool {
-//
-//        return false
-//
-//    }
-//
-//    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
-//
-//        return [.portrait]
-//    }
     
+    
+    func sendFcmTokenToServer(){
+        print("sendFcmTokenToServer()")
+        
+        guard let userAccessToken = UserDefaults(suiteName: "group.app.newsreels")?.string(forKey: "accessToken"),let fcmToken = UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) else {
+            print("FCM TOKEN NOT FOUND")
+            return
+        }
+        print("sendFcmTokenToServer() userAccessToken -> \(userAccessToken) \n fcmToken -> \(fcmToken)")
+        let HeaderToken  = userAccessToken
+        let params = ["token":fcmToken]
+        
+        WebService.URLResponse("news/fcmtoken", method: .post, parameters: params, headers: HeaderToken, withSuccess: { (response) in
+            
+            print("TOKEN UPLOADED -> ",String(data: response,encoding:.utf8) as Any)
+            print("TOKEN  -> ",fcmToken)
+            
+        }){ (error) in
+            
+            print("error parsing json objects",error)
+        }
+    }
     //Check Internet
     func checkInternetConnection() {
         
@@ -136,7 +149,7 @@ class TabbarVC: PTCardTabBarController {
         
         reachabilitySwift.whenReachable = { reachability in
             
- 
+            
             self.performWSToUserConfig()
         }
         
@@ -155,97 +168,101 @@ class TabbarVC: PTCardTabBarController {
     
     @objc func getArticleDataPayLoad(_ notification: Notification) {
         
+        print("SHAHZAIB getArticleDataPayLoad()")
+        print("SHAHZAIB SharedManager.shared.articleIdNotification \(SharedManager.shared.articleIdNotification)")
+        
         if SharedManager.shared.articleIdNotification != "" {
             self.performWSViewArticle(SharedManager.shared.articleIdNotification)
             SharedManager.shared.articleIdNotification = ""
         }
         else if SharedManager.shared.reelsContextNotification != "" {
-//            SharedManager.shared.isAppLaunchedThroughNotification = false
-//            self.openReels(context: SharedManager.shared.reelsContextNotification)
-//            SharedManager.shared.reelsContextNotification = ""
+                        SharedManager.shared.isAppLaunchedThroughNotification = false
+                        self.openReels(context: SharedManager.shared.reelsContextNotification)
+            SharedManager.shared.isFromPNBackground = true
+//                        SharedManager.shared.reelsContextNotification = ""
             if SharedManager.shared.tabBarIndex != 0 {
                 SharedManager.shared.tabBarIndex = 0
                 SharedManager.shared.isFromPNBackground = true
                 self.customTabBar.select(at: 0)
-//                NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationToReelsView, object: nil, userInfo: nil)
+                //                NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationToReelsView, object: nil, userInfo: nil)
             }
-
+            
         }
     }
     
     func performWSToUserConfig() {
-
+        
         if !(SharedManager.shared.isConnectedToNetwork()){
-
+            
             SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
             return
         }
-
-//        self.activityIndicator.startAnimating()
-//        self.activityIndicator.isHidden = false
+        
+        //        self.activityIndicator.startAnimating()
+        //        self.activityIndicator.isHidden = false
         let token  = UserDefaults.standard.string(forKey: Constant.UD_userToken)
         WebService.URLResponse("user/config", method: .get, parameters: nil, headers: token, withSuccess: { (response) in
-
+            
             
             
             do{
                 let FULLResponse = try
-                    JSONDecoder().decode(userConfigDC.self, from: response)
-
+                JSONDecoder().decode(userConfigDC.self, from: response)
+                
                 if let ads = FULLResponse.ads {
-
+                    
                     UserDefaults.standard.set(ads.enabled, forKey: Constant.UD_adsAvailable)
                     UserDefaults.standard.set(ads.ad_unit_key, forKey: Constant.UD_adsUnitKey)
                     UserDefaults.standard.set(ads.type, forKey: Constant.UD_adsType)
                     SharedManager.shared.adsInterval = ads.interval ?? 10
-
+                    
                     if ads.type?.uppercased() == "FACEBOOK" {
-
+                        
                         UserDefaults.standard.set(ads.facebook?.feed, forKey: Constant.UD_adsUnitFeedKey)
                         UserDefaults.standard.set(ads.facebook?.reel, forKey: Constant.UD_adsUnitReelKey)
                     } else {
-
+                        
                         UserDefaults.standard.set(ads.admob?.feed, forKey: Constant.UD_adsUnitFeedKey)
                         UserDefaults.standard.set(ads.admob?.reel, forKey: Constant.UD_adsUnitReelKey)
                     }
-
+                    
                 }
                 
                 if let walletLink = FULLResponse.wallet {
                     
                     UserDefaults.standard.set(walletLink, forKey: Constant.UD_WalletLink)
                 }
-
-
+                
+                
                 //For Community Guildelines
                 if let terms = FULLResponse.terms {
                     SharedManager.shared.community = terms.community ?? true
                 }
-
+                
                 if let preference = FULLResponse.home_preference {
-
+                    
                     SharedManager.shared.isTutorialDone = preference.tutorial_done ?? false
                     SharedManager.shared.bulletsAutoPlay = preference.bullets_autoplay ?? false
                     SharedManager.shared.reelsAutoPlay = preference.reels_autoplay ?? false
                     SharedManager.shared.videoAutoPlay = preference.videos_autoplay ?? false
                     SharedManager.shared.readerMode = preference.reader_mode ?? false
                     SharedManager.shared.speedRate = preference.narration?.speed_rate ?? ["1.0x":1]
-
-//                    if let mode = preference.view_mode {
-//
-//                        SharedManager.shared.menuViewModeType = mode.uppercased()
-//                        self.updateViewTypeIcon()
-//                    }
+                    
+                    //                    if let mode = preference.view_mode {
+                    //
+                    //                        SharedManager.shared.menuViewModeType = mode.uppercased()
+                    //                        self.updateViewTypeIcon()
+                    //                    }
                 }
-
+                
                 if let user = FULLResponse.user {
                     SharedManager.shared.userId = user.id ?? ""
-
+                    
                     let encoder = JSONEncoder()
                     if let encoded = try? encoder.encode(user) {
                         SharedManager.shared.userDetails = encoded
                     }
-
+                    
                     SharedManager.shared.isLinkedUser = user.guestValid ?? false
                     
                     if let userDefaults = UserDefaults(suiteName: "group.app.newsreels") {
@@ -253,7 +270,7 @@ class TabbarVC: PTCardTabBarController {
                         userDefaults.synchronize()
                     }
                 }
-
+                
                 if let rating = FULLResponse.rating {
                     
                     let interval = rating.interval ?? 100
@@ -266,9 +283,9 @@ class TabbarVC: PTCardTabBarController {
                         UserDefaults.standard.setValue(nextInt, forKey: Constant.ratingTimeIntervel)
                     }
                 }
-
+                
                 if let alert = FULLResponse.alert {
-
+                    
                     SharedManager.shared.userAlert = alert
                 }
                 
@@ -278,25 +295,25 @@ class TabbarVC: PTCardTabBarController {
                     SharedManager.shared.isFromTabbarVC = true
                     SharedManager.shared.isOnboardingPreferenceLoaded = onboarded
                 }
-
-//                self.activityIndicator.stopAnimating()
-//                self.activityIndicator.isHidden = true
-
+                
+                //                self.activityIndicator.stopAnimating()
+                //                self.activityIndicator.isHidden = true
+                
             } catch let jsonerror {
-
-//                self.activityIndicator.stopAnimating()
-//                self.activityIndicator.isHidden = true
+                
+                //                self.activityIndicator.stopAnimating()
+                //                self.activityIndicator.isHidden = true
                 SharedManager.shared.showAPIFailureAlert()
                 print("error parsing json objects",jsonerror)
                 SharedManager.shared.logAPIError(url: "user/config", error: jsonerror.localizedDescription, code: "")
             }
-
+            
         }) { (error) in
-
+            
             //SharedManager.shared.showAPIFailureAlert()
             DispatchQueue.main.async {
-//                self.activityIndicator.stopAnimating()
-//                self.activityIndicator.isHidden = true
+                //                self.activityIndicator.stopAnimating()
+                //                self.activityIndicator.isHidden = true
                 print("error parsing json objects",error)
             }
         }
@@ -319,7 +336,7 @@ class TabbarVC: PTCardTabBarController {
             ANLoader.hide()
             do{
                 let FULLResponse = try
-                    JSONDecoder().decode(viewArticleDC.self, from: response)
+                JSONDecoder().decode(viewArticleDC.self, from: response)
                 
                 if let article = FULLResponse.article {
                     
@@ -327,31 +344,31 @@ class TabbarVC: PTCardTabBarController {
                     //                    SharedManager.shared.viewArticleArray = [article]
                     
                     //                    if let source = article.source {
-                                        
+                    
                     //self.view.window!.rootViewController?.dismiss(animated: false, completion: nil)
                     if let vc = UIApplication.getTopViewController() as? BulletDetailsVC, vc.selectedArticleData?.id == article.id {
                         print("same article already presented no need to dismiss")
                     } else {
                         
-//                        if let vc = UIApplication.getTopViewController() as? TestTransitionVC  {
-//                            vc.dismiss(animated: true, completion: nil)
-//                        }
-//                        else {
-//
-//
-//                        }
+                        //                        if let vc = UIApplication.getTopViewController() as? TestTransitionVC  {
+                        //                            vc.dismiss(animated: true, completion: nil)
+                        //                        }
+                        //                        else {
+                        //
+                        //
+                        //                        }
                         
                         NotificationCenter.default.post(name: Notification.Name.notifyProfileVC, object: nil)
                         self.appDelegate.window!.rootViewController?.dismiss(animated: false, completion: nil)
                         
                         let isViewpresent = UIApplication.getTopViewController()
+                        
+                        if let vc = UIApplication.getTopViewController() as? BulletDetailsVC {
                             
-                            if let vc = UIApplication.getTopViewController() as? BulletDetailsVC {
-                                
-                                vc.dismiss(animated: false, completion: nil)
-                            }else if (isViewpresent != nil) {
-                                isViewpresent?.dismiss(animated: false, completion: nil)
-                            }
+                            vc.dismiss(animated: false, completion: nil)
+                        }else if (isViewpresent != nil) {
+                            isViewpresent?.dismiss(animated: false, completion: nil)
+                        }
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                             let vc = BulletDetailsVC.instantiate(fromAppStoryboard: .Home)
@@ -362,7 +379,7 @@ class TabbarVC: PTCardTabBarController {
                             navVC.modalPresentationStyle = .fullScreen
                             
                             if SharedManager.shared.tabBarIndex == TabbarType.Reels.rawValue {
-//                                self.vc3?.present(navVC, animated: true, completion: nil)
+                                //                                self.vc3?.present(navVC, animated: true, completion: nil)
                                 if let vc = UIApplication.getTopViewController() {
                                     vc.present(navVC, animated: true, completion: nil)
                                 }
@@ -377,14 +394,14 @@ class TabbarVC: PTCardTabBarController {
                                 }
                             }
                             
-//                            let vc = HomeVC.instantiate(fromAppStoryboard: .Main)
-//                            vc.delegateVC = self
-//                            vc.selectedID = source.id ?? ""
-//                            vc.isFav = source.favorite ?? false
-//                            self.navigationController?.pushViewController(vc, animated: true)
+                            //                            let vc = HomeVC.instantiate(fromAppStoryboard: .Main)
+                            //                            vc.delegateVC = self
+                            //                            vc.selectedID = source.id ?? ""
+                            //                            vc.isFav = source.favorite ?? false
+                            //                            self.navigationController?.pushViewController(vc, animated: true)
                         }
                     }
-//                     }
+                    //                     }
                 }
                 else {
                     
@@ -417,11 +434,11 @@ class TabbarVC: PTCardTabBarController {
             
             let vc = ReelsVC.instantiate(fromAppStoryboard: .Reels)
             vc.contextID = context
-//            vc.titleText = content?.title ?? ""
+            //            vc.titleText = content?.title ?? ""
             vc.isBackButtonNeeded = true
-//            vc.delegate = self
-//            vc.fromMain = true
-            vc.fromMain = false //SharedManager.shared.isAppOpenFromDeepLink ? false : true // set flase to play specific shared/copy reels
+            //            vc.delegate = self
+            //            vc.fromMain = true
+            vc.fromMain = true //SharedManager.shared.isAppOpenFromDeepLink ? false : true // set flase to play specific shared/copy reels
             vc.modalPresentationStyle = .fullScreen
             let nav = AppNavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
@@ -458,7 +475,7 @@ class TabbarVC: PTCardTabBarController {
                         }
                     })
                 }
-               // self.present(nav, animated: true, completion: nil)
+                // self.present(nav, animated: true, completion: nil)
             }
         }
     }

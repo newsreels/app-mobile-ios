@@ -16,24 +16,28 @@
 #import "FirebasePerformance/Sources/FPRClient+Private.h"
 
 #import "FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h"
+#import "FirebasePerformance/Sources/AppActivity/FPRScreenTraceTracker+Private.h"
 #import "FirebasePerformance/Sources/AppActivity/FPRScreenTraceTracker.h"
 #import "FirebasePerformance/Sources/AppActivity/FPRSessionManager+Private.h"
 #import "FirebasePerformance/Sources/AppActivity/FPRTraceBackgroundActivityTracker.h"
+#import "FirebasePerformance/Sources/Common/FPRConsoleURLGenerator.h"
 #import "FirebasePerformance/Sources/Common/FPRConstants.h"
 #import "FirebasePerformance/Sources/Configurations/FPRConfigurations.h"
 #import "FirebasePerformance/Sources/Configurations/FPRRemoteConfigFlags.h"
 #import "FirebasePerformance/Sources/FPRConsoleLogger.h"
-#import "FirebasePerformance/Sources/FPRProtoUtils.h"
+#import "FirebasePerformance/Sources/FPRNanoPbUtils.h"
 #import "FirebasePerformance/Sources/Instrumentation/FPRInstrumentation.h"
-#import "FirebasePerformance/Sources/Loggers/FPRGDTCCLogger.h"
+#import "FirebasePerformance/Sources/Loggers/FPRGDTLogger.h"
 #import "FirebasePerformance/Sources/Timer/FIRTrace+Internal.h"
 #import "FirebasePerformance/Sources/Timer/FIRTrace+Private.h"
 
-#import "FirebaseCore/Sources/Private/FirebaseCoreInternal.h"
+#import "FirebasePerformance/Sources/Public/FirebasePerformance/FIRPerformance.h"
 
-#import "FirebasePerformance/ProtoSupport/PerfMetric.pbobjc.h"
+#import "FirebaseCore/Extension/FirebaseCoreInternal.h"
 
-@interface FPRClient ()
+@import FirebaseSessions;
+
+@interface FPRClient () <FIRLibrary, FIRPerformanceProvider, FIRSessionsSubscriber>
 
 /** The original configuration object used to initialize the client. */
 @property(nonatomic, strong) FPRConfiguration *config;
@@ -46,22 +50,32 @@
 @implementation FPRClient
 
 + (void)load {
-  __weak NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-  __block id listener;
+  [FIRApp registerInternalLibrary:[FPRClient class]
+                         withName:@"fire-perf"
+                      withVersion:[NSString stringWithUTF8String:kFPRSDKVersion]];
+  [FIRSessionsDependencies addDependencyWithName:FIRSessionsSubscriberNamePerformance];
+}
 
-  void (^observerBlock)(NSNotification *) = ^(NSNotification *aNotification) {
-    NSDictionary *appInfoDict = aNotification.userInfo;
-    NSNumber *isDefaultApp = appInfoDict[kFIRAppIsDefaultAppKey];
-    if (![isDefaultApp boolValue]) {
-      return;
+#pragma mark - Component registration system
+
++ (nonnull NSArray<FIRComponent *> *)componentsToRegister {
+  FIRDependency *sessionsDep =
+      [FIRDependency dependencyWithProtocol:@protocol(FIRSessionsProvider)];
+
+  FIRComponentCreationBlock creationBlock =
+      ^id _Nullable(FIRComponentContainer *container, BOOL *isCacheable) {
+    if (!container.app.isDefaultApp) {
+      return nil;
     }
 
-    NSString *appName = appInfoDict[kFIRAppNameKey];
+    id<FIRSessionsProvider> sessions = FIR_COMPONENT(FIRSessionsProvider, container);
+
+    NSString *appName = container.app.name;
     FIRApp *app = [FIRApp appNamed:appName];
     FIROptions *options = app.options;
     NSError *error = nil;
 
-    // Based on the environment variable SDK decides if events are dispatchd to Autopush or Prod.
+    // Based on the environment variable SDK decides if events are dispatched to Autopush or Prod.
     // By default, events are sent to Prod.
     BOOL useAutoPush = NO;
     NSDictionary<NSString *, NSString *> *environment = [NSProcessInfo processInfo].environment;
@@ -77,17 +91,27 @@
       FPRLogError(kFPRClientInitialize, @"Failed to initialize the client with error:  %@.", error);
     }
 
-    [notificationCenter removeObserver:listener];
-    listener = nil;
+    if (sessions) {
+      FPRLogDebug(kFPRClientInitialize, @"Registering Sessions SDK subscription for session data");
+
+      // Subscription should be made after the first call to [FPRClient sharedInstance] where
+      // _configuration is initialized so that the sessions SDK can immediately get the data
+      // collection state.
+      [sessions registerWithSubscriber:[self sharedInstance]];
+    }
+
+    *isCacheable = YES;
+
+    return [self sharedInstance];
   };
 
-  // Register the Perf library for Firebase Core tracking.
-  [FIRApp registerLibrary:@"fire-perf"  // From go/firebase-sdk-platform-info
-              withVersion:[NSString stringWithUTF8String:kFPRSDKVersion]];
-  listener = [notificationCenter addObserverForName:kFIRAppReadyToConfigureSDKNotification
-                                             object:[FIRApp class]
-                                              queue:nil
-                                         usingBlock:observerBlock];
+  FIRComponent *component =
+      [FIRComponent componentWithProtocol:@protocol(FIRPerformanceProvider)
+                      instantiationTiming:FIRInstantiationTimingEagerInDefaultApp
+                             dependencies:@[ sessionsDep ]
+                            creationBlock:creationBlock];
+
+  return @[ component ];
 }
 
 + (FPRClient *)sharedInstance {
@@ -107,6 +131,8 @@
     _eventsQueue = dispatch_queue_create("com.google.perf.FPREventsQueue", DISPATCH_QUEUE_SERIAL);
     _eventsQueueGroup = dispatch_group_create();
     _configuration = [FPRConfigurations sharedInstance];
+    _projectID = [FIROptions defaultOptions].projectID;
+    _bundleID = [FIROptions defaultOptions].bundleID;
   }
   return self;
 }
@@ -117,9 +143,9 @@
 
   dispatch_group_async(self.eventsQueueGroup, self.eventsQueue, ^{
     // Create the Logger for the Perf SDK events to be sent to Google Data Transport.
-    self.gdtLogger = [[FPRGDTCCLogger alloc] initWithLogSource:logSource];
+    self.gdtLogger = [[FPRGDTLogger alloc] initWithLogSource:logSource];
 
-#if __has_include("CoreTelephony/CTTelephonyNetworkInfo.h")
+#ifdef TARGET_HAS_MOBILE_CONNECTIVITY
     // Create telephony network information object ahead of time to avoid runtime delays.
     FPRNetworkInfo();
 #endif
@@ -134,6 +160,15 @@
   [self checkAndStartInstrumentation];
 
   self.configured = YES;
+
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    FPRLogInfo(kFPRClientInitialize,
+               @"Firebase Performance Monitoring is successfully initialized! In a minute, visit "
+               @"the Firebase console to view your data: %@",
+               [FPRConsoleURLGenerator generateDashboardURLWithProjectID:self.projectID
+                                                                bundleID:self.bundleID]);
+  });
 
   return YES;
 }
@@ -157,12 +192,29 @@
   }
   if ([trace isCompleteAndValid]) {
     dispatch_group_async(self.eventsQueueGroup, self.eventsQueue, ^{
-      FPRMSGPerfMetric *metric = FPRGetPerfMetricMessage(self.config.appID);
-      metric.traceMetric = FPRGetTraceMetric(trace);
-      metric.applicationInfo.applicationProcessState =
-          FPRApplicationProcessState(trace.backgroundTraceState);
-      FPRLogDebug(kFPRClientMetricLogged, @"Logging trace metric - %@ %.4fms",
-                  metric.traceMetric.name, metric.traceMetric.durationUs / 1000.0);
+      firebase_perf_v1_PerfMetric metric = FPRGetPerfMetricMessage(self.config.appID);
+      FPRSetTraceMetric(&metric, FPRGetTraceMetric(trace));
+      FPRSetApplicationProcessState(&metric,
+                                    FPRApplicationProcessState(trace.backgroundTraceState));
+
+      // Log the trace metric with its console URL.
+      if ([trace.name hasPrefix:kFPRPrefixForScreenTraceName]) {
+        FPRLogInfo(kFPRClientMetricLogged,
+                   @"Logging trace metric - %@ %.4fms. In a minute, visit the Firebase console to "
+                   @"view your data: %@",
+                   trace.name, metric.trace_metric.duration_us / 1000.0,
+                   [FPRConsoleURLGenerator generateScreenTraceURLWithProjectID:self.projectID
+                                                                      bundleID:self.bundleID
+                                                                     traceName:trace.name]);
+      } else {
+        FPRLogInfo(kFPRClientMetricLogged,
+                   @"Logging trace metric - %@ %.4fms. In a minute, visit the Firebase console to "
+                   @"view your data: %@",
+                   trace.name, metric.trace_metric.duration_us / 1000.0,
+                   [FPRConsoleURLGenerator generateCustomTraceURLWithProjectID:self.projectID
+                                                                      bundleID:self.bundleID
+                                                                     traceName:trace.name]);
+      }
       [self processAndLogEvent:metric];
     });
   } else {
@@ -177,22 +229,24 @@
     return;
   }
   dispatch_group_async(self.eventsQueueGroup, self.eventsQueue, ^{
-    FPRMSGNetworkRequestMetric *networkRequestMetric = FPRGetNetworkRequestMetric(trace);
-    if (networkRequestMetric) {
-      int64_t duration = networkRequestMetric.hasTimeToResponseCompletedUs
-                             ? networkRequestMetric.timeToResponseCompletedUs
+    if ([trace isValid]) {
+      firebase_perf_v1_NetworkRequestMetric networkRequestMetric =
+          FPRGetNetworkRequestMetric(trace);
+      int64_t duration = networkRequestMetric.has_time_to_response_completed_us
+                             ? networkRequestMetric.time_to_response_completed_us
                              : 0;
 
-      NSString *responseCode = networkRequestMetric.hasHTTPResponseCode
-                                   ? [@(networkRequestMetric.HTTPResponseCode) stringValue]
+      NSString *responseCode = networkRequestMetric.has_http_response_code
+                                   ? [@(networkRequestMetric.http_response_code) stringValue]
                                    : @"UNKNOWN";
-      FPRLogDebug(kFPRClientMetricLogged,
-                  @"Logging network request trace - %@, Response code: %@, %.4fms",
-                  networkRequestMetric.URL, responseCode, duration / 1000.0);
-      FPRMSGPerfMetric *metric = FPRGetPerfMetricMessage(self.config.appID);
-      metric.networkRequestMetric = networkRequestMetric;
-      metric.applicationInfo.applicationProcessState =
-          FPRApplicationProcessState(trace.backgroundTraceState);
+      FPRLogInfo(kFPRClientMetricLogged,
+                 @"Logging network request trace - %@, Response code: %@, %.4fms",
+                 trace.trimmedURLString, responseCode, duration / 1000.0);
+      firebase_perf_v1_PerfMetric metric = FPRGetPerfMetricMessage(self.config.appID);
+      FPRSetNetworkRequestMetric(&metric, networkRequestMetric);
+      FPRSetApplicationProcessState(&metric,
+                                    FPRApplicationProcessState(trace.backgroundTraceState));
+
       [self processAndLogEvent:metric];
     }
   });
@@ -204,20 +258,23 @@
     return;
   }
   dispatch_group_async(self.eventsQueueGroup, self.eventsQueue, ^{
-    FPRMSGPerfMetric *metric = FPRGetPerfMetricMessage(self.config.appID);
-    FPRMSGGaugeMetric *gaugeMetric = FPRGetGaugeMetric(gaugeData, sessionId);
-    metric.gaugeMetric = gaugeMetric;
+    firebase_perf_v1_PerfMetric metric = FPRGetPerfMetricMessage(self.config.appID);
+    firebase_perf_v1_GaugeMetric gaugeMetric = firebase_perf_v1_GaugeMetric_init_default;
+    if ((gaugeData != nil && gaugeData.count != 0) && (sessionId != nil && sessionId.length != 0)) {
+      gaugeMetric = FPRGetGaugeMetric(gaugeData, sessionId);
+    }
+    FPRSetGaugeMetric(&metric, gaugeMetric);
     [self processAndLogEvent:metric];
   });
 
   // Check and update the sessionID if the session is running for too long.
-  [[FPRSessionManager sharedInstance] renewSessionIdIfRunningTooLong];
+  [[FPRSessionManager sharedInstance] stopGaugesIfRunningTooLong];
 }
 
-- (void)processAndLogEvent:(FPRMSGPerfMetric *)event {
+- (void)processAndLogEvent:(firebase_perf_v1_PerfMetric)event {
   BOOL tracingEnabled = self.configuration.isDataCollectionEnabled;
   if (!tracingEnabled) {
-    FPRLogError(kFPRClientPerfNotConfigured, @"Dropping event since data collection is disabled.");
+    FPRLogDebug(kFPRClientPerfNotConfigured, @"Dropping event since data collection is disabled.");
     return;
   }
 
@@ -243,8 +300,9 @@
                       error.description);
         } else {
           dispatch_group_async(self.eventsQueueGroup, self.eventsQueue, ^{
-            event.applicationInfo.appInstanceId = identifier;
-            [self.gdtLogger logEvent:event];
+            firebase_perf_v1_PerfMetric updatedEvent = event;
+            updatedEvent.application_info.app_instance_id = FPREncodeString(identifier);
+            [self.gdtLogger logEvent:updatedEvent];
           });
         }
       }];
@@ -297,6 +355,20 @@
   [self.instrumentation deregisterInstrumentGroup:kFPRInstrumentationGroupUIKitKey];
   self.swizzled = NO;
   [self.configuration setInstrumentationEnabled:NO];
+}
+
+#pragma mark - FIRSessionsSubscriber
+
+- (void)onSessionChanged:(FIRSessionDetails *_Nonnull)session {
+  [[FPRSessionManager sharedInstance] updateSessionId:session.sessionId];
+}
+
+- (BOOL)isDataCollectionEnabled {
+  return self.configuration.isDataCollectionEnabled;
+}
+
+- (FIRSessionsSubscriberName)sessionsSubscriberName {
+  return FIRSessionsSubscriberNamePerformance;
 }
 
 @end

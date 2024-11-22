@@ -53,18 +53,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         // Override point for customization after application launch.
 //        Thread.sleep(forTimeInterval: 1.5)
         //UIApplication.shared.isIdleTimerDisabled = true
-        
-        OneSignal.setLogLevel(.LL_NONE, visualLevel: .LL_NONE)
-        
-        // OneSignal initialization
-        OneSignal.initWithLaunchOptions(launchOptions)
-        OneSignal.setAppId("5ca68357-0d2e-4c8c-af93-a04403ee9cb9")
-        
-        // promptForPushNotifications will show the native iOS notification permission prompt.
-        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
-        OneSignal.promptForPushNotifications(userResponse: { accepted in
-
-        })
+    
+//        OneSignal.setLogLevel(.LL_NONE, visualLevel: .LL_NONE)
+//        
+//        // OneSignal initialization
+//        OneSignal.initWithLaunchOptions(launchOptions)
+//        OneSignal.setAppId("5ca68357-0d2e-4c8c-af93-a04403ee9cb9")
+//        
+//        // promptForPushNotifications will show the native iOS notification permission prompt.
+//        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
+//        OneSignal.promptForPushNotifications(userResponse: { accepted in
+//
+//        })
 
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -660,7 +660,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         style.messageColor = MyThemes.current == .dark ? "#3D485F".hexStringToUIColor(): "#FFFFFF".hexStringToUIColor()
         ToastManager.shared.style = style
     }
-    
+    let notificationCenter = UNUserNotificationCenter.current()
     
     //Firebase configuration
     func configureNotification(_ application: UIApplication) {
@@ -708,19 +708,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         //GOOGLE LOGIN
         GIDSignIn.sharedInstance().clientID = WebserviceManager.shared.GOOGLE_CLIENT_ID
         
-        FirebaseConfiguration.shared.setLoggerLevel(.error)
+//        FirebaseConfiguration.shared.setLoggerLevel(.error)
         //   FirebaseApp.configure()
         Messaging.messaging().delegate = self
         
         // Override point for customization after application launch.
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
-            UNUserNotificationCenter.current().delegate = self
+            notificationCenter.delegate = self
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(
+            notificationCenter.requestAuthorization(
                 options: authOptions,
                 completionHandler: {_, _ in })
         } else {
+            
             let settings: UIUserNotificationSettings =
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
@@ -733,8 +734,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         // Set analytics
         let id: String = UserDefaults.standard.string(forKey: Constant.UD_userId) ?? ""
         Analytics.setUserProperty(id, forName: "user")
+        
+//        print("FIREBASE TOKEN -> WAITING")
+//        self.registerFirebaseToken{_ in
+//            
+//        }
     }
-    
+   
     //MARK:- LifeCycle
     func applicationDidBecomeActive(_ application: UIApplication) {
         
@@ -824,9 +830,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        
+        print("FIREBASE MESSAGING RECEIVED NOTIFICAITON",userInfo)
+        handleIncomingMessage(userInfo: userInfo)
         AppsFlyerLib.shared().handlePushNotification(userInfo)
     }
+    
+    private func handleIncomingMessage(userInfo: [AnyHashable: Any]) {
+            guard let title = userInfo["title"] as? String,
+                  let body = userInfo["message"] as? String,
+                  let type = userInfo["type"] as? String else {
+                print("Invalid notification payload")
+                return
+            }
+        
+        
+            print("TITLE -> ",title)
+            print("body -> ",body)
+            print("type -> ",type)
+            let content = UNMutableNotificationContent()
+            content.title = title
+            content.body = body
+            content.sound = .default
+
+            print("id -> ",userInfo["id"])
+            // Prepare custom data for navigation
+            let userInfo = ["type": type, "id": userInfo["id"] as? String ?? ""]
+            content.userInfo = userInfo
+            print("id2 -> ",userInfo["id"])
+
+            // Create notification request
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+                notificationCenter.add(request) { error in
+                if let error = error {
+                    print("Error displaying notification: \(error.localizedDescription)")
+                }
+            }
+        }
     
     
     // Open Deeplinks
@@ -959,13 +1000,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         setOnBoardVC()
     }
     
-    func setHomeVC(_ isAnimated: Bool = true) {
+    func setHomeVC(_ isAnimated: Bool = true , completed :  ( () -> Void)? = nil) {
         
         if let language = LanguageHelper.shared.getSavedLanguage(){
             LanguageHelper.shared.saveLanguage(language: language, isInSettings: true)
         }
         LanguageHelper.languageShared.saveSelectedRegionAndLanguage {
             DispatchQueue.main.async { [weak self] in
+            completed?()
             let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)
             self?.navigationController = AppNavigationController.init(rootViewController: vc)
             self?.navigationController.navigationBar.isHidden = true
@@ -1188,26 +1230,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
         
     }
     
-    func registerFirebaseToken(completion: @escaping (Bool)->()) {
+func registerFirebaseToken(completion: @escaping (Bool)->()) {
         
-        Messaging.messaging().deleteToken { err in
-            
-            Messaging.messaging().token { token, err in
-                if let error = err {
-    
-
-                    completion(false)
-                }
-                if let token = token {
-
-                    //                            print(token)
-                    UserDefaults.standard.set(token, forKey: Constant.UD_firebaseToken)
-                    completion(true)
-                }
-                
-            }
-            
+    Messaging.messaging().token { token, err in
+        if let error = err {
+            print("FIREBASE TOKEN -> ERR",error)
+            completion(false)
         }
+        if let token = token {
+
+            print("FIREBASE TOKEN -> ",token)
+            UserDefaults.standard.set(token, forKey: Constant.UD_firebaseToken)
+            completion(true)
+        }
+        
+    }
+       
         //        InstanceID.instanceID().instanceID { (result, error) in
 //                    if let error = error {
 //
@@ -1335,37 +1373,30 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         //        print("Handle push from foreground \(notification.request.content.userInfo)")
         //        completionHandler([.alert, .badge, .sound])
         
-        completionHandler([])
-        
-//        let userInfo = notification.request.content.userInfo
-//        print("Receive notification in the foreground \(userInfo)")
-//        let pref = UserDefaults.init(suiteName: "group.app.newsreels")
-//        pref?.set(userInfo, forKey: "NOTIF_DATA")
-//        //        guard let vc = UIApplication.shared.windows.first?.rootViewController as? ViewController else { return }
-//        //        vc.handleNotifData()
-//        completionHandler([.alert, .badge, .sound])
+        completionHandler([.banner, .sound, .badge])
+
     }
     
     @available(iOS 10.0, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
+        print("SHAHZAIB userNotificationCenter")
         let userInfo = response.notification.request.content.userInfo
-        
+        print("SHAHZAIB userInfo ",userInfo)
         //print(type ?? "")
         //print(articleId ?? "")
         self.tapOnNotification = true
         handleNotificationTapped(userInfo: userInfo)
         
         // tell the app that we have finished processing the user’s action / response
-//        completionHandler()
+        completionHandler()
     }
-    
+   
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         
 
-        if UserDefaults.standard.string(forKey: Constant.UD_firebaseToken) == ""{
-            UserDefaults.standard.set(fcmToken, forKey: Constant.UD_firebaseToken)
-        }
+        UserDefaults.standard.set(fcmToken, forKey: Constant.UD_firebaseToken)
+        print("FCM tokenFCM token: \(String(describing: fcmToken))")
     }
 }
 
@@ -1374,50 +1405,29 @@ extension AppDelegate {
     //MARK: Handle Notification
     func handleNotificationTapped(userInfo: [AnyHashable : Any]) {
 
+        guard
+                let id = userInfo["id"] as? String,
+                  let type = userInfo["type"] as? String else {
+                print("Invalid notification payload")
+                return
+            }
         
-        if let userInfoData = userInfo["custom"] as? [String:Any] {
-            let notiData = userInfoData["a"] as? [String:Any]
-            
-            let type = notiData?["type"] as? String ?? ""
-            if type == "reel" { //reel.new
-             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.notificationOpenReel, eventDescription: "")
-             //SharedManager.shared.reelsContextNotification = userInfo["article_id"] as? String ?? ""
-             SharedManager.shared.reelsContextNotification = notiData?["context"] as? String ?? ""
-             }
-             else {
-             SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.notificationOpenArticle, eventDescription: "")
-             //SharedManager.shared.articleIdNotification = userInfo["article_id"] as? String ?? ""
-             SharedManager.shared.articleIdNotification = notiData?["id"] as? String ?? ""
-             }
-             
-             if !SharedManager.shared.isAppLaunchedThroughNotification {
-             
-             NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
-             }
-            
-           //Open the notification using deepLink
-//            let deepLink = notiData?["deeplink"] as? String ?? ""
-//            if deepLink == "" {
-//                print("No deepLink found for notification")
-//                return
-//            }else{
-//                print("incoming URL is \(deepLink)")
-//                guard let sharedLink = URL(string: deepLink) else {
-//                    return
-//                }
-//                DynamicLinks.dynamicLinks().handleUniversalLink(sharedLink) { ( dynamicLink, error) in
-//                    guard error == nil else {
-//                        print("Found an error \(error!.localizedDescription)")
-//                        return
-//                    }
-//                    if let dynamicLink = dynamicLink {
-//                        self.handleIncomingDynamicLink(dynamicLink)
-//                    }
-//                }
-//            }
-            
-            
-        }
+        if type == "reel" { //reel.new
+         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.notificationOpenReel, eventDescription: "")
+         //SharedManager.shared.reelsContextNotification = userInfo["article_id"] as? String ?? ""
+         SharedManager.shared.reelsContextNotification = id
+         }
+         else {
+         SharedManager.shared.sendAnalyticsEvent(eventType: Constant.analyticsEvents.notificationOpenArticle, eventDescription: "")
+         //SharedManager.shared.articleIdNotification = userInfo["article_id"] as? String ?? ""
+         SharedManager.shared.articleIdNotification = id
+         }
+         
+        print("SHAHZAIB handleNotificationTapped")
+         if !SharedManager.shared.isAppLaunchedThroughNotification {
+             print("SHAHZAIB handleNotificationTapped")
+         NotificationCenter.default.post(name: Notification.Name.notifyGetPushNotificationArticleData, object: nil, userInfo: nil)
+         }
     }
     
 }
@@ -1565,7 +1575,6 @@ extension AppDelegate {
 extension AppDelegate: SplashscreenLoaderVCDelegate {
     
     func dismissSplashscreenLoaderVC() {
-        print("SHAHZAIB -> dismissSplashscreenLoaderVC")
         if let userToken = UserDefaults.standard.value(forKey: Constant.UD_userToken) as? String, !userToken.isEmpty {
             SharedManager.shared.bulletsAutoPlay = true
             let vc = TabbarVC.instantiate(fromAppStoryboard: .Main)

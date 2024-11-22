@@ -178,14 +178,67 @@ class AddPasswordVC: UIViewController {
     @IBAction func didTapSave(_ sender: Any) {
         
 
-        
-        let vc = TermsVC.instantiate(fromAppStoryboard: .RegistrationSB)
-        vc.webURL = "https://www.newsinbullets.app/terms/?header=false"
-        vc.email = self.email
-        vc.password = self.passwordTextField.text ?? ""
-        self.navigationController?.pushViewController(vc, animated: true)
+//        
+//        let vc = TermsVC.instantiate(fromAppStoryboard: .RegistrationSB)
+//        vc.webURL = "https://www.newsinbullets.app/terms/?header=false"
+//        vc.email = self.email
+//        vc.password = self.passwordTextField.text ?? ""
+//        self.navigationController?.pushViewController(vc, animated: true)
+        performWSToRegistorUser(self.email, self.passwordTextField.text ?? "")
     
         
+    }
+    func performWSToRegistorUser(_ email:String,_ password:String) {
+        
+        if !(SharedManager.shared.isConnectedToNetwork()){
+            
+            SharedManager.shared.showAlertLoader(message: ApplicationAlertMessages.kMsgInternetNotAvailable, type: .error)
+            return
+        }
+        
+        self.showLoaderInVC()
+        
+        let params = ["email":email,
+                      "password": password,
+                      "termsandcondition": true] as [String : Any]
+        
+        WebService.URLResponseAuth("auth/register", method: .post, parameters: params, headers: nil, withSuccess: { (response) in
+            
+            self.hideLoaderVC()
+            
+            do{
+                let FULLResponse = try
+                    JSONDecoder().decode(userDC.self, from: response)
+                
+                if FULLResponse.success == true {
+                    
+                    print("user_id: ",FULLResponse.user_id ?? "")
+                    
+                    let vc = RegistrationCompletedVC.instantiate(fromAppStoryboard: .RegistrationSB)
+                    vc.email = email
+                    vc.password = password
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    
+                }
+                else {
+                    
+                    SharedManager.shared.showAlertLoader(message: NSLocalizedString("Something went wrong", comment: ""), type: .error)
+                }
+                
+            } catch let jsonerror {
+                
+                self.hideLoaderVC()
+                
+                print("error parsing json objects",jsonerror)
+                SharedManager.shared.logAPIError(url: "auth/account-setpassword", error: jsonerror.localizedDescription, code: "")
+            }
+            
+        }){ (error) in
+            
+            self.hideLoaderVC()
+            
+            print("error parsing json objects",error)
+        }
     }
     
     @IBAction func didTapShowPassword(_ sender: Any) {

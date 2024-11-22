@@ -17,10 +17,10 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "GoogleMobileAds.xcframework/ios-armv7_arm64")
+  "GoogleMobileAds.xcframework/ios-arm64")
     echo ""
     ;;
-  "GoogleMobileAds.xcframework/ios-i386_x86_64-simulator")
+  "GoogleMobileAds.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -29,11 +29,11 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "GoogleMobileAds.xcframework/ios-armv7_arm64")
-    echo "arm64 armv7"
+  "GoogleMobileAds.xcframework/ios-arm64")
+    echo "arm64"
     ;;
-  "GoogleMobileAds.xcframework/ios-i386_x86_64-simulator")
-    echo "i386 x86_64"
+  "GoogleMobileAds.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -117,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework" "Google-Mobile-Ads-SDK" "framework" "ios-armv7_arm64" "ios-i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework/GoogleMobileAds.xcframework" "Google-Mobile-Ads-SDK" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

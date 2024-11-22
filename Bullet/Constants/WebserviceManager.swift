@@ -27,7 +27,7 @@ class WebserviceManager {
     
     static let shared = WebserviceManager()
     
-    let APP_BUILD_TYPE = UrlType.production //For Live
+let APP_BUILD_TYPE = UrlType.production //For Live
 //    let APP_BUILD_TYPE = UrlType.staging // For Testing/
     let API_VERSION = "v6"
     

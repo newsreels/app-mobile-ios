@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "FirebasePerformance/Sources/Public/FIRTrace.h"
+#import "FirebasePerformance/Sources/Public/FirebasePerformance/FIRTrace.h"
 
 #import "FirebasePerformance/Sources/AppActivity/FPRAppActivityTracker.h"
 #import "FirebasePerformance/Sources/AppActivity/FPRSessionManager.h"
@@ -49,8 +49,11 @@
 /** Stops an active stage that is currently active. */
 - (void)stopActiveStage;
 
-/** Updates the current trace with the session id. */
-- (void)updateTraceWithSessionId;
+/**
+ * Updates the current trace with the session id.
+ * @param sessionDetails Updated session details of the currently active session.
+ */
+- (void)updateTraceWithSessionId:(FPRSessionDetails *)sessionDetails;
 
 @end
 
@@ -133,15 +136,15 @@
 - (void)start {
   if (![self isTraceStarted]) {
     if (!self.isStage) {
-      [[FPRGaugeManager sharedInstance] collectAllGauges];
+      [[FPRSessionManager sharedInstance] collectAllGaugesOnce];
     }
     self.startTime = [NSDate date];
     self.backgroundActivityTracker = [[FPRTraceBackgroundActivityTracker alloc] init];
     FPRSessionManager *sessionManager = [FPRSessionManager sharedInstance];
     if (!self.isStage) {
-      [self updateTraceWithSessionId];
+      [self updateTraceWithSessionId:[sessionManager.sessionDetails copy]];
       [sessionManager.sessionNotificationCenter addObserver:self
-                                                   selector:@selector(updateTraceWithSessionId)
+                                                   selector:@selector(sessionChanged:)
                                                        name:kFPRSessionIdUpdatedNotification
                                                      object:sessionManager];
     }
@@ -166,7 +169,7 @@
     self.stopTime = [NSDate date];
     [self.fprClient logTrace:self];
     if (!self.isStage) {
-      [[FPRGaugeManager sharedInstance] collectAllGauges];
+      [[FPRSessionManager sharedInstance] collectAllGaugesOnce];
     }
   } else {
     FPRLogError(kFPRTraceNotStarted,
@@ -400,16 +403,20 @@
 
 #pragma mark - Utility methods
 
-- (void)updateTraceWithSessionId {
+- (void)sessionChanged:(NSNotification *)notification {
   if ([self isTraceActive]) {
-    dispatch_async(self.sessionIdSerialQueue, ^{
-      FPRSessionManager *sessionManager = [FPRSessionManager sharedInstance];
-      FPRSessionDetails *sessionDetails = sessionManager.sessionDetails;
-      if (sessionDetails) {
-        [self.activeSessions addObject:sessionDetails];
-      }
-    });
+    NSDictionary<NSString *, FPRSessionDetails *> *userInfo = notification.userInfo;
+    FPRSessionDetails *sessionDetails = [userInfo valueForKey:kFPRSessionIdNotificationKey];
+    if (sessionDetails) {
+      [self updateTraceWithSessionId:sessionDetails];
+    }
   }
+}
+
+- (void)updateTraceWithSessionId:(FPRSessionDetails *)sessionDetails {
+  dispatch_sync(self.sessionIdSerialQueue, ^{
+    [self.activeSessions addObject:sessionDetails];
+  });
 }
 
 - (BOOL)isTraceStarted {

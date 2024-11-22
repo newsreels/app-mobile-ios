@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "FirebasePerformance/Sources/Instrumentation/UIKit/FPRUIViewControllerInstrument.h"
-
+#import <TargetConditionals.h>
 #import <UIKit/UIKit.h>
 
 #import "FirebasePerformance/Sources/AppActivity/FPRScreenTraceTracker+Private.h"
@@ -23,12 +22,13 @@
 #import "FirebasePerformance/Sources/Instrumentation/FPRInstrument_Private.h"
 #import "FirebasePerformance/Sources/Instrumentation/FPRSelectorInstrumentor.h"
 #import "FirebasePerformance/Sources/Instrumentation/Network/FPRNetworkInstrumentHelpers.h"
+#import "FirebasePerformance/Sources/Instrumentation/UIKit/FPRUIViewControllerInstrument.h"
 
 #import <GoogleUtilities/GULAppEnvironmentUtil.h>
 #import <GoogleUtilities/GULOriginalIMPConvenienceMacros.h>
 
 /** Returns the dispatch queue for all instrumentation to occur on. */
-static dispatch_queue_t GetInstrumentationQueue() {
+static dispatch_queue_t GetInstrumentationQueue(void) {
   static dispatch_queue_t queue = nil;
   static dispatch_once_t token = 0;
   dispatch_once(&token, ^{
@@ -40,7 +40,8 @@ static dispatch_queue_t GetInstrumentationQueue() {
 
 // Returns the singleton UIApplication of the application this is currently running in or nil if
 // it's in an app extension.
-static UIApplication *FPRSharedApplication() {
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
+static UIApplication *FPRSharedApplication(void) {
   if ([GULAppEnvironmentUtil isAppExtension]) {
     return nil;
   }
@@ -55,6 +56,7 @@ static UIApplication *FPRSharedApplication() {
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentViewDidAppear(FPRUIViewControllerInstrument *instrument,
                              FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(viewDidAppear:);
@@ -67,9 +69,12 @@ void InstrumentViewDidAppear(FPRUIViewControllerInstrument *instrument,
 
     // This has to be called on the main thread and so it's done here instead of in
     // FPRScreenTraceTracker.
+    // TODO: Replace keyWindow usage (deprecated in iOS and unavailable in visionOS).
+#if !defined(TARGET_OS_VISION) || !TARGET_OS_VISION
     if ([((UIViewController *)_self).view isDescendantOfView:FPRSharedApplication().keyWindow]) {
       [[FPRScreenTraceTracker sharedInstance] viewControllerDidAppear:_self];
     }
+#endif
   }];
 }
 
@@ -79,6 +84,7 @@ void InstrumentViewDidAppear(FPRUIViewControllerInstrument *instrument,
  *  @param instrumentor The FPRClassInstrumentor to add the selector instrumentor to.
  */
 FOUNDATION_STATIC_INLINE
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 void InstrumentViewDidDisappear(FPRUIViewControllerInstrument *instrument,
                                 FPRClassInstrumentor *instrumentor) {
   SEL selector = @selector(viewDidDisappear:);

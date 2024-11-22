@@ -18,6 +18,7 @@
 #import "FirebasePerformance/Sources/Gauges/Memory/FPRMemoryGaugeCollector.h"
 
 /** This extension should only be used for testing. */
+NS_EXTENSION_UNAVAILABLE("Firebase Performance is not supported for extensions.")
 @interface FPRGaugeManager ()
 
 /** @brief Tracks if gauge collection is enabled. */
@@ -42,7 +43,9 @@
 
 /**
  * Prepares for dispatching the current set of gauge data to Google Data Transport.
+ *
+ * @param sessionId SessionId that will be used for dispatching the gauge data
  */
-- (void)prepareAndDispatchGaugeData;
+- (void)prepareAndDispatchCollectedGaugeDataWithSessionId:(nullable NSString *)sessionId;
 
 @end
